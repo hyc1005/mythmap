@@ -1,0 +1,678 @@
+{
+  "涿鹿县": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E6%B6%BF%E9%B9%BF%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 218753350,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3295824,
+      "lat": "40.0909510",
+      "lon": "115.2398730",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.46700637333042966,
+      "addresstype": "district",
+      "name": "涿鹿县",
+      "display_name": "涿鹿县, 张家口市, 河北省, 中国",
+      "boundingbox": [
+        "39.6714741",
+        "40.4909494",
+        "114.9225223",
+        "115.5066501"
+      ]
+    },
+    "query": "涿鹿县"
+  },
+  "怀来县": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E6%80%80%E6%9D%A5%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 219589826,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3295552,
+      "lat": "40.3446260",
+      "lon": "115.6400780",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.4930344686228157,
+      "addresstype": "district",
+      "name": "怀来县",
+      "display_name": "怀来县, 张家口市, 河北省, 中国",
+      "boundingbox": [
+        "40.0642230",
+        "40.5877716",
+        "115.2785340",
+        "115.9629250"
+      ]
+    },
+    "query": "怀来县"
+  },
+  "延庆区": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E5%BB%B6%E5%BA%86%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 219628963,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 2988903,
+      "lat": "40.4568127",
+      "lon": "115.9705791",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5021875528821148,
+      "addresstype": "city",
+      "name": "延庆区",
+      "display_name": "延庆区, 北京市, 102100, 中国",
+      "boundingbox": [
+        "40.2644790",
+        "40.7903080",
+        "115.7297140",
+        "116.5689040"
+      ]
+    },
+    "query": "延庆区"
+  },
+  "蔚县": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E8%94%9A%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 221821805,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3295570,
+      "lat": "39.8960768",
+      "lon": "114.7183017",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5042667920931467,
+      "addresstype": "district",
+      "name": "蔚县",
+      "display_name": "蔚县, 张家口市, 河北省, 中国",
+      "boundingbox": [
+        "39.5511558",
+        "40.1976650",
+        "114.1919616",
+        "115.0649643"
+      ]
+    },
+    "query": "蔚县"
+  },
+  "长子县": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E9%95%BF%E5%AD%90%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 220593810,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 2963915,
+      "lat": "36.1199119",
+      "lon": "112.8717835",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.48741282378646555,
+      "addresstype": "county",
+      "name": "长子县",
+      "display_name": "长子县, 长治市, 山西省, 中国",
+      "boundingbox": [
+        "35.9185877",
+        "36.2626873",
+        "112.4834270",
+        "113.0081824"
+      ]
+    },
+    "query": "长子县"
+  },
+  "高平市": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E9%AB%98%E5%B9%B3%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 221418231,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3237068,
+      "lat": "35.7984314",
+      "lon": "112.9229854",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.45875346312934534,
+      "addresstype": "city",
+      "name": "高平市",
+      "display_name": "高平市, 晋城市, 山西省, 中国",
+      "boundingbox": [
+        "35.6500201",
+        "35.9872819",
+        "112.7120208",
+        "113.1563038"
+      ]
+    },
+    "query": "高平市"
+  },
+  "临沂市": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E4%B8%B4%E6%B2%82%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 220586417,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 2801712,
+      "lat": "35.1032403",
+      "lon": "118.3506988",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 10,
+      "importance": 0.5554622886285134,
+      "addresstype": "city",
+      "name": "临沂市",
+      "display_name": "临沂市, 山东省, 中国",
+      "boundingbox": [
+        "34.3785778",
+        "36.2064568",
+        "117.4111247",
+        "119.1951150"
+      ]
+    },
+    "query": "临沂市"
+  },
+  "连云港市": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E8%BF%9E%E4%BA%91%E6%B8%AF%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 220517334,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3320347,
+      "lat": "34.5933134",
+      "lon": "119.2171662",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 10,
+      "importance": 0.5579786487733682,
+      "addresstype": "city",
+      "name": "连云港市",
+      "display_name": "连云港市, 江苏省, 中国",
+      "boundingbox": [
+        "33.9854788",
+        "35.1470384",
+        "118.3955530",
+        "119.9302768"
+      ]
+    },
+    "query": "连云港市"
+  },
+  "临汾市": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E4%B8%B4%E6%B1%BE%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 219560027,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3286003,
+      "lat": "36.2299630",
+      "lon": "111.3817670",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 10,
+      "importance": 0.5539658461573661,
+      "addresstype": "region",
+      "name": "临汾市",
+      "display_name": "临汾市, 山西省, 中国",
+      "boundingbox": [
+        "35.3864681",
+        "36.9425810",
+        "110.3691109",
+        "112.5676034"
+      ]
+    },
+    "query": "临汾市"
+  },
+  "怀远县": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E6%80%80%E8%BF%9C%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 220598446,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3262330,
+      "lat": "32.9706393",
+      "lon": "117.1994832",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.46273079324442745,
+      "addresstype": "city",
+      "name": "怀远县",
+      "display_name": "怀远县, 蚌埠市, 安徽省, 233416, 中国",
+      "boundingbox": [
+        "32.7161853",
+        "33.3119986",
+        "116.7253803",
+        "117.3204929"
+      ]
+    },
+    "query": "怀远县"
+  },
+  "南岸区": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E5%8D%97%E5%B2%B8%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 241268474,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 2693315,
+      "lat": "29.5028729",
+      "lon": "106.6424710",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.48088253121850977,
+      "addresstype": "city",
+      "name": "南岸区",
+      "display_name": "南岸区, 重庆市, 中国",
+      "boundingbox": [
+        "29.4606640",
+        "29.6206018",
+        "106.5278962",
+        "106.7998708"
+      ]
+    },
+    "query": "南岸区"
+  },
+  "绍兴市": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E7%BB%8D%E5%85%B4%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 223694245,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3316522,
+      "lat": "29.9992425",
+      "lon": "120.5768540",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 10,
+      "importance": 0.5807879035581414,
+      "addresstype": "city",
+      "name": "绍兴市",
+      "display_name": "绍兴市, 浙江省, 中国",
+      "boundingbox": [
+        "29.2265100",
+        "30.2994384",
+        "119.8841866",
+        "121.2271356"
+      ]
+    },
+    "query": "绍兴市"
+  },
+  "登封市": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E7%99%BB%E5%B0%81%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 218339909,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3283763,
+      "lat": "34.4551772",
+      "lon": "113.0444455",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.533740684976618,
+      "addresstype": "city",
+      "name": "登封市",
+      "display_name": "登封市, 郑州市, 河南省, 中国",
+      "boundingbox": [
+        "34.2629201",
+        "34.5953501",
+        "112.7142104",
+        "113.3237603"
+      ]
+    },
+    "query": "登封市"
+  },
+  "滑县": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E6%BB%91%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 220360952,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3060560,
+      "lat": "35.4802464",
+      "lon": "114.6741432",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5124533239079523,
+      "addresstype": "county",
+      "name": "滑县",
+      "display_name": "滑县, 安阳市, 河南省, 456472, 中国",
+      "boundingbox": [
+        "35.2051404",
+        "35.6947402",
+        "114.3837902",
+        "114.9805104"
+      ]
+    },
+    "query": "滑县"
+  },
+  "寒亭区": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E5%AF%92%E4%BA%AD%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 221319531,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3468763,
+      "lat": "36.7553782",
+      "lon": "119.2054018",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.43899537001090305,
+      "addresstype": "city",
+      "name": "寒亭区",
+      "display_name": "寒亭区, 潍坊市, 山东省, 中国",
+      "boundingbox": [
+        "36.7206728",
+        "37.3723402",
+        "118.8931846",
+        "119.4315181"
+      ]
+    },
+    "query": "寒亭区"
+  },
+  "济宁市": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E6%B5%8E%E5%AE%81%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 220241055,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3286961,
+      "lat": "35.4125047",
+      "lon": "116.5849266",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 10,
+      "importance": 0.5601496625652843,
+      "addresstype": "city",
+      "name": "济宁市",
+      "display_name": "济宁市, 山东省, 中国",
+      "boundingbox": [
+        "34.4306468",
+        "35.9815230",
+        "115.8648677",
+        "117.5888670"
+      ]
+    },
+    "query": "济宁市"
+  },
+  "禹州市": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E7%A6%B9%E5%B7%9E%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 221035494,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3283886,
+      "lat": "34.2038840",
+      "lon": "113.3787450",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.49988174881634756,
+      "addresstype": "county",
+      "name": "禹州市",
+      "display_name": "禹州市, 许昌市, 河南省, 中国",
+      "boundingbox": [
+        "33.9867826",
+        "34.4081202",
+        "113.0576904",
+        "113.6523647"
+      ]
+    },
+    "query": "禹州市"
+  },
+  "伊川县": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E4%BC%8A%E5%B7%9D%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 220637408,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 3246489,
+      "lat": "34.4043420",
+      "lon": "112.4744933",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.46120308300264273,
+      "addresstype": "county",
+      "name": "伊川县",
+      "display_name": "伊川县, 洛阳市, 河南省, 中国",
+      "boundingbox": [
+        "34.2141465",
+        "34.5448001",
+        "112.1995601",
+        "112.7688606"
+      ]
+    },
+    "query": "伊川县"
+  },
+  "和田地区": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E5%92%8C%E7%94%B0%E5%9C%B0%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 213232348,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 2748331,
+      "lat": "37.1110359",
+      "lon": "79.9208930",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5234400788769805,
+      "addresstype": "city",
+      "name": "和田市 خوتەن شەھىرى",
+      "display_name": "和田市 خوتەن شەھىرى, 和田地区 خوتەن ۋىلايىتى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国",
+      "boundingbox": [
+        "36.9179896",
+        "37.8393726",
+        "79.8318098",
+        "80.4531424"
+      ]
+    },
+    "query": "和田地区"
+  },
+  "青海省": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E9%9D%92%E6%B5%B7%E7%9C%81&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 219314572,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 153269,
+      "lat": "36.0000000",
+      "lon": "96.0000000",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 8,
+      "importance": 0.6483123384772452,
+      "addresstype": "state",
+      "name": "青海省",
+      "display_name": "青海省, 中国",
+      "boundingbox": [
+        "31.6018045",
+        "39.2124324",
+        "89.4022166",
+        "103.0686714"
+      ]
+    },
+    "query": "青海省"
+  },
+  "甘肃省": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E7%94%98%E8%82%83%E7%9C%81&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 219816079,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 153314,
+      "lat": "38.0000001",
+      "lon": "101.9999999",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 8,
+      "importance": 0.6746391871576334,
+      "addresstype": "state",
+      "name": "甘肃省",
+      "display_name": "甘肃省, 中国",
+      "boundingbox": [
+        "32.5987136",
+        "42.7945849",
+        "92.3387676",
+        "108.7105309"
+      ]
+    },
+    "query": "甘肃省"
+  },
+  "天山天池": {
+    "query": "天池 阜康市",
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E5%A4%A9%E6%B1%A0+%E9%98%9C%E5%BA%B7%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 213332422,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 261159583,
+      "lat": "43.8847505",
+      "lon": "88.1319749",
+      "category": "water",
+      "type": "lake",
+      "place_rank": 20,
+      "importance": 0.4227544019255127,
+      "addresstype": "lake",
+      "name": "天池",
+      "display_name": "天池, 阜康市 فۇكاڭ شەھىرى, 昌吉回族自治州 سانجى خۇيزۇ ئاپتونوم ئوبلاستى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国",
+      "boundingbox": [
+        "43.8695959",
+        "43.8998976",
+        "88.1189201",
+        "88.1418462"
+      ]
+    }
+  },
+  "青海湖": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E9%9D%92%E6%B5%B7%E6%B9%96&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 220219015,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 404236,
+      "lat": "36.8925859",
+      "lon": "100.0501919",
+      "category": "water",
+      "type": "lake",
+      "place_rank": 20,
+      "importance": 0.5185713837942769,
+      "addresstype": "lake",
+      "name": "青海湖 མཚོ་སྔོན་པོ།",
+      "display_name": "青海湖 མཚོ་སྔོན་པོ།, 青海省, 中国",
+      "boundingbox": [
+        "36.5481062",
+        "37.2374097",
+        "99.6104733",
+        "100.7602018"
+      ]
+    },
+    "query": "青海湖"
+  },
+  "昆仑山脉": {
+    "query": "Kunlun Mountains",
+    "query_url": "https://nominatim.openstreetmap.org/search?q=Kunlun+Mountains&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 216351702,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 5156487021,
+      "lat": "35.3100000",
+      "lon": "80.9700000",
+      "category": "natural",
+      "type": "mountain_range",
+      "place_rank": 18,
+      "importance": 0.5300651737129012,
+      "addresstype": "mountain_range",
+      "name": "Kunlun Mountains",
+      "display_name": "Kunlun Mountains, 东汝乡, 日土县 རུ་ཐོག་རྫོང་།, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国",
+      "boundingbox": [
+        "35.3099500",
+        "35.3100500",
+        "80.9699500",
+        "80.9700500"
+      ]
+    }
+  },
+  "祁连山": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E7%A5%81%E8%BF%9E%E5%B1%B1&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 219741793,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 2036588867,
+      "lat": "38.3619966",
+      "lon": "99.8691655",
+      "category": "natural",
+      "type": "mountain_range",
+      "place_rank": 18,
+      "importance": 0.4679427114521212,
+      "addresstype": "mountain_range",
+      "name": "祁连山",
+      "display_name": "祁连山, 康乐镇, 肃南裕固族自治县, 张掖市, 甘肃省, 734400, 中国",
+      "boundingbox": [
+        "38.3619466",
+        "38.3620466",
+        "99.8691155",
+        "99.8692155"
+      ]
+    },
+    "query": "祁连山"
+  },
+  "敦煌市": {
+    "query_url": "https://nominatim.openstreetmap.org/search?q=%E6%95%A6%E7%85%8C%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+    "accessed_on": "2026-09-30",
+    "result": {
+      "place_id": 213690296,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 2707420,
+      "lat": "40.1409667",
+      "lon": "94.6637876",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5611403472673288,
+      "addresstype": "city",
+      "name": "敦煌市",
+      "display_name": "敦煌市, 酒泉市, 甘肃省, 736200, 中国",
+      "boundingbox": [
+        "39.6426638",
+        "41.5713535",
+        "92.7023993",
+        "95.5037819"
+      ]
+    },
+    "query": "敦煌市"
+  }
+}

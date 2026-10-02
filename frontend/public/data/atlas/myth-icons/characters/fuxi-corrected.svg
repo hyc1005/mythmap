@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1021 1540" width="1021" height="1540" role="img" aria-labelledby="title desc">
+  <title id="title">伏羲与先天八卦</title>
+  <desc id="desc">按传统先天图式绘制的八卦。图上为南、下为北、左为东、右为西。</desc>
+  <image href="fuxi-clean.png" width="1021" height="1540" />
+  <g fill="none" stroke="#735037" stroke-opacity=".65" stroke-width="2">
+    <circle cx="790" cy="258" r="116" stroke-dasharray="2 8" />
+  </g>
+  <g fill="#745139" font-family="Noto Serif SC, SimSun, serif" font-size="19" text-anchor="middle">
+    <text x="790" y="83">南</text><text x="790" y="447">北</text>
+    <text x="628" y="265">东</text><text x="952" y="265">西</text>
+  </g>
+  <g fill="#9b512b" font-family="Noto Serif SC, SimSun, serif" font-size="20" text-anchor="middle">
+    <text x="790" y="117">乾</text><text x="697" y="154">震</text>
+    <text x="662" y="258">离</text><text x="697" y="363">兑</text>
+    <text x="790" y="401">坤</text><text x="883" y="363">艮</text>
+    <text x="918" y="258">坎</text><text x="883" y="154">巽</text>
+  </g>
+  <g fill="#47372a" stroke="#47372a" stroke-width="5" stroke-linecap="round">
+    <g transform="translate(768 126)"><path d="M0 0h44M0 9h44M0 18h44" /></g>
+    <g transform="translate(675 163)"><path d="M0 0h18m8 0h18M0 9h18m8 0h18M0 18h44" /></g>
+    <g transform="translate(640 267)"><path d="M0 0h44M0 9h18m8 0h18M0 18h44" /></g>
+    <g transform="translate(675 372)"><path d="M0 0h18m8 0h18M0 9h44M0 18h44" /></g>
+    <g transform="translate(768 410)"><path d="M0 0h18m8 0h18M0 9h18m8 0h18M0 18h18m8 0h18" /></g>
+    <g transform="translate(861 372)"><path d="M0 0h44M0 9h18m8 0h18M0 18h18m8 0h18" /></g>
+    <g transform="translate(896 267)"><path d="M0 0h18m8 0h18M0 9h44M0 18h18m8 0h18" /></g>
+    <g transform="translate(861 163)"><path d="M0 0h44M0 9h44M0 18h18m8 0h18" /></g>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-09-30-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "07-connection-1",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.97,
+            35.31
+          ],
+          [
+            88.1319749,
+            43.8847505
+          ]
+        ]
+      },
+      "properties": {
+        "id": "07-connection-1",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "昆仑山—天池候选连接",
+        "layer_role": "narrative_connection",
+        "evidence_kind": "cartographic_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03",
+          "report-07-02"
+        ],
+        "basis_note": "连接两种现代候选解释；直线不表示实际道路、方向顺序或行程。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "candidate_ids": [
+          "07-03-candidate-1",
+          "07-02-candidate-1"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-connection-2",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            99.8691655,
+            38.3619966
+          ],
+          [
+            100.0501919,
+            36.8925859
+          ]
+        ]
+      },
+      "properties": {
+        "id": "07-connection-2",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "祁连山—青海湖候选连接",
+        "layer_role": "narrative_connection",
+        "evidence_kind": "cartographic_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03",
+          "report-07-02"
+        ],
+        "basis_note": "连接两种现代候选解释；直线不表示实际道路、方向顺序或行程。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "candidate_ids": [
+          "07-03-candidate-2",
+          "07-02-candidate-2"
+        ],
+        "analysis_eligible": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-09-30-v1",
+  "note": "叙事对象保持空几何，layout_hint 为独立示意坐标。",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "01-01",
+      "geometry": null,
+      "properties": {
+        "id": "01-01",
+        "stage_id": "00",
+        "entity_id": "01-01",
+        "name": "盘古开天",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-01"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-3f94c01d2b91"
+        ],
+        "people": [
+          "盘古"
+        ],
+        "candidate_ids": [],
+        "source_text": "《三五历纪》（三国·吴·徐整），佚文见《艺文类聚》卷一引、《太平御览》卷二引",
+        "source_quote": "天地浑沌如鸡子，盘古生其中。万八千岁，天地开辟，阳清为天，阴浊为地。盘古在其中，一日九变，神于天，圣于地。天日高一丈，地日厚一丈，盘古日长一丈。如此万八千岁，天数极高，地数极深，盘古极长。",
+        "commentary": "原书已佚，仅存佚文。袁珂《古神话选释》有辑录。原书未载具体地理方位。",
+        "modern_identification": "袁珂认为盘古神话源于南方少数民族（盘瓠传说影响）；茅盾《中国神话研究ABC》认为盘古神话可能受印度创世神话影响。盘古文献晚出（三国徐整），非先秦旧闻。",
+        "modern_source": "袁珂《古神话选释》（1979）；茅盾《中国神话研究ABC》（1929）",
+        "dispute": "盘古文献晚出（三国徐整），非先秦旧闻；盘古与盘瓠关系有争议；是否受外来影响有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "盘古",
+          "开天",
+          "晚出文献"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "artwork": "scenes/pangu-opening.png",
+        "artworks": [
+          "scenes/pangu-opening.png"
+        ],
+        "map_visible": false,
+        "presentation": "scene",
+        "location_label": "创世场景·示意"
+      }
+    }
+  ]
+}

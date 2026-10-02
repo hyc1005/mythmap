@@ -1,0 +1,290 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-09-30-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "02-01",
+      "geometry": null,
+      "properties": {
+        "id": "02-01",
+        "stage_id": "02",
+        "entity_id": "02-01",
+        "name": "伏羲画卦",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-01"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-1d04ccb80940"
+        ],
+        "people": [
+          "伏羲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《周易·系辞下》（《十三经注疏》本）",
+        "source_quote": "古者包牺氏之王天下也，仰则观象于天，俯则观法于地，观鸟兽之文与地之宜，近取诸身，远取诸物，于是始作八卦，以通神明之德，以类万物之情。",
+        "commentary": "孔颖达疏：'包牺氏，伏羲也。'王弼、韩康伯注。原文未载具体画卦地点。",
+        "modern_identification": "传统认为伏羲画卦于'卦台山'（今甘肃天水）；陈恩林认为画卦地点不可考。画卦地点'卦台山'为后世附会，先秦两汉文献无明确记载。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）",
+        "dispute": "画卦地点'卦台山'为后世附会，先秦两汉文献无明确记载。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "伏羲",
+          "画卦",
+          "八卦"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          490,
+          405
+        ],
+        "artwork": "characters/fuxi.png",
+        "artworks": [
+          "characters/fuxi.png"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "story",
+        "map_visible": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02-02",
+      "geometry": null,
+      "properties": {
+        "id": "02-02",
+        "stage_id": "02",
+        "entity_id": "02-02",
+        "name": "女娲伏羲兄妹婚",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-02"
+        ],
+        "basis_note": "无《山海经》地点或方位依据；此点仅为章节故事索引的叙事锚点，不表示实际发生地或彼此距离。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-1d04ccb80940",
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "伏羲",
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《风俗通义》（东汉·应劭）；《独异志》（唐·李冗）卷下",
+        "source_quote": "女娲，伏羲之妹。（《风俗通义》）；昔宇宙初开之时，只有女娲兄妹二人在昆仑山，而天下未有人民。议以为夫妻，又自羞耻。兄即与妹上昆仑山，咒曰：'天若遣我兄妹二人为夫妻，而烟悉合；若不，使烟散。'于烟即合。（《独异志》）",
+        "commentary": "王利器校注引《路史》《绎史》参证。原文提及昆仑山。",
+        "modern_identification": "袁珂认为兄妹婚神话反映原始社会血缘婚；昆仑山为神话地名。兄妹婚神话见于唐代《独异志》，晚出。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王利器《风俗通义校注》（1981）",
+        "dispute": "兄妹婚神话见于唐代《独异志》，晚出；与女娲造人神话的关系有争议。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "伏羲",
+          "女娲",
+          "兄妹婚",
+          "昆仑"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          610,
+          330
+        ],
+        "artwork": "characters/fuxi.png",
+        "artworks": [
+          "characters/fuxi.png",
+          "nuwa.png"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "archive",
+        "map_visible": false,
+        "archive_note": "退出主线，保留不同出处的原始资料；不把不同女娲文献串成确定生平。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02-03",
+      "geometry": null,
+      "properties": {
+        "id": "02-03",
+        "stage_id": "02",
+        "entity_id": "02-03",
+        "name": "神农尝百草",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-8e17321f03fb"
+        ],
+        "people": [
+          "神农"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·修务训》（西汉·刘安），高诱注",
+        "source_quote": "神农尝百草之滋味，一日而遇七十毒。",
+        "commentary": "高诱注：'神农，炎帝也。'原文未载具体地点。",
+        "modern_identification": "传统认为神农尝百草于'神农架'（今湖北）；袁珂认为不可考。'神农架'地名晚出，先秦文献无记载。",
+        "modern_source": "袁珂《中国神话传说》（2004）",
+        "dispute": "'神农架'地名晚出，先秦文献无记载。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "神农",
+          "尝百草",
+          "炎帝"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          735,
+          405
+        ],
+        "artwork": "characters/shennong.png",
+        "artworks": [
+          "characters/shennong.png"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "story",
+        "map_visible": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02-04",
+      "geometry": null,
+      "properties": {
+        "id": "02-04",
+        "stage_id": "02",
+        "entity_id": "02-04",
+        "name": "燧人取火",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-04"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-ea6359c62512"
+        ],
+        "people": [
+          "燧人"
+        ],
+        "candidate_ids": [],
+        "source_text": "《韩非子·五蠹》（战国·韩非），王先慎《韩非子集解》",
+        "source_quote": "上古之世，人民少而禽兽众……民食果蓏蚌蛤，腥臊恶臭而伤害腹胃，民多疾病。有圣人作，钻燧取火以化腥臊，而民说之，使王天下，号之曰燧人氏。",
+        "commentary": "王先慎集解引卢文弨、顾广圻说。原文未载具体地点。",
+        "modern_identification": "袁珂认为燧人氏为传说时代部落；具体地点不可考。燧人氏为传说人物，无确切地理记载。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王先慎《韩非子集解》（1986）",
+        "dispute": "燧人氏为传说人物，无确切地理记载。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "燧人",
+          "取火"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          500,
+          555
+        ],
+        "artwork": "characters/suiren.png",
+        "artworks": [
+          "characters/suiren.png"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "story",
+        "map_visible": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02-05",
+      "geometry": null,
+      "properties": {
+        "id": "02-05",
+        "stage_id": "02",
+        "entity_id": "02-05",
+        "name": "有巢构木",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-05"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-ab7b8d362c73"
+        ],
+        "people": [
+          "有巢"
+        ],
+        "candidate_ids": [],
+        "source_text": "《韩非子·五蠹》（战国·韩非），王先慎《韩非子集解》",
+        "source_quote": "上古之世，人民少而禽兽众，人民不胜禽兽虫蛇。有圣人作，构木为巢以避群害，而民悦之，使王天下，号曰有巢氏。",
+        "commentary": "王先慎集解。原文未载具体地点。",
+        "modern_identification": "袁珂认为有巢氏为传说时代部落；具体地点不可考。有巢氏为传说人物，无确切地理记载。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王先慎《韩非子集解》（1986）",
+        "dispute": "有巢氏为传说人物，无确切地理记载。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "有巢",
+          "构木"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          720,
+          555
+        ],
+        "artwork": "characters/youchao.png",
+        "artworks": [
+          "characters/youchao.png"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "story",
+        "map_visible": true
+      }
+    }
+  ]
+}

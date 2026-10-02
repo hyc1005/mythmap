@@ -1,0 +1,319 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-09-30-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "07-01-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.920893,
+          37.1110359
+        ]
+      },
+      "properties": {
+        "id": "07-01-candidate-1",
+        "stage_id": "07",
+        "entity_id": "07-01",
+        "name": "穆天子见西王母 · 和田地区",
+        "label": "和田地区",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-01"
+        ],
+        "basis_note": "报告转述的西王母之邦新疆解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%92%8C%E7%94%B0%E5%9C%B0%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2748331,
+        "modern_display_name": "和田市 خوتەن شەھىرى, 和田地区 خوتەن ۋىلايىتى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国",
+        "reference_bbox": [
+          "36.9179896",
+          "37.8393726",
+          "79.8318098",
+          "80.4531424"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-01-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.0,
+          36.0
+        ]
+      },
+      "properties": {
+        "id": "07-01-candidate-2",
+        "stage_id": "07",
+        "entity_id": "07-01",
+        "name": "穆天子见西王母 · 青海省",
+        "label": "青海省",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-01"
+        ],
+        "basis_note": "报告列举的青海解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%9D%92%E6%B5%B7%E7%9C%81&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 153269,
+        "modern_display_name": "青海省, 中国",
+        "reference_bbox": [
+          "31.6018045",
+          "39.2124324",
+          "89.4022166",
+          "103.0686714"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-01-candidate-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.9999999,
+          38.0000001
+        ]
+      },
+      "properties": {
+        "id": "07-01-candidate-3",
+        "stage_id": "07",
+        "entity_id": "07-01",
+        "name": "穆天子见西王母 · 甘肃省",
+        "label": "甘肃省",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-01"
+        ],
+        "basis_note": "报告列举的甘肃解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%94%98%E8%82%83%E7%9C%81&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 153314,
+        "modern_display_name": "甘肃省, 中国",
+        "reference_bbox": [
+          "32.5987136",
+          "42.7945849",
+          "92.3387676",
+          "108.7105309"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-02-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.1319749,
+          43.8847505
+        ]
+      },
+      "properties": {
+        "id": "07-02-candidate-1",
+        "stage_id": "07",
+        "entity_id": "07-02",
+        "name": "瑶池宴 · 天山天池",
+        "label": "天山天池",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-02"
+        ],
+        "basis_note": "报告列举的瑶池天池解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%A4%A9%E6%B1%A0+%E9%98%9C%E5%BA%B7%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "way",
+        "osm_id": 261159583,
+        "modern_display_name": "天池, 阜康市 فۇكاڭ شەھىرى, 昌吉回族自治州 سانجى خۇيزۇ ئاپتونوم ئوبلاستى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国",
+        "reference_bbox": [
+          "43.8695959",
+          "43.8998976",
+          "88.1189201",
+          "88.1418462"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-02-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.0501919,
+          36.8925859
+        ]
+      },
+      "properties": {
+        "id": "07-02-candidate-2",
+        "stage_id": "07",
+        "entity_id": "07-02",
+        "name": "瑶池宴 · 青海湖",
+        "label": "青海湖",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-02"
+        ],
+        "basis_note": "报告列举的瑶池青海湖解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%9D%92%E6%B5%B7%E6%B9%96&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 404236,
+        "modern_display_name": "青海湖 མཚོ་སྔོན་པོ།, 青海省, 中国",
+        "reference_bbox": [
+          "36.5481062",
+          "37.2374097",
+          "99.6104733",
+          "100.7602018"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-03-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.97,
+          35.31
+        ]
+      },
+      "properties": {
+        "id": "07-03-candidate-1",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "升昆仑观黄帝之宫 · 昆仑山脉",
+        "label": "昆仑山脉",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03"
+        ],
+        "basis_note": "报告列举的昆仑山解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=Kunlun+Mountains&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "node",
+        "osm_id": 5156487021,
+        "modern_display_name": "Kunlun Mountains, 东汝乡, 日土县 རུ་ཐོག་རྫོང་།, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国",
+        "reference_bbox": [
+          "35.3099500",
+          "35.3100500",
+          "80.9699500",
+          "80.9700500"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-03-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.8691655,
+          38.3619966
+        ]
+      },
+      "properties": {
+        "id": "07-03-candidate-2",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "升昆仑观黄帝之宫 · 祁连山",
+        "label": "祁连山",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03"
+        ],
+        "basis_note": "报告列举的祁连山解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%A5%81%E8%BF%9E%E5%B1%B1&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "node",
+        "osm_id": 2036588867,
+        "modern_display_name": "祁连山, 康乐镇, 肃南裕固族自治县, 张掖市, 甘肃省, 734400, 中国",
+        "reference_bbox": [
+          "38.3619466",
+          "38.3620466",
+          "99.8691155",
+          "99.8692155"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.6637876,
+          40.1409667
+        ]
+      },
+      "properties": {
+        "id": "07-04-candidate-1",
+        "stage_id": "07",
+        "entity_id": "07-04",
+        "name": "纪迹弇山 · 敦煌市",
+        "label": "敦煌市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-04"
+        ],
+        "basis_note": "报告列举的弇山敦煌解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%95%A6%E7%85%8C%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2707420,
+        "modern_display_name": "敦煌市, 酒泉市, 甘肃省, 736200, 中国",
+        "reference_bbox": [
+          "39.6426638",
+          "41.5713535",
+          "92.7023993",
+          "95.5037819"
+        ],
+        "analysis_eligible": false
+      }
+    }
+  ]
+}

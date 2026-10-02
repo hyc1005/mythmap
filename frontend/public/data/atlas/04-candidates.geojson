@@ -1,0 +1,124 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-09-30-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "04-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.3506988,
+          35.1032403
+        ]
+      },
+      "properties": {
+        "id": "04-04-candidate-1",
+        "stage_id": "04",
+        "entity_id": "04-04",
+        "name": "鲧窃息壤 · 临沂市",
+        "label": "临沂市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-04-04"
+        ],
+        "basis_note": "报告列举的羽山山东解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E4%B8%B4%E6%B2%82%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2801712,
+        "modern_display_name": "临沂市, 山东省, 中国",
+        "reference_bbox": [
+          "34.3785778",
+          "36.2064568",
+          "117.4111247",
+          "119.1951150"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-04-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2171662,
+          34.5933134
+        ]
+      },
+      "properties": {
+        "id": "04-04-candidate-2",
+        "stage_id": "04",
+        "entity_id": "04-04",
+        "name": "鲧窃息壤 · 连云港市",
+        "label": "连云港市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-04-04"
+        ],
+        "basis_note": "报告列举的羽山江苏解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E8%BF%9E%E4%BA%91%E6%B8%AF%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3320347,
+        "modern_display_name": "连云港市, 江苏省, 中国",
+        "reference_bbox": [
+          "33.9854788",
+          "35.1470384",
+          "118.3955530",
+          "119.9302768"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-05-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.381767,
+          36.229963
+        ]
+      },
+      "properties": {
+        "id": "04-05-candidate-1",
+        "stage_id": "04",
+        "entity_id": "04-05",
+        "name": "尧禅舜 · 临汾市",
+        "label": "临汾市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-04-05"
+        ],
+        "basis_note": "报告转述尧都平阳的传统解释，非禅让发生点。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E4%B8%B4%E6%B1%BE%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3286003,
+        "modern_display_name": "临汾市, 山西省, 中国",
+        "reference_bbox": [
+          "35.3864681",
+          "36.9425810",
+          "110.3691109",
+          "112.5676034"
+        ],
+        "analysis_eligible": false
+      }
+    }
+  ]
+}

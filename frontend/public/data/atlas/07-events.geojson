@@ -1,0 +1,245 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+  "note": "Chapter 07 event feature geometries remain null. The layout_hint coordinates in catalog.json are only for page composition; the candidate modern locations and their proposed connections are not the itinerary shown on the interactive map.",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "07-01",
+      "geometry": null,
+      "properties": {
+        "id": "07-01",
+        "stage_id": "07",
+        "entity_id": "07-01",
+        "name": "穆天子见西王母",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-01"
+        ],
+        "basis_note": "见西王母条在卷三。西王母为《穆天子传》叙事形象，不与《山海经》不同篇目中的形态混同；西王母之邦位置有争议。本点仅作叙事锚点，图面排布不表示真实地点。",
+        "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+        "person_ids": [
+          "person-3b6cc525942e",
+          "person-e5d01cdec928"
+        ],
+        "people": [
+          "周穆王",
+          "西王母（穆天子传）"
+        ],
+        "candidate_ids": [
+          "07-01-candidate-1",
+          "07-01-candidate-2",
+          "07-01-candidate-3"
+        ],
+        "source_text": "《穆天子传》卷三（郭璞注本）",
+        "source_quote": "吉日甲子，天子宾于西王母。乃执白圭玄璧，以见西王母。",
+        "commentary": "郭璞注文描述西王母「如人，虎齿，蓬发戴胜，善啸」；本画依《穆天子传》叙事与注文作艺术解释，不等同《山海经》异篇形态。",
+        "modern_identification": "顾实《穆天子传西征讲疏》认为西王母之邦在今新疆和田一带；王贻梁《穆天子传通释》认为在今甘肃、青海一带。西王母之邦具体位置有争议（新疆/甘肃/青海）。",
+        "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+        "dispute": "西王母之邦具体位置有争议（新疆/甘肃/青海）。",
+        "category": "周穆王西巡",
+        "tags": [
+          "周穆王",
+          "西王母",
+          "西巡",
+          "见西王母"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-07-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "source_url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
+        "source_review_note": "已对照维基文库所录《穆天子传》相应卷次核对节引；现代学者归属未逐版复核。卷三底本在瑶池宴诗句作「丘陵自出」，异本有「山陵」字样；弇山条续文释读保留疑问。",
+        "location_label": "西王母之邦·位置存争议·叙事锚点示意",
+        "layout_hint": [
+          610,
+          170
+        ],
+        "artwork": "stories/ch07-mu-meets-xiwangmu.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-02",
+      "geometry": null,
+      "properties": {
+        "id": "07-02",
+        "stage_id": "07",
+        "entity_id": "07-02",
+        "name": "瑶池宴",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-02"
+        ],
+        "basis_note": "瑶池宴在卷三紧接甲子相见叙事次日「乙丑」；瑶池解释有争议。本点不选候选湖泊，不表示地理距离或行程线。",
+        "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+        "person_ids": [
+          "person-3b6cc525942e",
+          "person-e5d01cdec928"
+        ],
+        "people": [
+          "周穆王",
+          "西王母（穆天子传）"
+        ],
+        "candidate_ids": [
+          "07-02-candidate-1",
+          "07-02-candidate-2"
+        ],
+        "source_text": "《穆天子传》卷三（郭璞注本）",
+        "source_quote": "乙丑，天子觞西王母于瑶池之上。西王母为天子谣曰：「白云在天，丘陵自出。道里悠远，山川间之。将子无死，尚能复来。」天子答之曰：「予归东土，和治诸夏。万民平均，吾顾见汝。比及三年，将复而野。」",
+        "commentary": "本条原文记乙丑宴于瑶池并歌答；本章依维基文库所录底本作「丘陵自出」，不同传本有「山陵」异文。",
+        "modern_identification": "顾实认为瑶池在今新疆天池；王贻梁认为瑶池在今青海湖一带。瑶池具体位置有争议（新疆天池/青海湖/其他）。",
+        "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+        "dispute": "瑶池具体位置有争议（新疆天池/青海湖/其他）。",
+        "category": "周穆王西巡",
+        "tags": [
+          "周穆王",
+          "西王母",
+          "瑶池",
+          "宴"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-07-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "source_url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
+        "source_review_note": "已对照维基文库所录《穆天子传》相应卷次核对节引；现代学者归属未逐版复核。卷三底本在瑶池宴诗句作「丘陵自出」，异本有「山陵」字样；弇山条续文释读保留疑问。",
+        "location_label": "瑶池·位置存争议·叙事锚点示意",
+        "layout_hint": [
+          780,
+          575
+        ],
+        "artwork": "stories/ch07-yaochi-banquet.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-03",
+      "geometry": null,
+      "properties": {
+        "id": "07-03",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "升昆仑观黄帝之宫",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03"
+        ],
+        "basis_note": "此事见卷二：原文记穆王升昆仑之丘观黄帝之宫，并记丰隆之葬。昆仑现代解释有争议。本点只标叙事条目，不表示山体定位或真实行程。",
+        "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+        "person_ids": [
+          "person-3b6cc525942e",
+          "person-ea2e022d685f"
+        ],
+        "people": [
+          "周穆王",
+          "黄帝"
+        ],
+        "candidate_ids": [
+          "07-03-candidate-1",
+          "07-03-candidate-2"
+        ],
+        "source_text": "《穆天子传》卷二（郭璞注本）",
+        "source_quote": "天子升于昆仑之丘，以观黄帝之宫，而丰隆之葬，以诏后世。",
+        "commentary": "郭璞注文解释黄帝巡游四海、登昆仑山并于其上起宫室；插画不将注文解释当作现实地理证据。",
+        "modern_identification": "顾实认为昆仑之丘在今新疆昆仑山；王贻梁认为昆仑之丘在今甘肃祁连山一带。昆仑之丘具体位置有争议（新疆昆仑山/甘肃祁连山/其他）。",
+        "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+        "dispute": "昆仑之丘具体位置有争议（新疆昆仑山/甘肃祁连山/其他）。",
+        "category": "周穆王西巡",
+        "tags": [
+          "周穆王",
+          "昆仑",
+          "黄帝之宫",
+          "西巡"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-07-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "source_url": "https://zh.wikisource.org/zh-hans/穆天子傳/卷二",
+        "source_review_note": "已对照维基文库所录《穆天子传》相应卷次核对节引；现代学者归属未逐版复核。卷三底本在瑶池宴诗句作「丘陵自出」，异本有「山陵」字样；弇山条续文释读保留疑问。",
+        "location_label": "昆仑之丘·位置存争议·叙事锚点示意",
+        "layout_hint": [
+          180,
+          540
+        ],
+        "artwork": "stories/ch07-mu-kunlun-palace.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-04",
+      "geometry": null,
+      "properties": {
+        "id": "07-04",
+        "stage_id": "07",
+        "entity_id": "07-04",
+        "name": "纪迹弇山",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-04"
+        ],
+        "basis_note": "卷三于瑶池宴后记穆王升弇山纪迹，原文又记「而树之槐」。弇山位置有争议。本点为叙事锚点，不按现代候选地点或路线落图。所据底本文字续作「眉曰」，释读存疑；插画不臆写铭文。",
+        "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+        "person_ids": [
+          "person-3b6cc525942e"
+        ],
+        "people": [
+          "周穆王"
+        ],
+        "candidate_ids": [
+          "07-04-candidate-1"
+        ],
+        "source_text": "《穆天子传》卷三（郭璞注本）",
+        "source_quote": "天子遂驱升于弇山，乃纪其迹于弇山之石，而树之槐。",
+        "commentary": "郭璞注文称弇山即弇兹山，为日入之所。底本文字续作「眉曰」，释读存疑；图中不臆写铭文。",
+        "modern_identification": "顾实认为弇山在今甘肃敦煌一带；王贻梁认为弇山在今新疆东部。弇山具体位置有争议。",
+        "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+        "dispute": "弇山具体位置有争议。",
+        "category": "周穆王西巡",
+        "tags": [
+          "周穆王",
+          "弇山",
+          "纪迹",
+          "西巡"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-07-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "source_url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
+        "source_review_note": "已对照维基文库所录《穆天子传》相应卷次核对节引；现代学者归属未逐版复核。卷三底本在瑶池宴诗句作「丘陵自出」，异本有「山陵」字样；弇山条续文释读保留疑问。",
+        "location_label": "弇山·位置存争议·叙事锚点示意",
+        "layout_hint": [
+          1030,
+          260
+        ],
+        "artwork": "stories/ch07-yan-mountain-inscription.png"
+      }
+    }
+  ]
+}

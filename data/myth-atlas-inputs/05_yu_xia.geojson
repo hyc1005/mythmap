@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "stage": "05_yu_xia",
+    "stage_name": "禹夏时期",
+    "description": "夏朝建立前后的神话",
+    "core_sources": [
+      "《尚书·禹贡》",
+      "《尚书·益稷》",
+      "《史记·夏本纪》",
+      "《山海经·大荒北经》",
+      "《汉书·武帝纪》颜师古注引《淮南子》"
+    ],
+    "total_features": 4
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.5, 34.7]
+      },
+      "properties": {
+        "id": "05-01",
+        "name": "大禹治水",
+        "category": "禹夏神话",
+        "stage": "05_yu_xia",
+        "source_text": "《尚书·禹贡》（《十三经注疏》本）",
+        "source_quote": "禹敷土，随山刊木，奠高山大川。",
+        "commentary": "孔颖达疏：'禹治水，随山刊木。'原文记载九州（冀、兖、青、徐、扬、荆、豫、梁、雍）。",
+        "modern_identification": "王晖认为《禹贡》成书于战国，反映当时地理认知；九州范围有争议。九州范围有争议；《禹贡》成书年代有争议。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；孔颖达《尚书正义》（十三经注疏）",
+        "precision": "approximate",
+        "precision_note": "九州范围有争议；《禹贡》成书年代有争议。",
+        "coordinates_basis": "按古籍相对方位推算的示意坐标（WGS84）。禹治水涉及九州，此处取中原地区中心位置作为示意坐标。",
+        "modern_coordinates": [110.5, 34.7],
+        "confidence": 0.5,
+        "dispute": "九州范围有争议；《禹贡》成书年代有争议。",
+        "tags": ["禹夏", "大禹", "治水", "九州", "禹贡"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "05-02",
+        "name": "禹杀相柳",
+        "category": "禹夏神话",
+        "stage": "05_yu_xia",
+        "source_text": "《山海经·大荒北经》（郭璞注本）",
+        "source_quote": "共工之臣曰相柳氏，九首，以食于九山。禹杀相柳，其血腥，不可以树五谷种。禹厥之，三仞三沮，乃以为众帝之台。",
+        "commentary": "郭璞注：'相柳，共工之臣。'郝懿行《山海经笺疏》。原文提及众帝之台，但未载具体位置。",
+        "modern_identification": "袁珂认为相柳为神话中的九首蛇神；众帝之台为神话建筑。众帝之台具体位置不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "precision": "legendary",
+        "precision_note": "众帝之台具体位置不可考。",
+        "coordinates_basis": "原文提及众帝之台，但未载具体位置，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.2,
+        "dispute": "众帝之台具体位置不可考。",
+        "tags": ["禹夏", "大禹", "相柳", "众帝之台"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [117.0, 32.9]
+      },
+      "properties": {
+        "id": "05-03",
+        "name": "禹娶涂山女",
+        "category": "禹夏神话",
+        "stage": "05_yu_xia",
+        "source_text": "《尚书·益稷》（《十三经注疏》本）",
+        "source_quote": "禹曰：'予娶涂山，辛壬癸甲，启呱呱而泣，予弗子，惟荒度土功。'",
+        "commentary": "孔颖达疏：'涂山，国名。'",
+        "modern_identification": "传统认为涂山在今安徽怀远（一说重庆南岸）；陈恩林认为涂山在今安徽怀远。涂山具体位置有争议（安徽怀远/重庆南岸/浙江会稽）。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；孔颖达《尚书正义》（十三经注疏）",
+        "precision": "disputed",
+        "precision_note": "涂山具体位置有争议（安徽怀远/重庆南岸/浙江会稽）。",
+        "coordinates_basis": "按古籍相对方位推算的示意坐标（WGS84）。孔颖达疏'涂山，国名'，传统认为涂山在今安徽怀远。此处取今安徽怀远作为示意坐标。",
+        "modern_coordinates": [117.0, 32.9],
+        "confidence": 0.4,
+        "dispute": "涂山具体位置有争议（安徽怀远/重庆南岸/浙江会稽）。",
+        "tags": ["禹夏", "大禹", "涂山", "涂山女"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.0, 34.6]
+      },
+      "properties": {
+        "id": "05-04",
+        "name": "启母化石",
+        "category": "禹夏神话",
+        "stage": "05_yu_xia",
+        "source_text": "《汉书·武帝纪》颜师古注引《淮南子》（今本《淮南子》无此文）",
+        "source_quote": "禹治鸿水，通轘辕山，化为熊。谓涂山氏曰：'欲饷，闻鼓声乃来。'禹跳石，误中鼓。涂山氏往，见禹方作熊，惭而去。至嵩高山下，化为石，方生启。禹曰：'归我子！'石破北方而启生。",
+        "commentary": "颜师古注引《淮南子》。原文提及嵩高山。",
+        "modern_identification": "袁珂认为启母化石神话源于生殖崇拜；嵩山在今河南登封。启母化石事不见于今本《淮南子》，为颜师古注引佚文；嵩山位置明确。",
+        "modern_source": "袁珂《中国神话传说》（2004）；颜师古《汉书注》（唐）",
+        "precision": "approximate",
+        "precision_note": "启母化石事不见于今本《淮南子》，为颜师古注引佚文；嵩山位置明确。",
+        "coordinates_basis": "按古籍相对方位推算的示意坐标（WGS84）。原文提及嵩高山，颜师古注'嵩高山，即嵩山'。此处取今河南登封嵩山作为示意坐标。",
+        "modern_coordinates": [113.0, 34.6],
+        "confidence": 0.55,
+        "dispute": "启母化石事不见于今本《淮南子》，为颜师古注引佚文。",
+        "tags": ["禹夏", "启母", "化石", "嵩山", "启"]
+      }
+    }
+  ]
+}

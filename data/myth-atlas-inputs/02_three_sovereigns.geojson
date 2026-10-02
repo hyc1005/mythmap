@@ -1,0 +1,128 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "stage": "02_three_sovereigns",
+    "stage_name": "三皇五氏阶段",
+    "description": "人类文明起源阶段的神话",
+    "core_sources": [
+      "《周易·系辞下》",
+      "《韩非子·五蠹》",
+      "《淮南子·修务训》",
+      "《风俗通义》",
+      "《独异志》（唐·李冗）"
+    ],
+    "total_features": 5
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "02-01",
+        "name": "伏羲画卦",
+        "category": "三皇五氏",
+        "stage": "02_three_sovereigns",
+        "source_text": "《周易·系辞下》（《十三经注疏》本）",
+        "source_quote": "古者包牺氏之王天下也，仰则观象于天，俯则观法于地，观鸟兽之文与地之宜，近取诸身，远取诸物，于是始作八卦，以通神明之德，以类万物之情。",
+        "commentary": "孔颖达疏：'包牺氏，伏羲也。'王弼、韩康伯注。原文未载具体画卦地点。",
+        "modern_identification": "传统认为伏羲画卦于'卦台山'（今甘肃天水）；陈恩林认为画卦地点不可考。画卦地点'卦台山'为后世附会，先秦两汉文献无明确记载。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）",
+        "precision": "unlocatable",
+        "precision_note": "画卦地点'卦台山'为后世附会，先秦两汉文献无明确记载。",
+        "coordinates_basis": "无古籍相对方位记载，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.2,
+        "dispute": "画卦地点'卦台山'为后世附会，先秦两汉文献无明确记载。",
+        "tags": ["三皇", "伏羲", "画卦", "八卦"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "02-02",
+        "name": "女娲伏羲兄妹婚",
+        "category": "三皇五氏",
+        "stage": "02_three_sovereigns",
+        "source_text": "《风俗通义》（东汉·应劭）；《独异志》（唐·李冗）卷下",
+        "source_quote": "女娲，伏羲之妹。（《风俗通义》）；昔宇宙初开之时，只有女娲兄妹二人在昆仑山，而天下未有人民。议以为夫妻，又自羞耻。兄即与妹上昆仑山，咒曰：'天若遣我兄妹二人为夫妻，而烟悉合；若不，使烟散。'于烟即合。（《独异志》）",
+        "commentary": "王利器校注引《路史》《绎史》参证。原文提及昆仑山。",
+        "modern_identification": "袁珂认为兄妹婚神话反映原始社会血缘婚；昆仑山为神话地名。兄妹婚神话见于唐代《独异志》，晚出。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王利器《风俗通义校注》（1981）",
+        "precision": "legendary",
+        "precision_note": "兄妹婚神话见于唐代《独异志》，晚出。昆仑山为神话地名，具体位置不可考。",
+        "coordinates_basis": "原文提及昆仑山，但昆仑山为神话地名，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.25,
+        "dispute": "兄妹婚神话见于唐代《独异志》，晚出；与女娲造人神话的关系有争议。",
+        "tags": ["三皇", "伏羲", "女娲", "兄妹婚", "昆仑"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "02-03",
+        "name": "神农尝百草",
+        "category": "三皇五氏",
+        "stage": "02_three_sovereigns",
+        "source_text": "《淮南子·修务训》（西汉·刘安），高诱注",
+        "source_quote": "神农尝百草之滋味，一日而遇七十毒。",
+        "commentary": "高诱注：'神农，炎帝也。'原文未载具体地点。",
+        "modern_identification": "传统认为神农尝百草于'神农架'（今湖北）；袁珂认为不可考。'神农架'地名晚出，先秦文献无记载。",
+        "modern_source": "袁珂《中国神话传说》（2004）",
+        "precision": "unlocatable",
+        "precision_note": "'神农架'地名晚出，先秦文献无记载。",
+        "coordinates_basis": "无古籍相对方位记载，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.15,
+        "dispute": "'神农架'地名晚出，先秦文献无记载。",
+        "tags": ["三皇", "神农", "尝百草", "炎帝"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "02-04",
+        "name": "燧人取火",
+        "category": "三皇五氏",
+        "stage": "02_three_sovereigns",
+        "source_text": "《韩非子·五蠹》（战国·韩非），王先慎《韩非子集解》",
+        "source_quote": "上古之世，人民少而禽兽众……民食果蓏蚌蛤，腥臊恶臭而伤害腹胃，民多疾病。有圣人作，钻燧取火以化腥臊，而民说之，使王天下，号之曰燧人氏。",
+        "commentary": "王先慎集解引卢文弨、顾广圻说。原文未载具体地点。",
+        "modern_identification": "袁珂认为燧人氏为传说时代部落；具体地点不可考。燧人氏为传说人物，无确切地理记载。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王先慎《韩非子集解》（1986）",
+        "precision": "unlocatable",
+        "precision_note": "燧人氏为传说人物，无确切地理记载。",
+        "coordinates_basis": "无古籍相对方位记载，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.1,
+        "dispute": "燧人氏为传说人物，无确切地理记载。",
+        "tags": ["三皇", "燧人", "取火"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "02-05",
+        "name": "有巢构木",
+        "category": "三皇五氏",
+        "stage": "02_three_sovereigns",
+        "source_text": "《韩非子·五蠹》（战国·韩非），王先慎《韩非子集解》",
+        "source_quote": "上古之世，人民少而禽兽众，人民不胜禽兽虫蛇。有圣人作，构木为巢以避群害，而民悦之，使王天下，号曰有巢氏。",
+        "commentary": "王先慎集解。原文未载具体地点。",
+        "modern_identification": "袁珂认为有巢氏为传说时代部落；具体地点不可考。有巢氏为传说人物，无确切地理记载。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王先慎《韩非子集解》（1986）",
+        "precision": "unlocatable",
+        "precision_note": "有巢氏为传说人物，无确切地理记载。",
+        "coordinates_basis": "无古籍相对方位记载，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.1,
+        "dispute": "有巢氏为传说人物，无确切地理记载。",
+        "tags": ["三皇", "有巢", "构木"]
+      }
+    }
+  ]
+}

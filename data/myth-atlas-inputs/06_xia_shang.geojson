@@ -1,0 +1,142 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "stage": "06_xia_shang",
+    "stage_name": "夏商之际",
+    "description": "夏商更替时期的神话",
+    "core_sources": [
+      "《左传·襄公四年》",
+      "《左传·哀公元年》",
+      "《史记·夏本纪》",
+      "《吕氏春秋·本味》"
+    ],
+    "total_features": 5
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.5, 35.6]
+      },
+      "properties": {
+        "id": "06-01",
+        "name": "后羿代夏",
+        "category": "夏商神话",
+        "stage": "06_xia_shang",
+        "source_text": "《左传·襄公四年》（《十三经注疏》本）",
+        "source_quote": "昔有夏之方衰也，后羿自鉏迁于穷石，因夏民以代夏政。",
+        "commentary": "杜预注：'后羿，有穷氏之君也。'孔颖达疏。原文提及鉏、穷石。",
+        "modern_identification": "陈恩林认为鉏在今河南滑县一带；穷石在今山东德州一带。后羿（有穷氏）与大羿（射日）必须区分；鉏、穷石具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+        "precision": "approximate",
+        "precision_note": "后羿（有穷氏）与大羿（射日）必须区分；鉏、穷石具体位置有争议。",
+        "coordinates_basis": "按古籍相对方位推算的示意坐标（WGS84）。杜预注'鉏，羿所居邑'，陈恩林认为鉏在今河南滑县一带。此处取今河南滑县作为示意坐标。",
+        "modern_coordinates": [114.5, 35.6],
+        "confidence": 0.45,
+        "dispute": "后羿（有穷氏）与大羿（射日）必须区分；鉏、穷石具体位置有争议。",
+        "tags": ["夏商", "后羿", "代夏", "有穷氏", "鉏"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [117.6, 36.7]
+      },
+      "properties": {
+        "id": "06-02",
+        "name": "寒浞之乱",
+        "category": "夏商神话",
+        "stage": "06_xia_shang",
+        "source_text": "《左传·襄公四年》（《十三经注疏》本）",
+        "source_quote": "寒浞，伯明氏之谗子弟也。伯明后寒弃之，夷羿收之，信而使之，以为己相。浞行媚于内而施赂于外，愚弄其民而虞羿于田。树之诈慝以取其国家，外内咸服。羿犹不悛，将归自田，家众杀而亨之。",
+        "commentary": "杜预注：'寒浞，寒国伯明氏之谗子弟。'原文提及寒国。",
+        "modern_identification": "陈恩林认为寒国在今山东潍坊一带。寒国具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+        "precision": "approximate",
+        "precision_note": "寒国具体位置有争议。",
+        "coordinates_basis": "按古籍相对方位推算的示意坐标（WGS84）。杜预注'寒国，北海平寿县有寒亭'，陈恩林认为寒国在今山东潍坊一带。此处取今山东潍坊作为示意坐标。",
+        "modern_coordinates": [117.6, 36.7],
+        "confidence": 0.4,
+        "dispute": "寒国具体位置有争议。",
+        "tags": ["夏商", "寒浞", "寒国", "乱"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.3, 34.4]
+      },
+      "properties": {
+        "id": "06-03",
+        "name": "少康中兴",
+        "category": "夏商神话",
+        "stage": "06_xia_shang",
+        "source_text": "《左传·哀公元年》（《十三经注疏》本）",
+        "source_quote": "昔有过浇杀斟灌以伐斟鄩，灭夏后相。后缗方娠，逃出自窦，归于有仍，生少康焉。为仍牧正，惎浇能戒之。浇使椒求之，逃奔有虞，为之庖正，以除其害。虞思于是妻之以二姚，而邑诸纶。有田一成，有众一旅，能布其德而兆其谋，以收夏众，抚其官职。",
+        "commentary": "杜预注：'少康，夏后相之子。'原文提及有仍、有虞、纶。",
+        "modern_identification": "陈恩林认为有仍在今山东济宁一带；有虞在今河南虞城一带；纶在今河南商丘一带。有仍、有虞、纶具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+        "precision": "approximate",
+        "precision_note": "有仍、有虞、纶具体位置有争议。",
+        "coordinates_basis": "按古籍相对方位推算的示意坐标（WGS84）。陈恩林认为有仍在今山东济宁一带。此处取今山东济宁作为示意坐标。",
+        "modern_coordinates": [116.3, 34.4],
+        "confidence": 0.4,
+        "dispute": "有仍、有虞、纶具体位置有争议。",
+        "tags": ["夏商", "少康", "中兴", "有仍", "有虞"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.5, 34.3]
+      },
+      "properties": {
+        "id": "06-04",
+        "name": "成汤囚夏台",
+        "category": "夏商神话",
+        "stage": "06_xia_shang",
+        "source_text": "《史记·夏本纪》（西汉·司马迁），三家注",
+        "source_quote": "夏桀为仍之会，有缗叛之。桀克有缗，以丧其国。桀召汤而囚之夏台，已而释之。",
+        "commentary": "裴骃集解引韦昭曰：'夏台，狱名。'",
+        "modern_identification": "传统认为夏台在今河南禹州一带；陈恩林认为夏台在今河南禹州。夏台具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；韦昭《国语注》",
+        "precision": "approximate",
+        "precision_note": "夏台具体位置有争议。",
+        "coordinates_basis": "按古籍相对方位推算的示意坐标（WGS84）。韦昭注'夏台，狱名'，传统认为夏台在今河南禹州一带。此处取今河南禹州作为示意坐标。",
+        "modern_coordinates": [113.5, 34.3],
+        "confidence": 0.45,
+        "dispute": "夏台具体位置有争议。",
+        "tags": ["夏商", "成汤", "夏台", "夏桀"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.0, 34.8]
+      },
+      "properties": {
+        "id": "06-05",
+        "name": "伊尹空桑",
+        "category": "夏商神话",
+        "stage": "06_xia_shang",
+        "source_text": "《吕氏春秋·本味》（战国·吕不韦），高诱注",
+        "source_quote": "有侁氏女子采桑，得婴儿于空桑之中，献之其君。其君令烰人养之。察其所以然，曰：'其母居伊水之上，孕，梦有神告之曰：\"臼出水而东走，毋顾。\"明日，视臼出水，告其邻，东走十里，而顾其邑，尽为水，身因化为空桑。\"故命之曰伊尹。",
+        "commentary": "高诱注：'伊尹，名挚。空桑，地名。'原文提及伊水。",
+        "modern_identification": "陈恩林认为空桑在今河南伊川一带；伊水在今河南伊川。空桑具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；高诱《吕氏春秋注》",
+        "precision": "approximate",
+        "precision_note": "空桑具体位置有争议。",
+        "coordinates_basis": "按古籍相对方位推算的示意坐标（WGS84）。高诱注'空桑，地名'，陈恩林认为空桑在今河南伊川一带。此处取今河南伊川作为示意坐标。",
+        "modern_coordinates": [114.0, 34.8],
+        "confidence": 0.4,
+        "dispute": "空桑具体位置有争议。",
+        "tags": ["夏商", "伊尹", "空桑", "伊水"]
+      }
+    }
+  ]
+}

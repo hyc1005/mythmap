@@ -1,0 +1,466 @@
+{
+  "coordinate_system": "diagram-units",
+  "location_note": "叙事示意，图面位置和间距不表示真实地理路线。",
+  "stories": [
+    {
+      "id": "01-02",
+      "stage_id": "01",
+      "name": "女娲造人",
+      "duration_ms": 12000,
+      "source_event_id": "01-02",
+      "source_quote": "女娲抟黄土作人。剧务，力不暇供，乃引绳于泥中，举以为人。",
+      "note": "地图内叙事锚点仅用于组织阅读，不表示真实地点；动作依据抟土、引绳与造人原文。",
+      "kind": "creation",
+      "origin": [490, 545],
+      "size_ratio": 0.28,
+      "follow_camera": false,
+      "phases": [
+        { "from_ms": 0, "title": "抟土成形" },
+        { "from_ms": 2000, "title": "塑造人形" },
+        { "from_ms": 4000, "title": "引绳入泥" },
+        { "from_ms": 6000, "title": "举绳造人" },
+        { "from_ms": 8500, "title": "泥人渐成" },
+        { "from_ms": 10500, "title": "造人完成" }
+      ],
+      "sheet": {
+        "url": "/data/atlas/myth-icons/animations/nuwa-map-poses-v2.webp",
+        "frames": [[0,0,512,512],[512,0,512,512],[1024,0,512,512],[0,512,512,512],[512,512,512,512],[1024,512,512,512]]
+      }
+    },
+    {
+      "id": "03-04",
+      "stage_id": "03",
+      "name": "精卫填海",
+      "duration_ms": 18000,
+      "sheet": {
+        "url": "/data/atlas/myth-icons/animations/jingwei-flight.png",
+        "frames": [
+          [
+            43,
+            65,
+            482,
+            378
+          ],
+          [
+            549,
+            145,
+            477,
+            296
+          ],
+          [
+            1069,
+            172,
+            461,
+            345
+          ],
+          [
+            43,
+            534,
+            421,
+            377
+          ],
+          [
+            548,
+            613,
+            422,
+            296
+          ],
+          [
+            1069,
+            640,
+            402,
+            346
+          ]
+        ],
+        "baselines": [
+          378,
+          296,
+          271,
+          377,
+          296,
+          271
+        ]
+      },
+      "source_url": "https://ctext.org/text.pl?if=gb&node=83673",
+      "source_quote": "常衔西山之木石，以堙于东海。",
+      "note": "木石积累仅表达反复投放，不表示东海已填平。",
+      "origin": [
+        670,
+        245
+      ],
+      "destination": [
+        900,
+        245
+      ],
+      "phases": [
+        {
+          "from_ms": 0,
+          "title": "衔西山木石"
+        },
+        {
+          "from_ms": 1500,
+          "title": "飞向东海"
+        },
+        {
+          "from_ms": 4800,
+          "title": "投木石于海"
+        },
+        {
+          "from_ms": 5600,
+          "title": "返回取材"
+        },
+        {
+          "from_ms": 9000,
+          "title": "再衔木石"
+        },
+        {
+          "from_ms": 10500,
+          "title": "再次飞向东海"
+        },
+        {
+          "from_ms": 13800,
+          "title": "再投木石"
+        },
+        {
+          "from_ms": 14600,
+          "title": "返回 · 往复不息"
+        }
+      ]
+    },
+    {
+      "id": "04-02",
+      "stage_id": "04",
+      "name": "大羿射日",
+      "duration_ms": 12000,
+      "sheet": {
+        "url": "/data/atlas/myth-icons/animations/dayi-actor-poses.webp",
+        "frames": [
+          [
+            0,
+            0,
+            512,
+            512
+          ],
+          [
+            512,
+            0,
+            512,
+            512
+          ],
+          [
+            1024,
+            0,
+            512,
+            512
+          ],
+          [
+            0,
+            512,
+            512,
+            512
+          ],
+          [
+            512,
+            512,
+            512,
+            512
+          ],
+          [
+            1024,
+            512,
+            512,
+            512
+          ]
+        ]
+      },
+      "source_url": "https://ctext.org/huainanzi/ben-jing-xun/zhs",
+      "source_quote": "十日并出，焦禾稼，杀草木……上射十日。",
+      "note": "依据现有摘录演示射日动作，不设定最终剩余太阳数量。",
+      "origin": [
+        460,
+        220
+      ],
+      "phases": [
+        {
+          "from_ms": 0,
+          "title": "十日并出"
+        },
+        {
+          "from_ms": 2200,
+          "title": "举弓搭箭"
+        },
+        {
+          "from_ms": 4400,
+          "title": "引弓瞄准"
+        },
+        {
+          "from_ms": 6500,
+          "title": "放箭射日"
+        },
+        {
+          "from_ms": 9200,
+          "title": "射日动作示意"
+        }
+      ],
+      "effect_assets": {
+        "sun": {
+          "url": "/data/atlas/myth-icons/animations/dayi-sun-disk.webp"
+        },
+          "projectile": {
+            "url": "/data/atlas/myth-icons/animations/dayi-arrow-v2.webp",
+            "optional": true
+          },
+          "sunImpact": {
+            "url": "/data/atlas/myth-icons/animations/dayi-sun-impact-v2.webp",
+            "grid": [
+              2,
+              2
+            ],
+            "anchor": [
+              0.5,
+              0.5
+            ]
+          },
+        "cloud": {
+          "url": "/data/atlas/myth-icons/animations/dayi-cloud-scroll.webp"
+        }
+      },
+        "shot_timing_ms": [
+          6500,
+          7600,
+          9200
+        ],
+      "follow_camera": false,
+      "bow_anchor": [
+        0.394,
+        0.666
+      ]
+    },
+    {
+      "id": "02-04",
+      "stage_id": "02",
+      "name": "燧人取火",
+      "kind": "fire",
+      "duration_ms": 12000,
+      "source_url": "https://ctext.org/hanfeizi/wu-du/zhs",
+      "source_quote": "钻燧取火以化腥臊，而民说之。",
+      "note": "火焰为动作示意，不表示具体钻木器具或火种形制。",
+      "origin": [
+        500,
+        555
+      ],
+      "phases": [
+        {
+          "from_ms": 0,
+          "title": "钻燧取火"
+        },
+        {
+          "from_ms": 3500,
+          "title": "火星初现"
+        },
+        {
+          "from_ms": 6200,
+          "title": "火焰燃起"
+        },
+        {
+          "from_ms": 9400,
+          "title": "以火化腥臊"
+        }
+      ],
+      "sheet": {
+        "url": "/data/atlas/myth-icons/animations/suiren-after-fire-v3.png",
+        "frames": [[0,0,512,512],[512,0,512,512],[1024,0,512,512],[0,512,512,512],[512,512,512,512],[1024,512,512,512]]
+      },
+      "follow_camera": false
+    },
+    {
+      "id": "05-01",
+      "stage_id": "05",
+      "name": "大禹治水",
+      "kind": "flood",
+      "duration_ms": 14000,
+      "source_url": "https://ctext.org/huainanzi/ben-jing-xun/zhs",
+      "source_quote": "疏三江五湖，注之东海，以利黔首。",
+      "note": "局部疏导过程示意，不表示真实河道、治水行程或洪水完全退尽。",
+      "origin": [
+        500,
+        400
+      ],
+      "waypoints": [
+        [
+          500,
+          400
+        ],
+        [
+          620,
+          410
+        ],
+        [
+          735,
+          430
+        ],
+        [
+          845,
+          410
+        ]
+      ],
+      "phases": [
+        {
+          "from_ms": 0,
+          "title": "水势壅积 · 局部示意"
+        },
+        {
+          "from_ms": 3000,
+          "title": "开通疏导通道"
+        },
+        {
+          "from_ms": 7000,
+          "title": "水流沿通道而行"
+        },
+        {
+          "from_ms": 11000,
+          "title": "地面渐次显露"
+        }
+      ],
+      "sheet": {
+        "url": "/data/atlas/myth-icons/animations/dayu-flood-poses.webp",
+        "frames": [
+          [
+            0,
+            0,
+            512,
+            512
+          ],
+          [
+            512,
+            0,
+            512,
+            512
+          ],
+          [
+            1024,
+            0,
+            512,
+            512
+          ],
+          [
+            0,
+            512,
+            512,
+            512
+          ]
+        ]
+      },
+      "effect_assets": {
+        "waveLoop": {
+          "url": "/data/atlas/myth-icons/animations/dayu-wave-loop.webp",
+          "grid": [
+            2,
+            2
+          ]
+        }
+      },
+      "follow_camera": false
+    },
+    {
+      "id": "06-03",
+      "stage_id": "06",
+      "name": "少康中兴",
+      "kind": "migration",
+      "duration_ms": 14000,
+      "source_event_id": "06-03",
+      "actor_art": "stories/ch06-shaokang.png",
+      "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/ai-gong-yuan-nian/zhs",
+      "source_quote": "逃奔有虞，为之庖正……而邑诸纶……以收夏众，抚其官职。",
+      "note": "节点仅表示原文叙述阶段；连接线不表示真实迁徙路线或距离。",
+      "origin": [
+        480,
+        410
+      ],
+      "waypoints": [
+        [
+          480,
+          410
+        ],
+        [
+          600,
+          325
+        ],
+        [
+          735,
+          430
+        ],
+        [
+          880,
+          300
+        ]
+      ],
+      "phases": [
+        {
+          "from_ms": 0,
+          "title": "逃奔有虞"
+        },
+        {
+          "from_ms": 3500,
+          "title": "为庖正"
+        },
+        {
+          "from_ms": 7000,
+          "title": "邑诸纶"
+        },
+        {
+          "from_ms": 10500,
+          "title": "收夏众 · 抚其官职"
+        }
+      ]
+    },
+    {
+      "id": "07-journey",
+      "stage_id": "07",
+      "name": "昆仑至瑶池叙事段",
+      "kind": "journey",
+      "duration_ms": 15000,
+      "source_event_id": "07-03",
+      "origin": [
+        180,
+        540
+      ],
+      "waypoints": [
+        [
+          180,
+          540
+        ],
+        [
+          610,
+          170
+        ],
+        [
+          780,
+          575
+        ]
+      ],
+      "scene_artworks": [
+        "stories/ch07-mu-kunlun-palace.png",
+        "stories/ch07-mu-meets-xiwangmu.png",
+        "stories/ch07-yaochi-banquet.png"
+      ],
+      "source_url": "https://ctext.org/mu-tian-zi-zhuan/juan-er/zhs",
+      "source_quote": "天子升于昆仑之丘，以观黄帝之宫。……天子宾于西王母。……天子觞西王母于瑶池之上。",
+      "note": "按篇中叙述次序逐幕推进；地图节点仅为示意，现代候选地点连接不表示实际路线。",
+      "phases": [
+        {
+          "from_ms": 0,
+          "title": "升昆仑观黄帝之宫"
+        },
+        {
+          "from_ms": 5000,
+          "title": "穆天子见西王母"
+        },
+        {
+          "from_ms": 10000,
+          "title": "瑶池宴 · 唱答"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-09-30-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "01-02",
+      "geometry": null,
+      "properties": {
+        "id": "01-02",
+        "stage_id": "01",
+        "entity_id": "01-02",
+        "name": "女娲造人",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-02"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《风俗通义·皇霸》卷一（东汉·应劭），见王利器《风俗通义校注》",
+        "source_quote": "天地开辟，未有人民，女娲抟黄土作人。剧务，力不暇供，乃引绳于泥中，举以为人。",
+        "commentary": "王利器校注引《淮南子》《潜夫论》等参证。原文未载具体地理方位。",
+        "modern_identification": "袁珂认为女娲造人神话反映母系氏族社会；黄土作人与黄土高原地理有关联。女娲造人（《风俗通义》）与女娲补天（《淮南子》）分属不同文献，不合并因果。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王利器《风俗通义校注》（1981）",
+        "dispute": "女娲造人（《风俗通义》）与女娲补天（《淮南子》）分属不同文献，不合并因果。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "造人",
+          "风俗通义"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "artwork": "stories/nuwa-create.png",
+        "artworks": [
+          "stories/nuwa-create.png"
+        ],
+        "layout_hint": [
+          490,
+          545
+        ],
+        "location_label": "叙事锚点·示意",
+        "map_visible": true,
+        "presentation": "story"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03",
+      "geometry": null,
+      "properties": {
+        "id": "01-03",
+        "stage_id": "01",
+        "entity_id": "01-03",
+        "name": "女娲补天",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "往古之时，四极废，九州裂，天不兼覆，地不周载。火爁焱而不灭，水浩洋而不息。猛兽食颛民，鸷鸟攫老弱。于是女娲炼五色石以补苍天，断鳌足以立四极，杀黑龙以济冀州，积芦灰以止淫水。",
+        "commentary": "高诱注：'女娲，阴帝，佐虙牺治者也。'刘文典《淮南鸿烈集解》引王念孙、俞樾说。原文未明言补天具体地点，仅提及'冀州'为九州之一。",
+        "modern_identification": "王晖《中国上古史实揭秘》认为冀州在今山西、河北一带；袁珂认为补天神话源于陨石雨或地震灾害记忆。补天地点'冀州'范围有争议。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            112.5,
+            37.5
+          ]
+        },
+        "original_modern_coordinates": [
+          112.5,
+          37.5
+        ],
+        "presentation": "group",
+        "map_visible": false,
+        "artwork": "stories/nuwa-repair.png",
+        "artworks": [
+          "stories/nuwa-repair.png"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-04",
+      "geometry": null,
+      "properties": {
+        "id": "01-04",
+        "stage_id": "01",
+        "entity_id": "01-04",
+        "name": "共工怒触不周山",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-04"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-84c8b3931b3c"
+        ],
+        "people": [
+          "共工"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·天文训》（西汉·刘安），高诱注",
+        "source_quote": "昔者共工与颛顼争为帝，怒而触不周之山，天柱折，地维绝。天倾西北，故日月星辰移焉；地不满东南，故水潦尘埃归焉。",
+        "commentary": "高诱注：'不周山，昆仑之西北。'刘文典《淮南鸿烈集解》。郭璞注《山海经》以不周山为《西山经》之山。",
+        "modern_identification": "王晖认为不周山在今甘肃祁连山一带；袁珂认为不周山在今昆仑山脉西北段；杨宽认为不周山为神话地名，难以实指。共工触山（《天文训》）与女娲补天（《览冥训》）在原文中无因果关系，分开标注。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）；杨宽《中国古代神话与传说》（2005）",
+        "dispute": "不周山具体位置有争议（甘肃祁连山/昆仑山脉西北段/其他）；共工触山（《天文训》）与女娲补天（《览冥训》）在原文中无因果关系，分开标注。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "共工",
+          "不周山",
+          "昆仑"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            95,
+            40
+          ]
+        },
+        "original_modern_coordinates": [
+          95,
+          40
+        ],
+        "artwork": "stories/gonggong.png",
+        "artworks": [
+          "stories/gonggong.png"
+        ],
+        "layout_hint": [
+          385,
+          425
+        ],
+        "location_label": "叙事锚点·示意",
+        "map_visible": false,
+        "presentation": "archive",
+        "related_event_id": "04-01",
+        "archive_reason": "与第04章事件04-01同引《淮南子·天文训》同一段共工触山叙事；保留稳定记录供审计，不在时间线重复呈现。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03-a",
+      "geometry": null,
+      "properties": {
+        "id": "01-03-a",
+        "stage_id": "01",
+        "entity_id": "01-03-a",
+        "name": "炼石补天",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "于是女娲炼五色石以补苍天。",
+        "commentary": "《淮南子·览冥训》补天记载中的独立行动；与共工触山不建立未经本篇支持的因果关系。图像为艺术性解释。",
+        "modern_identification": "不据插画或叙事布局推定现实位置。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "source_excerpt_reviewed",
+        "asset_id": "nuwa-repair",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/nuwa-repair.png",
+        "artworks": [
+          "stories/nuwa-repair.png"
+        ],
+        "parent_event_id": "01-03",
+        "layout_hint": [
+          710,
+          545
+        ],
+        "location_label": "叙事锚点·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03-b",
+      "geometry": null,
+      "properties": {
+        "id": "01-03-b",
+        "stage_id": "01",
+        "entity_id": "01-03-b",
+        "name": "断鳌立极",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "断鳌足以立四极。",
+        "commentary": "《淮南子·览冥训》补天记载中的独立行动；与共工触山不建立未经本篇支持的因果关系。图像为艺术性解释。",
+        "modern_identification": "不据插画或叙事布局推定现实位置。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "source_excerpt_reviewed",
+        "asset_id": "nuwa-pillars",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/nuwa-pillars.png",
+        "artworks": [
+          "stories/nuwa-pillars.png"
+        ],
+        "parent_event_id": "01-03",
+        "layout_hint": [
+          815,
+          425
+        ],
+        "location_label": "叙事锚点·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03-c",
+      "geometry": null,
+      "properties": {
+        "id": "01-03-c",
+        "stage_id": "01",
+        "entity_id": "01-03-c",
+        "name": "杀黑龙济冀州",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "杀黑龙以济冀州。",
+        "commentary": "《淮南子·览冥训》补天记载中的独立行动；与共工触山不建立未经本篇支持的因果关系。图像为艺术性解释。",
+        "modern_identification": "不据插画或叙事布局推定现实位置。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "source_excerpt_reviewed",
+        "asset_id": "nuwa-dragon",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/nuwa-dragon.png",
+        "artworks": [
+          "stories/nuwa-dragon.png"
+        ],
+        "parent_event_id": "01-03",
+        "layout_hint": [
+          710,
+          275
+        ],
+        "location_label": "叙事锚点·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03-d",
+      "geometry": null,
+      "properties": {
+        "id": "01-03-d",
+        "stage_id": "01",
+        "entity_id": "01-03-d",
+        "name": "积芦灰止水",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "积芦灰以止淫水。",
+        "commentary": "《淮南子·览冥训》补天记载中的独立行动；与共工触山不建立未经本篇支持的因果关系。图像为艺术性解释。",
+        "modern_identification": "不据插画或叙事布局推定现实位置。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "source_excerpt_reviewed",
+        "asset_id": "nuwa-water",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/nuwa-water.png",
+        "artworks": [
+          "stories/nuwa-water.png"
+        ],
+        "parent_event_id": "01-03",
+        "layout_hint": [
+          490,
+          275
+        ],
+        "location_label": "叙事锚点·示意"
+      }
+    }
+  ]
+}

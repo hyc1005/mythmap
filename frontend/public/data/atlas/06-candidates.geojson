@@ -1,0 +1,202 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-09-30-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "06-01-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.6741432,
+          35.4802464
+        ]
+      },
+      "properties": {
+        "id": "06-01-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-01",
+        "name": "后羿代夏 · 滑县",
+        "label": "滑县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-01"
+        ],
+        "basis_note": "报告转述有穷氏相关地点的滑县解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%BB%91%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3060560,
+        "modern_display_name": "滑县, 安阳市, 河南省, 456472, 中国",
+        "reference_bbox": [
+          "35.2051404",
+          "35.6947402",
+          "114.3837902",
+          "114.9805104"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-02-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2054018,
+          36.7553782
+        ]
+      },
+      "properties": {
+        "id": "06-02-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-02",
+        "name": "寒浞之乱 · 寒亭区",
+        "label": "寒亭区",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-02"
+        ],
+        "basis_note": "报告列举的寒国潍坊解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%AF%92%E4%BA%AD%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3468763,
+        "modern_display_name": "寒亭区, 潍坊市, 山东省, 中国",
+        "reference_bbox": [
+          "36.7206728",
+          "37.3723402",
+          "118.8931846",
+          "119.4315181"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-03-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5849266,
+          35.4125047
+        ]
+      },
+      "properties": {
+        "id": "06-03-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-03",
+        "name": "少康中兴 · 济宁市",
+        "label": "济宁市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-03"
+        ],
+        "basis_note": "报告列举的缗等地点的济宁解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%B5%8E%E5%AE%81%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3286961,
+        "modern_display_name": "济宁市, 山东省, 中国",
+        "reference_bbox": [
+          "34.4306468",
+          "35.9815230",
+          "115.8648677",
+          "117.5888670"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.378745,
+          34.203884
+        ]
+      },
+      "properties": {
+        "id": "06-04-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-04",
+        "name": "成汤囚夏台 · 禹州市",
+        "label": "禹州市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-04"
+        ],
+        "basis_note": "报告列举的夏台禹州解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%A6%B9%E5%B7%9E%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3283886,
+        "modern_display_name": "禹州市, 许昌市, 河南省, 中国",
+        "reference_bbox": [
+          "33.9867826",
+          "34.4081202",
+          "113.0576904",
+          "113.6523647"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-05-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.4744933,
+          34.404342
+        ]
+      },
+      "properties": {
+        "id": "06-05-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-05",
+        "name": "伊尹空桑 · 伊川县",
+        "label": "伊川县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-05"
+        ],
+        "basis_note": "报告正文列举空桑伊川解释；纠正原文件坐标与文字不一致。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E4%BC%8A%E5%B7%9D%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3246489,
+        "modern_display_name": "伊川县, 洛阳市, 河南省, 中国",
+        "reference_bbox": [
+          "34.2141465",
+          "34.5448001",
+          "112.1995601",
+          "112.7688606"
+        ],
+        "analysis_eligible": false
+      }
+    }
+  ]
+}

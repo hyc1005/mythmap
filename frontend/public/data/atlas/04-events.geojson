@@ -1,0 +1,329 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-10-01-map-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "04-01",
+      "geometry": null,
+      "properties": {
+        "id": "04-01",
+        "stage_id": "04",
+        "entity_id": "04-01",
+        "name": "共工与颛顼争帝",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-01"
+        ],
+        "basis_note": "《淮南子·天文训》记共工与颛顼争帝、怒触不周之山；山址有不同解释，本点仅供阅读，不代表现实坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-84c8b3931b3c",
+          "person-5560c2e2418b"
+        ],
+        "people": [
+          "共工",
+          "颛顼"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·天文训》（西汉·刘安），高诱注",
+        "source_quote": "昔者共工与颛顼争为帝，怒而触不周之山，天柱折，地维绝。",
+        "commentary": "高诱注：'共工，水官也。颛顼，黄帝之孙，昌意之子。'高诱注'不周山，昆仑之西北'。",
+        "modern_identification": "王晖认为不周山在今甘肃祁连山一带；袁珂认为不周山在今昆仑山脉西北段；杨宽认为不周山为神话地名，难以实指。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）；杨宽《中国古代神话与传说》（2005）",
+        "dispute": "不周山具体位置有争议（甘肃祁连山/昆仑山脉西北段/其他）。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "共工",
+          "颛顼",
+          "不周山",
+          "争帝"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            95.0,
+            40.0
+          ]
+        },
+        "original_modern_coordinates": [
+          95.0,
+          40.0
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-gonggong-zhuanxu.png",
+        "artworks": [
+          "stories/ch04-gonggong-zhuanxu.png"
+        ],
+        "layout_hint": [
+          260,
+          410
+        ],
+        "location_label": "不周之山·叙事锚点示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-02",
+      "geometry": null,
+      "properties": {
+        "id": "04-02",
+        "stage_id": "04",
+        "entity_id": "04-02",
+        "name": "大羿射日",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-02"
+        ],
+        "basis_note": "《淮南子·本经训》把羿诛凿齿、杀九婴、射日等行动并载，并涉及多个地名；本点不代表单一地点或路线。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-3c2d2bf0b017"
+        ],
+        "people": [
+          "大羿"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·本经训》（西汉·刘安），高诱注",
+        "source_quote": "逮至尧之时，十日并出，焦禾稼，杀草木，而民无所食。猰貐、凿齿、九婴、大风、封豨、修蛇皆为民害。尧乃使羿诛凿齿于畴华之野，杀九婴于凶水之上，缴大风于青丘之泽，上射十日而下杀猰貐，断修蛇于洞庭，禽封豨于桑林。",
+        "commentary": "高诱注：'羿，尧时诸侯。'刘文典《淮南鸿烈集解》。原文提及畴华之野、凶水之上、青丘之泽、洞庭、桑林，但未载具体位置。",
+        "modern_identification": "袁珂认为射日神话源于干旱灾害记忆；'羿'为大羿（帝尧时期神射手），非夏代有穷氏后羿。大羿（射日）与后羿（夏代有穷氏）必须区分；各地名具体位置多不可考。",
+        "modern_source": "袁珂《中国神话传说》（2004）；刘文典《淮南鸿烈集解》（1923）",
+        "dispute": "大羿（射日）与后羿（夏代有穷氏）必须区分；各地名具体位置多不可考。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "大羿",
+          "射日",
+          "十日",
+          "尧"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-dayi-shoots-suns.png",
+        "artworks": [
+          "stories/ch04-dayi-shoots-suns.png"
+        ],
+        "layout_hint": [
+          460,
+          220
+        ],
+        "location_label": "多地行动·关系示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-03",
+      "geometry": null,
+      "properties": {
+        "id": "04-03",
+        "stage_id": "04",
+        "entity_id": "04-03",
+        "name": "嫦娥奔月",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-03"
+        ],
+        "basis_note": "《淮南子·览冥训》记姮娥窃不死之药奔月；此为神话叙事，不投射到人间地理坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-2149b25f34c1"
+        ],
+        "people": [
+          "嫦娥"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "羿请不死之药于西王母，姮娥窃以奔月，怅然有丧，无以续之。",
+        "commentary": "高诱注：'姮娥，羿妻也。'刘文典《淮南鸿烈集解》。原文未载具体地点。",
+        "modern_identification": "袁珂认为嫦娥奔月神话源于月亮崇拜；姮娥即嫦娥（避汉文帝讳）。嫦娥奔月与后羿射日的关系（夫妻/无关系）有争议。",
+        "modern_source": "袁珂《中国神话传说》（2004）；刘文典《淮南鸿烈集解》（1923）",
+        "dispute": "嫦娥奔月与后羿射日的关系（夫妻/无关系）有争议。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "嫦娥",
+          "奔月",
+          "后羿",
+          "西王母"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-change-flies-to-moon.png",
+        "artworks": [
+          "stories/ch04-change-flies-to-moon.png"
+        ],
+        "layout_hint": [
+          720,
+          205
+        ],
+        "location_label": "月域叙事·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-04",
+      "geometry": null,
+      "properties": {
+        "id": "04-04",
+        "stage_id": "04",
+        "entity_id": "04-04",
+        "name": "鲧窃息壤",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-04"
+        ],
+        "basis_note": "《山海经·海内经》记鲧窃息壤壅洪水，后被杀于羽郊；羽郊未能落实为可靠绝对位置。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-2145d9c0b6fe"
+        ],
+        "people": [
+          "鲧"
+        ],
+        "candidate_ids": [
+          "04-04-candidate-1",
+          "04-04-candidate-2"
+        ],
+        "source_text": "《山海经·海内经》（郭璞注本）",
+        "source_quote": "洪水滔天，鲧窃帝之息壤以堙洪水，不待帝命。帝令祝融杀鲧于羽郊。鲧复生禹。",
+        "commentary": "郭璞注：'息壤，土长息无限。'郝懿行《山海经笺疏》：'羽郊，即羽山之野。'",
+        "modern_identification": "袁珂认为羽山在今山东郯城一带；息壤为神话中的神土。羽山具体位置有争议（山东郯城/其他）；息壤为神话概念，无实指。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "羽山具体位置有争议（山东郯城/其他）；息壤为神话概念，无实指。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "鲧",
+          "息壤",
+          "羽山",
+          "洪水"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            118.2,
+            34.3
+          ]
+        },
+        "original_modern_coordinates": [
+          118.2,
+          34.3
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-gun-xirang.png",
+        "artworks": [
+          "stories/ch04-gun-xirang.png"
+        ],
+        "layout_hint": [
+          900,
+          420
+        ],
+        "location_label": "羽郊·位置未考"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-05",
+      "geometry": null,
+      "properties": {
+        "id": "04-05",
+        "stage_id": "04",
+        "entity_id": "04-05",
+        "name": "尧禅舜",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-05"
+        ],
+        "basis_note": "《尚书·尧典》记尧命舜；原文未提供可用于地图定位的具体地点或方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-8c45913efb08",
+          "person-79b8457f6a3b"
+        ],
+        "people": [
+          "尧",
+          "舜"
+        ],
+        "candidate_ids": [
+          "04-05-candidate-1"
+        ],
+        "source_text": "《尚书·尧典》（《十三经注疏》本）",
+        "source_quote": "尧曰：'咨！尔舜！天之历数在尔躬，允执其中。四海困穷，天禄永终。'舜亦以命禹。",
+        "commentary": "孔颖达疏：'尧禅位于舜。'原文未载具体地点。",
+        "modern_identification": "传统认为尧都平阳（今山西临汾）；舜都蒲坂（今山西永济）。尧都、舜都具体位置有争议。",
+        "modern_source": "孔颖达《尚书正义》（十三经注疏）",
+        "dispute": "尧都、舜都具体位置有争议。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "尧",
+          "舜",
+          "禅让",
+          "平阳"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            111.0,
+            35.0
+          ]
+        },
+        "original_modern_coordinates": [
+          111.0,
+          35.0
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-yao-shun.png",
+        "artworks": [
+          "stories/ch04-yao-shun.png"
+        ],
+        "layout_hint": [
+          1050,
+          565
+        ],
+        "location_label": "禅让叙事·示意"
+      }
+    }
+  ],
+  "name": "chapter-04-story-events"
+}

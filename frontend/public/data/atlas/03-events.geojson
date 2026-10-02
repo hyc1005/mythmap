@@ -1,0 +1,352 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-10-01-ch03-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "03-01",
+      "geometry": null,
+      "properties": {
+        "id": "03-01",
+        "stage_id": "03",
+        "entity_id": "03-01",
+        "name": "阪泉之战",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-01"
+        ],
+        "basis_note": "《史记·五帝本纪》记黄帝与炎帝战于阪泉之野；现代地点解释不一。本点不代表候选地、真实方向或距离。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-ea2e022d685f",
+          "person-838748c481ec"
+        ],
+        "people": [
+          "黄帝",
+          "炎帝"
+        ],
+        "candidate_ids": [
+          "03-01-candidate-1",
+          "03-01-candidate-2",
+          "03-01-candidate-3"
+        ],
+        "source_text": "《史记·五帝本纪》（西汉·司马迁），三家注",
+        "source_quote": "轩辕之时，神农氏世衰……以与炎帝战于阪泉之野。三战，然后得其志。",
+        "commentary": "裴骃集解引皇甫谧曰：'阪泉，在上谷。'张守节正义：'阪泉，今名黄帝泉，在妫州怀戎县东五十六里。'",
+        "modern_identification": "王晖认为阪泉在今河北涿鹿县东南；陈恩林认为阪泉在今北京延庆一带。阪泉具体位置有争议（河北涿鹿/怀来/延庆）。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；陈恩林《夏商周地理新考》（2013）",
+        "dispute": "阪泉具体位置有争议（河北涿鹿/怀来/延庆）。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "黄帝",
+          "炎帝",
+          "阪泉",
+          "战争"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            115.9,
+            40.4
+          ]
+        },
+        "original_modern_coordinates": [
+          115.9,
+          40.4
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-banquan.png",
+        "artworks": [
+          "stories/ch03-banquan.png"
+        ],
+        "layout_hint": [
+          300,
+          420
+        ],
+        "location_label": "位置存争议·叙事锚点示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-02",
+      "geometry": null,
+      "properties": {
+        "id": "03-02",
+        "stage_id": "03",
+        "entity_id": "03-02",
+        "name": "涿鹿之战",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-02"
+        ],
+        "basis_note": "《史记·五帝本纪》记黄帝与蚩尤战于涿鹿之野；现代地点解释不一。本点不代表候选地、真实方向或距离。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-ea2e022d685f",
+          "person-1e92700f28ee"
+        ],
+        "people": [
+          "黄帝",
+          "蚩尤"
+        ],
+        "candidate_ids": [
+          "03-02-candidate-1",
+          "03-02-candidate-2",
+          "03-02-candidate-3"
+        ],
+        "source_text": "《史记·五帝本纪》（西汉·司马迁），三家注",
+        "source_quote": "蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野，遂禽杀蚩尤。",
+        "commentary": "裴骃集解引服虔曰：'涿鹿，山名，在涿郡。'张守节正义：'涿鹿，今在妫州怀戎县东五十六里。'",
+        "modern_identification": "王晖认为涿鹿在今河北涿鹿县；陈恩林认为涿鹿在今河北蔚县一带。涿鹿具体位置有争议（河北涿鹿/怀来/蔚县）。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；陈恩林《夏商周地理新考》（2013）",
+        "dispute": "涿鹿具体位置有争议（河北涿鹿/怀来/蔚县）。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "黄帝",
+          "蚩尤",
+          "涿鹿",
+          "战争"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            115.3,
+            40.1
+          ]
+        },
+        "original_modern_coordinates": [
+          115.3,
+          40.1
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-zhuolu.png",
+        "artworks": [
+          "stories/ch03-zhuolu.png"
+        ],
+        "layout_hint": [
+          520,
+          310
+        ],
+        "location_label": "位置存争议·叙事锚点示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-03",
+      "geometry": null,
+      "properties": {
+        "id": "03-03",
+        "stage_id": "03",
+        "entity_id": "03-03",
+        "name": "刑天舞干戚",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-03-03"
+        ],
+        "basis_note": "《山海经·海外西经》记刑天与帝争神、葬于常羊之山，未提供可核实的绝对坐标。本点仅为叙事锚点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-2d87a62ece73"
+        ],
+        "people": [
+          "刑天"
+        ],
+        "candidate_ids": [],
+        "source_text": "《山海经·海外西经》（郭璞注本）",
+        "source_quote": "刑天与帝至此争神，帝断其首，葬之常羊之山。乃以乳为目，以脐为口，操干戚以舞。",
+        "commentary": "郭璞注：'刑天，神名。'郝懿行《山海经笺疏》：'刑天，盖无首之鬼。'",
+        "modern_identification": "袁珂认为常羊山在今陕西一带；具体位置不可确指。常羊山具体位置有争议。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "常羊山具体位置有争议。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "刑天",
+          "常羊山",
+          "舞干戚"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            109.0,
+            34.5
+          ]
+        },
+        "original_modern_coordinates": [
+          109.0,
+          34.5
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-xingtian.png",
+        "artworks": [
+          "stories/ch03-xingtian.png"
+        ],
+        "layout_hint": [
+          740,
+          500
+        ],
+        "location_label": "常羊山·叙事锚点示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-04",
+      "geometry": null,
+      "properties": {
+        "id": "03-04",
+        "stage_id": "03",
+        "entity_id": "03-04",
+        "name": "精卫填海",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-03-04"
+        ],
+        "basis_note": "《山海经·北山经》记精卫出自发鸠之山，常衔西山木石以堙东海；图面只转述原文关系，不表示两点间的绝对距离。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-b402786f5184"
+        ],
+        "people": [
+          "精卫"
+        ],
+        "candidate_ids": [
+          "03-04-candidate-1",
+          "03-04-candidate-2"
+        ],
+        "source_text": "《山海经·北山经》（郭璞注本）",
+        "source_quote": "发鸠之山，其上多柘木。有鸟焉，其状如乌，文首，白喙，赤足，名曰精卫，其鸣自詨。是炎帝之少女，名曰女娃。女娃游于东海，溺而不返，故为精卫，常衔西山之木石，以堙于东海。",
+        "commentary": "郭璞注：'发鸠山，亦山名。'郝懿行《山海经笺疏》：'发鸠山，在今山西长子县西。'",
+        "modern_identification": "袁珂认为发鸠山在今山西长子县；东海指今黄海或渤海。发鸠山位置有争议（山西长子/其他）；东海范围有争议。精卫填海归入炎黄时期，但发鸠山与东海在第8阶段空间图层中标注。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "发鸠山位置有争议（山西长子/其他）；东海范围有争议。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "精卫",
+          "填海",
+          "发鸠山",
+          "东海"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            112.6,
+            36.1
+          ]
+        },
+        "original_modern_coordinates": [
+          112.6,
+          36.1
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-jingwei.png",
+        "artworks": [
+          "stories/ch03-jingwei.png"
+        ],
+        "layout_hint": [
+          900,
+          245
+        ],
+        "location_label": "发鸠之山—东海·关系示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-05",
+      "geometry": null,
+      "properties": {
+        "id": "03-05",
+        "stage_id": "03",
+        "entity_id": "03-05",
+        "name": "夸父逐日",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-03-05"
+        ],
+        "basis_note": "《山海经·海外北经》记夸父逐日，饮河、渭不足，北饮大泽，未至而死，弃杖化邓林。图面仅表达经文叙事顺序。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-e8582df4d5fd"
+        ],
+        "people": [
+          "夸父"
+        ],
+        "candidate_ids": [],
+        "source_text": "《山海经·海外北经》（郭璞注本）；又见《大荒北经》",
+        "source_quote": "夸父与日逐走，入日。渴，欲得饮，饮于河、渭；河、渭不足，北饮大泽。未至，道渴而死。弃其杖，化为邓林。",
+        "commentary": "郭璞注：'邓林，桃林也。'郝懿行《山海经笺疏》：'邓林即桃林。'",
+        "modern_identification": "袁珂认为夸父逐日神话源于干旱灾害记忆；邓林在今河南灵宝一带；大泽在今内蒙古或甘肃。邓林具体位置有争议；大泽具体位置有争议。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "邓林具体位置有争议；大泽具体位置有争议。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "夸父",
+          "逐日",
+          "邓林",
+          "河渭"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            113.5,
+            34.7
+          ]
+        },
+        "original_modern_coordinates": [
+          113.5,
+          34.7
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-kuafu.png",
+        "artworks": [
+          "stories/ch03-kuafu.png"
+        ],
+        "layout_hint": [
+          1010,
+          535
+        ],
+        "location_label": "河、渭至北方大泽·次序示意"
+      }
+    }
+  ],
+  "name": "chapter-03-story-events"
+}

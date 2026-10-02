@@ -1,0 +1,268 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "05-01",
+      "geometry": null,
+      "properties": {
+        "id": "05-01",
+        "stage_id": "05",
+        "entity_id": "05-01",
+        "name": "大禹治水",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-05-01"
+        ],
+        "basis_note": "《尚书·禹贡》记禹敷土、随山刊木、奠高山大川；治水涉及多条水系。本点只为叙事锚点，不代表单一发生地、九州边界、古河道或活动范围。",
+        "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+        "person_ids": [
+          "person-15f8840a66b7"
+        ],
+        "people": [
+          "禹"
+        ],
+        "candidate_ids": [],
+        "source_text": "《尚书·禹贡》（《十三经注疏》本）",
+        "source_quote": "禹敷土，随山刊木，奠高山大川。",
+        "commentary": "孔颖达疏：'禹治水，随山刊木。'原文记载九州（冀、兖、青、徐、扬、荆、豫、梁、雍）。",
+        "modern_identification": "王晖认为《禹贡》成书于战国，反映当时地理认知；九州范围有争议。九州范围有争议；《禹贡》成书年代有争议。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；孔颖达《尚书正义》（十三经注疏）",
+        "dispute": "九州范围有争议；《禹贡》成书年代有争议。",
+        "category": "禹夏神话",
+        "tags": [
+          "禹夏",
+          "大禹",
+          "治水",
+          "九州",
+          "禹贡"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-05-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            110.5,
+            34.7
+          ]
+        },
+        "original_modern_coordinates": [
+          110.5,
+          34.7
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          220,
+          580
+        ],
+        "location_label": "多地治水·叙事锚点示意",
+        "source_url": "https://zh.wikisource.org/wiki/尚書/禹貢",
+        "source_review_note": "已对照网络原文核对所引正文；原报告中的孔颖达疏引语及现代学者归属未逐版复核。",
+        "artwork": "stories/ch05-yu-controls-flood.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-02",
+      "geometry": null,
+      "properties": {
+        "id": "05-02",
+        "stage_id": "05",
+        "entity_id": "05-02",
+        "name": "禹杀相柳",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-05-02"
+        ],
+        "basis_note": "所引相柳文字出自《山海经·海外北经》，不是《大荒北经》的相繇条。原文把众帝之台置于昆仑之北、柔利之东，但不构成现代定位，也不直接给出禹杀相柳的发生点。本点只为叙事锚点；候选坐标与插画均不作地点证据。",
+        "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+        "person_ids": [
+          "person-15f8840a66b7",
+          "person-053d1d379ac3"
+        ],
+        "people": [
+          "禹",
+          "相柳"
+        ],
+        "candidate_ids": [],
+        "source_text": "《山海经·海外北经》；另见《大荒北经》相繇条",
+        "source_quote": "共工之臣曰相柳氏，九首，以食于九山。相柳之所抵，厥为泽谿。禹杀相柳，其血腥，不可以树五谷种。禹厥之，三仞三沮，乃以为众帝之台。在昆仑之北，柔利之东。相柳者，九首人面，蛇身而青。",
+        "commentary": "《海外北经》相柳条记九首人面、蛇身而青，并述众帝之台的相对方位；《大荒北经》另有相繇条。两篇文字分别保留，不混作同一引文。",
+        "modern_identification": "袁珂认为相柳为神话中的九首蛇神；众帝之台为神话建筑。众帝之台具体位置不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "众帝之台具体位置不可考。",
+        "category": "禹夏神话",
+        "tags": [
+          "禹夏",
+          "大禹",
+          "相柳",
+          "众帝之台"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-05-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          470,
+          440
+        ],
+        "location_label": "相柳叙事·地点未考·示意",
+        "source_url": "https://zh.wikisource.org/wiki/山海經/海外北經",
+        "source_review_note": "已对照《海外北经》正文纠正原报告篇目并补全形态与相对方位；采用简体转写，昆侖写作昆仑。现代学者归属未逐版复核。",
+        "artwork": "stories/ch05-yu-xiangliu.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-03",
+      "geometry": null,
+      "properties": {
+        "id": "05-03",
+        "stage_id": "05",
+        "entity_id": "05-03",
+        "name": "禹娶涂山女",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-03"
+        ],
+        "basis_note": "《尚书·益稷》记娶于涂山、辛壬癸甲、启呱呱而泣；涂山现代位置有多种解释，怀远、重庆南岸和浙江候选独立保留。本点只为叙事锚点，不选定其中一处，不表示与其他事件的地理方向或距离。",
+        "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+        "person_ids": [
+          "person-15f8840a66b7",
+          "person-72ccefbb6b75"
+        ],
+        "people": [
+          "禹",
+          "涂山女"
+        ],
+        "candidate_ids": [
+          "05-03-candidate-1",
+          "05-03-candidate-2",
+          "05-03-candidate-3"
+        ],
+        "source_text": "《尚书·益稷》（《十三经注疏》本）",
+        "source_quote": "予创若时，娶于涂山，辛壬癸甲。启呱呱而泣，予弗子，惟荒度土功。",
+        "commentary": "孔颖达疏：'涂山，国名。'",
+        "modern_identification": "传统认为涂山在今安徽怀远（一说重庆南岸）；陈恩林认为涂山在今安徽怀远。涂山具体位置有争议（安徽怀远/重庆南岸/浙江会稽）。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；孔颖达《尚书正义》（十三经注疏）",
+        "dispute": "涂山具体位置有争议（安徽怀远/重庆南岸/浙江会稽）。",
+        "category": "禹夏神话",
+        "tags": [
+          "禹夏",
+          "大禹",
+          "涂山",
+          "涂山女"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-05-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            117,
+            32.9
+          ]
+        },
+        "original_modern_coordinates": [
+          117,
+          32.9
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          770,
+          245
+        ],
+        "location_label": "涂山·位置存争议·示意",
+        "source_url": "https://zh.wikisource.org/wiki/尚書/益稷",
+        "source_review_note": "已对照《益稷》正文，将原报告的予娶涂山改为予创若时，娶于涂山；采用简体转写。孔颖达疏及候选地现代研究归属未逐版复核。",
+        "artwork": "stories/ch05-yu-tushan-marriage.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-04",
+      "geometry": null,
+      "properties": {
+        "id": "05-04",
+        "stage_id": "05",
+        "entity_id": "05-04",
+        "name": "启母化石",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-04"
+        ],
+        "basis_note": "《汉书·武帝纪》颜师古注记涂山氏至嵩高山下化石、石破生启，并称事见《淮南子》；今本《淮南子》无此段。本点只表达该传述的叙事锚点，不定位启母石、不对应登封现代候选中心，也不复原具体山形。",
+        "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+        "person_ids": [
+          "person-72ccefbb6b75",
+          "person-989ca7dbec29"
+        ],
+        "people": [
+          "涂山女",
+          "启"
+        ],
+        "candidate_ids": [
+          "05-04-candidate-1"
+        ],
+        "source_text": "《汉书·武帝纪》颜师古注引《淮南子》（今本《淮南子》无此文）",
+        "source_quote": "禹治鸿水，通轘辕山，化为熊，谓涂山氏曰：‘欲饷，闻鼓声乃来。’禹跳石，误中鼓。涂山氏往，见禹方作熊，惭而去，至嵩高山下化为石，方生启。禹曰：‘归我子。’石破北方而启生。",
+        "commentary": "颜师古注引《淮南子》。原文提及嵩高山。",
+        "modern_identification": "袁珂认为启母化石神话源于生殖崇拜；嵩山在今河南登封。启母化石事不见于今本《淮南子》，为颜师古注引佚文；嵩山位置明确。",
+        "modern_source": "袁珂《中国神话传说》（2004）；颜师古《汉书注》（唐）",
+        "dispute": "启母化石事不见于今本《淮南子》，为颜师古注引佚文。",
+        "category": "禹夏神话",
+        "tags": [
+          "禹夏",
+          "启母",
+          "化石",
+          "嵩山",
+          "启"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-05-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            113,
+            34.6
+          ]
+        },
+        "original_modern_coordinates": [
+          113,
+          34.6
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          1000,
+          300
+        ],
+        "location_label": "嵩高山下·叙事锚点示意",
+        "source_url": "https://skqs.dazhishi.com/show_bzdammpldg.html",
+        "source_review_note": "已对照《汉书》卷六元封元年启母石条颜师古注核对所引正文；仍明确今本《淮南子》无此段，不标作今本直接引文。现代学者归属未逐版复核。",
+        "artwork": "stories/ch05-qimu-turns-to-stone.png"
+      }
+    }
+  ]
+}

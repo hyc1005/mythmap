@@ -1,0 +1,319 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-09-30-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "03-01-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.239873,
+          40.090951
+        ]
+      },
+      "properties": {
+        "id": "03-01-candidate-1",
+        "stage_id": "03",
+        "entity_id": "03-01",
+        "name": "阪泉之战 · 涿鹿县",
+        "label": "涿鹿县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-01"
+        ],
+        "basis_note": "报告列举的河北涿鹿解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%B6%BF%E9%B9%BF%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295824,
+        "modern_display_name": "涿鹿县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "39.6714741",
+          "40.4909494",
+          "114.9225223",
+          "115.5066501"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-01-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.640078,
+          40.344626
+        ]
+      },
+      "properties": {
+        "id": "03-01-candidate-2",
+        "stage_id": "03",
+        "entity_id": "03-01",
+        "name": "阪泉之战 · 怀来县",
+        "label": "怀来县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-01"
+        ],
+        "basis_note": "报告所引怀戎解释的现代参考区。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%80%80%E6%9D%A5%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295552,
+        "modern_display_name": "怀来县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "40.0642230",
+          "40.5877716",
+          "115.2785340",
+          "115.9629250"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-01-candidate-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9705791,
+          40.4568127
+        ]
+      },
+      "properties": {
+        "id": "03-01-candidate-3",
+        "stage_id": "03",
+        "entity_id": "03-01",
+        "name": "阪泉之战 · 延庆区",
+        "label": "延庆区",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-01"
+        ],
+        "basis_note": "报告列举的延庆解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%BB%B6%E5%BA%86%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2988903,
+        "modern_display_name": "延庆区, 北京市, 102100, 中国",
+        "reference_bbox": [
+          "40.2644790",
+          "40.7903080",
+          "115.7297140",
+          "116.5689040"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-02-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.239873,
+          40.090951
+        ]
+      },
+      "properties": {
+        "id": "03-02-candidate-1",
+        "stage_id": "03",
+        "entity_id": "03-02",
+        "name": "涿鹿之战 · 涿鹿县",
+        "label": "涿鹿县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-02"
+        ],
+        "basis_note": "报告列举的涿鹿解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%B6%BF%E9%B9%BF%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295824,
+        "modern_display_name": "涿鹿县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "39.6714741",
+          "40.4909494",
+          "114.9225223",
+          "115.5066501"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-02-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.640078,
+          40.344626
+        ]
+      },
+      "properties": {
+        "id": "03-02-candidate-2",
+        "stage_id": "03",
+        "entity_id": "03-02",
+        "name": "涿鹿之战 · 怀来县",
+        "label": "怀来县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-02"
+        ],
+        "basis_note": "报告列举的怀来解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%80%80%E6%9D%A5%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295552,
+        "modern_display_name": "怀来县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "40.0642230",
+          "40.5877716",
+          "115.2785340",
+          "115.9629250"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-02-candidate-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.7183017,
+          39.8960768
+        ]
+      },
+      "properties": {
+        "id": "03-02-candidate-3",
+        "stage_id": "03",
+        "entity_id": "03-02",
+        "name": "涿鹿之战 · 蔚县",
+        "label": "蔚县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-02"
+        ],
+        "basis_note": "报告列举的蔚县解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E8%94%9A%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295570,
+        "modern_display_name": "蔚县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "39.5511558",
+          "40.1976650",
+          "114.1919616",
+          "115.0649643"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.8717835,
+          36.1199119
+        ]
+      },
+      "properties": {
+        "id": "03-04-candidate-1",
+        "stage_id": "03",
+        "entity_id": "03-04",
+        "name": "精卫填海 · 长子县",
+        "label": "长子县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-04"
+        ],
+        "basis_note": "报告列举的发鸠山长子解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%95%BF%E5%AD%90%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2963915,
+        "modern_display_name": "长子县, 长治市, 山西省, 中国",
+        "reference_bbox": [
+          "35.9185877",
+          "36.2626873",
+          "112.4834270",
+          "113.0081824"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-04-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.9229854,
+          35.7984314
+        ]
+      },
+      "properties": {
+        "id": "03-04-candidate-2",
+        "stage_id": "03",
+        "entity_id": "03-04",
+        "name": "精卫填海 · 高平市",
+        "label": "高平市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-04"
+        ],
+        "basis_note": "报告列举的发鸠山高平解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%AB%98%E5%B9%B3%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3237068,
+        "modern_display_name": "高平市, 晋城市, 山西省, 中国",
+        "reference_bbox": [
+          "35.6500201",
+          "35.9872819",
+          "112.7120208",
+          "113.1563038"
+        ],
+        "analysis_eligible": false
+      }
+    }
+  ]
+}

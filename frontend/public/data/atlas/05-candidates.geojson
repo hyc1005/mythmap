@@ -1,0 +1,163 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-09-30-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "05-03-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.1994832,
+          32.9706393
+        ]
+      },
+      "properties": {
+        "id": "05-03-candidate-1",
+        "stage_id": "05",
+        "entity_id": "05-03",
+        "name": "禹娶涂山女 · 怀远县",
+        "label": "怀远县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-03"
+        ],
+        "basis_note": "报告列举的涂山怀远解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%80%80%E8%BF%9C%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3262330,
+        "modern_display_name": "怀远县, 蚌埠市, 安徽省, 233416, 中国",
+        "reference_bbox": [
+          "32.7161853",
+          "33.3119986",
+          "116.7253803",
+          "117.3204929"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-03-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.642471,
+          29.5028729
+        ]
+      },
+      "properties": {
+        "id": "05-03-candidate-2",
+        "stage_id": "05",
+        "entity_id": "05-03",
+        "name": "禹娶涂山女 · 南岸区",
+        "label": "南岸区",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-03"
+        ],
+        "basis_note": "报告列举的涂山重庆解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%8D%97%E5%B2%B8%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2693315,
+        "modern_display_name": "南岸区, 重庆市, 中国",
+        "reference_bbox": [
+          "29.4606640",
+          "29.6206018",
+          "106.5278962",
+          "106.7998708"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-03-candidate-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.576854,
+          29.9992425
+        ]
+      },
+      "properties": {
+        "id": "05-03-candidate-3",
+        "stage_id": "05",
+        "entity_id": "05-03",
+        "name": "禹娶涂山女 · 绍兴市",
+        "label": "绍兴市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-03"
+        ],
+        "basis_note": "报告列举的涂山浙江解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%BB%8D%E5%85%B4%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3316522,
+        "modern_display_name": "绍兴市, 浙江省, 中国",
+        "reference_bbox": [
+          "29.2265100",
+          "30.2994384",
+          "119.8841866",
+          "121.2271356"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.0444455,
+          34.4551772
+        ]
+      },
+      "properties": {
+        "id": "05-04-candidate-1",
+        "stage_id": "05",
+        "entity_id": "05-04",
+        "name": "启母化石 · 登封市",
+        "label": "登封市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-04"
+        ],
+        "basis_note": "报告所引嵩山／启母石解释的现代参考区。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%99%BB%E5%B0%81%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3283763,
+        "modern_display_name": "登封市, 郑州市, 河南省, 中国",
+        "reference_bbox": [
+          "34.2629201",
+          "34.5953501",
+          "112.7142104",
+          "113.3237603"
+        ],
+        "analysis_eligible": false
+      }
+    }
+  ]
+}

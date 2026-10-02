@@ -1,0 +1,4831 @@
+{
+  "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+  "stages": [
+    {
+      "id": "00",
+      "title": "盘古开天",
+      "subtitle": "混沌初开 · 天地初分",
+      "event_ids": [
+        "01-01"
+      ],
+      "layers": {
+        "events": "/data/atlas/00-events.geojson"
+      },
+      "source_ids": [
+        "report-01-01"
+      ],
+      "revision_id": "myth-atlas-2026-09-30-v1",
+      "export_map": "output/atlas/maps/pangu-opening.png",
+      "illustration_source": "frontend/artwork-source/atlas-illustrations/pangu-opening.png"
+    },
+    {
+      "id": "01",
+      "title": "造人与补天",
+      "subtitle": "抟土造人 · 炼石济世",
+      "event_ids": [
+        "01-02",
+        "01-03-a",
+        "01-03-b",
+        "01-03-c",
+        "01-03-d"
+      ],
+      "layers": {
+        "events": "/data/atlas/01-events.geojson",
+        "candidates": "/data/atlas/01-candidates.geojson",
+        "routes": "/data/atlas/01-routes.geojson",
+        "activities": "/data/atlas/01-activities.geojson"
+      },
+      "source_ids": [
+        "report-01-01",
+        "report-01-02",
+        "report-01-03",
+        "report-01-04"
+      ],
+      "revision_id": "myth-atlas-2026-09-30-v1",
+      "export_map": "output/atlas/maps/01.png",
+      "illustration_source": "frontend/artwork-source/atlas-illustrations/01.png"
+    },
+    {
+      "id": "02",
+      "title": "三皇五氏",
+      "subtitle": "取火构木 · 文明起源",
+      "event_ids": [
+        "02-04",
+        "02-05",
+        "02-01",
+        "02-03"
+      ],
+      "layers": {
+        "events": "/data/atlas/02-events.geojson",
+        "candidates": "/data/atlas/02-candidates.geojson",
+        "routes": "/data/atlas/02-routes.geojson",
+        "activities": "/data/atlas/02-activities.geojson"
+      },
+      "source_ids": [
+        "report-02-01",
+        "report-02-02",
+        "report-02-03",
+        "report-02-04",
+        "report-02-05"
+      ],
+      "revision_id": "myth-atlas-2026-09-30-v1",
+      "export_map": "output/atlas/maps/02.png",
+      "illustration_source": "frontend/artwork-source/atlas-illustrations/02.png"
+    },
+    {
+      "id": "03",
+      "title": "炎黄时期",
+      "subtitle": "部落传说 · 战争与追寻",
+      "event_ids": [
+        "03-01",
+        "03-02",
+        "03-03",
+        "03-04",
+        "03-05"
+      ],
+      "layers": {
+        "events": "/data/atlas/03-events.geojson",
+        "candidates": "/data/atlas/03-candidates.geojson",
+        "routes": "/data/atlas/03-routes.geojson",
+        "activities": "/data/atlas/03-activities.geojson"
+      },
+      "source_ids": [
+        "report-03-01",
+        "report-03-02",
+        "report-03-03",
+        "report-03-04",
+        "report-03-05"
+      ],
+      "revision_id": "myth-atlas-2026-10-01-ch03-v1",
+      "export_map": "output/atlas/maps/03.png",
+      "illustration_source": "frontend/artwork-source/atlas-illustrations/03.png"
+    },
+    {
+      "id": "04",
+      "title": "五帝后期",
+      "subtitle": "颛顼尧舜 · 日月与息壤",
+      "event_ids": [
+        "04-01",
+        "04-02",
+        "04-03",
+        "04-04",
+        "04-05"
+      ],
+      "layers": {
+        "events": "/data/atlas/04-events.geojson",
+        "candidates": "/data/atlas/04-candidates.geojson",
+        "routes": "/data/atlas/04-routes.geojson",
+        "activities": "/data/atlas/04-activities.geojson"
+      },
+      "source_ids": [
+        "report-04-01",
+        "report-04-02",
+        "report-04-03",
+        "report-04-04",
+        "report-04-05"
+      ],
+      "revision_id": "myth-atlas-2026-10-01-map-v1",
+      "export_map": "output/atlas/maps/04.png",
+      "illustration_source": "frontend/artwork-source/atlas-illustrations/04.png"
+    },
+    {
+      "id": "05",
+      "title": "禹夏时期",
+      "subtitle": "治水涂山 · 禹启叙事",
+      "event_ids": [
+        "05-01",
+        "05-02",
+        "05-03",
+        "05-04"
+      ],
+      "layers": {
+        "events": "/data/atlas/05-events.geojson",
+        "candidates": "/data/atlas/05-candidates.geojson",
+        "routes": "/data/atlas/05-routes.geojson",
+        "activities": "/data/atlas/05-activities.geojson"
+      },
+      "source_ids": [
+        "report-05-01",
+        "report-05-02",
+        "report-05-03",
+        "report-05-04"
+      ],
+      "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+      "export_map": "output/atlas/maps/05.png",
+      "illustration_source": "frontend/artwork-source/atlas-illustrations/05.png"
+    },
+    {
+      "id": "06",
+      "title": "夏商之际",
+      "subtitle": "有穷少康 · 夏商之际",
+      "event_ids": [
+        "06-01",
+        "06-02",
+        "06-03",
+        "06-05",
+        "06-04"
+      ],
+      "layers": {
+        "events": "/data/atlas/06-events.geojson",
+        "candidates": "/data/atlas/06-candidates.geojson",
+        "routes": "/data/atlas/06-routes.geojson",
+        "activities": "/data/atlas/06-activities.geojson"
+      },
+      "source_ids": [
+        "report-06-01",
+        "report-06-02",
+        "report-06-03",
+        "report-06-04",
+        "report-06-05"
+      ],
+      "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+      "export_map": "output/atlas/maps/06.png",
+      "illustration_source": "frontend/artwork-source/atlas-illustrations/06.png"
+    },
+    {
+      "id": "07",
+      "title": "周穆王西巡",
+      "subtitle": "西征山海 · 昆仑瑶池",
+      "event_ids": [
+        "07-03",
+        "07-01",
+        "07-02",
+        "07-04"
+      ],
+      "layers": {
+        "events": "/data/atlas/07-events.geojson",
+        "candidates": "/data/atlas/07-candidates.geojson",
+        "routes": "/data/atlas/07-routes.geojson",
+        "activities": "/data/atlas/07-activities.geojson"
+      },
+      "source_ids": [
+        "report-07-03",
+        "report-07-01",
+        "report-07-02",
+        "report-07-04"
+      ],
+      "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+      "export_map": "output/atlas/maps/07.png",
+      "illustration_source": "frontend/artwork-source/atlas-illustrations/07.png"
+    }
+  ],
+  "events": [
+    {
+      "type": "Feature",
+      "id": "01-01",
+      "geometry": null,
+      "properties": {
+        "id": "01-01",
+        "stage_id": "00",
+        "entity_id": "01-01",
+        "name": "盘古开天",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-01"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-3f94c01d2b91"
+        ],
+        "people": [
+          "盘古"
+        ],
+        "candidate_ids": [],
+        "source_text": "《三五历纪》（三国·吴·徐整），佚文见《艺文类聚》卷一引、《太平御览》卷二引",
+        "source_quote": "天地浑沌如鸡子，盘古生其中。万八千岁，天地开辟，阳清为天，阴浊为地。盘古在其中，一日九变，神于天，圣于地。天日高一丈，地日厚一丈，盘古日长一丈。如此万八千岁，天数极高，地数极深，盘古极长。",
+        "commentary": "原书已佚，仅存佚文。袁珂《古神话选释》有辑录。原书未载具体地理方位。",
+        "modern_identification": "袁珂认为盘古神话源于南方少数民族（盘瓠传说影响）；茅盾《中国神话研究ABC》认为盘古神话可能受印度创世神话影响。盘古文献晚出（三国徐整），非先秦旧闻。",
+        "modern_source": "袁珂《古神话选释》（1979）；茅盾《中国神话研究ABC》（1929）",
+        "dispute": "盘古文献晚出（三国徐整），非先秦旧闻；盘古与盘瓠关系有争议；是否受外来影响有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "盘古",
+          "开天",
+          "晚出文献"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "artwork": "scenes/pangu-opening.png",
+        "artworks": [
+          "scenes/pangu-opening.png"
+        ],
+        "map_visible": false,
+        "presentation": "scene",
+        "location_label": "创世场景·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-02",
+      "geometry": null,
+      "properties": {
+        "id": "01-02",
+        "stage_id": "01",
+        "entity_id": "01-02",
+        "name": "女娲造人",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-02"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《风俗通义·皇霸》卷一（东汉·应劭），见王利器《风俗通义校注》",
+        "source_quote": "天地开辟，未有人民，女娲抟黄土作人。剧务，力不暇供，乃引绳于泥中，举以为人。",
+        "commentary": "王利器校注引《淮南子》《潜夫论》等参证。原文未载具体地理方位。",
+        "modern_identification": "袁珂认为女娲造人神话反映母系氏族社会；黄土作人与黄土高原地理有关联。女娲造人（《风俗通义》）与女娲补天（《淮南子》）分属不同文献，不合并因果。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王利器《风俗通义校注》（1981）",
+        "dispute": "女娲造人（《风俗通义》）与女娲补天（《淮南子》）分属不同文献，不合并因果。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "造人",
+          "风俗通义"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "artwork": "stories/nuwa-create.png",
+        "artworks": [
+          "stories/nuwa-create.png"
+        ],
+        "layout_hint": [
+          490,
+          545
+        ],
+        "location_label": "叙事锚点·示意",
+        "map_visible": true,
+        "presentation": "story"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03",
+      "geometry": null,
+      "properties": {
+        "id": "01-03",
+        "stage_id": "01",
+        "entity_id": "01-03",
+        "name": "女娲补天",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "往古之时，四极废，九州裂，天不兼覆，地不周载。火爁焱而不灭，水浩洋而不息。猛兽食颛民，鸷鸟攫老弱。于是女娲炼五色石以补苍天，断鳌足以立四极，杀黑龙以济冀州，积芦灰以止淫水。",
+        "commentary": "高诱注：'女娲，阴帝，佐虙牺治者也。'刘文典《淮南鸿烈集解》引王念孙、俞樾说。原文未明言补天具体地点，仅提及'冀州'为九州之一。",
+        "modern_identification": "王晖《中国上古史实揭秘》认为冀州在今山西、河北一带；袁珂认为补天神话源于陨石雨或地震灾害记忆。补天地点'冀州'范围有争议。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            112.5,
+            37.5
+          ]
+        },
+        "original_modern_coordinates": [
+          112.5,
+          37.5
+        ],
+        "presentation": "group",
+        "map_visible": false,
+        "artwork": "stories/nuwa-repair.png",
+        "artworks": [
+          "stories/nuwa-repair.png"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-04",
+      "geometry": null,
+      "properties": {
+        "id": "01-04",
+        "stage_id": "01",
+        "entity_id": "01-04",
+        "name": "共工怒触不周山",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-04"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-84c8b3931b3c"
+        ],
+        "people": [
+          "共工"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·天文训》（西汉·刘安），高诱注",
+        "source_quote": "昔者共工与颛顼争为帝，怒而触不周之山，天柱折，地维绝。天倾西北，故日月星辰移焉；地不满东南，故水潦尘埃归焉。",
+        "commentary": "高诱注：'不周山，昆仑之西北。'刘文典《淮南鸿烈集解》。郭璞注《山海经》以不周山为《西山经》之山。",
+        "modern_identification": "王晖认为不周山在今甘肃祁连山一带；袁珂认为不周山在今昆仑山脉西北段；杨宽认为不周山为神话地名，难以实指。共工触山（《天文训》）与女娲补天（《览冥训》）在原文中无因果关系，分开标注。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）；杨宽《中国古代神话与传说》（2005）",
+        "dispute": "不周山具体位置有争议（甘肃祁连山/昆仑山脉西北段/其他）；共工触山（《天文训》）与女娲补天（《览冥训》）在原文中无因果关系，分开标注。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "共工",
+          "不周山",
+          "昆仑"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            95,
+            40
+          ]
+        },
+        "original_modern_coordinates": [
+          95,
+          40
+        ],
+        "artwork": "stories/gonggong.png",
+        "artworks": [
+          "stories/gonggong.png"
+        ],
+        "layout_hint": [
+          385,
+          425
+        ],
+        "location_label": "叙事锚点·示意",
+        "map_visible": false,
+        "presentation": "archive",
+        "related_event_id": "04-01",
+        "archive_reason": "与第04章事件04-01同引《淮南子·天文训》同一段共工触山叙事；保留稳定记录供审计，不在时间线重复呈现。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02-01",
+      "geometry": null,
+      "properties": {
+        "id": "02-01",
+        "stage_id": "02",
+        "entity_id": "02-01",
+        "name": "伏羲画卦",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-01"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-1d04ccb80940"
+        ],
+        "people": [
+          "伏羲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《周易·系辞下》（《十三经注疏》本）",
+        "source_quote": "古者包牺氏之王天下也，仰则观象于天，俯则观法于地，观鸟兽之文与地之宜，近取诸身，远取诸物，于是始作八卦，以通神明之德，以类万物之情。",
+        "commentary": "孔颖达疏：'包牺氏，伏羲也。'王弼、韩康伯注。原文未载具体画卦地点。",
+        "modern_identification": "传统认为伏羲画卦于'卦台山'（今甘肃天水）；陈恩林认为画卦地点不可考。画卦地点'卦台山'为后世附会，先秦两汉文献无明确记载。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）",
+        "dispute": "画卦地点'卦台山'为后世附会，先秦两汉文献无明确记载。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "伏羲",
+          "画卦",
+          "八卦"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          490,
+          405
+        ],
+        "artwork": "characters/fuxi-corrected.svg",
+        "artworks": [
+          "characters/fuxi-corrected.svg"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "story",
+        "map_visible": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02-02",
+      "geometry": null,
+      "properties": {
+        "id": "02-02",
+        "stage_id": "02",
+        "entity_id": "02-02",
+        "name": "女娲伏羲兄妹婚",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-02"
+        ],
+        "basis_note": "无《山海经》地点或方位依据；此点仅为章节故事索引的叙事锚点，不表示实际发生地或彼此距离。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-1d04ccb80940",
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "伏羲",
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《风俗通义》（东汉·应劭）；《独异志》（唐·李冗）卷下",
+        "source_quote": "女娲，伏羲之妹。（《风俗通义》）；昔宇宙初开之时，只有女娲兄妹二人在昆仑山，而天下未有人民。议以为夫妻，又自羞耻。兄即与妹上昆仑山，咒曰：'天若遣我兄妹二人为夫妻，而烟悉合；若不，使烟散。'于烟即合。（《独异志》）",
+        "commentary": "王利器校注引《路史》《绎史》参证。原文提及昆仑山。",
+        "modern_identification": "袁珂认为兄妹婚神话反映原始社会血缘婚；昆仑山为神话地名。兄妹婚神话见于唐代《独异志》，晚出。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王利器《风俗通义校注》（1981）",
+        "dispute": "兄妹婚神话见于唐代《独异志》，晚出；与女娲造人神话的关系有争议。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "伏羲",
+          "女娲",
+          "兄妹婚",
+          "昆仑"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          610,
+          330
+        ],
+        "artwork": "characters/fuxi.png",
+        "artworks": [
+          "characters/fuxi.png",
+          "nuwa.png"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "archive",
+        "map_visible": false,
+        "archive_note": "退出主线，保留不同出处的原始资料；不把不同女娲文献串成确定生平。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02-03",
+      "geometry": null,
+      "properties": {
+        "id": "02-03",
+        "stage_id": "02",
+        "entity_id": "02-03",
+        "name": "神农尝百草",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-8e17321f03fb"
+        ],
+        "people": [
+          "神农"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·修务训》（西汉·刘安），高诱注",
+        "source_quote": "神农尝百草之滋味，一日而遇七十毒。",
+        "commentary": "高诱注：'神农，炎帝也。'原文未载具体地点。",
+        "modern_identification": "传统认为神农尝百草于'神农架'（今湖北）；袁珂认为不可考。'神农架'地名晚出，先秦文献无记载。",
+        "modern_source": "袁珂《中国神话传说》（2004）",
+        "dispute": "'神农架'地名晚出，先秦文献无记载。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "神农",
+          "尝百草",
+          "炎帝"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          735,
+          405
+        ],
+        "artwork": "characters/shennong.png",
+        "artworks": [
+          "characters/shennong.png"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "story",
+        "map_visible": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02-04",
+      "geometry": null,
+      "properties": {
+        "id": "02-04",
+        "stage_id": "02",
+        "entity_id": "02-04",
+        "name": "燧人取火",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-04"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-ea6359c62512"
+        ],
+        "people": [
+          "燧人"
+        ],
+        "candidate_ids": [],
+        "source_text": "《韩非子·五蠹》（战国·韩非），王先慎《韩非子集解》",
+        "source_quote": "上古之世，人民少而禽兽众……民食果蓏蚌蛤，腥臊恶臭而伤害腹胃，民多疾病。有圣人作，钻燧取火以化腥臊，而民说之，使王天下，号之曰燧人氏。",
+        "commentary": "王先慎集解引卢文弨、顾广圻说。原文未载具体地点。",
+        "modern_identification": "袁珂认为燧人氏为传说时代部落；具体地点不可考。燧人氏为传说人物，无确切地理记载。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王先慎《韩非子集解》（1986）",
+        "dispute": "燧人氏为传说人物，无确切地理记载。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "燧人",
+          "取火"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          500,
+          555
+        ],
+        "artwork": "characters/suiren.png",
+        "artworks": [
+          "characters/suiren.png"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "story",
+        "map_visible": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "02-05",
+      "geometry": null,
+      "properties": {
+        "id": "02-05",
+        "stage_id": "02",
+        "entity_id": "02-05",
+        "name": "有巢构木",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "narrative_anchor",
+        "source_ids": [
+          "report-02-05"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-ab7b8d362c73"
+        ],
+        "people": [
+          "有巢"
+        ],
+        "candidate_ids": [],
+        "source_text": "《韩非子·五蠹》（战国·韩非），王先慎《韩非子集解》",
+        "source_quote": "上古之世，人民少而禽兽众，人民不胜禽兽虫蛇。有圣人作，构木为巢以避群害，而民悦之，使王天下，号曰有巢氏。",
+        "commentary": "王先慎集解。原文未载具体地点。",
+        "modern_identification": "袁珂认为有巢氏为传说时代部落；具体地点不可考。有巢氏为传说人物，无确切地理记载。",
+        "modern_source": "袁珂《中国神话传说》（2004）；王先慎《韩非子集解》（1986）",
+        "dispute": "有巢氏为传说人物，无确切地理记载。",
+        "category": "三皇五氏",
+        "tags": [
+          "三皇",
+          "有巢",
+          "构木"
+        ],
+        "verification_status": "source-checked-anchor",
+        "asset_id": "illustration-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "layout_hint": [
+          720,
+          555
+        ],
+        "artwork": "characters/youchao.png",
+        "artworks": [
+          "characters/youchao.png"
+        ],
+        "location_label": "叙事锚点·示意",
+        "presentation": "story",
+        "map_visible": true
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-01",
+      "geometry": null,
+      "properties": {
+        "id": "03-01",
+        "stage_id": "03",
+        "entity_id": "03-01",
+        "name": "阪泉之战",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-01"
+        ],
+        "basis_note": "《史记·五帝本纪》记黄帝与炎帝战于阪泉之野；现代地点解释不一。本点不代表候选地、真实方向或距离。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-ea2e022d685f",
+          "person-838748c481ec"
+        ],
+        "people": [
+          "黄帝",
+          "炎帝"
+        ],
+        "candidate_ids": [
+          "03-01-candidate-1",
+          "03-01-candidate-2",
+          "03-01-candidate-3"
+        ],
+        "source_text": "《史记·五帝本纪》（西汉·司马迁），三家注",
+        "source_quote": "轩辕之时，神农氏世衰……以与炎帝战于阪泉之野。三战，然后得其志。",
+        "commentary": "裴骃集解引皇甫谧曰：'阪泉，在上谷。'张守节正义：'阪泉，今名黄帝泉，在妫州怀戎县东五十六里。'",
+        "modern_identification": "王晖认为阪泉在今河北涿鹿县东南；陈恩林认为阪泉在今北京延庆一带。阪泉具体位置有争议（河北涿鹿/怀来/延庆）。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；陈恩林《夏商周地理新考》（2013）",
+        "dispute": "阪泉具体位置有争议（河北涿鹿/怀来/延庆）。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "黄帝",
+          "炎帝",
+          "阪泉",
+          "战争"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            115.9,
+            40.4
+          ]
+        },
+        "original_modern_coordinates": [
+          115.9,
+          40.4
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-banquan.png",
+        "artworks": [
+          "stories/ch03-banquan.png"
+        ],
+        "layout_hint": [
+          300,
+          420
+        ],
+        "location_label": "位置存争议·叙事锚点示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-02",
+      "geometry": null,
+      "properties": {
+        "id": "03-02",
+        "stage_id": "03",
+        "entity_id": "03-02",
+        "name": "涿鹿之战",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-02"
+        ],
+        "basis_note": "《史记·五帝本纪》记黄帝与蚩尤战于涿鹿之野；现代地点解释不一。本点不代表候选地、真实方向或距离。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-ea2e022d685f",
+          "person-1e92700f28ee"
+        ],
+        "people": [
+          "黄帝",
+          "蚩尤"
+        ],
+        "candidate_ids": [
+          "03-02-candidate-1",
+          "03-02-candidate-2",
+          "03-02-candidate-3"
+        ],
+        "source_text": "《史记·五帝本纪》（西汉·司马迁），三家注",
+        "source_quote": "蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野，遂禽杀蚩尤。",
+        "commentary": "裴骃集解引服虔曰：'涿鹿，山名，在涿郡。'张守节正义：'涿鹿，今在妫州怀戎县东五十六里。'",
+        "modern_identification": "王晖认为涿鹿在今河北涿鹿县；陈恩林认为涿鹿在今河北蔚县一带。涿鹿具体位置有争议（河北涿鹿/怀来/蔚县）。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；陈恩林《夏商周地理新考》（2013）",
+        "dispute": "涿鹿具体位置有争议（河北涿鹿/怀来/蔚县）。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "黄帝",
+          "蚩尤",
+          "涿鹿",
+          "战争"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            115.3,
+            40.1
+          ]
+        },
+        "original_modern_coordinates": [
+          115.3,
+          40.1
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-zhuolu.png",
+        "artworks": [
+          "stories/ch03-zhuolu.png"
+        ],
+        "layout_hint": [
+          520,
+          310
+        ],
+        "location_label": "位置存争议·叙事锚点示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-03",
+      "geometry": null,
+      "properties": {
+        "id": "03-03",
+        "stage_id": "03",
+        "entity_id": "03-03",
+        "name": "刑天舞干戚",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-03-03"
+        ],
+        "basis_note": "《山海经·海外西经》记刑天与帝争神、葬于常羊之山，未提供可核实的绝对坐标。本点仅为叙事锚点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-2d87a62ece73"
+        ],
+        "people": [
+          "刑天"
+        ],
+        "candidate_ids": [],
+        "source_text": "《山海经·海外西经》（郭璞注本）",
+        "source_quote": "刑天与帝至此争神，帝断其首，葬之常羊之山。乃以乳为目，以脐为口，操干戚以舞。",
+        "commentary": "郭璞注：'刑天，神名。'郝懿行《山海经笺疏》：'刑天，盖无首之鬼。'",
+        "modern_identification": "袁珂认为常羊山在今陕西一带；具体位置不可确指。常羊山具体位置有争议。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "常羊山具体位置有争议。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "刑天",
+          "常羊山",
+          "舞干戚"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            109,
+            34.5
+          ]
+        },
+        "original_modern_coordinates": [
+          109,
+          34.5
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-xingtian.png",
+        "artworks": [
+          "stories/ch03-xingtian.png"
+        ],
+        "layout_hint": [
+          740,
+          500
+        ],
+        "location_label": "常羊山·叙事锚点示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-04",
+      "geometry": null,
+      "properties": {
+        "id": "03-04",
+        "stage_id": "03",
+        "entity_id": "03-04",
+        "name": "精卫填海",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-03-04"
+        ],
+        "basis_note": "《山海经·北山经》记精卫出自发鸠之山，常衔西山木石以堙东海；图面只转述原文关系，不表示两点间的绝对距离。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-b402786f5184"
+        ],
+        "people": [
+          "精卫"
+        ],
+        "candidate_ids": [
+          "03-04-candidate-1",
+          "03-04-candidate-2"
+        ],
+        "source_text": "《山海经·北山经》（郭璞注本）",
+        "source_quote": "发鸠之山，其上多柘木。有鸟焉，其状如乌，文首，白喙，赤足，名曰精卫，其鸣自詨。是炎帝之少女，名曰女娃。女娃游于东海，溺而不返，故为精卫，常衔西山之木石，以堙于东海。",
+        "commentary": "郭璞注：'发鸠山，亦山名。'郝懿行《山海经笺疏》：'发鸠山，在今山西长子县西。'",
+        "modern_identification": "袁珂认为发鸠山在今山西长子县；东海指今黄海或渤海。发鸠山位置有争议（山西长子/其他）；东海范围有争议。精卫填海归入炎黄时期，但发鸠山与东海在第8阶段空间图层中标注。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "发鸠山位置有争议（山西长子/其他）；东海范围有争议。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "精卫",
+          "填海",
+          "发鸠山",
+          "东海"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            112.6,
+            36.1
+          ]
+        },
+        "original_modern_coordinates": [
+          112.6,
+          36.1
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-jingwei.png",
+        "artworks": [
+          "stories/ch03-jingwei.png"
+        ],
+        "layout_hint": [
+          900,
+          245
+        ],
+        "location_label": "发鸠之山—东海·关系示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-05",
+      "geometry": null,
+      "properties": {
+        "id": "03-05",
+        "stage_id": "03",
+        "entity_id": "03-05",
+        "name": "夸父逐日",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-03-05"
+        ],
+        "basis_note": "《山海经·海外北经》记夸父逐日，饮河、渭不足，北饮大泽，未至而死，弃杖化邓林。图面仅表达经文叙事顺序。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-e8582df4d5fd"
+        ],
+        "people": [
+          "夸父"
+        ],
+        "candidate_ids": [],
+        "source_text": "《山海经·海外北经》（郭璞注本）；又见《大荒北经》",
+        "source_quote": "夸父与日逐走，入日。渴，欲得饮，饮于河、渭；河、渭不足，北饮大泽。未至，道渴而死。弃其杖，化为邓林。",
+        "commentary": "郭璞注：'邓林，桃林也。'郝懿行《山海经笺疏》：'邓林即桃林。'",
+        "modern_identification": "袁珂认为夸父逐日神话源于干旱灾害记忆；邓林在今河南灵宝一带；大泽在今内蒙古或甘肃。邓林具体位置有争议；大泽具体位置有争议。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "邓林具体位置有争议；大泽具体位置有争议。",
+        "category": "炎黄神话",
+        "tags": [
+          "炎黄",
+          "夸父",
+          "逐日",
+          "邓林",
+          "河渭"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            113.5,
+            34.7
+          ]
+        },
+        "original_modern_coordinates": [
+          113.5,
+          34.7
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch03-kuafu.png",
+        "artworks": [
+          "stories/ch03-kuafu.png"
+        ],
+        "layout_hint": [
+          1010,
+          535
+        ],
+        "location_label": "河、渭至北方大泽·次序示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-01",
+      "geometry": null,
+      "properties": {
+        "id": "04-01",
+        "stage_id": "04",
+        "entity_id": "04-01",
+        "name": "共工与颛顼争帝",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-01"
+        ],
+        "basis_note": "《淮南子·天文训》记共工与颛顼争帝、怒触不周之山；山址有不同解释，本点仅供阅读，不代表现实坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-84c8b3931b3c",
+          "person-5560c2e2418b"
+        ],
+        "people": [
+          "共工",
+          "颛顼"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·天文训》（西汉·刘安），高诱注",
+        "source_quote": "昔者共工与颛顼争为帝，怒而触不周之山，天柱折，地维绝。",
+        "commentary": "高诱注：'共工，水官也。颛顼，黄帝之孙，昌意之子。'高诱注'不周山，昆仑之西北'。",
+        "modern_identification": "王晖认为不周山在今甘肃祁连山一带；袁珂认为不周山在今昆仑山脉西北段；杨宽认为不周山为神话地名，难以实指。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）；杨宽《中国古代神话与传说》（2005）",
+        "dispute": "不周山具体位置有争议（甘肃祁连山/昆仑山脉西北段/其他）。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "共工",
+          "颛顼",
+          "不周山",
+          "争帝"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            95,
+            40
+          ]
+        },
+        "original_modern_coordinates": [
+          95,
+          40
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-gonggong-zhuanxu.png",
+        "artworks": [
+          "stories/ch04-gonggong-zhuanxu.png"
+        ],
+        "layout_hint": [
+          260,
+          410
+        ],
+        "location_label": "不周之山·叙事锚点示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-02",
+      "geometry": null,
+      "properties": {
+        "id": "04-02",
+        "stage_id": "04",
+        "entity_id": "04-02",
+        "name": "大羿射日",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-02"
+        ],
+        "basis_note": "《淮南子·本经训》把羿诛凿齿、杀九婴、射日等行动并载，并涉及多个地名；本点不代表单一地点或路线。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-3c2d2bf0b017"
+        ],
+        "people": [
+          "大羿"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·本经训》（西汉·刘安），高诱注",
+        "source_quote": "逮至尧之时，十日并出，焦禾稼，杀草木，而民无所食。猰貐、凿齿、九婴、大风、封豨、修蛇皆为民害。尧乃使羿诛凿齿于畴华之野，杀九婴于凶水之上，缴大风于青丘之泽，上射十日而下杀猰貐，断修蛇于洞庭，禽封豨于桑林。",
+        "commentary": "高诱注：'羿，尧时诸侯。'刘文典《淮南鸿烈集解》。原文提及畴华之野、凶水之上、青丘之泽、洞庭、桑林，但未载具体位置。",
+        "modern_identification": "袁珂认为射日神话源于干旱灾害记忆；'羿'为大羿（帝尧时期神射手），非夏代有穷氏后羿。大羿（射日）与后羿（夏代有穷氏）必须区分；各地名具体位置多不可考。",
+        "modern_source": "袁珂《中国神话传说》（2004）；刘文典《淮南鸿烈集解》（1923）",
+        "dispute": "大羿（射日）与后羿（夏代有穷氏）必须区分；各地名具体位置多不可考。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "大羿",
+          "射日",
+          "十日",
+          "尧"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-dayi-shoots-suns.png",
+        "artworks": [
+          "stories/ch04-dayi-shoots-suns.png"
+        ],
+        "layout_hint": [
+          460,
+          220
+        ],
+        "location_label": "多地行动·关系示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-03",
+      "geometry": null,
+      "properties": {
+        "id": "04-03",
+        "stage_id": "04",
+        "entity_id": "04-03",
+        "name": "嫦娥奔月",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-03"
+        ],
+        "basis_note": "《淮南子·览冥训》记姮娥窃不死之药奔月；此为神话叙事，不投射到人间地理坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-2149b25f34c1"
+        ],
+        "people": [
+          "嫦娥"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "羿请不死之药于西王母，姮娥窃以奔月，怅然有丧，无以续之。",
+        "commentary": "高诱注：'姮娥，羿妻也。'刘文典《淮南鸿烈集解》。原文未载具体地点。",
+        "modern_identification": "袁珂认为嫦娥奔月神话源于月亮崇拜；姮娥即嫦娥（避汉文帝讳）。嫦娥奔月与后羿射日的关系（夫妻/无关系）有争议。",
+        "modern_source": "袁珂《中国神话传说》（2004）；刘文典《淮南鸿烈集解》（1923）",
+        "dispute": "嫦娥奔月与后羿射日的关系（夫妻/无关系）有争议。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "嫦娥",
+          "奔月",
+          "后羿",
+          "西王母"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-change-flies-to-moon.png",
+        "artworks": [
+          "stories/ch04-change-flies-to-moon.png"
+        ],
+        "layout_hint": [
+          720,
+          205
+        ],
+        "location_label": "月域叙事·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-04",
+      "geometry": null,
+      "properties": {
+        "id": "04-04",
+        "stage_id": "04",
+        "entity_id": "04-04",
+        "name": "鲧窃息壤",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-04"
+        ],
+        "basis_note": "《山海经·海内经》记鲧窃息壤壅洪水，后被杀于羽郊；羽郊未能落实为可靠绝对位置。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-2145d9c0b6fe"
+        ],
+        "people": [
+          "鲧"
+        ],
+        "candidate_ids": [
+          "04-04-candidate-1",
+          "04-04-candidate-2"
+        ],
+        "source_text": "《山海经·海内经》（郭璞注本）",
+        "source_quote": "洪水滔天，鲧窃帝之息壤以堙洪水，不待帝命。帝令祝融杀鲧于羽郊。鲧复生禹。",
+        "commentary": "郭璞注：'息壤，土长息无限。'郝懿行《山海经笺疏》：'羽郊，即羽山之野。'",
+        "modern_identification": "袁珂认为羽山在今山东郯城一带；息壤为神话中的神土。羽山具体位置有争议（山东郯城/其他）；息壤为神话概念，无实指。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "羽山具体位置有争议（山东郯城/其他）；息壤为神话概念，无实指。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "鲧",
+          "息壤",
+          "羽山",
+          "洪水"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            118.2,
+            34.3
+          ]
+        },
+        "original_modern_coordinates": [
+          118.2,
+          34.3
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-gun-xirang.png",
+        "artworks": [
+          "stories/ch04-gun-xirang.png"
+        ],
+        "layout_hint": [
+          900,
+          420
+        ],
+        "location_label": "羽郊·位置未考"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-05",
+      "geometry": null,
+      "properties": {
+        "id": "04-05",
+        "stage_id": "04",
+        "entity_id": "04-05",
+        "name": "尧禅舜",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-04-05"
+        ],
+        "basis_note": "《尚书·尧典》记尧命舜；原文未提供可用于地图定位的具体地点或方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-8c45913efb08",
+          "person-79b8457f6a3b"
+        ],
+        "people": [
+          "尧",
+          "舜"
+        ],
+        "candidate_ids": [
+          "04-05-candidate-1"
+        ],
+        "source_text": "《尚书·尧典》（《十三经注疏》本）",
+        "source_quote": "尧曰：'咨！尔舜！天之历数在尔躬，允执其中。四海困穷，天禄永终。'舜亦以命禹。",
+        "commentary": "孔颖达疏：'尧禅位于舜。'原文未载具体地点。",
+        "modern_identification": "传统认为尧都平阳（今山西临汾）；舜都蒲坂（今山西永济）。尧都、舜都具体位置有争议。",
+        "modern_source": "孔颖达《尚书正义》（十三经注疏）",
+        "dispute": "尧都、舜都具体位置有争议。",
+        "category": "五帝神话",
+        "tags": [
+          "五帝",
+          "尧",
+          "舜",
+          "禅让",
+          "平阳"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            111,
+            35
+          ]
+        },
+        "original_modern_coordinates": [
+          111,
+          35
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/ch04-yao-shun.png",
+        "artworks": [
+          "stories/ch04-yao-shun.png"
+        ],
+        "layout_hint": [
+          1050,
+          565
+        ],
+        "location_label": "禅让叙事·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-01",
+      "geometry": null,
+      "properties": {
+        "id": "05-01",
+        "stage_id": "05",
+        "entity_id": "05-01",
+        "name": "大禹治水",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-05-01"
+        ],
+        "basis_note": "《尚书·禹贡》记禹敷土、随山刊木、奠高山大川；治水涉及多条水系。本点只为叙事锚点，不代表单一发生地、九州边界、古河道或活动范围。",
+        "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+        "person_ids": [
+          "person-15f8840a66b7"
+        ],
+        "people": [
+          "禹"
+        ],
+        "candidate_ids": [],
+        "source_text": "《尚书·禹贡》（《十三经注疏》本）",
+        "source_quote": "禹敷土，随山刊木，奠高山大川。",
+        "commentary": "孔颖达疏：'禹治水，随山刊木。'原文记载九州（冀、兖、青、徐、扬、荆、豫、梁、雍）。",
+        "modern_identification": "王晖认为《禹贡》成书于战国，反映当时地理认知；九州范围有争议。九州范围有争议；《禹贡》成书年代有争议。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；孔颖达《尚书正义》（十三经注疏）",
+        "dispute": "九州范围有争议；《禹贡》成书年代有争议。",
+        "category": "禹夏神话",
+        "tags": [
+          "禹夏",
+          "大禹",
+          "治水",
+          "九州",
+          "禹贡"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-05-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            110.5,
+            34.7
+          ]
+        },
+        "original_modern_coordinates": [
+          110.5,
+          34.7
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          220,
+          580
+        ],
+        "location_label": "多地治水·叙事锚点示意",
+        "source_url": "https://zh.wikisource.org/wiki/尚書/禹貢",
+        "source_review_note": "已对照网络原文核对所引正文；原报告中的孔颖达疏引语及现代学者归属未逐版复核。",
+        "artwork": "stories/ch05-yu-controls-flood.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-02",
+      "geometry": null,
+      "properties": {
+        "id": "05-02",
+        "stage_id": "05",
+        "entity_id": "05-02",
+        "name": "禹杀相柳",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-05-02"
+        ],
+        "basis_note": "所引相柳文字出自《山海经·海外北经》，不是《大荒北经》的相繇条。原文把众帝之台置于昆仑之北、柔利之东，但不构成现代定位，也不直接给出禹杀相柳的发生点。本点只为叙事锚点；候选坐标与插画均不作地点证据。",
+        "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+        "person_ids": [
+          "person-15f8840a66b7",
+          "person-053d1d379ac3"
+        ],
+        "people": [
+          "禹",
+          "相柳"
+        ],
+        "candidate_ids": [],
+        "source_text": "《山海经·海外北经》；另见《大荒北经》相繇条",
+        "source_quote": "共工之臣曰相柳氏，九首，以食于九山。相柳之所抵，厥为泽谿。禹杀相柳，其血腥，不可以树五谷种。禹厥之，三仞三沮，乃以为众帝之台。在昆仑之北，柔利之东。相柳者，九首人面，蛇身而青。",
+        "commentary": "《海外北经》相柳条记九首人面、蛇身而青，并述众帝之台的相对方位；《大荒北经》另有相繇条。两篇文字分别保留，不混作同一引文。",
+        "modern_identification": "袁珂认为相柳为神话中的九首蛇神；众帝之台为神话建筑。众帝之台具体位置不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "众帝之台具体位置不可考。",
+        "category": "禹夏神话",
+        "tags": [
+          "禹夏",
+          "大禹",
+          "相柳",
+          "众帝之台"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-05-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          470,
+          440
+        ],
+        "location_label": "相柳叙事·地点未考·示意",
+        "source_url": "https://zh.wikisource.org/wiki/山海經/海外北經",
+        "source_review_note": "已对照《海外北经》正文纠正原报告篇目并补全形态与相对方位；采用简体转写，昆侖写作昆仑。现代学者归属未逐版复核。",
+        "artwork": "stories/ch05-yu-xiangliu.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-03",
+      "geometry": null,
+      "properties": {
+        "id": "05-03",
+        "stage_id": "05",
+        "entity_id": "05-03",
+        "name": "禹娶涂山女",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-03"
+        ],
+        "basis_note": "《尚书·益稷》记娶于涂山、辛壬癸甲、启呱呱而泣；涂山现代位置有多种解释，怀远、重庆南岸和浙江候选独立保留。本点只为叙事锚点，不选定其中一处，不表示与其他事件的地理方向或距离。",
+        "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+        "person_ids": [
+          "person-15f8840a66b7",
+          "person-72ccefbb6b75"
+        ],
+        "people": [
+          "禹",
+          "涂山女"
+        ],
+        "candidate_ids": [
+          "05-03-candidate-1",
+          "05-03-candidate-2",
+          "05-03-candidate-3"
+        ],
+        "source_text": "《尚书·益稷》（《十三经注疏》本）",
+        "source_quote": "予创若时，娶于涂山，辛壬癸甲。启呱呱而泣，予弗子，惟荒度土功。",
+        "commentary": "孔颖达疏：'涂山，国名。'",
+        "modern_identification": "传统认为涂山在今安徽怀远（一说重庆南岸）；陈恩林认为涂山在今安徽怀远。涂山具体位置有争议（安徽怀远/重庆南岸/浙江会稽）。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；孔颖达《尚书正义》（十三经注疏）",
+        "dispute": "涂山具体位置有争议（安徽怀远/重庆南岸/浙江会稽）。",
+        "category": "禹夏神话",
+        "tags": [
+          "禹夏",
+          "大禹",
+          "涂山",
+          "涂山女"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-05-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            117,
+            32.9
+          ]
+        },
+        "original_modern_coordinates": [
+          117,
+          32.9
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          770,
+          245
+        ],
+        "location_label": "涂山·位置存争议·示意",
+        "source_url": "https://zh.wikisource.org/wiki/尚書/益稷",
+        "source_review_note": "已对照《益稷》正文，将原报告的予娶涂山改为予创若时，娶于涂山；采用简体转写。孔颖达疏及候选地现代研究归属未逐版复核。",
+        "artwork": "stories/ch05-yu-tushan-marriage.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-04",
+      "geometry": null,
+      "properties": {
+        "id": "05-04",
+        "stage_id": "05",
+        "entity_id": "05-04",
+        "name": "启母化石",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-04"
+        ],
+        "basis_note": "《汉书·武帝纪》颜师古注记涂山氏至嵩高山下化石、石破生启，并称事见《淮南子》；今本《淮南子》无此段。本点只表达该传述的叙事锚点，不定位启母石、不对应登封现代候选中心，也不复原具体山形。",
+        "revision_id": "myth-atlas-2026-10-01-ch05-v1",
+        "person_ids": [
+          "person-72ccefbb6b75",
+          "person-989ca7dbec29"
+        ],
+        "people": [
+          "涂山女",
+          "启"
+        ],
+        "candidate_ids": [
+          "05-04-candidate-1"
+        ],
+        "source_text": "《汉书·武帝纪》颜师古注引《淮南子》（今本《淮南子》无此文）",
+        "source_quote": "禹治鸿水，通轘辕山，化为熊，谓涂山氏曰：‘欲饷，闻鼓声乃来。’禹跳石，误中鼓。涂山氏往，见禹方作熊，惭而去，至嵩高山下化为石，方生启。禹曰：‘归我子。’石破北方而启生。",
+        "commentary": "颜师古注引《淮南子》。原文提及嵩高山。",
+        "modern_identification": "袁珂认为启母化石神话源于生殖崇拜；嵩山在今河南登封。启母化石事不见于今本《淮南子》，为颜师古注引佚文；嵩山位置明确。",
+        "modern_source": "袁珂《中国神话传说》（2004）；颜师古《汉书注》（唐）",
+        "dispute": "启母化石事不见于今本《淮南子》，为颜师古注引佚文。",
+        "category": "禹夏神话",
+        "tags": [
+          "禹夏",
+          "启母",
+          "化石",
+          "嵩山",
+          "启"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-05-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            113,
+            34.6
+          ]
+        },
+        "original_modern_coordinates": [
+          113,
+          34.6
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          1000,
+          300
+        ],
+        "location_label": "嵩高山下·叙事锚点示意",
+        "source_url": "https://skqs.dazhishi.com/show_bzdammpldg.html",
+        "source_review_note": "已对照《汉书》卷六元封元年启母石条颜师古注核对所引正文；仍明确今本《淮南子》无此段，不标作今本直接引文。现代学者归属未逐版复核。",
+        "artwork": "stories/ch05-qimu-turns-to-stone.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-01",
+      "geometry": null,
+      "properties": {
+        "id": "06-01",
+        "stage_id": "06",
+        "entity_id": "06-01",
+        "name": "后羿代夏",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-01"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-368e19399aaa"
+        ],
+        "people": [
+          "后羿（有穷氏）"
+        ],
+        "candidate_ids": [
+          "06-01-candidate-1"
+        ],
+        "source_text": "《左传·襄公四年》（《十三经注疏》本）",
+        "source_quote": "昔有夏之方衰也，后羿自鉏迁于穷石，因夏民以代夏政。",
+        "commentary": "杜预注：'后羿，有穷氏之君也。'孔颖达疏。原文提及鉏、穷石。",
+        "modern_identification": "陈恩林认为鉏在今河南滑县一带；穷石在今山东德州一带。后羿（有穷氏）与大羿（射日）必须区分；鉏、穷石具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+        "dispute": "后羿（有穷氏）与大羿（射日）必须区分；鉏、穷石具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "后羿",
+          "代夏",
+          "有穷氏",
+          "鉏"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            114.5,
+            35.6
+          ]
+        },
+        "original_modern_coordinates": [
+          114.5,
+          35.6
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          180,
+          250
+        ],
+        "location_label": "鉏、穷石·位置存争议·示意",
+        "artwork": "stories/ch06-houyi-youqiong.png",
+        "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
+        "source_review_note": "已对照《左传·襄公四年》网络原文核对正文节引；杜注、孔疏及现代考证未逐版本复核。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-02",
+      "geometry": null,
+      "properties": {
+        "id": "06-02",
+        "stage_id": "06",
+        "entity_id": "06-02",
+        "name": "寒浞之乱",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-02"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-ae4a3bd45b5a"
+        ],
+        "people": [
+          "寒浞"
+        ],
+        "candidate_ids": [
+          "06-02-candidate-1"
+        ],
+        "source_text": "《左传·襄公四年》（《十三经注疏》本）",
+        "source_quote": "寒浞，伯明氏之谗子弟也。伯明后寒弃之，夷羿收之，信而使之，以为己相。浞行媚于内而施赂于外，愚弄其民而虞羿于田。树之诈慝以取其国家，外内咸服。羿犹不悛，将归自田，家众杀而亨之。",
+        "commentary": "杜预注：'寒浞，寒国伯明氏之谗子弟。'原文提及寒国。",
+        "modern_identification": "陈恩林认为寒国在今山东潍坊一带。寒国具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+        "dispute": "寒国具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "寒浞",
+          "寒国",
+          "乱"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            117.6,
+            36.7
+          ]
+        },
+        "original_modern_coordinates": [
+          117.6,
+          36.7
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          420,
+          540
+        ],
+        "location_label": "寒国·位置存争议·示意",
+        "artwork": "stories/ch06-hanzhuo.png",
+        "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
+        "source_review_note": "已对照《左传·襄公四年》网络原文核对正文节引；寒国现代位置仍有争议。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-03",
+      "geometry": null,
+      "properties": {
+        "id": "06-03",
+        "stage_id": "06",
+        "entity_id": "06-03",
+        "name": "少康中兴",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-03"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-5faec44cab57"
+        ],
+        "people": [
+          "少康"
+        ],
+        "candidate_ids": [
+          "06-03-candidate-1"
+        ],
+        "source_text": "《左传·哀公元年》（《十三经注疏》本）",
+        "source_quote": "昔有过浇杀斟灌以伐斟鄩，灭夏后相。后缗方娠，逃出自窦，归于有仍，生少康焉。为仍牧正，惎浇能戒之。浇使椒求之，逃奔有虞，为之庖正，以除其害。虞思于是妻之以二姚，而邑诸纶。有田一成，有众一旅，能布其德而兆其谋，以收夏众，抚其官职。",
+        "commentary": "杜预注：'少康，夏后相之子。'原文提及有仍、有虞、纶。",
+        "modern_identification": "陈恩林认为有仍在今山东济宁一带；有虞在今河南虞城一带；纶在今河南商丘一带。有仍、有虞、纶具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+        "dispute": "有仍、有虞、纶具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "少康",
+          "中兴",
+          "有仍",
+          "有虞"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            116.3,
+            34.4
+          ]
+        },
+        "original_modern_coordinates": [
+          116.3,
+          34.4
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          660,
+          290
+        ],
+        "location_label": "有仍、有虞、纶·迁徙叙事示意",
+        "artwork": "stories/ch06-shaokang.png",
+        "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/ai-gong-yuan-nian/zhs",
+        "source_review_note": "已对照《左传·哀公元年》底本网络文本核对节引；有仍、有虞、纶不连接为确定现代路线。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-04",
+      "geometry": null,
+      "properties": {
+        "id": "06-04",
+        "stage_id": "06",
+        "entity_id": "06-04",
+        "name": "成汤囚夏台",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-04"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-93f9bc09c39c"
+        ],
+        "people": [
+          "成汤"
+        ],
+        "candidate_ids": [
+          "06-04-candidate-1"
+        ],
+        "source_text": "《史记·夏本纪》（西汉·司马迁），三家注",
+        "source_quote": "夏桀为仍之会，有缗叛之。桀克有缗，以丧其国。桀召汤而囚之夏台，已而释之。",
+        "commentary": "裴骃集解引韦昭曰：'夏台，狱名。'",
+        "modern_identification": "传统认为夏台在今河南禹州一带；陈恩林认为夏台在今河南禹州。夏台具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；韦昭《国语注》",
+        "dispute": "夏台具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "成汤",
+          "夏台",
+          "夏桀"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            113.5,
+            34.3
+          ]
+        },
+        "original_modern_coordinates": [
+          113.5,
+          34.3
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          900,
+          530
+        ],
+        "location_label": "夏台·位置存争议·示意",
+        "artwork": "stories/ch06-chengtang-xiatai.png",
+        "source_url": "https://ctext.org/text.pl?if=gb&node=4538&remap=gb&show=parallel",
+        "source_review_note": "已核对《史记·夏本纪》对应节引；夏台现代定位仍有争议。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-05",
+      "geometry": null,
+      "properties": {
+        "id": "06-05",
+        "stage_id": "06",
+        "entity_id": "06-05",
+        "name": "伊尹空桑",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-05"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-19b940f86697"
+        ],
+        "people": [
+          "伊尹"
+        ],
+        "candidate_ids": [
+          "06-05-candidate-1"
+        ],
+        "source_text": "《吕氏春秋·本味》（战国·吕不韦），高诱注",
+        "source_quote": "有侁氏女子采桑，得婴儿于空桑之中，献之其君。其君令烰人养之，察其所以然，曰：“其母居伊水之上，孕，梦有神告之曰：‘臼出水而东走。毋顾！’明日视臼出水，告其邻，东走十里而顾，其邑尽为水，身因化为空桑。故命之曰伊尹。”此伊尹生空桑之故也。长而贤。",
+        "commentary": "高诱注：'伊尹，名挚。空桑，地名。'原文提及伊水。",
+        "modern_identification": "陈恩林认为空桑在今河南伊川一带；伊水在今河南伊川。空桑具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；高诱《吕氏春秋注》",
+        "dispute": "空桑具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "伊尹",
+          "空桑",
+          "伊水"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-05",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            114,
+            34.8
+          ]
+        },
+        "original_modern_coordinates": [
+          114,
+          34.8
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          1110,
+          270
+        ],
+        "location_label": "空桑·位置存争议·示意",
+        "artwork": "stories/ch06-yiyin-kongsang.png",
+        "source_url": "https://ctext.org/lv-shi-chun-qiu/ben-wei/zh",
+        "source_review_note": "已对照《吕氏春秋·本味》网络原文校正引文与引号；版本间字形、句读可能有异。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-03",
+      "geometry": null,
+      "properties": {
+        "id": "07-03",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "升昆仑观黄帝之宫",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03"
+        ],
+        "basis_note": "此事见卷二：原文记穆王升昆仑之丘观黄帝之宫，并记丰隆之葬。昆仑现代解释有争议。本点只标叙事条目，不表示山体定位或真实行程。",
+        "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+        "person_ids": [
+          "person-3b6cc525942e",
+          "person-ea2e022d685f"
+        ],
+        "people": [
+          "周穆王",
+          "黄帝"
+        ],
+        "candidate_ids": [
+          "07-03-candidate-1",
+          "07-03-candidate-2"
+        ],
+        "source_text": "《穆天子传》卷二（郭璞注本）",
+        "source_quote": "天子升于昆仑之丘，以观黄帝之宫，而丰隆之葬，以诏后世。",
+        "commentary": "郭璞注文解释黄帝巡游四海、登昆仑山并于其上起宫室；插画不将注文解释当作现实地理证据。",
+        "modern_identification": "顾实认为昆仑之丘在今新疆昆仑山；王贻梁认为昆仑之丘在今甘肃祁连山一带。昆仑之丘具体位置有争议（新疆昆仑山/甘肃祁连山/其他）。",
+        "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+        "dispute": "昆仑之丘具体位置有争议（新疆昆仑山/甘肃祁连山/其他）。",
+        "category": "周穆王西巡",
+        "tags": [
+          "周穆王",
+          "昆仑",
+          "黄帝之宫",
+          "西巡"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-07-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "source_url": "https://zh.wikisource.org/zh-hans/穆天子傳/卷二",
+        "source_review_note": "已对照维基文库所录《穆天子传》相应卷次核对节引；现代学者归属未逐版复核。卷三底本在瑶池宴诗句作「丘陵自出」，异本有「山陵」字样；弇山条续文释读保留疑问。",
+        "location_label": "昆仑之丘·位置存争议·叙事锚点示意",
+        "layout_hint": [
+          180,
+          540
+        ],
+        "artwork": "stories/ch07-mu-kunlun-palace.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-01",
+      "geometry": null,
+      "properties": {
+        "id": "07-01",
+        "stage_id": "07",
+        "entity_id": "07-01",
+        "name": "穆天子见西王母",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-01"
+        ],
+        "basis_note": "见西王母条在卷三。西王母为《穆天子传》叙事形象，不与《山海经》不同篇目中的形态混同；西王母之邦位置有争议。本点仅作叙事锚点，图面排布不表示真实地点。",
+        "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+        "person_ids": [
+          "person-3b6cc525942e",
+          "person-e5d01cdec928"
+        ],
+        "people": [
+          "周穆王",
+          "西王母（穆天子传）"
+        ],
+        "candidate_ids": [
+          "07-01-candidate-1",
+          "07-01-candidate-2",
+          "07-01-candidate-3"
+        ],
+        "source_text": "《穆天子传》卷三（郭璞注本）",
+        "source_quote": "吉日甲子，天子宾于西王母。乃执白圭玄璧，以见西王母。",
+        "commentary": "郭璞注文描述西王母「如人，虎齿，蓬发戴胜，善啸」；本画依《穆天子传》叙事与注文作艺术解释，不等同《山海经》异篇形态。",
+        "modern_identification": "顾实《穆天子传西征讲疏》认为西王母之邦在今新疆和田一带；王贻梁《穆天子传通释》认为在今甘肃、青海一带。西王母之邦具体位置有争议（新疆/甘肃/青海）。",
+        "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+        "dispute": "西王母之邦具体位置有争议（新疆/甘肃/青海）。",
+        "category": "周穆王西巡",
+        "tags": [
+          "周穆王",
+          "西王母",
+          "西巡",
+          "见西王母"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-07-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "source_url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
+        "source_review_note": "已对照维基文库所录《穆天子传》相应卷次核对节引；现代学者归属未逐版复核。卷三底本在瑶池宴诗句作「丘陵自出」，异本有「山陵」字样；弇山条续文释读保留疑问。",
+        "location_label": "西王母之邦·位置存争议·叙事锚点示意",
+        "layout_hint": [
+          610,
+          170
+        ],
+        "artwork": "stories/ch07-mu-meets-xiwangmu.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-02",
+      "geometry": null,
+      "properties": {
+        "id": "07-02",
+        "stage_id": "07",
+        "entity_id": "07-02",
+        "name": "瑶池宴",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-02"
+        ],
+        "basis_note": "瑶池宴在卷三紧接甲子相见叙事次日「乙丑」；瑶池解释有争议。本点不选候选湖泊，不表示地理距离或行程线。",
+        "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+        "person_ids": [
+          "person-3b6cc525942e",
+          "person-e5d01cdec928"
+        ],
+        "people": [
+          "周穆王",
+          "西王母（穆天子传）"
+        ],
+        "candidate_ids": [
+          "07-02-candidate-1",
+          "07-02-candidate-2"
+        ],
+        "source_text": "《穆天子传》卷三（郭璞注本）",
+        "source_quote": "乙丑，天子觞西王母于瑶池之上。西王母为天子谣曰：「白云在天，丘陵自出。道里悠远，山川间之。将子无死，尚能复来。」天子答之曰：「予归东土，和治诸夏。万民平均，吾顾见汝。比及三年，将复而野。」",
+        "commentary": "本条原文记乙丑宴于瑶池并歌答；本章依维基文库所录底本作「丘陵自出」，不同传本有「山陵」异文。",
+        "modern_identification": "顾实认为瑶池在今新疆天池；王贻梁认为瑶池在今青海湖一带。瑶池具体位置有争议（新疆天池/青海湖/其他）。",
+        "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+        "dispute": "瑶池具体位置有争议（新疆天池/青海湖/其他）。",
+        "category": "周穆王西巡",
+        "tags": [
+          "周穆王",
+          "西王母",
+          "瑶池",
+          "宴"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-07-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "source_url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
+        "source_review_note": "已对照维基文库所录《穆天子传》相应卷次核对节引；现代学者归属未逐版复核。卷三底本在瑶池宴诗句作「丘陵自出」，异本有「山陵」字样；弇山条续文释读保留疑问。",
+        "location_label": "瑶池·位置存争议·叙事锚点示意",
+        "layout_hint": [
+          780,
+          575
+        ],
+        "artwork": "stories/ch07-yaochi-banquet.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-04",
+      "geometry": null,
+      "properties": {
+        "id": "07-04",
+        "stage_id": "07",
+        "entity_id": "07-04",
+        "name": "纪迹弇山",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-04"
+        ],
+        "basis_note": "卷三于瑶池宴后记穆王升弇山纪迹，原文又记「而树之槐」。弇山位置有争议。本点为叙事锚点，不按现代候选地点或路线落图。所据底本文字续作「眉曰」，释读存疑；插画不臆写铭文。",
+        "revision_id": "myth-atlas-2026-10-01-ch07-v1",
+        "person_ids": [
+          "person-3b6cc525942e"
+        ],
+        "people": [
+          "周穆王"
+        ],
+        "candidate_ids": [
+          "07-04-candidate-1"
+        ],
+        "source_text": "《穆天子传》卷三（郭璞注本）",
+        "source_quote": "天子遂驱升于弇山，乃纪其迹于弇山之石，而树之槐。",
+        "commentary": "郭璞注文称弇山即弇兹山，为日入之所。底本文字续作「眉曰」，释读存疑；图中不臆写铭文。",
+        "modern_identification": "顾实认为弇山在今甘肃敦煌一带；王贻梁认为弇山在今新疆东部。弇山具体位置有争议。",
+        "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+        "dispute": "弇山具体位置有争议。",
+        "category": "周穆王西巡",
+        "tags": [
+          "周穆王",
+          "弇山",
+          "纪迹",
+          "西巡"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-07-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "source_url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
+        "source_review_note": "已对照维基文库所录《穆天子传》相应卷次核对节引；现代学者归属未逐版复核。卷三底本在瑶池宴诗句作「丘陵自出」，异本有「山陵」字样；弇山条续文释读保留疑问。",
+        "location_label": "弇山·位置存争议·叙事锚点示意",
+        "layout_hint": [
+          1030,
+          260
+        ],
+        "artwork": "stories/ch07-yan-mountain-inscription.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "08-01",
+      "geometry": null,
+      "properties": {
+        "id": "08-01",
+        "stage_id": null,
+        "entity_id": "08-01",
+        "name": "海外诸国",
+        "layer_role": "spatial_reference",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-08-01"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [],
+        "people": [],
+        "candidate_ids": [],
+        "source_text": "《山海经》海外南/西/北/东经（郭璞注本）",
+        "source_quote": "《海外南经》《海外西经》《海外北经》《海外东经》载海外诸国，如'结匈国''羽民国''讙头国''三苗国''贯匈国''交胫国''不死民''歧舌国''三首国''长臂国''一目国''深目国''无肠国''聂耳国''博父国''拘缨国''跂踵国''大人国''君子国''青丘国''黑齿国''雨师妾国''玄股国''毛民国''劳民国'等。",
+        "commentary": "郭璞注、郝懿行《山海经笺疏》各有考释。",
+        "modern_identification": "袁珂认为海外诸国为古代对周边民族的想象性描述；具体位置多不可考。海外诸国具体位置多不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "海外诸国具体位置多不可考。",
+        "category": "海外诸国",
+        "tags": [
+          "海外",
+          "诸国",
+          "山海经",
+          "空间图层"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-divine",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "08-02",
+      "geometry": null,
+      "properties": {
+        "id": "08-02",
+        "stage_id": null,
+        "entity_id": "08-02",
+        "name": "大荒异兽",
+        "layer_role": "spatial_reference",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-08-02"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [],
+        "people": [],
+        "candidate_ids": [],
+        "source_text": "《山海经》大荒东/南/西/北经（郭璞注本）",
+        "source_quote": "《大荒东经》《大荒南经》《大荒西经》《大荒北经》载大荒异兽，如'九尾狐''烛龙''相柳''九凤''强良''天吴''毕方''狰''天狗''穷奇''梼杌''混沌'等。",
+        "commentary": "郭璞注、郝懿行《山海经笺疏》各有考释。",
+        "modern_identification": "袁珂认为大荒异兽为古代对远方动物的想象性描述；具体位置多不可考。大荒异兽具体位置多不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "大荒异兽具体位置多不可考。",
+        "category": "大荒异兽",
+        "tags": [
+          "大荒",
+          "异兽",
+          "山海经",
+          "空间图层"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-divine",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "08-03",
+      "geometry": null,
+      "properties": {
+        "id": "08-03",
+        "stage_id": null,
+        "entity_id": "08-03",
+        "name": "昆仑之丘",
+        "layer_role": "spatial_reference",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-08-03"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [],
+        "people": [],
+        "candidate_ids": [],
+        "source_text": "《山海经·西山经》（郭璞注本）",
+        "source_quote": "昆仑之丘，是实惟帝之下都，神陆吾司之。其神状虎身而九尾，人面而虎爪；是神也，司天之九部及帝之囿时。",
+        "commentary": "郭璞注：'昆仑之丘，帝之下都。'郝懿行《山海经笺疏》。",
+        "modern_identification": "王晖认为昆仑之丘在今甘肃祁连山一带；袁珂认为昆仑之丘在今昆仑山脉；顾实认为昆仑之丘在今新疆昆仑山。昆仑之丘具体位置有争议（甘肃祁连山/新疆昆仑山/其他）。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《山海经校注》（1980）；顾实《穆天子传西征讲疏》（1931）",
+        "dispute": "昆仑之丘具体位置有争议（甘肃祁连山/新疆昆仑山/其他）。",
+        "category": "神话地理",
+        "tags": [
+          "昆仑",
+          "帝之下都",
+          "山海经",
+          "空间图层"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-divine",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            95,
+            40
+          ]
+        },
+        "original_modern_coordinates": [
+          95,
+          40
+        ],
+        "presentation": "story",
+        "map_visible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "08-04",
+      "geometry": null,
+      "properties": {
+        "id": "08-04",
+        "stage_id": null,
+        "entity_id": "08-04",
+        "name": "归墟五山",
+        "layer_role": "spatial_reference",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-08-04"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [],
+        "people": [],
+        "candidate_ids": [],
+        "source_text": "《列子·汤问》（战国·列御寇），张湛注",
+        "source_quote": "渤海之东不知几亿万里，有大壑焉，实惟无底之谷，其下无底，名曰归墟。八纮九野之水，天汉之流，莫不注之，而无增无减焉。其中有五山焉：一曰岱舆，二曰员峤，三曰方壶，四曰瀛洲，五曰蓬莱。",
+        "commentary": "张湛注：'归墟，大海之底。'",
+        "modern_identification": "袁珂认为归墟五山为神话中的海上仙山；具体位置不可考。归墟五山具体位置不可考。",
+        "modern_source": "袁珂《中国神话传说》（2004）；张湛《列子注》",
+        "dispute": "归墟五山具体位置不可考。",
+        "category": "神话地理",
+        "tags": [
+          "归墟",
+          "五山",
+          "仙山",
+          "列子",
+          "空间图层"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-divine",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "08-05",
+      "geometry": null,
+      "properties": {
+        "id": "08-05",
+        "stage_id": null,
+        "entity_id": "08-05",
+        "name": "扶桑",
+        "layer_role": "spatial_reference",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-08-05"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [],
+        "people": [],
+        "candidate_ids": [],
+        "source_text": "《山海经·海外东经》（郭璞注本）",
+        "source_quote": "汤谷上有扶桑，十日所浴，在黑齿北。居水中，有大木，九日居下枝，一日居上枝。",
+        "commentary": "郭璞注：'扶桑，木名。'郝懿行《山海经笺疏》。",
+        "modern_identification": "袁珂认为扶桑为神话中的神树；具体位置不可考。扶桑具体位置不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "扶桑具体位置不可考。",
+        "category": "神话地理",
+        "tags": [
+          "扶桑",
+          "汤谷",
+          "十日",
+          "山海经",
+          "空间图层"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-divine",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "08-06",
+      "geometry": null,
+      "properties": {
+        "id": "08-06",
+        "stage_id": null,
+        "entity_id": "08-06",
+        "name": "烛龙",
+        "layer_role": "spatial_reference",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-08-06"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-0ee3197fa2fa"
+        ],
+        "people": [
+          "烛龙"
+        ],
+        "candidate_ids": [],
+        "source_text": "《山海经·海外北经》（郭璞注本）；又见《大荒北经》",
+        "source_quote": "西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。是烛九阴，是谓烛龙。",
+        "commentary": "郭璞注：'烛龙，烛阴也。'郝懿行《山海经笺疏》。",
+        "modern_identification": "袁珂认为烛龙为神话中的神兽；章尾山具体位置不可考。章尾山具体位置不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "章尾山具体位置不可考。",
+        "category": "大荒异兽",
+        "tags": [
+          "烛龙",
+          "章尾山",
+          "大荒",
+          "山海经",
+          "空间图层"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-divine",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "08-07",
+      "geometry": null,
+      "properties": {
+        "id": "08-07",
+        "stage_id": null,
+        "entity_id": "08-07",
+        "name": "西王母（早期形态）",
+        "layer_role": "spatial_reference",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-08-07"
+        ],
+        "basis_note": "原始报告的宽泛／示意位置不构成发生点依据；保留叙事条目，不补造坐标。 《西山经》原文西王母居玉山；保留与昆仑不同的文本地点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-c9a212b93c50"
+        ],
+        "people": [
+          "西王母（山海经）"
+        ],
+        "candidate_ids": [],
+        "source_text": "《山海经·西山经》（郭璞注本）",
+        "source_quote": "西王母其状如人，豹尾虎齿而善啸，蓬发戴胜，是司天之厉及五残。",
+        "commentary": "郭璞注：'西王母，西方之神也。'郝懿行《山海经笺疏》。",
+        "modern_identification": "袁珂认为西王母早期形态为半人半兽的凶神；具体位置不可考。西王母早期形态具体位置不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "dispute": "西王母早期形态具体位置不可考。",
+        "category": "神话地理",
+        "tags": [
+          "西王母",
+          "早期形态",
+          "山海经",
+          "空间图层"
+        ],
+        "verification_status": "report_imported",
+        "asset_id": "illustration-divine",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03-a",
+      "geometry": null,
+      "properties": {
+        "id": "01-03-a",
+        "stage_id": "01",
+        "entity_id": "01-03-a",
+        "name": "炼石补天",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "于是女娲炼五色石以补苍天。",
+        "commentary": "《淮南子·览冥训》补天记载中的独立行动；与共工触山不建立未经本篇支持的因果关系。图像为艺术性解释。",
+        "modern_identification": "不据插画或叙事布局推定现实位置。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "source_excerpt_reviewed",
+        "asset_id": "nuwa-repair",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/nuwa-repair.png",
+        "artworks": [
+          "stories/nuwa-repair.png"
+        ],
+        "parent_event_id": "01-03",
+        "layout_hint": [
+          710,
+          545
+        ],
+        "location_label": "叙事锚点·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03-b",
+      "geometry": null,
+      "properties": {
+        "id": "01-03-b",
+        "stage_id": "01",
+        "entity_id": "01-03-b",
+        "name": "断鳌立极",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "断鳌足以立四极。",
+        "commentary": "《淮南子·览冥训》补天记载中的独立行动；与共工触山不建立未经本篇支持的因果关系。图像为艺术性解释。",
+        "modern_identification": "不据插画或叙事布局推定现实位置。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "source_excerpt_reviewed",
+        "asset_id": "nuwa-pillars",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/nuwa-pillars.png",
+        "artworks": [
+          "stories/nuwa-pillars.png"
+        ],
+        "parent_event_id": "01-03",
+        "layout_hint": [
+          815,
+          425
+        ],
+        "location_label": "叙事锚点·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03-c",
+      "geometry": null,
+      "properties": {
+        "id": "01-03-c",
+        "stage_id": "01",
+        "entity_id": "01-03-c",
+        "name": "杀黑龙济冀州",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "杀黑龙以济冀州。",
+        "commentary": "《淮南子·览冥训》补天记载中的独立行动；与共工触山不建立未经本篇支持的因果关系。图像为艺术性解释。",
+        "modern_identification": "不据插画或叙事布局推定现实位置。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "source_excerpt_reviewed",
+        "asset_id": "nuwa-dragon",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/nuwa-dragon.png",
+        "artworks": [
+          "stories/nuwa-dragon.png"
+        ],
+        "parent_event_id": "01-03",
+        "layout_hint": [
+          710,
+          275
+        ],
+        "location_label": "叙事锚点·示意"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-03-d",
+      "geometry": null,
+      "properties": {
+        "id": "01-03-d",
+        "stage_id": "01",
+        "entity_id": "01-03-d",
+        "name": "积芦灰止水",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "unlocatable",
+        "source_ids": [
+          "report-01-03"
+        ],
+        "basis_note": "叙事锚点·示意：图面位置用于组织阅读，不表示真实地点、绝对距离或文献未载的相对方位。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "person_ids": [
+          "person-6668ac78c29c"
+        ],
+        "people": [
+          "女娲"
+        ],
+        "candidate_ids": [],
+        "source_text": "《淮南子·览冥训》（西汉·刘安），高诱注",
+        "source_quote": "积芦灰以止淫水。",
+        "commentary": "《淮南子·览冥训》补天记载中的独立行动；与共工触山不建立未经本篇支持的因果关系。图像为艺术性解释。",
+        "modern_identification": "不据插画或叙事布局推定现实位置。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+        "dispute": "补天地点'冀州'范围有争议；女娲与伏羲关系（兄妹/夫妻/无关系）有争议。",
+        "category": "创世神话",
+        "tags": [
+          "创世",
+          "女娲",
+          "补天",
+          "冀州",
+          "九州"
+        ],
+        "verification_status": "source_excerpt_reviewed",
+        "asset_id": "nuwa-water",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": null,
+        "original_modern_coordinates": null,
+        "presentation": "story",
+        "map_visible": true,
+        "artwork": "stories/nuwa-water.png",
+        "artworks": [
+          "stories/nuwa-water.png"
+        ],
+        "parent_event_id": "01-03",
+        "layout_hint": [
+          490,
+          275
+        ],
+        "location_label": "叙事锚点·示意"
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "type": "Feature",
+      "id": "03-01-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.239873,
+          40.090951
+        ]
+      },
+      "properties": {
+        "id": "03-01-candidate-1",
+        "stage_id": "03",
+        "entity_id": "03-01",
+        "name": "阪泉之战 · 涿鹿县",
+        "label": "涿鹿县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-01"
+        ],
+        "basis_note": "报告列举的河北涿鹿解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%B6%BF%E9%B9%BF%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295824,
+        "modern_display_name": "涿鹿县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "39.6714741",
+          "40.4909494",
+          "114.9225223",
+          "115.5066501"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-01-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.640078,
+          40.344626
+        ]
+      },
+      "properties": {
+        "id": "03-01-candidate-2",
+        "stage_id": "03",
+        "entity_id": "03-01",
+        "name": "阪泉之战 · 怀来县",
+        "label": "怀来县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-01"
+        ],
+        "basis_note": "报告所引怀戎解释的现代参考区。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%80%80%E6%9D%A5%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295552,
+        "modern_display_name": "怀来县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "40.0642230",
+          "40.5877716",
+          "115.2785340",
+          "115.9629250"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-01-candidate-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9705791,
+          40.4568127
+        ]
+      },
+      "properties": {
+        "id": "03-01-candidate-3",
+        "stage_id": "03",
+        "entity_id": "03-01",
+        "name": "阪泉之战 · 延庆区",
+        "label": "延庆区",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-01"
+        ],
+        "basis_note": "报告列举的延庆解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%BB%B6%E5%BA%86%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2988903,
+        "modern_display_name": "延庆区, 北京市, 102100, 中国",
+        "reference_bbox": [
+          "40.2644790",
+          "40.7903080",
+          "115.7297140",
+          "116.5689040"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-02-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.239873,
+          40.090951
+        ]
+      },
+      "properties": {
+        "id": "03-02-candidate-1",
+        "stage_id": "03",
+        "entity_id": "03-02",
+        "name": "涿鹿之战 · 涿鹿县",
+        "label": "涿鹿县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-02"
+        ],
+        "basis_note": "报告列举的涿鹿解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%B6%BF%E9%B9%BF%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295824,
+        "modern_display_name": "涿鹿县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "39.6714741",
+          "40.4909494",
+          "114.9225223",
+          "115.5066501"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-02-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.640078,
+          40.344626
+        ]
+      },
+      "properties": {
+        "id": "03-02-candidate-2",
+        "stage_id": "03",
+        "entity_id": "03-02",
+        "name": "涿鹿之战 · 怀来县",
+        "label": "怀来县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-02"
+        ],
+        "basis_note": "报告列举的怀来解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%80%80%E6%9D%A5%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295552,
+        "modern_display_name": "怀来县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "40.0642230",
+          "40.5877716",
+          "115.2785340",
+          "115.9629250"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-02-candidate-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.7183017,
+          39.8960768
+        ]
+      },
+      "properties": {
+        "id": "03-02-candidate-3",
+        "stage_id": "03",
+        "entity_id": "03-02",
+        "name": "涿鹿之战 · 蔚县",
+        "label": "蔚县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-02"
+        ],
+        "basis_note": "报告列举的蔚县解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E8%94%9A%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3295570,
+        "modern_display_name": "蔚县, 张家口市, 河北省, 中国",
+        "reference_bbox": [
+          "39.5511558",
+          "40.1976650",
+          "114.1919616",
+          "115.0649643"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.8717835,
+          36.1199119
+        ]
+      },
+      "properties": {
+        "id": "03-04-candidate-1",
+        "stage_id": "03",
+        "entity_id": "03-04",
+        "name": "精卫填海 · 长子县",
+        "label": "长子县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-04"
+        ],
+        "basis_note": "报告列举的发鸠山长子解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%95%BF%E5%AD%90%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2963915,
+        "modern_display_name": "长子县, 长治市, 山西省, 中国",
+        "reference_bbox": [
+          "35.9185877",
+          "36.2626873",
+          "112.4834270",
+          "113.0081824"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-04-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.9229854,
+          35.7984314
+        ]
+      },
+      "properties": {
+        "id": "03-04-candidate-2",
+        "stage_id": "03",
+        "entity_id": "03-04",
+        "name": "精卫填海 · 高平市",
+        "label": "高平市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-03-04"
+        ],
+        "basis_note": "报告列举的发鸠山高平解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%AB%98%E5%B9%B3%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3237068,
+        "modern_display_name": "高平市, 晋城市, 山西省, 中国",
+        "reference_bbox": [
+          "35.6500201",
+          "35.9872819",
+          "112.7120208",
+          "113.1563038"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.3506988,
+          35.1032403
+        ]
+      },
+      "properties": {
+        "id": "04-04-candidate-1",
+        "stage_id": "04",
+        "entity_id": "04-04",
+        "name": "鲧窃息壤 · 临沂市",
+        "label": "临沂市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-04-04"
+        ],
+        "basis_note": "报告列举的羽山山东解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E4%B8%B4%E6%B2%82%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2801712,
+        "modern_display_name": "临沂市, 山东省, 中国",
+        "reference_bbox": [
+          "34.3785778",
+          "36.2064568",
+          "117.4111247",
+          "119.1951150"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-04-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2171662,
+          34.5933134
+        ]
+      },
+      "properties": {
+        "id": "04-04-candidate-2",
+        "stage_id": "04",
+        "entity_id": "04-04",
+        "name": "鲧窃息壤 · 连云港市",
+        "label": "连云港市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-04-04"
+        ],
+        "basis_note": "报告列举的羽山江苏解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E8%BF%9E%E4%BA%91%E6%B8%AF%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3320347,
+        "modern_display_name": "连云港市, 江苏省, 中国",
+        "reference_bbox": [
+          "33.9854788",
+          "35.1470384",
+          "118.3955530",
+          "119.9302768"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "04-05-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          111.381767,
+          36.229963
+        ]
+      },
+      "properties": {
+        "id": "04-05-candidate-1",
+        "stage_id": "04",
+        "entity_id": "04-05",
+        "name": "尧禅舜 · 临汾市",
+        "label": "临汾市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-04-05"
+        ],
+        "basis_note": "报告转述尧都平阳的传统解释，非禅让发生点。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E4%B8%B4%E6%B1%BE%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3286003,
+        "modern_display_name": "临汾市, 山西省, 中国",
+        "reference_bbox": [
+          "35.3864681",
+          "36.9425810",
+          "110.3691109",
+          "112.5676034"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-03-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.1994832,
+          32.9706393
+        ]
+      },
+      "properties": {
+        "id": "05-03-candidate-1",
+        "stage_id": "05",
+        "entity_id": "05-03",
+        "name": "禹娶涂山女 · 怀远县",
+        "label": "怀远县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-03"
+        ],
+        "basis_note": "报告列举的涂山怀远解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%80%80%E8%BF%9C%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3262330,
+        "modern_display_name": "怀远县, 蚌埠市, 安徽省, 233416, 中国",
+        "reference_bbox": [
+          "32.7161853",
+          "33.3119986",
+          "116.7253803",
+          "117.3204929"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-03-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.642471,
+          29.5028729
+        ]
+      },
+      "properties": {
+        "id": "05-03-candidate-2",
+        "stage_id": "05",
+        "entity_id": "05-03",
+        "name": "禹娶涂山女 · 南岸区",
+        "label": "南岸区",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-03"
+        ],
+        "basis_note": "报告列举的涂山重庆解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%8D%97%E5%B2%B8%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2693315,
+        "modern_display_name": "南岸区, 重庆市, 中国",
+        "reference_bbox": [
+          "29.4606640",
+          "29.6206018",
+          "106.5278962",
+          "106.7998708"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-03-candidate-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.576854,
+          29.9992425
+        ]
+      },
+      "properties": {
+        "id": "05-03-candidate-3",
+        "stage_id": "05",
+        "entity_id": "05-03",
+        "name": "禹娶涂山女 · 绍兴市",
+        "label": "绍兴市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-03"
+        ],
+        "basis_note": "报告列举的涂山浙江解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%BB%8D%E5%85%B4%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3316522,
+        "modern_display_name": "绍兴市, 浙江省, 中国",
+        "reference_bbox": [
+          "29.2265100",
+          "30.2994384",
+          "119.8841866",
+          "121.2271356"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "05-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.0444455,
+          34.4551772
+        ]
+      },
+      "properties": {
+        "id": "05-04-candidate-1",
+        "stage_id": "05",
+        "entity_id": "05-04",
+        "name": "启母化石 · 登封市",
+        "label": "登封市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-05-04"
+        ],
+        "basis_note": "报告所引嵩山／启母石解释的现代参考区。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%99%BB%E5%B0%81%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3283763,
+        "modern_display_name": "登封市, 郑州市, 河南省, 中国",
+        "reference_bbox": [
+          "34.2629201",
+          "34.5953501",
+          "112.7142104",
+          "113.3237603"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-01-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.6741432,
+          35.4802464
+        ]
+      },
+      "properties": {
+        "id": "06-01-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-01",
+        "name": "后羿代夏 · 滑县",
+        "label": "滑县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-01"
+        ],
+        "basis_note": "报告转述有穷氏相关地点的滑县解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%BB%91%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3060560,
+        "modern_display_name": "滑县, 安阳市, 河南省, 456472, 中国",
+        "reference_bbox": [
+          "35.2051404",
+          "35.6947402",
+          "114.3837902",
+          "114.9805104"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-02-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.2054018,
+          36.7553782
+        ]
+      },
+      "properties": {
+        "id": "06-02-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-02",
+        "name": "寒浞之乱 · 寒亭区",
+        "label": "寒亭区",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-02"
+        ],
+        "basis_note": "报告列举的寒国潍坊解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%AF%92%E4%BA%AD%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3468763,
+        "modern_display_name": "寒亭区, 潍坊市, 山东省, 中国",
+        "reference_bbox": [
+          "36.7206728",
+          "37.3723402",
+          "118.8931846",
+          "119.4315181"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-03-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.5849266,
+          35.4125047
+        ]
+      },
+      "properties": {
+        "id": "06-03-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-03",
+        "name": "少康中兴 · 济宁市",
+        "label": "济宁市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-03"
+        ],
+        "basis_note": "报告列举的缗等地点的济宁解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%B5%8E%E5%AE%81%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3286961,
+        "modern_display_name": "济宁市, 山东省, 中国",
+        "reference_bbox": [
+          "34.4306468",
+          "35.9815230",
+          "115.8648677",
+          "117.5888670"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.378745,
+          34.203884
+        ]
+      },
+      "properties": {
+        "id": "06-04-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-04",
+        "name": "成汤囚夏台 · 禹州市",
+        "label": "禹州市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-04"
+        ],
+        "basis_note": "报告列举的夏台禹州解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%A6%B9%E5%B7%9E%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3283886,
+        "modern_display_name": "禹州市, 许昌市, 河南省, 中国",
+        "reference_bbox": [
+          "33.9867826",
+          "34.4081202",
+          "113.0576904",
+          "113.6523647"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-05-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.4744933,
+          34.404342
+        ]
+      },
+      "properties": {
+        "id": "06-05-candidate-1",
+        "stage_id": "06",
+        "entity_id": "06-05",
+        "name": "伊尹空桑 · 伊川县",
+        "label": "伊川县",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-05"
+        ],
+        "basis_note": "报告正文列举空桑伊川解释；纠正原文件坐标与文字不一致。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E4%BC%8A%E5%B7%9D%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3246489,
+        "modern_display_name": "伊川县, 洛阳市, 河南省, 中国",
+        "reference_bbox": [
+          "34.2141465",
+          "34.5448001",
+          "112.1995601",
+          "112.7688606"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-01-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.920893,
+          37.1110359
+        ]
+      },
+      "properties": {
+        "id": "07-01-candidate-1",
+        "stage_id": "07",
+        "entity_id": "07-01",
+        "name": "穆天子见西王母 · 和田地区",
+        "label": "和田地区",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-01"
+        ],
+        "basis_note": "报告转述的西王母之邦新疆解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%92%8C%E7%94%B0%E5%9C%B0%E5%8C%BA&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2748331,
+        "modern_display_name": "和田市 خوتەن شەھىرى, 和田地区 خوتەن ۋىلايىتى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国",
+        "reference_bbox": [
+          "36.9179896",
+          "37.8393726",
+          "79.8318098",
+          "80.4531424"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-01-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96,
+          36
+        ]
+      },
+      "properties": {
+        "id": "07-01-candidate-2",
+        "stage_id": "07",
+        "entity_id": "07-01",
+        "name": "穆天子见西王母 · 青海省",
+        "label": "青海省",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-01"
+        ],
+        "basis_note": "报告列举的青海解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%9D%92%E6%B5%B7%E7%9C%81&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 153269,
+        "modern_display_name": "青海省, 中国",
+        "reference_bbox": [
+          "31.6018045",
+          "39.2124324",
+          "89.4022166",
+          "103.0686714"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-01-candidate-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.9999999,
+          38.0000001
+        ]
+      },
+      "properties": {
+        "id": "07-01-candidate-3",
+        "stage_id": "07",
+        "entity_id": "07-01",
+        "name": "穆天子见西王母 · 甘肃省",
+        "label": "甘肃省",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-01"
+        ],
+        "basis_note": "报告列举的甘肃解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%94%98%E8%82%83%E7%9C%81&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 153314,
+        "modern_display_name": "甘肃省, 中国",
+        "reference_bbox": [
+          "32.5987136",
+          "42.7945849",
+          "92.3387676",
+          "108.7105309"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-02-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.1319749,
+          43.8847505
+        ]
+      },
+      "properties": {
+        "id": "07-02-candidate-1",
+        "stage_id": "07",
+        "entity_id": "07-02",
+        "name": "瑶池宴 · 天山天池",
+        "label": "天山天池",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-02"
+        ],
+        "basis_note": "报告列举的瑶池天池解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E5%A4%A9%E6%B1%A0+%E9%98%9C%E5%BA%B7%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "way",
+        "osm_id": 261159583,
+        "modern_display_name": "天池, 阜康市 فۇكاڭ شەھىرى, 昌吉回族自治州 سانجى خۇيزۇ ئاپتونوم ئوبلاستى, 新疆维吾尔自治区 شىنجاڭ ئۇيغۇر ئاپتونوم رايونی, 中国",
+        "reference_bbox": [
+          "43.8695959",
+          "43.8998976",
+          "88.1189201",
+          "88.1418462"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-02-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.0501919,
+          36.8925859
+        ]
+      },
+      "properties": {
+        "id": "07-02-candidate-2",
+        "stage_id": "07",
+        "entity_id": "07-02",
+        "name": "瑶池宴 · 青海湖",
+        "label": "青海湖",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-02"
+        ],
+        "basis_note": "报告列举的瑶池青海湖解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%9D%92%E6%B5%B7%E6%B9%96&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 404236,
+        "modern_display_name": "青海湖 མཚོ་སྔོན་པོ།, 青海省, 中国",
+        "reference_bbox": [
+          "36.5481062",
+          "37.2374097",
+          "99.6104733",
+          "100.7602018"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-03-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.97,
+          35.31
+        ]
+      },
+      "properties": {
+        "id": "07-03-candidate-1",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "升昆仑观黄帝之宫 · 昆仑山脉",
+        "label": "昆仑山脉",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03"
+        ],
+        "basis_note": "报告列举的昆仑山解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=Kunlun+Mountains&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "node",
+        "osm_id": 5156487021,
+        "modern_display_name": "Kunlun Mountains, 东汝乡, 日土县 རུ་ཐོག་རྫོང་།, 阿里地区 མངའ་རིས་ས་ཁུལ་, 西藏自治区 བོད་རང་སྐྱོང་ལྗོངས།, 中国",
+        "reference_bbox": [
+          "35.3099500",
+          "35.3100500",
+          "80.9699500",
+          "80.9700500"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-03-candidate-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.8691655,
+          38.3619966
+        ]
+      },
+      "properties": {
+        "id": "07-03-candidate-2",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "升昆仑观黄帝之宫 · 祁连山",
+        "label": "祁连山",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03"
+        ],
+        "basis_note": "报告列举的祁连山解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E7%A5%81%E8%BF%9E%E5%B1%B1&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "node",
+        "osm_id": 2036588867,
+        "modern_display_name": "祁连山, 康乐镇, 肃南裕固族自治县, 张掖市, 甘肃省, 734400, 中国",
+        "reference_bbox": [
+          "38.3619466",
+          "38.3620466",
+          "99.8691155",
+          "99.8692155"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-04-candidate-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.6637876,
+          40.1409667
+        ]
+      },
+      "properties": {
+        "id": "07-04-candidate-1",
+        "stage_id": "07",
+        "entity_id": "07-04",
+        "name": "纪迹弇山 · 敦煌市",
+        "label": "敦煌市",
+        "layer_role": "modern_candidate",
+        "evidence_kind": "report_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-04"
+        ],
+        "basis_note": "报告列举的弇山敦煌解释。标记为现代参考区域的中心，不是古代事件发生点。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "pending",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%95%A6%E7%85%8C%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 2707420,
+        "modern_display_name": "敦煌市, 酒泉市, 甘肃省, 736200, 中国",
+        "reference_bbox": [
+          "39.6426638",
+          "41.5713535",
+          "92.7023993",
+          "95.5037819"
+        ],
+        "analysis_eligible": false
+      }
+    }
+  ],
+  "people": [
+    {
+      "id": "person-3f94c01d2b91",
+      "name": "盘古",
+      "event_ids": [
+        "01-01"
+      ],
+      "stage_ids": [
+        "00"
+      ],
+      "source_ids": [
+        "report-01-01"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-6668ac78c29c",
+      "name": "女娲",
+      "event_ids": [
+        "01-02",
+        "01-03",
+        "02-02",
+        "01-03-a",
+        "01-03-b",
+        "01-03-c",
+        "01-03-d"
+      ],
+      "stage_ids": [
+        "01",
+        "02"
+      ],
+      "source_ids": [
+        "report-01-02",
+        "report-01-03",
+        "report-02-02"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-84c8b3931b3c",
+      "name": "共工",
+      "event_ids": [
+        "01-04",
+        "04-01"
+      ],
+      "stage_ids": [
+        "01",
+        "04"
+      ],
+      "source_ids": [
+        "report-01-04",
+        "report-04-01"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-1d04ccb80940",
+      "name": "伏羲",
+      "event_ids": [
+        "02-01",
+        "02-02"
+      ],
+      "stage_ids": [
+        "02"
+      ],
+      "source_ids": [
+        "report-02-01",
+        "report-02-02"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-8e17321f03fb",
+      "name": "神农",
+      "event_ids": [
+        "02-03"
+      ],
+      "stage_ids": [
+        "02"
+      ],
+      "source_ids": [
+        "report-02-03"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-ea6359c62512",
+      "name": "燧人",
+      "event_ids": [
+        "02-04"
+      ],
+      "stage_ids": [
+        "02"
+      ],
+      "source_ids": [
+        "report-02-04"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-ab7b8d362c73",
+      "name": "有巢",
+      "event_ids": [
+        "02-05"
+      ],
+      "stage_ids": [
+        "02"
+      ],
+      "source_ids": [
+        "report-02-05"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-ea2e022d685f",
+      "name": "黄帝",
+      "event_ids": [
+        "03-01",
+        "03-02",
+        "07-03"
+      ],
+      "stage_ids": [
+        "03",
+        "07"
+      ],
+      "source_ids": [
+        "report-03-01",
+        "report-03-02",
+        "report-07-03"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-838748c481ec",
+      "name": "炎帝",
+      "event_ids": [
+        "03-01"
+      ],
+      "stage_ids": [
+        "03"
+      ],
+      "source_ids": [
+        "report-03-01"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-1e92700f28ee",
+      "name": "蚩尤",
+      "event_ids": [
+        "03-02"
+      ],
+      "stage_ids": [
+        "03"
+      ],
+      "source_ids": [
+        "report-03-02"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-2d87a62ece73",
+      "name": "刑天",
+      "event_ids": [
+        "03-03"
+      ],
+      "stage_ids": [
+        "03"
+      ],
+      "source_ids": [
+        "report-03-03"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-b402786f5184",
+      "name": "精卫",
+      "event_ids": [
+        "03-04"
+      ],
+      "stage_ids": [
+        "03"
+      ],
+      "source_ids": [
+        "report-03-04"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-e8582df4d5fd",
+      "name": "夸父",
+      "event_ids": [
+        "03-05"
+      ],
+      "stage_ids": [
+        "03"
+      ],
+      "source_ids": [
+        "report-03-05"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-5560c2e2418b",
+      "name": "颛顼",
+      "event_ids": [
+        "04-01"
+      ],
+      "stage_ids": [
+        "04"
+      ],
+      "source_ids": [
+        "report-04-01"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-3c2d2bf0b017",
+      "name": "大羿",
+      "event_ids": [
+        "04-02"
+      ],
+      "stage_ids": [
+        "04"
+      ],
+      "source_ids": [
+        "report-04-02"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-2149b25f34c1",
+      "name": "嫦娥",
+      "event_ids": [
+        "04-03"
+      ],
+      "stage_ids": [
+        "04"
+      ],
+      "source_ids": [
+        "report-04-03"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-2145d9c0b6fe",
+      "name": "鲧",
+      "event_ids": [
+        "04-04"
+      ],
+      "stage_ids": [
+        "04"
+      ],
+      "source_ids": [
+        "report-04-04"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-8c45913efb08",
+      "name": "尧",
+      "event_ids": [
+        "04-05"
+      ],
+      "stage_ids": [
+        "04"
+      ],
+      "source_ids": [
+        "report-04-05"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-79b8457f6a3b",
+      "name": "舜",
+      "event_ids": [
+        "04-05"
+      ],
+      "stage_ids": [
+        "04"
+      ],
+      "source_ids": [
+        "report-04-05"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-15f8840a66b7",
+      "name": "禹",
+      "event_ids": [
+        "05-01",
+        "05-02",
+        "05-03"
+      ],
+      "stage_ids": [
+        "05"
+      ],
+      "source_ids": [
+        "report-05-01",
+        "report-05-02",
+        "report-05-03"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-053d1d379ac3",
+      "name": "相柳",
+      "event_ids": [
+        "05-02"
+      ],
+      "stage_ids": [
+        "05"
+      ],
+      "source_ids": [
+        "report-05-02"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-72ccefbb6b75",
+      "name": "涂山女",
+      "event_ids": [
+        "05-03",
+        "05-04"
+      ],
+      "stage_ids": [
+        "05"
+      ],
+      "source_ids": [
+        "report-05-03",
+        "report-05-04"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-989ca7dbec29",
+      "name": "启",
+      "event_ids": [
+        "05-04"
+      ],
+      "stage_ids": [
+        "05"
+      ],
+      "source_ids": [
+        "report-05-04"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-368e19399aaa",
+      "name": "后羿（有穷氏）",
+      "event_ids": [
+        "06-01"
+      ],
+      "stage_ids": [
+        "06"
+      ],
+      "source_ids": [
+        "report-06-01"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-ae4a3bd45b5a",
+      "name": "寒浞",
+      "event_ids": [
+        "06-02"
+      ],
+      "stage_ids": [
+        "06"
+      ],
+      "source_ids": [
+        "report-06-02"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-5faec44cab57",
+      "name": "少康",
+      "event_ids": [
+        "06-03"
+      ],
+      "stage_ids": [
+        "06"
+      ],
+      "source_ids": [
+        "report-06-03"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-93f9bc09c39c",
+      "name": "成汤",
+      "event_ids": [
+        "06-04"
+      ],
+      "stage_ids": [
+        "06"
+      ],
+      "source_ids": [
+        "report-06-04"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-19b940f86697",
+      "name": "伊尹",
+      "event_ids": [
+        "06-05"
+      ],
+      "stage_ids": [
+        "06"
+      ],
+      "source_ids": [
+        "report-06-05"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-3b6cc525942e",
+      "name": "周穆王",
+      "event_ids": [
+        "07-01",
+        "07-02",
+        "07-03",
+        "07-04"
+      ],
+      "stage_ids": [
+        "07"
+      ],
+      "source_ids": [
+        "report-07-01",
+        "report-07-02",
+        "report-07-03",
+        "report-07-04"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-e5d01cdec928",
+      "name": "西王母（穆天子传）",
+      "event_ids": [
+        "07-01",
+        "07-02"
+      ],
+      "stage_ids": [
+        "07"
+      ],
+      "source_ids": [
+        "report-07-01",
+        "report-07-02"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-0ee3197fa2fa",
+      "name": "烛龙",
+      "event_ids": [
+        "08-06"
+      ],
+      "stage_ids": [],
+      "source_ids": [
+        "report-08-06"
+      ],
+      "geometry": null
+    },
+    {
+      "id": "person-c9a212b93c50",
+      "name": "西王母（山海经）",
+      "event_ids": [
+        "08-07"
+      ],
+      "stage_ids": [],
+      "source_ids": [
+        "report-08-07"
+      ],
+      "geometry": null
+    }
+  ],
+  "sources": [
+    {
+      "id": "report-01-01",
+      "title": "《三五历纪》（三国·吴·徐整），佚文见《艺文类聚》卷一引、《太平御览》卷二引",
+      "quote": "天地浑沌如鸡子，盘古生其中。万八千岁，天地开辟，阳清为天，阴浊为地。盘古在其中，一日九变，神于天，圣于地。天日高一丈，地日厚一丈，盘古日长一丈。如此万八千岁，天数极高，地数极深，盘古极长。",
+      "commentary": "原书已佚，仅存佚文。袁珂《古神话选释》有辑录。原书未载具体地理方位。",
+      "modern_source": "袁珂《古神话选释》（1979）；茅盾《中国神话研究ABC》（1929）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-01-02",
+      "title": "《风俗通义·皇霸》卷一（东汉·应劭），见王利器《风俗通义校注》",
+      "quote": "天地开辟，未有人民，女娲抟黄土作人。剧务，力不暇供，乃引绳于泥中，举以为人。",
+      "commentary": "王利器校注引《淮南子》《潜夫论》等参证。原文未载具体地理方位。",
+      "modern_source": "袁珂《中国神话传说》（2004）；王利器《风俗通义校注》（1981）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-01-03",
+      "title": "《淮南子·览冥训》（西汉·刘安），高诱注",
+      "quote": "往古之时，四极废，九州裂，天不兼覆，地不周载。火爁焱而不灭，水浩洋而不息。猛兽食颛民，鸷鸟攫老弱。于是女娲炼五色石以补苍天，断鳌足以立四极，杀黑龙以济冀州，积芦灰以止淫水。",
+      "commentary": "高诱注：'女娲，阴帝，佐虙牺治者也。'刘文典《淮南鸿烈集解》引王念孙、俞樾说。原文未明言补天具体地点，仅提及'冀州'为九州之一。",
+      "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）",
+      "url": "https://ctext.org/huainanzi/lan-ming-xun/zh",
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-01-04",
+      "title": "《淮南子·天文训》（西汉·刘安），高诱注",
+      "quote": "昔者共工与颛顼争为帝，怒而触不周之山，天柱折，地维绝。天倾西北，故日月星辰移焉；地不满东南，故水潦尘埃归焉。",
+      "commentary": "高诱注：'不周山，昆仑之西北。'刘文典《淮南鸿烈集解》。郭璞注《山海经》以不周山为《西山经》之山。",
+      "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）；杨宽《中国古代神话与传说》（2005）",
+      "url": "https://ctext.org/huainanzi/tian-wen-xun/zh",
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-02-01",
+      "title": "《周易·系辞下》（《十三经注疏》本）",
+      "quote": "古者包牺氏之王天下也，仰则观象于天，俯则观法于地，观鸟兽之文与地之宜，近取诸身，远取诸物，于是始作八卦，以通神明之德，以类万物之情。",
+      "commentary": "孔颖达疏：'包牺氏，伏羲也。'王弼、韩康伯注。原文未载具体画卦地点。",
+      "modern_source": "陈恩林《夏商周地理新考》（2013）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-02-02",
+      "title": "《风俗通义》（东汉·应劭）；《独异志》（唐·李冗）卷下",
+      "quote": "女娲，伏羲之妹。（《风俗通义》）；昔宇宙初开之时，只有女娲兄妹二人在昆仑山，而天下未有人民。议以为夫妻，又自羞耻。兄即与妹上昆仑山，咒曰：'天若遣我兄妹二人为夫妻，而烟悉合；若不，使烟散。'于烟即合。（《独异志》）",
+      "commentary": "王利器校注引《路史》《绎史》参证。原文提及昆仑山。",
+      "modern_source": "袁珂《中国神话传说》（2004）；王利器《风俗通义校注》（1981）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-02-03",
+      "title": "《淮南子·修务训》（西汉·刘安），高诱注",
+      "quote": "神农尝百草之滋味，一日而遇七十毒。",
+      "commentary": "高诱注：'神农，炎帝也。'原文未载具体地点。",
+      "modern_source": "袁珂《中国神话传说》（2004）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-02-04",
+      "title": "《韩非子·五蠹》（战国·韩非），王先慎《韩非子集解》",
+      "quote": "上古之世，人民少而禽兽众……民食果蓏蚌蛤，腥臊恶臭而伤害腹胃，民多疾病。有圣人作，钻燧取火以化腥臊，而民说之，使王天下，号之曰燧人氏。",
+      "commentary": "王先慎集解引卢文弨、顾广圻说。原文未载具体地点。",
+      "modern_source": "袁珂《中国神话传说》（2004）；王先慎《韩非子集解》（1986）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-02-05",
+      "title": "《韩非子·五蠹》（战国·韩非），王先慎《韩非子集解》",
+      "quote": "上古之世，人民少而禽兽众，人民不胜禽兽虫蛇。有圣人作，构木为巢以避群害，而民悦之，使王天下，号曰有巢氏。",
+      "commentary": "王先慎集解。原文未载具体地点。",
+      "modern_source": "袁珂《中国神话传说》（2004）；王先慎《韩非子集解》（1986）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-03-01",
+      "title": "《史记·五帝本纪》（西汉·司马迁），三家注",
+      "quote": "轩辕之时，神农氏世衰……以与炎帝战于阪泉之野。三战，然后得其志。",
+      "commentary": "裴骃集解引皇甫谧曰：'阪泉，在上谷。'张守节正义：'阪泉，今名黄帝泉，在妫州怀戎县东五十六里。'",
+      "modern_source": "王晖《中国上古史实揭秘》（2008）；陈恩林《夏商周地理新考》（2013）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-03-02",
+      "title": "《史记·五帝本纪》（西汉·司马迁），三家注",
+      "quote": "蚩尤作乱，不用帝命。于是黄帝乃征师诸侯，与蚩尤战于涿鹿之野，遂禽杀蚩尤。",
+      "commentary": "裴骃集解引服虔曰：'涿鹿，山名，在涿郡。'张守节正义：'涿鹿，今在妫州怀戎县东五十六里。'",
+      "modern_source": "王晖《中国上古史实揭秘》（2008）；陈恩林《夏商周地理新考》（2013）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-03-03",
+      "title": "《山海经·海外西经》（郭璞注本）",
+      "quote": "刑天与帝至此争神，帝断其首，葬之常羊之山。乃以乳为目，以脐为口，操干戚以舞。",
+      "commentary": "郭璞注：'刑天，神名。'郝懿行《山海经笺疏》：'刑天，盖无首之鬼。'",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": "https://ctext.org/shan-hai-jing/hai-wai-xi-jing/zh",
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-03-04",
+      "title": "《山海经·北山经》（郭璞注本）",
+      "quote": "发鸠之山，其上多柘木。有鸟焉，其状如乌，文首，白喙，赤足，名曰精卫，其鸣自詨。是炎帝之少女，名曰女娃。女娃游于东海，溺而不返，故为精卫，常衔西山之木石，以堙于东海。",
+      "commentary": "郭璞注：'发鸠山，亦山名。'郝懿行《山海经笺疏》：'发鸠山，在今山西长子县西。'",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": "https://ctext.org/shan-hai-jing/bei-shan-jing/zh",
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-03-05",
+      "title": "《山海经·海外北经》（郭璞注本）；又见《大荒北经》",
+      "quote": "夸父与日逐走，入日。渴，欲得饮，饮于河、渭；河、渭不足，北饮大泽。未至，道渴而死。弃其杖，化为邓林。",
+      "commentary": "郭璞注：'邓林，桃林也。'郝懿行《山海经笺疏》：'邓林即桃林。'",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-04-01",
+      "title": "《淮南子·天文训》（西汉·刘安），高诱注",
+      "quote": "昔者共工与颛顼争为帝，怒而触不周之山，天柱折，地维绝。",
+      "commentary": "高诱注：'共工，水官也。颛顼，黄帝之孙，昌意之子。'高诱注'不周山，昆仑之西北'。",
+      "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《中国神话传说》（2004）；杨宽《中国古代神话与传说》（2005）",
+      "url": "https://ctext.org/huainanzi/tian-wen-xun/zh",
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-04-02",
+      "title": "《淮南子·本经训》（西汉·刘安），高诱注",
+      "quote": "逮至尧之时，十日并出，焦禾稼，杀草木，而民无所食。猰貐、凿齿、九婴、大风、封豨、修蛇皆为民害。尧乃使羿诛凿齿于畴华之野，杀九婴于凶水之上，缴大风于青丘之泽，上射十日而下杀猰貐，断修蛇于洞庭，禽封豨于桑林。",
+      "commentary": "高诱注：'羿，尧时诸侯。'刘文典《淮南鸿烈集解》。原文提及畴华之野、凶水之上、青丘之泽、洞庭、桑林，但未载具体位置。",
+      "modern_source": "袁珂《中国神话传说》（2004）；刘文典《淮南鸿烈集解》（1923）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-04-03",
+      "title": "《淮南子·览冥训》（西汉·刘安），高诱注",
+      "quote": "羿请不死之药于西王母，姮娥窃以奔月，怅然有丧，无以续之。",
+      "commentary": "高诱注：'姮娥，羿妻也。'刘文典《淮南鸿烈集解》。原文未载具体地点。",
+      "modern_source": "袁珂《中国神话传说》（2004）；刘文典《淮南鸿烈集解》（1923）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-04-04",
+      "title": "《山海经·海内经》（郭璞注本）",
+      "quote": "洪水滔天，鲧窃帝之息壤以堙洪水，不待帝命。帝令祝融杀鲧于羽郊。鲧复生禹。",
+      "commentary": "郭璞注：'息壤，土长息无限。'郝懿行《山海经笺疏》：'羽郊，即羽山之野。'",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-04-05",
+      "title": "《尚书·尧典》（《十三经注疏》本）",
+      "quote": "尧曰：'咨！尔舜！天之历数在尔躬，允执其中。四海困穷，天禄永终。'舜亦以命禹。",
+      "commentary": "孔颖达疏：'尧禅位于舜。'原文未载具体地点。",
+      "modern_source": "孔颖达《尚书正义》（十三经注疏）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-05-01",
+      "title": "《尚书·禹贡》（《十三经注疏》本）",
+      "quote": "禹敷土，随山刊木，奠高山大川。",
+      "commentary": "孔颖达疏：'禹治水，随山刊木。'原文记载九州（冀、兖、青、徐、扬、荆、豫、梁、雍）。",
+      "modern_source": "王晖《中国上古史实揭秘》（2008）；孔颖达《尚书正义》（十三经注疏）",
+      "url": "https://zh.wikisource.org/wiki/尚書/禹貢",
+      "verification_status": "text_excerpt_checked",
+      "note": "已对照网络原文核对所引正文；原报告中的孔颖达疏引语及现代学者归属未逐版复核。"
+    },
+    {
+      "id": "report-05-02",
+      "title": "《山海经·海外北经》；另见《大荒北经》相繇条",
+      "quote": "共工之臣曰相柳氏，九首，以食于九山。相柳之所抵，厥为泽谿。禹杀相柳，其血腥，不可以树五谷种。禹厥之，三仞三沮，乃以为众帝之台。在昆仑之北，柔利之东。相柳者，九首人面，蛇身而青。",
+      "commentary": "《海外北经》相柳条记九首人面、蛇身而青，并述众帝之台的相对方位；《大荒北经》另有相繇条。两篇文字分别保留，不混作同一引文。",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": "https://zh.wikisource.org/wiki/山海經/海外北經",
+      "verification_status": "text_excerpt_checked",
+      "note": "已对照《海外北经》正文纠正原报告篇目并补全形态与相对方位；采用简体转写，昆侖写作昆仑。现代学者归属未逐版复核。"
+    },
+    {
+      "id": "report-05-03",
+      "title": "《尚书·益稷》（《十三经注疏》本）",
+      "quote": "予创若时，娶于涂山，辛壬癸甲。启呱呱而泣，予弗子，惟荒度土功。",
+      "commentary": "孔颖达疏：'涂山，国名。'",
+      "modern_source": "陈恩林《夏商周地理新考》（2013）；孔颖达《尚书正义》（十三经注疏）",
+      "url": "https://zh.wikisource.org/wiki/尚書/益稷",
+      "verification_status": "text_excerpt_checked",
+      "note": "已对照《益稷》正文，将原报告的予娶涂山改为予创若时，娶于涂山；采用简体转写。孔颖达疏及候选地现代研究归属未逐版复核。"
+    },
+    {
+      "id": "report-05-04",
+      "title": "《汉书·武帝纪》颜师古注引《淮南子》（今本《淮南子》无此文）",
+      "quote": "禹治鸿水，通轘辕山，化为熊，谓涂山氏曰：‘欲饷，闻鼓声乃来。’禹跳石，误中鼓。涂山氏往，见禹方作熊，惭而去，至嵩高山下化为石，方生启。禹曰：‘归我子。’石破北方而启生。",
+      "commentary": "颜师古注引《淮南子》。原文提及嵩高山。",
+      "modern_source": "袁珂《中国神话传说》（2004）；颜师古《汉书注》（唐）",
+      "url": "https://skqs.dazhishi.com/show_bzdammpldg.html",
+      "verification_status": "text_excerpt_checked",
+      "note": "已对照《汉书》卷六元封元年启母石条颜师古注核对所引正文；仍明确今本《淮南子》无此段，不标作今本直接引文。现代学者归属未逐版复核。"
+    },
+    {
+      "id": "report-06-01",
+      "title": "《左传·襄公四年》（《十三经注疏》本）",
+      "quote": "昔有夏之方衰也，后羿自鉏迁于穷石，因夏民以代夏政。",
+      "commentary": "杜预注：'后羿，有穷氏之君也。'孔颖达疏。原文提及鉏、穷石。",
+      "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+      "url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
+      "verification_status": "text_excerpt_checked",
+      "note": "已对照《左传·襄公四年》网络原文核对正文节引；杜注、孔疏及现代考证未逐版本复核。"
+    },
+    {
+      "id": "report-06-02",
+      "title": "《左传·襄公四年》（《十三经注疏》本）",
+      "quote": "寒浞，伯明氏之谗子弟也。伯明后寒弃之，夷羿收之，信而使之，以为己相。浞行媚于内而施赂于外，愚弄其民而虞羿于田。树之诈慝以取其国家，外内咸服。羿犹不悛，将归自田，家众杀而亨之。",
+      "commentary": "杜预注：'寒浞，寒国伯明氏之谗子弟。'原文提及寒国。",
+      "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+      "url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
+      "verification_status": "text_excerpt_checked",
+      "note": "已对照《左传·襄公四年》网络原文核对正文节引；寒国现代位置仍有争议。"
+    },
+    {
+      "id": "report-06-03",
+      "title": "《左传·哀公元年》（《十三经注疏》本）",
+      "quote": "昔有过浇杀斟灌以伐斟鄩，灭夏后相。后缗方娠，逃出自窦，归于有仍，生少康焉。为仍牧正，惎浇能戒之。浇使椒求之，逃奔有虞，为之庖正，以除其害。虞思于是妻之以二姚，而邑诸纶。有田一成，有众一旅，能布其德而兆其谋，以收夏众，抚其官职。",
+      "commentary": "杜预注：'少康，夏后相之子。'原文提及有仍、有虞、纶。",
+      "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+      "url": "https://ctext.org/chun-qiu-zuo-zhuan/ai-gong-yuan-nian/zhs",
+      "verification_status": "text_excerpt_checked",
+      "note": "已对照《左传·哀公元年》底本网络文本核对节引；有仍、有虞、纶不连接为确定现代路线。"
+    },
+    {
+      "id": "report-06-04",
+      "title": "《史记·夏本纪》（西汉·司马迁），三家注",
+      "quote": "夏桀为仍之会，有缗叛之。桀克有缗，以丧其国。桀召汤而囚之夏台，已而释之。",
+      "commentary": "裴骃集解引韦昭曰：'夏台，狱名。'",
+      "modern_source": "陈恩林《夏商周地理新考》（2013）；韦昭《国语注》",
+      "url": "https://ctext.org/text.pl?if=gb&node=4538&remap=gb&show=parallel",
+      "verification_status": "text_excerpt_checked",
+      "note": "已核对《史记·夏本纪》对应节引；夏台现代定位仍有争议。"
+    },
+    {
+      "id": "report-06-05",
+      "title": "《吕氏春秋·本味》（战国·吕不韦），高诱注",
+      "quote": "有侁氏女子采桑，得婴儿于空桑之中，献之其君。其君令烰人养之，察其所以然，曰：“其母居伊水之上，孕，梦有神告之曰：‘臼出水而东走。毋顾！’明日视臼出水，告其邻，东走十里而顾，其邑尽为水，身因化为空桑。故命之曰伊尹。”此伊尹生空桑之故也。长而贤。",
+      "commentary": "高诱注：'伊尹，名挚。空桑，地名。'原文提及伊水。",
+      "modern_source": "陈恩林《夏商周地理新考》（2013）；高诱《吕氏春秋注》",
+      "url": "https://ctext.org/lv-shi-chun-qiu/ben-wei/zh",
+      "verification_status": "text_excerpt_checked",
+      "note": "已对照《吕氏春秋·本味》网络原文校正引文与引号；版本间字形、句读可能有异。"
+    },
+    {
+      "id": "report-07-01",
+      "title": "《穆天子传》卷三（郭璞注本）",
+      "quote": "吉日甲子，天子宾于西王母。乃执白圭玄璧，以见西王母。",
+      "commentary": "郭璞注文描述西王母「如人，虎齿，蓬发戴胜，善啸」；本画依《穆天子传》叙事与注文作艺术解释，不等同《山海经》异篇形态。",
+      "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+      "url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
+      "verification_status": "text_excerpt_checked",
+      "note": "所引篇卷与正文节引已对照在线底本核验；现代学者归属未逐版复核。"
+    },
+    {
+      "id": "report-07-02",
+      "title": "《穆天子传》卷三（郭璞注本）",
+      "quote": "乙丑，天子觞西王母于瑶池之上。西王母为天子谣曰：「白云在天，丘陵自出。道里悠远，山川间之。将子无死，尚能复来。」天子答之曰：「予归东土，和治诸夏。万民平均，吾顾见汝。比及三年，将复而野。」",
+      "commentary": "本条原文记乙丑宴于瑶池并歌答；本章依维基文库所录底本作「丘陵自出」，不同传本有「山陵」异文。",
+      "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+      "url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
+      "verification_status": "text_excerpt_checked",
+      "note": "所引篇卷与正文节引已对照在线底本核验；现代学者归属未逐版复核。"
+    },
+    {
+      "id": "report-07-03",
+      "title": "《穆天子传》卷二（郭璞注本）",
+      "quote": "天子升于昆仑之丘，以观黄帝之宫，而丰隆之葬，以诏后世。",
+      "commentary": "郭璞注文解释黄帝巡游四海、登昆仑山并于其上起宫室；插画不将注文解释当作现实地理证据。",
+      "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+      "url": "https://zh.wikisource.org/zh-hans/穆天子傳/卷二",
+      "verification_status": "text_excerpt_checked",
+      "note": "所引篇卷与正文节引已对照在线底本核验；现代学者归属未逐版复核。"
+    },
+    {
+      "id": "report-07-04",
+      "title": "《穆天子传》卷三（郭璞注本）",
+      "quote": "天子遂驱升于弇山，乃纪其迹于弇山之石，而树之槐。",
+      "commentary": "郭璞注文称弇山即弇兹山，为日入之所。底本文字续作「眉曰」，释读存疑；图中不臆写铭文。",
+      "modern_source": "顾实《穆天子传西征讲疏》（1931）；王贻梁《穆天子传通释》（2010）",
+      "url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
+      "verification_status": "text_excerpt_checked",
+      "note": "所引篇卷与正文节引已对照在线底本核验；现代学者归属未逐版复核。"
+    },
+    {
+      "id": "report-08-01",
+      "title": "《山海经》海外南/西/北/东经（郭璞注本）",
+      "quote": "《海外南经》《海外西经》《海外北经》《海外东经》载海外诸国，如'结匈国''羽民国''讙头国''三苗国''贯匈国''交胫国''不死民''歧舌国''三首国''长臂国''一目国''深目国''无肠国''聂耳国''博父国''拘缨国''跂踵国''大人国''君子国''青丘国''黑齿国''雨师妾国''玄股国''毛民国''劳民国'等。",
+      "commentary": "郭璞注、郝懿行《山海经笺疏》各有考释。",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-08-02",
+      "title": "《山海经》大荒东/南/西/北经（郭璞注本）",
+      "quote": "《大荒东经》《大荒南经》《大荒西经》《大荒北经》载大荒异兽，如'九尾狐''烛龙''相柳''九凤''强良''天吴''毕方''狰''天狗''穷奇''梼杌''混沌'等。",
+      "commentary": "郭璞注、郝懿行《山海经笺疏》各有考释。",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-08-03",
+      "title": "《山海经·西山经》（郭璞注本）",
+      "quote": "昆仑之丘，是实惟帝之下都，神陆吾司之。其神状虎身而九尾，人面而虎爪；是神也，司天之九部及帝之囿时。",
+      "commentary": "郭璞注：'昆仑之丘，帝之下都。'郝懿行《山海经笺疏》。",
+      "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《山海经校注》（1980）；顾实《穆天子传西征讲疏》（1931）",
+      "url": "https://ctext.org/shan-hai-jing/xi-shan-jing/zh",
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-08-04",
+      "title": "《列子·汤问》（战国·列御寇），张湛注",
+      "quote": "渤海之东不知几亿万里，有大壑焉，实惟无底之谷，其下无底，名曰归墟。八纮九野之水，天汉之流，莫不注之，而无增无减焉。其中有五山焉：一曰岱舆，二曰员峤，三曰方壶，四曰瀛洲，五曰蓬莱。",
+      "commentary": "张湛注：'归墟，大海之底。'",
+      "modern_source": "袁珂《中国神话传说》（2004）；张湛《列子注》",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-08-05",
+      "title": "《山海经·海外东经》（郭璞注本）",
+      "quote": "汤谷上有扶桑，十日所浴，在黑齿北。居水中，有大木，九日居下枝，一日居上枝。",
+      "commentary": "郭璞注：'扶桑，木名。'郝懿行《山海经笺疏》。",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-08-06",
+      "title": "《山海经·海外北经》（郭璞注本）；又见《大荒北经》",
+      "quote": "西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。是烛九阴，是谓烛龙。",
+      "commentary": "郭璞注：'烛龙，烛阴也。'郝懿行《山海经笺疏》。",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": null,
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    },
+    {
+      "id": "report-08-07",
+      "title": "《山海经·西山经》（郭璞注本）",
+      "quote": "西王母其状如人，豹尾虎齿而善啸，蓬发戴胜，是司天之厉及五残。",
+      "commentary": "郭璞注：'西王母，西方之神也。'郝懿行《山海经笺疏》。",
+      "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+      "url": "https://ctext.org/shan-hai-jing/xi-shan-jing/zh",
+      "verification_status": "report_imported",
+      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+    }
+  ],
+  "routes": [
+    {
+      "type": "Feature",
+      "id": "07-connection-1",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.97,
+            35.31
+          ],
+          [
+            88.1319749,
+            43.8847505
+          ]
+        ]
+      },
+      "properties": {
+        "id": "07-connection-1",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "昆仑山—天池候选连接",
+        "layer_role": "narrative_connection",
+        "evidence_kind": "cartographic_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03",
+          "report-07-02"
+        ],
+        "basis_note": "连接两种现代候选解释；直线不表示实际道路、方向顺序或行程。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "candidate_ids": [
+          "07-03-candidate-1",
+          "07-02-candidate-1"
+        ],
+        "analysis_eligible": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "07-connection-2",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            99.8691655,
+            38.3619966
+          ],
+          [
+            100.0501919,
+            36.8925859
+          ]
+        ]
+      },
+      "properties": {
+        "id": "07-connection-2",
+        "stage_id": "07",
+        "entity_id": "07-03",
+        "name": "祁连山—青海湖候选连接",
+        "layer_role": "narrative_connection",
+        "evidence_kind": "cartographic_hypothesis",
+        "precision": "disputed",
+        "source_ids": [
+          "report-07-03",
+          "report-07-02"
+        ],
+        "basis_note": "连接两种现代候选解释；直线不表示实际道路、方向顺序或行程。",
+        "revision_id": "myth-atlas-2026-09-30-v1",
+        "candidate_ids": [
+          "07-03-candidate-2",
+          "07-02-candidate-2"
+        ],
+        "analysis_eligible": false
+      }
+    }
+  ],
+  "counts": {
+    "narrative_events": 36,
+    "spatial_records": 7,
+    "all_records": 43,
+    "event_records": 43,
+    "display_chapters": 8
+  },
+  "geographic_reference": "现代地理骨架辅助阅读，不复原古代海岸线或河道。"
+}

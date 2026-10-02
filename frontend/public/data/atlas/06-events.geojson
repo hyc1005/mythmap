@@ -1,0 +1,339 @@
+{
+  "type": "FeatureCollection",
+  "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+  "note": "",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "06-01",
+      "geometry": null,
+      "properties": {
+        "id": "06-01",
+        "stage_id": "06",
+        "entity_id": "06-01",
+        "name": "后羿代夏",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-01"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-368e19399aaa"
+        ],
+        "people": [
+          "后羿（有穷氏）"
+        ],
+        "candidate_ids": [
+          "06-01-candidate-1"
+        ],
+        "source_text": "《左传·襄公四年》（《十三经注疏》本）",
+        "source_quote": "昔有夏之方衰也，后羿自鉏迁于穷石，因夏民以代夏政。",
+        "commentary": "杜预注：'后羿，有穷氏之君也。'孔颖达疏。原文提及鉏、穷石。",
+        "modern_identification": "陈恩林认为鉏在今河南滑县一带；穷石在今山东德州一带。后羿（有穷氏）与大羿（射日）必须区分；鉏、穷石具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+        "dispute": "后羿（有穷氏）与大羿（射日）必须区分；鉏、穷石具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "后羿",
+          "代夏",
+          "有穷氏",
+          "鉏"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-01",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            114.5,
+            35.6
+          ]
+        },
+        "original_modern_coordinates": [
+          114.5,
+          35.6
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          180,
+          250
+        ],
+        "location_label": "鉏、穷石·位置存争议·示意",
+        "artwork": "stories/ch06-houyi-youqiong.png",
+        "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
+        "source_review_note": "已对照《左传·襄公四年》网络原文核对正文节引；杜注、孔疏及现代考证未逐版本复核。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-02",
+      "geometry": null,
+      "properties": {
+        "id": "06-02",
+        "stage_id": "06",
+        "entity_id": "06-02",
+        "name": "寒浞之乱",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-02"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-ae4a3bd45b5a"
+        ],
+        "people": [
+          "寒浞"
+        ],
+        "candidate_ids": [
+          "06-02-candidate-1"
+        ],
+        "source_text": "《左传·襄公四年》（《十三经注疏》本）",
+        "source_quote": "寒浞，伯明氏之谗子弟也。伯明后寒弃之，夷羿收之，信而使之，以为己相。浞行媚于内而施赂于外，愚弄其民而虞羿于田。树之诈慝以取其国家，外内咸服。羿犹不悛，将归自田，家众杀而亨之。",
+        "commentary": "杜预注：'寒浞，寒国伯明氏之谗子弟。'原文提及寒国。",
+        "modern_identification": "陈恩林认为寒国在今山东潍坊一带。寒国具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+        "dispute": "寒国具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "寒浞",
+          "寒国",
+          "乱"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-02",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            117.6,
+            36.7
+          ]
+        },
+        "original_modern_coordinates": [
+          117.6,
+          36.7
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          420,
+          540
+        ],
+        "location_label": "寒国·位置存争议·示意",
+        "artwork": "stories/ch06-hanzhuo.png",
+        "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
+        "source_review_note": "已对照《左传·襄公四年》网络原文核对正文节引；寒国现代位置仍有争议。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-03",
+      "geometry": null,
+      "properties": {
+        "id": "06-03",
+        "stage_id": "06",
+        "entity_id": "06-03",
+        "name": "少康中兴",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-03"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-5faec44cab57"
+        ],
+        "people": [
+          "少康"
+        ],
+        "candidate_ids": [
+          "06-03-candidate-1"
+        ],
+        "source_text": "《左传·哀公元年》（《十三经注疏》本）",
+        "source_quote": "昔有过浇杀斟灌以伐斟鄩，灭夏后相。后缗方娠，逃出自窦，归于有仍，生少康焉。为仍牧正，惎浇能戒之。浇使椒求之，逃奔有虞，为之庖正，以除其害。虞思于是妻之以二姚，而邑诸纶。有田一成，有众一旅，能布其德而兆其谋，以收夏众，抚其官职。",
+        "commentary": "杜预注：'少康，夏后相之子。'原文提及有仍、有虞、纶。",
+        "modern_identification": "陈恩林认为有仍在今山东济宁一带；有虞在今河南虞城一带；纶在今河南商丘一带。有仍、有虞、纶具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；杜预《春秋左传集解》（十三经注疏）",
+        "dispute": "有仍、有虞、纶具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "少康",
+          "中兴",
+          "有仍",
+          "有虞"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-03",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            116.3,
+            34.4
+          ]
+        },
+        "original_modern_coordinates": [
+          116.3,
+          34.4
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          660,
+          290
+        ],
+        "location_label": "有仍、有虞、纶·迁徙叙事示意",
+        "artwork": "stories/ch06-shaokang.png",
+        "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/ai-gong-yuan-nian/zhs",
+        "source_review_note": "已对照《左传·哀公元年》底本网络文本核对节引；有仍、有虞、纶不连接为确定现代路线。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-04",
+      "geometry": null,
+      "properties": {
+        "id": "06-04",
+        "stage_id": "06",
+        "entity_id": "06-04",
+        "name": "成汤囚夏台",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-04"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-93f9bc09c39c"
+        ],
+        "people": [
+          "成汤"
+        ],
+        "candidate_ids": [
+          "06-04-candidate-1"
+        ],
+        "source_text": "《史记·夏本纪》（西汉·司马迁），三家注",
+        "source_quote": "夏桀为仍之会，有缗叛之。桀克有缗，以丧其国。桀召汤而囚之夏台，已而释之。",
+        "commentary": "裴骃集解引韦昭曰：'夏台，狱名。'",
+        "modern_identification": "传统认为夏台在今河南禹州一带；陈恩林认为夏台在今河南禹州。夏台具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；韦昭《国语注》",
+        "dispute": "夏台具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "成汤",
+          "夏台",
+          "夏桀"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-04",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            113.5,
+            34.3
+          ]
+        },
+        "original_modern_coordinates": [
+          113.5,
+          34.3
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          900,
+          530
+        ],
+        "location_label": "夏台·位置存争议·示意",
+        "artwork": "stories/ch06-chengtang-xiatai.png",
+        "source_url": "https://ctext.org/text.pl?if=gb&node=4538&remap=gb&show=parallel",
+        "source_review_note": "已核对《史记·夏本纪》对应节引；夏台现代定位仍有争议。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "06-05",
+      "geometry": null,
+      "properties": {
+        "id": "06-05",
+        "stage_id": "06",
+        "entity_id": "06-05",
+        "name": "伊尹空桑",
+        "layer_role": "event",
+        "evidence_kind": "literary_record",
+        "precision": "disputed",
+        "source_ids": [
+          "report-06-05"
+        ],
+        "basis_note": "多种解释见候选层；事件本身无经核实的发生点。 本点仅用于章节叙事排布，不代表具体发生点或可据此复原的迁徙路线；现代候选地点另层展示。",
+        "revision_id": "myth-atlas-2026-10-01-ch06-v1",
+        "person_ids": [
+          "person-19b940f86697"
+        ],
+        "people": [
+          "伊尹"
+        ],
+        "candidate_ids": [
+          "06-05-candidate-1"
+        ],
+        "source_text": "《吕氏春秋·本味》（战国·吕不韦），高诱注",
+        "source_quote": "有侁氏女子采桑，得婴儿于空桑之中，献之其君。其君令烰人养之，察其所以然，曰：“其母居伊水之上，孕，梦有神告之曰：‘臼出水而东走。毋顾！’明日视臼出水，告其邻，东走十里而顾，其邑尽为水，身因化为空桑。故命之曰伊尹。”此伊尹生空桑之故也。长而贤。",
+        "commentary": "高诱注：'伊尹，名挚。空桑，地名。'原文提及伊水。",
+        "modern_identification": "陈恩林认为空桑在今河南伊川一带；伊水在今河南伊川。空桑具体位置有争议。",
+        "modern_source": "陈恩林《夏商周地理新考》（2013）；高诱《吕氏春秋注》",
+        "dispute": "空桑具体位置有争议。",
+        "category": "夏商神话",
+        "tags": [
+          "夏商",
+          "伊尹",
+          "空桑",
+          "伊水"
+        ],
+        "verification_status": "text_excerpt_checked",
+        "asset_id": "illustration-06-05",
+        "illustration_role": "symbolic",
+        "analysis_eligible": false,
+        "original_geometry": {
+          "type": "Point",
+          "coordinates": [
+            114,
+            34.8
+          ]
+        },
+        "original_modern_coordinates": [
+          114,
+          34.8
+        ],
+        "presentation": "story",
+        "map_visible": true,
+        "layout_hint": [
+          1110,
+          270
+        ],
+        "location_label": "空桑·位置存争议·示意",
+        "artwork": "stories/ch06-yiyin-kongsang.png",
+        "source_url": "https://ctext.org/lv-shi-chun-qiu/ben-wei/zh",
+        "source_review_note": "已对照《吕氏春秋·本味》网络原文校正引文与引号；版本间字形、句读可能有异。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "stage": "08_dahuang_haiwai",
+    "stage_name": "大荒/海外空间图层",
+    "description": "非时间性空间图层，贯穿整个神话时代的空间背景",
+    "core_sources": [
+      "《山海经》海外南/西/北/东经",
+      "《山海经》大荒东/南/西/北经",
+      "《山海经·西山经》",
+      "《山海经·海内西经》",
+      "《列子·汤问》",
+      "《山海经·海外东经》",
+      "《山海经·海外北经》",
+      "《山海经·大荒北经》",
+      "《山海经·海内北经》"
+    ],
+    "total_features": 7
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "08-01",
+        "name": "海外诸国",
+        "category": "海外诸国",
+        "stage": "08_dahuang_haiwai",
+        "source_text": "《山海经》海外南/西/北/东经（郭璞注本）",
+        "source_quote": "《海外南经》《海外西经》《海外北经》《海外东经》载海外诸国，如'结匈国''羽民国''讙头国''三苗国''贯匈国''交胫国''不死民''歧舌国''三首国''长臂国''一目国''深目国''无肠国''聂耳国''博父国''拘缨国''跂踵国''大人国''君子国''青丘国''黑齿国''雨师妾国''玄股国''毛民国''劳民国'等。",
+        "commentary": "郭璞注、郝懿行《山海经笺疏》各有考释。",
+        "modern_identification": "袁珂认为海外诸国为古代对周边民族的想象性描述；具体位置多不可考。海外诸国具体位置多不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "precision": "unlocatable",
+        "precision_note": "海外诸国具体位置多不可考。",
+        "coordinates_basis": "海外诸国按地理方位编排，但具体位置多不可考，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.1,
+        "dispute": "海外诸国具体位置多不可考。",
+        "tags": ["海外", "诸国", "山海经", "空间图层"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "08-02",
+        "name": "大荒异兽",
+        "category": "大荒异兽",
+        "stage": "08_dahuang_haiwai",
+        "source_text": "《山海经》大荒东/南/西/北经（郭璞注本）",
+        "source_quote": "《大荒东经》《大荒南经》《大荒西经》《大荒北经》载大荒异兽，如'九尾狐''烛龙''相柳''九凤''强良''天吴''毕方''狰''天狗''穷奇''梼杌''混沌'等。",
+        "commentary": "郭璞注、郝懿行《山海经笺疏》各有考释。",
+        "modern_identification": "袁珂认为大荒异兽为古代对远方动物的想象性描述；具体位置多不可考。大荒异兽具体位置多不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "precision": "unlocatable",
+        "precision_note": "大荒异兽具体位置多不可考。",
+        "coordinates_basis": "大荒异兽按地理方位编排，但具体位置多不可考，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.1,
+        "dispute": "大荒异兽具体位置多不可考。",
+        "tags": ["大荒", "异兽", "山海经", "空间图层"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [95.0, 40.0]
+      },
+      "properties": {
+        "id": "08-03",
+        "name": "昆仑之丘",
+        "category": "神话地理",
+        "stage": "08_dahuang_haiwai",
+        "source_text": "《山海经·西山经》（郭璞注本）",
+        "source_quote": "昆仑之丘，是实惟帝之下都，神陆吾司之。其神状虎身而九尾，人面而虎爪；是神也，司天之九部及帝之囿时。",
+        "commentary": "郭璞注：'昆仑之丘，帝之下都。'郝懿行《山海经笺疏》。",
+        "modern_identification": "王晖认为昆仑之丘在今甘肃祁连山一带；袁珂认为昆仑之丘在今昆仑山脉；顾实认为昆仑之丘在今新疆昆仑山。昆仑之丘具体位置有争议（甘肃祁连山/新疆昆仑山/其他）。",
+        "modern_source": "王晖《中国上古史实揭秘》（2008）；袁珂《山海经校注》（1980）；顾实《穆天子传西征讲疏》（1931）",
+        "precision": "disputed",
+        "precision_note": "昆仑之丘具体位置有争议（甘肃祁连山/新疆昆仑山/其他）。",
+        "coordinates_basis": "按古籍相对方位推算的示意坐标（WGS84）。郭璞注'昆仑之丘，帝之下都'，王晖认为昆仑之丘在今甘肃祁连山一带。此处取今甘肃祁连山作为示意坐标。",
+        "modern_coordinates": [95.0, 40.0],
+        "confidence": 0.35,
+        "dispute": "昆仑之丘具体位置有争议（甘肃祁连山/新疆昆仑山/其他）。",
+        "tags": ["昆仑", "帝之下都", "山海经", "空间图层"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "08-04",
+        "name": "归墟五山",
+        "category": "神话地理",
+        "stage": "08_dahuang_haiwai",
+        "source_text": "《列子·汤问》（战国·列御寇），张湛注",
+        "source_quote": "渤海之东不知几亿万里，有大壑焉，实惟无底之谷，其下无底，名曰归墟。八纮九野之水，天汉之流，莫不注之，而无增无减焉。其中有五山焉：一曰岱舆，二曰员峤，三曰方壶，四曰瀛洲，五曰蓬莱。",
+        "commentary": "张湛注：'归墟，大海之底。'",
+        "modern_identification": "袁珂认为归墟五山为神话中的海上仙山；具体位置不可考。归墟五山具体位置不可考。",
+        "modern_source": "袁珂《中国神话传说》（2004）；张湛《列子注》",
+        "precision": "legendary",
+        "precision_note": "归墟五山具体位置不可考。",
+        "coordinates_basis": "归墟五山为神话中的海上仙山，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.15,
+        "dispute": "归墟五山具体位置不可考。",
+        "tags": ["归墟", "五山", "仙山", "列子", "空间图层"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "08-05",
+        "name": "扶桑",
+        "category": "神话地理",
+        "stage": "08_dahuang_haiwai",
+        "source_text": "《山海经·海外东经》（郭璞注本）",
+        "source_quote": "汤谷上有扶桑，十日所浴，在黑齿北。居水中，有大木，九日居下枝，一日居上枝。",
+        "commentary": "郭璞注：'扶桑，木名。'郝懿行《山海经笺疏》。",
+        "modern_identification": "袁珂认为扶桑为神话中的神树；具体位置不可考。扶桑具体位置不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "precision": "legendary",
+        "precision_note": "扶桑具体位置不可考。",
+        "coordinates_basis": "扶桑为神话中的神树，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.15,
+        "dispute": "扶桑具体位置不可考。",
+        "tags": ["扶桑", "汤谷", "十日", "山海经", "空间图层"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "08-06",
+        "name": "烛龙",
+        "category": "大荒异兽",
+        "stage": "08_dahuang_haiwai",
+        "source_text": "《山海经·海外北经》（郭璞注本）；又见《大荒北经》",
+        "source_quote": "西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。是烛九阴，是谓烛龙。",
+        "commentary": "郭璞注：'烛龙，烛阴也。'郝懿行《山海经笺疏》。",
+        "modern_identification": "袁珂认为烛龙为神话中的神兽；章尾山具体位置不可考。章尾山具体位置不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "precision": "legendary",
+        "precision_note": "章尾山具体位置不可考。",
+        "coordinates_basis": "章尾山为神话中的山名，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.15,
+        "dispute": "章尾山具体位置不可考。",
+        "tags": ["烛龙", "章尾山", "大荒", "山海经", "空间图层"]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "08-07",
+        "name": "西王母（早期形态）",
+        "category": "神话地理",
+        "stage": "08_dahuang_haiwai",
+        "source_text": "《山海经·西山经》（郭璞注本）",
+        "source_quote": "西王母其状如人，豹尾虎齿而善啸，蓬发戴胜，是司天之厉及五残。",
+        "commentary": "郭璞注：'西王母，西方之神也。'郝懿行《山海经笺疏》。",
+        "modern_identification": "袁珂认为西王母早期形态为半人半兽的凶神；具体位置不可考。西王母早期形态具体位置不可考。",
+        "modern_source": "袁珂《山海经校注》（1980）；郝懿行《山海经笺疏》（清）",
+        "precision": "legendary",
+        "precision_note": "西王母早期形态具体位置不可考。",
+        "coordinates_basis": "西王母早期形态为神话中的神祇，无法推算示意坐标。",
+        "modern_coordinates": null,
+        "confidence": 0.15,
+        "dispute": "西王母早期形态具体位置不可考。",
+        "tags": ["西王母", "早期形态", "山海经", "空间图层"]
+      }
+    }
+  ]
+}

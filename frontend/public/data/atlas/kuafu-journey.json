@@ -1,0 +1,241 @@
+{
+  "id": "kuafu-journey",
+  "event_id": "03-05",
+  "stage_id": "03",
+  "duration_ms": 25000,
+  "coordinate_system": "diagram-units",
+  "location_note": "固定坐标仅用于叙事排布；河、渭不预设先后；大泽为未到达的目标，不表示真实地理行程。",
+  "source_id": "report-03-05",
+  "source_chapter": "《海外北经》",
+  "source_quote": "夸父与日逐走，入日。渴，欲得饮，饮于河、渭，河、渭不足，北饮大泽。未至，道渴而死。弃其杖，化为邓林。",
+  "source_url": "https://ctext.org/text.pl?if=gb&node=84026",
+  "sprites": {
+    "run": {
+      "url": "/data/atlas/myth-icons/animations/kuafu-run.png",
+      "frames": [
+        [
+          0,
+          47,
+          452,
+          396
+        ],
+        [
+          455,
+          49,
+          418,
+          403
+        ],
+        [
+          874,
+          47,
+          443,
+          405
+        ],
+        [
+          1317,
+          41,
+          457,
+          376
+        ],
+        [
+          0,
+          481,
+          454,
+          376
+        ],
+        [
+          455,
+          482,
+          378,
+          375
+        ],
+        [
+          881,
+          475,
+          430,
+          378
+        ],
+        [
+          1325,
+          457,
+          449,
+          396
+        ]
+      ]
+    },
+    "actions": {
+      "url": "/data/atlas/myth-icons/animations/kuafu-actions.png",
+      "frames": [
+        [
+          0,
+          0,
+          678,
+          624
+        ],
+        [
+          679,
+          19,
+          602,
+          605
+        ],
+        [
+          18,
+          624,
+          660,
+          555
+        ],
+        [
+          679,
+          624,
+          633,
+          575
+        ]
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "id": "chase",
+      "label": "逐日 · 示意",
+      "position": [
+        770,
+        170
+      ]
+    },
+    {
+      "id": "rivers",
+      "label": "河、渭 · 示意",
+      "position": [
+        1040,
+        350
+      ]
+    },
+    {
+      "id": "end",
+      "label": "未至 · 弃杖成林",
+      "position": [
+        1050,
+        580
+      ]
+    },
+    {
+      "id": "marsh",
+      "label": "大泽 · 未至",
+      "position": [
+        1060,
+        690
+      ],
+      "unreached": true
+    }
+  ],
+  "phases": [
+    {
+      "id": "chase",
+      "title": "与日逐走",
+      "quote": "夸父与日逐走，入日。",
+      "from_ms": 0,
+      "to_ms": 9000,
+      "action": "run",
+      "path": [
+        [
+          770,
+          170
+        ],
+        [
+          835,
+          205
+        ],
+        [
+          920,
+          260
+        ],
+        [
+          1040,
+          350
+        ]
+      ]
+    },
+    {
+      "id": "drink",
+      "title": "饮于河、渭",
+      "quote": "饮于河、渭，河、渭不足。",
+      "from_ms": 9000,
+      "to_ms": 12000,
+      "action": "drink",
+      "path": [
+        [
+          1040,
+          350
+        ]
+      ]
+    },
+    {
+      "id": "north",
+      "title": "北饮大泽",
+      "quote": "北饮大泽。",
+      "from_ms": 12000,
+      "to_ms": 18000,
+      "action": "run",
+      "path": [
+        [
+          1040,
+          350
+        ],
+        [
+          1070,
+          420
+        ],
+        [
+          1065,
+          500
+        ]
+      ]
+    },
+    {
+      "id": "tired",
+      "title": "未至 · 力竭",
+      "quote": "未至，道渴而死。",
+      "from_ms": 18000,
+      "to_ms": 20500,
+      "action": "tired",
+      "path": [
+        [
+          1065,
+          500
+        ],
+        [
+          1050,
+          580
+        ]
+      ]
+    },
+    {
+      "id": "collapse",
+      "title": "道渴而死",
+      "quote": "未至，道渴而死。",
+      "from_ms": 20500,
+      "to_ms": 23000,
+      "action": "collapse",
+      "path": [
+        [
+          1050,
+          580
+        ]
+      ]
+    },
+    {
+      "id": "forest",
+      "title": "弃杖成林",
+      "quote": "弃其杖，化为邓林。",
+      "from_ms": 23000,
+      "to_ms": 25000,
+      "action": "forest",
+      "path": [
+        [
+          1050,
+          580
+        ]
+      ]
+    }
+  ]
+}
