@@ -70,7 +70,7 @@ rtk npm --prefix frontend run verify:layout
 ## GitHub 仓库与 Demo 部署
 
 公开仓库：[hyc1005/mythmap](https://github.com/hyc1005/mythmap)。
-Demo 地址：[山海寻踪](https://hyc1005.github.io/mythmap/)（首次发布以 Actions 成功结果为准）。
+Demo 地址：[山海寻踪](https://hyc1005.github.io/mythmap/)（已发布）。
 
 使用 **GitHub Actions 构建、GitHub Pages 托管**。不需要 Vercel、Java API、数据库或额外服务器。工作流位于 `.github/workflows/deploy-pages.yml`，平台使用普通 npm，无需安装 RTK。
 

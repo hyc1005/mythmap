@@ -76,7 +76,7 @@
 
 ## Git 与部署状态
 
-公开仓库为 https://github.com/hyc1005/mythmap，origin 已配置，main 已上传。提交者使用 hyc1005 / 用户提供的邮箱。Pages Source 已设置为 GitHub Actions，workflow 自动构建 frontend/dist 后发布，不需要 Vercel。目标 Demo 为 https://hyc1005.github.io/mythmap/；当前首次部署等待 Actions 结果，不能先登记为上线成功。
+公开仓库为 https://github.com/hyc1005/mythmap，origin 已配置，main 已上传。提交者使用 hyc1005 / 用户提供的邮箱。Pages Source 已设置为 GitHub Actions，workflow 自动构建 frontend/dist 后发布，不需要 Vercel。Demo 已发布：https://hyc1005.github.io/mythmap/ 。首次 Actions 运行 37096855074 成功，总耗时 41 秒。线上未登录 Chromium 核对首页、女娲动画和原生全屏通过，未捕获页面异常或 HTTP 400+ 素材响应；五视口完整布局专项使用本地同一子路径产物验证。首次发布提交为 331e0bd。
 
 Vite base 与运行时 /data 地址已通过 asset-url.js 统一适配项目子路径；README 包含实际仓库、部署、更新和回退操作。文档变更不触发重复部署，可手动 Run workflow。
 
