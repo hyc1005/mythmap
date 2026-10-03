@@ -20,6 +20,7 @@ import animationCatalog from '../public/data/atlas/story-animations.json';
 import kuafuJourney from '../public/data/atlas/kuafu-journey.json';
 import KuafuJourney from './KuafuJourney';
 import StoryAnimation from './StoryAnimation';
+import { assetUrl } from './asset-url';
 import './myth-world.css';
 
 const PanguOpening = lazy(() => import('./PanguOpening'));
@@ -32,14 +33,14 @@ class PanguLoadBoundary extends Component {
 
 function PanguPoster({ scene, onRetry, controlContainer }) {
   const controls = <button className="pangu-retry" type="button" onClick={onRetry}>播放动态序章</button>;
-  return <div className="pangu-loading-poster"><img src={scene} alt="盘古分开混沌，天地初开木刻场景" />{controlContainer ? createPortal(controls, controlContainer) : controls}</div>;
+  return <div className="pangu-loading-poster"><img src={assetUrl(scene)} alt="盘古分开混沌，天地初开木刻场景" />{controlContainer ? createPortal(controls, controlContainer) : controls}</div>;
 }
 
 const EXTENT = [0, 0, 1200, 800];
 const projection = new Projection({ code: 'mythic-plane', units: 'pixels', extent: EXTENT });
 
 function iconFor(record) {
-  return record.artwork ? record.artwork.startsWith('/') ? record.artwork : `/data/atlas/myth-icons/${record.artwork}` : null;
+  return record.artwork ? assetUrl(record.artwork.startsWith('/') ? record.artwork : `/data/atlas/myth-icons/${record.artwork}`) : null;
 }
 
 const beastIcons = new Map();
@@ -69,8 +70,18 @@ function DetailDrawer({ selected, onClose, onOpen, onToggleFullscreen, fullscree
     closeButton.current?.focus({ preventScroll: true });
     return () => { scrollTopRef.current = drawer.current?.scrollTop || 0; };
   }, [selected.id]);
+  const keepFocusInDrawer = event => {
+    if (event.key !== 'Tab') return;
+    const controls = [...drawer.current.querySelectorAll('button:not(:disabled), a[href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex="0"]')].filter(element => element.getClientRects().length);
+    const first = controls[0], last = controls.at(-1);
+    if (event.shiftKey && (document.activeElement === first || document.activeElement === drawer.current)) {
+      event.preventDefault(); last?.focus({ preventScroll: true });
+    } else if (!event.shiftKey && (document.activeElement === last || document.activeElement === drawer.current)) {
+      event.preventDefault(); first?.focus({ preventScroll: true });
+    }
+  };
   return <div className="detail-scrim" onClick={onClose}>
-    <aside ref={drawer} className="detail-drawer" role="dialog" aria-modal="true" aria-label={selected.name} tabIndex={-1} onClick={event => event.stopPropagation()}>
+    <aside ref={drawer} className="detail-drawer" role="dialog" aria-modal="true" aria-label={selected.name} tabIndex={-1} onKeyDown={keepFocusInDrawer} onClick={event => event.stopPropagation()}>
       <div className="drawer-actions"><button className="drawer-fullscreen" type="button" onClick={onToggleFullscreen} aria-label={fullscreen ? '退出地图全屏' : '地图全屏'}>{fullscreen ? '退出全屏' : '地图全屏'}</button>
         <button ref={closeButton} className="drawer-close" onClick={onClose} aria-label="关闭">×</button></div>
       <span className="intro-overline">{selected.region || selected.source}</span>
@@ -178,7 +189,7 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
 
   useEffect(() => {
     if (!target.current || map.current) return undefined;
-    const paper = new ImageLayer({ source: new ImageStatic({ url: '/data/atlas/myth-paper.png', imageExtent: EXTENT, projection, interpolate: true }) });
+    const paper = new ImageLayer({ source: new ImageStatic({ url: assetUrl('/data/atlas/myth-paper.png'), imageExtent: EXTENT, projection, interpolate: true }) });
     const created = new OlMap({
       target: target.current,
       controls: defaultControls({ attribution: false, rotate: false, zoom: false }),
@@ -187,7 +198,7 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
         new VectorLayer({ source: areaSource.current, declutter: 'map-labels', style: feature => obscuredLabel(feature.getGeometry().getCoordinates(), feature.get('label')) ? null : new Style({
           text: new Text({ text: feature.get('label'), font: '14px "Noto Serif SC","SimSun",serif', padding: [5, 9, 5, 9], backgroundFill: new Fill({ color: '#eee2c5c9' }), fill: new Fill({ color: '#806d51' }), overflow: true }),
         }) }),
-        new VectorLayer({ source: terrainSource.current, style: feature => new Style({ image: new Icon({ src: `/data/atlas/myth-icons/terrain/${feature.get('kind')}.png`, width: feature.get('width'), anchor: [0.5, 1], opacity: feature.get('opacity') }) }) }),
+        new VectorLayer({ source: terrainSource.current, style: feature => new Style({ image: new Icon({ src: assetUrl(`/data/atlas/myth-icons/terrain/${feature.get('kind')}.png`), width: feature.get('width'), anchor: [0.5, 1], opacity: feature.get('opacity') }) }) }),
         new VectorLayer({ source: relationSource.current, style: feature => feature.get('arrow') ? new Style({
           text: new Text({ text: '▲', font: 'bold 12px sans-serif', fill: new Fill({ color: '#a83f2b' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }),
         }) : new Style({
@@ -413,8 +424,8 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
 
   const isFullscreen = nativeFullscreen || fallbackFullscreen;
   useEffect(() => {
-    if (isFullscreen) requestAnimationFrame(() => mapFrame.current?.focus({ preventScroll: true }));
-  }, [isFullscreen]);
+    if (isFullscreen && !selectedId) requestAnimationFrame(() => mapFrame.current?.focus({ preventScroll: true }));
+  }, [isFullscreen, selectedId]);
   useEffect(() => {
     if (!isFullscreen) return undefined;
     const handleFullscreenKeys = event => {
@@ -508,7 +519,7 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
     {!isPrologue && <>
       {!isFullscreen && <><div className="map-orientation" aria-label="图面方位示意"><span>北</span><i>↑</i><span>西　中　东</span><i>↓</i><span>南</span></div>{mapControls}</>}
     {visiblePortrait && !isFullscreen && <div key={visiblePortrait.id} className={`map-role-portrait ${visiblePortrait.above ? 'is-above' : 'is-below'} ${visiblePortrait.record.artworks?.length > 1 ? 'has-pair' : ''}`} style={{ left: visiblePortrait.left, top: visiblePortrait.top, width: visiblePortrait.width, height: visiblePortrait.height }} aria-hidden="true">
-      {(visiblePortrait.record.artworks?.length ? visiblePortrait.record.artworks : [visiblePortrait.record.artwork]).filter(Boolean).map((artwork, index) => <img key={`${visiblePortrait.id}-${index}`} src={artwork.startsWith('/') ? artwork : `/data/atlas/myth-icons/${artwork}`} alt="" />)}
+      {(visiblePortrait.record.artworks?.length ? visiblePortrait.record.artworks : [visiblePortrait.record.artwork]).filter(Boolean).map((artwork, index) => <img key={`${visiblePortrait.id}-${index}`} src={assetUrl(artwork.startsWith('/') ? artwork : `/data/atlas/myth-icons/${artwork}`)} alt="" />)}
     </div>}
       {!isFullscreen && preview}
     {activeJourneyId === '03-05' && mapInstance && <KuafuJourney map={mapInstance} selectedId={selectedId} onSelect={onSelect} onBusyChange={handleJourneyBusy} controlContainer={isFullscreen ? controlContainer : null} />}
@@ -671,7 +682,10 @@ export default function App() {
     const controller = new AbortController();
     fetch(`${apiBase}/api/world`, { signal: controller.signal })
       .then(response => response.ok ? response.json() : Promise.reject(new Error('world api unavailable')))
-      .then(data => { if (data.revision && Array.isArray(data.stages) && Array.isArray(data.beasts)) setWorld(data); })
+      .then(data => {
+        if (data?.revision && ['stages', 'regions', 'terrain', 'places', 'relations', 'domains', 'beasts'].every(key => Array.isArray(data[key]))
+          && data.stages.length === mythWorld.stages.length && data.stages.every((stage, index) => stage.id === mythWorld.stages[index].id)) setWorld(data);
+      })
       .catch(error => { if (error.name !== 'AbortError') console.info('使用随前端打包的神话地图数据'); });
     return () => controller.abort();
   }, []);
@@ -712,6 +726,7 @@ export default function App() {
     const alignWorldAfterResize = () => {
       measure();
       requestAnimationFrame(() => {
+        if (document.fullscreenElement || document.querySelector('.is-fallback-fullscreen')) return;
         const top = worldLayout.current?.getBoundingClientRect().top;
         if (window.location.hash === '#world' && Number.isFinite(top) && Math.abs(top) < 80) {
           window.scrollTo({ top: window.scrollY + top, behavior: 'instant' });
@@ -721,7 +736,9 @@ export default function App() {
     window.addEventListener('resize', alignWorldAfterResize);
     window.visualViewport?.addEventListener('resize', alignWorldAfterResize);
     measure();
-    if (window.location.hash === '#world') requestAnimationFrame(() => worldLayout.current?.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    if (window.location.hash === '#world') requestAnimationFrame(() => {
+      if (!document.fullscreenElement && !document.querySelector('.is-fallback-fullscreen')) worldLayout.current?.scrollIntoView({ block: 'start', behavior: 'instant' });
+    });
     return () => {
       observer.disconnect();
       window.removeEventListener('resize', alignWorldAfterResize);

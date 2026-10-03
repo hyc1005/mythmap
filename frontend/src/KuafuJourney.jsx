@@ -9,6 +9,7 @@ import VectorSource from 'ol/source/Vector';
 import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style';
 import journey from '../public/data/atlas/kuafu-journey.json';
 import catalog from '../public/data/atlas/catalog.json';
+import { assetUrl } from './asset-url';
 
 function curvedPath(points) {
   if (points.length < 3) return points;
@@ -44,7 +45,7 @@ function positionAt(phase, ratio) {
 
 async function loadSprites(sheet, poses = false) {
   const image = new Image();
-  image.src = sheet.url;
+  image.src = assetUrl(sheet.url);
   await image.decode();
   return sheet.frames.map(([x, y, width, height], index) => {
     const canvas = document.createElement('canvas');

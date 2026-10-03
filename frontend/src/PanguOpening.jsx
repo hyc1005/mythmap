@@ -2,8 +2,9 @@ import { createPortal } from 'react-dom';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AbsoluteFill, Easing, Img, interpolate, useCurrentFrame } from 'remotion';
 import { Player } from '@remotion/player';
+import { assetUrl } from './asset-url';
 
-const SCENE = '/data/atlas/myth-icons/scenes/';
+const SCENE = assetUrl('/data/atlas/myth-icons/scenes/');
 const POSTER = `${SCENE}pangu-opening.png`;
 const DURATION = 390;
 

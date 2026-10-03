@@ -129,6 +129,10 @@ try {
     console.log("Checking page structure and fullscreen bands at "+width+"x"+height);
     const layoutPage=await browser.newPage({viewport:{width,height},hasTouch:width<=640});
     layoutPage.on("pageerror",error=>failures.push(error.message));
+    layoutPage.on("response", response => {
+      const url = new URL(response.url());
+      if (url.origin === new URL(process.env.ATLAS_URL || "http://127.0.0.1:5173").origin && response.status() >= 400 && !url.pathname.endsWith('/api/world')) failures.push("HTTP " + response.status() + " " + url.pathname);
+    });
     await layoutPage.clock.install();
     await layoutPage.goto(process.env.ATLAS_URL || "http://127.0.0.1:5173");
     await layoutPage.getByRole("button",{name:"暂停盘古序章",exact:true}).waitFor();
@@ -162,6 +166,13 @@ try {
     await layoutPage.locator(".is-fallback-fullscreen").waitFor();
     await layoutPage.clock.runFor(500);
     await assertFullscreenLayout(layoutPage,"fallback idle");
+    const scrollBeforeChapter = await layoutPage.evaluate(() => window.scrollY);
+    await layoutPage.getByRole("button", { name: "下一章 →", exact: true }).click();
+    await layoutPage.clock.runFor(500);
+    assert.equal(await layoutPage.evaluate(() => window.scrollY), scrollBeforeChapter, "fullscreen chapter change keeps background scroll stable");
+    await layoutPage.getByRole("button", { name: "← 上一章", exact: true }).click();
+    await layoutPage.clock.runFor(500);
+    await layoutPage.getByLabel("选择地图故事动画").selectOption("");
     assert.equal(await layoutPage.locator(".fullscreen-idle-info .map-layer-summary").count(),1);
     await layoutPage.locator(".map-tools summary").click();
     await layoutPage.getByRole("button",{name:"看本章山海",exact:true}).click();
@@ -193,6 +204,12 @@ try {
     await assertFullscreenLayout(layoutPage,"preview dock");
     await layoutPage.getByRole("button",{name:"展开原文与出处 ↗",exact:true}).click();
     await layoutPage.getByRole("dialog").waitFor();
+    const drawerControls = layoutPage.locator('.detail-drawer').locator('button:not(:disabled), a[href]');
+    await drawerControls.first().focus();
+    await layoutPage.keyboard.press('Shift+Tab');
+    assert.equal(await drawerControls.last().evaluate(element => element === document.activeElement), true, "Shift+Tab stays in detail drawer");
+    await layoutPage.keyboard.press('Tab');
+    assert.equal(await drawerControls.first().evaluate(element => element === document.activeElement), true, "Tab wraps within detail drawer");
     await layoutPage.getByRole("button",{name:"关闭",exact:true}).click();
     await layoutPage.locator(".map-fullscreen").click();
     await layoutPage.close();
@@ -744,6 +761,7 @@ try {
     await checkPage.clock.install();
     await checkPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
     for (const [chapter, id, title] of [['02 三皇五氏', '02-04', '燧人取火'], ['03 炎黄', '03-04', '精卫填海'], ['04 五帝后期', '04-02', '大羿射日'], ['05 禹夏', '05-01', '大禹治水']]) {
+      console.log(`Checking ${id} at ${width}x${height}`);
       await startMapStory(checkPage, chapter, id);
       await checkPage.clock.runFor(id === '02-04' ? 9800 : id === '04-02' ? 7000 : 1600);
       if (id === '04-02') assert.equal(await checkPage.locator('.story-animation').getAttribute('data-shot-state'), 'flight', `${id}: arrow visible at ${width}x${height}`);

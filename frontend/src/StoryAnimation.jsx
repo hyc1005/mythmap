@@ -9,6 +9,7 @@ import VectorSource from 'ol/source/Vector';
 import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style';
 import animations from '../public/data/atlas/story-animations.json';
 import catalog from '../public/data/atlas/catalog.json';
+import { assetUrl } from './asset-url';
 
 const smooth = value => value * value * (3 - 2 * value);
 const clamp = value => Math.max(0, Math.min(1, value));
@@ -36,7 +37,7 @@ async function spritesFor(sheet) {
   if (!sheet.sheet) {
     if (sheet.actor_art) {
       const image = new Image();
-      image.src = sheet.actor_art.startsWith('/') ? sheet.actor_art : `/data/atlas/myth-icons/${sheet.actor_art}`;
+      image.src = assetUrl(sheet.actor_art.startsWith('/') ? sheet.actor_art : `/data/atlas/myth-icons/${sheet.actor_art}`);
       await image.decode();
       const canvas = document.createElement('canvas');
       canvas.width = canvas.height = 160;
@@ -58,7 +59,7 @@ async function spritesFor(sheet) {
     return [[new Icon({ img: canvas, anchor: [.5, .5], declutterMode: 'none' }), new Icon({ img: canvas, anchor: [.5, .5], declutterMode: 'none' })]];
   }
   const image = new Image();
-  image.src = sheet.sheet.url;
+  image.src = assetUrl(sheet.sheet.url);
   await image.decode();
   const scale = 146 / Math.max(...sheet.sheet.frames.flatMap(frame => frame.slice(2)));
   return sheet.sheet.frames.map(([x, y, width, height], index) => [false, true].map(mirrored => {
@@ -74,7 +75,7 @@ async function spritesFor(sheet) {
 
 async function imageFor(url) {
   const image = new Image();
-  image.src = url;
+  image.src = assetUrl(url);
   await image.decode();
   return image;
 }
