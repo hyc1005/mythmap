@@ -4,7 +4,7 @@ FastAPI serves the story/place APIs and PostGIS map/cluster queries. The databas
 
 ## Local setup
 
-From the repository root, create a virtual environment, install `backend/requirements.txt`, and set `DATABASE_URL` to a PostgreSQL connection using psycopg 3, for example:
+From the repository root, create a virtual environment, install `backend/requirements.txt`, and set the required `DATABASE_URL` to your PostgreSQL connection using psycopg 3. Replace `YOUR_USER` and `YOUR_PASSWORD` below with your own credentials; there are no built-in database credentials.
 
 ```powershell
 py -m venv .venv

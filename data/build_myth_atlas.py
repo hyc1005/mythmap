@@ -228,8 +228,10 @@ def build():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--fetch', action='store_true')
-    parser.add_argument('--source', type=Path, default=Path('output/maps'))
+    parser.add_argument('--source', type=Path, help='Local source directory (required with --fetch)')
     args = parser.parse_args()
     if args.fetch:
+        if args.source is None:
+            parser.error('--source is required with --fetch')
         prepare_inputs(args.source)
     build()
