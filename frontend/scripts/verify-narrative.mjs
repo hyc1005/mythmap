@@ -123,6 +123,31 @@ async function assertFullscreenLayout(page, label) {
   }
 }
 
+async function assertDetailDrawer(page, label) {
+  const drawer = page.getByRole('dialog');
+  await drawer.waitFor();
+  await page.clock.runFor(300);
+  assert.equal(await drawer.locator('.drawer-fullscreen').count(), 0, label + ': no map fullscreen entry');
+  const close = drawer.getByRole('button', { name: '关闭', exact: true });
+  const actions = await drawer.locator('.drawer-actions').boundingBox();
+  for (const selector of ['.intro-overline', 'h2']) {
+    const rect = await drawer.locator(selector).boundingBox();
+    assert.ok(rect.y >= actions.y + actions.height, label + ': heading clears actions');
+  }
+  const controls = drawer.locator('button:not(:disabled), a[href]');
+  await controls.first().focus();
+  await page.keyboard.press('Shift+Tab');
+  assert.equal(await controls.last().evaluate(element => element === document.activeElement), true, label + ': reverse focus wraps');
+  await page.keyboard.press('Tab');
+  assert.equal(await close.evaluate(element => element === document.activeElement), true, label + ': focus returns to close');
+  await drawer.evaluate(element => { element.scrollTop = element.scrollHeight; });
+  await page.clock.runFor(100);
+  assert.equal(await close.evaluate(element => {
+    const rect = element.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= innerHeight && document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2) === element;
+  }), true, label + ': close remains visible and clickable after scrolling');
+}
+
 const browser = await chromium.launch({ headless: true, channel: process.env.PLAYWRIGHT_BROWSER_CHANNEL });
 try {
   for (const [width,height] of [[1920,1080],[1366,768],[1280,720],[390,844],[844,390]]) {
@@ -141,11 +166,33 @@ try {
     assert.deepEqual(await layoutPage.locator(".myth-header nav a").allTextContents(),["地图","异兽谱","读图与依据"]);
     if(width<=640) assert.equal(await layoutPage.locator(".rail-expand").getAttribute("aria-expanded"),"false");
     await layoutPage.screenshot({path:new URL("page-structure-"+width+"x"+height+".png",output).pathname.replace(/^\/([A-Za-z]:)/,"$1")});
+    await layoutPage.locator('.bestiary-toggle').click();
+    assert.equal(await layoutPage.locator('.bestiary-toggle').getAttribute('aria-expanded'), 'true');
+    const lushu = layoutPage.locator('.beast-card').filter({ has: layoutPage.locator('b', { hasText: /^鹿蜀$/ }) });
+    await lushu.scrollIntoViewIfNeeded();
+    const bestiaryScroll = await layoutPage.evaluate(() => window.scrollY);
+    await lushu.click();
+    await assertDetailDrawer(layoutPage, '鹿蜀 ' + width + 'x' + height);
+    await layoutPage.getByRole('dialog').evaluate(element => { element.scrollTop = 0; });
+    await layoutPage.clock.runFor(100);
+    await layoutPage.getByRole('dialog').screenshot({path:new URL('lushu-detail-'+width+'x'+height+'.png',output).pathname.replace(/^\/([A-Za-z]:)/,'$1')});
+    await layoutPage.getByRole('button', { name: '关闭', exact: true }).click();
+    await layoutPage.clock.runFor(100);
+    assert.equal(await lushu.evaluate(element => element === document.activeElement), true, 'closing detail restores card focus');
+    assert.ok(Math.abs(await layoutPage.evaluate(() => window.scrollY) - bestiaryScroll) <= 1, 'closing detail restores page scroll');
+    await layoutPage.locator('.myth-map-wrap').scrollIntoViewIfNeeded();
     for(const [chapter,id] of [["00 盘古开天",null],["01 造人与补天","01-02"],["02 三皇五氏","02-04"],["03 炎黄","03-05"],["03 炎黄","03-04"],["04 五帝后期","04-02"],["05 禹夏","05-01"]]){
       if(id) await startMapStory(layoutPage,chapter,id);
       await layoutPage.locator(".map-fullscreen").click();
       await layoutPage.locator(".is-map-fullscreen").waitFor();
       await layoutPage.clock.runFor(500);
+      if (!id) {
+        await layoutPage.getByRole('button', { name: '原文与出处 ↗', exact: true }).click();
+        await assertDetailDrawer(layoutPage, 'native fullscreen ' + width + 'x' + height);
+        await layoutPage.getByRole('button', { name: '关闭', exact: true }).click();
+        await layoutPage.clock.runFor(100);
+        assert.equal(await layoutPage.locator('.is-map-fullscreen').count(), 1, 'closing detail preserves fullscreen');
+      }
       if(id){await layoutPage.locator(".myth-layer-switches input").nth(0).check();await layoutPage.locator(".myth-layer-switches input").nth(1).check();}
       await assertFullscreenLayout(layoutPage,chapter+" "+width+"x"+height);
       const playbackCanvas = await layoutPage.locator(".myth-map-canvas").boundingBox();
@@ -204,6 +251,7 @@ try {
     await assertFullscreenLayout(layoutPage,"preview dock");
     await layoutPage.getByRole("button",{name:"展开原文与出处 ↗",exact:true}).click();
     await layoutPage.getByRole("dialog").waitFor();
+    await assertDetailDrawer(layoutPage, 'fallback fullscreen ' + width + 'x' + height);
     const drawerControls = layoutPage.locator('.detail-drawer').locator('button:not(:disabled), a[href]');
     await drawerControls.first().focus();
     await layoutPage.keyboard.press('Shift+Tab');

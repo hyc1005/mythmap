@@ -62,7 +62,7 @@ function beastMarker(record, active, resolution = 1) {
   return beastIcons.get(key);
 }
 
-function DetailDrawer({ selected, onClose, onOpen, onToggleFullscreen, fullscreen, scrollTopRef }) {
+function DetailDrawer({ selected, onClose, onOpen, scrollTopRef }) {
   const closeButton = useRef(null);
   const drawer = useRef(null);
   useEffect(() => {
@@ -82,7 +82,7 @@ function DetailDrawer({ selected, onClose, onOpen, onToggleFullscreen, fullscree
   };
   return <div className="detail-scrim" onClick={onClose}>
     <aside ref={drawer} className="detail-drawer" role="dialog" aria-modal="true" aria-label={selected.name} tabIndex={-1} onKeyDown={keepFocusInDrawer} onClick={event => event.stopPropagation()}>
-      <div className="drawer-actions"><button className="drawer-fullscreen" type="button" onClick={onToggleFullscreen} aria-label={fullscreen ? '退出地图全屏' : '地图全屏'}>{fullscreen ? '退出全屏' : '地图全屏'}</button>
+      <div className="drawer-actions">
         <button ref={closeButton} className="drawer-close" onClick={onClose} aria-label="关闭">×</button></div>
       <span className="intro-overline">{selected.region || selected.source}</span>
       <h2>{selected.name}</h2>
@@ -98,7 +98,7 @@ function DetailDrawer({ selected, onClose, onOpen, onToggleFullscreen, fullscree
   </div>;
 }
 
-function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFullscreenTargetChange, onFullscreenToggleChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, autoPlayChapter }) {
+function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, autoPlayChapter }) {
   const stages = world.stages;
   const chapterId = stages[stageIndex].id;
   const isPrologue = chapterId === '00';
@@ -449,7 +449,6 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
     if (!frame.requestFullscreen) { setFallbackFullscreen(true); frame.focus({ preventScroll: true }); requestAnimationFrame(() => frame.focus({ preventScroll: true })); return; }
     try { await frame.requestFullscreen(); requestAnimationFrame(() => frame.focus({ preventScroll: true })); } catch { setFallbackFullscreen(true); frame.focus({ preventScroll: true }); requestAnimationFrame(() => frame.focus({ preventScroll: true })); }
   }, [fallbackFullscreen]);
-  useEffect(() => { onFullscreenToggleChange(() => toggleFullscreen); }, [toggleFullscreen, onFullscreenToggleChange]);
 
   const fitStage = () => { map.current?.dispatchEvent('journey:user-view'); map.current?.getView().fit(stages[stageIndex].extent, { duration: 320, padding: [50, 50, 70, 50], maxZoom: 2.4 }); };
   const exportStage = () => {
@@ -595,7 +594,6 @@ export default function App() {
   const [activeLayers, setActiveLayers] = useState({ beasts: false, divine: false });
   const [selectedId, setSelectedId] = useState(null);
   const [fullscreenTarget, setFullscreenTarget] = useState(null);
-  const [fullscreenToggle, setFullscreenToggle] = useState(() => () => {});
   const [railExpanded, setRailExpanded] = useState(false);
   const [layoutMetrics, setLayoutMetrics] = useState({ mapHeight: 480, timelineHeight: 150 });
   const [autoPlayChapterId, setAutoPlayChapterId] = useState('00');
@@ -771,13 +769,13 @@ export default function App() {
         </div>
       </aside>
       <div ref={worldMain} className="world-main">
-        <MapPanel world={world} stageIndex={stageIndex} autoPlayChapter={playing || autoPlayChapterId === stages[stageIndex].id} activeLayers={{ ...activeLayers, onBeasts: checked => setActiveLayers(state => ({ ...state, beasts: checked })), onDivine: checked => setActiveLayers(state => ({ ...state, divine: checked })), onGoToFirstBeast: () => { const index = stages.findIndex(stage => world.beasts.some(beast => beast.reveal_chapter === stage.id)); if (index >= 0) selectStage(index); } }} selectedId={selectedId} onSelect={open} onFullscreenTargetChange={setFullscreenTarget} onFullscreenToggleChange={setFullscreenToggle} onJourneyBusyChange={setJourneyBusy} onFullscreenStageChange={navigateFullscreenStage} chapterTransition={chapterTransition} />
+        <MapPanel world={world} stageIndex={stageIndex} autoPlayChapter={playing || autoPlayChapterId === stages[stageIndex].id} activeLayers={{ ...activeLayers, onBeasts: checked => setActiveLayers(state => ({ ...state, beasts: checked })), onDivine: checked => setActiveLayers(state => ({ ...state, divine: checked })), onGoToFirstBeast: () => { const index = stages.findIndex(stage => world.beasts.some(beast => beast.reveal_chapter === stage.id)); if (index >= 0) selectStage(index); } }} selectedId={selectedId} onSelect={open} onFullscreenTargetChange={setFullscreenTarget} onJourneyBusyChange={setJourneyBusy} onFullscreenStageChange={navigateFullscreenStage} chapterTransition={chapterTransition} />
         <Timeline containerRef={timeline} stages={stages} index={stageIndex} playing={playing} onSelect={selectStage} onPlay={() => { if (stageIndex === stages.length - 1 && !playing) setStageIndex(0); setPlaying(value => !value); }} />
       </div>
     </section>
     <Bestiary beasts={beasts} onOpen={open} />
     <section className="reading-notes" id="reading-notes" aria-labelledby="reading-notes-title"><h2 id="reading-notes-title">读图与依据</h2>          <div className="reading-notes-text"><p>《山海经》依山川和方位展开，不是编年史。序章与七章次序是本项目的叙事编排；各章内部仅在原文或可靠叙事关系可核实处排列先后，不代表精确年代。</p><p>经文距离不按比例绘制；淡墨山形为装饰。重要地点以名称和原文标识，故事示意点不表示真实位置。</p></div><p>各篇神域记载不预设为同一空间体系。异兽图标仅关联有篇目依据的地点锚点；缺少可靠地点依据的条目收录在异兽谱中。</p><p>山海空间与异兽描写以《山海经》正文条目为依据，神话故事沿用各条目所列典籍与出处。插画是本项目依据正文的图像解释，不作为古本插图或新增考据证据。</p></section>
     <footer className="myth-footer"><span>版式：方位关系与叙述次序 · 不设距离比例</span><span>山海空间与异兽描写：以《山海经》正文条目核对</span></footer>
-    {selected && createPortal(<DetailDrawer selected={selected} onClose={closeDetail} onOpen={open} onToggleFullscreen={fullscreenToggle} fullscreen={Boolean(fullscreenTarget)} scrollTopRef={detailScrollTop} />, fullscreenTarget || document.body)}
+    {selected && createPortal(<DetailDrawer selected={selected} onClose={closeDetail} onOpen={open} scrollTopRef={detailScrollTop} />, fullscreenTarget || document.body)}
   </main>;
 }

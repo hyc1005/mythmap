@@ -207,10 +207,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .myth-footer { display: flex; justify-content: space-between; gap: 12px; padding: 16px clamp(18px, 4vw, 68px); border-top: 1px solid #b9a47c; color: #807052; font-size: 9px; }
 
 .detail-scrim { position: fixed; z-index: 50; inset: 0; display: flex; justify-content: flex-end; background: #211d17a0; }
-.detail-drawer { position: relative; width: min(460px, 94vw); height: 100%; overflow: auto; overscroll-behavior: contain; padding: 58px 30px 52px; background: #f0e5ce; box-shadow: -8px 0 24px #20180e3b; animation: drawer-in .23s ease-out both; }
+.detail-drawer { position: relative; width: min(460px, 94vw); height: 100%; overflow: auto; overscroll-behavior: contain; padding: 12px 30px 52px; background: #f0e5ce; box-shadow: -8px 0 24px #20180e3b; animation: drawer-in .23s ease-out both; }
 @keyframes drawer-in { from { transform: translateX(30px); opacity: .55; } to { transform: translateX(0); opacity: 1; } }
-.drawer-actions { position: sticky; z-index: 2; top: 8px; display: flex; align-items: center; justify-content: space-between; margin: -45px 0 8px; }
-.drawer-fullscreen { height: 32px; padding: 0 10px; border: 1px solid #a89169; background: #f0e5ce; color: #687568; font-size: 10px; cursor: pointer; }
+.drawer-actions { position: sticky; z-index: 2; top: 0; display: flex; align-items: center; justify-content: flex-end; margin: 0 0 16px; padding: 8px 0; background: #f0e5ce; }
 .drawer-close { display: grid; width: 32px; height: 32px; place-items: center; margin: 0; padding: 0; border: 1px solid #a89169; background: #f0e5ce; color: #687568; font: 22px/1 Arial, sans-serif; cursor: pointer; }
 .detail-drawer h2 { margin: 8px 0 16px; font-size: 26px; font-weight: 500; }
 .detail-drawer h3 { margin: 24px 0 6px; font-size: 13px; font-weight: 600; }
