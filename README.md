@@ -62,7 +62,7 @@ $env:ATLAS_URL = 'http://127.0.0.1:4173/mythmap/'
 npm run verify:layout
 ```
 
-`verify:layout` 检查五种视口、动画布局、原生与模拟全屏，以及详情遮挡和焦点恢复。`npm run verify:narrative` 还检查叙事、素材与时间轴，耗时较长；完整长测试尚未全部验收。截图保存在 `output/qa/`，最新验收记录见 `山海寻踪_WebGIS_交接文档.md`。
+`verify:layout` 检查五种视口、动画布局、原生与模拟全屏，以及详情遮挡和焦点恢复。`npm run verify:narrative` 还检查叙事、素材与时间轴，耗时较长；完整长测试尚未全部验收。截图保存在 `output/qa/`。
 
 发布前复查电脑与手机上的动画、地图全屏、异兽搜索、详情关闭和出处链接，并确认刷新正常、图片无 404。
 
@@ -76,7 +76,7 @@ npm run verify:layout
 
 - 主要数据位于 `frontend/public/data/`：`myth-world.json` 及 `atlas/` 下的 `catalog.json`、`story-animations.json`、`kuafu-journey.json`。
 - 出处与素材核对使用 `atlas/review.json`、`atlas/artwork-manifest.json`；原图保存在 `frontend/artwork-source/`。
-- `data/build_myth_atlas.py` 可能覆盖人工审核数据，运行前核对来源、交接记录和 Git 差异。
+- `data/build_myth_atlas.py` 可能覆盖人工审核数据，运行前核对来源和 Git 差异。
 - 可选静态地图由 `data/render_myth_atlas.py` 生成，需要 Pillow、pyproj 和指定的 Windows 字体，输出到 `output/atlas/`。
 - 旧版 API、数据库与导入工具的说明见各目录 README。
 

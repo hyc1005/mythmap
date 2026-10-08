@@ -1,5 +1,7 @@
 # API and data contract
 
+> This contract describes the legacy FastAPI/PostGIS prototype in `backend/`. The current GitHub Pages site uses bundled frontend data and does not call these endpoints. See the root README for the current setup.
+
 ## Shared vocabulary
 
 - Themes: `山川地理`, `神祇`, `异兽`, `方国`, `神话事件`.
