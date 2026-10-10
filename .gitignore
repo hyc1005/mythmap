@@ -7,7 +7,6 @@ dist/
 frontend/dist/
 .env
 .env.local
-backend/.env
 frontend/.env.local
 *.log
 *.tsbuildinfo
@@ -15,8 +14,6 @@ frontend/.env.local
 .mypy_cache/
 .ruff_cache/
 output/
-backend-java/build/
-backend-java/out/
 .vercel/
 .DS_Store
 Thumbs.db

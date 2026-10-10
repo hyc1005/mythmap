@@ -5,6 +5,7 @@ import View from 'ol/View.js';
 import Projection from 'ol/proj/Projection.js';
 
 const { chromium } = await import(process.env.PLAYWRIGHT_PACKAGE ? pathToFileURL(process.env.PLAYWRIGHT_PACKAGE).href : 'playwright');
+const atlasUrl = `${(process.env.ATLAS_URL || 'http://127.0.0.1:5173').replace(/\/+$/, '')}/`;
 const output = new URL('../../output/qa/', import.meta.url);
 await mkdir(output, { recursive: true });
 const titles = ['盘古开天', '造人与补天', '三皇五氏', '炎黄', '五帝后期', '禹夏', '夏商之际', '周穆王西巡'];
@@ -104,6 +105,7 @@ for (const size of [[1014, 760], [804, 722], [370, 324], [300, 249], [1200, 800]
 async function startMapStory(page, chapter, id) {
   await page.getByRole("button", { name: chapter, exact: true }).click();
   await page.waitForFunction(stage => document.querySelector("[role=slider]")?.getAttribute("aria-valuenow") === String(Number(stage)), chapter.slice(0, 2));
+  await page.clock.runFor(100);
   await page.getByLabel("选择地图故事动画").selectOption("");
   await page.locator(".kuafu-journey").waitFor({ state: "detached" });
   await page.getByLabel("选择地图故事动画").selectOption(id);
@@ -150,16 +152,18 @@ async function assertDetailDrawer(page, label) {
 
 const browser = await chromium.launch({ headless: true, channel: process.env.PLAYWRIGHT_BROWSER_CHANNEL });
 try {
+  if (!process.env.ATLAS_SKIP_LAYOUT) {
   for (const [width,height] of [[1920,1080],[1366,768],[1280,720],[390,844],[844,390]]) {
+    if (process.env.ATLAS_LAYOUT_VIEWPORT && process.env.ATLAS_LAYOUT_VIEWPORT !== `${width}x${height}`) continue;
     console.log("Checking page structure and fullscreen bands at "+width+"x"+height);
     const layoutPage=await browser.newPage({viewport:{width,height},hasTouch:width<=640});
     layoutPage.on("pageerror",error=>failures.push(error.message));
     layoutPage.on("response", response => {
       const url = new URL(response.url());
-      if (url.origin === new URL(process.env.ATLAS_URL || "http://127.0.0.1:5173").origin && response.status() >= 400 && !url.pathname.endsWith('/api/world')) failures.push("HTTP " + response.status() + " " + url.pathname);
+      if (url.origin === new URL(atlasUrl).origin && response.status() >= 400 && !url.pathname.endsWith('/api/world')) failures.push("HTTP " + response.status() + " " + url.pathname);
     });
     await layoutPage.clock.install();
-    await layoutPage.goto(process.env.ATLAS_URL || "http://127.0.0.1:5173");
+    await layoutPage.goto(atlasUrl);
     await layoutPage.getByRole("button",{name:"暂停盘古序章",exact:true}).waitFor();
     assert.equal(await layoutPage.locator(".myth-intro, .source-note").count(),0);
     assert.equal(await layoutPage.locator("#reading-notes h2").textContent(),"读图与依据");
@@ -264,16 +268,17 @@ try {
   }
   assert.deepEqual(failures,[]);
   console.log("PASS: map-first structure, reading notes, seven full-screen stories, control bands, tools, preview/details, native/fallback at five viewports.");
+  }
   if(process.env.ATLAS_LAYOUT_ONLY){await browser.close();process.exit(0);}
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
   page.on('pageerror', error => failures.push(error.message));
-  await page.goto(process.env.ATLAS_URL || 'http://127.0.0.1:5173');
+  await page.goto(atlasUrl);
   await page.getByRole('button', { name: '00 盘古开天', exact: true }).waitFor();
   await page.getByRole('button', { name: '暂停盘古序章', exact: true }).waitFor();
   assert.equal(await page.locator('.timeline-steps button').count(), 8);
   assert.equal(await page.locator('.pangu-layer').first().evaluate(img => img.complete && img.naturalWidth > 0), true);
   const suirenAtlas = await page.evaluate(async () => {
-    const image = new Image(); image.src = '/data/atlas/myth-icons/animations/suiren-after-fire-v3.png'; await image.decode();
+    const image = new Image(); image.src = new URL('data/atlas/myth-icons/animations/suiren-after-fire-v3.png', document.baseURI).href; await image.decode();
     const canvas = document.createElement('canvas'); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
     const context = canvas.getContext('2d', { willReadFrequently: true }); context.drawImage(image, 0, 0);
     const { data } = context.getImageData(0, 0, canvas.width, canvas.height);
@@ -293,7 +298,7 @@ try {
 
   const panguRatePage = await browser.newPage();
   await panguRatePage.clock.install();
-  await panguRatePage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await panguRatePage.goto(`${atlasUrl}#world`);
   const panguScene = panguRatePage.locator('.pangu-composition');
   await panguRatePage.getByRole('button', { name: '暂停盘古序章', exact: true }).waitFor();
   await panguRatePage.clock.runFor(500);
@@ -331,28 +336,29 @@ try {
   await page.getByRole('button', { name: '关闭', exact: true }).click();
   await page.getByRole('button', { name: '05 禹夏', exact: true }).click();
   await page.locator('.story-entry').first().click();
-  await page.getByRole('dialog').getByRole('button', { name: '地图全屏', exact: true }).click();
+  assert.equal(await page.getByRole('dialog').getByRole('button', { name: /地图全屏/ }).count(), 0, 'detail drawer has no fullscreen shortcut');
+  await page.getByRole('button', { name: '关闭', exact: true }).click();
+  await page.getByLabel('选择地图故事动画').selectOption('05-01');
+  await page.locator('.story-animation[data-status="playing"]').waitFor();
+  await page.locator('.map-fullscreen').click();
   await page.waitForFunction(() => Boolean(document.fullscreenElement) || document.querySelector('.myth-map-wrap')?.classList.contains('is-fallback-fullscreen'));
-  assert.equal(await page.getByRole('dialog').count(), 1);
-  if (await page.evaluate(() => Boolean(document.fullscreenElement))) {
-    await page.getByRole('dialog').getByRole('button', { name: '退出地图全屏', exact: true }).click();
-    await page.waitForFunction(() => !document.fullscreenElement);
-  } else {
-    await page.keyboard.press('Escape');
-    await page.waitForFunction(() => !document.querySelector('.myth-map-wrap')?.classList.contains('is-fallback-fullscreen'));
-  }
-  assert.equal(await page.getByRole('dialog').count(), 1);
-  await page.keyboard.press('Escape');
-  await page.getByRole('dialog').waitFor({ state: 'detached' });
+  await page.getByRole('button', { name: '原文 ↗', exact: true }).click();
+  await page.getByRole('dialog').waitFor();
+  assert.equal(await page.getByRole('dialog').evaluate(element => Boolean(element.closest('.is-map-fullscreen'))), true, 'detail is portalled into fullscreen map');
+  await page.getByRole('button', { name: '关闭', exact: true }).click();
+  assert.equal(await page.locator('.is-map-fullscreen').count(), 1, 'closing detail preserves fullscreen');
+  await page.locator('.map-fullscreen').click();
+  await page.waitForFunction(() => !document.fullscreenElement && !document.querySelector('.is-fallback-fullscreen'));
+  assert.equal(await page.getByRole('dialog').count(), 0);
   assert.equal(await page.locator('.map-role-portrait').count(), 0);
   await page.evaluate(() => { Element.prototype.requestFullscreen = undefined; });
-  await page.locator('.story-entry').first().click();
-  await page.getByRole('dialog').getByRole('button', { name: '地图全屏', exact: true }).click();
+  await page.locator('.map-fullscreen').click();
   await page.locator('.myth-map-wrap.is-fallback-fullscreen').waitFor();
+  await page.getByRole('button', { name: '原文 ↗', exact: true }).click();
+  await page.getByRole('dialog').waitFor();
   await page.keyboard.press('Escape');
   await page.locator('.myth-map-wrap.is-fallback-fullscreen').waitFor({ state: 'detached' });
-  assert.equal(await page.getByRole('dialog').count(), 1);
-  await page.getByRole('dialog').getByRole('button', { name: '地图全屏', exact: true }).waitFor();
+  assert.equal(await page.getByRole('dialog').count(), 1, 'exiting fallback fullscreen preserves open detail');
   await page.getByRole('dialog').getByRole('button', { name: '关闭', exact: true }).click();
   await page.getByRole('dialog').waitFor({ state: 'detached' });
 
@@ -514,7 +520,7 @@ try {
     if (!failedLayerOnce) { failedLayerOnce = true; return route.abort(); }
     return route.continue();
   });
-  await assetFailure.goto(process.env.ATLAS_URL || 'http://127.0.0.1:5173');
+  await assetFailure.goto(atlasUrl);
   await assetFailure.locator('.pangu-static-poster').waitFor();
   await assetFailure.getByRole('button', { name: '重试盘古动态场景', exact: true }).waitFor();
   assert.equal(await assetFailure.getByRole('button', { name: '重试盘古动态场景', exact: true }).count(), 1);
@@ -525,7 +531,7 @@ try {
 
   const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 1 });
   mobile.on('pageerror', error => failures.push(error.message));
-  await mobile.goto(process.env.ATLAS_URL || 'http://127.0.0.1:5173');
+  await mobile.goto(atlasUrl);
   await mobile.locator('.prologue-scene img').evaluate(img => img.decode());
   assert.equal(await mobile.locator('.beast-card').count(), 2);
   await mobile.locator('.myth-map-wrap').screenshot({ path: new URL('00-pangu-mobile.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
@@ -559,7 +565,7 @@ try {
     const touch = width === 390 || height === 390;
     const chapterPage = await browser.newPage({ viewport: { width, height }, isMobile: touch, hasTouch: touch });
     chapterPage.on('pageerror', error => failures.push(error.message));
-    await chapterPage.goto(`${(process.env.ATLAS_URL || 'http://127.0.0.1:5173').replace(/#.*$/, '')}/#world`);
+    await chapterPage.goto(`${(atlasUrl).replace(/#.*$/, '')}#world`);
     await chapterPage.getByRole('button', { name: '05 禹夏', exact: true }).click();
     assert.equal(await chapterPage.locator('.story-entry').count(), 4);
     await chapterPage.getByRole('button', { name: '看本章山海', exact: true }).click();
@@ -586,7 +592,7 @@ try {
       else await chapterPage.mouse.move(x, y);
       await chapterPage.locator('.ink-hover-card b').filter({ hasText: record.name }).waitFor();
       await chapterPage.locator('.map-role-portrait img').evaluate(image => image.decode());
-      assert.equal(await chapterPage.locator('.map-role-portrait img').getAttribute('src'), `/data/atlas/myth-icons/${record.artwork}`);
+      assert.equal(await chapterPage.locator('.map-role-portrait img').getAttribute('src'), new URL(`data/atlas/myth-icons/${record.artwork}`, chapterPage.url()).pathname);
       await chapterPage.waitForTimeout(600);
       const art = await chapterPage.locator('.map-role-portrait').boundingBox();
       const text = await chapterPage.locator('.ink-hover-card').boundingBox();
@@ -597,7 +603,7 @@ try {
       await chapterPage.getByRole('button', { name: '展开原文与出处 ↗', exact: true }).click();
       assert.equal(await chapterPage.getByRole('dialog').getAttribute('aria-label'), record.name);
       await chapterPage.locator('.drawer-art').evaluate(image => image.decode());
-      assert.equal(await chapterPage.locator('.drawer-art').getAttribute('src'), `/data/atlas/myth-icons/${record.artwork}`);
+      assert.equal(await chapterPage.locator('.drawer-art').getAttribute('src'), new URL(`data/atlas/myth-icons/${record.artwork}`, chapterPage.url()).pathname);
       assert.equal(await chapterPage.locator('.source-link').getAttribute('href'), record.source_url);
       assert.equal(await chapterPage.locator('.map-role-portrait').count(), 0);
       await chapterPage.getByRole('button', { name: '关闭', exact: true }).click();
@@ -609,7 +615,7 @@ try {
   }
   const animationPage = await browser.newPage({ viewport: { width: 1366, height: 768 } });
   animationPage.on('pageerror', error => failures.push(error.message));
-  await animationPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await animationPage.goto(`${atlasUrl}#world`);
   await animationPage.getByRole('button', { name: '03 炎黄', exact: true }).click();
   const journeyPanel = animationPage.locator('.kuafu-journey:not(.story-animation)');
   await animationPage.locator('.kuafu-journey[data-status="playing"]').waitFor();
@@ -668,7 +674,7 @@ try {
   for (const [width, height] of [[1920, 1080], [1366, 768], [1280, 720], [390, 844], [844, 390]]) {
     const motionPage = await browser.newPage({ viewport: { width, height }, hasTouch: width <= 640 });
     motionPage.on('pageerror', error => failures.push(error.message));
-    await motionPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+    await motionPage.goto(`${atlasUrl}#world`);
     await motionPage.getByRole('button', { name: '03 炎黄', exact: true }).click();
     await motionPage.getByLabel('选择地图故事动画').selectOption('03-05');
     await motionPage.locator('.kuafu-journey[data-status="playing"]').waitFor();
@@ -692,7 +698,7 @@ try {
     await motionPage.close();
   }
   const reducedPage = await browser.newPage({ reducedMotion: 'reduce' });
-  await reducedPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await reducedPage.goto(`${atlasUrl}#world`);
   await reducedPage.getByRole('button', { name: '03 炎黄', exact: true }).click();
   await reducedPage.locator('.kuafu-journey[data-status="reduced"] button').first().waitFor({ state: 'visible' });
   await reducedPage.getByRole('button', { name: '下一幕', exact: true }).click();
@@ -713,7 +719,7 @@ try {
   const storyPage = await browser.newPage({ viewport: { width: 1366, height: 768 } });
   storyPage.on('pageerror', error => failures.push(error.message));
   await storyPage.clock.install();
-  await storyPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await storyPage.goto(`${atlasUrl}#world`);
   await storyPage.getByRole('button', { name: '03 炎黄', exact: true }).click();
   await storyPage.locator('.kuafu-journey[data-status="playing"]').waitFor();
   await storyPage.clock.runFor(9600);
@@ -770,7 +776,7 @@ try {
   const impactPage = await browser.newPage({ viewport: { width: 1366, height: 768 } });
   impactPage.on('pageerror', error => failures.push(error.message));
   await impactPage.clock.install();
-  await impactPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await impactPage.goto(`${atlasUrl}#world`);
   await impactPage.getByRole('button', { name: '04 五帝后期', exact: true }).click();
   await impactPage.getByLabel('选择地图故事动画').selectOption('04-02');
   const impactStory = impactPage.locator('.story-animation');
@@ -807,7 +813,7 @@ try {
     const checkPage = await browser.newPage({ viewport: { width, height }, hasTouch: width <= 640 });
     checkPage.on('pageerror', error => failures.push(error.message));
     await checkPage.clock.install();
-    await checkPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+    await checkPage.goto(`${atlasUrl}#world`);
     for (const [chapter, id, title] of [['02 三皇五氏', '02-04', '燧人取火'], ['03 炎黄', '03-04', '精卫填海'], ['04 五帝后期', '04-02', '大羿射日'], ['05 禹夏', '05-01', '大禹治水']]) {
       console.log(`Checking ${id} at ${width}x${height}`);
       await startMapStory(checkPage, chapter, id);
@@ -851,7 +857,7 @@ try {
   fallbackPage.on('pageerror', error => failures.push(error.message));
   await fallbackPage.clock.install();
   await fallbackPage.route('**/dayi-arrow-v2.webp', route => route.abort());
-  await fallbackPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await fallbackPage.goto(`${atlasUrl}#world`);
   await fallbackPage.getByRole('button', { name: '04 五帝后期', exact: true }).click();
   await fallbackPage.getByLabel('选择地图故事动画').selectOption('04-02');
   await fallbackPage.locator('.story-animation[data-status="playing"]').waitFor();
@@ -859,7 +865,7 @@ try {
   assert.equal(await fallbackPage.locator('.story-animation').getAttribute('data-shot-state'), 'flight', 'optional Dayi artwork failure retains the basic arrow flight');
   await fallbackPage.close();
   const staticPage = await browser.newPage({ reducedMotion: 'reduce' });
-  await staticPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await staticPage.goto(`${atlasUrl}#world`);
   await staticPage.getByRole('button', { name: '03 炎黄', exact: true }).click();
   await staticPage.getByLabel('选择地图故事动画').selectOption('03-04');
   await staticPage.locator('.story-animation[data-status="reduced"]').waitFor();
@@ -872,7 +878,7 @@ try {
   const boundaries = await browser.newPage({ viewport: { width: 1366, height: 768 } });
   boundaries.on('pageerror', error => failures.push(error.message));
   await boundaries.clock.install();
-  await boundaries.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await boundaries.goto(`${atlasUrl}#world`);
   const scene = boundaries.locator('.story-animation');
   await boundaries.getByRole('button', { name: '02 三皇五氏', exact: true }).click();
   await boundaries.locator('.story-animation[data-status="playing"]').waitFor();
@@ -921,7 +927,7 @@ try {
   let releaseAsset;
   const heldAsset = new Promise(resolve => { releaseAsset = resolve; });
   await loadingPage.route('**/suiren-after-fire-v3.png', async route => { await heldAsset; await route.continue(); });
-  await loadingPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await loadingPage.goto(`${atlasUrl}#world`);
   await loadingPage.getByRole('button', { name: '02 三皇五氏', exact: true }).click();
   await loadingPage.locator('.story-animation[data-status="loading"]').waitFor();
   await loadingPage.waitForTimeout(500);
@@ -933,7 +939,7 @@ try {
   const retryPage = await browser.newPage();
   let failOnce = true;
   await retryPage.route('**/dayu-wave-loop.webp', route => { if (failOnce) { failOnce = false; return route.abort(); } return route.continue(); });
-  await retryPage.goto(`${process.env.ATLAS_URL || 'http://127.0.0.1:5173'}/#world`);
+  await retryPage.goto(`${atlasUrl}#world`);
   await retryPage.getByRole('button', { name: '05 禹夏', exact: true }).click();
   await retryPage.locator('.story-animation[data-status="error"]').waitFor();
   assert.equal(await retryPage.locator('.story-animation').getByRole('button', { name: '跳过', exact: true }).count(), 1);
@@ -944,6 +950,18 @@ try {
   assert.deepEqual(failures, []);
   console.log('PASS: river scene, Jingwei and Dayi playback/switching, pause/detail/replay, timeline handoff, ten viewport scenes, reduced motion and cleanup.');
   console.log('PASS: regression; timeline/source/asset/geometry checks for chapters 05–07; chapter 06/07 details; native and fallback fullscreen; chapter 05 portrait/detail fit at 5 viewport sizes.');
+} catch (error) {
+  for (const failedPage of browser.pages()) {
+    console.log('Failure page state:', JSON.stringify(await failedPage.evaluate(() => ({
+      url: location.href,
+      chapter: document.querySelector('.chapter-rail h2')?.textContent,
+      fullscreen: Boolean(document.fullscreenElement),
+      mapClass: document.querySelector('.myth-map-wrap')?.className,
+      dialog: document.querySelector('.detail-drawer')?.getAttribute('aria-label'),
+      slider: document.querySelector('[role="slider"]')?.getAttribute('aria-valuenow'),
+    }))));
+  }
+  throw error;
 } finally {
   await browser.close();
 }

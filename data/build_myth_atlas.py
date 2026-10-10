@@ -202,21 +202,13 @@ def build():
         write(ATLAS / f'{sid}-candidates.geojson', collection(stage_candidates))
         write(ATLAS / f'{sid}-routes.geojson', collection([r for r in routes if r['properties']['stage_id'] == sid]))
         write(ATLAS / f'{sid}-activities.geojson', collection([], '现有材料不足以确定部落／人物活动区；不以行政范围、缓冲区或凸包代替。'))
-        write(PUBLIC / 'stages' / f'{sid}.geojson', collection([], '旧同心椭圆已停用；本章无足够依据绘制叙事外边界。'))
         stages.append({'id': sid, 'title': title, 'subtitle': SUBTITLES[i-1], 'event_ids': [e['id'] for e in chapter],
                        'export_map': f'output/atlas/maps/{sid}.png', 'illustration_source': f'frontend/artwork-source/atlas-illustrations/{sid}.png',
                        'layers': {role: f'/data/atlas/{sid}-{role}.geojson' for role in ['events', 'candidates', 'routes', 'activities']},
                        'source_ids': [e['properties']['source_ids'][0] for e in chapter], 'revision_id': REVISION})
-    divine_events = [e for e in events if e['properties']['stage_id'] is None]
     write(ATLAS / 'catalog.json', {'revision_id': REVISION, 'stages': stages, 'events': events, 'candidates': candidates, 'people': persons,
                                  'sources': sources, 'routes': routes, 'counts': {'narrative_events': 32, 'spatial_records': 7, 'all_records': 39},
                                  'geographic_reference': '现代地理骨架辅助阅读，不复原古代海岸线或河道。'})
-    positions = [(18, 70), (42, 68), (45, 36), (73, 80), (86, 44), (12, 24), (26, 42)]
-    write(PUBLIC / 'divine-space.json', {'coordinate_system': 'diagram-units', 'description': '固定屏幕云层，非经纬度；空间资料不属于时间分期。',
-          'illustration_source': 'frontend/artwork-source/atlas-illustrations/divine.png', 'places': [{'id': e['id'], 'entity_id': e['id'], 'name': e['properties']['name'],
-          'x': positions[n][0], 'y': positions[n][1], 'source_ids': e['properties']['source_ids'], 'note': e['properties']['basis_note'],
-          'stages': [f'{i:02d}' for i in range(2, 8)]} for n, e in enumerate(divine_events)],
-          'relations': [{'from': '08-03', 'to': '08-07', 'kind': 'distinct_textual_locations', 'note': '昆仑与玉山分别记录，云层邻近仅为构图。'}]})
     write(ATLAS / 'review.json', {'revision_id': REVISION, 'counts_verified': {'stages': [4, 5, 5, 5, 4, 5, 4], 'spatial': 7, 'total': 39},
           'report_corrections': ['原报告35条与实际39条不一致；七叙事阶段实际32条', '原报告35个事件+38个来源并不等于39',
           '示意WGS84坐标从实际事件几何移至original_geometry', '大羿与有穷氏后羿分开', '西王母早期文本居玉山，不能直接标作昆仑',

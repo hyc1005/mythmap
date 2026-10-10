@@ -1,19 +1,11 @@
-# Curated seed data
+# 图谱维护数据与工具
 
-This file documents the retained FastAPI/PostGIS prototype and its seed data. The current diagram-based web demo uses frontend/public/data/myth-world.json and atlas/catalog.json; its startup and deployment steps are in the root README. The former modern-coordinate ornament is retained for the prototype and is not the current page background.
+网站直接使用 `frontend/public/data/myth-world.json` 和 `atlas/` 下的审核数据；运行网站不需要 Python 或数据库。
 
-`seed.json` is the deterministic demonstration dataset. It contains 24 story records, 38 distinct place records, and 16 people across all five API themes. Place confidence counts are 2 `clear`, 2 `disputed`, and 34 `unlocated`. Twenty-one records focus on the *Classic of Mountains and Seas*; three additional, clearly attributed records add the Pangu creation story and two Nüwa stories to support the narrative sequence. They come from later textual witnesses, not from the *Classic of Mountains and Seas* itself. The website orders these myths as a relative reading sequence, without assigning historical dates.
+- `myth-atlas-inputs/`：保留的图谱记录与现代地理参考，供维护和考据使用。
+- `build_myth_atlas.py`：生成目录、图层及审核记录。可能覆盖人工修订，运行前核对来源和 Git 差异；不会自动重建当前网页的 `myth-world.json`。
+- `render_myth_atlas.py`：可选静态地图输出，需要 Pillow、pyproj 和脚本指定的 Windows 字体，结果保存在 `output/atlas/`。
 
-Location candidates are separate from places. They carry their own source links, reason, confidence, and display mode. Records whose source gives no defensible modern geometry link both the relevant chapter and `project-method`, which documents why no coordinate was created. The dataset includes:
+序章及七章次序是叙事编排，不表示精确年代。现代地理参考不代表上古复原；原文、现代解释与插画说明需分别保留。
 
-- Two clear modern mountain correspondences (太华之山／华山 and 东山经泰山／现代泰山) with point coordinates from identified OpenStreetMap natural=peak nodes. The point marks each present-day summit and does not claim to define an ancient mountain boundary. The named ancient/modern correspondence and coordinate source are linked separately.
-- Multiple coordinate-free Kunlun interpretations, each presented as a disputed scholarly proposal and linked to its supporting reference.
-- Unlocated entries retained for search and story navigation without geometry.
-
-There are five candidate records: 2 primary clear peak points and 3 coordinate-free interpretations (`display_mode=none`). The two eligible points do not meet the API's `min_points=3` clustering threshold, so an empty DBSCAN cluster list is the expected and reproducible result for the seed dataset.
-
-Text source: [Chinese Text Project, 山海经](https://ctext.org/shan-hai-jing), which identifies its digital base text as following the 《四部丛刊初编》 edition where noted. The Huashan point uses [OpenStreetMap node 2260053296](https://www.openstreetmap.org/node/2260053296); the Taishan point uses [OpenStreetMap node 2338427466](https://www.openstreetmap.org/node/2338427466). The coordinates are WGS84 map features identified as modern mountain peaks. The Huashan correspondence is separately supported by [渭南市纪委华山简介](https://weinan.qinfeng.gov.cn/info/1095/36343.htm), and the Taishan correspondence by [泰安市人民政府泰山玉资料](https://www.taian.gov.cn/art/2013/10/21/art_55408_4070192.html). Kunlun interpretations are linked to the referenced historical-geography publications in the seed source catalog. Each absent/uncertain geometry also links `project-method`, the project's own documented admission rule; this identifies a data-method decision, not an external scholarly finding. These records demonstrate source separation; they are not a comprehensive critical edition.
-
-The offline map backdrop is a locally drawn parchment-and-landscape ornament at `frontend/public/data/shanhai-ornament.svg`. Its mountains, contour flourishes, frame, and decorative labels have no geographic coordinates and do not represent ancient borders, routes, or proven locations. The graticule and any plotted candidate geometries remain in modern WGS84 coordinates; a marker appears only when the evidence record supplies defensible geometry. The map caption states this distinction in the interface.
-
-Run `python data/validate_seed.py` to check counts, chapter/source links, referential integrity, geometry ranges, and candidate evidence requirements.
+旧 FastAPI/PostGIS 种子数据及工具已从精简分支移除，可从仓库原版历史查阅。当前数据格式及网页运行方式以根目录 README 为准。
