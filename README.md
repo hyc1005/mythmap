@@ -25,13 +25,13 @@
 
 | 目录 | 用途 |
 | --- | --- |
-| `frontend/src/` | 页面、地图、动画与样式 |
+| `frontend/src/` | 页面组合、动画与样式 |
+| `frontend/src/components/` | 地图、详情、时间轴和异兽谱 |
 | `frontend/public/data/` | 网站数据与发布素材 |
 | `frontend/artwork-source/` | 插画原图与备用素材 |
 | `frontend/scripts/` | 布局与叙事验证 |
-| `backend-java/` | 可选 Java API |
-| `backend/`、`database/` | 旧版 API 与数据库工具 |
-| `data/`、`docs/` | 数据维护工具与项目资料 |
+| `data/` | 图谱维护工具与原始输入 |
+| `docs/` | 演示流程与历史课程资料 |
 
 ### 本地运行
 
@@ -42,9 +42,9 @@ npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
-打开 [本地开发页面](http://127.0.0.1:5173/#world)。开发模式会尝试访问可选 API，未启动时自动使用内置数据。
+打开 [本地开发页面](http://127.0.0.1:5173/#world)。开发和生产模式默认均使用内置数据，无需启动后端。
 
-可选 Java API 需要 JDK 17 或以上，在 `backend-java/` 运行 `run.ps1`，默认端口为 8081。生产版默认不请求 API；外部 API 配置见 `frontend/.env.example`，`VITE_API_BASE_URL` 会公开到构建产物中。
+如需接入外部服务，在 `frontend/.env.local` 设置 `VITE_API_BASE_URL`；只有显式配置时才请求该服务的 `/api/world`，失败时回退到内置数据。服务需允许网站来源的跨域请求；地址会公开到构建产物中，不能包含密钥。配置示例见 `frontend/.env.example`。
 
 ### 构建与验证
 
@@ -78,6 +78,6 @@ npm run verify:layout
 - 出处与素材核对使用 `atlas/review.json`、`atlas/artwork-manifest.json`；原图保存在 `frontend/artwork-source/`。
 - `data/build_myth_atlas.py` 可能覆盖人工审核数据，运行前核对来源和 Git 差异。
 - 可选静态地图由 `data/render_myth_atlas.py` 生成，需要 Pillow、pyproj 和指定的 Windows 字体，输出到 `output/atlas/`。
-- 旧版 API、数据库与导入工具的说明见各目录 README。
+- 图谱工具的使用与局限见 `data/README.md`。旧版后端、数据库和课程原型可从仓库 `main` 的历史版本查阅；精简分支不包含这些运行目录。
 
 `node_modules/`、`frontend/dist/`、`output/` 和本地环境配置均由 Git 忽略。
