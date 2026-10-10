@@ -62,7 +62,7 @@ $env:ATLAS_URL = 'http://127.0.0.1:4173/mythmap/'
 npm run verify:layout
 ```
 
-`verify:layout` 检查五种视口、动画布局、原生与模拟全屏，以及详情遮挡和焦点恢复。`npm run verify:narrative` 还检查叙事、素材与时间轴，耗时较长；完整长测试尚未全部验收。截图保存在 `output/qa/`。
+`verify:layout` 检查五种视口、动画布局、原生与模拟全屏，以及详情遮挡和焦点恢复。`npm run verify:narrative` 还检查叙事、素材与时间轴，耗时较长。2026-10-10 已在本地 Chromium 中通过五视口布局与完整叙事回归，使用生产预览的 `/mythmap/` 路径。截图保存在 `output/qa/`。
 
 发布前复查电脑与手机上的动画、地图全屏、异兽搜索、详情关闭和出处链接，并确认刷新正常、图片无 404。
 
@@ -70,7 +70,7 @@ npm run verify:layout
 
 工作流位于 `.github/workflows/deploy-pages.yml`。在仓库 **Settings → Pages** 中选择 **GitHub Actions**；推送到 `main` 的前端或工作流修改会自动构建并发布。文档修改不会触发网页部署。
 
-工作流自动处理 Pages 子路径并发布 `frontend/dist/`，无需手动提交构建产物。部署结果可在仓库 Actions 页面查看；回退使用 `git revert` 后推送。
+工作流自动处理 Pages 子路径，构建后运行五视口布局验证，通过后发布 `frontend/dist/`，无需手动提交构建产物。部署结果可在仓库 Actions 页面查看；回退使用 `git revert` 后推送。
 
 ### 数据与插画维护
 

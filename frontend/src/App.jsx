@@ -103,14 +103,16 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
   const chapterId = stages[stageIndex].id;
   const isPrologue = chapterId === '00';
   const revealed = record => Number(record.reveal_chapter) <= Number(chapterId);
-  const beastGroupOrders = new Map();
-  const beasts = world.beasts.map(beast => {
-    const groupIndex = beast.place_id ? beastGroupOrders.get(beast.place_id) || 0 : -1;
-    if (beast.place_id) beastGroupOrders.set(beast.place_id, groupIndex + 1);
-    return { ...beast, stage: beast.reveal_stage, groupIndex };
-  });
-  const places = world.places.map(place => ({ ...place, stage: place.reveal_stage }));
-  const availableBeasts = beasts.filter(revealed);
+  const beasts = useMemo(() => {
+    const beastGroupOrders = new Map();
+    return world.beasts.map(beast => {
+      const groupIndex = beast.place_id ? beastGroupOrders.get(beast.place_id) || 0 : -1;
+      if (beast.place_id) beastGroupOrders.set(beast.place_id, groupIndex + 1);
+      return { ...beast, stage: beast.reveal_stage, groupIndex };
+    });
+  }, [world.beasts]);
+  const places = useMemo(() => world.places.map(place => ({ ...place, stage: place.reveal_stage })), [world.places]);
+  const availableBeasts = useMemo(() => beasts.filter(beast => Number(beast.reveal_chapter) <= Number(chapterId)), [beasts, chapterId]);
   const mappedBeastCount = availableBeasts.filter(beast => beast.place_id && places.some(place => place.id === beast.place_id)).length;
   const mappedPlaceCount = new Set(availableBeasts.filter(beast => beast.place_id && places.some(place => place.id === beast.place_id)).map(beast => beast.place_id)).size;
   const domains = world.domains;
@@ -254,10 +256,12 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
       setPinnedId(hit || null);
       setTouchSelectedId(event.originalEvent?.pointerType === 'touch' ? hit || null : null);
     });
-    target.current.addEventListener('pointerleave', () => setHoverId(null));
+    const mapTarget = target.current;
+    const clearHover = () => setHoverId(null);
+    mapTarget.addEventListener('pointerleave', clearHover);
     map.current = created;
     setMapInstance(created);
-    return () => { created.setTarget(undefined); map.current = null; };
+    return () => { mapTarget.removeEventListener('pointerleave', clearHover); created.dispose(); map.current = null; };
   }, []);
 
   useEffect(() => {
@@ -323,7 +327,11 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
     pointSource.current.clear();
     pointSource.current.addFeatures(visibleRecords.map(record => new Feature({ geometry: new Point([record.x ?? 1100, record.y ?? 120 + (record.stage || 0) * 40]), record })));
     map.current?.getLayers().forEach(layer => layer.changed());
-  }, [visibleRecords, selectedId, hoverId, pinnedId, stageIndex]);
+  }, [visibleRecords, stageIndex]);
+
+  useEffect(() => {
+    pointSource.current.changed();
+  }, [selectedId, hoverId, pinnedId]);
 
   useEffect(() => {
     const activeId = hoverId || (touchSelectedId && !hoverId ? touchSelectedId : null);
@@ -610,8 +618,8 @@ export default function App() {
   const stages = world.stages;
   const visitedChapters = useRef(new Set(['00']));
   const previousChapterId = useRef(stages[stageIndex].id);
-  const beasts = world.beasts.map((beast, groupIndex) => ({ ...beast, stage: beast.reveal_stage, groupIndex }));
-  const places = world.places.map(place => ({ ...place, stage: place.reveal_stage }));
+  const beasts = useMemo(() => world.beasts.map((beast, groupIndex) => ({ ...beast, stage: beast.reveal_stage, groupIndex })), [world.beasts]);
+  const places = useMemo(() => world.places.map(place => ({ ...place, stage: place.reveal_stage })), [world.places]);
   const domains = world.domains;
   const storyOrder = new Map((catalog.stages.find(stage => stage.id === stages[stageIndex].id)?.event_ids || []).map((id, index) => [id, index]));
   const storyItems = (catalog.events || []).filter(item => item.properties.stage_id === stages[stageIndex].id && !['archive', 'group'].includes(item.properties.presentation))
