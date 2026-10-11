@@ -1,3 +1,4 @@
+import { useLocale, localize } from './i18n';
 import { Component, lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import OlMap from 'ol/Map';
@@ -14,9 +15,9 @@ import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style
 import { defaults as defaultControls } from 'ol/control';
 import { defaults as defaultInteractions } from 'ol/interaction';
 import MouseWheelZoom from 'ol/interaction/MouseWheelZoom';
-import catalog from '../public/data/atlas/catalog.json';
+import rawCatalog from '../public/data/atlas/catalog.json';
 import mythWorld from '../public/data/myth-world.json';
-import animationCatalog from '../public/data/atlas/story-animations.json';
+import rawAnimationCatalog from '../public/data/atlas/story-animations.json';
 import kuafuJourney from '../public/data/atlas/kuafu-journey.json';
 import KuafuJourney from './KuafuJourney';
 import StoryAnimation from './StoryAnimation';
@@ -32,8 +33,9 @@ class PanguLoadBoundary extends Component {
 }
 
 function PanguPoster({ scene, onRetry, controlContainer }) {
-  const controls = <button className="pangu-retry" type="button" onClick={onRetry}>播放动态序章</button>;
-  return <div className="pangu-loading-poster"><img src={assetUrl(scene)} alt="盘古分开混沌，天地初开木刻场景" />{controlContainer ? createPortal(controls, controlContainer) : controls}</div>;
+  const { t, locale } = useLocale();
+  const controls = <button className="pangu-retry" type="button" onClick={onRetry}>{t("播放动态序章")}</button>;
+  return <div className="pangu-loading-poster"><img src={assetUrl(scene)} alt={t("盘古分开混沌，天地初开木刻场景")} />{controlContainer ? createPortal(controls, controlContainer) : controls}</div>;
 }
 
 const EXTENT = [0, 0, 1200, 800];
@@ -63,6 +65,8 @@ function beastMarker(record, active, resolution = 1) {
 }
 
 function DetailDrawer({ selected, onClose, onOpen, scrollTopRef }) {
+  const { t, locale } = useLocale();
+  const catalog = useMemo(() => localize(rawCatalog, locale), [locale]);
   const closeButton = useRef(null);
   const drawer = useRef(null);
   useEffect(() => {
@@ -72,7 +76,7 @@ function DetailDrawer({ selected, onClose, onOpen, scrollTopRef }) {
   }, [selected.id]);
   const keepFocusInDrawer = event => {
     if (event.key !== 'Tab') return;
-    const controls = [...drawer.current.querySelectorAll('button:not(:disabled), a[href], input:not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex="0"]')].filter(element => element.getClientRects().length);
+    const controls = [...drawer.current.querySelectorAll('button:not(:disabled), a[href], summary, input:not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex="0"]')].filter(element => element.checkVisibility());
     const first = controls[0], last = controls.at(-1);
     if (event.shiftKey && (document.activeElement === first || document.activeElement === drawer.current)) {
       event.preventDefault(); last?.focus({ preventScroll: true });
@@ -83,22 +87,27 @@ function DetailDrawer({ selected, onClose, onOpen, scrollTopRef }) {
   return <div className="detail-scrim" onClick={onClose}>
     <aside ref={drawer} className="detail-drawer" role="dialog" aria-modal="true" aria-label={selected.name} tabIndex={-1} onKeyDown={keepFocusInDrawer} onClick={event => event.stopPropagation()}>
       <div className="drawer-actions">
-        <button ref={closeButton} className="drawer-close" onClick={onClose} aria-label="关闭">×</button></div>
+        <button ref={closeButton} className="drawer-close" onClick={onClose} aria-label={t("关闭")}>×</button></div>
       <span className="intro-overline">{selected.region || selected.source}</span>
       <h2>{selected.name}</h2>
-      {iconFor(selected) && <img className="drawer-art" src={iconFor(selected)} alt={`${selected.name}版画插画`} />}
+      {iconFor(selected) && <img className="drawer-art" src={iconFor(selected)} alt={t(`${selected.name}版画插画`)} />}
       <blockquote>{selected.quote || selected.description || selected.raw?.properties.source_quote}</blockquote>
-      {selected.raw?.properties.parent_event_id && <nav className="story-siblings" aria-label="补天四幕">{catalog.events.filter(item => item.properties.parent_event_id === selected.raw.properties.parent_event_id).map(item => <button key={item.id} aria-current={item.id === selected.id ? 'true' : undefined} onClick={event => onOpen(item.id, event.currentTarget)}>{item.properties.name}</button>)}</nav>}
-      <h3>原文出处</h3><p>{selected.source || selected.raw?.properties.source_text}</p>
-      {selected.url && <a className="source-link" href={selected.url} target="_blank" rel="noreferrer">打开所引篇章 ↗</a>}
-      <h3>{selected.kind === 'story' ? '位置说明' : '方位表达'}</h3>
+      {locale === 'en' && (selected.originalQuote || selected.raw?.properties.originalQuote) && <details className="original-text"><summary>Chinese original</summary><blockquote lang="zh-CN">{selected.originalQuote || selected.raw.properties.originalQuote}</blockquote></details>}
+      {selected.raw?.properties.parent_event_id && <nav className="story-siblings" aria-label={t("补天四幕")}>{catalog.events.filter(item => item.properties.parent_event_id === selected.raw.properties.parent_event_id).map(item => <button key={item.id} aria-current={item.id === selected.id ? 'true' : undefined} onClick={event => onOpen(item.id, event.currentTarget)}>{item.properties.name}</button>)}</nav>}
+      <h3>{t("原文出处")}</h3><p>{selected.source || selected.raw?.properties.source_text}</p>
+      {selected.url && <a className="source-link" href={selected.url} target="_blank" rel="noreferrer">{t("打开所引篇章 ↗")}</a>}
+      <h3>{selected.kind === 'story' ? t("位置说明") : t("方位表达")}</h3>
       <p>{selected.direction || selected.raw?.properties.basis_note}</p>
-      <p className="source-caution">{selected.kind === 'story' ? '故事点为叙事锚点·示意，不表示真实地点、距离或未经原文支持的因果关系；插画中的器物与场景属于艺术解释。' : '原文未明示的方位不以图面位置补出；淡墨山海纹样仅为装饰。'}</p>
+      <p className="source-caution">{selected.kind === 'story' ? t("故事点为叙事锚点·示意，不表示真实地点、距离或未经原文支持的因果关系；插画中的器物与场景属于艺术解释。") : t("原文未明示的方位不以图面位置补出；淡墨山海纹样仅为装饰。")}</p>
     </aside>
   </div>;
 }
 
 function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, autoPlayChapter }) {
+  const { t, locale } = useLocale();
+  const catalog = useMemo(() => localize(rawCatalog, locale), [locale]);
+  const animationCatalog = useMemo(() => localize(rawAnimationCatalog, locale), [locale]);
+  const mapFont = locale === 'en' ? '"Source Sans 3 Variable", Arial, sans-serif' : '"Noto Serif SC", SimSun, serif';
   const stages = world.stages;
   const chapterId = stages[stageIndex].id;
   const isPrologue = chapterId === '00';
@@ -123,7 +132,7 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
   const [mapInstance, setMapInstance] = useState(null);
   const [journeyId, setJourneyId] = useState(null);
   const chapterStoryOptions = animationCatalog.stories.filter(story => story.stage_id === chapterId && !['06-03', '07-journey'].includes(story.id));
-  if (chapterId === kuafuJourney.stage_id) chapterStoryOptions.push({ id: kuafuJourney.event_id, stage_id: kuafuJourney.stage_id, name: '夸父逐日' });
+  if (chapterId === kuafuJourney.stage_id) chapterStoryOptions.push({ id: kuafuJourney.event_id, stage_id: kuafuJourney.stage_id, name: t("夸父逐日") });
   const defaultStoryId = chapterId === kuafuJourney.stage_id ? kuafuJourney.event_id : chapterStoryOptions[0]?.id;
   const activeJourneyId = chapterStoryOptions.some(story => story.id === journeyId) ? journeyId : null;
   const activeJourneyRef = useRef(activeJourneyId);
@@ -198,14 +207,14 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
       layers: [
         paper,
         new VectorLayer({ source: areaSource.current, declutter: 'map-labels', style: feature => obscuredLabel(feature.getGeometry().getCoordinates(), feature.get('label')) ? null : new Style({
-          text: new Text({ text: feature.get('label'), font: '14px "Noto Serif SC","SimSun",serif', padding: [5, 9, 5, 9], backgroundFill: new Fill({ color: '#eee2c5c9' }), fill: new Fill({ color: '#806d51' }), overflow: true }),
+          text: new Text({ text: feature.get('label'), font: `15px ${mapFont}`, padding: [5, 9, 5, 9], backgroundFill: new Fill({ color: '#eee2c5c9' }), fill: new Fill({ color: '#806d51' }), overflow: true }),
         }) }),
         new VectorLayer({ source: terrainSource.current, style: feature => new Style({ image: new Icon({ src: assetUrl(`/data/atlas/myth-icons/terrain/${feature.get('kind')}.png`), width: feature.get('width'), anchor: [0.5, 1], opacity: feature.get('opacity') }) }) }),
         new VectorLayer({ source: relationSource.current, style: feature => feature.get('arrow') ? new Style({
           text: new Text({ text: '▲', font: 'bold 12px sans-serif', fill: new Fill({ color: '#a83f2b' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }),
         }) : new Style({
           stroke: new Stroke({ color: '#a83f2b', width: 1.5, lineDash: [7, 7] }),
-          text: new Text({ text: obscuredLabel(feature.getGeometry().getCoordinateAt(.5), feature.get('label')) ? '' : feature.get('label'), placement: 'line', font: '11px "Noto Serif SC","SimSun",serif', fill: new Fill({ color: '#943b2b' }), stroke: new Stroke({ color: '#f4ead2', width: 4 }), overflow: true }),
+          text: new Text({ text: obscuredLabel(feature.getGeometry().getCoordinateAt(.5), feature.get('label')) ? '' : feature.get('label'), placement: 'line', font: `12px ${mapFont}`, fill: new Fill({ color: '#943b2b' }), stroke: new Stroke({ color: '#f4ead2', width: 4 }), overflow: true }),
         }) }),
         new VectorLayer({ source: pointSource.current, style: feature => {
           const record = feature.get('record');
@@ -232,7 +241,7 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
           if (record.id === activeJourneyRef.current) return null;
           const active = record.id === activeRecordId.current;
           const dimmed = !active && record.kind !== 'place' && obscuredLabel(feature.getGeometry().getCoordinates(), record.name, record.kind === 'beast' ? 18 : -20);
-          return new Style({ zIndex: active ? 40 : 1, text: new Text({ text: record.name, offsetY: record.kind === 'beast' ? 18 : -20, font: `${active ? 'bold 13px' : '12px'} "Noto Serif SC","SimSun",serif`, fill: new Fill({ color: dimmed ? '#392d2020' : '#392d20' }), stroke: new Stroke({ color: dimmed ? '#f5ecd520' : '#f5ecd5', width: 4 }), padding: [3, 5, 3, 5] }) });
+          return new Style({ zIndex: active ? 40 : 1, text: new Text({ text: record.name, offsetY: record.kind === 'beast' ? 18 : -20, font: `${active ? 'bold 14px' : '13px'} ${mapFont}`, fill: new Fill({ color: dimmed ? '#392d2020' : '#392d20' }), stroke: new Stroke({ color: dimmed ? '#f5ecd520' : '#f5ecd5', width: 4 }), padding: [3, 5, 3, 5] }) });
         } }),
       ],
       interactions: defaultInteractions({ mouseWheelZoom: false }).extend([new MouseWheelZoom({ maxDelta: 0.38, duration: 380 })]),
@@ -260,6 +269,9 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
     const clearHover = () => setHoverId(null);
     mapTarget.addEventListener('pointerleave', clearHover);
     map.current = created;
+    document.fonts.load(`13px ${mapFont}`).then(() => {
+      if (map.current === created) created.getLayers().forEach(layer => layer.changed());
+    });
     setMapInstance(created);
     return () => { mapTarget.removeEventListener('pointerleave', clearHover); created.dispose(); map.current = null; };
   }, []);
@@ -459,7 +471,8 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
   }, [fallbackFullscreen]);
 
   const fitStage = () => { map.current?.dispatchEvent('journey:user-view'); map.current?.getView().fit(stages[stageIndex].extent, { duration: 320, padding: [50, 50, 70, 50], maxZoom: 2.4 }); };
-  const exportStage = () => {
+  const exportStage = async () => {
+    await document.fonts.ready;
     const activeMap = map.current;
     if (!activeMap) return;
     activeMap.once('rendercomplete', () => {
@@ -480,10 +493,10 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
       context.setTransform(1, 0, 0, 1, 0, 0);
       context.globalAlpha = 1;
       context.fillStyle = '#544431';
-      context.font = '14px "Noto Serif SC", SimSun, serif';
-      context.fillText(`山海寻踪 · ${stages[stageIndex].id} ${stages[stageIndex].title}`, 18, 28);
-      context.font = '11px "Noto Serif SC", SimSun, serif';
-      context.fillText('方位与篇目关系示意 · 点位间距不表示真实距离', 18, size[1] - 18);
+      context.font = `15px ${mapFont}`;
+      context.fillText(t(`山海寻踪 · ${stages[stageIndex].id} ${stages[stageIndex].title}`), 18, 28);
+      context.font = `12px ${mapFont}`;
+      context.fillText(t("方位与篇目关系示意 · 点位间距不表示真实距离"), 18, size[1] - 18);
       const link = document.createElement('a');
       link.download = `shan-hai-stage-${stages[stageIndex].id}.png`;
       link.href = output.toDataURL('image/png');
@@ -495,24 +508,24 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
   const hoverStoryId = hoverRecord && chapterStoryOptions.find(story => story.id === hoverRecord.id || story.source_event_id === hoverRecord.id || story.event_id === hoverRecord.id)?.id;
   const visiblePortrait = portrait && portrait.id === (hoverId || touchSelectedId) && !selectedId ? portrait : null;
 
-  const mapControls = <div className="map-overlay-controls">{isFullscreen && <span className="fullscreen-orientation" aria-label="图面北向">北 ↑</span>}
-      <div className="myth-layer-switches" aria-label="专题图层">
-        <label><input type="checkbox" checked={activeLayers.beasts} onChange={event => activeLayers.onBeasts(event.target.checked)} /> 异兽谱</label>
-        <label><input type="checkbox" checked={activeLayers.divine} onChange={event => activeLayers.onDivine(event.target.checked)} /> 神域</label>
+  const mapControls = <div className="map-overlay-controls">{isFullscreen && <span className="fullscreen-orientation" aria-label={t("图面北向")}>{t("北 ↑")}</span>}
+      <div className="myth-layer-switches" aria-label={t("专题图层")}>
+        <label><input type="checkbox" checked={activeLayers.beasts} onChange={event => activeLayers.onBeasts(event.target.checked)} />{t("异兽谱")}</label>
+        <label><input type="checkbox" checked={activeLayers.divine} onChange={event => activeLayers.onDivine(event.target.checked)} />{t("神域")}</label>
       </div>
-        {chapterStoryOptions.length > 0 && <label className="map-animation-choice">故事动画 <select aria-label="选择地图故事动画" value={activeJourneyId || ''} onChange={event => { setHoverId(null); setPinnedId(null); setTouchSelectedId(null); setPortrait(null); setJourneyId(event.target.value || null); }}><option value="">关闭动画</option>{chapterStoryOptions.map(story => <option key={story.id} value={story.id}>{story.name}</option>)}</select></label>}
-      {isFullscreen ? <details className="map-tools"><summary>地图工具</summary><div><button className="map-fit" onClick={fitStage}>看本章山海</button><button className="map-fit" onClick={exportStage}>存为本章 PNG</button></div></details> : <><button className="map-fit" onClick={fitStage}>看本章山海</button><button className="map-fit" onClick={exportStage}>存为本章 PNG</button></>}
+        {chapterStoryOptions.length > 0 && <label className="map-animation-choice">{t("故事动画")}<select aria-label={t("选择地图故事动画")} value={activeJourneyId || ''} onChange={event => { setHoverId(null); setPinnedId(null); setTouchSelectedId(null); setPortrait(null); setJourneyId(event.target.value || null); }}><option value="">{t("关闭动画")}</option>{chapterStoryOptions.map(story => <option key={story.id} value={story.id}>{story.name}</option>)}</select></label>}
+      {isFullscreen ? <details className="map-tools"><summary>{t("地图工具")}</summary><div><button className="map-fit" onClick={fitStage}>{t("看本章山海")}</button><button className="map-fit" onClick={exportStage}>{t("存为本章 PNG")}</button></div></details> : <><button className="map-fit" onClick={fitStage}>{t("看本章山海")}</button><button className="map-fit" onClick={exportStage}>{t("存为本章 PNG")}</button></>}
     </div>;
-  const preview = hoverRecord && <div className="ink-hover-card" role="status"><span>{hoverRecord.region}</span><b>{hoverRecord.name}</b><p>{hoverRecord.description}</p><small>{hoverRecord.direction}</small><button aria-label="展开原文与出处 ↗" onClick={event => onSelect(hoverRecord.id, event.currentTarget)}>展开原文与出处 ↗</button>{hoverStoryId && <button onClick={() => { setJourneyId(hoverStoryId); setHoverId(null); setPinnedId(null); setTouchSelectedId(null); setPortrait(null); }} aria-label="播放故事动画">播放动画</button>}</div>;
-  const legend = <small className="map-range-legend"><i className="legend-story" />故事示意<i className="legend-place" />篇目地点<i />篇目山列<span>兽形图标：异兽</span></small>;
-  const layerStatus = <div className="map-layer-summary" role="status">{activeLayers.beasts && <span>{availableBeasts.length ? "异兽图层 · " + mappedBeastCount + " 条已关联" : "本章暂无异兽"}{!availableBeasts.length && <button onClick={activeLayers.onGoToFirstBeast}>前往第 3 章 ↗</button>}</span>}{activeLayers.divine && <span>神域已显示</span>}</div>;
-  const fullscreenButton = <button className="map-fullscreen" onClick={toggleFullscreen} aria-pressed={isFullscreen} aria-label={isFullscreen ? '退出地图全屏' : '地图全屏'}>{isFullscreen ? '退出全屏' : '全屏展示'}</button>;
+  const preview = hoverRecord && <div className="ink-hover-card" role="status"><span>{hoverRecord.region}</span><b>{hoverRecord.name}</b><p>{hoverRecord.description}</p><small>{hoverRecord.direction}</small><button aria-label={t("展开原文与出处 ↗")} onClick={event => onSelect(hoverRecord.id, event.currentTarget)}>{t("展开原文与出处 ↗")}</button>{hoverStoryId && <button onClick={() => { setJourneyId(hoverStoryId); setHoverId(null); setPinnedId(null); setTouchSelectedId(null); setPortrait(null); }} aria-label={t("播放故事动画")}>{t("播放动画")}</button>}</div>;
+  const legend = <small className="map-range-legend"><i className="legend-story" />{t("故事示意")}<i className="legend-place" />{t("篇目地点")}<i />{t("篇目山列")}<span>{t("兽形图标：异兽")}</span></small>;
+  const layerStatus = <div className="map-layer-summary" role="status">{activeLayers.beasts && <span>{availableBeasts.length ? t("异兽图层 · ") + mappedBeastCount + t(" 条已关联") : t("本章暂无异兽")}{!availableBeasts.length && <button onClick={activeLayers.onGoToFirstBeast}>{t("前往第 3 章 ↗")}</button>}</span>}{activeLayers.divine && <span>{t("神域已显示")}</span>}</div>;
+  const fullscreenButton = <button className="map-fullscreen" onClick={toggleFullscreen} aria-pressed={isFullscreen} aria-label={isFullscreen ? t("退出地图全屏") : t("地图全屏")}>{isFullscreen ? t("退出全屏") : t("全屏展示")}</button>;
 
-  return <section ref={mapFrame} tabIndex={-1} className={`myth-map-wrap ${isPrologue ? "is-prologue" : ""} ${isFullscreen ? "is-map-fullscreen" : ""} ${fallbackFullscreen ? "is-fallback-fullscreen" : ""} ${shortMap ? "is-short-map" : ""} ${activeJourneyId ? "has-journey" : ""} ${activeJourneyId && activeJourneyId !== "03-05" ? "has-local-story" : ""}`} aria-label={isPrologue ? "盘古开天序章场景" : "山海经方位关系地图"}>
-    {isFullscreen && <header className="fullscreen-toolbar" aria-label="全屏地图工具栏"><div className="fullscreen-chapter-nav" aria-label="全屏章节切换">
-      <button type="button" onClick={() => { onFullscreenStageChange(stageIndex - 1); mapFrame.current?.focus({ preventScroll: true }); }} disabled={stageIndex === 0}>← 上一章</button>
+  return <section ref={mapFrame} tabIndex={-1} className={`myth-map-wrap ${isPrologue ? "is-prologue" : ""} ${isFullscreen ? "is-map-fullscreen" : ""} ${fallbackFullscreen ? "is-fallback-fullscreen" : ""} ${shortMap ? "is-short-map" : ""} ${activeJourneyId ? "has-journey" : ""} ${activeJourneyId && activeJourneyId !== "03-05" ? "has-local-story" : ""}`} aria-label={isPrologue ? t("盘古开天序章场景") : t("山海经方位关系地图")}>
+    {isFullscreen && <header className="fullscreen-toolbar" aria-label={t("全屏地图工具栏")}><div className="fullscreen-chapter-nav" aria-label={t("全屏章节切换")}>
+      <button type="button" onClick={() => { onFullscreenStageChange(stageIndex - 1); mapFrame.current?.focus({ preventScroll: true }); }} disabled={stageIndex === 0}>{t("← 上一章")}</button>
       <span><small>{stages[stageIndex].id} / {String(stages.length - 1).padStart(2, '0')}</small><b>{stages[stageIndex].title}</b></span>
-      <button type="button" onClick={() => { onFullscreenStageChange(stageIndex + 1); mapFrame.current?.focus({ preventScroll: true }); }} disabled={stageIndex >= stages.length - 1}>下一章 →</button>
+      <button type="button" onClick={() => { onFullscreenStageChange(stageIndex + 1); mapFrame.current?.focus({ preventScroll: true }); }} disabled={stageIndex >= stages.length - 1}>{t("下一章 →")}</button>
     </div>{!isPrologue && mapControls}{fullscreenButton}</header>}
     <div className="map-surface"><div ref={target} className="myth-map-canvas" />
 {isPrologue && <div className="prologue-scene">
@@ -521,10 +534,10 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
           <PanguOpening active={isPrologue} autoStart={autoPlayChapter || false} selected={Boolean(selectedId)} onBusyChange={onJourneyBusyChange} controlContainer={isFullscreen ? controlContainer : null} />
         </Suspense>
       </PanguLoadBoundary>
-      {!isFullscreen && <><button className="prologue-source" onClick={event => onSelect('01-01', event.currentTarget)}>盘古开天 · 原文与出处 ↗</button><span className="prologue-caption">混沌初开 · 天地初分</span></>}
+      {!isFullscreen && <><button className="prologue-source" onClick={event => onSelect('01-01', event.currentTarget)}>{t("盘古开天 · 原文与出处 ↗")}</button><span className="prologue-caption">{t("混沌初开 · 天地初分")}</span></>}
     </div>}
     {!isPrologue && <>
-      {!isFullscreen && <><div className="map-orientation" aria-label="图面方位示意"><span>北</span><i>↑</i><span>西　中　东</span><i>↓</i><span>南</span></div>{mapControls}</>}
+      {!isFullscreen && <><div className="map-orientation" aria-label={t("图面方位示意")}><span>{t("北")}</span><i>↑</i><span>{t("西　中　东")}</span><i>↓</i><span>{t("南")}</span></div>{mapControls}</>}
     {visiblePortrait && !isFullscreen && <div key={visiblePortrait.id} className={`map-role-portrait ${visiblePortrait.above ? 'is-above' : 'is-below'} ${visiblePortrait.record.artworks?.length > 1 ? 'has-pair' : ''}`} style={{ left: visiblePortrait.left, top: visiblePortrait.top, width: visiblePortrait.width, height: visiblePortrait.height }} aria-hidden="true">
       {(visiblePortrait.record.artworks?.length ? visiblePortrait.record.artworks : [visiblePortrait.record.artwork]).filter(Boolean).map((artwork, index) => <img key={`${visiblePortrait.id}-${index}`} src={assetUrl(artwork.startsWith('/') ? artwork : `/data/atlas/myth-icons/${artwork}`)} alt="" />)}
     </div>}
@@ -536,27 +549,36 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
     {!isFullscreen && fullscreenButton}
     <div className={`chapter-transition-veil ${chapterTransition ? "is-visible" : ""}`} aria-hidden="true" />
     </div>
-    {isFullscreen && <footer className="fullscreen-dock" aria-label="地图播放与信息栏">
-      {isPrologue && <div className="fullscreen-prologue-title"><b>盘古开天</b><button className="prologue-source" onClick={event => onSelect("01-01", event.currentTarget)}>原文与出处 ↗</button></div>}
+    {isFullscreen && <footer className="fullscreen-dock" aria-label={t("地图播放与信息栏")}>
+      {isPrologue && <div className="fullscreen-prologue-title"><b>{t("盘古开天")}</b><button className="prologue-source" onClick={event => onSelect("01-01", event.currentTarget)}>{t("原文与出处 ↗")}</button></div>}
       <div className="fullscreen-control-slot" ref={setControlContainer} />
-      {!isPrologue && <div className="fullscreen-preview-slot" aria-label="地图地点预览">{preview}</div>}
-      {!isPrologue && !activeJourneyId && <div className="fullscreen-idle-info"><span className="fullscreen-orientation">北 ↑</span>{legend}{layerStatus}</div>}
+      {!isPrologue && <div className="fullscreen-preview-slot" aria-label={t("地图地点预览")}>{preview}</div>}
+      {!isPrologue && !activeJourneyId && <div className="fullscreen-idle-info"><span className="fullscreen-orientation">{t("北 ↑")}</span>{legend}{layerStatus}</div>}
     </footer>}
   </section>;
 }
 
 function Timeline({ stages, index, onSelect, playing, onPlay, containerRef }) {
+  const { t, locale } = useLocale();
   const slider = useRef(null);
+  const steps = useRef(null);
+  useEffect(() => {
+    const row = steps.current;
+    const active = row?.children[index];
+    if (!active || row.scrollWidth <= row.clientWidth) return;
+    const offset = active.getBoundingClientRect().left - row.getBoundingClientRect().left + row.scrollLeft;
+    row.scrollTo({ left: offset - (row.clientWidth - active.offsetWidth) / 2, behavior: 'instant' });
+  }, [index, locale]);
   const lastIndex = stages.length - 1;
   const setFromPointer = event => {
     const rect = slider.current.getBoundingClientRect();
     const value = Math.round(Math.max(0, Math.min(1, (event.clientX - rect.left) / rect.width)) * (stages.length - 1));
     onSelect(value);
   };
-  return <section ref={containerRef} className="myth-timeline" aria-label="序章与七章神话时间轴">
-    <div className="timeline-current"><button onClick={() => onSelect(Math.max(0, index - 1))} disabled={!index}>‹</button><button onClick={onPlay} aria-label={playing ? '暂停' : '播放'}>{playing ? 'Ⅱ' : '▶'}</button><button onClick={() => onSelect(Math.min(stages.length - 1, index + 1))} disabled={index === stages.length - 1}>›</button><span><small>第 {stages[index].id} 章</small><b>{stages[index].title}</b></span></div>
-    <div className="timeline-steps">{stages.map((stage, i) => <button key={stage.id} aria-current={index === i ? 'step' : undefined} onClick={() => onSelect(i)}><i>{stage.id}</i>{stage.title}</button>)}</div>
-    <div className="chapter-slider" ref={slider} tabIndex={0} role="slider" aria-valuemin={0} aria-valuemax={lastIndex} aria-valuenow={index} aria-valuetext={`第 ${stages[index].id} 章 ${stages[index].title}`}
+  return <section ref={containerRef} className="myth-timeline" aria-label={t("序章与七章神话时间轴")}>
+    <div className="timeline-current"><button onClick={() => onSelect(Math.max(0, index - 1))} disabled={!index}>‹</button><button onClick={onPlay} aria-label={playing ? t("暂停") : t("播放")}>{playing ? 'Ⅱ' : '▶'}</button><button onClick={() => onSelect(Math.min(stages.length - 1, index + 1))} disabled={index === stages.length - 1}>›</button><span><small>{t("第")}{stages[index].id}{t("章")}</small><b>{stages[index].title}</b></span></div>
+    <div ref={steps} className="timeline-steps">{stages.map((stage, i) => <button key={stage.id} aria-current={index === i ? 'step' : undefined} onClick={() => onSelect(i)}><i>{stage.id}</i>{stage.title}</button>)}</div>
+    <div className="chapter-slider" ref={slider} tabIndex={0} role="slider" aria-valuemin={0} aria-valuemax={lastIndex} aria-valuenow={index} aria-valuetext={t(`第 ${stages[index].id} 章 ${stages[index].title}`)}
       onPointerDown={event => { if (event.button !== 0) return; event.currentTarget.setPointerCapture(event.pointerId); onSelect(index); setFromPointer(event); }}
       onPointerMove={event => { if (event.currentTarget.hasPointerCapture(event.pointerId)) setFromPointer(event); }}
       onPointerUp={event => { if (event.currentTarget.hasPointerCapture(event.pointerId)) { setFromPointer(event); event.currentTarget.releasePointerCapture(event.pointerId); } }}
@@ -568,13 +590,14 @@ function Timeline({ stages, index, onSelect, playing, onPlay, containerRef }) {
 }
 
 function Bestiary({ beasts, onOpen }) {
+  const { t, locale } = useLocale();
   const grid = useRef(null);
   const [columns, setColumns] = useState(2);
   const [expanded, setExpanded] = useState(false);
   const [search, setSearch] = useState('');
-  const [bookFilter, setBookFilter] = useState('全部篇目');
-  const hasFilter = Boolean(search.trim()) || bookFilter !== '全部篇目';
-  const list = beasts.filter(beast => (bookFilter === '全部篇目' || beast.region === bookFilter) && (!search.trim() || `${beast.name} ${beast.region} ${beast.description}`.includes(search.trim())));
+  const [bookFilter, setBookFilter] = useState('');
+  const hasFilter = Boolean(search.trim()) || bookFilter !== '';
+  const list = beasts.filter(beast => (bookFilter === '' || beast.region === bookFilter) && (!search.trim() || `${beast.name} ${beast.originalName || ""} ${beast.region} ${beast.description}`.toLocaleLowerCase().includes(search.trim().toLocaleLowerCase())));
   const showAll = expanded || hasFilter;
   useEffect(() => {
     const measure = () => setColumns(getComputedStyle(grid.current).gridTemplateColumns.split(' ').length);
@@ -584,17 +607,21 @@ function Bestiary({ beasts, onOpen }) {
     return () => observer.disconnect();
   }, []);
   useEffect(() => setExpanded(false), [search, bookFilter]);
+  useEffect(() => { setBookFilter(''); }, [locale]);
   return <section className="best-page" id="creatures">
-    <div className="best-page-heading"><h2>山海经异兽谱</h2><p>收录32项异兽 · 同名异篇分开呈现</p></div>
-    <div className="bestiary-tools"><input value={search} onChange={event => setSearch(event.target.value)} placeholder="搜索异兽或形貌" aria-label="搜索异兽" /><select value={bookFilter} onChange={event => setBookFilter(event.target.value)} aria-label="按篇目筛选"><option>全部篇目</option>{Array.from(new Set(beasts.map(item => item.region))).map(item => <option key={item}>{item}</option>)}</select><span>{list.length} 项索引 · {showAll ? '全部匹配条目' : '首行预览'}</span></div>
-    <div className="beast-grid" id="beast-cards" ref={grid} data-expanded={showAll}>{(showAll ? list : list.slice(0, columns)).map(beast => <button className="beast-card" key={beast.id} onClick={event => onOpen(beast.id, event.currentTarget)}><div className="beast-art">{iconFor(beast) ? <img src={iconFor(beast)} alt="" loading="lazy" /> : <div className="beast-placeholder" aria-hidden="true"><span>異</span><i>山海经</i></div>}<span>{beast.region}</span></div><b>{beast.name}</b><p>{beast.description}</p><small>{beast.source} · 第 {beast.reveal_chapter} 章起可见（非诞生年代）</small></button>)}</div>
-    {!list.length && <p className="bestiary-empty">没有找到匹配的异兽，请换一个名称或篇目。</p>}
-    <button className="bestiary-toggle" aria-controls="beast-cards" aria-expanded={showAll} onClick={() => { if (hasFilter) { setSearch(''); setBookFilter('全部篇目'); setExpanded(false); } else setExpanded(value => !value); }}>{hasFilter ? '清除筛选并收起' : expanded ? '收起异兽谱 ↑' : `展开全部 ${beasts.length} 项 ↓`}</button>
+    <div className="best-page-heading"><h2>{t("山海经异兽谱")}</h2><p>{t("收录32项异兽 · 同名异篇分开呈现")}</p></div>
+    <div className="bestiary-tools"><input value={search} onChange={event => setSearch(event.target.value)} placeholder={t("搜索异兽或形貌")} aria-label={t("搜索异兽")} /><select value={bookFilter} onChange={event => setBookFilter(event.target.value)} aria-label={t("按篇目筛选")}><option value="">{t("全部篇目")}</option>{Array.from(new Set(beasts.map(item => item.region))).map(item => <option key={item}>{item}</option>)}</select><span>{list.length}{t("项索引 ·")}{showAll ? t("全部匹配条目") : t("首行预览")}</span></div>
+    <div className="beast-grid" id="beast-cards" ref={grid} data-expanded={showAll}>{(showAll ? list : list.slice(0, columns)).map(beast => <button className="beast-card" key={beast.id} onClick={event => onOpen(beast.id, event.currentTarget)}><div className="beast-art">{iconFor(beast) ? <img src={iconFor(beast)} alt="" loading="lazy" /> : <div className="beast-placeholder" aria-hidden="true"><span>異</span><i>{t("山海经")}</i></div>}<span>{beast.region}</span></div><b>{beast.name}</b><p>{beast.description}</p><small>{beast.source}{t("· 第")}{beast.reveal_chapter}{t("章起可见（非诞生年代）")}</small></button>)}</div>
+    {!list.length && <p className="bestiary-empty">{t("没有找到匹配的异兽，请换一个名称或篇目。")}</p>}
+    <button className="bestiary-toggle" aria-controls="beast-cards" aria-expanded={showAll} onClick={() => { if (hasFilter) { setSearch(''); setBookFilter(''); setExpanded(false); } else setExpanded(value => !value); }}>{hasFilter ? t("清除筛选并收起") : expanded ? t("收起异兽谱 ↑") : t(`展开全部 ${beasts.length} 项 ↓`)}</button>
   </section>;
 }
 
 export default function App() {
-  const [world, setWorld] = useState(mythWorld);
+  const { t, locale, setLocale } = useLocale();
+  const catalog = useMemo(() => localize(rawCatalog, locale), [locale]);
+  const [rawWorld, setWorld] = useState(mythWorld);
+  const world = useMemo(() => localize(rawWorld, locale), [rawWorld, locale]);
   const [stageIndex, setStageIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [journeyBusy, setJourneyBusy] = useState(false);
@@ -616,6 +643,13 @@ export default function App() {
   const fullscreenTransitionLock = useRef(false);
   const fullscreenTransitionTimers = useRef([]);
   const stages = world.stages;
+  useEffect(() => {
+    document.documentElement.lang = locale === 'en' ? 'en' : 'zh-CN';
+    document.title = t('山海寻踪') + ' · ' + t('一卷山海，七章神话');
+    document.querySelector('meta[name="description"]')?.setAttribute('content', locale === 'en'
+      ? 'An illustrated atlas of Chinese mythology: explore seven narrative chapters, mythical creatures and their textual sources.'
+      : '由《山海经》篇目方位关系和七章神话叙事构成的互动山海图。');
+  }, [locale, t]);
   const visitedChapters = useRef(new Set(['00']));
   const previousChapterId = useRef(stages[stageIndex].id);
   const beasts = useMemo(() => world.beasts.map((beast, groupIndex) => ({ ...beast, stage: beast.reveal_stage, groupIndex })), [world.beasts]);
@@ -692,7 +726,7 @@ export default function App() {
         if (data?.revision && ['stages', 'regions', 'terrain', 'places', 'relations', 'domains', 'beasts'].every(key => Array.isArray(data[key]))
           && data.stages.length === mythWorld.stages.length && data.stages.every((stage, index) => stage.id === mythWorld.stages[index].id)) setWorld(data);
       })
-      .catch(error => { if (error.name !== 'AbortError') console.info('使用随前端打包的神话地图数据'); });
+      .catch(error => { if (error.name !== 'AbortError') console.info(t("使用随前端打包的神话地图数据")); });
     return () => controller.abort();
   }, []);
   useEffect(() => {
@@ -750,7 +784,7 @@ export default function App() {
       window.removeEventListener('resize', alignWorldAfterResize);
       window.visualViewport?.removeEventListener('resize', alignWorldAfterResize);
     };
-  }, [railExpanded, stageIndex]);
+  }, [railExpanded, stageIndex, locale]);
   useEffect(() => {
     setRailExpanded(false);
   }, [stageIndex]);
@@ -764,26 +798,26 @@ export default function App() {
     return () => window.removeEventListener('keydown', key);
   }, [selectedId, fullscreenTarget]);
 
-  return <main className="myth-app">
-    <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true">山</span><h1>山海寻踪</h1></a><nav aria-label="网站导航"><a href="#world">地图</a><a href="#creatures">异兽谱</a><a href="#reading-notes">读图与依据</a></nav></header>
+  return <main className="myth-app" lang={locale === "en" ? "en" : "zh-CN"}>
+    <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true">山</span><h1>{t("山海寻踪")}</h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><div className="language-switch" role="group" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></div></nav></header>
      <section ref={worldLayout} className="world-layout" id="world" data-timeline-playing={playing} data-animation-busy={journeyBusy} style={{ '--myth-map-height': `${layoutMetrics.mapHeight}px`, '--myth-timeline-height': `${layoutMetrics.timelineHeight}px` }}>
       <aside ref={chapterRail} className="chapter-rail">
-        <span className="chapter-number">{stageIndex === 0 ? "序章" : "第 " + stages[stageIndex].id + " 章"}</span><h2>{stages[stageIndex].title}</h2><p>{stages[stageIndex].subtitle}</p>
-        <button className="rail-expand" aria-expanded={railExpanded} onClick={() => setRailExpanded(value => !value)}>{railExpanded ? '收起本章故事 ↑' : '展开本章故事 ↓'}</button>
+        <span className="chapter-number">{stageIndex === 0 ? t("序章") : t("第 ") + stages[stageIndex].id + t(" 章")}</span><h2>{stages[stageIndex].title}</h2><p>{stages[stageIndex].subtitle}</p>
+        <button className="rail-expand" aria-expanded={railExpanded} onClick={() => setRailExpanded(value => !value)}>{railExpanded ? t("收起本章故事 ↑") : t("展开本章故事 ↓")}</button>
         <div className="chapter-rail-details" data-expanded={railExpanded}>
-          <div className="chapter-rule" /><b>本章故事</b><small>典籍来源沿用已有考据条目</small>
+          <div className="chapter-rule" /><b>{t("本章故事")}</b><small>{t("典籍来源沿用已有考据条目")}</small>
           {storyItems.map(item => <button className="story-entry" key={item.id} onClick={event => open(item.id, event.currentTarget)}><i>✦</i><span><b>{item.properties.name}</b><small>{item.properties.source_text || item.properties.basis_note}</small></span></button>)}
-          <a className="best-index-link" href="#creatures">打开全书异兽索引 ↗</a>
+          <a className="best-index-link" href="#creatures">{t("打开全书异兽索引 ↗")}</a>
         </div>
       </aside>
       <div ref={worldMain} className="world-main">
-        <MapPanel world={world} stageIndex={stageIndex} autoPlayChapter={playing || autoPlayChapterId === stages[stageIndex].id} activeLayers={{ ...activeLayers, onBeasts: checked => setActiveLayers(state => ({ ...state, beasts: checked })), onDivine: checked => setActiveLayers(state => ({ ...state, divine: checked })), onGoToFirstBeast: () => { const index = stages.findIndex(stage => world.beasts.some(beast => beast.reveal_chapter === stage.id)); if (index >= 0) selectStage(index); } }} selectedId={selectedId} onSelect={open} onFullscreenTargetChange={setFullscreenTarget} onJourneyBusyChange={setJourneyBusy} onFullscreenStageChange={navigateFullscreenStage} chapterTransition={chapterTransition} />
+        <MapPanel key={locale} world={world} stageIndex={stageIndex} autoPlayChapter={playing || autoPlayChapterId === stages[stageIndex].id} activeLayers={{ ...activeLayers, onBeasts: checked => setActiveLayers(state => ({ ...state, beasts: checked })), onDivine: checked => setActiveLayers(state => ({ ...state, divine: checked })), onGoToFirstBeast: () => { const index = stages.findIndex(stage => world.beasts.some(beast => beast.reveal_chapter === stage.id)); if (index >= 0) selectStage(index); } }} selectedId={selectedId} onSelect={open} onFullscreenTargetChange={setFullscreenTarget} onJourneyBusyChange={setJourneyBusy} onFullscreenStageChange={navigateFullscreenStage} chapterTransition={chapterTransition} />
         <Timeline containerRef={timeline} stages={stages} index={stageIndex} playing={playing} onSelect={selectStage} onPlay={() => { if (stageIndex === stages.length - 1 && !playing) setStageIndex(0); setPlaying(value => !value); }} />
       </div>
     </section>
     <Bestiary beasts={beasts} onOpen={open} />
-    <section className="reading-notes" id="reading-notes" aria-labelledby="reading-notes-title"><h2 id="reading-notes-title">读图与依据</h2>          <div className="reading-notes-text"><p>《山海经》依山川和方位展开，不是编年史。序章与七章次序是本项目的叙事编排；各章内部仅在原文或可靠叙事关系可核实处排列先后，不代表精确年代。</p><p>经文距离不按比例绘制；淡墨山形为装饰。重要地点以名称和原文标识，故事示意点不表示真实位置。</p></div><p>各篇神域记载不预设为同一空间体系。异兽图标仅关联有篇目依据的地点锚点；缺少可靠地点依据的条目收录在异兽谱中。</p><p>山海空间与异兽描写以《山海经》正文条目为依据，神话故事沿用各条目所列典籍与出处。插画是本项目依据正文的图像解释，不作为古本插图或新增考据证据。</p></section>
-    <footer className="myth-footer"><span>版式：方位关系与叙述次序 · 不设距离比例</span><span>山海空间与异兽描写：以《山海经》正文条目核对</span></footer>
+    <section className="reading-notes" id="reading-notes" aria-labelledby="reading-notes-title"><h2 id="reading-notes-title">{t("读图与依据")}</h2>          <div className="reading-notes-text"><p>{t("《山海经》依山川和方位展开，不是编年史。序章与七章次序是本项目的叙事编排；各章内部仅在原文或可靠叙事关系可核实处排列先后，不代表精确年代。")}</p><p>{t("经文距离不按比例绘制；淡墨山形为装饰。重要地点以名称和原文标识，故事示意点不表示真实位置。")}</p></div><p>{t("各篇神域记载不预设为同一空间体系。异兽图标仅关联有篇目依据的地点锚点；缺少可靠地点依据的条目收录在异兽谱中。")}</p><p>{t("山海空间与异兽描写以《山海经》正文条目为依据，神话故事沿用各条目所列典籍与出处。插画是本项目依据正文的图像解释，不作为古本插图或新增考据证据。")}</p></section>
+    <footer className="myth-footer"><span>{t("版式：方位关系与叙述次序 · 不设距离比例")}</span><span>{t("山海空间与异兽描写：以《山海经》正文条目核对")}</span></footer>
     {selected && createPortal(<DetailDrawer selected={selected} onClose={closeDetail} onOpen={open} scrollTopRef={detailScrollTop} />, fullscreenTarget || document.body)}
   </main>;
 }

@@ -1,3 +1,4 @@
+import { useLocale } from './i18n';
 import { createPortal } from 'react-dom';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AbsoluteFill, Easing, Img, interpolate, useCurrentFrame } from 'remotion';
@@ -31,6 +32,7 @@ function PanguComposition({ onAssetError }) {
 }
 
 export default function PanguOpening({ active, autoStart = true, selected, onBusyChange, controlContainer }) {
+  const { t } = useLocale();
   const wrapper = useRef(null);
   const player = useRef(null);
   const hasStarted = useRef(false);
@@ -170,18 +172,18 @@ export default function PanguOpening({ active, autoStart = true, selected, onBus
     setRetryKey(value => value + 1);
   };
 
-  const controls = <div className="pangu-player-controls" aria-label="盘古序章动画控制"><progress value={progressFrame} max={DURATION} aria-label="盘古序章进度" />
-      {failed ? <button type="button" aria-label="重试盘古动态场景" onClick={retry}>重试动态场景</button> : reducedMotion ? <span>系统已减少动态效果</span> : !assetsReady ? <span>场景载入中…</span> : !playerMounted ? <span>{autoStart ? '进入画面后自动播放' : '场景待播放'}</span> : <>
-        <button type="button" aria-label={playing ? '暂停盘古序章' : ended.current ? '重播盘古序章' : hasStarted.current ? '继续播放盘古序章' : '播放盘古序章'} onClick={() => { if (playing) { manualPaused.current = true; stopClock(); } else if (ended.current) replay(); else { manualPaused.current = false; startClock(); } }}>{playing ? '暂停' : ended.current ? '播放完成 · 重播' : hasStarted.current ? '继续播放' : '播放'}</button>
-        <button type="button" aria-label="重播盘古序章" onClick={replay}>重播</button>
-        <button type="button" aria-label={`播放速度 ${playbackRate}倍`} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>
+  const controls = <div className="pangu-player-controls" aria-label={t("盘古序章动画控制")}><progress value={progressFrame} max={DURATION} aria-label={t("盘古序章进度")} />
+      {failed ? <button type="button" aria-label={t("重试盘古动态场景")} onClick={retry}>{t("重试动态场景")}</button> : reducedMotion ? <span>{t("系统已减少动态效果")}</span> : !assetsReady ? <span>{t("场景载入中…")}</span> : !playerMounted ? <span>{autoStart ? t("进入画面后自动播放") : t("场景待播放")}</span> : <>
+        <button type="button" aria-label={playing ? t("暂停盘古序章") : ended.current ? t("重播盘古序章") : hasStarted.current ? t("继续播放盘古序章") : t("播放盘古序章")} onClick={() => { if (playing) { manualPaused.current = true; stopClock(); } else if (ended.current) replay(); else { manualPaused.current = false; startClock(); } }}>{playing ? t("暂停") : ended.current ? t("播放完成 · 重播") : hasStarted.current ? t("继续播放") : t("播放")}</button>
+        <button type="button" aria-label={t("重播盘古序章")} onClick={replay}>{t("重播")}</button>
+        <button type="button" aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>
       </>}
     </div>;
 
   return <div ref={wrapper} className="pangu-player-wrap" data-playback-rate={playbackRate}>
     {reducedMotion || failed || !assetsReady || !playerMounted ? <>
-      <img className="pangu-static-poster" src={POSTER} alt="盤古分開混沌，天地初開木刻場景" onError={stopForError} />
-      {!reducedMotion && !failed && <span className="pangu-loading-note" role="status">{assetsReady ? autoStart ? '进入画面后自动播放' : '场景待播放' : '场景载入中…'}</span>}
+      <img className="pangu-static-poster" src={POSTER} alt={t("盤古分開混沌，天地初開木刻場景")} onError={stopForError} />
+      {!reducedMotion && !failed && <span className="pangu-loading-note" role="status">{assetsReady ? autoStart ? t("进入画面后自动播放") : t("场景待播放") : t("场景载入中…")}</span>}
     </> : <Player
       key={retryKey}
       ref={player}

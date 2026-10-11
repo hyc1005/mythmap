@@ -1,3 +1,4 @@
+import { useLocale } from './i18n';
 import { createPortal } from 'react-dom';
 import { useEffect, useRef, useState } from 'react';
 import Feature from 'ol/Feature';
@@ -58,6 +59,8 @@ async function loadSprites(sheet, poses = false) {
 }
 
 export default function KuafuJourney({ map, selectedId, onSelect, onBusyChange, controlContainer }) {
+  const { t, locale } = useLocale();
+  const mapFont = locale === 'en' ? '"Source Sans 3 Variable", Arial, sans-serif' : '"Noto Serif SC", SimSun, serif';
   const [sprites, setSprites] = useState(null);
   const [error, setError] = useState(false);
   const [paused, setPaused] = useState(false);
@@ -123,14 +126,14 @@ export default function KuafuJourney({ map, selectedId, onSelect, onBusyChange, 
       const feature = new Feature({ geometry: new Point(node.position) });
       feature.setStyle(new Style({
         image: new CircleStyle({ radius: 4, fill: new Fill({ color: node.unreached ? '#eee2c5' : '#a44431' }), stroke: new Stroke({ color: node.unreached ? '#6c8073' : '#f4ead2', width: 1.5 }), declutterMode: 'none' }),
-        text: new Text({ text: node.label, offsetX: -12, offsetY: node.id === 'chase' ? 20 : -17, textAlign: 'right', font: '11px "Noto Serif SC",serif', fill: new Fill({ color: '#66543c' }), stroke: new Stroke({ color: '#f4ead2', width: 4 }), padding: [3, 3, 3, 3] }),
+        text: new Text({ text: t(node.label), offsetX: -12, offsetY: node.id === 'chase' ? 20 : -17, textAlign: 'right', font: `12px ${mapFont}`, fill: new Fill({ color: '#66543c' }), stroke: new Stroke({ color: '#f4ead2', width: 4 }), padding: [3, 3, 3, 3] }),
       }));
       return feature;
     });
-    const waters = ['河', '渭'].map((name, index) => {
+    const waters = [t("河"), t("渭")].map((name, index) => {
       const points = Array.from({ length: 22 }, (_, i) => [1010 + i * 5, 341 - index * 19 + Math.sin(i * .55 + index) * 5]);
       const feature = new Feature({ geometry: new LineString(points) });
-      feature.setStyle(new Style({ stroke: new Stroke({ color: '#647f84a0', width: 4 - index }), text: new Text({ text: name, placement: 'line', font: '10px serif', fill: new Fill({ color: '#526c72' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }), zIndex: 2 }));
+      feature.setStyle(new Style({ stroke: new Stroke({ color: '#647f84a0', width: 4 - index }), text: new Text({ text: name, placement: 'line', font: `11px ${mapFont}`, fill: new Fill({ color: '#526c72' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }), zIndex: 2 }));
       return feature;
     });
     const marsh = new Feature({ geometry: new Polygon([Array.from({ length: 33 }, (_, i) => { const t = i / 32 * Math.PI * 2; return [1060 + Math.cos(t) * (40 + Math.sin(t * 5) * 3), 690 + Math.sin(t) * 18]; })]) });
@@ -242,17 +245,17 @@ export default function KuafuJourney({ map, selectedId, onSelect, onBusyChange, 
     setRestart(value => value + 1);
   };
   const status = error ? 'error' : !sprites ? 'loading' : reduced ? 'reduced' : completed ? 'completed' : blocked ? 'paused' : 'playing';
-  const controls = <div className="kuafu-journey" ref={panel} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} role="group" aria-label="夸父逐日动态" data-status={status} data-phase={ui.phase.id} data-frame={ui.frame} data-elapsed={Math.round(ui.elapsed)} data-playback-rate={playbackRate} data-x={ui.position[0].toFixed(2)} data-y={ui.position[1].toFixed(2)} data-follow={following}>
-    <progress value={ui.elapsed} max={journey.duration_ms} aria-label="夸父故事进度" />
-    <div className="journey-heading"><b>夸父逐日</b><span aria-live="polite">{error ? '动作图加载失败' : !sprites ? '正在载入动作图…' : `${ui.phase.title}${status === 'paused' ? ' · 已暂停' : status === 'completed' ? ' · 完' : ''}`}</span></div>
-    <p>{ui.phase.quote}</p>
+  const controls = <div className="kuafu-journey" ref={panel} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} role="group" aria-label={t("夸父逐日动态")} data-status={status} data-phase={ui.phase.id} data-frame={ui.frame} data-elapsed={Math.round(ui.elapsed)} data-playback-rate={playbackRate} data-x={ui.position[0].toFixed(2)} data-y={ui.position[1].toFixed(2)} data-follow={following}>
+    <progress value={ui.elapsed} max={journey.duration_ms} aria-label={t("夸父故事进度")} />
+    <div className="journey-heading"><b>{t("夸父逐日")}</b><span aria-live="polite">{error ? t("动作图加载失败") : !sprites ? t("正在载入动作图…") : `${t(ui.phase.title)}${status === 'paused' ? t(" · 已暂停") : status === 'completed' ? t(" · 完") : ''}`}</span></div>
+    <p>{t(ui.phase.quote)}</p>
     <div className="journey-actions">
-      {error ? <button onClick={() => setReload(value => value + 1)}>重新载入</button> : reduced ? <button onClick={nextScene} disabled={!sprites}>下一幕</button> : <button onClick={completed ? replay : () => setPaused(value => !value)} disabled={!sprites || Boolean(selectedId) || hidden} aria-label={completed ? '重播夸父逐日' : paused ? '继续夸父逐日' : '暂停夸父逐日'}>{completed ? '重播' : paused ? '继续' : '暂停'}</button>}
-      {!reduced && !error && !completed && <button onClick={replay} disabled={!sprites}>重播</button>}
-      {!reduced && !error && <button aria-label={`播放速度 ${playbackRate}倍`} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>}
-      {!reduced && !error && <button aria-label={following ? '跟随镜头' : '恢复跟随'} title={following ? '停止镜头跟随' : '恢复镜头跟随'} aria-pressed={following} onClick={() => setFollowing(value => !value)}>跟随</button>}
-      <button aria-label="原文 ↗" onClick={event => onSelect(journey.event_id, event.currentTarget)}>原文</button>
-      <small title={journey.location_note}>叙事示意 · 大泽未至</small>
+      {error ? <button onClick={() => setReload(value => value + 1)}>{t("重新载入")}</button> : reduced ? <button onClick={nextScene} disabled={!sprites}>{t("下一幕")}</button> : <button onClick={completed ? replay : () => setPaused(value => !value)} disabled={!sprites || Boolean(selectedId) || hidden} aria-label={completed ? t("重播夸父逐日") : paused ? t("继续夸父逐日") : t("暂停夸父逐日")}>{completed ? t("重播") : paused ? t("继续") : t("暂停")}</button>}
+      {!reduced && !error && !completed && <button onClick={replay} disabled={!sprites}>{t("重播")}</button>}
+      {!reduced && !error && <button aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>}
+      {!reduced && !error && <button aria-label={following ? t("跟随镜头") : t("恢复跟随")} title={following ? t("停止镜头跟随") : t("恢复镜头跟随")} aria-pressed={following} onClick={() => setFollowing(value => !value)}>{t("跟随")}</button>}
+      <button aria-label={t("原文 ↗")} onClick={event => onSelect(journey.event_id, event.currentTarget)}>{t("原文")}</button>
+      <small title={t(journey.location_note)}>{t("叙事示意 · 大泽未至")}</small>
     </div>
   </div>;
   return controlContainer ? createPortal(controls, controlContainer) : controls;

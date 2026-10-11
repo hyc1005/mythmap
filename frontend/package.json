@@ -8,9 +8,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "verify:narrative": "node scripts/verify-narrative.mjs",
+    "verify:locale": "node scripts/verify-locale.mjs",
     "verify:layout": "node -e \"process.env.ATLAS_LAYOUT_ONLY='1';import('./scripts/verify-narrative.mjs')\""
   },
   "dependencies": {
+    "@fontsource-variable/lora": "^5.3.0",
+    "@fontsource-variable/source-sans-3": "^5.3.1",
     "@remotion/player": "4.0.532",
     "ol": "^10.6.1",
     "react": "^19.1.0",

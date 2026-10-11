@@ -1,5 +1,6 @@
+import { useLocale, localize } from './i18n';
 import { createPortal } from 'react-dom';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Feature from 'ol/Feature';
 import Point from 'ol/geom/Point';
 import LineString from 'ol/geom/LineString';
@@ -7,8 +8,8 @@ import Polygon from 'ol/geom/Polygon';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style';
-import animations from '../public/data/atlas/story-animations.json';
-import catalog from '../public/data/atlas/catalog.json';
+import rawAnimations from '../public/data/atlas/story-animations.json';
+import rawCatalog from '../public/data/atlas/catalog.json';
 import { assetUrl } from './asset-url';
 
 const smooth = value => value * value * (3 - 2 * value);
@@ -113,6 +114,10 @@ async function effectAssetsFor(assets = {}) {
 }
 
 export default function StoryAnimation({ id, map, selectedId, onSelect, onBusyChange, onSkip, onSceneBoundsChange, controlContainer }) {
+  const { t, locale } = useLocale();
+  const mapFont = locale === 'en' ? '"Source Sans 3 Variable", Arial, sans-serif' : '"Noto Serif SC", SimSun, serif';
+  const animations = useMemo(() => localize(rawAnimations, locale), [locale]);
+  const catalog = useMemo(() => localize(rawCatalog, locale), [locale]);
   const story = animations.stories.find(item => item.id === id);
   const bird = id === '03-04';
   const archer = id === '04-02';
@@ -179,9 +184,9 @@ export default function StoryAnimation({ id, map, selectedId, onSelect, onBusyCh
     const landmarks = [];
     if (bird) {
       const sea = new Feature({ geometry: new Polygon([[[880, 195], [940, 210], [980, 245], [935, 275], [885, 265], [880, 195]]]) });
-      sea.setStyle(new Style({ fill: new Fill({ color: '#77979924' }), stroke: new Stroke({ color: '#69848885', width: 1.5 }), text: new Text({ text: '东海 · 示意', offsetY: 25, font: '10px serif', fill: new Fill({ color: '#526c72' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }) }));
+      sea.setStyle(new Style({ fill: new Fill({ color: '#77979924' }), stroke: new Stroke({ color: '#69848885', width: 1.5 }), text: new Text({ text: t("东海 · 示意"), offsetY: 25, font: `11px ${mapFont}`, fill: new Fill({ color: '#526c72' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }) }));
       const mountain = new Feature({ geometry: new LineString([[635, 215], [650, 249], [662, 230], [680, 258], [696, 215]]) });
-      mountain.setStyle(new Style({ stroke: new Stroke({ color: '#746748aa', width: 2 }), text: new Text({ text: '西山木石 · 示意', offsetY: 23, font: '10px serif', fill: new Fill({ color: '#66543c' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }) }));
+      mountain.setStyle(new Style({ stroke: new Stroke({ color: '#746748aa', width: 2 }), text: new Text({ text: t("西山木石 · 示意"), offsetY: 23, font: `11px ${mapFont}`, fill: new Fill({ color: '#66543c' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }) }));
       landmarks.push(sea, mountain);
     }
      const source = new VectorSource({ features: [...landmarks, clouds, suns, impact, waves, ...decorations, streaks, projectile, payload, arrow, actorTransition, actor].flat().filter(Boolean) });
@@ -456,18 +461,18 @@ export default function StoryAnimation({ id, map, selectedId, onSelect, onBusyCh
     setRestart(value => value + 1);
   };
   const status = error ? 'error' : !sprites ? 'loading' : complete ? 'completed' : reduced ? 'reduced' : blocked ? 'paused' : 'playing';
-  const controls = <div ref={panel} className="kuafu-journey story-animation" role="group" aria-label={`${story.name}动态`} data-story={id} data-status={status} data-frame={ui.frame} data-elapsed={Math.round(ui.time)} data-playback-rate={playbackRate} data-shot-state={ui.shotState || 'none'} data-hit-sun-position={JSON.stringify(ui.hitSunPosition)} data-hit-frame={ui.hitFrame} data-x={ui.position[0]} data-y={ui.position[1]} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} data-follow={following} data-arrow={JSON.stringify(ui.arrow)} data-scene-bounds={JSON.stringify(ui.bounds)}>
-    <progress value={ui.time} max={story.duration_ms} aria-label={`${story.name}进度`} />
-    <div className="journey-heading"><b>{story.name}</b><span aria-live="polite">{error ? '动作图加载失败' : !sprites ? '正在载入动作图…' : `${ui.phase.title}${status === 'paused' ? ' · 已暂停' : complete ? ' · 完' : ''}`}</span></div>
+  const controls = <div ref={panel} className="kuafu-journey story-animation" role="group" aria-label={t(`${story.name}动态`)} data-story={id} data-status={status} data-frame={ui.frame} data-elapsed={Math.round(ui.time)} data-playback-rate={playbackRate} data-shot-state={ui.shotState || 'none'} data-hit-sun-position={JSON.stringify(ui.hitSunPosition)} data-hit-frame={ui.hitFrame} data-x={ui.position[0]} data-y={ui.position[1]} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} data-follow={following} data-arrow={JSON.stringify(ui.arrow)} data-scene-bounds={JSON.stringify(ui.bounds)}>
+    <progress value={ui.time} max={story.duration_ms} aria-label={t(`${story.name}进度`)} />
+    <div className="journey-heading"><b>{story.name}</b><span aria-live="polite">{error ? t("动作图加载失败") : !sprites ? t("正在载入动作图…") : `${ui.phase.title}${status === 'paused' ? t(" · 已暂停") : complete ? t(" · 完") : ''}`}</span></div>
     <p>{story.source_quote}</p>
     <div className="journey-actions">
-      {error ? <button onClick={() => setReload(value => value + 1)}>重新载入</button> : reduced && !complete ? <button onClick={next} disabled={!sprites}>{ui.phase === story.phases.at(-1) ? '完成故事' : '下一幕'}</button> : <button onClick={complete ? replay : () => setPaused(value => !value)} disabled={!sprites || Boolean(selectedId) || hidden} aria-label={`${complete ? '重播' : paused ? '继续' : '暂停'}${story.name}`}>{complete ? '重播' : paused ? '继续' : '暂停'}</button>}
-      {!error && !reduced && !complete && <button onClick={replay} disabled={!sprites}>重播</button>}
-      {!complete && <button onClick={skip}>跳过</button>}
-      {speedControl && !error && !reduced && <button aria-label={`播放速度 ${playbackRate}倍`} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>}
-      {!error && !reduced && story.follow_camera !== false && <button aria-label={following ? '跟随镜头' : '恢复跟随'} aria-pressed={following} onClick={() => setFollowing(value => !value)}>跟随</button>}
-      <button aria-label="原文 ↗" onClick={event => onSelect(story.source_event_id || id, event.currentTarget)}>原文</button>
-      <small title={`${animations.location_note} ${story.note}`}>叙事示意</small>
+      {error ? <button onClick={() => setReload(value => value + 1)}>{t("重新载入")}</button> : reduced && !complete ? <button onClick={next} disabled={!sprites}>{ui.phase === story.phases.at(-1) ? t("完成故事") : t("下一幕")}</button> : <button onClick={complete ? replay : () => setPaused(value => !value)} disabled={!sprites || Boolean(selectedId) || hidden} aria-label={`${complete ? t("重播") : paused ? t("继续") : t("暂停")}${locale === 'en' ? ' ' : ''}${story.name}`}>{complete ? t("重播") : paused ? t("继续") : t("暂停")}</button>}
+      {!error && !reduced && !complete && <button onClick={replay} disabled={!sprites}>{t("重播")}</button>}
+      {!complete && <button onClick={skip}>{t("跳过")}</button>}
+      {speedControl && !error && !reduced && <button aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>}
+      {!error && !reduced && story.follow_camera !== false && <button aria-label={following ? t("跟随镜头") : t("恢复跟随")} aria-pressed={following} onClick={() => setFollowing(value => !value)}>{t("跟随")}</button>}
+      <button aria-label={t("原文 ↗")} onClick={event => onSelect(story.source_event_id || id, event.currentTarget)}>{t("原文")}</button>
+      <small title={`${animations.location_note} ${story.note}`}>{t("叙事示意")}</small>
     </div>
   </div>;
   return controlContainer ? createPortal(controls, controlContainer) : controls;
