@@ -1,4 +1,5 @@
 import { useLocale, localize } from './i18n';
+import brandMark from './assets/shanhai-mark.svg?raw';
 import { Component, lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import OlMap from 'ol/Map';
@@ -19,12 +20,12 @@ import rawCatalog from '../public/data/atlas/catalog.json';
 import mythWorld from '../public/data/myth-world.json';
 import rawAnimationCatalog from '../public/data/atlas/story-animations.json';
 import kuafuJourney from '../public/data/atlas/kuafu-journey.json';
-import KuafuJourney from './KuafuJourney';
-import StoryAnimation from './StoryAnimation';
 import { assetUrl } from './asset-url';
 import './myth-world.css';
 
 const PanguOpening = lazy(() => import('./PanguOpening'));
+const KuafuJourney = lazy(() => import('./KuafuJourney'));
+const StoryAnimation = lazy(() => import('./StoryAnimation'));
 
 class PanguLoadBoundary extends Component {
   state = { failed: false };
@@ -200,7 +201,7 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
 
   useEffect(() => {
     if (!target.current || map.current) return undefined;
-    const paper = new ImageLayer({ source: new ImageStatic({ url: assetUrl('/data/atlas/myth-paper.png'), imageExtent: EXTENT, projection, interpolate: true }) });
+    const paper = new ImageLayer({ source: new ImageStatic({ url: assetUrl('/data/atlas/myth-paper.webp'), imageExtent: EXTENT, projection, interpolate: true }) });
     const created = new OlMap({
       target: target.current,
       controls: defaultControls({ attribution: false, rotate: false, zoom: false }),
@@ -209,7 +210,7 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
         new VectorLayer({ source: areaSource.current, declutter: 'map-labels', style: feature => obscuredLabel(feature.getGeometry().getCoordinates(), feature.get('label')) ? null : new Style({
           text: new Text({ text: feature.get('label'), font: `15px ${mapFont}`, padding: [5, 9, 5, 9], backgroundFill: new Fill({ color: '#eee2c5c9' }), fill: new Fill({ color: '#806d51' }), overflow: true }),
         }) }),
-        new VectorLayer({ source: terrainSource.current, style: feature => new Style({ image: new Icon({ src: assetUrl(`/data/atlas/myth-icons/terrain/${feature.get('kind')}.png`), width: feature.get('width'), anchor: [0.5, 1], opacity: feature.get('opacity') }) }) }),
+        new VectorLayer({ source: terrainSource.current, style: feature => new Style({ image: new Icon({ src: assetUrl(`/data/atlas/myth-icons/terrain/${feature.get('kind')}.${feature.get('kind') === 'distant' ? 'png' : 'webp'}`), width: feature.get('width'), anchor: [0.5, 1], opacity: feature.get('opacity') }) }) }),
         new VectorLayer({ source: relationSource.current, style: feature => feature.get('arrow') ? new Style({
           text: new Text({ text: '▲', font: 'bold 12px sans-serif', fill: new Fill({ color: '#a83f2b' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }),
         }) : new Style({
@@ -542,8 +543,10 @@ function MapPanel({ world, stageIndex, activeLayers, selectedId, onSelect, onFul
       {(visiblePortrait.record.artworks?.length ? visiblePortrait.record.artworks : [visiblePortrait.record.artwork]).filter(Boolean).map((artwork, index) => <img key={`${visiblePortrait.id}-${index}`} src={assetUrl(artwork.startsWith('/') ? artwork : `/data/atlas/myth-icons/${artwork}`)} alt="" />)}
     </div>}
       {!isFullscreen && preview}
-    {activeJourneyId === '03-05' && mapInstance && <KuafuJourney map={mapInstance} selectedId={selectedId} onSelect={onSelect} onBusyChange={handleJourneyBusy} controlContainer={isFullscreen ? controlContainer : null} />}
-    {activeJourneyId && activeJourneyId !== '03-05' && mapInstance && <StoryAnimation key={activeJourneyId} id={activeJourneyId} map={mapInstance} selectedId={selectedId} onSelect={onSelect} onBusyChange={handleJourneyBusy} onSceneBoundsChange={handleSceneBounds} controlContainer={isFullscreen ? controlContainer : null} onSkip={() => setJourneyId(null)} />}
+    <Suspense fallback={null}>
+      {activeJourneyId === '03-05' && mapInstance && <KuafuJourney map={mapInstance} selectedId={selectedId} onSelect={onSelect} onBusyChange={handleJourneyBusy} controlContainer={isFullscreen ? controlContainer : null} />}
+      {activeJourneyId && activeJourneyId !== '03-05' && mapInstance && <StoryAnimation key={activeJourneyId} id={activeJourneyId} map={mapInstance} selectedId={selectedId} onSelect={onSelect} onBusyChange={handleJourneyBusy} onSceneBoundsChange={handleSceneBounds} controlContainer={isFullscreen ? controlContainer : null} onSkip={() => setJourneyId(null)} />}
+    </Suspense>
       {!isFullscreen && <><span className="map-rule-note">{legend}</span>{(activeLayers.beasts || activeLayers.divine) && layerStatus}</>}
     </>}
     {!isFullscreen && fullscreenButton}
@@ -799,7 +802,7 @@ export default function App() {
   }, [selectedId, fullscreenTarget]);
 
   return <main className="myth-app" lang={locale === "en" ? "en" : "zh-CN"}>
-    <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true">山</span><h1>{t("山海寻踪")}</h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><div className="language-switch" role="group" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></div></nav></header>
+    <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true" dangerouslySetInnerHTML={{ __html: brandMark }} /><h1>{t("山海寻踪")}</h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><div className="language-switch" role="group" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></div></nav></header>
      <section ref={worldLayout} className="world-layout" id="world" data-timeline-playing={playing} data-animation-busy={journeyBusy} style={{ '--myth-map-height': `${layoutMetrics.mapHeight}px`, '--myth-timeline-height': `${layoutMetrics.timelineHeight}px` }}>
       <aside ref={chapterRail} className="chapter-rail">
         <span className="chapter-number">{stageIndex === 0 ? t("序章") : t("第 ") + stages[stageIndex].id + t(" 章")}</span><h2>{stages[stageIndex].title}</h2><p>{stages[stageIndex].subtitle}</p>

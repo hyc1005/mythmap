@@ -46,9 +46,9 @@
         "analysis_eligible": false,
         "original_geometry": null,
         "original_modern_coordinates": null,
-        "artwork": "scenes/pangu-opening.png",
+        "artwork": "scenes/pangu-opening.webp",
         "artworks": [
-          "scenes/pangu-opening.png"
+          "scenes/pangu-opening.webp"
         ],
         "map_visible": false,
         "presentation": "scene",

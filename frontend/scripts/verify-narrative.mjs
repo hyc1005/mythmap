@@ -36,12 +36,12 @@ assert.equal(nuwaStory.origin[0], catalog.events.find(event => event.id === '01-
 await access(new URL(`../public${nuwaStory.sheet.url}`, import.meta.url));
 const suirenStory = animations.stories.find(story => story.id === '02-04');
 assert.equal(suirenStory.sheet.frames.length, 6);
-assert.equal(suirenStory.sheet.url, '/data/atlas/myth-icons/animations/suiren-after-fire-v3.png');
+assert.equal(suirenStory.sheet.url, '/data/atlas/myth-icons/animations/suiren-after-fire-v3.webp');
 assert.deepEqual(suirenStory.sheet.frames, [[0,0,512,512],[512,0,512,512],[1024,0,512,512],[0,512,512,512],[512,512,512,512],[1024,512,512,512]]);
 assert.deepEqual(Object.keys(suirenStory.effect_assets || {}), [], 'Suiren fire and woodpile remain only in the integrated actor sprite frames');
 await access(new URL('../artwork-source/archived/suiren-after-fire-v2-original.webp', import.meta.url));
 const suirenManifest = artworkManifest.assets.find(asset => asset.id === 'animation-suiren-after-fire-poses');
-assert.ok(suirenManifest.destination.endsWith('suiren-after-fire-v3.png'));
+assert.ok(suirenManifest.destination.endsWith('suiren-after-fire-v3.webp'));
 assert.ok(suirenManifest.preserved_previous_destination.endsWith('suiren-after-fire-v2-original.webp'));
 assert.equal(artworkManifest.assets.find(asset => asset.id === 'animation-suiren-flame-loop').runtime_status, 'archived_not_used_in_runtime');
 assert.match(storyAnimationSource, /story\.kind === 'fire'[\s\S]*?frame = time < 3500/);
@@ -281,7 +281,7 @@ try {
   assert.equal(await page.locator('.timeline-steps button').count(), 8);
   assert.equal(await page.locator('.pangu-layer').first().evaluate(img => img.complete && img.naturalWidth > 0), true);
   const suirenAtlas = await page.evaluate(async () => {
-    const image = new Image(); image.src = new URL('data/atlas/myth-icons/animations/suiren-after-fire-v3.png', document.baseURI).href; await image.decode();
+    const image = new Image(); image.src = new URL('data/atlas/myth-icons/animations/suiren-after-fire-v3.webp', document.baseURI).href; await image.decode();
     const canvas = document.createElement('canvas'); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
     const context = canvas.getContext('2d', { willReadFrequently: true }); context.drawImage(image, 0, 0);
     const { data } = context.getImageData(0, 0, canvas.width, canvas.height);
@@ -510,7 +510,7 @@ try {
 
   const assetFailure = await browser.newPage();
   let failedLayerOnce = false;
-  await assetFailure.route('**/pangu-earth-layer.png', route => {
+  await assetFailure.route('**/pangu-earth-layer.webp', route => {
     if (!failedLayerOnce) { failedLayerOnce = true; return route.abort(); }
     return route.continue();
   });
@@ -920,7 +920,7 @@ try {
   loadingPage.on('pageerror', error => failures.push(error.message));
   let releaseAsset;
   const heldAsset = new Promise(resolve => { releaseAsset = resolve; });
-  await loadingPage.route('**/suiren-after-fire-v3.png', async route => { await heldAsset; await route.continue(); });
+  await loadingPage.route('**/suiren-after-fire-v3.webp', async route => { await heldAsset; await route.continue(); });
   await loadingPage.goto(`${atlasUrl}#world`);
   await loadingPage.getByRole('button', { name: '02 三皇五氏', exact: true }).click();
   await loadingPage.locator('.story-animation[data-status="loading"]').waitFor();

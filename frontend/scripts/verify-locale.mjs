@@ -58,7 +58,7 @@ try {
   for (const [width, height] of [[1440, 1000], [390, 844], [320, 700], [844, 390]]) {
     const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce' });
     const page = await context.newPage();
-    page.on('pageerror', error => errors.push(error.message));
+    page.on('pageerror', error => errors.push(error.stack || error.message));
     page.on('response', response => {
       if (response.status() >= 400 && !response.url().endsWith('/api/world')) errors.push(response.url());
     });
@@ -74,6 +74,22 @@ try {
     assert.equal(await page.locator('html').getAttribute('lang'), 'en');
     assert.ok((await page.title()).startsWith('Shanhai Atlas'));
     assert.equal(await page.locator('.language-switch button[aria-pressed="true"]').textContent(), 'EN');
+
+    if (width === 1440) {
+      const waves = page.locator('.seal .mark-waves');
+      await page.mouse.move(800, 900);
+      assert.equal(await waves.evaluate(element => getComputedStyle(element).animationName), 'none');
+      await page.emulateMedia({ reducedMotion: 'no-preference' });
+      await page.locator('.myth-header>a').hover();
+      assert.equal(await waves.evaluate(element => getComputedStyle(element).animationName), 'mark-tide');
+      await page.mouse.move(800, 900);
+      assert.equal(await waves.evaluate(element => getComputedStyle(element).animationName), 'none');
+      await page.locator('.myth-header>a').focus();
+      assert.equal(await waves.evaluate(element => getComputedStyle(element).animationName), 'mark-tide');
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      assert.equal(await waves.evaluate(element => getComputedStyle(element).animationName), 'none');
+      await page.locator('.myth-header>a').blur();
+    }
 
     for (let chapter = 0; chapter < 8; chapter++) {
       await page.locator('.timeline-steps button').nth(chapter).click();
@@ -138,7 +154,7 @@ try {
     console.log('PASS: bilingual content, search, persistence and layout at ' + width + 'x' + height);
   }
   const motionPage = await browser.newPage({ viewport: { width: 1366, height: 768 } });
-  motionPage.on('pageerror', error => errors.push(error.message));
+  motionPage.on('pageerror', error => errors.push(error.stack || error.message));
   await motionPage.clock.install();
   await motionPage.goto(base + '/?lang=en');
   await motionPage.getByRole('button', { name: 'Pause Pangu prologue', exact: true }).waitFor();

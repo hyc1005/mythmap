@@ -64,9 +64,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-banquan.png",
+        "artwork": "stories/ch03-banquan.webp",
         "artworks": [
-          "stories/ch03-banquan.png"
+          "stories/ch03-banquan.webp"
         ],
         "layout_hint": [
           300,
@@ -136,9 +136,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-zhuolu.png",
+        "artwork": "stories/ch03-zhuolu.webp",
         "artworks": [
-          "stories/ch03-zhuolu.png"
+          "stories/ch03-zhuolu.webp"
         ],
         "layout_hint": [
           520,
@@ -201,9 +201,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-xingtian.png",
+        "artwork": "stories/ch03-xingtian.webp",
         "artworks": [
-          "stories/ch03-xingtian.png"
+          "stories/ch03-xingtian.webp"
         ],
         "layout_hint": [
           740,
@@ -270,9 +270,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-jingwei.png",
+        "artwork": "stories/ch03-jingwei.webp",
         "artworks": [
-          "stories/ch03-jingwei.png"
+          "stories/ch03-jingwei.webp"
         ],
         "layout_hint": [
           900,
@@ -336,9 +336,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-kuafu.png",
+        "artwork": "stories/ch03-kuafu.webp",
         "artworks": [
-          "stories/ch03-kuafu.png"
+          "stories/ch03-kuafu.webp"
         ],
         "layout_hint": [
           1010,

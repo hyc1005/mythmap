@@ -50,9 +50,9 @@
           490,
           405
         ],
-        "artwork": "characters/fuxi.png",
+        "artwork": "characters/fuxi.webp",
         "artworks": [
-          "characters/fuxi.png"
+          "characters/fuxi.webp"
         ],
         "location_label": "叙事锚点·示意",
         "presentation": "story",
@@ -109,10 +109,10 @@
           610,
           330
         ],
-        "artwork": "characters/fuxi.png",
+        "artwork": "characters/fuxi.webp",
         "artworks": [
-          "characters/fuxi.png",
-          "nuwa.png"
+          "characters/fuxi.webp",
+          "nuwa.webp"
         ],
         "location_label": "叙事锚点·示意",
         "presentation": "archive",
@@ -222,9 +222,9 @@
           500,
           555
         ],
-        "artwork": "characters/suiren.png",
+        "artwork": "characters/suiren.webp",
         "artworks": [
-          "characters/suiren.png"
+          "characters/suiren.webp"
         ],
         "location_label": "叙事锚点·示意",
         "presentation": "story",
@@ -277,9 +277,9 @@
           720,
           555
         ],
-        "artwork": "characters/youchao.png",
+        "artwork": "characters/youchao.webp",
         "artworks": [
-          "characters/youchao.png"
+          "characters/youchao.webp"
         ],
         "location_label": "叙事锚点·示意",
         "presentation": "story",

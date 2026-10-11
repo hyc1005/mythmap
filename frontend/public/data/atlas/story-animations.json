@@ -33,7 +33,7 @@
       "name": "精卫填海",
       "duration_ms": 18000,
       "sheet": {
-        "url": "/data/atlas/myth-icons/animations/jingwei-flight.png",
+        "url": "/data/atlas/myth-icons/animations/jingwei-flight.webp",
         "frames": [
           [
             43,
@@ -268,7 +268,7 @@
         }
       ],
       "sheet": {
-        "url": "/data/atlas/myth-icons/animations/suiren-after-fire-v3.png",
+        "url": "/data/atlas/myth-icons/animations/suiren-after-fire-v3.webp",
         "frames": [[0,0,512,512],[512,0,512,512],[1024,0,512,512],[0,512,512,512],[512,512,512,512],[1024,512,512,512]]
       },
       "follow_camera": false
@@ -369,7 +369,7 @@
       "kind": "migration",
       "duration_ms": 14000,
       "source_event_id": "06-03",
-      "actor_art": "stories/ch06-shaokang.png",
+      "actor_art": "stories/ch06-shaokang.webp",
       "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/ai-gong-yuan-nian/zhs",
       "source_quote": "逃奔有虞，为之庖正……而邑诸纶……以收夏众，抚其官职。",
       "note": "节点仅表示原文叙述阶段；连接线不表示真实迁徙路线或距离。",
@@ -440,9 +440,9 @@
         ]
       ],
       "scene_artworks": [
-        "stories/ch07-mu-kunlun-palace.png",
-        "stories/ch07-mu-meets-xiwangmu.png",
-        "stories/ch07-yaochi-banquet.png"
+        "stories/ch07-mu-kunlun-palace.webp",
+        "stories/ch07-mu-meets-xiwangmu.webp",
+        "stories/ch07-yaochi-banquet.webp"
       ],
       "source_url": "https://ctext.org/mu-tian-zi-zhuan/juan-er/zhs",
       "source_quote": "天子升于昆仑之丘，以观黄帝之宫。……天子宾于西王母。……天子觞西王母于瑶池之上。",

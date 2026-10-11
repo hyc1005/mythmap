@@ -11,7 +11,7 @@
   "source_url": "https://ctext.org/text.pl?if=gb&node=84026",
   "sprites": {
     "run": {
-      "url": "/data/atlas/myth-icons/animations/kuafu-run.png",
+      "url": "/data/atlas/myth-icons/animations/kuafu-run.webp",
       "frames": [
         [
           0,
@@ -64,7 +64,7 @@
       ]
     },
     "actions": {
-      "url": "/data/atlas/myth-icons/animations/kuafu-actions.png",
+      "url": "/data/atlas/myth-icons/animations/kuafu-actions.webp",
       "frames": [
         [
           0,

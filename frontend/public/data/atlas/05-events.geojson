@@ -65,7 +65,7 @@
         "location_label": "多地治水·叙事锚点示意",
         "source_url": "https://zh.wikisource.org/wiki/尚書/禹貢",
         "source_review_note": "已对照网络原文核对所引正文；原报告中的孔颖达疏引语及现代学者归属未逐版复核。",
-        "artwork": "stories/ch05-yu-controls-flood.png"
+        "artwork": "stories/ch05-yu-controls-flood.webp"
       }
     },
     {
@@ -122,7 +122,7 @@
         "location_label": "相柳叙事·地点未考·示意",
         "source_url": "https://zh.wikisource.org/wiki/山海經/海外北經",
         "source_review_note": "已对照《海外北经》正文纠正原报告篇目并补全形态与相对方位；采用简体转写，昆侖写作昆仑。现代学者归属未逐版复核。",
-        "artwork": "stories/ch05-yu-xiangliu.png"
+        "artwork": "stories/ch05-yu-xiangliu.webp"
       }
     },
     {
@@ -192,7 +192,7 @@
         "location_label": "涂山·位置存争议·示意",
         "source_url": "https://zh.wikisource.org/wiki/尚書/益稷",
         "source_review_note": "已对照《益稷》正文，将原报告的予娶涂山改为予创若时，娶于涂山；采用简体转写。孔颖达疏及候选地现代研究归属未逐版复核。",
-        "artwork": "stories/ch05-yu-tushan-marriage.png"
+        "artwork": "stories/ch05-yu-tushan-marriage.webp"
       }
     },
     {
@@ -261,7 +261,7 @@
         "location_label": "嵩高山下·叙事锚点示意",
         "source_url": "https://skqs.dazhishi.com/show_bzdammpldg.html",
         "source_review_note": "已对照《汉书》卷六元封元年启母石条颜师古注核对所引正文；仍明确今本《淮南子》无此段，不标作今本直接引文。现代学者归属未逐版复核。",
-        "artwork": "stories/ch05-qimu-turns-to-stone.png"
+        "artwork": "stories/ch05-qimu-turns-to-stone.webp"
       }
     }
   ]

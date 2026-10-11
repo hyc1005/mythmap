@@ -222,6 +222,7 @@ export default function StoryAnimation({ id, map, selectedId, onSelect, onBusyCh
     if (blocked) map.getView().cancelAnimations();
     let frameId, previous, published = -Infinity;
     const paint = (time, delta = 0) => {
+      if (!map.getSize() || !features.current || !map.getTarget()) return;
        const { actor, actorTransition, payload, decorations, arrow, projectile, streaks, waves, suns, clouds, impact, waypoints: sourceWaypoints } = features.current;
       let waypoints = sourceWaypoints;
       const phase = story.phases.findLast(item => item.from_ms <= time);

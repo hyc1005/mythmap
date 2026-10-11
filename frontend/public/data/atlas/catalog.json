@@ -253,9 +253,9 @@
         "analysis_eligible": false,
         "original_geometry": null,
         "original_modern_coordinates": null,
-        "artwork": "scenes/pangu-opening.png",
+        "artwork": "scenes/pangu-opening.webp",
         "artworks": [
-          "scenes/pangu-opening.png"
+          "scenes/pangu-opening.webp"
         ],
         "map_visible": false,
         "presentation": "scene",
@@ -305,9 +305,9 @@
         "analysis_eligible": false,
         "original_geometry": null,
         "original_modern_coordinates": null,
-        "artwork": "stories/nuwa-create.png",
+        "artwork": "stories/nuwa-create.webp",
         "artworks": [
-          "stories/nuwa-create.png"
+          "stories/nuwa-create.webp"
         ],
         "layout_hint": [
           490,
@@ -373,9 +373,9 @@
         ],
         "presentation": "group",
         "map_visible": false,
-        "artwork": "stories/nuwa-repair.png",
+        "artwork": "stories/nuwa-repair.webp",
         "artworks": [
-          "stories/nuwa-repair.png"
+          "stories/nuwa-repair.webp"
         ]
       }
     },
@@ -431,9 +431,9 @@
           95,
           40
         ],
-        "artwork": "stories/gonggong.png",
+        "artwork": "stories/gonggong.webp",
         "artworks": [
-          "stories/gonggong.png"
+          "stories/gonggong.webp"
         ],
         "layout_hint": [
           385,
@@ -552,10 +552,10 @@
           610,
           330
         ],
-        "artwork": "characters/fuxi.png",
+        "artwork": "characters/fuxi.webp",
         "artworks": [
-          "characters/fuxi.png",
-          "nuwa.png"
+          "characters/fuxi.webp",
+          "nuwa.webp"
         ],
         "location_label": "叙事锚点·示意",
         "presentation": "archive",
@@ -665,9 +665,9 @@
           500,
           555
         ],
-        "artwork": "characters/suiren.png",
+        "artwork": "characters/suiren.webp",
         "artworks": [
-          "characters/suiren.png"
+          "characters/suiren.webp"
         ],
         "location_label": "叙事锚点·示意",
         "presentation": "story",
@@ -720,9 +720,9 @@
           720,
           555
         ],
-        "artwork": "characters/youchao.png",
+        "artwork": "characters/youchao.webp",
         "artworks": [
-          "characters/youchao.png"
+          "characters/youchao.webp"
         ],
         "location_label": "叙事锚点·示意",
         "presentation": "story",
@@ -790,9 +790,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-banquan.png",
+        "artwork": "stories/ch03-banquan.webp",
         "artworks": [
-          "stories/ch03-banquan.png"
+          "stories/ch03-banquan.webp"
         ],
         "layout_hint": [
           300,
@@ -862,9 +862,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-zhuolu.png",
+        "artwork": "stories/ch03-zhuolu.webp",
         "artworks": [
-          "stories/ch03-zhuolu.png"
+          "stories/ch03-zhuolu.webp"
         ],
         "layout_hint": [
           520,
@@ -927,9 +927,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-xingtian.png",
+        "artwork": "stories/ch03-xingtian.webp",
         "artworks": [
-          "stories/ch03-xingtian.png"
+          "stories/ch03-xingtian.webp"
         ],
         "layout_hint": [
           740,
@@ -996,9 +996,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-jingwei.png",
+        "artwork": "stories/ch03-jingwei.webp",
         "artworks": [
-          "stories/ch03-jingwei.png"
+          "stories/ch03-jingwei.webp"
         ],
         "layout_hint": [
           900,
@@ -1062,9 +1062,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch03-kuafu.png",
+        "artwork": "stories/ch03-kuafu.webp",
         "artworks": [
-          "stories/ch03-kuafu.png"
+          "stories/ch03-kuafu.webp"
         ],
         "layout_hint": [
           1010,
@@ -1130,9 +1130,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-gonggong-zhuanxu.png",
+        "artwork": "stories/ch04-gonggong-zhuanxu.webp",
         "artworks": [
-          "stories/ch04-gonggong-zhuanxu.png"
+          "stories/ch04-gonggong-zhuanxu.webp"
         ],
         "layout_hint": [
           260,
@@ -1187,9 +1187,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-dayi-shoots-suns.png",
+        "artwork": "stories/ch04-dayi-shoots-suns.webp",
         "artworks": [
-          "stories/ch04-dayi-shoots-suns.png"
+          "stories/ch04-dayi-shoots-suns.webp"
         ],
         "layout_hint": [
           460,
@@ -1244,9 +1244,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-change-flies-to-moon.png",
+        "artwork": "stories/ch04-change-flies-to-moon.webp",
         "artworks": [
-          "stories/ch04-change-flies-to-moon.png"
+          "stories/ch04-change-flies-to-moon.webp"
         ],
         "layout_hint": [
           720,
@@ -1313,9 +1313,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-gun-xirang.png",
+        "artwork": "stories/ch04-gun-xirang.webp",
         "artworks": [
-          "stories/ch04-gun-xirang.png"
+          "stories/ch04-gun-xirang.webp"
         ],
         "layout_hint": [
           900,
@@ -1339,7 +1339,7 @@
         "source_ids": [
           "report-04-05"
         ],
-        "basis_note": "《尚书·尧典》记尧命舜；原文未提供可用于地图定位的具体地点或方位。",
+        "basis_note": "《论语·尧曰》记尧命舜；原文未提供可用于地图定位的具体地点或方位。",
         "revision_id": "myth-atlas-2026-09-30-v1",
         "person_ids": [
           "person-8c45913efb08",
@@ -1352,11 +1352,12 @@
         "candidate_ids": [
           "04-05-candidate-1"
         ],
-        "source_text": "《尚书·尧典》（《十三经注疏》本）",
+        "source_text": "《论语·尧曰》第二十篇第一章",
+        "source_url": "https://tct.gov.taipei/News_Content.aspx?n=F1FEADA96EEB06A9&s=86BA18F740A48A92&sms=1BFF1C3B655A6D49",
         "source_quote": "尧曰：'咨！尔舜！天之历数在尔躬，允执其中。四海困穷，天禄永终。'舜亦以命禹。",
-        "commentary": "孔颖达疏：'尧禅位于舜。'原文未载具体地点。",
+        "commentary": "引文出自《论语·尧曰》20.1，叙尧命舜、舜命禹；原文未载具体地点。",
         "modern_identification": "传统认为尧都平阳（今山西临汾）；舜都蒲坂（今山西永济）。尧都、舜都具体位置有争议。",
-        "modern_source": "孔颖达《尚书正义》（十三经注疏）",
+        "modern_source": "尧都平阳、舜都蒲坂为传统说法，现代地望归属仍待核对。",
         "dispute": "尧都、舜都具体位置有争议。",
         "category": "五帝神话",
         "tags": [
@@ -1383,9 +1384,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-yao-shun.png",
+        "artwork": "stories/ch04-yao-shun.webp",
         "artworks": [
-          "stories/ch04-yao-shun.png"
+          "stories/ch04-yao-shun.webp"
         ],
         "layout_hint": [
           1050,
@@ -1456,7 +1457,7 @@
         "location_label": "多地治水·叙事锚点示意",
         "source_url": "https://zh.wikisource.org/wiki/尚書/禹貢",
         "source_review_note": "已对照网络原文核对所引正文；原报告中的孔颖达疏引语及现代学者归属未逐版复核。",
-        "artwork": "stories/ch05-yu-controls-flood.png"
+        "artwork": "stories/ch05-yu-controls-flood.webp"
       }
     },
     {
@@ -1513,7 +1514,7 @@
         "location_label": "相柳叙事·地点未考·示意",
         "source_url": "https://zh.wikisource.org/wiki/山海經/海外北經",
         "source_review_note": "已对照《海外北经》正文纠正原报告篇目并补全形态与相对方位；采用简体转写，昆侖写作昆仑。现代学者归属未逐版复核。",
-        "artwork": "stories/ch05-yu-xiangliu.png"
+        "artwork": "stories/ch05-yu-xiangliu.webp"
       }
     },
     {
@@ -1583,7 +1584,7 @@
         "location_label": "涂山·位置存争议·示意",
         "source_url": "https://zh.wikisource.org/wiki/尚書/益稷",
         "source_review_note": "已对照《益稷》正文，将原报告的予娶涂山改为予创若时，娶于涂山；采用简体转写。孔颖达疏及候选地现代研究归属未逐版复核。",
-        "artwork": "stories/ch05-yu-tushan-marriage.png"
+        "artwork": "stories/ch05-yu-tushan-marriage.webp"
       }
     },
     {
@@ -1652,7 +1653,7 @@
         "location_label": "嵩高山下·叙事锚点示意",
         "source_url": "https://skqs.dazhishi.com/show_bzdammpldg.html",
         "source_review_note": "已对照《汉书》卷六元封元年启母石条颜师古注核对所引正文；仍明确今本《淮南子》无此段，不标作今本直接引文。现代学者归属未逐版复核。",
-        "artwork": "stories/ch05-qimu-turns-to-stone.png"
+        "artwork": "stories/ch05-qimu-turns-to-stone.webp"
       }
     },
     {
@@ -1717,7 +1718,7 @@
           250
         ],
         "location_label": "鉏、穷石·位置存争议·示意",
-        "artwork": "stories/ch06-houyi-youqiong.png",
+        "artwork": "stories/ch06-houyi-youqiong.webp",
         "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
         "source_review_note": "已对照《左传·襄公四年》网络原文核对正文节引；杜注、孔疏及现代考证未逐版本复核。"
       }
@@ -1783,7 +1784,7 @@
           540
         ],
         "location_label": "寒国·位置存争议·示意",
-        "artwork": "stories/ch06-hanzhuo.png",
+        "artwork": "stories/ch06-hanzhuo.webp",
         "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
         "source_review_note": "已对照《左传·襄公四年》网络原文核对正文节引；寒国现代位置仍有争议。"
       }
@@ -1850,7 +1851,7 @@
           290
         ],
         "location_label": "有仍、有虞、纶·迁徙叙事示意",
-        "artwork": "stories/ch06-shaokang.png",
+        "artwork": "stories/ch06-shaokang.webp",
         "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/ai-gong-yuan-nian/zhs",
         "source_review_note": "已对照《左传·哀公元年》底本网络文本核对节引；有仍、有虞、纶不连接为确定现代路线。"
       }
@@ -1916,7 +1917,7 @@
           530
         ],
         "location_label": "夏台·位置存争议·示意",
-        "artwork": "stories/ch06-chengtang-xiatai.png",
+        "artwork": "stories/ch06-chengtang-xiatai.webp",
         "source_url": "https://ctext.org/text.pl?if=gb&node=4538&remap=gb&show=parallel",
         "source_review_note": "已核对《史记·夏本纪》对应节引；夏台现代定位仍有争议。"
       }
@@ -1982,7 +1983,7 @@
           270
         ],
         "location_label": "空桑·位置存争议·示意",
-        "artwork": "stories/ch06-yiyin-kongsang.png",
+        "artwork": "stories/ch06-yiyin-kongsang.webp",
         "source_url": "https://ctext.org/lv-shi-chun-qiu/ben-wei/zh",
         "source_review_note": "已对照《吕氏春秋·本味》网络原文校正引文与引号；版本间字形、句读可能有异。"
       }
@@ -2044,7 +2045,7 @@
           180,
           540
         ],
-        "artwork": "stories/ch07-mu-kunlun-palace.png"
+        "artwork": "stories/ch07-mu-kunlun-palace.webp"
       }
     },
     {
@@ -2105,7 +2106,7 @@
           610,
           170
         ],
-        "artwork": "stories/ch07-mu-meets-xiwangmu.png"
+        "artwork": "stories/ch07-mu-meets-xiwangmu.webp"
       }
     },
     {
@@ -2165,7 +2166,7 @@
           780,
           575
         ],
-        "artwork": "stories/ch07-yaochi-banquet.png"
+        "artwork": "stories/ch07-yaochi-banquet.webp"
       }
     },
     {
@@ -2222,7 +2223,7 @@
           1030,
           260
         ],
-        "artwork": "stories/ch07-yan-mountain-inscription.png"
+        "artwork": "stories/ch07-yan-mountain-inscription.webp"
       }
     },
     {
@@ -2592,9 +2593,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/nuwa-repair.png",
+        "artwork": "stories/nuwa-repair.webp",
         "artworks": [
-          "stories/nuwa-repair.png"
+          "stories/nuwa-repair.webp"
         ],
         "parent_event_id": "01-03",
         "layout_hint": [
@@ -2650,9 +2651,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/nuwa-pillars.png",
+        "artwork": "stories/nuwa-pillars.webp",
         "artworks": [
-          "stories/nuwa-pillars.png"
+          "stories/nuwa-pillars.webp"
         ],
         "parent_event_id": "01-03",
         "layout_hint": [
@@ -2708,9 +2709,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/nuwa-dragon.png",
+        "artwork": "stories/nuwa-dragon.webp",
         "artworks": [
-          "stories/nuwa-dragon.png"
+          "stories/nuwa-dragon.webp"
         ],
         "parent_event_id": "01-03",
         "layout_hint": [
@@ -2766,9 +2767,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/nuwa-water.png",
+        "artwork": "stories/nuwa-water.webp",
         "artworks": [
-          "stories/nuwa-water.png"
+          "stories/nuwa-water.webp"
         ],
         "parent_event_id": "01-03",
         "layout_hint": [
@@ -4535,13 +4536,13 @@
     },
     {
       "id": "report-04-05",
-      "title": "《尚书·尧典》（《十三经注疏》本）",
+      "title": "《论语·尧曰》第二十篇第一章",
       "quote": "尧曰：'咨！尔舜！天之历数在尔躬，允执其中。四海困穷，天禄永终。'舜亦以命禹。",
-      "commentary": "孔颖达疏：'尧禅位于舜。'原文未载具体地点。",
-      "modern_source": "孔颖达《尚书正义》（十三经注疏）",
-      "url": null,
-      "verification_status": "report_imported",
-      "note": "报告引文与现代学者归属须逐条对照版本；网络原文入口仅用于复核。"
+      "commentary": "引文出自《论语·尧曰》20.1，叙尧命舜、舜命禹；原文未载具体地点。",
+      "modern_source": "尧都平阳、舜都蒲坂为传统说法，现代地望归属仍待核对。",
+      "url": "https://tct.gov.taipei/News_Content.aspx?n=F1FEADA96EEB06A9&s=86BA18F740A48A92&sms=1BFF1C3B655A6D49",
+      "verification_status": "quote_verified",
+      "note": "已对照台北孔庙《论语·尧曰》原文核对引文出处；现代地望与注疏归属仍须另行复核。"
     },
     {
       "id": "report-05-01",

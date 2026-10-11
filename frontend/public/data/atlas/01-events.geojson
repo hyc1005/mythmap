@@ -46,9 +46,9 @@
         "analysis_eligible": false,
         "original_geometry": null,
         "original_modern_coordinates": null,
-        "artwork": "stories/nuwa-create.png",
+        "artwork": "stories/nuwa-create.webp",
         "artworks": [
-          "stories/nuwa-create.png"
+          "stories/nuwa-create.webp"
         ],
         "layout_hint": [
           490,
@@ -114,9 +114,9 @@
         ],
         "presentation": "group",
         "map_visible": false,
-        "artwork": "stories/nuwa-repair.png",
+        "artwork": "stories/nuwa-repair.webp",
         "artworks": [
-          "stories/nuwa-repair.png"
+          "stories/nuwa-repair.webp"
         ]
       }
     },
@@ -172,9 +172,9 @@
           95,
           40
         ],
-        "artwork": "stories/gonggong.png",
+        "artwork": "stories/gonggong.webp",
         "artworks": [
-          "stories/gonggong.png"
+          "stories/gonggong.webp"
         ],
         "layout_hint": [
           385,
@@ -233,9 +233,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/nuwa-repair.png",
+        "artwork": "stories/nuwa-repair.webp",
         "artworks": [
-          "stories/nuwa-repair.png"
+          "stories/nuwa-repair.webp"
         ],
         "parent_event_id": "01-03",
         "layout_hint": [
@@ -291,9 +291,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/nuwa-pillars.png",
+        "artwork": "stories/nuwa-pillars.webp",
         "artworks": [
-          "stories/nuwa-pillars.png"
+          "stories/nuwa-pillars.webp"
         ],
         "parent_event_id": "01-03",
         "layout_hint": [
@@ -349,9 +349,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/nuwa-dragon.png",
+        "artwork": "stories/nuwa-dragon.webp",
         "artworks": [
-          "stories/nuwa-dragon.png"
+          "stories/nuwa-dragon.webp"
         ],
         "parent_event_id": "01-03",
         "layout_hint": [
@@ -407,9 +407,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/nuwa-water.png",
+        "artwork": "stories/nuwa-water.webp",
         "artworks": [
-          "stories/nuwa-water.png"
+          "stories/nuwa-water.webp"
         ],
         "parent_event_id": "01-03",
         "layout_hint": [

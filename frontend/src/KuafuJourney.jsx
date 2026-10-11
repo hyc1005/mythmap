@@ -176,6 +176,8 @@ export default function KuafuJourney({ map, selectedId, onSelect, onBusyChange, 
     if (!sprites || !features.current || error) return;
     let frameId, previous;
     const paint = (time, delta = 0) => {
+      const mapSize = map.getSize();
+      if (!mapSize || !features.current || !map.getTarget()) return;
       const phase = phases.find(item => time < item.to_ms) || phases.at(-1);
       const ratio = Math.max(0, Math.min(1, (time - phase.from_ms) / (phase.to_ms - phase.from_ms)));
       const motionRatio = phase.action === 'tired' ? 1 - (1 - ratio) ** 2 : ratio;
@@ -184,7 +186,7 @@ export default function KuafuJourney({ map, selectedId, onSelect, onBusyChange, 
       const step = Math.floor(phase.length * ratio / (resolution * 46) * sprites.run.length) % sprites.run.length;
       const actionIndex = { drink: 0, tired: 1, collapse: 2, forest: 3 }[phase.action];
       const sprite = phase.action === 'run' ? sprites.run[step] : sprites.actions[actionIndex];
-      const size = Math.max(48, Math.min(78, map.getSize()[1] * .18));
+      const size = Math.max(48, Math.min(78, mapSize[1] * .18));
       sprite.setScale(size / 160 * (phase.action === 'forest' ? .5 + .5 * ratio : 1));
       sprite.setOpacity(phase.action === 'forest' ? .4 + .6 * ratio : 1);
       const { actor, sun, ghost, trail, ripples } = features.current;

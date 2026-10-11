@@ -60,9 +60,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-gonggong-zhuanxu.png",
+        "artwork": "stories/ch04-gonggong-zhuanxu.webp",
         "artworks": [
-          "stories/ch04-gonggong-zhuanxu.png"
+          "stories/ch04-gonggong-zhuanxu.webp"
         ],
         "layout_hint": [
           260,
@@ -117,9 +117,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-dayi-shoots-suns.png",
+        "artwork": "stories/ch04-dayi-shoots-suns.webp",
         "artworks": [
-          "stories/ch04-dayi-shoots-suns.png"
+          "stories/ch04-dayi-shoots-suns.webp"
         ],
         "layout_hint": [
           460,
@@ -174,9 +174,9 @@
         "original_modern_coordinates": null,
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-change-flies-to-moon.png",
+        "artwork": "stories/ch04-change-flies-to-moon.webp",
         "artworks": [
-          "stories/ch04-change-flies-to-moon.png"
+          "stories/ch04-change-flies-to-moon.webp"
         ],
         "layout_hint": [
           720,
@@ -243,9 +243,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-gun-xirang.png",
+        "artwork": "stories/ch04-gun-xirang.webp",
         "artworks": [
-          "stories/ch04-gun-xirang.png"
+          "stories/ch04-gun-xirang.webp"
         ],
         "layout_hint": [
           900,
@@ -269,7 +269,7 @@
         "source_ids": [
           "report-04-05"
         ],
-        "basis_note": "《尚书·尧典》记尧命舜；原文未提供可用于地图定位的具体地点或方位。",
+        "basis_note": "《论语·尧曰》记尧命舜；原文未提供可用于地图定位的具体地点或方位。",
         "revision_id": "myth-atlas-2026-09-30-v1",
         "person_ids": [
           "person-8c45913efb08",
@@ -282,11 +282,12 @@
         "candidate_ids": [
           "04-05-candidate-1"
         ],
-        "source_text": "《尚书·尧典》（《十三经注疏》本）",
+        "source_text": "《论语·尧曰》第二十篇第一章",
+        "source_url": "https://tct.gov.taipei/News_Content.aspx?n=F1FEADA96EEB06A9&s=86BA18F740A48A92&sms=1BFF1C3B655A6D49",
         "source_quote": "尧曰：'咨！尔舜！天之历数在尔躬，允执其中。四海困穷，天禄永终。'舜亦以命禹。",
-        "commentary": "孔颖达疏：'尧禅位于舜。'原文未载具体地点。",
+        "commentary": "引文出自《论语·尧曰》20.1，叙尧命舜、舜命禹；原文未载具体地点。",
         "modern_identification": "传统认为尧都平阳（今山西临汾）；舜都蒲坂（今山西永济）。尧都、舜都具体位置有争议。",
-        "modern_source": "孔颖达《尚书正义》（十三经注疏）",
+        "modern_source": "尧都平阳、舜都蒲坂为传统说法，现代地望归属仍待核对。",
         "dispute": "尧都、舜都具体位置有争议。",
         "category": "五帝神话",
         "tags": [
@@ -313,9 +314,9 @@
         ],
         "presentation": "story",
         "map_visible": true,
-        "artwork": "stories/ch04-yao-shun.png",
+        "artwork": "stories/ch04-yao-shun.webp",
         "artworks": [
-          "stories/ch04-yao-shun.png"
+          "stories/ch04-yao-shun.webp"
         ],
         "layout_hint": [
           1050,

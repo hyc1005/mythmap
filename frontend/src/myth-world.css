@@ -35,7 +35,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .myth-header nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 24px; font-size: 14px; }
 .myth-header nav a { padding: 6px 0; color: #66553d; text-decoration: none; border-bottom: 1px solid transparent; }
 .myth-header nav a:hover { color: #9e4935; border-bottom-color: #9e4935; }
-.seal { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid #a44431; color: #a44431; font-size: 22px; }
+.seal { display: grid; width: 32px; height: 32px; place-items: center; color: #a44431; font-size: 22px; }
 .chapter-number { color: #916340; font-size: 12px; letter-spacing: 3px; }
 
 .world-layout { --myth-map-height: 480px; --myth-timeline-height: 150px; display: grid; grid-template-columns: minmax(210px, 270px) minmax(0, 1fr); align-items: start; gap: clamp(18px, 3vw, 42px); padding: 12px clamp(18px, 4vw, 68px); }
@@ -429,4 +429,17 @@ html[lang='en'] .journey-actions { flex-wrap: wrap; }
   html[lang='en'] .ink-hover-card { height: auto; min-height: 125px; }
   html[lang='en'] .is-short-map .ink-hover-card { min-height: 0; height: 145px; }
   html[lang='en'] .is-map-fullscreen .ink-hover-card { min-height: 0; height: 100%; }
+}
+
+.seal { flex: 0 0 auto; }
+.seal svg { display: block; width: 100%; height: 100%; overflow: visible; }
+@keyframes mark-tide { 50% { transform: translateX(1.3px); } }
+@keyframes mark-dawn { 50% { transform: translateY(-1.5px); } }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .myth-header>a:hover .mark-waves { animation: mark-tide 2.4s ease-in-out infinite; }
+  .myth-header>a:hover .mark-sun { animation: mark-dawn 2.4s ease-in-out infinite; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .myth-header>a:focus-visible .mark-waves { animation: mark-tide 2.4s ease-in-out infinite; }
+  .myth-header>a:focus-visible .mark-sun { animation: mark-dawn 2.4s ease-in-out infinite; }
 }

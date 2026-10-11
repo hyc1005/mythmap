@@ -80,7 +80,7 @@
     {
       "id": "beast-shengsheng",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-shengsheng.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-shengsheng.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《南山经》",
@@ -89,7 +89,7 @@
     {
       "id": "beast-lushu",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-lushu.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-lushu.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《南山经》",
@@ -98,7 +98,7 @@
     {
       "id": "beast-jiuweihu",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-jiuweihu.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-jiuweihu.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; redesigned; visual and alpha checked",
       "source_chapter": "《南山经》",
@@ -119,7 +119,7 @@
     {
       "id": "beast-boyi",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-boyi.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-boyi.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《南山经》",
@@ -128,7 +128,7 @@
     {
       "id": "beast-xuangui",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-xuangui.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-xuangui.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; redesigned; visual and alpha checked",
       "source_chapter": "《南山经》",
@@ -140,7 +140,7 @@
     {
       "id": "beast-gudiao",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-gudiao.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-gudiao.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《南山经》",
@@ -149,7 +149,7 @@
     {
       "id": "beast-tian-gou",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-tian-gou.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-tian-gou.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《西山经》",
@@ -167,7 +167,7 @@
     {
       "id": "beast-zheng",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-zheng.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-zheng.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《西山经》",
@@ -176,7 +176,7 @@
     {
       "id": "beast-qiongqi-hainei",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-qiongqi-hainei.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-qiongqi-hainei.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; redesigned; visual and alpha checked",
       "source_chapter": "《海内北经》",
@@ -188,7 +188,7 @@
     {
       "id": "beast-qiongqi-xishan",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-qiongqi-xishan.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-qiongqi-xishan.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; redesigned; visual and alpha checked",
       "source_chapter": "《西山经》",
@@ -200,7 +200,7 @@
     {
       "id": "beast-dangkang",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-dangkang.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-dangkang.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《东山经》",
@@ -217,8 +217,8 @@
     },
     {
       "id": "beast-yingzhao",
-      "source": "frontend\\public\\data\\atlas\\myth-icons\\yingzhao.png",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\yingzhao.png",
+      "source": "frontend\\public\\data\\atlas\\myth-icons\\yingzhao.webp",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\yingzhao.webp",
       "tool": "existing project illustration",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《西山经》",
@@ -226,8 +226,8 @@
     },
     {
       "id": "beast-luwu",
-      "source": "frontend\\public\\data\\atlas\\myth-icons\\luwu.png",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\luwu.png",
+      "source": "frontend\\public\\data\\atlas\\myth-icons\\luwu.webp",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\luwu.webp",
       "tool": "existing project illustration",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《西山经》",
@@ -236,7 +236,7 @@
     {
       "id": "beast-tulou",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-tulou.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-tulou.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《西山经》",
@@ -254,7 +254,7 @@
     {
       "id": "beast-wenyaoyu",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-wenyaoyu.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-wenyaoyu.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; redesigned; visual and alpha checked",
       "source_chapter": "《西山经》",
@@ -266,7 +266,7 @@
     {
       "id": "beast-guan",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-guan.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-guan.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《西山经》",
@@ -283,8 +283,8 @@
     },
     {
       "id": "beast-jingwei",
-      "source": "frontend\\public\\data\\atlas\\myth-icons\\jingwei.png",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\jingwei.png",
+      "source": "frontend\\public\\data\\atlas\\myth-icons\\jingwei.webp",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\jingwei.webp",
       "tool": "existing project illustration",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《北山经》",
@@ -293,7 +293,7 @@
     {
       "id": "beast-fei",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-fei.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-fei.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《东山经》",
@@ -302,7 +302,7 @@
     {
       "id": "beast-zhu-jian",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-zhu-jian.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-zhu-jian.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《北山经》",
@@ -311,7 +311,7 @@
     {
       "id": "beast-qiangliang",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-qiangliang.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-qiangliang.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《大荒北经》",
@@ -320,7 +320,7 @@
     {
       "id": "beast-zhulong",
       "source": "built-in image_gen edit based on previous illustration; saved directly over project asset",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\zhulong.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\zhulong.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "source_chapter": "《山海经·海外北经》；又见《大荒北经》",
@@ -328,15 +328,15 @@
       "source_url": "https://ctext.org/shan-hai-jing/da-huang-bei-jing/zh",
       "initial_prompt": "Make a decisive redesign of the attached Zhulong woodblock illustration. Do NOT preserve its current delicate face, flame-like head tufts, or thin elegant pose. The figure must still match the Shan Hai Jing quote exactly in basic anatomy: one immense red SERPENT body and one unmistakably HUMAN face, no animal muzzle. Build a thick, heavy, powerful snake body occupying most of the vertical canvas: two massive tightly readable coils in the lower two thirds, then a broad muscular neck rising straight up to a large head. Give the face a mature masculine, square-jawed, commanding look with furrowed brows, direct steady eyes, and a short dense dark beard; dignified and fearsome, like an ancient sovereign. Make the snake's body dark cinnabar red with rough charcoal scales and strong ivory underside cuts. Strong woodcut chiaroscuro between the eyes and coils evokes 'its shut eyes bring darkness; its gaze brings brightness' without adding celestial objects. Keep the exact rough antique Chinese carved-print style of the reference. True transparent background and full silhouette safely within generous margins. Absolutely no horns, antlers, crest, flame-shaped hair, wings, limbs, claws, crown, jewelry, armor, costume, landscape, halo, glow, extra creatures, text or map. Strong, broad, heavy, unmistakably majestic and intimidating rather than graceful or feminine.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/terrain/peak.png"
+        "frontend/public/data/atlas/myth-icons/terrain/peak.webp"
       ],
       "visual_review_note": "重绘后为赤色蛇身与人面，粗壮盘绕、威严直视；无角、翅、爪或肢体。",
       "alpha_review": "RGBA PNG; all four corners transparent; silhouette visually reviewed"
     },
     {
       "id": "beast-xiangliu",
-      "source": "frontend\\public\\data\\atlas\\myth-icons\\xiangliu.png",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\xiangliu.png",
+      "source": "frontend\\public\\data\\atlas\\myth-icons\\xiangliu.webp",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\xiangliu.webp",
       "tool": "existing project illustration",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《大荒北经》",
@@ -345,7 +345,7 @@
     {
       "id": "beast-kaiming",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-kaiming.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-kaiming.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《海内西经》",
@@ -354,7 +354,7 @@
     {
       "id": "beast-dijiang",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-dijiang.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-dijiang.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; redesigned; visual and alpha checked",
       "source_chapter": "《西山经》",
@@ -366,7 +366,7 @@
     {
       "id": "beast-luoyu",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-luoyu.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-luoyu.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《西山经》",
@@ -375,7 +375,7 @@
     {
       "id": "beast-phoenix",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-phoenix.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-phoenix.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《南山经》",
@@ -384,7 +384,7 @@
     {
       "id": "beast-heyu",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-heyu.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\beasts\\beast-heyu.webp",
       "tool": "built-in image_gen",
       "status": "quote-linked; image visually reviewed",
       "source_chapter": "《东山经》",
@@ -393,14 +393,14 @@
     {
       "id": "terrain-peak",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\terrain\\peak.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\terrain\\peak.webp",
       "tool": "built-in image_gen",
       "status": "transparent cutout; woodblock style reviewed"
     },
     {
       "id": "terrain-ridge",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\terrain\\ridge.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\terrain\\ridge.webp",
       "tool": "built-in image_gen",
       "status": "transparent cutout; woodblock style reviewed"
     },
@@ -414,7 +414,7 @@
     {
       "id": "story-fuxi",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\characters\\fuxi.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\characters\\fuxi.webp",
       "tool": "built-in image_gen",
       "status": "transparent cutout; woodblock style reviewed"
     },
@@ -428,14 +428,14 @@
     {
       "id": "story-suiren",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\characters\\suiren.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\characters\\suiren.webp",
       "tool": "built-in image_gen",
       "status": "transparent cutout; woodblock style reviewed"
     },
     {
       "id": "story-youchao",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\characters\\youchao.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\characters\\youchao.webp",
       "tool": "built-in image_gen",
       "status": "transparent cutout; woodblock style reviewed"
     },
@@ -443,7 +443,7 @@
       "id": "pangu-scene",
       "event_id": "01-01",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
+      "destination": "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
         "frontend/artwork-source/archived/pangu.png"
@@ -456,10 +456,10 @@
       "id": "nuwa-create",
       "event_id": "01-02",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-create.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-create.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
-        "nuwa.png"
+        "nuwa.webp"
       ],
       "transparent": true,
       "status": "visual_reviewed",
@@ -469,10 +469,10 @@
       "id": "nuwa-repair",
       "event_id": "01-03-a",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-repair.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-repair.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
-        "nuwa.png"
+        "nuwa.webp"
       ],
       "transparent": true,
       "status": "visual_reviewed",
@@ -482,10 +482,10 @@
       "id": "nuwa-pillars",
       "event_id": "01-03-b",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-pillars.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-pillars.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
-        "nuwa.png"
+        "nuwa.webp"
       ],
       "transparent": true,
       "status": "visual_reviewed",
@@ -495,10 +495,10 @@
       "id": "nuwa-dragon",
       "event_id": "01-03-c",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-dragon.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-dragon.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
-        "nuwa.png"
+        "nuwa.webp"
       ],
       "transparent": true,
       "status": "visual_reviewed",
@@ -508,10 +508,10 @@
       "id": "nuwa-water",
       "event_id": "01-03-d",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-water.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/nuwa-water.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
-        "nuwa.png"
+        "nuwa.webp"
       ],
       "transparent": true,
       "status": "visual_reviewed",
@@ -521,10 +521,10 @@
       "id": "gonggong",
       "event_id": "01-04",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/gonggong.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/gonggong.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
-        "nuwa.png",
+        "nuwa.webp",
         "frontend/artwork-source/archived/pangu.png"
       ],
       "transparent": true,
@@ -535,10 +535,10 @@
       "id": "sea-cloud",
       "event_id": null,
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/terrain/sea-cloud.png",
+      "destination": "frontend/public/data/atlas/myth-icons/terrain/sea-cloud.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
-        "terrain/ridge.png"
+        "terrain/ridge.webp"
       ],
       "transparent": true,
       "status": "visual_reviewed",
@@ -547,7 +547,7 @@
     {
       "id": "illustration-03-01",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-banquan.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-banquan.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "03-01",
@@ -556,7 +556,7 @@
     {
       "id": "illustration-03-02",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-zhuolu.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-zhuolu.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "03-02",
@@ -565,7 +565,7 @@
     {
       "id": "illustration-03-03",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-xingtian.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-xingtian.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "03-03",
@@ -574,7 +574,7 @@
     {
       "id": "illustration-03-04",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-jingwei.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-jingwei.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "03-04",
@@ -583,7 +583,7 @@
     {
       "id": "illustration-03-05",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-kuafu.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch03-kuafu.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "03-05",
@@ -592,7 +592,7 @@
     {
       "id": "illustration-04-01",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-gonggong-zhuanxu.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-gonggong-zhuanxu.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "04-01",
@@ -601,7 +601,7 @@
     {
       "id": "illustration-04-02",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-dayi-shoots-suns.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-dayi-shoots-suns.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "04-02",
@@ -610,7 +610,7 @@
     {
       "id": "illustration-04-03",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-change-flies-to-moon.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-change-flies-to-moon.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "04-03",
@@ -619,7 +619,7 @@
     {
       "id": "illustration-04-04",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-gun-xirang.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-gun-xirang.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "04-04",
@@ -628,7 +628,7 @@
     {
       "id": "illustration-04-05",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-yao-shun.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch04-yao-shun.webp",
       "tool": "built-in image_gen",
       "status": "symbolic_content_reviewed",
       "event_id": "04-05",
@@ -638,7 +638,7 @@
       "id": "illustration-05-01",
       "event_id": "05-01",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -648,8 +648,8 @@
       "source_url": "https://zh.wikisource.org/wiki/尚書/禹貢",
       "initial_prompt": "Use case: illustration-story. Create ONE new transparent-background cutout asset for event 05-01 大禹治水 in the existing Shan Hai Jing interactive atlas. Use supplied approved nuwa-create.png ONLY as woodblock style reference, NOT her serpent body or identity; peak.png for carving texture and restrained palette. Introduce Yu as a fully human adult Chinese man with a square weathered face, short dark beard, simple dark hair tied in a topknot, plain warm-ivory and parchment-ochre robe, charcoal sash and very small cinnabar cloth accent. Keep this distinctive character suitable for reuse. Show Yu working beside a small symbolic patch of curling water, holding a simple wooden digging implement and tending the soil: the literary theme is 禹敷土，随山刊木，奠高山大川. This is artistic interpretation of flood-control action, not a reconstructed site. One compact vignette, full figure and silhouette comfortably inside generous transparent margins. EXACTLY match coarse antique Chinese woodblock printing: irregular thick charcoal-black carved contours, ochre and warm ivory fills, handcut hatching and visible worn print grain, sparse cinnabar. No extra people, no riversystem map, named mountain, grand landscape, writing, labels, border, icons, crowns, modern items, glow, gradients, 3D or photorealism. Background must be real alpha transparency, not parchment rectangle or checkerboard.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/stories/nuwa-create.png",
-        "frontend/public/data/atlas/myth-icons/terrain/peak.png"
+        "frontend/public/data/atlas/myth-icons/stories/nuwa-create.webp",
+        "frontend/public/data/atlas/myth-icons/terrain/peak.webp"
       ],
       "visual_review_note": "人物、工具、水土为治水行动的艺术解释，不作复原证据；人物轮廓完整。",
       "source_quote": "禹敷土，随山刊木，奠高山大川。",
@@ -659,7 +659,7 @@
       "id": "illustration-05-02",
       "event_id": "05-02",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch05-yu-xiangliu.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch05-yu-xiangliu.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -669,7 +669,7 @@
       "source_url": "https://zh.wikisource.org/wiki/山海經/海外北經",
       "initial_prompt": "Use case: illustration-story. ONE new transparent woodblock cutout for event 05-02 禹杀相柳 in the existing Shan Hai Jing atlas. Use ch05-yu-controls-flood.png as EXACT Yu identity and print-style reference: square weathered face, dark beard, tied topknot with narrow cinnabar tie, ivory-ochre robe and dark sash. Show the same full human Yu standing beside a subdued coiled Xiangliu, with a simple unornamented tool held down in a restrained victorious posture. Symbolic action only, no invented specific killing technique. Xiangliu MUST have exactly NINE separate human-faced heads attached by nine clearly distinguishable curved necks to ONE snake body; heads are stylized human faces, NOT dragon or snake muzzles. Arrange the nine heads as a clean fan so a reviewer can count all nine without overlap: nine heads, no more and no fewer. Primary text 海外北经: 相柳者，九首人面，蛇身而青; use near-black engraved serpent scales with the smallest subdued grey-green ink hint for 青, otherwise match charcoal/ivory/ochre palette. No horns, wings, claws or legs. Compact full silhouette, generous transparent margins; keep Yu and creature complete. Coarse antique woodblock, strong uneven charcoal carved lines, worn print grain, ochre and ivory fills, very restrained cinnabar only on Yu's garment. No blood, gore, severed heads, extra figures, palace/platform, named geography, map, text, labels, borders, glow, gradients, 3D, modern objects or parchment backdrop. True alpha transparency.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png"
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp"
       ],
       "correction_prompts": [
         "Precisely correct this existing transparent woodblock cutout, preserving Yu's face, beard, topknot, clothes, pose and the charcoal/ivory/ochre rough woodblock style exactly. CRITICAL: the existing Xiangliu has ONLY SEVEN visible heads, and the text requires NINE. Replace the entire head/neck fan with exactly NINE distinct human-faced heads, each on its own serpent neck attached to the single coiled snake body. Use a very countable layout of THREE ROWS OF THREE heads, staggered but with clear transparent gaps: top row has 3 complete faces; middle row has 3 complete faces; bottom row has 3 complete faces, total 9. All nine faces must be visibly separate; no neck-only branches, hidden heads, double faces, horns, wings, claws or snake muzzles. Make the faces distinct from Yu while preserving antique Chinese engraving. Keep one snake body, subtle dark grey-green scales, no gore. Expand the transparent canvas enough for all nine heads and keep at least 6% blank transparent margin around ALL outer edges so no robe, coil or hair is cropped. Yu and snake must remain complete and readable. No text, labels, row numbers, border, background, glow, gradient, modern objects or 3D. Preserve genuine alpha transparency.",
@@ -683,7 +683,7 @@
       "id": "illustration-05-03",
       "event_id": "05-03",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -693,7 +693,7 @@
       "source_url": "https://zh.wikisource.org/wiki/尚書/益稷",
       "initial_prompt": "Use case: illustration-story. ONE new transparent woodblock cutout for event 05-03 禹娶涂山女. Reference image ch05-yu-controls-flood.png is the EXACT established Yu character and exact coarse woodblock style. Keep Yu's square weathered face, dark beard, topknot with narrow cinnabar tie, ivory-ochre robe, dark sash and same proportion. Show the same fully human Yu standing calmly beside a fully human Tushan woman, both full-length, facing slightly toward each other with a simple reserved marriage-greeting gesture. Introduce her as a recognizable adult woman with oval face, dark hair in a plain compact bun, plain ivory-ochre robe and tiny cinnabar sash; no crown or extravagant jewelry. A quiet two-figure symbolic scene only, NOT a reconstruction of a wedding ritual. Text support: 尚书·益稷 娶于涂山，辛壬癸甲. Make the silhouettes readable when reduced, with clearly separate heads and bodies. Match supplied reference EXACTLY in thick irregular charcoal carved outlines, warm ivory and aged ochre pigments, strong hand-cut grain and sparse cinnabar. Preserve generous transparent margins around complete feet, hair and garments. No fox, tails, serpent anatomy, wedding altar, invented ritual objects, children, attendants, named mountain, background scenery, paper rectangle, typography, labels, border, 3D, gradients, glow or modern objects. True alpha transparency.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png"
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp"
       ],
       "visual_review_note": "禹沿用治水形象；涂山女为人形，无九尾狐等新增意象。",
       "source_quote": "予创若时，娶于涂山，辛壬癸甲。启呱呱而泣，予弗子，惟荒度土功。",
@@ -703,7 +703,7 @@
       "id": "illustration-05-04",
       "event_id": "05-04",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch05-qimu-turns-to-stone.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch05-qimu-turns-to-stone.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -713,7 +713,7 @@
       "source_url": "https://skqs.dazhishi.com/show_bzdammpldg.html",
       "initial_prompt": "Use case: illustration-story. ONE new genuinely transparent woodblock cutout for event 05-04 启母化石 in existing Shan Hai Jing atlas. ch05-yu-tushan-marriage.png is an EXACT identity and style reference for the Tushan woman: keep her oval face, plain compact black bun, cinnabar hair tie, ivory-ochre robe and narrow cinnabar sash. Focus ONLY on Tushan becoming stone and baby Qi emerging from a fissure, based on 汉书武帝纪颜师古注: 至嵩高山下化为石，方生启；石破北方而启生. Show a compact symbolic vignette: woman's same readable human head, bun and shoulders merge into a roughly carved ochre-grey stone below, with draped robe folds becoming angular rock hatching; at the lower side a small fully clothed/swaddled newborn rests in a clearly open stone fissure. All figures fully contained. A single temporal emblem, artistic interpretation, not archaeological reconstruction. Do not represent compass direction using symbols or diagrams. Only mother-stone and newborn: no Yu, bear, mountain, palace, drum, landscape or extra figures. Match existing rough antique Chinese woodblock EXACTLY: coarse irregular charcoal carving, worn print grain, warm ivory, parchment ochre, restrained cinnabar, strong simplified silhouette at small sizes. IMPORTANT use generous empty transparent border on ALL four sides at least 8% image size; no silhouette, rock or garment touches canvas boundary. No text, labels, border, map lines, halos, fantasy particles, gradient, 3D, photorealism, modern objects, gore, nudity, paper-colored rectangular background or checkerboard. True alpha transparency.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.png"
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.webp"
       ],
       "visual_review_note": "涂山女沿用婚娶形象；母石与襁褓婴儿为化石生启的艺术解释，不定位山形。",
       "source_quote": "禹治鸿水，通轘辕山，化为熊，谓涂山氏曰：‘欲饷，闻鼓声乃来。’禹跳石，误中鼓。涂山氏往，见禹方作熊，惭而去，至嵩高山下化为石，方生启。禹曰：‘归我子。’石破北方而启生。",
@@ -723,7 +723,7 @@
       "id": "illustration-06-01",
       "event_id": "06-01",
       "source": "built-in image_gen output saved directly to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-houyi-youqiong.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-houyi-youqiong.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -733,7 +733,7 @@
       "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
       "initial_prompt": "One isolated transparent full-figure cutout for Shan Hai Jing atlas story 06-01 后羿代夏. This is Houyi the Youqiong clan chief in a Xia-era political narrative, DISTINCT from youthful Dayi the sun-shooter: mature adult man, weathered face and short beard, plain dark rust-brown hide/cloth clothing, hair tied simply, bow held lowered vertically at his side, calm leader's stance. No sun, no aiming, no battle, no palace, no map, no geography. Match supplied art's coarse hand-carved charcoal contours, worn hatching, ochre and bone ivory fills, restrained cinnabar accent; clear full silhouette, generous true transparent margins. No text, paper rectangle, glow, gradient, 3D.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png"
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp"
       ],
       "visual_review_note": "已对照《左传·襄公四年》网络原文核对正文节引；杜注、孔疏及现代考证未逐版本复核。",
       "source_quote": "昔有夏之方衰也，后羿自鉏迁于穷石，因夏民以代夏政。",
@@ -743,7 +743,7 @@
       "id": "illustration-06-02",
       "event_id": "06-02",
       "source": "built-in image_gen output saved directly to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-hanzhuo.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-hanzhuo.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -753,7 +753,7 @@
       "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/xiang-gong-si-nian/zh",
       "initial_prompt": "One isolated transparent vignette for Shan Hai Jing atlas story 06-02 寒浞之乱. Depict Han Zhuo, a stern adult rival in plain charcoal-dark robe and simple tied hair, gesturing toward a small plain wooden settlement silhouette behind him; no violence or battle. Match supplied reference only for exact coarse Chinese woodblock style: carved charcoal outlines, worn hatch, parchment ochre and bone ivory, restrained cinnabar. Full clear compact silhouette, genuine alpha transparency and generous margins. No palace, map, named geography, text, border, paper rectangle, glow, gradient or 3D.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png"
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp"
       ],
       "visual_review_note": "已对照《左传·襄公四年》网络原文核对正文节引；寒国现代位置仍有争议。",
       "source_quote": "寒浞，伯明氏之谗子弟也。伯明后寒弃之，夷羿收之，信而使之，以为己相。浞行媚于内而施赂于外，愚弄其民而虞羿于田。树之诈慝以取其国家，外内咸服。羿犹不悛，将归自田，家众杀而亨之。",
@@ -763,7 +763,7 @@
       "id": "illustration-06-03",
       "event_id": "06-03",
       "source": "built-in image_gen output saved directly to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-shaokang.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-shaokang.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -773,7 +773,7 @@
       "source_url": "https://ctext.org/chun-qiu-zuo-zhuan/ai-gong-yuan-nian/zhs",
       "initial_prompt": "Transparent woodblock print vignette for chapter 06-03 少康中兴. A young adult male Shaokang, clearly masculine face with simple cloth headband, plain ivory-ochre robes, gathering a few followers calmly; no crown, no palace, no route or geographic setting. Match supplied reference's charcoal carved contours, distressed hatch, parchment ochre and bone ivory with restrained cinnabar. Full compact silhouette, real alpha transparency, generous margins. No text, map, frame, glow, gradient, 3D.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png"
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp"
       ],
       "visual_review_note": "已对照《左传·哀公元年》底本网络文本核对节引；有仍、有虞、纶不连接为确定现代路线。",
       "source_quote": "昔有过浇杀斟灌以伐斟鄩，灭夏后相。后缗方娠，逃出自窦，归于有仍，生少康焉。为仍牧正，惎浇能戒之。浇使椒求之，逃奔有虞，为之庖正，以除其害。虞思于是妻之以二姚，而邑诸纶。有田一成，有众一旅，能布其德而兆其谋，以收夏众，抚其官职。",
@@ -783,7 +783,7 @@
       "id": "illustration-06-04",
       "event_id": "06-04",
       "source": "built-in image_gen output saved directly to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-chengtang-xiatai.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-chengtang-xiatai.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -793,7 +793,7 @@
       "source_url": "https://ctext.org/text.pl?if=gb&node=4538&remap=gb&show=parallel",
       "initial_prompt": "One isolated transparent-background cutout vignette for story 06-04 成汤囚夏台: a sober adult male Cheng Tang seated within a modest symbolic wooden enclosure, suggesting temporary detention. No chains, violence, later imperial architecture or named place. Use supplied image only as woodblock style reference: coarse charcoal contours, worn carved hatch, warm ivory and ochre, tiny cinnabar accent. Clear complete silhouette, readable small, generous alpha margins. No text, map, paper backdrop, border, glow, 3D.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png"
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp"
       ],
       "visual_review_note": "已核对《史记·夏本纪》对应节引；夏台现代定位仍有争议。",
       "source_quote": "夏桀为仍之会，有缗叛之。桀克有缗，以丧其国。桀召汤而囚之夏台，已而释之。",
@@ -803,7 +803,7 @@
       "id": "illustration-06-05",
       "event_id": "06-05",
       "source": "built-in image_gen output saved directly to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-yiyin-kongsang.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch06-yiyin-kongsang.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -813,7 +813,7 @@
       "source_url": "https://ctext.org/lv-shi-chun-qiu/ben-wei/zh",
       "initial_prompt": "One isolated transparent vignette for Shan Hai Jing atlas story 06-05 伊尹空桑, based only on the Lüshi Chunqiu Benwei passage. Show a humble woman of Youxin gathering mulberry leaves beside a naturally hollow mulberry trunk with a fully swaddled infant found inside; suggest the unusual flood story only through a small curling water line below, no dramatic disaster. Do not invent gods, baskets beyond a simple leaf bundle, or named geography. Match reference woodblock style: coarse carved charcoal ink, worn hatching, bone ivory and ochre, restrained cinnabar. Compact readable complete silhouette, true alpha transparency, generous margins. No text, map, border, background rectangle, glow, gradient, 3D.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png"
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp"
       ],
       "visual_review_note": "已对照《吕氏春秋·本味》网络原文校正引文与引号；版本间字形、句读可能有异。",
       "source_quote": "有侁氏女子采桑，得婴儿于空桑之中，献之其君。其君令烰人养之，察其所以然，曰：“其母居伊水之上，孕，梦有神告之曰：‘臼出水而东走。毋顾！’明日视臼出水，告其邻，东走十里而顾，其邑尽为水，身因化为空桑。故命之曰伊尹。”此伊尹生空桑之故也。长而贤。",
@@ -822,7 +822,7 @@
     {
       "id": "place-qingqiu",
       "source": "built-in image_gen output saved directly to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/qingqiu-mountain.png",
+      "destination": "frontend/public/data/atlas/myth-icons/qingqiu-mountain.webp",
       "tool": "built-in image_gen",
       "use_case": "place-illustration",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar and jade",
@@ -831,7 +831,7 @@
       "source_url": "https://ctext.org/shan-hai-jing/nan-shan-jing/zh",
       "initial_prompt": "Create one transparent-background antique Chinese woodblock cutout for the Shan Hai Jing place 青丘之山. Use the supplied peak.png ONLY as exact rough carved ink style reference. Depict a single distinctive mountain rising from broad stone foot to sharp but natural crest, warm parchment-ochre rock, charcoal-black carved hatching, restrained celadon and jade-green mineral seams that suggest the passage's '其阳多玉，其阴多青䨼'. At the lower front add a small but clearly countable white fox with exactly nine flowing tails, matching 南山经's description; the mountain remains the subject and the fox is a secondary textual motif. Powerful, elegant silhouette that reads when reduced. The mountain and fox are illustrative, not a real-world Qingqiu reconstruction or geographic location. Full complete contours with generous clear transparent margins, genuine alpha channel. No text, map, route, label, frame, sky rectangle, extra animals or people, built structures, glow, gradients, 3D, photorealism.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/terrain/peak.png"
+        "frontend/public/data/atlas/myth-icons/terrain/peak.webp"
       ],
       "source_quote": "又东三百里，曰青丘之山，其阳多玉，其阴多青䨼。有兽焉，其状如狐而九尾，其音如婴儿，能食人，食者不蛊。",
       "visual_review_note": "青丘山为主景；玉与青䨼为原文矿物意象，九尾狐按《南山经》条目附绘；不指向现实地理位置。",
@@ -841,7 +841,7 @@
       "id": "illustration-07-03",
       "event_id": "07-03",
       "source": "built-in image_gen output copied to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch07-mu-kunlun-palace.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch07-mu-kunlun-palace.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -852,7 +852,7 @@
       "initial_prompt": "Vertical transparent mythic woodblock cutout: an immense imagined steep Kunlun peak with a legendary ancient palace on the summit and a small tomb mound; Zhou King Mu below observing, same dark beard, crown and cinnabar robe as reference. Do not depict the Yellow Emperor as a person or claim real geography. Aged ochre, black carved ink, restrained cinnabar and celadon, strong silhouette, actual transparent alpha, no text, frame or backdrop.",
       "reference_images": [
         "local-source-redacted",
-        "frontend/public/data/atlas/myth-icons/terrain/peak.png"
+        "frontend/public/data/atlas/myth-icons/terrain/peak.webp"
       ],
       "visual_review_note": "人物身份、篇卷与关键意象已核对；画面不作路线或具体地理证据。",
       "source_quote": "天子升于昆仑之丘，以观黄帝之宫，而丰隆之葬，以诏后世。",
@@ -862,7 +862,7 @@
       "id": "illustration-07-01",
       "event_id": "07-01",
       "source": "built-in image_gen output copied to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch07-mu-meets-xiwangmu.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch07-mu-meets-xiwangmu.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -872,7 +872,7 @@
       "source_url": "https://zh.wikisource.org/zh/穆天子傳/卷三",
       "initial_prompt": "Vertical transparent Chinese woodblock cutout, two adult figures meeting formally: Zhou King Mu in dark cinnabar Zhou robes holding pale jade gui; Xi Wangmu as distinct figure in the Mu Tianzi Zhuan gloss, human form, tousled hair under simple sheng-like headdress, dignified, thoughtful, subtly ancient and uncanny. No peaches, halo, clouds, or later immortal Queen Mother stereotype. Full separated bodies, hand-carved black ink contours, aged ochre, restrained cinnabar and celadon, true transparent alpha, no text, frame or background.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/terrain/peak.png"
+        "frontend/public/data/atlas/myth-icons/terrain/peak.webp"
       ],
       "visual_review_note": "人物身份、篇卷与关键意象已核对；画面不作路线或具体地理证据。",
       "source_quote": "吉日甲子，天子宾于西王母。乃执白圭玄璧，以见西王母。",
@@ -882,7 +882,7 @@
       "id": "illustration-07-02",
       "event_id": "07-02",
       "source": "built-in image_gen output copied to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch07-yaochi-banquet.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch07-yaochi-banquet.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -902,7 +902,7 @@
       "id": "illustration-07-04",
       "event_id": "07-04",
       "source": "built-in image_gen output copied to project asset",
-      "destination": "frontend/public/data/atlas/myth-icons/stories/ch07-yan-mountain-inscription.png",
+      "destination": "frontend/public/data/atlas/myth-icons/stories/ch07-yan-mountain-inscription.webp",
       "tool": "built-in image_gen",
       "use_case": "illustration-story",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
@@ -922,9 +922,9 @@
       "id": "kuafu-run",
       "event_id": "03-05",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\animations\\kuafu-run.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\animations\\kuafu-run.webp",
       "tool": "built-in image_gen",
-      "reference": "frontend/public/data/atlas/myth-icons/stories/ch03-kuafu.png",
+      "reference": "frontend/public/data/atlas/myth-icons/stories/ch03-kuafu.webp",
       "initial_prompt": "Create ONE transparent-background animation sprite sheet for the existing Shan Hai Jing atlas. The supplied image is the approved Kuafu CHARACTER and STYLE reference: keep his muscular adult build, long black hair and black beard, bare chest, worn animal-hide skirt, cinnabar cloth ties, rough wooden staff. Exact matching rough antique Chinese woodblock print: charcoal-black hand-carved outlines, warm parchment ivory/ochre and restrained cinnabar, grainy ink and hand-cut edges. Sheet layout: precisely FOUR columns by TWO rows, EIGHT equal square cells, no visible grid lines, each cell has generous transparent margins and the same character scale, facing RIGHT, consistent full-body side/three-quarter view, no overlaps between cells. Each cell depicts successive phases of ONE physically convincing run cycle: right foot contact, recoil, passing, flight, left foot contact, recoil, passing, flight. Strong alternating legs and arms, his body leans forward, hair/cloth follow the motion, staff held consistently in one hand and tilted backward. Keep same face/costume in every frame, fixed relative feet baseline and center. Exclude the reference sun, clouds, ground, smoke and ornament entirely. NO text, numbers, labels, borders, modern things, glow, photography, 3D. Only the eight full isolated character cutouts on actual transparent alpha. Target a wide 2:1 sprite sheet.",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
       "source_chapter": "《海外北经》",
@@ -935,9 +935,9 @@
       "id": "kuafu-actions",
       "event_id": "03-05",
       "source": "local-source-redacted",
-      "destination": "frontend\\public\\data\\atlas\\myth-icons\\animations\\kuafu-actions.png",
+      "destination": "frontend\\public\\data\\atlas\\myth-icons\\animations\\kuafu-actions.webp",
       "tool": "built-in image_gen",
-      "reference": "frontend/public/data/atlas/myth-icons/stories/ch03-kuafu.png",
+      "reference": "frontend/public/data/atlas/myth-icons/stories/ch03-kuafu.webp",
       "initial_prompt": "Create one genuine transparent-alpha ACTION sprite sheet in precisely TWO columns by TWO rows, four equal cells. Match the supplied established Kuafu illustration exactly for character and rough antique Chinese woodblock style, charcoal-black carved outlines, old-paper ochre/ivory, restrained cinnabar ties, coarse ink grain. Keep the same adult muscular man, long dark hair/beard, bare chest, animal-hide skirt and wooden staff. The four isolated full-body cutouts, no scene backgrounds, generous empty margin in every equal cell: top-left: Kuafu kneels facing RIGHT and drinks from his cupped hands, staff resting beside him; top-right: SAME Kuafu facing RIGHT, fatigued and bent forward, leaning on staff; bottom-left: SAME Kuafu exhausted and seated on the ground leaning forward, staff discarded alongside, no injury or blood; bottom-right: NO person, a single discarded rough staff transitioning into a small group of two or three leafy trees, restrained symbolic 'staff becomes Deng forest'. Equal cell framing, figures fully visible and not overlapping cells, consistent scale. NO sun, waves, clouds, map, ground plane, text, numbers, grid lines, labels, border, glow, modern objects, 3D or photorealism.",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
       "source_chapter": "《海外北经》",
@@ -948,8 +948,8 @@
       "id": "jingwei-flight",
       "event_id": "03-04",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/animations/jingwei-flight.png",
-      "reference": "frontend/public/data/atlas/myth-icons/stories/ch03-jingwei.png",
+      "destination": "frontend/public/data/atlas/myth-icons/animations/jingwei-flight.webp",
+      "reference": "frontend/public/data/atlas/myth-icons/stories/ch03-jingwei.webp",
       "initial_prompt": "Create a genuinely transparent PNG animation sprite sheet for an existing Chinese Shan Hai Jing woodblock atlas. Reference image role: match exactly the Jingwei bird design and antique print style in the supplied reference, but remove ALL mountains, sea waves and clouds. Crow-like bird with patterned head, white beak and red feet, black charcoal carved outlines, warm ivory/parchment ochre feather marks, restrained cinnabar head/feet, rough hand-cut woodblock print grain. EXACTLY SIX isolated frames in a regular 3 columns by 2 rows grid, generous completely transparent gaps and margins. All birds face RIGHT, have consistent body scale and body center, full wings inside their respective cells. Top row: three sequential wingbeat poses (upstroke, halfway, downstroke) each bird carries one short twig and one small stone in its beak. Bottom row: the same three sequential wingbeat poses with EMPTY beak (return flight). Only six birds, no terrain, clouds, waves, labels, text, cell borders, shadow, glowing effects, gradients or background. Readable silhouettes at 48px marker size.\nCORRECTION: The output must have very generous transparent padding around each bird. Arrange exactly 3 columns x 2 rows, each equally sized invisible grid cell. Bird silhouette including twig must occupy at most 75% of cell width and at most 75% of cell height. NOTHING may touch or cross cell boundaries. There must be at least 60 pixels fully transparent gap between neighboring silhouettes in a 1536px-wide sheet. All frames must have the SAME body center and body size; wing motion changes the silhouette but not the body scale. Transparent background, not a dark or parchment backdrop.",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
       "source_chapter": "《山海经·北山经》（郭璞注本）",
@@ -961,7 +961,7 @@
       "event_id": "04-02",
       "source": "local-source-redacted",
       "destination": "frontend/artwork-source/archived/dayi-shoot.png",
-      "reference": "frontend/public/data/atlas/myth-icons/stories/ch04-dayi-shoots-suns.png",
+      "reference": "frontend/public/data/atlas/myth-icons/stories/ch04-dayi-shoots-suns.webp",
       "initial_prompt": "Create a PNG sprite sheet with a FULLY TRANSPARENT background for antique Chinese woodblock map animation. Supporting reference: keep the exact muscular archer design from the supplied illustration (long black hair tied with cinnabar ribbon, black beard, bare chest with ivory shoulder sash, hide skirt and red ties, bow and quiver). Remove all suns, clouds, ground, waves and background. EXACTLY FOUR full-body isolated figures in a 2 columns by 2 rows regular grid. Each figure same size, same footing and camera angle, generous blank transparent gaps. Top left preparing/nocking an arrow, top right raising bow aiming upper-right, bottom left full draw aiming upper-right, bottom right released bowstring, hand moving back, empty bow (NO flying arrow, code adds it). Match rough antique Chinese woodblock print, irregular charcoal carved outlines, worn ivory/parchment ochre, restrained cinnabar, visible grain. Only four archers, full bow and limbs contained within each cell, no text, numbers, cell borders, shadows, halos, background wash or colored haze. Background pixels must have zero alpha, including between figures. These frames will be cut out at 70px on a parchment map.",
       "style": "rough woodblock, charcoal ink, parchment ochre, restrained cinnabar",
       "source_chapter": "《淮南子·本经训》（西汉·刘安），高诱注",
@@ -973,7 +973,7 @@
       "id": "pangu-cloud-layer",
       "event_id": "01-01",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/scenes/pangu-cloud-layer.png",
+      "destination": "frontend/public/data/atlas/myth-icons/scenes/pangu-cloud-layer.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
         "pangu-opening.png"
@@ -987,7 +987,7 @@
       "id": "pangu-supporting-figure",
       "event_id": "01-01",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/scenes/pangu-supporting-figure.png",
+      "destination": "frontend/public/data/atlas/myth-icons/scenes/pangu-supporting-figure.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
         "pangu-opening.png"
@@ -1001,7 +1001,7 @@
       "id": "pangu-earth-layer",
       "event_id": "01-01",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/scenes/pangu-earth-layer.png",
+      "destination": "frontend/public/data/atlas/myth-icons/scenes/pangu-earth-layer.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
         "pangu-opening.png"
@@ -1018,7 +1018,7 @@
       "destination": "frontend/artwork-source/archived/nuwa-create-poses.png",
       "tool": "built-in image_gen",
       "reference_assets": [
-        "stories/nuwa-create.png"
+        "stories/nuwa-create.webp"
       ],
       "transparent": true,
       "status": "visual_reviewed",
@@ -1030,10 +1030,10 @@
       "id": "fuxi-trigram-cleanup",
       "event_id": "02-01",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/characters/fuxi-clean.png",
+      "destination": "frontend/public/data/atlas/myth-icons/characters/fuxi-clean.webp",
       "tool": "built-in image_gen",
       "reference_assets": [
-        "characters/fuxi.png"
+        "characters/fuxi.webp"
       ],
       "transparent": true,
       "status": "visual_reviewed",
@@ -1049,8 +1049,8 @@
       "style": "detailed Chinese woodblock print matching Pangu: carved charcoal ink, parchment ivory, aged ochre, restrained cinnabar",
       "status": "visual_reviewed",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
-        "frontend/public/data/atlas/myth-icons/characters/suiren.png"
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
+        "frontend/public/data/atlas/myth-icons/characters/suiren.webp"
       ],
       "visual_review_note": "Six aligned poses; drilling advances to a tiny ember. Transparent sprite cells are cropped at runtime so the source grid remains intact.",
       "alpha_review": "RGBA with transparent corners; composited against atlas map paper and visually reviewed.",
@@ -1067,8 +1067,8 @@
       "style": "detailed Chinese woodblock print matching Pangu: carved charcoal ink, parchment ivory, aged ochre, restrained cinnabar",
       "status": "visual_reviewed",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
-        "frontend/public/data/atlas/myth-icons/characters/suiren.png"
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
+        "frontend/public/data/atlas/myth-icons/characters/suiren.webp"
       ],
       "visual_review_note": "Six transparent fire stages, ember to full flame. Transparent sprite cells are cropped at runtime so the source grid remains intact.",
       "alpha_review": "RGBA with transparent corners; composited against atlas map paper and visually reviewed.",
@@ -1085,7 +1085,7 @@
       "style": "detailed Chinese woodblock print matching Pangu: carved charcoal ink, parchment ivory, aged ochre, restrained cinnabar",
       "status": "visual_reviewed",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
         "frontend/artwork-source/archived/dayi-shoot.png"
       ],
       "visual_review_note": "Six continuous archer poses from stance through follow-through. Transparent sprite cells are cropped at runtime so the source grid remains intact.",
@@ -1102,7 +1102,7 @@
       "style": "detailed Chinese woodblock print matching Pangu: carved charcoal ink, parchment ivory, aged ochre, restrained cinnabar",
       "status": "visual_reviewed",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
         "frontend/artwork-source/archived/dayi-shoot.png"
       ],
       "visual_review_note": "Engraved cinnabar sun disk reused for all ten suns. Transparent sprite cells are cropped at runtime so the source grid remains intact.",
@@ -1119,7 +1119,7 @@
       "style": "detailed Chinese woodblock print matching Pangu: carved charcoal ink, parchment ivory, aged ochre, restrained cinnabar",
       "status": "visual_reviewed",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
         "frontend/artwork-source/archived/dayi-shoot.png"
       ],
       "visual_review_note": "Detailed transparent cloud scroll layer. Transparent sprite cells are cropped at runtime so the source grid remains intact.",
@@ -1136,8 +1136,8 @@
       "style": "detailed Chinese woodblock print matching Pangu: carved charcoal ink, parchment ivory, aged ochre, restrained cinnabar",
       "status": "visual_reviewed",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png"
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp"
       ],
       "visual_review_note": "Four flood-control poses with consistent figure and tool. Transparent sprite cells are cropped at runtime so the source grid remains intact.",
       "alpha_review": "RGBA with transparent corners; composited against atlas map paper and visually reviewed.",
@@ -1153,8 +1153,8 @@
       "style": "detailed Chinese woodblock print matching Pangu: carved charcoal ink, parchment ivory, aged ochre, restrained cinnabar",
       "status": "visual_reviewed",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
-        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.png"
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
+        "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp"
       ],
       "visual_review_note": "Six transparent engraved wave states, surge to receding flow. Transparent sprite cells are cropped at runtime so the source grid remains intact.",
       "alpha_review": "RGBA with transparent corners; composited against atlas map paper and visually reviewed.",
@@ -1225,14 +1225,14 @@
       "id": "animation-suiren-after-fire-poses",
       "event_id": "02-04",
       "source": "local-source-redacted",
-      "destination": "frontend/public/data/atlas/myth-icons/animations/suiren-after-fire-v3.png",
+      "destination": "frontend/public/data/atlas/myth-icons/animations/suiren-after-fire-v3.webp",
       "preserved_previous_destination": "frontend/artwork-source/archived/suiren-after-fire-v2-original.webp",
       "tool": "built-in image_gen",
       "use_case": "animation-sprites",
       "initial_prompt": "Repair the six-frame 3×2 Suiren animation sheet using the approved character as strict identity reference; retain six distinct fire-making poses, clean alpha, matched scale and baseline, compact firewood, charcoal woodblock engraving, parchment ochre and restrained cinnabar.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
-        "frontend/public/data/atlas/myth-icons/characters/suiren.png"
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
+        "frontend/public/data/atlas/myth-icons/characters/suiren.webp"
       ],
       "status": "generated_for_implementation",
       "visual_review_note": "Rebuilt six sequential poses with consistent Suiren identity and verified transparent margins; enlarged the map actor and reduced standalone firewood scale after desktop and mobile composition review.",
@@ -1248,8 +1248,8 @@
       "use_case": "animation-sprites",
       "initial_prompt": "eight flame-only stages, 4x2 atlas; no logs; preserve charcoal woodblock engraving, warm parchment ochre and restrained cinnabar; reference Pangu scene and the corresponding character sheet.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
-        "frontend/public/data/atlas/myth-icons/characters/suiren.png"
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
+        "frontend/public/data/atlas/myth-icons/characters/suiren.webp"
       ],
       "status": "generated_for_implementation",
       "visual_review_note": "eight flame-only stages, 4x2 atlas; no logs",
@@ -1267,8 +1267,8 @@
       "use_case": "animation-sprites",
       "initial_prompt": "single isolated crossed tinder base, no flame; preserve charcoal woodblock engraving, warm parchment ochre and restrained cinnabar; reference Pangu scene and the corresponding character sheet.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
-        "frontend/public/data/atlas/myth-icons/characters/suiren.png"
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
+        "frontend/public/data/atlas/myth-icons/characters/suiren.webp"
       ],
       "status": "archived_not_used_in_runtime",
       "visual_review_note": "kept for provenance and comparison; runtime uses the firewood integrated into the Suiren pose sheet instead of a separately layered pile",
@@ -1285,7 +1285,7 @@
       "use_case": "animation-sprites",
       "initial_prompt": "six story poses for direct map display; preserve charcoal woodblock engraving, warm parchment ochre and restrained cinnabar; reference Pangu scene and the corresponding character sheet.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
         "frontend/artwork-source/archived/nuwa-create-poses.png"
       ],
       "status": "generated_for_implementation",
@@ -1302,7 +1302,7 @@
       "use_case": "animation-sprites",
       "initial_prompt": "single detailed horizontal Chinese woodblock-print arrow with bronze point, engraved wooden shaft and feather fletching; transparent background; match Pangu and Dayi references.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
         "frontend/public/data/atlas/myth-icons/animations/dayi-actor-poses.webp"
       ],
       "status": "generated_for_implementation",
@@ -1319,7 +1319,7 @@
       "use_case": "animation-sprites",
       "initial_prompt": "four aligned transparent sun impact states in a 2x2 atlas: warm impact flash, cracked center and restrained debris, dark aftershock, then restored stable sun; preserve existing sun design and Pangu engraving style.",
       "reference_images": [
-        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.png",
+        "frontend/public/data/atlas/myth-icons/scenes/pangu-opening.webp",
         "frontend/public/data/atlas/myth-icons/animations/dayi-sun-disk.webp"
       ],
       "status": "generated_for_implementation",

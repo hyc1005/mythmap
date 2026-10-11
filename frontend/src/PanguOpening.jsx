@@ -6,7 +6,7 @@ import { Player } from '@remotion/player';
 import { assetUrl } from './asset-url';
 
 const SCENE = assetUrl('/data/atlas/myth-icons/scenes/');
-const POSTER = `${SCENE}pangu-opening.png`;
+const POSTER = `${SCENE}pangu-opening.webp`;
 const DURATION = 390;
 
 function PanguComposition({ onAssetError }) {
@@ -24,9 +24,9 @@ function PanguComposition({ onAssetError }) {
   return <AbsoluteFill className="pangu-composition" data-frame={frame} style={{ backgroundColor: '#9e8355' }}>
     <div className="pangu-opening-light" style={{ opacity: light }} />
     <div className="pangu-chaos-haze" style={{ opacity: haze }} />
-    <Img src={`${SCENE}pangu-cloud-layer.png`} onError={onAssetError} className="pangu-layer pangu-sky-layer" style={{ transform: `translateY(${skyY}%) scale(${1 + separation * .05})` }} />
-    <Img src={`${SCENE}pangu-earth-layer.png`} onError={onAssetError} className="pangu-layer pangu-earth-layer" style={{ transform: `translateY(${groundY}%)` }} />
-    <Img src={`${SCENE}pangu-supporting-figure.png`} onError={onAssetError} className="pangu-layer pangu-person-layer" style={{ opacity: reveal, transform: `translateY(${(1 - reveal) * 9 - separation * 1.5}%) scale(${growth})` }} />
+    <Img src={`${SCENE}pangu-cloud-layer.webp`} onError={onAssetError} className="pangu-layer pangu-sky-layer" style={{ transform: `translateY(${skyY}%) scale(${1 + separation * .05})` }} />
+    <Img src={`${SCENE}pangu-earth-layer.webp`} onError={onAssetError} className="pangu-layer pangu-earth-layer" style={{ transform: `translateY(${groundY}%)` }} />
+    <Img src={`${SCENE}pangu-supporting-figure.webp`} onError={onAssetError} className="pangu-layer pangu-person-layer" style={{ opacity: reveal, transform: `translateY(${(1 - reveal) * 9 - separation * 1.5}%) scale(${growth})` }} />
     <div className="pangu-settle" style={{ opacity: settle * .1 }} />
   </AbsoluteFill>;
 }
@@ -88,7 +88,7 @@ export default function PanguOpening({ active, autoStart = true, selected, onBus
     if (reducedMotion) return undefined;
     let cancelled = false;
     setAssetsReady(false);
-    const paths = ['pangu-cloud-layer.png', 'pangu-earth-layer.png', 'pangu-supporting-figure.png'];
+    const paths = ['pangu-cloud-layer.webp', 'pangu-earth-layer.webp', 'pangu-supporting-figure.webp'];
     Promise.all(paths.map(path => new Promise((resolve, reject) => {
       const image = new Image();
       image.onload = resolve;
