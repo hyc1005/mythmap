@@ -82,6 +82,14 @@ try {
       await page.emulateMedia({ reducedMotion: 'no-preference' });
       await page.locator('.myth-header>a').hover();
       assert.equal(await waves.evaluate(element => getComputedStyle(element).animationName), 'mark-tide');
+      const sun = page.locator('.seal .mark-sun');
+      const startY = await sun.evaluate(element => new DOMMatrix(getComputedStyle(element).transform).m42);
+      const startInk = await waves.evaluate(element => parseFloat(getComputedStyle(element).strokeDashoffset));
+      await page.waitForTimeout(1600);
+      const risenY = await sun.evaluate(element => new DOMMatrix(getComputedStyle(element).transform).m42);
+      const flowingInk = await waves.evaluate(element => parseFloat(getComputedStyle(element).strokeDashoffset));
+      assert.ok(startY - risenY > 5, 'Hover visibly raises the sun, rather than only declaring an animation');
+      assert.ok(Math.abs(flowingInk - startInk) > .3, 'Hover moves the ink along the sea paths');
       await page.mouse.move(800, 900);
       assert.equal(await waves.evaluate(element => getComputedStyle(element).animationName), 'none');
       await page.locator('.myth-header>a').focus();
