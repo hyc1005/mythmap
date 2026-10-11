@@ -2,7 +2,7 @@
 
 One scroll of mountains and seas, seven chapters of myth. MythMap presents ancient Chinese mythology in a hand-printed woodblock style, exploring the world of the *Classic of Mountains and Seas* (Shan Hai Jing) through maps, animations, and illustrations of mythical beasts.
 
-**[Try it live →](https://hyc1005.github.io/mythmap/)** · [GitHub Repository](https://github.com/hyc1005/mythmap)
+**[Try it live →](https://hyc1005.github.io/mythmap/)**
 
 **English** | [中文版](./README.zh-CN.md)
 
