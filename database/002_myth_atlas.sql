@@ -1,7 +1,7 @@
 CREATE TABLE IF NOT EXISTS myth_atlas_features (
   revision_id text NOT NULL,
   id text NOT NULL,
-  stage_id text CHECK (stage_id IN ('01','02','03','04','05','06','07')),
+  stage_id text CHECK (stage_id IN ('00','01','02','03','04','05','06','07')),
   entity_id text NOT NULL,
   layer_role text NOT NULL,
   geometry geometry(Geometry,4326),

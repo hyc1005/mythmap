@@ -23,7 +23,7 @@ def validate_revision(data, revision_id):
 def chapter(data, stage_id):
     item = next((stage for stage in data['stages'] if stage['id'] == stage_id), None)
     if item is None:
-        raise HTTPException(404, 'stage must be 01 through 07')
+        raise HTTPException(404, 'stage must be 00 through 07')
     return item
 
 
@@ -37,7 +37,7 @@ def get_catalog(revision_id: str | None = None):
 @router.get('/stages')
 def get_stages():
     data = catalog()
-    return {'revision_id': data['revision_id'], 'items': data['stages'], 'total': 7}
+    return {'revision_id': data['revision_id'], 'items': data['stages'], 'total': len(data['stages'])}
 
 
 @router.get('/stages/{stage_id}/layers/{layer}')

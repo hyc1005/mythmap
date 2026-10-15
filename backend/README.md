@@ -11,7 +11,7 @@ py -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -r backend/requirements.txt
 $env:DATABASE_URL = "postgresql+psycopg://YOUR_USER:YOUR_PASSWORD@localhost:5432/shan_hai"
-psql "$env:DATABASE_URL" -v ON_ERROR_STOP=1 -f database/001_init.sql
+psql "postgresql://YOUR_USER:YOUR_PASSWORD@localhost:5432/shan_hai" -v ON_ERROR_STOP=1 -f database/001_init.sql
 python database/load_seed.py
 uvicorn app.main:app --app-dir backend --reload
 ```
@@ -43,3 +43,6 @@ python -m compileall -q backend/app
 ```
 
 The focused tests cover filter construction and bbox validation. Full endpoint and spatial-query checks require a running PostgreSQL database with PostGIS initialized using `database/001_init.sql`.
+
+Atlas file endpoints do not require DATABASE_URL. Database endpoints return 503 until configured.
+Development tests require backend/requirements-dev.txt. An optional import integration test accepts TEST_POSTGIS_URL only for disposable databases named atlas_review_*. It checks the prologue migration, replacement, and rollback.

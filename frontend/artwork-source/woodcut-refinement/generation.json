@@ -1,0 +1,100 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "xiangliu-nine-heads-v2",
+      "original": "/data/atlas/myth-icons/xiangliu.webp",
+      "prompts": [
+        "Use case: precise-object-edit. Asset: full-detail Xiangliu woodcut cutout for an existing Chinese mythology atlas. The attached local image is the EDIT TARGET and style reference. It currently has eight visible snake heads. Add exactly ONE additional clearly separate snake head and neck, so the final creature has EXACTLY NINE visible heads. Place the new ninth head in the open upper-left/upper-center space between the existing upper-left head and the tallest head, with its neck connected naturally into the existing coil. Keep all eight existing heads, their faces, necks, existing body and tail, their arrangement, engraved black outlines, warm parchment-colored interior, restrained ochre and vermilion accents unchanged as much as possible. Every head must have one distinct face and an individually traceable neck. Nine heads total, no head hidden behind another, no extra face-like markings. Keep generous clear transparent margin around every head, tongue and tail; no cropped extremities. True transparent alpha outside the creature; no paper rectangle, shadows, scenery, lettering, numbers, labels or watermark. This is a small corrective drawing, preserving the established antique woodblock appearance, not a new art style."
+      ],
+      "review": "九个独立蛇首已逐一目视核对；保留原有盘曲木刻构图。",
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/xiangliu-nine-heads-v2.png",
+      "publishedVariants": {
+        "full": {
+          "path": "/data/atlas/refined/xiangliu-nine-heads-v2-full.webp",
+          "bytes": 395570,
+          "dimensions": [
+            1280,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/refined/xiangliu-nine-heads-v2-card.webp",
+          "bytes": 43336,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/refined/xiangliu-nine-heads-v2-preview.webp",
+          "bytes": 81046,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "name": "jingwei-map-v1",
+      "original": "/data/atlas/myth-icons/jingwei.webp",
+      "prompts": [
+        "Use case: style-transfer. Asset: a dedicated tiny MAP MARKER for the Jingwei bird in a Chinese mythology atlas, viewed at only 32 pixels. Attached image is a reference for creature identity and woodblock palette, not a full-detail illustration to reproduce. Create ONE simplified compact emblem of the SAME crow-like Jingwei with patterned head, WHITE BEAK, two VERMILION FEET, carrying one small stone in its beak. Keep two recognizable wings in an upward flight pose, one bird head and one tail. Antique Chinese woodblock/stamped silhouette: thick dark ink outer contour, only a few broad cream negative-space cuts, muted ochre detail, tiny dark-vermilion accent. Major features must read as simple chunky shapes at 32px; remove fine feather hatching, speckles, grain and filigree. The stone and white beak must remain a clear single shape. Full bird isolated with 12 percent transparent safety margin on every side. True transparent background. No badge circle, frame, scenery, paper tile, lettering, labels, numbers or watermark. No realistic lighting or modern glossy cartoon styling."
+      ],
+      "review": "乌状鸟形、白喙、赤足、衔石；仅用于地图缩略标记。",
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/jingwei-map-v1.png",
+      "publishedVariants": {
+        "map": {
+          "path": "/data/atlas/refined/jingwei-map-v1-map.webp",
+          "bytes": 7036,
+          "dimensions": [
+            128,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "name": "jiuweihu-map-v1",
+      "original": "/data/atlas/myth-icons/beasts/beast-jiuweihu.webp",
+      "prompts": [
+        "Use case: style-transfer. Asset: ONE tiny map marker for the nine-tailed fox in an antique Chinese woodcut mythology atlas. The attached image is a creature/style reference. Reinterpret it as a VERY SIMPLE chunky ink-cut emblem readable at 32 pixels, not a full illustrated plate. One fox facing left, pointed ears, cream fox face, four legs, and EXACTLY NINE tails behind the fox. Fan the nine separate tail tips across a broad semicircle with clear transparent gaps; arrange five tips on the upper arc and four tips on the lower/right arc, so all nine tails are explicitly countable at full size. Each tail tip must belong to one continuous tail, no hidden tenth tail, no fur tufts that look like extra tails. Use solid dark ink outlines, cream interiors, sparse muted dark-vermilion tips and at most two broad ochre cuts. Remove ALL fine fur hatching, speckle, grain and small swirls. Full animal with generous transparent margin, true transparent alpha background. No background paper, badge, circle, label, writing, digits, scenery or watermark. Retain the reference's woodblock character while greatly simplifying the drawing; no 3D, no photorealism, no glossy cartoon.",
+        "Use case: precise-object-edit. Correct the attached map-icon fox. This EDIT TARGET currently has exactly SEVEN visible tails, which is an anatomical mistake. Add exactly TWO additional tails so the result has EXACTLY NINE distinct visible tail tips, all attached naturally behind the same fox. Keep the existing seven tails and all four legs, face and ears. Put one additional long tail tip in the open UPPER-RIGHT gap between the current top upright tail and its right-facing neighbor, and one additional long tail tip in the LOWER-RIGHT gap between the last two existing lower tails. Distinguish the two new tips using clear transparent separations from their neighbors. Count NINE tails before finishing; no tails hidden behind the body, no extra tenth tail, leg or ear treated as a tail. Keep the bold cream-and-dark-ink simplified woodcut outline and restrained vermilion accents; keep the animal's identity and composition, no detail hatching. Genuine transparent background with full extremities and clear margins. No text, digits, background panel, badge, scenery or watermark.",
+        "Precise edit of the attached fox map emblem. There are EIGHT existing visible tails in this image. Keep those eight tails completely intact. ADD ONE SINGLE NEW TAIL in the empty lower-right gap between the bottommost tail tip and the second tail from the bottom. The new tail must have a pointed red-and-cream tip extending far to the right into that gap, with transparent space separating it from the tails above and below, and a long curved base joining the fox's rump. Final count must be exactly NINE pointed tail tips, numbered mentally from top to bottom: 1,2,3,4,5,6,7,8,9. Do not draw numerals. Do not remove or merge any of the eight existing tails. Keep all four legs, ears, face, pose, bold black outline, cream body and vermilion tips. Genuine transparent alpha, all extremities fully visible, no text or background. The only substantive change is adding ONE extra visibly separate ninth tail."
+      ],
+      "review": "九条独立尾尖、四足已目视核对；前两版尾数未通过，原生成文件保留。",
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/jiuweihu-map-v1.png",
+      "publishedVariants": {
+        "map": {
+          "path": "/data/atlas/refined/jiuweihu-map-v1-map.webp",
+          "bytes": 8232,
+          "dimensions": [
+            128,
+            128
+          ]
+        }
+      }
+    },
+    {
+      "name": "xuangui-map-v1",
+      "original": "/data/atlas/myth-icons/beasts/beast-xuangui.webp",
+      "prompts": [
+        "Use case: style-transfer. Asset: ONE tiny Xuanguī map-marker emblem for an antique Chinese woodblock atlas, intended to remain recognizable at 32 pixels. Attached image is the identity and palette reference. Simplify the same mythical turtle into a compact side view: turtle shell in the center, ONE recognizable bird head and short hooked beak on the LEFT, FOUR short turtle legs, and ONE long slender SNAKE TAIL curling up on the RIGHT ending in a small snake head. The bird head and snake tail must be distinct and anatomically connected to opposite ends of the shell. Use thick dark ink contour, broad cream cuts, sparse ochre shell panels, small muted dark-vermilion accent. The shell needs only 3 to 5 broad plate divisions; no feather mane hatching, scales, speckles, microtexture or elaborate ornament. Match a bold carved woodcut/stamp silhouette rather than a detailed painting. Complete isolated subject, ample transparent margin around beak, feet and tail. True transparent alpha outside. No paper background, scenery, ground shadow, badge, circle, text, lettering, digits or watermark.",
+        "Use case: background-extraction / precise-object-edit. The attached Xuanguī turtle map emblem is the edit target. Preserve the existing drawing exactly: one bird head on left, four legs, shell with broad plates, one curled snake tail on right, same pose, colors, solid carved black outline. REMOVE ALL outside glow, dark haze, drop shadow and soft-colored aura surrounding the silhouette. The exterior must be completely transparent immediately outside the hard antialiased edge, with no semitransparent black cloud. Make the creature interior fully opaque. Keep clean hard woodcut boundaries suitable for placing on a LIGHT CREAM map at only 32 pixels. Center the whole complete creature with at least 8 percent empty transparent padding around beak, feet and tail. No other changes to anatomy, no additional detail or texture. No background paper, text, numerals, badges, scenery or watermark. True transparent alpha output."
+      ],
+      "review": "鸟首、龟身、四足、蛇尾；仅用于地图缩略标记。",
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/xuangui-map-v1.png",
+      "publishedVariants": {
+        "map": {
+          "path": "/data/atlas/refined/xuangui-map-v1-map.webp",
+          "bytes": 6040,
+          "dimensions": [
+            128,
+            128
+          ]
+        }
+      }
+    }
+  ]
+}

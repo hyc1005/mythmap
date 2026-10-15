@@ -11,7 +11,7 @@ import urllib.parse
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC = ROOT / 'frontend/public/data'
+PUBLIC = ROOT / 'output/legacy-atlas'
 ATLAS = PUBLIC / 'atlas'
 RAW = ROOT / 'data/myth-atlas-inputs'
 REVISION = 'myth-atlas-2026-09-30-v1'
@@ -63,6 +63,8 @@ def read(path: Path):
 
 
 def write(path: Path, value):
+    if path.resolve().is_relative_to((ROOT / 'frontend/public/data').resolve()):
+        raise ValueError('Legacy generator cannot overwrite current website data')
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 

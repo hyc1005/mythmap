@@ -30,10 +30,14 @@ PROJECTION_LABEL = "local azimuthal equidistant centered at 105E,35N"
 
 
 def rows(db: Session, sql: str, params: dict[str, Any] | None = None) -> list[dict[str, Any]]:
+    if db.bind is None:
+        raise HTTPException(503, 'DATABASE_URL is required for database endpoints')
     return [dict(row) for row in db.execute(text(sql), params or {}).mappings().all()]
 
 
 def row(db: Session, sql: str, params: dict[str, Any] | None = None) -> dict[str, Any] | None:
+    if db.bind is None:
+        raise HTTPException(503, 'DATABASE_URL is required for database endpoints')
     result = db.execute(text(sql), params or {}).mappings().first()
     return dict(result) if result is not None else None
 

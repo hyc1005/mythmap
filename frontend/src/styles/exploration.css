@@ -1,0 +1,89 @@
+:root { --ink-title-duration: 450ms; --ink-phase-duration: 200ms; --ink-chapter-duration: 320ms; }
+@font-face { font-family: 'Shanhai Title'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('/fonts/shanhai-title.woff2') format('woff2'); }
+.animation-failure { position: absolute; z-index: 45; inset: 20% 12%; padding: 20px; background: #eee2c5; border: 1px solid #927a55; color: #544431; }
+.animation-failure button { margin: 6px; padding: 8px 12px; }
+.journey-more { position: relative; }
+.journey-more summary { display: grid; place-items: center; min-width: 44px; min-height: 44px; padding: 6px; border: 1px solid #bba680; font-size: 10px; cursor: pointer; }
+.journey-more>div { position: absolute; right: 0; bottom: calc(100% + 4px); display: flex; gap: 4px; padding: 6px; border: 1px solid #bba680; background: #eee1c4; z-index: 2; }
+.is-short-map .journey-more summary { min-width: 28px; min-height: 28px; padding: 3px; }
+.is-short-map .journey-heading>span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+html[lang='zh-CN'] :is(h1, h2, h3, .story-entry b, .beast-card>b, .timeline-current b, .fullscreen-chapter-nav b, .chapter-transition-veil>span) { font-family: 'Shanhai Title', 'Noto Serif SC', 'SimSun', serif; }
+
+/* Text and chapter motion */
+.ink-text { display: inline; }
+.ink-word { display: inline-block; white-space: pre; }
+.ink-animate .ink-word { animation: ink-title var(--ink-title-duration) cubic-bezier(.2,.65,.3,1) var(--ink-delay) both; }
+.ink-subtitle.ink-animate .ink-word { animation-delay: calc(var(--ink-delay) + 100ms); }
+.ink-phase.ink-animate .ink-word { animation: ink-phase var(--ink-phase-duration) ease-out both; }
+html[lang='en'] .ink-animate .ink-word { animation-name: ink-phase; }
+@keyframes ink-title { from { opacity: 0; clip-path: inset(0 100% 0 0); transform: translateY(4px); } to { opacity: 1; clip-path: inset(0); transform: translateY(0); } }
+@keyframes ink-phase { from { opacity: .15; transform: translateY(2px); } to { opacity: 1; transform: translateY(0); } }
+.chapter-transition-veil { display: grid; place-items: center; transition: none; }
+.chapter-transition-veil.is-visible { animation: chapter-paper var(--ink-chapter-duration) ease-out both; }
+.chapter-transition-veil>span { color: #66543c; padding: 12px 24px; border: 1px solid #b7a27b; font-size: clamp(18px, 3vw, 28px); }
+@keyframes chapter-paper { 0% { opacity: .55; } 35% { opacity: .32; } 100% { opacity: 0; } }
+
+/* Exploration and source navigation */
+.exploration-panel { margin-top: 12px; padding: 10px 12px; border: 1px solid #bdab84; background: #eee3ca; color: #66543c; font-size: 12px; }
+.exploration-guide, .exploration-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.exploration-guide { justify-content: space-between; margin-bottom: 8px; }
+.exploration-guide p { margin: 0; line-height: 1.8; }
+.rail-exploration { display: grid; gap: 8px; margin: 12px 0; }
+.begin-journey { justify-self: start; min-height: 44px; padding: 8px 12px; border: 1px solid #a44431; background: #a44431; color: #f3e8ce; cursor: pointer; }
+.rail-exploration .exploration-guide { display: grid; grid-template-columns: minmax(0, 1fr) 44px; gap: 4px; margin: 0; font-size: 12px; color: #66543c; }
+.rail-exploration .exploration-guide button { width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: #934b36; font-size: 22px; cursor: pointer; }
+.exploration-panel button, .detail-exploration button { min-height: 44px; padding: 8px 12px; border: 1px solid #b7a27b; background: #f0e5cd; color: #934b36; cursor: pointer; }
+.exploration-actions>span, .detail-exploration>span { overflow-wrap: anywhere; min-width: 0; }
+.exploration-actions input, .detail-exploration input { width: 100%; min-height: 44px; max-width: 340px; border: 1px solid #b7a27b; background: #f0e5cd; }
+.detail-exploration { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.map-entry-list { position: relative; margin-top: 10px; color: #66543c; font-size: 12px; }
+.map-entry-list summary { min-height: 44px; padding: 12px; border: 1px solid #bdab84; background: #eee3ca; cursor: pointer; }
+.map-entry-list ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 6px; margin: 0; padding: 10px; list-style: none; border: 1px solid #bdab84; border-top: 0; background: #eee3ca; max-height: 240px; overflow: auto; }
+.map-entry-list button { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; width: 100%; min-height: 44px; padding: 8px; border: 1px solid #c7b590; background: #f0e5cd; text-align: left; cursor: pointer; }
+.map-entry-list small { color: #89795f; }
+.is-map-fullscreen .map-entry-list { margin: 0; flex: none; }
+.is-map-fullscreen .map-entry-list ul { position: absolute; z-index: 35; top: 100%; right: 0; width: min(360px, 85vw); }
+.is-map-fullscreen .map-entry-list summary { min-height: 32px; padding: 7px; font-size: 11px; }
+
+/* Tools, loading and artwork feedback */
+.map-tools { position: relative; }
+.map-tools summary { background: #f0e5cd; }
+.map-tools>div { padding: 6px; border: 1px solid #b7a27b; background: #eee3ca; }
+.is-map-fullscreen .map-tools>div { position: absolute; z-index: 35; top: 100%; right: 0; width: min(270px, 80vw); }
+.map-export-status { flex-basis: 100%; padding: 5px 8px; background: #eee3ca; color: #934b36; text-align: right; }
+.artwork-fallback { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; min-height: 100px; padding: 12px; background: #e9dfc8; color: #934b36; font-size: 12px; }
+.artwork-fallback>span:first-child { font-size: 36px; }
+.artwork-fallback button { min-height: 44px; border: 1px solid #b7a27b; background: #f0e5cd; color: inherit; cursor: pointer; }
+.beast-card:is(:hover, :focus-visible) { border-color: #a44431; }
+.beast-enter { animation: beast-arrive 300ms ease-out both; }
+@keyframes beast-arrive { from { opacity: .25; } to { opacity: 1; } }
+
+
+@media (max-width: 640px) {
+  .rail-exploration { grid-column: 1 / -1; display: flex; align-items: center; gap: 6px; margin: 4px 0; }
+  .rail-exploration .begin-journey { flex: none; padding: 6px 8px; font-size: 11px; }
+  .rail-exploration .exploration-guide { flex: 1; min-width: 0; font-size: 11px; }
+  .rail-exploration .exploration-guide p { line-height: 1.4; }
+  .is-map-fullscreen .map-overlay-controls { display: flex; flex-wrap: nowrap; max-width: calc(100% - 76px); gap: 5px; }
+  .is-map-fullscreen .map-animation-choice { min-height: 44px; min-width: 0; padding: 2px 4px; font-size: 0; }
+  .is-map-fullscreen .map-animation-choice select { min-width: 0; width: min(125px, 30vw); min-height: 40px; font-size: 11px; }
+  .is-map-fullscreen .map-tools summary { min-height: 44px; padding: 12px 8px; white-space: nowrap; }
+  .is-map-fullscreen .map-tools>div { position: absolute; z-index: 35; top: 100%; right: 0; width: min(235px, 70vw); padding: 6px; border: 1px solid #b7a27b; margin: 5px 0 0; box-shadow: 0 4px 12px #47392020; }
+  .is-map-fullscreen .map-tools .myth-layer-switches { display: flex; width: 100%; }
+  .is-map-fullscreen .map-tools :is(.map-fit, label) { min-height: 44px; padding: 8px; }
+  .is-map-fullscreen :is(.map-fullscreen, .prologue-source), .timeline-current>button, .rail-expand, .drawer-close { min-width: 44px; min-height: 44px; }
+  .is-map-fullscreen .journey-actions { flex-wrap: wrap; gap: 3px; }
+  .is-map-fullscreen .journey-actions>button, .is-map-fullscreen .pangu-player-controls>button { min-height: 44px; min-width: 44px; padding: 6px; font-size: 10px; }
+  .is-map-fullscreen .kuafu-journey { right: 94px; }
+  .is-map-fullscreen .pangu-player-controls { flex-wrap: wrap; max-width: calc(100% - 100px); }
+  .is-prologue .map-fullscreen { bottom: 62px; }
+  .is-prologue .prologue-caption { max-width: calc(100% - 155px); }
+  .is-map-fullscreen .fullscreen-dock { height: 166px; }
+  .is-map-fullscreen .fullscreen-dock .journey-actions>button, .is-map-fullscreen .map-entry-list summary { min-height: 44px; }
+  .is-map-fullscreen .map-entry-list ul { max-height: 35vh; }
+  .exploration-guide { align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ink-word, .beast-enter { animation: none !important; opacity: 1; transform: none; clip-path: none; }
+  .chapter-transition-veil { display: none; }
+}

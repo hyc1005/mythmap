@@ -1,0 +1,58 @@
+{
+  "/data/atlas/myth-icons/xiangliu.webp": {
+    "full": {
+      "path": "/data/atlas/refined/xiangliu-nine-heads-v2-full.webp",
+      "bytes": 395570,
+      "dimensions": [
+        1280,
+        1280
+      ]
+    },
+    "card": {
+      "path": "/data/atlas/refined/xiangliu-nine-heads-v2-card.webp",
+      "bytes": 43336,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/refined/xiangliu-nine-heads-v2-preview.webp",
+      "bytes": 81046,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/jingwei.webp": {
+    "map": {
+      "path": "/data/atlas/refined/jingwei-map-v1-map.webp",
+      "bytes": 7036,
+      "dimensions": [
+        128,
+        128
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-jiuweihu.webp": {
+    "map": {
+      "path": "/data/atlas/refined/jiuweihu-map-v1-map.webp",
+      "bytes": 8232,
+      "dimensions": [
+        128,
+        128
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-xuangui.webp": {
+    "map": {
+      "path": "/data/atlas/refined/xuangui-map-v1-map.webp",
+      "bytes": 6040,
+      "dimensions": [
+        128,
+        128
+      ]
+    }
+  }
+}

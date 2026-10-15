@@ -11,3 +11,5 @@ python database/load_seed.py
 `001_init.sql` enables PostGIS and creates the entity, relation, source-link, and spatial-index tables. The loader replaces the curated demo records in one transaction, so reruns are deterministic. It requires `psycopg[binary]` v3 and accepts either a libpq `postgresql://` URL or the backend's `postgresql+psycopg://` URL. To check the JSON and cross references without a database, run `python data/validate_seed.py`.
 
 The schema stores geometries in EPSG:4326. Source records are linked through `story_sources`, `person_sources`, `place_sources`, and `candidate_sources`; cite the candidate source separately from the classical text source when explaining a modern location interpretation.
+
+`load_myth_atlas.py` applies the atlas schema and `003_atlas_prologue.sql` migration, then replaces only the selected revision in one transaction. Removed features are removed from that revision; other revisions and legacy seed tables remain intact. Run import tests with `TEST_POSTGIS_URL` pointing to a disposable database named `atlas_review_*`.

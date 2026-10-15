@@ -1,0 +1,65 @@
+name: Verify complete story playback
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: read
+
+concurrency:
+  group: narrative-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  narrative:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - name: Verify backend without a database
+        working-directory: .
+        run: |
+          python -m pip install -r backend/requirements-dev.txt
+          python -m pytest backend/tests
+      - run: npm run verify:data
+      - run: npm run verify:cache
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: npm run build -- --base /
+      - name: Verify root-path build
+        env:
+          ATLAS_BROWSERS: chromium
+        run: node scripts/with-preview.mjs -- node --input-type=module -e "await import('./scripts/verify-publish.mjs'); await import('./scripts/verify-repairs.mjs');"
+      - name: Read Pages configuration
+        if: github.event_name != 'pull_request'
+        id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d
+      - name: Determine publishing path
+        id: path
+        env:
+          PAGES_CONFIGURED: ${{ steps.pages.outcome == 'success' }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: |
+          repository="${GITHUB_REPOSITORY#*/}"
+          if [[ "$PAGES_CONFIGURED" == true ]]; then base="${PAGES_BASE_PATH}/";
+          elif [[ "$repository" == *.github.io ]]; then base=/; else base="/$repository/"; fi
+          echo "base=$base" >> "$GITHUB_OUTPUT"
+      - run: npm run build -- --base "${{ steps.path.outputs.base }}"
+      - run: npm run verify:publish
+      - name: Verify stories on the production path
+        env:
+          ATLAS_BROWSERS: chromium,firefox,webkit
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node --input-type=module -e "for (const script of ['locale','exploration','repairs','design','guided-tour','reading','resume','search','narrative']) await import('./scripts/verify-'+script+'.mjs');"
+      - name: Upload verified site
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
+        with:
+          path: frontend/dist

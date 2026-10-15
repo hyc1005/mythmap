@@ -12,9 +12,12 @@ DATA = Path(__file__).resolve().parents[2] / 'frontend/public/data/atlas'
 
 def test_seven_chapters_and_preserved_spatial_records():
     data = client.get('/api/atlas').json()
-    assert [s['id'] for s in data['stages']] == [f'{i:02d}' for i in range(1, 8)]
-    assert [len(s['event_ids']) for s in data['stages']] == [4, 5, 5, 5, 4, 5, 4]
-    assert len(data['events']) == 39
+    assert [s['id'] for s in data['stages']] == [f'{i:02d}' for i in range(8)]
+    assert data['counts']['all_records'] == len(data['events']) == 43
+    response = client.get('/api/atlas/stages').json()
+    assert response['total'] == len(response['items']) == 8
+    for stage in data['stages']:
+        assert all(next(event for event in data['events'] if event['id'] == id_)['properties']['stage_id'] == stage['id'] for id_ in stage['event_ids'])
     assert sum(e['properties']['stage_id'] is None for e in data['events']) == 7
     assert all(e['geometry'] is None for e in data['events'])
 
@@ -23,7 +26,9 @@ def test_stage_filter_cumulative_and_revision_guard():
     current = client.get('/api/atlas/stages/03/layers/events').json()
     assert len(current['features']) == 5
     cumulative = client.get('/api/atlas/stages/03/layers/events?cumulative=true').json()
-    assert len(cumulative['features']) == 14
+    data = client.get('/api/atlas').json()
+    expected = [event for event in data['events'] if event['properties']['stage_id'] is not None and event['properties']['stage_id'] <= '03']
+    assert {event['id'] for event in cumulative['features']} == {event['id'] for event in expected}
     assert client.get('/api/atlas/stages/08/layers/events').status_code == 404
     assert client.get('/api/atlas/stages/03/layers/unknown').status_code == 404
     assert client.get('/api/atlas?revision_id=unknown').status_code == 409

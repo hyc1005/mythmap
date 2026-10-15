@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState } from 'react';
+import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import english from './locale-en.json';
 import content from './locale-content-en.json';
 
@@ -41,6 +41,15 @@ function initialLocale() {
 
 export function LocaleProvider({ children }) {
   const [locale, setLocaleState] = useState(initialLocale);
+  useEffect(() => {
+    const restore = () => {
+      const next = initialLocale();
+      setLocaleState(next);
+      try { localStorage.setItem('shanhai-language', next); } catch {}
+    };
+    window.addEventListener('popstate', restore);
+    return () => window.removeEventListener('popstate', restore);
+  }, []);
   const value = useMemo(() => ({
     locale,
     t: text => translate(text, locale),

@@ -29,6 +29,10 @@ const browser = await chromium.launch({ headless: true });
 const errors = [];
 const filename = name => new URL(name, output).pathname.replace(/^\/([A-Za-z]:)/, '$1');
 
+async function selectChapter(page, chapter) {
+  if (!await page.locator('.timeline-steps button').count()) await page.locator('.mobile-explore-nav button').first().click();
+  await page.locator('.timeline-steps button').nth(chapter).click();
+}
 async function assertEnglish(page) {
   const untranslated = await page.evaluate(() => [...document.querySelectorAll('main *, .detail-drawer *')]
     .filter(element => !element.children.length && element.getClientRects().length
@@ -100,7 +104,7 @@ try {
     }
 
     for (let chapter = 0; chapter < 8; chapter++) {
-      await page.locator('.timeline-steps button').nth(chapter).click();
+      await selectChapter(page, chapter);
       if (chapter > 0 && await page.locator('.map-animation-choice').count()) {
         await page.getByLabel('Choose a story animation').selectOption('');
       }
@@ -132,7 +136,7 @@ try {
     await page.getByLabel('Search creatures', { exact: true }).fill('精卫');
     assert.equal(await page.locator('.beast-card').count(), 1);
     await page.locator('.bestiary-toggle').click();
-    await page.locator('.timeline-steps button').nth(3).click();
+    await selectChapter(page, 3);
     await page.getByLabel('Choose a story animation').selectOption('');
     await page.locator('.language-switch button').first().click();
     assert.equal(await page.locator('.chapter-rail h2').textContent(), '炎黄');
@@ -144,13 +148,13 @@ try {
     await page.locator('.map-fullscreen').click();
     await page.locator('.is-fallback-fullscreen').waitFor();
     await assertFits(page);
-    await page.getByRole('button', { name: 'Next →', exact: true }).click();
+    await page.locator('.fullscreen-chapter-nav').getByRole('button', { name: 'Next →', exact: true }).click();
     await page.waitForFunction(() => document.querySelector('.chapter-rail h2').textContent === 'Later Sage Kings');
     await assertEnglish(page);
     await page.locator('.map-fullscreen').click();
     await page.locator('.is-map-fullscreen').waitFor({ state: 'detached' });
 
-    await page.locator('.timeline-steps button').nth(3).click();
+    await selectChapter(page, 3);
     await page.getByLabel('Choose a story animation').selectOption('');
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.screenshot({ path: filename('international-' + width + 'x' + height + '.png') });
@@ -165,6 +169,7 @@ try {
   motionPage.on('pageerror', error => errors.push(error.stack || error.message));
   await motionPage.clock.install();
   await motionPage.goto(base + '/?lang=en');
+  await motionPage.getByRole('button', { name: 'Play Pangu prologue', exact: true }).click();
   await motionPage.getByRole('button', { name: 'Pause Pangu prologue', exact: true }).waitFor();
   await motionPage.getByRole('button', { name: 'Pause Pangu prologue', exact: true }).click();
   await assertEnglish(motionPage);

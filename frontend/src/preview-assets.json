@@ -1,0 +1,1262 @@
+{
+  "/data/atlas/myth-icons/jingwei.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/jingwei.webp",
+      "bytes": 36696,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/jingwei.webp",
+      "bytes": 72584,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/kunlun.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/kunlun.webp",
+      "bytes": 37502,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/kunlun.webp",
+      "bytes": 75164,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/luwu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/luwu.webp",
+      "bytes": 48554,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/luwu.webp",
+      "bytes": 95972,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nuwa.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/nuwa.webp",
+      "bytes": 51364,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/nuwa.webp",
+      "bytes": 98678,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/qingqiu-mountain.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/qingqiu-mountain.webp",
+      "bytes": 35308,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/qingqiu-mountain.webp",
+      "bytes": 71374,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xi-wang-mu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/xi-wang-mu.webp",
+      "bytes": 47908,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/xi-wang-mu.webp",
+      "bytes": 95496,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xiangliu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/xiangliu.webp",
+      "bytes": 47056,
+      "dimensions": [
+        320,
+        295
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/xiangliu.webp",
+      "bytes": 90254,
+      "dimensions": [
+        480,
+        442
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/yingzhao.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/yingzhao.webp",
+      "bytes": 45792,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/yingzhao.webp",
+      "bytes": 90080,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhulong.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/zhulong.webp",
+      "bytes": 29168,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/zhulong.webp",
+      "bytes": 58682,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-bifang.png": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-bifang.webp",
+      "bytes": 27262,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-bifang.webp",
+      "bytes": 52234,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-bo.png": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-bo.webp",
+      "bytes": 27310,
+      "dimensions": [
+        320,
+        215
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-bo.webp",
+      "bytes": 52746,
+      "dimensions": [
+        480,
+        322
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-boyi.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-boyi.webp",
+      "bytes": 43026,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-boyi.webp",
+      "bytes": 82538,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-chiru.png": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-chiru.webp",
+      "bytes": 26814,
+      "dimensions": [
+        320,
+        214
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-chiru.webp",
+      "bytes": 52602,
+      "dimensions": [
+        480,
+        321
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-dangkang.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-dangkang.webp",
+      "bytes": 26602,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-dangkang.webp",
+      "bytes": 53318,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-dijiang.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-dijiang.webp",
+      "bytes": 32374,
+      "dimensions": [
+        320,
+        214
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-dijiang.webp",
+      "bytes": 64088,
+      "dimensions": [
+        480,
+        321
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-fei.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-fei.webp",
+      "bytes": 27042,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-fei.webp",
+      "bytes": 52646,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-guan.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-guan.webp",
+      "bytes": 30322,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-guan.webp",
+      "bytes": 61834,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-gudiao.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-gudiao.webp",
+      "bytes": 34178,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-gudiao.webp",
+      "bytes": 66832,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-heyu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-heyu.webp",
+      "bytes": 29206,
+      "dimensions": [
+        320,
+        226
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-heyu.webp",
+      "bytes": 57636,
+      "dimensions": [
+        480,
+        339
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-jiuweihu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-jiuweihu.webp",
+      "bytes": 33874,
+      "dimensions": [
+        320,
+        214
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-jiuweihu.webp",
+      "bytes": 67456,
+      "dimensions": [
+        480,
+        321
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-kaiming.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-kaiming.webp",
+      "bytes": 34678,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-kaiming.webp",
+      "bytes": 68920,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-luoyu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-luoyu.webp",
+      "bytes": 33712,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-luoyu.webp",
+      "bytes": 67638,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-lushu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-lushu.webp",
+      "bytes": 30222,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-lushu.webp",
+      "bytes": 57544,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-phoenix.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-phoenix.webp",
+      "bytes": 39440,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-phoenix.webp",
+      "bytes": 80940,
+      "dimensions": [
+        451,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-qiangliang.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-qiangliang.webp",
+      "bytes": 48778,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-qiangliang.webp",
+      "bytes": 96732,
+      "dimensions": [
+        451,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-qinyuan.png": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-qinyuan.webp",
+      "bytes": 28736,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-qinyuan.webp",
+      "bytes": 56400,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-qiongqi-hainei.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-qiongqi-hainei.webp",
+      "bytes": 36400,
+      "dimensions": [
+        320,
+        214
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-qiongqi-hainei.webp",
+      "bytes": 70560,
+      "dimensions": [
+        480,
+        321
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-qiongqi-xishan.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-qiongqi-xishan.webp",
+      "bytes": 32014,
+      "dimensions": [
+        320,
+        214
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-qiongqi-xishan.webp",
+      "bytes": 64156,
+      "dimensions": [
+        480,
+        321
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-shengsheng.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-shengsheng.webp",
+      "bytes": 41774,
+      "dimensions": [
+        292,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-shengsheng.webp",
+      "bytes": 87012,
+      "dimensions": [
+        439,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-tian-gou.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-tian-gou.webp",
+      "bytes": 26670,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-tian-gou.webp",
+      "bytes": 54434,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-tulou.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-tulou.webp",
+      "bytes": 27126,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-tulou.webp",
+      "bytes": 53300,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-wenyaoyu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-wenyaoyu.webp",
+      "bytes": 31498,
+      "dimensions": [
+        320,
+        214
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-wenyaoyu.webp",
+      "bytes": 62738,
+      "dimensions": [
+        480,
+        321
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-xuangui.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-xuangui.webp",
+      "bytes": 31964,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-xuangui.webp",
+      "bytes": 59778,
+      "dimensions": [
+        480,
+        319
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-zheng.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-zheng.webp",
+      "bytes": 33422,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-zheng.webp",
+      "bytes": 63790,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-zhu-jian.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-zhu-jian.webp",
+      "bytes": 32320,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-zhu-jian.webp",
+      "bytes": 60970,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beasts/beast-zhuyan.png": {
+    "card": {
+      "path": "/data/atlas/previews/card/beasts/beast-zhuyan.webp",
+      "bytes": 25682,
+      "dimensions": [
+        320,
+        214
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/beasts/beast-zhuyan.webp",
+      "bytes": 50744,
+      "dimensions": [
+        480,
+        321
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/characters/fuxi-clean.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/characters/fuxi-clean.webp",
+      "bytes": 22764,
+      "dimensions": [
+        212,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/characters/fuxi-clean.webp",
+      "bytes": 42222,
+      "dimensions": [
+        318,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/characters/fuxi.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/characters/fuxi.webp",
+      "bytes": 29438,
+      "dimensions": [
+        212,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/characters/fuxi.webp",
+      "bytes": 58304,
+      "dimensions": [
+        319,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/characters/shennong.png": {
+    "card": {
+      "path": "/data/atlas/previews/card/characters/shennong.webp",
+      "bytes": 26080,
+      "dimensions": [
+        212,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/characters/shennong.webp",
+      "bytes": 51592,
+      "dimensions": [
+        319,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/characters/suiren.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/characters/suiren.webp",
+      "bytes": 27978,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/characters/suiren.webp",
+      "bytes": 55514,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/characters/youchao.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/characters/youchao.webp",
+      "bytes": 40970,
+      "dimensions": [
+        288,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/characters/youchao.webp",
+      "bytes": 82748,
+      "dimensions": [
+        432,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch03-banquan.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch03-banquan.webp",
+      "bytes": 59226,
+      "dimensions": [
+        320,
+        267
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch03-banquan.webp",
+      "bytes": 115932,
+      "dimensions": [
+        480,
+        400
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch03-jingwei.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch03-jingwei.webp",
+      "bytes": 48022,
+      "dimensions": [
+        320,
+        260
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch03-jingwei.webp",
+      "bytes": 95686,
+      "dimensions": [
+        480,
+        390
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch03-kuafu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch03-kuafu.webp",
+      "bytes": 46818,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch03-kuafu.webp",
+      "bytes": 92196,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch03-xingtian.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch03-xingtian.webp",
+      "bytes": 40602,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch03-xingtian.webp",
+      "bytes": 77130,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch03-zhuolu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch03-zhuolu.webp",
+      "bytes": 65992,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch03-zhuolu.webp",
+      "bytes": 131722,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch04-change-flies-to-moon.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch04-change-flies-to-moon.webp",
+      "bytes": 49262,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch04-change-flies-to-moon.webp",
+      "bytes": 94842,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch04-dayi-shoots-suns.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch04-dayi-shoots-suns.webp",
+      "bytes": 55152,
+      "dimensions": [
+        320,
+        267
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch04-dayi-shoots-suns.webp",
+      "bytes": 106144,
+      "dimensions": [
+        480,
+        400
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch04-gonggong-zhuanxu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch04-gonggong-zhuanxu.webp",
+      "bytes": 52906,
+      "dimensions": [
+        320,
+        267
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch04-gonggong-zhuanxu.webp",
+      "bytes": 104612,
+      "dimensions": [
+        480,
+        400
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch04-gun-xirang.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch04-gun-xirang.webp",
+      "bytes": 45886,
+      "dimensions": [
+        320,
+        267
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch04-gun-xirang.webp",
+      "bytes": 90618,
+      "dimensions": [
+        480,
+        400
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch04-yao-shun.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch04-yao-shun.webp",
+      "bytes": 42554,
+      "dimensions": [
+        320,
+        267
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch04-yao-shun.webp",
+      "bytes": 84146,
+      "dimensions": [
+        480,
+        400
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch05-qimu-turns-to-stone.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch05-qimu-turns-to-stone.webp",
+      "bytes": 26230,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch05-qimu-turns-to-stone.webp",
+      "bytes": 53110,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch05-yu-controls-flood.webp",
+      "bytes": 41462,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch05-yu-controls-flood.webp",
+      "bytes": 82182,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch05-yu-tushan-marriage.webp",
+      "bytes": 35842,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch05-yu-tushan-marriage.webp",
+      "bytes": 68828,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch05-yu-xiangliu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch05-yu-xiangliu.webp",
+      "bytes": 46022,
+      "dimensions": [
+        301,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch05-yu-xiangliu.webp",
+      "bytes": 88210,
+      "dimensions": [
+        451,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch06-chengtang-xiatai.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch06-chengtang-xiatai.webp",
+      "bytes": 45554,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch06-chengtang-xiatai.webp",
+      "bytes": 91340,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch06-hanzhuo.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch06-hanzhuo.webp",
+      "bytes": 46150,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch06-hanzhuo.webp",
+      "bytes": 92208,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch06-houyi-youqiong.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch06-houyi-youqiong.webp",
+      "bytes": 28370,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch06-houyi-youqiong.webp",
+      "bytes": 53194,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch06-shaokang.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch06-shaokang.webp",
+      "bytes": 47646,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch06-shaokang.webp",
+      "bytes": 92790,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch06-yiyin-kongsang.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch06-yiyin-kongsang.webp",
+      "bytes": 53304,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch06-yiyin-kongsang.webp",
+      "bytes": 107520,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch07-mu-kunlun-palace.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch07-mu-kunlun-palace.webp",
+      "bytes": 36458,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch07-mu-kunlun-palace.webp",
+      "bytes": 72774,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch07-mu-meets-xiwangmu.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch07-mu-meets-xiwangmu.webp",
+      "bytes": 36652,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch07-mu-meets-xiwangmu.webp",
+      "bytes": 70684,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch07-yan-mountain-inscription.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch07-yan-mountain-inscription.webp",
+      "bytes": 42406,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch07-yan-mountain-inscription.webp",
+      "bytes": 84842,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/ch07-yaochi-banquet.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/ch07-yaochi-banquet.webp",
+      "bytes": 37742,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/ch07-yaochi-banquet.webp",
+      "bytes": 74626,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/gonggong.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/gonggong.webp",
+      "bytes": 48990,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/gonggong.webp",
+      "bytes": 96716,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/nuwa-create.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/nuwa-create.webp",
+      "bytes": 49554,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/nuwa-create.webp",
+      "bytes": 98004,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/nuwa-dragon.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/nuwa-dragon.webp",
+      "bytes": 50220,
+      "dimensions": [
+        320,
+        239
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/nuwa-dragon.webp",
+      "bytes": 96476,
+      "dimensions": [
+        480,
+        359
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/nuwa-pillars.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/nuwa-pillars.webp",
+      "bytes": 63282,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/nuwa-pillars.webp",
+      "bytes": 123506,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/nuwa-repair.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/nuwa-repair.webp",
+      "bytes": 53164,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/nuwa-repair.webp",
+      "bytes": 102326,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/stories/nuwa-water.webp": {
+    "card": {
+      "path": "/data/atlas/previews/card/stories/nuwa-water.webp",
+      "bytes": 57184,
+      "dimensions": [
+        300,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/previews/preview/stories/nuwa-water.webp",
+      "bytes": 113456,
+      "dimensions": [
+        450,
+        480
+      ]
+    }
+  }
+}

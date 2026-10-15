@@ -10,7 +10,7 @@
 - `atlas/catalog.json` separately holds source records, people, events and geographic candidates. Its `revision_id` is distinct from the world's `revision`; do not substitute one for the other. The current `events` array has 43 entries, including spatial records, and is not an animation count.
 - `atlas/story-animations.json` and `atlas/kuafu-journey.json` describe animation assets and timing. Asset URLs may reference SVG, PNG or WebP. Preserve null geographic geometry and the distinction between source evidence and illustrative layout hints.
 - Default production builds make no world API request. Development requests `/api/world`; production requests it only when `VITE_API_BASE_URL` is configured. The Vite development proxy targets the optional Java service at `127.0.0.1:8081`.
-- The frontend accepts an API world only when `revision` is truthy, all seven arrays are present, and stage count and ordered stage IDs match the bundled world. Failed requests or incompatible data leave bundled data in use. This check is not full schema or source validation.
+- The frontend accepts an API world only when its `revision` matches the bundled world, all seven arrays are present, and stage count and ordered stage IDs match. Required-field, coordinate, chapter and reference validation runs before replacing bundled data; failures leave bundled data in use. This does not verify the historical truth of a source.
 
 ## Optional Java endpoints
 
@@ -25,13 +25,13 @@ Responses set `Cache-Control: no-cache` and CORS headers. `VITE_API_BASE_URL` is
 
 Localization is performed in the frontend, using `locale-en.json` and `locale-content-en.json`. It preserves IDs and original Chinese names and quotations; no language parameter is sent to the Java API. `?lang=en` or `?lang=zh` overrides the saved `shanhai-language` preference. English quotations are project translations, not a separately cited English edition.
 
-The Lora and Source Sans 3 font files and their licenses are shipped locally. Large runtime images use lossless WebP; original PNGs remain in `frontend/artwork-source/optimized-originals/`. Update runtime references and `atlas/artwork-manifest.json` together when changing formats. The navigation SVG and reading-notes bookplate are decorative branding.
+The Lora and Source Sans 3 font files and their licenses are shipped locally. Large runtime images use lossy WebP (quality 83); card and preview images use separate 320/480px WebP variants; original PNGs remain in `frontend/artwork-source/optimized-originals/`. Update runtime references and `atlas/artwork-manifest.json` together when changing formats. The navigation SVG and reading-notes bookplate are decorative branding.
 
 ## Optional FastAPI atlas routes and limitations
 
 `backend/app/atlas.py` also defines read-only `/api/atlas`, `/api/atlas/stages`, `/api/atlas/stages/{stage_id}/layers/{layer}`, `/api/atlas/entities/{entity_id}`, and `/api/atlas/divine-space`. Layers support `events`, `candidates`, `routes`, and `activities`; catalog, layer and entity calls accept an optional `revision_id` and return 409 for a mismatch. These routes are not used by the current frontend.
 
-The routes read bundled files from `frontend/public/data`. One implementation limitation remains: `/stages` hardcodes `total: 7` although the current catalog contains eight stages. Until corrected, use the returned `items` length for the stage count. These endpoints are not substitutes for Java `/api/world`.
+The routes read bundled files from `frontend/public/data`. The stages endpoint calculates total from the returned items, including the prologue. These endpoints are not substitutes for Java `/api/world`.
 
 ## Legacy FastAPI/PostGIS contract
 

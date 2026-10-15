@@ -8,17 +8,14 @@ import psycopg
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def main():
-    url = os.getenv('DATABASE_URL')
-    if not url:
-        raise SystemExit('DATABASE_URL is required; existing tables are never replaced.')
-    data = json.loads((ROOT / 'frontend/public/data/atlas/catalog.json').read_text(encoding='utf-8'))
-    divine = json.loads((ROOT / 'frontend/public/data/divine-space.json').read_text(encoding='utf-8'))
-    with psycopg.connect(url.replace('postgresql+psycopg://', 'postgresql://', 1)) as conn:
+def load_revision(conn, data, divine):
+    with conn.transaction():
         with conn.cursor() as cur:
             cur.execute((ROOT / 'database/002_myth_atlas.sql').read_text(encoding='utf-8'))
+            cur.execute((ROOT / 'database/003_atlas_prologue.sql').read_text(encoding='utf-8'))
             cur.execute('INSERT INTO myth_atlas_catalog VALUES (%s,%s::jsonb,%s::jsonb) ON CONFLICT (revision_id) DO UPDATE SET catalog=EXCLUDED.catalog,divine_space=EXCLUDED.divine_space',
                         (data['revision_id'], json.dumps(data, ensure_ascii=False), json.dumps(divine, ensure_ascii=False)))
+            cur.execute('DELETE FROM myth_atlas_features WHERE revision_id=%s', (data['revision_id'],))
             for feature in data['events'] + data['candidates'] + data['routes']:
                 p = feature['properties']
                 cur.execute('''INSERT INTO myth_atlas_features VALUES (%s,%s,%s,%s,%s,
@@ -28,6 +25,16 @@ def main():
                             (data['revision_id'], feature['id'], p['stage_id'], p['entity_id'], p['layer_role'],
                              json.dumps(feature['geometry']) if feature['geometry'] else None,
                              json.dumps(feature['geometry']) if feature['geometry'] else None, json.dumps(p, ensure_ascii=False)))
+
+
+def main():
+    url = os.getenv('DATABASE_URL')
+    if not url:
+        raise SystemExit('DATABASE_URL is required; existing tables are never replaced.')
+    data = json.loads((ROOT / 'frontend/public/data/atlas/catalog.json').read_text(encoding='utf-8'))
+    divine = json.loads((ROOT / 'frontend/public/data/divine-space.json').read_text(encoding='utf-8'))
+    with psycopg.connect(url.replace('postgresql+psycopg://', 'postgresql://', 1)) as conn:
+        load_revision(conn, data, divine)
     print('Atlas revision loaded; legacy tables unchanged.')
 
 
