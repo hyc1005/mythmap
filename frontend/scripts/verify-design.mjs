@@ -138,6 +138,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     for (const id of ['beast-wenyaoyu', 'beast-bifang', 'beast-xiangliu', 'beast-jiuweihu', 'beast-shengsheng', 'beast-bo']) {
       const card = page.locator(`[data-beast-id="${id}"]`);
       await card.scrollIntoViewIfNeeded();
+      await page.waitForFunction(id => {
+        const image = document.querySelector(`[data-beast-id="${id}"] img`);
+        return image?.complete && image.naturalWidth > 0;
+      }, id);
       await card.locator('img').evaluate(image => image.decode());
       assert.ok(await card.locator('img').evaluate(image => {
         const bounds = image.getBoundingClientRect(), art = image.closest('.beast-art').getBoundingClientRect();

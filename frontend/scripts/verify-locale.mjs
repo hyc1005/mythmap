@@ -5,7 +5,7 @@ import { createServer } from 'vite';
 
 const base = process.env.ATLAS_URL || 'http://127.0.0.1:5173';
 const world = await readFile(new URL('../public/data/myth-world.json', import.meta.url), 'utf8');
-const ssr = await createServer({ server: { middlewareMode: true }, appType: 'custom' });
+const ssr = await createServer({ server: { middlewareMode: true }, appType: 'custom', optimizeDeps: { noDiscovery: true, include: [] } });
 try {
   const { localize } = await ssr.ssrLoadModule('/src/i18n.jsx');
   const original = JSON.parse(world);
