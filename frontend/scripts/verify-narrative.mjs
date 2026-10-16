@@ -677,6 +677,7 @@ try {
   assert.equal(await animationPage.locator('.map-role-portrait').count(), 0);
   await animationPage.getByRole('button', { name: '关闭', exact: true }).click();
   await animationPage.locator('.kuafu-journey[data-status="playing"]').waitFor();
+  await animationPage.locator('.myth-map-canvas').scrollIntoViewIfNeeded();
   const dragBox = await animationPage.locator('.myth-map-canvas').boundingBox();
   await animationPage.mouse.move(dragBox.x + 140, dragBox.y + 180);
   await animationPage.mouse.down();
