@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
-import { mockOsm } from './mock-osm.mjs';
+import { mockTianditu } from './mock-tianditu.mjs';
 import { CHAPTER_TRANSITION_MS } from '../src/map-timing.js';
 
 const base = process.env.ATLAS_URL;
@@ -13,7 +13,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
   try {
     const context = await browser.newContext({ viewport: { width: 1920, height: 1080 } });
-    await mockOsm(context);
+    await mockTianditu(context);
     const page = await context.newPage();
     const errors = []; page.on('pageerror', error => errors.push(error.message));
     await page.goto(`${base}?chapter=01&lang=zh`);

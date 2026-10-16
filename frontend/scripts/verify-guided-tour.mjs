@@ -114,11 +114,11 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.drawer-close').click();
     assert.equal(await page.locator('.world-layout').getAttribute('data-tour-reading'), 'true');
     await page.getByRole('button', { name: 'Atlas fullscreen', exact: true }).click();
-    await page.locator('.is-map-fullscreen .tour-reading button').click();
+    await page.locator('.is-map-fullscreen .map-reading-actions .begin-journey').click();
     await page.waitForFunction(() => document.querySelector('.world-layout').dataset.chapter === '07');
     await page.waitForTimeout(1600);
     assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '07');
-    await page.locator('.is-map-fullscreen .tour-reading button').click();
+    await page.locator('.is-map-fullscreen .map-reading-actions .begin-journey').click();
     await page.waitForFunction(() => document.querySelector('.world-layout').dataset.tourActive === 'false');
     await page.getByRole('button', { name: 'Exit atlas fullscreen', exact: true }).click();
     await page.getByRole('button', { name: 'Start guided tour', exact: true }).click();

@@ -24,6 +24,7 @@ import { prefetchNextChapter } from '../asset-cache';
 import ArtworkImage from './ArtworkImage';
 import MapToolbar from './MapToolbar';
 import MapPlayback from './MapPlayback';
+import ReadingActions from './ReadingActions';
 import ChapterEntries from './ChapterEntries';
 import { chapterStoryIds } from '../chapter-stories';
 import { drawMapLayers } from '../map-export';
@@ -85,7 +86,7 @@ function beastMarker(record, active, resolution = 1) {
   return beastIcons.get(key);
 }
 
-export default function MapPanel({ world, stageIndex, activeLayers, selectedId, pausedForOverlay = false, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, storyRequest, onActiveEventChange, onManualStoryChange, readingNote, locateId, storyItems, onRecordsChange, reading, collectionItems, tourPlaying = null, onTourPlaybackChange, onPlaybackChange, geographyMode, onGeographyModeChange, geographyEventId, onGeographyEventChange, geographySnapshot, onGeographySnapshot }) {
+export default function MapPanel({ world, stageIndex, activeLayers, selectedId, pausedForOverlay = false, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, storyRequest, onActiveEventChange, onManualStoryChange, readingNote, readingControls, locateId, storyItems, onRecordsChange, reading, collectionItems, tourPlaying = null, onTourPlaybackChange, onPlaybackChange, geographyMode, onGeographyModeChange, geographyEventId, onGeographyEventChange, geographySnapshot, onGeographySnapshot }) {
   const { t, locale } = useLocale();
   const externalPaused = tourPlaying === false || pausedForOverlay || geographyMode || Boolean(chapterTransition);
   const [geographyVisited, setGeographyVisited] = useState(geographyMode);
@@ -597,6 +598,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   const layerStatus = <div className="map-layer-summary" role="status">{activeLayers.beasts && <span>{availableBeasts.length ? t("异兽图层 · ") + mappedBeastCount + t(" 条已关联") : t("本章暂无异兽")}{!availableBeasts.length && <button onClick={activeLayers.onGoToFirstBeast}>{t("前往第 3 章 ↗")}</button>}</span>}{activeLayers.divine && <span>{t("神域已显示")}</span>}</div>;
   const fullscreenButton = <button className="map-fullscreen" onClick={toggleFullscreen} aria-pressed={isFullscreen} aria-label={isFullscreen ? t("退出地图全屏") : t("地图全屏")}>{isFullscreen ? t("退出全屏") : t("全屏展示")}</button>;
 
+  const readingActions = <ReadingActions {...readingControls} showTour={!geographyMode} />;
   const modeControls = <div className="map-mode-switch" role="group" aria-label={t('地图模式')}><button type="button" aria-pressed={!geographyMode} onClick={() => onGeographyModeChange(false)}>{t('木刻叙事')}</button><button type="button" aria-pressed={geographyMode} onClick={() => onGeographyModeChange(true)}>{t('真实地理')}</button></div>;
 
   return <><section ref={mapFrame} tabIndex={-1} data-map-mode={geographyMode ? 'geography' : 'woodcut'} data-camera-mode={cameraMode} className={`myth-map-wrap ${isPrologue ? "is-prologue" : ""} ${geographyMode ? "is-geography" : ""} ${isFullscreen ? "is-map-fullscreen" : ""} ${fallbackFullscreen ? "is-fallback-fullscreen" : ""} ${shortMap ? "is-short-map" : ""} ${activeJourneyId ? "has-journey" : ""} ${activeJourneyId && activeJourneyId !== "03-05" ? "has-local-story" : ""}`} aria-label={geographyMode ? t("真实地理参考地图") : isPrologue ? t("盘古开天序章场景") : t("山海经方位关系地图")}>
@@ -631,7 +633,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     </>}
     <ChapterNotice change={chapterTransition} title={stages[stageIndex].title} />
     </div>
-    {geographyVisited && <div className="geography-main" hidden={!geographyMode}><GeographyMap catalog={catalog} chapterId={chapterId} currentEventId={geographyEventId} visible={geographyMode} transitioning={chapterTransition} isFullscreen={isFullscreen} snapshot={geographySnapshot} onSnapshot={onGeographySnapshot} onEventChange={onGeographyEventChange} onOpen={id => onSelect(id)} /></div>}
-    <MapPlayback hidden={geographyMode} isFullscreen={isFullscreen} isPrologue={isPrologue} activeJourneyId={activeJourneyId} onSelect={onSelect} controlRef={setControlContainer} preview={preview} legend={legend} layerStatus={layerStatus} readingNote={readingNote} cameraMode={cameraMode} onCloseup={() => { setCameraMode('story'); setCameraRequest(value => value + 1); }} onOverview={() => fitStage()} />
+    {geographyVisited && <div className="geography-main" hidden={!geographyMode}><GeographyMap readingActions={geographyMode ? readingActions : null} catalog={catalog} chapterId={chapterId} currentEventId={geographyEventId} visible={geographyMode} transitioning={chapterTransition} isFullscreen={isFullscreen} snapshot={geographySnapshot} onSnapshot={onGeographySnapshot} onEventChange={onGeographyEventChange} onOpen={id => onSelect(id)} /></div>}
+    <MapPlayback readingActions={!geographyMode ? readingActions : null} hidden={geographyMode} isFullscreen={isFullscreen} isPrologue={isPrologue} activeJourneyId={activeJourneyId} onSelect={onSelect} controlRef={setControlContainer} preview={preview} legend={legend} layerStatus={layerStatus} readingNote={readingNote} cameraMode={cameraMode} onCloseup={() => { setCameraMode('story'); setCameraRequest(value => value + 1); }} onOverview={() => fitStage()} />
   </section></>;
 }

@@ -36,7 +36,9 @@ try {
     await page.evaluate(() => document.fonts.ready);
     assert.deepEqual(await page.locator('.timeline-steps button').evaluateAll(buttons => buttons.filter(button => button.scrollWidth > button.clientWidth + 1).map(button => button.textContent)), [], 'Chapter names fit their timeline buttons');
     const entryBounds = await page.locator('.begin-journey').boundingBox();
-    assert.ok(entryBounds.y >= 0 && entryBounds.y + entryBounds.height <= height, 'Journey entry stays in the first viewport');
+    const mapBounds = await page.locator('.map-surface').boundingBox();
+    assert.ok(entryBounds.y >= mapBounds.y + mapBounds.height - 1, 'Journey entry belongs below the map');
+    assert.equal(await page.locator('.chapter-rail .begin-journey, .chapter-rail .resume-reading').count(), 0);
     if (locale === 'zh') assert.ok(await page.evaluate(() => [...document.fonts].some(font => font.family === 'Shanhai Title' && font.status === 'loaded')), 'Chinese title subset loads');
     assert.equal(new URL(page.url()).searchParams.has('item'), false);
     const mobile = width <= 768;

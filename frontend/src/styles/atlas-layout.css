@@ -202,6 +202,29 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .resume-reading { display: block; width: 100%; min-height: 44px; margin-bottom: 10px; padding: 10px 12px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); text-align: left; cursor: pointer; }
 .resume-reading span, .resume-reading small { display: block; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
 .resume-reading small { margin-top: 3px; color: var(--soft-ink); }
+.map-reading-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--edge); }
+.map-reading-actions .begin-journey { margin: 0; font-size: 14px; }
+.map-reading-actions .resume-reading { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; width: auto; max-width: 100%; margin: 0; padding: 6px 8px; border: 0; background: transparent; }
+.map-reading-actions .resume-reading small { margin: 0; }
+.map-reading-actions .resume-short { display: none; }
+.map-reading-actions .exploration-guide { margin: 0 0 0 auto; font-size: 14px; color: var(--soft-ink); }
+.map-reading-actions .exploration-guide p { margin: 0; }
+.map-reading-actions .exploration-guide button { min-width: 44px; min-height: 44px; border: 0; background: transparent; color: var(--verm); font-size: 22px; }
+.fullscreen-dock:has(.map-reading-actions) { grid-template-rows: minmax(0, 1fr) 38px auto; height: 176px; }
+.fullscreen-dock .map-reading-actions { grid-area: 3 / 1; margin: 0; padding: 0; border: 0; }
+.fullscreen-dock .map-reading-actions .exploration-guide { display: none; }
+.fullscreen-dock:has(.map-reading-actions) .story-view-controls { grid-area: 2 / 1; }
+@media (max-width: 768px) {
+  .chapter-rail { gap: 4px 10px; padding-bottom: 8px; }
+  .chapter-rail .rail-exploration { margin: 0; }
+  .fullscreen-dock:has(.map-reading-actions) { height: 216px; }
+}
+@media (max-height: 480px) {
+  .map-reading-actions .resume-reading .resume-full, .map-reading-actions .resume-reading small { display: none; }
+  .map-reading-actions .resume-reading .resume-short { display: block; }
+  .map-reading-actions .exploration-guide { display: none; }
+  .map-reading-actions .tour-progress { max-width: none; }
+}
 
 .global-search-trigger { min-width: 44px; min-height: 44px; padding: 6px 10px; border: 1px solid var(--edge); background: transparent; color: var(--ink); cursor: pointer; }
 .global-search-dialog { display: flex; flex-direction: column; width: min(760px, 100%); max-height: 88svh; margin: 0 auto; }

@@ -611,5 +611,14 @@
   "返回地图": "Back to map",
   "同坐标关联记录": "Records at this coordinate",
   "正在加载在线底图…": "Loading the online basemap…",
-  "底图加载较慢，地点资料仍可查看。": "The basemap is taking longer to load. Place evidence is still available."
+  "底图加载较慢，地点资料仍可查看。": "The basemap is taking longer to load. Place evidence is still available.",
+  "阅读与游历": "Reading and guided tour",
+  "续读": "Resume",
+  "天地图尚未配置浏览器端 Key；地点资料仍可查询。": "Tianditu browser key is not configured. Place evidence remains available.",
+  "天地图鉴权失败，请检查 Key、应用类型和访问域名。": "Tianditu authentication failed. Check the key, application type and allowed domains.",
+  "天地图地形加载失败；地点资料仍可查询。": "Tianditu terrain failed to load. Place evidence remains available.",
+  "天地图中文注记加载失败；地形和地点资料仍可查看。": "Tianditu place labels failed to load. Terrain and place evidence remain available.",
+  "底图：天地图；地点为传说或考证关联，不是历史事件定位证明。": "Basemap: Tianditu. Places indicate tradition or research associations, not proven historical event sites.",
+  "天地图 · 国家基础地理信息中心": "Tianditu · National Geomatics Center of China",
+  "当前 Key 为服务器端类型，浏览器页面需要浏览器端 Key。": "This is a server-side key. The browser page requires a browser application key."
 }

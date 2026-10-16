@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile, mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
-import { mockOsm } from './mock-osm.mjs';
+import { mockTianditu } from './mock-tianditu.mjs';
 import { geographyMapConfig } from '../src/geography-map-config.js';
 import { referenceCollection, validReference, groupReferences, unlocatedStories, geographicReferences, geographicEvents, defaultGeographicEvent } from '../src/geography.js';
 
@@ -60,9 +60,23 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
   try {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
-    const network = await mockOsm(context);
+    const network = await mockTianditu(context);
     const page = await context.newPage();
-    const errors = []; page.on('pageerror', error => { errors.push(error.message); console.error(error.stack); });
+    const errors = []; page.on('pageerror', error => { errors.push(error.message.replace(/tk=[^&\s]+/g, 'tk=[redacted]')); });
+    if (process.env.ATLAS_MISSING_KEY) {
+      await page.goto(`${base}?chapter=03&lang=zh`);
+      await mode(page, 'zh', true);
+      await geo(page).getByRole('alert').filter({ hasText: '尚未配置浏览器端 Key' }).waitFor();
+      assert.equal(await rows(page).count(), 3);
+      await fillSearch(page, '搜索地理参考点', '涿鹿');
+      assert.equal(await rows(page).count(), 1);
+      assert.equal(network.requests, 0);
+      assert.equal(network.osmRequests, 0);
+      assert.equal(await geo(page).locator('.begin-journey').count(), 0);
+      assert.deepEqual(errors, []);
+      console.log(`PASS ${name}: missing browser key is explicit, with local search retained and zero basemap requests`);
+      continue;
+    }
     await page.goto(`${base}?chapter=03&lang=zh`);
     assert.equal(await page.locator('.myth-map-wrap').getAttribute('data-map-mode'), 'woodcut');
     assert.equal(await page.locator('.map-share').count(), 0);
@@ -84,6 +98,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.equal(await rows(page).count(), 0);
     assert.equal(await page.locator('.geo-empty-notice').count(), 1);
     const national = await extent(page);
+    assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001), 'National overview stays centred near Xian');
     assert.ok(inside([73, 3], national) && inside([136, 54], national), 'China overview includes the full configured mainland and southern maritime range');
     await page.waitForTimeout(200);
     assert.equal(await page.locator('.kuafu-journey').getAttribute('data-elapsed'), frozen);
@@ -108,7 +123,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     for (let i = 0; i < 6; i++) await geo(page).getByRole('button', { name: '地理地图缩小', exact: true }).click();
     await stable(page);
     const world = await extent(page);
-    assert.ok(world[0] >= -180.01 && world[2] <= 180.01 && world[1] >= -85.052 && world[3] <= 85.052, 'Zooming out stays inside the valid projected world');
+    assert.ok(world[1] >= -85.052 && world[3] <= 85.052, 'Latitude stays inside the valid projected world while longitude can wrap');
     await geo(page).getByRole('button', { name: '全国总览', exact: true }).click();
     await geo(page).getByLabel('地理事件').selectOption('03-01');
     await page.waitForFunction(() => document.querySelector('.geography-atlas').dataset.eventId === '03-01');
@@ -178,8 +193,25 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
     await geo(page).locator('[data-basemap-state=ready]').waitFor();
     assert.equal(await geo(page).getByRole('alert').count(), 0);
+    network.labelsFail = true;
+    await page.reload(); await mode(page, 'zh', true);
+    await geo(page).getByRole('alert').filter({ hasText: '中文注记加载失败' }).waitFor();
+    await geo(page).locator('[data-terrain-state=ready]').waitFor();
+    assert.equal(await rows(page).count(), 3);
+    network.labelsFail = false; network.terrainFail = true;
+    await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
+    await geo(page).getByRole('alert').filter({ hasText: '地形加载失败' }).waitFor();
+    network.terrainFail = false; network.auth = true;
+    await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
+    await geo(page).getByRole('alert').filter({ hasText: '鉴权失败' }).waitFor();
+    network.auth = '301013';
+    await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
+    await geo(page).getByRole('alert').filter({ hasText: '服务器端类型' }).waitFor();
+    network.auth = false;
+    await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
+    await geo(page).locator('[data-basemap-state=ready]').waitFor();
 
-    for (const [width, height] of [[1440, 1000], [390, 844], [320, 700], [844, 390]]) for (const lang of ['zh', 'en']) {
+    for (const [width, height] of [[1920, 1080], [1440, 1000], [390, 844], [320, 700], [844, 390]]) for (const lang of ['zh', 'en']) {
       await page.setViewportSize({ width, height });
       await page.goto(`${base}?chapter=03&lang=${lang}`);
       await mode(page, lang, true);
@@ -187,6 +219,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await stable(page);
       const bounds = await extent(page);
       assert.ok(inside([73, 3], bounds) && inside([136, 54], bounds));
+      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001));
+      assert.equal(await page.locator('.chapter-rail .resume-reading, .chapter-rail .begin-journey').count(), 0);
+      assert.equal(await page.locator('.begin-journey:visible').count(), 0, 'Geography has no tour-start control');
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
       assert.equal(await geo(page).evaluate(node => node.scrollWidth > node.clientWidth + 1), false);
       assert.ok(await geo(page).locator('button, input:not([type=checkbox]), select').evaluateAll(nodes => nodes.filter(node => node.checkVisibility()).every(node => node.getBoundingClientRect().height >= 44)));
@@ -198,20 +233,29 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       const columns = await geo(page).locator('.geo-compare-grid').evaluate(node => getComputedStyle(node).gridTemplateColumns.split(' ').length);
       assert.equal(columns, width <= 768 ? 1 : 2);
       if (lang === 'en') {
-        const untranslated = await geo(page).evaluate(node => [...node.querySelectorAll('*')].filter(item => !item.children.length && item.checkVisibility() && !item.closest('.original-text') && /[\u3400-\u9fff]/.test(item.textContent)).map(item => item.textContent));
+        const untranslated = await geo(page).evaluate(node => [...node.querySelectorAll('*')].filter(item => !item.children.length && item.checkVisibility() && !item.closest('.original-text, .ol-attribution') && /[\u3400-\u9fff]/.test(item.textContent)).map(item => item.textContent));
         assert.deepEqual(untranslated, []);
       }
       await page.locator('.map-fullscreen').click();
       await page.locator('.is-map-fullscreen').waitFor();
+      await geo(page).getByRole('button', { name: lang === 'zh' ? '全国总览' : 'China overview', exact: true }).click();
+      await stable(page);
+      const fullscreenBounds = await extent(page);
+      assert.ok(inside([73, 3], fullscreenBounds) && inside([136, 54], fullscreenBounds), 'Fullscreen includes the entire configured national extent');
+      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001), 'Fullscreen keeps the overview centered near Xian');
       assert.equal(await geo(page).locator('.ol-attribution').isVisible(), true);
       await mode(page, lang, false);
       assert.equal(await page.locator('.fullscreen-orientation:visible').count(), 1);
       await mode(page, lang, true);
       await page.keyboard.press('Escape');
       await page.locator('.is-map-fullscreen').waitFor({ state: 'detached' });
+      await stable(page);
+      const normalBounds = await extent(page);
+      assert.ok(inside([73, 3], normalBounds) && inside([136, 54], normalBounds), 'Leaving fullscreen refits without losing the national extent');
+      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001));
       if (name === 'chromium' && lang === 'zh') {
         await geo(page).locator('.geo-map').scrollIntoViewIfNeeded();
-        await page.screenshot({ path: new URL(`osm-exploration-${width}x${height}.png`, output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
+        await page.screenshot({ path: new URL(`tianditu-exploration-${width}x${height}.png`, output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
       }
     }
     await page.setViewportSize({ width: 390, height: 844 });
@@ -282,8 +326,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.map-fullscreen').click(); await page.locator('.is-fallback-fullscreen').waitFor();
     await mode(page, 'zh', true); await geo(page).locator('.ol-attribution').waitFor();
     await page.keyboard.press('Escape'); await page.locator('.is-fallback-fullscreen').waitFor({ state: 'detached' });
+    assert.equal(network.osmRequests, 0, 'OSM is never a basemap fallback');
+    assert.ok(network.layers.ter > 0 && network.layers.cta > 0);
     assert.deepEqual(errors, []);
     await context.close();
-    console.log(`PASS ${name}: shared modes/fullscreen, nationwide OSM coverage (mock tiles), independent cameras, bilingual layouts, compact tools, linked place selection/focus, coincident accounts, exports, measurement and tile recovery/slow loading`);
+    console.log(`PASS ${name}: shared modes/fullscreen, nationwide Tianditu coverage (mock tiles), independent cameras, bilingual layouts, compact tools, linked place selection/focus, coincident accounts, exports, measurement and tile recovery/slow loading`);
   } finally { await browser.close(); }
 }

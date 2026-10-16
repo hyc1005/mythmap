@@ -24,6 +24,8 @@ concurrency:
 jobs:
   verify:
     uses: ./.github/workflows/verify-narrative.yml
+    secrets:
+      TIANDITU_BROWSER_KEY: ${{ secrets.TIANDITU_BROWSER_KEY }}
 
   deploy:
     needs: verify

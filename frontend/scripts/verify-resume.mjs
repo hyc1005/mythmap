@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
+import { mockTianditu } from './mock-tianditu.mjs';
 
 const base = process.env.ATLAS_URL;
 if (!base) throw new Error('Run through with-preview.mjs');
@@ -36,6 +37,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
   try {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
+    await mockTianditu(context);
     const page = await context.newPage();
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
@@ -62,12 +64,26 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.equal(await drawer(page).count(), 0, 'Homepage does not automatically open a reader');
     await page.locator('.resume-reading').getByText('阪泉之战', { exact: true }).waitFor();
     assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '00');
-    if (name === 'chromium') await page.locator('.chapter-rail').screenshot({ path: filename('continue-reading-390.png') });
+    if (name === 'chromium') await page.locator('.map-reading-actions').screenshot({ path: filename('continue-reading-controls-390.png') });
     await continueReading(page);
     assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '03');
     assert.equal(await drawer(page).getAttribute('data-entry-id'), '03-01');
     assert.ok(Math.abs(await drawer(page).evaluate(node => node.scrollTop) - immediate) <= 3);
     await page.locator('.drawer-close').click();
+    assert.equal(await page.locator('.resume-reading').evaluate(node => node === document.activeElement), true, 'Resume restores focus to its map-below entry');
+    await page.locator('.map-mode-switch').getByRole('button', { name: '真实地理', exact: true }).click();
+    await page.locator('.geography-main .resume-reading').waitFor();
+    assert.equal(await page.locator('.map-reading-actions').count(), 1);
+    assert.equal(await page.locator('.begin-journey:visible').count(), 0);
+    const resumeBounds = await page.locator('.resume-reading').boundingBox();
+    const readoutBounds = await page.locator('.geo-readout').boundingBox();
+    assert.ok(resumeBounds.y >= readoutBounds.y + readoutBounds.height, 'Geographic resume follows the coordinate readout');
+    await continueReading(page);
+    assert.equal(await drawer(page).getAttribute('data-entry-id'), '03-01');
+    await page.locator('.drawer-close').click();
+    assert.equal(await page.locator('.resume-reading').evaluate(node => node === document.activeElement), true, 'Geographic resume also restores focus');
+    await page.locator('.map-mode-switch').getByRole('button', { name: '木刻叙事', exact: true }).click();
+    await page.locator('.explore-playback .resume-reading').waitFor();
     await page.getByRole('button', { name: 'EN', exact: true }).click();
     await continueReading(page);
     assert.equal(new URL(page.url()).searchParams.get('lang'), 'en', 'Continue honors the current language');
