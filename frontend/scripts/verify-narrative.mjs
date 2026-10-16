@@ -780,6 +780,7 @@ try {
   await storyPage.clock.runFor(Math.round((600) / BASE_PLAYBACK_RATE));
   assert.equal(await local.getAttribute('data-elapsed'), frozenStory);
   await storyPage.getByRole('button', { name: '继续精卫填海', exact: true }).click();
+  await storyPage.locator('.myth-map-canvas').scrollIntoViewIfNeeded();
   const storyMapBounds = await storyPage.locator('.myth-map-canvas').boundingBox();
   await storyPage.mouse.move(storyMapBounds.x + 110, storyMapBounds.y + 160);
   await storyPage.mouse.down();
