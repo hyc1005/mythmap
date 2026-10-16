@@ -49,7 +49,9 @@ await mkdir(output, { recursive: true });
 const geo = page => page.locator('.geography-main');
 const rows = page => geo(page).locator('[data-candidate-id]');
 const mode = async (page, language, geographic) => {
-  await page.locator('.map-mode-switch').getByRole('button', { name: geographic ? language === 'zh' ? '真实地理' : 'Real geography' : language === 'zh' ? '木刻叙事' : 'Woodcut stories', exact: true }).click();
+  const button = page.locator('.map-mode-switch').getByRole('button', { name: geographic ? language === 'zh' ? '真实地理' : 'Real geography' : language === 'zh' ? '木刻叙事' : 'Woodcut stories', exact: true });
+  if (await page.locator('.is-map-fullscreen').count()) await button.press('Enter');
+  else await button.click();
   await page.locator(`.myth-map-wrap[data-map-mode="${geographic ? 'geography' : 'woodcut'}"]`).waitFor();
   await stable(page);
 };
