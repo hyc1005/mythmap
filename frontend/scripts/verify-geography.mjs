@@ -48,7 +48,11 @@ const output = new URL('../../output/qa/', import.meta.url);
 await mkdir(output, { recursive: true });
 const geo = page => page.locator('.geography-main');
 const rows = page => geo(page).locator('[data-candidate-id]');
-const mode = (page, language, geographic) => page.locator('.map-mode-switch').getByRole('button', { name: geographic ? language === 'zh' ? '真实地理' : 'Real geography' : language === 'zh' ? '木刻叙事' : 'Woodcut stories', exact: true }).click();
+const mode = async (page, language, geographic) => {
+  await page.locator('.map-mode-switch').getByRole('button', { name: geographic ? language === 'zh' ? '真实地理' : 'Real geography' : language === 'zh' ? '木刻叙事' : 'Woodcut stories', exact: true }).click();
+  await page.locator(`.myth-map-wrap[data-map-mode="${geographic ? 'geography' : 'woodcut'}"]`).waitFor();
+  await stable(page);
+};
 const extent = async page => JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-extent'));
 const fillSearch = async (page, label, value) => {
   if (!await geo(page).locator('.geo-search').evaluate(node => node.open)) await geo(page).locator('.geo-search summary').click();
