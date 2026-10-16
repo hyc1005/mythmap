@@ -1,6 +1,6 @@
 import { useLocale, localize } from './i18n';
 import brandMark from './assets/shanhai-mark.svg?raw';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import rawCatalog from '../public/data/atlas/catalog.json';
 import mythWorld from '../public/data/myth-world.json';
@@ -65,6 +65,7 @@ export default function App() {
   const panelTrigger = useRef(null);
   const openPanel = (name, event) => { panelTrigger.current = event.currentTarget; setPanel(name); };
   const detailTrigger = useRef(null);
+  const pendingDetailFocus = useRef(false);
   const detailPageScroll = useRef([0, 0]);
   const transitionTimer = useRef(null);
   const titleTimer = useRef(null);
@@ -134,14 +135,17 @@ export default function App() {
     return selected?.kind === 'story' || related && Number(related) > Number(chapterId) ? related : chapterId;
   };
   const closeDetail = () => {
+    pendingDetailFocus.current = true;
     setSelectedId(null);
-    requestAnimationFrame(() => {
-      if (detailTrigger.current?.isConnected) detailTrigger.current.focus({ preventScroll: true });
-      else if (panelTrigger.current?.isConnected) panelTrigger.current.focus({ preventScroll: true });
-      else document.querySelector('.myth-map-wrap')?.focus({ preventScroll: true });
-      window.scrollTo({ left: detailPageScroll.current[0], top: detailPageScroll.current[1], behavior: 'instant' });
-    });
   };
+  useLayoutEffect(() => {
+    if (selectedId || !pendingDetailFocus.current) return;
+    pendingDetailFocus.current = false;
+    if (detailTrigger.current?.isConnected) detailTrigger.current.focus({ preventScroll: true });
+    else if (panelTrigger.current?.isConnected) panelTrigger.current.focus({ preventScroll: true });
+    else document.querySelector('.myth-map-wrap')?.focus({ preventScroll: true });
+    window.scrollTo({ left: detailPageScroll.current[0], top: detailPageScroll.current[1], behavior: 'instant' });
+  }, [selectedId]);
   const selectStage = index => { requestStory(null, stages[index].id); setPlaying(false); setTourActive(false); if (index !== stageIndex) setPlaybackStatus('loading'); setStageIndex(index); setSelectedId(null); setLocateId(null); setPanel(null); };
   const navigateFullscreenStage = useCallback(index => {
     if (index < 0 || index >= stages.length) return;

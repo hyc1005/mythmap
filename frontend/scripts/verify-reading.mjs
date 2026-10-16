@@ -105,7 +105,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await detail(page).getByRole('button', { name: '收藏条目', exact: true }).click();
     assert.equal(await detail(page).getByRole('button', { name: '下一条', exact: true }).isDisabled(), true, 'Last filtered entry does not wrap into unrelated entries');
     await page.locator('.drawer-close').click();
-    assert.equal(await page.locator(`.beast-card[data-beast-id="${ids[0]}"]`).evaluate(node => node === document.activeElement), true, 'Close returns to original card');
+    await page.waitForFunction(id => {
+      const card = document.querySelector(`.beast-card[data-beast-id="${id}"]`);
+      return card === document.activeElement && !card.closest('[inert]');
+    }, ids[0]);
     await page.getByLabel('按阅读状态筛选').selectOption('read');
     assert.equal(await page.locator('.beast-card').count(), 2);
     await page.getByLabel('按阅读状态筛选').selectOption('unread');

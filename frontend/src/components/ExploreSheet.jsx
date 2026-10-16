@@ -1,11 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useLocale } from '../i18n';
 
 export default function ExploreSheet({ title, onClose, children, returnFocus, initialFocus, className = '' }) {
   const { t } = useLocale();
   const sheet = useRef(null);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const trigger = returnFocus || document.activeElement;
     const root = document.getElementById('root');
     const previous = [document.documentElement.style.overflow, document.body.style.overflow, root.inert];

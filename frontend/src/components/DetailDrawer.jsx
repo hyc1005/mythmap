@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { useLocale, localize } from '../i18n';
 import rawCatalog from '../../public/data/atlas/catalog.json';
 import { iconFor } from '../artwork';
@@ -40,7 +40,7 @@ export default function DetailDrawer({ selected, onClose, onOpen, restoreReading
     ...(selected.url ? [{ url: selected.url, title: selected.source }] : []),
     ...sources.filter(source => source.url),
   ].map(source => [source.url, source])).values()];
-  useEffect(() => {
+  useLayoutEffect(() => {
     const node = drawer.current.closest('.detail-scrim');
     const previous = [document.documentElement.style.overflow, document.body.style.overflow];
     document.documentElement.style.overflow = 'hidden';

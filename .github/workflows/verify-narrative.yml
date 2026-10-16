@@ -15,6 +15,8 @@ jobs:
   narrative:
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    env:
+      ATLAS_BROWSERS: chromium,firefox,webkit
     defaults:
       run:
         working-directory: frontend
@@ -55,10 +57,24 @@ jobs:
           echo "base=$base" >> "$GITHUB_OUTPUT"
       - run: npm run build -- --base "${{ steps.path.outputs.base }}"
       - run: npm run verify:publish
-      - name: Verify stories on the production path
-        env:
-          ATLAS_BROWSERS: chromium,firefox,webkit
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node --input-type=module -e "for (const script of ['locale','exploration','repairs','design','guided-tour','reading','resume','search','narrative']) await import('./scripts/verify-'+script+'.mjs');"
+      - name: Verify bilingual content
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-locale.mjs
+      - name: Verify exploration and sharing
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-exploration.mjs
+      - name: Verify failure recovery
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-repairs.mjs
+      - name: Verify layout and artwork
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-design.mjs
+      - name: Verify guided tours
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-guided-tour.mjs
+      - name: Verify reading and focus restoration
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-reading.mjs
+      - name: Verify continue reading
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-resume.mjs
+      - name: Verify global search
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-search.mjs
+      - name: Verify complete story playback
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-narrative.mjs
       - name: Upload verified site
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
         with:
