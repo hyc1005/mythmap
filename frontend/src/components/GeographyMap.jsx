@@ -7,6 +7,7 @@ import LineString from 'ol/geom/LineString';
 import { greatCircleArc } from 'ol/geom/flat/geodesic';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
+import Cluster from 'ol/source/Cluster';
 import ScaleLine from 'ol/control/ScaleLine';
 import Attribution from 'ol/control/Attribution';
 import TileLayer from 'ol/layer/Tile';
@@ -41,6 +42,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
   const references = useMemo(() => geographicReferences(catalog), [catalog]);
   const [query, setQuery] = useState(restore ? snapshot.query || '' : '');
   const [selectedId, setSelectedId] = useState(restore ? snapshot.selectedId || null : null);
+  const [clusterIds, setClusterIds] = useState([]);
   const [position, setPosition] = useState(geographyMapConfig.initialCenter);
   const [measuring, setMeasuring] = useState(false), measureMode = useRef(false), measurePoints = useRef([]);
   const [distance, setDistance] = useState(null), [layerStates, setLayerStates] = useState({ ter: 'loading', cta: 'loading' }), [emptyNotice, setEmptyNotice] = useState(false);
@@ -67,7 +69,10 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
     && (!query.trim() || `${item.properties.label} ${translate(item.properties.label, 'en')} ${item.properties.originalName || item.properties.name || ''} ${associationLabel(item)} ${translate(associationLabel(item), 'en')}`.toLocaleLowerCase().includes(query.trim().toLocaleLowerCase()))), [references, eventId, query, locale]);
   const selected = records.find(item => item.id === selectedId);
   const coincident = selected ? records.filter(item => item.geometry.coordinates.every((number, index) => number === selected.geometry.coordinates[index])) : [];
-  current.current = { selectedId, records, label: selected ? t(selected.properties.label) : '' };
+  const nearby = records.filter(item => clusterIds.includes(item.id));
+  const choices = nearby.length > 1 ? nearby : coincident;
+  const sameCoordinate = choices.length > 1 && choices.every(item => item.geometry.coordinates.every((number, index) => number === choices[0].geometry.coordinates[index]));
+  current.current = { selectedId, records, label: selected ? t(selected.properties.label) : '', clusterLabel: t('附近地点记录') };
   latestSnapshot.current = { ...latestSnapshot.current, originEventId, eventId, query, selectedId, viewMode: viewMode.current, compareOpen, compareIds: comparisonIds };
 
   const takeMeasurement = coordinate => {
@@ -113,18 +118,20 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
       };
     };
     newBasemap();
-    const points = new VectorLayer({ source: source.current, style: feature => {
-      const ids = feature.get('ids'), active = ids.includes(current.current.selectedId);
-      const traditional = feature.get('traditional');
-      const color = traditional ? '#496d75' : '#983e2c';
-      const options = { radius: active ? 10 : 8, fill: new Fill({ color: active ? color : '#f5efdf' }), stroke: new Stroke({ color, width: 2 }) };
+    const clusters = new Cluster({ source: source.current, distance: 36, minDistance: 0 });
+    const points = new VectorLayer({ source: clusters, style: feature => {
+      const members = feature.get('features');
+      const ids = members.flatMap(item => item.get('ids')), active = ids.includes(current.current.selectedId);
+      const traditional = members.every(item => item.get('traditional'));
+      const color = ids.length > 1 ? '#59412e' : traditional ? '#496d75' : '#983e2c';
+      const options = { radius: ids.length > 1 ? 13 : active ? 10 : 8, fill: new Fill({ color: active ? color : '#f5efdf' }), stroke: new Stroke({ color, width: 2 }) };
       const marker = new Style({ image: traditional ? new RegularShape({ ...options, points: 4 }) : new Circle(options),
         text: new Text({ text: ids.length > 1 ? String(ids.length) : '·', font: 'bold 12px sans-serif', fill: new Fill({ color: active ? '#fff7e5' : color }) }) });
       if (!active) return marker;
       const pixel = map.current?.getPixelFromCoordinate(feature.getGeometry().getCoordinates()) || [150, 100];
       const width = map.current?.getSize()?.[0] || 300;
       const align = pixel[0] < 100 ? 'left' : pixel[0] > width - 100 ? 'right' : 'center';
-      return [marker, new Style({ text: new Text({ text: current.current.label, font: '14px sans-serif', textAlign: align,
+      return [marker, new Style({ text: new Text({ text: members.length > 1 ? `${current.current.clusterLabel} · ${ids.length}` : current.current.label, font: '14px sans-serif', textAlign: align,
         offsetX: align === 'left' ? 12 : align === 'right' ? -12 : 0, offsetY: pixel[1] < 30 ? 22 : -20,
         fill: new Fill({ color: '#702f24' }), stroke: new Stroke({ color: '#f5efdf', width: 4 }) }) })];
     } });
@@ -139,9 +146,14 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
       const coordinate = toLonLat(event.coordinate); setPosition(coordinate);
       if (measureMode.current) { measureAction.current(coordinate); return; }
       const hit = instance.forEachFeatureAtPixel(event.pixel, feature => feature, { layerFilter: layer => layer === points, hitTolerance: 10 });
-      if (hit) setSelectedId(hit.get('ids')[0]);
+      if (hit) {
+        const ids = hit.get('features').flatMap(item => item.get('ids'));
+        setClusterIds(ids.length > 1 ? ids : []);
+        setSelectedId(ids.includes(current.current.selectedId) ? current.current.selectedId : ids[0]);
+      } else setClusterIds([]);
     });
     instance.on('moveend', () => {
+      setClusterIds([]);
       target.current.dataset.extent = JSON.stringify(transformExtent(instance.getView().calculateExtent(instance.getSize()), 'EPSG:3857', 'EPSG:4326'));
       target.current.dataset.center = JSON.stringify(toLonLat(instance.getView().getCenter()));
       latestSnapshot.current = { ...latestSnapshot.current, center: instance.getView().getCenter(), zoom: instance.getView().getZoom() };
@@ -153,7 +165,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
       if (viewMode.current === 'national') applyNational(instance);
     }); observer.observe(target.current);
     setReady(true);
-    return () => { live = false; controller?.abort(); unByKey(listeners); onSnapshot({ ...latestSnapshot.current, center: instance.getView().getCenter(), zoom: instance.getView().getZoom() }); observer.disconnect(); instance.setTarget(undefined); instance.dispose(); map.current = null; };
+    return () => { live = false; controller?.abort(); unByKey(listeners); onSnapshot({ ...latestSnapshot.current, center: instance.getView().getCenter(), zoom: instance.getView().getZoom() }); observer.disconnect(); instance.setTarget(undefined); instance.dispose(); clusters.setSource(null); map.current = null; };
   }, []);
 
   useEffect(() => {
@@ -170,11 +182,12 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
   }, [ready, visible]);
 
   const changeEvent = id => {
-    setEventId(id); setQuery(''); setSelectedId(null); setCompareOpen(false); setCompareIds([]);
+    setEventId(id); setQuery(''); setSelectedId(null); setClusterIds([]); setCompareOpen(false); setCompareIds([]);
     measurement.current.clear(); measurePoints.current = []; setDistance(null);
     measureMode.current = false; setMeasuring(false);
   };
   useEffect(() => { if (originEventId !== eventId) changeEvent(originEventId); }, [originEventId]);
+  useEffect(() => { setClusterIds([]); }, [query]);
   useEffect(() => {
     setEmptyNotice(false);
     if (!visible || transitioning || eventRecords.length) return;
@@ -185,7 +198,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
 
   useEffect(() => {
     source.current.clear();
-    source.current.addFeatures(groupReferences(records).map(group => new Feature({ geometry: new Point(fromLonLat(group[0].geometry.coordinates)), ids: group.map(item => item.id), traditional: group.some(item => item.properties.association_type === 'local_tradition') })));
+    source.current.addFeatures(groupReferences(records).map(group => new Feature({ geometry: new Point(fromLonLat(group[0].geometry.coordinates)), ids: group.map(item => item.id), traditional: group.every(item => item.properties.association_type === 'local_tradition') })));
   }, [records, ready]);
   useEffect(() => { source.current.changed(); }, [selectedId]);
   useEffect(() => {
@@ -204,8 +217,15 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
     return () => window.clearTimeout(timer);
   }, [visible, tilesReady, loadError]);
   const nationwide = () => {
+    setClusterIds([]);
     viewMode.current = 'national';
     if (map.current) applyNational(map.current);
+  };
+  const initialView = () => {
+    viewMode.current = 'initial'; setClusterIds([]);
+    const view = map.current?.getView();
+    view?.setCenter(fromLonLat(geographyMapConfig.initialCenter));
+    view?.setZoom(geographyMapConfig.initialZoom);
   };
   const fit = () => {
     if (!map.current || !records.length) return;
@@ -213,7 +233,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
     map.current.getView().fit(source.current.getExtent(), { padding: [48, 48, 48, 48], maxZoom: 9, duration: 0 });
   };
   const locate = record => {
-    setSelectedId(record.id); viewMode.current = 'local';
+    setSelectedId(record.id); setClusterIds([]); viewMode.current = 'local';
     map.current?.getView().setCenter(fromLonLat(record.geometry.coordinates));
     map.current?.getView().setZoom(Math.max(7, map.current.getView().getZoom()));
   };
@@ -228,15 +248,15 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
   const unlocated = unlocatedStories(catalog);
   return <div className="geography-atlas" data-ready={ready} data-event-id={eventId} data-basemap-state={loadError || (tilesReady ? 'ready' : 'loading')} data-terrain-state={layerStates.ter} data-labels-state={layerStates.cta}>
     <div className="geo-tools geo-primary"><label>{t('事件')}<select aria-label={t('地理事件')} value={eventId} onChange={event => { changeEvent(event.target.value); onEventChange(event.target.value); }}>{catalog.stages.map(stage => <optgroup key={stage.id} label={`${stage.id} ${t(stage.title)}`}>{events.filter(event => event.properties.stage_id === stage.id).map(event => <option key={event.id} value={event.id}>{t(event.properties.name)}</option>)}</optgroup>)}</select></label>
-      <div className="geo-view-actions"><button onClick={nationwide}>{t('全国总览')}</button><button onClick={fit} disabled={!records.length}>{t('查看本事件地点')}</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() + 1); }} aria-label={t('地理地图放大')}>＋</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() - 1); }} aria-label={t('地理地图缩小')}>−</button></div>
+      <div className="geo-view-actions"><button onClick={initialView}>{t('初始视野')}</button><button onClick={nationwide}>{t('全国总览')}</button><button onClick={fit} disabled={!records.length} aria-label={t('查看本事件地点')}>{t('事件地点')}</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() + 1); }} aria-label={t('地理地图放大')}>＋</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() - 1); }} aria-label={t('地理地图缩小')}>−</button></div>
     </div>
-    <p className="geo-legend"><span>◆ {t('地方传说')}</span><span>● {t('地理考证')}</span></p>
+    <p className="geo-legend"><span>◆ {t('地方传说')}</span><span>● {t('地理考证')}</span><span>③ {t('聚合记录')}</span></p>
     <div className="geo-map-stage"><div className="geo-map" ref={target} tabIndex={0} onKeyDown={event => { if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', '+', '-'].includes(event.key)) viewMode.current = 'local'; }} role="region" aria-label={t('真实地理参考地图')} /><span className="geo-north" aria-label={t('地图北向')}>{t('北 ↑')}</span><ChapterNotice change={transitioning} title={catalog.stages.find(stage => stage.id === chapterId)?.title} />{emptyNotice && <div className="geo-empty-notice" role="status"><b>{t('暂无记录')}</b><span>{t('当前资料尚未提供可靠关联地点')}</span></div>}</div>
     <div className="geo-readout"><span>{t('经度、纬度')} · {coordinates(position)}°</span><span>WGS84 · EPSG:4326 / 3857</span></div>
     {readingActions}
     {!tilesReady && !loadError && <p className="geo-load-status" role="status">{t(slowLoading ? '底图加载较慢，地点资料仍可查看。' : '正在加载在线底图…')}</p>}
     {selected && <div className="geo-selection"><p role="status"><strong>{t(selected.properties.label)}</strong><span>{t(associationLabel(selected))} · {t('参考坐标，非事件发生点')}</span></p><button onClick={() => { detailHeading.current?.scrollIntoView({ block: 'start', behavior: 'instant' }); detailHeading.current?.focus({ preventScroll: true }); }}>{t('查看地点资料')}</button>
-      {coincident.length > 1 && <div className="geo-coincident" role="group" aria-label={t('同坐标关联记录')}><span>{t('同坐标关联记录')} · {coincident.length}</span>{coincident.map(record => <button key={record.id} data-coincident-id={record.id} aria-pressed={record.id === selectedId} onClick={() => setSelectedId(record.id)}>{t(record.properties.label)} · {t(associationLabel(record))}</button>)}</div>}
+      {choices.length > 1 && <div className={sameCoordinate ? 'geo-coincident' : 'geo-cluster-choices'} role="group" aria-label={t(sameCoordinate ? '同坐标关联记录' : '附近地点记录')}><span>{t(sameCoordinate ? '同坐标关联记录' : '附近地点记录')} · {choices.length}</span>{!sameCoordinate && <p>{t('仅为屏幕聚合，各记录仍使用原始坐标。')}</p>}{choices.map(record => <button key={record.id} data-coincident-id={sameCoordinate ? record.id : undefined} data-cluster-id={record.id} aria-pressed={record.id === selectedId} onClick={() => setSelectedId(record.id)}>{t(record.properties.label)} · {t(associationLabel(record))}</button>)}{!sameCoordinate && <button className="geo-cluster-close" onClick={() => { setClusterIds([]); target.current?.focus({ preventScroll: true }); }}>{t('收起附近记录')}</button>}</div>}
     </div>}
     <details className="geo-search" open={searchExpanded} onToggle={event => setSearchExpanded(event.currentTarget.open)}><summary>{t('搜索地点')}{query.trim() && <span> · {query} · {records.length}/{eventRecords.length}</span>}</summary><div className="geo-tools"><input ref={searchInput} aria-label={t('搜索地理参考点')} placeholder={t('搜索本事件地点或类型')} value={query} maxLength={100} onChange={event => setQuery(event.target.value)} />{query && <button onClick={() => { setQuery(''); searchInput.current?.focus(); }}>{t('清除搜索')}</button>}</div></details>
     <details className="geo-analysis" open={toolsExpanded} onToggle={event => { setToolsExpanded(event.currentTarget.open); if (!event.currentTarget.open) { measureMode.current = false; setMeasuring(false); } }}><summary>{t('更多地图工具')}{measuring && <span> · {t('测距中')}</span>}{!toolsExpanded && distance !== null && <span> · {t('球面距离')} {(distance / 1000).toFixed(2)} km</span>}</summary><div className="geo-tools geo-secondary">
@@ -254,7 +274,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
       <div className="geo-result-list" ref={resultList}>{records.map(record => <button key={record.id} data-candidate-id={record.id} aria-pressed={selected?.id === record.id} aria-controls="geo-place-detail" onClick={() => locate(record)}><b>{t(record.properties.label)}</b><small>{t(associationLabel(record))}</small></button>)}</div>
       {!records.length && <p>{t(query ? '本事件没有匹配的参考点，请清除搜索。' : '本事件暂无可靠地点资料；保留故事阅读，不推测坐标。')}</p>}
     </section><section className="geo-reference" id="geo-place-detail" aria-label={t('参考点依据')}>
-      {selected ? <><div className="geo-detail-heading"><h3 tabIndex={-1} ref={detailHeading}>{t(selected.properties.label)}</h3><button onClick={() => { target.current?.scrollIntoView({ block: 'start', behavior: 'instant' }); target.current?.focus({ preventScroll: true }); }}>{t('返回地图')}</button></div><GeographicEvidence record={selected} />
+      {selected ? <><div className="geo-detail-heading"><h3 tabIndex={-1} ref={detailHeading}>{t(selected.properties.label)}</h3><button onClick={() => { target.current?.scrollIntoView({ block: 'start', behavior: 'instant' }); target.current?.focus({ preventScroll: true }); }}>{t('返回地图')}</button></div><GeographicEvidence key={selected.id} record={selected} />
         <button onClick={() => onOpen(selected.properties.entity_id)}>{t('查看关联故事与出处')}</button>
       </> : <p>{t('选择地图标记或列表条目，查看传说版本、地理考证与位置精度。')}</p>}
     </section></div>

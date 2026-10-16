@@ -71,6 +71,14 @@
 .geo-coincident { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
 .geo-coincident > span { grid-column: 1 / -1; font-size: 14px; }
 .geo-coincident button { text-align: left; overflow-wrap: anywhere; }
+.geo-cluster-choices { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.geo-cluster-choices > span, .geo-cluster-choices > p, .geo-cluster-close { grid-column: 1 / -1; }
+.geo-cluster-choices > p { font-size: 14px; color: var(--soft-ink); }
+.geo-cluster-choices button { text-align: left; overflow-wrap: anywhere; }
+.geo-cluster-choices .geo-cluster-close { justify-self: start; }
+.geo-evidence-section { border-top: 1px solid var(--edge); margin-block: 8px; }
+.geo-evidence-section > summary { min-height: 44px; padding-block: 10px; cursor: pointer; font-weight: 600; }
+.geo-evidence-section blockquote { margin-inline: 12px; }
 .geo-result-actions, .geo-detail-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-block: 10px; }
 .geo-result-actions p { margin: 0; }
 .geo-result-list button[aria-pressed=true] { border-left: 3px solid var(--verm); background: #ede0c6; }
@@ -79,11 +87,12 @@
   .geo-primary > label { width: 100%; }
   .geo-primary select { flex: 1; min-width: 0; width: auto; }
   .geo-view-actions { width: 100%; }
-  .geo-view-actions button:nth-child(-n+2) { flex: 1; }
+  .geo-view-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) 44px 44px; align-items: stretch; }
+  .geo-view-actions button { min-width: 0; padding-inline: 4px; font-size: 14px; overflow-wrap: anywhere; text-wrap: balance; }
   .geo-legend { margin-block: 6px; }
   .geo-selection { grid-template-columns: minmax(0, 1fr); }
   .geo-selection > button { justify-self: start; }
-  .geo-coincident { grid-template-columns: minmax(0, 1fr); }
+  .geo-coincident, .geo-cluster-choices { grid-template-columns: minmax(0, 1fr); }
 }
 
 .myth-map-wrap > [hidden] { display: none !important; }

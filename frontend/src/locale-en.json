@@ -620,5 +620,15 @@
   "天地图中文注记加载失败；地形和地点资料仍可查看。": "Tianditu place labels failed to load. Terrain and place evidence remain available.",
   "底图：天地图；地点为传说或考证关联，不是历史事件定位证明。": "Basemap: Tianditu. Places indicate tradition or research associations, not proven historical event sites.",
   "天地图 · 国家基础地理信息中心": "Tianditu · National Geomatics Center of China",
-  "当前 Key 为服务器端类型，浏览器页面需要浏览器端 Key。": "This is a server-side key. The browser page requires a browser application key."
+  "当前 Key 为服务器端类型，浏览器页面需要浏览器端 Key。": "This is a server-side key. The browser page requires a browser application key.",
+  "初始视野": "Initial view",
+  "事件地点": "Event places",
+  "聚合记录": "Grouped records",
+  "附近地点记录": "Nearby place records",
+  "仅为屏幕聚合，各记录仍使用原始坐标。": "Grouped for display only. Each record retains its original coordinates.",
+  "收起附近记录": "Close nearby records",
+  "原文摘录": "Quoted passages",
+  "出处与核验状态": "Sources and review status",
+  "坐标与精度依据": "Coordinates and precision",
+  "暂无可核对的原文摘录。": "No verifiable passage is available."
 }

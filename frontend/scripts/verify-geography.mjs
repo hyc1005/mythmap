@@ -3,6 +3,7 @@ import { readFile, mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
 import { mockTianditu } from './mock-tianditu.mjs';
 import { geographyMapConfig } from '../src/geography-map-config.js';
+import { fromLonLat } from 'ol/proj.js';
 import { referenceCollection, validReference, groupReferences, unlocatedStories, geographicReferences, geographicEvents, defaultGeographicEvent } from '../src/geography.js';
 
 const base = process.env.ATLAS_URL;
@@ -181,6 +182,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     const exported = JSON.parse(Buffer.concat(chunks).toString());
     assert.equal(exported.features.length, 4);
     assert.ok(exported.features.every(item => validReference(item) && item.properties.reference_only && item.properties.entity_id === '03-04'));
+    for (const item of exported.features) assert.deepEqual(item.geometry, references.find(record => record.id === item.id).geometry, 'Display clustering never changes exported coordinates');
     await geo(page).getByRole('button', { name: '两点测距', exact: true }).click();
     await geo(page).getByRole('button', { name: '以视图中心取点', exact: true }).click();
     await geo(page).getByRole('button', { name: '地理地图放大', exact: true }).click();
@@ -215,8 +217,40 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
     await geo(page).locator('[data-basemap-state=ready]').waitFor();
 
+    await geo(page).getByRole('button', { name: '初始视野', exact: true }).click();
+    await stable(page);
+    assert.match(await geo(page).locator('.ol-scale-line-inner').innerText(), /500 km/);
+    await geo(page).locator('.geo-map').scrollIntoViewIfNeeded();
+    const clusterCamera = await extent(page);
+    const clusterBox = await geo(page).locator('.geo-map').boundingBox();
+    const clusterRecords = references.filter(record => record.properties.entity_id === '03-01');
+    const clusterCenter = clusterRecords.map(record => fromLonLat(record.geometry.coordinates)).reduce((sum, coordinate) => sum.map((value, index) => value + coordinate[index] / clusterRecords.length), [0, 0]);
+    const southwest = fromLonLat(clusterCamera.slice(0, 2)), northeast = fromLonLat(clusterCamera.slice(2));
+    await page.mouse.click(clusterBox.x + (clusterCenter[0] - southwest[0]) / (northeast[0] - southwest[0]) * clusterBox.width, clusterBox.y + (northeast[1] - clusterCenter[1]) / (northeast[1] - southwest[1]) * clusterBox.height);
+    await geo(page).locator('.geo-cluster-choices').waitFor();
+    assert.equal(await geo(page).locator('.geo-cluster-choices [data-cluster-id]').count(), 3, 'Nearby distinct coordinates share one display marker');
+    await geo(page).locator('[data-cluster-id="03-01-candidate-2"]').click();
+    await geo(page).locator('[data-candidate-id="03-01-candidate-2"][aria-pressed=true]').waitFor();
+    assert.deepEqual(await extent(page), clusterCamera, 'Choosing a grouped record preserves the camera');
+    assert.equal(await geo(page).locator('.geo-reference .geo-evidence-section').count(), 3);
+    assert.ok(await geo(page).locator('.geo-reference .geo-evidence-section').evaluateAll(nodes => nodes.every(node => !node.open)), 'Evidence starts with its summary and collapsed sections');
+    await geo(page).locator('.geo-reference [data-evidence-section=coordinates] summary').click();
+    assert.match(await geo(page).locator('.geo-reference [data-evidence-section=coordinates]').innerText(), /115\.640, 40\.345/);
+    const selectedBeforeReset = await geo(page).locator('[data-candidate-id][aria-pressed=true]').getAttribute('data-candidate-id');
+    await geo(page).getByRole('button', { name: '全国总览', exact: true }).click();
+    await geo(page).getByRole('button', { name: '初始视野', exact: true }).click();
+    await stable(page);
+    assert.equal(await geo(page).locator('[data-candidate-id][aria-pressed=true]').getAttribute('data-candidate-id'), selectedBeforeReset);
+    assert.match(await geo(page).locator('.ol-scale-line-inner').innerText(), /500 km/);
+    assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001));
+    await geo(page).getByRole('button', { name: '查看本事件地点', exact: true }).click();
+    await stable(page);
+    assert.equal(await geo(page).locator('.geo-cluster-choices').count(), 0, 'Changing scale closes the old nearby choice list');
+    await page.waitForLoadState('networkidle');
+
     for (const [width, height] of [[1920, 1080], [1440, 1000], [390, 844], [320, 700], [844, 390]]) for (const lang of ['zh', 'en']) {
       await page.setViewportSize({ width, height });
+      await page.waitForLoadState('networkidle');
       await page.goto(`${base}?chapter=03&lang=${lang}`);
       await mode(page, lang, true);
       await geo(page).locator('[data-basemap-state=ready]').waitFor();
@@ -226,6 +260,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       assert.match(await geo(page).locator('.ol-scale-line-inner').innerText(), /500 km/);
       await page.locator('.map-fullscreen').click();
       await page.locator('.is-map-fullscreen').waitFor();
+      await stable(page);
+      await geo(page).getByRole('button', { name: lang === 'zh' ? '地理地图放大' : 'Zoom geographic map in', exact: true }).click();
+      await geo(page).getByRole('button', { name: lang === 'zh' ? '初始视野' : 'Initial view', exact: true }).click();
       await stable(page);
       assert.match(await geo(page).locator('.ol-scale-line-inner').innerText(), /500 km/, 'Fullscreen preserves the initial regional scale');
       assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001));
@@ -299,6 +336,22 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.deepEqual(await extent(page), groupCamera, 'Choosing a coincident account does not move or jitter the map');
     await geo(page).getByRole('button', { name: '查看地点资料', exact: true }).click();
     assert.equal(await geo(page).locator('.geo-reference h3').evaluate(node => node === document.activeElement), true);
+    const detail = geo(page).locator('.geo-reference');
+    await detail.locator('[data-evidence-section=quotes] summary').focus();
+    await page.keyboard.press('Enter');
+    await detail.locator('[data-evidence-section=quotes] blockquote').first().waitFor();
+    const originalExcerpt = references.find(record => record.id === '03-04-tradition-changzi').properties.evidence.find(item => item.excerpt).excerpt;
+    assert.ok((await detail.locator('[data-evidence-section=quotes]').innerText()).includes(originalExcerpt));
+    await detail.locator('[data-evidence-section=sources] summary').click();
+    assert.ok(await detail.locator('[data-evidence-section=sources] a').count() > 0);
+    await mode(page, 'zh', false);
+    await page.locator('.language-switch button[lang=en]').click();
+    await mode(page, 'en', true);
+    assert.equal(await detail.locator('[data-evidence-section=quotes]').evaluate(node => node.open), true, 'Evidence expansion survives mode and language changes');
+    assert.equal(await detail.locator('[data-evidence-section=sources]').evaluate(node => node.open), true);
+    await mode(page, 'en', false);
+    await page.locator('.language-switch button[lang=zh-CN]').click();
+    await mode(page, 'zh', true);
     await geo(page).getByRole('button', { name: '返回地图', exact: true }).click();
     assert.equal(await geo(page).locator('.geo-map').evaluate(node => node === document.activeElement), true);
     await fillSearch(page, '搜索地理参考点', '长子');
@@ -348,6 +401,6 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.ok(network.layers.ter > 0 && network.layers.cta > 0);
     assert.deepEqual(errors, []);
     await context.close();
-    console.log(`PASS ${name}: shared modes/fullscreen, nationwide Tianditu coverage (mock tiles), independent cameras, bilingual layouts, compact tools, linked place selection/focus, coincident accounts, exports, measurement and tile recovery/slow loading`);
+    console.log(`PASS ${name}: shared modes/fullscreen, nationwide Tianditu coverage (mock tiles), independent cameras, bilingual layouts, initial-view reset, nearby clusters with unchanged exports, collapsible evidence/keyboard/state, compact tools, linked place selection/focus, coincident accounts, measurement and tile recovery/slow loading`);
   } finally { await browser.close(); }
 }

@@ -17,7 +17,7 @@ export default function GeographyComparison({ records, ids, onChange, onClose })
           {records.map(item => <option key={item.id} value={item.id} disabled={item.id === ids[1 - index]}>{t(item.properties.label)} · {t(associationLabel(item))}</option>)}
         </select></label>
         <h4>{t(record.properties.label)}</h4>
-        <GeographicEvidence record={record} />
+        <GeographicEvidence key={record.id} record={record} />
       </article>;
     })}</div>
   </section>;
