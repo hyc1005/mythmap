@@ -109,6 +109,8 @@ After building, run `node scripts/with-preview.mjs --base /mythmap/ -- node scri
 
 Story animations use a shared 1.3x base rate in `src/playback.js`; the 1x/2x controls are relative to that base. `npm run verify:playback-speed` checks all three clocks. Local traditions and reviewed pilot evidence are maintained in `src/geography-associations.json`, preserving legacy candidate IDs and coordinates.
 
+On phones, place search and measurement/export tools start collapsed. Active search filters remain visible in the summary; closing tools exits measurement mode while retaining a labelled result. Selected places link the map, result list and evidence with explicit reading/back-to-map controls. Coincident records can be selected without shifting coordinates or the camera. Slow initial basemap loading is distinguished from missing evidence.
+
 The geographic view can compare two accounts for the same event, including association type, account, review status, excerpts, sources and coordinate precision. Cards appear side by side on desktop and vertically on mobile. Comparison choices survive reopening, reset when changing events and remain independent of place search. No location rankings or invented narrative variants are supplied.
 
 There are 32 geographic association records (28 legacy hypotheses and four local traditions). Reviewed pilot entries include traceable summaries and explicit limits, publisher, publication date where known, review date, passage locator and review scope. Indexed excerpts are distinguished from webpage text; shared quotations are not counted as independent narrative variants.

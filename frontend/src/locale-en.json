@@ -602,5 +602,14 @@
   "暂无记录": "No records yet",
   "当前资料尚未提供可靠关联地点": "Current sources provide no reliable associated places",
   "在线底图加载失败，部分区域可能未显示；关联资料仍可查询。": "The online basemap failed to load; some regions may be missing. Association records remain available.",
-  "底图：OpenStreetMap；地点为传说或考证关联，不是历史事件定位证明。": "Basemap: OpenStreetMap. Places represent traditions or hypotheses, not established historical event sites."
+  "底图：OpenStreetMap；地点为传说或考证关联，不是历史事件定位证明。": "Basemap: OpenStreetMap. Places represent traditions or hypotheses, not established historical event sites.",
+  "搜索地点": "Search places",
+  "清除搜索": "Clear search",
+  "更多地图工具": "More map tools",
+  "测距中": "Measuring",
+  "查看地点资料": "Read place evidence",
+  "返回地图": "Back to map",
+  "同坐标关联记录": "Records at this coordinate",
+  "正在加载在线底图…": "Loading the online basemap…",
+  "底图加载较慢，地点资料仍可查看。": "The basemap is taking longer to load. Place evidence is still available."
 }

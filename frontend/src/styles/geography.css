@@ -59,6 +59,33 @@
 .geo-account { margin-block: 12px; padding-block: 4px; border-block: 1px solid var(--edge); }
 .geo-source-meta { margin-block: 4px; font-size: 14px; color: var(--soft-ink); }
 
+.geo-primary { margin-top: 0; }
+.geo-view-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.geo-search, .geo-analysis { margin-block: 8px; border-block: 1px solid var(--edge); }
+.geo-search summary, .geo-analysis summary { min-height: 44px; padding: 9px 4px; cursor: pointer; overflow-wrap: anywhere; }
+.geo-search summary span { color: var(--verm); }
+.geo-load-status { padding: 8px 10px; border-left: 2px solid var(--edge); color: var(--ink); }
+.geo-selection { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: center; margin-block: 10px; padding: 10px; border: 1px solid var(--edge); border-left: 3px solid var(--verm); }
+.geo-selection p { margin: 0; overflow-wrap: anywhere; }
+.geo-selection p span { display: block; font-size: 14px; color: var(--soft-ink); }
+.geo-coincident { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.geo-coincident > span { grid-column: 1 / -1; font-size: 14px; }
+.geo-coincident button { text-align: left; overflow-wrap: anywhere; }
+.geo-result-actions, .geo-detail-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-block: 10px; }
+.geo-result-actions p { margin: 0; }
+.geo-result-list button[aria-pressed=true] { border-left: 3px solid var(--verm); background: #ede0c6; }
+.geo-reference h3:focus-visible { outline: 2px solid var(--verm); outline-offset: 3px; }
+@media (max-width: 768px) {
+  .geo-primary > label { width: 100%; }
+  .geo-primary select { flex: 1; min-width: 0; width: auto; }
+  .geo-view-actions { width: 100%; }
+  .geo-view-actions button:nth-child(-n+2) { flex: 1; }
+  .geo-legend { margin-block: 6px; }
+  .geo-selection { grid-template-columns: minmax(0, 1fr); }
+  .geo-selection > button { justify-self: start; }
+  .geo-coincident { grid-template-columns: minmax(0, 1fr); }
+}
+
 .myth-map-wrap > [hidden] { display: none !important; }
 .map-mode-switch { display: flex; flex-wrap: wrap; gap: 4px; margin-right: auto; }
 .map-mode-switch button { min-height: 44px; min-width: 44px; padding: 7px 10px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); font: inherit; cursor: pointer; }

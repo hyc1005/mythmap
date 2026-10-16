@@ -23,5 +23,5 @@ export function InkText({ text, variant = 'title', animate = true }) {
 }
 
 export function ChapterNotice({ change, title }) {
-  return <div key={`${change}-${title}`} className={`chapter-transition-veil ${change ? 'is-visible' : ''}`} role="status" aria-live="polite">{change && <span>{title}</span>}</div>;
+  return <div key={`${change}-${title}`} className={`chapter-transition-veil ${change ? 'is-visible' : ''}`} role="status" aria-live="polite">{Boolean(change) && <span>{title}</span>}</div>;
 }

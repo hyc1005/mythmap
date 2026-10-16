@@ -47,6 +47,10 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
   const viewMode = useRef(restore ? snapshot.viewMode || 'national' : 'national');
   const layerRefs = useRef({}), current = useRef({}), latestSnapshot = useRef(snapshot), [ready, setReady] = useState(false);
   const compareTrigger = useRef(null);
+  const resultList = useRef(null), detailHeading = useRef(null), searchInput = useRef(null);
+  const [searchExpanded, setSearchExpanded] = useState(() => window.matchMedia('(min-width: 769px)').matches);
+  const [toolsExpanded, setToolsExpanded] = useState(() => window.matchMedia('(min-width: 769px)').matches);
+  const [slowLoading, setSlowLoading] = useState(false);
   const [compareOpen, setCompareOpen] = useState(restore && Boolean(snapshot.compareOpen));
   const [compareIds, setCompareIds] = useState(restore ? snapshot.compareIds || [] : []);
   const eventRecords = references.filter(item => item.properties.entity_id === eventId);
@@ -55,6 +59,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
   const records = useMemo(() => references.filter(item => item.properties.entity_id === eventId
     && (!query.trim() || `${item.properties.label} ${translate(item.properties.label, 'en')} ${item.properties.originalName || item.properties.name || ''} ${associationLabel(item)} ${translate(associationLabel(item), 'en')}`.toLocaleLowerCase().includes(query.trim().toLocaleLowerCase()))), [references, eventId, query, locale]);
   const selected = records.find(item => item.id === selectedId);
+  const coincident = selected ? records.filter(item => item.geometry.coordinates.every((number, index) => number === selected.geometry.coordinates[index])) : [];
   current.current = { selectedId, records, label: selected ? t(selected.properties.label) : '' };
   latestSnapshot.current = { ...latestSnapshot.current, originEventId, eventId, query, selectedId, viewMode: viewMode.current, compareOpen, compareIds: comparisonIds };
 
@@ -157,6 +162,21 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
     source.current.addFeatures(groupReferences(records).map(group => new Feature({ geometry: new Point(fromLonLat(group[0].geometry.coordinates)), ids: group.map(item => item.id), traditional: group.some(item => item.properties.association_type === 'local_tradition') })));
   }, [records, ready]);
   useEffect(() => { source.current.changed(); }, [selectedId]);
+  useEffect(() => {
+    if (!visible) return;
+    const list = resultList.current;
+    const row = list && [...list.querySelectorAll('[data-candidate-id]')].find(node => node.dataset.candidateId === selectedId);
+    if (!row) return;
+    const top = row.getBoundingClientRect().top - list.getBoundingClientRect().top + list.scrollTop;
+    if (top < list.scrollTop) list.scrollTop = top;
+    else if (top + row.offsetHeight > list.scrollTop + list.clientHeight) list.scrollTop = top + row.offsetHeight - list.clientHeight;
+  }, [selectedId, records, visible]);
+  useEffect(() => {
+    setSlowLoading(false);
+    if (!visible || tilesReady || loadError) return;
+    const timer = window.setTimeout(() => setSlowLoading(true), 10000);
+    return () => window.clearTimeout(timer);
+  }, [visible, tilesReady, loadError]);
   const nationwide = () => {
     viewMode.current = 'national';
     map.current?.getView().fit(area, { padding: [24, 24, 24, 24], duration: 0 });
@@ -182,29 +202,33 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
   };
   const unlocated = unlocatedStories(catalog);
   return <div className="geography-atlas" data-ready={ready} data-event-id={eventId} data-basemap-state={loadError ? 'error' : tilesReady ? 'ready' : 'loading'}>
-    <p className="geo-note">{t('每次探索一个事件：地点表示地方传说或地理考证关联，不证明事件发生。')}</p>
-    <div className="geo-tools"><label>{t('事件')}<select aria-label={t('地理事件')} value={eventId} onChange={event => { changeEvent(event.target.value); onEventChange(event.target.value); }}>{catalog.stages.map(stage => <optgroup key={stage.id} label={`${stage.id} ${t(stage.title)}`}>{events.filter(event => event.properties.stage_id === stage.id).map(event => <option key={event.id} value={event.id}>{t(event.properties.name)}</option>)}</optgroup>)}</select></label>
-      <input aria-label={t('搜索地理参考点')} placeholder={t('搜索本事件地点或类型')} value={query} maxLength={100} onChange={event => setQuery(event.target.value)} />
-      <button onClick={nationwide}>{t('全国总览')}</button><button onClick={fit} disabled={!records.length}>{t('查看本事件地点')}</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() + 1); }} aria-label={t('地理地图放大')}>＋</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() - 1); }} aria-label={t('地理地图缩小')}>−</button>
+    <div className="geo-tools geo-primary"><label>{t('事件')}<select aria-label={t('地理事件')} value={eventId} onChange={event => { changeEvent(event.target.value); onEventChange(event.target.value); }}>{catalog.stages.map(stage => <optgroup key={stage.id} label={`${stage.id} ${t(stage.title)}`}>{events.filter(event => event.properties.stage_id === stage.id).map(event => <option key={event.id} value={event.id}>{t(event.properties.name)}</option>)}</optgroup>)}</select></label>
+      <div className="geo-view-actions"><button onClick={nationwide}>{t('全国总览')}</button><button onClick={fit} disabled={!records.length}>{t('查看本事件地点')}</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() + 1); }} aria-label={t('地理地图放大')}>＋</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() - 1); }} aria-label={t('地理地图缩小')}>−</button></div>
     </div>
-    <p className="geo-legend"><span>◆ {t('地方传说')}</span><span>● {t('地理考证')}</span><span>{t('重合点显示数量，详情按条目区分类型。')}</span></p>
+    <p className="geo-legend"><span>◆ {t('地方传说')}</span><span>● {t('地理考证')}</span></p>
     <div className="geo-map-stage"><div className="geo-map" ref={target} tabIndex={0} onKeyDown={event => { if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', '+', '-'].includes(event.key)) viewMode.current = 'local'; }} role="region" aria-label={t('真实地理参考地图')} /><span className="geo-north" aria-label={t('地图北向')}>{t('北 ↑')}</span><ChapterNotice change={transitioning} title={catalog.stages.find(stage => stage.id === chapterId)?.title} />{emptyNotice && <div className="geo-empty-notice" role="status"><b>{t('暂无记录')}</b><span>{t('当前资料尚未提供可靠关联地点')}</span></div>}</div>
     <div className="geo-readout"><span>{t('经度、纬度')} · {coordinates(position)}°</span><span>WGS84 · EPSG:4326 / 3857</span></div>
-    <div className="geo-tools geo-secondary">
+    {!tilesReady && !loadError && <p className="geo-load-status" role="status">{t(slowLoading ? '底图加载较慢，地点资料仍可查看。' : '正在加载在线底图…')}</p>}
+    {selected && <div className="geo-selection"><p role="status"><strong>{t(selected.properties.label)}</strong><span>{t(associationLabel(selected))} · {t('参考坐标，非事件发生点')}</span></p><button onClick={() => { detailHeading.current?.scrollIntoView({ block: 'start', behavior: 'instant' }); detailHeading.current?.focus({ preventScroll: true }); }}>{t('查看地点资料')}</button>
+      {coincident.length > 1 && <div className="geo-coincident" role="group" aria-label={t('同坐标关联记录')}><span>{t('同坐标关联记录')} · {coincident.length}</span>{coincident.map(record => <button key={record.id} data-coincident-id={record.id} aria-pressed={record.id === selectedId} onClick={() => setSelectedId(record.id)}>{t(record.properties.label)} · {t(associationLabel(record))}</button>)}</div>}
+    </div>}
+    <details className="geo-search" open={searchExpanded} onToggle={event => setSearchExpanded(event.currentTarget.open)}><summary>{t('搜索地点')}{query.trim() && <span> · {query} · {records.length}/{eventRecords.length}</span>}</summary><div className="geo-tools"><input ref={searchInput} aria-label={t('搜索地理参考点')} placeholder={t('搜索本事件地点或类型')} value={query} maxLength={100} onChange={event => setQuery(event.target.value)} />{query && <button onClick={() => { setQuery(''); searchInput.current?.focus(); }}>{t('清除搜索')}</button>}</div></details>
+    <details className="geo-analysis" open={toolsExpanded} onToggle={event => { setToolsExpanded(event.currentTarget.open); if (!event.currentTarget.open) { measureMode.current = false; setMeasuring(false); } }}><summary>{t('更多地图工具')}{measuring && <span> · {t('测距中')}</span>}{!toolsExpanded && distance !== null && <span> · {t('球面距离')} {(distance / 1000).toFixed(2)} km</span>}</summary><div className="geo-tools geo-secondary">
       <button aria-pressed={measuring} onClick={() => { measureMode.current = !measuring; setMeasuring(!measuring); }}>{t('两点测距')}</button>
       {measuring && <button onClick={() => measureAction.current(toLonLat(map.current.getView().getCenter()))}>{t('以视图中心取点')}</button>}
       {(measuring || distance !== null) && <button onClick={() => { measurement.current.clear(); measurePoints.current = []; setDistance(null); }}>{t('清除量测')}</button>}
-      <button ref={compareTrigger} aria-expanded={compareOpen && comparisonIds.length === 2} aria-controls="geo-comparison" disabled={eventRecords.length < 2} onClick={() => setCompareOpen(value => !value)}>{t('对照本事件资料')}</button>
       <button onClick={exportData} disabled={!records.length}>{t('导出参考点 GeoJSON')}</button>
     </div>
     {measuring && <p className="geo-note">{t('在地图点选两个位置，或移动地图后用视图中心取点。量测为现代参考点之间的球面距离，不是古代行程。')}</p>}
     {distance !== null && <p className="geo-distance" role="status">{t('球面距离')} · {(distance / 1000).toFixed(2)} km</p>}
+    <p className="geo-note">{t('每次探索一个事件：地点表示地方传说或地理考证关联，不证明事件发生。')}</p><p className="geo-note">{t('重合点显示数量，详情按条目区分类型。')}</p></details>
     {loadError && <p role="alert">{t('在线底图加载失败，部分区域可能未显示；关联资料仍可查询。')} <button onClick={retryBasemap}>{t('重试地理底图')}</button></p>}
-    <div className="geo-results"><section aria-label={t('地理查询结果')}><p role="status">{t('参考点')} · {records.length}　{t('关联故事')} · {new Set(records.map(item => item.properties.entity_id)).size}</p>
-      <div className="geo-result-list">{records.map(record => <button key={record.id} data-candidate-id={record.id} aria-pressed={selected?.id === record.id} onClick={() => locate(record)}><b>{t(record.properties.label)}</b><small>{t(associationLabel(record))}</small></button>)}</div>
+    <div className="geo-result-actions"><p role="status">{t('参考点')} · {records.length}/{eventRecords.length}</p><button ref={compareTrigger} aria-expanded={compareOpen && comparisonIds.length === 2} aria-controls="geo-comparison" disabled={eventRecords.length < 2} onClick={() => setCompareOpen(value => !value)}>{t('对照本事件资料')}</button></div>
+    <div className="geo-results"><section aria-label={t('地理查询结果')}>
+      <div className="geo-result-list" ref={resultList}>{records.map(record => <button key={record.id} data-candidate-id={record.id} aria-pressed={selected?.id === record.id} aria-controls="geo-place-detail" onClick={() => locate(record)}><b>{t(record.properties.label)}</b><small>{t(associationLabel(record))}</small></button>)}</div>
       {!records.length && <p>{t(query ? '本事件没有匹配的参考点，请清除搜索。' : '本事件暂无可靠地点资料；保留故事阅读，不推测坐标。')}</p>}
-    </section><section className="geo-reference" aria-label={t('参考点依据')}>
-      {selected ? <><h3>{t(selected.properties.label)}</h3><GeographicEvidence record={selected} />
+    </section><section className="geo-reference" id="geo-place-detail" aria-label={t('参考点依据')}>
+      {selected ? <><div className="geo-detail-heading"><h3 tabIndex={-1} ref={detailHeading}>{t(selected.properties.label)}</h3><button onClick={() => { target.current?.scrollIntoView({ block: 'start', behavior: 'instant' }); target.current?.focus({ preventScroll: true }); }}>{t('返回地图')}</button></div><GeographicEvidence record={selected} />
         <button onClick={() => onOpen(selected.properties.entity_id)}>{t('查看关联故事与出处')}</button>
       </> : <p>{t('选择地图标记或列表条目，查看传说版本、地理考证与位置精度。')}</p>}
     </section></div>

@@ -81,6 +81,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.getByLabel('地理事件').selectOption('03-04');
     await page.waitForTimeout(3000);
     assert.equal(await page.locator('.geo-empty-notice').count(), 0, 'A stale empty notice cannot survive a rapid event switch');
+    if (!await page.locator('.geo-search').evaluate(node => node.open)) await page.locator('.geo-search summary').click();
     await page.getByLabel('搜索地理参考点').fill('不存在的地名');
     assert.equal(await page.locator('[data-candidate-id]').count(), 0);
     assert.equal(await page.locator('.geo-empty-notice').count(), 0, 'No search match is distinct from missing geographic evidence');

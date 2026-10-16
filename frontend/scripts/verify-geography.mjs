@@ -49,6 +49,10 @@ const geo = page => page.locator('.geography-main');
 const rows = page => geo(page).locator('[data-candidate-id]');
 const mode = (page, language, geographic) => page.locator('.map-mode-switch').getByRole('button', { name: geographic ? language === 'zh' ? '真实地理' : 'Real geography' : language === 'zh' ? '木刻叙事' : 'Woodcut stories', exact: true }).click();
 const extent = async page => JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-extent'));
+const fillSearch = async (page, label, value) => {
+  if (!await geo(page).locator('.geo-search').evaluate(node => node.open)) await geo(page).locator('.geo-search summary').click();
+  await geo(page).getByLabel(label).fill(value);
+};
 const stable = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
 const inside = (point, bounds) => point[0] > bounds[0] && point[0] < bounds[2] && point[1] > bounds[1] && point[1] < bounds[3];
 
@@ -115,11 +119,12 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     const local = await extent(page);
     assert.ok(local[2] - local[0] < national[2] - national[0]);
     assert.ok(references.filter(item => item.properties.entity_id === '03-01').every(item => inside(item.geometry.coordinates, local)));
-    await geo(page).getByLabel('搜索地理参考点').fill('涿鹿');
+    await fillSearch(page, '搜索地理参考点', '涿鹿');
     assert.equal(await rows(page).count(), 1);
     await rows(page).first().click();
     await stable(page);
     const chosen = await rows(page).first().getAttribute('data-candidate-id');
+    await geo(page).locator(`[data-candidate-id="${chosen}"][aria-pressed=true]`).waitFor();
     const savedCamera = await extent(page);
     await geo(page).getByRole('button', { name: '对照本事件资料', exact: true }).click();
     await mode(page, 'zh', false);
@@ -135,7 +140,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.detail-drawer[data-entry-id="03-01"]').waitFor();
     await page.locator('.drawer-close').click();
     await page.locator('.language-switch button[lang=zh-CN]').click();
-    await geo(page).getByLabel('搜索地理参考点').fill('');
+    await fillSearch(page, '搜索地理参考点', '');
     await geo(page).getByLabel('地理事件').selectOption('01-01');
     await page.waitForFunction(() => document.querySelector('.world-layout').dataset.chapter === '00');
     assert.equal(await rows(page).count(), 2);
@@ -149,6 +154,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await geo(page).getByLabel('对照条目二', { exact: true }).selectOption('03-04-tradition-gaoping');
     await geo(page).locator('[data-comparison-id="03-04-tradition-gaoping"]').waitFor();
     assert.equal(await geo(page).getByLabel('对照条目一', { exact: true }).locator('option[value="03-04-tradition-gaoping"]').evaluate(node => node.disabled), true);
+    if (!await geo(page).locator('.geo-analysis').evaluate(node => node.open)) await geo(page).locator('.geo-analysis summary').click();
     const download = page.waitForEvent('download');
     await geo(page).getByRole('button', { name: '导出参考点 GeoJSON', exact: true }).click();
     const stream = await (await download).createReadStream(), chunks = [];
@@ -208,6 +214,69 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         await page.screenshot({ path: new URL(`osm-exploration-${width}x${height}.png`, output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
       }
     }
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto(`${base}?chapter=03&lang=zh`);
+    await mode(page, 'zh', true);
+    await geo(page).locator('[data-basemap-state=ready]').waitFor();
+    assert.equal(await geo(page).locator('.geo-search').evaluate(node => node.open), false);
+    assert.equal(await geo(page).locator('.geo-analysis').evaluate(node => node.open), false);
+    assert.ok((await geo(page).locator('.geo-map').boundingBox()).height >= 844 / 2);
+    await geo(page).getByLabel('地理事件').selectOption('03-04');
+    await rows(page).first().click();
+    await geo(page).locator('.geo-map').scrollIntoViewIfNeeded();
+    const mapScroll = await page.evaluate(() => window.scrollY);
+    const mapBox = await geo(page).locator('.geo-map').boundingBox();
+    await page.mouse.click(mapBox.x + mapBox.width / 2, mapBox.y + mapBox.height / 2);
+    await geo(page).locator('.geo-selection').waitFor();
+    assert.equal(await page.evaluate(() => window.scrollY), mapScroll, 'Picking a marker does not scroll the page away from the map');
+    assert.equal(await geo(page).locator('[data-coincident-id]').count(), 2);
+    const groupCamera = await extent(page);
+    await geo(page).locator('[data-coincident-id="03-04-tradition-changzi"]').click();
+    await geo(page).locator('[data-candidate-id="03-04-tradition-changzi"][aria-pressed=true]').waitFor();
+    assert.equal(await geo(page).locator('[data-candidate-id="03-04-tradition-changzi"]').getAttribute('aria-pressed'), 'true');
+    assert.deepEqual(await extent(page), groupCamera, 'Choosing a coincident account does not move or jitter the map');
+    await geo(page).getByRole('button', { name: '查看地点资料', exact: true }).click();
+    assert.equal(await geo(page).locator('.geo-reference h3').evaluate(node => node === document.activeElement), true);
+    await geo(page).getByRole('button', { name: '返回地图', exact: true }).click();
+    assert.equal(await geo(page).locator('.geo-map').evaluate(node => node === document.activeElement), true);
+    await fillSearch(page, '搜索地理参考点', '长子');
+    assert.equal(await rows(page).count(), 2);
+    await geo(page).locator('.geo-search summary').click();
+    assert.match(await geo(page).locator('.geo-search summary').innerText(), /长子.*2\/4/);
+    await geo(page).locator('.geo-search summary').click();
+    await geo(page).getByRole('button', { name: '清除搜索', exact: true }).click();
+    assert.equal(await rows(page).count(), 4);
+    assert.equal(await geo(page).getByLabel('搜索地理参考点').evaluate(node => node === document.activeElement), true);
+    await geo(page).locator('.geo-analysis summary').click();
+    await geo(page).getByRole('button', { name: '两点测距', exact: true }).click();
+    assert.equal(await geo(page).getByRole('button', { name: '两点测距', exact: true }).getAttribute('aria-pressed'), 'true');
+    await geo(page).getByRole('button', { name: '以视图中心取点', exact: true }).click();
+    await geo(page).locator('.geo-map').focus();
+    await page.keyboard.press('ArrowRight');
+    await page.waitForTimeout(300);
+    await geo(page).getByRole('button', { name: '以视图中心取点', exact: true }).click();
+    await geo(page).locator('.geo-distance').waitFor();
+    await geo(page).locator('.geo-analysis summary').click();
+    await page.waitForFunction(() => document.querySelector('.geo-secondary button[aria-pressed]')?.getAttribute('aria-pressed') === 'false');
+    assert.equal(await geo(page).locator('.geo-secondary button[aria-pressed]').getAttribute('aria-pressed'), 'false', 'Closing tools exits measurement mode');
+    assert.match(await geo(page).locator('.geo-analysis summary').innerText(), /球面距离.*km/, 'A retained measurement remains labelled with tools collapsed');
+    await geo(page).getByRole('button', { name: '对照本事件资料', exact: true }).click();
+    assert.equal(await geo(page).locator('[data-comparison-id]').count(), 2, 'Account comparison remains available with advanced tools closed');
+
+    let releaseTiles;
+    network.hold = new Promise(resolve => { releaseTiles = resolve; });
+    try {
+      await page.goto(`${base}?chapter=03&lang=zh`);
+      await mode(page, 'zh', true);
+      await geo(page).getByText('底图加载较慢，地点资料仍可查看。', { exact: true }).waitFor({ timeout: 15000 });
+      assert.equal(await rows(page).count(), 3);
+      assert.equal(await geo(page).locator('.geo-empty-notice').count(), 0);
+      await rows(page).first().click();
+      await geo(page).locator('.geo-selection').waitFor();
+    } finally { network.hold = null; releaseTiles(); }
+    await geo(page).locator('[data-basemap-state=ready]').waitFor();
+    assert.equal(await geo(page).locator('.geo-load-status').count(), 0);
+
     await page.goto(`${base}?chapter=03&lang=zh`);
     await page.evaluate(() => { Element.prototype.requestFullscreen = () => Promise.reject(new Error('Injected fullscreen denial')); });
     await page.locator('.map-fullscreen').click(); await page.locator('.is-fallback-fullscreen').waitFor();
@@ -215,6 +284,6 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.keyboard.press('Escape'); await page.locator('.is-fallback-fullscreen').waitFor({ state: 'detached' });
     assert.deepEqual(errors, []);
     await context.close();
-    console.log(`PASS ${name}: shared modes/fullscreen, nationwide OSM coverage (mock tiles), independent cameras, bilingual layouts, event/source/compare state, exports, measurement and tile recovery`);
+    console.log(`PASS ${name}: shared modes/fullscreen, nationwide OSM coverage (mock tiles), independent cameras, bilingual layouts, compact tools, linked place selection/focus, coincident accounts, exports, measurement and tile recovery/slow loading`);
   } finally { await browser.close(); }
 }
