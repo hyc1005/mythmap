@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { createServer } from 'vite';
 import { readFile, stat } from 'node:fs/promises';
 
-const server = await createServer({ server: { middlewareMode: true, hmr: false }, appType: 'custom' });
+const server = await createServer({ server: { middlewareMode: true, hmr: false }, appType: 'custom', optimizeDeps: { noDiscovery: true, include: [] } });
 const originalImage = globalThis.Image;
 const jobs = [];
 globalThis.Image = class {
@@ -11,7 +11,7 @@ globalThis.Image = class {
   decode() { return new Promise((resolve, reject) => jobs.push({ src: this.src, resolve, reject })); }
 };
 try {
-  const { loadImage, cachedSprites, chapterPrefetchPaths, PREFETCH_BUDGET } = await server.ssrLoadModule('/src/asset-cache.js');
+  const { loadImage, cachedSprites, chapterPrefetchPaths, prefetchNextChapter, PREFETCH_BUDGET } = await server.ssrLoadModule('/src/asset-cache.js');
   const world = JSON.parse(await readFile(new URL('../public/data/myth-world.json', import.meta.url), 'utf8'));
   const catalog = JSON.parse(await readFile(new URL('../public/data/atlas/catalog.json', import.meta.url), 'utf8'));
   for (const chapter of world.stages) {
@@ -59,7 +59,35 @@ try {
   assert.equal(builds, before + 1, 'The oldest sheet is evicted when the 24 MiB budget is exceeded');
   await assert.rejects(cachedSprites('retry', () => { throw new Error('Decode failed'); }));
   assert.deepEqual(await cachedSprites('retry', async () => ({ ready: true })), { ready: true }, 'Failed sheets can be retried');
-  console.log('PASS: late rejection, in-flight image reuse, sprite LRU budget and retry.');
+  const previousWindow = globalThis.window, previousFetch = globalThis.fetch;
+  const timers = new Map(), requests = [];
+  let timerId = 0;
+  globalThis.window = {
+    setTimeout(callback) { timers.set(++timerId, callback); return timerId; },
+    clearTimeout(id) { timers.delete(id); },
+  };
+  globalThis.fetch = (url, options) => new Promise(resolve => requests.push({ url, options, resolve }));
+  try {
+    const beforeStart = prefetchNextChapter('03', world, catalog);
+    beforeStart();
+    assert.equal(timers.size, 0, 'Leaving before the delay prevents prefetch');
+    const stop = prefetchNextChapter('03', world, catalog);
+    [...timers.values()][0]();
+    assert.equal(requests.length, 2, 'At most two prefetch requests start together');
+    stop();
+    for (const request of requests) {
+      assert.equal(request.options.keepalive, true, 'In-flight cache fills may complete across navigation');
+      assert.equal(request.options.signal, undefined, 'Leaving a chapter does not abort an active response');
+      request.resolve({ ok: true, arrayBuffer: async () => new ArrayBuffer(0) });
+    }
+    await new Promise(setImmediate);
+    assert.equal(requests.length, 2, 'Leaving stops queued requests after active responses finish');
+  } finally {
+    if (previousWindow === undefined) delete globalThis.window;
+    else globalThis.window = previousWindow;
+    globalThis.fetch = previousFetch;
+  }
+  console.log('PASS: late rejection, in-flight image reuse, sprite LRU budget, retry and prefetch navigation cleanup.');
 } finally {
   globalThis.Image = originalImage;
   await server.close();

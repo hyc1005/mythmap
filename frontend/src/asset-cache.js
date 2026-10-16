@@ -108,20 +108,20 @@ export function chapterPrefetchPaths(chapter, world, catalog) {
 
 export function prefetchNextChapter(chapter, world, catalog) {
   const paths = chapterPrefetchPaths(chapter, world, catalog);
-  const controller = new AbortController();
+  let cancelled = false;
   const timer = window.setTimeout(() => {
     if (navigator.connection?.saveData || ['slow-2g', '2g', '3g'].includes(navigator.connection?.effectiveType)) return;
     const queue = [...paths];
     const work = async () => {
-      while (queue.length && !controller.signal.aborted) {
+      while (queue.length && !cancelled) {
         const path = queue.shift();
         try {
-          const response = await fetch(assetUrl(path), { signal: controller.signal, cache: 'force-cache' });
+          const response = await fetch(assetUrl(path), { cache: 'force-cache', keepalive: true });
           if (response.ok) await response.arrayBuffer();
         } catch { /* Prefetch failure leaves on-demand loading available. */ }
       }
     };
     void work(); void work();
   }, 1200);
-  return () => { window.clearTimeout(timer); controller.abort(); };
+  return () => { window.clearTimeout(timer); cancelled = true; };
 }
