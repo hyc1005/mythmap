@@ -1,6 +1,6 @@
 import { useLocale } from '../i18n';
 import { createPortal } from 'react-dom';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Feature from 'ol/Feature';
 import Point from 'ol/geom/Point';
 import LineString from 'ol/geom/LineString';
@@ -113,7 +113,7 @@ export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange
     onStatusChange(playback);
   }, [playback, onStatusChange]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const source = new VectorSource();
     const actor = new Feature({ geometry: new Point(phases[0].path[0]), record });
     const sun = new Feature({ geometry: new Point([835, 220]) });
@@ -175,7 +175,7 @@ export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange
     if (selectedId || hidden) map.getView().cancelAnimations();
   }, [selectedId, hidden, map]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!sprites || !features.current || error) return;
     let frameId, previous;
     const paint = (time, delta = 0) => {
@@ -229,6 +229,7 @@ export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange
     const refresh = () => { lastPublished.current = -Infinity; paint(elapsed.current); };
     map.on("change:size", refresh); map.on("moveend", refresh);
     const cleanup = () => { cancelAnimationFrame(frameId); map.un("change:size", refresh); map.un("moveend", refresh); };
+    lastPublished.current = -Infinity;
     paint(elapsed.current);
     if (blocked || completed || reduced) return cleanup;
     const tick = timestamp => {
