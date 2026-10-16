@@ -1,3 +1,5 @@
+export const BASE_PLAYBACK_RATE = 1.3;
+
 export function playbackState({ error, ready, complete, blocked, reduced }) {
   if (error) return 'error';
   if (!ready) return 'loading';

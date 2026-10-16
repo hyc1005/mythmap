@@ -97,3 +97,15 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-narrative.
 顶部“搜索”统一检索故事、异兽、出处、地点与神域；支持中文原名及当前语言文本，出处结果关联可阅读的条目。搜索面板会暂停背景动画，关闭后继续。相柳九首补绘与三张地图专用小图标通过 `src/refined-artwork.json` 接入，原图与完整生图提示词保留于 `artwork-source/woodcut-refinement/`；运行 `python scripts/prepare-refined-artwork.py` 可重新输出发布版本。
 
 本地交接文档不进入 Git。验收产物、构建目录和浏览器缓存不作为发布源文件；插画原图继续版本管理以便复现，生图记录仅保留仓库相对路径。
+
+### 真实地理基础视图
+
+顶部“地理”打开独立地理窗口，使用本地 Natural Earth 地形晕渲、海陆与河流，保留浅纸墨线风格。28项既有考证候选保留，新增盘古两地与精卫一地的地方传说关联；地点表示传承或考证关联，不证明神话事件发生。无定位依据的条目不补造坐标。原有故事画布继续使用示意坐标。
+
+默认跟随当前故事，每次显示一个事件的地点；支持按章节分组切换事件、事件内地点/类型查询、分类符号与资料出处联动、经纬度与比例尺、两点球面测距、图层开关和筛选结果GeoJSON导出。打开时暂停背景故事，关闭恢复原章节、镜头和播放；同一页面重新打开保留地理查询与视野。无需后端、密钥或外部瓦片服务，继续支持GitHub Pages。
+
+在frontend目录运行 `python scripts/prepare-geography.py` 可复现区域地形图（需Pillow）；来源为Natural Earth SR_50M 3.2.0，原始ZIP保留在被忽略的 `output/geography-source/`，生成图与 `src/geography-basemap.json` 纳入发布源。底图为现代概化地理，不作古代复原或高程分析。构建后通过 `node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-geography.mjs` 验证；CI保留三浏览器检查。
+
+故事动画基础速度统一为旧版的1.3倍，按钮1×/2×相对于新基础速度。`src/playback.js` 管理基础倍率；`npm run verify:playback-speed` 验证三类时钟。地方传说增量和试点证据保存在 `src/geography-associations.json`，与旧候选合并时保留原ID和坐标，待核验资料不冒充已核对出处。
+
+地理窗口提供“对照本事件资料”：选择两条同事件记录，对照关联说明、类别、核验状态、原文摘录、出处和坐标精度；桌面双栏、手机纵排。对照使用本事件全部资料，不受地点搜索影响，关闭窗口后保留选择，切换事件时重置；不对地点排名，也不编造故事异文。

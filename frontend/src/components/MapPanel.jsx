@@ -85,7 +85,7 @@ function beastMarker(record, active, resolution = 1) {
   return beastIcons.get(key);
 }
 
-export default function MapPanel({ world, stageIndex, activeLayers, selectedId, pausedForOverlay = false, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, storyRequest, onManualStoryChange, readingNote, locateId, storyItems, onRecordsChange, reading, collectionItems, tourPlaying = null, onTourPlaybackChange, onPlaybackChange, onShare, shareStatus }) {
+export default function MapPanel({ world, stageIndex, activeLayers, selectedId, pausedForOverlay = false, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, storyRequest, onActiveEventChange, onManualStoryChange, readingNote, locateId, storyItems, onRecordsChange, reading, collectionItems, tourPlaying = null, onTourPlaybackChange, onPlaybackChange, onShare, shareStatus }) {
   const { t, locale } = useLocale();
   const externalPaused = tourPlaying === false || pausedForOverlay;
   const onUserPlaybackChange = tourPlaying === null ? undefined : onTourPlaybackChange;
@@ -143,6 +143,8 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   const activeJourneyId = chapterStoryOptions.some(story => story.id === journeyId) ? journeyId : null;
   const activeJourneyRef = useRef(activeJourneyId);
   activeJourneyRef.current = animationCatalog.stories.find(story => story.id === activeJourneyId)?.source_event_id || activeJourneyId;
+  const activeEventId = isPrologue ? '01-01' : activeJourneyRef.current;
+  useEffect(() => { onActiveEventChange(activeEventId); }, [activeEventId, onActiveEventChange]);
   const sceneBounds = useRef(null);
   const handleSceneBounds = useCallback(bounds => {
     const before = JSON.stringify(sceneBounds.current?.map(rect => rect.map(value => Math.round(value / 8))));

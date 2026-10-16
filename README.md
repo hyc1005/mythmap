@@ -96,3 +96,15 @@ Continue reading restores the latest entry and its section-relative position aft
 Header search covers stories, creatures, sources, places and realms, including Chinese aliases. Source results open their associated entries. Search pauses background animation and resumes on close. The corrected nine-headed Xiangliu and three dedicated map marker samples use `src/refined-artwork.json`. Source PNGs and built-in image generation prompts are retained in `artwork-source/woodcut-refinement/`; run `python scripts/prepare-refined-artwork.py` to regenerate published assets.
 
 Local handoff notes are excluded from Git. QA output, generated builds and browser caches are not release sources; original artwork stays versioned for reproducibility. Generation records use repository-relative paths.
+
+### Geographic reference view
+
+The header's **Geo** button opens a separate WGS84 reference atlas without replacing the narrative canvas. It uses local Natural Earth relief, land and river data, retaining a paper-and-ink palette. The 28 existing geographic hypotheses remain available, with three local-tradition associations added for Pangu and Jingwei. Sources document associations, not established historical event sites. Unlocated stories are never given invented coordinates.
+
+The view follows the current story and displays one event at a time, with chapter-grouped event selection, event-scoped locality/type search, classified markers and linked source details, coordinates, a metric scale, great-circle two-point measurement, layer switches and filtered WGS84 GeoJSON export. Closing it preserves the original chapter, camera and playback; geographic query/view state survives reopening in this page session. No backend, API key or external tile requests are required.
+
+Run `python scripts/prepare-geography.py` from `frontend/` to reproduce the regional relief from Natural Earth SR_50M 3.2.0 (Pillow required). The source ZIP is retained under ignored `output/geography-source/`; the generated image and `src/geography-basemap.json` are release sources. This is generalized modern terrain, not historical reconstruction or elevation-analysis data. Run `node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-geography.mjs` after building; CI keeps Chromium, Firefox and WebKit checks.
+
+Story animations use a shared 1.3x base rate in `src/playback.js`; the 1x/2x controls are relative to that base. `npm run verify:playback-speed` checks all three clocks. Local traditions and reviewed pilot evidence are maintained in `src/geography-associations.json`, preserving legacy candidate IDs and coordinates.
+
+The geographic window can compare two accounts for the same event, including association type, account, review status, excerpts, sources and coordinate precision. Cards appear side by side on desktop and vertically on mobile. Comparison choices survive reopening, reset when changing events and remain independent of place search. No location rankings or invented narrative variants are supplied.

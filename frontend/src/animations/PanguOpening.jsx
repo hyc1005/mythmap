@@ -7,7 +7,7 @@ import { assetUrl } from '../asset-url';
 import { loadImage } from '../asset-cache';
 import { useReducedMotion } from '../motion';
 import ArtworkImage from '../components/ArtworkImage';
-import { playbackState } from '../playback';
+import { BASE_PLAYBACK_RATE, playbackState } from '../playback';
 
 const sceneUrl = name => assetUrl(`/data/atlas/myth-icons/scenes/${name}`);
 const POSTER = sceneUrl('pangu-opening.webp');
@@ -119,7 +119,7 @@ export default function PanguOpening({ active, autoStart = true, selected, onSta
       if (frameTimestamp.current === null) frameTimestamp.current = timestamp;
       const elapsed = Math.max(0, timestamp - frameTimestamp.current);
       frameTimestamp.current = timestamp;
-      framePosition.current = Math.min(DURATION, framePosition.current + elapsed * 30 / 1000 * playbackRateRef.current);
+      framePosition.current = Math.min(DURATION, framePosition.current + elapsed * 30 / 1000 * BASE_PLAYBACK_RATE * playbackRateRef.current);
       const nextProgress = framePosition.current;
       setProgressFrame(current => Math.floor(current / 4) === Math.floor(nextProgress / 4) ? current : nextProgress);
       if (framePosition.current >= DURATION) {

@@ -14,6 +14,7 @@ import ChapterEntries from './components/ChapterEntries';
 import Bestiary from './components/Bestiary';
 import DetailDrawer from './components/DetailDrawer';
 import GlobalSearch from './components/GlobalSearch';
+import GeographyMap from './components/GeographyMap';
 import { assetUrl } from './asset-url';
 import { CHAPTER_TRANSITION_MS, InkText, useReducedMotion } from './motion';
 import { itemChapter, readExploration, explorationUrl } from './exploration';
@@ -48,6 +49,9 @@ export default function App() {
   const [panel, setPanel] = useState(null);
   const [searchOpen, setSearchOpen] = useState(false);
   const searchTrigger = useRef(null);
+  const geographyTrigger = useRef(null), geographySnapshot = useRef({});
+  const [geographyOpen, setGeographyOpen] = useState(false);
+  const [mapEventId, setMapEventId] = useState(null);
   useEffect(() => {
     const query = window.matchMedia('(max-width: 768px)');
     const change = event => { setMobile(event.matches); setPanel(null); };
@@ -243,7 +247,7 @@ export default function App() {
     return () => controller.abort();
   }, []);
   useEffect(() => {
-    if (!tourActive || !playing || selectedId || searchOpen || !storyIds.length || !['completed', 'idle'].includes(playbackStatus) || storyRequest.chapterId !== chapterId) return undefined;
+    if (!tourActive || !playing || selectedId || searchOpen || geographyOpen || !storyIds.length || !['completed', 'idle'].includes(playbackStatus) || storyRequest.chapterId !== chapterId) return undefined;
     const timer = window.setTimeout(() => {
       const next = storyIds.indexOf(storyRequest.id) + 1;
       if (next < storyIds.length) { setPlaybackStatus('loading'); requestStory(storyIds[next]); }
@@ -251,7 +255,7 @@ export default function App() {
       else { setPlaying(false); setTourActive(false); }
     }, 1000);
     return () => window.clearTimeout(timer);
-  }, [tourActive, playing, selectedId, searchOpen, playbackStatus, storyRequest, chapterId, storyIds, stageIndex, stages]);
+  }, [tourActive, playing, selectedId, searchOpen, geographyOpen, playbackStatus, storyRequest, chapterId, storyIds, stageIndex, stages]);
   useEffect(() => {
     if (!selectedId) return undefined;
     const key = event => {
@@ -267,7 +271,7 @@ export default function App() {
   const tourLabel = readingChapter ? stageIndex === stages.length - 1 ? '结束游历' : '阅读完毕，下一章' : tourActive ? playing ? '暂停游历' : '继续游历' : '连续游历';
   const readingNote = readingChapter ? <div className="tour-reading"><p>{t('本章以文字为主，请阅读条目后继续。')}</p><button type="button" onClick={toggleTour}>{t(tourLabel)}</button></div> : null;
   return <main className="myth-app" lang={locale === "en" ? "en" : "zh-CN"}>
-    <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true" dangerouslySetInnerHTML={{ __html: brandMark }} /><h1>{t("山海寻踪")}</h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><button ref={searchTrigger} className="global-search-trigger" type="button" aria-label={t("搜索故事、异兽与出处")} onClick={() => setSearchOpen(true)}>{t("搜索")}</button><div className="language-switch" role="group" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></div></nav></header>
+    <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true" dangerouslySetInnerHTML={{ __html: brandMark }} /><h1>{t("山海寻踪")}</h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><button ref={geographyTrigger} className="geography-trigger" type="button" aria-label={t("打开真实地理地图")} onClick={() => setGeographyOpen(true)}>{t("地理")}</button><button ref={searchTrigger} className="global-search-trigger" type="button" aria-label={t("搜索故事、异兽与出处")} onClick={() => setSearchOpen(true)}>{t("搜索")}</button><div className="language-switch" role="group" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></div></nav></header>
      <section ref={worldLayout} className="world-layout" id="world" data-chapter={stages[stageIndex].id} data-timeline-playing={playing} data-animation-busy={journeyBusy} data-tour-active={tourActive} data-tour-reading={readingChapter}>
       <aside className="chapter-rail">
         <span className="chapter-number">{stageIndex === 0 ? t("序章") : t("第 ") + stages[stageIndex].id + t(" 章")}</span><h2><InkText key={stages[stageIndex].id} text={stages[stageIndex].title} animate={previousAnimatedChapter.current !== stageIndex || titleAnimating} /></h2><p><InkText key={stages[stageIndex].id} text={stages[stageIndex].subtitle} variant="subtitle" animate={previousAnimatedChapter.current !== stageIndex || titleAnimating} /></p>
@@ -280,7 +284,7 @@ export default function App() {
         <div className="chapter-rail-details">{!mobile && <><h3>{t('本章条目')}</h3>{chapterEntries}</>}</div>
       </aside>
       <div className="world-main">
-        <MapPanel pausedForOverlay={searchOpen} reading={reading} collectionItems={collectionItems} tourPlaying={tourActive ? playing : null} onTourPlaybackChange={setPlaying} onPlaybackChange={setPlaybackStatus} storyItems={storyItems} onRecordsChange={setMapRecords} onShare={share} shareStatus={shareStatus} locateId={locateId} world={world} stageIndex={stageIndex} storyRequest={storyRequest} onManualStoryChange={manualStory} readingNote={readingNote} activeLayers={{ ...activeLayers, onBeasts: checked => setActiveLayers(state => ({ ...state, beasts: checked })), onDivine: checked => setActiveLayers(state => ({ ...state, divine: checked })), onGoToFirstBeast: () => { const index = stages.findIndex(stage => world.beasts.some(beast => beast.reveal_chapter === stage.id)); if (index >= 0) selectStage(index); } }} selectedId={selectedId} onSelect={open} onFullscreenTargetChange={setFullscreenTarget} onJourneyBusyChange={setJourneyBusy} onFullscreenStageChange={navigateFullscreenStage} chapterTransition={chapterTransition} />
+        <MapPanel onActiveEventChange={setMapEventId} pausedForOverlay={searchOpen || geographyOpen} reading={reading} collectionItems={collectionItems} tourPlaying={tourActive ? playing : null} onTourPlaybackChange={setPlaying} onPlaybackChange={setPlaybackStatus} storyItems={storyItems} onRecordsChange={setMapRecords} onShare={share} shareStatus={shareStatus} locateId={locateId} world={world} stageIndex={stageIndex} storyRequest={storyRequest} onManualStoryChange={manualStory} readingNote={readingNote} activeLayers={{ ...activeLayers, onBeasts: checked => setActiveLayers(state => ({ ...state, beasts: checked })), onDivine: checked => setActiveLayers(state => ({ ...state, divine: checked })), onGoToFirstBeast: () => { const index = stages.findIndex(stage => world.beasts.some(beast => beast.reveal_chapter === stage.id)); if (index >= 0) selectStage(index); } }} selectedId={selectedId} onSelect={open} onFullscreenTargetChange={setFullscreenTarget} onJourneyBusyChange={setJourneyBusy} onFullscreenStageChange={navigateFullscreenStage} chapterTransition={chapterTransition} />
         {!mobile && chapterNavigation}
         <nav className="mobile-explore-nav" aria-label={t('探索面板')}>
           <button onClick={event => openPanel('chapters', event)}>{t('章节')}</button>
@@ -293,6 +297,7 @@ export default function App() {
     <Bestiary beasts={beasts} onOpen={open} reading={reading} />
     <section className="reading-notes" id="reading-notes" aria-labelledby="reading-notes-title"><h2 id="reading-notes-title">{t("读图与依据")}</h2><div className="reading-notes-body"><div className="reading-notes-copy"><div className="reading-notes-text"><p>{t("《山海经》依山川和方位展开，不是编年史。序章与七章次序是本项目的叙事编排；各章内部仅在原文或可靠叙事关系可核实处排列先后，不代表精确年代。")}</p><p>{t("经文距离不按比例绘制；淡墨山形为装饰。重要地点以名称和原文标识，故事示意点不表示真实位置。")}</p></div><p>{t("各篇神域记载不预设为同一空间体系。异兽图标仅关联有篇目依据的地点锚点；缺少可靠地点依据的条目收录在异兽谱中。")}</p><p>{t("山海空间与异兽描写以《山海经》正文条目为依据，神话故事沿用各条目所列典籍与出处。插画是本项目依据正文的图像解释，不作为古本插图或新增考据证据。")}</p></div><figure className="reading-bookplate"><span className="bookplate-mark" aria-hidden="true" style={{ maskImage: `url(${assetUrl('/data/atlas/optimized/shanhai-bookplate.webp')})` }} /><figcaption>{t("山海寻踪")}<small>{t("藏书印")}</small></figcaption></figure></div></section>
     <footer className="myth-footer"><span>{t("版式：方位关系与叙述次序 · 不设距离比例")}</span><span>{t("山海空间与异兽描写：以《山海经》正文条目核对")}</span></footer>
+    {geographyOpen && <ExploreSheet title={t("真实地理 · 基础版")} className="geography-dialog" onClose={() => setGeographyOpen(false)} returnFocus={geographyTrigger.current}><GeographyMap catalog={catalog} chapterId={chapterId} currentEventId={catalog.events.some(event => event.id === selectedId) ? selectedId : mapEventId} snapshot={geographySnapshot.current} onSnapshot={value => { geographySnapshot.current = value; }} onOpen={id => { setGeographyOpen(false); open(id, geographyTrigger.current); }} /></ExploreSheet>}
     <GlobalSearch open={searchOpen} onClose={() => setSearchOpen(false)} returnFocus={searchTrigger.current} world={world} catalog={catalog} onChoose={(id, ids) => { setSearchOpen(false); open(id, searchTrigger.current, ids); }} />
     {selected && createPortal(<DetailDrawer reading={reading} navigation={detailNavigation} selected={selected} onClose={closeDetail} onOpen={open} restoreReading={restoreReading} onSaveReading={lastReading.save} readingChapter={chapterForLink()} resumeSaveFailed={lastReading.saveFailed} relatedChapter={relatedChapter} canLocate={canLocate} onNavigate={navigateDetail} onShare={share} shareStatus={shareStatus} />, fullscreenTarget || document.body)}
   </main>;

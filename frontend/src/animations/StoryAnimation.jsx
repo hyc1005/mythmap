@@ -12,7 +12,7 @@ import rawAnimations from '../../public/data/atlas/story-animations.json';
 import rawCatalog from '../../public/data/atlas/catalog.json';
 import { loadImage, cachedSprites } from '../asset-cache';
 import { InkText, useReducedMotion } from '../motion';
-import { playbackState } from '../playback';
+import { BASE_PLAYBACK_RATE, playbackState } from '../playback';
 
 const smooth = value => value * value * (3 - 2 * value);
 const clamp = value => Math.max(0, Math.min(1, value));
@@ -451,7 +451,7 @@ export default function StoryAnimation({ id, map, selectedId, onSelect, onStatus
     if (blocked || reduced || elapsed.current >= story.duration_ms) return () => { map.un('moveend', refresh); map.un('change:size', refresh); };
     const tick = () => {
       const now = performance.now();
-      const delta = previous === undefined ? 0 : Math.max(0, now - previous) * playbackRateRef.current;
+      const delta = previous === undefined ? 0 : Math.max(0, now - previous) * BASE_PLAYBACK_RATE * playbackRateRef.current;
       previous = now;
       const next = Math.min(story.duration_ms, elapsed.current + delta);
       elapsed.current = next;

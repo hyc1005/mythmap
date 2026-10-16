@@ -1,0 +1,146 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "id": "01-01-tradition-tongbai",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.4009463,
+          32.3716785
+        ]
+      },
+      "properties": {
+        "id": "01-01-tradition-tongbai",
+        "entity_id": "01-01",
+        "stage_id": "00",
+        "label": "桐柏县",
+        "association_type": "local_tradition",
+        "location_precision": "county_representative",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "not_established",
+        "analysis_eligible": false,
+        "basis_note": "国家非遗项目介绍将桐柏列为盘古神话的流传地区，内容涉及开天辟地与体化万物。此点仅代表县域传承关联，不定位开天现场。",
+        "basis_note_en": "The national heritage entry identifies Tongbai as a region transmitting Pangu creation myths. This county reference point represents a living tradition, not a creation site.",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%A1%90%E6%9F%8F%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3206846,
+        "coordinate_checked_at": "2026-10-16",
+        "evidence_status": "source_checked",
+        "evidence": [
+          {
+            "title": "盘古神话（国家级非遗代表性项目Ⅰ-57）",
+            "title_en": "Pangu myths: national intangible cultural heritage, I-57",
+            "url": "https://www.ihchina.cn/project_details/12290/",
+            "publisher": "中国非物质文化遗产网",
+            "checked_at": "2026-10-16",
+            "excerpt": "内容涉及开天辟地"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "01-01-tradition-biyang",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.4231836,
+          32.8790165
+        ]
+      },
+      "properties": {
+        "id": "01-01-tradition-biyang",
+        "entity_id": "01-01",
+        "stage_id": "00",
+        "label": "泌阳县",
+        "association_type": "local_tradition",
+        "location_precision": "county_representative",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "not_established",
+        "analysis_eligible": false,
+        "basis_note": "泌阳为盘古神话国家非遗项目申报地区，项目介绍记述当地流传的创世故事。此点仅代表县域传承关联，不定位开天现场。",
+        "basis_note_en": "Biyang is a registering county for the national Pangu myth heritage project. This point represents county-level transmission, not a creation site.",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E6%B3%8C%E9%98%B3%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "osm_type": "relation",
+        "osm_id": 3259356,
+        "coordinate_checked_at": "2026-10-16",
+        "evidence_status": "source_checked",
+        "evidence": [
+          {
+            "title": "盘古神话（国家级非遗代表性项目Ⅰ-57）",
+            "title_en": "Pangu myths: national intangible cultural heritage, I-57",
+            "url": "https://www.ihchina.cn/project_details/12290/",
+            "publisher": "中国非物质文化遗产网",
+            "checked_at": "2026-10-16",
+            "excerpt": "内容涉及开天辟地"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-04-tradition-changzi",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.8717835,
+          36.1199119
+        ]
+      },
+      "properties": {
+        "id": "03-04-tradition-changzi",
+        "entity_id": "03-04",
+        "stage_id": "03",
+        "label": "长子县",
+        "association_type": "local_tradition",
+        "location_precision": "county_representative",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "not_established",
+        "analysis_eligible": false,
+        "basis_note": "长治市政府的发鸠山介绍记述当地与精卫神话的联系。沿用长子县代表坐标，不把县域点当作发鸠山山顶或填海位置。",
+        "basis_note_en": "Changzhi government describes Mount Fajiu in Changzi in connection with Jingwei. The county reference coordinate is retained; it is neither the mountain summit nor a sea-filling location.",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%95%BF%E5%AD%90%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
+        "evidence_status": "source_checked",
+        "evidence": [
+          {
+            "title": "发鸠山",
+            "title_en": "Mount Fajiu",
+            "url": "https://www.changzhi.gov.cn/zjzz/rwzz/zrfg/201704/t20170428_353785.shtml",
+            "publisher": "长治市人民政府",
+            "checked_at": "2026-10-16",
+            "excerpt": "这里所说的“西山”即指发鸠山"
+          }
+        ]
+      }
+    }
+  ],
+  "evidence_updates": {
+    "03-01-candidate-1": {
+      "evidence_status": "source_checked",
+      "evidence": [
+        {
+          "title": "千古文明开涿鹿：黄帝、炎帝、蚩尤三祖融合",
+          "title_en": "Zhuolu traditions and interpretations of Banquan",
+          "url": "https://mw.hebei.gov.cn/system/2023/07/19/030237272.shtml",
+          "publisher": "河北省民族事务委员会",
+          "checked_at": "2026-10-16",
+          "excerpt": "在涿鹿县东南"
+        }
+      ]
+    },
+    "03-01-candidate-3": {
+      "evidence_status": "source_checked",
+      "evidence": [
+        {
+          "title": "千古文明开涿鹿：黄帝、炎帝、蚩尤三祖融合",
+          "title_en": "Zhuolu traditions and interpretations of Banquan",
+          "url": "https://mw.hebei.gov.cn/system/2023/07/19/030237272.shtml",
+          "publisher": "河北省民族事务委员会",
+          "checked_at": "2026-10-16",
+          "excerpt": "似乎也与黄帝、炎帝阪泉之战有关"
+        }
+      ]
+    }
+  }
+}

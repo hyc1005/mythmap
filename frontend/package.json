@@ -21,7 +21,9 @@
     "verify:guided-tour": "node scripts/verify-guided-tour.mjs",
     "verify:design": "node scripts/verify-design.mjs",
     "verify:preview": "node scripts/with-preview.mjs -- node scripts/verify-design.mjs",
-    "preview:managed": "node scripts/with-preview.mjs --port 4183"
+    "preview:managed": "node scripts/with-preview.mjs --port 4183",
+    "verify:geography": "node scripts/verify-geography.mjs",
+    "verify:playback-speed": "node scripts/verify-playback-speed.mjs"
   },
   "dependencies": {
     "@fontsource-variable/lora": "^5.3.0",

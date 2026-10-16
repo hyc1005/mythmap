@@ -9,10 +9,13 @@ export default function ExploreSheet({ title, onClose, children, returnFocus, in
     const trigger = returnFocus || document.activeElement;
     const root = document.getElementById('root');
     const previous = [document.documentElement.style.overflow, document.body.style.overflow, root.inert];
+    const dismiss = event => { if (event.key === 'Escape') { event.stopPropagation(); onClose(); } };
+    document.addEventListener('keydown', dismiss);
     root.inert = true;
     document.documentElement.style.overflow = document.body.style.overflow = 'hidden';
     (initialFocus && sheet.current.querySelector(initialFocus) || sheet.current.querySelector('button'))?.focus({ preventScroll: true });
     return () => {
+      document.removeEventListener('keydown', dismiss);
       [document.documentElement.style.overflow, document.body.style.overflow, root.inert] = previous;
       if (trigger?.isConnected) trigger.focus({ preventScroll: true });
     };
@@ -26,7 +29,9 @@ export default function ExploreSheet({ title, onClose, children, returnFocus, in
     if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
   };
   return createPortal(<div className="explore-sheet-scrim" onClick={onClose}>
-    <section ref={sheet} className={`explore-sheet ${className}`} role="dialog" aria-modal="true" aria-label={title} onClick={event => event.stopPropagation()} onKeyDown={keydown}>
+    <section ref={sheet} className={`explore-sheet ${className}`} role="dialog" aria-modal="true" aria-label={title} onClick={event => event.stopPropagation()} onKeyDown={keydown} onClickCapture={event => {
+        event.target.closest('button, input, select, summary, a[href], [tabindex="0"]')?.focus({ preventScroll: true });
+      }}>
       <header><h2>{title}</h2><button onClick={onClose} aria-label={t('关闭')}>×</button></header>
       {children}
     </section>

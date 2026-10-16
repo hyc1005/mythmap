@@ -12,7 +12,7 @@ import journey from '../../public/data/atlas/kuafu-journey.json';
 import catalog from '../../public/data/atlas/catalog.json';
 import { loadImage, cachedSprites } from '../asset-cache';
 import { InkText, useReducedMotion } from '../motion';
-import { playbackState } from '../playback';
+import { BASE_PLAYBACK_RATE, playbackState } from '../playback';
 
 function curvedPath(points) {
   if (points.length < 3) return points;
@@ -171,9 +171,9 @@ export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange
     view.animate({ center: cameraCenter(position, resolution), resolution, duration: reduced || blocked ? 0 : 320 });
   }, [sprites, restart, map, reduced, storyView, closeup, cameraRequest]);
 
-  useEffect(() => {
-    if (selectedId || hidden) map.getView().cancelAnimations();
-  }, [selectedId, hidden, map]);
+  useLayoutEffect(() => {
+    if (blocked) map.getView().cancelAnimations();
+  }, [blocked, map]);
 
   useLayoutEffect(() => {
     if (!sprites || !features.current || error) return;
@@ -233,7 +233,7 @@ export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange
     paint(elapsed.current);
     if (blocked || completed || reduced) return cleanup;
     const tick = timestamp => {
-      const delta = previous === undefined ? 0 : Math.max(0, timestamp - previous) * playbackRateRef.current;
+      const delta = previous === undefined ? 0 : Math.max(0, timestamp - previous) * BASE_PLAYBACK_RATE * playbackRateRef.current;
       previous = timestamp;
       elapsed.current = Math.min(journey.duration_ms, elapsed.current + delta);
       paint(elapsed.current, delta);
