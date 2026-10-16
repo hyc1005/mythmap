@@ -1,4 +1,4 @@
-:root { --ink-title-duration: 450ms; --ink-phase-duration: 200ms; --ink-chapter-duration: 320ms; }
+:root { --ink-title-duration: 450ms; --ink-phase-duration: 200ms; --ink-chapter-duration: 1200ms; }
 @font-face { font-family: 'Shanhai Title'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('/fonts/shanhai-title.woff2') format('woff2'); }
 .animation-failure { position: absolute; z-index: 45; inset: 20% 12%; padding: 20px; background: #eee2c5; border: 1px solid #927a55; color: #544431; }
 .animation-failure button { margin: 6px; padding: 8px 12px; }
@@ -21,7 +21,7 @@ html[lang='en'] .ink-animate .ink-word { animation-name: ink-phase; }
 .chapter-transition-veil { display: grid; place-items: center; transition: none; }
 .chapter-transition-veil.is-visible { animation: chapter-paper var(--ink-chapter-duration) ease-out both; }
 .chapter-transition-veil>span { color: #66543c; padding: 12px 24px; border: 1px solid #b7a27b; font-size: clamp(18px, 3vw, 28px); }
-@keyframes chapter-paper { 0% { opacity: .55; } 35% { opacity: .32; } 100% { opacity: 0; } }
+@keyframes chapter-paper { 0% { opacity: 0; } 12.5%, 87.5% { opacity: 1; } 100% { opacity: 0; } }
 
 /* Exploration and source navigation */
 .exploration-panel { margin-top: 12px; padding: 10px 12px; border: 1px solid #bdab84; background: #eee3ca; color: #66543c; font-size: 12px; }
@@ -85,5 +85,5 @@ html[lang='en'] .ink-animate .ink-word { animation-name: ink-phase; }
 }
 @media (prefers-reduced-motion: reduce) {
   .ink-word, .beast-enter { animation: none !important; opacity: 1; transform: none; clip-path: none; }
-  .chapter-transition-veil { display: none; }
+  .chapter-transition-veil.is-visible { display: grid; animation: none; opacity: 1; }
 }

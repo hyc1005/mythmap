@@ -75,6 +75,8 @@ jobs:
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-search.mjs
       - name: Verify geographic atlas
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-geography.mjs
+      - name: Verify shared map frame and notices
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-map-frame.mjs
       - name: Verify animation speed
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-playback-speed.mjs
       - name: Verify complete story playback

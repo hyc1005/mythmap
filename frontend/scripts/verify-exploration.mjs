@@ -109,10 +109,10 @@ try {
     document.querySelectorAll('.timeline-steps button')[4].click();
   });
   assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '04');
-  await page.waitForTimeout(400);
+  await page.waitForTimeout(600);
+  assert.equal(await page.locator('.chapter-transition-veil.is-visible').count(), 1, 'Chapter title has a readable dwell');
+  await page.waitForTimeout(700);
   assert.equal(await page.locator('.chapter-transition-veil.is-visible').count(), 0);
-  assert.equal(await page.locator('.chapter-rail h2 .ink-word').first().evaluate(element => getComputedStyle(element).animationName), 'ink-title');
-  await page.waitForTimeout(350);
   assert.equal(await page.locator('.chapter-rail h2 .ink-word').first().evaluate(element => getComputedStyle(element).animationName), 'none', 'Title motion finishes once');
   await page.getByRole('button', { name: 'EN', exact: true }).click();
   assert.equal(await page.locator('.chapter-rail h2 .ink-word').first().evaluate(element => getComputedStyle(element).animationName), 'none', 'Language changes do not replay chapter motion');
@@ -123,8 +123,7 @@ try {
   assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '00');
   assert.equal(await page.locator('.detail-drawer').count(), 0);
   await page.goto(`${base}?chapter=03&lang=zh`);
-  await page.getByRole('button', { name: '复制探索链接', exact: true }).click();
-  await page.waitForFunction(() => document.querySelector('.toolbar-share-status')?.textContent || document.querySelector('.toolbar-share-status input'));
+  assert.equal(await page.getByRole('button', { name: '复制探索链接', exact: true }).count(), 0, 'Map sharing control is removed; URL restoration remains supported');
 
   await page.locator('.bestiary-toggle').click();
   await page.route('**/beast-shengsheng.webp', route => route.abort());

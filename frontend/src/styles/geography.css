@@ -58,3 +58,24 @@
 
 .geo-account { margin-block: 12px; padding-block: 4px; border-block: 1px solid var(--edge); }
 .geo-source-meta { margin-block: 4px; font-size: 14px; color: var(--soft-ink); }
+
+.myth-map-wrap > [hidden] { display: none !important; }
+.map-mode-switch { display: flex; flex-wrap: wrap; gap: 4px; margin-right: auto; }
+.map-mode-switch button { min-height: 44px; min-width: 44px; padding: 7px 10px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); font: inherit; cursor: pointer; }
+.map-mode-switch button[aria-pressed=true] { color: var(--verm); border-color: var(--verm); box-shadow: inset 0 -2px var(--verm); }
+.geography-main { min-width: 0; padding: 12px; background: var(--paper); }
+.is-geography.is-map-fullscreen { grid-template-rows: auto minmax(0, 1fr); }
+.is-map-fullscreen .geography-main { overflow: auto; overscroll-behavior: contain; }
+.geo-map-stage { position: relative; }
+.geo-north { position: absolute; top: 10px; right: 10px; padding: 5px 8px; background: #f5efdfed; color: var(--ink); pointer-events: none; }
+.geo-map .ol-attribution { position: absolute; bottom: 4px; right: 4px; max-width: calc(100% - 8px); padding: 3px 6px; background: #f5efdfed; color: var(--ink); font: 12px sans-serif; }
+.geo-map .ol-attribution ul { display: block; margin: 0; padding: 0; list-style: none; }
+.geo-map .ol-attribution a { color: #59412e; }
+.geo-map .ol-attribution button { display: none; }
+.geo-map .ol-scale-line { bottom: 34px; }
+.geo-empty-notice { position: absolute; inset: 0; z-index: 4; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center; pointer-events: none; }
+.geo-empty-notice b, .geo-empty-notice span { padding: 8px 14px; background: #f5efdff2; color: var(--ink); box-shadow: 0 1px 8px #332c2420; }
+.geo-empty-notice b { font-size: 24px; }
+.is-map-fullscreen .geo-map { height: max(320px, calc(100svh - 300px)); }
+@media (max-width: 768px) { .geography-main { padding: 8px; } .map-mode-switch button { padding: 6px 8px; font-size: 14px; } }
+@media (max-height: 480px) { .is-map-fullscreen .geo-map { height: max(210px, 54svh); } }

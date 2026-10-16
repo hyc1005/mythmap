@@ -107,10 +107,14 @@ for (const size of [[1014, 760], [804, 722], [370, 324], [300, 249], [1200, 800]
   assert.ok(extent[0] >= -0.001 && extent[1] >= -0.001 && extent[2] <= 1200.001 && extent[3] <= 800.001);
 }
 
+const clockedPages = new WeakSet();
+async function installClock(page, options) { await page.clock.install(options); clockedPages.add(page); }
 async function selectChapter(page, name) {
   if (!await page.locator('.timeline-steps button').count()) await page.locator('.mobile-explore-nav button').first().click();
   await page.getByRole('button', { name, exact: true }).click();
+  if (clockedPages.has(page)) await page.clock.runFor(1300);
 }
+
 async function storyCount(page) {
   const mobile = !await page.locator('.timeline-steps button').count();
   if (mobile) await page.locator('.mobile-explore-nav button').nth(1).click();
@@ -181,7 +185,7 @@ try {
       const url = new URL(response.url());
       if (url.origin === new URL(atlasUrl).origin && response.status() >= 400 && !url.pathname.endsWith('/api/world')) failures.push("HTTP " + response.status() + " " + url.pathname);
     });
-    await layoutPage.clock.install();
+    await installClock(layoutPage);
     await layoutPage.goto(atlasUrl);
     await layoutPage.getByRole('button', { name: '播放盘古序章', exact: true }).click();
     await layoutPage.getByRole("button",{name:"暂停盘古序章",exact:true}).waitFor();
@@ -319,7 +323,7 @@ try {
   await page.locator('.myth-map-wrap').screenshot({ path: new URL('00-pangu-desktop.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
 
   const panguRatePage = await browser.newPage();
-  await panguRatePage.clock.install();
+  await installClock(panguRatePage);
   await panguRatePage.goto(`${atlasUrl}#world`);
   const panguScene = panguRatePage.locator('.pangu-composition');
   await panguRatePage.getByRole('button', { name: '播放盘古序章', exact: true }).click();
@@ -464,7 +468,8 @@ try {
   await chapterKeys.press('Home');
   await page.getByRole('button', { name: '播放盘古序章', exact: true }).waitFor();
   await page.getByRole('button', { name: '连续游历', exact: true }).click();
-  await page.clock.install({ time: new Date() });
+  await page.locator('.chapter-transition-veil.is-visible').waitFor({ state: 'detached' });
+  await installClock(page, { time: new Date() });
   await page.clock.pauseAt(await page.evaluate(() => Date.now() + 1000));
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.locator('.begin-journey').click();
@@ -474,9 +479,11 @@ try {
   await page.getByRole('button', { name: '下一幕', exact: true }).click();
   await page.getByRole('button', { name: '下一幕', exact: true }).click();
   await page.getByRole('button', { name: '完成故事', exact: true }).click();
+  await page.locator('.pangu-player-wrap[data-status="completed"]').waitFor();
   await page.locator('.world-layout[data-animation-busy="false"]').waitFor();
   await page.clock.runFor(1200);
   assert.equal(String(Number(await page.locator('.world-layout').getAttribute('data-chapter'))), '1');
+  await page.clock.runFor(1300);
   await page.locator('.story-animation[data-story="01-02"]').waitFor();
   assert.equal(await page.locator('.nuwa-scene-overlay').count(), 0, 'Nuwa plays directly on the map');
   await page.locator('.story-animation[data-status="reduced"]').waitFor();
@@ -497,6 +504,7 @@ try {
   await page.locator('.kuafu-journey').getByRole('button', { name: '跳过', exact: true }).click();
   await page.clock.runFor(1200);
   assert.equal(String(Number(await page.locator('.world-layout').getAttribute('data-chapter'))), '4');
+  await page.clock.runFor(1300);
   await page.locator('.story-animation[data-story="04-02"]').waitFor();
   await page.locator('.story-animation[data-status="reduced"]').waitFor();
   await page.locator('.story-animation').getByRole('button', { name: '跳过', exact: true }).click();
@@ -747,7 +755,7 @@ try {
   }
   const storyPage = await browser.newPage({ viewport: { width: 1366, height: 768 } });
   storyPage.on('pageerror', error => failures.push(error.message));
-  await storyPage.clock.install();
+  await installClock(storyPage);
   await storyPage.goto(`${atlasUrl}#world`);
   await selectChapter(storyPage, '03 炎黄');
   await storyPage.getByLabel('选择地图故事动画').selectOption('03-05');
@@ -805,7 +813,7 @@ try {
   }
   const impactPage = await browser.newPage({ viewport: { width: 1366, height: 768 } });
   impactPage.on('pageerror', error => failures.push(error.message));
-  await impactPage.clock.install();
+  await installClock(impactPage);
   await impactPage.goto(`${atlasUrl}#world`);
   await selectChapter(impactPage, '04 五帝后期');
   await impactPage.getByLabel('选择地图故事动画').selectOption('04-02');
@@ -844,7 +852,7 @@ try {
   for (const [width, height] of [[1920, 1080], [1366, 768], [1280, 720], [390, 844], [844, 390]]) {
     const checkPage = await browser.newPage({ viewport: { width, height }, hasTouch: width <= 640 });
     checkPage.on('pageerror', error => failures.push(error.message));
-    await checkPage.clock.install();
+    await installClock(checkPage);
     await checkPage.goto(`${atlasUrl}#world`);
     for (const [chapter, id, title] of [['02 三皇五氏', '02-04', '燧人取火'], ['03 炎黄', '03-04', '精卫填海'], ['04 五帝后期', '04-02', '大羿射日'], ['05 禹夏', '05-01', '大禹治水']]) {
       console.log(`Checking ${id} at ${width}x${height}`);
@@ -892,7 +900,7 @@ try {
   }
   const fallbackPage = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
   fallbackPage.on('pageerror', error => failures.push(error.message));
-  await fallbackPage.clock.install();
+  await installClock(fallbackPage);
   await fallbackPage.route('**/dayi-arrow-v2.webp', route => route.abort());
   await fallbackPage.goto(`${atlasUrl}#world`);
   await selectChapter(fallbackPage, '04 五帝后期');
@@ -914,7 +922,7 @@ try {
   await staticPage.close();
   const boundaries = await browser.newPage({ viewport: { width: 1366, height: 768 } });
   boundaries.on('pageerror', error => failures.push(error.message));
-  await boundaries.clock.install();
+  await installClock(boundaries);
   await boundaries.goto(`${atlasUrl}#world`);
   const scene = boundaries.locator('.story-animation');
   await selectChapter(boundaries, '02 三皇五氏');

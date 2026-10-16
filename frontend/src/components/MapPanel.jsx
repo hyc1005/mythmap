@@ -7,9 +7,7 @@ import Feature from 'ol/Feature';
 import Point from 'ol/geom/Point';
 import LineString from 'ol/geom/LineString';
 import Projection from 'ol/proj/Projection';
-import ImageLayer from 'ol/layer/Image';
 import VectorLayer from 'ol/layer/Vector';
-import ImageStatic from 'ol/source/ImageStatic';
 import VectorSource from 'ol/source/Vector';
 import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style';
 import { defaults as defaultControls } from 'ol/control';
@@ -21,7 +19,7 @@ import kuafuJourney from '../../public/data/atlas/kuafu-journey.json';
 import { assetUrl } from '../asset-url';
 
 import { iconFor } from '../artwork';
-import { InkText, useReducedMotion } from '../motion';
+import { ChapterNotice, InkText, useReducedMotion } from '../motion';
 import { prefetchNextChapter } from '../asset-cache';
 import ArtworkImage from './ArtworkImage';
 import MapToolbar from './MapToolbar';
@@ -29,6 +27,8 @@ import MapPlayback from './MapPlayback';
 import ChapterEntries from './ChapterEntries';
 import { chapterStoryIds } from '../chapter-stories';
 import { drawMapLayers } from '../map-export';
+import { paperLayer } from '../paper-layer';
+import GeographyMap from './GeographyMap';
 const PanguOpening = lazy(() => import('../animations/PanguOpening'));
 const KuafuJourney = lazy(() => import('../animations/KuafuJourney'));
 const StoryAnimation = lazy(() => import('../animations/StoryAnimation'));
@@ -85,9 +85,11 @@ function beastMarker(record, active, resolution = 1) {
   return beastIcons.get(key);
 }
 
-export default function MapPanel({ world, stageIndex, activeLayers, selectedId, pausedForOverlay = false, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, storyRequest, onActiveEventChange, onManualStoryChange, readingNote, locateId, storyItems, onRecordsChange, reading, collectionItems, tourPlaying = null, onTourPlaybackChange, onPlaybackChange, onShare, shareStatus }) {
+export default function MapPanel({ world, stageIndex, activeLayers, selectedId, pausedForOverlay = false, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, storyRequest, onActiveEventChange, onManualStoryChange, readingNote, locateId, storyItems, onRecordsChange, reading, collectionItems, tourPlaying = null, onTourPlaybackChange, onPlaybackChange, geographyMode, onGeographyModeChange, geographyEventId, onGeographyEventChange, geographySnapshot, onGeographySnapshot }) {
   const { t, locale } = useLocale();
-  const externalPaused = tourPlaying === false || pausedForOverlay;
+  const externalPaused = tourPlaying === false || pausedForOverlay || geographyMode || Boolean(chapterTransition);
+  const [geographyVisited, setGeographyVisited] = useState(geographyMode);
+  useEffect(() => { if (geographyMode) setGeographyVisited(true); }, [geographyMode]);
   const onUserPlaybackChange = tourPlaying === null ? undefined : onTourPlaybackChange;
   const catalog = useMemo(() => localize(rawCatalog, locale), [locale]);
   const animationCatalog = useMemo(() => localize(rawAnimationCatalog, locale), [locale]);
@@ -224,7 +226,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
 
   useEffect(() => {
     if (!target.current || map.current) return undefined;
-    const paper = new ImageLayer({ opacity: 0.67, source: new ImageStatic({ url: assetUrl('/data/atlas/myth-paper.webp'), imageExtent: EXTENT, projection, interpolate: true }) });
+    const paper = paperLayer('/data/atlas/myth-paper.webp');
     const created = new OlMap({
       target: target.current,
       controls: defaultControls({ attribution: false, rotate: false, zoom: false }),
@@ -270,7 +272,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
         } }),
       ],
       interactions: defaultInteractions({ mouseWheelZoom: false }).extend([new MouseWheelZoom({ maxDelta: 0.38, duration: 380 })]),
-      view: new View({ projection, center: [600, 400], resolution: 1, minResolution: 0.25, maxResolution: 1, extent: EXTENT, constrainOnlyCenter: true, smoothExtentConstraint: false, smoothResolutionConstraint: false, enableRotation: false }),
+      view: new View({ projection, center: [600, 400], resolution: 1, minResolution: 0.25, maxResolution: 1, extent: EXTENT, constrainOnlyCenter: false, showFullExtent: true, smoothExtentConstraint: false, smoothResolutionConstraint: false, enableRotation: false }),
     });
     created.on('pointermove', event => {
       if (event.dragging) { setHoverId(null); setPinnedId(null); setTouchSelectedId(null); return; }
@@ -306,6 +308,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     if (!activeMap || !target.current) return undefined;
     let previousSize = null;
     const syncBounds = () => {
+      if (!target.current?.clientWidth || !target.current?.clientHeight) return;
       activeMap.updateSize();
       const size = activeMap.getSize();
       if (!size?.[0] || !size?.[1]) return;
@@ -319,7 +322,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
       activeMap.setView(new View({
         projection, center: previous.getCenter() || [600, 400],
         resolution: Math.min((previous.getResolution() || maxResolution) * resizeFactor, maxResolution), rotation: previous.getRotation(),
-        minResolution: 0.25, maxResolution, extent: EXTENT, constrainOnlyCenter: true, smoothExtentConstraint: false, smoothResolutionConstraint: false, enableRotation: false,
+        minResolution: 0.25, maxResolution, extent: EXTENT, constrainOnlyCenter: false, showFullExtent: true, smoothExtentConstraint: false, smoothResolutionConstraint: false, enableRotation: false,
       }));
     };
     const observer = new ResizeObserver(syncBounds);
@@ -480,7 +483,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
 
   useEffect(() => {
     requestAnimationFrame(() => map.current?.updateSize());
-  }, [fallbackFullscreen, nativeFullscreen]);
+  }, [fallbackFullscreen, nativeFullscreen, geographyMode]);
 
   const isFullscreen = nativeFullscreen || fallbackFullscreen;
   useEffect(() => {
@@ -489,7 +492,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   useEffect(() => {
     if (!isFullscreen) return undefined;
     const handleFullscreenKeys = event => {
-      if (selectedId || event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+      if (geographyMode || selectedId || event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
       if (event.target?.closest?.('input, textarea, select, button, a, [contenteditable="true"], [role="slider"], .detail-scrim')) return;
       if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
       event.preventDefault();
@@ -497,10 +500,20 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     };
     window.addEventListener('keydown', handleFullscreenKeys);
     return () => window.removeEventListener('keydown', handleFullscreenKeys);
-  }, [isFullscreen, selectedId, stageIndex, onFullscreenStageChange]);
+  }, [isFullscreen, geographyMode, selectedId, stageIndex, onFullscreenStageChange]);
   useEffect(() => {
     onFullscreenTargetChange?.(isFullscreen ? mapFrame.current : null);
   }, [isFullscreen, onFullscreenTargetChange]);
+  useEffect(() => {
+    if (!nativeFullscreen) return;
+    const escape = event => {
+      if (event.key !== 'Escape' || selectedId) return;
+      event.preventDefault();
+      document.exitFullscreen().catch(() => {});
+    };
+    window.addEventListener('keydown', escape);
+    return () => window.removeEventListener('keydown', escape);
+  }, [nativeFullscreen, selectedId]);
   const toggleFullscreen = useCallback(async () => {
     const frame = mapFrame.current;
     if (!frame) return;
@@ -584,14 +597,16 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   const layerStatus = <div className="map-layer-summary" role="status">{activeLayers.beasts && <span>{availableBeasts.length ? t("异兽图层 · ") + mappedBeastCount + t(" 条已关联") : t("本章暂无异兽")}{!availableBeasts.length && <button onClick={activeLayers.onGoToFirstBeast}>{t("前往第 3 章 ↗")}</button>}</span>}{activeLayers.divine && <span>{t("神域已显示")}</span>}</div>;
   const fullscreenButton = <button className="map-fullscreen" onClick={toggleFullscreen} aria-pressed={isFullscreen} aria-label={isFullscreen ? t("退出地图全屏") : t("地图全屏")}>{isFullscreen ? t("退出全屏") : t("全屏展示")}</button>;
 
-  return <><section ref={mapFrame} tabIndex={-1} data-camera-mode={cameraMode} className={`myth-map-wrap ${isPrologue ? "is-prologue" : ""} ${isFullscreen ? "is-map-fullscreen" : ""} ${fallbackFullscreen ? "is-fallback-fullscreen" : ""} ${shortMap ? "is-short-map" : ""} ${activeJourneyId ? "has-journey" : ""} ${activeJourneyId && activeJourneyId !== "03-05" ? "has-local-story" : ""}`} aria-label={isPrologue ? t("盘古开天序章场景") : t("山海经方位关系地图")}>
+  const modeControls = <div className="map-mode-switch" role="group" aria-label={t('地图模式')}><button type="button" aria-pressed={!geographyMode} onClick={() => onGeographyModeChange(false)}>{t('木刻叙事')}</button><button type="button" aria-pressed={geographyMode} onClick={() => onGeographyModeChange(true)}>{t('真实地理')}</button></div>;
+
+  return <><section ref={mapFrame} tabIndex={-1} data-map-mode={geographyMode ? 'geography' : 'woodcut'} data-camera-mode={cameraMode} className={`myth-map-wrap ${isPrologue ? "is-prologue" : ""} ${geographyMode ? "is-geography" : ""} ${isFullscreen ? "is-map-fullscreen" : ""} ${fallbackFullscreen ? "is-fallback-fullscreen" : ""} ${shortMap ? "is-short-map" : ""} ${activeJourneyId ? "has-journey" : ""} ${activeJourneyId && activeJourneyId !== "03-05" ? "has-local-story" : ""}`} aria-label={geographyMode ? t("真实地理参考地图") : isPrologue ? t("盘古开天序章场景") : t("山海经方位关系地图")}>
     {isFullscreen && <header className="fullscreen-toolbar" aria-label={t("全屏地图工具栏")}><div className="fullscreen-chapter-nav" aria-label={t("全屏章节切换")}>
       <button type="button" onClick={() => { onFullscreenStageChange(stageIndex - 1); mapFrame.current?.focus({ preventScroll: true }); }} disabled={stageIndex === 0}>{t("← 上一章")}</button>
       <span><small>{stages[stageIndex].id} / {String(stages.length - 1).padStart(2, '0')}</small><b><InkText key={chapterId} text={stages[stageIndex].title} animate={Boolean(chapterTransition)} /></b></span>
       <button type="button" onClick={() => { onFullscreenStageChange(stageIndex + 1); mapFrame.current?.focus({ preventScroll: true }); }} disabled={stageIndex >= stages.length - 1}>{t("下一章 →")}</button>
-    </div>{!isPrologue && mapControls}{isFullscreen && !isPrologue && entries}{fullscreenButton}</header>}
-    {!isFullscreen && <header className="explore-toolbar">{!isPrologue && mapControls}<button className="map-share" onClick={onShare}>{t('复制探索链接')}</button>{fullscreenButton}{shareStatus && <span className="toolbar-share-status" role="status">{shareStatus.startsWith('http') ? <input readOnly aria-label={t('探索链接')} value={shareStatus} onFocus={event => event.target.select()} /> : t(shareStatus)}</span>}</header>}
-    <div className="map-surface"><div ref={target} className="myth-map-canvas" />
+    </div>{modeControls}{!geographyMode && !isPrologue && mapControls}{isFullscreen && !isPrologue && entries}{fullscreenButton}</header>}
+    {!isFullscreen && <header className="explore-toolbar">{modeControls}{!geographyMode && !isPrologue && mapControls}{fullscreenButton}</header>}
+    <div className="map-surface" hidden={geographyMode}><div ref={target} className="myth-map-canvas" />
 {isPrologue && <div className="prologue-scene">
       {prologueSkipped ? <ArtworkImage src={assetUrl(stages[stageIndex].scene)} className="pangu-static-poster" alt={t('盘古开天')} /> : <PanguLoadBoundary key={panguRetry} onError={() => handlePlayback('error')} fallback={<AnimationFailure onStatus={handlePlayback} onSkip={() => { setPrologueSkipped(true); handlePlayback('completed'); }} />}>
         <Suspense fallback={<PanguPoster scene={stages[stageIndex].scene} controlContainer={controlContainer} onRetry={() => setPanguRetry(value => value + 1)} />}>
@@ -601,7 +616,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
 
     </div>}
     {!isPrologue && <>
-      {!isFullscreen && <><div className="map-orientation" aria-label={t("图面方位示意")}><span>{t("北")}</span><i>↑</i><span>{t("西　中　东")}</span><i>↓</i><span>{t("南")}</span></div></>}
+      {!isFullscreen && <><div className="map-orientation" aria-label={t("示意北向")}><span>{t("示意北向")} ↑</span></div></>}
     {visiblePortrait && !isFullscreen && <div key={visiblePortrait.id} className={`map-role-portrait ${visiblePortrait.above ? 'is-above' : 'is-below'} ${visiblePortrait.record.artworks?.length > 1 ? 'has-pair' : ''}`} style={{ left: visiblePortrait.left, top: visiblePortrait.top, width: visiblePortrait.width, height: visiblePortrait.height }} aria-hidden="true">
       {(visiblePortrait.record.artworks?.length ? visiblePortrait.record.artworks : [visiblePortrait.record.artwork]).filter(Boolean).map((artwork, index) => <img key={`${visiblePortrait.id}-${index}`} src={assetUrl(artwork.startsWith('/') ? artwork : `/data/atlas/myth-icons/${artwork}`, 'preview')} alt="" />)}
     </div>}
@@ -614,8 +629,9 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     </AnimationBoundary>
       {!isFullscreen && (activeLayers.beasts || activeLayers.divine) && layerStatus}
     </>}
-    <div key={chapterTransition || "idle"} className={`chapter-transition-veil ${chapterTransition ? "is-visible" : ""}`} aria-hidden="true">{chapterTransition && <span>{stages[stageIndex].title}</span>}</div>
+    <ChapterNotice change={chapterTransition} title={stages[stageIndex].title} />
     </div>
-    <MapPlayback isFullscreen={isFullscreen} isPrologue={isPrologue} activeJourneyId={activeJourneyId} onSelect={onSelect} controlRef={setControlContainer} preview={preview} legend={legend} layerStatus={layerStatus} readingNote={readingNote} cameraMode={cameraMode} onCloseup={() => { setCameraMode('story'); setCameraRequest(value => value + 1); }} onOverview={() => fitStage()} />
+    {geographyVisited && <div className="geography-main" hidden={!geographyMode}><GeographyMap catalog={catalog} chapterId={chapterId} currentEventId={geographyEventId} visible={geographyMode} transitioning={chapterTransition} isFullscreen={isFullscreen} snapshot={geographySnapshot} onSnapshot={onGeographySnapshot} onEventChange={onGeographyEventChange} onOpen={id => onSelect(id)} /></div>}
+    <MapPlayback hidden={geographyMode} isFullscreen={isFullscreen} isPrologue={isPrologue} activeJourneyId={activeJourneyId} onSelect={onSelect} controlRef={setControlContainer} preview={preview} legend={legend} layerStatus={layerStatus} readingNote={readingNote} cameraMode={cameraMode} onCloseup={() => { setCameraMode('story'); setCameraRequest(value => value + 1); }} onOverview={() => fitStage()} />
   </section></>;
 }

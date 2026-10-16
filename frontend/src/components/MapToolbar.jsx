@@ -2,7 +2,7 @@ import { useLocale } from '../i18n';
 
 export default function MapToolbar({ isFullscreen, compactTools, chapterStoryOptions, activeJourneyId, onStoryChange, activeLayers, fitStage, exportStage, exportStatus }) {
   const { t } = useLocale();
-  return <div className="map-overlay-controls">{isFullscreen && <span className="fullscreen-orientation" aria-label={t("图面北向")}>{t("北 ↑")}</span>}
+  return <div className="map-overlay-controls">{isFullscreen && <span className="fullscreen-orientation" aria-label={t("示意北向")}>{t("示意北向 ↑")}</span>}
     {chapterStoryOptions.length > 0 && <label className="map-animation-choice">{t("故事动画")}<select aria-label={t("选择地图故事动画")} value={activeJourneyId || ''} onChange={event => onStoryChange(event.target.value || null)}><option value="">{t("关闭动画")}</option>{chapterStoryOptions.map(story => <option key={story.id} value={story.id}>{story.name}</option>)}</select></label>}
     <details className="map-tools" open={!isFullscreen && !compactTools ? true : undefined}><summary>{t("图具")}</summary><div>
       <div className="myth-layer-switches" aria-label={t("专题图层")}>

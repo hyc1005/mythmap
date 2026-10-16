@@ -1,0 +1,2 @@
+export const CHAPTER_TRANSITION_MS = 1200;
+export const EMPTY_RECORD_NOTICE_MS = 2500;
