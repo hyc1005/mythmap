@@ -53,7 +53,10 @@ const mode = async (page, language, geographic) => {
   await page.locator(`.myth-map-wrap[data-map-mode="${geographic ? 'geography' : 'woodcut'}"]`).waitFor();
   await stable(page);
 };
-const extent = async page => JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-extent'));
+const extent = async page => {
+  await stable(page);
+  return JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-extent'));
+};
 const fillSearch = async (page, label, value) => {
   if (!await geo(page).locator('.geo-search').evaluate(node => node.open)) await geo(page).locator('.geo-search summary').click();
   await geo(page).getByLabel(label).fill(value);
@@ -134,6 +137,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     const world = await extent(page);
     assert.ok(world[1] >= -85.052 && world[3] <= 85.052, 'Latitude stays inside the valid projected world while longitude can wrap');
     await geo(page).getByRole('button', { name: '全国总览', exact: true }).click();
+    await page.waitForFunction(expected => {
+      const current = JSON.parse(document.querySelector('.geo-map').dataset.extent || '[]');
+      return current.length === expected.length && current.every((value, index) => Math.abs(value - expected[index]) < .00001);
+    }, national);
     await geo(page).getByLabel('地理事件').selectOption('03-01');
     await page.waitForFunction(() => document.querySelector('.geography-atlas').dataset.eventId === '03-01');
     assert.equal(await rows(page).count(), 3);
