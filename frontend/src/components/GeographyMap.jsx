@@ -50,7 +50,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
     const view = nationalView(instance.getSize());
     instance.getView().setCenter(view.center); instance.getView().setResolution(view.resolution);
   };
-  const viewMode = useRef(restore ? snapshot.viewMode || 'national' : 'national');
+  const viewMode = useRef(restore ? snapshot.viewMode || 'initial' : 'initial');
   const layerRefs = useRef({}), current = useRef({}), latestSnapshot = useRef(snapshot), [ready, setReady] = useState(false);
   const compareTrigger = useRef(null);
   const resultList = useRef(null), detailHeading = useRef(null), searchInput = useRef(null);
@@ -130,7 +130,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, visib
     } });
     const ruler = new VectorLayer({ source: measurement.current, style: new Style({ stroke: new Stroke({ color: '#496d75', width: 2, lineDash: [6, 4] }), image: new Circle({ radius: 5, fill: new Fill({ color: '#496d75' }) }) }) });
     const instance = new Map({ target: target.current, layers: [background, labels, points, ruler], controls: [new ScaleLine({ units: 'metric' }), new Attribution({ collapsible: false })],
-      interactions: interactions({ doubleClickZoom: false }), view: new View({ projection: 'EPSG:3857', center: restore && snapshot.center || fromLonLat(geographyMapConfig.initialCenter), zoom: restore ? snapshot.zoom ?? 4 : 4, minZoom: 1, maxZoom: geographyMapConfig.maxZoom, extent: worldExtent, constrainOnlyCenter: false, smoothExtentConstraint: false, smoothResolutionConstraint: false, enableRotation: false }) });
+      interactions: interactions({ doubleClickZoom: false }), view: new View({ projection: 'EPSG:3857', center: restore && snapshot.center || fromLonLat(geographyMapConfig.initialCenter), zoom: restore ? snapshot.zoom ?? geographyMapConfig.initialZoom : geographyMapConfig.initialZoom, minZoom: 1, maxZoom: geographyMapConfig.maxZoom, extent: worldExtent, constrainOnlyCenter: false, smoothExtentConstraint: false, smoothResolutionConstraint: false, enableRotation: false }) });
     map.current = instance; layerRefs.current.newBasemap = newBasemap;
     instance.on('rendercomplete', () => layerRefs.current.finish?.());
     instance.on('movestart', () => { if (instance.getView().getInteracting()) viewMode.current = 'local'; });

@@ -97,8 +97,12 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.equal(await geo(page).getByLabel('地理事件').inputValue(), '03-05');
     assert.equal(await rows(page).count(), 0);
     assert.equal(await page.locator('.geo-empty-notice').count(), 1);
+    assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001), 'Initial view centers on the Shaanxi–Henan area');
+    assert.match(await geo(page).locator('.ol-scale-line-inner').innerText(), /500 km/, 'Initial scale is approximately 500 km');
+    await geo(page).getByRole('button', { name: '全国总览', exact: true }).click();
+    await stable(page);
     const national = await extent(page);
-    assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001), 'National overview stays centred near Xian');
+    assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.nationalCenter[index]) < .001), 'National overview stays centred near Xian');
     assert.ok(inside([73, 3], national) && inside([136, 54], national), 'China overview includes the full configured mainland and southern maritime range');
     await page.waitForTimeout(200);
     assert.equal(await page.locator('.kuafu-journey').getAttribute('data-elapsed'), frozen);
@@ -217,9 +221,23 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await mode(page, lang, true);
       await geo(page).locator('[data-basemap-state=ready]').waitFor();
       await stable(page);
+      const initialCamera = await extent(page);
+      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001));
+      assert.match(await geo(page).locator('.ol-scale-line-inner').innerText(), /500 km/);
+      await page.locator('.map-fullscreen').click();
+      await page.locator('.is-map-fullscreen').waitFor();
+      await stable(page);
+      assert.match(await geo(page).locator('.ol-scale-line-inner').innerText(), /500 km/, 'Fullscreen preserves the initial regional scale');
+      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001));
+      await page.keyboard.press('Escape');
+      await page.locator('.is-map-fullscreen').waitFor({ state: 'detached' });
+      await stable(page);
+      assert.deepEqual(await extent(page), initialCamera);
+      await geo(page).getByRole('button', { name: lang === 'zh' ? '全国总览' : 'China overview', exact: true }).click();
+      await stable(page);
       const bounds = await extent(page);
       assert.ok(inside([73, 3], bounds) && inside([136, 54], bounds));
-      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001));
+      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.nationalCenter[index]) < .001));
       assert.equal(await page.locator('.chapter-rail .resume-reading, .chapter-rail .begin-journey').count(), 0);
       assert.equal(await page.locator('.begin-journey:visible').count(), 0, 'Geography has no tour-start control');
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
@@ -242,7 +260,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await stable(page);
       const fullscreenBounds = await extent(page);
       assert.ok(inside([73, 3], fullscreenBounds) && inside([136, 54], fullscreenBounds), 'Fullscreen includes the entire configured national extent');
-      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001), 'Fullscreen keeps the overview centered near Xian');
+      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.nationalCenter[index]) < .001), 'Fullscreen keeps the overview centered near Xian');
       assert.equal(await geo(page).locator('.ol-attribution').isVisible(), true);
       await mode(page, lang, false);
       assert.equal(await page.locator('.fullscreen-orientation:visible').count(), 1);
@@ -252,7 +270,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await stable(page);
       const normalBounds = await extent(page);
       assert.ok(inside([73, 3], normalBounds) && inside([136, 54], normalBounds), 'Leaving fullscreen refits without losing the national extent');
-      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.initialCenter[index]) < .001));
+      assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.nationalCenter[index]) < .001));
       if (name === 'chromium' && lang === 'zh') {
         await geo(page).locator('.geo-map').scrollIntoViewIfNeeded();
         await page.screenshot({ path: new URL(`tianditu-exploration-${width}x${height}.png`, output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
