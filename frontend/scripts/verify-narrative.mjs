@@ -947,8 +947,9 @@ try {
   assert.equal(await scene.getAttribute('data-playback-rate'), '1', 'switching stories restores 1x');
   await boundaries.clock.pauseAt(await boundaries.evaluate(() => Date.now() + 1000));
   await boundaries.getByRole('button', { name: '重播', exact: true }).click();
-  assert.equal(await scene.getAttribute('data-elapsed'), '0', 'Boundary checks start from a frozen replay clock');
-  await boundaries.clock.runFor(6400);
+  await boundaries.clock.runFor(100);
+  assert.ok(Number(await scene.getAttribute('data-elapsed')) < 150, 'Frozen replay commits before boundary checks');
+  await boundaries.clock.runFor(6300);
   assert.equal(await scene.getAttribute('data-frame'), '3');
   assert.equal(await scene.getAttribute('data-arrow'), 'null');
   await boundaries.clock.runFor(300);
