@@ -55,3 +55,6 @@
 .geo-comparison blockquote { margin-inline: 12px; }
 .geo-comparison summary { min-height: 44px; padding-block: 8px; cursor: pointer; }
 @media (max-width: 768px) { .geo-compare-grid { grid-template-columns: minmax(0, 1fr); } }
+
+.geo-account { margin-block: 12px; padding-block: 4px; border-block: 1px solid var(--edge); }
+.geo-source-meta { margin-block: 4px; font-size: 14px; color: var(--soft-ink); }

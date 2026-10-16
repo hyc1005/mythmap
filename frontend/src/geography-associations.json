@@ -29,14 +29,41 @@
         "evidence_status": "source_checked",
         "evidence": [
           {
-            "title": "盘古神话（国家级非遗代表性项目Ⅰ-57）",
-            "title_en": "Pangu myths: national intangible cultural heritage, I-57",
-            "url": "https://www.ihchina.cn/project_details/12290/",
+            "title": "盘古神话（桐柏县，国家级非遗Ⅰ-57）",
+            "title_en": "Pangu myths: Tongbai national heritage entry I-57",
+            "url": "https://www.ihchina.cn/project_details/12289/",
             "publisher": "中国非物质文化遗产网",
             "checked_at": "2026-10-16",
-            "excerpt": "内容涉及开天辟地"
+            "excerpt": "内容涉及开天辟地",
+            "review_scope": "page_text",
+            "locator": "项目简介",
+            "locator_en": "Project introduction",
+            "source_group": "pangu-heritage-i57-summary"
+          },
+          {
+            "title": "浅谈桐柏淮源文化",
+            "title_en": "On the culture of the Huai headwaters in Tongbai",
+            "url": "https://www.tongbai.gov.cn/2023/03-29/762855.html",
+            "publisher": "桐柏县文广旅局",
+            "published_on": "2023-03-29",
+            "checked_at": "2026-10-16",
+            "review_scope": "indexed_excerpt",
+            "locator": "正文引述盘古与淮渎段",
+            "locator_en": "Passage associating Pangu with the Huai River",
+            "excerpt": "血为淮渎"
           }
-        ]
+        ],
+        "account": {
+          "focus": "开天与淮河化生",
+          "focus_en": "Creation and the Huai River",
+          "summary": "桐柏县文化说明将盘古身体化生的意象与淮河源头联系，转引古籍中的化血为淮河说法。",
+          "summary_en": "Tongbai cultural commentary links Pangu’s bodily transformation to the Huai headwaters through a quotation attributed to an ancient text.",
+          "limits": "这是地方文化说明的转引；古籍版本未独立核对，也不能据此认定该母题只在桐柏流传。",
+          "limits_en": "This is a local commentary’s quotation. Its ancient edition is not independently checked, and the motif is not established as exclusive to Tongbai.",
+          "source_urls": [
+            "https://www.tongbai.gov.cn/2023/03-29/762855.html"
+          ]
+        }
       }
     },
     {
@@ -73,9 +100,35 @@
             "url": "https://www.ihchina.cn/project_details/12290/",
             "publisher": "中国非物质文化遗产网",
             "checked_at": "2026-10-16",
-            "excerpt": "内容涉及开天辟地"
+            "excerpt": "内容涉及开天辟地",
+            "review_scope": "page_text",
+            "locator": "项目简介",
+            "locator_en": "Project introduction",
+            "source_group": "pangu-heritage-i57-summary"
+          },
+          {
+            "title": "盘古乡（街道简介）",
+            "title_en": "Pangu Township: official introduction",
+            "url": "https://www.hnzwfw.gov.cn/411726201000/detail.html?region=411726201000",
+            "publisher": "泌阳县盘古乡人民政府",
+            "checked_at": "2026-10-16",
+            "review_scope": "indexed_excerpt",
+            "locator": "街道简介中盘古山段",
+            "locator_en": "Township introduction: passage on Mount Pangu",
+            "excerpt": "传说为盘古开天辟地居住之地"
           }
-        ]
+        ],
+        "account": {
+          "focus": "开天居地与盘古山",
+          "focus_en": "A creation dwelling associated with Mount Pangu",
+          "summary": "盘古乡政府简介把当地盘古山与盘古开天、居住的传说联系起来，重点是故事与山名的地方关联。",
+          "summary_en": "The township introduction associates local Mount Pangu with a tradition of Pangu’s creation and dwelling.",
+          "limits": "资料没有提供完整开天故事异文；县域代表点不定位盘古山山顶，也不能与桐柏版本判定互斥。",
+          "limits_en": "No full narrative variant is supplied. The county point is not the summit, and this account does not exclude the Tongbai association.",
+          "source_urls": [
+            "https://www.hnzwfw.gov.cn/411726201000/detail.html?region=411726201000"
+          ]
+        }
       }
     },
     {
@@ -109,9 +162,75 @@
             "url": "https://www.changzhi.gov.cn/zjzz/rwzz/zrfg/201704/t20170428_353785.shtml",
             "publisher": "长治市人民政府",
             "checked_at": "2026-10-16",
-            "excerpt": "这里所说的“西山”即指发鸠山"
+            "excerpt": "这里所说的“西山”即指发鸠山",
+            "review_scope": "page_text",
+            "locator": "正文第2、5段",
+            "locator_en": "Body paragraphs 2 and 5",
+            "published_on": "2013-12-17"
           }
+        ],
+        "account": {
+          "focus": "衔木石与纪女传说",
+          "focus_en": "Carrying wood and stones; a memorial tradition",
+          "summary": "长治市政府介绍把精卫衔取木石的西山解释为当地发鸠山，并记述灵湫庙与炎帝纪念女娃的传说。",
+          "summary_en": "Changzhi’s account identifies the mountain supplying Jingwei’s wood and stones with local Mount Fajiu, and records a temple tradition commemorating the drowned daughter.",
+          "limits": "这是现代地方介绍中的解释与传说，不能由庙宇或县域坐标证明填海发生地点。",
+          "limits_en": "These are interpretations and traditions in a modern local account; neither a temple nor a county coordinate establishes where the event occurred.",
+          "source_urls": [
+            "https://www.changzhi.gov.cn/zjzz/rwzz/zrfg/201704/t20170428_353785.shtml"
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "03-04-tradition-gaoping",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.9229854,
+          35.7984314
         ]
+      },
+      "properties": {
+        "id": "03-04-tradition-gaoping",
+        "entity_id": "03-04",
+        "stage_id": "03",
+        "label": "高平市",
+        "association_type": "local_tradition",
+        "location_precision": "region_representative",
+        "verification_status": "modern_reference_verified",
+        "historical_verification": "not_established",
+        "analysis_eligible": false,
+        "basis_note": "寺庄镇政府工作综述记述当地发鸠山承载精卫传说。沿用高平市区域代表坐标，不作为寺庄镇、山顶或事件现场坐标。",
+        "basis_note_en": "Sizhuang government records a Jingwei tradition associated with local Mount Fajiu. The existing Gaoping regional coordinate is retained, not a township, summit or event-site coordinate.",
+        "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%AB%98%E5%B9%B3%E5%B8%82&format=jsonv2&limit=1&countrycodes=cn",
+        "evidence_status": "source_checked",
+        "evidence": [
+          {
+            "title": "寺庄镇2024年工作综述之文旅康养篇",
+            "title_en": "Sizhuang Township: 2024 cultural tourism review",
+            "url": "https://xxgk.sxgp.gov.cn/xzjd/gpszz/fdzdgknr/gzdt/202501/t20250116_2088297.shtml",
+            "publisher": "高平市寺庄镇人民政府",
+            "published_on": "2025-01-16",
+            "checked_at": "2026-10-16",
+            "review_scope": "page_text",
+            "locator": "第二节：依托历史人文，擦亮旅游名片",
+            "locator_en": "Section 2: local historical and cultural resources",
+            "excerpt": "发鸠山不仅承载着精卫填海的神话传说"
+          }
+        ],
+        "account": {
+          "focus": "发鸠山的传承关联",
+          "focus_en": "A transmission association with Mount Fajiu",
+          "summary": "寺庄镇政府将镇西北部的发鸠山列为承载精卫传说的地方文化资源。",
+          "summary_en": "Sizhuang government identifies Mount Fajiu northwest of the township as a local cultural resource associated with the Jingwei tradition.",
+          "limits": "该资料说明当地存在传承关联，没有讲述完整异文；不能仅因山名相同就断定与长子所指为同一山体或故事版本。",
+          "limits_en": "This documents an association, not a full variant. A shared mountain name alone does not establish the same physical mountain or narrative as Changzi’s account.",
+          "source_urls": [
+            "https://xxgk.sxgp.gov.cn/xzjd/gpszz/fdzdgknr/gzdt/202501/t20250116_2088297.shtml"
+          ]
+        }
       }
     }
   ],
@@ -125,9 +244,24 @@
           "url": "https://mw.hebei.gov.cn/system/2023/07/19/030237272.shtml",
           "publisher": "河北省民族事务委员会",
           "checked_at": "2026-10-16",
-          "excerpt": "在涿鹿县东南"
+          "excerpt": "在涿鹿县东南",
+          "review_scope": "indexed_excerpt",
+          "published_on": "2023-07-19",
+          "locator": "阪泉地望讨论段",
+          "locator_en": "Paragraph discussing the location of Banquan"
         }
-      ]
+      ],
+      "account": {
+        "focus": "泉名与涿鹿地望",
+        "focus_en": "Spring name and the Zhuolu interpretation",
+        "summary": "河北省民委文章通过转引古籍，介绍把阪泉解释在涿鹿县东南的地望说。",
+        "summary_en": "The Hebei commission article cites earlier texts to describe an interpretation placing Banquan southeast of Zhuolu.",
+        "limits": "转引古籍并不等于核验古战场；本项目未独立核对原刻本，也不把县域中心当作战场。",
+        "limits_en": "Citing earlier texts does not verify a battlefield. Original editions are not independently checked, and the county center is not a battlefield coordinate.",
+        "source_urls": [
+          "https://mw.hebei.gov.cn/system/2023/07/19/030237272.shtml"
+        ]
+      }
     },
     "03-01-candidate-3": {
       "evidence_status": "source_checked",
@@ -138,9 +272,24 @@
           "url": "https://mw.hebei.gov.cn/system/2023/07/19/030237272.shtml",
           "publisher": "河北省民族事务委员会",
           "checked_at": "2026-10-16",
-          "excerpt": "似乎也与黄帝、炎帝阪泉之战有关"
+          "excerpt": "似乎也与黄帝、炎帝阪泉之战有关",
+          "review_scope": "indexed_excerpt",
+          "published_on": "2023-07-19",
+          "locator": "阪泉地望讨论段",
+          "locator_en": "Paragraph discussing the location of Banquan"
         }
-      ]
+      ],
+      "account": {
+        "focus": "同名村落与延庆候选",
+        "focus_en": "Village names and the Yanqing candidate",
+        "summary": "同一文章提到延庆张山营镇上下阪泉村，并以保留语气讨论村名与阪泉之战的可能关联。",
+        "summary_en": "The same article mentions Upper and Lower Banquan villages in Yanqing and cautiously suggests a possible association with the battle.",
+        "limits": "文章本身没有确证村名对应事件；同名地名不足以认定战场，仍保留考证候选身份。",
+        "limits_en": "The article does not establish the association. A shared place name is insufficient to identify a battlefield; this remains a hypothesis.",
+        "source_urls": [
+          "https://mw.hebei.gov.cn/system/2023/07/19/030237272.shtml"
+        ]
+      }
     }
   }
 }

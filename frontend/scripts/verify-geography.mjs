@@ -9,7 +9,7 @@ const catalog = JSON.parse(await readFile(new URL('../public/data/atlas/catalog.
 const relief = JSON.parse(await readFile(new URL('../src/geography-basemap.json', import.meta.url), 'utf8'));
 assert.equal(catalog.candidates.filter(validReference).length, 28);
 const references = geographicReferences(catalog);
-assert.equal(references.length, 31);
+assert.equal(references.length, 32);
 assert.equal(defaultGeographicEvent(catalog, '00'), '01-01');
 assert.equal(defaultGeographicEvent(catalog, '03', '03-04'), '03-04');
 assert.equal(defaultGeographicEvent(catalog, '03', '01-01'), '03-01');
@@ -21,6 +21,19 @@ for (const eventId of ['01-01', '03-04', '03-01']) {
   assert.ok(records.every(item => item.properties.location_precision && item.properties.coordinate_source));
 }
 assert.ok(references.filter(item => item.properties.association_type === 'local_tradition').every(item => item.properties.evidence.length));
+assert.equal(references.filter(item => item.properties.association_type === 'local_tradition').length, 4);
+for (const record of references.filter(item => item.properties.account)) {
+  const { account, evidence } = record.properties;
+  for (const field of ['focus', 'focus_en', 'summary', 'summary_en', 'limits', 'limits_en']) assert.ok(account[field]?.trim(), `Missing ${field} in ${record.id}`);
+  assert.ok(account.source_urls.length > 0);
+  assert.ok(account.source_urls.every(url => evidence.some(item => item.url === url)), 'Every account summary resolves to its own cited source');
+  assert.ok(evidence.every(item => item.publisher && item.locator && item.locator_en && ['page_text', 'indexed_excerpt'].includes(item.review_scope)));
+}
+assert.ok(!references.find(item => item.id === '03-01-candidate-2').properties.account, 'Unreviewed Huailai interpretation is not turned into a fabricated narrative');
+const gaopingTradition = references.find(item => item.id === '03-04-tradition-gaoping');
+assert.deepEqual(gaopingTradition.geometry, references.find(item => item.id === '03-04-candidate-2').geometry, 'New association retains the existing representative coordinate');
+assert.ok(!gaopingTradition.properties.analysis_eligible);
+
 
 assert.equal(referenceCollection(catalog.events).features.length, 0, 'Unlocated stories never become invented geographic points');
 assert.ok(unlocatedStories(catalog).every(item => !item.id.startsWith('08-') && !['archive', 'group'].includes(item.properties.presentation)), 'Archived material is not restored to normal story navigation');
@@ -115,7 +128,11 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         assert.equal(await dialog(page).evaluate(node => node.scrollWidth > node.clientWidth + 1), false);
         const columns = await dialog(page).locator('.geo-compare-grid').evaluate(node => getComputedStyle(node).gridTemplateColumns.split(' ').length);
         assert.equal(columns, width <= 768 ? 1 : 2);
-        if (name === 'chromium' && width === 1440 && lang === 'zh') await dialog(page).locator('.geo-comparison').screenshot({ path: new URL('geography-comparison-desktop.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
+        if (name === 'chromium' && width === 1440 && lang === 'zh') {
+          await page.setViewportSize({ width, height: 1700 });
+          await dialog(page).locator('.geo-comparison').screenshot({ path: new URL('geography-comparison-desktop.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
+          await page.setViewportSize({ width, height });
+        }
         if (lang === 'en') {
           const untranslated = await dialog(page).evaluate(node => [...node.querySelectorAll('*')].filter(item => !item.children.length && item.checkVisibility() && !item.closest('.original-text') && /[\u3400-\u9fff]/.test(item.textContent)).map(item => item.textContent));
           assert.deepEqual(untranslated, []);
@@ -132,7 +149,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.goto(`${base}?chapter=03&lang=zh`);
     await page.locator('.geography-trigger').click();
     await dialog(page).getByLabel('地理事件').selectOption('03-04');
-    assert.equal(await rows(page).count(), 3);
+    assert.equal(await rows(page).count(), 4);
     await dialog(page).getByRole('button', { name: '对照本事件资料', exact: true }).click();
     const compareFirst = dialog(page).getByLabel('对照条目一', { exact: true });
     const compareSecond = dialog(page).getByLabel('对照条目二', { exact: true });
@@ -142,7 +159,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.equal(await dialog(page).locator('[data-comparison-id]').last().getAttribute('data-comparison-id'), '03-04-tradition-changzi');
     assert.match(await dialog(page).locator('[data-comparison-id]').last().innerText(), /地方传说/);
     await dialog(page).getByLabel('搜索地理参考点').fill('高平');
-    assert.equal(await rows(page).count(), 1);
+    assert.equal(await rows(page).count(), 2);
     assert.equal(await compareSecond.inputValue(), '03-04-tradition-changzi', 'Searching the map list does not erase comparison choices');
     await dialog(page).getByLabel('搜索地理参考点').fill('');
     await dialog(page).getByRole('button', { name: '关闭对照', exact: true }).click();
@@ -152,13 +169,13 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.geography-trigger').click();
     assert.equal(await dialog(page).getByLabel('对照条目二', { exact: true }).inputValue(), '03-04-tradition-changzi', 'Reopening restores comparison selections');
 
-    assert.equal(await dialog(page).locator('.geo-result-list button').filter({ hasText: '地方传说' }).count(), 1);
+    assert.equal(await dialog(page).locator('.geo-result-list button').filter({ hasText: '地方传说' }).count(), 2);
     const download = page.waitForEvent('download');
     await dialog(page).getByRole('button', { name: '导出参考点 GeoJSON', exact: true }).click();
     const stream = await (await download).createReadStream(), chunks = [];
     for await (const chunk of stream) chunks.push(chunk);
     const exported = JSON.parse(Buffer.concat(chunks).toString());
-    assert.equal(exported.features.length, 3);
+    assert.equal(exported.features.length, 4);
     assert.ok(exported.features.every(item => validReference(item) && item.properties.reference_only && item.properties.entity_id === '03-04' && item.properties.location_precision && Array.isArray(item.properties.evidence)));
     assert.deepEqual(exported.features[0].geometry, references.find(item => item.properties.entity_id === '03-04').geometry, 'Exports retain WGS84 coordinates, not display projection');
     await dialog(page).getByRole('button', { name: '两点测距', exact: true }).click();
@@ -176,6 +193,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.equal(await dialog(page).locator('[data-comparison-id]').count(), 0, 'Switching events clears the previous comparison');
     await dialog(page).getByRole('button', { name: '对照本事件资料', exact: true }).click();
     assert.ok(await dialog(page).locator('[data-comparison-id]').evaluateAll(nodes => nodes.every(node => node.dataset.comparisonId.startsWith('01-01-'))));
+    assert.equal(await dialog(page).locator('[data-shared-sources]').count(), 1, 'Shared heritage introduction is not treated as independent narrative evidence');
+    assert.equal(await dialog(page).locator('.geo-account').count(), 2);
+    assert.match(await dialog(page).locator('.geo-comparison').innerText(), /索引片段/);
 
     await rows(page).first().click();
     assert.match(await dialog(page).locator('.geo-reference').innerText(), /县域代表点/);
@@ -196,18 +216,24 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await page.keyboard.press('Escape');
       await page.locator(selector + '[data-status=playing]').waitFor();
     }
-    for (const [chapter, eventId, count] of [['00', '01-01', 2], ['03', '03-04', 3]]) {
+    for (const [chapter, eventId, count] of [['00', '01-01', 2], ['03', '03-04', 4]]) {
       await page.goto(`${base}?chapter=${chapter}&lang=en`);
       await page.locator('.geography-trigger').click();
       await dialog(page).getByLabel('Geographic event').selectOption(eventId);
       assert.equal(await rows(page).count(), count);
       await dialog(page).locator('[data-candidate-id*=tradition]').first().click();
+      assert.equal(await dialog(page).locator('.geo-reference .geo-account').count(), 1);
+      if (eventId === '03-04') {
+        await dialog(page).locator('[data-candidate-id="03-04-tradition-gaoping"]').click();
+        assert.match(await dialog(page).locator('.geo-reference').innerText(), /No full variant|not a full variant/);
+        assert.match(await dialog(page).locator('.geo-reference').innerText(), /2025-01-16/);
+      }
       if (name === 'chromium') {
         await page.setViewportSize({ width: 390, height: 844 });
         await dialog(page).evaluate(node => { node.scrollTop = 0; });
         await dialog(page).screenshot({ path: new URL(`geography-event-${eventId}.png`, output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
       }
-      assert.equal(await dialog(page).locator('.geo-reference a[href^="https://www."]').count() >= 1, true);
+      assert.equal(await dialog(page).locator('.geo-reference a[href^="https://"]').count() >= 1, true);
       const untranslated = await dialog(page).evaluate(node => [...node.querySelectorAll('*')].filter(item => !item.children.length && item.checkVisibility() && !item.closest('.original-text') && /[\u3400-\u9fff]/.test(item.textContent)).map(item => item.textContent));
       assert.deepEqual(untranslated, [], 'Pilot tradition details have English labels and summaries');
       await close(page);
