@@ -7494,6 +7494,158 @@
           ]
         }
       }
+    },
+    {
+      "id": "beishan-creature-nafu-guanti-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-nafu-guanti-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-nafu-guanti-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on TRUE transparent square canvas, 10 percent clear margins, all feet and tail visible. No scenery, ground, shadow, lettering, seals or frame. Supplied bird is ONLY a reference for Chinese hand-cut woodblock MEDIUM: strong dark carved outline, flat pigments, fine irregular incisions and sparse print grain. Do NOT copy its face, crest, feathers, flame ornaments, pose or repeating red/green/ivory pattern. This character needs its OWN silhouette and facial structure. No photorealism, gradients or 3D. Decorative cutting must follow the character-specific natural texture rather than a common flame motif. Nafu, explicitly cattle-shaped with a WHITE TAIL. A short-coated massive compact rectangular ox torso, huge low forehead, wide square muzzle, relaxed hanging bovine ears, short neck, dark umber body in broad almost undecorated planes with tiny short-hair incisions. Tail is entirely IVORY WHITE from root to tip, one slim tail with a white tuft, curving clearly away from the dark body. Four stocky bovine legs and four separated cloven hooves, one head, no horns or wings or extra eyes. Rear three-quarter view with head turned gently left to look back; calm solemn face, closed ordinary bovine mouth. Make its silhouette solid and low, emphasizing white tail, not a shaggy yak, not a flame-covered lion. Ivory and dark umber only, tiny russet nostril accents.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "牛状、白尾、单首四足；白尾由根至梢清楚，短毛低壮与旄牛长毛造型分开。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-nafu-guanti-v1.webp",
+          "bytes": 409540,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-nafu-guanti-v1-card.webp",
+          "bytes": 35130,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-nafu-guanti-v1-preview.webp",
+          "bytes": 71440,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-songsi-guanti-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-songsi-guanti-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-songsi-guanti-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on TRUE transparent square canvas, 10 percent clear margins, all feet and tail visible. No scenery, ground, shadow, lettering, seals or frame. Supplied bird is ONLY a reference for Chinese hand-cut woodblock MEDIUM: strong dark carved outline, flat pigments, fine irregular incisions and sparse print grain. Do NOT copy its face, crest, feathers, flame ornaments, pose or repeating red/green/ivory pattern. This character needs its OWN silhouette and facial structure. No photorealism, gradients or 3D. Decorative cutting must follow the character-specific natural texture rather than a common flame motif. Songsi: FEMALE-PHEASANT-like bird body with a HUMAN FACE, hopping when people approach. One plain calm ancient HUMAN face with normal human eyes, eyebrows, small human nose and CLOSED human lips, no beak and no owl mask; no crown, hairstyle ornament or fang grin. Small human-faced head attached directly to a slim pheasant neck and compact rounded bird body, not a whole person sitting on a bird. Muted brown and sand-ivory mottled HEN plumage, small orderly dashes/dots, not bright male plumage. Two folded wings, two thin bird legs and two clearly separated clawed feet; mid-hop with knees flexed, simple long tapering pheasant tail trailing behind, no spread-eagle wings. A restrained light narrow silhouette, contemplative expression, totally different from the fierce supplied reference. No other human, props or magical aura.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "雌雉体羽、人面、跃姿；嘴为人唇非鸟喙，单首双翼双足，不沿用猛禽脸及展翼姿态。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-songsi-guanti-v1.webp",
+          "bytes": 263512,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-songsi-guanti-v1-card.webp",
+          "bytes": 27098,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-songsi-guanti-v1-preview.webp",
+          "bytes": 51962,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-maoniu-panhou-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-maoniu-panhou-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-maoniu-panhou-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on TRUE transparent square canvas, 10 percent clear margins, all feet and tail visible. No scenery, ground, shadow, lettering, seals or frame. Supplied bird is ONLY a reference for Chinese hand-cut woodblock MEDIUM: strong dark carved outline, flat pigments, fine irregular incisions and sparse print grain. Do NOT copy its face, crest, feathers, flame ornaments, pose or repeating red/green/ivory pattern. This character needs its OWN silhouette and facial structure. No photorealism, gradients or 3D. Decorative cutting must follow the character-specific natural texture rather than a common flame motif. Northern Maoniu: cattle-shaped with hair growing at the FOUR JOINT REGIONS; commentary additionally specifies LONG HAIR on BACK, KNEES, DEWLAP and TAIL. One towering humped-looking mass of hanging charcoal-black/sepia fur along the BACK (fur creates contour, NOT an added anatomical hump), four clear separate knee tufts, long hanging throat/dewlap beard and a long-haired bovine tail. Under the long BACK curtain leave some short-haired belly visible so it is not shapeless all-over fur. One long narrow BOVINE face and dark soulful small eyes, no human face, no fangs, no horns or wings. Four long braced bovine legs ending in four distinct cloven hooves. Side view facing RIGHT, walking slowly head lowered. Use heavy vertical parallel carved strands and a dark gray/cream duotone, almost no red, NO green and no flame shapes. Strong vertical hanging-hair silhouette, different from the compact SHORT-COATED WHITE-TAILED Nafu.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "牛状四节生毛；背、膝、胡、尾长毛来自郭注并另标，垂直长毛轮廓与那父短毛白尾分开。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-maoniu-panhou-v1.webp",
+          "bytes": 437188,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-maoniu-panhou-v1-card.webp",
+          "bytes": 39210,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-maoniu-panhou-v1-preview.webp",
+          "bytes": 79542,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-snake-changshe-daxian-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/snake-changshe-daxian-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/snake-changshe-daxian-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on TRUE transparent square canvas, 10 percent clear margins, all feet and tail visible. No scenery, ground, shadow, lettering, seals or frame. Supplied bird is ONLY a reference for Chinese hand-cut woodblock MEDIUM: strong dark carved outline, flat pigments, fine irregular incisions and sparse print grain. Do NOT copy its face, crest, feathers, flame ornaments, pose or repeating red/green/ivory pattern. This character needs its OWN silhouette and facial structure. No photorealism, gradients or 3D. Decorative cutting must follow the character-specific natural texture rather than a common flame motif. Changshe: ONE continuous elongated SNAKE with stiff short HAIR LIKE PIG BRISTLES along its entire serpent body. Wide low loose double-S coil, traceable from one modest snake head to one tapering tail, head barely raised at far left and tail receding right. No human or mammal face: small slit-like snake mouth CLOSED, small bead-like lateral snake eyes, no snarling fangs. Many short rigid individually incised porcine bristles radiating from scaled skin; NOT a long fur mane, NOT feathers, NOT flame pattern. Flat soot-gray/earth-brown body with sparse ivory short cutting strokes. Exactly one head, one body, one tail, ZERO limbs, horns, antlers or wings. This is not a dragon, tiger, cobra with expanded hood or an enormous numbered hundred-length diagram. Bristles are the distinctive original-text feature; sound like drums and watch-clappers adds no instruments or scene.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "单首连续蛇身单尾、无肢角翼；遍身短硬彘豪，不把郭注百寻当正文长度，也不借常山异形长蛇。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/snake-changshe-daxian-v1.webp",
+          "bytes": 386128,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/snake-changshe-daxian-v1-card.webp",
+          "bytes": 37218,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/snake-changshe-daxian-v1-preview.webp",
+          "bytes": 72836,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

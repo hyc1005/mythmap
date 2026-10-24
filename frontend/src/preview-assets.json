@@ -4228,5 +4228,77 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/creature-nafu-guanti-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-nafu-guanti-v1-card.webp",
+      "bytes": 35130,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-nafu-guanti-v1-preview.webp",
+      "bytes": 71440,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-songsi-guanti-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-songsi-guanti-v1-card.webp",
+      "bytes": 27098,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-songsi-guanti-v1-preview.webp",
+      "bytes": 51962,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-maoniu-panhou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-maoniu-panhou-v1-card.webp",
+      "bytes": 39210,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-maoniu-panhou-v1-preview.webp",
+      "bytes": 79542,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/snake-changshe-daxian-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/snake-changshe-daxian-v1-card.webp",
+      "bytes": 37218,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/snake-changshe-daxian-v1-preview.webp",
+      "bytes": 72836,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }

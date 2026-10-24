@@ -4,7 +4,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE_CORRECTIONS = {'source-03-0018': 77, 'source-03-0027': 78,
-                    'source-03-0036': 79, 'source-03-0045': 80}
+                    'source-03-0036': 79, 'source-03-0045': 80,
+                    'source-03-0054': 81, 'source-03-0063': 82}
 ROWS = [
     dict(slug='daishan', name='帶山', en_name='Mount Dai', units=(11,16),
          description='求如向北三百里为帶山，上多玉、下多青碧。䑏䟽形如马、一角有错；鵸䳜形如乌、五彩赤文，自为牝牡。彭水向西注芘湖之水，水中儵魚如鸡、赤毛、三尾六足四首。郭注对角错、同名鸟和儵字读音另释，不借西山同名鸟形貌。',
@@ -140,6 +141,71 @@ ENTITIES += [
 next(e for e in ENTITIES if e['id']=='beast-beishan-zhujian-danzhang')['id']='beast-zhu-jian'
 
 
+ROWS += [
+    dict(slug='guanti',name='灌題之山',en_name='Mount Guanti',units=(54,58),
+         description='單張向北三百二十里为灌題，上多樗柘，下多流沙和砥。那父如牛而白尾，音如訆；竦斯如雌雉而人面，见人则跃、鸣自呼。匠韓水西注泑澤，其中多磁石；取铁与山下有铜的说法来自郭注。',
+         en_description='Guanti lies 320 li north of Danzhang, with chu and zhe above, shifting sand and whetstone below. Nafu is cattle-shaped with a white tail and a calling sound. Songsi has a female-pheasant form and human face, hopping on seeing people and calling its name. The Jianghan flows west into Youze, with magnetic stones in the water account; iron-attraction and copper claims are commentary.',
+         en_quote='Three hundred and twenty li north is Mount Guanti, with chu and zhe above and shifting sand and whetstone below. Nafu resembles cattle with a white tail and sounds like a human call. Songsi resembles a female pheasant with a human face; it hops on seeing people and calls its name. The Jianghan rises here and flows west into Youze; magnetic stones are abundant in the water account.',
+         note='0054在81页末，捕获82校回81；0055—0058在82页。訆的如人呼喚与音呌跨单元分别回释，不归竦斯。躍跳为郭注。磁石取铁与管子说山下有铜均为古注，不换算现代矿点；泑澤复用北山索引。',
+         en_note='Unit 54 is at the end of scan 81, corrected from captured 82; 55–58 are on 82. The human-call and pronunciation glosses belong to Nafu, while the hopping gloss belongs to Songsi. Magnetic-stone and copper claims remain commentary without modern mineral locations.'),
+    dict(slug='panhou',name='潘侯之山',en_name='Mount Panhou',units=(59,62),
+         description='灌題向北二百里为潘侯，上多松栢，下多榛楛，阳多玉、阴多铁。旄牛牛状四节生毛，背、膝、胡、尾长毛来自郭注。邊水向南注櫟澤；櫟澤不与單張櫟水混并。',
+         en_description='Panhou lies 200 li north of Guanti, with pine and bai above, zhen and hu below, jade on the sunny side and iron on the shaded side. Maoniu is cattle-shaped with hair at four joint regions; long hair on the back, knees, dewlap and tail comes from commentary. The Bian flows south into Lize, separate from Danzhang’s Li River.',
+         en_quote='Two hundred li north is Mount Panhou, with pine and bai above, zhen and hu below, jade on the sunny side and iron on the shaded side. Maoniu resembles cattle with hair growing at four joint regions. The Bian rises here and flows south into Lize.',
+         note='0059—0062全在82页，0062澤为邊水所注櫟澤的续字；0063小咸另段。四節生毛属正文，背膝及胡尾长毛属郭注，不互相替代。北山旄牛不借西山翠山图，櫟澤不按櫟字合并櫟水。',
+         en_note='Units 59–62 are on scan 82; the final ze completes Lize. Unit 63 begins Xiaoxian. Hair at four joint regions is main text; the back, knees, dewlap and tail are commentary. The illustration is not borrowed from the Western Maoniu, and Lize is not merged with the Li River.'),
+    dict(slug='xiaoxian',name='小咸之山',en_name='Mount Xiaoxian',units=(63,63),
+         description='潘侯向北二百三十里为小咸，无草木，冬夏有雪。此段只有山名、方位与雪况；不补生物、现代雪线或山景图，和下一大咸及后文少咸各自分段。',
+         en_description='Xiaoxian lies 230 li north of Panhou, without vegetation and with snow in winter and summer. The short passage supplies no creatures or modern snowline. It remains separate from Daxian and the later Shaoxian.',
+         en_quote='Two hundred and thirty li north is Mount Xiaoxian, without grasses or trees, with snow in winter and summer.',
+         note='0063整句在82页末，捕获83校回82。0064北二百八十里另起大咸，虽无又字仍须独立；小咸与0072少咸不混名。冬夏有雪只作本山记述，不推定现代气候数据。',
+         en_note='Unit 63 is at the end of scan 82, corrected from captured 83. Unit 64 begins Daxian without the usual initial again. Xiaoxian is separate from Shaoxian at unit 72. The snow account is not modern climate data.'),
+    dict(slug='daxian',name='大咸之山',en_name='Mount Daxian',units=(64,67),
+         description='小咸向北二百八十里为大咸，无草木，下多玉，四方不可以上。長蛇毛如彘豪，音如皷柝；郭注百寻及蝮蛇、常山长蛇的比拟另存，不把正文长蛇画成多首有足的龙。',
+         en_description='Daxian lies 280 li north of Xiaoxian, without vegetation, with jade below and no ascent from any side. Changshe has pig-bristle-like hair and sounds like drums and watch-clappers. Commentary about length and other snakes remains separate; the main text supplies no extra heads or dragon limbs.',
+         en_quote='Two hundred and eighty li north is Mount Daxian, without grasses or trees and with jade below. It cannot be climbed from any side. Changshe is a snake with hair like pig bristles; its sound resembles drums and watch-clappers.',
+         note='0064—0067全核83页。皷与柝跨行连读为一种声响描述，0068敦薨另段。郭注長与百尋跨65—66相接；蝮蛇艾綬文及常山长蛇形不同属于比拟，不替正文补定长度、花纹或另一蛇形。',
+         en_note='Units 64–67 are on scan 83; drum and clapper span captured lines. Dunhong begins at 68. The commentary length gloss spans 65–66; comparisons to other snakes do not fix the main text’s length, markings or another snake form.'),
+    dict(slug='dunhong',name='敦薨之山',en_name='Mount Dunhong',units=(68,71),
+         description='大咸向北三百二十里为敦薨，上多㯶柟，下多茈草。敦薨水西注泑澤，随后记出于崑崙东北隅、实惟河源。水中赤鮭与山中兕、旄牛、鳲鳩各存出处；不据郭注名称比拟或别山图补定形貌，不把河源古述当现代定位。',
+         en_description='Dunhong lies 320 li north of Daxian, with zong and nan above and zicao below. The Dunhong flows west into Youze, followed by an account of the northeastern corner of Kunlun and a source of the He. Red Gui fish, Si, Maoniu and Shijiu retain local records without borrowing forms from other mountains or treating the ancient source claim as modern geography.',
+         en_quote='Three hundred and twenty li north is Mount Dunhong, with zong and nan above and zicao below. The Dunhong rises here and flows west into Youze. The account speaks of the northeastern corner of Kunlun as a source of the He. Red Gui fish are abundant in the water; Si and Maoniu beasts and Shijiu birds are abundant on the mountain.',
+         note='0068—0071全在83页，0072少咸始于本页末但留下一阶段。赤鮭注文音与下一单元圭连读，英文Gui据此，不译成现代鲑鱼。出于崑崙东北隅实惟河源原句保留，河源古述与郭注即河水出崑崙之虚分开；撲牛异文所指保留疑义，不强配某兽。四个形貌不足生物用占位，不借潘侯旄牛或西山兕图。',
+         en_note='Units 68–71 are on scan 83; Shaoxian begins at the page end but remains for the next stage. Gui follows the pronunciation gloss continuing into unit 71, not a modern salmon identification. The ancient source wording and commentary stay separate. The alternative pu-niu gloss remains uncertain in scope. Four insufficiently described creatures keep placeholders.'),
+]
+
+ENTITIES += [
+    E('guanti','plant','chu-guanti','樗（灌題）','Chu trees (Guanti)','其上多樗柘','樗与柘并列，仅录本山出处。','Chu stands beside zhe, with this mountain context retained.','Chu and zhe are abundant above.'),
+    E('guanti','plant','zhe-guanti','柘（灌題）','Zhe trees (Guanti)','其上多樗柘','柘仅列名，不补树貌。','Zhe is only named, without an added tree form.','Chu and zhe are abundant above.'),
+    E('guanti','material','sand-guanti','流沙（灌題）','Shifting sand (Guanti)','其下多流沙','山下多流沙，不推定现代沙漠范围。','Shifting sand occurs below, without a modern desert boundary.','Shifting sand is abundant below.'),
+    E('guanti','material','whetstone-guanti','砥（灌題）','Whetstone (Guanti)','多砥','砥为本段石物名，不补现代矿物成分。','Di is a stone material here without an asserted modern composition.','Much whetstone occurs here.'),
+    E('guanti','beast','nafu-guanti','那父','Nafu','有獸焉其状如牛而白尾其音如訆名曰那父','那父牛状白尾，音如訆；如人呼唤及訆音呌来自郭注。白尾逐项核对，体色和姿态为艺术解释。','Nafu is cattle-shaped with a white tail and calling sound. Human calling and pronunciation are commentary; body color and pose are artistic interpretations.','Nafu resembles cattle with a white tail and a calling sound.',commentary='如人呼喚；訆音呌',en_commentary='Guo Pu compares the sound to a human call and supplies pronunciation.'),
+    E('guanti','beast','songsi-guanti','竦斯','Songsi','有鳥焉其状如雌雉而人靣見人則躍名曰竦斯其鳴自呼也','竦斯如雌雉而人面，见人则跃、鸣自呼。保留人唇鼻面和鸟体，不用同款猛禽脸、展翼或艳雄雉羽替代。','Songsi has a female-pheasant form and human face, hops on seeing people and calls its name. Its human lips and nose and restrained hen plumage distinguish it from a fierce spread-wing bird.','Songsi resembles a female pheasant with a human face; it hops on seeing people and calls its name.',commentary='躍跳',en_commentary='Guo Pu glosses the movement as hopping.'),
+    E('guanti','water','jianghan-guanti','匠韓之水','Jianghan River','匠韓之水出焉而西流注于泑澤','匠韓水出灌題，西流注北山泑澤。','The Jianghan rises at Guanti and flows west into Northern Youze.','The Jianghan rises here and flows west into Youze.'),
+    E('guanti','material','magnetic-guanti','磁石（灌題水文）','Magnetic stones (Guanti water account)','其中多磁石','磁石在本段水文中；取铁及管子说山上磁石下有铜来自郭注，不作现代矿产定位。','Magnetic stones occur in the water account. Iron attraction and a Guanzi copper claim are commentary, not modern mineral mapping.','Magnetic stones are abundant in this water account.',commentary='可以取鐡管子曰山上有磁石者下必有銅音慈',en_commentary='Guo Pu records iron attraction, cites Guanzi on copper below magnetic stones and glosses the pronunciation ci.',water=True),
+    E('panhou','plant','pine-panhou','松（潘侯）','Pine (Panhou)','其上多松栢','松为本山树名，不借别山插画。','Pine is retained in this context without borrowed artwork.','Pine and bai are abundant above.'),
+    E('panhou','plant','bai-panhou','栢（潘侯）','Bai (Panhou)','其上多松栢','栢依底本，不改柏字快照。','Bai retains the edition character without rewriting the snapshot.','Pine and bai are abundant above.'),
+    E('panhou','plant','zhen-panhou','榛（潘侯）','Zhen (Panhou)','其下多榛楛','榛在山下物产中，仅列名。','Zhen is named among plants below.','Zhen and hu are abundant below.'),
+    E('panhou','plant','hu-panhou','楛（潘侯）','Hu (Panhou)','其下多榛楛','楛只列名，不补颜色功效。','Hu is only named, without added colors or uses.','Zhen and hu are abundant below.'),
+    E('panhou','material','jade-panhou','玉（潘侯）','Jade (Panhou)','其陽多玉','潘侯阳面多玉，未详成分颜色。','Jade is abundant on the sunny side, with no stated color or composition.','Jade is abundant on its sunny side.'),
+    E('panhou','material','iron-panhou','铁（潘侯）','Iron (Panhou)','其隂多鐡','潘侯阴面多铁，保留鐡字引文。','Iron is abundant on the shaded side; the edition character remains.','Iron is abundant on its shaded side.'),
+    E('panhou','beast','maoniu-panhou','旄牛（潘侯）','Maoniu (Panhou)','有獸焉其状如牛而四節生毛名曰旄牛','旄牛牛状四节生毛；背膝胡尾长毛来自郭注，逐项另标。深色、长毛垂落方向与姿态为艺术解释，不借西山或本篇仅列名的旄牛形貌。','Maoniu is cattle-shaped with hair at four joint regions. Long hair on the back, knees, dewlap and tail comes from commentary. Dark color, hanging strands and pose are artistic; no Western or name-only form is borrowed.','Maoniu resembles cattle with hair growing at four joint regions.',commentary='今旄牛背膝及胡尾皆有長毛',en_commentary='Guo Pu describes long hair on the back, knees, dewlap and tail.'),
+    E('panhou','water','bian-panhou','邊水（潘侯）','Bian River (Panhou)','邊水出焉而南流注于櫟澤','邊水从潘侯出，南流注櫟澤，不把邊水认作邊春杠水。','The Bian rises at Panhou and flows south into Lize, not Bianchun’s Gang.','The Bian rises here and flows south into Lize.'),
+    E('panhou','water','lize-panhou','櫟澤（潘侯）','Lize (Panhou)','南流注于櫟澤','櫟澤承接邊水，澤字跨行；与單張櫟水保持独立。','Lize receives the Bian; its name crosses a captured line and stays separate from Danzhang’s Li River.','It flows south into Lize.'),
+    E('daxian','material','jade-daxian','玉（大咸）','Jade (Daxian)','其下多玉','大咸山下多玉，不增添矿带。','Jade is abundant below Daxian, without an invented mineral belt.','Jade is abundant below.'),
+    E('daxian','beast','changshe-daxian','長蛇（大咸）','Changshe (Daxian)','有蛇名曰長蛇其毛如彘豪其音如皷柝','長蛇有彘豪般毛，音如皷柝。用短硬刺毛与连续蛇身表现，不加肢角；郭注百寻及其他蛇类比拟另存，不强定正文长度。','Changshe has pig-bristle-like hair and a drum-and-clapper sound. Stiff short bristles and a continuous serpent body add no limbs or horns. Commentary about length and other snakes remains separate.','Changshe is a snake with hair like pig bristles and a sound like drums and watch-clappers.',commentary='說者云長百尋今蝮蛇色似艾綬文文間有毛如猪鬐此其𩔗也常山亦有長蛇與此形不同；如人行夜敲木柝聲音託',en_commentary='Guo Pu reports a hundred-xun length, compares a patterned hairy snake, distinguishes the Changshan snake and explains a night-watch clapper. These are commentary comparisons.'),
+    E('dunhong','plant','zong-dunhong','㯶（敦薨）','Zong (Dunhong)','其上多㯶柟','㯶依底本异体，只列本山出处。','Zong retains the edition character and this mountain context.','Zong and nan are abundant above.'),
+    E('dunhong','plant','nan-dunhong','柟（敦薨）','Nan (Dunhong)','其上多㯶柟','柟只列名，不认定现代树种。','Nan is only named without a modern species claim.','Zong and nan are abundant above.'),
+    E('dunhong','plant','zicao-dunhong','茈草（敦薨）','Zicao (Dunhong)','其下多茈草','茈草在山下，仅有名称，不借别山紫茎红花等形貌。','Zicao grows below; no form such as another mountain’s colored stems or flowers is borrowed.','Zicao is abundant below.'),
+    E('dunhong','water','dunhong','敦薨之水','Dunhong River','敦薨之水出焉而西流注于泑澤出于崑崙之東北隅實惟河源','敦薨水西注泑澤，后续崑崙东北隅、河源记述依底本存录；不把古述改为现代河源或反推河道。','The Dunhong flows west into Youze, followed by Kunlun’s northeastern corner and a He-source claim. This is retained as an ancient account, not modern hydrography.','The Dunhong rises here and flows west into Youze; the account then speaks of Kunlun’s northeastern corner as a source of the He.',commentary='即河水出崑崙之虚',en_commentary='Guo Pu explains the account as the He emerging from Kunlun’s height.'),
+    E('dunhong','place','kunlun-dunhong','崑崙（敦薨水文）','Kunlun (Dunhong water account)','出于崑崙之東北隅實惟河源','崑崙在敦薨段河源记述中出现，东北隅与郭注之虚分开；不合并西山崑崙图示坐标。','Kunlun appears in the Dunhong source account. The northeastern corner and commentary remain distinct, without merging Western diagram coordinates.','The account describes the northeastern corner of Kunlun as a source of the He.',water=True),
+    E('dunhong','beast','chigui-dunhong','赤鮭（敦薨）','Red Gui (Dunhong)','其中多赤鮭','赤鮭在敦薨水文中；郭注以鯸鮐为名并音圭，未提供足够独立形貌，留统一占位，不译成现代鲑鱼。','Red Gui occurs in the water account. A commentary name comparison and pronunciation gui do not fix its form; it keeps a placeholder and is not translated as modern salmon.','Red Gui fish are abundant in the water.',commentary='今名鯸鮐為鮭魚音圭',en_commentary='Guo Pu supplies a contemporary fish-name comparison and the pronunciation gui.',unknown=True,water=True),
+    E('dunhong','beast','si-dunhong','兕（敦薨）','Si (Dunhong)','其獸多兕旄牛','兕在本山仅列名，不借西山独角兽图补形貌；撲牛异文留在段注。','Si is only named here; no Western horned form is borrowed, and the pu-niu variant stays in the passage commentary.','Si and Maoniu beasts are abundant.',unknown=True),
+    E('dunhong','beast','maoniu-dunhong','旄牛（敦薨）','Maoniu (Dunhong)','其獸多兕旄牛','本山旄牛仅列名，保留占位，不将潘侯四节生毛和郭注自动移入本段。','Maoniu is only named here and keeps a placeholder; Panhou’s form and commentary are not transferred automatically.','Si and Maoniu beasts are abundant.',unknown=True),
+    E('dunhong','beast','shijiu-dunhong','鳲鳩（敦薨）','Shijiu (Dunhong)','其鳥多鳲鳩','鳲鳩仅列名，未述羽色翼足，不补现代鸟种图。','Shijiu is only named, without feather color or anatomical detail; no modern bird image is added.','Shijiu birds are abundant.',unknown=True),
+]
+
+
 def extend(world, english, chapter, review):
     folder = ROOT / 'frontend/artwork-source/beishan'
     jobs = {a['entry_id']:a for a in json.loads((folder/'entities-generation.json').read_text(encoding='utf-8'))['assets']}
@@ -183,9 +249,9 @@ def extend(world, english, chapter, review):
             cards.append(c);p['related_entry_ids'].append(c['id']);p['subjects'].append(c['name'])
         passages.append(p)
     byid={c['id']:c for c in cards}
-    contexts=[p for p in passages if p['id'] in {'passage-beishan-'+s for s in ['qiaoming','zhuoguang','guoshan','guowei','shizhe']}]
-    he={**{k:v for k,v in contexts[0].items() if k not in ['id','kind','name','range','order','description','quote','captured_text','captured_commentary','commentary_quote','content_note','source_span','subjects']},'id':'water-beishan-he','kind':'water','name':'河（北山经）','description':'河分别承接譙水、囂水、伊水、魚水和泚水的西流。五段独立保存出处，不据同名与西山河合并或认定现代汇流点。','quote':'；'.join(['譙水出焉西流注于河','囂水出焉而西流注于河','伊水出焉西流注于河','魚水出焉而西流注于河','泚水出焉而西流注于河']),'commentary_quote':'','source_passage_ids':[p['id'] for p in contexts],'context_place_id':'place-beishan-qiaoming','context_place_ids':['place-beishan-zhuoguang','place-beishan-guoshan','place-beishan-guowei','place-beishan-shizhe'],'source_unit_ids':list(dict.fromkeys(id for p in contexts for id in p['source_unit_ids'])),'source_pages':list(dict.fromkeys(u for p in contexts for u in p['source_pages'])),'source_locator':'卷第三 · 影印页 77、78、79、80','relation_scope':'water','related_entry_ids':[p['id'] for p in contexts],'content_note':'分号分开五段摘句，不是连续经文或一条完整河道。'}
-    english[he['id']]={**english['water-beishan-qiao-qiaoming'],'name':'He (Northern Mountains)','description':'The He separately receives the west-flowing Qiao, Xiao, Yi, Yu and Ci in five passages. Their sources remain separate, without a merger with the Western He or modern confluences.','quote':'The Qiao flows west into the He; separately, the Xiao flows west into the He; the Yi flows west into the He; the Yu flows west into the He; and the Ci flows west into the He.','source_locator':'Volume 3 · scan pages 77, 78, 79, 80','content_note':'Semicolons separate five excerpts, not a continuous quotation or complete river course.'}
+    contexts=[p for p in passages if p['id'] in {'passage-beishan-'+s for s in ['qiaoming','zhuoguang','guoshan','guowei','shizhe','dunhong']}]
+    he={**{k:v for k,v in contexts[0].items() if k not in ['id','kind','name','range','order','description','quote','captured_text','captured_commentary','commentary_quote','content_note','source_span','subjects']},'id':'water-beishan-he','kind':'water','name':'河（北山经）','description':'河分别承接譙水、囂水、伊水、魚水和泚水的西流。五段汇流与敦薨段崑崙东北隅实惟河源的古述分别保存，不据同名与西山河合并或认定现代汇流点。','quote':'；'.join(['譙水出焉西流注于河','囂水出焉而西流注于河','伊水出焉西流注于河','魚水出焉而西流注于河','泚水出焉而西流注于河','出于崑崙之東北隅實惟河源']),'commentary_quote':'','source_passage_ids':[p['id'] for p in contexts],'context_place_id':'place-beishan-qiaoming','context_place_ids':['place-beishan-zhuoguang','place-beishan-guoshan','place-beishan-guowei','place-beishan-shizhe','place-beishan-dunhong'],'source_unit_ids':list(dict.fromkeys(id for p in contexts for id in p['source_unit_ids'])),'source_pages':list(dict.fromkeys(u for p in contexts for u in p['source_pages'])),'source_locator':'卷第三 · 影印页 77、78、79、80、83','relation_scope':'water','related_entry_ids':[p['id'] for p in contexts],'content_note':'分号分开五段汇流摘句与敦薨河源古述，不是连续经文或现代河道。'}
+    english[he['id']]={**english['water-beishan-qiao-qiaoming'],'name':'He (Northern Mountains)','description':'The He separately receives the west-flowing Qiao, Xiao, Yi, Yu and Ci in five passages. Dunhong separately records an ancient source claim at Kunlun’s northeastern corner. These accounts remain separate, without a merger with the Western He or modern confluences.','quote':'The Qiao flows west into the He; separately, the Xiao flows west into the He; the Yi flows west into the He; the Yu flows west into the He; and the Ci flows west into the He; separately, the Dunhong passage describes Kunlun’s northeastern corner as a source of the He.','source_locator':'Volume 3 · scan pages 77, 78, 79, 80, 83','content_note':'Semicolons separate five confluence excerpts and the Dunhong source account, not a continuous quotation or modern river course.'}
     cards.append(he);byid[he['id']]=he
     for p in contexts:p['related_entry_ids'].append(he['id'])
     links=[('water-beishan-peng-daishan','water-beishan-pihu-daishan'),('water-beishan-peng-daishan','beast-beishan-youyu-daishan'),('water-beishan-qiao-qiaoming','beast-beishan-heluo-qiaoming'),('water-beishan-xiao-zhuoguang','beast-beishan-xixi-zhuoguang'),('water-beishan-yu-guowei','material-beishan-wenbei-guowei')]
@@ -193,25 +259,37 @@ def extend(world, english, chapter, review):
     links += [('water-beishan-xun-danxun','water-beishan-tang-danxun'),('water-beishan-gang','water-beishan-youze'),('water-beishan-li-danzhang','water-beishan-gang')]
     gang=byid['water-beishan-gang']; last=next(p for p in passages if p['id']=='passage-beishan-danzhang')
     gang['source_passage_ids'].append(last['id']); gang['context_place_ids']=['place-beishan-danzhang']
-    gang['source_unit_ids'] += last['source_unit_ids']; gang['source_pages'] += last['source_pages']
+    gang['source_unit_ids'] = [*gang['source_unit_ids'], *last['source_unit_ids']]
+    gang['source_pages'] = list(dict.fromkeys([*gang['source_pages'], *last['source_pages']]))
     gang['source_locator']='卷第三 · 影印页 80、81'
     gang['quote'] += '；櫟水出焉而南流注于杠水'
     gang['content_note']='分号分开邊春与單張摘句，不是连续经文。'
     last['related_entry_ids'].append(gang['id'])
     english[gang['id']].update(quote='The Gang rises here and flows west into Youze; separately, the Li rises at Danzhang and flows south into the Gang.',source_locator='Volume 3 · scan pages 80, 81',content_note='Semicolons separate Bianchun and Danzhang excerpts, not a continuous quotation.')
+    links += [('water-beishan-jianghan-guanti','water-beishan-youze'),('water-beishan-bian-panhou','water-beishan-lize-panhou'),('water-beishan-dunhong','water-beishan-youze'),('water-beishan-dunhong','water-beishan-he'),('water-beishan-dunhong','place-beishan-kunlun-dunhong'),('water-beishan-dunhong','beast-beishan-chigui-dunhong')]
+    youze=byid['water-beishan-youze']
+    extra=[p for p in passages if p['id'] in {'passage-beishan-guanti','passage-beishan-dunhong'}]
+    youze['source_passage_ids'] += [p['id'] for p in extra]
+    youze['context_place_ids']=['place-beishan-guanti','place-beishan-dunhong']
+    youze['source_unit_ids'] = [*youze['source_unit_ids'], *[id for p in extra for id in p['source_unit_ids']]]
+    youze['source_pages']=list(dict.fromkeys(youze['source_pages']+[u for p in extra for u in p['source_pages']]))
+    youze.update(source_locator='卷第三 · 影印页 80、81、82、83',quote='西流注于泑澤；匠韓之水出焉而西流注于泑澤；敦薨之水出焉而西流注于泑澤',description='北山泑澤分别承接邊春杠水、灌題匠韓水、敦薨水的西流，三段出处各存；不与單狐泑水或西山泑澤合并。',content_note='分号分开三段摘句，不是连续经文或现代水域定位。')
+    youze['related_entry_ids'] += [p['id'] for p in extra]
+    for p in extra:p['related_entry_ids'].append(youze['id'])
+    english[youze['id']].update(source_locator='Volume 3 · scan pages 80, 81, 82, 83',quote='It flows west into Youze; separately, the Jianghan rises here and flows west into Youze; the Dunhong rises here and flows west into Youze.',description='Northern Youze separately receives the west-flowing Gang, Jianghan and Dunhong. Their three contexts remain distinct from Danhu’s You River and Western Youze.',content_note='Semicolons separate three excerpts, not a continuous quotation or modern waterbody location.')
     for a,b in links:byid[a]['related_entry_ids'].append(b);byid[b]['related_entry_ids'].append(a)
     for group,values in [('passages',passages),('text_entities',[c for c in cards if c['kind']=='place']),('natural_features',[c for c in cards if c['kind'] in {'plant','water','material'}]),('beasts',[c for c in cards if c['kind']=='beast'])]:world[group]+=values
     northern=sorted([p for p in world['passages'] if p.get('source_book')==3],key=lambda p:p['order'])
     for left,right in zip(northern,northern[1:]):
         for a,b in [(left,right),(right,left)]:
             if b['id'] not in a['related_entry_ids']:a['related_entry_ids'].append(b['id'])
-    world['revision']='myth-world-2026-10-24-beishan-twelve-v1'
-    review.update(scope='北山经首列前12段：單狐至單張，12阅读/80独立卡（含复用諸犍），后文待核。',scan_pages=[76,77,78,79,80,81],limits='已核76—81页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
+    world['revision']='myth-world-2026-10-24-beishan-seventeen-v1'
+    review.update(scope='北山经首列前17段：單狐至敦薨，17阅读/113独立卡（含复用諸犍），后文待核。',scan_pages=[76,77,78,79,80,81,82,83],limits='已核76—83页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
     review['source_unit_page_corrections'].update(PAGE_CORRECTIONS)
     review['entry_ids'] += [c['id'] for c in cards]
     review['passages'] += [{'id':p['id'],'source_unit_ids':p['source_unit_ids'],'source_span':p['source_span'],'status':'facsimile_reviewed'} for p in passages]
     review['commentary_alignment'] += [{'source_unit_ids':p['source_unit_ids'],'basis':p['content_note']} for p in passages]
-    review['next']={'name':'灌題之山','source_units':[54,58],'captured_pages':[81,82],'status':'pending_facsimile_review','notes':'0054实际见81页末，需核82页正文续；那父、竦斯及匠韓水分别核对，复用北山泑澤，不借同名旧图。'}
+    review['next']={'name':'少咸之山','source_units':[72,75],'captured_pages':[84],'facsimile_pages':[83,84],'status':'pending_facsimile_review','notes':'0072实际见83页末，需保存核84页续文；少咸不与小咸混名，窫窳牛状赤身人面马足与䰽䰽鱼分别核，不借旧窫窳图。'}
     review['five_stage_plan']=[{'name':r['name'],'passage_id':p['id'],'source_units':list(r['units']),'new_cards':sum(c.get('content_batch')=='beishan-'+r['slug'] and c['id']!='beast-zhu-jian' for c in cards),'reused_entry_ids':['beast-zhu-jian'] if r['slug']=='danzhang' else [],'text_status':'facsimile_reviewed','browser_status':'see local handoff stage results'} for r,p in zip(ROWS[-5:],passages[-5:])]
     review['reused_entry_ids']=['beast-zhu-jian']
-    assert len(cards)==65,len(cards)
+    assert len(cards)==98,len(cards)

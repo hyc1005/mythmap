@@ -213,13 +213,13 @@ def build():
                 {'source_units': [290, 297], 'note': '次三总括与篇末总计被重复切分；须核290—296及297。'}]},
         'stable_existing_ids': ['03-04', 'beast-jingwei', 'beast-zhu-jian', 'place-fajiu', 'place-north-ranges'],
         'title_font_supplement': {
-            'family': 'Noto Serif SC', 'characters': '單机華漨求䑏䟽何儵孟寓帶彭栢椐橐虢譙駝鰼䑕幽張杠極樗熏聮葵蔓薤訾雘韭鴳鵁鵺䐆㗸', 'weights': [400, 700],
+            'family': 'Noto Serif SC', 'characters': '單机華漨求䑏䟽何儵孟寓帶彭栢椐橐虢譙駝鰼䑕幽張杠極樗熏聮葵蔓薤訾雘韭鴳鵁鵺䐆㗸侯匠柘潘磁竦薨那韓題鮭鳲', 'weights': [400, 700],
             'path': 'frontend/public/fonts/shanhai-title-beishan.woff2',
-            'source_url': 'https://fonts.gstatic.com/l/font?kit=H4chBXePl9DZ0Xe7gG9cyOj7oqOEHtP8rj2A5VDbZ-E-TG52yMk-1KNONb5dewIp_FDGMbfx-4urVDq2zuTO0yejCvVNok4oeQTGehXA6bb4GN9MJZgbkVAn9cDjiUdzV8aemL8mj1TQjpWCujSgs_xs28utVIYUdwWVWTpSWpFG4AIgCBIffB4FuA&skey=37fe335b8fd815cc&v=v36',
-            'sha256': '3dafa2bcffcec2450e8219e25862e8d886c2ee3ecccdf25de72ee1e44d1952ad',
+            'source_url': 'https://fonts.gstatic.com/l/font?kit=H4cHBXePl9DZ0Xe7gG9cyOj7uK2-n-D2rd4FY7SCq0ek0X456JaEVEbKrx_r0NUdYlb-GrbZy4qDZjub7uXswyWCJfdurU0MbgfuShbz8rX9ENxKJpsSpVMi4MLZs0pPVMiNjbEqmlrbhZu0vDqdgfJh0MWoWokmfwq7djVJb55LxAwSNBwJfBAbpNyy-awk6TfJXEY8mB_7WwCK22Z5cLR56xu2371duGjPdctrO8T6ruPxtJnRiAY2JpyNmzHa8Wd6XwTWGQoCrg&skey=37fe335b8fd815cc&v=v36',
+            'sha256': '41de37a45f3376b86cd14468d1c5d07e779ac960f1b27c91aa346c540a6ff832',
             'license': 'frontend/public/fonts/noto-serif-sc-LICENSE.txt',
             'rebuild': 'python frontend/scripts/supplement-title-font.py',
-            'limits': '39字小子集随站点发布，不在运行时请求Google；原标题与罕字字库不改，既有30字本机依赖限制不变。'},
+            'limits': '51字小子集随站点发布，不在运行时请求Google；原标题与罕字字库不改，既有30字本机依赖限制不变。'},
         'limits': NOTE + '本批没有生物插画任务，7卡及阅读段均无图；不把西山同名水域或其他山的植物图用于本段。',
         'next': {'name': '求如之山', 'source_units': [5, 10], 'captured_pages': [76, 77],
                  'status': 'pending_facsimile_review', 'notes': '复用76页，首次核存77页；0009牛尾及水马注的实际页界须核。北山滑魚如鱓赤背，不借西山滑魚蛇状四足；水馬文臂牛尾与郭注前脚释义分开。'}}
@@ -228,7 +228,7 @@ def build():
     write('frontend/public/data/myth-world.json', world)
     write('frontend/src/locale-content-en.json', english)
     write('data/beishan-edition-review.json', review)
-    print('Built Northern first twelve: 12 passages, 80 cards; later passages remain pending')
+    print('Built Northern first seventeen: 17 passages, 113 cards; later passages remain pending')
 
 
 if __name__ == '__main__':
