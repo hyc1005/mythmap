@@ -4300,5 +4300,113 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/creature-yayu-shaoxian-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-yayu-shaoxian-v1-card.webp",
+      "bytes": 29508,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-yayu-shaoxian-v1-preview.webp",
+      "bytes": 59408,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/fish-zao-yufa-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/fish-zao-yufa-v1-card.webp",
+      "bytes": 32890,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/fish-zao-yufa-v1-preview.webp",
+      "bytes": 63906,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-shanhui-yufa-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-shanhui-yufa-v1-card.webp",
+      "bytes": 35696,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-shanhui-yufa-v1-preview.webp",
+      "bytes": 67916,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-zhuhuai-beiyue-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-zhuhuai-beiyue-v1-card.webp",
+      "bytes": 32826,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-zhuhuai-beiyue-v1-preview.webp",
+      "bytes": 63518,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/fish-yi-beiyue-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/fish-yi-beiyue-v1-card.webp",
+      "bytes": 27440,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/fish-yi-beiyue-v1-preview.webp",
+      "bytes": 53148,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/snake-feiyi-hunxi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/snake-feiyi-hunxi-v1-card.webp",
+      "bytes": 32820,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/snake-feiyi-hunxi-v1-preview.webp",
+      "bytes": 62338,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
   }
 }

@@ -1,11 +1,25 @@
 """Reviewed first-range extension for the Northern Mountains builder."""
 import json
+import hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE_CORRECTIONS = {'source-03-0018': 77, 'source-03-0027': 78,
                     'source-03-0036': 79, 'source-03-0045': 80,
-                    'source-03-0054': 81, 'source-03-0063': 82}
+                    'source-03-0054': 81, 'source-03-0063': 82,
+                    'source-03-0072': 83, 'source-03-0081': 84}
+TEXT_CORRECTIONS = [
+    dict(source_unit_id='source-03-0081',captured='⟦缺字图:⿱彐⿰垁凡--彘⟧',replacement='彘',page=84,basis='84页末人目彘耳，恢复缺字图，捕获另存。'),
+    dict(source_unit_id='source-03-0082',captured='⟦缺字图:囂⟧',replacement='囂',page=85,basis='85页诸懐水西注囂水。'),
+    dict(source_unit_id='source-03-0085',captured='⟦缺字图:囂⟧',replacement='囂',page=85,basis='85页渾夕囂水出焉。'),
+]
+
+
+def restored(id, text):
+    for c in TEXT_CORRECTIONS:
+        if c['source_unit_id'] == id:
+            text = text.replace(c['captured'], c['replacement'])
+    return text
 ROWS = [
     dict(slug='daishan', name='帶山', en_name='Mount Dai', units=(11,16),
          description='求如向北三百里为帶山，上多玉、下多青碧。䑏䟽形如马、一角有错；鵸䳜形如乌、五彩赤文，自为牝牡。彭水向西注芘湖之水，水中儵魚如鸡、赤毛、三尾六足四首。郭注对角错、同名鸟和儵字读音另释，不借西山同名鸟形貌。',
@@ -206,6 +220,63 @@ ENTITIES += [
 ]
 
 
+ROWS += [
+    dict(slug='shaoxian',name='少咸之山',en_name='Mount Shaoxian',units=(72,75),
+         description='敦薨向北二百里为少咸，无草木，多青碧。窫窳牛状赤身、人面马足，音如婴儿，食人；尔雅虎爪异说另存。敦水东注鴈門之水，其中䰽䰽鱼的食用杀人说为古籍记述；不混小咸或敦薨水。',
+         en_description='Two hundred li north is Mount Shaoxian, without vegetation and with much qingbi. Yayu is cattle-shaped with a red body, human face and horse feet, cries like an infant and eats people. The Dun flows east into Yanmen water, with Peipei fish whose consumption is said to be fatal.',
+         note='0072在83页末，捕获84校回83；0073—0075在84页。少咸不混小咸，敦水不混敦薨水。窫窳马足与郭注尔雅虎爪异说分列；䰽郭注未详或作鯆不足补定形貌，留占位。鴈門山间为郭注地点，不加现代坐标。',
+         en_note='Unit 72 is on scan 83, corrected from captured 84; 73–75 are on 84. Shaoxian and the Dun differ from Xiaoxian and Dunhong. Tiger claws and Yanmen mountain are commentary. Peipei remains insufficiently described.'),
+    dict(slug='yufa',name='獄法之山',en_name='Mount Yufa',units=(76,79),
+         description='少咸向北二百里为獄法。瀤澤水东北注㤗澤，䲃鱼鲤状鸡足。山𤟤犬状人面，善投、见人则笑，行如风；天下大风及食䲃已疣均为古籍说法，不增人手兵器。',
+         en_description='Two hundred li north is Mount Yufa. The Huaize flows northeast into Taize, with carp-shaped Zao fish having chicken feet, said to relieve warts when eaten. Shanhui is dog-shaped with a human face, skilled at throwing, smiles on seeing people and moves like wind; its appearance is said to bring great winds.',
+         note='0076—0079全核84页，0080北嶽另段。瀤音懐、䲃音藻、𤟤音暉、行风言疾各归其词。善投不据此补人手兵器；鸡足未定数，配图两足为解释。㤗保留捕获异体。',
+         en_note='Units 76–79 are on scan 84. Pronunciations and the speed gloss stay separate. Throwing supplies no human hands or weapons. Two illustrated chicken feet are interpretive; the Taize character is retained.'),
+    dict(slug='beiyue',name='北嶽之山',en_name='Mount Beiyue',units=(80,84),
+         description='獄法向北一百里为北嶽，多枳𣗥刚木。諸懐牛状四角、人目彘耳，音如鸣雁、食人。諸懐水西注囂水，鮨鱼鱼身犬首、音如婴儿；不借郭注其他海鱼的虎鹿猪首。',
+         en_description='One hundred li north is Mount Beiyue, with zhi, ji and gang wood. Zhuhuai is cattle-shaped with four horns, human eyes and pig ears, sounds like a goose and eats people. The Zhuhuai flows west into the Xiao, with dog-headed fish-bodied Yi fish that cry like infants and are said to relieve madness when eaten.',
+         note='0080—0081在84页，0081捕获85校回84；0082—0084在85页。彘耳及囂水缺字图按影印恢复，捕获标记另存。人目不是人面，四角与彘耳逐项核。檀柘之属为刚木郭注；鮨鱼犬首不改注中虎鹿猪首，音𭥍疑字依捕获保留。',
+         en_note='Units 80–81 are on scan 84; 81 is corrected from captured 85. Units 82–84 are on 85. Pig and Xiao are restored from missing-image markers, with captured text retained. Human eyes are not a human face; other wood and fish comparisons remain commentary.'),
+    dict(slug='hunxi',name='渾夕之山',en_name='Mount Hunxi',units=(85,88),
+         description='北嶽向北百八十里为渾夕，无草木，多铜玉。囂水从此出，西北入海；与北嶽水文关联，不并涿光同名水。肥遺一首两身，国大旱为古述；郭注蟡、八尺与取鱼龟另列，不添西山六足四翼。',
+         en_description='One hundred and eighty li north is Mount Hunxi, without vegetation and with copper and jade. The local Xiao rises here and flows northwest into the sea. Feiyi is a snake with one head and two bodies; its appearance is said to bring great drought.',
+         note='0085—0088全核85页；0088正文为空但郭注亦此𩔗承87，随本段保留。囂字缺图恢复，一首两身不加西山足翼。郭注𬋩子、蟡、八尺、取鱼龟不作正文形貌或现代灾害预测。',
+         en_note='Units 85–88 are on scan 85. Unit 88 has no main text but continues commentary. Xiao is restored; no Western legs or wings are added. Commentary names, length and fish-catching claims remain separate.'),
+    dict(slug='beidan',name='北單之山',en_name='Mount Beidan',units=(89,89),
+         description='渾夕向北五十里为北單，无草木而多葱韭。两种说法依原句同时保留，不改底本或以现代植被分类强解，不补未述生物或山景。',
+         en_description='Fifty li north is Mount Beidan, without grasses or trees, with abundant cong and jiu.',
+         note='0089全在85页，0090羆差另段仍待核。无草木与多葱韭并存，不擅改或漏录；北單不与單狐、單張混名。',
+         en_note='Unit 89 is on scan 85; 90 begins the next pending passage. Both vegetation statements remain, without a modern reconciliation. Beidan differs from Danhu and Danzhang.'),
+]
+for r in ROWS[-5:]:
+    r['en_quote'] = r['en_description']
+
+ENTITIES += [
+    E('shaoxian','material','qingbi-shaoxian','青碧（少咸）','Qingbi (Shaoxian)','多青碧','青碧仅列名，不定现代成分。','Qingbi is named without modern composition.','Much qingbi occurs here.'),
+    E('shaoxian','beast','yayu-shaoxian','窫窳（少咸）','Yayu (Shaoxian)','有獸焉其状如牛而赤身人靣馬足名曰窫窳其音如嬰兒是食人','窫窳牛状赤身、人面马足，音如婴儿；食人为古述，不画伤害。郭注尔雅虎爪异说不改正文。','Yayu has a red cattle body, human face and horse feet, with an infant-like cry. The ancient eating account adds no harm scene or commentary tiger claws.','Yayu is cattle-shaped with a red body, human face and horse feet, cries like an infant and eats people.',commentary='爾雅云窫窳似𤠾虎爪與此錯；軋愈二音',en_commentary='Guo Pu records a differing Erya form with tiger claws and supplies pronunciation.'),
+    E('shaoxian','water','dun-shaoxian','敦水（少咸）','Dun River (Shaoxian)','敦水出焉東流注于鴈門之水','敦水东注鴈門水，不混敦薨水。','The Dun flows east into Yanmen water, separately from the Dunhong.','The Dun rises here and flows east into Yanmen water.'),
+    E('shaoxian','water','yanmen-shaoxian','鴈門之水','Yanmen water','東流注于鴈門之水','鴈門承接敦水，郭注山间水源不推现代位置。','Yanmen receives the Dun; commentary supplies no modern coordinate.','It flows east into Yanmen water.',commentary='水出鴈門山間',en_commentary='Guo Pu says the water emerges between the Yanmen mountains.'),
+    E('shaoxian','place','yanmen-shaoxian','鴈門山（郭注）','Yanmen mountain (commentary)','鴈門之水','山名依郭注水出鴈門山间，不冒充正文新增山段。','The mountain comes from commentary, not an added main-text mountain.','Yanmen water is named here.',commentary='水出鴈門山間',en_commentary='Guo Pu locates the water between the Yanmen mountains.',water=True),
+    E('shaoxian','beast','peipei-shaoxian','䰽䰽之魚','Peipei fish','其中多䰽䰽之魚食之殺人','䰽䰽仅列名，郭注未详或作鯆，留占位；食之杀人为古述。','Peipei is only named with an uncertain gloss and keeps a placeholder; the fatal-eating claim is ancient.','Peipei fish are abundant; eating them is said to kill people.',commentary='音沛未詳或作鯆',en_commentary='Guo Pu glosses pei, calls it uncertain and gives a variant.',unknown=True,water=True),
+    E('yufa','water','huaize-yufa','瀤澤之水','Huaize River','瀤澤之水出焉而東北流注于㤗澤','瀤澤水东北注㤗澤，瀤音懐为郭注。','The Huaize flows northeast into Taize; pronunciation follows commentary.','The Huaize rises here and flows northeast into Taize.',commentary='音懐',en_commentary='Guo Pu glosses huai.'),
+    E('yufa','water','taize','㤗澤（北山经）','Taize (Northern Mountains)','東北流注于㤗澤','㤗澤接瀤澤水，保留㤗字，不定现代湖泊。','Taize receives the Huaize; the edition character supplies no modern lake identity.','It flows northeast into Taize.'),
+    E('yufa','beast','zao-yufa','䲃魚','Zao fish','其中多䲃魚其状如鯉而雞足食之已疣','䲃鱼鲤状鸡足，音藻来自郭注；配图两足为艺术解释，食用说为古述。','Zao is carp-shaped with chicken feet; two pictured feet are interpretive and the eating claim is ancient.','Zao fish are carp-shaped with chicken feet; eating them is said to relieve warts.',commentary='音藻',en_commentary='Guo Pu glosses zao.',water=True),
+    E('yufa','beast','shanhui-yufa','山𤟤','Shanhui','有獸焉其状如犬而人靣善投見人則𥬇其名山𤟤其行如風見則天下大風','山𤟤犬状人面、善投、见人则𥬇，行如风；配图四犬足不增人手兵器，大风为古述；年长面相、灰发与笑纹是艺术解释，非经文所定年龄。','Shanhui is dog-shaped with a human face, skilled at throwing, smiles and moves like wind. The image adds no human hands or weapons; the omen is ancient. The elderly face, gray hair and laugh lines are artistic, not a textual age.','Shanhui is dog-shaped with a human face, skilled at throwing, smiles on seeing people and moves like wind; its appearance is said to bring great winds.',commentary='音暉；言疾',en_commentary='Guo Pu glosses hui and explains rapid motion.'),
+    E('beiyue','plant','zhi-beiyue','枳（北嶽）','Zhi (Beiyue)','多枳𣗥剛木','枳仅列名，不补叶果。','Zhi is named without added leaf or fruit form.','Zhi, ji and gang wood are abundant.'),
+    E('beiyue','plant','ji-beiyue','𣗥（北嶽）','Ji (Beiyue)','多枳𣗥剛木','𣗥依捕获字形，不借别山树图。','Ji retains the captured character without borrowed artwork.','Zhi, ji and gang wood are abundant.'),
+    E('beiyue','plant','gang-beiyue','刚木（北嶽）','Gang wood (Beiyue)','多枳𣗥剛木','刚木檀柘之属为郭注，不增本山檀柘卡。','The tan-and-zhe comparison is commentary, not extra local plants.','Zhi, ji and gang wood are abundant.',commentary='檀柘之属',en_commentary='Guo Pu compares it to tan and zhe wood.'),
+    E('beiyue','beast','zhuhuai-beiyue','諸懐','Zhuhuai','有獸焉其状如牛而四角人目彘耳其名曰諸懐其音如鳴鴈是食人','諸懐牛状四角、人目彘耳，音如鸣雁；人目不作人面，四角逐数，不画伤害。','Zhuhuai is cattle-shaped with four horns, human eyes and pig ears, sounding like a goose. Human eyes are not a human face; no harm scene is added.','Zhuhuai resembles cattle with four horns, human eyes and pig ears, sounds like a goose and eats people.'),
+    E('beiyue','water','zhuhuai-beiyue','諸懐之水','Zhuhuai River','諸懐之水出焉而西流注于囂水','諸懐水西注囂水，囂缺图依85页恢复。','The Zhuhuai flows west into the local Xiao; the missing character is restored.','The Zhuhuai rises here and flows west into the Xiao.'),
+    E('beiyue','water','xiao-beiyue-hunxi','囂水（北嶽—渾夕）','Xiao (Beiyue–Hunxi)','西流注于囂水','本地囂水接諸懐水，渾夕段记源头和西北入海；不并涿光同名水。','The local Xiao receives the Zhuhuai and has a Hunxi source and northwest-to-sea account, separate from Zhuoguang’s namesake.','It flows west into the local Xiao.'),
+    E('beiyue','beast','yi-beiyue','鮨魚','Yi fish','其中多鮨魚魚身而犬首其音如嬰兒食之已狂','鮨鱼鱼身犬首、音如婴儿；郭注其他海鱼虎鹿猪头不作本鱼形貌，音𭥍疑字保留，食用说为古述。','Yi fish have fish bodies and dog heads with infant-like cries. Other sea-fish comparisons add no tiger, deer or pig head; the difficult gloss and eating claim remain separate.','Yi fish have fish bodies and dog heads with infant-like cries; eating them is said to relieve madness.',commentary='音𭥍；今海中有虎鹿魚及海狶体皆如魚而頭似虎鹿猪此其𩔗也',en_commentary='The captured pronunciation is retained; Guo Pu compares other sea fish with animal-like heads.',water=True),
+    E('hunxi','material','copper-hunxi','铜（渾夕）','Copper (Hunxi)','多銅玉','铜与玉分录出处。','Copper is recorded separately from jade.','Copper and jade are abundant.'),
+    E('hunxi','material','jade-hunxi','玉（渾夕）','Jade (Hunxi)','多銅玉','玉只列名，不补成分颜色。','Jade is named without composition or color.','Copper and jade are abundant.'),
+    E('hunxi','water','sea-hunxi','海（渾夕水文）','Sea (Hunxi water account)','西北流注于海','海为本地囂水所注，不定现代边界。','The sea receives the local Xiao without a modern boundary.','It flows northwest into the sea.'),
+    E('hunxi','beast','feiyi-hunxi','肥遺（渾夕蛇）','Feiyi (Hunxi snake)','有蛇一首兩身名曰肥遺見則其國大旱','肥遺一首两身，旱灾为古述；不与西山六足四翼蛇或英山鸟混形，郭注蟡等另存。','Feiyi has one head and two bodies with an ancient drought account. It gains no Western legs or wings, and stays separate from the Ying bird.','Feiyi is a snake with one head and two bodies; its appearance is said to bring great drought.',commentary='𬋩子曰涸水之精名曰蟡一頭而两身其状如蛇長八尺以其名呼之可使取魚龜亦此𩔗',en_commentary='The captured commentary gives a spirit name, one head and two bodies, a length and a fish-catching claim.'),
+    E('beidan','plant','cong-beidan','葱（北單）','Cong (Beidan)','無草木多葱韭','无草木与多葱韭同存，此卡录葱。','Both vegetation statements remain; this card records cong.','No grasses or trees are recorded, together with abundant cong and jiu.'),
+    E('beidan','plant','jiu-beidan','韭（北單）','Jiu (Beidan)','無草木多葱韭','韭单存，不因无草木漏录。','Jiu retains its record despite the no-vegetation statement.','No grasses or trees are recorded, together with abundant cong and jiu.'),
+]
+
+
 def extend(world, english, chapter, review):
     folder = ROOT / 'frontend/artwork-source/beishan'
     jobs = {a['entry_id']:a for a in json.loads((folder/'entities-generation.json').read_text(encoding='utf-8'))['assets']}
@@ -223,11 +294,12 @@ def extend(world, english, chapter, review):
         refs=[(f'source-03-{i+1:04}',lines[i]) for i in range(first-1,last)]
         pages=sorted({PAGE_CORRECTIONS.get(id,int(l['page'].rsplit('/',1)[1])) for id,l in refs})
         urls=[f'https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/{n}' for n in pages]
-        raw=''.join(l['text'] for _,l in refs)
+        captured=''.join(l['text'] for _,l in refs)
+        raw=''.join(restored(id,l['text']) for id,l in refs)
         common=dict(source=source,source_chapter='《北山经》',source_book=3,region='北山经',source_locator='卷第三 · 影印页 '+'、'.join(map(str,pages)),source_pages=urls,url=urls[0],source_unit_ids=[id for id,_ in refs],reveal_chapter='03',content_batch='beishan-'+slug,review_status='facsimile_reviewed',artwork_pending=True,direction='按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。',editorial_note='经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。')
         translation=dict(source=en_source,source_chapter='Beishan Jing',region='Beishan Jing',source_locator='Volume 3 · scan pages '+', '.join(map(str,pages)),direction='Read the Northern textual sequence and directions; these are not modern coordinates or measured distances.',editorial_note='Text, captured transcription and commentary are separate; explanations and English are editorial. Eating, healing and omen claims are ancient accounts.')
         commentary='\n'.join(f'〔影印页{PAGE_CORRECTIONS.get(id,int(l["page"].rsplit("/",1)[1]))}〕'+'；'.join(l['annotations']) for id,l in refs if l['annotations'])
-        p={**common,'id':pid,'kind':'passage','name':row['name'],'range':1,'order':order,'description':row['description'],'quote':raw,'captured_text':raw,'commentary_quote':commentary,'content_note':row['note'],'captured_commentary':[{'source_unit_id':id,'annotations':l['annotations']} for id,l in refs],'source_span':[sum(len(l['text']) for l in lines[:first-1]),sum(len(l['text']) for l in lines[:last])],'related_entry_ids':[place],'subjects':[row['name']]}
+        p={**common,'id':pid,'kind':'passage','name':row['name'],'range':1,'order':order,'description':row['description'],'quote':raw,'captured_text':captured,'commentary_quote':commentary,'content_note':row['note'],'captured_commentary':[{'source_unit_id':id,'annotations':l['annotations']} for id,l in refs],'source_span':[sum(len(l['text']) for l in lines[:first-1]),sum(len(l['text']) for l in lines[:last])],'related_entry_ids':[place],'subjects':[row['name']]}
         english[pid]={**translation,'name':row['en_name'],'description':row['en_description'],'quote':row['en_quote'],'content_note':row['en_note']}
         c={**common,'id':place,'kind':'place','name':row['name'],'description':row['description'],'quote':raw,'commentary_quote':commentary,'content_note':row['note'],'source_passage_ids':[pid],'related_entry_ids':[pid]}
         english[place]=dict(english[pid]); cards.append(c)
@@ -277,19 +349,29 @@ def extend(world, english, chapter, review):
     youze['related_entry_ids'] += [p['id'] for p in extra]
     for p in extra:p['related_entry_ids'].append(youze['id'])
     english[youze['id']].update(source_locator='Volume 3 · scan pages 80, 81, 82, 83',quote='It flows west into Youze; separately, the Jianghan rises here and flows west into Youze; the Dunhong rises here and flows west into Youze.',description='Northern Youze separately receives the west-flowing Gang, Jianghan and Dunhong. Their three contexts remain distinct from Danhu’s You River and Western Youze.',content_note='Semicolons separate three excerpts, not a continuous quotation or modern waterbody location.')
+    links += [('water-beishan-dun-shaoxian','water-beishan-yanmen-shaoxian'),('water-beishan-yanmen-shaoxian','place-beishan-yanmen-shaoxian'),('water-beishan-dun-shaoxian','beast-beishan-peipei-shaoxian'),('water-beishan-huaize-yufa','water-beishan-taize'),('water-beishan-huaize-yufa','beast-beishan-zao-yufa'),('water-beishan-zhuhuai-beiyue','water-beishan-xiao-beiyue-hunxi'),('water-beishan-zhuhuai-beiyue','beast-beishan-yi-beiyue'),('water-beishan-xiao-beiyue-hunxi','water-beishan-sea-hunxi')]
+    xiao=byid['water-beishan-xiao-beiyue-hunxi']; hp=next(p for p in passages if p['id']=='passage-beishan-hunxi')
+    xiao['source_passage_ids']=[*xiao['source_passage_ids'],hp['id']];xiao['context_place_ids']=['place-beishan-hunxi']
+    xiao['source_unit_ids']=[*xiao['source_unit_ids'],*hp['source_unit_ids']]
+    xiao['source_pages']=list(dict.fromkeys([*xiao['source_pages'],*hp['source_pages']]))
+    xiao.update(source_locator='卷第三 · 影印页 84、85',quote='西流注于囂水；囂水出焉而西北流注于海',content_note='分号分开北嶽与渾夕摘句；两处囂字缺图按85页恢复，不与涿光囂水合并。')
+    hp['related_entry_ids'].append(xiao['id']);xiao['related_entry_ids'].append(hp['id'])
+    english[xiao['id']].update(source_locator='Volume 3 · scan pages 84, 85',quote='It flows west into the Xiao; separately, the Xiao rises here and flows northwest into the sea.',content_note='Semicolons separate Beiyue and Hunxi excerpts; restored Xiao characters do not merge the Zhuoguang namesake.')
     for a,b in links:byid[a]['related_entry_ids'].append(b);byid[b]['related_entry_ids'].append(a)
     for group,values in [('passages',passages),('text_entities',[c for c in cards if c['kind']=='place']),('natural_features',[c for c in cards if c['kind'] in {'plant','water','material'}]),('beasts',[c for c in cards if c['kind']=='beast'])]:world[group]+=values
     northern=sorted([p for p in world['passages'] if p.get('source_book')==3],key=lambda p:p['order'])
     for left,right in zip(northern,northern[1:]):
         for a,b in [(left,right),(right,left)]:
             if b['id'] not in a['related_entry_ids']:a['related_entry_ids'].append(b['id'])
-    world['revision']='myth-world-2026-10-24-beishan-seventeen-v1'
-    review.update(scope='北山经首列前17段：單狐至敦薨，17阅读/113独立卡（含复用諸犍），后文待核。',scan_pages=[76,77,78,79,80,81,82,83],limits='已核76—83页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
+    world['revision']='myth-world-2026-10-24-beishan-twenty-two-v1'
+    review.update(scope='北山经首列前22段：單狐至北單，22阅读/141独立卡（含复用諸犍），后文待核。',scan_pages=[76,77,78,79,80,81,82,83,84,85],limits='已核76—85页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
     review['source_unit_page_corrections'].update(PAGE_CORRECTIONS)
     review['entry_ids'] += [c['id'] for c in cards]
     review['passages'] += [{'id':p['id'],'source_unit_ids':p['source_unit_ids'],'source_span':p['source_span'],'status':'facsimile_reviewed'} for p in passages]
     review['commentary_alignment'] += [{'source_unit_ids':p['source_unit_ids'],'basis':p['content_note']} for p in passages]
-    review['next']={'name':'少咸之山','source_units':[72,75],'captured_pages':[84],'facsimile_pages':[83,84],'status':'pending_facsimile_review','notes':'0072实际见83页末，需保存核84页续文；少咸不与小咸混名，窫窳牛状赤身人面马足与䰽䰽鱼分别核，不借旧窫窳图。'}
+    review['text_corrections']=TEXT_CORRECTIONS
+    review['extb_font_supplement']={'family':'Atlas Northern ExtB','characters':'𤟤𤠾𥬇𬋩𭥍','path':'frontend/public/fonts/atlas-northern-extb.woff2','license':'frontend/public/fonts/atlas-northern-extb-LICENSE.txt','source_url':'https://github.com/babelstone/babelstonehan-ufo/releases/download/v18.0.1/BabelStoneHanExtra.ttf','sha256':hashlib.sha256((ROOT/'frontend/public/fonts/atlas-northern-extb.woff2').read_bytes()).hexdigest(),'upstream_sha256':'cc8868109070c1813479dc2eb72fba508a1a6c33d807a485959e8f5dcd0e5724','weights':[400],'limits':'授权字体内存子集并改名，原版权许可保留；600由浏览器合成，旧30个本机依赖补2后仍有28个，不宣称全书补齐。'}
+    review['next']={'name':'羆差之山','source_units':[90,90],'captured_pages':[86],'facsimile_pages':[85],'status':'pending_facsimile_review','notes':'0090在85页末，下一轮核野马郭注与具体段界；0091北鮮另段，需核86页，不把野马现代物种补成正文。'}
     review['five_stage_plan']=[{'name':r['name'],'passage_id':p['id'],'source_units':list(r['units']),'new_cards':sum(c.get('content_batch')=='beishan-'+r['slug'] and c['id']!='beast-zhu-jian' for c in cards),'reused_entry_ids':['beast-zhu-jian'] if r['slug']=='danzhang' else [],'text_status':'facsimile_reviewed','browser_status':'see local handoff stage results'} for r,p in zip(ROWS[-5:],passages[-5:])]
     review['reused_entry_ids']=['beast-zhu-jian']
-    assert len(cards)==98,len(cards)
+    assert len(cards)==126,len(cards)

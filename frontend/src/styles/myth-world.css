@@ -1,7 +1,7 @@
 @font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-rare.woff2) format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; unicode-range: U+3400-4DBF, U+20000-323AF; }
-@font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-title-beishan.woff2) format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+35F8, U+4406, U+444F, U+4455, U+47FD; }
+@font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-title-beishan.woff2) format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+35F8, U+4406, U+444F, U+4455, U+47FD, U+4C3D, U+4C83; }
 @font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-title.woff2) format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+3917, U+3BF6, U+3C55, U+3C84, U+3CD9, U+41FF, U+4343, U+44DE, U+4580, U+45E1, U+45F1, U+4CB9, U+4CC7, U+4CDC, U+246CE, U+248CE; }
-@font-face { font-family: ShanhaiRare; src: local('SimSun-ExtB'), local('MingLiU-ExtB'); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+20542, U+21A1A, U+21EAF, U+221E8, U+224E8, U+2255F, U+23206, U+23D40, U+23FB0, U+24360, U+244F0, U+25B07, U+2624D, U+264BF, U+26CD3, U+28D7F, U+28E67, U+28F06, U+29CB6, U+29CC1, U+29DAF, U+2A1F1, U+2ADDF, U+2B387, U+2B7CD, U+2D8E3, U+2D94D, U+2D97B, U+2E5DA, U+2EA8D; }
+@font-face { font-family: ShanhaiRare; src: local('SimSun-ExtB'), local('MingLiU-ExtB'); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+20542, U+21A1A, U+21EAF, U+221E8, U+224E8, U+2255F, U+23206, U+23D40, U+23FB0, U+24360, U+244F0, U+2624D, U+264BF, U+26CD3, U+28D7F, U+28E67, U+28F06, U+29CB6, U+29CC1, U+29DAF, U+2A1F1, U+2ADDF, U+2B387, U+2B7CD, U+2D8E3, U+2D97B, U+2E5DA, U+2EA8D; }
 @font-face {
   font-family: 'Lora Variable';
   font-style: normal;
@@ -386,3 +386,5 @@ html[lang='en'] .reading-bookplate small { letter-spacing: .1em; }
   .reading-bookplate { justify-self: end; }
   .bookplate-mark { width: 108px; height: 108px; margin: 0 auto; }
 }
+
+@font-face { font-family: ShanhaiRare; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-northern-extb.woff2) format("woff2"); unicode-range: U+247E4, U+2483E, U+25B07, U+2C2E9, U+2D94D; }

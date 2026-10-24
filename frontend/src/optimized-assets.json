@@ -3222,5 +3222,83 @@
       1254,
       1254
     ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-yayu-shaoxian-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-yayu-shaoxian-v1.webp",
+    "original_bytes": 1909962,
+    "optimized_bytes": 342842,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/fish-zao-yufa-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/fish-zao-yufa-v1.webp",
+    "original_bytes": 1937598,
+    "optimized_bytes": 352978,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-shanhui-yufa-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-shanhui-yufa-v1.webp",
+    "original_bytes": 2007251,
+    "optimized_bytes": 326012,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-zhuhuai-beiyue-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-zhuhuai-beiyue-v1.webp",
+    "original_bytes": 2231373,
+    "optimized_bytes": 361202,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/fish-yi-beiyue-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/fish-yi-beiyue-v1.webp",
+    "original_bytes": 1617738,
+    "optimized_bytes": 292584,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/snake-feiyi-hunxi-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/snake-feiyi-hunxi-v1.webp",
+    "original_bytes": 1661777,
+    "optimized_bytes": 318260,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
   }
 }

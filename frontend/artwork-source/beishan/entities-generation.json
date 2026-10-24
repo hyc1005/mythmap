@@ -330,6 +330,111 @@
       "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-a7b0dab5-9697-4011-a0d9-48d34cf5b89f.png",
       "sha256": "086169f01efc087e72fe3249fbb1f13ef8a8358729f9446e7c5bc5333581bfc9",
       "review_note": "单首连续蛇身单尾、无肢角翼；遍身短硬彘豪，不把郭注百寻当正文长度，也不借常山异形长蛇。"
+    },
+    {
+      "name": "creature-yayu-shaoxian",
+      "entry_id": "beast-beishan-yayu-shaoxian",
+      "prompt": "Use case: illustration-story. One full isolated Shanhaijing creature on true transparent canvas, all extremities inside generous margins. Supplied bird reference ONLY for hand-carved Chinese woodblock MEDIUM: dark cut contours, flat mineral pigments, varied fine incisions and sparse grain. Do NOT copy its face, owl eyes, feather crest, flame pattern, pose or repeating decorative bands. Distinct character silhouette, proportions and expression. No 3D, gradients, scenery, ground, shadows, writing, seals or frame. Colors and pose are artistic except colors explicitly required below. Yayu: massive CATTLE-shaped RED BODY, one HUMAN FACE and FOUR HORSE FEET, voice like an infant. Horizontal thick ox torso in solid cinnabar with sparse short-hair cuts, four slender legs ending in four UNSPLIT HORSE HOOVES. One broad androgynous human face with human nose, lips and eyes, short dark hair, solemn watchful expression, attached directly to the bovine neck. NO horns, wings, tiger paws, extra eyes, victims, blood or feeding scene. Three-quarter side view facing left, firm planted stance. Exactly one head, four horse-hoof legs, one ordinary bovine tail. Not the female-human-faced pheasant or a shaggy dark yak.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "赤身牛状、人面、四马蹄，未把郭注异说虎爪移入正文。",
+      "source_file": "creature-yayu-shaoxian-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-4cdfc58b-8b8e-4fc5-b000-786186ca015b.png",
+      "sha256": "8983982131ecea1fcf4ec9b2cbe56e890e08402f2bc2f34f6481706847f3a11e",
+      "review_note": "赤身牛状、人面、四马蹄，未把郭注异说虎爪移入正文。"
+    },
+    {
+      "name": "fish-zao-yufa",
+      "entry_id": "beast-beishan-zao-yufa",
+      "prompt": "Use case: illustration-story. One full isolated Shanhaijing creature on true transparent canvas, all extremities inside generous margins. Supplied bird reference ONLY for hand-carved Chinese woodblock MEDIUM: dark cut contours, flat mineral pigments, varied fine incisions and sparse grain. Do NOT copy its face, owl eyes, feather crest, flame pattern, pose or repeating decorative bands. Distinct character silhouette, proportions and expression. No 3D, gradients, scenery, ground, shadows, writing, seals or frame. Colors and pose are artistic except colors explicitly required below. Zao fish: a CARP-shaped scaled fish torso with CHICKEN FEET. Exactly ONE ordinary carp fish head with carp mouth and eyes, one coherent carp body, usual small fish fins and one forked fish tail; TWO yellow chicken legs emerging from the underside, each ending in a separately visible clawed chicken foot. No bird wings, feathers across torso, human face, extra heads or extra legs. Diagonal upright alert posture with a compact convex carp profile, muted bronze-green scales and ivory belly, clearly articulated scaled shins and three-toed bird claws. Aquatic fish anatomy with the two unusual chicken feet, not a bird body.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "鲤形鱼身、单鱼首单尾，鸡腿爪足两只可辨；足数为插画解释。",
+      "source_file": "fish-zao-yufa-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-4c8f2ec4-1a30-4f99-b012-e3ddee06b9fd.png",
+      "sha256": "2dc7db51d55b0116783f47fe8ab067b232764bf73456c2167137229e5fb952ba",
+      "review_note": "鲤形鱼身、单鱼首单尾，鸡腿爪足两只可辨；足数为插画解释。"
+    },
+    {
+      "name": "creature-shanhui-yufa",
+      "entry_id": "beast-beishan-shanhui-yufa",
+      "prompt": "Use case: precise-object-edit. Edit ONLY the HUMAN FACE and human hair of this Shanhui, preserving the exact dog torso, all FOUR canine legs/paws, raised forepaw, tail, warm woodcut technique and true transparency. Replace the youthful oval face with a markedly OLDER ROUND human face: broad rounded cheeks, broad short human nose, deep forehead lines, pronounced laugh creases, smaller gently narrowed smiling human eyes, large warm CLOSED-LIP grin and short receding SILVER-GRAY human hair. No beard, spectacles, props, extra ears, animal muzzle or fangs. This must still be a HUMAN FACE attached to the DOG body; not a dog face, owl mask or human full body. Distinguish it strongly from an elegant young human-faced red ox: elderly, round, jovial, weathered but gentle. Keep one head and all four original DOG paws unchanged. No human hands, wings, horns or background. Keep complete body and tail uncropped with clear margins.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-shanhui-yufa-v1.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "犬状人面、笑貌与轻快姿态，四犬足；善投不据此增人手或兵器。",
+      "source_file": "creature-shanhui-yufa-v2.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-43e0ae71-4efb-4a02-b705-181ca596a349.png",
+      "sha256": "0ebd404c7fa75f9e089de5f146af462e788200bd6140be4f8b63f977d9b20083",
+      "review_note": "v2年长圆脸、灰发深笑纹与犬体四犬足可辨；年龄面相为艺术解释，区别窫窳年轻人面；v1保留。",
+      "revisions": [
+        {
+          "name": "creature-shanhui-yufa",
+          "entry_id": "beast-beishan-shanhui-yufa",
+          "prompt": "Use case: illustration-story. One full isolated Shanhaijing creature on true transparent canvas, all extremities inside generous margins. Supplied bird reference ONLY for hand-carved Chinese woodblock MEDIUM: dark cut contours, flat mineral pigments, varied fine incisions and sparse grain. Do NOT copy its face, owl eyes, feather crest, flame pattern, pose or repeating decorative bands. Distinct character silhouette, proportions and expression. No 3D, gradients, scenery, ground, shadows, writing, seals or frame. Colors and pose are artistic except colors explicitly required below. Shanhui: DOG-shaped creature with ONE HUMAN FACE, smiles upon seeing people, moves like wind and is skilled at throwing. Low slender DOG torso, FOUR ordinary canine paws, ONE dog tail, one human face with human eyes, nose and lips and a restrained warm CLOSED-LIP smile. Short plain tan coat with tiny curved hair cuts, compact forehead and short unornamented hair; NOT a fierce bird or snarling lion face. Playful forward bow with one forepaw slightly raised and the other three paws clearly visible. Keep all four limbs canine, NO human hands, thrown objects, weapons, swirling wind effects or human witnesses. One face only, no horns or wings.",
+          "reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ],
+          "status": "generated",
+          "planned_review": "犬状人面、笑貌与轻快姿态，四犬足；善投不据此增人手或兵器。",
+          "source_file": "creature-shanhui-yufa-v1.png",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-ea67f336-2451-4fc5-9084-0b188e26682c.png",
+          "sha256": "96614d793548aef9170ae29ccd7883d802c17c7ec0c969bfc2922cfd0883bb0d",
+          "review_note": "v1犬状四足正确，但年轻人面与窫窳接近，保留并修订差异化。"
+        }
+      ],
+      "initial_prompt": "Use case: illustration-story. One full isolated Shanhaijing creature on true transparent canvas, all extremities inside generous margins. Supplied bird reference ONLY for hand-carved Chinese woodblock MEDIUM: dark cut contours, flat mineral pigments, varied fine incisions and sparse grain. Do NOT copy its face, owl eyes, feather crest, flame pattern, pose or repeating decorative bands. Distinct character silhouette, proportions and expression. No 3D, gradients, scenery, ground, shadows, writing, seals or frame. Colors and pose are artistic except colors explicitly required below. Shanhui: DOG-shaped creature with ONE HUMAN FACE, smiles upon seeing people, moves like wind and is skilled at throwing. Low slender DOG torso, FOUR ordinary canine paws, ONE dog tail, one human face with human eyes, nose and lips and a restrained warm CLOSED-LIP smile. Short plain tan coat with tiny curved hair cuts, compact forehead and short unornamented hair; NOT a fierce bird or snarling lion face. Playful forward bow with one forepaw slightly raised and the other three paws clearly visible. Keep all four limbs canine, NO human hands, thrown objects, weapons, swirling wind effects or human witnesses. One face only, no horns or wings.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "revision_prompt": "Use case: precise-object-edit. Edit ONLY the HUMAN FACE and human hair of this Shanhui, preserving the exact dog torso, all FOUR canine legs/paws, raised forepaw, tail, warm woodcut technique and true transparency. Replace the youthful oval face with a markedly OLDER ROUND human face: broad rounded cheeks, broad short human nose, deep forehead lines, pronounced laugh creases, smaller gently narrowed smiling human eyes, large warm CLOSED-LIP grin and short receding SILVER-GRAY human hair. No beard, spectacles, props, extra ears, animal muzzle or fangs. This must still be a HUMAN FACE attached to the DOG body; not a dog face, owl mask or human full body. Distinguish it strongly from an elegant young human-faced red ox: elderly, round, jovial, weathered but gentle. Keep one head and all four original DOG paws unchanged. No human hands, wings, horns or background. Keep complete body and tail uncropped with clear margins."
+    },
+    {
+      "name": "creature-zhuhuai-beiyue",
+      "entry_id": "beast-beishan-zhuhuai-beiyue",
+      "prompt": "Use case: illustration-story. One full isolated Shanhaijing creature on true transparent canvas, all extremities inside generous margins. Supplied bird reference ONLY for hand-carved Chinese woodblock MEDIUM: dark cut contours, flat mineral pigments, varied fine incisions and sparse grain. Do NOT copy its face, owl eyes, feather crest, flame pattern, pose or repeating decorative bands. Distinct character silhouette, proportions and expression. No 3D, gradients, scenery, ground, shadows, writing, seals or frame. Colors and pose are artistic except colors explicitly required below. Zhuhuai: CATTLE-shaped beast with EXACTLY FOUR HORNS, HUMAN EYES and PIG EARS. One bovine head with broad COW MUZZLE, exactly two recognizably HUMAN almond eyes, NOT an entire human face. TWO rounded pig ears. FOUR separate short smooth horns arranged two forward and two behind, all four tips and bases individually legible with clear gaps; no branching antlers and no fifth horn. Four bovine legs with four cloven hooves, one ox tail. Frontal three-quarter solid stance showing forehead horns clearly, pale stone-gray hide and dark horn tips, sparse broad carved planes rather than hair/flame pattern. No teeth display, victims or gore.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "牛状四角、人目、彘耳，双人眼而非整个人面；四角各自可数。",
+      "source_file": "creature-zhuhuai-beiyue-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-e1bd9d39-6e90-41a8-a7d8-4198cf2cff99.png",
+      "sha256": "ea4b9db2d0a33af897ddef8c1c3b0e5c41bd15e3a81241e929c096c4ef26a60d",
+      "review_note": "牛状四角、人目、彘耳，双人眼而非整个人面；四角各自可数。"
+    },
+    {
+      "name": "fish-yi-beiyue",
+      "entry_id": "beast-beishan-yi-beiyue",
+      "prompt": "Use case: illustration-story. One full isolated Shanhaijing creature on true transparent canvas, all extremities inside generous margins. Supplied bird reference ONLY for hand-carved Chinese woodblock MEDIUM: dark cut contours, flat mineral pigments, varied fine incisions and sparse grain. Do NOT copy its face, owl eyes, feather crest, flame pattern, pose or repeating decorative bands. Distinct character silhouette, proportions and expression. No 3D, gradients, scenery, ground, shadows, writing, seals or frame. Colors and pose are artistic except colors explicitly required below. Yi fish: ONE DOG HEAD attached naturally to ONE FISH BODY, sound like an infant. A small soft drooping-eared dog head with ordinary DOG MUZZLE, moist dog nose and gentle curious dog eyes, closed mouth, no human features. Whole body below neck is scaled fish with dorsal/pectoral fins and ONE forked fish tail, ZERO legs or paws. Pale ivory/ochre scales in long narrow flowing body, curling gently right, small rust-colored fins, NO chicken feet, wings, horns, bristles or extra tails. Distinguish it from the upright carp with chicken feet: this one is a horizontal swimming fish with a dog head.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "鱼身犬首、单头单尾无足，不与䲃鱼鸡足混形。",
+      "source_file": "fish-yi-beiyue-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-e602e710-04a5-4626-82a6-730544652946.png",
+      "sha256": "bd54a54f24c56dfea8b8f172b4d3c5e918eb10206487ca757a204beb351df1a4",
+      "review_note": "鱼身犬首、单头单尾无足，不与䲃鱼鸡足混形。"
+    },
+    {
+      "name": "snake-feiyi-hunxi",
+      "entry_id": "beast-beishan-feiyi-hunxi",
+      "prompt": "Use case: illustration-story. One full isolated Shanhaijing creature on true transparent canvas, all extremities inside generous margins. Supplied bird reference ONLY for hand-carved Chinese woodblock MEDIUM: dark cut contours, flat mineral pigments, varied fine incisions and sparse grain. Do NOT copy its face, owl eyes, feather crest, flame pattern, pose or repeating decorative bands. Distinct character silhouette, proportions and expression. No 3D, gradients, scenery, ground, shadows, writing, seals or frame. Colors and pose are artistic except colors explicitly required below. Northern Feiyi: EXACTLY ONE SNAKE HEAD shared by TWO COMPLETE SNAKE BODIES. Show a very short single shared throat immediately splitting into TWO equally thick scaled serpent trunks. Each trunk then coils into its OWN separate loop and tapers to its OWN complete tail, with a wide transparent gap between the two bodies and tails. One ordinary snake head at upper center, two branches descend left and right in an open Y-shaped composition, each body traceable independently from neck fork to tail. EXACTLY ONE head, TWO bodies, TWO tails, ZERO legs and wings. NOT two snake heads, not just a forked tail after one long common body, not Western six-legged four-winged Feiyi. Smooth dark indigo/ivory-scaled bodies with thin incised scale texture, NO pig bristles, feathers, horns, flames, drought scenes or effects.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "一首即分两条完整蛇身、两尾，无足翼；不借西山同名蛇或鸟。",
+      "source_file": "snake-feiyi-hunxi-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-a9a05197-bdcb-4a7a-b5e0-c16d0a141f7c.png",
+      "sha256": "286e4b481680dbd1dd0d54013eb5bee0dbe9d81ab4306dd879cf251716da9cd7",
+      "review_note": "一首即分两条完整蛇身、两尾，无足翼；不借西山同名蛇或鸟。"
     }
   ]
 }
