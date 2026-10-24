@@ -7262,6 +7262,238 @@
           ]
         }
       }
+    },
+    {
+      "id": "beishan-creature-ershu-danxun-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-ershu-danxun-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Ear-mouse: mouse-like creature with ONE rabbit-like head (interpretation of edition 莬首), a compact DEER torso 麋身, FOUR slender deer legs, ONE very long broad furred tail curling upward as its flying organ. Show a suspended airborne pose, all four hooves visible. Tail is a single broad flexible furry tail, no feathered wings, no bat membranes, no antlers, no extra ears. Two long rabbit ears and small rodent-like muzzle; visually emphasize unusual deer-body and tail-flight combination. No magical effects. Muted ochre deer body and ivory tail incisions.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "鼠状、莬首按兔形首艺术解释、麋身、四足和单长尾；不添羽翼，髯飞异说另列。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1.webp",
+          "bytes": 356334,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1-card.webp",
+          "bytes": 37822,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1-preview.webp",
+          "bytes": 71958,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-mengji-shizhe-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-mengji-shizhe-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Mengji: ONE leopard-shaped feline with WHITE BODY and patterned FOREHEAD only. Low stealthy crouching pose, one head, four complete feline paws separately visible, one long feline tail. Strong archaic face with distinct small dark markings confined to forehead; torso and legs ivory white with minimal carved shading, not leopard spots all over. Two normal cat ears, no horns or mane or wings. Characterful compact angular white silhouette, not realistic snow-leopard portrait.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-mengji-shizhe-v1.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "v2四只完整猫足独立可数，豹状白身、文额及单长尾保留；v1远侧足不清晰，仅保留修订来源。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1.webp",
+          "bytes": 197432,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1-card.webp",
+          "bytes": 28744,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1-preview.webp",
+          "bytes": 51342,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      },
+      "revision_prompt": "Use case: precise-object-edit. Preserve this Mengji's ONE feline head, patterned FOREHEAD, WHITE leopard-shaped torso, one long tail, woodcut style, palette and true transparency. Its far rear paw is insufficiently clear. Make FOUR separate complete feline legs and FOUR paws unmistakably countable. Keep the two large front paws and the left rear paw. Extend the far rear leg from the hip diagonally to the LEFT beneath the belly, and show its full fourth paw in the empty space between the existing rear paw and nearer front paw. Each paw has its own ankle and distinct claw tips, with transparent separation; no extra detached feet, five legs, wings or horns. Keep its body white, no full-body spots. Shrink the complete subject modestly to give at least 7 percent clear margin on all sides without cropping the tail. No labels or scenery.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "id": "beishan-creature-youan-bianchun-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-youan-bianchun-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Youan: ONE monkey-like 禺 creature with clearly patterned BODY. Lying down on its side pretending to sleep, face wearing a subtle laughing grin, two monkey ears, one head, two arms and two legs, all four limbs separately legible. One ordinary monkey tail, not a bird. Geometric dark and cinnabar body patches, ochre face, cream belly; relaxed pose with a single open watchful eye as artistic expression, no human visitor, no pillow, no scenery. No extra limbs, fangs, horns or wings.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "禺状文身、卧姿与笑貌可辨；佯眠来自郭注，未据鸟字偏旁加翼。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1.webp",
+          "bytes": 324060,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1-card.webp",
+          "bytes": 31918,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1-preview.webp",
+          "bytes": 61862,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-zuzi-manlian-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-zuzi-manlian-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Zuzi: ONE monkey-like creature with a clear shaggy MANE around the neck, ONE OX TAIL with tuft at the tip, PATTERNED ARMS and HORSE HOOVES. Pose standing upright with bent hind legs: two long monkey arms raised apart and ending in two visible horse hooves, two hind legs each ending in a horse hoof, FOUR hooves total. No hands or fingers. Strong monkey face with open mouth calling, exactly one head, four limbs, no horns, no antlers, no bird wings. Arms have distinct dark carved bands; ochre torso, dark mane, ivory hoof detail. All four hooves separated and fully visible.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "禺状有鬣、文臂、牛尾、马蹄俱存；四肢蹄端为造型解释，不加翼角。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1.webp",
+          "bytes": 330418,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1-card.webp",
+          "bytes": 35770,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1-preview.webp",
+          "bytes": 67624,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-jiao-manlian-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-jiao-manlian-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Jiao: ONE single bird whose plumage resembles a FEMALE PHEASANT, understated mottled brown/ochre and ivory feather marks, no bright male rooster colors, no extravagant crest. One head, two wings partly spread, two legs and two feet clearly separated, one long pheasant tail. Compact ascending flight pose with feet tucked but both separately visible. Group living and flying described in text does not require multiple birds in this single-character image. No extra wings, no white-wing/yellow-foot scheme from the separate Baiye bird.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "雌雉般斑驳羽毛、单首双翼双足单尾；群居朋飞写入正文，单体插画不冒充群景。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1.webp",
+          "bytes": 332278,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1-card.webp",
+          "bytes": 34802,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1-preview.webp",
+          "bytes": 66622,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-baiye-danzhang-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-baiye-danzhang-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Baiye: ONE pheasant-shaped bird with a PATTERNED HEAD, WHITE WINGS and YELLOW FEET. One head, two large clearly WHITE feathered wings raised apart with ivory incisions, two yellow legs and TWO separate yellow clawed feet, one pheasant tail. Body muted ochre, head with clear dark/cinnabar geometric markings, tail narrow and long. Characterful archaic alert three-quarter standing pose. No owl face, no extra heads, wings, tails or feet. White wings must remain visibly white rather than dark green or red.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "雉状文首、白翼黄足，单首双翼双足单尾逐项核对。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1.webp",
+          "bytes": 400830,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1-card.webp",
+          "bytes": 42944,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1-preview.webp",
+          "bytes": 81406,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

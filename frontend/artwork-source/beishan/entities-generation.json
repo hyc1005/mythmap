@@ -169,6 +169,111 @@
       "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-60decc1e-3907-473a-9356-8d9f65d08c90.png",
       "sha256": "cb7be2360078700341b1bb1250db3bba5523fe213f951cfd277421b4dac564cc",
       "review_note": "鼠首鼠身、圆耳长尾、四个小爪及一对羽翼可辨；不是蝙蝠膜翼，不加额外头或鸟首。"
+    },
+    {
+      "name": "creature-ershu-danxun",
+      "entry_id": "beast-beishan-ershu-danxun",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Ear-mouse: mouse-like creature with ONE rabbit-like head (interpretation of edition 莬首), a compact DEER torso 麋身, FOUR slender deer legs, ONE very long broad furred tail curling upward as its flying organ. Show a suspended airborne pose, all four hooves visible. Tail is a single broad flexible furry tail, no feathered wings, no bat membranes, no antlers, no extra ears. Two long rabbit ears and small rodent-like muzzle; visually emphasize unusual deer-body and tail-flight combination. No magical effects. Muted ochre deer body and ivory tail incisions.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "鼠状、莬首按兔形首艺术解释、麋身、四足和单长尾；不添羽翼，髯飞异说另列。",
+      "source_file": "creature-ershu-danxun-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-a9ee6454-cdc6-4100-bb53-5ad2975a5014.png",
+      "sha256": "356a1c9b08af03ce446086bc917ee3c6aa1d662dab12a4036222e35327b3dfb0",
+      "review_note": "鼠状、莬首按兔形首艺术解释、麋身、四足和单长尾；不添羽翼，髯飞异说另列。"
+    },
+    {
+      "name": "creature-mengji-shizhe",
+      "entry_id": "beast-beishan-mengji-shizhe",
+      "prompt": "Use case: precise-object-edit. Preserve this Mengji's ONE feline head, patterned FOREHEAD, WHITE leopard-shaped torso, one long tail, woodcut style, palette and true transparency. Its far rear paw is insufficiently clear. Make FOUR separate complete feline legs and FOUR paws unmistakably countable. Keep the two large front paws and the left rear paw. Extend the far rear leg from the hip diagonally to the LEFT beneath the belly, and show its full fourth paw in the empty space between the existing rear paw and nearer front paw. Each paw has its own ankle and distinct claw tips, with transparent separation; no extra detached feet, five legs, wings or horns. Keep its body white, no full-body spots. Shrink the complete subject modestly to give at least 7 percent clear margin on all sides without cropping the tail. No labels or scenery.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-mengji-shizhe-v1.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "豹状白身、文额、低伏姿态、四足单尾，未将额文扩成全身豹斑。",
+      "source_file": "creature-mengji-shizhe-v2.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-9c7c2b1c-130a-44fa-979a-c59496ae3bf0.png",
+      "sha256": "965243bac0df933269ac6e1bed85169a641ea5fc44fbbae16fbfcc2eb5599776",
+      "review_note": "v2四只完整猫足独立可数，豹状白身、文额及单长尾保留；v1远侧足不清晰，仅保留修订来源。",
+      "revisions": [
+        {
+          "name": "creature-mengji-shizhe",
+          "entry_id": "beast-beishan-mengji-shizhe",
+          "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Mengji: ONE leopard-shaped feline with WHITE BODY and patterned FOREHEAD only. Low stealthy crouching pose, one head, four complete feline paws separately visible, one long feline tail. Strong archaic face with distinct small dark markings confined to forehead; torso and legs ivory white with minimal carved shading, not leopard spots all over. Two normal cat ears, no horns or mane or wings. Characterful compact angular white silhouette, not realistic snow-leopard portrait.",
+          "reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ],
+          "status": "generated",
+          "planned_review": "豹状白身、文额、低伏姿态、四足单尾，未将额文扩成全身豹斑。",
+          "source_file": "creature-mengji-shizhe-v1.png",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-0b06acde-9798-4094-8cf5-991b6f4460b6.png",
+          "sha256": "4a8cce991c639e6c288e5dcd28f8fb03144c3af4de6ad79f17cc6ecec5384efa",
+          "review_note": "首稿远侧后足不够清晰，保留待修订。"
+        }
+      ],
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Mengji: ONE leopard-shaped feline with WHITE BODY and patterned FOREHEAD only. Low stealthy crouching pose, one head, four complete feline paws separately visible, one long feline tail. Strong archaic face with distinct small dark markings confined to forehead; torso and legs ivory white with minimal carved shading, not leopard spots all over. Two normal cat ears, no horns or mane or wings. Characterful compact angular white silhouette, not realistic snow-leopard portrait.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "revision_prompt": "Use case: precise-object-edit. Preserve this Mengji's ONE feline head, patterned FOREHEAD, WHITE leopard-shaped torso, one long tail, woodcut style, palette and true transparency. Its far rear paw is insufficiently clear. Make FOUR separate complete feline legs and FOUR paws unmistakably countable. Keep the two large front paws and the left rear paw. Extend the far rear leg from the hip diagonally to the LEFT beneath the belly, and show its full fourth paw in the empty space between the existing rear paw and nearer front paw. Each paw has its own ankle and distinct claw tips, with transparent separation; no extra detached feet, five legs, wings or horns. Keep its body white, no full-body spots. Shrink the complete subject modestly to give at least 7 percent clear margin on all sides without cropping the tail. No labels or scenery."
+    },
+    {
+      "name": "creature-youan-bianchun",
+      "entry_id": "beast-beishan-youan-bianchun",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Youan: ONE monkey-like 禺 creature with clearly patterned BODY. Lying down on its side pretending to sleep, face wearing a subtle laughing grin, two monkey ears, one head, two arms and two legs, all four limbs separately legible. One ordinary monkey tail, not a bird. Geometric dark and cinnabar body patches, ochre face, cream belly; relaxed pose with a single open watchful eye as artistic expression, no human visitor, no pillow, no scenery. No extra limbs, fangs, horns or wings.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "禺状文身、卧姿与笑貌可辨；佯眠来自郭注，未据鸟字偏旁加翼。",
+      "source_file": "creature-youan-bianchun-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-157ad037-68c6-40e3-87d4-49509d25099b.png",
+      "sha256": "4f584ab2dedfc51f130030e47a7b36d53044ed695db9d1c30a25d274274998a2",
+      "review_note": "禺状文身、卧姿与笑貌可辨；佯眠来自郭注，未据鸟字偏旁加翼。"
+    },
+    {
+      "name": "creature-zuzi-manlian",
+      "entry_id": "beast-beishan-zuzi-manlian",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Zuzi: ONE monkey-like creature with a clear shaggy MANE around the neck, ONE OX TAIL with tuft at the tip, PATTERNED ARMS and HORSE HOOVES. Pose standing upright with bent hind legs: two long monkey arms raised apart and ending in two visible horse hooves, two hind legs each ending in a horse hoof, FOUR hooves total. No hands or fingers. Strong monkey face with open mouth calling, exactly one head, four limbs, no horns, no antlers, no bird wings. Arms have distinct dark carved bands; ochre torso, dark mane, ivory hoof detail. All four hooves separated and fully visible.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "禺状有鬣、文臂、牛尾、马蹄俱存；四肢蹄端为造型解释，不加翼角。",
+      "source_file": "creature-zuzi-manlian-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-cf86de50-b441-495b-afc1-39a2259667ac.png",
+      "sha256": "bcdb1977222938b97c604fc89066d41ec3b46bd7eab8b34881d5ef246d8b7d76",
+      "review_note": "禺状有鬣、文臂、牛尾、马蹄俱存；四肢蹄端为造型解释，不加翼角。"
+    },
+    {
+      "name": "bird-jiao-manlian",
+      "entry_id": "beast-beishan-jiao-manlian",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Jiao: ONE single bird whose plumage resembles a FEMALE PHEASANT, understated mottled brown/ochre and ivory feather marks, no bright male rooster colors, no extravagant crest. One head, two wings partly spread, two legs and two feet clearly separated, one long pheasant tail. Compact ascending flight pose with feet tucked but both separately visible. Group living and flying described in text does not require multiple birds in this single-character image. No extra wings, no white-wing/yellow-foot scheme from the separate Baiye bird.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "雌雉般斑驳羽毛、单首双翼双足单尾；群居朋飞写入正文，单体插画不冒充群景。",
+      "source_file": "bird-jiao-manlian-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-f0a76b5f-4948-43b2-a7b0-6ef7f7f83705.png",
+      "sha256": "2c38695758eed1c7bee3d3be36b0a437cdfe215031657dbafbcc1cd19841a332",
+      "review_note": "雌雉般斑驳羽毛、单首双翼双足单尾；群居朋飞写入正文，单体插画不冒充群景。"
+    },
+    {
+      "name": "bird-baiye-danzhang",
+      "entry_id": "beast-beishan-baiye-danzhang",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature, true transparent square canvas, at least 9 percent clear margin around all extremities. No scenery, ground, cast shadow, text, seals, numbers or frame. Use supplied approved bird ONLY for archaic Chinese hand-carved woodblock technique: bold dark contour, incised flat ivory and ochre, restrained cinnabar and mineral green, sparse grain. No realistic animal portrait, gradients, 3D, owl face, copied bird crest or repetitive flame motifs. Give this character its own silhouette and expression. Baiye: ONE pheasant-shaped bird with a PATTERNED HEAD, WHITE WINGS and YELLOW FEET. One head, two large clearly WHITE feathered wings raised apart with ivory incisions, two yellow legs and TWO separate yellow clawed feet, one pheasant tail. Body muted ochre, head with clear dark/cinnabar geometric markings, tail narrow and long. Characterful archaic alert three-quarter standing pose. No owl face, no extra heads, wings, tails or feet. White wings must remain visibly white rather than dark green or red.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "planned_review": "雉状文首、白翼黄足，单首双翼双足单尾逐项核对。",
+      "source_file": "bird-baiye-danzhang-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-f5413c7a-07f0-4f36-a8ee-15698a496c83.png",
+      "sha256": "8b832510abfed55a474fd431d1d298bae1964d6a7cfb6769cc9a6b02fdcf186d",
+      "review_note": "雉状文首、白翼黄足，单首双翼双足单尾逐项核对。"
     }
   ]
 }

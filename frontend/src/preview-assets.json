@@ -4120,5 +4120,113 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1-card.webp",
+      "bytes": 37822,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1-preview.webp",
+      "bytes": 71958,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1-card.webp",
+      "bytes": 28744,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1-preview.webp",
+      "bytes": 51342,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1-card.webp",
+      "bytes": 31918,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1-preview.webp",
+      "bytes": 61862,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1-card.webp",
+      "bytes": 35770,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1-preview.webp",
+      "bytes": 67624,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1-card.webp",
+      "bytes": 34802,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1-preview.webp",
+      "bytes": 66622,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1-card.webp",
+      "bytes": 42944,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1-preview.webp",
+      "bytes": 81406,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }

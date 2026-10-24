@@ -1,6 +1,6 @@
 :root { --ink-title-duration: 450ms; --ink-phase-duration: 200ms; --ink-chapter-duration: 1200ms; }
 @font-face { font-family: 'Shanhai Title'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('/fonts/shanhai-title.woff2') format('woff2'); }
-@font-face { font-family: 'Shanhai Title'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('/fonts/shanhai-title-beishan.woff2') format('woff2'); unicode-range: U+444F, U+4455, U+47FD, U+4F55, U+5135, U+55AE, U+5B5F, U+5BD3, U+5E36, U+5F6D, U+673A, U+6822, U+6910, U+6A50, U+6C42, U+6F28, U+83EF, U+8662, U+8B59, U+99DD, U+9C3C; }
+@font-face { font-family: 'Shanhai Title'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('/fonts/shanhai-title-beishan.woff2') format('woff2'); unicode-range: U+35F8, U+4406, U+444F, U+4455, U+47FD, U+4F55, U+5135, U+55AE, U+5B5F, U+5BD3, U+5E36, U+5E7D, U+5F35, U+5F6D, U+673A, U+6760, U+6822, U+6910, U+6975, U+6A17, U+6A50, U+6C42, U+6F28, U+718F, U+806E, U+83EF, U+8475, U+8513, U+85A4, U+8662, U+8A3E, U+8B59, U+96D8, U+97ED, U+99DD, U+9C3C, U+9D33, U+9D41, U+9D7A; }
 .animation-failure { position: absolute; z-index: 45; inset: 20% 12%; padding: 20px; background: #eee2c5; border: 1px solid #927a55; color: #544431; }
 .animation-failure button { margin: 6px; padding: 8px 12px; }
 .journey-more { position: relative; }

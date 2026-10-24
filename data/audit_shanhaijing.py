@@ -142,7 +142,7 @@ def generate(check=False):
     gaps = {
         '南山经': f'43段正文与39座逐述山入口已接入；新增97张独立卡涵盖山水、异兽、草木、动物、谷风、山神和祭礼。本轮{len(artwork_jobs)}幅插画已审{reviewed_artwork}幅、待补或待审{pending_artwork}幅；验收以最新交接记录为准，不将文本接入称为全量完成。',
         '西山经': f'{western_names}共{len(western_passages)}段和{len(western_cards)}张独立卡已核对接入；保留原有异兽与玉山等ID。全篇正文、山水物产与主要具名神祇已接入；第三列报山数与里程合计差异保留。配图仍按形貌依据审核，不宣称多版本逐字校勘或实体穷尽。',
-        '北山经': f'已核{len(northern_passages)}阅读段、{len(northern_cards)}张独立卡，單狐至虢山之尾见76—79页影印；机木跨行注、郭注地点和同名异篇分开。北山9幅图已审；儵魚四首六足三尾、何羅一首十身、鰼鰼十翼羽端鳞等逐项核对；麢羊、蕃、橐駝形貌依据不足留占位。全篇297录文块、90结构候选仅作盘点，候选漏拆风险见data/beishan-edition-review.json；发鸠上下文及其余山系待逐页核对。',
+        '北山经': f'已核{len(northern_passages)}阅读段、{len(northern_cards)}张独立卡，單狐至單張见76—81页影印；机木跨行注、郭注地点和同名异篇分开。北山15幅新图已审，諸犍复用旧图；儵魚四首六足三尾、何羅一首十身、鰼鰼十翼羽端鳞等逐项核对；麢羊、蕃、橐駝形貌依据不足留占位。全篇297录文块、90结构候选仅作盘点，候选漏拆风险见data/beishan-edition-review.json；发鸠上下文及其余山系待逐页核对。',
         '东山经': '山列只是集合锚点；具体山水与各类物产尚未形成逐山索引。',
         '中山经': '补具体山系、山水、物产与祭祀记述，避免只凭少量异兽代表全篇。',
         '海外南经': '国家、异人、神祇及明确方位关系未形成完整可达条目。',
@@ -168,7 +168,7 @@ def generate(check=False):
         note = '；全篇已对照影印页16–32，补录第26页；经文、底本注文和白话分存。电子快照原样保留，差异见`data/nanshan-edition-review.json`。' if chapter['number'] == 1 else '；已核全篇77个列名山段、4列总括和篇末总计共82段，对照影印34–75页，页码与缺字图差异见`data/xishan-edition-review.json`；各列总数及里程不强行改成一致。' if chapter['number'] == 2 else '；录文尚需与影印页对校，不把自动导入视为已核对。'
         out += [f'- 待补方向：{gaps[chapter["title"]]}', '- 校核入口：[该篇固定修订](' + chapter['revision_url'] + ')' + note, '']
         if chapter['number'] == 3 and northern_passages:
-            out += ['- 單狐至虢山之尾source-03-0002—0031已对照76—79页，0009校回76页、0018校回77页、0027校回78页；全篇结构定位与其他段落仍为待核，不能据候选数量或三列录文数字宣称已完成。', '']
+            out += ['- 單狐至單張source-03-0002—0053已对照76—81页，0009校回76页、0018校回77页、0027校回78页、0036校回79页、0045校回80页；全篇结构定位与其他段落仍为待核，不能据候选数量或三列录文数字宣称已完成。', '']
     inventory = read('data/shanhaijing-inventory.json')
     western_units = [unit for unit in inventory['units'] if unit['chapter'] == 2]
     western_drafts = [draft for draft in inventory['candidate_passages'] if draft['chapter'] == 2]
@@ -243,7 +243,7 @@ def generate(check=False):
             '- `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。',
             '- `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。',
             f'- `python data/build_xishan.py`：合并西山经{len(western_passages)}段与{len(western_cards)}张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。',
-            '- `python data/build_beishan.py`：合并已核北山经單狐至虢山之尾7段及51张双语卡，保留其他篇目与旧ID；`python frontend/scripts/prepare-nanshan-artwork.py --chapter beishan`仅导出已审图。随后重建全书清单和本盘点。',
+            '- `python data/build_beishan.py`：合并已核北山经單狐至單張12段及80张双语卡（含复用諸犍），保留其他篇目与旧ID；`python frontend/scripts/prepare-nanshan-artwork.py --chapter beishan`仅导出已审图。随后重建全书清单和本盘点。',
             '- `python frontend/scripts/prepare-nanshan-artwork.py --chapter xishan`：仅导出已审核西山经插画。随后运行全书清单和本盘点构建器更新统计。',
             '- `python data/audit_shanhaijing.py`：离线重建本清单和网页来源分类。',
             '- `python data/audit_shanhaijing.py --check`：只检查快照结构、分类与清单是否和现有数据一致；CI运行该项。',

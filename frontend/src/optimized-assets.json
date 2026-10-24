@@ -3092,5 +3092,83 @@
       1254,
       1254
     ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1.webp",
+    "original_bytes": 1933964,
+    "optimized_bytes": 356334,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1.webp",
+    "original_bytes": 1297740,
+    "optimized_bytes": 197432,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1.webp",
+    "original_bytes": 1801262,
+    "optimized_bytes": 324060,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1.webp",
+    "original_bytes": 1796163,
+    "optimized_bytes": 330418,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1.webp",
+    "original_bytes": 1794414,
+    "optimized_bytes": 332278,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1.webp",
+    "original_bytes": 2235327,
+    "optimized_bytes": 400830,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
   }
 }
