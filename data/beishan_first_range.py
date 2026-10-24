@@ -9,12 +9,19 @@ PAGE_CORRECTIONS = {'source-03-0018': 77, 'source-03-0027': 78,
                     'source-03-0054': 81, 'source-03-0063': 82,
                     'source-03-0072': 83, 'source-03-0081': 84,
                     'source-03-0090': 85, 'source-03-0099': 86,
-                    'source-03-0108': 87, 'source-03-0117': 88, 'source-03-0126': 89}
+                    'source-03-0108': 87, 'source-03-0117': 88, 'source-03-0126': 89,
+                    'source-03-0135': 90, 'source-03-0144': 91,
+                    'source-03-0153': 92, 'source-03-0162': 93,
+                    'source-03-0171': 94, 'source-03-0180': 95,
+                    'source-03-0189': 96, 'source-03-0198': 97}
 TEXT_CORRECTIONS = [
     dict(source_unit_id='source-03-0081',captured='⟦缺字图:⿱彐⿰垁凡--彘⟧',replacement='彘',page=84,basis='84页末人目彘耳，恢复缺字图，捕获另存。'),
     dict(source_unit_id='source-03-0082',captured='⟦缺字图:囂⟧',replacement='囂',page=85,basis='85页诸懐水西注囂水。'),
     dict(source_unit_id='source-03-0085',captured='⟦缺字图:囂⟧',replacement='囂',page=85,basis='85页渾夕囂水出焉。'),
     dict(source_unit_id='source-03-0128',captured='⟦缺字图:囂⟧',replacement='囂',page=90,basis='90页北囂山名按影印恢复，原始捕获标记另存。'),
+    dict(source_unit_id='source-03-0136',captured='⟦缺字图:囂⟧',replacement='囂',page=91,basis='91页梁渠鸟名囂按影印恢复。'),
+    dict(source_unit_id='source-03-0149',captured='⟦缺字图:⿱彐⿰垁凡--彘⟧',replacement='彘',page=92,basis='92页次二祭礼彘瘗按影印恢复。'),
+    dict(source_unit_id='source-03-0169',captured='⟦缺字图:兎⟧',replacement='兎',page=94,basis='94页飛䑕兎状按影印恢复。'),
 ]
 
 
@@ -283,6 +290,9 @@ ENTITIES += [
 from beishan_range_transition import ROWS as TRANSITION_ROWS, entities as transition_entities
 ROWS += TRANSITION_ROWS
 ENTITIES += transition_entities(E)
+from beishan_later_ranges import ROWS as LATER_ROWS, entities as later_entities
+ROWS += LATER_ROWS
+ENTITIES += later_entities(E)
 
 
 def extend(world, english, chapter, review):
@@ -316,6 +326,8 @@ def extend(world, english, chapter, review):
             assert e['quote'] in raw,e['id']
             c={**(core if e['id']=='beast-zhu-jian' else {}),**common,**{k:e[k] for k in ['id','kind','name','description','quote']},'commentary_quote':e.get('commentary',''),'context_place_id':place,'source_passage_ids':[pid],'related_entry_ids':[pid]}
             english[e['id']]={**translation,'name':e['en_name'],'description':e['en_description'],'quote':e['en_quote'],'commentary_quote':e.get('en_commentary','')}
+            if e.get('context'):c['context_place_id']=e['context']
+            if e.get('aliases'):c['aliases']=e['aliases']
             if e['kind']=='water' or e.get('water'):c['relation_scope']='water'
             a=jobs.get(e['id'])
             if a and a['status']=='reviewed':
@@ -400,24 +412,53 @@ def extend(world, english, chapter, review):
     english[mao['id']].update(quote='It flows east into the Mao; separately, the Mao rises here and flows east into Yinze.',description='The Mao receives Zhuyu’s east-flowing river; Duntou separately records its source and eastern outlet into Yinze, without a modern river course.',content_note='Semicolons separate Zhuyu and Duntou excerpts, not a continuous quotation.')
     mp['related_entry_ids'].append(mao['id'])
     links += [('water-beishan-kuang','water-beishan-fu-kuang'),('water-beishan-kuang','material-beishan-fine-jade-kuang'),('water-beishan-zhuyu','water-beishan-mao'),('water-beishan-mao','water-beishan-yinze-duntou'),('water-beishan-mao','beast-beishan-boma-duntou'),('water-beishan-cen-beixiao','water-beishan-qiongze-beixiao')]
+    for c in cards:
+        ctx=c.get('context_place_id')
+        if ctx in {'place-beishan-guishan','place-beishan-fawan'}:
+            if ctx not in c['related_entry_ids']:c['related_entry_ids'].append(ctx)
+            if c['id'] not in byid[ctx]['related_entry_ids']:byid[ctx]['related_entry_ids'].append(c['id'])
+    links += [('water-beishan-xiu-liangqu','water-beishan-yanmen-liangqu'),('water-beishan-huguan','water-beishan-sea-huguan'),('water-beishan-huguan','beast-beishan-shan-huguan'),('water-beishan-juejue-longhou','water-beishan-he'),('water-beishan-juejue-longhou','beast-beishan-renyu-longhou'),('water-beishan-tiaojian-xianshan','water-beishan-changze-xianshan'),('water-beishan-tiaojian-xianshan','material-beishan-qisuan-xianshan'),('water-beishan-sheng-tianchi','material-beishan-yellow-e-tianchi'),('water-beishan-liu-yangshan','water-beishan-he'),('water-beishan-liu-yangshan','beast-beishan-xianfu-yangshan'),('water-beishan-lian-wangwu','water-beishan-taize'),('water-beishan-jiao-jiaoshan','water-beishan-he')]
+    extra_he=[p for p in passages if p['id'] in {'passage-beishan-'+x for x in ['longhou','yangshan','jiaoshan','jingshan-east','chongwei']}]
+    he['source_passage_ids']=[*he['source_passage_ids'],*[p['id'] for p in extra_he]]
+    he['context_place_ids']=[*he['context_place_ids'],*['place-beishan-'+x for x in ['longhou','yangshan','jiaoshan','jingshan-east','chongwei']]]
+    he['source_unit_ids']=[*he['source_unit_ids'],*[u for p in extra_he for u in p['source_unit_ids']]]
+    he['source_pages']=list(dict.fromkeys([*he['source_pages'],*[u for p in extra_he for u in p['source_pages']]]))
+    he['source_locator']='卷第三 · 影印页 77、78、79、80、83、87、93、94、95、96、97、98'
+    he['quote']+='；决决之水出焉而東流注于河；留水出焉而南流注于河；教水出焉西流注于河；髙水出焉南流注于河；丹水出焉南流注于河'
+    he['description']+='次三另记决决水东注、留水南注、教水西注，各段方向分存，京山髙水及虫尾丹水另记南注。'
+    he['related_entry_ids']=[*he['related_entry_ids'],*[p['id'] for p in extra_he]]
+    for p in extra_he:p['related_entry_ids'].append(he['id'])
+    english[he['id']].update(source_locator='Volume 3 · scan pages 77, 78, 79, 80, 83, 87, 93, 94, 95, 96, 97, 98',quote=english[he['id']]['quote']+' Separately, the Juejue flows east into the He; the Liu flows south into the He; the Jiao flows west into the He; the Gao and Dan separately flow south into the He.',description=english[he['id']]['description']+' Three third-range passages separately add the east-flowing Juejue, south-flowing Liu and west-flowing Jiao, followed by south-flowing Gao and Dan.')
+    he['content_note']='分号分开各段汇流摘句与敦薨河源古述；次三决决东注、留水南注、教水西注、髙水与丹水南注分别保存，不是连续经文或现代河道。'
+    english[he['id']]['content_note']='Semicolons separate confluence excerpts and the Dunhong source account. Third-range Juejue flows east, Liu south, Jiao west, and Gao and Dan south; these are distinct ancient accounts, not a continuous quotation or modern river course.'
+    wp=next(p for p in passages if p['id']=='passage-beishan-wangwu')
+    taize['source_passage_ids']=[*taize['source_passage_ids'],wp['id']];taize['context_place_ids']=[*taize['context_place_ids'],'place-beishan-wangwu']
+    taize['source_unit_ids']=[*taize['source_unit_ids'],*wp['source_unit_ids']]
+    taize['source_pages']=list(dict.fromkeys([*taize['source_pages'],*wp['source_pages']]))
+    taize.update(source_locator='卷第三 · 影印页 84、86、95、96',quote=taize['quote']+'；㶌水出焉而西北流注于㤗澤',description=taize['description']+'王屋另记㶌水西北注此，郭注疑音近不改现代定位。',content_note='分号分开獄法、隄山、王屋摘句，不是连续经文。')
+    taize['related_entry_ids']=[*taize['related_entry_ids'],wp['id']];wp['related_entry_ids'].append(taize['id'])
+    english[taize['id']].update(source_locator='Volume 3 · scan pages 84, 86, 95, 96',quote=english[taize['id']]['quote']+' Separately, the Lian rises here and flows northwest into Taize.',description=english[taize['id']]['description']+' Wangwu separately adds the northwest-flowing Lian, without a modern location.',content_note='Semicolons separate Yufa, Di and Wangwu excerpts, not a continuous quotation.')
+    links += [('water-beishan-gao-jingshan-east','water-beishan-he'),('water-beishan-dan-chongwei','water-beishan-he'),('water-beishan-bo-chongwei','water-beishan-huangze-chongwei')]
     for a,b in links:byid[a]['related_entry_ids'].append(b);byid[b]['related_entry_ids'].append(a)
     for group,values in [('passages',passages),('text_entities',[c for c in cards if c['kind'] in {'place','rite','deity'}]),('natural_features',[c for c in cards if c['kind'] in {'plant','water','material'}]),('beasts',[c for c in cards if c['kind']=='beast'])]:world[group]+=values
     northern=sorted([p for p in world['passages'] if p.get('source_book')==3],key=lambda p:p['order'])
     for left,right in zip(northern,northern[1:]):
         for a,b in [(left,right),(right,left)]:
             if b['id'] not in a['related_entry_ids']:a['related_entry_ids'].append(b['id'])
-    world['revision']='myth-world-2026-10-24-beishan-thirty-seven-v1'
-    review.update(scope='北山经首列25山与总括、次二管涔至北囂：37阅读/209独立卡（含复用諸犍），后文待核。',scan_pages=list(range(76,91)),limits='已核76—90页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
+    world['revision']='myth-world-2026-10-24-beishan-fifty-seven-v1'
+    review.update(scope='北山经首列25山与总括、次二16列名山与总括、次三至虫尾：57阅读/326独立卡（含复用諸犍），后文待核。',scan_pages=list(range(76,99)),limits='已核76—98页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
     review['source_unit_page_corrections'].update(PAGE_CORRECTIONS)
     review['entry_ids'] += [c['id'] for c in cards]
     review['passages'] += [{'id':p['id'],'source_unit_ids':p['source_unit_ids'],'source_span':p['source_span'],'status':'facsimile_reviewed'} for p in passages]
     review['commentary_alignment'] += [{'source_unit_ids':p['source_unit_ids'],'basis':p['content_note']} for p in passages]
     review['text_corrections']=TEXT_CORRECTIONS
-    review['extb_font_supplement']={'family':'Atlas Northern ExtB','characters':'𤟤𤠾𥬇𬋩𭥍𤓰𤞞𩣡𪄀𪃑','path':'frontend/public/fonts/atlas-northern-extb.woff2','license':'frontend/public/fonts/atlas-northern-extb-LICENSE.txt','source_url':'https://github.com/babelstone/babelstonehan-ufo/releases/download/v18.0.1/BabelStoneHanExtra.ttf','sha256':hashlib.sha256((ROOT/'frontend/public/fonts/atlas-northern-extb.woff2').read_bytes()).hexdigest(),'upstream_sha256':'cc8868109070c1813479dc2eb72fba508a1a6c33d807a485959e8f5dcd0e5724','weights':[400],'limits':'授权字体内存子集并改名，原版权许可保留；600由浏览器合成，旧30个本机依赖补3后仍有27个，不宣称全书补齐。'}
-    review['next']={'name':'梁渠之山','source_units':[133,137],'captured_pages':[90,91],'facsimile_pages':[90,91],'status':'pending_facsimile_review','notes':'0133—0135在90页，0135捕获91须校回90；0136—0137在91页，下一轮首次保存核91页与囂缺字图，鴈門为水名，不混少咸同名水。'}
+    review['extb_font_supplement']={'family':'Atlas Northern ExtB','characters':'𤟤𤠾𥬇𬋩𭥍𤓰𤞞𩣡𪄀𪃑𣵀𩹴𬐱','path':'frontend/public/fonts/atlas-northern-extb.woff2','license':'frontend/public/fonts/atlas-northern-extb-LICENSE.txt','source_url':'https://github.com/babelstone/babelstonehan-ufo/releases/download/v18.0.1/BabelStoneHanExtra.ttf','sha256':hashlib.sha256((ROOT/'frontend/public/fonts/atlas-northern-extb.woff2').read_bytes()).hexdigest(),'upstream_sha256':'cc8868109070c1813479dc2eb72fba508a1a6c33d807a485959e8f5dcd0e5724','weights':[400],'limits':'授权字体内存子集并改名，原版权许可保留；仅400字重，页面禁用伪粗，600请求使用已有400字形；旧30个本机依赖补4后仍有26个，不宣称全书补齐。'}
+    review['next']={'name':'彭毗之山','source_units':[202,204],'captured_pages':[98],'facsimile_pages':[98],'status':'pending_facsimile_review','notes':'复用98页；蚤林水东南注河、肥水南注牀水及肥遺蛇形貌待核，勿借渾夕一首两身六足四翼补形。0205小侯另段，0207实际98页末而捕获99待校。'}
+    review['second_range_summary']={'status':'facsimile_reviewed','named_mountains':16,'reported_mountains':17,'reported_li':5690,'summary_units':[147,150],'note':'原报17与逐段列名16不合，保留差异，不补山凑数；祭牲埋与玉投不埋分开。'}
 
     review['first_range_summary']={'status':'facsimile_reviewed','named_mountains':25,'reported_mountains':25,'reported_li':5490,'summary_units':[96,99],'note':'山数一致；里程保留原报，未以现代实测校正。'}
 
-    review['five_stage_plan']=[{'name':r['name'],'passage_id':p['id'],'source_units':list(r['units']),'new_cards':sum(c.get('content_batch')=='beishan-'+r['slug'] and c['id']!='beast-zhu-jian' for c in cards),'reused_entry_ids':['beast-zhu-jian'] if r['slug']=='danzhang' else [],'text_status':'facsimile_reviewed','browser_status':'see local handoff stage results'} for r,p in zip(ROWS[-5:],passages[-5:])]
+    review['stage_plan']=[{'name':r['name'],'passage_id':p['id'],'source_units':list(r['units']),'new_cards':sum(c.get('content_batch')=='beishan-'+r['slug'] and c['id']!='beast-zhu-jian' for c in cards),'reused_entry_ids':['beast-zhu-jian'] if r['slug']=='danzhang' else [],'text_status':'facsimile_reviewed','browser_status':'see local handoff stage results'} for r,p in zip(ROWS[-20:],passages[-20:])]
+    review['batch_size']=20
     review['reused_entry_ids']=['beast-zhu-jian']
-    assert len(cards)==194,len(cards)
+    assert len(cards)==311,len(cards)

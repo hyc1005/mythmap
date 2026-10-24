@@ -4,12 +4,12 @@
 
 ## 统计口径
 
-- 十八篇录文块清单见 `data/shanhaijing-inventory.json`，每项保存页码、原文、注文与待核状态。《南山经》43段、《西山经》82段与《北山经》37段已接入说明；其余结构候选的段界、实体、关系和影印仍待人工核定。不是全书穷尽实体索引，也不是各版本校勘定本。
+- 十八篇录文块清单见 `data/shanhaijing-inventory.json`，每项保存页码、原文、注文与待核状态。《南山经》43段、《西山经》82段与《北山经》57段已接入说明；其余结构候选的段界、实体、关系和影印仍待人工核定。不是全书穷尽实体索引，也不是各版本校勘定本。
 - 已保存十八篇逐行正文、注文、影印页锚点、校对状态和固定修订链接，见 `data/shanhaijing-reference.json`。录文中缺字图保留显式标记，不猜字补齐。
 - 下表按当前条目声明的出处计数；同一条目可引用多篇，同名异篇保持分开。地点锚点、神域、异兽、故事不是同一统计单位，不能相加后声称全书覆盖率。
-- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。192条异兽记录，同名异篇分开；429条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
+- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。207条异兽记录，同名异篇分开；503条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
 - “常规入口”是地图、图鉴、章节目录中的独立条目；“非默认条目”是归档/组，仍可从搜索或直链打开；“未开放”指数据已有记录，但没有可用章节入口。引用某篇不等于完整收录该篇。
-- 项目共 1065 条上述记录（含162条经文阅读段，与独立实体不是同一统计单位）：常规入口 1055，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
+- 项目共 1202 条上述记录（含182条经文阅读段，与独立实体不是同一统计单位）：常规入口 1192，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
 
 ## 十八篇对应清单
 
@@ -17,7 +17,7 @@
 | --- | ---: | ---: | ---: | --- |
 | [南山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%80&oldid=2652851) | 161 | 0 | 0 | 全篇43段说明可读；独立实体仍选编 |
 | [西山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%8C&oldid=2652852) | 596 | 0 | 2 | 82段、508张新卡已接入；其余仍待核 |
-| [北山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853) | 250 | 0 | 0 | 37段、209张新卡已核；其余仍待核 |
+| [北山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853) | 387 | 0 | 0 | 57段、326张新卡已核；其余仍待核 |
 | [东山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854) | 4 | 0 | 0 | 选编，篇内仍有遗漏 |
 | [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 0 | 0 | 0 | 尚无明确篇目对应 |
 | [海外南经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AD&oldid=2652857) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
@@ -51,11 +51,11 @@
 
 ### 03 北山经
 
-- 常规入口：精卫（`beast-jingwei`）；滑魚（求如）（`beast-beishan-huayu-qiuru`）；水馬（求如）（`beast-beishan-shuima-qiuru`）；䑏䟽（帶山）（`beast-beishan-huanshu-daishan`）；鵸䳜（帶山）（`beast-beishan-qitu-daishan`）；儵魚（帶山）（`beast-beishan-youyu-daishan`）；何羅之魚（`beast-beishan-heluo-qiaoming`）；孟槐（`beast-beishan-menghuai-qiaoming`）；鰼鰼之魚（`beast-beishan-xixi-zhuoguang`）；麢羊（涿光）（`beast-beishan-lingyang-zhuoguang`）；蕃（涿光）（`beast-beishan-fan-zhuoguang`）；橐駝（虢山）（`beast-beishan-tuotuo-guoshan`）；寓（虢山）（`beast-beishan-yu-guoshan`）；耳䑕（`beast-beishan-ershu-danxun`）；孟極（`beast-beishan-mengji-shizhe`）；幽鴳（`beast-beishan-youan-bianchun`）；足訾（`beast-beishan-zuzi-manlian`）；鵁（`beast-beishan-jiao-manlian`）；諸犍（`beast-zhu-jian`）；白鵺（`beast-beishan-baiye-danzhang`）；那父（`beast-beishan-nafu-guanti`）；竦斯（`beast-beishan-songsi-guanti`）；旄牛（潘侯）（`beast-beishan-maoniu-panhou`）；長蛇（大咸）（`beast-beishan-changshe-daxian`）；赤鮭（敦薨）（`beast-beishan-chigui-dunhong`）；兕（敦薨）（`beast-beishan-si-dunhong`）；旄牛（敦薨）（`beast-beishan-maoniu-dunhong`）；鳲鳩（敦薨）（`beast-beishan-shijiu-dunhong`）；窫窳（少咸）（`beast-beishan-yayu-shaoxian`）；䰽䰽之魚（`beast-beishan-peipei-shaoxian`）；䲃魚（`beast-beishan-zao-yufa`）；山𤟤（`beast-beishan-shanhui-yufa`）；諸懐（`beast-beishan-zhuhuai-beiyue`）；鮨魚（`beast-beishan-yi-beiyue`）；肥遺（渾夕蛇）（`beast-beishan-feiyi-hunxi`）；野马（羆差郭注）（`beast-beishan-yema-bicha`）；马（北鮮）（`beast-beishan-ma-beixian`）；马（隄山）（`beast-beishan-ma-dishan`）；狕（`beast-beishan-yao-dishan`）；龍龜（隄山）（`beast-beishan-longgui-dishan`）；閭（縣雍）（`beast-beishan-lv-xianyong`）；麋（縣雍）（`beast-beishan-mi-xianyong`）；白翟（縣雍）（`beast-beishan-white-di-xianyong`）；白䳑（縣雍）（`beast-beishan-white-you-xianyong`）；鮆魚（縣雍）（`beast-beishan-ci-xianyong`）；𩣡馬（敦頭）（`beast-beishan-boma-duntou`）；狍鴞（`beast-beishan-paoxiao-gouwu`）；獨𤞞（`beast-beishan-dugu-beixiao`）；𪄀𪃑（`beast-beishan-banmao-beixiao`）；发鸠之山（`place-fajiu`）；北山经山列（`place-north-ranges`）；机木（`plant-beishan-ji-danhu`）；華草（單狐）（`plant-beishan-huacao-danhu`）；漨水（單狐）（`water-beishan-feng-danhu`）；泑水（北山经）（`water-beishan-you-danhu`）；芘石（單狐水文）（`material-beishan-pishi-danhu`）；文石（單狐水文）（`material-beishan-wenshi-danhu`）；铜（求如）（`material-beishan-copper-qiuru`）；玉（求如）（`material-beishan-jade-qiuru`）；滑水（求如）（`water-beishan-hua-qiuru`）；諸毗之水（北山经）（`water-beishan-zhupi-qiuru`）；玉（帶山）（`material-beishan-jade-daishan`）；青碧（帶山）（`material-beishan-qingbi-daishan`）；彭水（帶山）（`water-beishan-peng-daishan`）；芘湖之水（帶山）（`water-beishan-pihu-daishan`）；譙水（譙明）（`water-beishan-qiao-qiaoming`）；青雄黄（譙明）（`material-beishan-qingxionghuang-qiaoming`）；囂水（涿光）（`water-beishan-xiao-zhuoguang`）；松（涿光）（`plant-beishan-pine-zhuoguang`）；栢（涿光）（`plant-beishan-bai-zhuoguang`）；㯶（涿光）（`plant-beishan-zong-zhuoguang`）；橿（涿光）（`plant-beishan-jiang-zhuoguang`）；漆（虢山）（`plant-beishan-qi-guoshan`）；桐（虢山）（`plant-beishan-tong-guoshan`）；椐（虢山）（`plant-beishan-ju-guoshan`）；玉（虢山）（`material-beishan-jade-guoshan`）；铁（虢山）（`material-beishan-iron-guoshan`）；伊水（虢山）（`water-beishan-yi-guoshan`）；玉（虢山之尾）（`material-beishan-jade-guowei`）；魚水（虢山之尾）（`water-beishan-yu-guowei`）；文貝（虢山之尾）（`material-beishan-wenbei-guowei`）；樗（丹熏）（`plant-beishan-chu-danxun`）；柏（丹熏）（`plant-beishan-bai-danxun`）；韭（丹熏）（`plant-beishan-jiu-danxun`）；薤（丹熏）（`plant-beishan-xie-danxun`）；丹雘（丹熏）（`material-beishan-danhuo-danxun`）；熏水（丹熏）（`water-beishan-xun-danxun`）；棠水（丹熏）（`water-beishan-tang-danxun`）；瑶碧（石者）（`material-beishan-yaobi-shizhe`）；泚水（石者）（`water-beishan-ci-shizhe`）；葱（邊春）（`plant-beishan-cong-bianchun`）；葵（邊春）（`plant-beishan-kui-bianchun`）；韭（邊春）（`plant-beishan-jiu-bianchun`）；桃（邊春）（`plant-beishan-tao-bianchun`）；李（邊春）（`plant-beishan-li-bianchun`）；杠水（北山经）（`water-beishan-gang`）；泑澤（北山经）（`water-beishan-youze`）；櫟水（單張）（`water-beishan-li-danzhang`）；樗（灌題）（`plant-beishan-chu-guanti`）；柘（灌題）（`plant-beishan-zhe-guanti`）；流沙（灌題）（`material-beishan-sand-guanti`）；砥（灌題）（`material-beishan-whetstone-guanti`）；匠韓之水（`water-beishan-jianghan-guanti`）；磁石（灌題水文）（`material-beishan-magnetic-guanti`）；松（潘侯）（`plant-beishan-pine-panhou`）；栢（潘侯）（`plant-beishan-bai-panhou`）；榛（潘侯）（`plant-beishan-zhen-panhou`）；楛（潘侯）（`plant-beishan-hu-panhou`）；玉（潘侯）（`material-beishan-jade-panhou`）；铁（潘侯）（`material-beishan-iron-panhou`）；邊水（潘侯）（`water-beishan-bian-panhou`）；櫟澤（潘侯）（`water-beishan-lize-panhou`）；玉（大咸）（`material-beishan-jade-daxian`）；㯶（敦薨）（`plant-beishan-zong-dunhong`）；柟（敦薨）（`plant-beishan-nan-dunhong`）；茈草（敦薨）（`plant-beishan-zicao-dunhong`）；敦薨之水（`water-beishan-dunhong`）；青碧（少咸）（`material-beishan-qingbi-shaoxian`）；敦水（少咸）（`water-beishan-dun-shaoxian`）；鴈門之水（`water-beishan-yanmen-shaoxian`）；瀤澤之水（`water-beishan-huaize-yufa`）；㤗澤（北山经）（`water-beishan-taize`）；枳（北嶽）（`plant-beishan-zhi-beiyue`）；𣗥（北嶽）（`plant-beishan-ji-beiyue`）；刚木（北嶽）（`plant-beishan-gang-beiyue`）；諸懐之水（`water-beishan-zhuhuai-beiyue`）；囂水（北嶽—渾夕）（`water-beishan-xiao-beiyue-hunxi`）；铜（渾夕）（`material-beishan-copper-hunxi`）；玉（渾夕）（`material-beishan-jade-hunxi`）；海（渾夕水文）（`water-beishan-sea-hunxi`）；葱（北單）（`plant-beishan-cong-beidan`）；韭（北單）（`plant-beishan-jiu-beidan`）；鮮水（`water-beishan-xian-beixian`）；涂吾之水（`water-beishan-tuwu-beixian`）；隄水（`water-beishan-di-dishan`）；玉（管涔）（`material-beishan-jade-guancen`）；汾水（管涔）（`water-beishan-fen-guancen`）；玉（少陽）（`material-beishan-jade-shaoyang`）；赤銀（`material-beishan-red-silver-shaoyang`）；酸水（`water-beishan-suan-shaoyang`）；羙赭（少陽）（`material-beishan-ochre-shaoyang`）；玉（縣雍）（`material-beishan-jade-xianyong`）；铜（縣雍）（`material-beishan-copper-xianyong`）；晉水（`water-beishan-jin-xianyong`）；青碧（狐岐）（`material-beishan-qingbi-huqi`）；勝水（`water-beishan-sheng-huqi`）；蒼玉（狐岐）（`material-beishan-dark-jade-huqi`）；鮪水（`water-beishan-wei-baisha`）；白玉（白沙）（`material-beishan-white-jade-baisha`）；狂水（`water-beishan-kuang`）；浮水（狂山）（`water-beishan-fu-kuang`）；羙玉（狂山）（`material-beishan-fine-jade-kuang`）；铜（諸餘）（`material-beishan-copper-zhuyu`）；玉（諸餘）（`material-beishan-jade-zhuyu`）；松（諸餘）（`plant-beishan-pine-zhuyu`）；栢（諸餘）（`plant-beishan-bai-zhuyu`）；諸餘之水（`water-beishan-zhuyu`）；旄水（諸餘—敦頭）（`water-beishan-mao`）；金（敦頭）（`material-beishan-gold-duntou`）；玉（敦頭）（`material-beishan-jade-duntou`）；印澤（`water-beishan-yinze-duntou`）；玉（鉤吾）（`material-beishan-jade-gouwu`）；铜（鉤吾）（`material-beishan-copper-gouwu`）；碧（北囂）（`material-beishan-bi-beixiao`）；玉（北囂）（`material-beishan-jade-beixiao`）；涔水（北囂）（`water-beishan-cen-beixiao`）；卭澤（`water-beishan-qiongze-beixiao`）；河（北山经）（`water-beishan-he`）；單狐之山（`passage-beishan-danhu`）；求如之山（`passage-beishan-qiuru`）；帶山（`passage-beishan-daishan`）；譙明之山（`passage-beishan-qiaoming`）；涿光之山（`passage-beishan-zhuoguang`）；虢山（`passage-beishan-guoshan`）；虢山之尾（`passage-beishan-guowei`）；丹熏之山（`passage-beishan-danxun`）；石者之山（`passage-beishan-shizhe`）；邊春之山（`passage-beishan-bianchun`）；蔓聮之山（`passage-beishan-manlian`）；單張之山（`passage-beishan-danzhang`）；灌題之山（`passage-beishan-guanti`）；潘侯之山（`passage-beishan-panhou`）；小咸之山（`passage-beishan-xiaoxian`）；大咸之山（`passage-beishan-daxian`）；敦薨之山（`passage-beishan-dunhong`）；少咸之山（`passage-beishan-shaoxian`）；獄法之山（`passage-beishan-yufa`）；北嶽之山（`passage-beishan-beiyue`）；渾夕之山（`passage-beishan-hunxi`）；北單之山（`passage-beishan-beidan`）；羆差之山（`passage-beishan-bicha`）；北鮮之山（`passage-beishan-beixian`）；隄山（`passage-beishan-dishan`）；北山经首列总括与祭礼（`passage-beishan-range1-summary`）；管涔之山（`passage-beishan-guancen`）；少陽之山（`passage-beishan-shaoyang`）；縣雍之山（`passage-beishan-xianyong`）；狐岐之山（`passage-beishan-huqi`）；白沙山（`passage-beishan-baisha`）；爾是之山（`passage-beishan-ershi`）；狂山（`passage-beishan-kuang`）；諸餘之山（`passage-beishan-zhuyu`）；敦頭之山（`passage-beishan-duntou`）；鉤吾之山（`passage-beishan-gouwu`）；北囂之山（`passage-beishan-beixiao`）；單狐之山（`place-beishan-danhu`）；求如之山（`place-beishan-qiuru`）；諸毗山（北山郭注）（`place-beishan-zhupi-qiuru`）；帶山（`place-beishan-daishan`）；譙明之山（`place-beishan-qiaoming`）；涿光之山（`place-beishan-zhuoguang`）；虢山（`place-beishan-guoshan`）；虢山之尾（`place-beishan-guowei`）；丹熏之山（`place-beishan-danxun`）；石者之山（`place-beishan-shizhe`）；邊春之山（`place-beishan-bianchun`）；蔓聮之山（`place-beishan-manlian`）；單張之山（`place-beishan-danzhang`）；灌題之山（`place-beishan-guanti`）；潘侯之山（`place-beishan-panhou`）；小咸之山（`place-beishan-xiaoxian`）；大咸之山（`place-beishan-daxian`）；敦薨之山（`place-beishan-dunhong`）；崑崙（敦薨水文）（`place-beishan-kunlun-dunhong`）；少咸之山（`place-beishan-shaoxian`）；鴈門山（郭注）（`place-beishan-yanmen-shaoxian`）；獄法之山（`place-beishan-yufa`）；北嶽之山（`place-beishan-beiyue`）；渾夕之山（`place-beishan-hunxi`）；北單之山（`place-beishan-beidan`）；羆差之山（`place-beishan-bicha`）；北鮮之山（`place-beishan-beixian`）；隄山（`place-beishan-dishan`）；北山经首列总括与祭礼（`rite-beishan-range1-summary`）；首列山神（人面蛇身）（`deity-beishan-human-serpent-range1-summary`）；首列牲祭与瘗埋（`rite-beishan-offerings-range1-summary`）；珪（首列祭玉）（`rite-beishan-gui-range1-summary`）；山北生食记述（`rite-beishan-raw-food-range1-summary`）；管涔之山（`place-beishan-guancen`）；少陽之山（`place-beishan-shaoyang`）；縣雍之山（`place-beishan-xianyong`）；狐岐之山（`place-beishan-huqi`）；白沙山（`place-beishan-baisha`）；爾是之山（`place-beishan-ershi`）；狂山（`place-beishan-kuang`）；諸餘之山（`place-beishan-zhuyu`）；敦頭之山（`place-beishan-duntou`）；鉤吾之山（`place-beishan-gouwu`）；北囂之山（`place-beishan-beixiao`）；精卫填海（`03-04`）。
-- 待补方向：已核37阅读段、209张独立卡，單狐至首列总括及次二北囂见76—90页影印；机木跨行注、郭注地点和同名异篇分开。北山34幅新图已审，諸犍复用旧图；儵魚四首六足三尾、何羅一首十身、鰼鰼十翼羽端鳞等逐项核对；麢羊、蕃、橐駝形貌依据不足留占位。全篇297录文块、90结构候选仅作盘点，候选漏拆风险见data/beishan-edition-review.json；发鸠上下文及其余山系待逐页核对。
+- 常规入口：精卫（`beast-jingwei`）；滑魚（求如）（`beast-beishan-huayu-qiuru`）；水馬（求如）（`beast-beishan-shuima-qiuru`）；䑏䟽（帶山）（`beast-beishan-huanshu-daishan`）；鵸䳜（帶山）（`beast-beishan-qitu-daishan`）；儵魚（帶山）（`beast-beishan-youyu-daishan`）；何羅之魚（`beast-beishan-heluo-qiaoming`）；孟槐（`beast-beishan-menghuai-qiaoming`）；鰼鰼之魚（`beast-beishan-xixi-zhuoguang`）；麢羊（涿光）（`beast-beishan-lingyang-zhuoguang`）；蕃（涿光）（`beast-beishan-fan-zhuoguang`）；橐駝（虢山）（`beast-beishan-tuotuo-guoshan`）；寓（虢山）（`beast-beishan-yu-guoshan`）；耳䑕（`beast-beishan-ershu-danxun`）；孟極（`beast-beishan-mengji-shizhe`）；幽鴳（`beast-beishan-youan-bianchun`）；足訾（`beast-beishan-zuzi-manlian`）；鵁（`beast-beishan-jiao-manlian`）；諸犍（`beast-zhu-jian`）；白鵺（`beast-beishan-baiye-danzhang`）；那父（`beast-beishan-nafu-guanti`）；竦斯（`beast-beishan-songsi-guanti`）；旄牛（潘侯）（`beast-beishan-maoniu-panhou`）；長蛇（大咸）（`beast-beishan-changshe-daxian`）；赤鮭（敦薨）（`beast-beishan-chigui-dunhong`）；兕（敦薨）（`beast-beishan-si-dunhong`）；旄牛（敦薨）（`beast-beishan-maoniu-dunhong`）；鳲鳩（敦薨）（`beast-beishan-shijiu-dunhong`）；窫窳（少咸）（`beast-beishan-yayu-shaoxian`）；䰽䰽之魚（`beast-beishan-peipei-shaoxian`）；䲃魚（`beast-beishan-zao-yufa`）；山𤟤（`beast-beishan-shanhui-yufa`）；諸懐（`beast-beishan-zhuhuai-beiyue`）；鮨魚（`beast-beishan-yi-beiyue`）；肥遺（渾夕蛇）（`beast-beishan-feiyi-hunxi`）；野马（羆差郭注）（`beast-beishan-yema-bicha`）；马（北鮮）（`beast-beishan-ma-beixian`）；马（隄山）（`beast-beishan-ma-dishan`）；狕（`beast-beishan-yao-dishan`）；龍龜（隄山）（`beast-beishan-longgui-dishan`）；閭（縣雍）（`beast-beishan-lv-xianyong`）；麋（縣雍）（`beast-beishan-mi-xianyong`）；白翟（縣雍）（`beast-beishan-white-di-xianyong`）；白䳑（縣雍）（`beast-beishan-white-you-xianyong`）；鮆魚（縣雍）（`beast-beishan-ci-xianyong`）；𩣡馬（敦頭）（`beast-beishan-boma-duntou`）；狍鴞（`beast-beishan-paoxiao-gouwu`）；獨𤞞（`beast-beishan-dugu-beixiao`）；𪄀𪃑（`beast-beishan-banmao-beixiao`）；居暨（`beast-beishan-juji-liangqu`）；囂（梁渠鸟）（`beast-beishan-xiao-liangqu`）；马（湖灌）（`beast-beishan-ma-huguan`）；䱇（湖灌）（`beast-beishan-shan-huguan`）；怪蛇（洹山）（`beast-beishan-strange-snakes-huan`）；䮝（歸山）（`beast-beishan-hui-guishan`）；䴅（歸山）（`beast-beishan-fen-guishan`）；人魚（龍侯）（`beast-beishan-renyu-longhou`）；天馬（馬成）（`beast-beishan-tianma-macheng`）；鶌鶋（`beast-beishan-quju-macheng`）；飛䑕（天池）（`beast-beishan-feishu-tianchi`）；領胡（`beast-beishan-linghu-yangshan`）；𧰼蛇（陽山鸟）（`beast-beishan-xiangshe-yangshan`）；𩹴父之魚（`beast-beishan-xianfu-yangshan`）；酸與（景山）（`beast-beishan-suanyu-jingshan`）；发鸠之山（`place-fajiu`）；北山经山列（`place-north-ranges`）；机木（`plant-beishan-ji-danhu`）；華草（單狐）（`plant-beishan-huacao-danhu`）；漨水（單狐）（`water-beishan-feng-danhu`）；泑水（北山经）（`water-beishan-you-danhu`）；芘石（單狐水文）（`material-beishan-pishi-danhu`）；文石（單狐水文）（`material-beishan-wenshi-danhu`）；铜（求如）（`material-beishan-copper-qiuru`）；玉（求如）（`material-beishan-jade-qiuru`）；滑水（求如）（`water-beishan-hua-qiuru`）；諸毗之水（北山经）（`water-beishan-zhupi-qiuru`）；玉（帶山）（`material-beishan-jade-daishan`）；青碧（帶山）（`material-beishan-qingbi-daishan`）；彭水（帶山）（`water-beishan-peng-daishan`）；芘湖之水（帶山）（`water-beishan-pihu-daishan`）；譙水（譙明）（`water-beishan-qiao-qiaoming`）；青雄黄（譙明）（`material-beishan-qingxionghuang-qiaoming`）；囂水（涿光）（`water-beishan-xiao-zhuoguang`）；松（涿光）（`plant-beishan-pine-zhuoguang`）；栢（涿光）（`plant-beishan-bai-zhuoguang`）；㯶（涿光）（`plant-beishan-zong-zhuoguang`）；橿（涿光）（`plant-beishan-jiang-zhuoguang`）；漆（虢山）（`plant-beishan-qi-guoshan`）；桐（虢山）（`plant-beishan-tong-guoshan`）；椐（虢山）（`plant-beishan-ju-guoshan`）；玉（虢山）（`material-beishan-jade-guoshan`）；铁（虢山）（`material-beishan-iron-guoshan`）；伊水（虢山）（`water-beishan-yi-guoshan`）；玉（虢山之尾）（`material-beishan-jade-guowei`）；魚水（虢山之尾）（`water-beishan-yu-guowei`）；文貝（虢山之尾）（`material-beishan-wenbei-guowei`）；樗（丹熏）（`plant-beishan-chu-danxun`）；柏（丹熏）（`plant-beishan-bai-danxun`）；韭（丹熏）（`plant-beishan-jiu-danxun`）；薤（丹熏）（`plant-beishan-xie-danxun`）；丹雘（丹熏）（`material-beishan-danhuo-danxun`）；熏水（丹熏）（`water-beishan-xun-danxun`）；棠水（丹熏）（`water-beishan-tang-danxun`）；瑶碧（石者）（`material-beishan-yaobi-shizhe`）；泚水（石者）（`water-beishan-ci-shizhe`）；葱（邊春）（`plant-beishan-cong-bianchun`）；葵（邊春）（`plant-beishan-kui-bianchun`）；韭（邊春）（`plant-beishan-jiu-bianchun`）；桃（邊春）（`plant-beishan-tao-bianchun`）；李（邊春）（`plant-beishan-li-bianchun`）；杠水（北山经）（`water-beishan-gang`）；泑澤（北山经）（`water-beishan-youze`）；櫟水（單張）（`water-beishan-li-danzhang`）；樗（灌題）（`plant-beishan-chu-guanti`）；柘（灌題）（`plant-beishan-zhe-guanti`）；流沙（灌題）（`material-beishan-sand-guanti`）；砥（灌題）（`material-beishan-whetstone-guanti`）；匠韓之水（`water-beishan-jianghan-guanti`）；磁石（灌題水文）（`material-beishan-magnetic-guanti`）；松（潘侯）（`plant-beishan-pine-panhou`）；栢（潘侯）（`plant-beishan-bai-panhou`）；榛（潘侯）（`plant-beishan-zhen-panhou`）；楛（潘侯）（`plant-beishan-hu-panhou`）；玉（潘侯）（`material-beishan-jade-panhou`）；铁（潘侯）（`material-beishan-iron-panhou`）；邊水（潘侯）（`water-beishan-bian-panhou`）；櫟澤（潘侯）（`water-beishan-lize-panhou`）；玉（大咸）（`material-beishan-jade-daxian`）；㯶（敦薨）（`plant-beishan-zong-dunhong`）；柟（敦薨）（`plant-beishan-nan-dunhong`）；茈草（敦薨）（`plant-beishan-zicao-dunhong`）；敦薨之水（`water-beishan-dunhong`）；青碧（少咸）（`material-beishan-qingbi-shaoxian`）；敦水（少咸）（`water-beishan-dun-shaoxian`）；鴈門之水（`water-beishan-yanmen-shaoxian`）；瀤澤之水（`water-beishan-huaize-yufa`）；㤗澤（北山经）（`water-beishan-taize`）；枳（北嶽）（`plant-beishan-zhi-beiyue`）；𣗥（北嶽）（`plant-beishan-ji-beiyue`）；刚木（北嶽）（`plant-beishan-gang-beiyue`）；諸懐之水（`water-beishan-zhuhuai-beiyue`）；囂水（北嶽—渾夕）（`water-beishan-xiao-beiyue-hunxi`）；铜（渾夕）（`material-beishan-copper-hunxi`）；玉（渾夕）（`material-beishan-jade-hunxi`）；海（渾夕水文）（`water-beishan-sea-hunxi`）；葱（北單）（`plant-beishan-cong-beidan`）；韭（北單）（`plant-beishan-jiu-beidan`）；鮮水（`water-beishan-xian-beixian`）；涂吾之水（`water-beishan-tuwu-beixian`）；隄水（`water-beishan-di-dishan`）；玉（管涔）（`material-beishan-jade-guancen`）；汾水（管涔）（`water-beishan-fen-guancen`）；玉（少陽）（`material-beishan-jade-shaoyang`）；赤銀（`material-beishan-red-silver-shaoyang`）；酸水（`water-beishan-suan-shaoyang`）；羙赭（少陽）（`material-beishan-ochre-shaoyang`）；玉（縣雍）（`material-beishan-jade-xianyong`）；铜（縣雍）（`material-beishan-copper-xianyong`）；晉水（`water-beishan-jin-xianyong`）；青碧（狐岐）（`material-beishan-qingbi-huqi`）；勝水（`water-beishan-sheng-huqi`）；蒼玉（狐岐）（`material-beishan-dark-jade-huqi`）；鮪水（`water-beishan-wei-baisha`）；白玉（白沙）（`material-beishan-white-jade-baisha`）；狂水（`water-beishan-kuang`）；浮水（狂山）（`water-beishan-fu-kuang`）；羙玉（狂山）（`material-beishan-fine-jade-kuang`）；铜（諸餘）（`material-beishan-copper-zhuyu`）；玉（諸餘）（`material-beishan-jade-zhuyu`）；松（諸餘）（`plant-beishan-pine-zhuyu`）；栢（諸餘）（`plant-beishan-bai-zhuyu`）；諸餘之水（`water-beishan-zhuyu`）；旄水（諸餘—敦頭）（`water-beishan-mao`）；金（敦頭）（`material-beishan-gold-duntou`）；玉（敦頭）（`material-beishan-jade-duntou`）；印澤（`water-beishan-yinze-duntou`）；玉（鉤吾）（`material-beishan-jade-gouwu`）；铜（鉤吾）（`material-beishan-copper-gouwu`）；碧（北囂）（`material-beishan-bi-beixiao`）；玉（北囂）（`material-beishan-jade-beixiao`）；涔水（北囂）（`water-beishan-cen-beixiao`）；卭澤（`water-beishan-qiongze-beixiao`）；金（梁渠）（`material-beishan-gold-liangqu`）；玉（梁渠）（`material-beishan-jade-liangqu`）；脩水（梁渠）（`water-beishan-xiu-liangqu`）；鴈門（梁渠水名）（`water-beishan-yanmen-liangqu`）；玉（湖灌）（`material-beishan-jade-huguan`）；碧（湖灌）（`material-beishan-bi-huguan`）；湖灌之水（`water-beishan-huguan`）；海（湖灌）（`water-beishan-sea-huguan`）；赤理无名木（湖灌）（`plant-beishan-redgrain-huguan`）；金（洹山）（`material-beishan-gold-huan`）；玉（洹山）（`material-beishan-jade-huan`）；三桑（洹山）（`plant-beishan-sansang-huan`）；百果树（洹山）（`plant-beishan-fruit-trees-huan`）；金（敦題）（`material-beishan-gold-dunti`）；玉（敦題）（`material-beishan-jade-dunti`）；北海（敦題）（`water-beishan-north-sea-dunti`）；金（歸山）（`material-beishan-gold-guishan`）；玉（歸山）（`material-beishan-jade-guishan`）；碧（歸山）（`material-beishan-bi-guishan`）；金（龍侯）（`material-beishan-gold-longhou`）；玉（龍侯）（`material-beishan-jade-longhou`）；决决之水（`water-beishan-juejue-longhou`）；文石（馬成）（`material-beishan-wenstone-macheng`）；金（馬成）（`material-beishan-gold-macheng`）；玉（馬成）（`material-beishan-jade-macheng`）；玉（咸山）（`material-beishan-jade-xianshan`）；铜（咸山）（`material-beishan-copper-xianshan`）；條菅之水（`water-beishan-tiaojian-xianshan`）；長澤（咸山）（`water-beishan-changze-xianshan`）；松（咸山）（`plant-beishan-pine-xianshan`）；栢（咸山）（`plant-beishan-bai-xianshan`）；茈草（咸山）（`plant-beishan-zi-xianshan`）；噐酸（未详物产）（`material-beishan-qisuan-xianshan`）；文石（天池）（`material-beishan-wenstone-tianchi`）；黄堊（天池）（`material-beishan-yellow-e-tianchi`）；澠水（天池）（`water-beishan-sheng-tianchi`）；玉（陽山）（`material-beishan-jade-yangshan`）；金（陽山）（`material-beishan-gold-yangshan`）；铜（陽山）（`material-beishan-copper-yangshan`）；留水（`water-beishan-liu-yangshan`）；蒼玉（賁聞）（`material-beishan-dark-jade-benwen`）；黄堊（賁聞）（`material-beishan-yellow-e-benwen`）；𣵀石（賁聞）（`material-beishan-nie-stone-benwen`）；石（王屋）（`material-beishan-stones-wangwu`）；㶌水（王屋）（`water-beishan-lian-wangwu`）；玉（教山）（`material-beishan-jade-jiaoshan`）；金（發丸）（`material-beishan-gold-fawan`）；玉（發丸）（`material-beishan-jade-fawan`）；教水（乾河）（`water-beishan-jiao-jiaoshan`）；赭（景山）（`material-beishan-ochre-jingshan`）；玉（景山）（`material-beishan-jade-jingshan`）；𬐱販之澤（景山南望）（`water-beishan-yanfan-jingshan`）；少澤（景山北望）（`water-beishan-shaoze-jingshan`）；藷藇（景山）（`plant-beishan-zhuyu-jingshan`）；秦椒（景山）（`plant-beishan-qinjiao-jingshan`）；蒼玉（孟門）（`material-beishan-dark-jade-mengmen`）；金（孟門）（`material-beishan-gold-mengmen`）；黄堊（孟門）（`material-beishan-yellow-e-mengmen`）；𣵀石（孟門）（`material-beishan-nie-mengmen`）；羙玉（平山）（`material-beishan-fine-jade-pingshan`）；平水（`water-beishan-ping-pingshan`）；羙玉（京山）（`material-beishan-fine-jade-jingshan-east`）；赤铜（京山）（`material-beishan-red-copper-jingshan-east`）；𤣥䃤（京山黑砥）（`material-beishan-xuansu-jingshan-east`）；漆木（京山）（`plant-beishan-lacquer-jingshan-east`）；竹（京山）（`plant-beishan-bamboo-jingshan-east`）；髙水（京山）（`water-beishan-gao-jingshan-east`）；金（虫尾）（`material-beishan-gold-chongwei`）；玉（虫尾）（`material-beishan-jade-chongwei`）；青碧（虫尾）（`material-beishan-qingbi-chongwei`）；竹（虫尾）（`plant-beishan-bamboo-chongwei`）；丹水（虫尾）（`water-beishan-dan-chongwei`）；薄水（虫尾）（`water-beishan-bo-chongwei`）；黄澤（虫尾所注）（`water-beishan-huangze-chongwei`）；河（北山经）（`water-beishan-he`）；單狐之山（`passage-beishan-danhu`）；求如之山（`passage-beishan-qiuru`）；帶山（`passage-beishan-daishan`）；譙明之山（`passage-beishan-qiaoming`）；涿光之山（`passage-beishan-zhuoguang`）；虢山（`passage-beishan-guoshan`）；虢山之尾（`passage-beishan-guowei`）；丹熏之山（`passage-beishan-danxun`）；石者之山（`passage-beishan-shizhe`）；邊春之山（`passage-beishan-bianchun`）；蔓聮之山（`passage-beishan-manlian`）；單張之山（`passage-beishan-danzhang`）；灌題之山（`passage-beishan-guanti`）；潘侯之山（`passage-beishan-panhou`）；小咸之山（`passage-beishan-xiaoxian`）；大咸之山（`passage-beishan-daxian`）；敦薨之山（`passage-beishan-dunhong`）；少咸之山（`passage-beishan-shaoxian`）；獄法之山（`passage-beishan-yufa`）；北嶽之山（`passage-beishan-beiyue`）；渾夕之山（`passage-beishan-hunxi`）；北單之山（`passage-beishan-beidan`）；羆差之山（`passage-beishan-bicha`）；北鮮之山（`passage-beishan-beixian`）；隄山（`passage-beishan-dishan`）；北山经首列总括与祭礼（`passage-beishan-range1-summary`）；管涔之山（`passage-beishan-guancen`）；少陽之山（`passage-beishan-shaoyang`）；縣雍之山（`passage-beishan-xianyong`）；狐岐之山（`passage-beishan-huqi`）；白沙山（`passage-beishan-baisha`）；爾是之山（`passage-beishan-ershi`）；狂山（`passage-beishan-kuang`）；諸餘之山（`passage-beishan-zhuyu`）；敦頭之山（`passage-beishan-duntou`）；鉤吾之山（`passage-beishan-gouwu`）；北囂之山（`passage-beishan-beixiao`）；梁渠之山（`passage-beishan-liangqu`）；姑灌之山（`passage-beishan-guguan`）；湖灌之山（`passage-beishan-huguan`）；洹山（`passage-beishan-huan`）；敦題之山（`passage-beishan-dunti`）；北次二经总括与祭礼（`passage-beishan-range2-summary`）；太行之山（`passage-beishan-taihang`）；龍侯之山（`passage-beishan-longhou`）；馬成之山（`passage-beishan-macheng`）；咸山（`passage-beishan-xianshan`）；天池之山（`passage-beishan-tianchi`）；陽山（`passage-beishan-yangshan`）；賁聞之山（`passage-beishan-benwen`）；王屋之山（`passage-beishan-wangwu`）；教山（`passage-beishan-jiaoshan`）；景山（`passage-beishan-jingshan`）；孟門之山（`passage-beishan-mengmen`）；平山（`passage-beishan-pingshan`）；京山（`passage-beishan-jingshan-east`）；虫尾之山（`passage-beishan-chongwei`）；單狐之山（`place-beishan-danhu`）；求如之山（`place-beishan-qiuru`）；諸毗山（北山郭注）（`place-beishan-zhupi-qiuru`）；帶山（`place-beishan-daishan`）；譙明之山（`place-beishan-qiaoming`）；涿光之山（`place-beishan-zhuoguang`）；虢山（`place-beishan-guoshan`）；虢山之尾（`place-beishan-guowei`）；丹熏之山（`place-beishan-danxun`）；石者之山（`place-beishan-shizhe`）；邊春之山（`place-beishan-bianchun`）；蔓聮之山（`place-beishan-manlian`）；單張之山（`place-beishan-danzhang`）；灌題之山（`place-beishan-guanti`）；潘侯之山（`place-beishan-panhou`）；小咸之山（`place-beishan-xiaoxian`）；大咸之山（`place-beishan-daxian`）；敦薨之山（`place-beishan-dunhong`）；崑崙（敦薨水文）（`place-beishan-kunlun-dunhong`）；少咸之山（`place-beishan-shaoxian`）；鴈門山（郭注）（`place-beishan-yanmen-shaoxian`）；獄法之山（`place-beishan-yufa`）；北嶽之山（`place-beishan-beiyue`）；渾夕之山（`place-beishan-hunxi`）；北單之山（`place-beishan-beidan`）；羆差之山（`place-beishan-bicha`）；北鮮之山（`place-beishan-beixian`）；隄山（`place-beishan-dishan`）；北山经首列总括与祭礼（`rite-beishan-range1-summary`）；首列山神（人面蛇身）（`deity-beishan-human-serpent-range1-summary`）；首列牲祭与瘗埋（`rite-beishan-offerings-range1-summary`）；珪（首列祭玉）（`rite-beishan-gui-range1-summary`）；山北生食记述（`rite-beishan-raw-food-range1-summary`）；管涔之山（`place-beishan-guancen`）；少陽之山（`place-beishan-shaoyang`）；縣雍之山（`place-beishan-xianyong`）；狐岐之山（`place-beishan-huqi`）；白沙山（`place-beishan-baisha`）；爾是之山（`place-beishan-ershi`）；狂山（`place-beishan-kuang`）；諸餘之山（`place-beishan-zhuyu`）；敦頭之山（`place-beishan-duntou`）；鉤吾之山（`place-beishan-gouwu`）；北囂之山（`place-beishan-beixiao`）；梁渠之山（`place-beishan-liangqu`）；姑灌之山（`place-beishan-guguan`）；湖灌之山（`place-beishan-huguan`）；洹山（`place-beishan-huan`）；流沙（洹山行程）（`place-beishan-liusha-huan`）；敦題之山（`place-beishan-dunti`）；北次二经总括与祭礼（`rite-beishan-range2-summary`）；次二山神（蛇身人面）（`deity-beishan-human-serpent-range2-summary`）；次二牲祭瘗埋（`rite-beishan-animal-burial-range2`）；次二投玉不糈（`rite-beishan-jade-casting-range2`）；璧（次二祭玉）（`rite-beishan-bi-range2`）；珪（次二祭玉）（`rite-beishan-gui-range2`）；太行之山（`place-beishan-taihang`）；歸山（太行之首）（`place-beishan-guishan`）；龍侯之山（`place-beishan-longhou`）；馬成之山（`place-beishan-macheng`）；咸山（`place-beishan-xianshan`）；天池之山（`place-beishan-tianchi`）；陽山（`place-beishan-yangshan`）；賁聞之山（`place-beishan-benwen`）；王屋之山（`place-beishan-wangwu`）；教山（`place-beishan-jiaoshan`）；發丸之山（两山记述）（`place-beishan-fawan`）；景山（`place-beishan-jingshan`）；孟門之山（`place-beishan-mengmen`）；平山（`place-beishan-pingshan`）；京山（`place-beishan-jingshan-east`）；虫尾之山（`place-beishan-chongwei`）；精卫填海（`03-04`）。
+- 待补方向：已核57阅读段、326张独立卡，單狐至首列总括及次三虫尾见76—98页影印；机木跨行注、郭注地点和同名异篇分开。北山48幅新图已审，諸犍复用旧图；儵魚四首六足三尾、何羅一首十身、鰼鰼十翼羽端鳞等逐项核对；麢羊、蕃、橐駝形貌依据不足留占位。全篇297录文块、90结构候选仅作盘点，候选漏拆风险见data/beishan-edition-review.json；发鸠上下文及其余山系待逐页核对。
 - 校核入口：[该篇固定修订](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853)；录文尚需与影印页对校，不把自动导入视为已核对。
 
-- 單狐至次二北囂source-03-0002—0132已对照76—90页，0009校回76页、0018校回77页、0027校回78页、0036校回79页、0045校回80页、0054校回81页、0063校回82页、0072校回83页、0081校回84页、0090校回85页、0099校回86页、0108校回87页、0117校回88页、0126校回89页；全篇结构定位与其他段落仍为待核，不能据候选数量或三列录文数字宣称已完成。
+- 單狐至次三虫尾source-03-0002—0201已对照76—98页，0009校回76页、0018校回77页、0027校回78页、0036校回79页、0045校回80页、0054校回81页、0063校回82页、0072校回83页、0081校回84页、0090校回85页、0099校回86页、0108校回87页、0117校回88页、0126校回89页、0135校回90页、0144校回91页、0153校回92页、0162校回93页、0171校回94页、0180校回95页、0189校回96页、0198校回97页；全篇结构定位与其他段落仍为待核，不能据候选数量或三列录文数字宣称已完成。
 
 ### 04 东山经
 
@@ -365,6 +365,21 @@
 | `beast-beishan-paoxiao-gouwu` | 狍鴞 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-beishan-dugu-beixiao` | 獨𤞞 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-beishan-banmao-beixiao` | 𪄀𪃑 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-juji-liangqu` | 居暨 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-xiao-liangqu` | 囂（梁渠鸟） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-ma-huguan` | 马（湖灌） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-shan-huguan` | 䱇（湖灌） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-strange-snakes-huan` | 怪蛇（洹山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-hui-guishan` | 䮝（歸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-fen-guishan` | 䴅（歸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-renyu-longhou` | 人魚（龍侯） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-tianma-macheng` | 天馬（馬成） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-quju-macheng` | 鶌鶋 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-feishu-tianchi` | 飛䑕（天池） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-linghu-yangshan` | 領胡 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-xiangshe-yangshan` | 𧰼蛇（陽山鸟） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-xianfu-yangshan` | 𩹴父之魚 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-suanyu-jingshan` | 酸與（景山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-qingqiu` | 青丘之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-fajiu` | 发鸠之山 | 《山海经》 | 常规入口 | 《北山经》 |
 | `place-kunlun` | 昆仑之墟 | 《山海经》 | 常规入口 | 《海内西经》 |
@@ -810,6 +825,80 @@
 | `material-beishan-jade-beixiao` | 玉（北囂） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-beishan-cen-beixiao` | 涔水（北囂） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-beishan-qiongze-beixiao` | 卭澤 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-liangqu` | 金（梁渠） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-liangqu` | 玉（梁渠） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-xiu-liangqu` | 脩水（梁渠） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-yanmen-liangqu` | 鴈門（梁渠水名） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-huguan` | 玉（湖灌） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-bi-huguan` | 碧（湖灌） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-huguan` | 湖灌之水 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-sea-huguan` | 海（湖灌） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-redgrain-huguan` | 赤理无名木（湖灌） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-huan` | 金（洹山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-huan` | 玉（洹山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-sansang-huan` | 三桑（洹山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-fruit-trees-huan` | 百果树（洹山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-dunti` | 金（敦題） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-dunti` | 玉（敦題） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-north-sea-dunti` | 北海（敦題） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-guishan` | 金（歸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-guishan` | 玉（歸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-bi-guishan` | 碧（歸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-longhou` | 金（龍侯） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-longhou` | 玉（龍侯） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-juejue-longhou` | 决决之水 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-wenstone-macheng` | 文石（馬成） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-macheng` | 金（馬成） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-macheng` | 玉（馬成） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-xianshan` | 玉（咸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-copper-xianshan` | 铜（咸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-tiaojian-xianshan` | 條菅之水 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-changze-xianshan` | 長澤（咸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-pine-xianshan` | 松（咸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-bai-xianshan` | 栢（咸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-zi-xianshan` | 茈草（咸山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-qisuan-xianshan` | 噐酸（未详物产） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-wenstone-tianchi` | 文石（天池） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-yellow-e-tianchi` | 黄堊（天池） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-sheng-tianchi` | 澠水（天池） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-yangshan` | 玉（陽山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-yangshan` | 金（陽山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-copper-yangshan` | 铜（陽山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-liu-yangshan` | 留水 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-dark-jade-benwen` | 蒼玉（賁聞） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-yellow-e-benwen` | 黄堊（賁聞） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-nie-stone-benwen` | 𣵀石（賁聞） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-stones-wangwu` | 石（王屋） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-lian-wangwu` | 㶌水（王屋） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-jiaoshan` | 玉（教山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-fawan` | 金（發丸） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-fawan` | 玉（發丸） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-jiao-jiaoshan` | 教水（乾河） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-ochre-jingshan` | 赭（景山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-jingshan` | 玉（景山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-yanfan-jingshan` | 𬐱販之澤（景山南望） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-shaoze-jingshan` | 少澤（景山北望） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-zhuyu-jingshan` | 藷藇（景山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-qinjiao-jingshan` | 秦椒（景山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-dark-jade-mengmen` | 蒼玉（孟門） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-mengmen` | 金（孟門） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-yellow-e-mengmen` | 黄堊（孟門） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-nie-mengmen` | 𣵀石（孟門） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-fine-jade-pingshan` | 羙玉（平山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-ping-pingshan` | 平水 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-fine-jade-jingshan-east` | 羙玉（京山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-red-copper-jingshan-east` | 赤铜（京山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-xuansu-jingshan-east` | 𤣥䃤（京山黑砥） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-lacquer-jingshan-east` | 漆木（京山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-bamboo-jingshan-east` | 竹（京山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-gao-jingshan-east` | 髙水（京山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-gold-chongwei` | 金（虫尾） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-chongwei` | 玉（虫尾） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-qingbi-chongwei` | 青碧（虫尾） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-bamboo-chongwei` | 竹（虫尾） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-dan-chongwei` | 丹水（虫尾） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-bo-chongwei` | 薄水（虫尾） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-huangze-chongwei` | 黄澤（虫尾所注） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-beishan-he` | 河（北山经） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-zhaoyao` | 招摇之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -973,6 +1062,26 @@
 | `passage-beishan-duntou` | 敦頭之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-beishan-gouwu` | 鉤吾之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-beishan-beixiao` | 北囂之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-liangqu` | 梁渠之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-guguan` | 姑灌之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-huguan` | 湖灌之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-huan` | 洹山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-dunti` | 敦題之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-range2-summary` | 北次二经总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-taihang` | 太行之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-longhou` | 龍侯之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-macheng` | 馬成之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-xianshan` | 咸山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-tianchi` | 天池之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-yangshan` | 陽山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-benwen` | 賁聞之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-wangwu` | 王屋之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-jiaoshan` | 教山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-jingshan` | 景山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-mengmen` | 孟門之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-pingshan` | 平山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-jingshan-east` | 京山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-chongwei` | 虫尾之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-yuanyi` | 猨翼之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-di` | 祗山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -1195,6 +1304,34 @@
 | `place-beishan-duntou` | 敦頭之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-beishan-gouwu` | 鉤吾之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-beishan-beixiao` | 北囂之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-liangqu` | 梁渠之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-guguan` | 姑灌之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-huguan` | 湖灌之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-huan` | 洹山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-liusha-huan` | 流沙（洹山行程） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-dunti` | 敦題之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-beishan-range2-summary` | 北次二经总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `deity-beishan-human-serpent-range2-summary` | 次二山神（蛇身人面） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-beishan-animal-burial-range2` | 次二牲祭瘗埋 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-beishan-jade-casting-range2` | 次二投玉不糈 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-beishan-bi-range2` | 璧（次二祭玉） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-beishan-gui-range2` | 珪（次二祭玉） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-taihang` | 太行之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-guishan` | 歸山（太行之首） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-longhou` | 龍侯之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-macheng` | 馬成之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-xianshan` | 咸山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-tianchi` | 天池之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-yangshan` | 陽山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-benwen` | 賁聞之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-wangwu` | 王屋之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-jiaoshan` | 教山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-fawan` | 發丸之山（两山记述） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-jingshan` | 景山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-mengmen` | 孟門之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-pingshan` | 平山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-jingshan-east` | 京山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-chongwei` | 虫尾之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `01-01` | 盘古开天 | 其他古籍 | 常规入口 | 《三五历纪》（三国·吴·徐整），佚文见《艺文类聚》卷一引、《太平御览》卷二引 |
 | `01-02` | 女娲造人 | 其他古籍 | 常规入口 | 《风俗通义·皇霸》卷一（东汉·应劭），见王利器《风俗通义校注》 |
 | `01-03` | 女娲补天 | 其他古籍 | 非默认条目 | 《淮南子·览冥训》（西汉·刘安），高诱注 |
@@ -1295,7 +1432,7 @@
 - `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。
 - `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。
 - `python data/build_xishan.py`：合并西山经82段与508张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。
-- `python data/build_beishan.py`：合并已核北山经單狐至首列总括及次二北囂37段及209张双语卡（含复用諸犍），保留其他篇目与旧ID；`python frontend/scripts/prepare-nanshan-artwork.py --chapter beishan`仅导出已审图。随后重建全书清单和本盘点。
+- `python data/build_beishan.py`：合并已核北山经單狐至首列总括及次三虫尾57段及326张双语卡（含复用諸犍），保留其他篇目与旧ID；`python frontend/scripts/prepare-nanshan-artwork.py --chapter beishan`仅导出已审图。随后重建全书清单和本盘点。
 - `python frontend/scripts/prepare-nanshan-artwork.py --chapter xishan`：仅导出已审核西山经插画。随后运行全书清单和本盘点构建器更新统计。
 - `python data/audit_shanhaijing.py`：离线重建本清单和网页来源分类。
 - `python data/audit_shanhaijing.py --check`：只检查快照结构、分类与清单是否和现有数据一致；CI运行该项。

@@ -15,23 +15,24 @@ const [world, english, inventory, review, scans, snapshot, catalog] = await Prom
 ].map(json));
 const entries = worldEntries(world), index = new Map(entries.map(e => [e.id, e]));
 const selected = entries.filter(e => e.content_batch?.startsWith('beishan-'));
-const newBatches = ['kuang','zhuyu','duntou','gouwu','beixiao'].map(s => 'beishan-'+s);
+const newBatches = ['liangqu','guguan','huguan','huan','dunti','range2-summary','taihang','longhou','macheng','xianshan','tianchi','yangshan','benwen','wangwu','jiaoshan','jingshan','mengmen','pingshan','jingshan-east','chongwei'].map(s => 'beishan-'+s);
+const commonChecks = process.env.ATLAS_COMMON_CHECKS !== '0';
 const activeBatches = process.env.ATLAS_BATCH ? [process.env.ATLAS_BATCH] : newBatches;
 assert.ok(activeBatches.every(b => newBatches.includes(b)));
-const browserEntries = selected.filter(e => activeBatches.includes(e.content_batch) || e.id === 'water-beishan-mao' && activeBatches.includes('beishan-duntou'));
+const browserEntries = selected.filter(e => activeBatches.includes(e.content_batch) || e.id==='water-beishan-he' && activeBatches.some(b=>['beishan-longhou','beishan-yangshan','beishan-jiaoshan','beishan-jingshan-east','beishan-chongwei'].includes(b)) || e.id==='water-beishan-taize' && activeBatches.includes('beishan-wangwu'));
 const activePassages = world.passages.filter(p => activeBatches.includes(p.content_batch));
 const layoutEntries = [...activePassages, ...activePassages.map(p => {
-  const creatures=browserEntries.filter(e=>e.content_batch===p.content_batch&&e.artwork&&['beast','deity'].includes(e.kind));
+  const creatures=browserEntries.filter(e=>e.content_batch===p.content_batch&&e.artwork&&['beast','deity','plant'].includes(e.kind));
   return creatures.find(e=>/youyu|heluo|xixi/.test(e.id))||creatures[0];
 }).filter(Boolean)];
 const passage = index.get('passage-beishan-danhu');
 const place = index.get('place-beishan-danhu');
 assert.equal(index.size, entries.length);
-assert.equal(selected.length, 246);
-assert.equal(review.entry_ids.length, 209);
+assert.equal(selected.length, 383);
+assert.equal(review.entry_ids.length, 326);
 assert.equal(world.passages.filter(p => p.id.startsWith('passage-nanshan-')).length, 43);
 assert.equal(world.passages.filter(p => p.source_book === 2).length, 82);
-assert.equal(world.passages.filter(p => p.source_book === 3).length, 37);
+assert.equal(world.passages.filter(p => p.source_book === 3).length, 57);
 assert.deepEqual(passage.source_unit_ids, ['source-03-0002', 'source-03-0003', 'source-03-0004']);
 assert.equal(passage.quote, snapshot.chapters[2].lines.slice(1, 4).map(l => l.text).join(''));
 assert.equal(passage.captured_text, passage.quote);
@@ -39,18 +40,18 @@ assert.ok(!passage.quote.includes('求如'));
 assert.ok(passage.commentary_quote.includes('出蜀中音\n〔影印页76〕飢；音逢'));
 assert.ok(index.get('plant-beishan-ji-danhu').commentary_quote.endsWith('音飢'));
 assert.deepEqual(passage.captured_commentary.map(r => r.annotations), snapshot.chapters[2].lines.slice(1, 4).map(l => l.annotations));
-assert.equal(inventory.chapters[2].explained_blocks, 131);
+assert.equal(inventory.chapters[2].explained_blocks, 200);
 assert.equal(inventory.chapters[2].semantic_review, 'partial');
-assert.equal(inventory.chapters[2].pending_candidate_passages, 53);
+assert.equal(inventory.chapters[2].pending_candidate_passages, 34);
 assert.equal(inventory.units.find(u => u.id === 'source-03-0001').status, 'heading_metadata');
-assert.equal(inventory.units.find(u => u.id === 'source-03-0133').status, 'pending_review');
-for (const [id,page,captured] of [['source-03-0018',77,78],['source-03-0027',78,79],['source-03-0036',79,80],['source-03-0045',80,81],['source-03-0054',81,82],['source-03-0063',82,83],['source-03-0072',83,84],['source-03-0081',84,85],['source-03-0090',85,86],['source-03-0099',86,87],['source-03-0108',87,88],['source-03-0117',88,89],['source-03-0126',89,90]]) {
+assert.equal(inventory.units.find(u => u.id === 'source-03-0202').status, 'pending_review');
+for (const [id,page,captured] of [['source-03-0018',77,78],['source-03-0027',78,79],['source-03-0036',79,80],['source-03-0045',80,81],['source-03-0054',81,82],['source-03-0063',82,83],['source-03-0072',83,84],['source-03-0081',84,85],['source-03-0090',85,86],['source-03-0099',86,87],['source-03-0108',87,88],['source-03-0117',88,89],['source-03-0126',89,90],['source-03-0135',90,91],['source-03-0144',91,92],['source-03-0153',92,93],['source-03-0162',93,94],['source-03-0171',94,95],['source-03-0180',95,96],['source-03-0189',96,97],['source-03-0198',97,98]]) {
   const u=inventory.units.find(u=>u.id===id); assert.ok(u.page_url.endsWith('/'+page)); assert.ok(u.captured_page_url.endsWith('/'+captured));
 }
-assert.deepEqual(world.passages.filter(p=>p.source_book===3).map(p=>p.order),Array.from({length:37},(_,i)=>i+1));
+assert.deepEqual(world.passages.filter(p=>p.source_book===3).map(p=>p.order),Array.from({length:57},(_,i)=>i+1));
 const covered=new Set(world.passages.filter(p=>p.source_book===3).flatMap(p=>p.source_unit_ids));
-assert.equal(covered.size,131);
-for(let i=2;i<=132;i++)assert.ok(covered.has('source-03-'+String(i).padStart(4,'0')));
+assert.equal(covered.size,200);
+for(let i=2;i<=201;i++)assert.ok(covered.has('source-03-'+String(i).padStart(4,'0')));
 for(const p of world.passages.filter(p=>p.source_book===3)) {
   const raw=p.source_unit_ids.map(id=>snapshot.chapters[2].lines[Number(id.slice(-4))-1].text).join('');
   let restored=raw;for(const c of review.text_corrections.filter(c=>p.source_unit_ids.includes(c.source_unit_id)))restored=restored.replace(c.captured,c.replacement);
@@ -62,7 +63,7 @@ assert.ok(index.get('beast-beishan-youyu-daishan').quote.includes('三尾六足�
 assert.ok(index.get('beast-beishan-heluo-qiaoming').quote.includes('一首而十身'));
 assert.ok(index.get('beast-beishan-xixi-zhuoguang').quote.includes('十翼鱗皆在羽端'));
 assert.ok(index.get('beast-beishan-qitu-daishan').quote.includes('如烏五彩而赤文'));
-assert.equal(index.get('water-beishan-he').source_passage_ids.length,7);
+assert.equal(index.get('water-beishan-he').source_passage_ids.length,12);
 assert.ok(inventory.units.find(u => u.id === 'source-03-0009').page_url.endsWith('/76'));
 assert.ok(inventory.units.find(u => u.id === 'source-03-0009').captured_page_url.endsWith('/77'));
 assert.ok(index.get('beast-beishan-huayu-qiuru').quote.includes('如鱓赤背'));
@@ -73,6 +74,7 @@ for (const e of selected) {
   assert.ok(!/[\u3400-\u9fff]/u.test(english[e.id].quote), e.id + ' English quote');
   assert.equal(e.review_status, 'facsimile_reviewed');
   if (['beast','deity'].includes(e.kind)) assert.ok(e.artwork?.startsWith('beishan/') || e.id === 'beast-zhu-jian' && e.artwork === 'beasts/beast-zhu-jian.webp' || e.appearance_unknown, e.id);
+  else if(e.artwork) assert.ok(['plant-beishan-redgrain-huguan','plant-beishan-sansang-huan'].includes(e.id),'Only text-supported tree artwork');
   else assert.equal(e.artwork, undefined, 'No borrowed or invented illustrations');
   assert.equal(readExploration(`?chapter=03&item=${e.id}`, world, catalog).item, e.id);
   for (const id of [...e.related_entry_ids, ...(e.source_passage_ids || [])]) assert.ok(index.has(id), id);
@@ -100,7 +102,7 @@ for (const a of generation.assets) {
   assert.equal(createHash('sha256').update(await readFile(new URL('../artwork-source/beishan/' + a.source_file, import.meta.url))).digest('hex'), a.sha256);
   assert.equal(index.get(a.entry_id).artwork, 'beishan/' + a.name + '-v1.webp');
 }
-assert.equal(generation.assets.length,34);
+assert.equal(generation.assets.length,48);
 for(const id of ['beast-beishan-lingyang-zhuoguang','beast-beishan-fan-zhuoguang','beast-beishan-tuotuo-guoshan'])assert.ok(index.get(id).appearance_unknown&&!index.get(id).artwork);
 assert.equal(index.get('beast-zhu-jian').place_id,'place-north-ranges');
 assert.equal(index.get('beast-zhu-jian').context_place_id,'place-beishan-danzhang');
@@ -123,7 +125,7 @@ assert.ok(index.get('water-beishan-bian-panhou').quote.includes('南流'));
 assert.notEqual(index.get('water-beishan-lize-panhou').id,index.get('water-beishan-li-danzhang').id);
 assert.equal(index.get('water-beishan-youze').source_passage_ids.length,3);
 for(const id of ['chigui','si','maoniu','shijiu'].map(s=>'beast-beishan-'+s+'-dunhong'))assert.ok(index.get(id).appearance_unknown&&!index.get(id).artwork);
-assert.equal(review.text_corrections.length,4);
+assert.equal(review.text_corrections.length,7);
 assert.ok(index.get('beast-beishan-zhuhuai-beiyue').quote.includes('四角人目彘耳'));
 assert.ok(index.get('passage-beishan-beiyue').captured_text.includes('⟦缺字图:'));
 assert.ok(!index.get('passage-beishan-beiyue').quote.includes('⟦缺字图:'));
@@ -137,7 +139,7 @@ assert.equal(createHash('sha256').update(await readFile(new URL('../../'+review.
 assert.equal(world.passages.filter(p=>p.source_book===3&&p.range===1&&p.id!=='passage-beishan-range1-summary').length,25);
 assert.equal(index.get('passage-beishan-guancen').range,2);
 assert.equal(index.get('rite-beishan-range1-summary').kind,'rite');
-assert.deepEqual(index.get('water-beishan-taize').source_passage_ids,['passage-beishan-yufa','passage-beishan-dishan']);
+assert.deepEqual(index.get('water-beishan-taize').source_passage_ids,['passage-beishan-yufa','passage-beishan-dishan','passage-beishan-wangwu']);
 assert.ok(index.get('water-beishan-di-dishan').quote.includes('東流'));
 assert.ok(index.get('water-beishan-xian-beixian').quote.includes('西北流'));
 assert.ok(index.get('beast-beishan-yao-dishan').quote.includes('如豹而文首'));
@@ -147,7 +149,7 @@ for(const id of ['beast-beishan-ma-beixian','beast-beishan-ma-dishan','beast-bei
 assert.deepEqual(index.get('passage-beishan-guancen').source_unit_ids,['source-03-0100','source-03-0101','source-03-0102']);
 assert.deepEqual(inventory.units.find(u=>u.id==='source-03-0099').confirmed_passage_ids,['passage-beishan-range1-summary']);
 assert.deepEqual(index.get('water-beishan-fen-guancen').source_passage_ids,['passage-beishan-guancen','passage-beishan-shaoyang','passage-beishan-xianyong','passage-beishan-huqi']);
-assert.equal(world.passages.filter(p=>p.source_book===3&&p.range===2).length,11);
+assert.equal(world.passages.filter(p=>p.source_book===3&&p.range===2).length,17);
 assert.equal(snapshot.chapters[2].lines[104].text,'');
 assert.deepEqual(inventory.units.find(u=>u.id==='source-03-0105').confirmed_passage_ids,['passage-beishan-shaoyang']);
 assert.ok(index.get('material-beishan-ochre-shaoyang').commentary_quote.includes('管子曰山上有赭者其下有鐵'));
@@ -176,8 +178,35 @@ assert.ok(index.get('beast-beishan-dugu-beixiao').quote.includes('犬首馬尾�
 assert.equal(index.get('beast-beishan-dugu-beixiao').commentary_quote,'音谷');
 assert.ok(index.get('beast-beishan-banmao-beixiao').commentary_quote.startsWith('般冐'));
 assert.ok(index.get('water-beishan-cen-beixiao').quote.includes('東流注于卭澤'));
-assert.equal([...review.extb_font_supplement.characters].length,10);
-console.log('PASS data: Northern 37 passages, 209 cards, 131 source blocks, 14 page corrections, 34 reviewed images and retained Zhujian and 14 documented placeholders');
+assert.equal([...review.extb_font_supplement.characters].length,13);
+assert.equal(review.batch_size,20);assert.equal(review.stage_plan.length,20);
+assert.equal(review.second_range_summary.reported_mountains,17);assert.equal(review.second_range_summary.named_mountains,16);
+assert.equal(world.passages.filter(p=>p.source_book===3&&p.range===3).length,14);
+for(const [unit,pid] of [['source-03-0150','passage-beishan-range2-summary'],['source-03-0181','passage-beishan-wangwu']])assert.deepEqual(inventory.units.find(u=>u.id===unit).confirmed_passage_ids,[pid]);
+assert.ok(index.get('beast-beishan-hui-guishan').quote.includes('四角馬尾而有距'));
+assert.ok(index.get('beast-beishan-fen-guishan').quote.includes('白身赤尾六足'));
+assert.equal(index.get('beast-beishan-hui-guishan').context_place_id,'place-beishan-guishan');
+assert.equal(index.get('material-beishan-gold-fawan').context_place_id,'place-beishan-fawan');
+assert.ok(index.get('water-beishan-jiao-jiaoshan').aliases.includes('乾河'));
+assert.ok(index.get('beast-beishan-tianma-macheng').quote.includes('如白犬而黑頭'));
+assert.ok(index.get('beast-beishan-feishu-tianchi').quote.includes('如兎而䑕首以其背飛'));
+assert.ok(index.get('beast-beishan-xianfu-yangshan').quote.includes('魚首而彘身'));
+assert.ok(index.get('rite-beishan-jade-casting-range2').commentary_quote.includes('不埋'));
+assert.equal(index.get('water-beishan-yanmen-liangqu').commentary_quote,'水名');
+assert.notEqual(index.get('water-beishan-yanmen-liangqu').id,index.get('water-beishan-yanmen-shaoxian').id);
+for(const id of ['beast-beishan-xiao-liangqu','beast-beishan-ma-huguan','beast-beishan-shan-huguan','beast-beishan-strange-snakes-huan'])assert.ok(index.get(id).appearance_unknown&&!index.get(id).artwork);
+assert.equal(index.get('material-beishan-qisuan-xianshan').kind,'material');
+assert.equal(review.next.source_units[0],202);
+assert.notEqual(index.get('place-beishan-jingshan').id,index.get('place-beishan-jingshan-east').id);
+assert.ok(index.get('beast-beishan-suanyu-jingshan').quote.includes('如蛇而四翼六目三足'));
+assert.ok(index.get('plant-beishan-zhuyu-jingshan').commentary_quote.includes('根似羊蹄'));
+assert.ok(index.get('plant-beishan-qinjiao-jingshan').commentary_quote.includes('子似椒而細'));
+assert.ok(index.get('water-beishan-yanfan-jingshan').commentary_quote.includes('或無販字'));
+assert.ok(index.get('material-beishan-xuansu-jingshan-east').commentary_quote.includes('黒砥'));
+assert.ok(index.get('water-beishan-bo-chongwei').commentary_quote.includes('鮮于山'));
+assert.ok(index.get('water-beishan-ping-pingshan').quote.includes('潜于其下'));
+for(const id of ['water-beishan-gao-jingshan-east','water-beishan-dan-chongwei'])assert.ok(index.get(id).related_entry_ids.includes('water-beishan-he'));
+console.log('PASS data: Northern 57 passages, 326 cards, 200 source blocks, 22 page corrections, 48 reviewed images and retained Zhujian and 18 documented placeholders');
 if (process.env.ATLAS_DATA_ONLY === '1') process.exit(0);
 
 const root = resolve(process.env.ATLAS_STATIC_DIR || 'dist');
@@ -239,15 +268,18 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
       }
       await page.setViewportSize(sizes[1]);
       const currentPlace = index.get(activePassages[0].related_entry_ids[0]);
-      let d = await open(currentPlace.id, lang);
-      const contents=selected.filter(e=>e.context_place_id===currentPlace.id||e.context_place_ids?.includes(currentPlace.id)||currentPlace.kind==='rite'&&currentPlace.related_entry_ids.includes(e.id)&&e.kind!=='passage');
-      assert.equal(await d.locator('.detail-place-contents [data-related-id]').count(), currentPlace.kind==='rite'?0:contents.length);
-      for (const card of contents) {
-        await d.locator(`[data-related-id="${card.id}"]`).click();
-        await ready(card.id);
-        await page.locator('.return-related').click();
-        d = await ready(currentPlace.id);
+      let d, roundTrips=0;
+      const contextPlaces=selected.filter(e=>activeBatches.includes(e.content_batch)&&(e.kind==='place'||e.id===currentPlace.id));
+      for(const contextPlace of contextPlaces){
+        d=await open(contextPlace.id,lang);
+        const contents=selected.filter(e=>e.context_place_id===contextPlace.id||e.context_place_ids?.includes(contextPlace.id)||contextPlace.kind==='rite'&&contextPlace.related_entry_ids.includes(e.id)&&e.kind!=='passage');
+        assert.equal(await d.locator('.detail-place-contents [data-related-id]').count(),contextPlace.kind==='rite'?0:contents.length);
+        for(const card of contents){
+          await d.locator(`[data-related-id="${card.id}"]`).click();await ready(card.id);
+          await page.locator('.return-related').click();d=await ready(contextPlace.id);roundTrips++;
+        }
       }
+      if(commonChecks){
       d = await open('water-beishan-feng-danhu', lang);
       await d.locator('[data-related-id="water-beishan-you-danhu"]').click();
       await ready('water-beishan-you-danhu');
@@ -261,18 +293,20 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
       const northern = page.locator('[data-source-book="3"]');
       await northern.locator(':scope > summary').click();
       for (const summary of await northern.locator('.passage-range > summary').all()) await summary.click();
-      assert.equal(await northern.locator('.passage-range').count(),2);
+      assert.equal(await northern.locator('.passage-range').count(),3);
       assert.equal(await northern.locator('.passage-range').nth(0).locator('[data-entry-id]').count(),26);
-      assert.equal(await northern.locator('.passage-range').nth(1).locator('[data-entry-id]').count(),11);
-      assert.equal(await northern.locator('[data-entry-id^="passage-beishan-"]').count(), 37);
+      assert.equal(await northern.locator('.passage-range').nth(1).locator('[data-entry-id]').count(),17);
+      assert.equal(await northern.locator('.passage-range').nth(2).locator('[data-entry-id]').count(),14);
+      assert.equal(await northern.locator('[data-entry-id^="passage-beishan-"]').count(), 57);
       await northern.locator(`[data-entry-id="${activePassages[0].id}"]`).click();
       await ready(activePassages[0].id);
+      }
       await page.goto(`${base}?chapter=03&lang=${lang}`);
       await page.locator('.global-search-trigger').click();
       await page.locator('.global-search-input').fill(lang === 'zh' ? currentPlace.name : english[currentPlace.id].name);
       await page.locator(`.search-result[data-result-id="${currentPlace.id}"]`).click();
       await ready(currentPlace.id);
-      console.log(`PASS ${engine} ${lang}: ${browserEntries.length} current/shared records, 4 viewports, ${contents.length} object round trips, images, water link, 37 catalog passages and search`);
+      console.log(`PASS ${engine} ${lang}: ${browserEntries.length} current/shared records, 4 viewports, ${roundTrips} nested/context round trips, images, ${commonChecks?'57 catalog passages and legacy links; ':''}current search`);
     }
     const readingPassage=activePassages[0];
     let d = await open(readingPassage.id);

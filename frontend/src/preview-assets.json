@@ -4570,5 +4570,257 @@
         439
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1-card.webp",
+      "bytes": 34020,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1-preview.webp",
+      "bytes": 66368,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/tree-redgrain-huguan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/tree-redgrain-huguan-v1-card.webp",
+      "bytes": 39176,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/tree-redgrain-huguan-v1-preview.webp",
+      "bytes": 72940,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/tree-sansang-huan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/tree-sansang-huan-v1-card.webp",
+      "bytes": 9760,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/tree-sansang-huan-v1-preview.webp",
+      "bytes": 18260,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1-card.webp",
+      "bytes": 33920,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1-preview.webp",
+      "bytes": 67138,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-hui-guishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-hui-guishan-v1-card.webp",
+      "bytes": 32332,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-hui-guishan-v1-preview.webp",
+      "bytes": 61428,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-fen-guishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-fen-guishan-v1-card.webp",
+      "bytes": 37604,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-fen-guishan-v1-preview.webp",
+      "bytes": 68562,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1-card.webp",
+      "bytes": 18930,
+      "dimensions": [
+        320,
+        188
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1-preview.webp",
+      "bytes": 34764,
+      "dimensions": [
+        480,
+        281
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1-card.webp",
+      "bytes": 34840,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1-preview.webp",
+      "bytes": 66626,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-quju-macheng-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-quju-macheng-v1-card.webp",
+      "bytes": 25966,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-quju-macheng-v1-preview.webp",
+      "bytes": 49254,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1-card.webp",
+      "bytes": 39594,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1-preview.webp",
+      "bytes": 78052,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1-card.webp",
+      "bytes": 31760,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1-preview.webp",
+      "bytes": 62430,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1-card.webp",
+      "bytes": 30474,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1-preview.webp",
+      "bytes": 57252,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1-card.webp",
+      "bytes": 30386,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1-preview.webp",
+      "bytes": 60784,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1-card.webp",
+      "bytes": 48214,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1-preview.webp",
+      "bytes": 91698,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }

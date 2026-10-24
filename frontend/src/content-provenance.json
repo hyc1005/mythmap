@@ -575,6 +575,51 @@
   "beast-beishan-banmao-beixiao": {
     "family": "shanhaijing"
   },
+  "beast-beishan-juji-liangqu": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-xiao-liangqu": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-ma-huguan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-shan-huguan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-strange-snakes-huan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-hui-guishan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-fen-guishan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-renyu-longhou": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-tianma-macheng": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-quju-macheng": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-feishu-tianchi": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-linghu-yangshan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-xiangshe-yangshan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-xianfu-yangshan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-suanyu-jingshan": {
+    "family": "shanhaijing"
+  },
   "place-qingqiu": {
     "family": "shanhaijing"
   },
@@ -1910,6 +1955,228 @@
   "water-beishan-qiongze-beixiao": {
     "family": "shanhaijing"
   },
+  "material-beishan-gold-liangqu": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-liangqu": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-xiu-liangqu": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-yanmen-liangqu": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-huguan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-bi-huguan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-huguan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-sea-huguan": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-redgrain-huguan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-huan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-huan": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-sansang-huan": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-fruit-trees-huan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-dunti": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-dunti": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-north-sea-dunti": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-guishan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-guishan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-bi-guishan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-longhou": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-longhou": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-juejue-longhou": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-wenstone-macheng": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-macheng": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-macheng": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-xianshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-copper-xianshan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-tiaojian-xianshan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-changze-xianshan": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-pine-xianshan": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-bai-xianshan": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-zi-xianshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-qisuan-xianshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-wenstone-tianchi": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-yellow-e-tianchi": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-sheng-tianchi": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-yangshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-yangshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-copper-yangshan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-liu-yangshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-dark-jade-benwen": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-yellow-e-benwen": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-nie-stone-benwen": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-stones-wangwu": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-lian-wangwu": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-jiaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-fawan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-fawan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-jiao-jiaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-ochre-jingshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-jingshan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-yanfan-jingshan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-shaoze-jingshan": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-zhuyu-jingshan": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-qinjiao-jingshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-dark-jade-mengmen": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-mengmen": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-yellow-e-mengmen": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-nie-mengmen": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-fine-jade-pingshan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-ping-pingshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-fine-jade-jingshan-east": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-red-copper-jingshan-east": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-xuansu-jingshan-east": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-lacquer-jingshan-east": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-bamboo-jingshan-east": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-gao-jingshan-east": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-chongwei": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-chongwei": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-qingbi-chongwei": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-bamboo-chongwei": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-dan-chongwei": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-bo-chongwei": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-huangze-chongwei": {
+    "family": "shanhaijing"
+  },
   "water-beishan-he": {
     "family": "shanhaijing"
   },
@@ -2397,6 +2664,66 @@
     "family": "shanhaijing"
   },
   "passage-beishan-beixiao": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-liangqu": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-guguan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-huguan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-huan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-dunti": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-range2-summary": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-taihang": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-longhou": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-macheng": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-xianshan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-tianchi": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-yangshan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-benwen": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-wangwu": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-jiaoshan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-jingshan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-mengmen": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-pingshan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-jingshan-east": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-chongwei": {
     "family": "shanhaijing"
   },
   "place-nanshan-tangting": {
@@ -3063,6 +3390,90 @@
     "family": "shanhaijing"
   },
   "place-beishan-beixiao": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-liangqu": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-guguan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-huguan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-huan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-liusha-huan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-dunti": {
+    "family": "shanhaijing"
+  },
+  "rite-beishan-range2-summary": {
+    "family": "shanhaijing"
+  },
+  "deity-beishan-human-serpent-range2-summary": {
+    "family": "shanhaijing"
+  },
+  "rite-beishan-animal-burial-range2": {
+    "family": "shanhaijing"
+  },
+  "rite-beishan-jade-casting-range2": {
+    "family": "shanhaijing"
+  },
+  "rite-beishan-bi-range2": {
+    "family": "shanhaijing"
+  },
+  "rite-beishan-gui-range2": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-taihang": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-guishan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-longhou": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-macheng": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-xianshan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-tianchi": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-yangshan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-benwen": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-wangwu": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-jiaoshan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-fawan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-jingshan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-mengmen": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-pingshan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-jingshan-east": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-chongwei": {
     "family": "shanhaijing"
   },
   "01-01": {

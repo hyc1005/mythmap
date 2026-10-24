@@ -3417,5 +3417,187 @@
       1280,
       1170
     ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1.webp",
+    "original_bytes": 1995477,
+    "optimized_bytes": 359154,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/tree-redgrain-huguan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/tree-redgrain-huguan-v1.webp",
+    "original_bytes": 2298516,
+    "optimized_bytes": 383994,
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "dimensions": [
+      853,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/tree-sansang-huan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/tree-sansang-huan-v1.webp",
+    "original_bytes": 1313736,
+    "optimized_bytes": 107394,
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "dimensions": [
+      853,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1.webp",
+    "original_bytes": 2198423,
+    "optimized_bytes": 388024,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-hui-guishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-hui-guishan-v1.webp",
+    "original_bytes": 1715503,
+    "optimized_bytes": 334842,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/bird-fen-guishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/bird-fen-guishan-v1.webp",
+    "original_bytes": 1571119,
+    "optimized_bytes": 300814,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp",
+    "original_bytes": 1694217,
+    "optimized_bytes": 199058,
+    "original_dimensions": [
+      1638,
+      960
+    ],
+    "dimensions": [
+      1280,
+      750
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1.webp",
+    "original_bytes": 2061056,
+    "optimized_bytes": 372848,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/bird-quju-macheng-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/bird-quju-macheng-v1.webp",
+    "original_bytes": 1442561,
+    "optimized_bytes": 241576,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1.webp",
+    "original_bytes": 2474874,
+    "optimized_bytes": 441344,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1.webp",
+    "original_bytes": 2160554,
+    "optimized_bytes": 357100,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1.webp",
+    "original_bytes": 1537109,
+    "optimized_bytes": 255934,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1.webp",
+    "original_bytes": 2167509,
+    "optimized_bytes": 364650,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1.webp",
+    "original_bytes": 2301087,
+    "optimized_bytes": 454458,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
   }
 }

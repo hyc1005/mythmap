@@ -8222,6 +8222,544 @@
           ]
         }
       }
+    },
+    {
+      "id": "beishan-creature-juji-liangqu-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-juji-liangqu-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Juji 居暨 resembles hui 彚 with RED HAIR and a piglet-like sound. Guo Pu compares hui to a MOUSE with prickly hair, a hedgehog comparison. One compact low mouse-like hedgehog form with tiny ordinary rodent muzzle, two small rounded ears, four short mammalian feet, one SHORT fine rodent tail. Coat is RED short stiff needle-like hairs, not giant porcupine quills or flame ornaments. Low wide hunched walking pose nose down, rust-red and ivory incised spikes, all four little feet visible. No wings, horns, human face, long cat tail, duplicate heads or pig nose; sound adds no pig anatomy.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "鼠状赤刺毛、近侧三足可见，远侧前足被躯体遮挡属姿态解释；声音不添猪鼻。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1.webp",
+          "bytes": 359154,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1-card.webp",
+          "bytes": 34020,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1-preview.webp",
+          "bytes": 66368,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-tree-redgrain-huguan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/tree-redgrain-huguan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/tree-redgrain-huguan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. An UNNAMED TREE whose LEAVES resemble WILLOW and whose GRAIN is RED (赤理). One small whole tree representative with a slender trunk, several clearly separated simple branches bearing sparse LONG NARROW WILLOW-LIKE GREEN LEAVES. On the trunk show fine RED wood-grain lines as a flat woodcut interpretation, not blood, wounds, faces, fruit or red leaf veins. Complete roots are a minimal artistic base, no soil or ground. Narrow asymmetrical leaning silhouette, airy leaf spacing, muted deep green foliage and restrained red/brown trunk grain. Tree height, branching and exact bark are artistic, not a modern species.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "叶如柳、赤理为正文；分枝根形与红木纹表现为解释，不强定树种。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/tree-redgrain-huguan-v1.webp",
+          "bytes": 383994,
+          "dimensions": [
+            853,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/tree-redgrain-huguan-v1-card.webp",
+          "bytes": 39176,
+          "dimensions": [
+            213,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/tree-redgrain-huguan-v1-preview.webp",
+          "bytes": 72940,
+          "dimensions": [
+            320,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-tree-sansang-huan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/tree-sansang-huan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/tree-sansang-huan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Sansang 三桑 tree account: trees have NO BRANCHES and are stated to be a HUNDRED REN TALL. Render ONE representative branchless living giant tree, not a modern species or a claim about exactly three individuals. Very long slender continuous upright TRUNK without any side branches, canopy, leaves, flowers or fruit. Trunk tapers to an intact rounded natural tip, not a sawn stump; subtle vertical bark cuts with restrained ochre/gray flat grain. At bottom a few small exposed roots give a living tree base, no soil, ground or scenery. Extreme tall thin silhouette fully contained with wide empty transparent margins; no human scale figure, ruler or invented conversion of the ancient height. The bare trunk and roots are artistic interpretation; no new organs or faces.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "无枝、髙百仞为正文；一株无枝树干代表图，不把三桑强定三株或换算高度，根皮为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/tree-sansang-huan-v1.webp",
+          "bytes": 107394,
+          "dimensions": [
+            853,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/tree-sansang-huan-v1-card.webp",
+          "bytes": 9760,
+          "dimensions": [
+            213,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/tree-sansang-huan-v1-preview.webp",
+          "bytes": 18260,
+          "dimensions": [
+            320,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-deity-human-serpent-range2-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/deity-human-serpent-range2-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Northern SECOND-RANGE deities share SERPENT BODY and HUMAN FACE. ONE representative of a class, not a fused crowd. One LONG single snake body and one tail, no human torso, shoulders, arms or legs. One mature narrow angular human face with a short straight GRAY BEARD and receding cropped hair, quiet human eyes, no crown, horns or jewelry. Pale stone-ochre snake with dark brown belly scutes, lower body arranged as a broad low oval open coil, head turning in profile right rather than looking front. Entire single head, long serpent trunk and single tapered tail visible. Age, beard, coloring and coil are artistic. Strongly different from youthful jade-green upright first-range serpent and dog-faced elderly smiling creature. No extra heads, forked body or wings.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "蛇身人面；一首单蛇身单尾，灰须侧面与横向盘曲为解释，区别首列共形图。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1.webp",
+          "bytes": 388024,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1-card.webp",
+          "bytes": 33920,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1-preview.webp",
+          "bytes": 67138,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-hui-guishan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-hui-guishan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-hui-guishan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Hui 䮝: resembles LINGYANG antelope, EXACTLY FOUR HORNS, HORSE TAIL, and SPURS (距), skilled at turning. One antelope-like head and slender antelope body, four legs with cloven hooves. Four independent unbranched horns on the head, TWO taller rear horns and TWO shorter front horns, all FOUR bases and tips separately visible with gaps; no fifth horn or branched antlers. One long flowing HORSE HAIR tail, not an ox tuft. Make one small BACKWARD POINTING SPUR at the rear of each hind ankle, as an explicitly artistic placement/count interpretation since text does not locate or count spurs. Dynamic tight turning pose but all four horns, four hooves and both hind spurs readable; slender chestnut body, short natural coat. No wings, human face or giant decorative spikes.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "麢羊状四角、马尾有距；四蹄与双后踝距的位置数量为解释，逐数四角。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-hui-guishan-v1.webp",
+          "bytes": 334842,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-hui-guishan-v1-card.webp",
+          "bytes": 32332,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-hui-guishan-v1-preview.webp",
+          "bytes": 61428,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-fen-guishan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-fen-guishan-v3.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-fen-guishan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Fen 䴅: MAGPIE-SHAPED bird, WHITE BODY, RED TAIL, EXACTLY SIX LEGS. One ordinary small magpie head with normal narrow beak, one compact white magpie body, two ordinary folded white wings (not six wings), ONE red feather tail. Six separate slim bird legs emerge as THREE PAIRS under the single torso, all six separate legs and six clawed bird feet individually countable, no overlap or hidden sixth foot. Near side oblique stance, head tilting backward in a startled look, white feathers with sparse dark gray cuts and long red tail. No human face, extra heads, multicolor body or dog tail.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "第三稿六条独立足胫及足爪均可数；白身、赤尾、鼠足与原文对应。前两稿仅五足，保留但不用于展示。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-fen-guishan-v1.webp",
+          "bytes": 300814,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-fen-guishan-v1-card.webp",
+          "bytes": 37604,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-fen-guishan-v1-preview.webp",
+          "bytes": 68562,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      },
+      "revision_prompt": "LOCAL ADDITION ONLY: preserve this ENTIRE current white magpie-shaped bird with red tail and its existing FIVE red legs exactly. Add ONE NEW EXTRA RED BIRD LEG AND FOOT in the EMPTY TRANSPARENT SPACE immediately LEFT of the current leftmost foot, beneath the rear white hip and in front of the red tail. New sixth leg starts at the lower white hip around 33% image width and descends to a new separate clawed foot around 25% image width at the same baseline as the five existing feet. This is a SIX-LEGGED mythic bird: there must be SIX complete leg shafts and SIX separate bird feet visible simultaneously, not five. Do NOT replace, merge, erase or hide any of the existing five legs. Keep all five old feet and add only one sixth distinct foot with a clear transparent gap to the current leftmost one. Preserve head, beak, wings, white body, red tail, texture and pose. True transparent background, no labels, numbers, shadow or scenery.",
+      "initial_reference_images": []
+    },
+    {
+      "id": "beishan-fish-renyu-longhou-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/fish-renyu-longhou-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Renyu 人魚 here is NOT a human mermaid. Main form compares ti fish 䱱 with FOUR FEET and infant-like cry; Guo Pu compares CATFISH with FOUR FEET. One low long CATFISH-LIKE FISH body, one wide flattened ordinary fish head, small eyes, short plain catfish barbels as commentary-based fish interpretation, one long continuous tapered fish tail and FOUR SHORT LEGS with four small feet. Four limbs visible and separated, dark muted blue-gray skin, simple pale belly. NO human face, human torso, breasts, arms, external feathery gills, wings or extra tails. Low horizontal creeping pose, not an upright cartoon salamander. No modern species identification.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "正文䱱鱼四足，鲵似鲇四足为郭注；一鱼身四短足，不画人首人身或擅加外鳃。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp",
+          "bytes": 199058,
+          "dimensions": [
+            1280,
+            750
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1-card.webp",
+          "bytes": 18930,
+          "dimensions": [
+            320,
+            188
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1-preview.webp",
+          "bytes": 34764,
+          "dimensions": [
+            480,
+            281
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-tianma-macheng-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-tianma-macheng-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Tianma 天馬 at Macheng is explicitly shaped like a WHITE DOG with BLACK HEAD, flies on seeing people; Guo Pu says FLESHY WINGS. One complete WHITE DOG torso with four ordinary dog legs and four DOG PAWS, BLACK DOG HEAD including black muzzle and ears, short sleek white coat, one dog tail. TWO modest BAT-LIKE MEMBRANOUS FLESH WINGS attached behind shoulders, their two-wing count and membrane framework are an artistic interpretation of commentary. Wings open gently upward, not feathered bird wings, no additional arms or legs. Energetic small dog leaping sideways left with all four paws and both wing tips readable; black head strongly separated from white neck. NO HORSE body, hooves, horn, human face or feather mane.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "白犬黑头为正文、肉翅为郭注；两肉翼数量与支架为解释，不画成天马神驹。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1.webp",
+          "bytes": 372848,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1-card.webp",
+          "bytes": 34840,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1-preview.webp",
+          "bytes": 66626,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-quju-macheng-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-quju-macheng-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-quju-macheng-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Quju 鶌鶋: CROW-SHAPED bird, WHITE HEAD, QING BODY, YELLOW FEET. One ordinary crow head, beak and eyes, all head feathers WHITE, body plumage muted deep BLUE-GREEN (interpretation of qing), TWO normal folded crow wings same body color, TWO clearly YELLOW bird legs and feet, one plain dark blue-green tail. Small compact right-facing standing bird, head turned slightly down in a watchful gaze. Slim narrow beak, no human face, owl discs, extra wings/legs or pheasant crest. Sparse feather incisions, no repetitive flame bands.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "v2改为闭合直乌喙，首白身青足黄保持，非鹰钩。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-quju-macheng-v1.webp",
+          "bytes": 241576,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-quju-macheng-v1-card.webp",
+          "bytes": 25966,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-quju-macheng-v1-preview.webp",
+          "bytes": 49254,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      },
+      "revision_prompt": "Precise head correction ONLY. This is a CROW-SHAPED Quju, NOT an eagle. Preserve the complete WHITE head plumage, deep BLUE-GREEN body, both yellow bird feet, folded wings, tail, pose, contours and woodcut texture. REPLACE the large hooked eagle/raptor beak with a SLENDER STRAIGHT CLOSED BLACK CROW BEAK: upper and lower edges almost straight, no deep down-hook, no hooked tip extending below lower bill. Make head an ordinary rounded CROW head with small quiet dark eye, not a fierce eagle brow or owl face. Keep head white, body blue-green, feet yellow. No extra anatomy, crest, scenery, text or shadows. True transparent background.",
+      "initial_reference_images": []
+    },
+    {
+      "id": "beishan-creature-feishu-tianchi-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-feishu-tianchi-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Feishu 飛䑕: RABBIT-LIKE BODY with RAT HEAD, flies using its BACK. Guo Pu says BACK HAIR carries flight and it flies BELLY-UP. One compact RABBIT torso, one small ordinary RAT head with rounded rat ears, rat nose and whiskers, four short rabbit-like legs with four small paws. Show full creature floating BELLY-UP diagonally: pale rounded belly faces viewer, four paws point gently upward, long BACK HAIR visible as a broad soft radiating hairy edge along its underside/back. NO wings of any kind: no feather wings, bat membranes, wing bones or extra flaps. Hair-based flight remains a symbolic pose, not new anatomy. Very short tail, muted gray/cream fur. No giant rabbit ears, human features, clouds or motion trails.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "兔状鼠首、以背飞；郭注背毛飞则仰，仰腹姿与背毛解释，不加翼或翼膜。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1.webp",
+          "bytes": 441344,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1-card.webp",
+          "bytes": 39594,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1-preview.webp",
+          "bytes": 78052,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-linghu-yangshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-linghu-yangshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Linghu 領胡: OX-SHAPED beast with RED TAIL and a fleshy NECK swelling described as 頸腎; Guo Pu explains flesh at the neck and compares gQu cattle. One stocky smooth ox torso with four cloven hooves, ordinary broad bovine head and muzzle, two modest ordinary bovine horns as an artistic conventional reading (text fixes no horn count). One OX TAIL colored RED throughout its visible hair tuft and shaft. Show ONE smooth rounded kidney-shaped fleshy BULGE on the SIDE OF THE NECK, fully covered with intact hide, no external organ, wounds or gore; its single count and side placement are artistic. Low head and heavy shoulder silhouette, dull slate-green/gray hide and dark red tail, simple natural coat, no flame mane or decorative bands, no wings or human face.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "牛状赤尾、颈肉腎依郭注；颈侧包块位置数量及双角为解释，不画外露内脏。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1.webp",
+          "bytes": 357100,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1-card.webp",
+          "bytes": 31760,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1-preview.webp",
+          "bytes": 62430,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-xiangshe-yangshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-xiangshe-yangshan-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Xiangshe 𧰼蛇 is a bird shaped like a FEMALE PHEASANT with FIVE-COLORED MARKINGS, described as male and female in itself. One coherent female-pheasant body, small ordinary pheasant head and beak, two ordinary wings held close, two bird legs with two feet, one modest pheasant feather tail. Five distinct flat pigment colors in restrained small patches: rust red, ochre yellow, deep blue, muted green, ivory. Female-pheasant proportions, low rounded head with no rooster comb, understated feathers, alert stepping side pose. Sex statement adds NO genitals, duplicate heads or split body. Despite its snake-containing name, NO snake neck or serpent tail. No human face, horns, eye discs or repetitive flame ornament.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "v2缩小低圆头、普通眼与小雌雉喙，五彩和躯体保持。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1.webp",
+          "bytes": 255934,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1-card.webp",
+          "bytes": 30474,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1-preview.webp",
+          "bytes": 57252,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      },
+      "revision_prompt": "Precise bird HEAD correction. Keep five-colored feather patterns, body, wings, two bird feet, single tail, woodcut texture and full silhouette. This is shaped like a FEMALE PHEASANT, NOT a raptor, parrot or owl. Replace the current large hooked raptor-like bill with a SMALL NARROW STRAIGHT PALE-HORN PHEASANT BEAK, closed, with only a subtle natural down-tip and no deep hook. Head should be low and gently ROUNDED, about 15% smaller relative to body, with ordinary small beady dark pheasant eye and smooth head feathers. REMOVE pointed backward crest tufts and fierce eye mask, keep restrained five colors. No chicken comb, human face, snake neck/tail or new anatomy. True transparent background, no text, shadows, scenery or glow.",
+      "initial_reference_images": []
+    },
+    {
+      "id": "beishan-creature-xianfu-yangshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-xianfu-yangshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing subject on TRUE transparent canvas, all extremities visible with ample clear margins. Chinese hand-carved woodblock medium: dark ink contours, flat mineral pigment planes, sparse fine cut lines and subtle grain. Reference bird is ONLY a medium reference, never copy owl eyes, feather crest, flame bands, anatomy or face. Distinct silhouette and expression. No writing, label, seal, border, background, ground, shadow, glow, gradients or 3D. Unspecified hue, pose, proportions and textures are artistic. Xianfu 𩹴父 fish: compared to CRUCIAN FISH, with FISH HEAD and PIG BODY. One ordinary crucian-like FISH HEAD with a small fish mouth, eye and gill cover, joined seamlessly to ONE complete PIG torso. Rest of body is a plump smooth pig with FOUR short pig legs, FOUR cloven pig hooves and ONE small curled pig tail. No fish torso, fish tail, wings, human face or extra limbs; fish fins do not grow from pig shoulders. Three-quarter compact walking pose, cool gray fish head and muted pale pink-ochre pig skin; colors and shape details interpret the comparison. Surreal ancient beast, no damage, cuts or horror surgery.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "鲫比拟、鱼首彘身为正文；四猪蹄、猪尾与配色为躯体解释，不画猪首鱼身。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1.webp",
+          "bytes": 364650,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1-card.webp",
+          "bytes": 30386,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1-preview.webp",
+          "bytes": 60784,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-suanyu-jingshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-suanyu-jingshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. A single complete Suanyu 酸與 from the Shanhaijing, truly transparent square canvas, generous 10% empty margins around every extremity. Use supplied reference ONLY for Chinese carved woodblock medium: dark-brown contours, ivory incisions, muted mineral green and restrained ochre/cinnabar flat inks; no gradients, photo, 3D, text, seal or scenery. DIFFERENT ANATOMY, no owl face, no bird beak or chicken torso, no repetitive flame ornaments. Text explicitly says snake-shaped, FOUR wings, SIX eyes, THREE feet (其状如蛇而四翼六目三足). Design a sinuous long snake body with one blunt reptile head facing almost front; exactly six distinct real eyes with slit pupils, arranged in THREE horizontal PAIRS on that ONE broad snake head, all six clearly visible, no extra normal eyes. Exactly FOUR distinct feathered wings, two upper and two lower, spread apart with clear empty gaps and independent attachment to the long serpent trunk. Exactly THREE slender clawed legs attached to the lower serpent body, three separated shanks and three distinct feet visible, not toes mistaken for feet. A single tapering snake tail curves gently below, no dragon horns, ears, beard or duplicate heads. Keep snake scales quiet fine geometric incisions, elongated green/ivory body, sparse warm ochre wing feathers; posture calm with lifted snake head, no injury, no fire. Wing type, eye arrangement, claw shape and color are illustration interpretation; do not add organs to force variety.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "单一蛇形头身，六眼分三对可逐数，四片分离羽翼、三条独立腿足及单尾均可辨；无鹰喙猫头鹰面。眼位、羽翼类型、爪趾、鳞纹、叉舌与配色为插画解释；主体完整未裁切。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1.webp",
+          "bytes": 454458,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1-card.webp",
+          "bytes": 48214,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1-preview.webp",
+          "bytes": 91698,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",
