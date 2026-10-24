@@ -8070,6 +8070,158 @@
       },
       "revision_prompt": "Precise background-extraction edit. Keep the attached Ci fish unchanged: same red scales, fish face, one whole fish body, all fins, forked single tail, woodcut incisions, proportions, colors and pose. REMOVE ALL background, colored glow, halo, gradient and shadow outside the fish silhouette. Return ONLY the crisp isolated opaque woodcut fish with transparent alpha=0 everywhere outside its black contour, including spaces between fins and tail. No replacement background, no black or white canvas, no drop shadow. Retain complete fish uncropped with generous transparent margins. Do not redesign or add anatomy, text or objects.",
       "initial_reference_images": []
+    },
+    {
+      "id": "beishan-creature-boma-duntou-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-boma-duntou-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-boma-duntou-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated creature on TRUE transparent canvas with generous clear margins around every extremity. Hand-carved Chinese woodblock medium: strong dark ink contours, flat mineral pigment planes, fine sparse incisions and subtle print grain. Reference bird ONLY for MEDIUM, never copy its owl face, flame ornament, feather crest, anatomy or pose. Distinct creature proportions, silhouette and face. No text, seals, frame, scenery, ground, shadow, glow, gradient or 3D. Unspecified body proportions, posture, hair, colors and pattern layout are artistic interpretation. Subject: Boma 𩣡馬 from Duntou, NOT the similarly named Western Bo beast. Main text names a horse with WHITE BODY, ONE HORN, and OX TAIL, sound like a human call. One complete WHITE horse-shaped body, one ordinary long equine head, two equine ears, exactly ONE short straight conical horn centered on forehead, four horse legs ending in four single UNSPLIT horse hooves. Tail must be an OX tail: thin narrow rope-like tail shaft ending in one distinct DARK HAIR TUFT, not a horse's full flowing hair tail. Compact upright side stance with neck elegantly but simply curved down, face pointing left, four legs individually visible, one foreleg slightly bent. Short smooth white coat with sparse cool gray carving only, very short ordinary white mane, no ornate flame mane, no stripes, spots, wings, human face, extra horns or antelope hooves. Horse-like torso is an illustration interpretation of the name; do not invent additional textual anatomy.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "正文白身一角牛尾；单角、牛尾细梢毛簇、四单马蹄可数，马状体躯依名的插画解释；不混西山駮。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-boma-duntou-v1.webp",
+          "bytes": 257622,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-boma-duntou-v1-card.webp",
+          "bytes": 24766,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-boma-duntou-v1-preview.webp",
+          "bytes": 45926,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-paoxiao-gouwu-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-paoxiao-gouwu-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-paoxiao-gouwu-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated creature on TRUE transparent canvas with generous clear margins around every extremity. Hand-carved Chinese woodblock medium: strong dark ink contours, flat mineral pigment planes, fine sparse incisions and subtle print grain. Reference bird ONLY for MEDIUM, never copy its owl face, flame ornament, feather crest, anatomy or pose. Distinct creature proportions, silhouette and face. No text, seals, frame, scenery, ground, shadow, glow, gradient or 3D. Unspecified body proportions, posture, hair, colors and pattern layout are artistic interpretation. Subject: Paoxiao 狍鴞 from Gouwu. EXACT form: SHEEP BODY, HUMAN FACE, EYES LOCATED UNDER THE ARMPITS, TIGER TEETH, HUMAN CLAWS. One compact sheep wool torso with four limbs, no human torso and no extra arms. One broad stern mature human face at upper center: human nose and mouth, NO VISIBLE EYES on face (smooth empty skin at normal eye positions, not black sockets, no eyebrows implying eyeballs). Mouth slightly open to show two TIGER CANINES only, no blood or victims. BOTH actual eyes must be distinct almond-shaped EYES in the TWO ARMPITS on the chest directly under where LEFT and RIGHT front limbs join the sheep torso; NO eyes elsewhere. Near frontal squat composition, TWO front limbs gently raised OUTWARD so both underarm eyes are clearly visible, two hind limbs bent below. Four terminal human-like grasping clawed hands as an artistic interpretation of 人爪, all four hands visible, no sheep hooves. Wool is short mottled stone-ochre curls, no horns, wings, decorative armor, owl face, human face eyes or long beard. One short sheep tail. Keep unsettling mythic anatomy but no gore or harm scene. Count exactly one head, four limbs, two armpit eyes, zero face eyes.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "羊身人面、目在腋下、虎齿人爪逐项复核；双腋目不放脸上，四肢人爪为解释，无额外角翼或伤害场景。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-paoxiao-gouwu-v1.webp",
+          "bytes": 418010,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-paoxiao-gouwu-v1-card.webp",
+          "bytes": 39702,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-paoxiao-gouwu-v1-preview.webp",
+          "bytes": 76168,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-dugu-beixiao-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-dugu-beixiao-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-dugu-beixiao-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated creature on TRUE transparent canvas with generous clear margins around every extremity. Hand-carved Chinese woodblock medium: strong dark ink contours, flat mineral pigment planes, fine sparse incisions and subtle print grain. Reference bird ONLY for MEDIUM, never copy its owl face, flame ornament, feather crest, anatomy or pose. Distinct creature proportions, silhouette and face. No text, seals, frame, scenery, ground, shadow, glow, gradient or 3D. Unspecified body proportions, posture, hair, colors and pattern layout are artistic interpretation. Subject: Dugu 獨𤞞 at Beixiao. TIGER-SHAPED BODY, WHITE BODY, DOG HEAD, HORSE TAIL, BOAR BRISTLES. One long lean WHITE feline tiger-proportioned torso, FOUR cat legs and FOUR broad feline paws, one clearly CANINE head with pointed dog ears and long ordinary dog muzzle, closed mouth, ordinary dark canine eyes (no human or tiger face). One HORSE tail made of a broad long flowing HAIR FALL from its root, NOT a thin ox shaft with a tuft. A short rigid crest of dark BOAR BRISTLES along upper neck and back, recognizably short stiff hair, not feathers, scales or giant spikes. Very low stretched walking silhouette facing right, head held level, all four paws distinguishable, tail raised then falling in a loose hair curtain. Smooth white hide with very faint gray contour hatching, no required tiger stripes, no wings, horns or human features. Distinguish dog head from gentle floppy-eared fish head by erect ears and angular alert hound muzzle.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "虎状白身、犬首、马尾、彘鬣齐备；四猫足、竖犬耳、长垂马尾与短硬鬣，刻纹配色姿态为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-dugu-beixiao-v1.webp",
+          "bytes": 262070,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-dugu-beixiao-v1-card.webp",
+          "bytes": 24120,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-dugu-beixiao-v1-preview.webp",
+          "bytes": 46250,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-banmao-beixiao-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-banmao-beixiao-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-banmao-beixiao-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated creature on TRUE transparent canvas with generous clear margins around every extremity. Hand-carved Chinese woodblock medium: strong dark ink contours, flat mineral pigment planes, fine sparse incisions and subtle print grain. Reference bird ONLY for MEDIUM, never copy its owl face, flame ornament, feather crest, anatomy or pose. Distinct creature proportions, silhouette and face. No text, seals, frame, scenery, ground, shadow, glow, gradient or 3D. Unspecified body proportions, posture, hair, colors and pattern layout are artistic interpretation. Subject: Banmao 𪄀𪃑 at Beixiao, name pronounced ban-mao in Guo Pu's gloss. EXACT main form: CROW-SHAPED bird with HUMAN FACE, flies by night and rests by day. One compact black crow body with one human face at the head, TWO ordinary dark bird wings half-open low to either side, TWO slender crow legs with TWO bird feet, ONE ordinary short dark crow tail. Face is a narrow angular middle-aged human face with long straight nose, thin CLOSED lips and quiet nearly closed ordinary human eyes, brown warm skin; not an owl mask, not a smiling elderly dog face, not a snake deity's youthful curly-haired face. Human face directly framed by smooth rounded BLACK crow head feathers, no human hat, no pointed feather crown, no beard. Broad flat coal-black and blue-black feathers with sparse ivory incisions, no flame bands, red body, bright pheasant plumage or invented extra limbs. Frontal three-quarter low perched stance without branch or ground, folded neck and compact silhouette. No crow beak because the face is human. Do not turn Guo Pu's owl comparison into main-text owl anatomy.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "如乌人面、二翼二鸟足一尾，黑乌体窄长中年面与其他人面兽拉开差异；不借郭注鵂鶹改鸮脸。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-banmao-beixiao-v1.webp",
+          "bytes": 317144,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-banmao-beixiao-v1-card.webp",
+          "bytes": 28504,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-banmao-beixiao-v1-preview.webp",
+          "bytes": 55582,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

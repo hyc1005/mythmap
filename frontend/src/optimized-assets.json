@@ -3365,5 +3365,57 @@
       1280,
       853
     ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-boma-duntou-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-boma-duntou-v1.webp",
+    "original_bytes": 1542926,
+    "optimized_bytes": 257622,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-paoxiao-gouwu-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-paoxiao-gouwu-v1.webp",
+    "original_bytes": 2321304,
+    "optimized_bytes": 418010,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-dugu-beixiao-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-dugu-beixiao-v1.webp",
+    "original_bytes": 2367778,
+    "optimized_bytes": 262070,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/bird-banmao-beixiao-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/bird-banmao-beixiao-v1.webp",
+    "original_bytes": 1928856,
+    "optimized_bytes": 317144,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
   }
 }

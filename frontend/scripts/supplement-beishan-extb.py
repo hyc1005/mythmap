@@ -1,4 +1,4 @@
-"""Build the licensed five-glyph Northern supplement entirely in memory."""
+"""Build the licensed ten-glyph Northern supplement entirely in memory."""
 import hashlib
 import io
 from pathlib import Path
@@ -8,7 +8,7 @@ from fontTools.ttLib import TTFont
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://github.com/babelstone/babelstonehan-ufo/releases/download/v18.0.1/'
-CHARACTERS = '𤟤𤠾𥬇𬋩𭥍'
+CHARACTERS = '𤟤𤠾𥬇𬋩𭥍𤓰𤞞𩣡𪄀𪃑'
 license_text = urlopen(BASE + 'LICENSE', timeout=60).read().decode('utf-8')
 assert 'Arphic' in license_text and '1999' in license_text
 data = urlopen(BASE + 'BabelStoneHanExtra.ttf', timeout=60).read()
@@ -35,7 +35,7 @@ target = ROOT / 'public/fonts/atlas-northern-extb.woff2'
 font.save(target)
 assert set(map(ord, CHARACTERS)) <= set(TTFont(target).getBestCmap())
 (ROOT / 'public/fonts/atlas-northern-extb-LICENSE.txt').write_text(
-    'Atlas Northern ExtB: five-glyph subset, renamed by the Shan-hai Atlas project.\n'
+    'Atlas Northern ExtB: ten-glyph subset, renamed by the Shan-hai Atlas project.\n'
     'Upstream: BabelStone Han Extra v18.0.1, ' + BASE + '\n'
     'Modified by subsetting and renaming; original copyright and license retained.\n\n'
     + license_text, encoding='utf-8')

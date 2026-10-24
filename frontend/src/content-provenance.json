@@ -563,6 +563,18 @@
   "beast-beishan-ci-xianyong": {
     "family": "shanhaijing"
   },
+  "beast-beishan-boma-duntou": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-paoxiao-gouwu": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-dugu-beixiao": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-banmao-beixiao": {
+    "family": "shanhaijing"
+  },
   "place-qingqiu": {
     "family": "shanhaijing"
   },
@@ -1844,6 +1856,60 @@
   "material-beishan-white-jade-baisha": {
     "family": "shanhaijing"
   },
+  "water-beishan-kuang": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-fu-kuang": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-fine-jade-kuang": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-copper-zhuyu": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-zhuyu": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-pine-zhuyu": {
+    "family": "shanhaijing"
+  },
+  "plant-beishan-bai-zhuyu": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-zhuyu": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-mao": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-duntou": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-duntou": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-yinze-duntou": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-gouwu": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-copper-gouwu": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-bi-beixiao": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-beixiao": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-cen-beixiao": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-qiongze-beixiao": {
+    "family": "shanhaijing"
+  },
   "water-beishan-he": {
     "family": "shanhaijing"
   },
@@ -2316,6 +2382,21 @@
     "family": "shanhaijing"
   },
   "passage-beishan-ershi": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-kuang": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-zhuyu": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-duntou": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-gouwu": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-beixiao": {
     "family": "shanhaijing"
   },
   "place-nanshan-tangting": {
@@ -2967,6 +3048,21 @@
     "family": "shanhaijing"
   },
   "place-beishan-ershi": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-kuang": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-zhuyu": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-duntou": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-gouwu": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-beixiao": {
     "family": "shanhaijing"
   },
   "01-01": {

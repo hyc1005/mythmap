@@ -1,4 +1,4 @@
-"""Reviewed first-range close and second-range opening (source units 90–116)."""
+"""Reviewed first-range close and second-range opening (source units 90–132)."""
 
 ROWS = [
     dict(slug='bicha',name='羆差之山',en_name='Mount Bicha',units=(90,90),
@@ -105,4 +105,64 @@ def second_range_entities(E):
         E('huqi','material','dark-jade-huqi','蒼玉（狐岐）','Dark jade (Huqi)','其中多蒼玉','蒼玉随水文记述，不推精确色值或成分。','Dark jade belongs to the water account without a precise hue or composition.','Dark jade is abundant in this water account.',water=True),
         E('baisha','water','wei-baisha','鮪水','Wei water','鮪水出于其上潜于其下','鮪水上出下潜，郭注顶出底停另记，不增鱼或强绘地下河。','Wei emerges above and goes beneath; the summit-and-base gloss adds no fish or invented underground river.','Wei water emerges above and goes beneath it.',commentary='出山之頂停其底也',en_commentary='Guo Pu says it emerges at the summit and gathers at the base.'),
         E('baisha','material','white-jade-baisha','白玉（白沙）','White jade (Baisha)','是多白玉','白玉仅名，不补器形。','White jade is named without an invented artifact shape.','White jade is abundant.'),
+    ] + northern_middle_entities(E)
+
+ROWS += [
+    dict(slug='kuang',name='狂山',en_name='Mount Kuang',units=(117,118),range=2,
+         description='爾是向北三百八十里为狂山，无草木，冬夏有雪。狂水从此出，向西注浮水，其中多羙玉。按原文保留积雪与水文，不据此确定现代雪线或河道。',
+         en_description='Kuang lies 380 li north of Ershi, without vegetation and with snow in winter and summer. The Kuang flows west into the Fu; fine jade is abundant in the water account, without a modern snow line or river course.',
+         en_quote='Three hundred and eighty li north is Mount Kuang, without grasses or trees, with snow in winter and summer. The Kuang rises here and flows west into the Fu; fine jade is abundant in this water account.',
+         note='0117在88页末，捕获89校回88；0118在89页。雪与狂水同归本段，不并爾是；浮水仅按本地水文建档，不混别篇同名。',
+         en_note='Unit 117 ends scan 88 despite capture as 89; 118 is on scan 89. Snow and the Kuang belong to this passage, not Ershi. The Fu remains a local water account.'),
+    dict(slug='zhuyu',name='諸餘之山',en_name='Mount Zhuyu',units=(119,120),range=2,
+         description='狂山向北三百八十里为諸餘，上多铜玉、下多松栢。諸餘水向东注旄水；敦頭段另记旄水源流，两段互联而出处分别保存，不补现代物种或坐标。',
+         en_description='Zhuyu lies 380 li north of Kuang, with copper and jade above, pines and bai trees below. Its river flows east into the Mao, whose source and outlet are separately recorded at Duntou.',
+         en_quote='Three hundred and eighty li north is Mount Zhuyu, with copper and jade above, pines and bai trees below. The Zhuyu rises here and flows east into the Mao.',
+         note='0119—0120全核89页。松栢分列，不补叶果图。旄水复用为諸餘—敦頭共享索引，不因同字合并潘侯旄牛。',
+         en_note='Units 119–120 are on scan 89. Pines and bai remain separate name-only plants. The Mao is shared with Duntou; its name is no connection to Pan-hou’s animal.'),
+    dict(slug='duntou',name='敦頭之山',en_name='Mount Duntou',units=(121,123),range=2,
+         description='諸餘向北三百五十里为敦頭，上多金玉，无草木。旄水从此出，向东注印澤，其中多𩣡馬，牛尾、白身、一角，音如呼。马状躯体依名作插画解释，不混西山駮或求如水马。',
+         en_description='Duntou lies 350 li north of Zhuyu, with gold and jade above and no vegetation. The Mao rises here and flows east into Yinze. Boma has an ox tail, a white body and one horn, with a calling sound. Its horse-like torso interprets its name, separately from Western Bo and Qiuru’s water horse.',
+         en_quote='Three hundred and fifty li north is Mount Duntou, with gold and jade above and no grasses or trees. The Mao rises here and flows east into Yinze. Boma is abundant in this water account, with an ox tail, white body and one horn; it sounds like a call.',
+         note='0121—0123全核89页。𩣡音勃独归兽名，马状体躯、姿态与蹄数属插画解释，正文白身一角牛尾逐项保留；旄水东注印澤，不改諸餘来水方向。',
+         en_note='Units 121–123 are on scan 89. The bo pronunciation belongs to Boma. Horse torso, pose and hoof count are artistic; the white body, single horn and ox tail are textual. The Mao flows east into Yinze.'),
+    dict(slug='gouwu',name='鉤吾之山',en_name='Mount Gouwu',units=(124,127),range=2,
+         description='敦頭向北三百五十里为鉤吾，上多玉、下多铜。狍鴞羊身人面，目在腋下、虎齿人爪，音如婴儿。郭注与饕餮、夏鼎的联系另存，疑读不强解；食人古述不画伤害场景。',
+         en_description='Gouwu lies 350 li north of Duntou, with jade above and copper below. Paoxiao has a sheep body, human face, eyes under the armpits, tiger teeth and human claws, with an infant-like cry. Commentary links it to Taotie and Xia tripods; difficult captured readings remain open.',
+         en_quote='Three hundred and fifty li north is Mount Gouwu, with jade above and copper below. Paoxiao has a sheep body and human face, eyes under its armpits, tiger teeth and human claws. It sounds like an infant and eats people.',
+         note='0124—0126在89页，0126捕获90校回89；0127在90页仅郭注承前，归本段不并北囂。目在腋下不添脸眼；人𤓰依捕获异字保留。貪淋、還書等注文疑读照留，不作已校定字；不据饕餮名改画兽面纹器。',
+         en_note='Units 124–126 are on scan 89; 126 was captured as 90. Empty main-text unit 127 continues commentary on scan 90. Armpit eyes add no facial eyes. The difficult claw character and commentary readings remain captured; Taotie adds no bronze-mask anatomy.'),
+    dict(slug='beixiao',name='北囂之山',en_name='Mount Beixiao',units=(128,132),range=2,
+         description='鉤吾向北三百里为北囂，无石，阳多碧、阴多玉。獨𤞞虎状白身、犬首马尾彘鬣；𪄀𪃑如乌人面，宵飞昼伏。涔水向东注卭澤。无石与碧玉并存；郭注音谷归獨𤞞、般冐归鸟名，鵂鶹比较不改乌状。',
+         en_description='Beixiao lies 300 li north of Gouwu, without stones yet with bi on the sunny side and jade on the shaded side. Dugu is tiger-shaped with a white body, dog head, horse tail and boar bristles. Banmao is crow-shaped with a human face, flying at night and resting by day. The Cen flows east into Qiongze.',
+         en_quote='Three hundred li north is Mount Beixiao, without stones, with much bi on its sunny side and jade on its shaded side. Dugu is tiger-shaped, white-bodied, dog-headed, with a horse tail and boar bristles. Banmao is crow-shaped with a human face, flying at night and resting by day; eating it is said to relieve heat illness. The Cen rises here and flows east into Qiongze.',
+         note='0128—0132全核90页，北囂缺字图按影印恢复，捕获另存。音谷虽捕获在130仍归129獨𤞞；般冐两音归𪄀𪃑，或作夏也保留异文疑义。食用为古述；无石与碧玉不擅改。0133梁渠另段。',
+         en_note='Units 128–132 are on scan 90. Xiao is restored from the missing-glyph marker. The gu gloss captured in unit 130 belongs to Dugu in 129; ban-mao belongs to the bird. The Xia variant remains uncertain, and the owl comparison adds no owl face. Stones and minerals remain as written.'),
+]
+
+
+def northern_middle_entities(E):
+    return [
+        E('kuang','water','kuang','狂水','Kuang River','狂水出焉而西流注于浮水','狂水西注浮水，原文里程不作实测。','The Kuang flows west into the Fu without a measured modern route.','The Kuang rises here and flows west into the Fu.'),
+        E('kuang','water','fu-kuang','浮水（狂山）','Fu water (Kuang)','西流注于浮水','浮水接狂水，仅保留本篇上下文。','The Fu receives the Kuang in this local context.','It flows west into the Fu.'),
+        E('kuang','material','fine-jade-kuang','羙玉（狂山）','Fine jade (Kuang)','其中多羙玉','羙玉随水文记述，不定成分颜色。','Fine jade belongs to the water account without an assigned composition or color.','Fine jade is abundant in this water account.',water=True),
+        E('zhuyu','material','copper-zhuyu','铜（諸餘）','Copper (Zhuyu)','其上多銅玉','山上铜与玉分录。','Copper above is recorded separately from jade.','Copper and jade are abundant above.'),
+        E('zhuyu','material','jade-zhuyu','玉（諸餘）','Jade (Zhuyu)','其上多銅玉','玉仅列名，不补形色。','Jade is only named, without an invented shape or color.','Copper and jade are abundant above.'),
+        E('zhuyu','plant','pine-zhuyu','松（諸餘）','Pines (Zhuyu)','其下多松栢','松仅名，不定现代树种。','Pines are named without a modern species.','Pines and bai trees are abundant below.'),
+        E('zhuyu','plant','bai-zhuyu','栢（諸餘）','Bai trees (Zhuyu)','其下多松栢','栢保留底本字，不借其他山树图。','Bai retains the edition character without borrowed tree artwork.','Pines and bai trees are abundant below.'),
+        E('zhuyu','water','zhuyu','諸餘之水','Zhuyu River','諸餘之水出焉而東流注于旄水','諸餘水东注旄水。','The Zhuyu flows east into the Mao.','The Zhuyu rises here and flows east into the Mao.'),
+        E('zhuyu','water','mao','旄水（諸餘—敦頭）','Mao River (Zhuyu–Duntou)','東流注于旄水','旄水承接諸餘水，敦頭另记源头及东注印澤。','The Mao receives the Zhuyu; Duntou separately records its source and eastern outlet into Yinze.','It flows east into the Mao.'),
+        E('duntou','material','gold-duntou','金（敦頭）','Gold (Duntou)','其上多金玉','金与玉分别建档，不推纯度。','Gold and jade are separate records, without an assigned purity.','Gold and jade are abundant above.'),
+        E('duntou','material','jade-duntou','玉（敦頭）','Jade (Duntou)','其上多金玉','玉仅名，不补图。','Jade is only named and receives no illustration.','Gold and jade are abundant above.'),
+        E('duntou','water','yinze-duntou','印澤','Yinze','東流注于印澤','印澤承接旄水，不定现代湖泊。','Yinze receives the Mao, without a modern lake identification.','It flows east into Yinze.'),
+        E('duntou','beast','boma-duntou','𩣡馬（敦頭）','Boma (Duntou)','其中多𩣡馬牛尾而白身一角其音如呼','𩣡馬牛尾白身一角、音如呼；马状躯体、四马蹄与站姿依名作插画解释，不混西山駮。','Boma has an ox tail, white body and one horn with a calling sound. Horse torso, four hooves and stance interpret the name and are artistic, not Western Bo anatomy.','Boma is abundant here, with an ox tail, white body and one horn; it sounds like a call.',commentary='音勃',en_commentary='Guo Pu supplies the pronunciation bo.',water=True),
+        E('gouwu','material','jade-gouwu','玉（鉤吾）','Jade (Gouwu)','其上多玉','山上多玉，不定现代矿点。','Jade above supplies no modern deposit location.','Jade is abundant above.'),
+        E('gouwu','material','copper-gouwu','铜（鉤吾）','Copper (Gouwu)','其下多銅','山下多铜，不补成分纯度。','Copper below has no assigned composition or purity.','Copper is abundant below.'),
+        E('gouwu','beast','paoxiao-gouwu','狍鴞','Paoxiao','有獸焉其状如羊身人靣其目在腋下虎齒人𤓰其音如嬰兒名曰狍鴞是食人','狍鴞羊身人面、目在腋下、虎齿人爪，音如婴儿。四肢人爪与蹲姿为插画解释，不添脸眼角翼，不画伤害；饕餮为郭注联系。','Paoxiao has a sheep body, human face, armpit eyes, tiger teeth and human claws with an infant-like cry. Four clawed limbs and squat pose are artistic; no facial eyes, horns, wings or harm scene are added. Taotie is a commentary connection.','Paoxiao has a sheep body, human face, armpit eyes, tiger teeth and human claws, cries like an infant and eats people.',commentary='為物貪淋食人未盡還書其身像在夏鼎左傳所謂饕餮是也狍音咆',en_commentary='Guo Pu links it to Xia tripods and Taotie and gives pao pronunciation; difficult captured commentary characters are not silently repaired.'),
+        E('beixiao','material','bi-beixiao','碧（北囂）','Bi (Beixiao)','其陽多碧','阳面多碧与无石同时保留，不定成分。','Bi on the sunny side remains alongside the no-stones statement, without a composition.','Bi is abundant on its sunny side.'),
+        E('beixiao','material','jade-beixiao','玉（北囂）','Jade (Beixiao)','其隂多玉','阴面多玉，不擅改无石原文。','Jade on the shaded side does not replace the no-stones text.','Jade is abundant on its shaded side.'),
+        E('beixiao','beast','dugu-beixiao','獨𤞞','Dugu','有獸焉其状如虎而白身犬首馬尾彘鬛名曰獨𤞞','獨𤞞虎状白身、犬首马尾彘鬣。配图四猫足、犬面、长垂马尾与短硬鬣；姿态刻纹为解释，音谷属郭注。','Dugu is tiger-shaped and white-bodied, with a dog head, horse tail and boar bristles. Four feline paws, canine face, flowing horse tail and stiff bristles are shown; pose and carving are artistic.','Dugu is tiger-shaped with a white body, dog head, horse tail and boar bristles.',commentary='音谷',en_commentary='Guo Pu supplies the pronunciation gu.'),
+        E('beixiao','beast','banmao-beixiao','𪄀𪃑','Banmao','有鳥焉其狀如烏人靣名曰𪄀𪃑宵飛而晝㐲食之已暍','𪄀𪃑乌状人面，宵飞昼伏；窄长中年面、黑羽配色与姿态为解释。郭注鵂鶹比较不改乌形，食用为古述。','Banmao is crow-shaped with a human face, flying at night and resting by day. Angular middle-aged face, black plumage and pose are artistic. The commentary owl comparison adds no owl anatomy; the eating claim is ancient.','Banmao is crow-shaped with a human face, flies at night and rests by day; eating it is said to relieve heat illness.',commentary='般冐两音或作夏也；鵂鶹之属；中熱也音謁',en_commentary='Guo Pu gives ban-mao pronunciation and an uncertain Xia variant, compares owls, and explains the heat term.'),
+        E('beixiao','water','cen-beixiao','涔水（北囂）','Cen River (Beixiao)','涔水出焉而東流注于卭澤','涔水东注卭澤，涔不因同字作管涔山水。','The Cen flows east into Qiongze; its name adds no Guancen source.','The Cen rises here and flows east into Qiongze.'),
+        E('beixiao','water','qiongze-beixiao','卭澤','Qiongze','東流注于卭澤','卭澤为涔水所注，保留底本字，不定位现代湖泊。','Qiongze receives the Cen; the edition character supplies no modern lake location.','It flows east into Qiongze.'),
     ]
