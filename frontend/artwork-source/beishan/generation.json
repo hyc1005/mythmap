@@ -1,0 +1,51 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "creature-huayu-qiuru",
+      "entry_id": "beast-beishan-huayu-qiuru",
+      "prompt": "Use case: illustration-story. Project asset for a Shanhaijing woodcut atlas. The reference image is ONLY a reference for the approved carved-print medium, strong rhythmic ink contour, flat ivory/ochre/cinnabar palette and expressive archaic design. Do not copy the bird's anatomy, feathers, crest, eyes or wings. Create ONE complete isolated Northern Mountains Huayu 滑魚 from Qiuru, truly transparent background, 10 percent clear margins, no text, frame, seal, watermark, scenery or shadow. Source form ONLY: 其状如鱓赤背, eel-like with a RED BACK; Guo Pu says the eel resembles a snake. One small eel/fish head, one long smooth tapering eel body, one tail, absolutely ZERO legs, feet, wings, horns, antlers, dragon beard or whiskers. Distinguish this from the Western Huayu with four feet. Use a broad flowing S curve across a square canvas, the broad upper dorsal surface visibly continuous cinnabar-red from behind the head along the long body, warm ivory belly separated by dark brown carved contour. Eel-like compact mouth and small angular eye, not a mammal head; no giant fins, fantasy fin frills or feather motifs. Bold hand-cut black-brown strokes and sparse incised curves/stipple, restrained ochre details, decorative archaic woodblock silhouette, no photoreal skin, no 3D, no digital gradient, no flames. Keep the ENTIRE body and tail inside the clear margins; no water rectangle, no scene.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-huayu-qiuru-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-f725a3bb-3e6d-472f-a951-fd11547aee9f.png",
+      "review_note": "赤背、鱓状长身、单首单尾，无足无翼；形貌符合北山记载，底色透明。",
+      "sha256": "0240aa77b4f6234fb4833a58a5919d75ba9f4b0731d0b0709f797fd38558ca70"
+    },
+    {
+      "name": "creature-shuima-qiuru",
+      "entry_id": "beast-beishan-shuima-qiuru",
+      "prompt": "Use case: precise-object-edit. Keep this exact approved woodcut Shuima horse character, its pose, horse head, exactly four separated hoofed legs, dark patterns on the two front legs, plain rear legs, and a single thin ox tail with a terminal tuft. Fix ONLY framing: reduce the entire existing subject to 80 percent of its current size and center it in the same square transparent canvas. Restore the full right tail tuft tip if cut off. Ensure at least 10 percent completely transparent margin above ear tips, below hooves and beyond the tail and leftmost foreleg. No new anatomy, no new ornament, no scenery, text, shadow or background. Preserve the flat carved-print style, colors and genuine transparent alpha.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-shuima-qiuru-v1.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-shuima-qiuru-v2.png",
+      "revision_prompt": "Use case: precise-object-edit. Keep this exact approved woodcut Shuima horse character, its pose, horse head, exactly four separated hoofed legs, dark patterns on the two front legs, plain rear legs, and a single thin ox tail with a terminal tuft. Fix ONLY framing: reduce the entire existing subject to 80 percent of its current size and center it in the same square transparent canvas. Restore the full right tail tuft tip if cut off. Ensure at least 10 percent completely transparent margin above ear tips, below hooves and beyond the tail and leftmost foreleg. No new anatomy, no new ornament, no scenery, text, shadow or background. Preserve the flat carved-print style, colors and genuine transparent alpha.",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-86b11fa5-40ac-463d-b47e-e28cd6ffb752.png",
+      "review_note": "v2完整四足、文饰集中前腿、细杆牛尾末端毛簇；耳尖/四蹄/尾端均完整并有透明留白，审核通过，首版保留。",
+      "sha256": "d77fb5831cd53de78bcdbca131be03dda2e0781de83dd848d92fdf78c6221b6c",
+      "revisions": [
+        {
+          "name": "creature-shuima-qiuru",
+          "entry_id": "beast-beishan-shuima-qiuru",
+          "prompt": "Use case: illustration-story. Project asset for a Shanhaijing woodcut atlas. The reference image is ONLY a reference for approved ancient carved-print technique, forceful rhythmic contour, flat warm ivory/ochre/cinnabar/mineral-green palette and striking archaic character. Do not copy the bird's face, feathers, wings or head crest. Make ONE isolated Northern Mountains Shuima 水馬 from Qiuru on truly transparent background, no scenery, water, floor, text, seal, border or watermark. Textual anatomy: horse-shaped, PATTERNED FRONT LEGS (文臂; Guo Pu explains 臂 as front legs), OX TAIL. One unequivocally horse-like head with two horse ears, a solid horse body, exactly FOUR horse legs with FOUR separated hooves, and exactly ONE OX-LIKE tail: a long thin smooth tail stem with a SMALL dark hair tuft only at its tip, not a flowing full-length horse tail. Pose a compact spirited horse in a three-quarter side standing/walking pose with all four hooves clearly countable and the complete tail visible away from the hind legs. Strong dark carved geometric patches or short stripes concentrated on the TWO FRONT LEGS, plain rear legs; do not put patterned human arms on it. Warm ivory and ochre torso, sparse muted mineral-green accents, a small cinnabar accent at mouth/eye, dark brown carved mane and ox-tail tuft. Develop an archaic angular silhouette and proud alert expression, not a realistic equestrian portrait, not the same face/ornament as other creatures. No extra limbs, horns, wings, human features, fish tail, fins, hooves replaced by claws, dragon features, fire or glow. Clear 10 percent margins, full subject uncropped. Flat cut-print shapes, sparse grain and decisive incised lines; no 3D or soft shading.",
+          "reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ],
+          "status": "generated",
+          "source_file": "creature-shuima-qiuru-v1.png",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-3acbe9a1-19df-4282-8332-175c94b87631.png",
+          "review_note": "四足可辨、前腿文饰与牛尾细杆端簇可辨；右尾及耳尖过近边界，需缩小主体留白后再审核接入。",
+          "sha256": "5d8a637eb7ce687fb5067690f7f7aaad72302c6000201f9cdb3d28bf8cc2be52"
+        }
+      ],
+      "initial_prompt": "Use case: illustration-story. Project asset for a Shanhaijing woodcut atlas. The reference image is ONLY a reference for approved ancient carved-print technique, forceful rhythmic contour, flat warm ivory/ochre/cinnabar/mineral-green palette and striking archaic character. Do not copy the bird's face, feathers, wings or head crest. Make ONE isolated Northern Mountains Shuima 水馬 from Qiuru on truly transparent background, no scenery, water, floor, text, seal, border or watermark. Textual anatomy: horse-shaped, PATTERNED FRONT LEGS (文臂; Guo Pu explains 臂 as front legs), OX TAIL. One unequivocally horse-like head with two horse ears, a solid horse body, exactly FOUR horse legs with FOUR separated hooves, and exactly ONE OX-LIKE tail: a long thin smooth tail stem with a SMALL dark hair tuft only at its tip, not a flowing full-length horse tail. Pose a compact spirited horse in a three-quarter side standing/walking pose with all four hooves clearly countable and the complete tail visible away from the hind legs. Strong dark carved geometric patches or short stripes concentrated on the TWO FRONT LEGS, plain rear legs; do not put patterned human arms on it. Warm ivory and ochre torso, sparse muted mineral-green accents, a small cinnabar accent at mouth/eye, dark brown carved mane and ox-tail tuft. Develop an archaic angular silhouette and proud alert expression, not a realistic equestrian portrait, not the same face/ornament as other creatures. No extra limbs, horns, wings, human features, fish tail, fins, hooves replaced by claws, dragon features, fire or glow. Clear 10 percent margins, full subject uncropped. Flat cut-print shapes, sparse grain and decisive incised lines; no 3D or soft shading.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    }
+  ]
+}

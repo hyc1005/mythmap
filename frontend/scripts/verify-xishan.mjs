@@ -8,7 +8,7 @@ import { readExploration } from '../src/exploration.js';
 import { mockTianditu } from './mock-tianditu.mjs';
 import { resolve, sep } from 'node:path';
 
-if (JSON.parse(await readFile(new URL('../public/data/myth-world.json', import.meta.url), 'utf8')).revision === 'myth-world-2026-10-24-xishan-complete-v1') {
+if (JSON.parse(await readFile(new URL('../public/data/myth-world.json', import.meta.url), 'utf8')).passages.filter(p => p.source_book === 2).length === 82) {
   await import('./verify-xishan-complete.mjs');
   process.exit(0);
 }

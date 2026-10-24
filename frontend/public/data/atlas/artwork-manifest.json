@@ -6904,6 +6904,364 @@
           ]
         }
       }
+    },
+    {
+      "id": "beishan-creature-huayu-qiuru-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-huayu-qiuru-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1.webp",
+      "initial_prompt": "Use case: illustration-story. Project asset for a Shanhaijing woodcut atlas. The reference image is ONLY a reference for the approved carved-print medium, strong rhythmic ink contour, flat ivory/ochre/cinnabar palette and expressive archaic design. Do not copy the bird's anatomy, feathers, crest, eyes or wings. Create ONE complete isolated Northern Mountains Huayu 滑魚 from Qiuru, truly transparent background, 10 percent clear margins, no text, frame, seal, watermark, scenery or shadow. Source form ONLY: 其状如鱓赤背, eel-like with a RED BACK; Guo Pu says the eel resembles a snake. One small eel/fish head, one long smooth tapering eel body, one tail, absolutely ZERO legs, feet, wings, horns, antlers, dragon beard or whiskers. Distinguish this from the Western Huayu with four feet. Use a broad flowing S curve across a square canvas, the broad upper dorsal surface visibly continuous cinnabar-red from behind the head along the long body, warm ivory belly separated by dark brown carved contour. Eel-like compact mouth and small angular eye, not a mammal head; no giant fins, fantasy fin frills or feather motifs. Bold hand-cut black-brown strokes and sparse incised curves/stipple, restrained ochre details, decorative archaic woodblock silhouette, no photoreal skin, no 3D, no digital gradient, no flames. Keep the ENTIRE body and tail inside the clear margins; no water rectangle, no scene.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "赤背、鱓状长身、单首单尾，无足无翼；形貌符合北山记载，底色透明。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1.webp",
+          "bytes": 296256,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1-card.webp",
+          "bytes": 28518,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1-preview.webp",
+          "bytes": 55432,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-shuima-qiuru-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-shuima-qiuru-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1.webp",
+      "initial_prompt": "Use case: illustration-story. Project asset for a Shanhaijing woodcut atlas. The reference image is ONLY a reference for approved ancient carved-print technique, forceful rhythmic contour, flat warm ivory/ochre/cinnabar/mineral-green palette and striking archaic character. Do not copy the bird's face, feathers, wings or head crest. Make ONE isolated Northern Mountains Shuima 水馬 from Qiuru on truly transparent background, no scenery, water, floor, text, seal, border or watermark. Textual anatomy: horse-shaped, PATTERNED FRONT LEGS (文臂; Guo Pu explains 臂 as front legs), OX TAIL. One unequivocally horse-like head with two horse ears, a solid horse body, exactly FOUR horse legs with FOUR separated hooves, and exactly ONE OX-LIKE tail: a long thin smooth tail stem with a SMALL dark hair tuft only at its tip, not a flowing full-length horse tail. Pose a compact spirited horse in a three-quarter side standing/walking pose with all four hooves clearly countable and the complete tail visible away from the hind legs. Strong dark carved geometric patches or short stripes concentrated on the TWO FRONT LEGS, plain rear legs; do not put patterned human arms on it. Warm ivory and ochre torso, sparse muted mineral-green accents, a small cinnabar accent at mouth/eye, dark brown carved mane and ox-tail tuft. Develop an archaic angular silhouette and proud alert expression, not a realistic equestrian portrait, not the same face/ornament as other creatures. No extra limbs, horns, wings, human features, fish tail, fins, hooves replaced by claws, dragon features, fire or glow. Clear 10 percent margins, full subject uncropped. Flat cut-print shapes, sparse grain and decisive incised lines; no 3D or soft shading.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-shuima-qiuru-v1.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "v2完整四足、文饰集中前腿、细杆牛尾末端毛簇；耳尖/四蹄/尾端均完整并有透明留白，审核通过，首版保留。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1.webp",
+          "bytes": 188672,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1-card.webp",
+          "bytes": 23142,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1-preview.webp",
+          "bytes": 42064,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      },
+      "revision_prompt": "Use case: precise-object-edit. Keep this exact approved woodcut Shuima horse character, its pose, horse head, exactly four separated hoofed legs, dark patterns on the two front legs, plain rear legs, and a single thin ox tail with a terminal tuft. Fix ONLY framing: reduce the entire existing subject to 80 percent of its current size and center it in the same square transparent canvas. Restore the full right tail tuft tip if cut off. Ensure at least 10 percent completely transparent margin above ear tips, below hooves and beyond the tail and leftmost foreleg. No new anatomy, no new ornament, no scenery, text, shadow or background. Preserve the flat carved-print style, colors and genuine transparent alpha.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "id": "beishan-creature-huanshu-daishan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-huanshu-daishan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Horse-shaped Huanshu 䑏䟽: exactly ONE horse head, two ordinary ears, ONE straight single horn rising from the forehead; the horn surface has clearly segmented overlapping scale-like plates (一角有錯; commentary 角有甲錯). Exactly four hoofed legs, one horse tail. Compact alert side/three-quarter stance; no second horn, no antlers, wings, human face or flames. The horn must be unmistakable and the scale plates legible. Warm ivory/ochre body with very sparse green details, restrained cinnabar around the horn base. Do not draw real fire or a claim of fire resistance.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "单马首、单角及角面甲错、四蹄和单尾可辨；主体完整，未增加额外角或翼。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1.webp",
+          "bytes": 322854,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1-card.webp",
+          "bytes": 36048,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1-preview.webp",
+          "bytes": 66522,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-qitu-daishan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-qitu-daishan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Northern Qitu 鵸䳜 from Dai: shaped like a CROW, five-colored with RED PATTERN MARKS. Exactly ONE crow head, ONE crow body, TWO feathered wings and TWO feet, ONE coherent crow tail. This is NOT the Western three-headed six-tailed namesake. Create a compact black-dominant archaic crow with clear red carved bands/patches and restrained ivory, ochre and muted green touches for its five-color treatment. Strong crow beak, individual alert expression, no owl face, no extra heads, extra tails, horns, mating scene or gender symbols. No text.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "单首双翼双足、乌状黑身，黑白赭绿朱砂五色及赤文可辨；多枚尾羽属一个鸟尾，不借西山三首六尾。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1.webp",
+          "bytes": 460522,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1-card.webp",
+          "bytes": 45134,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1-preview.webp",
+          "bytes": 86586,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-youyu-daishan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-youyu-daishan-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Youyu 儵魚: one coherent CHICKEN-LIKE body with RED FEATHERS, EXACTLY FOUR CHICKEN HEADS on four short separate necks from the front of the same body, EXACTLY SIX legs with SIX separately visible clawed chicken feet, EXACTLY THREE separate feathered tails rooted at the rear. This fish-named creature must retain the chicken form, no invented fish fins or gills. All FOUR heads individually countable, none hidden; all SIX feet visible and separated in three pairs; THREE tails fanned into three distinct arcs with clear transparent gaps. Compact near-side wide oblique view, four head necks spread like an open small fan at upper left, three tails spread to upper right, six feet extending below the single torso. Simple red feathers with ivory incisions, dark carved outlines, very sparse ochre; no extra wing pairs, no mammal heads, no horns, no lettering or numbers. Count anatomy before rendering.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-youyu-daishan-v1.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "v2四个鸡首、六条腿及六只独立足、三条尾逐一可数，首版五足不接入，原画均保留。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1.webp",
+          "bytes": 388568,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1-card.webp",
+          "bytes": 49034,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1-preview.webp",
+          "bytes": 89824,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      },
+      "revision_prompt": "Use case: precise-object-edit. Preserve this exact red chicken-like Youyu woodcut, its FOUR separate chicken heads and THREE separate rear feather tails, same single body, colors and transparent alpha. Anatomical correction ONLY: there are presently FIVE distinguishable feet. Add ONE sixth short yellow-scaled chicken leg and clawed foot on the far rear side, attached under the rear body and extending diagonally RIGHT into the empty space below the three tails. Put the NEW sixth foot clearly to the RIGHT and ABOVE the existing rightmost foot, with its entire ankle and splayed claws visible against transparency, not overlapping existing feet or tail. Keep all existing five feet intact, so final total is SIX individually countable legs and SIX individually countable feet. Do not hide one behind another, do not split toes and call them feet. Exactly FOUR heads, SIX legs/feet, THREE tails. Keep all extremities uncropped with clear margins, shrink subject slightly if needed. No labels, numbers, extra wings, new heads, scenery, background or shadows.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "id": "beishan-creature-heluo-qiaoming-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-heluo-qiaoming-v3.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Heluo 何羅之魚: EXACTLY ONE fish head AND TEN distinct fish BODIES (一首而十身). One shared fish head at left/upper-left, with TEN slim scaled fish trunks branching immediately behind the single head like a broad comb/fan, each trunk having its own fully separated tapering caudal tail, all ten long bodies countable using open transparent gaps. These are scaled FISH BODIES, not octopus arms, not tentacles, no suction cups, not ten heads and not ten arbitrary ribbons. Make the common single head clearly fishlike, with small mouth and one visible eye. Use a generous wide fan composition inside the square, five trunks fanning above and five below, never crossing or overlapping. Dark-brown cuts, warm ivory scaled bodies with restrained ochre/cinnabar bands. Do not add a second head, legs, wings, mammal features, ocean scenery or numbering. Exact ten-body count is critical.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-heluo-qiaoming-v2.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "v3单一鱼首、十条独立有鳞鱼身及各自鱼尾逐条可数，不是十头或章鱼触腕；v1八身、v2九身保留不接入。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1.webp",
+          "bytes": 396454,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1-card.webp",
+          "bytes": 52198,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1-preview.webp",
+          "bytes": 95468,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      },
+      "revision_prompt": "Use case: precise-object-edit. Anatomical count correction only. This image currently has NINE separately countable fish bodies, with NINE forked tails. Keep every one of those existing nine bodies and their nine tails unchanged. ADD exactly ONE MORE scaled fish body connected immediately behind the single shared head: it must curve from the neck UP AND LEFT into the empty upper-left quadrant, ending in a complete forked fish tail near x=180,y=260, well to the LEFT of the current leftmost upper tail. Keep a clear transparent gap from the head crest, the current uppermost body and all other bodies. This new extra body must be a full thick scaled fish trunk, with its own tail; not a fin, not a tail lobe, not a ribbon. Final visible count TEN separate bodies and TEN forked tails, exactly ONE fish head. Do not remove, merge, redraw, move or replace any of the existing nine bodies. No text, markers, numbers, tentacles, extra heads or scenery. Preserve existing woodcut style, palette and true transparency.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "id": "beishan-creature-menghuai-qiaoming-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-menghuai-qiaoming-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Menghuai 孟槐: text shaped like 貆 with RED BRISTLES; Guo Pu explicitly glosses 貆 as a porcupine. One stout low PORCUPINE-LIKE beast, one small head with a blunt muzzle, four short feet, a short single tail, back covered with strong stiff CINNABAR-RED bristles/quills. Clearly porcupine form, not a rhinoceros, hedgehog ball, boar or goat. A compact proud hunched silhouette, slightly exaggerated archaic proportions, stiff carved red quills with ivory cut lines, warm ochre underside and dark ink outline. No horns, wings, extra heads, long mane, flames or armor. Bristles are physical red quills, not fire. Keep four small feet distinguishable and all quills uncropped.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "单首四足、豪猪状长硬赤刺可辨；赤豪为实体刺毛而非火焰，豪猪释义明确来自郭注。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1.webp",
+          "bytes": 433352,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1-card.webp",
+          "bytes": 43010,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1-preview.webp",
+          "bytes": 83066,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-xixi-zhuoguang-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-xixi-zhuoguang-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Xixi 鰼鰼之魚: one MAGPIE-LIKE bird body and head, EXACTLY TEN WINGS, with SCALES AT THE ENDS OF THE FEATHERS (鱗皆在羽端). ONE magpie head with pointed beak, ONE compact bird torso, ONE slender coherent tail, two modest bird feet. TEN distinct wings in FIVE PAIRS rooted symmetrically down the torso: five separate complete wings fanning to the left and five to the right, each wing separated by a clear transparent gap. Near-frontal slightly oblique view for countability, head at top center, tail down center. Wing pairs step from long upper wings to shorter lower wings; do not merge wings with tail. Every feather end has a small visible rounded or polygonal overlapping SCALE TIP rather than scales covering the torso. Magpie-like black/ivory with subdued ochre and very restrained cinnabar at scale tips. Exactly ten wings is critical; no fish tail, fins, extra heads, horns, radiating fire, numbered labels or realistic flames.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-xixi-zhuoguang-v1.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "v2五对十个独立翼可辨，单首双足、中央单尾不计作翼；鳞片表现集中羽端，v1八翼保留不接入。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1.webp",
+          "bytes": 383452,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1-card.webp",
+          "bytes": 45872,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1-preview.webp",
+          "bytes": 86050,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      },
+      "revision_prompt": "Use case: precise-object-edit. Preserve this exact magpie-like Xixi woodcut, ONE head, ONE torso, TWO feet and ONE central feather tail. There are currently EIGHT wings, four to each side. The source requires TEN wings, five pairs. Keep all existing eight wings unchanged and ADD ONE FIFTH PAIR of small feathered wings at the BOTTOM of the torso, immediately BELOW the currently lowest pair and ABOVE the central tail fan. New LEFT wing must extend out and down to x=250,y=1000; new RIGHT wing must extend out and down to x=1020,y=1000, each separated from the existing lowest wings, both feet and central tail by clearly visible transparent gaps. Each must have a visible wing root connected to the torso and its own complete feather fan, not just two feathers or tail lobes. Final count exactly FIVE whole wings on the left plus FIVE whole wings on the right. Add obvious small overlapping scale-plates ONLY at each feather tip; preserve the scale-tip treatment on all other feathers. Do not add more tails, heads or feet. Keep true transparency, carved-print style and clear outer margins; shrink the overall composition if necessary. No text, numbering, scenery or shadows.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "id": "beishan-bird-yu-guoshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-yu-guoshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Yu 寓 of Guo Mountain: MOUSE-SHAPED body with BIRD WINGS (状如䑕而鳥翼). Exactly ONE clearly mouse-like head with two rounded mouse ears, one compact rodent body, FOUR small rodent paws, ONE long thin mouse tail, and ONE PAIR OF FEATHERED BIRD WINGS rooted at the shoulders. Wings are visibly feathered, NOT bat membranes. One wing raised and the far wing partly spread, both separated from the long tail. Keep the rodent muzzle and rounded ears, do not turn the head into a bird or owl. Warm ochre mouse with flat ivory cuts and subtle green/dark feather panels, a tiny cinnabar eye accent. Archaic proportions and decisive carved rhythm. No extra heads, horns, extra wing pairs, fish parts, weapons or battle scenery.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "鼠首鼠身、圆耳长尾、四个小爪及一对羽翼可辨；不是蝙蝠膜翼，不加额外头或鸟首。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1.webp",
+          "bytes": 316106,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1-card.webp",
+          "bytes": 34832,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1-preview.webp",
+          "bytes": 64780,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

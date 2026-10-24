@@ -7,7 +7,7 @@ from PIL import Image
 FRONTEND = Path(__file__).resolve().parents[1]
 PUBLIC = FRONTEND / 'public'
 parser = argparse.ArgumentParser()
-parser.add_argument('--chapter', choices=['nanshan', 'xishan'], default='nanshan')
+parser.add_argument('--chapter', choices=['nanshan', 'xishan', 'beishan'], default='nanshan')
 chapter = parser.parse_args().chapter
 SOURCE = FRONTEND / 'artwork-source' / chapter
 
@@ -34,7 +34,7 @@ if entity_manifest.exists():
 destination = PUBLIC / 'data/atlas/myth-icons' / chapter
 destination.mkdir(parents=True, exist_ok=True)
 for asset in generation['assets']:
-    if chapter == 'xishan' and asset.get('status') != 'reviewed':
+    if chapter in {'xishan', 'beishan'} and asset.get('status') != 'reviewed':
         continue
     name = asset['name']
     source = SOURCE / asset.get('source_file', f'{name}-v1.png')
@@ -60,9 +60,12 @@ for asset in generation['assets']:
         refined[base] = {'map': variants['map']}
     id = f'{chapter}-{name}-v1'
     entry = {'id': id, 'tool': 'built-in image_gen', 'source_copy': source.relative_to(FRONTEND.parent).as_posix(),
-             'destination': 'frontend/public' + base, 'initial_prompt': asset['prompt'],
+             'destination': 'frontend/public' + base, 'initial_prompt': asset.get('initial_prompt', asset['prompt']),
              'reference_images': asset['reference_images'], 'status': f'reviewed_for_{chapter}_batch',
              'visual_review_note': asset['review_note'], 'variants': variants}
+    if asset.get('revision_prompt'):
+        entry['revision_prompt'] = asset['revision_prompt']
+        entry['initial_reference_images'] = asset.get('initial_reference_images', [])
     artwork['assets'] = [item for item in artwork['assets'] if item.get('id') != id] + [entry]
     print(name, {key: value['bytes'] for key, value in variants.items()})
 write(FRONTEND / 'src/optimized-assets.json', optimized)

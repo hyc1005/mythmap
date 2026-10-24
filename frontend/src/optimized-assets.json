@@ -2975,5 +2975,122 @@
       1280,
       826
     ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1.webp",
+    "original_bytes": 1590015,
+    "optimized_bytes": 296256,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1.webp",
+    "original_bytes": 1042255,
+    "optimized_bytes": 188672,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1.webp",
+    "original_bytes": 1768768,
+    "optimized_bytes": 322854,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1.webp",
+    "original_bytes": 2467895,
+    "optimized_bytes": 460522,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1.webp",
+    "original_bytes": 1948126,
+    "optimized_bytes": 388568,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1.webp",
+    "original_bytes": 1851126,
+    "optimized_bytes": 396454,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1.webp",
+    "original_bytes": 2270720,
+    "optimized_bytes": 433352,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1.webp",
+    "original_bytes": 2043183,
+    "optimized_bytes": 383452,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1.webp",
+    "original_bytes": 1795414,
+    "optimized_bytes": 316106,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
   }
 }

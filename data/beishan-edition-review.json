@@ -1,0 +1,422 @@
+{
+  "scope": "北山经首列前7段：單狐至虢山之尾，7阅读/51独立卡，后文待核。",
+  "snapshot_sha256": "0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce",
+  "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853",
+  "scan_pages": [
+    76,
+    77,
+    78,
+    79
+  ],
+  "heading_unit_ids": [
+    "source-03-0001"
+  ],
+  "source_unit_page_corrections": {
+    "source-03-0009": 76,
+    "source-03-0018": 77,
+    "source-03-0027": 78
+  },
+  "entry_ids": [
+    "place-beishan-danhu",
+    "plant-beishan-ji-danhu",
+    "plant-beishan-huacao-danhu",
+    "water-beishan-feng-danhu",
+    "water-beishan-you-danhu",
+    "material-beishan-pishi-danhu",
+    "material-beishan-wenshi-danhu",
+    "place-beishan-qiuru",
+    "material-beishan-copper-qiuru",
+    "material-beishan-jade-qiuru",
+    "water-beishan-hua-qiuru",
+    "water-beishan-zhupi-qiuru",
+    "place-beishan-zhupi-qiuru",
+    "beast-beishan-huayu-qiuru",
+    "beast-beishan-shuima-qiuru",
+    "place-beishan-daishan",
+    "material-beishan-jade-daishan",
+    "material-beishan-qingbi-daishan",
+    "beast-beishan-huanshu-daishan",
+    "beast-beishan-qitu-daishan",
+    "water-beishan-peng-daishan",
+    "water-beishan-pihu-daishan",
+    "beast-beishan-youyu-daishan",
+    "place-beishan-qiaoming",
+    "water-beishan-qiao-qiaoming",
+    "beast-beishan-heluo-qiaoming",
+    "beast-beishan-menghuai-qiaoming",
+    "material-beishan-qingxionghuang-qiaoming",
+    "place-beishan-zhuoguang",
+    "water-beishan-xiao-zhuoguang",
+    "beast-beishan-xixi-zhuoguang",
+    "plant-beishan-pine-zhuoguang",
+    "plant-beishan-bai-zhuoguang",
+    "plant-beishan-zong-zhuoguang",
+    "plant-beishan-jiang-zhuoguang",
+    "beast-beishan-lingyang-zhuoguang",
+    "beast-beishan-fan-zhuoguang",
+    "place-beishan-guoshan",
+    "plant-beishan-qi-guoshan",
+    "plant-beishan-tong-guoshan",
+    "plant-beishan-ju-guoshan",
+    "material-beishan-jade-guoshan",
+    "material-beishan-iron-guoshan",
+    "water-beishan-yi-guoshan",
+    "beast-beishan-tuotuo-guoshan",
+    "beast-beishan-yu-guoshan",
+    "place-beishan-guowei",
+    "material-beishan-jade-guowei",
+    "water-beishan-yu-guowei",
+    "material-beishan-wenbei-guowei",
+    "water-beishan-he"
+  ],
+  "passages": [
+    {
+      "id": "passage-beishan-danhu",
+      "source_unit_ids": [
+        "source-03-0002",
+        "source-03-0003",
+        "source-03-0004"
+      ],
+      "source_span": [
+        8,
+        44
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-qiuru",
+      "source_unit_ids": [
+        "source-03-0005",
+        "source-03-0006",
+        "source-03-0007",
+        "source-03-0008",
+        "source-03-0009",
+        "source-03-0010"
+      ],
+      "source_span": [
+        44,
+        116
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-daishan",
+      "source_unit_ids": [
+        "source-03-0011",
+        "source-03-0012",
+        "source-03-0013",
+        "source-03-0014",
+        "source-03-0015",
+        "source-03-0016"
+      ],
+      "source_span": [
+        116,
+        219
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-qiaoming",
+      "source_unit_ids": [
+        "source-03-0017",
+        "source-03-0018",
+        "source-03-0019",
+        "source-03-0020",
+        "source-03-0021"
+      ],
+      "source_span": [
+        219,
+        292
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-zhuoguang",
+      "source_unit_ids": [
+        "source-03-0022",
+        "source-03-0023",
+        "source-03-0024",
+        "source-03-0025"
+      ],
+      "source_span": [
+        292,
+        364
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-guoshan",
+      "source_unit_ids": [
+        "source-03-0026",
+        "source-03-0027",
+        "source-03-0028",
+        "source-03-0029"
+      ],
+      "source_span": [
+        364,
+        423
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-guowei",
+      "source_unit_ids": [
+        "source-03-0030",
+        "source-03-0031"
+      ],
+      "source_span": [
+        423,
+        456
+      ],
+      "status": "facsimile_reviewed"
+    }
+  ],
+  "commentary_alignment": [
+    {
+      "source_unit_ids": [
+        "source-03-0002",
+        "source-03-0003"
+      ],
+      "reading": "机木似榆可燒以糞稲田出蜀中音飢",
+      "basis": "76页机木双行小注的音与飢连读；音逢另属漨水，捕获快照不改。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0007",
+        "source-03-0008",
+        "source-03-0009",
+        "source-03-0010"
+      ],
+      "basis": "0005—0009均见76页，0009牛尾及水马郭注捕获为77页，按影印校回76；0010其音如呼及注见77页，0011帶山另段。0008音吾子之吾回释前句梧，不归水馬；疣贅也释滑魚食用句。諸毗山只在郭注出现，单独作注文地点，不与西山同名山合并。周禮马黑脊等引文为比拟，不追加本段黑背特征；水马注录文省字或异写保留，非逐字校勘定本。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0011",
+        "source-03-0012",
+        "source-03-0013",
+        "source-03-0014",
+        "source-03-0015",
+        "source-03-0016"
+      ],
+      "basis": "0011—0016全核77页，0017譙明另段。䑏䟽一角有錯与郭注甲錯分列；鵸䳜注上已、有此鳥疑同名跨13—14连读，不合并西山三首六尾。儵魚郭注音由，英文采用Youyu，中文与稳定ID保留；不改为普通鱼形。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0017",
+        "source-03-0018",
+        "source-03-0019",
+        "source-03-0020",
+        "source-03-0021"
+      ],
+      "basis": "0017—0018均见77页末，0018虽捕获78页仍校回77；0019—0021在78页。孟槐貆的豪猪释义来自郭注，不画成正文另称豪猪。多青与雄黄跨行连读，按青雄黄整项留歧义，一作多青碧另列，不擅改底本。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0022",
+        "source-03-0023",
+        "source-03-0024",
+        "source-03-0025"
+      ],
+      "basis": "0022—0025全核78页。鰼鰼十翼、鳞在羽端及鹊状同时保留，不据鱼名补鱼尾。㯶、栢、橿依底本；麢羊仅列名，蕃注未詳或云即鴞仍为不确定注说，二者用统一占位。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0026",
+        "source-03-0027",
+        "source-03-0028",
+        "source-03-0029"
+      ],
+      "basis": "0026—0027在78页，0027捕获79校回78；79页从注于河及橐駝续。桐梧与桐也跨26—27连读，后句椐樻木腫節中椐桾音祛独归椐，疑难用字不强解。橐駝注有肉鞍等不足决定驼峰数量，暂留占位；寓鼠状鸟翼有明确依据才生图。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0030",
+        "source-03-0031"
+      ],
+      "basis": "0030—0031全核79页，0032丹熏另段。魚水为水名，不将鱼字算作本段新增鱼类；文貝仅列名、玉与无石并存保留。河复用北山本批共享索引，四段摘句各存出处，不与西山河索引或现代河道合并。"
+    }
+  ],
+  "structure_inventory": {
+    "status": "transcription_only_pending_facsimile_review",
+    "source_blocks": 297,
+    "captured_pages": [
+      76,
+      108
+    ],
+    "structural_candidates": 90,
+    "ranges": [
+      {
+        "range": 1,
+        "source_units": [
+          2,
+          99
+        ],
+        "summary_units": [
+          96,
+          99
+        ],
+        "reported_mountains": 25,
+        "reported_li": 5490
+      },
+      {
+        "range": 2,
+        "source_units": [
+          100,
+          150
+        ],
+        "summary_units": [
+          147,
+          150
+        ],
+        "reported_mountains": 17,
+        "reported_li": 5690
+      },
+      {
+        "range": 3,
+        "source_units": [
+          151,
+          296
+        ],
+        "summary_units": [
+          290,
+          296
+        ],
+        "reported_mountains": 46,
+        "reported_li": 12350
+      }
+    ],
+    "closing_total_unit": 297,
+    "reported_total_mountains": 87,
+    "reported_total_li": 23230,
+    "limits": "以上段界与数字仅据本地录文定位，未核全篇影印；列数25+17+46=88与篇末87、里程5490+5690+12350=23530与篇末23230暂存差异，后续须逐页复核，不改原数字。90结构候选不是最终山数或阅读段数。",
+    "candidate_boundary_risks": [
+      {
+        "source_units": [
+          96,
+          102
+        ],
+        "note": "候选重复切分首列总括，并把管涔首山并入；应分别核96—99及100—102。"
+      },
+      {
+        "source_units": [
+          147,
+          155
+        ],
+        "note": "候选重复切分次二总括，并把太行/歸山并入；应分别核147—150及151—155。"
+      },
+      {
+        "source_units": [
+          270,
+          274
+        ],
+        "note": "燕山与山行水行至饒山未分；须逐页核270—271及272—274。"
+      },
+      {
+        "source_units": [
+          280,
+          286
+        ],
+        "note": "碣石、鴈門、泰澤中帝都被同候选合并；须分别核280—282、283—284、285—286。"
+      },
+      {
+        "source_units": [
+          290,
+          297
+        ],
+        "note": "次三总括与篇末总计被重复切分；须核290—296及297。"
+      }
+    ]
+  },
+  "stable_existing_ids": [
+    "03-04",
+    "beast-jingwei",
+    "beast-zhu-jian",
+    "place-fajiu",
+    "place-north-ranges"
+  ],
+  "title_font_supplement": {
+    "family": "Noto Serif SC",
+    "characters": "單机華漨求䑏䟽何儵孟寓帶彭栢椐橐虢譙駝鰼䑕",
+    "weights": [
+      400,
+      700
+    ],
+    "path": "frontend/public/fonts/shanhai-title-beishan.woff2",
+    "source_url": "https://fonts.gstatic.com/l/font?kit=H4chBXePl9DZ0Xe7gG9cyOj7oqOEVNT6mT2B9lDVVeESTG9twMgV76NnH75kRgI81VDUD7TV94iySzmu6-fa7ieOMvVsqkAHdAr7SBvIxbn3EtBVCQ&skey=37fe335b8fd815cc&v=v36",
+    "sha256": "52a7c19cec7db2c0888315efaa24a4ccdb878ecda0c798eb54400f3533355f4e",
+    "license": "frontend/public/fonts/noto-serif-sc-LICENSE.txt",
+    "rebuild": "python frontend/scripts/supplement-title-font.py",
+    "limits": "21字小子集随站点发布，不在运行时请求Google；原标题与罕字字库不改，既有30字本机依赖限制不变。"
+  },
+  "limits": "已核76—79页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。",
+  "next": {
+    "name": "丹熏之山",
+    "source_units": [
+      32,
+      36
+    ],
+    "captured_pages": [
+      79,
+      80
+    ],
+    "status": "pending_facsimile_review",
+    "notes": "复用79页、首次核80页；0036捕获页界需核。耳䑕的鼠状/莬首/麋身/以尾飞与郭注异文分开，丹雘与熏水/棠水各按本段，不借西山丹木或耳鼠近似图。"
+  },
+  "five_stage_plan": [
+    {
+      "name": "帶山",
+      "passage_id": "passage-beishan-daishan",
+      "source_units": [
+        11,
+        16
+      ],
+      "new_cards": 8,
+      "text_status": "facsimile_reviewed",
+      "browser_status": "see local handoff stage results"
+    },
+    {
+      "name": "譙明之山",
+      "passage_id": "passage-beishan-qiaoming",
+      "source_units": [
+        17,
+        21
+      ],
+      "new_cards": 6,
+      "text_status": "facsimile_reviewed",
+      "browser_status": "see local handoff stage results"
+    },
+    {
+      "name": "涿光之山",
+      "passage_id": "passage-beishan-zhuoguang",
+      "source_units": [
+        22,
+        25
+      ],
+      "new_cards": 9,
+      "text_status": "facsimile_reviewed",
+      "browser_status": "see local handoff stage results"
+    },
+    {
+      "name": "虢山",
+      "passage_id": "passage-beishan-guoshan",
+      "source_units": [
+        26,
+        29
+      ],
+      "new_cards": 9,
+      "text_status": "facsimile_reviewed",
+      "browser_status": "see local handoff stage results"
+    },
+    {
+      "name": "虢山之尾",
+      "passage_id": "passage-beishan-guowei",
+      "source_units": [
+        30,
+        31
+      ],
+      "new_cards": 4,
+      "text_status": "facsimile_reviewed",
+      "browser_status": "see local handoff stage results"
+    }
+  ]
+}

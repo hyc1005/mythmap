@@ -17,6 +17,11 @@ def build(check=False):
     western_review = read(western_review_path) if western_review_path.exists() else {}
     page_corrections = western_review.get('source_unit_page_corrections', {})
     heading_ids = {'source-01-0001', 'source-01-0002', *western_review.get('heading_unit_ids', [])}
+    northern_review_path = ROOT / 'data/beishan-edition-review.json'
+    if northern_review_path.exists():
+        northern_review = read(northern_review_path)
+        page_corrections = {**page_corrections, **northern_review.get('source_unit_page_corrections', {})}
+        heading_ids.update(northern_review.get('heading_unit_ids', []))
     confirmed = {}
     for passage in passages:
         for id in passage['source_unit_ids']:
@@ -71,7 +76,7 @@ def build(check=False):
             'objects':sorted({s for p in passages if p['id'] in confirmed[id] for s in p['subjects']}),'candidate_entry_ids':[],
             'relationship_review':'passage_context_only','segmentation':'manually restored from scan'})
     value={'version':1,'edition':snapshot['edition'],'snapshot_sha256':hashlib.sha256((ROOT/'data/shanhaijing-reference.json').read_bytes()).hexdigest(),
-        'limits':f'全书清单逐项保留电子录文块及待核状态，不把录文换行当作已核定语义段。南山经43段与西山经{sum(p.get("source_book")==2 for p in passages)}段已核；其余结构候选的边界、实体和关系仍待人工核定。候选匹配与关系摘录不构成已核定关联，也不作全书完成率分母。',
+        'limits':f'全书清单逐项保留电子录文块及待核状态，不把录文换行当作已核定语义段。南山经43段、西山经{sum(p.get("source_book")==2 for p in passages)}段、北山经{sum(p.get("source_book")==3 for p in passages)}段已核；其余结构候选的边界、实体和关系仍待人工核定。候选匹配与关系摘录不构成已核定关联，也不作全书完成率分母。',
         'chapters':[{'number':c['number'],'title':c['title'],'source_blocks':sum(u['chapter']==c['number'] for u in units),
             'explained_blocks':sum(u['chapter']==c['number'] and u['status']=='explained_in_reader' for u in units),
             'semantic_passages':sum(p['region']==c['title'] for p in passages),

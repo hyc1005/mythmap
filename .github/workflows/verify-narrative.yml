@@ -106,6 +106,10 @@ jobs:
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-reader.mjs
       - name: Verify first Western Mountain passages
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-xishan.mjs
+      - name: Verify reviewed Northern Mountain passages
+        run: npm run verify:beishan
+        env:
+          ATLAS_STATIC_DIR: dist
       - name: Verify story discovery and reading round trips
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-discovery.mjs
       - name: Verify modern place search and empty states

@@ -4,12 +4,12 @@
 
 ## 统计口径
 
-- 十八篇录文块清单见 `data/shanhaijing-inventory.json`，每项保存页码、原文、注文与待核状态。《南山经》43段与《西山经》82段已接入说明；其余结构候选的段界、实体、关系和影印仍待人工核定。不是全书穷尽实体索引，也不是各版本校勘定本。
+- 十八篇录文块清单见 `data/shanhaijing-inventory.json`，每项保存页码、原文、注文与待核状态。《南山经》43段、《西山经》82段与《北山经》7段已接入说明；其余结构候选的段界、实体、关系和影印仍待人工核定。不是全书穷尽实体索引，也不是各版本校勘定本。
 - 已保存十八篇逐行正文、注文、影印页锚点、校对状态和固定修订链接，见 `data/shanhaijing-reference.json`。录文中缺字图保留显式标记，不猜字补齐。
 - 下表按当前条目声明的出处计数；同一条目可引用多篇，同名异篇保持分开。地点锚点、神域、异兽、故事不是同一统计单位，不能相加后声称全书覆盖率。
-- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。145条异兽记录，同名异篇分开；312条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
+- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。157条异兽记录，同名异篇分开；343条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
 - “常规入口”是地图、图鉴、章节目录中的独立条目；“非默认条目”是归档/组，仍可从搜索或直链打开；“未开放”指数据已有记录，但没有可用章节入口。引用某篇不等于完整收录该篇。
-- 项目共 820 条上述记录（含125条经文阅读段，与独立实体不是同一统计单位）：常规入口 810，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
+- 项目共 878 条上述记录（含132条经文阅读段，与独立实体不是同一统计单位）：常规入口 868，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
 
 ## 十八篇对应清单
 
@@ -17,7 +17,7 @@
 | --- | ---: | ---: | ---: | --- |
 | [南山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%80&oldid=2652851) | 161 | 0 | 0 | 全篇43段说明可读；独立实体仍选编 |
 | [西山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%8C&oldid=2652852) | 596 | 0 | 2 | 82段、508张新卡已接入；其余仍待核 |
-| [北山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853) | 5 | 0 | 0 | 选编，篇内仍有遗漏 |
+| [北山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853) | 63 | 0 | 0 | 7段、51张新卡已核；其余仍待核 |
 | [东山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854) | 4 | 0 | 0 | 选编，篇内仍有遗漏 |
 | [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 0 | 0 | 0 | 尚无明确篇目对应 |
 | [海外南经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AD&oldid=2652857) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
@@ -51,9 +51,11 @@
 
 ### 03 北山经
 
-- 常规入口：精卫（`beast-jingwei`）；诸犍（`beast-zhu-jian`）；发鸠之山（`place-fajiu`）；北山经山列（`place-north-ranges`）；精卫填海（`03-04`）。
-- 待补方向：精卫与部分异兽不等于北山经全貌；发鸠山段上下文、水系及其余山系待补。
+- 常规入口：精卫（`beast-jingwei`）；诸犍（`beast-zhu-jian`）；滑魚（求如）（`beast-beishan-huayu-qiuru`）；水馬（求如）（`beast-beishan-shuima-qiuru`）；䑏䟽（帶山）（`beast-beishan-huanshu-daishan`）；鵸䳜（帶山）（`beast-beishan-qitu-daishan`）；儵魚（帶山）（`beast-beishan-youyu-daishan`）；何羅之魚（`beast-beishan-heluo-qiaoming`）；孟槐（`beast-beishan-menghuai-qiaoming`）；鰼鰼之魚（`beast-beishan-xixi-zhuoguang`）；麢羊（涿光）（`beast-beishan-lingyang-zhuoguang`）；蕃（涿光）（`beast-beishan-fan-zhuoguang`）；橐駝（虢山）（`beast-beishan-tuotuo-guoshan`）；寓（虢山）（`beast-beishan-yu-guoshan`）；发鸠之山（`place-fajiu`）；北山经山列（`place-north-ranges`）；机木（`plant-beishan-ji-danhu`）；華草（單狐）（`plant-beishan-huacao-danhu`）；漨水（單狐）（`water-beishan-feng-danhu`）；泑水（北山经）（`water-beishan-you-danhu`）；芘石（單狐水文）（`material-beishan-pishi-danhu`）；文石（單狐水文）（`material-beishan-wenshi-danhu`）；铜（求如）（`material-beishan-copper-qiuru`）；玉（求如）（`material-beishan-jade-qiuru`）；滑水（求如）（`water-beishan-hua-qiuru`）；諸毗之水（北山经）（`water-beishan-zhupi-qiuru`）；玉（帶山）（`material-beishan-jade-daishan`）；青碧（帶山）（`material-beishan-qingbi-daishan`）；彭水（帶山）（`water-beishan-peng-daishan`）；芘湖之水（帶山）（`water-beishan-pihu-daishan`）；譙水（譙明）（`water-beishan-qiao-qiaoming`）；青雄黄（譙明）（`material-beishan-qingxionghuang-qiaoming`）；囂水（涿光）（`water-beishan-xiao-zhuoguang`）；松（涿光）（`plant-beishan-pine-zhuoguang`）；栢（涿光）（`plant-beishan-bai-zhuoguang`）；㯶（涿光）（`plant-beishan-zong-zhuoguang`）；橿（涿光）（`plant-beishan-jiang-zhuoguang`）；漆（虢山）（`plant-beishan-qi-guoshan`）；桐（虢山）（`plant-beishan-tong-guoshan`）；椐（虢山）（`plant-beishan-ju-guoshan`）；玉（虢山）（`material-beishan-jade-guoshan`）；铁（虢山）（`material-beishan-iron-guoshan`）；伊水（虢山）（`water-beishan-yi-guoshan`）；玉（虢山之尾）（`material-beishan-jade-guowei`）；魚水（虢山之尾）（`water-beishan-yu-guowei`）；文貝（虢山之尾）（`material-beishan-wenbei-guowei`）；河（北山经）（`water-beishan-he`）；單狐之山（`passage-beishan-danhu`）；求如之山（`passage-beishan-qiuru`）；帶山（`passage-beishan-daishan`）；譙明之山（`passage-beishan-qiaoming`）；涿光之山（`passage-beishan-zhuoguang`）；虢山（`passage-beishan-guoshan`）；虢山之尾（`passage-beishan-guowei`）；單狐之山（`place-beishan-danhu`）；求如之山（`place-beishan-qiuru`）；諸毗山（北山郭注）（`place-beishan-zhupi-qiuru`）；帶山（`place-beishan-daishan`）；譙明之山（`place-beishan-qiaoming`）；涿光之山（`place-beishan-zhuoguang`）；虢山（`place-beishan-guoshan`）；虢山之尾（`place-beishan-guowei`）；精卫填海（`03-04`）。
+- 待补方向：已核7阅读段、51张独立卡，單狐至虢山之尾见76—79页影印；机木跨行注、郭注地点和同名异篇分开。北山9幅图已审；儵魚四首六足三尾、何羅一首十身、鰼鰼十翼羽端鳞等逐项核对；麢羊、蕃、橐駝形貌依据不足留占位。全篇297录文块、90结构候选仅作盘点，候选漏拆风险见data/beishan-edition-review.json；发鸠上下文及其余山系待逐页核对。
 - 校核入口：[该篇固定修订](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853)；录文尚需与影印页对校，不把自动导入视为已核对。
+
+- 單狐至虢山之尾source-03-0002—0031已对照76—79页，0009校回76页、0018校回77页、0027校回78页；全篇结构定位与其他段落仍为待核，不能据候选数量或三列录文数字宣称已完成。
 
 ### 04 东山经
 
@@ -316,6 +318,18 @@
 | `beast-xishan-turtle-yanzi` | 龜（崦嵫阳） | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-xishan-shuhu-yanzi` | 孰湖 | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
 | `bird-xishan-unnamed-yanzi` | 未名鸟（崦嵫末段） | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-huayu-qiuru` | 滑魚（求如） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-shuima-qiuru` | 水馬（求如） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-huanshu-daishan` | 䑏䟽（帶山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-qitu-daishan` | 鵸䳜（帶山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-youyu-daishan` | 儵魚（帶山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-heluo-qiaoming` | 何羅之魚 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-menghuai-qiaoming` | 孟槐 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-xixi-zhuoguang` | 鰼鰼之魚 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-lingyang-zhuoguang` | 麢羊（涿光） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-fan-zhuoguang` | 蕃（涿光） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-tuotuo-guoshan` | 橐駝（虢山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-beishan-yu-guoshan` | 寓（虢山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-qingqiu` | 青丘之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-fajiu` | 发鸠之山 | 《山海经》 | 常规入口 | 《北山经》 |
 | `place-kunlun` | 昆仑之墟 | 《山海经》 | 常规入口 | 《海内西经》 |
@@ -645,6 +659,37 @@
 | `water-xishan-tiao-yanzi` | 苕水（崦嵫） | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-xishan-sea-yanzi` | 海（崦嵫段） | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
 | `material-xishan-whetstones-yanzi` | 砥礪 | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-ji-danhu` | 机木 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-huacao-danhu` | 華草（單狐） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-feng-danhu` | 漨水（單狐） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-you-danhu` | 泑水（北山经） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-pishi-danhu` | 芘石（單狐水文） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-wenshi-danhu` | 文石（單狐水文） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-copper-qiuru` | 铜（求如） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-qiuru` | 玉（求如） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-hua-qiuru` | 滑水（求如） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-zhupi-qiuru` | 諸毗之水（北山经） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-daishan` | 玉（帶山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-qingbi-daishan` | 青碧（帶山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-peng-daishan` | 彭水（帶山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-pihu-daishan` | 芘湖之水（帶山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-qiao-qiaoming` | 譙水（譙明） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-qingxionghuang-qiaoming` | 青雄黄（譙明） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-xiao-zhuoguang` | 囂水（涿光） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-pine-zhuoguang` | 松（涿光） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-bai-zhuoguang` | 栢（涿光） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-zong-zhuoguang` | 㯶（涿光） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-jiang-zhuoguang` | 橿（涿光） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-qi-guoshan` | 漆（虢山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-tong-guoshan` | 桐（虢山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-beishan-ju-guoshan` | 椐（虢山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-guoshan` | 玉（虢山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-iron-guoshan` | 铁（虢山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-yi-guoshan` | 伊水（虢山） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-jade-guowei` | 玉（虢山之尾） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-yu-guowei` | 魚水（虢山之尾） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-beishan-wenbei-guowei` | 文貝（虢山之尾） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-beishan-he` | 河（北山经） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-zhaoyao` | 招摇之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-yuanyi` | 猨翼之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -770,6 +815,13 @@
 | `passage-xishan-yanzi` | 崦嵫之山 | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-xishan-range4-summary` | 西次四经总括与祠礼 | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-xishan-western-total` | 西山经篇末总计 | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-danhu` | 單狐之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-qiuru` | 求如之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-daishan` | 帶山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-qiaoming` | 譙明之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-zhuoguang` | 涿光之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-guoshan` | 虢山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-beishan-guowei` | 虢山之尾 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-yuanyi` | 猨翼之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-di` | 祗山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -948,6 +1000,14 @@
 | `place-xishan-niaoshu` | 鳥鼠同穴之山 | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-xishan-yanzi` | 崦嵫之山 | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
 | `rite-xishan-rite-range4-summary` | 白鸡稻米白管祠礼 | 《山海经》 | 常规入口 | 《山海经·西山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-danhu` | 單狐之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-qiuru` | 求如之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-zhupi-qiuru` | 諸毗山（北山郭注） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-daishan` | 帶山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-qiaoming` | 譙明之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-zhuoguang` | 涿光之山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-guoshan` | 虢山 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-beishan-guowei` | 虢山之尾 | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `01-01` | 盘古开天 | 其他古籍 | 常规入口 | 《三五历纪》（三国·吴·徐整），佚文见《艺文类聚》卷一引、《太平御览》卷二引 |
 | `01-02` | 女娲造人 | 其他古籍 | 常规入口 | 《风俗通义·皇霸》卷一（东汉·应劭），见王利器《风俗通义校注》 |
 | `01-03` | 女娲补天 | 其他古籍 | 非默认条目 | 《淮南子·览冥训》（西汉·刘安），高诱注 |
@@ -1048,6 +1108,7 @@
 - `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。
 - `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。
 - `python data/build_xishan.py`：合并西山经82段与508张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。
+- `python data/build_beishan.py`：合并已核北山经單狐至虢山之尾7段及51张双语卡，保留其他篇目与旧ID；`python frontend/scripts/prepare-nanshan-artwork.py --chapter beishan`仅导出已审图。随后重建全书清单和本盘点。
 - `python frontend/scripts/prepare-nanshan-artwork.py --chapter xishan`：仅导出已审核西山经插画。随后运行全书清单和本盘点构建器更新统计。
 - `python data/audit_shanhaijing.py`：离线重建本清单和网页来源分类。
 - `python data/audit_shanhaijing.py --check`：只检查快照结构、分类与清单是否和现有数据一致；CI运行该项。

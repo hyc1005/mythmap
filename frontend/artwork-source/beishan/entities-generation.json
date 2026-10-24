@@ -1,0 +1,174 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "creature-huanshu-daishan",
+      "entry_id": "beast-beishan-huanshu-daishan",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Horse-shaped Huanshu 䑏䟽: exactly ONE horse head, two ordinary ears, ONE straight single horn rising from the forehead; the horn surface has clearly segmented overlapping scale-like plates (一角有錯; commentary 角有甲錯). Exactly four hoofed legs, one horse tail. Compact alert side/three-quarter stance; no second horn, no antlers, wings, human face or flames. The horn must be unmistakable and the scale plates legible. Warm ivory/ochre body with very sparse green details, restrained cinnabar around the horn base. Do not draw real fire or a claim of fire resistance.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-huanshu-daishan-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-289315e7-b472-4cab-b3bd-af3912c06639.png",
+      "sha256": "c73253202e4888c2653028e651f0293ff3a05bd6947c0950775ad2036d0b4fbd",
+      "review_note": "单马首、单角及角面甲错、四蹄和单尾可辨；主体完整，未增加额外角或翼。"
+    },
+    {
+      "name": "bird-qitu-daishan",
+      "entry_id": "beast-beishan-qitu-daishan",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Northern Qitu 鵸䳜 from Dai: shaped like a CROW, five-colored with RED PATTERN MARKS. Exactly ONE crow head, ONE crow body, TWO feathered wings and TWO feet, ONE coherent crow tail. This is NOT the Western three-headed six-tailed namesake. Create a compact black-dominant archaic crow with clear red carved bands/patches and restrained ivory, ochre and muted green touches for its five-color treatment. Strong crow beak, individual alert expression, no owl face, no extra heads, extra tails, horns, mating scene or gender symbols. No text.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "bird-qitu-daishan-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-9caef9f3-4b89-4bfa-9c4e-e1de809f6506.png",
+      "sha256": "a83a8ee0789b513936e823184722b6b68e8a3333420e61a1c7d9d79cec685306",
+      "review_note": "单首双翼双足、乌状黑身，黑白赭绿朱砂五色及赤文可辨；多枚尾羽属一个鸟尾，不借西山三首六尾。"
+    },
+    {
+      "name": "creature-youyu-daishan",
+      "entry_id": "beast-beishan-youyu-daishan",
+      "prompt": "Use case: precise-object-edit. Preserve this exact red chicken-like Youyu woodcut, its FOUR separate chicken heads and THREE separate rear feather tails, same single body, colors and transparent alpha. Anatomical correction ONLY: there are presently FIVE distinguishable feet. Add ONE sixth short yellow-scaled chicken leg and clawed foot on the far rear side, attached under the rear body and extending diagonally RIGHT into the empty space below the three tails. Put the NEW sixth foot clearly to the RIGHT and ABOVE the existing rightmost foot, with its entire ankle and splayed claws visible against transparency, not overlapping existing feet or tail. Keep all existing five feet intact, so final total is SIX individually countable legs and SIX individually countable feet. Do not hide one behind another, do not split toes and call them feet. Exactly FOUR heads, SIX legs/feet, THREE tails. Keep all extremities uncropped with clear margins, shrink subject slightly if needed. No labels, numbers, extra wings, new heads, scenery, background or shadows.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-youyu-daishan-v1.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-youyu-daishan-v2.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-bf0a0c3f-5771-41cb-a0eb-837e99ca4e2a.png",
+      "sha256": "69ccc129ba2881aca72838489705de854a9f4e5decb92f0a593e33a6870ff498",
+      "review_note": "v2四个鸡首、六条腿及六只独立足、三条尾逐一可数，首版五足不接入，原画均保留。",
+      "revisions": [
+        {
+          "name": "creature-youyu-daishan",
+          "entry_id": "beast-beishan-youyu-daishan",
+          "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Youyu 儵魚: one coherent CHICKEN-LIKE body with RED FEATHERS, EXACTLY FOUR CHICKEN HEADS on four short separate necks from the front of the same body, EXACTLY SIX legs with SIX separately visible clawed chicken feet, EXACTLY THREE separate feathered tails rooted at the rear. This fish-named creature must retain the chicken form, no invented fish fins or gills. All FOUR heads individually countable, none hidden; all SIX feet visible and separated in three pairs; THREE tails fanned into three distinct arcs with clear transparent gaps. Compact near-side wide oblique view, four head necks spread like an open small fan at upper left, three tails spread to upper right, six feet extending below the single torso. Simple red feathers with ivory incisions, dark carved outlines, very sparse ochre; no extra wing pairs, no mammal heads, no horns, no lettering or numbers. Count anatomy before rendering.",
+          "reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ],
+          "status": "generated",
+          "source_file": "creature-youyu-daishan-v1.png",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-683dda45-e2a8-4273-aefe-bacfbfc6810f.png",
+          "sha256": "1d1aeaa686d6c39ea37303532fced3170987129886e819254dee3cfdaafa59a3",
+          "review_note": "四首三尾可数，但只有五只独立脚，需修订后审核。"
+        }
+      ],
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Youyu 儵魚: one coherent CHICKEN-LIKE body with RED FEATHERS, EXACTLY FOUR CHICKEN HEADS on four short separate necks from the front of the same body, EXACTLY SIX legs with SIX separately visible clawed chicken feet, EXACTLY THREE separate feathered tails rooted at the rear. This fish-named creature must retain the chicken form, no invented fish fins or gills. All FOUR heads individually countable, none hidden; all SIX feet visible and separated in three pairs; THREE tails fanned into three distinct arcs with clear transparent gaps. Compact near-side wide oblique view, four head necks spread like an open small fan at upper left, three tails spread to upper right, six feet extending below the single torso. Simple red feathers with ivory incisions, dark carved outlines, very sparse ochre; no extra wing pairs, no mammal heads, no horns, no lettering or numbers. Count anatomy before rendering.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "revision_prompt": "Use case: precise-object-edit. Preserve this exact red chicken-like Youyu woodcut, its FOUR separate chicken heads and THREE separate rear feather tails, same single body, colors and transparent alpha. Anatomical correction ONLY: there are presently FIVE distinguishable feet. Add ONE sixth short yellow-scaled chicken leg and clawed foot on the far rear side, attached under the rear body and extending diagonally RIGHT into the empty space below the three tails. Put the NEW sixth foot clearly to the RIGHT and ABOVE the existing rightmost foot, with its entire ankle and splayed claws visible against transparency, not overlapping existing feet or tail. Keep all existing five feet intact, so final total is SIX individually countable legs and SIX individually countable feet. Do not hide one behind another, do not split toes and call them feet. Exactly FOUR heads, SIX legs/feet, THREE tails. Keep all extremities uncropped with clear margins, shrink subject slightly if needed. No labels, numbers, extra wings, new heads, scenery, background or shadows."
+    },
+    {
+      "name": "creature-heluo-qiaoming",
+      "entry_id": "beast-beishan-heluo-qiaoming",
+      "prompt": "Use case: precise-object-edit. Anatomical count correction only. This image currently has NINE separately countable fish bodies, with NINE forked tails. Keep every one of those existing nine bodies and their nine tails unchanged. ADD exactly ONE MORE scaled fish body connected immediately behind the single shared head: it must curve from the neck UP AND LEFT into the empty upper-left quadrant, ending in a complete forked fish tail near x=180,y=260, well to the LEFT of the current leftmost upper tail. Keep a clear transparent gap from the head crest, the current uppermost body and all other bodies. This new extra body must be a full thick scaled fish trunk, with its own tail; not a fin, not a tail lobe, not a ribbon. Final visible count TEN separate bodies and TEN forked tails, exactly ONE fish head. Do not remove, merge, redraw, move or replace any of the existing nine bodies. No text, markers, numbers, tentacles, extra heads or scenery. Preserve existing woodcut style, palette and true transparency.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-heluo-qiaoming-v2.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-heluo-qiaoming-v3.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-80e83ff6-b577-4fb3-932b-cbd7448f78cc.png",
+      "sha256": "635201ced625f7a27ebc41971fd9ec8221539dc3b12207ea95913395711012bb",
+      "review_note": "v3单一鱼首、十条独立有鳞鱼身及各自鱼尾逐条可数，不是十头或章鱼触腕；v1八身、v2九身保留不接入。",
+      "revisions": [
+        {
+          "name": "creature-heluo-qiaoming",
+          "entry_id": "beast-beishan-heluo-qiaoming",
+          "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Heluo 何羅之魚: EXACTLY ONE fish head AND TEN distinct fish BODIES (一首而十身). One shared fish head at left/upper-left, with TEN slim scaled fish trunks branching immediately behind the single head like a broad comb/fan, each trunk having its own fully separated tapering caudal tail, all ten long bodies countable using open transparent gaps. These are scaled FISH BODIES, not octopus arms, not tentacles, no suction cups, not ten heads and not ten arbitrary ribbons. Make the common single head clearly fishlike, with small mouth and one visible eye. Use a generous wide fan composition inside the square, five trunks fanning above and five below, never crossing or overlapping. Dark-brown cuts, warm ivory scaled bodies with restrained ochre/cinnabar bands. Do not add a second head, legs, wings, mammal features, ocean scenery or numbering. Exact ten-body count is critical.",
+          "reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ],
+          "status": "generated",
+          "source_file": "creature-heluo-qiaoming-v1.png",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-38b66089-2a9c-46f2-afe2-e9ed3fa6e26a.png",
+          "sha256": "c4f32aef453ce9d17e74669d4c4894e0d5eb5019ada3b6d07d320edaa4bef454",
+          "review_note": "单首正确，仅八条独立鱼身/鱼尾可数，需补至十身后审核。"
+        },
+        {
+          "name": "creature-heluo-qiaoming",
+          "entry_id": "beast-beishan-heluo-qiaoming",
+          "prompt": "Use case: precise-object-edit. Preserve the same single-headed fish woodcut, same colors, scales, eight existing separate fish bodies and their eight tails, transparent background. Current count is EIGHT bodies, but the text requires TEN. Add exactly TWO additional distinct scaled fish trunks joined directly behind the ONE shared head: one new slender trunk arcs UPWARD through the unused space to the LEFT of the existing highest trunk, ending in a full forked fish tail near the upper-left quadrant; a second new trunk arcs DOWNWARD into the unused space to the LEFT of the existing lowest trunk, ending in a full forked fish tail near the lower-left quadrant. Both new trunks must be visibly connected at the shared neck and separated from every existing trunk by transparent gaps. Keep ALL eight existing trunks and tails; final total EXACTLY TEN distinct scaled fish bodies with TEN forked tails and ONE head, no extra heads. Do not count the lobes of a forked tail as separate bodies. No octopus tentacles, suction cups, legs, wings, numbers or labels. Slightly shrink the entire figure if needed to preserve clear margins around all ten tails.",
+          "reference_images": [
+            "frontend/artwork-source/beishan/creature-heluo-qiaoming-v1.png"
+          ],
+          "status": "generated",
+          "source_file": "creature-heluo-qiaoming-v2.png",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-9f2a275d-2643-463a-8001-78c49dc5e3ab.png",
+          "sha256": "32581ef9427d73099629f19f4a87b88c9b9a8f5b1c67fc1facfeb25dc23ccb78",
+          "review_note": "v2只有九个独立身尾，仍不通过，需增加一个完整鱼身。",
+          "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Heluo 何羅之魚: EXACTLY ONE fish head AND TEN distinct fish BODIES (一首而十身). One shared fish head at left/upper-left, with TEN slim scaled fish trunks branching immediately behind the single head like a broad comb/fan, each trunk having its own fully separated tapering caudal tail, all ten long bodies countable using open transparent gaps. These are scaled FISH BODIES, not octopus arms, not tentacles, no suction cups, not ten heads and not ten arbitrary ribbons. Make the common single head clearly fishlike, with small mouth and one visible eye. Use a generous wide fan composition inside the square, five trunks fanning above and five below, never crossing or overlapping. Dark-brown cuts, warm ivory scaled bodies with restrained ochre/cinnabar bands. Do not add a second head, legs, wings, mammal features, ocean scenery or numbering. Exact ten-body count is critical.",
+          "initial_reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ],
+          "revision_prompt": "Use case: precise-object-edit. Preserve the same single-headed fish woodcut, same colors, scales, eight existing separate fish bodies and their eight tails, transparent background. Current count is EIGHT bodies, but the text requires TEN. Add exactly TWO additional distinct scaled fish trunks joined directly behind the ONE shared head: one new slender trunk arcs UPWARD through the unused space to the LEFT of the existing highest trunk, ending in a full forked fish tail near the upper-left quadrant; a second new trunk arcs DOWNWARD into the unused space to the LEFT of the existing lowest trunk, ending in a full forked fish tail near the lower-left quadrant. Both new trunks must be visibly connected at the shared neck and separated from every existing trunk by transparent gaps. Keep ALL eight existing trunks and tails; final total EXACTLY TEN distinct scaled fish bodies with TEN forked tails and ONE head, no extra heads. Do not count the lobes of a forked tail as separate bodies. No octopus tentacles, suction cups, legs, wings, numbers or labels. Slightly shrink the entire figure if needed to preserve clear margins around all ten tails."
+        }
+      ],
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Heluo 何羅之魚: EXACTLY ONE fish head AND TEN distinct fish BODIES (一首而十身). One shared fish head at left/upper-left, with TEN slim scaled fish trunks branching immediately behind the single head like a broad comb/fan, each trunk having its own fully separated tapering caudal tail, all ten long bodies countable using open transparent gaps. These are scaled FISH BODIES, not octopus arms, not tentacles, no suction cups, not ten heads and not ten arbitrary ribbons. Make the common single head clearly fishlike, with small mouth and one visible eye. Use a generous wide fan composition inside the square, five trunks fanning above and five below, never crossing or overlapping. Dark-brown cuts, warm ivory scaled bodies with restrained ochre/cinnabar bands. Do not add a second head, legs, wings, mammal features, ocean scenery or numbering. Exact ten-body count is critical.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "revision_prompt": "Use case: precise-object-edit. Anatomical count correction only. This image currently has NINE separately countable fish bodies, with NINE forked tails. Keep every one of those existing nine bodies and their nine tails unchanged. ADD exactly ONE MORE scaled fish body connected immediately behind the single shared head: it must curve from the neck UP AND LEFT into the empty upper-left quadrant, ending in a complete forked fish tail near x=180,y=260, well to the LEFT of the current leftmost upper tail. Keep a clear transparent gap from the head crest, the current uppermost body and all other bodies. This new extra body must be a full thick scaled fish trunk, with its own tail; not a fin, not a tail lobe, not a ribbon. Final visible count TEN separate bodies and TEN forked tails, exactly ONE fish head. Do not remove, merge, redraw, move or replace any of the existing nine bodies. No text, markers, numbers, tentacles, extra heads or scenery. Preserve existing woodcut style, palette and true transparency."
+    },
+    {
+      "name": "creature-menghuai-qiaoming",
+      "entry_id": "beast-beishan-menghuai-qiaoming",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Menghuai 孟槐: text shaped like 貆 with RED BRISTLES; Guo Pu explicitly glosses 貆 as a porcupine. One stout low PORCUPINE-LIKE beast, one small head with a blunt muzzle, four short feet, a short single tail, back covered with strong stiff CINNABAR-RED bristles/quills. Clearly porcupine form, not a rhinoceros, hedgehog ball, boar or goat. A compact proud hunched silhouette, slightly exaggerated archaic proportions, stiff carved red quills with ivory cut lines, warm ochre underside and dark ink outline. No horns, wings, extra heads, long mane, flames or armor. Bristles are physical red quills, not fire. Keep four small feet distinguishable and all quills uncropped.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-menghuai-qiaoming-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-6afe25a3-27ec-4068-8d71-ac67126cf1a9.png",
+      "sha256": "91d927b4749939cfd0a45a7baff4e5f52dfbf50fe5497707274c75efd7f9f709",
+      "review_note": "单首四足、豪猪状长硬赤刺可辨；赤豪为实体刺毛而非火焰，豪猪释义明确来自郭注。"
+    },
+    {
+      "name": "creature-xixi-zhuoguang",
+      "entry_id": "beast-beishan-xixi-zhuoguang",
+      "prompt": "Use case: precise-object-edit. Preserve this exact magpie-like Xixi woodcut, ONE head, ONE torso, TWO feet and ONE central feather tail. There are currently EIGHT wings, four to each side. The source requires TEN wings, five pairs. Keep all existing eight wings unchanged and ADD ONE FIFTH PAIR of small feathered wings at the BOTTOM of the torso, immediately BELOW the currently lowest pair and ABOVE the central tail fan. New LEFT wing must extend out and down to x=250,y=1000; new RIGHT wing must extend out and down to x=1020,y=1000, each separated from the existing lowest wings, both feet and central tail by clearly visible transparent gaps. Each must have a visible wing root connected to the torso and its own complete feather fan, not just two feathers or tail lobes. Final count exactly FIVE whole wings on the left plus FIVE whole wings on the right. Add obvious small overlapping scale-plates ONLY at each feather tip; preserve the scale-tip treatment on all other feathers. Do not add more tails, heads or feet. Keep true transparency, carved-print style and clear outer margins; shrink the overall composition if necessary. No text, numbering, scenery or shadows.",
+      "reference_images": [
+        "frontend/artwork-source/beishan/creature-xixi-zhuoguang-v1.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-xixi-zhuoguang-v2.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-4b2028e6-4977-4e77-8bb4-d54b4fe71ceb.png",
+      "sha256": "c06ac6d7c027ec8de17323e6827238d8eae685aa19189ce8c637b93f023fb015",
+      "review_note": "v2五对十个独立翼可辨，单首双足、中央单尾不计作翼；鳞片表现集中羽端，v1八翼保留不接入。",
+      "revisions": [
+        {
+          "name": "creature-xixi-zhuoguang",
+          "entry_id": "beast-beishan-xixi-zhuoguang",
+          "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Xixi 鰼鰼之魚: one MAGPIE-LIKE bird body and head, EXACTLY TEN WINGS, with SCALES AT THE ENDS OF THE FEATHERS (鱗皆在羽端). ONE magpie head with pointed beak, ONE compact bird torso, ONE slender coherent tail, two modest bird feet. TEN distinct wings in FIVE PAIRS rooted symmetrically down the torso: five separate complete wings fanning to the left and five to the right, each wing separated by a clear transparent gap. Near-frontal slightly oblique view for countability, head at top center, tail down center. Wing pairs step from long upper wings to shorter lower wings; do not merge wings with tail. Every feather end has a small visible rounded or polygonal overlapping SCALE TIP rather than scales covering the torso. Magpie-like black/ivory with subdued ochre and very restrained cinnabar at scale tips. Exactly ten wings is critical; no fish tail, fins, extra heads, horns, radiating fire, numbered labels or realistic flames.",
+          "reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ],
+          "status": "generated",
+          "source_file": "creature-xixi-zhuoguang-v1.png",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-cc3d86a5-8784-4342-b3fb-0bea604150ad.png",
+          "sha256": "dfa5814d6c692502ccf441ad55d960e078a55ac0231a49ea971654051beb8264",
+          "review_note": "首版仅四对八翼，羽端鳞片已有表现，需补第五对完整独立翼。"
+        }
+      ],
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Xixi 鰼鰼之魚: one MAGPIE-LIKE bird body and head, EXACTLY TEN WINGS, with SCALES AT THE ENDS OF THE FEATHERS (鱗皆在羽端). ONE magpie head with pointed beak, ONE compact bird torso, ONE slender coherent tail, two modest bird feet. TEN distinct wings in FIVE PAIRS rooted symmetrically down the torso: five separate complete wings fanning to the left and five to the right, each wing separated by a clear transparent gap. Near-frontal slightly oblique view for countability, head at top center, tail down center. Wing pairs step from long upper wings to shorter lower wings; do not merge wings with tail. Every feather end has a small visible rounded or polygonal overlapping SCALE TIP rather than scales covering the torso. Magpie-like black/ivory with subdued ochre and very restrained cinnabar at scale tips. Exactly ten wings is critical; no fish tail, fins, extra heads, horns, radiating fire, numbered labels or realistic flames.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "revision_prompt": "Use case: precise-object-edit. Preserve this exact magpie-like Xixi woodcut, ONE head, ONE torso, TWO feet and ONE central feather tail. There are currently EIGHT wings, four to each side. The source requires TEN wings, five pairs. Keep all existing eight wings unchanged and ADD ONE FIFTH PAIR of small feathered wings at the BOTTOM of the torso, immediately BELOW the currently lowest pair and ABOVE the central tail fan. New LEFT wing must extend out and down to x=250,y=1000; new RIGHT wing must extend out and down to x=1020,y=1000, each separated from the existing lowest wings, both feet and central tail by clearly visible transparent gaps. Each must have a visible wing root connected to the torso and its own complete feather fan, not just two feathers or tail lobes. Final count exactly FIVE whole wings on the left plus FIVE whole wings on the right. Add obvious small overlapping scale-plates ONLY at each feather tip; preserve the scale-tip treatment on all other feathers. Do not add more tails, heads or feet. Keep true transparency, carved-print style and clear outer margins; shrink the overall composition if necessary. No text, numbering, scenery or shadows."
+    },
+    {
+      "name": "bird-yu-guoshan",
+      "entry_id": "beast-beishan-yu-guoshan",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing creature on a truly transparent square canvas, all extremities inside at least 9% empty margins, no scenery, floor, text, seals, numbers, frame or watermark. Use the supplied APPROVED bird reference ONLY for hand-carved Chinese woodblock technique: bold dark-brown contour, incised flat ivory and ochre, restrained cinnabar and muted mineral-green, sparse grain, angular archaic character; not a realistic animal portrait, not 3D, gradients or lighting effects. Do not copy its bird face, feather crest, anatomy or repetitive flame-shaped ornament. Added carving motifs are artistic treatment only. Yu 寓 of Guo Mountain: MOUSE-SHAPED body with BIRD WINGS (状如䑕而鳥翼). Exactly ONE clearly mouse-like head with two rounded mouse ears, one compact rodent body, FOUR small rodent paws, ONE long thin mouse tail, and ONE PAIR OF FEATHERED BIRD WINGS rooted at the shoulders. Wings are visibly feathered, NOT bat membranes. One wing raised and the far wing partly spread, both separated from the long tail. Keep the rodent muzzle and rounded ears, do not turn the head into a bird or owl. Warm ochre mouse with flat ivory cuts and subtle green/dark feather panels, a tiny cinnabar eye accent. Archaic proportions and decisive carved rhythm. No extra heads, horns, extra wing pairs, fish parts, weapons or battle scenery.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "bird-yu-guoshan-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-60decc1e-3907-473a-9356-8d9f65d08c90.png",
+      "sha256": "cb7be2360078700341b1bb1250db3bba5523fe213f951cfd277421b4dac564cc",
+      "review_note": "鼠首鼠身、圆耳长尾、四个小爪及一对羽翼可辨；不是蝙蝠膜翼，不加额外头或鸟首。"
+    }
+  ]
+}

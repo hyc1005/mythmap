@@ -3958,5 +3958,167 @@
         310
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1-card.webp",
+      "bytes": 28518,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1-preview.webp",
+      "bytes": 55432,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1-card.webp",
+      "bytes": 23142,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1-preview.webp",
+      "bytes": 42064,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1-card.webp",
+      "bytes": 36048,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1-preview.webp",
+      "bytes": 66522,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1-card.webp",
+      "bytes": 45134,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1-preview.webp",
+      "bytes": 86586,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1-card.webp",
+      "bytes": 49034,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1-preview.webp",
+      "bytes": 89824,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1-card.webp",
+      "bytes": 52198,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1-preview.webp",
+      "bytes": 95468,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1-card.webp",
+      "bytes": 43010,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1-preview.webp",
+      "bytes": 83066,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1-card.webp",
+      "bytes": 45872,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1-preview.webp",
+      "bytes": 86050,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1-card.webp",
+      "bytes": 34832,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1-preview.webp",
+      "bytes": 64780,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }
