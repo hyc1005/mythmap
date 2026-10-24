@@ -86,7 +86,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.getByRole('button', { name: '故事近景', exact: true }).click();
     await page.waitForFunction(() => document.querySelector('.story-animation')?.dataset.follow === 'true');
     assert.equal(await page.locator('.story-animation').getAttribute('data-elapsed'), elapsed);
-    await page.getByRole('button', { name: '连续游历', exact: true }).click();
+    await page.getByRole('button', { name: '开始游历', exact: true }).click();
     await page.locator('.story-animation[data-story="03-04"]').waitFor();
     await page.waitForFunction(() => document.querySelector('.story-animation')?.dataset.elapsed === '0');
     assert.match(await page.locator('.tour-progress').textContent(), /1 \/ 2/);

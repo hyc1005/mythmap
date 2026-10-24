@@ -2,7 +2,7 @@
 
 **[English](./README.md)** | **中文版**
 
-一卷山海，七章神话。以纸本版画风格呈现中国古代神话，通过地图、动画和异兽插画，探索《山海经》中的世界。
+一卷山海，七章神话。以纸本版画风格选编《山海经》山川异兽与其他古籍中的中国神话，通过地图、动画和插画自由探索。
 
 **[在线体验 →](https://hyc1005.github.io/mythmap/)** · [GitHub 仓库](https://github.com/hyc1005/mythmap)
 
@@ -10,10 +10,14 @@
 
 - **神话地图**：从盘古开天序章出发，浏览七章故事、地点与神域。
 - **故事动画**：支持播放、暂停、重播和全屏展示。
-- **异兽谱**：浏览 32 项异兽，按名称、形貌或篇目查找。
+- **南山经全篇阅读**：43个山段与总述，含中英文说明、底本经文、注文与影印页入口；可独立搜索、收藏和续读。十八篇待核清单见 `data/shanhaijing-inventory.json`，完整范围见[内容盘点](docs/content-coverage.md)。
+- **西山经全篇阅读**：82段覆盖77个列名山段、4列总括和篇末总计，另有508张独立卡；保留底本山数、里程及其差异，其他16篇仍待系统补全。
+- **异兽谱**：浏览145条鸟兽记录，按名称、形貌或篇目查找；同名不同山段分别保留出处。
 - **原文出处**：点击地图地点或异兽卡片，查看描述和所引篇章。
 
 打开网页即可体验，支持电脑和手机。图面表达篇目方位与叙事关系，不表示真实距离或精确年代；插画是依据原文的艺术解释。
+
+本项目尚未完整收录《山海经》。地图预览、章节目录、搜索和详情区分《山海经》与其他古籍所载内容；地方传说和地望考证在现代地点资料中分别标记。[十八篇内容盘点与第一批补充范围](./docs/content-coverage.md)记录现有条目、未开放资料和待补内容。盘点采用《四部丛刊》影印明成化本电子录文作为参照，不代表全书逐字校勘完成。
 
 ---
 
@@ -61,12 +65,15 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-guided-tou
 node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-reading.mjs
 node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-resume.mjs
 node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-search.mjs
+node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-onboarding.mjs
+node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-ux.mjs
+node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-discovery.mjs
 node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-narrative.mjs
 ```
 
 人工预览使用 `npm run preview:managed -- --base /mythmap/`，固定监听 127.0.0.1:4183；端口被占用时直接报错，不终止已有进程。浏览结束按 Ctrl+C 关闭。不要在验证期间重新构建同一个 `dist/`。
 
-`verify:design` 覆盖双语六种视口、手机面板焦点和滚动锁定、正文对比度、六类插画样本、播放状态和 PNG 纸色。`verify:layout` 检查五种视口的动画、全屏和详情，`verify:narrative` 另检查完整叙事、素材和时间轴。截图保存在 `output/qa/`。本机 Firefox 若无法启动，须单独报告；CI 保留三种浏览器检查。
+`verify:design` 覆盖双语六种视口、手机面板焦点和滚动锁定、正文对比度、六类插画样本、播放状态和 PNG 纸色。`verify:layout` 检查五种视口的动画、全屏和详情，`verify:narrative` 另检查完整叙事、素材和时间轴。截图保存在 `output/qa/`。本地默认验证与 CI 使用 Chromium、WebKit，暂不验证 Firefox，暂不保证 Firefox 可正常运行。所需浏览器可通过 `npx playwright install chromium webkit` 安装。
 
 发布前复查电脑与手机上的动画、地图全屏、异兽搜索、详情关闭和出处链接，并确认刷新正常、图片无 404。
 
@@ -86,7 +93,7 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-narrative.
 
 `node_modules/`、`frontend/dist/`、`output/` 和本地环境配置均由 Git 忽略。
 
-维护验证：新增 `npm run verify:repairs` 覆盖 Chromium、Firefox、WebKit 的失败恢复、详情焦点、定位和语言状态保留；首次需安装三种 Playwright 浏览器。减少动态效果模式统一逐幕手动推进。发布等待全部必要检查通过，并直接部署已验证产物。
+维护验证：`npm run verify:repairs` 默认覆盖 Chromium、WebKit 的失败恢复、详情焦点、定位和语言状态保留；首次需安装这两种 Playwright 浏览器。减少动态效果模式统一逐幕手动推进。发布等待全部必要检查通过，并直接部署已验证产物。
 
 手动切换章节保持静态；选择故事动画后才播放。连续游历按本章目录顺序播放可用动画，文字章节等待点击继续。手机提供“故事近景／本章全图”，切换视野保留播放进度。
 
@@ -96,9 +103,21 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-narrative.
 
 顶部“搜索”统一检索故事、异兽、出处、地点与神域；支持中文原名及当前语言文本，出处结果关联可阅读的条目。搜索面板会暂停背景动画，关闭后继续。相柳九首补绘与三张地图专用小图标通过 `src/refined-artwork.json` 接入，原图与完整生图提示词保留于 `artwork-source/woodcut-refinement/`；运行 `python scripts/prepare-refined-artwork.py` 可重新输出发布版本。
 
+现代地点的32条关联记录加入全站搜索，可按“现代地点资料”筛选；结果先在木刻模式打开故事，用户点击“查看真实地理资料”才进入对应地点。返回搜索保留查询和焦点。导航栏只保留“地图”，两种模式在地图区域切换；地点资料与原文卡片均不提供复制链接按钮。地点介绍先简短叙述传说，再说明证据边界、资料侧重与不足；考证候选的故事不冒充当地独立版本。叙述结尾停在故事自身的动作或景象，不额外追加总结、提问或感言。真实地理没有地点资料时提供“阅读本故事”和“浏览有地点资料的事件”。中英文同步，英文界面可搜索中文地名。`verify:place-search` 覆盖这些流程及8组双语布局。
+
+木刻地图中可点阅的名称旁显示小朱印，随名称一起避让；非交互的山水和区域题字不加印。悬停或点按只略微加重印记，保留镜头；不会持续闪动。预览先显示白话梗概，人物插画收进卡片，提供明确收起入口和至少44px的阅读/播放按钮；全屏预留固定区域，收起预览不挤动地图。阅读面板先呈现梗概与原文，收藏、已读及前后条操作放在末尾。搜索无结果时可保留关键词切换全部类型，并显示其他类型的匹配数量。`verify:exploration`、`verify:reading`、`verify:search` 覆盖这些双语操作及布局。
+
+首次访问首页且没有续读记录时显示操作引导；故事链接、指定章节和续读不弹出打断。四步依次介绍原文入口、章节、搜索与两种地图，64%黑色遮罩保留真实目标按钮的亮度和操作。点击目标打开内容时提示暂时隐藏，关闭后继续；也可只点下一步，随时跳过或按Escape退出。完成/跳过保存在本地，地图下方“操作引导”可重开，欢迎页可切换语言。引导暂停背景播放并保留进度，结束恢复焦点；窄屏与横屏提示卡避让目标。`verify:onboarding` 覆盖双语八组布局、真实操作、键盘、跳过/重开/记忆、弹窗接续、直接链接、减少动态效果与存储不可用。
+
 本地交接文档不进入 Git。验收产物、构建目录和浏览器缓存不作为发布源文件；插画原图继续版本管理以便复现，生图记录仅保留仓库相对路径。
 
 ### 真实地理基础视图
+
+故事详情增加中英文白话梗概，标注为依据引文整理。搜索进入详情后可返回原结果，保留关键词、分类、分页、滚动位置和焦点；浏览器前进／后退支持搜索、详情、章节及地图模式。手机章节与条目入口位于地图上方并保持可访问。“开始游历”旁的首次引导解释单故事播放、连续游历和两种地图模式。
+
+全站搜索包含当前语言及中文梗概，结果标注梗概并高亮命中词。有可用动画的故事详情提供“播放这个故事”，播放区可返回原阅读位置。精卫填海、精卫与发鸠之山通过显式原文关系双向直达，返回恢复段落与焦点，不移动背景地图；相关条目保留各自原文与出处。当前只接入这一组已核对关系，不依据名称自动关联。
+
+从故事详情定位地图后，切换真实地理沿用该故事。地理链接使用 `mode=geography`、`event`、`reference` 保存模式、事件和选中资料，刷新或打开链接可恢复；无效或跨事件记录会被忽略。私人阅读标记不包含在地址中。镜头、查询与资料对照选择仍只在页面会话中保留。
 
 “初始视野”一键恢复陕豫中心与约500km比例尺，不清除事件、查询和选中记录。相近地点按36屏幕像素聚合，数字标记可展开记录选择，选择时不移动镜头；缩放后自动重新聚合，聚合标记仅是显示锚点。定位与GeoJSON继续使用原始坐标；测距按用户明确选取的位置计算，不把聚合中心推断为事件位置。地点资料与版本对照均摘要优先，原文摘录、出处核验、坐标精度分别折叠；核验提醒和解释边界保持可见。
 
@@ -112,7 +131,7 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-narrative.
 
 在线底图需要网络，不需要下载全国瓦片包。缺少 Key、鉴权失败、地形失败、中文注记失败分别提示，关联资料仍可查询；重试时取消旧请求并重建两个图层。不会自动回退到 OSM 或旧区域裁剪图。两层使用1–14级（地形服务的最大层级），保留原始注记效果；使用浏览器缓存，不批量下载或预取。原资料的 OSM 坐标来源链接继续保留，不改称天地图提供坐标。旧 Natural Earth 资产和 `scripts/prepare-geography.py` 保留供复现。
 
-构建后通过 `node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-geography.mjs` 验证，`verify-map-frame.mjs` 同样通过包装入口运行。地理自动化测试模拟天地图两层瓦片，并拦截检查不再请求 OSM 底图；生成的相关截图仅用于布局验收，不代表真实地理影像。CI保留三浏览器检查，并单独验证无 Key 的根路径构建。
+构建后通过 `node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-geography.mjs` 验证，`verify-map-frame.mjs` 同样通过包装入口运行。地理自动化测试模拟天地图两层瓦片，并拦截检查不再请求 OSM 底图；生成的相关截图仅用于布局验收，不代表真实地理影像。CI使用 Chromium、WebKit 检查，并单独验证无 Key 的根路径构建。
 
 续读与连续游历共用一套受控组件，放在木刻地图下方，普通页面与全屏保持一致；真实地理只在坐标读数下方显示续读。文字章节也从同一区域继续下一章。章节栏仅保留标题、导语和目录，短横屏将续读文案缩短为“续读”，可访问名称仍包含完整条目名。
 

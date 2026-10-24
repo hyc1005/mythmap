@@ -16,7 +16,7 @@ assert.equal(searchEntries(index, '<script>')[0], undefined);
 assert.equal(searchEntries(index, '山海经', 'beast').length, world.beasts.length);
 for (const record of index) for (const id of record.entryIds || [record.id]) assert.ok(itemChapter(id, world, catalog), `${record.key}: result links to a supported entry`);
 const markerAssets = Object.values(refined).flatMap(variants => variants.map ? [variants.map] : []);
-assert.equal(markerAssets.length, 3);
+assert.equal(markerAssets.length, 4);
 for (const asset of markerAssets) {
   assert.ok(asset.bytes < 16000, `${asset.path}: tiny marker byte budget`);
   assert.equal((await stat(new URL('../public' + asset.path, import.meta.url))).size, asset.bytes);
@@ -34,7 +34,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     const errors = [], requested = new Set();
     page.on('pageerror', error => errors.push(error.message));
     page.on('response', response => {
-      if (response.url().includes('/refined/')) {
+      if (response.url().includes('/refined/') || response.url().includes('/nanshan/')) {
         requested.add(new URL(response.url()).pathname);
         if (!response.ok()) errors.push(`HTTP ${response.status()}: ${response.url()}`);
       }
@@ -59,6 +59,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '03');
     assert.equal(await page.locator('.kuafu-journey').getAttribute('data-elapsed'), elapsed);
     await page.locator('.drawer-close').click();
+    await dialog(page).waitFor();
+    await page.waitForFunction(() => document.activeElement?.dataset.resultId === 'beast-jingwei');
+    await page.keyboard.press('Escape');
     await page.waitForFunction(() => document.activeElement === document.querySelector('.global-search-trigger'));
     await page.locator('.kuafu-journey[data-status="playing"]').waitFor();
     await page.locator('.global-search-trigger').click();
@@ -71,6 +74,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator(`.detail-drawer[data-entry-id="${sourceId}"]`).waitFor();
     assert.equal(new URL(page.url()).searchParams.get('chapter'), itemChapter(sourceId, world, catalog), 'Source search produces valid shared chapter');
     await page.locator('.drawer-close').click();
+    await dialog(page).waitFor(); await page.keyboard.press('Escape');
     await page.locator('.global-search-trigger').click();
     await dialog(page).getByLabel('搜索范围').selectOption('beast');
     await input(page).fill('九首');
@@ -78,6 +82,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.drawer-art').evaluate(image => image.decode());
     assert.ok((await page.locator('.drawer-art').getAttribute('src')).endsWith('/refined/xiangliu-nine-heads-v2-full.webp'));
     await page.locator('.drawer-close').click();
+    await dialog(page).waitFor(); await page.keyboard.press('Escape');
     await page.getByRole('button', { name: 'EN', exact: true }).click();
     await page.locator('.global-search-trigger').click();
     await input(page).fill('九尾狐');
@@ -95,6 +100,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await controls.first().focus(); await page.keyboard.press('Shift+Tab');
     assert.equal(await controls.last().evaluate(node => node === document.activeElement), true);
     await page.keyboard.press('Escape');
+    await dialog(page).waitFor({ state: 'hidden' });
     assert.equal(await dialog(page).count(), 0);
     assert.equal(await page.locator('#root').evaluate(node => node.inert), false);
     for (const [width, height] of [[320, 700], [390, 844], [844, 390], [1440, 1000]]) {
@@ -102,6 +108,20 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         await page.setViewportSize({ width, height });
         await page.goto(`${base}?chapter=03&lang=${lang}`);
         await page.locator('.global-search-trigger').click();
+        await dialog(page).getByLabel(lang === 'zh' ? '搜索范围' : 'Search scope').selectOption('beast');
+        await input(page).fill('怀来县');
+        const recovery = dialog(page).locator('.search-empty button').first();
+        await recovery.waitFor();
+        assert.match(await recovery.textContent(), /[1-9]/, 'Empty state exposes matches outside the selected scope');
+        assert.ok(await recovery.evaluate(node => node.getBoundingClientRect().height >= 44));
+        await recovery.click();
+        assert.equal(await input(page).inputValue(), '怀来县', 'Widening the scope preserves the keyword');
+        await dialog(page).locator('[data-result-kind="geography"]').first().waitFor();
+        assert.equal(await dialog(page).getByLabel(lang === 'zh' ? '搜索范围' : 'Search scope').inputValue(), 'all');
+        await input(page).fill('zzzz-no-matches');
+        await dialog(page).locator('.search-empty button').last().click();
+        assert.equal(await input(page).inputValue(), '');
+        assert.ok(await input(page).evaluate(node => node === document.activeElement), 'Trying again focuses the keyword field');
         await input(page).fill('山海经');
         await page.evaluate(() => document.fonts.ready);
         const more = dialog(page).getByRole('button', { name: lang === 'zh' ? '显示更多结果' : 'Show more results', exact: true });

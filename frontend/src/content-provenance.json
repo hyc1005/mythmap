@@ -1,0 +1,2579 @@
+{
+  "beast-shengsheng": {
+    "family": "shanhaijing"
+  },
+  "beast-lushu": {
+    "family": "shanhaijing"
+  },
+  "beast-jiuweihu": {
+    "family": "shanhaijing"
+  },
+  "beast-chiru": {
+    "family": "shanhaijing"
+  },
+  "beast-boyi": {
+    "family": "shanhaijing"
+  },
+  "beast-xuangui": {
+    "family": "shanhaijing"
+  },
+  "beast-gudiao": {
+    "family": "shanhaijing"
+  },
+  "beast-qiongqi-hainei": {
+    "family": "shanhaijing"
+  },
+  "beast-dangkang": {
+    "family": "shanhaijing"
+  },
+  "beast-zhuyan": {
+    "family": "shanhaijing"
+  },
+  "beast-yingzhao": {
+    "family": "shanhaijing"
+  },
+  "beast-wenyaoyu": {
+    "family": "shanhaijing"
+  },
+  "beast-jingwei": {
+    "family": "shanhaijing"
+  },
+  "beast-fei": {
+    "family": "shanhaijing"
+  },
+  "beast-zhu-jian": {
+    "family": "shanhaijing"
+  },
+  "beast-qiangliang": {
+    "family": "shanhaijing"
+  },
+  "beast-zhulong": {
+    "family": "shanhaijing"
+  },
+  "beast-xiangliu": {
+    "family": "shanhaijing"
+  },
+  "beast-kaiming": {
+    "family": "shanhaijing"
+  },
+  "beast-phoenix": {
+    "family": "shanhaijing"
+  },
+  "beast-heyu": {
+    "family": "shanhaijing"
+  },
+  "beast-guanguan": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-lu": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-lei": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-changfu": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-lili": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-zhu": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-changyou": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-huahuai": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-zhi": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-huan-xun": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-quru": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-hujiao": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-zhuan": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-yulingqiu": {
+    "family": "shanhaijing"
+  },
+  "beast-nanshan-yuanchu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-qianyang": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-tongqu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-feiyi-taihua": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-chibie": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-conglong": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-min": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-bangyu-ying": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-qianyang-ying": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-feiyi-ying": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-renyu-zhushan": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-haozhi-zhushan": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-xiao-yuci": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-tuofei-yuci": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-mengbao-nanshan": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-shijiu-nanshan": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-xi-bozhong": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-si-bozhong": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-bear-bozhong": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-pi-bozhong": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-baihan-bozhong": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-chibie-bozhong": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-xibian-tiandi": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-li-tiandi": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-yingru-gaotu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-shusi-gaotu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-min-huangshan": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-yingmu-huangshan": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-maoniu-cuishan": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-ling-cuishan": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-she-cuishan": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-lei-cuishan": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-white-snake-taimao": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-yingmu-shuli": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-tiger-nvchuang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-leopard-nvchuang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-xi-nvchuang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-si-nvchuang": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-luan-nvchuang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-zuoniu-lutai": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-qianyang-lutai": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-baihao-lutai": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-fuxi-lutai": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-zhuyan-xiaoci": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-zuoniu-daci": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-lingyang-daci": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-xi-quyang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-si-quyang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-tiger-quyang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-zhuo-quyang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-zuoniu-quyang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-xi-zhongshou": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-si-zhongshou": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-mi-xihuang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-deer-xihuang": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-zuoniu-xihuang": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-luoluo-laishan": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-jufu-chongwu": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-manman-chongwu": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-birds-mi-zhong": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-beasts-mi-zhong": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-fish-mi-zhong": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-qinpi-e-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-gu-jun-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-wenyao-taiqi": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-luomu-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-ying-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-zhan-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "beast-luwu": {
+    "family": "shanhaijing"
+  },
+  "beast-tulou": {
+    "family": "shanhaijing"
+  },
+  "beast-qinyuan": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-chun-kunlun": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-strange-kunlun": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-huayu-leyou": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-jiao-yushan": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-shengyu-yushan": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-beasts-changliu": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-birds-changliu": {
+    "family": "shanhaijing"
+  },
+  "beast-zheng": {
+    "family": "shanhaijing"
+  },
+  "beast-bifang": {
+    "family": "shanhaijing"
+  },
+  "beast-tian-gou": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-bluebirds-sanwei": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-aoyu-sanwei": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-chi-sanwei": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-jishes-guishan3": {
+    "family": "shanhaijing"
+  },
+  "beast-dijiang": {
+    "family": "shanhaijing"
+  },
+  "beast-guan": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-qiyu-yiwang": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-deer-shangshen": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-danghu-shangshen": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-snakes-zhuci": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-wolf-yushan4": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-tiger-yushan4": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-pheasant-yushan4": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-zhai-yushan4": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-zuoniu-baiyu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-qianyang-baiyu": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-xiao-baiyu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-manman-gangwei": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-white-yingdi": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-ranyi-yingdi": {
+    "family": "shanhaijing"
+  },
+  "beast-bo": {
+    "family": "shanhaijing"
+  },
+  "beast-qiongqi-xishan": {
+    "family": "shanhaijing"
+  },
+  "beast-luoyu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-tiger-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-saoyu-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-rupi-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-turtle-yanzi": {
+    "family": "shanhaijing"
+  },
+  "beast-xishan-shuhu-yanzi": {
+    "family": "shanhaijing"
+  },
+  "bird-xishan-unnamed-yanzi": {
+    "family": "shanhaijing"
+  },
+  "place-qingqiu": {
+    "family": "shanhaijing"
+  },
+  "place-fajiu": {
+    "family": "shanhaijing"
+  },
+  "place-kunlun": {
+    "family": "shanhaijing"
+  },
+  "place-yushan": {
+    "family": "shanhaijing"
+  },
+  "place-east-ranges": {
+    "family": "shanhaijing"
+  },
+  "place-south-ranges": {
+    "family": "shanhaijing"
+  },
+  "place-west-ranges": {
+    "family": "shanhaijing"
+  },
+  "place-north-ranges": {
+    "family": "shanhaijing"
+  },
+  "place-heichi": {
+    "family": "shanhaijing"
+  },
+  "place-fusang": {
+    "family": "shanhaijing"
+  },
+  "place-chishui": {
+    "family": "shanhaijing"
+  },
+  "place-zhangwei": {
+    "family": "shanhaijing"
+  },
+  "place-zhaoyao": {
+    "family": "shanhaijing"
+  },
+  "place-niuyang": {
+    "family": "shanhaijing"
+  },
+  "domain-kunlun": {
+    "family": "shanhaijing"
+  },
+  "domain-yushan": {
+    "family": "shanhaijing"
+  },
+  "domain-zhangwei": {
+    "family": "shanhaijing"
+  },
+  "plant-zhuyu": {
+    "family": "shanhaijing"
+  },
+  "plant-migu": {
+    "family": "shanhaijing"
+  },
+  "water-liji": {
+    "family": "shanhaijing"
+  },
+  "water-guai": {
+    "family": "shanhaijing"
+  },
+  "water-xianyi": {
+    "family": "shanhaijing"
+  },
+  "water-ying-qingqiu": {
+    "family": "shanhaijing"
+  },
+  "water-jiyi": {
+    "family": "shanhaijing"
+  },
+  "material-yupei": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-fang": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-yu-receiver": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-ying-gui": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-chishui-gui": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-tiao": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-juqu": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-zhupi-fuyu": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-shu": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-hushao-receiver": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-shao": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-ju": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-lietu": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-xun": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-yan-marsh": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-pang": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-lu": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-zegeng": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-yin": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-dan": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-bohai-south": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-fan": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-hei": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-zuo": {
+    "family": "shanhaijing"
+  },
+  "plant-nanshan-yan": {
+    "family": "shanhaijing"
+  },
+  "plant-nanshan-baigao": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-west-sea": {
+    "family": "shanhaijing"
+  },
+  "water-nanshan-east-sea": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-huo": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-wei": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-bili": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-wenjing": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-tiao-fuyu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-fuyu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-tiao-shicui": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-guan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-yu-shicui": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-liuzhe": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-yu-ying": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-zhao-ying": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-huangguan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-zhu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-dan-zhushan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-luo-zhushan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-shuiyu-zhushan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-panmu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-xuncao": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-qi-yuci": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-yingyuan-yuci": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-zhu-shishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-shuiyu-shishan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-dan-nanshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-dansu-nanshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-qian-dashi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-qing-dashi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-han-dashi": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-silver-dashi": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-white-jade-dashi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-mian-bozhong": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-xiao-bozhong": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-tang-bozhong": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-taozhi-bozhong": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-gouduan-bozhong": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-gurong-bozhong": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-duheng-tiandi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-se-gaotu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-zhuzi-gaotu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-tu-gaotu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-jihuo-gaotu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-dansu-gaotu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-silver-gaotu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-gaotu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-gui-gaotu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-yu-gaotu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-wutiao-gaotu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-zhujian-huangshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-pan-huangshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-chi-huangshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-huangshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-zong-cuishan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-nan-cuishan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-zhujian-cuishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-cuishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-cuishan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-westsea-guishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-guishan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-qi-guishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-caishi-guishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-guishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-dansu-guishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-copper-qianshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-qianshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-niu-qianshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-jiang-qianshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jin-taimao": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-iron-taimao": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-yu-taimao": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-taimao": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-zaoyu-taimao": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-shuli": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-silver-shuli": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-niu-shuli": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-jiang-shuli": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-chu-shuli": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-pearl-shuli": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-silver-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-qingbi-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-xionghuang-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-zong-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-bamboo-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-jing-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-qingshi-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-qingbi-water-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-red-copper-nvchuang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-shinie-nvchuang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-longshou": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-iron-longshou": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-tiao-longshou": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-fine-jade-longshou": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-white-jade-lutai": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-silver-lutai": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-qingshi-niaowei": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-tan-niaowei": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-chu-niaowei": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-nvchuang-niaowei": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-niaowei": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-dansu-niaowei": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-white-jade-xiaoci": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-red-copper-xiaoci": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-e-daci": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-bi-daci": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jin-xunwu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-xunwu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-ji-quyang": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-nan-quyang": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-yuzhang-quyang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-tufu-zhongshou": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-tan-zhongshou": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-chu-zhongshou": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-zhongshou": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jin-huangren": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-huangren": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-qingxionghuang-huangren": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-huang-huangren": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-dansu-huangren": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-zhonghuang": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-huitang-zhonghuang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jin-xihuang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-iron-xihuang": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-tan-laishan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-chu-laishan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-yaoze-chongwu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-yanyuan-chongwu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-unnamed-chongwu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-ci-changsha": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-you-changsha": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-qingxionghuang-changsha": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-youze-buzhou": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-jia-guo-buzhou": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-danmu-mishan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-dan-mishan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-jize-mishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-white-jade-mishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-yugao-mishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-xuanyu-mishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-yurong-mishan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jinyu-mishan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-wetlands-mi-zhong": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-guan-taiqi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-eastsea-taiqi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-qiushi-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-qingxionghuang-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-langgan-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-above-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-above-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-dansu-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-shaded-goods-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-daze-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-daze-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-yaomu-ruo-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-flowing-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-shatang-kunlun": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-pin-kunlun": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-kunlun": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-chi-kunlun": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-fantian-kunlun": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-yang-kunlun": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-choutu-kunlun": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-hei-kunlun": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-tao-leyou": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-jize-leyou": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-leyou": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-luomushan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-stone-luomushan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-xun-xuanyuan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-hei-xuanyuan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-dansu-xuanyuan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-xionghuang-xuanyuan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-jishi": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-changliu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-yaobi-zhange": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-zhuoyu-yinshan3": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-fan-yinshan3": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-shell-yinshan3": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-zong-futang": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-nan-futang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-futang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-futang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-guishan3": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-tianshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-tianshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-xionghuang-tianshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-ying-tianshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-yingduan-youshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jinyu-youshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-xionghuang-youshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-yiwang": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-yiwang": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-gu-yinshan4": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-mao-yinshan4": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-fan-yinshan4": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-yin-yinshan4": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-luo-yinshan4": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-zicao-laoshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-ruo-laoshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-luo-laoshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-er-bafu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-luo-bafu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-zibi-bafu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-gu-shenshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-zuo-shenshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-niu-shenshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-jiang-shenshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-shenshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-shenshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-qu-shenshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-shenshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-sang-niaoshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-chu-niaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-iron-niaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-niaoshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-ru-niaoshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-niaoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-stone-shangshen": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-zhen-shangshen": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-hu-shangshen": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-tang-shangshen": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-shangshen": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-zhuci-zhuci": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-zhuci": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-lacquer-haoshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-zong-haoshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-yao-haoshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-xian-haoshan": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-xiongqiong-haoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-qin-haoshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-duan-haoshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-haoshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-iron-yushan4": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-copper-yushan4": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-sheng-yushan4": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-yushan4": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-pine-baiyu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-cypress-baiyu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-li-baiyu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-tan-baiyu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-luo-baiyu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-wei-baiyu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-jia-baiyu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-sheng-baiyu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-shen-shenshou": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-shenshou": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-jing-jinggu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-wei-jinggu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-metal-jinggu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-jinggu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-qi-gangshan": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-tufuyu-gangshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-gang-gangshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-wei-gangshan": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-luo-gangwei": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-gangwei": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-mu-yingdi": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-yingdi": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-yingdi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-wan-yingdi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-lingyang-yingdi": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-sun-zhongqu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-xionghuang-zhongqu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-shade-zhongqu": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-gold-zhongqu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-huai-zhongqu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-meng-guishan4": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-yang-guishan4": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-shell-guishan4": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-wei-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-he-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-lan-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-han-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "plant-xishan-dan-yanzi": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-jade-yanzi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-tiao-yanzi": {
+    "family": "shanhaijing"
+  },
+  "water-xishan-sea-yanzi": {
+    "family": "shanhaijing"
+  },
+  "material-xishan-whetstones-yanzi": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-zhaoyao": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-tangting": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-yuanyi": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-niuyang": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-di": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-danyuan": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-jishan": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-qingqiu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-jiwei": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-range1": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-gui": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-changyou": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-yaoguang": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-yu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-qufu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-gouyu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-fuyu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-cheng": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-kuaiji": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-yi": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-pugou": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-xun": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-hushao": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-quwu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-xianyin": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-luwu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-qiwu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-range2": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-tianyu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-daoguo": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-danxue": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-fashuang": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-maowei": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-feitou": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-yangjia": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-guanxiang": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-ji": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-lingqiu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-lunzhe": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-yugao": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-nanyu": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-range3": {
+    "family": "shanhaijing"
+  },
+  "passage-nanshan-total": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-qianlai": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-songguo": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-taihua": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-xiaohua": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-fuyu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-shicui": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-ying": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-zhushan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-fushan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-yuci": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-shishan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-nanshan-west": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-dashi": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-bozhong": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-tiandi": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-gaotu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-huangshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-cuishan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-guishan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-range1-summary": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-qianshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-taimao": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-shuli": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-nvchuang": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-longshou": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-lutai": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-niaowei": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-xiaoci": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-daci": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-xunwu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-quyang": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-zhongshou": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-huangren": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-zhonghuang": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-xihuang": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-laishan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-range2-summary": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-chongwu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-changsha": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-buzhou": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-mishan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-taiqi": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-kunlun": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-leyou": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-luomushan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-yushan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-xuanyuan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-jishi": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-changliu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-zhange": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-yinshan3": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-futang": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-sanwei": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-guishan3": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-tianshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-youshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-yiwang": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-range3-summary": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-yinshan4": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-laoshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-bafu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-shenshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-niaoshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-shangshen": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-zhuci": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-haoshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-yushan4": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-baiyu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-shenshou": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-jinggu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-gangshan": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-gangwei": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-yingdi": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-zhongqu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-guishan4": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-yanzi": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-range4-summary": {
+    "family": "shanhaijing"
+  },
+  "passage-xishan-western-total": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-tangting": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-yuanyi": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-di": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-danyuan": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-jishan": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-jiwei": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-gui": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-changyou": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-yaoguang": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-yu": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-qufu": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-gouyu": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-fuyu": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-cheng": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-kuaiji": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-yi": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-pugou": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-xun": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-hushao": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-quwu": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-xianyin": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-luwu": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-qiwu": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-tianyu": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-daoguo": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-danxue": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-fashuang": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-maowei": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-feitou": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-yangjia": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-guanxiang": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-ji": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-lingqiu": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-lunzhe": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-yugao": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-nanyu": {
+    "family": "shanhaijing"
+  },
+  "valley-nanshan-yuyi": {
+    "family": "shanhaijing"
+  },
+  "valley-nanshan-zhonggu": {
+    "family": "shanhaijing"
+  },
+  "wind-nanshan-kai": {
+    "family": "shanhaijing"
+  },
+  "wind-nanshan-tiao": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-reference-liuhuang": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-reference-zhupi": {
+    "family": "shanhaijing"
+  },
+  "place-nanshan-reference-qiushan": {
+    "family": "shanhaijing"
+  },
+  "animal-nanshan-white-ape": {
+    "family": "shanhaijing"
+  },
+  "animal-nanshan-fu": {
+    "family": "shanhaijing"
+  },
+  "animal-nanshan-ji-fish": {
+    "family": "shanhaijing"
+  },
+  "animal-nanshan-piluo": {
+    "family": "shanhaijing"
+  },
+  "animal-nanshan-xi": {
+    "family": "shanhaijing"
+  },
+  "animal-nanshan-si": {
+    "family": "shanhaijing"
+  },
+  "animal-nanshan-elephant": {
+    "family": "shanhaijing"
+  },
+  "deity-nanshan-1": {
+    "family": "shanhaijing"
+  },
+  "rite-nanshan-1": {
+    "family": "shanhaijing"
+  },
+  "deity-nanshan-2": {
+    "family": "shanhaijing"
+  },
+  "rite-nanshan-2": {
+    "family": "shanhaijing"
+  },
+  "deity-nanshan-3": {
+    "family": "shanhaijing"
+  },
+  "rite-nanshan-3": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-qianlai": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-songguo": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-taihua": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-xiaohua": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-zuoniu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-fuyu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-shicui": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-ying": {
+    "family": "shanhaijing"
+  },
+  "animal-xishan-zuoniu-ying": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-zhushan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-fushan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yuci": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-shishan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-nanshan-west": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-dashi": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-bozhong": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-tiandi": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-gaotu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-huangshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-cuishan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-guishan": {
+    "family": "shanhaijing"
+  },
+  "rite-xishan-hua-range1": {
+    "family": "shanhaijing"
+  },
+  "rite-xishan-yu-range1": {
+    "family": "shanhaijing"
+  },
+  "rite-xishan-seventeen-range1": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-qianshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-taimao": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-shuli": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-gaoshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-nvchuang": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-longshou": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-lutai": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-niaowei": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-xiaoci": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-daci": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-xunwu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-quyang": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-zhongshou": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-huangren": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-zhonghuang": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-xihuang": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-laishan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-horse-range2": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-ox-range2": {
+    "family": "shanhaijing"
+  },
+  "rite-xishan-shaolao-range2": {
+    "family": "shanhaijing"
+  },
+  "rite-xishan-rooster-range2": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-chongwu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-zhongsui-chongwu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-tuan-shou-qiu-chongwu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-changsha": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-buzhou": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-zhupi-buzhou": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yuechong-buzhou": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-mishan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-huangdi-mishan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-heaven-earth-mishan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-gu-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-qinpi-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-baojiang-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-di-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-kunlun-yang-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yaoya-zhongshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-taiqi": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-liusha": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-pingpu-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-yingzhao-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-houji-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-lilun-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-danshan-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-youqiong-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-ox-eight-huaijiang": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-kunlun": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-wuda-kunlun": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-dayu-kunlun": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-leyou": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-luomushan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-changcheng-luomushan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yushan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-xiwangmu-yushan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-xuanyuan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-jishi": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-gate-jishi": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-changliu": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-shaohao-changliu": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-weishi-changliu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-zhange": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yinshan3": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-futang": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-jiangyi-futang": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-sanwei": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-guishan3": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-qitong-guishan3": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-tianshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-tang-tianshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-youshan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-rushou-youshan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-hongguang-youshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yiwang": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-sheep-range3-summary": {
+    "family": "shanhaijing"
+  },
+  "rite-xishan-rite-range3-summary": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yinshan4": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-laoshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-bafu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-shenshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-niaoshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-shangshen": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-zhuci": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-haoshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yushan4": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-baiyu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-shenshou": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-jinggu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-gangshan": {
+    "family": "shanhaijing"
+  },
+  "deity-xishan-chi-gangshan": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-gangwei": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yingdi": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-zhongqu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-guishan4": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-niaoshu": {
+    "family": "shanhaijing"
+  },
+  "place-xishan-yanzi": {
+    "family": "shanhaijing"
+  },
+  "rite-xishan-rite-range4-summary": {
+    "family": "shanhaijing"
+  },
+  "01-01": {
+    "family": "other_classic"
+  },
+  "01-02": {
+    "family": "other_classic"
+  },
+  "01-03": {
+    "family": "other_classic"
+  },
+  "01-04": {
+    "family": "other_classic"
+  },
+  "02-01": {
+    "family": "other_classic"
+  },
+  "02-02": {
+    "family": "other_classic"
+  },
+  "02-03": {
+    "family": "other_classic"
+  },
+  "02-04": {
+    "family": "other_classic"
+  },
+  "02-05": {
+    "family": "other_classic"
+  },
+  "03-01": {
+    "family": "other_classic"
+  },
+  "03-02": {
+    "family": "other_classic"
+  },
+  "03-03": {
+    "family": "shanhaijing"
+  },
+  "03-04": {
+    "family": "shanhaijing"
+  },
+  "03-05": {
+    "family": "shanhaijing"
+  },
+  "04-01": {
+    "family": "other_classic"
+  },
+  "04-02": {
+    "family": "other_classic"
+  },
+  "04-03": {
+    "family": "other_classic"
+  },
+  "04-04": {
+    "family": "shanhaijing"
+  },
+  "04-05": {
+    "family": "other_classic"
+  },
+  "05-01": {
+    "family": "other_classic"
+  },
+  "05-02": {
+    "family": "shanhaijing"
+  },
+  "05-03": {
+    "family": "other_classic"
+  },
+  "05-04": {
+    "family": "other_classic"
+  },
+  "06-01": {
+    "family": "other_classic"
+  },
+  "06-02": {
+    "family": "other_classic"
+  },
+  "06-03": {
+    "family": "other_classic"
+  },
+  "06-04": {
+    "family": "other_classic"
+  },
+  "06-05": {
+    "family": "other_classic"
+  },
+  "07-03": {
+    "family": "other_classic"
+  },
+  "07-01": {
+    "family": "other_classic"
+  },
+  "07-02": {
+    "family": "other_classic"
+  },
+  "07-04": {
+    "family": "other_classic"
+  },
+  "08-01": {
+    "family": "shanhaijing"
+  },
+  "08-02": {
+    "family": "shanhaijing"
+  },
+  "08-03": {
+    "family": "shanhaijing"
+  },
+  "08-04": {
+    "family": "other_classic"
+  },
+  "08-05": {
+    "family": "shanhaijing"
+  },
+  "08-06": {
+    "family": "shanhaijing"
+  },
+  "08-07": {
+    "family": "shanhaijing"
+  },
+  "01-03-a": {
+    "family": "other_classic"
+  },
+  "01-03-b": {
+    "family": "other_classic"
+  },
+  "01-03-c": {
+    "family": "other_classic"
+  },
+  "01-03-d": {
+    "family": "other_classic"
+  },
+  "source:report-01-01": {
+    "family": "other_classic"
+  },
+  "source:report-01-02": {
+    "family": "other_classic"
+  },
+  "source:report-01-03": {
+    "family": "other_classic"
+  },
+  "source:report-01-04": {
+    "family": "other_classic"
+  },
+  "source:report-02-01": {
+    "family": "other_classic"
+  },
+  "source:report-02-02": {
+    "family": "other_classic"
+  },
+  "source:report-02-03": {
+    "family": "other_classic"
+  },
+  "source:report-02-04": {
+    "family": "other_classic"
+  },
+  "source:report-02-05": {
+    "family": "other_classic"
+  },
+  "source:report-03-01": {
+    "family": "other_classic"
+  },
+  "source:report-03-02": {
+    "family": "other_classic"
+  },
+  "source:report-03-03": {
+    "family": "shanhaijing"
+  },
+  "source:report-03-04": {
+    "family": "shanhaijing"
+  },
+  "source:report-03-05": {
+    "family": "shanhaijing"
+  },
+  "source:report-04-01": {
+    "family": "other_classic"
+  },
+  "source:report-04-02": {
+    "family": "other_classic"
+  },
+  "source:report-04-03": {
+    "family": "other_classic"
+  },
+  "source:report-04-04": {
+    "family": "shanhaijing"
+  },
+  "source:report-04-05": {
+    "family": "other_classic"
+  },
+  "source:report-05-01": {
+    "family": "other_classic"
+  },
+  "source:report-05-02": {
+    "family": "shanhaijing"
+  },
+  "source:report-05-03": {
+    "family": "other_classic"
+  },
+  "source:report-05-04": {
+    "family": "other_classic"
+  },
+  "source:report-06-01": {
+    "family": "other_classic"
+  },
+  "source:report-06-02": {
+    "family": "other_classic"
+  },
+  "source:report-06-03": {
+    "family": "other_classic"
+  },
+  "source:report-06-04": {
+    "family": "other_classic"
+  },
+  "source:report-06-05": {
+    "family": "other_classic"
+  },
+  "source:report-07-01": {
+    "family": "other_classic"
+  },
+  "source:report-07-02": {
+    "family": "other_classic"
+  },
+  "source:report-07-03": {
+    "family": "other_classic"
+  },
+  "source:report-07-04": {
+    "family": "other_classic"
+  },
+  "source:report-08-01": {
+    "family": "shanhaijing"
+  },
+  "source:report-08-02": {
+    "family": "shanhaijing"
+  },
+  "source:report-08-03": {
+    "family": "shanhaijing"
+  },
+  "source:report-08-04": {
+    "family": "other_classic"
+  },
+  "source:report-08-05": {
+    "family": "shanhaijing"
+  },
+  "source:report-08-06": {
+    "family": "shanhaijing"
+  },
+  "source:report-08-07": {
+    "family": "shanhaijing"
+  }
+}

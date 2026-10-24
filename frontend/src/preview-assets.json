@@ -1258,5 +1258,2705 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/nanshan/zhaoyao-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/zhaoyao-v1-card.webp",
+      "bytes": 37904,
+      "dimensions": [
+        320,
+        240
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/zhaoyao-v1-preview.webp",
+      "bytes": 75606,
+      "dimensions": [
+        480,
+        360
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/niuyang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/niuyang-v1-card.webp",
+      "bytes": 34200,
+      "dimensions": [
+        320,
+        240
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/niuyang-v1-preview.webp",
+      "bytes": 69662,
+      "dimensions": [
+        480,
+        360
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/qingqiu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/qingqiu-v1-card.webp",
+      "bytes": 38990,
+      "dimensions": [
+        320,
+        240
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/qingqiu-v1-preview.webp",
+      "bytes": 81046,
+      "dimensions": [
+        480,
+        360
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/zhuyu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/zhuyu-v1-card.webp",
+      "bytes": 39880,
+      "dimensions": [
+        240,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/zhuyu-v1-preview.webp",
+      "bytes": 74732,
+      "dimensions": [
+        360,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/migu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/migu-v1-card.webp",
+      "bytes": 49882,
+      "dimensions": [
+        240,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/migu-v1-preview.webp",
+      "bytes": 98706,
+      "dimensions": [
+        360,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/guanguan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/guanguan-v1-card.webp",
+      "bytes": 45892,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/guanguan-v1-preview.webp",
+      "bytes": 88922,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/tangting-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/tangting-v1-card.webp",
+      "bytes": 35498,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/tangting-v1-preview.webp",
+      "bytes": 73446,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/xun-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/xun-v1-card.webp",
+      "bytes": 26894,
+      "dimensions": [
+        320,
+        137
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/xun-v1-preview.webp",
+      "bytes": 55140,
+      "dimensions": [
+        480,
+        205
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/danxue-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/danxue-v1-card.webp",
+      "bytes": 29724,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/danxue-v1-preview.webp",
+      "bytes": 60290,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yuanyi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yuanyi-v1-card.webp",
+      "bytes": 34918,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yuanyi-v1-preview.webp",
+      "bytes": 72712,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-fuyu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-fuyu-v1-card.webp",
+      "bytes": 29934,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-fuyu-v1-preview.webp",
+      "bytes": 61808,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-cheng-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-cheng-v1-card.webp",
+      "bytes": 31672,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-cheng-v1-preview.webp",
+      "bytes": 66238,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-di-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-di-v1-card.webp",
+      "bytes": 33450,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-di-v1-preview.webp",
+      "bytes": 68316,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-danyuan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-danyuan-v1-card.webp",
+      "bytes": 26642,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-danyuan-v1-preview.webp",
+      "bytes": 54982,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-jishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-jishan-v1-card.webp",
+      "bytes": 35620,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-jishan-v1-preview.webp",
+      "bytes": 73846,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-jiwei-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-jiwei-v1-card.webp",
+      "bytes": 30008,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-jiwei-v1-preview.webp",
+      "bytes": 63720,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-gui-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-gui-v1-card.webp",
+      "bytes": 35318,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-gui-v1-preview.webp",
+      "bytes": 72936,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-changyou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-changyou-v1-card.webp",
+      "bytes": 29998,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-changyou-v1-preview.webp",
+      "bytes": 61918,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yaoguang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yaoguang-v1-card.webp",
+      "bytes": 35730,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yaoguang-v1-preview.webp",
+      "bytes": 74146,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yu-v1-card.webp",
+      "bytes": 36122,
+      "dimensions": [
+        320,
+        180
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yu-v1-preview.webp",
+      "bytes": 73772,
+      "dimensions": [
+        480,
+        270
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-qufu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-qufu-v1-card.webp",
+      "bytes": 27982,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-qufu-v1-preview.webp",
+      "bytes": 56730,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-gouyu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-gouyu-v1-card.webp",
+      "bytes": 25696,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-gouyu-v1-preview.webp",
+      "bytes": 52866,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-kuaiji-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-kuaiji-v1-card.webp",
+      "bytes": 33080,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-kuaiji-v1-preview.webp",
+      "bytes": 67972,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yi-v1-card.webp",
+      "bytes": 26310,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yi-v1-preview.webp",
+      "bytes": 53792,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-pugou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-pugou-v1-card.webp",
+      "bytes": 31508,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-pugou-v1-preview.webp",
+      "bytes": 65154,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-hushao-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-hushao-v1-card.webp",
+      "bytes": 29416,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-hushao-v1-preview.webp",
+      "bytes": 59618,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-quwu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-quwu-v1-card.webp",
+      "bytes": 28022,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-quwu-v1-preview.webp",
+      "bytes": 58512,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-xianyin-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-xianyin-v1-card.webp",
+      "bytes": 25436,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-xianyin-v1-preview.webp",
+      "bytes": 51398,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-luwu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-luwu-v1-card.webp",
+      "bytes": 26742,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-luwu-v1-preview.webp",
+      "bytes": 53706,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-qiwu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-qiwu-v1-card.webp",
+      "bytes": 30420,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-qiwu-v1-preview.webp",
+      "bytes": 63482,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-tianyu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-tianyu-v1-card.webp",
+      "bytes": 30588,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-tianyu-v1-preview.webp",
+      "bytes": 62512,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-daoguo-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-daoguo-v1-card.webp",
+      "bytes": 31514,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-daoguo-v1-preview.webp",
+      "bytes": 66640,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-fashuang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-fashuang-v1-card.webp",
+      "bytes": 29448,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-fashuang-v1-preview.webp",
+      "bytes": 58760,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-maowei-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-maowei-v1-card.webp",
+      "bytes": 34162,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-maowei-v1-preview.webp",
+      "bytes": 71148,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-feitou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-feitou-v1-card.webp",
+      "bytes": 37322,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-feitou-v1-preview.webp",
+      "bytes": 77174,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yangjia-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yangjia-v1-card.webp",
+      "bytes": 29362,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yangjia-v1-preview.webp",
+      "bytes": 58760,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-guanxiang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-guanxiang-v1-card.webp",
+      "bytes": 36640,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-guanxiang-v1-preview.webp",
+      "bytes": 76394,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-ji-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-ji-v1-card.webp",
+      "bytes": 35142,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-ji-v1-preview.webp",
+      "bytes": 73666,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-lingqiu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-lingqiu-v1-card.webp",
+      "bytes": 38902,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-lingqiu-v1-preview.webp",
+      "bytes": 79988,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-lunzhe-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-lunzhe-v1-card.webp",
+      "bytes": 35884,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-lunzhe-v1-preview.webp",
+      "bytes": 73058,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yugao-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yugao-v1-card.webp",
+      "bytes": 27274,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-yugao-v1-preview.webp",
+      "bytes": 55754,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/scene-nanyu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-nanyu-v1-card.webp",
+      "bytes": 30284,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/scene-nanyu-v1-preview.webp",
+      "bytes": 62164,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-lu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-lu-v1-card.webp",
+      "bytes": 37592,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-lu-v1-preview.webp",
+      "bytes": 75354,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-lei-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-lei-v1-card.webp",
+      "bytes": 44502,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-lei-v1-preview.webp",
+      "bytes": 93444,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-changfu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-changfu-v1-card.webp",
+      "bytes": 53136,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-changfu-v1-preview.webp",
+      "bytes": 106690,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-lili-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-lili-v1-card.webp",
+      "bytes": 37158,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-lili-v1-preview.webp",
+      "bytes": 78422,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-zhu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-zhu-v1-card.webp",
+      "bytes": 40204,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-zhu-v1-preview.webp",
+      "bytes": 78662,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-changyou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-changyou-v1-card.webp",
+      "bytes": 44920,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-changyou-v1-preview.webp",
+      "bytes": 94372,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-huahuai-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-huahuai-v1-card.webp",
+      "bytes": 40750,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-huahuai-v1-preview.webp",
+      "bytes": 88170,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-zhi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-zhi-v1-card.webp",
+      "bytes": 37392,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-zhi-v1-preview.webp",
+      "bytes": 71990,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-huan-xun-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-huan-xun-v1-card.webp",
+      "bytes": 38588,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-huan-xun-v1-preview.webp",
+      "bytes": 75346,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-quru-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-quru-v1-card.webp",
+      "bytes": 47808,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-quru-v1-preview.webp",
+      "bytes": 94552,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-hujiao-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-hujiao-v1-card.webp",
+      "bytes": 44640,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-hujiao-v1-preview.webp",
+      "bytes": 87738,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-zhuan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-zhuan-v1-card.webp",
+      "bytes": 31160,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-zhuan-v1-preview.webp",
+      "bytes": 64450,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/creature-yulingqiu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-yulingqiu-v1-card.webp",
+      "bytes": 44362,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/creature-yulingqiu-v1-preview.webp",
+      "bytes": 86920,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/plant-yan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/plant-yan-v1-card.webp",
+      "bytes": 50366,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/plant-yan-v1-preview.webp",
+      "bytes": 100406,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/plant-baigao-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/plant-baigao-v1-card.webp",
+      "bytes": 48420,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/plant-baigao-v1-preview.webp",
+      "bytes": 95388,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/deity-1-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/deity-1-v1-card.webp",
+      "bytes": 55994,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/deity-1-v1-preview.webp",
+      "bytes": 114568,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/deity-2-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/deity-2-v1-card.webp",
+      "bytes": 50408,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/deity-2-v1-preview.webp",
+      "bytes": 100530,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/nanshan/deity-3-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/nanshan/deity-3-v1-card.webp",
+      "bytes": 52200,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/nanshan/deity-3-v1-preview.webp",
+      "bytes": 106188,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-tongqu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-tongqu-v1-card.webp",
+      "bytes": 43604,
+      "dimensions": [
+        308,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-tongqu-v1-preview.webp",
+      "bytes": 87132,
+      "dimensions": [
+        462,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-feiyi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-feiyi-v1-card.webp",
+      "bytes": 23928,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-feiyi-v1-preview.webp",
+      "bytes": 45724,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-qianyang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-qianyang-v1-card.webp",
+      "bytes": 33252,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-qianyang-v1-preview.webp",
+      "bytes": 62200,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-qianlai-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-qianlai-v1-card.webp",
+      "bytes": 32688,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-qianlai-v1-preview.webp",
+      "bytes": 65396,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-songguo-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-songguo-v1-card.webp",
+      "bytes": 31570,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-songguo-v1-preview.webp",
+      "bytes": 64424,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-taihua-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-taihua-v1-card.webp",
+      "bytes": 29432,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-taihua-v1-preview.webp",
+      "bytes": 61046,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-conglong-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-conglong-v1-card.webp",
+      "bytes": 38784,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-conglong-v1-preview.webp",
+      "bytes": 74716,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-chibie-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-chibie-v1-card.webp",
+      "bytes": 33362,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-chibie-v1-preview.webp",
+      "bytes": 62546,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/animal-zuoniu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/animal-zuoniu-v1-card.webp",
+      "bytes": 30988,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/animal-zuoniu-v1-preview.webp",
+      "bytes": 60934,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-min-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-min-v1-card.webp",
+      "bytes": 21870,
+      "dimensions": [
+        320,
+        248
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-min-v1-preview.webp",
+      "bytes": 42150,
+      "dimensions": [
+        480,
+        371
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-bili-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-bili-v1-card.webp",
+      "bytes": 36698,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-bili-v1-preview.webp",
+      "bytes": 74390,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-wenjing-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-wenjing-v1-card.webp",
+      "bytes": 55274,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-wenjing-v1-preview.webp",
+      "bytes": 108844,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-tiao-fuyu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-tiao-fuyu-v1-card.webp",
+      "bytes": 54622,
+      "dimensions": [
+        320,
+        296
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-tiao-fuyu-v1-preview.webp",
+      "bytes": 110568,
+      "dimensions": [
+        480,
+        444
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-tiao-shicui-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-tiao-shicui-v1-card.webp",
+      "bytes": 56940,
+      "dimensions": [
+        304,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-tiao-shicui-v1-preview.webp",
+      "bytes": 112032,
+      "dimensions": [
+        456,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-xiaohua-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-xiaohua-v1-card.webp",
+      "bytes": 32232,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-xiaohua-v1-preview.webp",
+      "bytes": 67286,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-fuyu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-fuyu-v1-card.webp",
+      "bytes": 42596,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-fuyu-v1-preview.webp",
+      "bytes": 86894,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-shicui-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-shicui-v1-card.webp",
+      "bytes": 51744,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-shicui-v1-preview.webp",
+      "bytes": 109080,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-feiyi-ying-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-feiyi-ying-v1-card.webp",
+      "bytes": 31606,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-feiyi-ying-v1-preview.webp",
+      "bytes": 61016,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-renyu-zhushan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-renyu-zhushan-v1-card.webp",
+      "bytes": 21360,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-renyu-zhushan-v1-preview.webp",
+      "bytes": 40944,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-haozhi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-haozhi-v1-card.webp",
+      "bytes": 34142,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-haozhi-v1-preview.webp",
+      "bytes": 66524,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-huangguan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-huangguan-v1-card.webp",
+      "bytes": 47532,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-huangguan-v1-preview.webp",
+      "bytes": 91174,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-panmu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-panmu-v1-card.webp",
+      "bytes": 51124,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-panmu-v1-preview.webp",
+      "bytes": 99370,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-xuncao-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-xuncao-v1-card.webp",
+      "bytes": 48302,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-xuncao-v1-preview.webp",
+      "bytes": 92910,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-ying-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-ying-v1-card.webp",
+      "bytes": 44990,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-ying-v1-preview.webp",
+      "bytes": 90500,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-zhushan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-zhushan-v1-card.webp",
+      "bytes": 47900,
+      "dimensions": [
+        305,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-zhushan-v1-preview.webp",
+      "bytes": 99188,
+      "dimensions": [
+        457,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-fushan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-fushan-v1-card.webp",
+      "bytes": 32756,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-fushan-v1-preview.webp",
+      "bytes": 65596,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-bangyu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-bangyu-v1-card.webp",
+      "bytes": 26472,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-bangyu-v1-preview.webp",
+      "bytes": 51316,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-xiao-yuci-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-xiao-yuci-v1-card.webp",
+      "bytes": 33382,
+      "dimensions": [
+        304,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-xiao-yuci-v1-preview.webp",
+      "bytes": 65252,
+      "dimensions": [
+        456,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-tuofei-yuci-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-tuofei-yuci-v1-card.webp",
+      "bytes": 34150,
+      "dimensions": [
+        305,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-tuofei-yuci-v1-preview.webp",
+      "bytes": 68610,
+      "dimensions": [
+        458,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-yuci-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-yuci-v1-card.webp",
+      "bytes": 33152,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-yuci-v1-preview.webp",
+      "bytes": 67184,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-shishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-shishan-v1-card.webp",
+      "bytes": 30722,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-shishan-v1-preview.webp",
+      "bytes": 61018,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-mengbao-nan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-mengbao-nan-v1-card.webp",
+      "bytes": 40138,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-mengbao-nan-v1-preview.webp",
+      "bytes": 82622,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-shijiu-nan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-shijiu-nan-v1-card.webp",
+      "bytes": 18624,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-shijiu-nan-v1-preview.webp",
+      "bytes": 34168,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-nanshan-west-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-nanshan-west-v1-card.webp",
+      "bytes": 28984,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-nanshan-west-v1-preview.webp",
+      "bytes": 57404,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-dashi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-dashi-v1-card.webp",
+      "bytes": 35260,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-dashi-v1-preview.webp",
+      "bytes": 72192,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/animal-pi-bozhong-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/animal-pi-bozhong-v1-card.webp",
+      "bytes": 25336,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/animal-pi-bozhong-v1-preview.webp",
+      "bytes": 48524,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-baihan-bozhong-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-baihan-bozhong-v1-card.webp",
+      "bytes": 18804,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-baihan-bozhong-v1-preview.webp",
+      "bytes": 35016,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-gurong-bozhong-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-gurong-bozhong-v1-card.webp",
+      "bytes": 40938,
+      "dimensions": [
+        267,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-gurong-bozhong-v1-preview.webp",
+      "bytes": 77516,
+      "dimensions": [
+        400,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-bozhong-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-bozhong-v1-card.webp",
+      "bytes": 31414,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-bozhong-v1-preview.webp",
+      "bytes": 64138,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-xibian-tiandi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-xibian-tiandi-v1-card.webp",
+      "bytes": 38728,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-xibian-tiandi-v1-preview.webp",
+      "bytes": 75338,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-li-tiandi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-li-tiandi-v1-card.webp",
+      "bytes": 33864,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-li-tiandi-v1-preview.webp",
+      "bytes": 66280,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-duheng-tiandi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-duheng-tiandi-v1-card.webp",
+      "bytes": 39128,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-duheng-tiandi-v1-preview.webp",
+      "bytes": 74942,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-tiandi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-tiandi-v1-card.webp",
+      "bytes": 31370,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-tiandi-v1-preview.webp",
+      "bytes": 63792,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-yingru-gaotu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-yingru-gaotu-v1-card.webp",
+      "bytes": 35812,
+      "dimensions": [
+        295,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-yingru-gaotu-v1-preview.webp",
+      "bytes": 68364,
+      "dimensions": [
+        443,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-shusi-gaotu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-shusi-gaotu-v1-card.webp",
+      "bytes": 31998,
+      "dimensions": [
+        292,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-shusi-gaotu-v1-preview.webp",
+      "bytes": 61866,
+      "dimensions": [
+        439,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-wutiao-gaotu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-wutiao-gaotu-v1-card.webp",
+      "bytes": 45286,
+      "dimensions": [
+        308,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-wutiao-gaotu-v1-preview.webp",
+      "bytes": 90448,
+      "dimensions": [
+        462,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-gaotu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-gaotu-v1-card.webp",
+      "bytes": 33526,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-gaotu-v1-preview.webp",
+      "bytes": 67572,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/creature-min-huangshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/creature-min-huangshan-v1-card.webp",
+      "bytes": 31896,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/creature-min-huangshan-v1-preview.webp",
+      "bytes": 62554,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-yingmu-huangshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-yingmu-huangshan-v1-card.webp",
+      "bytes": 43080,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-yingmu-huangshan-v1-preview.webp",
+      "bytes": 80940,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-huangshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-huangshan-v1-card.webp",
+      "bytes": 40078,
+      "dimensions": [
+        320,
+        287
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-huangshan-v1-preview.webp",
+      "bytes": 81562,
+      "dimensions": [
+        480,
+        431
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-lei-cuishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-lei-cuishan-v1-card.webp",
+      "bytes": 30388,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-lei-cuishan-v1-preview.webp",
+      "bytes": 58790,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/animal-maoniu-cuishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/animal-maoniu-cuishan-v1-card.webp",
+      "bytes": 36854,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/animal-maoniu-cuishan-v1-preview.webp",
+      "bytes": 73674,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/animal-ling-cuishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/animal-ling-cuishan-v1-card.webp",
+      "bytes": 30194,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/animal-ling-cuishan-v1-preview.webp",
+      "bytes": 58130,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/animal-she-cuishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/animal-she-cuishan-v1-card.webp",
+      "bytes": 26318,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/animal-she-cuishan-v1-preview.webp",
+      "bytes": 50964,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-cuishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-cuishan-v1-card.webp",
+      "bytes": 48166,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-cuishan-v1-preview.webp",
+      "bytes": 95516,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/scene-guishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/scene-guishan-v1-card.webp",
+      "bytes": 44920,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/scene-guishan-v1-preview.webp",
+      "bytes": 92274,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-luan-nvchuang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-luan-nvchuang-v1-card.webp",
+      "bytes": 43360,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-luan-nvchuang-v1-preview.webp",
+      "bytes": 81920,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-fuxi-lutai-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-fuxi-lutai-v1-card.webp",
+      "bytes": 37782,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-fuxi-lutai-v1-preview.webp",
+      "bytes": 71654,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/deity-horse-range2-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/deity-horse-range2-v1-card.webp",
+      "bytes": 35874,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/deity-horse-range2-v1-preview.webp",
+      "bytes": 67566,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/deity-ox-range2-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/deity-ox-range2-v1-card.webp",
+      "bytes": 43426,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/deity-ox-range2-v1-preview.webp",
+      "bytes": 82556,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-jufu-chongwu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-jufu-chongwu-v1-card.webp",
+      "bytes": 39636,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-jufu-chongwu-v1-preview.webp",
+      "bytes": 75512,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-manman-chongwu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-manman-chongwu-v1-card.webp",
+      "bytes": 40352,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-manman-chongwu-v1-preview.webp",
+      "bytes": 77164,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/deity-gu-zhongshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/deity-gu-zhongshan-v1-card.webp",
+      "bytes": 44346,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/deity-gu-zhongshan-v1-preview.webp",
+      "bytes": 84344,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-qinpi-e-zhongshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-qinpi-e-zhongshan-v1-card.webp",
+      "bytes": 45832,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-qinpi-e-zhongshan-v1-preview.webp",
+      "bytes": 87374,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-gu-jun-zhongshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-gu-jun-zhongshan-v1-card.webp",
+      "bytes": 37564,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-gu-jun-zhongshan-v1-preview.webp",
+      "bytes": 71360,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/deity-ox-eight-huaijiang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/deity-ox-eight-huaijiang-v1-card.webp",
+      "bytes": 45848,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/deity-ox-eight-huaijiang-v1-preview.webp",
+      "bytes": 86990,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/deity-changcheng-luomushan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/deity-changcheng-luomushan-v1-card.webp",
+      "bytes": 34716,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/deity-changcheng-luomushan-v1-preview.webp",
+      "bytes": 65516,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-shuhu-yanzi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-shuhu-yanzi-v1-card.webp",
+      "bytes": 45128,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-shuhu-yanzi-v1-preview.webp",
+      "bytes": 86548,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-unnamed-yanzi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-unnamed-yanzi-v1-card.webp",
+      "bytes": 46766,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-unnamed-yanzi-v1-preview.webp",
+      "bytes": 88836,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1-card.webp",
+      "bytes": 42456,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1-preview.webp",
+      "bytes": 81678,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-jiao-yushan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-jiao-yushan-v1-card.webp",
+      "bytes": 45578,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-jiao-yushan-v1-preview.webp",
+      "bytes": 85890,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/deity-rushou-youshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/deity-rushou-youshan-v1-card.webp",
+      "bytes": 44380,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/deity-rushou-youshan-v1-preview.webp",
+      "bytes": 84454,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-xiao-baiyu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-xiao-baiyu-v1-card.webp",
+      "bytes": 30704,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-xiao-baiyu-v1-preview.webp",
+      "bytes": 58080,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-shengyu-yushan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-shengyu-yushan-v1-card.webp",
+      "bytes": 25566,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-shengyu-yushan-v1-preview.webp",
+      "bytes": 47756,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-bo-zhongqu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-bo-zhongqu-v1-card.webp",
+      "bytes": 41072,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-bo-zhongqu-v1-preview.webp",
+      "bytes": 76638,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-saoyu-niaoshu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-saoyu-niaoshu-v1-card.webp",
+      "bytes": 25002,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-saoyu-niaoshu-v1-preview.webp",
+      "bytes": 47154,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-rupi-niaoshu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-rupi-niaoshu-v1-card.webp",
+      "bytes": 32356,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-rupi-niaoshu-v1-preview.webp",
+      "bytes": 61546,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-aoyu-sanwei-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-aoyu-sanwei-v1-card.webp",
+      "bytes": 43386,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-aoyu-sanwei-v1-preview.webp",
+      "bytes": 83790,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-danmu-mishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-danmu-mishan-v1-card.webp",
+      "bytes": 51726,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-danmu-mishan-v1-preview.webp",
+      "bytes": 98466,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/deity-chi-gangshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/deity-chi-gangshan-v1-card.webp",
+      "bytes": 34790,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/deity-chi-gangshan-v1-preview.webp",
+      "bytes": 67658,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-manman-gangwei-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-manman-gangwei-v1-card.webp",
+      "bytes": 28894,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-manman-gangwei-v1-preview.webp",
+      "bytes": 55728,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/deity-sheep-range3-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/deity-sheep-range3-v1-card.webp",
+      "bytes": 38610,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/deity-sheep-range3-v1-preview.webp",
+      "bytes": 71816,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-ranyi-yingdi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-ranyi-yingdi-v1-card.webp",
+      "bytes": 43068,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-ranyi-yingdi-v1-preview.webp",
+      "bytes": 79030,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-danghu-shangshen-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-danghu-shangshen-v1-card.webp",
+      "bytes": 45170,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-danghu-shangshen-v1-preview.webp",
+      "bytes": 85444,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-chi-sanwei-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-chi-sanwei-v1-card.webp",
+      "bytes": 42046,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-chi-sanwei-v1-preview.webp",
+      "bytes": 78186,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/bird-qiyu-yiwang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/bird-qiyu-yiwang-v1-card.webp",
+      "bytes": 45272,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/bird-qiyu-yiwang-v1-preview.webp",
+      "bytes": 83570,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-shatang-kunlun-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-shatang-kunlun-v1-card.webp",
+      "bytes": 44822,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-shatang-kunlun-v1-preview.webp",
+      "bytes": 85118,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-huai-zhongqu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-huai-zhongqu-v1-card.webp",
+      "bytes": 48944,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-huai-zhongqu-v1-preview.webp",
+      "bytes": 94276,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/plant-dan-yanzi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/plant-dan-yanzi-v1-card.webp",
+      "bytes": 48064,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/plant-dan-yanzi-v1-preview.webp",
+      "bytes": 89826,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/xishan/beast-huayu-leyou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/xishan/beast-huayu-leyou-v1-card.webp",
+      "bytes": 30376,
+      "dimensions": [
+        320,
+        206
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/xishan/beast-huayu-leyou-v1-preview.webp",
+      "bytes": 55650,
+      "dimensions": [
+        480,
+        310
+      ]
+    }
   }
 }

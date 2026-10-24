@@ -11,7 +11,7 @@ try {
   const original = JSON.parse(world);
   const translated = localize(original, 'en');
   assert.equal(localize(original, 'zh'), original, 'Chinese source data is preserved');
-  for (const group of ['regions', 'places', 'domains', 'relations', 'beasts']) {
+  for (const group of ['regions', 'places', 'domains', 'relations', 'beasts', 'natural_features', 'text_entities']) {
     assert.deepEqual(translated[group].map(item => item.id), original[group].map(item => item.id));
     for (const [index, item] of translated[group].entries()) {
       for (const field of ['name', 'label', 'source', 'quote', 'direction', 'place_basis']) {
@@ -36,7 +36,7 @@ async function selectChapter(page, chapter) {
 async function assertEnglish(page) {
   const untranslated = await page.evaluate(() => [...document.querySelectorAll('main *, .detail-drawer *')]
     .filter(element => !element.children.length && element.getClientRects().length
-      && !element.closest('.original-text,.seal,.language-switch,.beast-placeholder')
+      && !element.closest('.original-text,.seal,.language-switch,.beast-placeholder,[lang="zh-CN"]')
       && /[\u3400-\u9fff]/.test(element.textContent))
     .map(element => element.textContent));
   assert.deepEqual(untranslated, [], 'English UI and descriptions have no untranslated Chinese');
@@ -68,6 +68,7 @@ try {
     });
     await page.route('**/api/world', route => route.fulfill({ contentType: 'application/json', body: world }));
     await page.goto(base + '/?lang=en');
+    await page.locator('.onboarding-skip').click();
     await page.getByText('Reduced motion enabled', { exact: true }).waitFor();
     await page.evaluate(() => document.fonts.ready);
     assert.deepEqual(await page.evaluate(() => [...document.fonts]
@@ -96,6 +97,7 @@ try {
       assert.ok(Math.abs(flowingInk - startInk) > .3, 'Hover moves the ink along the sea paths');
       await page.mouse.move(800, 900);
       assert.equal(await waves.evaluate(element => getComputedStyle(element).animationName), 'none');
+      await page.keyboard.press('Tab');
       await page.locator('.myth-header>a').focus();
       assert.equal(await waves.evaluate(element => getComputedStyle(element).animationName), 'mark-tide');
       await page.emulateMedia({ reducedMotion: 'reduce' });
@@ -114,15 +116,15 @@ try {
         for (const entry of await page.locator('.story-entry').all()) {
           await entry.click();
           await assertEnglish(page);
-          await page.locator('.original-text summary').click();
-          assert.ok(await page.locator('.original-text blockquote').getAttribute('lang') === 'zh-CN');
+    await page.locator('.original-text:not(.commentary-section) summary').click();
+    assert.ok(await page.locator('.original-text:not(.commentary-section) blockquote').getAttribute('lang') === 'zh-CN');
           await page.getByRole('button', { name: 'Close', exact: true }).click();
         }
       }
     }
 
     await page.locator('.bestiary-toggle').click();
-    assert.equal(await page.locator('.beast-card').count(), 32);
+    assert.equal(await page.locator('.beast-card').count(), JSON.parse(world).beasts.length);
     await assertEnglish(page);
     if (width === 1440) {
       for (const card of await page.locator('.beast-card').all()) {
@@ -169,6 +171,7 @@ try {
   motionPage.on('pageerror', error => errors.push(error.stack || error.message));
   await motionPage.clock.install();
   await motionPage.goto(base + '/?lang=en');
+  await motionPage.locator('.onboarding-skip').click();
   await motionPage.getByRole('button', { name: 'Play Pangu prologue', exact: true }).click();
   await motionPage.getByRole('button', { name: 'Pause Pangu prologue', exact: true }).waitFor();
   await motionPage.getByRole('button', { name: 'Pause Pangu prologue', exact: true }).click();

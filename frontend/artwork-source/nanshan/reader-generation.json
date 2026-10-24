@@ -1,0 +1,27 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "name": "tangting",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-9bcb6dce-fd76-4efc-842d-8c24256cd44c.png",
+      "prompt": "Use case: illustration-story. Asset: Mount Tangting scene for an existing Chinese Shanhaijing reading website. Generate one landscape woodcut vignette on a genuinely transparent background. Subject: a quiet wooded mountain with several leafy yan trees, two small white apes sitting naturally among the trees, modest hints of clear quartz and ochre mineral veins in rocks. Scene is an artistic illustration, not a real geographic reconstruction. Style: fine carved black charcoal knife marks, warm ivory pigment within the illustrated forms, restrained ochre and muted celadon accents, antique Chinese printed-book woodcut, matching a warm parchment atlas. Wide horizontal composition, ample clear space, softly broken irregular carved edges fading into real transparency. No buildings, modern objects, labels, letters, text, seals, arrows, watermarks, checkerboard or opaque rectangular paper background. The white apes have ordinary ape anatomy; no fantasy horns, tails or wings. Avoid photorealism and glossy digital painting.",
+      "reference_images": [],
+      "review_note": "Scenic woodcut with white apes and mineral hints; tree form, placement and rock shape are artistic interpretations."
+    },
+    {
+      "name": "xun",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-9ff5b675-ef88-4fd9-bfd4-ddc60433eff7.png",
+      "prompt": "Use case: illustration-story. One wide woodcut landscape vignette for Mount Xun in a Chinese Shanhaijing reading atlas. Sunlit ochre mineral-bearing slope and cool shaded jade-bearing slope, with a quiet river winding away toward a marsh, small purple spiral snails only as subtle riverbank details. Do not include the mysterious mouthless animal: its unspecified appearance is intentionally left out. Fine charcoal carved knife lines, warm ivory forms, restrained ochre and muted celadon accents, antique Chinese book woodcut. Real transparent background around irregular soft carved edges, not a rectangular parchment background. Airy horizontal composition; no text, seals, labels, arrows, buildings, people, modern landmarks, photorealism or watermark. This is an artistic scene, not a modern map or scaled river reconstruction.",
+      "reference_images": [],
+      "review_note": "Mineral-bearing slopes and a river scene; the mouthless creature is intentionally not depicted."
+    },
+    {
+      "name": "danxue",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-412a884b-8dbe-4f31-be9f-c9489d5c458b.png",
+      "prompt": "Use case: illustration-story. One wide woodcut landscape vignette for Mount Danxue in a Chinese Shanhaijing reading atlas. An elegant mountain with restrained ochre and jade mineral hints; the Dan river emerges from rocky folds and winds toward a distant open sea. A few abstract small foliage silhouettes, ample breathing space. Do not depict a phoenix here: this mountain scene accompanies a separately illustrated existing phoenix entry. Fine charcoal carved knife lines, warm ivory forms, muted celadon water, modest ochre accents, antique Chinese printed-book woodcut style. Genuine transparent background around irregular fading carved edges, no opaque rectangle or checkerboard. No text, lettering, symbols of virtues, seals, labels, arrows, architecture, people, modern landmarks, photorealism, glossy effects or watermarks. Artistic scene, not modern geography.",
+      "reference_images": [],
+      "review_note": "Mountain-and-river vignette; does not invent phoenix markings or modern geography."
+    }
+  ]
+}

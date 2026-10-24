@@ -1,0 +1,925 @@
+{
+  "snapshot_sha256": "0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce",
+  "supplement_page": 26,
+  "supplement": [
+    [
+      "又東四百里曰洵山其陽多金其陰多玉有獸焉其狀如羊而無口不可殺也其名曰䍺",
+      "洵作旬。䍺音還或音患。"
+    ],
+    [
+      "洵水出焉而南流注于閼之澤其中多芘蠃",
+      "洵音詢。閼音遏。芘蠃紫色螺也。"
+    ],
+    [
+      "又東四百里曰虖勺之山其上多梓柟其下多荆杞滂水出焉而東流注于海",
+      "梓山楸也。柟大木葉似桑。柟今作楠，音南。杞枸杞也子赤。滂音滂沱之滂。"
+    ],
+    [
+      "又東五百里曰區吳之山無草木多沙石鹿水出焉而南流注于滂水",
+      ""
+    ]
+  ],
+  "corrections": [
+    {
+      "passage": "passage-nanshan-range1",
+      "captured": "一千九百五十里",
+      "reviewed": "二千九百五十里",
+      "basis": "facsimile visual inspection"
+    },
+    {
+      "passage": "passage-nanshan-yaoguang",
+      "captured": "猾裏",
+      "reviewed": "猾褢",
+      "basis": "facsimile visual inspection"
+    }
+  ],
+  "scan_pages": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "confirmed_image_glyphs": [
+    "能",
+    "狀",
+    "經"
+  ],
+  "unresolved_image_glyphs": [
+    {
+      "passage": "passage-nanshan-di",
+      "markers": [
+        "⟦缺字图:留⟧"
+      ]
+    }
+  ],
+  "limits": "逐山及总述说明齐备；不是所有对象均有独立实体卡，也不是各版本校勘定本。",
+  "counts": {
+    "mountain_passages": 39,
+    "range_summaries": 3,
+    "closing_total": 1,
+    "printed_range_counts": [
+      10,
+      17,
+      14
+    ],
+    "printed_closing_count": 40
+  },
+  "passages": [
+    {
+      "id": "passage-nanshan-zhaoyao",
+      "source_span": [
+        0,
+        113
+      ],
+      "source_unit_ids": [
+        "source-01-0003",
+        "source-01-0004",
+        "source-01-0005",
+        "source-01-0006",
+        "source-01-0007",
+        "source-01-0008",
+        "source-01-0009",
+        "source-01-0010",
+        "source-01-0011",
+        "source-01-0012",
+        "source-01-0013",
+        "source-01-0014"
+      ],
+      "subjects": [
+        "招摇之山",
+        "桂",
+        "金玉",
+        "祝余",
+        "迷谷",
+        "狌狌",
+        "丽𪊨之水",
+        "育沛"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-tangting",
+      "source_span": [
+        113,
+        135
+      ],
+      "source_unit_ids": [
+        "source-01-0015",
+        "source-01-0016",
+        "source-01-0017",
+        "source-01-0018"
+      ],
+      "subjects": [
+        "堂庭之山",
+        "棪木",
+        "白猿",
+        "水玉",
+        "黄金"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-yuanyi",
+      "source_span": [
+        135,
+        172
+      ],
+      "source_unit_ids": [
+        "source-01-0019",
+        "source-01-0020",
+        "source-01-0021",
+        "source-01-0022"
+      ],
+      "subjects": [
+        "猨翼之山",
+        "怪兽",
+        "怪鱼",
+        "白玉",
+        "蝮虫",
+        "怪蛇",
+        "怪木"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-niuyang",
+      "source_span": [
+        172,
+        270
+      ],
+      "source_unit_ids": [
+        "source-01-0023",
+        "source-01-0024",
+        "source-01-0025",
+        "source-01-0026",
+        "source-01-0027",
+        "source-01-0028",
+        "source-01-0029"
+      ],
+      "subjects": [
+        "杻阳之山",
+        "赤金",
+        "白金",
+        "鹿蜀",
+        "怪水",
+        "宪翼之水",
+        "旋龟"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-di",
+      "source_span": [
+        270,
+        324
+      ],
+      "source_unit_ids": [
+        "source-01-0030",
+        "source-01-0031",
+        "source-01-0032",
+        "source-01-0033"
+      ],
+      "subjects": [
+        "祗山",
+        "鯥"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-danyuan",
+      "source_span": [
+        324,
+        365
+      ],
+      "source_unit_ids": [
+        "source-01-0034",
+        "source-01-0035",
+        "source-01-0036"
+      ],
+      "subjects": [
+        "亶爰之山",
+        "𩔗"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-jishan",
+      "source_span": [
+        365,
+        431
+      ],
+      "source_unit_ids": [
+        "source-01-0037",
+        "source-01-0038",
+        "source-01-0039",
+        "source-01-0040",
+        "source-01-0041",
+        "source-01-0042"
+      ],
+      "subjects": [
+        "基山",
+        "猼訑",
+        "𪁺𩿧"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-qingqiu",
+      "source_span": [
+        431,
+        542
+      ],
+      "source_unit_ids": [
+        "source-01-0043",
+        "source-01-0044",
+        "source-01-0045",
+        "source-01-0046",
+        "source-01-0047",
+        "source-01-0048",
+        "source-01-0049"
+      ],
+      "subjects": [
+        "青丘之山",
+        "九尾狐",
+        "灌灌",
+        "英水",
+        "即翼之泽",
+        "赤鱬"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-jiwei",
+      "source_span": [
+        542,
+        578
+      ],
+      "source_unit_ids": [
+        "source-01-0050",
+        "source-01-0051",
+        "source-01-0052"
+      ],
+      "subjects": [
+        "箕尾之山",
+        "东海",
+        "汸水",
+        "淯",
+        "白玉"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-range1",
+      "source_span": [
+        578,
+        635
+      ],
+      "source_unit_ids": [
+        "source-01-0052",
+        "source-01-0053",
+        "source-01-0054",
+        "source-01-0055",
+        "source-01-0056"
+      ],
+      "subjects": [
+        "山神",
+        "鸟身龙首",
+        "祭祀",
+        "璋玉",
+        "稌米",
+        "稻米",
+        "白菅"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-gui",
+      "source_span": [
+        635,
+        743
+      ],
+      "source_unit_ids": [
+        "source-01-0057",
+        "source-01-0058",
+        "source-01-0059",
+        "source-01-0060",
+        "source-01-0061",
+        "source-01-0062"
+      ],
+      "subjects": [
+        "柜山",
+        "流黄",
+        "诸毗",
+        "长右",
+        "英水",
+        "赤水",
+        "丹粟",
+        "狸力",
+        "鴸"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-changyou",
+      "source_span": [
+        743,
+        784
+      ],
+      "source_unit_ids": [
+        "source-01-0063",
+        "source-01-0064",
+        "source-01-0065"
+      ],
+      "subjects": [
+        "长右之山",
+        "长右",
+        "水灾征兆"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-yaoguang",
+      "source_span": [
+        784,
+        835
+      ],
+      "source_unit_ids": [
+        "source-01-0066",
+        "source-01-0067",
+        "source-01-0068"
+      ],
+      "subjects": [
+        "尧光之山",
+        "猾褢",
+        "大繇"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-yu",
+      "source_span": [
+        835,
+        859
+      ],
+      "source_unit_ids": [
+        "source-01-0069",
+        "source-01-0070",
+        "source-01-0071"
+      ],
+      "subjects": [
+        "羽山",
+        "蝮虫"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-qufu",
+      "source_span": [
+        859,
+        877
+      ],
+      "source_unit_ids": [
+        "source-01-0072"
+      ],
+      "subjects": [
+        "瞿父之山",
+        "金玉"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-gouyu",
+      "source_span": [
+        877,
+        893
+      ],
+      "source_unit_ids": [
+        "source-01-0073"
+      ],
+      "subjects": [
+        "句余之山",
+        "金玉"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-fuyu",
+      "source_span": [
+        893,
+        950
+      ],
+      "source_unit_ids": [
+        "source-01-0074",
+        "source-01-0075",
+        "source-01-0076",
+        "source-01-0077",
+        "source-01-0078"
+      ],
+      "subjects": [
+        "浮玉之山",
+        "具区",
+        "诸毗",
+        "彘",
+        "苕水",
+        "鮆鱼"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-cheng",
+      "source_span": [
+        950,
+        989
+      ],
+      "source_unit_ids": [
+        "source-01-0079",
+        "source-01-0080",
+        "source-01-0081"
+      ],
+      "subjects": [
+        "成山",
+        "三坛",
+        "青雘",
+        "䦠水",
+        "虖勺",
+        "黄金"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-kuaiji",
+      "source_span": [
+        989,
+        1021
+      ],
+      "source_unit_ids": [
+        "source-01-0082",
+        "source-01-0083",
+        "source-01-0084",
+        "source-01-0085"
+      ],
+      "subjects": [
+        "会稽之山",
+        "砆石",
+        "勺水",
+        "湨"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-yi",
+      "source_span": [
+        1021,
+        1046
+      ],
+      "source_unit_ids": [
+        "source-01-0086",
+        "source-01-0087"
+      ],
+      "subjects": [
+        "夷山",
+        "湨水",
+        "列涂"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-pugou",
+      "source_span": [
+        1046,
+        1071
+      ],
+      "source_unit_ids": [
+        "source-01-0088",
+        "source-01-0089"
+      ],
+      "subjects": [
+        "仆勾之山",
+        "金玉",
+        "草木"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-xun",
+      "source_span": [
+        1071,
+        1122
+      ],
+      "source_unit_ids": [
+        "scan-01-26-01",
+        "scan-01-26-02"
+      ],
+      "subjects": [
+        "洵山",
+        "䍺",
+        "洵水",
+        "阏之泽",
+        "芘蠃"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-hushao",
+      "source_span": [
+        1122,
+        1152
+      ],
+      "source_unit_ids": [
+        "scan-01-26-03"
+      ],
+      "subjects": [
+        "虖勺之山",
+        "梓",
+        "楠",
+        "荆",
+        "杞",
+        "滂水"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-quwu",
+      "source_span": [
+        1152,
+        1179
+      ],
+      "source_unit_ids": [
+        "scan-01-26-04"
+      ],
+      "subjects": [
+        "区吴之山",
+        "鹿水",
+        "滂水"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-xianyin",
+      "source_span": [
+        1179,
+        1194
+      ],
+      "source_unit_ids": [
+        "source-01-0090"
+      ],
+      "subjects": [
+        "咸阴之山"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-luwu",
+      "source_span": [
+        1194,
+        1249
+      ],
+      "source_unit_ids": [
+        "source-01-0091",
+        "source-01-0092",
+        "source-01-0093"
+      ],
+      "subjects": [
+        "鹿吴之山",
+        "泽更之水",
+        "滂水",
+        "蛊雕"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-qiwu",
+      "source_span": [
+        1249,
+        1283
+      ],
+      "source_unit_ids": [
+        "source-01-0094",
+        "source-01-0095"
+      ],
+      "subjects": [
+        "漆吴之山",
+        "博石",
+        "丘山",
+        "日次"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-range2",
+      "source_span": [
+        1283,
+        1327
+      ],
+      "source_unit_ids": [
+        "source-01-0096",
+        "source-01-0097",
+        "source-01-0098"
+      ],
+      "subjects": [
+        "山神",
+        "龙身鸟首",
+        "祭祀",
+        "璧",
+        "稌米"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-tianyu",
+      "source_span": [
+        1327,
+        1346
+      ],
+      "source_unit_ids": [
+        "source-01-0099"
+      ],
+      "subjects": [
+        "天虞之山"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-daoguo",
+      "source_span": [
+        1346,
+        1426
+      ],
+      "source_unit_ids": [
+        "source-01-0100",
+        "source-01-0101",
+        "source-01-0102",
+        "source-01-0103",
+        "source-01-0104",
+        "source-01-0105",
+        "source-01-0106"
+      ],
+      "subjects": [
+        "祷过之山",
+        "犀",
+        "兕",
+        "象",
+        "瞿如",
+        "泿水",
+        "虎蛟"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-danxue",
+      "source_span": [
+        1426,
+        1504
+      ],
+      "source_unit_ids": [
+        "source-01-0107",
+        "source-01-0108",
+        "source-01-0109",
+        "source-01-0110",
+        "source-01-0111"
+      ],
+      "subjects": [
+        "丹穴之山",
+        "丹水",
+        "㴾海",
+        "凤皇",
+        "德",
+        "义",
+        "礼",
+        "仁",
+        "信"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-fashuang",
+      "source_span": [
+        1504,
+        1533
+      ],
+      "source_unit_ids": [
+        "source-01-0112",
+        "source-01-0113",
+        "source-01-0114"
+      ],
+      "subjects": [
+        "发爽之山",
+        "白猿",
+        "汎水",
+        "㴾海"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-maowei",
+      "source_span": [
+        1533,
+        1559
+      ],
+      "source_unit_ids": [
+        "source-01-0115",
+        "source-01-0116"
+      ],
+      "subjects": [
+        "旄山之尾",
+        "育遗",
+        "凯风",
+        "怪鸟"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-feitou",
+      "source_span": [
+        1559,
+        1582
+      ],
+      "source_unit_ids": [
+        "source-01-0117",
+        "source-01-0118"
+      ],
+      "subjects": [
+        "非山之首",
+        "蝮虫",
+        "金玉"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-yangjia",
+      "source_span": [
+        1582,
+        1597
+      ],
+      "source_unit_ids": [
+        "source-01-0119"
+      ],
+      "subjects": [
+        "阳夹之山"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-guanxiang",
+      "source_span": [
+        1597,
+        1617
+      ],
+      "source_unit_ids": [
+        "source-01-0120"
+      ],
+      "subjects": [
+        "灌湘之山",
+        "木",
+        "怪鸟"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-ji",
+      "source_span": [
+        1617,
+        1666
+      ],
+      "source_unit_ids": [
+        "source-01-0121",
+        "source-01-0122",
+        "source-01-0123",
+        "source-01-0124",
+        "source-01-0125"
+      ],
+      "subjects": [
+        "鸡山",
+        "丹雘",
+        "黑水",
+        "鱄鱼"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-lingqiu",
+      "source_span": [
+        1666,
+        1723
+      ],
+      "source_unit_ids": [
+        "source-01-0126",
+        "source-01-0127",
+        "source-01-0128",
+        "source-01-0129"
+      ],
+      "subjects": [
+        "令丘之山",
+        "中谷",
+        "条风",
+        "𪃍"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-lunzhe",
+      "source_span": [
+        1723,
+        1780
+      ],
+      "source_unit_ids": [
+        "source-01-0130",
+        "source-01-0131",
+        "source-01-0132",
+        "source-01-0133"
+      ],
+      "subjects": [
+        "仑者之山",
+        "白䓘",
+        "青雘",
+        "血玉"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-yugao",
+      "source_span": [
+        1780,
+        1798
+      ],
+      "source_unit_ids": [
+        "source-01-0134"
+      ],
+      "subjects": [
+        "禺槀之山",
+        "怪兽",
+        "大蛇"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-nanyu",
+      "source_span": [
+        1798,
+        1847
+      ],
+      "source_unit_ids": [
+        "source-01-0135",
+        "source-01-0136",
+        "source-01-0137"
+      ],
+      "subjects": [
+        "南禺之山",
+        "佐水",
+        "凤皇",
+        "鵷鶵"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-range3",
+      "source_span": [
+        1847,
+        1895
+      ],
+      "source_unit_ids": [
+        "source-01-0138",
+        "source-01-0139",
+        "source-01-0140"
+      ],
+      "subjects": [
+        "山神",
+        "龙身人面",
+        "白狗",
+        "祈祷",
+        "稌米"
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-nanshan-total",
+      "source_span": [
+        1895,
+        1915
+      ],
+      "source_unit_ids": [
+        "source-01-0141",
+        "source-01-0142"
+      ],
+      "subjects": [
+        "山数",
+        "里数",
+        "篇末总计"
+      ],
+      "status": "facsimile_reviewed"
+    }
+  ]
+}

@@ -1,0 +1,7586 @@
+[
+  {
+    "ids": [
+      "place-xishan-qianlai",
+      "beast-xishan-qianyang"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其狀如羊而馬尾名曰羬羊其脂可以已腊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-songguo",
+      "water-xishan-huo"
+    ],
+    "source": "《西山经》",
+    "quote": "濩水出焉北流注于渭其中多銅",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-songguo",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "濩水出焉北流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-songguo",
+      "beast-xishan-tongqu"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其名曰䳋渠其狀如山雞黑身赤足可以已𦢊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taihua",
+      "beast-xishan-feiyi-taihua"
+    ],
+    "source": "《西山经》",
+    "quote": "有蛇焉名曰肥𧔥六足四翼見則天下大旱",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xiaohua",
+      "animal-xishan-zuoniu"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xiaohua",
+      "beast-xishan-chibie"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥多赤鷩可以禦火",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xiaohua",
+      "plant-xishan-bili"
+    ],
+    "source": "《西山经》",
+    "quote": "其草有萆荔狀如烏韭而生於石上亦緣木而生食之已心痛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-fuyu",
+      "plant-xishan-wenjing"
+    ],
+    "source": "《西山经》",
+    "quote": "其上有木焉名曰文莖其實如𬃷可以已聾",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-fuyu",
+      "plant-xishan-tiao-fuyu"
+    ],
+    "source": "《西山经》",
+    "quote": "其草多條其狀如葵而赤花黄實如嬰兒舌食之使人不惑",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-fuyu",
+      "water-xishan-fuyu"
+    ],
+    "source": "《西山经》",
+    "quote": "符禺之水出焉而北流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-fuyu",
+      "beast-xishan-conglong"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多葱聾其狀如羊而赤鬛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-fuyu",
+      "beast-xishan-min"
+    ],
+    "source": "《西山经》",
+    "quote": "其鳥多鴖其状如翠而赤喙可以禦火",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shicui",
+      "plant-xishan-tiao-shicui"
+    ],
+    "source": "《西山经》",
+    "quote": "其草多條其狀如韭而白華黑實食之已疥",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shicui",
+      "water-xishan-guan"
+    ],
+    "source": "《西山经》",
+    "quote": "灌水出焉而北流注于禺水其中有流赭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shicui",
+      "water-xishan-yu-shicui"
+    ],
+    "source": "《西山经》",
+    "quote": "灌水出焉而北流注于禺水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shicui",
+      "material-xishan-liuzhe"
+    ],
+    "source": "《西山经》",
+    "quote": "其中有流赭以𡍼牛馬無病",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-ying",
+      "water-xishan-yu-ying"
+    ],
+    "source": "《西山经》",
+    "quote": "禺水出焉北流注于招水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-ying",
+      "water-xishan-zhao-ying"
+    ],
+    "source": "《西山经》",
+    "quote": "禺水出焉北流注于招水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-ying",
+      "beast-xishan-bangyu-ying"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多䰷魚其狀如鼈其音如羊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-ying",
+      "animal-xishan-zuoniu-ying"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛羬羊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-ying",
+      "beast-xishan-qianyang-ying"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛羬羊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-ying",
+      "beast-xishan-feiyi-ying"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如鶉黄身而赤喙其名曰肥遺食之已癘可以殺蟲",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhushan",
+      "plant-xishan-huangguan"
+    ],
+    "source": "《西山经》",
+    "quote": "有草焉其名曰黄雚其状如樗其葉如麻白花而赤實其状如赭浴之已疥又可以已胕",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhushan",
+      "water-xishan-zhu"
+    ],
+    "source": "《西山经》",
+    "quote": "竹水出焉北流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhushan",
+      "water-xishan-dan-zhushan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉東南流注于洛水其中多水玉多人魚",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhushan",
+      "water-xishan-luo-zhushan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉東南流注于洛水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhushan",
+      "material-xishan-shuiyu-zhushan"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多水玉多人魚",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhushan",
+      "beast-xishan-renyu-zhushan"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多水玉多人魚",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhushan",
+      "beast-xishan-haozhi-zhushan"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如豚而白毛大如笄而黑端名曰毫彘",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-fushan",
+      "plant-xishan-panmu"
+    ],
+    "source": "《西山经》",
+    "quote": "多盼木枳葉而無傷木蟲居之",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-fushan",
+      "plant-xishan-xuncao"
+    ],
+    "source": "《西山经》",
+    "quote": "有草焉名曰薰草麻葉而方莖赤華而黑實臭如蘼蕪佩之可以已癘",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yuci",
+      "water-xishan-qi-yuci"
+    ],
+    "source": "《西山经》",
+    "quote": "漆水出焉北流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yuci",
+      "material-xishan-yingyuan-yuci"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多赤銅其陽多嬰垣之玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yuci",
+      "beast-xishan-xiao-yuci"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其狀如禺而長臂善投其名曰囂",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yuci",
+      "beast-xishan-tuofei-yuci"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其狀如梟人面而一足曰槖𩇯冬見夏蟄服之不畏雷",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shishan",
+      "water-xishan-zhu-shishan"
+    ],
+    "source": "《西山经》",
+    "quote": "逐水出焉北流注于渭其中多水玉",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shishan",
+      "material-xishan-shuiyu-shishan"
+    ],
+    "source": "《西山经》",
+    "quote": "逐水出焉北流注于渭其中多水玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nanshan-west",
+      "water-xishan-dan-nanshan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉北流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nanshan-west",
+      "material-xishan-dansu-nanshan"
+    ],
+    "source": "《西山经》",
+    "quote": "南山上多丹粟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nanshan-west",
+      "beast-xishan-mengbao-nanshan"
+    ],
+    "source": "《西山经》",
+    "quote": "獸多猛豹",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nanshan-west",
+      "beast-xishan-shijiu-nanshan"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥多尸鳩",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-dashi",
+      "water-xishan-qian-dashi"
+    ],
+    "source": "《西山经》",
+    "quote": "涔水岀焉北流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-dashi",
+      "water-xishan-qing-dashi"
+    ],
+    "source": "《西山经》",
+    "quote": "清水出焉南流注于漢水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-dashi",
+      "water-xishan-han-dashi"
+    ],
+    "source": "《西山经》",
+    "quote": "清水出焉南流注于漢水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-dashi",
+      "material-xishan-silver-dashi"
+    ],
+    "source": "《西山经》",
+    "quote": "隂多銀陽多白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-dashi",
+      "material-xishan-white-jade-dashi"
+    ],
+    "source": "《西山经》",
+    "quote": "隂多銀陽多白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "water-xishan-mian-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "漢水出焉而東南流注于沔",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "water-xishan-xiao-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "囂水出焉北流注于湯水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "water-xishan-tang-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "囂水出焉北流注于湯水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "plant-xishan-taozhi-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多桃枝鈎端",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "plant-xishan-gouduan-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多桃枝鈎端",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "animal-xishan-xi-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "獸多犀兕熊羆",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "animal-xishan-si-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "獸多犀兕熊羆",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "animal-xishan-bear-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "獸多犀兕熊羆",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "animal-xishan-pi-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "獸多犀兕熊羆",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "bird-xishan-baihan-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥多白翰赤鷩",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "bird-xishan-chibie-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥多白翰赤鷩",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "plant-xishan-gurong-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "有草焉其葉如蕙其本如桔梗黑華而不實名曰蓇蓉食之使人無子",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tiandi",
+      "beast-xishan-xibian-tiandi"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如狗名曰谿邊席其皮者不蠱",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tiandi",
+      "beast-xishan-li-tiandi"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如鶉黑文而赤翁名曰櫟食之已痔",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tiandi",
+      "plant-xishan-duheng-tiandi"
+    ],
+    "source": "《西山经》",
+    "quote": "有草焉其状如葵其臭如蘼蕪名曰杜衡可以走馬食之已癭",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "water-xishan-se-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "薔水出焉西流注于諸資之水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "water-xishan-zhuzi-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "薔水出焉西流注于諸資之水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "water-xishan-tu-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "塗水出焉南流注于集獲之水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "water-xishan-jihuo-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "塗水出焉南流注于集獲之水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "material-xishan-dansu-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多丹粟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "material-xishan-silver-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多銀黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "material-xishan-gold-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多銀黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "plant-xishan-gui-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多桂木",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "material-xishan-yu-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "有白石焉其名曰礜可以毒鼠",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "plant-xishan-wutiao-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "有草焉其状如槀苃其葉如葵而赤背名曰無條可以毒鼠",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "beast-xishan-yingru-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如鹿而白尾馬足人手而四角名曰𤣎如",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "beast-xishan-shusi-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如鴟而人足名曰數斯食之已癭",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangshan",
+      "plant-xishan-zhujian-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "無草木多竹箭",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangshan",
+      "water-xishan-pan-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "盼水出焉西流注于赤水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangshan",
+      "water-xishan-chi-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "盼水出焉西流注于赤水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangshan",
+      "material-xishan-jade-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "盼水出焉西流注于赤水其中多玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangshan",
+      "beast-xishan-min-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如牛而蒼黑大目其名曰𤛎",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangshan",
+      "beast-xishan-yingmu-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如鴞青羽赤喙人舌能言名曰鸚䳇",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "plant-xishan-zong-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多㯶枏",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "plant-xishan-nan-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多㯶枏",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "plant-xishan-zhujian-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多竹箭",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "material-xishan-gold-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多黄金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "material-xishan-jade-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多黄金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "animal-xishan-maoniu-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多旄牛麢麝",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "animal-xishan-ling-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多旄牛麢麝",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "animal-xishan-she-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多旄牛麢麝",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "bird-xishan-lei-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其鳥多鸓其状如鵲赤黑而西首四足可以禦火",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan",
+      "water-xishan-westsea-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "是錞于西海無草木多玉淒水出焉西流注于海",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan",
+      "material-xishan-jade-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "無草木多玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan",
+      "water-xishan-qi-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "淒水出焉西流注于海",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan",
+      "material-xishan-caishi-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "淒水出焉西流注于海其中多采石黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan",
+      "material-xishan-gold-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "淒水出焉西流注于海其中多采石黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan",
+      "material-xishan-dansu-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "多丹粟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range1-summary",
+      "rite-xishan-hua-range1"
+    ],
+    "source": "《西山经》",
+    "quote": "華山冢也其祠之禮太牢",
+    "labels": [
+      "总括中的祠礼",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range1-summary",
+      "rite-xishan-yu-range1"
+    ],
+    "source": "《西山经》",
+    "quote": "羭山神也祠之用燭齋百日以百犧瘞用百瑜湯其酒百樽嬰以百珪百璧",
+    "labels": [
+      "总括中的祠礼",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range1-summary",
+      "rite-xishan-seventeen-range1"
+    ],
+    "source": "《西山经》",
+    "quote": "其餘十七山之属皆毛牷用一羊祠之",
+    "labels": [
+      "总括中的祠礼",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-qianshan",
+      "material-xishan-copper-qianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多銅",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-qianshan",
+      "material-xishan-jade-qianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-qianshan",
+      "plant-xishan-niu-qianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多杻橿",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-qianshan",
+      "plant-xishan-jiang-qianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多杻橿",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taimao",
+      "material-xishan-jin-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taimao",
+      "material-xishan-iron-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多鐡",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taimao",
+      "water-xishan-yu-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "浴水出焉東流注于河其中多藻玉多白蛇",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taimao",
+      "water-xishan-he-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "浴水出焉東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taimao",
+      "material-xishan-zaoyu-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "浴水出焉東流注于河其中多藻玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taimao",
+      "beast-xishan-white-snake-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "浴水出焉東流注于河其中多藻玉多白蛇",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shuli",
+      "material-xishan-gold-shuli"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shuli",
+      "material-xishan-silver-shuli"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多銀",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shuli",
+      "plant-xishan-niu-shuli"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多杻橿",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shuli",
+      "plant-xishan-jiang-shuli"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多杻橿",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shuli",
+      "beast-xishan-yingmu-shuli"
+    ],
+    "source": "《西山经》",
+    "quote": "其鳥多鸚䳇",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shuli",
+      "water-xishan-chu-shuli"
+    ],
+    "source": "《西山经》",
+    "quote": "楚水出焉而南流注于渭其中多珠",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shuli",
+      "material-xishan-pearl-shuli"
+    ],
+    "source": "《西山经》",
+    "quote": "楚水出焉而南流注于渭其中多珠",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaoshan",
+      "material-xishan-silver-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多銀",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaoshan",
+      "material-xishan-qingbi-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多青碧雄黄",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaoshan",
+      "material-xishan-xionghuang-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多青碧雄黄",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaoshan",
+      "plant-xishan-zong-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多㯶",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaoshan",
+      "plant-xishan-bamboo-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其草多竹",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaoshan",
+      "water-xishan-jing-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "涇水出焉而東流注于渭其中多磬石青碧",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaoshan",
+      "material-xishan-qingshi-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "涇水出焉而東流注于渭其中多磬石青碧",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaoshan",
+      "material-xishan-qingbi-water-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "涇水出焉而東流注于渭其中多磬石青碧",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nvchuang",
+      "material-xishan-red-copper-nvchuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多赤銅",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nvchuang",
+      "material-xishan-shinie-nvchuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多石𣵀",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nvchuang",
+      "animal-xishan-tiger-nvchuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多虎豹犀兕",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nvchuang",
+      "animal-xishan-leopard-nvchuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多虎豹犀兕",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nvchuang",
+      "animal-xishan-xi-nvchuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多虎豹犀兕",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nvchuang",
+      "animal-xishan-si-nvchuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多虎豹犀兕",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nvchuang",
+      "beast-xishan-luan-nvchuang"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如翟而五彩文名曰鸞鳥見則天下安寧",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-longshou",
+      "material-xishan-gold-longshou"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-longshou",
+      "material-xishan-iron-longshou"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多鐡",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-longshou",
+      "water-xishan-tiao-longshou"
+    ],
+    "source": "《西山经》",
+    "quote": "苕水出焉東南流注于涇水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-longshou",
+      "material-xishan-fine-jade-longshou"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多羙玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-lutai",
+      "material-xishan-white-jade-lutai"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-lutai",
+      "material-xishan-silver-lutai"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多銀",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-lutai",
+      "animal-xishan-zuoniu-lutai"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛羬羊白豪",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-lutai",
+      "beast-xishan-qianyang-lutai"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛羬羊白豪",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-lutai",
+      "animal-xishan-baihao-lutai"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛羬羊白豪",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-lutai",
+      "beast-xishan-fuxi-lutai"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如雄雞而人面名曰鳬徯其名自呌也見則有兵",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaowei",
+      "material-xishan-qingshi-niaowei"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多磬石",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaowei",
+      "plant-xishan-tan-niaowei"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多檀楮",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaowei",
+      "plant-xishan-chu-niaowei"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多檀楮",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaowei",
+      "material-xishan-nvchuang-niaowei"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多女牀",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaowei",
+      "water-xishan-niaowei"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥危之水出焉西流注于赤水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaowei",
+      "material-xishan-dansu-niaowei"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多丹粟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xiaoci",
+      "material-xishan-white-jade-xiaoci"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xiaoci",
+      "material-xishan-red-copper-xiaoci"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多赤銅",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xiaoci",
+      "beast-xishan-zhuyan-xiaoci"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如猨而白首赤足名曰朱厭見則大兵",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-daci",
+      "material-xishan-e-daci"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多堊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-daci",
+      "material-xishan-bi-daci"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多碧",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-daci",
+      "animal-xishan-zuoniu-daci"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛麢羊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-daci",
+      "animal-xishan-lingyang-daci"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛麢羊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xunwu",
+      "material-xishan-jin-xunwu"
+    ],
+    "source": "《西山经》",
+    "quote": "多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xunwu",
+      "material-xishan-jade-xunwu"
+    ],
+    "source": "《西山经》",
+    "quote": "多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-daci",
+      "place-xishan-xunwu"
+    ],
+    "source": "《西山经》",
+    "quote": "又西四百里曰薰吳之山",
+    "labels": [
+      "下一山 · 向西四百里",
+      "上一山 · 大次山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-quyang",
+      "plant-xishan-ji-quyang"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多稷柟豫章",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-quyang",
+      "plant-xishan-nan-quyang"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多稷柟豫章",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-quyang",
+      "plant-xishan-yuzhang-quyang"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多稷柟豫章",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-quyang",
+      "animal-xishan-xi-quyang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多犀兕虎犳㸲牛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-quyang",
+      "animal-xishan-si-quyang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多犀兕虎犳㸲牛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-quyang",
+      "animal-xishan-tiger-quyang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多犀兕虎犳㸲牛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-quyang",
+      "animal-xishan-zhuo-quyang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多犀兕虎犳㸲牛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-quyang",
+      "animal-xishan-zuoniu-quyang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多犀兕虎犳㸲牛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xunwu",
+      "place-xishan-quyang"
+    ],
+    "source": "《西山经》",
+    "quote": "又西四百里曰𢇨陽之山",
+    "labels": [
+      "下一山 · 向西四百里",
+      "上一山 · 薰吳山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshou",
+      "material-xishan-tufu-zhongshou"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多㻬琈之玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshou",
+      "plant-xishan-tan-zhongshou"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多檀楮多黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshou",
+      "plant-xishan-chu-zhongshou"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多檀楮多黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshou",
+      "material-xishan-gold-zhongshou"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多檀楮多黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshou",
+      "animal-xishan-xi-zhongshou"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多犀兕",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshou",
+      "animal-xishan-si-zhongshou"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多犀兕",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-quyang",
+      "place-xishan-zhongshou"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百五十里曰衆獸之山",
+    "labels": [
+      "下一山 · 向西二百五十里",
+      "上一山 · 𢇨陽山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangren",
+      "material-xishan-jin-huangren"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangren",
+      "material-xishan-jade-huangren"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangren",
+      "material-xishan-qingxionghuang-huangren"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多青雄黄",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangren",
+      "water-xishan-huang-huangren"
+    ],
+    "source": "《西山经》",
+    "quote": "皇水出焉西流注于赤水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangren",
+      "material-xishan-dansu-huangren"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多丹粟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshou",
+      "place-xishan-huangren"
+    ],
+    "source": "《西山经》",
+    "quote": "又西五百里曰皇人之山",
+    "labels": [
+      "下一山 · 向西五百里",
+      "上一山 · 衆獸山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangren",
+      "water-xishan-chi-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "皇水出焉西流注于赤水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-huang-huangren",
+      "water-xishan-chi-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "皇水出焉西流注于赤水",
+    "labels": [
+      "向西流入",
+      "来水 · 皇水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-huang-huangren",
+      "material-xishan-dansu-huangren"
+    ],
+    "source": "《西山经》",
+    "quote": "皇水出焉西流注于赤水其中多丹粟",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhonghuang",
+      "material-xishan-gold-zhonghuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多黄金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhonghuang",
+      "plant-xishan-huitang-zhonghuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多蕙棠",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangren",
+      "place-xishan-zhonghuang"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百里曰中皇之山",
+    "labels": [
+      "下一山 · 向西三百里",
+      "上一山 · 皇人山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xihuang",
+      "material-xishan-jin-xihuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xihuang",
+      "material-xishan-iron-xihuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多鐡",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xihuang",
+      "animal-xishan-mi-xihuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多麋鹿㸲牛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xihuang",
+      "animal-xishan-deer-xihuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多麋鹿㸲牛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xihuang",
+      "animal-xishan-zuoniu-xihuang"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多麋鹿㸲牛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhonghuang",
+      "place-xishan-xihuang"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百五十里曰西皇之山",
+    "labels": [
+      "下一山 · 向西三百五十里",
+      "上一山 · 中皇山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-laishan",
+      "plant-xishan-tan-laishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多檀楮",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-laishan",
+      "plant-xishan-chu-laishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多檀楮",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-laishan",
+      "bird-xishan-luoluo-laishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其鳥多羅羅是食人",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xihuang",
+      "place-xishan-laishan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百五十里曰萊山",
+    "labels": [
+      "下一山 · 向西三百五十里",
+      "上一山 · 西皇山"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range2-summary",
+      "deity-xishan-horse-range2"
+    ],
+    "source": "《西山经》",
+    "quote": "其十神者皆人靣而馬身",
+    "labels": [
+      "总括中的神祇",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range2-summary",
+      "deity-xishan-ox-range2"
+    ],
+    "source": "《西山经》",
+    "quote": "其七神皆人靣牛身四足而一臂操杖以行是為飛獸之神",
+    "labels": [
+      "总括中的神祇",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range2-summary",
+      "rite-xishan-shaolao-range2"
+    ],
+    "source": "《西山经》",
+    "quote": "其祠之毛用少牢白菅為席",
+    "labels": [
+      "总括中的祠礼",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range2-summary",
+      "rite-xishan-rooster-range2"
+    ],
+    "source": "《西山经》",
+    "quote": "其十軰神者其祠之毛一雄鷄鈐而不糈毛采",
+    "labels": [
+      "总括中的祠礼",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-laishan",
+      "passage-xishan-range2-summary"
+    ],
+    "source": "《西山经》",
+    "quote": "凡西次二經之首自鈐山至于萊山凡十七山",
+    "labels": [
+      "次二列总括与祭礼",
+      "前一段 · 萊山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "place-xishan-zhongsui-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "北望冡遂",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "water-xishan-yaoze-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "南望䍃之澤",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "place-xishan-tuan-shou-qiu-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "西望帝之摶獸之丘",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "water-xishan-yanyuan-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "東望䗡淵",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "plant-xishan-unnamed-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "有木焉員葉而白柎赤華而黒理其實如枳食之宜子孫",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "beast-xishan-jufu-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如禺而文臂豹虎而善投名曰舉父",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "bird-xishan-manman-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如鳬而一翼一目相得乃飛名曰蠻蠻見則天下大水",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "place-xishan-zhongsui-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "北望冡遂",
+    "labels": [
+      "北望所见",
+      "方位参照 · 崇吾"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "water-xishan-yaoze-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "南望䍃之澤",
+    "labels": [
+      "南望所见",
+      "方位参照 · 崇吾"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "place-xishan-tuan-shou-qiu-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "西望帝之摶獸之丘",
+    "labels": [
+      "西望所见",
+      "方位参照 · 崇吾"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "water-xishan-yanyuan-chongwu"
+    ],
+    "source": "《西山经》",
+    "quote": "東望䗡淵",
+    "labels": [
+      "东望所见",
+      "方位参照 · 崇吾"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "water-xishan-he-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "崇吾之山在河之南",
+    "labels": [
+      "位于其南",
+      "方位参照 · 崇吾"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changsha",
+      "water-xishan-ci-changsha"
+    ],
+    "source": "《西山经》",
+    "quote": "泚水出焉北流注于泑水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changsha",
+      "water-xishan-you-changsha"
+    ],
+    "source": "《西山经》",
+    "quote": "泚水出焉北流注于泑水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changsha",
+      "material-xishan-qingxionghuang-changsha"
+    ],
+    "source": "《西山经》",
+    "quote": "無草木多青雄黄",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-chongwu",
+      "place-xishan-changsha"
+    ],
+    "source": "《西山经》",
+    "quote": "西北三百里曰長沙之山",
+    "labels": [
+      "下一山 · 向西北三百里",
+      "上一山 · 崇吾"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-ci-changsha",
+      "water-xishan-you-changsha"
+    ],
+    "source": "《西山经》",
+    "quote": "泚水出焉北流注于泑水",
+    "labels": [
+      "向北流入",
+      "来水 · 泚水"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-buzhou",
+      "place-xishan-zhupi-buzhou"
+    ],
+    "source": "《西山经》",
+    "quote": "北望諸毗之山",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-buzhou",
+      "place-xishan-yuechong-buzhou"
+    ],
+    "source": "《西山经》",
+    "quote": "臨彼嶽崇之山",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-buzhou",
+      "water-xishan-youze-buzhou"
+    ],
+    "source": "《西山经》",
+    "quote": "東望泑澤河水所潜也其源渾渾泡泡",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-buzhou",
+      "plant-xishan-jia-guo-buzhou"
+    ],
+    "source": "《西山经》",
+    "quote": "爰有嘉果其實如桃其葉如𬃷黄華而赤柎食之不勞",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changsha",
+      "place-xishan-buzhou"
+    ],
+    "source": "《西山经》",
+    "quote": "又西北三百七十里曰不周之山",
+    "labels": [
+      "下一山 · 向西北三百七十里",
+      "上一山 · 長沙"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-buzhou",
+      "place-xishan-zhupi-buzhou"
+    ],
+    "source": "《西山经》",
+    "quote": "北望諸毗之山",
+    "labels": [
+      "北望所见",
+      "方位参照 · 不周"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-buzhou",
+      "place-xishan-yuechong-buzhou"
+    ],
+    "source": "《西山经》",
+    "quote": "臨彼嶽崇之山",
+    "labels": [
+      "所临之山",
+      "方位参照 · 不周"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-buzhou",
+      "water-xishan-youze-buzhou"
+    ],
+    "source": "《西山经》",
+    "quote": "東望泑澤",
+    "labels": [
+      "东望所见",
+      "方位参照 · 不周"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-buzhou",
+      "water-xishan-he-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "東望泑澤河水所潜也其源渾渾泡泡",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-youze-buzhou",
+      "water-xishan-he-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "泑澤河水所潜也",
+    "labels": [
+      "河水所潜",
+      "本段所述水域"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "plant-xishan-danmu-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹木員葉而赤莖黄華而赤實其味如飴食之不飢",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "water-xishan-dan-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉西流注于稷澤其中多白玉是有玉膏其源沸沸湯湯",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "water-xishan-jize-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉西流注于稷澤",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "material-xishan-white-jade-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉西流注于稷澤其中多白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "material-xishan-yugao-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多白玉是有玉膏其源沸沸湯湯黄帝是食是饗是生𤣥玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "material-xishan-xuanyu-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "是生𤣥玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "material-xishan-yurong-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "黃帝乃取峚山之玉榮而投之鍾山之陽",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "material-xishan-jinyu-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "瑾瑜之玉為良堅粟精密濁澤有而光五色發作以和柔剛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "deity-xishan-huangdi-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "黄帝是食是饗是生𤣥玉玉膏所出以灌丹木丹木五歲五色乃清五味乃馨黃帝乃取峚山之玉榮而投之鍾山之陽",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "deity-xishan-heaven-earth-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "天地鬼神是食是饗",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "water-xishan-wetlands-mi-zhong"
+    ],
+    "source": "《西山经》",
+    "quote": "自峚山至于鍾山四百六十里其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "bird-xishan-birds-mi-zhong"
+    ],
+    "source": "《西山经》",
+    "quote": "其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "beast-xishan-beasts-mi-zhong"
+    ],
+    "source": "《西山经》",
+    "quote": "其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "beast-xishan-fish-mi-zhong"
+    ],
+    "source": "《西山经》",
+    "quote": "其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-buzhou",
+      "place-xishan-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西北四百二十里曰峚山",
+    "labels": [
+      "下一山 · 向西北四百二十里",
+      "上一山 · 不周"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-dan-mishan",
+      "water-xishan-jize-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉西流注于稷澤",
+    "labels": [
+      "向西流入",
+      "来水 · 峚山丹水"
+    ]
+  },
+  {
+    "ids": [
+      "material-xishan-yugao-mishan",
+      "plant-xishan-danmu-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "玉膏所出以灌丹木",
+    "labels": [
+      "灌溉对象",
+      "灌溉所用"
+    ]
+  },
+  {
+    "ids": [
+      "material-xishan-yugao-mishan",
+      "material-xishan-xuanyu-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "玉膏其源沸沸湯湯黄帝是食是饗是生𤣥玉",
+    "labels": [
+      "所生之玉",
+      "本段玉膏"
+    ]
+  },
+  {
+    "ids": [
+      "deity-xishan-huangdi-mishan",
+      "material-xishan-yurong-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "黃帝乃取峚山之玉榮",
+    "labels": [
+      "所取玉榮",
+      "取玉者 · 黃帝"
+    ]
+  },
+  {
+    "ids": [
+      "material-xishan-yurong-mishan",
+      "place-xishan-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "黃帝乃取峚山之玉榮而投之鍾山之陽",
+    "labels": [
+      "投玉于山阳",
+      "所投之玉"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "place-xishan-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "自峚山至于鍾山四百六十里其間盡澤也",
+    "labels": [
+      "段末路程 · 至鍾山四百六十里",
+      "段末路程 · 自峚山"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-dan-mishan",
+      "material-xishan-white-jade-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉西流注于稷澤其中多白玉",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-dan-mishan",
+      "material-xishan-yugao-mishan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉西流注于稷澤其中多白玉是有玉膏",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-wetlands-mi-zhong",
+      "bird-xishan-birds-mi-zhong"
+    ],
+    "source": "《西山经》",
+    "quote": "其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+    "labels": [
+      "泽间异物",
+      "本段泽地"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-wetlands-mi-zhong",
+      "beast-xishan-beasts-mi-zhong"
+    ],
+    "source": "《西山经》",
+    "quote": "其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+    "labels": [
+      "泽间异物",
+      "本段泽地"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-wetlands-mi-zhong",
+      "beast-xishan-fish-mi-zhong"
+    ],
+    "source": "《西山经》",
+    "quote": "其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+    "labels": [
+      "泽间异物",
+      "本段泽地"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshan",
+      "deity-xishan-gu-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其子曰皷其状如人靣而龍身",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshan",
+      "deity-xishan-qinpi-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "是與欽䲹殺葆江于崑崙之陽",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshan",
+      "deity-xishan-baojiang-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "殺葆江于崑崙之陽",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshan",
+      "deity-xishan-di-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "帝乃戮之鍾山之東曰𡺯崖",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshan",
+      "bird-xishan-qinpi-e-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "欽䲹化為大鶚其状如鵰而黑文白首赤喙而虎𤓰其音如晨鵠見則有大兵",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshan",
+      "bird-xishan-gu-jun-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "皷亦化為鵕鳥其状如鴟赤足而直喙黄文而白首其音如鵠見即其邑大旱",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshan",
+      "place-xishan-kunlun-yang-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "殺葆江于崑崙之陽",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshan",
+      "place-xishan-yaoya-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "帝乃戮之鍾山之東曰𡺯崖",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-mishan",
+      "place-xishan-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西北四百二十里曰鍾山",
+    "labels": [
+      "下一山 · 向西北四百二十里",
+      "上一山 · 峚山"
+    ]
+  },
+  {
+    "ids": [
+      "deity-xishan-gu-zhongshan",
+      "bird-xishan-gu-jun-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "皷亦化為鵕鳥",
+    "labels": [
+      "所化鸟形",
+      "变形前 · 皷"
+    ]
+  },
+  {
+    "ids": [
+      "deity-xishan-qinpi-zhongshan",
+      "bird-xishan-qinpi-e-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "欽䲹化為大鶚",
+    "labels": [
+      "所化鸟形",
+      "变形前 · 欽䲹"
+    ]
+  },
+  {
+    "ids": [
+      "deity-xishan-gu-zhongshan",
+      "deity-xishan-qinpi-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "是與欽䲹殺葆江于崑崙之陽",
+    "labels": [
+      "同段行事者 · 欽䲹",
+      "同段行事者 · 皷"
+    ]
+  },
+  {
+    "ids": [
+      "deity-xishan-qinpi-zhongshan",
+      "deity-xishan-baojiang-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "是與欽䲹殺葆江于崑崙之陽",
+    "labels": [
+      "本段被杀者",
+      "本段行事者"
+    ]
+  },
+  {
+    "ids": [
+      "deity-xishan-baojiang-zhongshan",
+      "place-xishan-kunlun-yang-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "殺葆江于崑崙之陽",
+    "labels": [
+      "事件所在 · 崑崙之陽",
+      "本段被杀者"
+    ]
+  },
+  {
+    "ids": [
+      "deity-xishan-di-zhongshan",
+      "place-xishan-yaoya-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "帝乃戮之鍾山之東曰𡺯崖",
+    "labels": [
+      "行戮所及之地",
+      "本段未具名之帝"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taiqi",
+      "water-xishan-guan-taiqi"
+    ],
+    "source": "《西山经》",
+    "quote": "𮗚水出焉西流注于流沙",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taiqi",
+      "place-xishan-liusha"
+    ],
+    "source": "《西山经》",
+    "quote": "𮗚水出焉西流注于流沙",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taiqi",
+      "beast-xishan-wenyao-taiqi"
+    ],
+    "source": "《西山经》",
+    "quote": "是多文鰩魚状如鯉魚魚身而鳥翼蒼文而白首赤喙常行西海遊於東海以夜飛其音如鸞雞其味酸甘食之已狂見則天下大穰",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taiqi",
+      "water-xishan-eastsea-taiqi"
+    ],
+    "source": "《西山经》",
+    "quote": "常行西海遊於東海以夜飛",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongshan",
+      "place-xishan-taiqi"
+    ],
+    "source": "《西山经》",
+    "quote": "又西百八十里曰㤗噐之山",
+    "labels": [
+      "下一山 · 向西百八十里",
+      "上一山 · 鍾山"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-guan-taiqi",
+      "place-xishan-liusha"
+    ],
+    "source": "《西山经》",
+    "quote": "𮗚水出焉西流注于流沙",
+    "labels": [
+      "向西注于",
+      "来水 · 𮗚水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-guan-taiqi",
+      "beast-xishan-wenyao-taiqi"
+    ],
+    "source": "《西山经》",
+    "quote": "𮗚水出焉西流注于流沙是多文鰩魚",
+    "labels": [
+      "同段水文中的对象",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "beast-xishan-wenyao-taiqi",
+      "water-xishan-westsea-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "常行西海",
+    "labels": [
+      "常行之海",
+      "本段文鰩魚"
+    ]
+  },
+  {
+    "ids": [
+      "beast-xishan-wenyao-taiqi",
+      "water-xishan-eastsea-taiqi"
+    ],
+    "source": "《西山经》",
+    "quote": "遊於東海",
+    "labels": [
+      "所游之海",
+      "本段文鰩魚"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "water-xishan-qiushi-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "丘時之水出焉而北流注于泑水其中多蠃母",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "beast-xishan-luomu-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多蠃母",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "material-xishan-qingxionghuang-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多青雄黃",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "material-xishan-langgan-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "多蔵琅玕黄金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "material-xishan-gold-above-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "多蔵琅玕黄金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "material-xishan-jade-above-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "多蔵琅玕黄金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "material-xishan-dansu-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多丹粟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "material-xishan-shaded-goods-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多采黄金銀",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "place-xishan-pingpu-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "實惟帝之平圃神英招司之",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "deity-xishan-yingzhao-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "神英招司之其状馬身而人靣虎文而鳥翼徇于四海其音如榴",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "water-xishan-daze-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "西望大澤后稷所潜也其中多玉其隂多榣木之有若",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "deity-xishan-houji-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "西望大澤后稷所潜也",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "material-xishan-jade-daze-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "西望大澤后稷所潜也其中多玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "plant-xishan-yaomu-ruo-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多榣木之有若",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "deity-xishan-lilun-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "北望諸毗槐鬼離侖居之",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "bird-xishan-ying-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "鷹鸇之所宅也",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "bird-xishan-zhan-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "鷹鸇之所宅也",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "place-xishan-danshan-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "東望怛山四成有窮鬼居之各在一摶",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "deity-xishan-youqiong-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "有窮鬼居之各在一摶",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "water-xishan-flowing-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "爰有滛水其清洛洛",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "deity-xishan-ox-eight-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "有天神焉其状如牛而八足二首馬尾其音如勃皇見則其邑有兵",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taiqi",
+      "place-xishan-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百二十里曰槐江之山",
+    "labels": [
+      "下一山 · 向西三百二十里",
+      "上一山 · 㤗噐"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-qiushi-huaijiang",
+      "water-xishan-you-changsha"
+    ],
+    "source": "《西山经》",
+    "quote": "丘時之水出焉而北流注于泑水",
+    "labels": [
+      "向北流入",
+      "来水 · 丘時水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-qiushi-huaijiang",
+      "beast-xishan-luomu-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "丘時之水出焉而北流注于泑水其中多蠃母",
+    "labels": [
+      "同段水文中的对象",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-pingpu-huaijiang",
+      "deity-xishan-yingzhao-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "實惟帝之平圃神英招司之",
+    "labels": [
+      "司掌之神",
+      "所司之地"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "place-xishan-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "南望崑崙其光熊熊其氣魂魂",
+    "labels": [
+      "南望所见",
+      "方位参照 · 槐江"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "water-xishan-daze-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "西望大澤后稷所潜也",
+    "labels": [
+      "西望所见",
+      "方位参照 · 槐江"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-daze-huaijiang",
+      "deity-xishan-houji-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "西望大澤后稷所潜也",
+    "labels": [
+      "所潜之神",
+      "本段所潜大澤"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "place-xishan-zhupi-buzhou"
+    ],
+    "source": "《西山经》",
+    "quote": "北望諸毗槐鬼離侖居之鷹鸇之所宅也",
+    "labels": [
+      "北望所见",
+      "方位参照 · 槐江"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "place-xishan-danshan-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "東望怛山四成",
+    "labels": [
+      "东望所见",
+      "方位参照 · 槐江"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-danshan-huaijiang",
+      "deity-xishan-youqiong-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "東望怛山四成有窮鬼居之各在一摶",
+    "labels": [
+      "所居群鬼",
+      "所居之山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhupi-buzhou",
+      "deity-xishan-lilun-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "北望諸毗槐鬼離侖居之鷹鸇之所宅也",
+    "labels": [
+      "本段所居对象",
+      "所居諸毗"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhupi-buzhou",
+      "bird-xishan-ying-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "北望諸毗槐鬼離侖居之鷹鸇之所宅也",
+    "labels": [
+      "本段所居对象",
+      "所居諸毗"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhupi-buzhou",
+      "bird-xishan-zhan-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "北望諸毗槐鬼離侖居之鷹鸇之所宅也",
+    "labels": [
+      "本段所居对象",
+      "所居諸毗"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-daze-huaijiang",
+      "material-xishan-jade-daze-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "西望大澤后稷所潜也其中多玉其隂多榣木之有若",
+    "labels": [
+      "同段水文中的对象",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-daze-huaijiang",
+      "plant-xishan-yaomu-ruo-huaijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "西望大澤后稷所潜也其中多玉其隂多榣木之有若",
+    "labels": [
+      "同段水文中的对象",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "beast-luwu"
+    ],
+    "source": "《西山经》",
+    "quote": "神陸吾司之其神状虎身而九尾人面而虎𤓰是神也司天之九部及帝之囿時",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "beast-tulou"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如羊而四角名曰土螻是食人",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "beast-qinyuan"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如蜂大如鴛鴦名曰欽原蠚鳥獸則死蠚木則枯",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "bird-xishan-chun-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其名曰鶉鳥是司帝之百服",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "plant-xishan-shatang-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "有木焉其状如棠華黄赤實其味如李而無核名曰沙棠可以禦水食之使人不溺",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "plant-xishan-pin-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "有草焉名曰薲草其状如葵其味如葱食之已勞",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "water-xishan-he-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "河水出焉而南流東注于無逹",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "place-xishan-wuda-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "南流東注于無逹",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "water-xishan-chi-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "赤水出焉而東南流注于汜天之水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "water-xishan-fantian-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "東南流注于汜天之水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "water-xishan-yang-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "洋水出焉而西南流注于醜塗之水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "water-xishan-choutu-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "西南流注于醜塗之水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "water-xishan-hei-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "黑水出焉而西流于大杅",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "place-xishan-dayu-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "西流于大杅",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "beast-xishan-strange-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "是多怪鳥獸",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-leyou",
+      "water-xishan-tao-leyou"
+    ],
+    "source": "《西山经》",
+    "quote": "桃水出焉西流注于稷澤",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-leyou",
+      "water-xishan-jize-leyou"
+    ],
+    "source": "《西山经》",
+    "quote": "桃水出焉西流注于稷澤",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-leyou",
+      "material-xishan-jade-leyou"
+    ],
+    "source": "《西山经》",
+    "quote": "是多白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-leyou",
+      "beast-xishan-huayu-leyou"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多滑魚其状如蛇而四足是食魚",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-luomushan",
+      "deity-xishan-changcheng-luomushan"
+    ],
+    "source": "《西山经》",
+    "quote": "神長乗司之是天之九徳也其神状如人而犳尾",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-luomushan",
+      "material-xishan-jade-luomushan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-luomushan",
+      "material-xishan-stone-luomushan"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多青石而無水",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan",
+      "deity-xishan-xiwangmu-yushan"
+    ],
+    "source": "《西山经》",
+    "quote": "西王母其状如人豹尾虎齒而善嘯蓬髮戴勝是司天之厲及五殘",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan",
+      "beast-xishan-jiao-yushan"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如犬而豹文其角如牛其名曰狡其音如吠犬見則其國大穰",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan",
+      "bird-xishan-shengyu-yushan"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如翟而赤名曰胜遇是食魚其音如録見則其國大水",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xuanyuan",
+      "water-xishan-xun-xuanyuan"
+    ],
+    "source": "《西山经》",
+    "quote": "洵水出焉南流注于黒水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xuanyuan",
+      "water-xishan-hei-xuanyuan"
+    ],
+    "source": "《西山经》",
+    "quote": "南流注于黒水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xuanyuan",
+      "material-xishan-dansu-xuanyuan"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多丹粟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xuanyuan",
+      "material-xishan-xionghuang-xuanyuan"
+    ],
+    "source": "《西山经》",
+    "quote": "多靑雄黄",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-jishi",
+      "place-xishan-gate-jishi"
+    ],
+    "source": "《西山经》",
+    "quote": "其下有石門河水冐以西流",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-jishi",
+      "water-xishan-he-jishi"
+    ],
+    "source": "《西山经》",
+    "quote": "河水冐以西流",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changliu",
+      "deity-xishan-shaohao-changliu"
+    ],
+    "source": "《西山经》",
+    "quote": "其神白帝少昊居之",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changliu",
+      "beast-xishan-beasts-changliu"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸皆文尾",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changliu",
+      "bird-xishan-birds-changliu"
+    ],
+    "source": "《西山经》",
+    "quote": "其鳥皆文首",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changliu",
+      "material-xishan-jade-changliu"
+    ],
+    "source": "《西山经》",
+    "quote": "是多文玉石",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changliu",
+      "deity-xishan-weishi-changliu"
+    ],
+    "source": "《西山经》",
+    "quote": "實惟員神磈氏之宫是神也主司反景",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhange",
+      "material-xishan-yaobi-zhange"
+    ],
+    "source": "《西山经》",
+    "quote": "無草木多瑶碧",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhange",
+      "beast-zheng"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如赤豹五尾一角其音如擊石其名如狰",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhange",
+      "beast-bifang"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如鶴一足赤文青質而白喙名曰畢方其鳴自呌也見則其邑有譌火",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan3",
+      "water-xishan-zhuoyu-yinshan3"
+    ],
+    "source": "《西山经》",
+    "quote": "濁浴之水出焉而南流注于蕃澤",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan3",
+      "water-xishan-fan-yinshan3"
+    ],
+    "source": "《西山经》",
+    "quote": "南流注于蕃澤",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan3",
+      "material-xishan-shell-yinshan3"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多文貝",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan3",
+      "beast-tian-gou"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如狸而白首名曰天狗其音如榴榴可以禦凶",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-futang",
+      "plant-xishan-zong-futang"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多㯶柟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-futang",
+      "plant-xishan-nan-futang"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多㯶柟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-futang",
+      "material-xishan-gold-futang"
+    ],
+    "source": "《西山经》",
+    "quote": "下多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-futang",
+      "material-xishan-jade-futang"
+    ],
+    "source": "《西山经》",
+    "quote": "下多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-futang",
+      "deity-xishan-jiangyi-futang"
+    ],
+    "source": "《西山经》",
+    "quote": "神江疑居之",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-sanwei",
+      "bird-xishan-bluebirds-sanwei"
+    ],
+    "source": "《西山经》",
+    "quote": "三青鳥居之",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-sanwei",
+      "beast-xishan-aoyu-sanwei"
+    ],
+    "source": "《西山经》",
+    "quote": "其上有獸焉其状如牛白身四角其毫如披蓑其名曰𢕟𢓨是食人",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-sanwei",
+      "bird-xishan-chi-sanwei"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉一首而三身其状如𪇱其名曰鴟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan3",
+      "material-xishan-jade-guishan3"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多玉而無石",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan3",
+      "deity-xishan-qitong-guishan3"
+    ],
+    "source": "《西山经》",
+    "quote": "神𦒿童居之其音常如鍾磬",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan3",
+      "beast-xishan-jishes-guishan3"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多積蛇",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tianshan",
+      "material-xishan-gold-tianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tianshan",
+      "material-xishan-jade-tianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tianshan",
+      "material-xishan-xionghuang-tianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "有青雄黄",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tianshan",
+      "water-xishan-ying-tianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "英水出焉而西南流注于湯谷",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tianshan",
+      "place-xishan-tang-tianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "西南流注于湯谷",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tianshan",
+      "beast-dijiang"
+    ],
+    "source": "《西山经》",
+    "quote": "有神焉其状如黄囊赤如丹火六足四翼渾敦無靣目是識歌舞實惟帝江也",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-youshan",
+      "deity-xishan-rushou-youshan"
+    ],
+    "source": "《西山经》",
+    "quote": "神蓐𭣣居之",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-youshan",
+      "material-xishan-yingduan-youshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多嬰短之玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-youshan",
+      "material-xishan-jinyu-youshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多瑾瑜之玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-youshan",
+      "material-xishan-xionghuang-youshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多青雄黄",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-youshan",
+      "deity-xishan-hongguang-youshan"
+    ],
+    "source": "《西山经》",
+    "quote": "是山也西望日之所入其氣員神紅光之所司也",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yiwang",
+      "material-xishan-gold-yiwang"
+    ],
+    "source": "《西山经》",
+    "quote": "無草木多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yiwang",
+      "material-xishan-jade-yiwang"
+    ],
+    "source": "《西山经》",
+    "quote": "無草木多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yiwang",
+      "beast-guan"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如狸一目而三尾名曰讙其音如奪百聲是可以禦凶服之已癉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yiwang",
+      "bird-xishan-qiyu-yiwang"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如烏三首六尾而善𥬇名曰鵸䳜服之使人不厭又可以禦凶",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range3-summary",
+      "deity-xishan-sheep-range3-summary"
+    ],
+    "source": "《西山经》",
+    "quote": "其神状皆羊身人靣",
+    "labels": [
+      "总括中的神祇",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range3-summary",
+      "rite-xishan-rite-range3-summary"
+    ],
+    "source": "《西山经》",
+    "quote": "其祠之禮用一吉玉瘞糈用稷米",
+    "labels": [
+      "总括中的祠礼",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan4",
+      "plant-xishan-gu-yinshan4"
+    ],
+    "source": "《西山经》",
+    "quote": "上多榖無石",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan4",
+      "plant-xishan-mao-yinshan4"
+    ],
+    "source": "《西山经》",
+    "quote": "其草多茆蕃",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan4",
+      "plant-xishan-fan-yinshan4"
+    ],
+    "source": "《西山经》",
+    "quote": "其草多茆蕃",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan4",
+      "water-xishan-yin-yinshan4"
+    ],
+    "source": "《西山经》",
+    "quote": "隂水出焉西流注于洛",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan4",
+      "water-xishan-luo-yinshan4"
+    ],
+    "source": "《西山经》",
+    "quote": "西流注于洛",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-laoshan",
+      "plant-xishan-zicao-laoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "多茈草",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-laoshan",
+      "water-xishan-ruo-laoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "弱水出焉而西流注于洛",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-laoshan",
+      "water-xishan-luo-laoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "西流注于洛",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bafu",
+      "water-xishan-er-bafu"
+    ],
+    "source": "《西山经》",
+    "quote": "洱水出焉而西流注于洛",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bafu",
+      "water-xishan-luo-bafu"
+    ],
+    "source": "《西山经》",
+    "quote": "西流注于洛",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bafu",
+      "material-xishan-zibi-bafu"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多茈碧",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshan",
+      "plant-xishan-gu-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多榖柞",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshan",
+      "plant-xishan-zuo-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多榖柞",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshan",
+      "plant-xishan-niu-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多杻橿",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshan",
+      "plant-xishan-jiang-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多杻橿",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshan",
+      "material-xishan-gold-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshan",
+      "material-xishan-jade-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshan",
+      "water-xishan-qu-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "區水出焉而東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshan",
+      "water-xishan-he-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshan",
+      "plant-xishan-sang-niaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多桑",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshan",
+      "plant-xishan-chu-niaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其下多楮",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshan",
+      "material-xishan-iron-niaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多鐡",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshan",
+      "material-xishan-jade-niaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多玊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshan",
+      "water-xishan-ru-niaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "辱水出焉而東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshan",
+      "water-xishan-he-niaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shangshen",
+      "material-xishan-stone-shangshen"
+    ],
+    "source": "《西山经》",
+    "quote": "上無草木而多硌石",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shangshen",
+      "plant-xishan-zhen-shangshen"
+    ],
+    "source": "《西山经》",
+    "quote": "下多榛楛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shangshen",
+      "plant-xishan-hu-shangshen"
+    ],
+    "source": "《西山经》",
+    "quote": "下多榛楛",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shangshen",
+      "beast-xishan-deer-shangshen"
+    ],
+    "source": "《西山经》",
+    "quote": "獸多白鹿",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shangshen",
+      "bird-xishan-danghu-shangshen"
+    ],
+    "source": "《西山经》",
+    "quote": "其鳥多當扈其状如雉以其髯飛食之不眴目",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shangshen",
+      "water-xishan-tang-shangshen"
+    ],
+    "source": "《西山经》",
+    "quote": "湯水出焉東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shangshen",
+      "water-xishan-he-shangshen"
+    ],
+    "source": "《西山经》",
+    "quote": "東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhuci",
+      "water-xishan-zhuci-zhuci"
+    ],
+    "source": "《西山经》",
+    "quote": "諸次之水出焉而東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhuci",
+      "water-xishan-he-zhuci"
+    ],
+    "source": "《西山经》",
+    "quote": "東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhuci",
+      "beast-xishan-snakes-zhuci"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥獸莫居是多衆蛇",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-haoshan",
+      "plant-xishan-lacquer-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多漆㯶",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-haoshan",
+      "plant-xishan-zong-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其木多漆㯶",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-haoshan",
+      "plant-xishan-yao-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其草多葯䖀芎藭",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-haoshan",
+      "plant-xishan-xian-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其草多葯䖀芎藭",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-haoshan",
+      "plant-xishan-xiongqiong-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "其草多葯䖀芎藭",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-haoshan",
+      "material-xishan-qin-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "多汵石",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-haoshan",
+      "water-xishan-duan-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "端水出焉而東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-haoshan",
+      "water-xishan-he-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan4",
+      "material-xishan-iron-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多鐡",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan4",
+      "material-xishan-copper-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多銅",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan4",
+      "beast-xishan-wolf-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多白狼白虎",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan4",
+      "beast-xishan-tiger-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多白狼白虎",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan4",
+      "bird-xishan-pheasant-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "其鳥多白雉白翟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan4",
+      "bird-xishan-zhai-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "其鳥多白雉白翟",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan4",
+      "water-xishan-sheng-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "生水出焉而東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan4",
+      "water-xishan-he-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "plant-xishan-pine-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "上多松柏",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "plant-xishan-cypress-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "上多松柏",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "plant-xishan-li-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "下多櫟檀",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "plant-xishan-tan-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "下多櫟檀",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "beast-xishan-zuoniu-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛羬羊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "beast-xishan-qianyang-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "其獸多㸲牛羬羊",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "bird-xishan-xiao-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "其鳥多鴞",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "water-xishan-luo-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "洛水出于其陽而東流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "water-xishan-wei-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "東流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "water-xishan-jia-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "夾水出于其隂東流注于生水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "water-xishan-sheng-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "東流注于生水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshou",
+      "water-xishan-shen-shenshou"
+    ],
+    "source": "《西山经》",
+    "quote": "申水出于其上潜于其下",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshou",
+      "material-xishan-jade-shenshou"
+    ],
+    "source": "《西山经》",
+    "quote": "是多白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-jinggu",
+      "water-xishan-jing-jinggu"
+    ],
+    "source": "《西山经》",
+    "quote": "涇水出焉東南流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-jinggu",
+      "water-xishan-wei-jinggu"
+    ],
+    "source": "《西山经》",
+    "quote": "東南流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-jinggu",
+      "material-xishan-metal-jinggu"
+    ],
+    "source": "《西山经》",
+    "quote": "是多白金白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-jinggu",
+      "material-xishan-jade-jinggu"
+    ],
+    "source": "《西山经》",
+    "quote": "是多白金白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangshan",
+      "plant-xishan-qi-gangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "多柒木",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangshan",
+      "material-xishan-tufuyu-gangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "多㻬琈之玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangshan",
+      "water-xishan-gang-gangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "剛水出焉北流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangshan",
+      "water-xishan-wei-gangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "北流注于渭",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangshan",
+      "deity-xishan-chi-gangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "是多神𩳁其状人靣獸身一足一手其音如欽",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangwei",
+      "water-xishan-luo-gangwei"
+    ],
+    "source": "《西山经》",
+    "quote": "洛水出焉而北流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangwei",
+      "water-xishan-he-gangwei"
+    ],
+    "source": "《西山经》",
+    "quote": "北流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangwei",
+      "beast-xishan-manman-gangwei"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多蠻蠻其状鼠身而鼈首其音如吠犬",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yingdi",
+      "plant-xishan-mu-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "上多𣾰木",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yingdi",
+      "material-xishan-gold-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "下多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yingdi",
+      "material-xishan-jade-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "下多金玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yingdi",
+      "beast-xishan-white-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥獸盡白",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yingdi",
+      "water-xishan-wan-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "涴水出焉而北注于𨹧羊之澤",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yingdi",
+      "water-xishan-lingyang-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "北注于𨹧羊之澤",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yingdi",
+      "beast-xishan-ranyi-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "是多冉遺之魚魚身蛇首六足其目如馬耳食之使人不眯可以禦凶",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongqu",
+      "material-xishan-jade-sun-zhongqu"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongqu",
+      "material-xishan-xionghuang-zhongqu"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多雄黄白玉及金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongqu",
+      "material-xishan-jade-shade-zhongqu"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多雄黄白玉及金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongqu",
+      "material-xishan-gold-zhongqu"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多雄黄白玉及金",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongqu",
+      "beast-bo"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状如馬而白身黒尾一角虎牙爪音如皷音其名曰駮是食虎豹可以禦兵",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongqu",
+      "plant-xishan-huai-zhongqu"
+    ],
+    "source": "《西山经》",
+    "quote": "有木焉其状如棠而員葉赤實實大如木𤓰名曰櫰木食之多力",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan4",
+      "beast-qiongqi-xishan"
+    ],
+    "source": "《西山经》",
+    "quote": "其上有獸焉其状如牛蝟毛名曰窮竒音如獋狗是食人",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan4",
+      "water-xishan-meng-guishan4"
+    ],
+    "source": "《西山经》",
+    "quote": "𪷟水出焉南流注于洋水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan4",
+      "water-xishan-yang-guishan4"
+    ],
+    "source": "《西山经》",
+    "quote": "南流注于洋水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan4",
+      "material-xishan-shell-guishan4"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多黄貝",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan4",
+      "beast-luoyu"
+    ],
+    "source": "《西山经》",
+    "quote": "蠃魚魚身而鳥翼音如鴛鴦見則其邑大水",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshu",
+      "beast-xishan-tiger-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多白虎白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshu",
+      "material-xishan-jade-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多白虎白玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshu",
+      "water-xishan-wei-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "渭水出焉而東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshu",
+      "water-xishan-he-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "東流注于河",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshu",
+      "beast-xishan-saoyu-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多鰠魚其状如鱣魚動則其邑有大兵",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshu",
+      "water-xishan-lan-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "濫水出于其西西流注于漢水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshu",
+      "water-xishan-han-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "西流注于漢水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshu",
+      "beast-xishan-rupi-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "多𩶯魮之魚其状如覆銚鳥首而魚翼魚尾音如磬石之聲是生珠玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yanzi",
+      "plant-xishan-dan-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "其上多丹木其葉如榖其實大如𤓰赤符而黑理食之已癉可以禦火",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yanzi",
+      "beast-xishan-turtle-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "其陽多龜",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yanzi",
+      "material-xishan-jade-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "其隂多玉",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yanzi",
+      "water-xishan-tiao-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "苕水出焉而西流注于海",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yanzi",
+      "water-xishan-sea-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "西流注于海",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yanzi",
+      "material-xishan-whetstones-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多砥礪",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yanzi",
+      "beast-xishan-shuhu-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "有獸焉其状馬身而鳥翼人靣蛇尾是好舉人名曰孰湖",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yanzi",
+      "bird-xishan-unnamed-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "有鳥焉其状如鴞而人面蜼身犬尾其名自號也見則其邑大旱",
+    "labels": [
+      "山段中的条目",
+      "所属山段"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range4-summary",
+      "rite-xishan-rite-range4-summary"
+    ],
+    "source": "《西山经》",
+    "quote": "其祠祀禮皆用一白鷄祈糈以稲米白管為席",
+    "labels": [
+      "总括中的祠礼",
+      "所属总括"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-qianlai",
+      "place-xishan-songguo"
+    ],
+    "source": "《西山经》",
+    "quote": "西四十五里曰松果之山",
+    "labels": [
+      "下一山 · 向西四十五里",
+      "上一山 · 钱来"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-songguo",
+      "place-xishan-taihua"
+    ],
+    "source": "《西山经》",
+    "quote": "又西六十里曰太華之山",
+    "labels": [
+      "下一山 · 向西六十里",
+      "上一山 · 松果"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-huo",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "濩水出焉北流注于渭",
+    "labels": [
+      "向北流入",
+      "来水 · 濩水"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taihua",
+      "place-xishan-xiaohua"
+    ],
+    "source": "《西山经》",
+    "quote": "又西八十里曰小華之山",
+    "labels": [
+      "下一山 · 向西八十里",
+      "上一山 · 太华"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xiaohua",
+      "place-xishan-fuyu"
+    ],
+    "source": "《西山经》",
+    "quote": "又西八十里曰符禺之山",
+    "labels": [
+      "下一山 · 向西八十里",
+      "上一山 · 小华"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-fuyu",
+      "place-xishan-shicui"
+    ],
+    "source": "《西山经》",
+    "quote": "又西六十里曰石脆之山",
+    "labels": [
+      "下一山 · 向西六十里",
+      "上一山 · 符禺"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-fuyu",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "符禺之水出焉而北流注于渭",
+    "labels": [
+      "向北流入",
+      "来水 · 符禺之水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-guan",
+      "water-xishan-yu-shicui"
+    ],
+    "source": "《西山经》",
+    "quote": "灌水出焉而北流注于禺水",
+    "labels": [
+      "向北流入",
+      "来水 · 灌水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-guan",
+      "material-xishan-liuzhe"
+    ],
+    "source": "《西山经》",
+    "quote": "灌水出焉而北流注于禺水其中有流赭",
+    "labels": [
+      "水文所见",
+      "本段水域"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shicui",
+      "place-xishan-ying"
+    ],
+    "source": "《西山经》",
+    "quote": "又西七十里曰英山",
+    "labels": [
+      "下一山 · 向西七十里",
+      "上一山 · 石脆"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-ying",
+      "place-xishan-zhushan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西五十二里曰竹山",
+    "labels": [
+      "下一山 · 向西五十二里",
+      "上一山 · 英山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhushan",
+      "place-xishan-fushan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西百二十里曰浮山",
+    "labels": [
+      "下一山 · 向西百二十里",
+      "上一山 · 竹山"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-yu-ying",
+      "water-xishan-zhao-ying"
+    ],
+    "source": "《西山经》",
+    "quote": "禺水出焉北流注于招水",
+    "labels": [
+      "向北流入",
+      "来水 · 英山禺水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-yu-ying",
+      "beast-xishan-bangyu-ying"
+    ],
+    "source": "《西山经》",
+    "quote": "禺水出焉北流注于招水其中多䰷魚",
+    "labels": [
+      "同段水文中的对象",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-zhu",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "竹水出焉北流注于渭",
+    "labels": [
+      "向北流入",
+      "来水 · 竹水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-dan-zhushan",
+      "water-xishan-luo-zhushan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉東南流注于洛水",
+    "labels": [
+      "向东南流入",
+      "来水 · 竹山丹水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-dan-zhushan",
+      "beast-xishan-renyu-zhushan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉東南流注于洛水其中多水玉多人魚",
+    "labels": [
+      "同段水文中的对象",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-dan-zhushan",
+      "material-xishan-shuiyu-zhushan"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉東南流注于洛水其中多水玉",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xiaoci",
+      "place-xishan-daci"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百里曰大次之山",
+    "labels": [
+      "下一山 · 向西三百里",
+      "上一山 · 小次山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaowei",
+      "place-xishan-xiaoci"
+    ],
+    "source": "《西山经》",
+    "quote": "又西四百里曰小次之山",
+    "labels": [
+      "下一山 · 向西四百里",
+      "上一山 · 鳥危山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-lutai",
+      "place-xishan-niaowei"
+    ],
+    "source": "《西山经》",
+    "quote": "西南二百里曰鳥危之山",
+    "labels": [
+      "下一山 · 向西南二百里",
+      "上一山 · 鹿臺山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaowei",
+      "water-xishan-chi-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥危之水出焉西流注于赤水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-niaowei",
+      "water-xishan-chi-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥危之水出焉西流注于赤水",
+    "labels": [
+      "向西流入",
+      "来水 · 鳥危水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-niaowei",
+      "material-xishan-dansu-niaowei"
+    ],
+    "source": "《西山经》",
+    "quote": "鳥危之水出焉西流注于赤水其中多丹粟",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-longshou",
+      "place-xishan-lutai"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百里曰鹿臺之山",
+    "labels": [
+      "下一山 · 向西二百里",
+      "上一山 · 龍首山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nvchuang",
+      "place-xishan-longshou"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百里曰龍首之山",
+    "labels": [
+      "下一山 · 向西二百里",
+      "上一山 · 女牀山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-longshou",
+      "water-xishan-jing-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "苕水出焉東南流注于涇水",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-tiao-longshou",
+      "water-xishan-jing-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "苕水出焉東南流注于涇水",
+    "labels": [
+      "向东南流入",
+      "来水 · 龍首山苕水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-tiao-longshou",
+      "material-xishan-fine-jade-longshou"
+    ],
+    "source": "《西山经》",
+    "quote": "苕水出焉東南流注于涇水其中多羙玉",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-fushan",
+      "place-xishan-yuci"
+    ],
+    "source": "《西山经》",
+    "quote": "又西七十里曰羭次之山",
+    "labels": [
+      "下一山 · 向西七十里",
+      "上一山 · 浮山"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-qi-yuci",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "漆水出焉北流注于渭",
+    "labels": [
+      "向北流入",
+      "来水 · 漆水"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yuci",
+      "place-xishan-shishan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西百五十里曰時山",
+    "labels": [
+      "下一山 · 向西百五十里",
+      "上一山 · 羭次"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-zhu-shishan",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "逐水出焉北流注于渭",
+    "labels": [
+      "向北流入",
+      "来水 · 时山逐水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-zhu-shishan",
+      "material-xishan-shuiyu-shishan"
+    ],
+    "source": "《西山经》",
+    "quote": "逐水出焉北流注于渭其中多水玉",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shishan",
+      "place-xishan-nanshan-west"
+    ],
+    "source": "《西山经》",
+    "quote": "又西百七十里曰南山",
+    "labels": [
+      "下一山 · 向西百七十里",
+      "上一山 · 时山"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-dan-nanshan",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "丹水出焉北流注于渭",
+    "labels": [
+      "向北流入",
+      "来水 · 南山丹水"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-nanshan-west",
+      "place-xishan-dashi"
+    ],
+    "source": "《西山经》",
+    "quote": "又西百八十里曰大時之山",
+    "labels": [
+      "下一山 · 向西百八十里",
+      "上一山 · 南山（西山经）"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-qian-dashi",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "涔水岀焉北流注于渭",
+    "labels": [
+      "向北流入",
+      "来水 · 大时涔水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-qing-dashi",
+      "water-xishan-han-dashi"
+    ],
+    "source": "《西山经》",
+    "quote": "清水出焉南流注于漢水",
+    "labels": [
+      "向南流入",
+      "来水 · 大时清水"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-dashi",
+      "place-xishan-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百二十里曰嶓冡之山",
+    "labels": [
+      "下一山 · 向西三百二十里",
+      "上一山 · 大时"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "water-xishan-han-dashi"
+    ],
+    "source": "《西山经》",
+    "quote": "漢水出焉而東南流注于沔",
+    "labels": [
+      "山段中的水文",
+      "水文所在山段"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-han-dashi",
+      "water-xishan-mian-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "漢水出焉而東南流注于沔",
+    "labels": [
+      "向东南流入",
+      "来水 · 嶓冡汉水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-xiao-bozhong",
+      "water-xishan-tang-bozhong"
+    ],
+    "source": "《西山经》",
+    "quote": "囂水出焉北流注于湯水",
+    "labels": [
+      "向北流入",
+      "来水 · 嶓冡囂水"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bozhong",
+      "place-xishan-tiandi"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百五十里曰天帝之山",
+    "labels": [
+      "下一山 · 向西三百五十里",
+      "上一山 · 嶓冡"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tiandi",
+      "place-xishan-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "西南三百八十里曰皐塗之山",
+    "labels": [
+      "下一山 · 向西南三百八十里",
+      "上一山 · 天帝"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-se-gaotu",
+      "water-xishan-zhuzi-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "薔水出焉西流注于諸資之水",
+    "labels": [
+      "向西流入",
+      "来水 · 薔水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-tu-gaotu",
+      "water-xishan-jihuo-gaotu"
+    ],
+    "source": "《西山经》",
+    "quote": "塗水出焉南流注于集獲之水",
+    "labels": [
+      "向南流入",
+      "来水 · 塗水"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaoshan",
+      "place-xishan-nvchuang"
+    ],
+    "source": "《西山经》",
+    "quote": "西南三百里曰女牀之山",
+    "labels": [
+      "下一山 · 向西南三百里",
+      "上一山 · 髙山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shuli",
+      "place-xishan-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西百五十里曰髙山",
+    "labels": [
+      "下一山 · 向西百五十里",
+      "上一山 · 數歴山"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-jing-gaoshan",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "涇水出焉而東流注于渭",
+    "labels": [
+      "向东流入",
+      "来水 · 髙山涇水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-jing-gaoshan",
+      "material-xishan-qingshi-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "涇水出焉而東流注于渭其中多磬石青碧",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-jing-gaoshan",
+      "material-xishan-qingbi-water-gaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "涇水出焉而東流注于渭其中多磬石青碧",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-taimao",
+      "place-xishan-shuli"
+    ],
+    "source": "《西山经》",
+    "quote": "又西一百七十里曰數歴之山",
+    "labels": [
+      "下一山 · 向西一百七十里",
+      "上一山 · 㤗冐山"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-chu-shuli",
+      "water-xishan-wei"
+    ],
+    "source": "《西山经》",
+    "quote": "楚水出焉而南流注于渭",
+    "labels": [
+      "向南流入",
+      "来水 · 數歴山楚水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-chu-shuli",
+      "material-xishan-pearl-shuli"
+    ],
+    "source": "《西山经》",
+    "quote": "楚水出焉而南流注于渭其中多珠",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-qianshan",
+      "place-xishan-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "西二百里曰㤗冐之山",
+    "labels": [
+      "下一山 · 向西二百里",
+      "上一山 · 鈐山"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-yu-taimao",
+      "water-xishan-he-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "浴水出焉東流注于河",
+    "labels": [
+      "向东流入",
+      "来水 · 㤗冐山浴水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-yu-taimao",
+      "material-xishan-zaoyu-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "浴水出焉東流注于河其中多藻玉",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-yu-taimao",
+      "beast-xishan-white-snake-taimao"
+    ],
+    "source": "《西山经》",
+    "quote": "浴水出焉東流注于河其中多藻玉多白蛇",
+    "labels": [
+      "水段所见",
+      "本段水域"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-range1-summary",
+      "passage-xishan-qianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "西次二經之首曰鈐山",
+    "labels": [
+      "下一山列 · 鈐山",
+      "前一山列总括"
+    ]
+  },
+  {
+    "ids": [
+      "passage-xishan-guishan",
+      "passage-xishan-range1-summary"
+    ],
+    "source": "《西山经》",
+    "quote": "凡西經之首自錢來之山至于騩山凡十九山",
+    "labels": [
+      "首列总括与祠礼",
+      "前一段 · 騩山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-cuishan",
+      "place-xishan-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百五十里曰騩山",
+    "labels": [
+      "下一山 · 向西二百五十里",
+      "上一山 · 翠山"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-qi-guishan",
+      "water-xishan-westsea-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "淒水出焉西流注于海",
+    "labels": [
+      "向西流入",
+      "来水 · 騩山淒水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-qi-guishan",
+      "material-xishan-caishi-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "淒水出焉西流注于海其中多采石黄金",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-qi-guishan",
+      "material-xishan-gold-guishan"
+    ],
+    "source": "《西山经》",
+    "quote": "淒水出焉西流注于海其中多采石黄金",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huangshan",
+      "place-xishan-cuishan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百里曰翠山",
+    "labels": [
+      "下一山 · 向西二百里",
+      "上一山 · 黄山"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gaotu",
+      "place-xishan-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西百八十里曰黄山",
+    "labels": [
+      "下一山 · 向西百八十里",
+      "上一山 · 皐塗"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-pan-huangshan",
+      "water-xishan-chi-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "盼水出焉西流注于赤水",
+    "labels": [
+      "向西流入",
+      "来水 · 黄山盼水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-pan-huangshan",
+      "material-xishan-jade-huangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "盼水出焉西流注于赤水其中多玉",
+    "labels": [
+      "同段水文中的物产",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-liusha",
+      "place-xishan-luomushan"
+    ],
+    "source": "《西山经》",
+    "quote": "西水行四百里曰流沙二百里至于蠃母之山",
+    "labels": [
+      "后续二百里 · 蠃母山",
+      "前程流沙参照"
+    ]
+  },
+  {
+    "ids": [
+      "place-yushan",
+      "place-xishan-yushan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百五十里曰玉山是西王母所居也",
+    "labels": [
+      "玉山完整山段索引",
+      "原有玉山入口"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "place-xishan-kunlun-yang-zhongshan"
+    ],
+    "source": "《西山经》",
+    "quote": "殺葆江于崑崙之陽",
+    "labels": [
+      "参见阳面事件地点",
+      "所属山名索引"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-huaijiang",
+      "place-xishan-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "西南四百里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-kunlun",
+      "place-xishan-leyou"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百七十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-leyou",
+      "place-xishan-luomushan"
+    ],
+    "source": "《西山经》",
+    "quote": "西水行四百里曰流沙二百里至于蠃母之山",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-luomushan",
+      "place-xishan-yushan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百五十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan",
+      "place-xishan-xuanyuan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西四百八十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-xuanyuan",
+      "place-xishan-jishi"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-jishi",
+      "place-xishan-changliu"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-changliu",
+      "place-xishan-zhange"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百八十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhange",
+      "place-xishan-yinshan3"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan3",
+      "place-xishan-futang"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-futang",
+      "place-xishan-sanwei"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百二十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-sanwei",
+      "place-xishan-guishan3"
+    ],
+    "source": "《西山经》",
+    "quote": "又西一百九十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan3",
+      "place-xishan-tianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百五十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-tianshan",
+      "place-xishan-youshan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百九十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-youshan",
+      "place-xishan-yiwang"
+    ],
+    "source": "《西山经》",
+    "quote": "西水行百里至于翼望之山無草木多金玉有獸焉其状如狸一目而三尾名",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yinshan4",
+      "place-xishan-laoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "北五十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-laoshan",
+      "place-xishan-bafu"
+    ],
+    "source": "《西山经》",
+    "quote": "西五十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-bafu",
+      "place-xishan-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "北百七十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshan",
+      "place-xishan-niaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "北二百里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshan",
+      "place-xishan-shangshen"
+    ],
+    "source": "《西山经》",
+    "quote": "又北百二十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shangshen",
+      "place-xishan-zhuci"
+    ],
+    "source": "《西山经》",
+    "quote": "又北百八十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhuci",
+      "place-xishan-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "又北百八十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-haoshan",
+      "place-xishan-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "又北二百二十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yushan4",
+      "place-xishan-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "西二百五十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-baiyu",
+      "place-xishan-shenshou"
+    ],
+    "source": "《西山经》",
+    "quote": "西北三百里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-shenshou",
+      "place-xishan-jinggu"
+    ],
+    "source": "《西山经》",
+    "quote": "又西五十五里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-jinggu",
+      "place-xishan-gangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "又西百二十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangshan",
+      "place-xishan-gangwei"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百里至剛山之尾洛水出焉而北流注于河其中多蠻蠻其状鼠身而",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-gangwei",
+      "place-xishan-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百五十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-yingdi",
+      "place-xishan-zhongqu"
+    ],
+    "source": "《西山经》",
+    "quote": "又西三百里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-zhongqu",
+      "place-xishan-guishan4"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百六十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-guishan4",
+      "place-xishan-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "又西二百二十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "place-xishan-niaoshu",
+      "place-xishan-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "西南三百六十里",
+    "labels": [
+      "下一山 · 原文里程",
+      "上一山 · 篇内次序"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-he-kunlun",
+      "place-xishan-wuda-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "河水出焉而南流東注于無逹",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-chi-kunlun",
+      "water-xishan-fantian-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "赤水出焉而東南流注于汜天之水",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-yang-kunlun",
+      "water-xishan-choutu-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "洋水出焉而西南流注于醜塗之水",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-hei-kunlun",
+      "place-xishan-dayu-kunlun"
+    ],
+    "source": "《西山经》",
+    "quote": "黑水出焉而西流于大杅",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-tao-leyou",
+      "water-xishan-jize-leyou"
+    ],
+    "source": "《西山经》",
+    "quote": "桃水出焉西流注于稷澤",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-xun-xuanyuan",
+      "water-xishan-hei-xuanyuan"
+    ],
+    "source": "《西山经》",
+    "quote": "洵水出焉南流注于黒水",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-zhuoyu-yinshan3",
+      "water-xishan-fan-yinshan3"
+    ],
+    "source": "《西山经》",
+    "quote": "濁浴之水出焉而南流注于蕃澤",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-ying-tianshan",
+      "place-xishan-tang-tianshan"
+    ],
+    "source": "《西山经》",
+    "quote": "英水出焉而西南流注于湯谷",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-yin-yinshan4",
+      "water-xishan-luo-yinshan4"
+    ],
+    "source": "《西山经》",
+    "quote": "隂水出焉西流注于洛",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-ruo-laoshan",
+      "water-xishan-luo-laoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "弱水出焉而西流注于洛",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-er-bafu",
+      "water-xishan-luo-bafu"
+    ],
+    "source": "《西山经》",
+    "quote": "洱水出焉而西流注于洛",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-qu-shenshan",
+      "water-xishan-he-shenshan"
+    ],
+    "source": "《西山经》",
+    "quote": "區水出焉而東流注于河",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-ru-niaoshan",
+      "water-xishan-he-niaoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "辱水出焉而東流注于河",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-tang-shangshen",
+      "water-xishan-he-shangshen"
+    ],
+    "source": "《西山经》",
+    "quote": "湯水出焉東流注于河",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-zhuci-zhuci",
+      "water-xishan-he-zhuci"
+    ],
+    "source": "《西山经》",
+    "quote": "諸次之水出焉而東流注于河",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-duan-haoshan",
+      "water-xishan-he-haoshan"
+    ],
+    "source": "《西山经》",
+    "quote": "端水出焉而東流注于河",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-sheng-yushan4",
+      "water-xishan-he-yushan4"
+    ],
+    "source": "《西山经》",
+    "quote": "生水出焉而東流注于河",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-luo-baiyu",
+      "water-xishan-wei-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "洛水出于其陽而東流注于渭",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-jia-baiyu",
+      "water-xishan-sheng-baiyu"
+    ],
+    "source": "《西山经》",
+    "quote": "夾水出于其隂東流注于生水",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-jing-jinggu",
+      "water-xishan-wei-jinggu"
+    ],
+    "source": "《西山经》",
+    "quote": "涇水出焉東南流注于渭",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-gang-gangshan",
+      "water-xishan-wei-gangshan"
+    ],
+    "source": "《西山经》",
+    "quote": "剛水出焉北流注于渭",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-luo-gangwei",
+      "water-xishan-he-gangwei"
+    ],
+    "source": "《西山经》",
+    "quote": "洛水出焉而北流注于河",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-wan-yingdi",
+      "water-xishan-lingyang-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "涴水出焉而北注于𨹧羊之澤",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-meng-guishan4",
+      "water-xishan-yang-guishan4"
+    ],
+    "source": "《西山经》",
+    "quote": "𪷟水出焉南流注于洋水",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-wei-niaoshu",
+      "water-xishan-he-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "渭水出焉而東流注于河",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-lan-niaoshu",
+      "water-xishan-han-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "濫水出于其西西流注于漢水",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-tiao-yanzi",
+      "water-xishan-sea-yanzi"
+    ],
+    "source": "《西山经》",
+    "quote": "苕水出焉而西流注于海",
+    "labels": [
+      "原文所注 · 详见流向",
+      "本段来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-tao-leyou",
+      "beast-xishan-huayu-leyou"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多滑魚其状如蛇而四足是食魚",
+    "labels": [
+      "本段水中生物",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-luo-gangwei",
+      "beast-xishan-manman-gangwei"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多蠻蠻其状鼠身而鼈首其音如吠犬",
+    "labels": [
+      "本段水中生物",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-wan-yingdi",
+      "beast-xishan-ranyi-yingdi"
+    ],
+    "source": "《西山经》",
+    "quote": "是多冉遺之魚魚身蛇首六足其目如馬耳食之使人不眯可以禦凶",
+    "labels": [
+      "本段水中生物",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-meng-guishan4",
+      "beast-luoyu"
+    ],
+    "source": "《西山经》",
+    "quote": "蠃魚魚身而鳥翼音如鴛鴦見則其邑大水",
+    "labels": [
+      "本段水中生物",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-wei-niaoshu",
+      "beast-xishan-saoyu-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "其中多鰠魚其状如鱣魚動則其邑有大兵",
+    "labels": [
+      "本段水中生物",
+      "水文上下文"
+    ]
+  },
+  {
+    "ids": [
+      "water-xishan-lan-niaoshu",
+      "beast-xishan-rupi-niaoshu"
+    ],
+    "source": "《西山经》",
+    "quote": "多𩶯魮之魚其状如覆銚鳥首而魚翼魚尾音如磬石之聲是生珠玉",
+    "labels": [
+      "本段水中生物",
+      "水文上下文"
+    ]
+  }
+]

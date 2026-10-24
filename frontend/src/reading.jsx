@@ -3,11 +3,12 @@ import { useLocale } from './i18n';
 import catalog from '../public/data/atlas/catalog.json';
 import world from '../public/data/myth-world.json';
 import { readExploration } from './exploration';
+import { worldEntries } from './entries';
 
 const storageKey = 'shanhai-reading-v1';
-const validIds = new Set([...catalog.events, ...world.beasts, ...world.places, ...world.domains].map(item => item.id));
+const validIds = new Set([...catalog.events, ...worldEntries(world)].map(item => item.id));
 const resumeKey = 'shanhai-last-reading-v1';
-const anchors = new Set(['start', 'title', 'actions', 'description', 'quote', 'original', 'source', 'location', 'notes']);
+const anchors = new Set(['start', 'title', 'summary', 'actions', 'description', 'quote', 'original', 'source', 'location', 'notes', 'related', 'contents']);
 
 function parseResume(value) {
   try {

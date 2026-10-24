@@ -3,10 +3,22 @@ import { access, readFile } from 'node:fs/promises';
 import { readExploration, explorationUrl } from '../src/exploration.js';
 import { validateWorld } from '../src/world-validation.js';
 import { playbackState } from '../src/playback.js';
+import { contentOrigin } from '../src/content-provenance.js';
+import { geographicReferences } from '../src/geography.js';
 
 const read = async path => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const world = await read('../public/data/myth-world.json');
 const catalog = await read('../public/data/atlas/catalog.json');
+assert.equal(contentOrigin('01-01').family, 'other_classic', 'Pangu is not attributed to the Shanhaijing');
+assert.equal(contentOrigin('01-02').family, 'other_classic', 'Nuwa creating humans keeps its actual book family');
+assert.equal(contentOrigin('03-04').family, 'shanhaijing');
+assert.equal(contentOrigin('07-01').family, 'other_classic', 'King Mu keeps the Mutianzi Zhuan provenance');
+assert.equal(contentOrigin({ id: '03-04', source: 'Untranslated placeholder' }).family, 'shanhaijing', 'Labels use stable IDs, not display-language matching');
+assert.equal(contentOrigin({ id: 'unknown', source: '《山海经》' }).family, 'pending', 'Unknown records do not gain a verified source from their display text');
+for (const record of [...world.beasts, ...world.places, ...world.domains, ...world.natural_features, ...world.passages, ...world.text_entities, ...catalog.events]) assert.notEqual(contentOrigin(record).family, 'pending', record.id);
+const references = geographicReferences(catalog);
+assert.equal(references.filter(record => contentOrigin(record).family === 'local_tradition').length, 4);
+assert.equal(references.filter(record => contentOrigin(record).family === 'modern_research').length, 28);
 const animations = await read('../public/data/atlas/story-animations.json');
 const journey = await read('../public/data/atlas/kuafu-journey.json');
 const optimized = await read('../src/optimized-assets.json');
@@ -48,7 +60,7 @@ for (const event of catalog.events) {
   for (const id of props.source_ids || []) assert.ok(sources.has(id), `${event.id}: unknown source ${id}`);
   if (props.parent_event_id) assert.ok(events.has(props.parent_event_id), `${event.id}: invalid parent`);
 }
-for (const item of [...world.beasts, ...world.places, ...world.domains]) {
+for (const item of [...world.beasts, ...world.places, ...world.domains, ...world.natural_features, ...world.passages, ...world.text_entities]) {
   assert.ok(stages.has(item.reveal_chapter), `${item.id}: invalid reveal chapter`);
   if (item.place_id) assert.ok(places.has(item.place_id), `${item.id}: unknown place`);
 }

@@ -99,7 +99,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.kuafu-journey[data-status=paused]').waitFor();
     await stable(page);
     const woodCamera = JSON.parse(await page.locator('.myth-map-canvas').getAttribute('data-view'));
-    await page.locator('.geography-trigger').click();
+    await mode(page, 'zh', true);
     await page.locator('.kuafu-journey[data-status=paused]').waitFor({ state: 'attached' });
     await geo(page).locator('[data-basemap-state=ready]').waitFor();
     await stable(page);
@@ -203,10 +203,13 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await geo(page).getByRole('button', { name: '以视图中心取点', exact: true }).click();
     assert.ok(Number((await geo(page).locator('.geo-distance').textContent()).match(/[\d.]+/)[0]) > 0);
     await geo(page).getByRole('button', { name: '清除量测', exact: true }).click();
+    const eventBeforeReload = await geo(page).locator('.geography-atlas').getAttribute('data-event-id');
+    const recordsBeforeReload = await rows(page).count();
     network.fail = true;
-    await page.reload(); await page.locator('.geography-trigger').click();
+    await page.reload(); await mode(page, 'zh', true);
     await geo(page).getByRole('alert').waitFor();
-    assert.equal(await rows(page).count(), 3, 'Tile failure does not hide local association records');
+    assert.equal(await geo(page).locator('.geography-atlas').getAttribute('data-event-id'), eventBeforeReload, 'Reload preserves the explored event');
+    assert.equal(await rows(page).count(), recordsBeforeReload, 'Tile failure does not hide local association records');
     assert.equal(await geo(page).locator('.geo-empty-notice').count(), 0, 'Network failure is not reported as missing evidence');
     network.fail = false;
     await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
@@ -216,7 +219,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.reload(); await mode(page, 'zh', true);
     await geo(page).getByRole('alert').filter({ hasText: '中文注记加载失败' }).waitFor();
     await geo(page).locator('[data-terrain-state=ready]').waitFor();
-    assert.equal(await rows(page).count(), 3);
+    assert.equal(await rows(page).count(), recordsBeforeReload);
     network.labelsFail = false; network.terrainFail = true;
     await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
     await geo(page).getByRole('alert').filter({ hasText: '地形加载失败' }).waitFor();
@@ -230,6 +233,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
     await geo(page).locator('[data-basemap-state=ready]').waitFor();
 
+    await geo(page).getByLabel('地理事件').selectOption('03-01');
+    await page.waitForFunction(() => document.querySelector('.geography-atlas').dataset.eventId === '03-01');
     await geo(page).getByRole('button', { name: '初始视野', exact: true }).click();
     await stable(page);
     assert.match(await geo(page).locator('.ol-scale-line-inner').innerText(), /500 km/);

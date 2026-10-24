@@ -1,22 +1,26 @@
 import { useLocale } from '../i18n';
-import { associationLabel } from '../geography';
+import { associationLabel, referenceNarrative } from '../geography';
+import ContentOrigin from './ContentOrigin';
 
 export default function GeographicEvidence({ record }) {
   const { t, locale } = useLocale();
   const info = record.properties;
   return <>
-    <p>{t(associationLabel(record))} · {t('不证明事件发生')}</p>
-    <p>{t(info.location_precision === 'county_representative' ? '县域代表点，非具体遗址或山顶' : '区域代表点，非精确事件位置')}</p>
-    <h4>{t('关联说明')}</h4>
-    <p>{locale === 'zh' ? info.basis_note : info.basis_note_en || t('坐标核验与历史对应核验分别记录，不能相互替代。')}</p>
-    {locale === 'en' && <details className="original-text"><summary>{t('中文位置说明')}</summary><p lang="zh-CN">{info.basis_note}</p></details>}
-    {info.account ? <section className="geo-account" aria-label={t('资料侧重与不足')}>
+    <section className="geo-place-story" aria-label={t('相关传说')}>
+      <h4>{t(info.association_type === 'local_tradition' ? '流传在这里的故事' : '相关传说')}</h4>
+      <ContentOrigin record={record} />
+      <p>{referenceNarrative(record, locale)}</p>
+    </section>
+    <section className="geo-account" aria-label={t('资料侧重与不足')}>
       <h4>{t('资料侧重与不足')}</h4>
-      <b>{locale === 'en' ? info.account.focus_en : info.account.focus}</b>
-      <p>{locale === 'en' ? info.account.summary_en : info.account.summary}</p>
-      <p><strong>{t('不能据此推断')}：</strong>{locale === 'en' ? info.account.limits_en : info.account.limits}</p>
-    </section> : <p className="geo-note">{t('尚无足以整理故事异文的核验资料，不补写版本差异。')}</p>}
-    <p className="geo-note">{t(info.evidence_status === 'source_checked' ? '已核对所列资料；核对范围见各出处，历史位置未确证。' : '导入的考证候选，关联依据仍待逐条核验。')}</p>
+      <p className="geo-note">{t('故事与此地的关联，并不证明传说真实发生，也不能据此确定事件发生地点。')}</p>
+      <b>{t(associationLabel(record))}{info.account && <> · {locale === 'en' ? info.account.focus_en : info.account.focus}</>}</b>
+      <p>{info.account ? locale === 'en' ? info.account.summary_en : info.account.summary : locale === 'zh' ? info.basis_note : info.basis_note_en || t('现有资料将此地列为故事地望的考证候选，尚未核实历史对应。')}</p>
+      {info.account ? <p><strong>{t('不能据此推断')}：</strong>{locale === 'en' ? info.account.limits_en : info.account.limits}</p>
+        : <p>{t('以上叙述整理自相关故事，不作为当地独立传说版本；现有地点关联仍待逐条核验。')}</p>}
+      <p className="geo-note">{t(info.location_precision === 'county_representative' ? '县域代表点，非具体遗址或山顶' : '区域代表点，非精确事件位置')}</p>
+      <p className="geo-note">{t(info.evidence_status === 'source_checked' ? '已核对所列资料；核对范围见各出处，历史位置未确证。' : '导入的考证候选，关联依据仍待逐条核验。')}</p>
+    </section>
     <details className="geo-evidence-section" data-evidence-section="quotes"><summary>{t('原文摘录')}</summary>
       {info.evidence.filter(evidence => evidence.excerpt).map(evidence => <div key={evidence.url}>
         <h4>{locale === 'en' ? evidence.title_en : evidence.title}</h4>

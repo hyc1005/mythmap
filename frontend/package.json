@@ -4,6 +4,13 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "verify:reader": "node scripts/verify-reader.mjs",
+    "verify:nanshan": "node scripts/verify-nanshan.mjs",
+    "verify:xishan": "node scripts/verify-xishan.mjs",
+    "verify:onboarding": "node scripts/verify-onboarding.mjs",
+    "verify:place-search": "node scripts/verify-place-search.mjs",
+    "verify:discovery": "node scripts/verify-discovery.mjs",
+    "verify:ux": "node scripts/verify-ux.mjs",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",

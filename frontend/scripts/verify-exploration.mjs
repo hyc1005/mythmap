@@ -1,11 +1,13 @@
 import assert from 'node:assert/strict';
 import { mkdir, readFile } from 'node:fs/promises';
-import { chromium } from 'playwright';
+import { chromium, webkit } from 'playwright';
+import { storySummary } from '../src/story-summaries.js';
 
 const base = (process.env.ATLAS_URL || 'http://127.0.0.1:5173/').replace(/\/+$/, '') + '/';
 const output = new URL('../../output/qa/', import.meta.url);
 await mkdir(output, { recursive: true });
-const browser = await chromium.launch();
+const browserName = process.env.ATLAS_BROWSER || 'chromium';
+const browser = await ({ chromium, webkit }[browserName]).launch();
 const errors = [];
 const filename = name => new URL(name, output).pathname.replace(/^\/([A-Za-z]:)/, '$1');
 async function tools(page) {
@@ -21,8 +23,114 @@ async function fits(page) {
     }).map(element => ({ text: element.textContent, bounds: element.getBoundingClientRect().toJSON(), frame: element.closest('.myth-map-wrap').getBoundingClientRect().toJSON(), viewport: innerWidth })));
   assert.deepEqual(bad, [], 'Controls stay inside the map');
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'No page overflow');
+  assert.ok(await page.locator('.map-reading-hint').evaluateAll(nodes => nodes.every(node => node.getBoundingClientRect().right <= innerWidth)), 'Visible seal hints remain readable on narrow screens');
+}
+const settle = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+async function sealPoint(page, name, active) {
+  return page.locator('.myth-map-canvas').evaluate((node, { name, active }) => {
+    const view = JSON.parse(node.dataset.view), box = node.getBoundingClientRect();
+    const context = document.createElement('canvas').getContext('2d');
+    context.font = `${active ? 'bold 14px' : '13px'} ${document.documentElement.lang === 'en' ? '"Source Sans 3 Variable", Arial, sans-serif' : '"Noto Serif SC", SimSun, serif'}`;
+    return { x: box.left + view.size[0] / 2 + (900 - view.center[0]) / view.resolution - context.measureText(name).width / 2 - 9,
+      y: box.top + view.size[1] / 2 - (245 - view.center[1]) / view.resolution - 20 };
+  }, { name, active });
+}
+async function sealInk(page, point) {
+  return page.evaluate(({ x, y }) => [...document.querySelectorAll('.myth-map-canvas .ol-layer canvas')].reduce((sum, node) => {
+    const box = node.getBoundingClientRect(), ratio = node.width / box.width;
+    const left = Math.floor((x - box.left - 7) * ratio), top = Math.floor((y - box.top - 7) * ratio), size = Math.ceil(14 * ratio);
+    if (left < 0 || top < 0 || left + size > node.width || top + size > node.height) return sum;
+    const pixels = node.getContext('2d').getImageData(left, top, size, size).data;
+    for (let i = 0; i < pixels.length; i += 4) if (pixels[i] > pixels[i + 1] * 1.5 && pixels[i] > pixels[i + 2] * 1.5 && pixels[i + 3] > 50) sum++;
+    return sum;
+  }, 0), point);
 }
 try {
+  for (const locale of ['zh', 'en']) for (const width of [1440, 390, 320, 844]) {
+    console.log(`Checking reading seals ${locale} ${width}: ${width === 390 ? 'touch' : 'mouse'}`);
+    const context = await browser.newContext({ viewport: { width, height: width === 844 ? 390 : 1000 }, reducedMotion: 'reduce', hasTouch: width <= 390 });
+    const page = await context.newPage();
+    page.on('pageerror', error => errors.push(error.message));
+    await page.goto(`${base}?chapter=03&lang=${locale}&item=03-04`);
+    await page.locator('.detail-drawer').waitFor();
+    assert.equal(await page.getByRole('button', { name: /复制探索链接|Copy exploration link/ }).count(), 0, 'Expanded original has no copy-link action');
+    assert.equal(await page.locator('.detail-drawer input[readonly]').count(), 0, 'Removed sharing has no fallback link field');
+    await page.getByRole('button', { name: locale === 'zh' ? '在地图中查看' : 'View on the map', exact: true }).click();
+    await page.locator('.ink-hover-card').waitFor();
+    await page.evaluate(() => document.fonts.ready);
+    await page.waitForLoadState('networkidle');
+    await page.locator('.myth-map-canvas').scrollIntoViewIfNeeded();
+    const name = await page.locator('.ink-hover-card b').textContent();
+    const box = await page.locator('.myth-map-canvas').boundingBox();
+    if (width === 390) await page.touchscreen.tap(box.x + box.width - 20, box.y + 20);
+    else await page.mouse.click(box.x + box.width - 20, box.y + 20);
+    await page.locator('.ink-hover-card').waitFor({ state: 'hidden' }); await settle(page);
+    const idlePoint = await sealPoint(page, name, false), idleInk = await sealInk(page, idlePoint);
+    assert.ok(idleInk > 4, 'A red seal is actually painted beside the name');
+    const view = await page.locator('.myth-map-canvas').getAttribute('data-view');
+    if (width === 390) await page.touchscreen.tap(idlePoint.x, idlePoint.y);
+    else await page.mouse.move(idlePoint.x, idlePoint.y);
+    await page.locator('.ink-hover-card').waitFor(); await settle(page);
+    assert.equal(await page.locator('.preview-body p').textContent(), storySummary('03-04', locale), 'Preview starts with the plain-language story');
+    assert.equal(await page.locator('.ink-hover-card>.content-origin').getAttribute('data-origin'), 'shanhaijing');
+    await page.locator('.preview-art').evaluate(image => image.decode());
+    const previewBounds = await page.locator('.ink-hover-card').boundingBox();
+    const mapBounds = await page.locator('.map-surface').boundingBox();
+    assert.ok(previewBounds.x >= mapBounds.x && previewBounds.y >= mapBounds.y && previewBounds.x + previewBounds.width <= mapBounds.x + mapBounds.width + 1 && previewBounds.y + previewBounds.height <= mapBounds.y + mapBounds.height + 1, 'The whole preview fits inside the map');
+    assert.ok(await page.locator('.ink-hover-card button, .preview-art').evaluateAll(nodes => nodes.every(node => {
+      const r = node.getBoundingClientRect(), c = node.closest('.ink-hover-card').getBoundingClientRect();
+      return r.top >= c.top && r.bottom <= c.bottom && r.left >= c.left && r.right <= c.right && (node.tagName !== 'BUTTON' || r.height >= 44 && r.width >= 44);
+    })), 'Artwork stays inside the card and actions retain 44px targets');
+    assert.equal(await page.locator('.ink-hover-card b').textContent(), name, 'The seal selects its own entry');
+    assert.equal(await page.locator('.myth-map-canvas').getAttribute('data-view'), view, 'Reading feedback does not move the map');
+    assert.ok(await sealInk(page, await sealPoint(page, name, true)) > idleInk, 'Hover and touch gently strengthen the seal');
+    await page.locator('.map-reading-hint').waitFor();
+    assert.ok(await page.locator('.map-reading-hint').evaluate(node => node.getBoundingClientRect().right <= innerWidth), 'The idle map shows its complete reading hint');
+    await page.locator('.myth-map-wrap').screenshot({ path: filename(`reading-seal-active-${locale}-${width}.png`) });
+    await page.locator('.preview-close').click();
+    await page.locator('.ink-hover-card').waitFor({ state: 'hidden' });
+    assert.ok(await page.locator('.myth-map-wrap').evaluate(node => node === document.activeElement), 'Closing a preview returns focus to the map');
+    assert.equal(await page.locator('.myth-map-canvas').getAttribute('data-view'), view, 'Closing the preview preserves the camera');
+    await page.locator('.myth-map-canvas').scrollIntoViewIfNeeded();
+    const reopenPoint = await sealPoint(page, name, false);
+    await page.mouse.click(reopenPoint.x, reopenPoint.y);
+    await page.locator('.ink-hover-card').waitFor();
+    await page.waitForTimeout(350); // OpenLayers confirms a single click after its double-click window.
+    await page.evaluate(() => { Element.prototype.requestFullscreen = undefined; });
+    await page.locator('.map-fullscreen').click();
+    await page.locator('.is-fallback-fullscreen .ink-hover-card').waitFor();
+    await settle(page);
+    assert.ok(await page.locator('.fullscreen-dock .ink-hover-card button').evaluateAll(nodes => nodes.every(node => {
+      const r = node.getBoundingClientRect(), slot = node.closest('.fullscreen-preview-slot').getBoundingClientRect();
+      return r.height >= 44 && r.top >= slot.top && r.bottom <= slot.bottom + 1 && r.right <= slot.right && document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2) === node;
+    })), 'Fullscreen preview actions are fully visible and directly clickable');
+    const fullscreenView = await page.locator('.myth-map-canvas').getAttribute('data-view');
+    await page.locator('.myth-map-wrap').screenshot({ path: filename(`preview-fullscreen-${locale}-${width}.png`) });
+    await page.locator('.preview-close').click();
+    await settle(page);
+    assert.equal(await page.locator('.myth-map-canvas').getAttribute('data-view'), fullscreenView, 'Dismissing the fullscreen preview keeps the canvas stable');
+    if (width === 390) {
+      await page.getByLabel(locale === 'zh' ? '选择地图故事动画' : 'Choose a story animation').selectOption('03-05');
+      await page.locator('.kuafu-journey[data-status="reduced"]').waitFor();
+      await page.locator('.story-view-controls button').last().click();
+      await settle(page);
+      const storyPoint = await sealPoint(page, name, false);
+      await page.mouse.click(storyPoint.x, storyPoint.y);
+      await page.locator('.ink-hover-card').waitFor();
+      await page.waitForTimeout(350);
+      assert.ok(await page.locator('.fullscreen-dock .ink-hover-card button').evaluateAll(nodes => nodes.every(node => {
+        const r = node.getBoundingClientRect(), slot = node.closest('.fullscreen-preview-slot').getBoundingClientRect();
+        return r.height >= 44 && r.top >= slot.top && r.bottom <= slot.bottom + 1 && r.right <= slot.right && document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2) === node;
+      })), 'Preview actions remain available alongside a paused story');
+      assert.ok(await page.locator('.story-view-controls').evaluate(node => getComputedStyle(node).visibility === 'hidden'));
+      await page.locator('.preview-close').click();
+      await page.locator('.ink-hover-card').waitFor({ state: 'hidden' });
+      await page.locator('.story-view-controls').waitFor({ state: 'visible' });
+      assert.ok(await page.locator('.story-view-controls').evaluate(node => getComputedStyle(node).visibility === 'visible'), 'Closing the preview restores view controls');
+    }
+    await page.locator('.map-fullscreen').click();
+    await context.close();
+  }
   for (const locale of ['zh', 'en']) for (const [width, height] of [[1440, 1000], [390, 844], [320, 700], [844, 390]]) {
     console.log('Checking exploration ' + locale + ' ' + width + 'x' + height);
     const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce' });
@@ -87,13 +195,14 @@ try {
     layer.style.transform = 'matrix(1, 0, 0, 1, 2, 3)'; parent.append(layer); document.body.append(parent);
     const ink = layer.getContext('2d'); ink.fillStyle = 'rgb(200, 40, 20)'; ink.fillRect(0, 0, 8, 8);
     const output = document.createElement('canvas'); output.width = output.height = 20;
-    const context = output.getContext('2d'); drawMapLayers(context, [layer]);
+    const context = output.getContext('2d'), supportsFilter = 'filter' in context;
+    drawMapLayers(context, [layer]);
     const expected = document.createElement('canvas'); expected.width = expected.height = 20;
     const reference = expected.getContext('2d'); reference.globalAlpha = .3;
     reference.filter = getComputedStyle(layer).filter; reference.setTransform(1, 0, 0, 1, 2, 3); reference.drawImage(layer, 0, 0);
     const actualPixel = [...context.getImageData(3, 4, 1, 1).data];
     const expectedPixel = [...reference.getImageData(3, 4, 1, 1).data];
-    const restored = context.filter === 'none' && context.globalAlpha === 1;
+    const restored = (!supportsFilter || context.filter === 'none') && context.globalAlpha === 1;
     context.fillStyle = '#544431'; context.fillRect(12, 12, 1, 1);
     const titlePixel = [...context.getImageData(12, 12, 1, 1).data]; parent.remove();
     return { actualPixel, expectedPixel, restored, titlePixel };
@@ -161,7 +270,7 @@ try {
   assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '03');
 
   await page.goto(`${base}?chapter=03&lang=zh`);
-  await page.getByRole('button', { name: '连续游历', exact: true }).click();
+  await page.getByRole('button', { name: '开始游历', exact: true }).click();
   assert.equal(await page.locator('.world-layout').getAttribute('data-timeline-playing'), 'true');
   await page.locator('.kuafu-journey, .story-animation').waitFor();
   assert.ok(requested.some(path => path.endsWith('/optimized/myth-icons/scenes/pangu-opening.webp')), 'The publishing version is requested');
@@ -194,7 +303,7 @@ try {
   assert.equal(new URL(historyPage.url()).searchParams.get('lang'), 'zh');
   await historyPage.close();
   assert.deepEqual(errors, []);
-  console.log('PASS: 8 bilingual viewports, first-screen entry/title font, share and history restoration, keyboard map entries, reduced motion, onboarding, image retry, PNG color and failure/retry.');
+  console.log(`PASS ${browserName}: painted reading seals, mouse/touch feedback, no copy action, 8 bilingual viewports, history/focus, reduced motion, image retry and PNG export.`);
 } finally {
   await browser.close();
 }

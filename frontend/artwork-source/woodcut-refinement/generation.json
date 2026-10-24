@@ -95,6 +95,112 @@
           ]
         }
       }
+    },
+    {
+      "name": "unknown-creature-v1",
+      "original": "/data/atlas/myth-icons/unknown-creature.webp",
+      "status": "superseded_by_user",
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/unknown-creature-v1.png",
+      "referenced_image_paths": [
+        "D:/testfileplace/gpttry02/webgisfinal/frontend/artwork-source/woodcut-refinement/jiuweihu-map-v1.png"
+      ],
+      "review": "生成期间用户更新要求：仅灰白剪影和深灰眼眶，移除问号与身体纹样。",
+      "prompts": [
+        "Edit the attached approved archaic Chinese mythology woodcut nine-tailed fox into ONE reusable UNKNOWN CREATURE placeholder for the same atlas. Preserve its exact complete fox silhouette, facing left, four legs, nine separately readable fanned tails, bold carved outlines and broad negative-space cuts. Replace ALL red, yellow, cream and black coloring with a neutral GRAYSCALE palette: gray-white body and tails, pale silver carved interior shapes, medium gray contours, DARK GRAY eye region. No warm beige, red, orange, green or blue anywhere. Add exactly ONE LARGE DARK GRAY QUESTION MARK '?' centered prominently on the main torso/flank, readable and in the SAME thick hand-carved woodblock style, including its separated dot. Simplify torso ornament underneath so question mark reads clearly. This is an intentionally anonymous mythical silhouette, not realistic animal fur, not plush, not 3D. Fully opaque creature interior, genuine transparent alpha outside the silhouette, generous even empty margin on all sides, all tail tips ears paws visible. No background rectangle, scenery, cast shadow, badge, lettering except the single question mark, watermark or labels."
+      ]
+    },
+    {
+      "name": "unknown-creature-v2",
+      "original": "/data/atlas/myth-icons/unknown-creature.webp",
+      "status": "interrupted_no_output",
+      "variants": [
+        "full",
+        "card",
+        "preview",
+        "map"
+      ],
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/unknown-creature-v2.png",
+      "prompts": [
+        "Create a reusable UNKNOWN CREATURE placeholder by simplifying the attached approved nine-tailed fox into its SILHOUETTE ONLY. Preserve the recognizable exact overall nine-tailed fox shape: one fox head facing left, two pointed ears, four legs, nine clearly separate tails fanned behind its single body. All of its body, legs, head and tails must be ONE FLAT SOLID GRAY-WHITE filled shape. The ONLY interior details permitted are TWO DARK GRAY EYE SOCKET AREAS at the eyes (only the visible eye if side view), simplified hollow dark eye shapes. NO QUESTION MARK. No lettering, symbols or dot. No mouth lines, nose detail, claws, inner ears, belly divisions, fur strands, flame shapes, tail interior marks, contour hatching, texture, shading or decorative patterns. Do not retain the original red or yellow colors; neutral gray-white silhouette with dark gray eye sockets only. At most a very thin soft neutral gray exterior edge for readability, no heavy black internal outlines. True TRANSPARENT alpha everywhere outside the solid opaque character silhouette, no paper background, no ground, no shadow, no scene. Center the complete silhouette with generous even transparent margins, preserve every tail tip and paw. This is an anonymous mythical creature placeholder in the outline of the reference, not a real animal illustration."
+      ],
+      "referenced_image_paths": [
+        "D:/testfileplace/gpttry02/webgisfinal/frontend/artwork-source/woodcut-refinement/jiuweihu-map-v1.png"
+      ],
+      "review": "用户纠正问号必须保留，此版取消；未发现输出文件。"
+    },
+    {
+      "name": "unknown-creature-v3",
+      "original": "/data/atlas/myth-icons/unknown-creature.webp",
+      "status": "superseded_by_user",
+      "variants": [
+        "full",
+        "card",
+        "preview",
+        "map"
+      ],
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/unknown-creature-v3.png",
+      "prompts": [
+        "Precise simplification of attached gray nine-tailed fox UNKNOWN placeholder. KEEP the exact complete outer silhouette, its head facing left, nine separate tails, four legs and centered LARGE DARK GRAY QUESTION MARK on its torso. Keep the question mark and its dot clearly visible. Replace ALL internal anatomy and decorative detail with ONE UNIFORM FLAT GRAY-WHITE FILL. Remove every fur stroke, every tail flame stripe, every belly division, toes, claws, nose, mouth, inner-ear lines and all black internal contour lines. All head, ears, body, limbs and all nine tails are solid plain pale gray-white silhouette. The ONLY interior marks remaining must be (1) the dark gray eye socket around its one visible eye, simplified as a small solid hollow-eye shape, and (2) the large woodcut-style DARK GRAY '?' on torso with its dot. This must be a very minimal anonymous flat cutout, no gradients, textures or realistic anatomy detail. Do not fill the transparent gaps between tails or legs. A very thin light gray outer boundary is allowed for visibility, but no thick black outline. Keep TRUE TRANSPARENT ALPHA outside the fox, generous even clear margin on all sides, complete ears tails and paws, no paper rectangle, scene, shadow, numbers or other text."
+      ],
+      "referenced_image_paths": [
+        "D:/testfileplace/gpttry02/webgisfinal/frontend/artwork-source/woodcut-refinement/unknown-creature-v1.png"
+      ],
+      "review": "剪影与问号保留，用户要求眼部整个填深灰无高光瞳孔、身体统一淡灰。",
+      "generated_path": "C:/Users/48427/.codex/generated_images/01a1636e-11c6-7642-b65a-ee33ab5294b6/exec-d7371d62-e9ba-47e0-8290-b3e30a3d18be.png"
+    },
+    {
+      "name": "unknown-creature-v4",
+      "original": "/data/atlas/myth-icons/unknown-creature.webp",
+      "status": "reviewed",
+      "variants": [
+        "full",
+        "card",
+        "preview",
+        "map"
+      ],
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/unknown-creature-v4.png",
+      "prompts": [
+        "Precise tiny color correction to the attached minimalist nine-tailed fox placeholder. Preserve the exact silhouette, pose, nine tails, four feet, transparent background, LARGE DARK GRAY QUESTION MARK and its dot exactly. The user wants the ENTIRE animal one uniform flat LIGHT GRAY fill (neutral #d6d6d6), head body ears all nine tails and all four legs alike, no white highlights or any internal lines. The single visible EYE must be just ONE SOLID DARK GRAY PATCH (#555555), following the existing eye's outer angular almond outline. Fill the WHOLE eye shape dark gray: remove all white area inside the eye, all pupil, iris, catchlight and eye details. There must be absolutely NO white notch or highlight within that dark gray eye patch. Keep the large question mark dark gray and unchanged. Thin medium-light gray outer outline is okay. TRUE TRANSPARENT background, no shadow or texture. Only two interior marks in total: the solid dark gray eye patch and the large dark gray question mark with dot. Do not alter the overall drawing or add any other detail."
+      ],
+      "referenced_image_paths": [
+        "D:/testfileplace/gpttry02/webgisfinal/frontend/artwork-source/woodcut-refinement/unknown-creature-v3.png"
+      ],
+      "review": "九尾狐完整淡灰剪影；唯一可见眼区为整块深灰，无瞳孔高光；保留中央深灰问号及点，无内部纹样；透明alpha。700×467质量70内存JPEG22490字节核对。",
+      "generated_path": "C:/Users/48427/.codex/generated_images/01a1636e-11c6-7642-b65a-ee33ab5294b6/exec-01450c02-df71-47a4-afbd-404c21d87550.png",
+      "publishedVariants": {
+        "full": {
+          "path": "/data/atlas/refined/unknown-creature-v4-full.webp",
+          "bytes": 111298,
+          "dimensions": [
+            1280,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/refined/unknown-creature-v4-card.webp",
+          "bytes": 18700,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/refined/unknown-creature-v4-preview.webp",
+          "bytes": 31242,
+          "dimensions": [
+            480,
+            480
+          ]
+        },
+        "map": {
+          "path": "/data/atlas/refined/unknown-creature-v4-map.webp",
+          "bytes": 6594,
+          "dimensions": [
+            128,
+            128
+          ]
+        }
+      }
     }
   ]
 }

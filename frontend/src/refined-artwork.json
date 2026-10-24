@@ -54,5 +54,49 @@
         128
       ]
     }
+  },
+  "/data/atlas/myth-icons/nanshan/guanguan-v1.webp": {
+    "map": {
+      "path": "/data/atlas/myth-icons/nanshan/guanguan-v1-map.webp",
+      "bytes": 11658,
+      "dimensions": [
+        128,
+        128
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/unknown-creature.webp": {
+    "full": {
+      "path": "/data/atlas/refined/unknown-creature-v4-full.webp",
+      "bytes": 111298,
+      "dimensions": [
+        1280,
+        1280
+      ]
+    },
+    "card": {
+      "path": "/data/atlas/refined/unknown-creature-v4-card.webp",
+      "bytes": 18700,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/refined/unknown-creature-v4-preview.webp",
+      "bytes": 31242,
+      "dimensions": [
+        480,
+        480
+      ]
+    },
+    "map": {
+      "path": "/data/atlas/refined/unknown-creature-v4-map.webp",
+      "bytes": 6594,
+      "dimensions": [
+        128,
+        128
+      ]
+    }
   }
 }

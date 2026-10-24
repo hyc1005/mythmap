@@ -1,0 +1,136 @@
+{
+  "batch": "nanshan-first-three",
+  "assets": [
+    {
+      "name": "zhaoyao",
+      "tool": "built-in image_gen",
+      "source": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-770100e2-6370-4110-a800-08181f95616e.png",
+      "source_copy": "frontend/artwork-source/nanshan/zhaoyao-v1.png",
+      "prompt": "Create ONE production illustration asset for a Chinese mythology web atlas: Mount Zhaoyao (招摇之山), an ancient text-based landscape vignette. The attached Qingqiu illustration is a STYLE REFERENCE ONLY: match its carved woodblock linework, rough printed ink grain, muted ochre rock, restrained celadon vegetation and warm ivory highlights. Do NOT copy the fox or the precise mountain outline. Landscape 4:3 composition, isolated organically edged mountain-and-stream vignette on a genuinely transparent background. A mountain with sparse osmanthus-like evergreen trees and quiet narrow water flowing away toward a small sea-edge suggestion at the left. Spacious, calm, graceful silhouette, no scenic frame or paper rectangle. No animals, no humans, no buildings, no text, no seals, no arrows, no modern map or realistic geographic claims. The mountain and tree shapes are artistic interpretations, not a reconstruction. Stream and tree details must remain readable when the whole image is shown at 280 px width. Use charcoal ink, ochre, muted mineral green, warm pale highlights; no neon or fantasy glow. The whole mountain base, trees and stream are inside the image with breathing space. Actual transparent alpha outside the vignette.",
+      "transparent_background": true,
+      "reference_images": [
+        "frontend/public/data/atlas/myth-icons/qingqiu-mountain.webp"
+      ],
+      "status": "generated_for_implementation",
+      "review_note": "Reviewed for woodblock style, legible complete subject, transparent surround and absence of text. Scene geometry and underspecified plant/bird details are artistic interpretation."
+    },
+    {
+      "name": "niuyang",
+      "tool": "built-in image_gen",
+      "source": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-96e09094-0790-49d5-9957-4b5583461c85.png",
+      "source_copy": "frontend/artwork-source/nanshan/niuyang-v1.png",
+      "prompt": "Production asset for the same Chinese mythology atlas as the supplied style reference. Match hand-carved woodblock ink hatching, warm ivory cuts, ochre rocks, sparse celadon green, antique printed grain. No photorealism, no glossy 3D, no neon. Preserve full subject inside edges; genuinely transparent alpha outside the vignette. Must read well at 280 px wide. Use reference for STYLE only, never copy its fox. Mount Niuyang: one isolated mountain-and-stream woodblock vignette, landscape 4:3, organically edged transparent background. Two slopes show a sunlit warm ochre side and a quieter pale cool stone side, only subtle small copper-like and silver-like mineral flecks; no treasure piles. A modest winding stream emerges beside the mountain and flows away to the right. Sparse vegetation; enough empty breathing space. NO animals, humans, buildings, text, seals, arrows or labels. No modern geography. Artistic scene, not a literal geological reconstruction.",
+      "transparent_background": true,
+      "reference_images": [
+        "frontend/public/data/atlas/myth-icons/qingqiu-mountain.webp"
+      ],
+      "status": "generated_for_implementation",
+      "review_note": "Reviewed for woodblock style, legible complete subject, transparent surround and absence of text. Scene geometry and underspecified plant/bird details are artistic interpretation."
+    },
+    {
+      "name": "qingqiu",
+      "tool": "built-in image_gen",
+      "source": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-664313a1-1ff1-4702-ad54-ef2e2c3a80f2.png",
+      "source_copy": "frontend/artwork-source/nanshan/qingqiu-v1.png",
+      "prompt": "Production asset for the same Chinese mythology atlas as the supplied style reference. Match hand-carved woodblock ink hatching, warm ivory cuts, ochre rocks, sparse celadon green, antique printed grain. No photorealism, no glossy 3D, no neon. Preserve full subject inside edges; genuinely transparent alpha outside the vignette. Must read well at 280 px wide. Use reference for STYLE only, never copy its fox. Mount Qingqiu: one isolated mountain-and-water woodblock vignette, landscape 4:3 on transparent background. A graceful mountain, restrained shrubs and a river descending in front toward an open quiet shallow marsh at lower right. Modest jade-like pale stones and muted green mineral washes, no glowing crystals. Keep the mountain distinct from the other reference by a low broad secondary ridge and open wetland. NO foxes or other creatures: animals appear separately in the atlas. No humans, text, buildings, seals, arrows or geographic labels. The stream/wetland are an artistic interpretation of the text, not a modern map.",
+      "transparent_background": true,
+      "reference_images": [
+        "frontend/public/data/atlas/myth-icons/qingqiu-mountain.webp"
+      ],
+      "status": "generated_for_implementation",
+      "review_note": "Reviewed for woodblock style, legible complete subject, transparent surround and absence of text. Scene geometry and underspecified plant/bird details are artistic interpretation."
+    },
+    {
+      "name": "zhuyu",
+      "tool": "built-in image_gen",
+      "source": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-58be128f-f8d4-436a-b2d6-718c301c03d8.png",
+      "source_copy": "frontend/artwork-source/nanshan/zhuyu-v1.png",
+      "prompt": "Create ONE final illustration asset for an existing Chinese mythological atlas. Use the supplied landscape as STYLE REFERENCE ONLY: hand-carved woodblock lines and cuts, textured antique charcoal ink, warm ivory highlights, restrained ochre and celadon, calm and elegant. Genuinely transparent background outside the subject, no parchment rectangle, no border. No text, writing, seals or arrows. Must remain legible at thumbnail size. Zhuyu (祝余) plant described in the Nanshan Jing: ONE complete graceful clump/individual herb with narrow chive-like strap leaves and a few small restrained blue-green blossoms. Botanical woodcut, portrait 3:4, whole root base visible, no pot. Actual species, flower anatomy and number are an artistic interpretation: do not imitate a scientific plate or invent labels. Calm, slender, readable silhouette. No glowing medicinal effects, fruit, people or animals.",
+      "transparent_background": true,
+      "reference_images": [
+        "frontend/public/data/atlas/myth-icons/qingqiu-mountain.webp"
+      ],
+      "status": "generated_for_implementation",
+      "review_note": "Reviewed for woodblock style, legible complete subject, transparent surround and absence of text. Scene geometry and underspecified plant/bird details are artistic interpretation."
+    },
+    {
+      "name": "migu",
+      "tool": "built-in image_gen",
+      "source": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-b5146fca-7306-4325-be51-d539a12e6757.png",
+      "source_copy": "frontend/artwork-source/nanshan/migu-v1.png",
+      "prompt": "Create ONE final illustration asset for an existing Chinese mythological atlas. Use the supplied landscape as STYLE REFERENCE ONLY: hand-carved woodblock lines and cuts, textured antique charcoal ink, warm ivory highlights, restrained ochre and celadon, calm and elegant. Genuinely transparent background outside the subject, no parchment rectangle, no border. No text, writing, seals or arrows. Must remain legible at thumbnail size. Migu (迷谷) tree described in the Nanshan Jing: ONE complete small mature tree with paper-mulberry-like broad leaves, branching visible trunk with dark wood-grain lines. A few pale blossoms catch a very subtle ivory rim of light, suggesting the text's shining flowers; no supernatural aura, no particles, no fantasy crystals. Portrait 3:4, trunk roots and entire crown fully visible. A poetic ancient woodcut interpretation rather than a botanically certified species. No pot, people, animals or labels.",
+      "transparent_background": true,
+      "reference_images": [
+        "frontend/public/data/atlas/myth-icons/qingqiu-mountain.webp"
+      ],
+      "status": "generated_for_implementation",
+      "review_note": "Reviewed for woodblock style, legible complete subject, transparent surround and absence of text. Scene geometry and underspecified plant/bird details are artistic interpretation."
+    },
+    {
+      "name": "guanguan",
+      "tool": "built-in image_gen",
+      "source": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-aab1e6bc-c019-486a-8608-dd3d45e75707.png",
+      "source_copy": "frontend/artwork-source/nanshan/guanguan-v1.png",
+      "prompt": "Use case: precise-object-edit. Edit this Guanguan bird woodcut. Keep the Chinese antique carved woodblock visual language, restrained ochre/celadon/ivory and black ink, genuinely transparent background. It must remain ONE dove-like bird, one head, two ordinary eyes, two wings, two legs and one tail. The source describes a dove-like bird whose call resembles people calling to one another; it DOES NOT give it extra eyes, horns, crests, human face or tails. Make its mythic personality visible through an emphatic calling pose: head tipped upwards, beak visibly open calling, arched throat and proudly extended breast, one wing lifted and opened in a sculptural fan while the other is folded, firmly planted feet. Replace realistic feather tracing with bold archaic carved cloud-scroll feather shapes and rhythmic ink/ivory negative spaces, an ancient bestiary emblem rather than an ordinary bird specimen. Slightly elongate the elegant neck and use a clear geometric eye motif while retaining two normal eyes and avian face. Keep these as artistic surface stylization, not claims of textual anatomy. No written sound effects, labels, speech bubbles, halo, talismans, jewelry, extra limbs or magical light. No modern objects. Full bird, no cropping, generous transparent margin, small simple rock under feet only.",
+      "transparent_background": true,
+      "reference_images": [
+        "frontend/artwork-source/nanshan/guanguan-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "User review: open-beak calling pose with lifted wing and carved cloud-scroll feathers; dove-like anatomy retained, no invented horns/heads/tails. Transparent RGBA verified.",
+      "revisions": [
+        {
+          "source_file": "guanguan-v1.png",
+          "prompt": "Create ONE final illustration asset for an existing Chinese mythological atlas. Use the supplied landscape as STYLE REFERENCE ONLY: hand-carved woodblock lines and cuts, textured antique charcoal ink, warm ivory highlights, restrained ochre and celadon, calm and elegant. Genuinely transparent background outside the subject, no parchment rectangle, no border. No text, writing, seals or arrows. Must remain legible at thumbnail size. Guanguan (灌灌), the bird from Mount Qingqiu in the Nanshan Jing: ONE complete dove-like bird, exactly one head, two natural eyes, two wings folded against its body, two legs and one ordinary dove tail. Gentle side-three-quarter profile, standing on a small organically edged patch of stone, clear feet and beak. Muted celadon-grey and warm ivory plumage with carved charcoal hatching. Square 1:1 composition, full silhouette with breathing space. This is a bird, NOT the unrelated one-eyed three-tailed catlike Huan (讙). No extra limbs, tails, crests, text, diagram, sound effects or jewels.",
+          "original_path": null,
+          "status": "superseded_after_user_review",
+          "review_note": "User requested stronger mythical silhouette and emphasis on text-supported features."
+        }
+      ],
+      "source_file": "guanguan-v2.png",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-619e6416-32a6-4ca7-a478-0985c45ee330.png"
+    }
+  ],
+  "existing_artwork_reviews": [
+    {
+      "entry_id": "beast-shengsheng",
+      "artwork": "beasts/beast-shengsheng.webp",
+      "method": "manual visual inspection against the cited facsimile passage",
+      "core_form_review": "禺状、白耳；人面倾向为艺术解释，经文未另明示。",
+      "decision": "retain existing image",
+      "reviewed_on": "2026-10-19"
+    },
+    {
+      "entry_id": "beast-lushu",
+      "artwork": "beasts/beast-lushu.webp",
+      "method": "manual visual inspection against the cited facsimile passage",
+      "core_form_review": "马状、白首、虎纹、赤尾。",
+      "decision": "retain existing image",
+      "reviewed_on": "2026-10-19"
+    },
+    {
+      "entry_id": "beast-xuangui",
+      "artwork": "beasts/beast-xuangui.webp",
+      "method": "manual visual inspection against the cited facsimile passage",
+      "core_form_review": "龟身、鸟首、虺尾；水域关联按文字呈现。",
+      "decision": "retain existing image",
+      "reviewed_on": "2026-10-19"
+    },
+    {
+      "entry_id": "beast-jiuweihu",
+      "artwork": "beasts/beast-jiuweihu.webp",
+      "method": "manual visual inspection against the cited facsimile passage",
+      "core_form_review": "狐状、九尾；姿态与色彩为艺术解释。",
+      "decision": "retain existing image",
+      "reviewed_on": "2026-10-19"
+    },
+    {
+      "entry_id": "beast-chiru",
+      "artwork": "beasts/beast-chiru.png",
+      "method": "manual visual inspection against the cited facsimile passage",
+      "core_form_review": "鱼身人面；水族形态不改成陆兽。",
+      "decision": "retain existing image",
+      "reviewed_on": "2026-10-19"
+    }
+  ]
+}

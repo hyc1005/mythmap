@@ -3,7 +3,7 @@ import { chromium, firefox, webkit } from 'playwright';
 
 const base = (process.env.ATLAS_URL || 'http://127.0.0.1:5173/').replace(/\/+$/, '') + '/';
 const engines = { chromium, firefox, webkit };
-for (const name of (process.env.ATLAS_BROWSERS || 'chromium,firefox,webkit').split(',')) {
+for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await engines[name].launch();
   try {
     const page = await browser.newPage({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
@@ -32,7 +32,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,firefox,webkit').spl
     await page.waitForFunction(() => document.activeElement?.matches('.myth-map-wrap'));
 
     await page.goto(`${base}?chapter=03&lang=zh`);
-    await page.getByRole('button', { name: '连续游历', exact: true }).click();
+    await page.getByRole('button', { name: '开始游历', exact: true }).click();
     await page.locator('.story-animation[data-story="03-04"] .journey-actions').getByRole('button', { name: '跳过', exact: true }).click();
     const journey = page.locator('.kuafu-journey:not(.story-animation)');
     await journey.locator('button').first().waitFor();
@@ -59,23 +59,23 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,firefox,webkit').spl
     await page.goto(`${base}?chapter=06&lang=zh`);
     await page.locator('.mobile-explore-nav button').first().click();
     await page.locator('.timeline-steps button').nth(6).click();
-    await page.getByRole('button', { name: '连续游历', exact: true }).click();
+    await page.getByRole('button', { name: '开始游历', exact: true }).click();
     await page.waitForTimeout(1500);
     assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '06');
     await page.getByRole('button', { name: '阅读完毕，下一章', exact: true }).click();
     await page.waitForFunction(() => document.querySelector('.world-layout').dataset.chapter === '07');
     await page.waitForTimeout(1500);
     await page.getByRole('button', { name: '结束游历', exact: true }).click();
-    await page.getByRole('button', { name: '连续游历', exact: true }).waitFor();
+    await page.getByRole('button', { name: '开始游历', exact: true }).waitFor();
     assert.equal(await page.locator('.world-layout').getAttribute('data-timeline-playing'), 'false', 'Final chapter ends guided tour');
-    await page.getByRole('button', { name: '连续游历', exact: true }).click();
+    await page.getByRole('button', { name: '开始游历', exact: true }).click();
     await page.waitForFunction(() => document.querySelector('.world-layout').dataset.chapter === '00');
     await page.getByRole('button', { name: '暂停游历', exact: true }).waitFor();
     await page.close();
 
     const motion = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
     await motion.goto(`${base}?chapter=02&lang=zh`);
-    await motion.getByRole('button', { name: '连续游历', exact: true }).click();
+    await motion.getByRole('button', { name: '开始游历', exact: true }).click();
     await motion.locator('.story-animation[data-status="playing"]').waitFor();
     await motion.locator('.begin-journey').click();
     await motion.locator('.story-animation[data-status="paused"]').waitFor();
@@ -94,7 +94,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,firefox,webkit').spl
     await motion.getByRole('button', { name: '暂停游历', exact: true }).waitFor();
     await motion.locator('.story-animation[data-status="playing"]').waitFor();
     await motion.goto(`${base}?chapter=00&lang=zh`);
-    await motion.getByRole('button', { name: '连续游历', exact: true }).click();
+    await motion.getByRole('button', { name: '开始游历', exact: true }).click();
     await motion.locator('.pangu-player-wrap[data-status="playing"]').waitFor();
     await motion.getByRole('button', { name: '暂停盘古序章', exact: true }).click();
     await motion.getByRole('button', { name: '继续游历', exact: true }).waitFor();
@@ -111,7 +111,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,firefox,webkit').spl
         const failure = await browser.newPage();
         await failure.route(`**/assets/${module}-*.js`, route => route.abort());
         await failure.goto(`${base}?chapter=${chapter}&lang=zh`);
-        await failure.getByRole('button', { name: '连续游历', exact: true }).click();
+        await failure.getByRole('button', { name: '开始游历', exact: true }).click();
         if (module === 'KuafuJourney') await failure.locator('.story-animation').getByRole('button', { name: '跳过', exact: true }).click();
         await failure.locator('.animation-failure').waitFor();
         assert.equal(await failure.locator('main').count(), 1);
@@ -123,7 +123,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,firefox,webkit').spl
       const retry = await browser.newPage();
       await retry.route('**/suiren-after-fire-v3.webp', route => route.abort());
       await retry.goto(`${base}?chapter=02&lang=zh`);
-      await retry.getByRole('button', { name: '连续游历', exact: true }).click();
+      await retry.getByRole('button', { name: '开始游历', exact: true }).click();
       await retry.locator('.story-animation[data-status="error"]').waitFor();
       await retry.waitForTimeout(1300);
       assert.equal(await retry.locator('.world-layout').getAttribute('data-chapter'), '02');

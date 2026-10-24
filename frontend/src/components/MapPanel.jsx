@@ -16,16 +16,19 @@ import MouseWheelZoom from 'ol/interaction/MouseWheelZoom';
 import rawCatalog from '../../public/data/atlas/catalog.json';
 import rawAnimationCatalog from '../../public/data/atlas/story-animations.json';
 import kuafuJourney from '../../public/data/atlas/kuafu-journey.json';
-import { assetUrl } from '../asset-url';
+import { worldEntries } from '../entries';
+import { assetUrl, assetDimensions } from '../asset-url';
 
 import { iconFor } from '../artwork';
 import { ChapterNotice, InkText, useReducedMotion } from '../motion';
 import { prefetchNextChapter } from '../asset-cache';
 import ArtworkImage from './ArtworkImage';
+import ContentOrigin from './ContentOrigin';
 import MapToolbar from './MapToolbar';
 import MapPlayback from './MapPlayback';
 import ReadingActions from './ReadingActions';
 import ChapterEntries from './ChapterEntries';
+import { storySummary } from '../story-summaries';
 import { chapterStoryIds } from '../chapter-stories';
 import { drawMapLayers } from '../map-export';
 import { paperLayer } from '../paper-layer';
@@ -33,6 +36,7 @@ import GeographyMap from './GeographyMap';
 const PanguOpening = lazy(() => import('../animations/PanguOpening'));
 const KuafuJourney = lazy(() => import('../animations/KuafuJourney'));
 const StoryAnimation = lazy(() => import('../animations/StoryAnimation'));
+const readingSeal = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path d="M1.5 1.5h11v11h-11zM4 4h6v6H4zM7 4v6M4 7h6" fill="none" stroke="#a44431" stroke-width="1.3" stroke-linejoin="round"/></svg>');
 
 class PanguLoadBoundary extends Component {
   state = { failed: false };
@@ -86,7 +90,7 @@ function beastMarker(record, active, resolution = 1) {
   return beastIcons.get(key);
 }
 
-export default function MapPanel({ world, stageIndex, activeLayers, selectedId, pausedForOverlay = false, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, storyRequest, onActiveEventChange, onManualStoryChange, readingNote, readingControls, locateId, storyItems, onRecordsChange, reading, collectionItems, tourPlaying = null, onTourPlaybackChange, onPlaybackChange, geographyMode, onGeographyModeChange, geographyEventId, onGeographyEventChange, geographySnapshot, onGeographySnapshot }) {
+export default function MapPanel({ world, stageIndex, activeLayers, selectedId, pausedForOverlay = false, onSelect, onFullscreenTargetChange, onJourneyBusyChange, onFullscreenStageChange, chapterTransition, storyRequest, onActiveEventChange, onManualStoryChange, readingNote, readingControls, locateId, storyItems, onRecordsChange, reading, collectionItems, tourPlaying = null, onTourPlaybackChange, onPlaybackChange, geographyMode, onGeographyModeChange, geographyEventId, onGeographyEventChange, geographyReferenceId, onGeographyReferenceChange, geographyLocateRequest, geographyFromSearch, onGeographyReturnToSearch, geographySnapshot, onGeographySnapshot }) {
   const { t, locale } = useLocale();
   const externalPaused = tourPlaying === false || pausedForOverlay || geographyMode || Boolean(chapterTransition);
   const [geographyVisited, setGeographyVisited] = useState(geographyMode);
@@ -101,9 +105,19 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   const exportJob = useRef(null);
   const mapFont = locale === 'en' ? '"Source Sans 3 Variable", Arial, sans-serif' : '"Noto Serif SC", SimSun, serif';
   const mapFontRef = useRef(mapFont);
+  const labelMeasure = useRef(null), labelWidths = useRef(new Map());
+  const labelWidth = (text, font) => {
+    const key = `${font}:${text}`;
+    if (!labelWidths.current.has(key)) {
+      labelMeasure.current ||= document.createElement('canvas').getContext('2d');
+      labelMeasure.current.font = font;
+      labelWidths.current.set(key, labelMeasure.current.measureText(text).width);
+    }
+    return labelWidths.current.get(key);
+  };
   mapFontRef.current = mapFont;
   useEffect(() => {
-    document.fonts.load(`13px ${mapFontRef.current}`).then(() => map.current?.getLayers().forEach(layer => layer.changed()));
+    document.fonts.load(`13px ${mapFontRef.current}`).then(() => { labelWidths.current.clear(); map.current?.getLayers().forEach(layer => layer.changed()); });
   }, [locale]);
   const stages = world.stages;
   const chapterId = stages[stageIndex].id;
@@ -182,14 +196,10 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   const hoverLeaveTimer = useRef(null);
   const hoverCardActive = useRef(false);
   const keepHover = () => window.clearTimeout(hoverLeaveTimer.current);
-  const leaveHover = () => { keepHover(); hoverLeaveTimer.current = window.setTimeout(() => { if (!hoverCardActive.current) setHoverId(null); }, 180); };
+  const leaveHover = () => { keepHover(); hoverLeaveTimer.current = window.setTimeout(() => { if (!hoverCardActive.current && !mapFrame.current?.querySelector('.ink-hover-card')?.contains(document.activeElement)) setHoverId(null); }, 180); };
   useEffect(() => () => window.clearTimeout(hoverLeaveTimer.current), []);
   useEffect(() => { if (!hoverId) hoverCardActive.current = false; }, [hoverId]);
   const [pinnedId, setPinnedId] = useState(null);
-  const [touchSelectedId, setTouchSelectedId] = useState(null);
-  const [portrait, setPortrait] = useState(null);
-  const portraitTimer = useRef(null);
-  const desiredPortraitId = useRef(null);
   const [nativeFullscreen, setNativeFullscreen] = useState(false);
   const [fallbackFullscreen, setFallbackFullscreen] = useState(false);
   const [panguRetry, setPanguRetry] = useState(0);
@@ -236,7 +246,11 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
         new VectorLayer({ source: areaSource.current, declutter: 'map-labels', style: (feature, resolution) => activeJourneyRef.current || resolution > 2.2 || obscuredLabel(feature.getGeometry().getCoordinates(), feature.get('label')) ? null : new Style({
           text: new Text({ text: feature.get('label'), font: `15px ${mapFontRef.current}`, padding: [5, 9, 5, 9], backgroundFill: new Fill({ color: '#eee2c5c9' }), fill: new Fill({ color: '#806d51' }), overflow: true }),
         }) }),
-        new VectorLayer({ source: terrainSource.current, style: feature => new Style({ image: new Icon({ src: assetUrl(`/data/atlas/myth-icons/terrain/${feature.get('kind')}.${feature.get('kind') === 'distant' ? 'png' : 'webp'}`), width: feature.get('width'), anchor: [0.5, 1], opacity: feature.get('opacity') }) }) }),
+        new VectorLayer({ source: terrainSource.current, style: feature => {
+          const path = `/data/atlas/myth-icons/terrain/${feature.get('kind')}.${feature.get('kind') === 'distant' ? 'png' : 'webp'}`;
+          const width = assetDimensions(path)?.[0] || 1100;
+          return new Style({ image: new Icon({ src: assetUrl(path), scale: feature.get('width') / width, anchor: [0.5, 1], opacity: feature.get('opacity') }) });
+        } }),
         new VectorLayer({ source: relationSource.current, style: feature => feature.get('arrow') ? new Style({
           text: new Text({ text: '▲', font: 'bold 12px sans-serif', fill: new Fill({ color: '#a83f2b' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }),
         }) : new Style({
@@ -269,18 +283,21 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
           const active = record.id === activeRecordId.current;
           if (!active && resolution > 2.2 && ['beast', 'domain'].includes(record.kind)) return null;
           const dimmed = !active && (Boolean(activeJourneyRef.current) || obscuredLabel(feature.getGeometry().getCoordinates(), record.name, record.kind === 'beast' ? 18 : -20));
-          return new Style({ zIndex: active ? 40 : 1, text: new Text({ text: record.name, offsetY: record.kind === 'beast' ? 18 : -20, font: `${active ? 'bold 14px' : '13px'} ${mapFontRef.current}`, fill: new Fill({ color: dimmed ? '#66543c99' : '#392d20' }), stroke: new Stroke({ color: dimmed ? '#f5ecd599' : '#f5ecd5', width: 4 }), padding: [3, 5, 3, 5] }) });
+          const font = `${active ? 'bold 14px' : '13px'} ${mapFontRef.current}`;
+          const offsetY = record.kind === 'beast' ? 18 : -20;
+          return new Style({ zIndex: active ? 40 : 1,
+            image: new Icon({ src: readingSeal, scale: (active ? 12.5 : 11) / 14, displacement: [-labelWidth(record.name, font) / 2 - 9, -offsetY], opacity: dimmed ? .45 : active ? 1 : .9 }),
+            text: new Text({ text: record.name, offsetY, font, fill: new Fill({ color: dimmed ? '#66543c99' : '#392d20' }), stroke: new Stroke({ color: dimmed ? '#f5ecd599' : '#f5ecd5', width: 4 }), padding: [3, 5, 3, 5] }) });
         } }),
       ],
       interactions: defaultInteractions({ mouseWheelZoom: false }).extend([new MouseWheelZoom({ maxDelta: 0.38, duration: 380 })]),
       view: new View({ projection, center: [600, 400], resolution: 1, minResolution: 0.25, maxResolution: 1, extent: EXTENT, constrainOnlyCenter: false, showFullExtent: true, smoothExtentConstraint: false, smoothResolutionConstraint: false, enableRotation: false }),
     });
     created.on('pointermove', event => {
-      if (event.dragging) { setHoverId(null); setPinnedId(null); setTouchSelectedId(null); return; }
+      if (event.dragging) { setHoverId(null); setPinnedId(null); return; }
       if (event.originalEvent?.pointerType === 'touch') return;
       const hit = created.forEachFeatureAtPixel(event.pixel, feature => feature.get('record')?.id, { hitTolerance: 8 });
       if (hit) { keepHover(); setHoverId(hit); } else leaveHover();
-      setTouchSelectedId(null);
       target.current.style.cursor = hit ? 'pointer' : 'grab';
     });
     created.on('postrender', () => {
@@ -291,14 +308,13 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     created.on('singleclick', event => {
       const hit = created.forEachFeatureAtPixel(event.pixel, feature => feature.get('record')?.id, { hitTolerance: 8 });
       setPinnedId(hit || null);
-      setTouchSelectedId(event.originalEvent?.pointerType === 'touch' ? hit || null : null);
     });
     const mapTarget = target.current;
     const clearHover = leaveHover;
     mapTarget.addEventListener('pointerleave', clearHover);
     map.current = created;
     document.fonts.load(`13px ${mapFontRef.current}`).then(() => {
-      if (map.current === created) created.getLayers().forEach(layer => layer.changed());
+      if (map.current === created) { labelWidths.current.clear(); created.getLayers().forEach(layer => layer.changed()); }
     });
     setMapInstance(created);
     return () => { mapTarget.removeEventListener('pointerleave', clearHover); created.dispose(); map.current = null; };
@@ -345,7 +361,6 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   useEffect(() => {
     setHoverId(null);
     setPinnedId(null);
-    setTouchSelectedId(null);
     map.current?.getView().cancelAnimations();
     map.current?.getInteractions().forEach(interaction => interaction.setActive(!isPrologue));
     if (isPrologue) return;
@@ -389,55 +404,6 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     pointSource.current.changed();
   }, [selectedId, hoverId, pinnedId]);
 
-  useEffect(() => {
-    const activeId = hoverId || (touchSelectedId && !hoverId ? touchSelectedId : null);
-    const record = visibleRecords.find(item => item.id === activeId);
-    const activeMap = map.current;
-    const hasPortrait = record?.kind === 'story' && record.raw?.properties.person_ids?.length > 0 && !activeJourneyId && !(journeyBusy && (record.id === activeJourneyId || window.innerWidth <= 640 || shortMap));
-    desiredPortraitId.current = hasPortrait && !selectedId ? record.id : null;
-    window.clearTimeout(portraitTimer.current);
-    if (!activeMap || !record || !hasPortrait || selectedId) { setPortrait(null); return undefined; }
-    let armed = !hoverId;
-    const update = () => {
-      if (!armed || desiredPortraitId.current !== record.id) return;
-      const pixel = activeMap.getPixelFromCoordinate([record.x ?? 1100, record.y ?? 120 + (record.stage || 0) * 40]);
-      const size = activeMap.getSize();
-      if (!pixel || !size) return;
-      const narrow = window.matchMedia('(max-width: 768px)').matches;
-      const compact = !narrow && size[0] < 560 && size[1] < 260;
-      const width = Math.min(narrow ? 142 : compact ? size[0] / 2 - 25 : 185, size[0] - 24);
-      let left = Math.max(width / 2 + 12, Math.min(size[0] - width / 2 - 12, pixel[0]));
-      let height = narrow ? 128 : 185;
-      const frame = target.current.getBoundingClientRect();
-      const card = target.current.parentElement.querySelector('.ink-hover-card')?.getBoundingClientRect();
-      const controls = target.current.parentElement.querySelector('.map-overlay-controls')?.getBoundingClientRect();
-      const minTop = narrow && controls ? controls.bottom - frame.top + 8 : 10;
-      const bottom = narrow && card ? card.top - frame.top - 8 : size[1] - 10;
-      height = Math.min(height, Math.max(0, bottom - minTop));
-      if (height < 36) { setPortrait(null); return; }
-      const above = narrow || pixel[1] >= height + minTop + 30;
-      const top = above ? Math.max(minTop + height, Math.min(bottom, pixel[1] - 25)) : Math.max(minTop, Math.min(bottom - height, pixel[1] + 15));
-      const portraitTop = above ? top - height : top;
-      if (!narrow && card && left + width / 2 > card.left - frame.left && portraitTop < card.bottom - frame.top && portraitTop + height > card.top - frame.top) {
-        left = Math.max(width / 2 + 12, card.left - frame.left - width / 2 - 14);
-      }
-      setPortrait({ id: record.id, record, left, top, above, width, height });
-    };
-    portraitTimer.current = window.setTimeout(() => { armed = true; update(); }, hoverId ? 80 : 0);
-    const view = activeMap.getView();
-    activeMap.on('moveend', update);
-    view.on('change:center', update);
-    view.on('change:resolution', update);
-    activeMap.on('change:size', update);
-    return () => {
-      activeMap.un('moveend', update);
-      view.un('change:center', update);
-      view.un('change:resolution', update);
-      activeMap.un('change:size', update);
-      window.clearTimeout(portraitTimer.current);
-      if (desiredPortraitId.current === record.id) desiredPortraitId.current = null;
-    };
-  }, [hoverId, touchSelectedId, selectedId, visibleRecords, journeyBusy, shortMap, activeJourneyId]);
 
   useEffect(() => { map.current?.getLayers().forEach(layer => layer.changed()); }, [journeyBusy, activeJourneyId]);
 
@@ -445,15 +411,12 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     if (!selectedId) return;
     setHoverId(null);
     setPinnedId(null);
-    setTouchSelectedId(null);
-    setPortrait(null);
   }, [selectedId]);
 
   useEffect(() => {
     const visibleIds = new Set(visibleRecords.map(record => record.id));
     if (hoverId && !visibleIds.has(hoverId)) setHoverId(null);
     if (pinnedId && !visibleIds.has(pinnedId)) setPinnedId(null);
-    if (touchSelectedId && !visibleIds.has(touchSelectedId)) setTouchSelectedId(null);
   }, [visibleRecords]);
 
   useEffect(() => {
@@ -589,12 +552,25 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   };
   const hoverRecord = !selectedId && visibleRecords.find(record => record.id === (hoverId || pinnedId));
   const hoverStoryId = hoverRecord && chapterStoryOptions.find(story => story.id === hoverRecord.id || story.source_event_id === hoverRecord.id || story.event_id === hoverRecord.id)?.id;
-  const visiblePortrait = portrait && portrait.id === (hoverId || touchSelectedId) && !selectedId ? portrait : null;
 
-  const mapControls = <MapToolbar isFullscreen={isFullscreen} compactTools={compactTools} chapterStoryOptions={chapterStoryOptions} activeJourneyId={activeJourneyId} onStoryChange={id => { setHoverId(null); setPinnedId(null); setTouchSelectedId(null); setPortrait(null); onManualStoryChange(); setJourneyId(id); setCameraMode(id ? 'story' : 'overview'); setCameraRequest(value => value + 1); }} activeLayers={activeLayers} fitStage={fitStage} exportStage={exportStage} exportStatus={exportStatus} />;
-  const entries = <details className="map-entry-list" key={chapterId}><summary>{t('本章条目')}</summary><ChapterEntries stories={storyItems} records={visibleRecords} onOpen={onSelect} reading={reading} collectionItems={collectionItems} /></details>;
-  const preview = hoverRecord && <div className="ink-hover-card" onPointerEnter={() => { hoverCardActive.current = true; keepHover(); }} onPointerLeave={() => { hoverCardActive.current = false; leaveHover(); }} role="status"><span>{hoverRecord.region}</span><b>{hoverRecord.name}</b><p>{hoverRecord.description}</p><small>{hoverRecord.direction}</small><button aria-label={t("展开原文与出处 ↗")} onClick={event => onSelect(hoverRecord.id, event.currentTarget)}>{t("展开原文与出处 ↗")}</button>{hoverStoryId && <button onClick={() => { onManualStoryChange(); setJourneyId(hoverStoryId); setCameraMode('story'); setCameraRequest(value => value + 1); setHoverId(null); setPinnedId(null); setTouchSelectedId(null); setPortrait(null); }} aria-label={t("播放故事动画")}>{t("播放动画")}</button>}</div>;
-  const legend = <small className="map-range-legend"><i className="legend-story" />{t("故事示意")}<i className="legend-place" />{t("篇目地点")}<i />{t("篇目山列")}<span>{t("兽形图标：异兽")}</span></small>;
+
+  const mapControls = <MapToolbar isFullscreen={isFullscreen} compactTools={compactTools} chapterStoryOptions={chapterStoryOptions} activeJourneyId={activeJourneyId} onStoryChange={id => { setHoverId(null); setPinnedId(null); onManualStoryChange(); setJourneyId(id); setCameraMode(id ? 'story' : 'overview'); setCameraRequest(value => value + 1); }} activeLayers={activeLayers} fitStage={fitStage} exportStage={exportStage} exportStatus={exportStatus} />;
+  const entries = <details className="map-entry-list" key={chapterId}><summary>{t('本章条目')}</summary><ChapterEntries stories={storyItems} records={visibleRecords} passageEntries={world.passages.filter(item => Number(item.reveal_chapter) <= Number(chapterId))} naturalEntries={worldEntries(world).filter(item => (world.natural_features.some(entry => entry.id === item.id) || world.text_entities.some(entry => entry.id === item.id) || item.kind === 'beast' && !item.place_id) && Number(item.reveal_chapter) <= Number(chapterId))} onOpen={onSelect} reading={reading} collectionItems={collectionItems} /></details>;
+  const closePreview = () => { keepHover(); hoverCardActive.current = false; setHoverId(null); setPinnedId(null); };
+  const preview = hoverRecord && <div className="ink-hover-card" role="region" aria-label={t('地图地点预览')} onPointerEnter={() => { hoverCardActive.current = true; keepHover(); }} onPointerLeave={() => { hoverCardActive.current = false; leaveHover(); }} onFocusCapture={keepHover} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) leaveHover(); }}>
+    <button type="button" className="preview-close" aria-label={t('收起地点预览')} onClick={() => { closePreview(); mapFrame.current?.focus({ preventScroll: true }); }}>×</button>
+    <span>{hoverRecord.region}</span><b>{hoverRecord.name}</b>
+    <ContentOrigin record={hoverRecord} />
+    <div className="preview-body">
+      {hoverRecord.kind === 'story' && !activeJourneyId && !isFullscreen && iconFor(hoverRecord) && <ArtworkImage key={hoverRecord.id} className="preview-art" src={iconFor(hoverRecord, 'preview')} alt="" interactive={false} />}
+      <p>{storySummary(hoverRecord.id, locale) || hoverRecord.description}</p>
+    </div>
+    <div className="preview-actions">
+      <button type="button" className="preview-read" aria-label={t('展开原文与出处 ↗')} onClick={event => onSelect(hoverRecord.id, event.currentTarget)}>{t('展开阅读')}</button>
+      {hoverStoryId && <button type="button" onClick={() => { onManualStoryChange(); setJourneyId(hoverStoryId); setCameraMode('story'); setCameraRequest(value => value + 1); closePreview(); }} aria-label={t('播放故事动画')}>{t('播放动画')}</button>}
+    </div>
+  </div>;
+  const legend = <small className="map-range-legend"><i className="legend-story" />{t("故事示意")}<i className="legend-place" />{t("篇目地点")}<i />{t("篇目山列")}<span>{t("兽形图标：异兽")}</span><span className="map-reading-hint"><img src={readingSeal} alt="" />{t('朱印旁的名称可点阅')}</span></small>;
   const layerStatus = <div className="map-layer-summary" role="status">{activeLayers.beasts && <span>{availableBeasts.length ? t("异兽图层 · ") + mappedBeastCount + t(" 条已关联") : t("本章暂无异兽")}{!availableBeasts.length && <button onClick={activeLayers.onGoToFirstBeast}>{t("前往第 3 章 ↗")}</button>}</span>}{activeLayers.divine && <span>{t("神域已显示")}</span>}</div>;
   const fullscreenButton = <button className="map-fullscreen" onClick={toggleFullscreen} aria-pressed={isFullscreen} aria-label={isFullscreen ? t("退出地图全屏") : t("地图全屏")}>{isFullscreen ? t("退出全屏") : t("全屏展示")}</button>;
 
@@ -619,9 +595,6 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     </div>}
     {!isPrologue && <>
       {!isFullscreen && <><div className="map-orientation" aria-label={t("示意北向")}><span>{t("示意北向")} ↑</span></div></>}
-    {visiblePortrait && !isFullscreen && <div key={visiblePortrait.id} className={`map-role-portrait ${visiblePortrait.above ? 'is-above' : 'is-below'} ${visiblePortrait.record.artworks?.length > 1 ? 'has-pair' : ''}`} style={{ left: visiblePortrait.left, top: visiblePortrait.top, width: visiblePortrait.width, height: visiblePortrait.height }} aria-hidden="true">
-      {(visiblePortrait.record.artworks?.length ? visiblePortrait.record.artworks : [visiblePortrait.record.artwork]).filter(Boolean).map((artwork, index) => <img key={`${visiblePortrait.id}-${index}`} src={assetUrl(artwork.startsWith('/') ? artwork : `/data/atlas/myth-icons/${artwork}`, 'preview')} alt="" />)}
-    </div>}
       {!isFullscreen && preview}
     <AnimationBoundary key={chapterId + '-' + activeJourneyId} fallback={<AnimationFailure onStatus={handlePlayback} onSkip={() => setJourneyId(null)} />}>
     <Suspense fallback={<AnimationLoading onStatus={handlePlayback} />}>
@@ -633,7 +606,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     </>}
     <ChapterNotice change={chapterTransition} title={stages[stageIndex].title} />
     </div>
-    {geographyVisited && <div className="geography-main" hidden={!geographyMode}><GeographyMap readingActions={geographyMode ? readingActions : null} catalog={catalog} chapterId={chapterId} currentEventId={geographyEventId} visible={geographyMode} transitioning={chapterTransition} isFullscreen={isFullscreen} snapshot={geographySnapshot} onSnapshot={onGeographySnapshot} onEventChange={onGeographyEventChange} onOpen={id => onSelect(id)} /></div>}
+    {geographyVisited && <div className="geography-main" hidden={!geographyMode}><GeographyMap readingActions={geographyMode ? readingActions : null} catalog={catalog} chapterId={chapterId} currentEventId={geographyEventId} currentReferenceId={geographyReferenceId} onReferenceChange={onGeographyReferenceChange} locateRequest={geographyLocateRequest} fromSearch={geographyFromSearch} onReturnToSearch={onGeographyReturnToSearch} visible={geographyMode} transitioning={chapterTransition} isFullscreen={isFullscreen} snapshot={geographySnapshot} onSnapshot={onGeographySnapshot} onEventChange={onGeographyEventChange} onOpen={(id, trigger) => onSelect(id, trigger)} /></div>}
     <MapPlayback readingActions={!geographyMode ? readingActions : null} hidden={geographyMode} isFullscreen={isFullscreen} isPrologue={isPrologue} activeJourneyId={activeJourneyId} onSelect={onSelect} controlRef={setControlContainer} preview={preview} legend={legend} layerStatus={layerStatus} readingNote={readingNote} cameraMode={cameraMode} onCloseup={() => { setCameraMode('story'); setCameraRequest(value => value + 1); }} onOverview={() => fitStage()} />
   </section></>;
 }

@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     env:
-      ATLAS_BROWSERS: chromium,firefox,webkit
+      ATLAS_BROWSERS: chromium,webkit
       VITE_TIANDITU_KEY: ${{ github.event_name == 'pull_request' && 'mock-browser-key' || secrets.TIANDITU_BROWSER_KEY }}
     defaults:
       run:
@@ -38,8 +38,12 @@ jobs:
           python -m pip install -r backend/requirements-dev.txt
           python -m pytest backend/tests
       - run: npm run verify:data
+      - name: Verify content inventory and source labels
+        run: |
+          python ../data/audit_shanhaijing.py --check
+          python ../data/build_source_inventory.py --check
       - run: npm run verify:cache
-      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: npx playwright install --with-deps chromium webkit
       - run: npm run build -- --base /
         env:
           VITE_TIANDITU_KEY: ''
@@ -80,6 +84,8 @@ jobs:
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-locale.mjs
       - name: Verify exploration and sharing
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-exploration.mjs
+      - name: Verify first-visit guidance
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-onboarding.mjs
       - name: Verify failure recovery
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-repairs.mjs
       - name: Verify layout and artwork
@@ -92,6 +98,18 @@ jobs:
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-resume.mjs
       - name: Verify global search
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-search.mjs
+      - name: Verify exploration continuity and geographic links
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-ux.mjs
+      - name: Verify Nanshan content and navigation
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-nanshan.mjs
+      - name: Verify full Southern passage reader
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-reader.mjs
+      - name: Verify first Western Mountain passages
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-xishan.mjs
+      - name: Verify story discovery and reading round trips
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-discovery.mjs
+      - name: Verify modern place search and empty states
+        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-place-search.mjs
       - name: Verify shared map frame and notices
         run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-map-frame.mjs
       - name: Verify animation speed

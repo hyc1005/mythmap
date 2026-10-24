@@ -1,0 +1,170 @@
+[
+  {
+    "ids": [
+      "place-zhaoyao",
+      "plant-zhuyu"
+    ],
+    "source": "《南山经》",
+    "quote": "有草焉，其状如韭而青花，其名曰祝余",
+    "labels": [
+      "山中所见",
+      "见于此山"
+    ]
+  },
+  {
+    "ids": [
+      "place-zhaoyao",
+      "plant-migu"
+    ],
+    "source": "《南山经》",
+    "quote": "有木焉，其状如榖而黑理，其花四照，其名曰迷谷",
+    "labels": [
+      "山中所见",
+      "见于此山"
+    ]
+  },
+  {
+    "ids": [
+      "place-zhaoyao",
+      "beast-shengsheng"
+    ],
+    "source": "《南山经》",
+    "quote": "其名曰狌狌",
+    "labels": [
+      "山中所见",
+      "见于此山"
+    ]
+  },
+  {
+    "ids": [
+      "place-zhaoyao",
+      "water-liji"
+    ],
+    "source": "《南山经》",
+    "quote": "丽𪊨之水出焉",
+    "labels": [
+      "水出此山",
+      "水源记述"
+    ]
+  },
+  {
+    "ids": [
+      "water-liji",
+      "material-yupei"
+    ],
+    "source": "《南山经》",
+    "quote": "其中多育沛",
+    "labels": [
+      "水中所记",
+      "见于此水"
+    ]
+  },
+  {
+    "ids": [
+      "place-niuyang",
+      "beast-lushu"
+    ],
+    "source": "《南山经》",
+    "quote": "其名曰鹿蜀",
+    "labels": [
+      "山中所见",
+      "见于此山"
+    ]
+  },
+  {
+    "ids": [
+      "place-niuyang",
+      "water-guai"
+    ],
+    "source": "《南山经》",
+    "quote": "怪水出焉",
+    "labels": [
+      "水出此山",
+      "水源记述"
+    ]
+  },
+  {
+    "ids": [
+      "water-guai",
+      "water-xianyi"
+    ],
+    "source": "《南山经》",
+    "quote": "怪水出焉，而东流注于宪翼之水",
+    "labels": [
+      "向东流入",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-guai",
+      "beast-xuangui"
+    ],
+    "source": "《南山经》",
+    "quote": "其中多玄龟，其状如龟而鸟首虺尾，其名曰旋龟",
+    "labels": [
+      "水段所见",
+      "本段水域"
+    ]
+  },
+  {
+    "ids": [
+      "place-qingqiu",
+      "beast-jiuweihu"
+    ],
+    "source": "《南山经》",
+    "quote": "其状如狐而九尾",
+    "labels": [
+      "山中所见",
+      "见于此山"
+    ]
+  },
+  {
+    "ids": [
+      "place-qingqiu",
+      "beast-guanguan"
+    ],
+    "source": "《南山经》",
+    "quote": "有鸟焉，其状如鸠，其音若呵，名曰灌灌",
+    "labels": [
+      "山中所见",
+      "见于此山"
+    ]
+  },
+  {
+    "ids": [
+      "place-qingqiu",
+      "water-ying-qingqiu"
+    ],
+    "source": "《南山经》",
+    "quote": "英水出焉，南流注于即翼之泽",
+    "labels": [
+      "水出此山",
+      "水源记述"
+    ]
+  },
+  {
+    "ids": [
+      "water-ying-qingqiu",
+      "water-jiyi"
+    ],
+    "source": "《南山经》",
+    "quote": "南流注于即翼之泽",
+    "labels": [
+      "向南流入",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-ying-qingqiu",
+      "beast-chiru"
+    ],
+    "source": "《南山经》",
+    "quote": "其中多赤鱬，其状如鱼而人面",
+    "labels": [
+      "水段所见",
+      "本段水域"
+    ]
+  }
+]

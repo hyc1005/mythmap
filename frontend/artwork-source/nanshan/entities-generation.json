@@ -1,0 +1,727 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "name": "scene-yuanyi",
+      "entry_ids": [
+        "place-nanshan-yuanyi"
+      ],
+      "subject": "Another 380 li east is Mount Yuanyi. It has unusual beasts, unusual fish in its waters, white jade, venomous creatures, strange snakes and strange trees. It cannot be ascended.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 380 li east is Mount Yuanyi. It has unusual beasts, unusual fish in its waters, white jade, venomous creatures, strange snakes and strange trees. It cannot be ascended. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: wooded steep mountain and water, no invented creature form; transparent outer corners.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-00df5da0-3d36-4f68-bd34-c45ab4384f36.png"
+    },
+    {
+      "name": "scene-di",
+      "entry_ids": [
+        "place-nanshan-di"
+      ],
+      "subject": "Three hundred li east is the fifth mountain, with much water but no vegetation. A fish called Lu resembles an ox, lives on land, has a serpent tail and wings beneath its flanks, and has a bovine-like cry; the precise comparison includes an unresolved image glyph. It is said to die in winter and live in summer; eating it is said to prevent swelling.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Subject: a barren mountain with abundant water streams and pools, absolutely no vegetation. Focus on mountain and abundant water only, no animals, people, gods or rituals. Strong traditional carved knife lines, restrained ink hatching, sparse ochre rock and muted celadon water. Irregular isolated vignette silhouette with full transparent margins. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: barren mountain with abundant streams and pools; no vegetation or creatures; carved woodcut lines and transparent outer corners.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-9a5cc565-e5a9-43ee-bf8b-46c79ea6b2f3.png"
+    },
+    {
+      "name": "scene-danyuan",
+      "entry_ids": [
+        "place-nanshan-danyuan"
+      ],
+      "subject": "Another 400 li east is Mount Danyuan, with water but no vegetation; it cannot be ascended. A creature named 𩔗 resembles a wildcat with a mane and is described as both female and male. Eating it is said to prevent jealousy.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 400 li east is Mount Danyuan, with water but no vegetation; it cannot be ascended. A creature named 𩔗 resembles a wildcat with a mane and is described as both female and male. Eating it is said to prevent jealousy. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-051d37e4-4979-44c3-ad91-c835b533aa44.png"
+    },
+    {
+      "name": "scene-jishan",
+      "entry_ids": [
+        "place-nanshan-jishan"
+      ],
+      "subject": "Another 300 li east is Mount Ji, with jade on its sunny side and strange trees on its shaded side. Boyi resembles a sheep with nine tails, four ears and eyes on its back; wearing it is said to prevent fear. The chicken-like bird 𪁺𩿧 has three heads, six eyes, six feet and three wings; eating it is said to prevent sleep.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 300 li east is Mount Ji, with jade on its sunny side and strange trees on its shaded side. Boyi resembles a sheep with nine tails, four ears and eyes on its back; wearing it is said to prevent fear. The chicken-like bird 𪁺𩿧 has three heads, six eyes, six feet and three wings; eating it is said to prevent sleep. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-608c152e-85d5-441e-849b-4aad41894a2e.png"
+    },
+    {
+      "name": "scene-jiwei",
+      "entry_ids": [
+        "place-nanshan-jiwei"
+      ],
+      "subject": "Another 350 li east is Mount Jiwei, whose tail sits above the Eastern Sea. It has sand and stones. The Fang River rises here and flows south into Yu, with much white jade in its waters.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 350 li east is Mount Jiwei, whose tail sits above the Eastern Sea. It has sand and stones. The Fang River rises here and flows south into Yu, with much white jade in its waters. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-eca490eb-9e5f-4544-a68a-40d78b2951f1.png"
+    },
+    {
+      "name": "scene-gui",
+      "entry_ids": [
+        "place-nanshan-gui"
+      ],
+      "subject": "The second Southern range begins at Gui: facing Liuhuang west, Zhupi north and Changyou east. Its Ying River flows southwest into Red Water, containing white jade and cinnabar grains. Lili resembles a pig with spurs and barks like a dog; its appearance is said to accompany earthworks. Zhu resembles a kite with human-hand-like feet, makes a bi-like sound and calls its name; its appearance is said to accompany dismissed officials.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: The second Southern range begins at Gui: facing Liuhuang west, Zhupi north and Changyou east. Its Ying River flows southwest into Red Water, containing white jade and cinnabar grains. Lili resembles a pig with spurs and barks like a dog; its appearance is said to accompany earthworks. Zhu resembles a kite with human-hand-like feet, makes a bi-like sound and calls its name; its appearance is said to accompany dismissed officials. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-73ccade0-d65c-4ea2-a520-804dbc828478.png"
+    },
+    {
+      "name": "scene-changyou",
+      "entry_ids": [
+        "place-nanshan-changyou"
+      ],
+      "subject": "Southeast for 450 li is Mount Changyou, with water but no vegetation. The ape-like, four-eared Changyou makes a moaning sound. Its appearance is said to foretell great floods in the district.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Southeast for 450 li is Mount Changyou, with water but no vegetation. The ape-like, four-eared Changyou makes a moaning sound. Its appearance is said to foretell great floods in the district. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-66d71ee2-486b-4fe1-b70d-b082f1791cb5.png"
+    },
+    {
+      "name": "scene-yaoguang",
+      "entry_ids": [
+        "place-nanshan-yaoguang"
+      ],
+      "subject": "Another 340 li east is Mount Yaoguang, with jade on its sunny side and metal on its shaded side. Huahuai is human-like with pig bristles, lives in caves and is dormant in winter. It sounds like chopping wood; its appearance is said to accompany great labor levies in the district.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 340 li east is Mount Yaoguang, with jade on its sunny side and metal on its shaded side. Huahuai is human-like with pig bristles, lives in caves and is dormant in winter. It sounds like chopping wood; its appearance is said to accompany great labor levies in the district. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-b2321a6d-be0e-4569-b725-45990914e49f.png"
+    },
+    {
+      "name": "scene-yu",
+      "entry_ids": [
+        "place-nanshan-yu"
+      ],
+      "subject": "Another 350 li east is Mount Yu. It has much water below and much rain above, no vegetation, and many venomous creatures.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 350 li east is Mount Yu. It has much water below and much rain above, no vegetation, and many venomous creatures. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-da702844-868f-4944-8465-87ff82c6ad37.png"
+    },
+    {
+      "name": "scene-qufu",
+      "entry_ids": [
+        "place-nanshan-qufu"
+      ],
+      "subject": "Another 370 li east is Mount Qufu, without vegetation and with much metal and jade.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 370 li east is Mount Qufu, without vegetation and with much metal and jade. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-b1c3c348-32e4-4273-a8ed-4410ffa68cd1.png"
+    },
+    {
+      "name": "scene-gouyu",
+      "entry_ids": [
+        "place-nanshan-gouyu"
+      ],
+      "subject": "Another 400 li east is Mount Gouyu, without vegetation and with much metal and jade.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 400 li east is Mount Gouyu, without vegetation and with much metal and jade. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-882f2986-7e6e-4a2c-ba3a-9d0913462423.png"
+    },
+    {
+      "name": "scene-fuyu",
+      "entry_ids": [
+        "place-nanshan-fuyu"
+      ],
+      "subject": "Another 500 li east is Fuyu, looking north to Juqu and east to Zhupi. Zhi resembles a tiger with an ox tail, barks like a dog and eats people. The Tiao River rises on the shaded side and flows north into Juqu, with many ji fish.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Fuyu, looking north to Juqu and east to Zhupi. Zhi resembles a tiger with an ox tail, barks like a dog and eats people. The Tiao River rises on the shaded side and flows north into Juqu, with many ji fish. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: mountain, large receiving water and river scene; modern identification and scale not inferred.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-f1149543-efa3-41fc-a72f-9bcf255e964c.png"
+    },
+    {
+      "name": "scene-cheng",
+      "entry_ids": [
+        "place-nanshan-cheng"
+      ],
+      "subject": "Another 500 li east is Mount Cheng, square and in three terrace-like tiers. Metals and jade occur above, green mineral below. The 䦠 River flows south into Hushao and contains much gold.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Mount Cheng, square and in three terrace-like tiers. Metals and jade occur above, green mineral below. The 䦠 River flows south into Hushao and contains much gold. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: three tier-like mountain levels, mineral hints and water; artistic landform only.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a14cad-a82a-7332-bf33-83dc2c58b051\\exec-9bb58d0c-7e42-4198-98ca-0b7201ca4809.png"
+    },
+    {
+      "name": "scene-kuaiji",
+      "entry_ids": [
+        "place-nanshan-kuaiji"
+      ],
+      "subject": "Another 500 li east is square Mount Kuaiji, with metals and jade above and fu stone below. The Shao River rises here and flows south into Ju.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is square Mount Kuaiji, with metals and jade above and fu stone below. The Shao River rises here and flows south into Ju. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-eec89ad6-2fa7-425b-8181-e31f3f253831.png"
+    },
+    {
+      "name": "scene-yi",
+      "entry_ids": [
+        "place-nanshan-yi"
+      ],
+      "subject": "Another 500 li east is Mount Yi, with no vegetation and much sand and stone. The Ju River rises here and flows south into Lietu.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Mount Yi, with no vegetation and much sand and stone. The Ju River rises here and flows south into Lietu. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-4c6fab3e-5011-4cb8-abcc-9385537cafc8.png"
+    },
+    {
+      "name": "scene-pugou",
+      "entry_ids": [
+        "place-nanshan-pugou"
+      ],
+      "subject": "Another 500 li east is Mount Pugou: metals and jade above, vegetation below, but no birds or beasts and no water.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Mount Pugou: metals and jade above, vegetation below, but no birds or beasts and no water. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-c94b9bc6-7623-4c78-b8d3-e0557aedd2d6.png"
+    },
+    {
+      "name": "scene-hushao",
+      "entry_ids": [
+        "place-nanshan-hushao"
+      ],
+      "subject": "Another 400 li east is Mount Hushao, with zi and nan trees above and jing and qi shrubs below. The Pang River rises here and flows east into the sea.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 400 li east is Mount Hushao, with zi and nan trees above and jing and qi shrubs below. The Pang River rises here and flows east into the sea. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-af8beada-8feb-4be0-a450-46ca5924d9d7.png"
+    },
+    {
+      "name": "scene-quwu",
+      "entry_ids": [
+        "place-nanshan-quwu"
+      ],
+      "subject": "Another 500 li east is Mount Quwu, without vegetation and with much sand and stone. The Lu River rises here and flows south into Pang.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Mount Quwu, without vegetation and with much sand and stone. The Lu River rises here and flows south into Pang. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-b4982d8b-e964-4b3b-8ca7-ef54fda01063.png"
+    },
+    {
+      "name": "scene-xianyin",
+      "entry_ids": [
+        "place-nanshan-xianyin"
+      ],
+      "subject": "Another 500 li east is Mount Xianyin, without vegetation and without water.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Mount Xianyin, without vegetation and without water. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-2d806810-b2ff-4b7c-9eb2-85d3ae876713.png"
+    },
+    {
+      "name": "scene-luwu",
+      "entry_ids": [
+        "place-nanshan-luwu"
+      ],
+      "subject": "Another 500 li east is Luwu, without vegetation above and with metals and stones. Zegeng Water flows south into Pang. In the water is Gudiao, resembling an eagle with horns, crying like an infant and eating people.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Luwu, without vegetation above and with metals and stones. Zegeng Water flows south into Pang. In the water is Gudiao, resembling an eagle with horns, crying like an infant and eating people. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-f42d4ae9-7881-484b-9470-25f7cedc1825.png"
+    },
+    {
+      "name": "scene-qiwu",
+      "entry_ids": [
+        "place-nanshan-qiwu"
+      ],
+      "subject": "Five hundred li east is Mount Qiwu, with no vegetation, many stones for game pieces and no jade. It stands by the sea, looking east to Qiushan. Its light appears and disappears; this is called a station of the sun.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Five hundred li east is Mount Qiwu, with no vegetation, many stones for game pieces and no jade. It stands by the sea, looking east to Qiushan. Its light appears and disappears; this is called a station of the sun. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-0af8a5c2-10c2-433f-9e7c-5b48032bf805.png"
+    },
+    {
+      "name": "scene-tianyu",
+      "entry_ids": [
+        "place-nanshan-tianyu"
+      ],
+      "subject": "The third Southern range begins at Mount Tianyu. Below it is much water; it cannot be ascended.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: The third Southern range begins at Mount Tianyu. Below it is much water; it cannot be ascended. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-514bdc94-eb81-4719-9b34-4e5df13ea0d4.png"
+    },
+    {
+      "name": "scene-daoguo",
+      "entry_ids": [
+        "place-nanshan-daoguo"
+      ],
+      "subject": "Five hundred li east is Daoguo, with metal and jade above and rhinoceroses, si and elephants below. Quru resembles a jiao waterbird, with a white head, three feet and a human face, calling its own name. Yin Water flows south into the sea and contains Hujiao, with a fish body, serpent tail and a mandarin-duck-like call; eating it is said to prevent swelling and treat hemorrhoids.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Five hundred li east is Daoguo, with metal and jade above and rhinoceroses, si and elephants below. Quru resembles a jiao waterbird, with a white head, three feet and a human face, calling its own name. Yin Water flows south into the sea and contains Hujiao, with a fish body, serpent tail and a mandarin-duck-like call; eating it is said to prevent swelling and treat hemorrhoids. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-025fbc2e-e08e-46c2-8515-240bc57aea16.png"
+    },
+    {
+      "name": "scene-fashuang",
+      "entry_ids": [
+        "place-nanshan-fashuang"
+      ],
+      "subject": "Another 500 li east is Fashuang, without vegetation, with much water and many white apes. Fan Water rises here and flows south into the Bohai named in the text.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Fashuang, without vegetation, with much water and many white apes. Fan Water rises here and flows south into the Bohai named in the text. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-33124b0f-8c0b-4656-8912-045ff24797f7.png"
+    },
+    {
+      "name": "scene-maowei",
+      "entry_ids": [
+        "place-nanshan-maowei"
+      ],
+      "subject": "Another 400 li east reaches the tail of Mount Mao. To its south is Yuyi Valley, with many strange birds. The Kai wind emerges from it.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 400 li east reaches the tail of Mount Mao. To its south is Yuyi Valley, with many strange birds. The Kai wind emerges from it. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-617fd81a-df4d-457b-87a9-b9c4ecdefedc.png"
+    },
+    {
+      "name": "scene-feitou",
+      "entry_ids": [
+        "place-nanshan-feitou"
+      ],
+      "subject": "Another 400 li east reaches the head of Mount Fei, with much metal and jade above but no water, and many venomous creatures below.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 400 li east reaches the head of Mount Fei, with much metal and jade above but no water, and many venomous creatures below. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-f834bd25-b485-4d7d-8655-a6fd0785325b.png"
+    },
+    {
+      "name": "scene-yangjia",
+      "entry_ids": [
+        "place-nanshan-yangjia"
+      ],
+      "subject": "Another 500 li east is Mount Yangjia, with no vegetation and much water.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Mount Yangjia, with no vegetation and much water. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-68f2e241-bd2e-4189-8644-ac61dd7d4149.png"
+    },
+    {
+      "name": "scene-guanxiang",
+      "entry_ids": [
+        "place-nanshan-guanxiang"
+      ],
+      "subject": "Another 500 li east is Mount Guanxiang, with many trees but no grasses, many unusual birds but no beasts.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Mount Guanxiang, with many trees but no grasses, many unusual birds but no beasts. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-2a14c21e-ee6d-419c-8d0b-433ef22f3da8.png"
+    },
+    {
+      "name": "scene-ji",
+      "entry_ids": [
+        "place-nanshan-ji"
+      ],
+      "subject": "Another 500 li east is Chicken Mountain, with metal above and red mineral below. Black Water flows south into the sea and contains Zhuan fish, resembling crucian carp with pig bristles and pig-like cries. Their appearance is said to foretell great drought.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 500 li east is Chicken Mountain, with metal above and red mineral below. Black Water flows south into the sea and contains Zhuan fish, resembling crucian carp with pig bristles and pig-like cries. Their appearance is said to foretell great drought. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-5bba6ed6-4ad6-49c5-84eb-d92addec1563.png"
+    },
+    {
+      "name": "scene-lingqiu",
+      "entry_ids": [
+        "place-nanshan-lingqiu"
+      ],
+      "subject": "Another 400 li east is Lingqiu, without vegetation and with much fire. To its south is Middle Valley, from which the Tiao wind emerges. A bird named 𪃍 resembles an owl with a human face, four eyes and ears; it calls its own name. Its appearance is said to foretell great drought.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 400 li east is Lingqiu, without vegetation and with much fire. To its south is Middle Valley, from which the Tiao wind emerges. A bird named 𪃍 resembles an owl with a human face, four eyes and ears; it calls its own name. Its appearance is said to foretell great drought. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-265137c4-ca41-450f-8199-f854edb4920d.png"
+    },
+    {
+      "name": "scene-lunzhe",
+      "entry_ids": [
+        "place-nanshan-lunzhe"
+      ],
+      "subject": "Another 370 li east is Lunzhe, with metals and jade above and green mineral below. The tree Bai䓘 resembles gu with red grain, lacquer-like sap and a sweet taste like malt syrup. Eating it is said to prevent hunger and relieve fatigue. It can be used to “blood jade,” explained by the commentary as dyeing jade.",
+      "category": "scene",
+      "prompt": "Edit this antique Chinese woodcut mountain vignette. Remove the large red seed-bearing grass/sorghum-like crop in the right foreground. Replace it with a modest paper-mulberry-like broadleaf tree rooted among the rocks, matching the scale of the mountain scene. No fruit, seed heads, crop field or flowers. Preserve mountain forms, stream, subtle jade/green mineral rock texture, carved charcoal lines, restrained ochre/celadon colors and transparent background. The source records metals/jade above, green mineral below, and an unusual tree; it does not describe tall grain crops. No people, animals, text or additional objects.",
+      "reference_images": [
+        "frontend/artwork-source/nanshan/scene-lunzhe-v1.png"
+      ],
+      "review_note": "Removed unsupported grain crops. Mountain minerals, stream and modest broadleaf tree; no fruit or seed heads. Transparent RGBA checked.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-d2058a0a-b8de-4645-9d6b-2f570187f1e7.png",
+      "revisions": [
+        {
+          "source_file": "scene-lunzhe-v1.png",
+          "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 370 li east is Lunzhe, with metals and jade above and green mineral below. The tree Bai䓘 resembles gu with red grain, lacquer-like sap and a sweet taste like malt syrup. Eating it is said to prevent hunger and relieve fatigue. It can be used to “blood jade,” explained by the commentary as dyeing jade. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-0faddadc-83f8-4127-a5b8-ccf80bd2b84d.png",
+          "status": "rejected_unsupported_vegetation"
+        }
+      ],
+      "source_file": "scene-lunzhe-v2.png"
+    },
+    {
+      "name": "scene-yugao",
+      "entry_ids": [
+        "place-nanshan-yugao"
+      ],
+      "subject": "Another 580 li east is Mount Yugao, with many unusual beasts and large snakes.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Another 580 li east is Mount Yugao, with many unusual beasts and large snakes. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-d5a788e7-58ce-4e9e-ab5e-556b268468c4.png"
+    },
+    {
+      "name": "scene-nanyu",
+      "entry_ids": [
+        "place-nanshan-nanyu"
+      ],
+      "subject": "Five hundred eighty li east is Nanyu, with metal and jade above and water below. Water enters a cave in spring, emerges in summer and is closed in winter. Zuo Water flows southeast into the sea. Fenghuang and Yuanchu are present.",
+      "category": "scene",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. Wide landscape vignette. Illustrate the land and water description in this passage: Five hundred eighty li east is Nanyu, with metal and jade above and water below. Water enters a cave in spring, emerges in summer and is closed in winter. Zuo Water flows southeast into the sea. Fenghuang and Yuanchu are present. Focus on the mountain, water and recorded vegetation or its absence. DO NOT include animals, people, gods, rituals or literal magical effects. Mineral abundance is suggested subtly in rock texture. No extra modern geographic landmarks. Landform shape is artistic, not a reconstruction.",
+      "reference_images": [],
+      "review_note": "Reviewed: Mountain scene checked against recorded vegetation/barrenness; no animals, people or modern objects. Artistic landform, not geographic reconstruction. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-292fa26b-1525-453a-8b11-7d6ed5ddcbd6.png"
+    },
+    {
+      "name": "creature-lu",
+      "entry_ids": [
+        "beast-nanshan-lu"
+      ],
+      "subject": "An ox-shaped creature with four bovine legs, a long serpent tail, and exactly two feathered wings emerging below the left and right ribs. No fish head; no fins replacing the legs. Full body, three-quarter view.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. An ox-shaped creature with four bovine legs, a long serpent tail, and exactly two feathered wings emerging below the left and right ribs. No fish head; no fins replacing the legs. Full body, three-quarter view. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Ox-like head/body, four hooves, serpent tail, flank wings; no fish head. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-660f1572-98b5-46d3-89d7-5d5700284245.png"
+    },
+    {
+      "name": "creature-lei",
+      "entry_ids": [
+        "beast-nanshan-lei"
+      ],
+      "subject": "One wildcat-like quadruped with a conspicuous mane around the neck. Ordinary external anatomy, no sexual organs, no extra heads or limbs. Full body.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One wildcat-like quadruped with a conspicuous mane around the neck. Ordinary external anatomy, no sexual organs, no extra heads or limbs. Full body. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Wildcat-like with mane; no explicit sexual anatomy. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-d7ffa7d1-b94e-4c62-9301-577a90a4133c.png"
+    },
+    {
+      "name": "creature-changfu",
+      "entry_ids": [
+        "beast-nanshan-changfu"
+      ],
+      "subject": "An anatomically deliberate chicken-like mythical bird, EXACTLY THREE separate heads, each head with TWO visible eyes (six eyes total), EXACTLY SIX separate legs and feet, EXACTLY THREE feathered wings. Frontal three-quarter symmetrical display, the third wing rises behind the back; keep every head, foot and wing separated and countable. One body, no extra parts.",
+      "category": "creature",
+      "prompt": "Edit this Shanhaijing antique woodcut illustration. Keep the three rooster-like heads, six eyes (two on each head), charcoal knife-line style, restrained ochre/celadon/cinnabar palette and transparent background. Correct anatomy: the SINGLE bird must have EXACTLY SIX distinct legs with SIX separate clawed feet. Arrange all six feet clearly spaced across the bottom in one readable row, with no overlapping or hidden feet; every foot visibly attached to a separate leg. Keep exactly THREE wings: one left spread wing, one right spread wing, and a third distinct upward spread feathered wing behind the central head. Do not confuse the third wing with a tail; reduce tail ornament to clarify it. Preserve whole body with generous transparent margin. No words, labels, seal, background, ground or extra creatures.",
+      "reference_images": [
+        "frontend/artwork-source/nanshan/creature-changfu-v1.png"
+      ],
+      "review_note": "Reviewed: Three heads, six eyes, six separate legs/feet, three wings including upright back wing. Rejected five-foot draft retained. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-b828d2b9-005a-4a1d-854f-3bcffc6c879e.png",
+      "revisions": [
+        {
+          "source_file": "creature-changfu-v1.png",
+          "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. An anatomically deliberate chicken-like mythical bird, EXACTLY THREE separate heads, each head with TWO visible eyes (six eyes total), EXACTLY SIX separate legs and feet, EXACTLY THREE feathered wings. Frontal three-quarter symmetrical display, the third wing rises behind the back; keep every head, foot and wing separated and countable. One body, no extra parts. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-e9a464b7-67d8-4cb6-abb4-f6e923c9c3d6.png",
+          "status": "rejected_anatomy",
+          "review_note": "Only five clearly readable feet."
+        }
+      ],
+      "source_file": "creature-changfu-v2.png"
+    },
+    {
+      "name": "creature-lili",
+      "entry_ids": [
+        "beast-nanshan-lili"
+      ],
+      "subject": "A single pig-like quadruped with pig snout, hoofed feet and conspicuous small rooster-like spurs behind the lower legs. No canine head, no digging tools, no human hands. Full body.",
+      "category": "creature",
+      "prompt": "Use case: precise-object-edit. Edit this Lili woodcut illustration. Keep ONE pig-like quadruped with one pig head, two ears, four cloven-hoofed legs and one tail. Its distinguishing textual feature is SPURS on the feet, not a dog head: make the backward-curving spurs long, bold and clearly separated from each of the four ankles, especially the two foreground ankles, so they read as an unusual feature at 128px. Retain cloven hooves and do not add extra legs. Recompose with a tense low crouch and more angular elongated archaic body silhouette; stylize its pig face and coat into bold carved ink curls, flat ochre/celadon planes and ivory negative spaces. It should read as an old Chinese mythological bestiary engraving rather than a realistic domestic pig. No dog head, horns, wings, new eyes, armor, jewelry, scenery, humans or violence. No text, labels, seals, glow or gradient lighting. Preserve full anatomy and generous transparent margins.",
+      "reference_images": [
+        "frontend/artwork-source/nanshan/creature-lili-v1.png"
+      ],
+      "review_note": "User review: four long separated ankle spurs, cloven hooves, crouched stylized pig form; no dog head or additional limbs. Transparent RGBA verified.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-abea3549-fd44-4b39-829b-9b2da5c7ab22.png",
+      "revisions": [
+        {
+          "source_file": "creature-lili-v1.png",
+          "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. A single pig-like quadruped with pig snout, hoofed feet and conspicuous small rooster-like spurs behind the lower legs. No canine head, no digging tools, no human hands. Full body. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-817a87c2-b051-4917-befd-842ec1de801e.png",
+          "status": "superseded_after_user_review",
+          "review_note": "User requested stronger mythical silhouette and emphasis on text-supported features."
+        }
+      ],
+      "source_file": "creature-lili-v2.png"
+    },
+    {
+      "name": "creature-zhu",
+      "entry_ids": [
+        "beast-nanshan-zhu"
+      ],
+      "subject": "One kite-like raptor with a feathered bird body, wings and normal bird head, but exactly two feet anatomically shaped like human hands with five fingers each. Hands attach only at the two legs; no extra human arms. Full body.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One kite-like raptor with a feathered bird body, wings and normal bird head, but exactly two feet anatomically shaped like human hands with five fingers each. Hands attach only at the two legs; no extra human arms. Full body. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Bird of prey with two hand-like feet, no human arms. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-b53ecef4-89d0-4cd1-84b6-32b63f1a513f.png"
+    },
+    {
+      "name": "creature-changyou",
+      "entry_ids": [
+        "beast-nanshan-changyou"
+      ],
+      "subject": "One ape-like full-body creature with exactly FOUR distinct external ears, two on each side of its head. Ordinary ape face and limbs, no horns, no wings, no magic water.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One ape-like full-body creature with exactly FOUR distinct external ears, two on each side of its head. Ordinary ape face and limbs, no horns, no wings, no magic water. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Ape-like with four visible ears. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-ddeb91ea-b04e-4bfc-8d91-3b73b647214a.png"
+    },
+    {
+      "name": "creature-huahuai",
+      "entry_ids": [
+        "beast-nanshan-huahuai"
+      ],
+      "subject": "One non-sexual human-like mythical figure with modest dense coarse pig bristles covering the shoulders, spine and torso, seated in a neutral crouch near a small rock. Human-like face, not a pig head; no clothes, tools or exposed genitals. Full body.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One non-sexual human-like mythical figure with modest dense coarse pig bristles covering the shoulders, spine and torso, seated in a neutral crouch near a small rock. Human-like face, not a pig head; no clothes, tools or exposed genitals. Full body. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Human-like with coarse boar-like mane, no pig head. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-3a505a7a-08b5-4481-8e19-d612464a062b.png"
+    },
+    {
+      "name": "creature-zhi",
+      "entry_ids": [
+        "beast-nanshan-zhi"
+      ],
+      "subject": "One tiger-like quadruped with striped coat and a bovine ox tail ending in a dark tuft instead of a tiger tail. Neutral standing pose, full body, no prey or violence.",
+      "category": "creature",
+      "prompt": "Use case: precise-object-edit. Edit the provided woodcut Zhi illustration for a Shanhaijing atlas. The reference is the EDIT TARGET. Keep ONE tiger-like quadruped with one ox tail and exactly four paws, no horns, wings, extra eyes or heads. Main correction: give its BOVINE TAIL visual dominance, a long unstriped slender ox tail arching broadly out to the side in a large empty silhouette loop, ending in an exceptionally bold long black hair tassel; make the tuft around one third the torso height so it is unmistakeable even at 128px. Do not draw a tiger's striped cylindrical tail. Recompose as a deliberately archaic mythical beast: elongated angular torso, strong crouched contour, stylized blunt tiger mask, broad carved spiral/cloud-like stripe rhythms, not a zoological portrait. Reduce individually realistic fur and naturalistic shading; use bold flat charcoal woodcut cuts and clear ivory negative space, restrained ochre/celadon with sparse cinnabar. Keep the tiger resemblance, tiger face and four paws as the textual basis; the exaggeration is artistic emphasis, NOT new anatomy. Entire body and tail visible with generous transparent margins. No prey, violence, ground, scenery, text, seals, props or glowing effects.",
+      "reference_images": [
+        "frontend/artwork-source/nanshan/creature-zhi-v1.png"
+      ],
+      "review_note": "User review: enlarged unstriped bovine tail and black tassel, visible separate silhouette; archaic flat cloud stripes, four paws, no extra anatomy. Transparent RGBA verified.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-5da59fda-ddbb-4df5-8b84-89d1c7442a50.png",
+      "revisions": [
+        {
+          "source_file": "creature-zhi-v1.png",
+          "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One tiger-like quadruped with striped coat and a bovine ox tail ending in a dark tuft instead of a tiger tail. Neutral standing pose, full body, no prey or violence. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-7d78860d-33a1-4c25-9625-860693c91766.png",
+          "status": "superseded_after_user_review",
+          "review_note": "User requested stronger mythical silhouette and emphasis on text-supported features."
+        }
+      ],
+      "source_file": "creature-zhi-v2.png"
+    },
+    {
+      "name": "creature-huan-xun",
+      "entry_ids": [
+        "beast-nanshan-huan-xun"
+      ],
+      "subject": "One sheep-like quadruped whose face has eyes and nostrils but absolutely NO mouth opening, lips or mouth line. Calm full-body three-quarter pose. Normal wool, no wounds, no sealed stitches, no extra organs. Make the mouthless face clearly visible.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One sheep-like quadruped whose face has eyes and nostrils but absolutely NO mouth opening, lips or mouth line. Calm full-body three-quarter pose. Normal wool, no wounds, no sealed stitches, no extra organs. Make the mouthless face clearly visible. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Sheep-like without visible mouth, no stitched seam. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-d2b3385e-d99e-44b9-af7e-477aabbd0d54.png"
+    },
+    {
+      "name": "creature-quru",
+      "entry_ids": [
+        "beast-nanshan-quru"
+      ],
+      "subject": "One waterbird-like bird with a white feathered head framing a clearly human face, exactly THREE separate legs and feet. Exactly two normal feathered wings. Full body, all three feet clearly separated on the ground, no additional heads.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One waterbird-like bird with a white feathered head framing a clearly human face, exactly THREE separate legs and feet. Exactly two normal feathered wings. Full body, all three feet clearly separated on the ground, no additional heads. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: White head, human face, three separate feet. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-7aa02c5e-4f2a-49b8-bb57-37d3941cf375.png"
+    },
+    {
+      "name": "creature-hujiao",
+      "entry_ids": [
+        "beast-nanshan-hujiao"
+      ],
+      "subject": "One aquatic mythical creature with a true FISH head and scaled fish torso with fins, transitioning into a long tapering SERPENT tail. NO tiger head, no tiger markings, no legs, no wings, no horns. Full body gently curved.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One aquatic mythical creature with a true FISH head and scaled fish torso with fins, transitioning into a long tapering SERPENT tail. NO tiger head, no tiger markings, no legs, no wings, no horns. Full body gently curved. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Fish body and head with serpent tail, no tiger head/claws. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-9dbfeddf-f3a8-402f-b3db-ac72234028c3.png"
+    },
+    {
+      "name": "creature-zhuan",
+      "entry_ids": [
+        "beast-nanshan-zhuan"
+      ],
+      "subject": "One crucian-carp-shaped fish with fins, scales and patches of coarse pig bristles along the body. A normal fish head, NOT a pig snout. Full body side profile, no limbs or wings.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One crucian-carp-shaped fish with fins, scales and patches of coarse pig bristles along the body. A normal fish head, NOT a pig snout. Full body side profile, no limbs or wings. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Crucian-like fish with stiff bristles, no pig head. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-b4cda9f8-79f2-41a6-99c7-74b3b6736f4f.png"
+    },
+    {
+      "name": "creature-yulingqiu",
+      "entry_ids": [
+        "beast-nanshan-yulingqiu"
+      ],
+      "subject": "One owl-like bird with a human face, exactly FOUR clearly visible eyes arranged in two pairs, and two external ears. Feathered body, two wings, two bird feet. Frontal full-body pose, no additional faces or heads.",
+      "category": "creature",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One owl-like bird with a human face, exactly FOUR clearly visible eyes arranged in two pairs, and two external ears. Feathered body, two wings, two bird feet. Frontal full-body pose, no additional faces or heads. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Owl-like bird with human face, four eyes and ears. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-bcbb88c9-36b8-4af8-ab71-36b3182a1e11.png"
+    },
+    {
+      "name": "plant-yan",
+      "entry_ids": [
+        "plant-nanshan-yan"
+      ],
+      "subject": "One complete fruit-bearing tree with modest red apple-like fruits. The tree silhouette and leaves are illustrative, not a botanical identification. No glowing magic effects.",
+      "category": "plant",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One complete fruit-bearing tree with modest red apple-like fruits. The tree silhouette and leaves are illustrative, not a botanical identification. No glowing magic effects. Vertical composition, entire tree visible.",
+      "reference_images": [],
+      "review_note": "Reviewed: Whole tree with red fruit; artistic plant interpretation. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-aa0c9ac0-162c-4258-a2b5-730727660c3d.png"
+    },
+    {
+      "name": "plant-baigao",
+      "entry_ids": [
+        "plant-nanshan-baigao"
+      ],
+      "subject": "One complete paper-mulberry-like tree with subtle red grain visible on a natural exposed trunk patch and a small dark sap bead. No chopped logs, utensils, glowing fruit, human figures or exaggerated red foliage.",
+      "category": "plant",
+      "prompt": "Edit this antique Chinese woodcut tree illustration. Remove ALL white fruit clusters completely and replace their spaces with ordinary paper-mulberry-like leaves and slender branches. Keep the entire tree, existing leaf shape, carved charcoal lines, muted celadon/ochre palette, naturally exposed reddish inner trunk grain and small dark lacquer-like sap bead. The ancient text describes red grain and lacquer-like sap, but does not specify these white fruits. No fruit, flowers, berries, people, labels or extra props. Transparent background and generous margin. Preserve all other composition.",
+      "reference_images": [
+        "frontend/artwork-source/nanshan/plant-baigao-v1.png"
+      ],
+      "review_note": "Removed unsupported white fruits. Whole gu-like tree, red inner trunk grain, dark sap; leaves are artistic interpretation. Transparent RGBA checked.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-a91cc310-2a30-4dac-bd7a-d981be2c6606.png",
+      "revisions": [
+        {
+          "source_file": "plant-baigao-v1.png",
+          "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. One complete paper-mulberry-like tree with subtle red grain visible on a natural exposed trunk patch and a small dark sap bead. No chopped logs, utensils, glowing fruit, human figures or exaggerated red foliage. Vertical composition, entire tree visible.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-656a9638-e30b-4181-87c8-e73e0b8e2d24.png",
+          "status": "rejected_unsupported_vegetation"
+        }
+      ],
+      "source_file": "plant-baigao-v2.png"
+    },
+    {
+      "name": "deity-1",
+      "entry_ids": [
+        "deity-nanshan-1"
+      ],
+      "subject": "A bird body with exactly two wings and two bird feet, topped by one traditional dragon head. A schematic image of the shared form of a range of deities, not a newly invented named god.",
+      "category": "deity",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. A bird body with exactly two wings and two bird feet, topped by one traditional dragon head. A schematic image of the shared form of a range of deities, not a newly invented named god. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Bird body with dragon head; unnamed collective form. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-19e8a627-aec0-4349-a86e-ea24f4dd2767.png"
+    },
+    {
+      "name": "deity-2",
+      "entry_ids": [
+        "deity-nanshan-2"
+      ],
+      "subject": "A long serpentine dragon body with one clear bird head, no human face. A schematic image of the shared form of a range of deities, not a newly invented named god.",
+      "category": "deity",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. A long serpentine dragon body with one clear bird head, no human face. A schematic image of the shared form of a range of deities, not a newly invented named god. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Dragon body with bird head; unnamed collective form. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-ef1da784-0131-4df8-9033-99804619efc4.png"
+    },
+    {
+      "name": "deity-3",
+      "entry_ids": [
+        "deity-nanshan-3"
+      ],
+      "subject": "A long serpentine dragon body with one human face, no bird head. A schematic image of the shared form of a range of deities, not a newly invented named god.",
+      "category": "deity",
+      "prompt": "Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. A long serpentine dragon body with one human face, no bird head. A schematic image of the shared form of a range of deities, not a newly invented named god. Square composition, entire subject visible with generous margin; precise readable anatomy. No landscape or decorative halo.",
+      "reference_images": [],
+      "review_note": "Reviewed: Dragon body with human face; unnamed collective form. RGBA with transparent pixels; four corner alpha values at most 1/255.",
+      "status": "reviewed",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1588b-6ebe-7c01-ac30-7de9bc3d4b53\\exec-3d3c040d-da43-459e-9d93-2961b3e18232.png"
+    }
+  ]
+}

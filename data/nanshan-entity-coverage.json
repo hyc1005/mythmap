@@ -1,0 +1,388 @@
+{
+  "scope": "南山经；常见草木物产留在山概况，泛称怪兽/怪鱼/怪木不虚构独立物种。",
+  "mountain_ids": [
+    "place-zhaoyao",
+    "place-nanshan-tangting",
+    "place-nanshan-yuanyi",
+    "place-niuyang",
+    "place-nanshan-di",
+    "place-nanshan-danyuan",
+    "place-nanshan-jishan",
+    "place-qingqiu",
+    "place-nanshan-jiwei",
+    "place-nanshan-gui",
+    "place-nanshan-changyou",
+    "place-nanshan-yaoguang",
+    "place-nanshan-yu",
+    "place-nanshan-qufu",
+    "place-nanshan-gouyu",
+    "place-nanshan-fuyu",
+    "place-nanshan-cheng",
+    "place-nanshan-kuaiji",
+    "place-nanshan-yi",
+    "place-nanshan-pugou",
+    "place-nanshan-xun",
+    "place-nanshan-hushao",
+    "place-nanshan-quwu",
+    "place-nanshan-xianyin",
+    "place-nanshan-luwu",
+    "place-nanshan-qiwu",
+    "place-nanshan-tianyu",
+    "place-nanshan-daoguo",
+    "place-nanshan-danxue",
+    "place-nanshan-fashuang",
+    "place-nanshan-maowei",
+    "place-nanshan-feitou",
+    "place-nanshan-yangjia",
+    "place-nanshan-guanxiang",
+    "place-nanshan-ji",
+    "place-nanshan-lingqiu",
+    "place-nanshan-lunzhe",
+    "place-nanshan-yugao",
+    "place-nanshan-nanyu"
+  ],
+  "new_beast_ids": [
+    "beast-nanshan-lu",
+    "beast-nanshan-lei",
+    "beast-nanshan-changfu",
+    "beast-nanshan-lili",
+    "beast-nanshan-zhu",
+    "beast-nanshan-changyou",
+    "beast-nanshan-huahuai",
+    "beast-nanshan-zhi",
+    "beast-nanshan-huan-xun",
+    "beast-nanshan-quru",
+    "beast-nanshan-hujiao",
+    "beast-nanshan-zhuan",
+    "beast-nanshan-yulingqiu",
+    "beast-nanshan-yuanchu"
+  ],
+  "new_water_ids": [
+    "water-nanshan-west-sea",
+    "water-nanshan-east-sea",
+    "water-nanshan-fang",
+    "water-nanshan-yu-receiver",
+    "water-nanshan-ying-gui",
+    "water-nanshan-chishui-gui",
+    "water-nanshan-tiao",
+    "water-nanshan-juqu",
+    "water-nanshan-zhupi-fuyu",
+    "water-nanshan-shu",
+    "water-nanshan-hushao-receiver",
+    "water-nanshan-shao",
+    "water-nanshan-ju",
+    "water-nanshan-lietu",
+    "water-nanshan-xun",
+    "water-nanshan-yan-marsh",
+    "water-nanshan-pang",
+    "water-nanshan-lu",
+    "water-nanshan-zegeng",
+    "water-nanshan-yin",
+    "water-nanshan-dan",
+    "water-nanshan-bohai-south",
+    "water-nanshan-fan",
+    "water-nanshan-hei",
+    "water-nanshan-zuo"
+  ],
+  "text_entity_ids": [
+    "place-nanshan-tangting",
+    "place-nanshan-yuanyi",
+    "place-nanshan-di",
+    "place-nanshan-danyuan",
+    "place-nanshan-jishan",
+    "place-nanshan-jiwei",
+    "place-nanshan-gui",
+    "place-nanshan-changyou",
+    "place-nanshan-yaoguang",
+    "place-nanshan-yu",
+    "place-nanshan-qufu",
+    "place-nanshan-gouyu",
+    "place-nanshan-fuyu",
+    "place-nanshan-cheng",
+    "place-nanshan-kuaiji",
+    "place-nanshan-yi",
+    "place-nanshan-pugou",
+    "place-nanshan-xun",
+    "place-nanshan-hushao",
+    "place-nanshan-quwu",
+    "place-nanshan-xianyin",
+    "place-nanshan-luwu",
+    "place-nanshan-qiwu",
+    "place-nanshan-tianyu",
+    "place-nanshan-daoguo",
+    "place-nanshan-danxue",
+    "place-nanshan-fashuang",
+    "place-nanshan-maowei",
+    "place-nanshan-feitou",
+    "place-nanshan-yangjia",
+    "place-nanshan-guanxiang",
+    "place-nanshan-ji",
+    "place-nanshan-lingqiu",
+    "place-nanshan-lunzhe",
+    "place-nanshan-yugao",
+    "place-nanshan-nanyu",
+    "valley-nanshan-yuyi",
+    "valley-nanshan-zhonggu",
+    "wind-nanshan-kai",
+    "wind-nanshan-tiao",
+    "place-nanshan-reference-liuhuang",
+    "place-nanshan-reference-zhupi",
+    "place-nanshan-reference-qiushan",
+    "animal-nanshan-white-ape",
+    "animal-nanshan-fu",
+    "animal-nanshan-ji-fish",
+    "animal-nanshan-piluo",
+    "animal-nanshan-xi",
+    "animal-nanshan-si",
+    "animal-nanshan-elephant",
+    "deity-nanshan-1",
+    "rite-nanshan-1",
+    "deity-nanshan-2",
+    "rite-nanshan-2",
+    "deity-nanshan-3",
+    "rite-nanshan-3"
+  ],
+  "artwork_jobs": [
+    "scene-yuanyi",
+    "scene-di",
+    "scene-danyuan",
+    "scene-jishan",
+    "scene-jiwei",
+    "scene-gui",
+    "scene-changyou",
+    "scene-yaoguang",
+    "scene-yu",
+    "scene-qufu",
+    "scene-gouyu",
+    "scene-fuyu",
+    "scene-cheng",
+    "scene-kuaiji",
+    "scene-yi",
+    "scene-pugou",
+    "scene-hushao",
+    "scene-quwu",
+    "scene-xianyin",
+    "scene-luwu",
+    "scene-qiwu",
+    "scene-tianyu",
+    "scene-daoguo",
+    "scene-fashuang",
+    "scene-maowei",
+    "scene-feitou",
+    "scene-yangjia",
+    "scene-guanxiang",
+    "scene-ji",
+    "scene-lingqiu",
+    "scene-lunzhe",
+    "scene-yugao",
+    "scene-nanyu",
+    "creature-lu",
+    "creature-lei",
+    "creature-changfu",
+    "creature-lili",
+    "creature-zhu",
+    "creature-changyou",
+    "creature-huahuai",
+    "creature-zhi",
+    "creature-huan-xun",
+    "creature-quru",
+    "creature-hujiao",
+    "creature-zhuan",
+    "creature-yulingqiu",
+    "plant-yan",
+    "plant-baigao",
+    "deity-1",
+    "deity-2",
+    "deity-3"
+  ],
+  "passage_links": {
+    "passage-nanshan-zhaoyao": [
+      "place-zhaoyao",
+      "water-nanshan-west-sea"
+    ],
+    "passage-nanshan-tangting": [
+      "place-nanshan-tangting",
+      "plant-nanshan-yan",
+      "animal-nanshan-white-ape"
+    ],
+    "passage-nanshan-yuanyi": [
+      "place-nanshan-yuanyi",
+      "animal-nanshan-fu"
+    ],
+    "passage-nanshan-niuyang": [
+      "place-niuyang"
+    ],
+    "passage-nanshan-di": [
+      "place-nanshan-di",
+      "beast-nanshan-lu"
+    ],
+    "passage-nanshan-danyuan": [
+      "place-nanshan-danyuan",
+      "beast-nanshan-lei"
+    ],
+    "passage-nanshan-jishan": [
+      "place-nanshan-jishan",
+      "beast-nanshan-changfu"
+    ],
+    "passage-nanshan-qingqiu": [
+      "place-qingqiu"
+    ],
+    "passage-nanshan-jiwei": [
+      "place-nanshan-jiwei",
+      "water-nanshan-east-sea",
+      "water-nanshan-fang",
+      "water-nanshan-yu-receiver"
+    ],
+    "passage-nanshan-range1": [
+      "deity-nanshan-1",
+      "rite-nanshan-1"
+    ],
+    "passage-nanshan-gui": [
+      "place-nanshan-gui",
+      "beast-nanshan-lili",
+      "beast-nanshan-zhu",
+      "water-nanshan-ying-gui",
+      "water-nanshan-chishui-gui",
+      "place-nanshan-reference-liuhuang",
+      "place-nanshan-reference-zhupi"
+    ],
+    "passage-nanshan-changyou": [
+      "place-nanshan-changyou",
+      "beast-nanshan-changyou"
+    ],
+    "passage-nanshan-yaoguang": [
+      "place-nanshan-yaoguang",
+      "beast-nanshan-huahuai"
+    ],
+    "passage-nanshan-yu": [
+      "place-nanshan-yu",
+      "animal-nanshan-fu"
+    ],
+    "passage-nanshan-qufu": [
+      "place-nanshan-qufu"
+    ],
+    "passage-nanshan-gouyu": [
+      "place-nanshan-gouyu"
+    ],
+    "passage-nanshan-fuyu": [
+      "place-nanshan-fuyu",
+      "beast-nanshan-zhi",
+      "water-nanshan-tiao",
+      "water-nanshan-juqu",
+      "water-nanshan-zhupi-fuyu",
+      "animal-nanshan-ji-fish"
+    ],
+    "passage-nanshan-cheng": [
+      "place-nanshan-cheng",
+      "water-nanshan-shu",
+      "water-nanshan-hushao-receiver"
+    ],
+    "passage-nanshan-kuaiji": [
+      "place-nanshan-kuaiji",
+      "water-nanshan-shao"
+    ],
+    "passage-nanshan-yi": [
+      "place-nanshan-yi",
+      "water-nanshan-ju",
+      "water-nanshan-lietu"
+    ],
+    "passage-nanshan-pugou": [
+      "place-nanshan-pugou"
+    ],
+    "passage-nanshan-xun": [
+      "place-nanshan-xun",
+      "beast-nanshan-huan-xun",
+      "water-nanshan-xun",
+      "water-nanshan-yan-marsh",
+      "animal-nanshan-piluo"
+    ],
+    "passage-nanshan-hushao": [
+      "place-nanshan-hushao",
+      "water-nanshan-pang"
+    ],
+    "passage-nanshan-quwu": [
+      "place-nanshan-quwu",
+      "water-nanshan-lu"
+    ],
+    "passage-nanshan-xianyin": [
+      "place-nanshan-xianyin"
+    ],
+    "passage-nanshan-luwu": [
+      "place-nanshan-luwu",
+      "water-nanshan-zegeng"
+    ],
+    "passage-nanshan-qiwu": [
+      "place-nanshan-qiwu",
+      "place-nanshan-reference-qiushan"
+    ],
+    "passage-nanshan-range2": [
+      "deity-nanshan-2",
+      "rite-nanshan-2"
+    ],
+    "passage-nanshan-tianyu": [
+      "place-nanshan-tianyu"
+    ],
+    "passage-nanshan-daoguo": [
+      "place-nanshan-daoguo",
+      "beast-nanshan-quru",
+      "beast-nanshan-hujiao",
+      "water-nanshan-yin",
+      "animal-nanshan-xi",
+      "animal-nanshan-si",
+      "animal-nanshan-elephant"
+    ],
+    "passage-nanshan-danxue": [
+      "place-nanshan-danxue",
+      "water-nanshan-dan",
+      "water-nanshan-bohai-south"
+    ],
+    "passage-nanshan-fashuang": [
+      "place-nanshan-fashuang",
+      "water-nanshan-fan",
+      "animal-nanshan-white-ape"
+    ],
+    "passage-nanshan-maowei": [
+      "place-nanshan-maowei",
+      "valley-nanshan-yuyi",
+      "wind-nanshan-kai"
+    ],
+    "passage-nanshan-feitou": [
+      "place-nanshan-feitou",
+      "animal-nanshan-fu"
+    ],
+    "passage-nanshan-yangjia": [
+      "place-nanshan-yangjia"
+    ],
+    "passage-nanshan-guanxiang": [
+      "place-nanshan-guanxiang"
+    ],
+    "passage-nanshan-ji": [
+      "place-nanshan-ji",
+      "beast-nanshan-zhuan",
+      "water-nanshan-hei"
+    ],
+    "passage-nanshan-lingqiu": [
+      "place-nanshan-lingqiu",
+      "beast-nanshan-yulingqiu",
+      "valley-nanshan-zhonggu",
+      "wind-nanshan-tiao"
+    ],
+    "passage-nanshan-lunzhe": [
+      "place-nanshan-lunzhe",
+      "plant-nanshan-baigao"
+    ],
+    "passage-nanshan-yugao": [
+      "place-nanshan-yugao"
+    ],
+    "passage-nanshan-nanyu": [
+      "place-nanshan-nanyu",
+      "beast-nanshan-yuanchu",
+      "water-nanshan-zuo"
+    ],
+    "passage-nanshan-range3": [
+      "deity-nanshan-3",
+      "rite-nanshan-3"
+    ],
+    "passage-nanshan-total": []
+  }
+}

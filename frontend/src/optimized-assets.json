@@ -1025,5 +1025,1955 @@
       384,
       384
     ]
+  },
+  "/data/atlas/myth-icons/nanshan/zhaoyao-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/zhaoyao-v1.webp",
+    "original_bytes": 2891627,
+    "optimized_bytes": 465392,
+    "original_dimensions": [
+      1448,
+      1086
+    ],
+    "dimensions": [
+      1280,
+      960
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/niuyang-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/niuyang-v1.webp",
+    "original_bytes": 2604415,
+    "optimized_bytes": 422572,
+    "original_dimensions": [
+      1448,
+      1086
+    ],
+    "dimensions": [
+      1280,
+      960
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/qingqiu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/qingqiu-v1.webp",
+    "original_bytes": 3028375,
+    "optimized_bytes": 487192,
+    "original_dimensions": [
+      1448,
+      1086
+    ],
+    "dimensions": [
+      1280,
+      960
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/zhuyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/zhuyu-v1.webp",
+    "original_bytes": 1885374,
+    "optimized_bytes": 395130,
+    "original_dimensions": [
+      1086,
+      1448
+    ],
+    "dimensions": [
+      960,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/migu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/migu-v1.webp",
+    "original_bytes": 3067177,
+    "optimized_bytes": 571150,
+    "original_dimensions": [
+      1086,
+      1448
+    ],
+    "dimensions": [
+      960,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/guanguan-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/guanguan-v1.webp",
+    "original_bytes": 2515409,
+    "optimized_bytes": 464984,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/tangting-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/tangting-v1.webp",
+    "original_bytes": 3665879,
+    "optimized_bytes": 475548,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/xun-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/xun-v1.webp",
+    "original_bytes": 3538404,
+    "optimized_bytes": 365430,
+    "original_dimensions": [
+      1918,
+      820
+    ],
+    "dimensions": [
+      1280,
+      547
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/danxue-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/danxue-v1.webp",
+    "original_bytes": 3317549,
+    "optimized_bytes": 400826,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yuanyi-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-yuanyi-v1.webp",
+    "original_bytes": 3471392,
+    "optimized_bytes": 465982,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-fuyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-fuyu-v1.webp",
+    "original_bytes": 3422771,
+    "optimized_bytes": 396190,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-cheng-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-cheng-v1.webp",
+    "original_bytes": 3533844,
+    "optimized_bytes": 428076,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-di-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-di-v1.webp",
+    "original_bytes": 3492912,
+    "optimized_bytes": 470240,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-danyuan-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-danyuan-v1.webp",
+    "original_bytes": 3193816,
+    "optimized_bytes": 364094,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-jishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-jishan-v1.webp",
+    "original_bytes": 3306442,
+    "optimized_bytes": 462940,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-jiwei-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-jiwei-v1.webp",
+    "original_bytes": 3598942,
+    "optimized_bytes": 426176,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-gui-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-gui-v1.webp",
+    "original_bytes": 3394087,
+    "optimized_bytes": 470986,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-changyou-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-changyou-v1.webp",
+    "original_bytes": 3529102,
+    "optimized_bytes": 404636,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yaoguang-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-yaoguang-v1.webp",
+    "original_bytes": 3433284,
+    "optimized_bytes": 475666,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-yu-v1.webp",
+    "original_bytes": 3566692,
+    "optimized_bytes": 481430,
+    "original_dimensions": [
+      1672,
+      941
+    ],
+    "dimensions": [
+      1280,
+      720
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-qufu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-qufu-v1.webp",
+    "original_bytes": 3193399,
+    "optimized_bytes": 366862,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-gouyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-gouyu-v1.webp",
+    "original_bytes": 3126514,
+    "optimized_bytes": 349084,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-kuaiji-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-kuaiji-v1.webp",
+    "original_bytes": 3371060,
+    "optimized_bytes": 452756,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yi-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-yi-v1.webp",
+    "original_bytes": 3146452,
+    "optimized_bytes": 358822,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-pugou-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-pugou-v1.webp",
+    "original_bytes": 3228784,
+    "optimized_bytes": 417960,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-hushao-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-hushao-v1.webp",
+    "original_bytes": 3224390,
+    "optimized_bytes": 384854,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-quwu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-quwu-v1.webp",
+    "original_bytes": 3296020,
+    "optimized_bytes": 399554,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-xianyin-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-xianyin-v1.webp",
+    "original_bytes": 2961346,
+    "optimized_bytes": 331248,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-luwu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-luwu-v1.webp",
+    "original_bytes": 3260697,
+    "optimized_bytes": 360310,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-qiwu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-qiwu-v1.webp",
+    "original_bytes": 3464515,
+    "optimized_bytes": 407898,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-tianyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-tianyu-v1.webp",
+    "original_bytes": 3397039,
+    "optimized_bytes": 404970,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-daoguo-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-daoguo-v1.webp",
+    "original_bytes": 3591991,
+    "optimized_bytes": 437350,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-fashuang-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-fashuang-v1.webp",
+    "original_bytes": 3247379,
+    "optimized_bytes": 368656,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-maowei-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-maowei-v1.webp",
+    "original_bytes": 3252982,
+    "optimized_bytes": 437400,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-feitou-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-feitou-v1.webp",
+    "original_bytes": 3538063,
+    "optimized_bytes": 480912,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yangjia-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-yangjia-v1.webp",
+    "original_bytes": 3005485,
+    "optimized_bytes": 372122,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-guanxiang-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-guanxiang-v1.webp",
+    "original_bytes": 3470781,
+    "optimized_bytes": 502186,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-ji-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-ji-v1.webp",
+    "original_bytes": 3426330,
+    "optimized_bytes": 465112,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-lingqiu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-lingqiu-v1.webp",
+    "original_bytes": 3577476,
+    "optimized_bytes": 493558,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-lunzhe-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-lunzhe-v1.webp",
+    "original_bytes": 3345890,
+    "optimized_bytes": 403978,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-yugao-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-yugao-v1.webp",
+    "original_bytes": 3263150,
+    "optimized_bytes": 371322,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/scene-nanyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/scene-nanyu-v1.webp",
+    "original_bytes": 3497902,
+    "optimized_bytes": 413566,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-lu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-lu-v1.webp",
+    "original_bytes": 2099372,
+    "optimized_bytes": 425434,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-lei-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-lei-v1.webp",
+    "original_bytes": 2557767,
+    "optimized_bytes": 534282,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-changfu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-changfu-v1.webp",
+    "original_bytes": 2807935,
+    "optimized_bytes": 580128,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-lili-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-lili-v1.webp",
+    "original_bytes": 2171204,
+    "optimized_bytes": 460602,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-zhu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-zhu-v1.webp",
+    "original_bytes": 2209753,
+    "optimized_bytes": 455098,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-changyou-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-changyou-v1.webp",
+    "original_bytes": 2701773,
+    "optimized_bytes": 538386,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-huahuai-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-huahuai-v1.webp",
+    "original_bytes": 2600595,
+    "optimized_bytes": 530722,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-zhi-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-zhi-v1.webp",
+    "original_bytes": 1999582,
+    "optimized_bytes": 383610,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-huan-xun-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-huan-xun-v1.webp",
+    "original_bytes": 2247195,
+    "optimized_bytes": 420396,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-quru-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-quru-v1.webp",
+    "original_bytes": 2602002,
+    "optimized_bytes": 536518,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-hujiao-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-hujiao-v1.webp",
+    "original_bytes": 2251710,
+    "optimized_bytes": 454762,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-zhuan-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-zhuan-v1.webp",
+    "original_bytes": 1931342,
+    "optimized_bytes": 381438,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/creature-yulingqiu-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/creature-yulingqiu-v1.webp",
+    "original_bytes": 2487708,
+    "optimized_bytes": 486086,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/plant-yan-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/plant-yan-v1.webp",
+    "original_bytes": 3200676,
+    "optimized_bytes": 559814,
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "dimensions": [
+      853,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/plant-baigao-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/plant-baigao-v1.webp",
+    "original_bytes": 3152246,
+    "optimized_bytes": 510206,
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "dimensions": [
+      853,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/deity-1-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/deity-1-v1.webp",
+    "original_bytes": 2920393,
+    "optimized_bytes": 627482,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/deity-2-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/deity-2-v1.webp",
+    "original_bytes": 2335437,
+    "optimized_bytes": 533236,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/nanshan/deity-3-v1.webp": {
+    "path": "/data/atlas/myth-icons/nanshan/deity-3-v1.webp",
+    "original_bytes": 2386273,
+    "optimized_bytes": 568500,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-tongqu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-tongqu-v1.webp",
+    "original_bytes": 2210518,
+    "optimized_bytes": 473074,
+    "original_dimensions": [
+      1230,
+      1278
+    ],
+    "dimensions": [
+      1230,
+      1278
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-feiyi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-feiyi-v1.webp",
+    "original_bytes": 2083670,
+    "optimized_bytes": 238966,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-qianyang-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-qianyang-v1.webp",
+    "original_bytes": 2802503,
+    "optimized_bytes": 350224,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-qianlai-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-qianlai-v1.webp",
+    "original_bytes": 2861090,
+    "optimized_bytes": 400878,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-songguo-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-songguo-v1.webp",
+    "original_bytes": 3210909,
+    "optimized_bytes": 418106,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-taihua-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-taihua-v1.webp",
+    "original_bytes": 3150123,
+    "optimized_bytes": 408884,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-conglong-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-conglong-v1.webp",
+    "original_bytes": 2323695,
+    "optimized_bytes": 413502,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-chibie-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-chibie-v1.webp",
+    "original_bytes": 1686583,
+    "optimized_bytes": 323942,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/animal-zuoniu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/animal-zuoniu-v1.webp",
+    "original_bytes": 2843711,
+    "optimized_bytes": 347726,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-min-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-min-v1.webp",
+    "original_bytes": 1339241,
+    "optimized_bytes": 220964,
+    "original_dimensions": [
+      1426,
+      1103
+    ],
+    "dimensions": [
+      1280,
+      990
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-bili-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-bili-v1.webp",
+    "original_bytes": 1816307,
+    "optimized_bytes": 403498,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-wenjing-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-wenjing-v1.webp",
+    "original_bytes": 2185695,
+    "optimized_bytes": 551018,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-tiao-fuyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-tiao-fuyu-v1.webp",
+    "original_bytes": 2788680,
+    "optimized_bytes": 614766,
+    "original_dimensions": [
+      1304,
+      1206
+    ],
+    "dimensions": [
+      1280,
+      1184
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-tiao-shicui-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-tiao-shicui-v1.webp",
+    "original_bytes": 2051660,
+    "optimized_bytes": 565580,
+    "original_dimensions": [
+      1222,
+      1287
+    ],
+    "dimensions": [
+      1215,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-xiaohua-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-xiaohua-v1.webp",
+    "original_bytes": 3171736,
+    "optimized_bytes": 430994,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-fuyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-fuyu-v1.webp",
+    "original_bytes": 2920422,
+    "optimized_bytes": 538934,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-shicui-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-shicui-v1.webp",
+    "original_bytes": 3433631,
+    "optimized_bytes": 676844,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-feiyi-ying-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-feiyi-ying-v1.webp",
+    "original_bytes": 2010853,
+    "optimized_bytes": 319140,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-renyu-zhushan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-renyu-zhushan-v1.webp",
+    "original_bytes": 2108871,
+    "optimized_bytes": 224654,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-haozhi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-haozhi-v1.webp",
+    "original_bytes": 3030948,
+    "optimized_bytes": 392858,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-huangguan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-huangguan-v1.webp",
+    "original_bytes": 2708404,
+    "optimized_bytes": 482236,
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "dimensions": [
+      853,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-panmu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-panmu-v1.webp",
+    "original_bytes": 2398063,
+    "optimized_bytes": 539574,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-xuncao-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-xuncao-v1.webp",
+    "original_bytes": 2900948,
+    "optimized_bytes": 498478,
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "dimensions": [
+      853,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-ying-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-ying-v1.webp",
+    "original_bytes": 2695996,
+    "optimized_bytes": 533386,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-zhushan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-zhushan-v1.webp",
+    "original_bytes": 2667311,
+    "optimized_bytes": 535984,
+    "original_dimensions": [
+      1224,
+      1285
+    ],
+    "dimensions": [
+      1219,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-fushan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-fushan-v1.webp",
+    "original_bytes": 2987751,
+    "optimized_bytes": 411774,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-bangyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-bangyu-v1.webp",
+    "original_bytes": 2601899,
+    "optimized_bytes": 266086,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-xiao-yuci-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-xiao-yuci-v1.webp",
+    "original_bytes": 1777592,
+    "optimized_bytes": 349480,
+    "original_dimensions": [
+      1223,
+      1286
+    ],
+    "dimensions": [
+      1217,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-tuofei-yuci-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-tuofei-yuci-v1.webp",
+    "original_bytes": 2089748,
+    "optimized_bytes": 385602,
+    "original_dimensions": [
+      1225,
+      1284
+    ],
+    "dimensions": [
+      1221,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-yuci-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-yuci-v1.webp",
+    "original_bytes": 3163963,
+    "optimized_bytes": 421546,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-shishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-shishan-v1.webp",
+    "original_bytes": 2974401,
+    "optimized_bytes": 365576,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-mengbao-nan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-mengbao-nan-v1.webp",
+    "original_bytes": 2647344,
+    "optimized_bytes": 471522,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-shijiu-nan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-shijiu-nan-v1.webp",
+    "original_bytes": 2069101,
+    "optimized_bytes": 195558,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-nanshan-west-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-nanshan-west-v1.webp",
+    "original_bytes": 2879769,
+    "optimized_bytes": 351738,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-dashi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-dashi-v1.webp",
+    "original_bytes": 3284014,
+    "optimized_bytes": 452770,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/animal-pi-bozhong-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/animal-pi-bozhong-v1.webp",
+    "original_bytes": 2744708,
+    "optimized_bytes": 282152,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-baihan-bozhong-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-baihan-bozhong-v1.webp",
+    "original_bytes": 1926325,
+    "optimized_bytes": 177272,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-gurong-bozhong-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-gurong-bozhong-v1.webp",
+    "original_bytes": 1694137,
+    "optimized_bytes": 391256,
+    "original_dimensions": [
+      1145,
+      1374
+    ],
+    "dimensions": [
+      1067,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-bozhong-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-bozhong-v1.webp",
+    "original_bytes": 3073142,
+    "optimized_bytes": 415220,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-xibian-tiandi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-xibian-tiandi-v1.webp",
+    "original_bytes": 2249167,
+    "optimized_bytes": 417960,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-li-tiandi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-li-tiandi-v1.webp",
+    "original_bytes": 2070465,
+    "optimized_bytes": 370240,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-duheng-tiandi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-duheng-tiandi-v1.webp",
+    "original_bytes": 2317208,
+    "optimized_bytes": 429670,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-tiandi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-tiandi-v1.webp",
+    "original_bytes": 3001769,
+    "optimized_bytes": 373078,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-yingru-gaotu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-yingru-gaotu-v1.webp",
+    "original_bytes": 1792639,
+    "optimized_bytes": 360502,
+    "original_dimensions": [
+      1205,
+      1305
+    ],
+    "dimensions": [
+      1182,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-shusi-gaotu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-shusi-gaotu-v1.webp",
+    "original_bytes": 1939129,
+    "optimized_bytes": 336672,
+    "original_dimensions": [
+      1199,
+      1312
+    ],
+    "dimensions": [
+      1170,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-wutiao-gaotu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-wutiao-gaotu-v1.webp",
+    "original_bytes": 2400216,
+    "optimized_bytes": 507464,
+    "original_dimensions": [
+      1230,
+      1278
+    ],
+    "dimensions": [
+      1230,
+      1278
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-gaotu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-gaotu-v1.webp",
+    "original_bytes": 2987319,
+    "optimized_bytes": 400604,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/creature-min-huangshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/creature-min-huangshan-v1.webp",
+    "original_bytes": 2929256,
+    "optimized_bytes": 367440,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-yingmu-huangshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-yingmu-huangshan-v1.webp",
+    "original_bytes": 2368473,
+    "optimized_bytes": 380606,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-huangshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-huangshan-v1.webp",
+    "original_bytes": 2729896,
+    "optimized_bytes": 497772,
+    "original_dimensions": [
+      1324,
+      1188
+    ],
+    "dimensions": [
+      1280,
+      1149
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-lei-cuishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-lei-cuishan-v1.webp",
+    "original_bytes": 1617889,
+    "optimized_bytes": 307300,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/animal-maoniu-cuishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/animal-maoniu-cuishan-v1.webp",
+    "original_bytes": 2400269,
+    "optimized_bytes": 428176,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/animal-ling-cuishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/animal-ling-cuishan-v1.webp",
+    "original_bytes": 1826582,
+    "optimized_bytes": 324212,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/animal-she-cuishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/animal-she-cuishan-v1.webp",
+    "original_bytes": 1569406,
+    "optimized_bytes": 294084,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-cuishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-cuishan-v1.webp",
+    "original_bytes": 2963860,
+    "optimized_bytes": 546282,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/scene-guishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/scene-guishan-v1.webp",
+    "original_bytes": 2910824,
+    "optimized_bytes": 545364,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-luan-nvchuang-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-luan-nvchuang-v1.webp",
+    "original_bytes": 2373653,
+    "optimized_bytes": 424016,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-fuxi-lutai-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-fuxi-lutai-v1.webp",
+    "original_bytes": 2185719,
+    "optimized_bytes": 374936,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/deity-horse-range2-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/deity-horse-range2-v1.webp",
+    "original_bytes": 2066210,
+    "optimized_bytes": 360738,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/deity-ox-range2-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/deity-ox-range2-v1.webp",
+    "original_bytes": 2518974,
+    "optimized_bytes": 441624,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-jufu-chongwu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-jufu-chongwu-v1.webp",
+    "original_bytes": 2463273,
+    "optimized_bytes": 405116,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-manman-chongwu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-manman-chongwu-v1.webp",
+    "original_bytes": 2243648,
+    "optimized_bytes": 420484,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/deity-gu-zhongshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/deity-gu-zhongshan-v1.webp",
+    "original_bytes": 2454995,
+    "optimized_bytes": 446738,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-qinpi-e-zhongshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-qinpi-e-zhongshan-v1.webp",
+    "original_bytes": 2607877,
+    "optimized_bytes": 468230,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-gu-jun-zhongshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-gu-jun-zhongshan-v1.webp",
+    "original_bytes": 2254798,
+    "optimized_bytes": 383904,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/deity-ox-eight-huaijiang-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/deity-ox-eight-huaijiang-v1.webp",
+    "original_bytes": 2525496,
+    "optimized_bytes": 456794,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/deity-changcheng-luomushan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/deity-changcheng-luomushan-v1.webp",
+    "original_bytes": 1823985,
+    "optimized_bytes": 335310,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-shuhu-yanzi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-shuhu-yanzi-v1.webp",
+    "original_bytes": 2467474,
+    "optimized_bytes": 458648,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-unnamed-yanzi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-unnamed-yanzi-v1.webp",
+    "original_bytes": 2581336,
+    "optimized_bytes": 474060,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1.webp",
+    "original_bytes": 2381397,
+    "optimized_bytes": 439116,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-jiao-yushan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-jiao-yushan-v1.webp",
+    "original_bytes": 2508196,
+    "optimized_bytes": 461892,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/deity-rushou-youshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/deity-rushou-youshan-v1.webp",
+    "original_bytes": 2393372,
+    "optimized_bytes": 464280,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-xiao-baiyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-xiao-baiyu-v1.webp",
+    "original_bytes": 1789237,
+    "optimized_bytes": 287230,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-shengyu-yushan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-shengyu-yushan-v1.webp",
+    "original_bytes": 2270024,
+    "optimized_bytes": 268108,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-bo-zhongqu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-bo-zhongqu-v1.webp",
+    "original_bytes": 2172914,
+    "optimized_bytes": 405632,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-saoyu-niaoshu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-saoyu-niaoshu-v1.webp",
+    "original_bytes": 2359601,
+    "optimized_bytes": 250842,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-rupi-niaoshu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-rupi-niaoshu-v1.webp",
+    "original_bytes": 1900786,
+    "optimized_bytes": 325026,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-aoyu-sanwei-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-aoyu-sanwei-v1.webp",
+    "original_bytes": 2588118,
+    "optimized_bytes": 452560,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-danmu-mishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-danmu-mishan-v1.webp",
+    "original_bytes": 2727779,
+    "optimized_bytes": 534992,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/deity-chi-gangshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/deity-chi-gangshan-v1.webp",
+    "original_bytes": 2025036,
+    "optimized_bytes": 360202,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-manman-gangwei-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-manman-gangwei-v1.webp",
+    "original_bytes": 1624157,
+    "optimized_bytes": 301186,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/deity-sheep-range3-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/deity-sheep-range3-v1.webp",
+    "original_bytes": 2408569,
+    "optimized_bytes": 381658,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-ranyi-yingdi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-ranyi-yingdi-v1.webp",
+    "original_bytes": 1988960,
+    "optimized_bytes": 352848,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-danghu-shangshen-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-danghu-shangshen-v1.webp",
+    "original_bytes": 2261080,
+    "optimized_bytes": 425854,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-chi-sanwei-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-chi-sanwei-v1.webp",
+    "original_bytes": 1997046,
+    "optimized_bytes": 349978,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/bird-qiyu-yiwang-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/bird-qiyu-yiwang-v1.webp",
+    "original_bytes": 2006958,
+    "optimized_bytes": 379224,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-shatang-kunlun-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-shatang-kunlun-v1.webp",
+    "original_bytes": 2432888,
+    "optimized_bytes": 463440,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-huai-zhongqu-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-huai-zhongqu-v1.webp",
+    "original_bytes": 2695756,
+    "optimized_bytes": 504730,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/plant-dan-yanzi-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/plant-dan-yanzi-v1.webp",
+    "original_bytes": 2557766,
+    "optimized_bytes": 481142,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/xishan/beast-huayu-leyou-v1.webp": {
+    "path": "/data/atlas/myth-icons/xishan/beast-huayu-leyou-v1.webp",
+    "original_bytes": 1983312,
+    "optimized_bytes": 285978,
+    "original_dimensions": [
+      1561,
+      1007
+    ],
+    "dimensions": [
+      1280,
+      826
+    ]
   }
 }

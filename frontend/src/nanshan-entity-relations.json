@@ -1,0 +1,194 @@
+[
+  {
+    "ids": [
+      "water-nanshan-fang",
+      "water-nanshan-yu-receiver"
+    ],
+    "source": "《南山经》",
+    "quote": "汸水出焉而南流注于淯",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-ying-gui",
+      "water-nanshan-chishui-gui"
+    ],
+    "source": "《南山经》",
+    "quote": "英水出焉西南流注于赤水",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-tiao",
+      "water-nanshan-juqu"
+    ],
+    "source": "《南山经》",
+    "quote": "苕水出于其隂北流注于具區",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-shu",
+      "water-nanshan-hushao-receiver"
+    ],
+    "source": "《南山经》",
+    "quote": "䦠水出焉而南流注于虖勺",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-shao",
+      "water-nanshan-ju"
+    ],
+    "source": "《南山经》",
+    "quote": "勺水出焉而南流注于湨",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-ju",
+      "water-nanshan-lietu"
+    ],
+    "source": "《南山经》",
+    "quote": "湨水出焉而南流注于列塗",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-xun",
+      "water-nanshan-yan-marsh"
+    ],
+    "source": "《南山经》",
+    "quote": "洵水出焉而南流注于閼之澤",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-lu",
+      "water-nanshan-pang"
+    ],
+    "source": "《南山经》",
+    "quote": "鹿水出焉而南流注于滂水",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-zegeng",
+      "water-nanshan-pang"
+    ],
+    "source": "《南山经》",
+    "quote": "澤更之水出焉而南流注于滂水",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-dan",
+      "water-nanshan-bohai-south"
+    ],
+    "source": "《南山经》",
+    "quote": "丹水出焉而南流注于㴾海",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-fan",
+      "water-nanshan-bohai-south"
+    ],
+    "source": "《南山经》",
+    "quote": "汎水出焉而南流注于㴾海",
+    "labels": [
+      "流入此水",
+      "承接来水"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-yin",
+      "beast-nanshan-hujiao"
+    ],
+    "source": "《南山经》",
+    "quote": "泿水出焉而南流注于海其中有虎蛟",
+    "labels": [
+      "水段所见",
+      "本段水域"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-hei",
+      "beast-nanshan-zhuan"
+    ],
+    "source": "《南山经》",
+    "quote": "黒水出焉而南流注于海其中有鱄魚",
+    "labels": [
+      "水段所见",
+      "本段水域"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-zegeng",
+      "beast-gudiao"
+    ],
+    "source": "《南山经》",
+    "quote": "水有獸焉名曰蠱雕",
+    "labels": [
+      "水段所见",
+      "本段水域"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-tiao",
+      "animal-nanshan-ji-fish"
+    ],
+    "source": "《南山经》",
+    "quote": "其中多鮆魚",
+    "labels": [
+      "水段所见",
+      "本段水域"
+    ]
+  },
+  {
+    "ids": [
+      "water-nanshan-xun",
+      "animal-nanshan-piluo"
+    ],
+    "source": "《南山经》",
+    "quote": "其中多芘蠃",
+    "labels": [
+      "水段所见",
+      "本段水域"
+    ]
+  }
+]

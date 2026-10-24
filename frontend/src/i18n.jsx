@@ -4,7 +4,7 @@ import content from './locale-content-en.json';
 
 const LocaleContext = createContext(null);
 const replacements = Object.entries(english).sort((a, b) => b[0].length - a[0].length);
-const textFields = new Set(['name', 'title', 'subtitle', 'label', 'quote', 'source_quote',
+const textFields = new Set(['name', 'title', 'subtitle', 'label', 'quote', 'source_quote', 'source_locator', 'editorial_note', 'content_note', 'artwork_caption',
   'description', 'direction', 'place_basis', 'source', 'source_text', 'source_chapter',
   'region', 'location_label', 'basis_note', 'note', 'location_note']);
 
@@ -58,7 +58,7 @@ export function LocaleProvider({ children }) {
       try { localStorage.setItem('shanhai-language', next); } catch {}
       const url = new URL(window.location.href);
       url.searchParams.set('lang', next);
-      window.history.replaceState(null, '', url);
+      window.history.replaceState(window.history.state, '', url);
     },
   }), [locale]);
   return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;
