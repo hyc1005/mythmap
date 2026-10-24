@@ -3339,5 +3339,31 @@
       1170,
       1280
     ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1.webp",
+    "original_bytes": 1582984,
+    "optimized_bytes": 293528,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1.webp",
+    "original_bytes": 1948557,
+    "optimized_bytes": 175220,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
   }
 }

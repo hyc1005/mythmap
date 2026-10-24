@@ -4462,5 +4462,41 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1-card.webp",
+      "bytes": 26840,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1-preview.webp",
+      "bytes": 52206,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1-card.webp",
+      "bytes": 20010,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1-preview.webp",
+      "bytes": 36868,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
   }
 }

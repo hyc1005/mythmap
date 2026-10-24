@@ -213,13 +213,13 @@ def build():
                 {'source_units': [290, 297], 'note': '次三总括与篇末总计被重复切分；须核290—296及297。'}]},
         'stable_existing_ids': ['03-04', 'beast-jingwei', 'beast-zhu-jian', 'place-fajiu', 'place-north-ranges'],
         'title_font_supplement': {
-            'family': 'Noto Serif SC', 'characters': '單机華漨求䑏䟽何儵孟寓帶彭栢椐橐虢譙駝鰼䑕幽張杠極樗熏聮葵蔓薤訾雘韭鴳鵁鵺䐆㗸侯匠柘潘磁竦薨那韓題鮭鳲䰽䲃刚夕懐枳渾瀤獄窫鮨鴈埋牲狕珪瘗隄鮮䧑', 'weights': [400, 700],
+            'family': 'Noto Serif SC', 'characters': '單机華漨求䑏䟽何儵孟寓帶彭栢椐橐虢譙駝鰼䑕幽張杠極樗熏聮葵蔓薤訾雘韭鴳鵁鵺䐆㗸侯匠柘潘磁竦薨那韓題鮭鳲䰽䲃刚夕懐枳渾瀤獄窫鮨鴈埋牲狕珪瘗隄鮮䧑䳑勝岐晉爾縣蒼酸閭雍鮪', 'weights': [400, 700],
             'path': 'frontend/public/fonts/shanhai-title-beishan.woff2',
-            'source_url': 'https://fonts.gstatic.com/l/font?kit=H4chBXePl9DZ0Xe7gG9cyOj7oqOEvjGIgWH08zKueYpLSB8N6pBn5tcuMOYvZ2Rg3iCNHP2sydv3YUXv96GW6G_aL5g1pj1tdn2HRWCA5Oa1NoQACctPrht92reDmhUUZI73qeRRpSSivd_yukzftKEizbTmZP9pXm7sTG0Te9AQ4XNzO19Ne3hXi4bU3NFMy1u_ZgRPk2CKXGn72SUHefo51F3zyfs3ijS8ebEcPomNlaK4odKevVFwJuzUpXuA2Qond3WKB3Bei6gMgGY7tAZE3aQ_IKgqS9XpEOKBV6ZSeGcJfkYUFGPW8bc&skey=37fe335b8fd815cc&v=v36',
-            'sha256': 'b9a4e4d8bdfdb60acba717f99d0601a67a782010b3a649efd08e3f584fa8e188',
+            'source_url': 'https://fonts.gstatic.com/l/font?kit=H4chBXePl9DZ0Xe7gG9cyOj7oqOEnTGIgWH08zKueYpLSB8N6pBn5tcuMOYvZ2Rg0CSNH8et88H3bWrv85uW9VzaPLM1lAZtRGmHTmaA8c-1IKoAB-5PqwB-5JqAuhoXRIP3sMdRozWigcfyg3zfj6ci-rvmbc1pS3zsUWYTb-8Q9XtyCnlMRUlWvpzV6txMxnu_byFPg0mKdlr7-BsHX9g22ln83sM4uACzR4kTA4uCu6m4ud6emkBwGsDVtWSB1x0mekmLDktfjacNiVQ6vgJE8a8_C70qc9bpOtqBf5lSV3cJVWYUPk_W5YHWIzzryklS5wROhIt4homx4v8pU7rxSAbtbQUpTYQvW0Y&skey=37fe335b8fd815cc&v=v36',
+            'sha256': '0198eaf5139578c5cd9e5b600f6c61c4ec13ff713d6fd6c70dcb33922860a314',
             'license': 'frontend/public/fonts/noto-serif-sc-LICENSE.txt',
             'rebuild': 'python frontend/scripts/supplement-title-font.py',
-            'limits': '71字小子集随站点发布，不在运行时请求Google；原标题与罕字字库不改，既有30字本机依赖本批补2，另有28字限制，见独立ExtB子集记录。'},
+            'limits': '82字小子集随站点发布，不在运行时请求Google；原标题与罕字字库不改，既有30字本机依赖本批补2，另有28字限制，见独立ExtB子集记录。'},
         'limits': NOTE + '本批没有生物插画任务，7卡及阅读段均无图；不把西山同名水域或其他山的植物图用于本段。',
         'next': {'name': '求如之山', 'source_units': [5, 10], 'captured_pages': [76, 77],
                  'status': 'pending_facsimile_review', 'notes': '复用76页，首次核存77页；0009牛尾及水马注的实际页界须核。北山滑魚如鱓赤背，不借西山滑魚蛇状四足；水馬文臂牛尾与郭注前脚释义分开。'}}
@@ -228,7 +228,7 @@ def build():
     write('frontend/public/data/myth-world.json', world)
     write('frontend/src/locale-content-en.json', english)
     write('data/beishan-edition-review.json', review)
-    print('Built Northern first range and Guancen: 27 passages, 160 cards; later passages remain pending')
+    print('Built Northern first range and second range through Ershi: 32 passages, 182 cards; later passages remain pending')
 
 
 if __name__ == '__main__':

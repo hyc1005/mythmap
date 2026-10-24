@@ -474,6 +474,51 @@
       "reference_images": [
         "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
       ]
+    },
+    {
+      "name": "creature-lv-xianyong",
+      "entry_id": "beast-beishan-lv-xianyong",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing animal on TRUE transparent background with generous clear margins around all extremities. Hand-carved Chinese woodblock medium, bold dark ink contours, flat mineral pigments, varied sparse cut-line grain. Reference bird ONLY for medium; no copying its owl face, flame ornaments, feathers, pose or anatomy. Distinct silhouette, restrained archaic uncanny character, no modern photo/3D, gradients, ground, scenery, text, seals or frame. Unspecified color, exact posture and proportions are artistic interpretation. Subject: Lv 閭 at Mount Xianyong, named in main text and described by Guo Pu as DONKEY-LIKE, with CLOVEN HOOVES and HORNS LIKE LINGYANG antelope. One donkey-shaped long muzzle, two long upright ordinary donkey ears, a short straight mane, four ordinary donkey-shaped legs each ending in clearly split paired hoof toes. Exactly two slender unbranched gently swept antelope-like horns standing between the two donkey ears, visually separate, not huge ram curls or deer antlers. Two horns are an artistic conventional reading; text fixes no count. Dust-gray compact donkey torso, pale muzzle and belly, dark narrow mane, one ordinary donkey tail with small tuft. Near frontal three-quarter stance with head high and body angled left, all four cloven hooves distinguishable, calm ordinary equine eyes. Different from blue small wild horse: longer upright ears, antelope horns, visibly split hooves, upright dignified stance and gray hide. No human face, wings, extra limbs, leopard rosettes or ornamental flame mane.",
+      "review_note": "主文仅列閭，驴状、岐蹄、麢羊角依郭注；四分蹄与两角可数，两角数量、体色姿态为解释，不认定现代物种。",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-77fb3a1a-28b6-4998-b277-e359fd560422.png",
+      "status": "reviewed",
+      "source_file": "creature-lv-xianyong-v1.png",
+      "sha256": "d2c5935561de89f1cf25c855008f47758ca49df83c2129d0b765c497f6a599d6",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "fish-ci-xianyong",
+      "entry_id": "beast-beishan-ci-xianyong",
+      "prompt": "Use case: illustration-story. One complete isolated Shanhaijing animal on TRUE transparent background with generous clear margins around all extremities. Hand-carved Chinese woodblock medium, bold dark ink contours, flat mineral pigments, varied sparse cut-line grain. Reference bird ONLY for medium; no copying its owl face, flame ornaments, feathers, pose or anatomy. Distinct silhouette, restrained archaic uncanny character, no modern photo/3D, gradients, ground, scenery, text, seals or frame. Unspecified color, exact posture and proportions are artistic interpretation. Subject: Ci fish 鮆魚 at Xianyong. Main text says shaped like shu 儵 with RED SCALES; Guo Pu explains shu as SMALL FISH. One modest small-fish body, one ordinary fish head with small closed mouth, one eye visible in clean side profile, ordinary fish fins and one forked tail. Entire body scales are muted CINNABAR RED with dark incised scale arcs, pale ivory belly; compact gently curved horizontal fish swimming left-upward, not huge toothy monster, carp-plus-chicken hybrid or modern named species. No legs, wings, feathers, human/dog face, horns, multiple bodies or additional tails. Keep scale texture distinct from the long dog-headed Yi: short fusiform minnow-like outline, tiny ordinary fish face, abundant red scales, minimal fins. Body shape is a generic small fish interpretation, not scientific species identification.",
+      "review_note": "小鱼形依郭注，赤麟依正文；一鱼头一鱼尾无足翼，不定现代种。v2与v1透明背景抽样通过，网页再核边缘；首稿及修订均保留。",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-ec045c8b-96eb-4d96-95c8-107993143db9.png",
+      "status": "reviewed",
+      "source_file": "fish-ci-xianyong-v2.png",
+      "sha256": "bb379562c97bafb0444aa6e24175818fbce009b3bcc64db7ff37d810f6bdbd22",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "revisions": [
+        {
+          "name": "fish-ci-xianyong",
+          "entry_id": "beast-beishan-ci-xianyong",
+          "prompt": "Use case: illustration-story. One complete isolated Shanhaijing animal on TRUE transparent background with generous clear margins around all extremities. Hand-carved Chinese woodblock medium, bold dark ink contours, flat mineral pigments, varied sparse cut-line grain. Reference bird ONLY for medium; no copying its owl face, flame ornaments, feathers, pose or anatomy. Distinct silhouette, restrained archaic uncanny character, no modern photo/3D, gradients, ground, scenery, text, seals or frame. Unspecified color, exact posture and proportions are artistic interpretation. Subject: Ci fish 鮆魚 at Xianyong. Main text says shaped like shu 儵 with RED SCALES; Guo Pu explains shu as SMALL FISH. One modest small-fish body, one ordinary fish head with small closed mouth, one eye visible in clean side profile, ordinary fish fins and one forked tail. Entire body scales are muted CINNABAR RED with dark incised scale arcs, pale ivory belly; compact gently curved horizontal fish swimming left-upward, not huge toothy monster, carp-plus-chicken hybrid or modern named species. No legs, wings, feathers, human/dog face, horns, multiple bodies or additional tails. Keep scale texture distinct from the long dog-headed Yi: short fusiform minnow-like outline, tiny ordinary fish face, abundant red scales, minimal fins. Body shape is a generic small fish interpretation, not scientific species identification.",
+          "review_note": "查看器预览疑似暗晕，实际背景抽样alpha为0；另存v2复核透明边缘，首稿保留对照。",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-ec778148-1cbf-4125-8a18-1d05161b36fb.png",
+          "status": "generated",
+          "source_file": "fish-ci-xianyong-v1.png",
+          "sha256": "4a1b29b608fecf6ba7e34be1357217a722b06d8e9465972eb96caaee61884bea",
+          "reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ]
+        }
+      ],
+      "revision_prompt": "Precise background-extraction edit. Keep the attached Ci fish unchanged: same red scales, fish face, one whole fish body, all fins, forked single tail, woodcut incisions, proportions, colors and pose. REMOVE ALL background, colored glow, halo, gradient and shadow outside the fish silhouette. Return ONLY the crisp isolated opaque woodcut fish with transparent alpha=0 everywhere outside its black contour, including spaces between fins and tail. No replacement background, no black or white canvas, no drop shadow. Retain complete fish uncropped with generous transparent margins. Do not redesign or add anatomy, text or objects.",
+      "revision_reference_images": [
+        "frontend/artwork-source/beishan/fish-ci-xianyong-v1.png"
+      ]
     }
   ]
 }

@@ -1,4 +1,4 @@
-"""Reviewed first-range close and second-range opening (source units 90–102)."""
+"""Reviewed first-range close and second-range opening (source units 90–116)."""
 
 ROWS = [
     dict(slug='bicha',name='羆差之山',en_name='Mount Bicha',units=(90,90),
@@ -50,4 +50,59 @@ def entities(E):
         E('range1-summary','rite','raw-food-range1-summary','山北生食记述','Raw-food account north of the mountains','其山北人皆生食不火之物','生食不火之物与异文分别存，不当现代族群习俗定论。','The raw-food statement and variant remain ancient accounts, not findings about a modern population.','People north of these mountains all eat raw, uncooked things.',commentary='或作皆生食而不火',en_commentary='A variant reads that all eat raw and do not use fire.'),
         E('guancen','material','jade-guancen','玉（管涔）','Jade (Guancen)','其下多玉','山下多玉，不补成分颜色。','Jade is abundant below, without an assigned composition or color.','Jade is abundant below.'),
         E('guancen','water','fen-guancen','汾水（管涔）','Fen River (Guancen)','汾水出焉而西流注于河','汾水出管涔西注河；汾阳北西入河为古注，不现代定位。','The Fen rises at Guancen and flows west into the He; the Fenyang gloss gives no modern coordinate.','The Fen rises here and flows west into the He.',commentary='至汾陽縣北西入河',en_commentary='Guo Pu says it enters the He westward north of Fenyang county.'),
+    ] + second_range_entities(E)
+
+ROWS += [
+    dict(slug='shaoyang',name='少陽之山',en_name='Mount Shaoyang',units=(103,105),range=2,
+         description='管涔向西二百五十里为少陽，上多玉、下多赤銀。酸水向东注汾水，其中多羙赭；赤銀的银之精注、赭的管子引文分别保留，不据注增列本山铁矿。',
+         en_description='Shaoyang lies 250 li west of Guancen, with jade above and red silver below. The Suan flows east into the Fen and the water account records fine ochre. The silver gloss and Guanzi quotation remain separate, without adding an iron deposit.',
+         en_quote='Two hundred and fifty li west is Mount Shaoyang, with jade above and red silver below. The Suan rises here and flows east into the Fen; fine ochre is abundant in this water account.',
+         note='0103—0105全在87页。0105正文空，但曰山上有赭者其下有鐵承0104管子；与0106縣雍分开。赤銀跨103—104连读，郭注银之精独归赤銀；不把少陽写作少咸。',
+         en_note='Units 103–105 are on scan 87. Empty main-text unit 105 continues the Guanzi commentary, not Xianyong. Red silver spans units 103–104; its gloss is separate from the ochre quotation. Shaoyang differs from Shaoxian.'),
+    dict(slug='xianyong',name='縣雍之山',en_name='Mount Xianyong',units=(106,110),range=2,
+         description='少陽向北五十里为縣雍，上多玉、下多铜，兽多閭麋，鸟多白翟白䳑。晉水从此出，东南注汾水，鮆魚如儵而赤麟、音如叱。閭的驴状岐蹄麢羊角与鮆的小鱼释义来自郭注；食用说及异文为古述。',
+         en_description='Xianyong lies 50 li north of Shaoyang, with jade above, copper below, Lv and mi beasts, and white Di and white You birds. The Jin flows southeast into the Fen. Ci fish resemble shu with red scales and a scolding cry. Lv’s donkey form, cloven hooves and antelope-like horns, and the small-fish gloss come from commentary.',
+         en_quote='Fifty li north is Mount Xianyong, with jade above and copper below. Lv and mi beasts, white Di and white You birds are abundant. The Jin rises here and flows southeast into the Fen. Ci fish resemble shu with red scales, sound like a scolding cry and are said to prevent jiao when eaten.',
+         note='0106—0108在87页，0108捕获88校回87；0109—0110在88页。北唐以閭跨107—108连注，白𪂂注独归白䳑，不移给白翟。小魚曰儵不借帶山儵魚鸡形；赤麟字照录。不驕与或作騷騷臭也另存，不擅解为现代疗效。',
+         en_note='Units 106–108 are on scan 87; 108 was captured as 88. Units 109–110 are on scan 88. The Lv quotation spans 107–108; the white-bird gloss belongs to You. Shu means small fish here, not Dai’s chicken-shaped creature. The jiao reading and sao/odor variant remain separate ancient claims.'),
+    dict(slug='huqi',name='狐岐之山',en_name='Mount Huqi',units=(111,112),range=2,
+         description='縣雍向北二百里为狐岐，无草木、多青碧。勝水出于此，向东北注汾水，其中多蒼玉。仅记原文物产与流向，不因山名补狐狸或现代坐标。',
+         en_description='Huqi lies 200 li north of Xianyong, without vegetation and with much qingbi. The Sheng flows northeast into the Fen; dark jade is abundant in this water account. The mountain name supplies no fox illustration or modern coordinate.',
+         en_quote='Two hundred li north is Mount Huqi, with no grasses or trees and much qingbi. The Sheng rises here and flows northeast into the Fen; dark jade is abundant in this water account.',
+         note='0111—0112全在88页。勝水东北注汾，蒼玉随水文记述；青碧、蒼玉不强定现代成分，狐岐名称不充当狐狸形貌。',
+         en_note='Units 111–112 are on scan 88. The Sheng flows northeast into the Fen; dark jade remains in the water account. Minerals receive no modern composition, and Huqi’s name adds no fox anatomy.'),
+    dict(slug='baisha',name='白沙山',en_name='Mount Baisha',units=(113,115),range=2,
+         description='狐岐向北三百五十里为白沙，广员三百里，尽沙，无草木鸟兽。鮪水出于其上、潜于其下；郭注释山顶出、停其底。白玉仅列名，不补山景或把鮪水作鱼。',
+         en_description='Baisha lies 350 li north of Huqi, extends 300 li around, is entirely sand and has no vegetation, birds or beasts. Wei water emerges above and goes beneath; Guo Pu explains emergence at the summit and gathering at the base. White jade is named; Wei is a water name.',
+         en_quote='Three hundred and fifty li north is Mount Baisha, extending three hundred li around, entirely sand, without grasses, trees, birds or beasts. Wei water emerges above and goes beneath it. White jade is abundant.',
+         note='0113—0115全在88页。广員三百里照录，不擅换算圆直径面积；潜与郭注停其底分存，不强绘地下河道或定源流。鮪为水名，不据字义增鱼卡。',
+         en_note='Units 113–115 are on scan 88. The extent is retained without a diameter or area conversion. Main-text concealment and commentary gathering remain separate, without an invented underground course. Wei is a water name, not a fish record.'),
+    dict(slug='ershi',name='爾是之山',en_name='Mount Ershi',units=(116,116),range=2,
+         description='白沙向北四百里为爾是，无草木、无水。原文简短，保留独立山段与相邻阅读，不补物产、生物、现代坐标或山景。',
+         en_description='Ershi lies 400 li north of Baisha, without vegetation or water. This brief passage remains independent, without invented products, creatures or modern coordinates.',
+         en_quote='Four hundred li north is Mount Ershi, with no grasses, trees or water.',
+         note='0116全在88页。0117狂山虽捕获89页，实际起于88页末，留待下一阶段核；本段无水不与前后水域串联。',
+         en_note='Unit 116 is on scan 88. Unit 117 begins Kuang at the end of scan 88 despite capture as 89, and remains pending. Ershi’s absence of water is not linked to neighboring water accounts.'),
+]
+
+
+def second_range_entities(E):
+    return [
+        E('shaoyang','material','jade-shaoyang','玉（少陽）','Jade (Shaoyang)','其上多玉','山上玉仅列名。','Jade above is only named.','There is much jade above.'),
+        E('shaoyang','material','red-silver-shaoyang','赤銀','Red silver','其下多赤銀','赤銀跨行，郭注银之精，不定现代矿种或纯度。','Red silver spans a line break; the essence-of-silver gloss supplies no modern composition or purity.','Red silver is abundant below.',commentary='銀之精也',en_commentary='Guo Pu calls it the essence of silver.'),
+        E('shaoyang','water','suan-shaoyang','酸水','Suan River','酸水出焉而東流注于汾水','酸水东注汾，不把酸字当酸度测量。','The Suan flows east into the Fen; its name is no acidity measurement.','The Suan rises here and flows east into the Fen.'),
+        E('shaoyang','material','ochre-shaoyang','羙赭（少陽）','Fine ochre (Shaoyang)','其中多羙赭','羙赭为水文物产；郭注管子引铁不新增本山铁矿。','Fine ochre belongs to the water account; the Guanzi iron comparison adds no local iron deposit.','Fine ochre is abundant in this water account.',commentary='管子曰山上有赭者其下有鐵',en_commentary='The Guanzi quotation says that ochre above a mountain indicates iron beneath.',water=True),
+        E('xianyong','material','jade-xianyong','玉（縣雍）','Jade (Xianyong)','其上多玉','山上多玉，不补颜色。','Jade occurs above, without an assigned color.','Jade is abundant above.'),
+        E('xianyong','material','copper-xianyong','铜（縣雍）','Copper (Xianyong)','其下多銅','山下多铜，不现代定位。','Copper occurs below, without modern coordinates.','Copper is abundant below.'),
+        E('xianyong','beast','lv-xianyong','閭（縣雍）','Lv (Xianyong)','其獸多閭麋','閭仅名，驴状、岐蹄、麢羊角依郭注；两角数量、体色与站姿为插画解释，不定现代种。','Lv is named in the main text; donkey form, cloven hooves and antelope-like horns follow commentary. Two horns, color and stance are artistic, without a modern species.','Lv and mi beasts are abundant.',commentary='閭即羭也似馿而岐蹄角如麢羊一名山馿周書曰北唐以閭亦見鄉射禮',en_commentary='Guo Pu identifies Lv with yu, describing a donkey-like animal with cloven hooves and antelope-like horns, also called mountain donkey; quotations continue across two units.'),
+        E('xianyong','beast','mi-xianyong','麋（縣雍）','Mi (Xianyong)','其獸多閭麋','麋仅列名，不借閭郭注形貌。','Mi is only named and does not inherit Lv’s anatomy.','Lv and mi beasts are abundant.',unknown=True),
+        E('xianyong','beast','white-di-xianyong','白翟（縣雍）','White Di (Xianyong)','其鳥多白翟白䳑','白翟仅名，不借白䳑注或外山鸟图补形。','White Di is only named, without anatomy from You or another mountain.','White Di and white You birds are abundant.',unknown=True),
+        E('xianyong','beast','white-you-xianyong','白䳑（縣雍）','White You (Xianyong)','其鳥多白翟白䳑','白䳑注即白𪂂也，仍不足定形，保留占位。','The white-bird gloss remains insufficient for anatomy, so You keeps the placeholder.','White Di and white You birds are abundant.',commentary='即白𪂂也音于六反',en_commentary='Guo Pu identifies it with another white-bird name and gives a pronunciation gloss.',unknown=True),
+        E('xianyong','water','jin-xianyong','晉水','Jin River','晉水出焉而東南流注于汾水','晉水东南注汾，东过晋阳南又东入汾为古注。','The Jin flows southeast into the Fen; its historical course gloss is kept separately.','The Jin rises here and flows southeast into the Fen.',commentary='東過晉陽南又東入汾',en_commentary='Guo Pu says it passes east south of Jinyang and then enters the Fen eastward.'),
+        E('xianyong','beast','ci-xianyong','鮆魚（縣雍）','Ci fish (Xianyong)','其中多鮆魚其状如儵而赤麟其音如叱食之不驕','鮆魚小鱼形、赤麟、音如叱；小鱼依郭注，不借帶山儵魚。食用与騷臭异文为古述，不作医疗建议。','Ci has a small-fish form with red scales and a scolding cry. Small size follows commentary, not Dai’s chicken form. Eating and odor-variant claims remain ancient.','Ci fish resemble shu with red scales, sound like a scolding cry and are said to prevent jiao when eaten.',commentary='小魚曰儵；或作騷騷臭也',en_commentary='Guo Pu glosses shu as small fish and records a sao/odor variant for jiao.',water=True),
+        E('huqi','material','qingbi-huqi','青碧（狐岐）','Qingbi (Huqi)','多青碧','青碧不定现代矿物成分。','Qingbi is not assigned a modern mineral composition.','Qingbi is abundant.'),
+        E('huqi','water','sheng-huqi','勝水','Sheng River','勝水出焉而東北流注于汾水','勝水东北注汾，方向不并酸水或晉水。','The Sheng flows northeast into the Fen, separately from the Suan and Jin directions.','The Sheng rises here and flows northeast into the Fen.'),
+        E('huqi','material','dark-jade-huqi','蒼玉（狐岐）','Dark jade (Huqi)','其中多蒼玉','蒼玉随水文记述，不推精确色值或成分。','Dark jade belongs to the water account without a precise hue or composition.','Dark jade is abundant in this water account.',water=True),
+        E('baisha','water','wei-baisha','鮪水','Wei water','鮪水出于其上潜于其下','鮪水上出下潜，郭注顶出底停另记，不增鱼或强绘地下河。','Wei emerges above and goes beneath; the summit-and-base gloss adds no fish or invented underground river.','Wei water emerges above and goes beneath it.',commentary='出山之頂停其底也',en_commentary='Guo Pu says it emerges at the summit and gathers at the base.'),
+        E('baisha','material','white-jade-baisha','白玉（白沙）','White jade (Baisha)','是多白玉','白玉仅名，不补器形。','White jade is named without an invented artifact shape.','White jade is abundant.'),
     ]

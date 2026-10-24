@@ -7992,6 +7992,84 @@
           ]
         }
       }
+    },
+    {
+      "id": "beishan-creature-lv-xianyong-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-lv-xianyong-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing animal on TRUE transparent background with generous clear margins around all extremities. Hand-carved Chinese woodblock medium, bold dark ink contours, flat mineral pigments, varied sparse cut-line grain. Reference bird ONLY for medium; no copying its owl face, flame ornaments, feathers, pose or anatomy. Distinct silhouette, restrained archaic uncanny character, no modern photo/3D, gradients, ground, scenery, text, seals or frame. Unspecified color, exact posture and proportions are artistic interpretation. Subject: Lv 閭 at Mount Xianyong, named in main text and described by Guo Pu as DONKEY-LIKE, with CLOVEN HOOVES and HORNS LIKE LINGYANG antelope. One donkey-shaped long muzzle, two long upright ordinary donkey ears, a short straight mane, four ordinary donkey-shaped legs each ending in clearly split paired hoof toes. Exactly two slender unbranched gently swept antelope-like horns standing between the two donkey ears, visually separate, not huge ram curls or deer antlers. Two horns are an artistic conventional reading; text fixes no count. Dust-gray compact donkey torso, pale muzzle and belly, dark narrow mane, one ordinary donkey tail with small tuft. Near frontal three-quarter stance with head high and body angled left, all four cloven hooves distinguishable, calm ordinary equine eyes. Different from blue small wild horse: longer upright ears, antelope horns, visibly split hooves, upright dignified stance and gray hide. No human face, wings, extra limbs, leopard rosettes or ornamental flame mane.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "主文仅列閭，驴状、岐蹄、麢羊角依郭注；四分蹄与两角可数，两角数量、体色姿态为解释，不认定现代物种。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1.webp",
+          "bytes": 293528,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1-card.webp",
+          "bytes": 26840,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1-preview.webp",
+          "bytes": 52206,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-fish-ci-xianyong-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/fish-ci-xianyong-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing animal on TRUE transparent background with generous clear margins around all extremities. Hand-carved Chinese woodblock medium, bold dark ink contours, flat mineral pigments, varied sparse cut-line grain. Reference bird ONLY for medium; no copying its owl face, flame ornaments, feathers, pose or anatomy. Distinct silhouette, restrained archaic uncanny character, no modern photo/3D, gradients, ground, scenery, text, seals or frame. Unspecified color, exact posture and proportions are artistic interpretation. Subject: Ci fish 鮆魚 at Xianyong. Main text says shaped like shu 儵 with RED SCALES; Guo Pu explains shu as SMALL FISH. One modest small-fish body, one ordinary fish head with small closed mouth, one eye visible in clean side profile, ordinary fish fins and one forked tail. Entire body scales are muted CINNABAR RED with dark incised scale arcs, pale ivory belly; compact gently curved horizontal fish swimming left-upward, not huge toothy monster, carp-plus-chicken hybrid or modern named species. No legs, wings, feathers, human/dog face, horns, multiple bodies or additional tails. Keep scale texture distinct from the long dog-headed Yi: short fusiform minnow-like outline, tiny ordinary fish face, abundant red scales, minimal fins. Body shape is a generic small fish interpretation, not scientific species identification.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "小鱼形依郭注，赤麟依正文；一鱼头一鱼尾无足翼，不定现代种。v2与v1透明背景抽样通过，网页再核边缘；首稿及修订均保留。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1.webp",
+          "bytes": 175220,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1-card.webp",
+          "bytes": 20010,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1-preview.webp",
+          "bytes": 36868,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      },
+      "revision_prompt": "Precise background-extraction edit. Keep the attached Ci fish unchanged: same red scales, fish face, one whole fish body, all fins, forked single tail, woodcut incisions, proportions, colors and pose. REMOVE ALL background, colored glow, halo, gradient and shadow outside the fish silhouette. Return ONLY the crisp isolated opaque woodcut fish with transparent alpha=0 everywhere outside its black contour, including spaces between fins and tail. No replacement background, no black or white canvas, no drop shadow. Retain complete fish uncropped with generous transparent margins. Do not redesign or add anatomy, text or objects.",
+      "initial_reference_images": []
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

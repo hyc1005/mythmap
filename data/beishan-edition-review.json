@@ -1,5 +1,5 @@
 {
-  "scope": "北山经首列25山与总括、次二首山管涔：27阅读/160独立卡（含复用諸犍），后文待核。",
+  "scope": "北山经首列25山与总括、次二管涔至爾是：32阅读/182独立卡（含复用諸犍），后文待核。",
   "snapshot_sha256": "0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce",
   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853",
   "scan_pages": [
@@ -14,7 +14,8 @@
     84,
     85,
     86,
-    87
+    87,
+    88
   ],
   "heading_unit_ids": [
     "source-03-0001"
@@ -30,7 +31,8 @@
     "source-03-0072": 83,
     "source-03-0081": 84,
     "source-03-0090": 85,
-    "source-03-0099": 86
+    "source-03-0099": 86,
+    "source-03-0108": 87
   },
   "entry_ids": [
     "place-beishan-danhu",
@@ -192,6 +194,28 @@
     "place-beishan-guancen",
     "material-beishan-jade-guancen",
     "water-beishan-fen-guancen",
+    "place-beishan-shaoyang",
+    "material-beishan-jade-shaoyang",
+    "material-beishan-red-silver-shaoyang",
+    "water-beishan-suan-shaoyang",
+    "material-beishan-ochre-shaoyang",
+    "place-beishan-xianyong",
+    "material-beishan-jade-xianyong",
+    "material-beishan-copper-xianyong",
+    "beast-beishan-lv-xianyong",
+    "beast-beishan-mi-xianyong",
+    "beast-beishan-white-di-xianyong",
+    "beast-beishan-white-you-xianyong",
+    "water-beishan-jin-xianyong",
+    "beast-beishan-ci-xianyong",
+    "place-beishan-huqi",
+    "material-beishan-qingbi-huqi",
+    "water-beishan-sheng-huqi",
+    "material-beishan-dark-jade-huqi",
+    "place-beishan-baisha",
+    "water-beishan-wei-baisha",
+    "material-beishan-white-jade-baisha",
+    "place-beishan-ershi",
     "water-beishan-he"
   ],
   "passages": [
@@ -565,6 +589,70 @@
         1530
       ],
       "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-shaoyang",
+      "source_unit_ids": [
+        "source-03-0103",
+        "source-03-0104",
+        "source-03-0105"
+      ],
+      "source_span": [
+        1530,
+        1567
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-xianyong",
+      "source_unit_ids": [
+        "source-03-0106",
+        "source-03-0107",
+        "source-03-0108",
+        "source-03-0109",
+        "source-03-0110"
+      ],
+      "source_span": [
+        1567,
+        1629
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-huqi",
+      "source_unit_ids": [
+        "source-03-0111",
+        "source-03-0112"
+      ],
+      "source_span": [
+        1629,
+        1662
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-baisha",
+      "source_unit_ids": [
+        "source-03-0113",
+        "source-03-0114",
+        "source-03-0115"
+      ],
+      "source_span": [
+        1662,
+        1700
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-beishan-ershi",
+      "source_unit_ids": [
+        "source-03-0116"
+      ],
+      "source_span": [
+        1700,
+        1715
+      ],
+      "status": "facsimile_reviewed"
     }
   ],
   "commentary_alignment": [
@@ -801,6 +889,45 @@
         "source-03-0102"
       ],
       "basis": "0100—0102全核87页。临汾水上、音墳释枕汾；太原故汾阳北秀容山、音岑释管涔；至汾阳北西入河释汾水。古注不现代定位，跨列不补距离。0103少陽另段。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0103",
+        "source-03-0104",
+        "source-03-0105"
+      ],
+      "basis": "0103—0105全在87页。0105正文空，但曰山上有赭者其下有鐵承0104管子；与0106縣雍分开。赤銀跨103—104连读，郭注银之精独归赤銀；不把少陽写作少咸。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0106",
+        "source-03-0107",
+        "source-03-0108",
+        "source-03-0109",
+        "source-03-0110"
+      ],
+      "basis": "0106—0108在87页，0108捕获88校回87；0109—0110在88页。北唐以閭跨107—108连注，白𪂂注独归白䳑，不移给白翟。小魚曰儵不借帶山儵魚鸡形；赤麟字照录。不驕与或作騷騷臭也另存，不擅解为现代疗效。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0111",
+        "source-03-0112"
+      ],
+      "basis": "0111—0112全在88页。勝水东北注汾，蒼玉随水文记述；青碧、蒼玉不强定现代成分，狐岐名称不充当狐狸形貌。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0113",
+        "source-03-0114",
+        "source-03-0115"
+      ],
+      "basis": "0113—0115全在88页。广員三百里照录，不擅换算圆直径面积；潜与郭注停其底分存，不强绘地下河道或定源流。鮪为水名，不据字义增鱼卡。"
+    },
+    {
+      "source_unit_ids": [
+        "source-03-0116"
+      ],
+      "basis": "0116全在88页。0117狂山虽捕获89页，实际起于88页末，留待下一阶段核；本段无水不与前后水域串联。"
     }
   ],
   "structure_inventory": {
@@ -903,33 +1030,34 @@
   ],
   "title_font_supplement": {
     "family": "Noto Serif SC",
-    "characters": "單机華漨求䑏䟽何儵孟寓帶彭栢椐橐虢譙駝鰼䑕幽張杠極樗熏聮葵蔓薤訾雘韭鴳鵁鵺䐆㗸侯匠柘潘磁竦薨那韓題鮭鳲䰽䲃刚夕懐枳渾瀤獄窫鮨鴈埋牲狕珪瘗隄鮮䧑",
+    "characters": "單机華漨求䑏䟽何儵孟寓帶彭栢椐橐虢譙駝鰼䑕幽張杠極樗熏聮葵蔓薤訾雘韭鴳鵁鵺䐆㗸侯匠柘潘磁竦薨那韓題鮭鳲䰽䲃刚夕懐枳渾瀤獄窫鮨鴈埋牲狕珪瘗隄鮮䧑䳑勝岐晉爾縣蒼酸閭雍鮪",
     "weights": [
       400,
       700
     ],
     "path": "frontend/public/fonts/shanhai-title-beishan.woff2",
-    "source_url": "https://fonts.gstatic.com/l/font?kit=H4chBXePl9DZ0Xe7gG9cyOj7oqOEvjGIgWH08zKueYpLSB8N6pBn5tcuMOYvZ2Rg3iCNHP2sydv3YUXv96GW6G_aL5g1pj1tdn2HRWCA5Oa1NoQACctPrht92reDmhUUZI73qeRRpSSivd_yukzftKEizbTmZP9pXm7sTG0Te9AQ4XNzO19Ne3hXi4bU3NFMy1u_ZgRPk2CKXGn72SUHefo51F3zyfs3ijS8ebEcPomNlaK4odKevVFwJuzUpXuA2Qond3WKB3Bei6gMgGY7tAZE3aQ_IKgqS9XpEOKBV6ZSeGcJfkYUFGPW8bc&skey=37fe335b8fd815cc&v=v36",
-    "sha256": "b9a4e4d8bdfdb60acba717f99d0601a67a782010b3a649efd08e3f584fa8e188",
+    "source_url": "https://fonts.gstatic.com/l/font?kit=H4chBXePl9DZ0Xe7gG9cyOj7oqOEnTGIgWH08zKueYpLSB8N6pBn5tcuMOYvZ2Rg0CSNH8et88H3bWrv85uW9VzaPLM1lAZtRGmHTmaA8c-1IKoAB-5PqwB-5JqAuhoXRIP3sMdRozWigcfyg3zfj6ci-rvmbc1pS3zsUWYTb-8Q9XtyCnlMRUlWvpzV6txMxnu_byFPg0mKdlr7-BsHX9g22ln83sM4uACzR4kTA4uCu6m4ud6emkBwGsDVtWSB1x0mekmLDktfjacNiVQ6vgJE8a8_C70qc9bpOtqBf5lSV3cJVWYUPk_W5YHWIzzryklS5wROhIt4homx4v8pU7rxSAbtbQUpTYQvW0Y&skey=37fe335b8fd815cc&v=v36",
+    "sha256": "0198eaf5139578c5cd9e5b600f6c61c4ec13ff713d6fd6c70dcb33922860a314",
     "license": "frontend/public/fonts/noto-serif-sc-LICENSE.txt",
     "rebuild": "python frontend/scripts/supplement-title-font.py",
-    "limits": "71字小子集随站点发布，不在运行时请求Google；原标题与罕字字库不改，既有30字本机依赖本批补2，另有28字限制，见独立ExtB子集记录。"
+    "limits": "82字小子集随站点发布，不在运行时请求Google；原标题与罕字字库不改，既有30字本机依赖本批补2，另有28字限制，见独立ExtB子集记录。"
   },
-  "limits": "已核76—87页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。",
+  "limits": "已核76—88页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。",
   "next": {
-    "name": "少陽之山",
+    "name": "狂山",
     "source_units": [
-      103,
-      105
+      117,
+      118
     ],
     "captured_pages": [
-      87
+      89
     ],
     "facsimile_pages": [
-      87
+      88,
+      89
     ],
     "status": "pending_facsimile_review",
-    "notes": "0103—0105少陽，0105正文空但管子郭注承104；与0106縣雍分段，复用87页。"
+    "notes": "0117在88页末，捕获89；0118狂水续89页，下一轮保存核89页，复用88页，不重复爾是。"
   },
   "text_corrections": [
     {
@@ -980,23 +1108,35 @@
   },
   "five_stage_plan": [
     {
-      "name": "羆差之山",
-      "passage_id": "passage-beishan-bicha",
+      "name": "少陽之山",
+      "passage_id": "passage-beishan-shaoyang",
       "source_units": [
-        90,
-        90
+        103,
+        105
       ],
-      "new_cards": 2,
+      "new_cards": 5,
       "reused_entry_ids": [],
       "text_status": "facsimile_reviewed",
       "browser_status": "see local handoff stage results"
     },
     {
-      "name": "北鮮之山",
-      "passage_id": "passage-beishan-beixian",
+      "name": "縣雍之山",
+      "passage_id": "passage-beishan-xianyong",
       "source_units": [
-        91,
-        92
+        106,
+        110
+      ],
+      "new_cards": 9,
+      "reused_entry_ids": [],
+      "text_status": "facsimile_reviewed",
+      "browser_status": "see local handoff stage results"
+    },
+    {
+      "name": "狐岐之山",
+      "passage_id": "passage-beishan-huqi",
+      "source_units": [
+        111,
+        112
       ],
       "new_cards": 4,
       "reused_entry_ids": [],
@@ -1004,37 +1144,25 @@
       "browser_status": "see local handoff stage results"
     },
     {
-      "name": "隄山",
-      "passage_id": "passage-beishan-dishan",
+      "name": "白沙山",
+      "passage_id": "passage-beishan-baisha",
       "source_units": [
-        93,
-        95
-      ],
-      "new_cards": 5,
-      "reused_entry_ids": [],
-      "text_status": "facsimile_reviewed",
-      "browser_status": "see local handoff stage results"
-    },
-    {
-      "name": "北山经首列总括与祭礼",
-      "passage_id": "passage-beishan-range1-summary",
-      "source_units": [
-        96,
-        99
-      ],
-      "new_cards": 5,
-      "reused_entry_ids": [],
-      "text_status": "facsimile_reviewed",
-      "browser_status": "see local handoff stage results"
-    },
-    {
-      "name": "管涔之山",
-      "passage_id": "passage-beishan-guancen",
-      "source_units": [
-        100,
-        102
+        113,
+        115
       ],
       "new_cards": 3,
+      "reused_entry_ids": [],
+      "text_status": "facsimile_reviewed",
+      "browser_status": "see local handoff stage results"
+    },
+    {
+      "name": "爾是之山",
+      "passage_id": "passage-beishan-ershi",
+      "source_units": [
+        116,
+        116
+      ],
+      "new_cards": 1,
       "reused_entry_ids": [],
       "text_status": "facsimile_reviewed",
       "browser_status": "see local handoff stage results"
