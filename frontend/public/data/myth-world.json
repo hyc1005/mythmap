@@ -1,5 +1,5 @@
 {
-  "revision": "myth-world-2026-10-24-beishan-twenty-two-v1",
+  "revision": "myth-world-2026-10-24-beishan-twenty-seven-v1",
   "coordinate_system": "diagram-units",
   "coordinate_note": "x/y are layout hints only. They encode cardinal orientation when supported by text; no distance or scale is implied.",
   "stages": [
@@ -7370,6 +7370,190 @@
       ],
       "artwork": "beishan/snake-feiyi-hunxi-v1.webp",
       "artwork_caption": "原文形貌与木刻演绎 · 刻纹、配色和姿态为艺术解释；郭注形貌另有说明。"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 85",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/85"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/85",
+      "source_unit_ids": [
+        "source-03-0090"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-bicha",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "beast-beishan-yema-bicha",
+      "kind": "beast",
+      "name": "野马（羆差郭注）",
+      "description": "正文多马，郭注野马似马而小；小型马体依注说，配色姿态为艺术解释，不定现代种。",
+      "quote": "多馬",
+      "commentary_quote": "野馬也似馬而小",
+      "context_place_id": "place-beishan-bicha",
+      "source_passage_ids": [
+        "passage-beishan-bicha"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-bicha"
+      ],
+      "artwork": "beishan/horse-yema-bicha-v1.webp",
+      "artwork_caption": "原文形貌与木刻演绎 · 刻纹、配色和姿态为艺术解释；郭注形貌另有说明。"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0091",
+        "source-03-0092"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-beixian",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "beast-beishan-ma-beixian",
+      "kind": "beast",
+      "name": "马（北鮮）",
+      "description": "仅列马名，不借别山注说补形。",
+      "quote": "是多馬",
+      "commentary_quote": "",
+      "context_place_id": "place-beishan-beixian",
+      "source_passage_ids": [
+        "passage-beishan-beixian"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-beixian"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 统一问号占位不代表本生物形态。"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0093",
+        "source-03-0094",
+        "source-03-0095"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-dishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "beast-beishan-ma-dishan",
+      "kind": "beast",
+      "name": "马（隄山）",
+      "description": "马仅列名，保留占位。",
+      "quote": "多馬",
+      "commentary_quote": "",
+      "context_place_id": "place-beishan-dishan",
+      "source_passage_ids": [
+        "passage-beishan-dishan"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-dishan"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 统一问号占位不代表本生物形态。"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0093",
+        "source-03-0094",
+        "source-03-0095"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-dishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "beast-beishan-yao-dishan",
+      "kind": "beast",
+      "name": "狕",
+      "description": "狕豹状文首，音么依郭注；额纹几何、体色与低伏姿态为艺术解释，不增角翼人面。",
+      "quote": "有獸焉其状如豹而文首名曰狕",
+      "commentary_quote": "音么",
+      "context_place_id": "place-beishan-dishan",
+      "source_passage_ids": [
+        "passage-beishan-dishan"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-dishan"
+      ],
+      "artwork": "beishan/creature-yao-dishan-v1.webp",
+      "artwork_caption": "原文形貌与木刻演绎 · 刻纹、配色和姿态为艺术解释；郭注形貌另有说明。"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0093",
+        "source-03-0094",
+        "source-03-0095"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-dishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "beast-beishan-longgui-dishan",
+      "kind": "beast",
+      "name": "龍龜（隄山）",
+      "description": "龍龜只列名，不按名拼装龙首龟身；其中所指水域不强定。",
+      "quote": "其中多龍龜",
+      "commentary_quote": "",
+      "context_place_id": "place-beishan-dishan",
+      "source_passage_ids": [
+        "passage-beishan-dishan"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-dishan",
+        "water-beishan-di-dishan"
+      ],
+      "relation_scope": "water",
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 统一问号占位不代表本生物形态。"
     }
   ],
   "natural_features": [
@@ -21880,16 +22064,20 @@
       "source_chapter": "《北山经》",
       "source_book": 3,
       "region": "北山经",
-      "source_locator": "卷第三 · 影印页 84",
+      "source_locator": "卷第三 · 影印页 84、86",
       "source_pages": [
-        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/84"
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/84",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
       ],
       "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/84",
       "source_unit_ids": [
         "source-03-0076",
         "source-03-0077",
         "source-03-0078",
-        "source-03-0079"
+        "source-03-0079",
+        "source-03-0093",
+        "source-03-0094",
+        "source-03-0095"
       ],
       "reveal_chapter": "03",
       "content_batch": "beishan-yufa",
@@ -21900,18 +22088,25 @@
       "id": "water-beishan-taize",
       "kind": "water",
       "name": "㤗澤（北山经）",
-      "description": "㤗澤接瀤澤水，保留㤗字，不定现代湖泊。",
-      "quote": "東北流注于㤗澤",
+      "description": "北山㤗澤分别承接瀤澤水东北流与隄水东流；出处分开，不定现代湖泊。",
+      "quote": "東北流注于㤗澤；隄水出焉而東流注于㤗澤",
       "commentary_quote": "",
       "context_place_id": "place-beishan-yufa",
       "source_passage_ids": [
-        "passage-beishan-yufa"
+        "passage-beishan-yufa",
+        "passage-beishan-dishan"
       ],
       "related_entry_ids": [
         "passage-beishan-yufa",
-        "water-beishan-huaize-yufa"
+        "passage-beishan-dishan",
+        "water-beishan-huaize-yufa",
+        "water-beishan-di-dishan"
       ],
-      "relation_scope": "water"
+      "relation_scope": "water",
+      "context_place_ids": [
+        "place-beishan-dishan"
+      ],
+      "content_note": "分号分开獄法、隄山摘句，不是连续经文。"
     },
     {
       "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
@@ -22300,13 +22495,196 @@
       "source_chapter": "《北山经》",
       "source_book": 3,
       "region": "北山经",
-      "source_locator": "卷第三 · 影印页 77、78、79、80、83",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0091",
+        "source-03-0092"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-beixian",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "water-beishan-xian-beixian",
+      "kind": "water",
+      "name": "鮮水",
+      "description": "鮮水西北注涂吾，方向跨行。",
+      "quote": "鮮水出焉而西北流注于涂吾之水",
+      "commentary_quote": "",
+      "context_place_id": "place-beishan-beixian",
+      "source_passage_ids": [
+        "passage-beishan-beixian"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-beixian",
+        "water-beishan-tuwu-beixian"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0091",
+        "source-03-0092"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-beixian",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "water-beishan-tuwu-beixian",
+      "kind": "water",
+      "name": "涂吾之水",
+      "description": "涂吾接鮮水，马出水中为郭注古事，不推现代位置或生物形态。",
+      "quote": "西北流注于涂吾之水",
+      "commentary_quote": "漢元狩二年馬出涂吾水中也",
+      "context_place_id": "place-beishan-beixian",
+      "source_passage_ids": [
+        "passage-beishan-beixian"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-beixian",
+        "water-beishan-xian-beixian"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0093",
+        "source-03-0094",
+        "source-03-0095"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-dishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "water-beishan-di-dishan",
+      "kind": "water",
+      "name": "隄水",
+      "description": "隄水东注㤗澤，与瀤澤水东北向来水分存。",
+      "quote": "隄水出焉而東流注于㤗澤",
+      "commentary_quote": "",
+      "context_place_id": "place-beishan-dishan",
+      "source_passage_ids": [
+        "passage-beishan-dishan"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-dishan",
+        "water-beishan-taize",
+        "beast-beishan-longgui-dishan"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 87",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87",
+      "source_unit_ids": [
+        "source-03-0100",
+        "source-03-0101",
+        "source-03-0102"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-guancen",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "material-beishan-jade-guancen",
+      "kind": "material",
+      "name": "玉（管涔）",
+      "description": "山下多玉，不补成分颜色。",
+      "quote": "其下多玉",
+      "commentary_quote": "",
+      "context_place_id": "place-beishan-guancen",
+      "source_passage_ids": [
+        "passage-beishan-guancen"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-guancen"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 87",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87",
+      "source_unit_ids": [
+        "source-03-0100",
+        "source-03-0101",
+        "source-03-0102"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-guancen",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "water-beishan-fen-guancen",
+      "kind": "water",
+      "name": "汾水（管涔）",
+      "description": "汾水出管涔西注河；汾阳北西入河为古注，不现代定位。",
+      "quote": "汾水出焉而西流注于河",
+      "commentary_quote": "至汾陽縣北西入河",
+      "context_place_id": "place-beishan-guancen",
+      "source_passage_ids": [
+        "passage-beishan-guancen"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-guancen",
+        "water-beishan-he"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 77、78、79、80、83、87",
       "source_pages": [
         "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/77",
         "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/78",
         "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/79",
         "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/80",
-        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/83"
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/83",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87"
       ],
       "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/77",
       "source_unit_ids": [
@@ -22331,7 +22709,10 @@
         "source-03-0068",
         "source-03-0069",
         "source-03-0070",
-        "source-03-0071"
+        "source-03-0071",
+        "source-03-0100",
+        "source-03-0101",
+        "source-03-0102"
       ],
       "reveal_chapter": "03",
       "content_batch": "beishan-qiaoming",
@@ -22346,18 +22727,20 @@
         "passage-beishan-guowei",
         "passage-beishan-shizhe",
         "passage-beishan-dunhong",
+        "passage-beishan-guancen",
         "water-beishan-qiao-qiaoming",
         "water-beishan-xiao-zhuoguang",
         "water-beishan-yi-guoshan",
         "water-beishan-yu-guowei",
         "water-beishan-ci-shizhe",
-        "water-beishan-dunhong"
+        "water-beishan-dunhong",
+        "water-beishan-fen-guancen"
       ],
       "id": "water-beishan-he",
       "kind": "water",
       "name": "河（北山经）",
-      "description": "河分别承接譙水、囂水、伊水、魚水和泚水的西流。五段汇流与敦薨段崑崙东北隅实惟河源的古述分别保存，不据同名与西山河合并或认定现代汇流点。",
-      "quote": "譙水出焉西流注于河；囂水出焉而西流注于河；伊水出焉西流注于河；魚水出焉而西流注于河；泚水出焉而西流注于河；出于崑崙之東北隅實惟河源",
+      "description": "河分别承接譙水、囂水、伊水、魚水和泚水的西流。五段汇流与敦薨段崑崙东北隅实惟河源的古述分别保存，次二首山另记汾水西注河；不据同名与西山河合并或认定现代汇流点。",
+      "quote": "譙水出焉西流注于河；囂水出焉而西流注于河；伊水出焉西流注于河；魚水出焉而西流注于河；泚水出焉而西流注于河；出于崑崙之東北隅實惟河源；汾水出焉而西流注于河",
       "commentary_quote": "",
       "source_passage_ids": [
         "passage-beishan-qiaoming",
@@ -22365,7 +22748,8 @@
         "passage-beishan-guoshan",
         "passage-beishan-guowei",
         "passage-beishan-shizhe",
-        "passage-beishan-dunhong"
+        "passage-beishan-dunhong",
+        "passage-beishan-guancen"
       ],
       "context_place_id": "place-beishan-qiaoming",
       "context_place_ids": [
@@ -22373,10 +22757,11 @@
         "place-beishan-guoshan",
         "place-beishan-guowei",
         "place-beishan-shizhe",
-        "place-beishan-dunhong"
+        "place-beishan-dunhong",
+        "place-beishan-guancen"
       ],
       "relation_scope": "water",
-      "content_note": "分号分开五段汇流摘句与敦薨河源古述，不是连续经文或现代河道。"
+      "content_note": "分号分开五段汇流摘句与敦薨河源古述，另列次二管涔汾水摘句，不是连续经文或现代河道。"
     }
   ],
   "passages": [
@@ -30794,12 +31179,340 @@
         "place-beishan-beidan",
         "plant-beishan-cong-beidan",
         "plant-beishan-jiu-beidan",
-        "passage-beishan-hunxi"
+        "passage-beishan-hunxi",
+        "passage-beishan-bicha"
       ],
       "subjects": [
         "北單之山",
         "葱（北單）",
         "韭（北單）"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 85",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/85"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/85",
+      "source_unit_ids": [
+        "source-03-0090"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-bicha",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "passage-beishan-bicha",
+      "kind": "passage",
+      "name": "羆差之山",
+      "range": 1,
+      "order": 23,
+      "description": "北單向北百里为羆差，无草木，多马。郭注称野马、似马而小，作为注文形貌依据另记，不认定现代野马物种。",
+      "quote": "又北百里曰羆差之山無草木多馬",
+      "captured_text": "又北百里曰羆差之山無草木多馬",
+      "commentary_quote": "〔影印页85〕野馬也似馬而小",
+      "content_note": "0090正文与野马小注均在85页末，捕获86校回85；0091北鮮另段。小型马体依郭注，体色姿态为艺术解释。",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-03-0090",
+          "annotations": [
+            "野馬也似馬而小"
+          ]
+        }
+      ],
+      "source_span": [
+        1342,
+        1356
+      ],
+      "related_entry_ids": [
+        "place-beishan-bicha",
+        "beast-beishan-yema-bicha",
+        "passage-beishan-beidan",
+        "passage-beishan-beixian"
+      ],
+      "subjects": [
+        "羆差之山",
+        "野马（羆差郭注）"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0091",
+        "source-03-0092"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-beixian",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "passage-beishan-beixian",
+      "kind": "passage",
+      "name": "北鮮之山",
+      "range": 1,
+      "order": 24,
+      "description": "羆差向北百八十里为北鮮，多马。鮮水从此出，向西北流注涂吾之水。郭注汉元狩二年马出涂吾水中的记述另存，不据此画水马或添鱼尾。",
+      "quote": "又北百八十里曰北鮮之山是多馬鮮水出焉而西北流注于涂吾之水",
+      "captured_text": "又北百八十里曰北鮮之山是多馬鮮水出焉而西北流注于涂吾之水",
+      "commentary_quote": "〔影印页86〕漢元狩二年馬出涂吾水中也",
+      "content_note": "0091—0092全核86页。西与北跨行连读作西北；郭注马出水中故事不当本山马形貌，不借羆差小马或求如水马图。",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-03-0091",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-03-0092",
+          "annotations": [
+            "漢元狩二年馬出涂吾水中也"
+          ]
+        }
+      ],
+      "source_span": [
+        1356,
+        1384
+      ],
+      "related_entry_ids": [
+        "place-beishan-beixian",
+        "beast-beishan-ma-beixian",
+        "water-beishan-xian-beixian",
+        "water-beishan-tuwu-beixian",
+        "passage-beishan-bicha",
+        "passage-beishan-dishan"
+      ],
+      "subjects": [
+        "北鮮之山",
+        "马（北鮮）",
+        "鮮水",
+        "涂吾之水"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0093",
+        "source-03-0094",
+        "source-03-0095"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-dishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "passage-beishan-dishan",
+      "kind": "passage",
+      "name": "隄山",
+      "range": 1,
+      "order": 25,
+      "description": "北鮮向北百七十里为隄山，多马。狕豹状而文首；隄水东流注㤗澤，水中多龍龜。龍龜仅列名，不按名拼装龙首龟身；隄山异体䧑与狕音么为郭注。",
+      "quote": "又北百七十里曰隄山多馬有獸焉其状如豹而文首名曰狕隄水出焉而東流注于㤗澤其中多龍龜",
+      "captured_text": "又北百七十里曰隄山多馬有獸焉其状如豹而文首名曰狕隄水出焉而東流注于㤗澤其中多龍龜",
+      "commentary_quote": "〔影印页86〕或作䧑古字耳\n〔影印页86〕音么",
+      "content_note": "0093—0095全核86页。狕音么独归兽名；䧑异体注独归山名。㤗澤复用獄法水文索引，保留东向与东北向来水区别。龍龜不补形。",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-03-0093",
+          "annotations": [
+            "或作䧑古字耳"
+          ]
+        },
+        {
+          "source_unit_id": "source-03-0094",
+          "annotations": [
+            "音么"
+          ]
+        },
+        {
+          "source_unit_id": "source-03-0095",
+          "annotations": []
+        }
+      ],
+      "source_span": [
+        1384,
+        1424
+      ],
+      "related_entry_ids": [
+        "place-beishan-dishan",
+        "beast-beishan-ma-dishan",
+        "beast-beishan-yao-dishan",
+        "water-beishan-di-dishan",
+        "beast-beishan-longgui-dishan",
+        "water-beishan-taize",
+        "passage-beishan-beixian",
+        "passage-beishan-range1-summary"
+      ],
+      "subjects": [
+        "隄山",
+        "马（隄山）",
+        "狕",
+        "隄水",
+        "龍龜（隄山）"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0096",
+        "source-03-0097",
+        "source-03-0098",
+        "source-03-0099"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "passage-beishan-range1-summary",
+      "kind": "passage",
+      "name": "北山经首列总括与祭礼",
+      "range": 1,
+      "order": 26,
+      "description": "首列自單狐至隄山，原报二十五山、五千四百九十里；逐段列名亦为25山。山神皆人面蛇身。祭文记雄鸡、彘、珪、瘗埋而不糈；郭注释不用米、牲玉皆埋。山北人生食不火之物及异文分别保留，不作现代族群定论。",
+      "quote": "凡北山經之首自單狐之山至于隄山凡二十五山五千四百九十里其神皆人靣蛇身其祠之毛用一雄鷄彘瘞吉玉用一珪瘞而不糈其山北人皆生食不火之物",
+      "captured_text": "凡北山經之首自單狐之山至于隄山凡二十五山五千四百九十里其神皆人靣蛇身其祠之毛用一雄鷄彘瘞吉玉用一珪瘞而不糈其山北人皆生食不火之物",
+      "commentary_quote": "〔影印页86〕言祭不用米皆埋其所用牲玉\n〔影印页86〕或作皆生食而不火",
+      "content_note": "0096—0099全在86页，0099捕获87校回86。总括不计第26山。雄鷄彘瘞吉按原序留存，吉不擅删改，不擅定彘数量；不糈与郭注不用米分列。0099异文皆生食而不火另记。0100管涔开启次二列。",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-03-0096",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-03-0097",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-03-0098",
+          "annotations": [
+            "言祭不用米皆埋其所用牲玉"
+          ]
+        },
+        {
+          "source_unit_id": "source-03-0099",
+          "annotations": [
+            "或作皆生食而不火"
+          ]
+        }
+      ],
+      "source_span": [
+        1424,
+        1488
+      ],
+      "related_entry_ids": [
+        "rite-beishan-range1-summary",
+        "deity-beishan-human-serpent-range1-summary",
+        "rite-beishan-offerings-range1-summary",
+        "rite-beishan-gui-range1-summary",
+        "rite-beishan-raw-food-range1-summary",
+        "passage-beishan-dishan",
+        "passage-beishan-guancen"
+      ],
+      "subjects": [
+        "北山经首列总括与祭礼",
+        "首列山神（人面蛇身）",
+        "首列牲祭与瘗埋",
+        "珪（首列祭玉）",
+        "山北生食记述"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 87",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87",
+      "source_unit_ids": [
+        "source-03-0100",
+        "source-03-0101",
+        "source-03-0102"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-guancen",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "passage-beishan-guancen",
+      "kind": "passage",
+      "name": "管涔之山",
+      "range": 2,
+      "order": 27,
+      "description": "北次二经之首在河之东，首枕汾，名管涔。山上无木而多草，下多玉；汾水从此出，向西注河。郭注临汾、太原郡故汾阳县北秀容山及入河说明保留为古注，不换算现代坐标，也不补隄山至本山距离。",
+      "quote": "北次二經之首在河之東其首枕汾其名曰管涔之山其上無木而多草其下多玉汾水出焉而西流注于河",
+      "captured_text": "北次二經之首在河之東其首枕汾其名曰管涔之山其上無木而多草其下多玉汾水出焉而西流注于河",
+      "commentary_quote": "〔影印页87〕臨汾水上也音墳\n〔影印页87〕今在太原郡故汾陽縣北秀容山涔音岑也\n〔影印页87〕至汾陽縣北西入河",
+      "content_note": "0100—0102全核87页。临汾水上、音墳释枕汾；太原故汾阳北秀容山、音岑释管涔；至汾阳北西入河释汾水。古注不现代定位，跨列不补距离。0103少陽另段。",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-03-0100",
+          "annotations": [
+            "臨汾水上也音墳"
+          ]
+        },
+        {
+          "source_unit_id": "source-03-0101",
+          "annotations": [
+            "今在太原郡故汾陽縣北秀容山涔音岑也"
+          ]
+        },
+        {
+          "source_unit_id": "source-03-0102",
+          "annotations": [
+            "至汾陽縣北西入河"
+          ]
+        }
+      ],
+      "source_span": [
+        1488,
+        1530
+      ],
+      "related_entry_ids": [
+        "place-beishan-guancen",
+        "material-beishan-jade-guancen",
+        "water-beishan-fen-guancen",
+        "water-beishan-he",
+        "passage-beishan-range1-summary"
+      ],
+      "subjects": [
+        "管涔之山",
+        "玉（管涔）",
+        "汾水（管涔）"
       ]
     }
   ],
@@ -38492,6 +39205,329 @@
       ],
       "related_entry_ids": [
         "passage-beishan-beidan"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 85",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/85"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/85",
+      "source_unit_ids": [
+        "source-03-0090"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-bicha",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "place-beishan-bicha",
+      "kind": "place",
+      "name": "羆差之山",
+      "description": "北單向北百里为羆差，无草木，多马。郭注称野马、似马而小，作为注文形貌依据另记，不认定现代野马物种。",
+      "quote": "又北百里曰羆差之山無草木多馬",
+      "commentary_quote": "〔影印页85〕野馬也似馬而小",
+      "content_note": "0090正文与野马小注均在85页末，捕获86校回85；0091北鮮另段。小型马体依郭注，体色姿态为艺术解释。",
+      "source_passage_ids": [
+        "passage-beishan-bicha"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-bicha"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0091",
+        "source-03-0092"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-beixian",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "place-beishan-beixian",
+      "kind": "place",
+      "name": "北鮮之山",
+      "description": "羆差向北百八十里为北鮮，多马。鮮水从此出，向西北流注涂吾之水。郭注汉元狩二年马出涂吾水中的记述另存，不据此画水马或添鱼尾。",
+      "quote": "又北百八十里曰北鮮之山是多馬鮮水出焉而西北流注于涂吾之水",
+      "commentary_quote": "〔影印页86〕漢元狩二年馬出涂吾水中也",
+      "content_note": "0091—0092全核86页。西与北跨行连读作西北；郭注马出水中故事不当本山马形貌，不借羆差小马或求如水马图。",
+      "source_passage_ids": [
+        "passage-beishan-beixian"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-beixian"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0093",
+        "source-03-0094",
+        "source-03-0095"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-dishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "place-beishan-dishan",
+      "kind": "place",
+      "name": "隄山",
+      "description": "北鮮向北百七十里为隄山，多马。狕豹状而文首；隄水东流注㤗澤，水中多龍龜。龍龜仅列名，不按名拼装龙首龟身；隄山异体䧑与狕音么为郭注。",
+      "quote": "又北百七十里曰隄山多馬有獸焉其状如豹而文首名曰狕隄水出焉而東流注于㤗澤其中多龍龜",
+      "commentary_quote": "〔影印页86〕或作䧑古字耳\n〔影印页86〕音么",
+      "content_note": "0093—0095全核86页。狕音么独归兽名；䧑异体注独归山名。㤗澤复用獄法水文索引，保留东向与东北向来水区别。龍龜不补形。",
+      "source_passage_ids": [
+        "passage-beishan-dishan"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-dishan"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0096",
+        "source-03-0097",
+        "source-03-0098",
+        "source-03-0099"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "rite-beishan-range1-summary",
+      "kind": "rite",
+      "name": "北山经首列总括与祭礼",
+      "description": "首列自單狐至隄山，原报二十五山、五千四百九十里；逐段列名亦为25山。山神皆人面蛇身。祭文记雄鸡、彘、珪、瘗埋而不糈；郭注释不用米、牲玉皆埋。山北人生食不火之物及异文分别保留，不作现代族群定论。",
+      "quote": "凡北山經之首自單狐之山至于隄山凡二十五山五千四百九十里其神皆人靣蛇身其祠之毛用一雄鷄彘瘞吉玉用一珪瘞而不糈其山北人皆生食不火之物",
+      "commentary_quote": "〔影印页86〕言祭不用米皆埋其所用牲玉\n〔影印页86〕或作皆生食而不火",
+      "content_note": "0096—0099全在86页，0099捕获87校回86。总括不计第26山。雄鷄彘瘞吉按原序留存，吉不擅删改，不擅定彘数量；不糈与郭注不用米分列。0099异文皆生食而不火另记。0100管涔开启次二列。",
+      "source_passage_ids": [
+        "passage-beishan-range1-summary"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-range1-summary",
+        "deity-beishan-human-serpent-range1-summary",
+        "rite-beishan-offerings-range1-summary",
+        "rite-beishan-gui-range1-summary",
+        "rite-beishan-raw-food-range1-summary"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0096",
+        "source-03-0097",
+        "source-03-0098",
+        "source-03-0099"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "deity-beishan-human-serpent-range1-summary",
+      "kind": "deity",
+      "name": "首列山神（人面蛇身）",
+      "description": "首列山神皆人面蛇身；图为共同形貌代表，非25神合体。脸龄发式、配色盘曲为解释。",
+      "quote": "其神皆人靣蛇身",
+      "commentary_quote": "",
+      "source_passage_ids": [
+        "passage-beishan-range1-summary"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-range1-summary",
+        "rite-beishan-range1-summary"
+      ],
+      "artwork": "beishan/deity-human-serpent-range1-v1.webp",
+      "artwork_caption": "原文形貌与木刻演绎 · 刻纹、配色和姿态为艺术解释；郭注形貌另有说明。"
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0096",
+        "source-03-0097",
+        "source-03-0098",
+        "source-03-0099"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "rite-beishan-offerings-range1-summary",
+      "kind": "rite",
+      "name": "首列牲祭与瘗埋",
+      "description": "雄鷄彘瘞吉照录，不擅定彘数量或改吉；郭注牲玉皆埋另存。",
+      "quote": "其祠之毛用一雄鷄彘瘞吉",
+      "commentary_quote": "言祭不用米皆埋其所用牲玉",
+      "source_passage_ids": [
+        "passage-beishan-range1-summary"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-range1-summary",
+        "rite-beishan-range1-summary"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0096",
+        "source-03-0097",
+        "source-03-0098",
+        "source-03-0099"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "rite-beishan-gui-range1-summary",
+      "kind": "rite",
+      "name": "珪（首列祭玉）",
+      "description": "一珪瘗埋、不糈依文；不补尺寸颜色或玉图。",
+      "quote": "玉用一珪瘞而不糈",
+      "commentary_quote": "",
+      "source_passage_ids": [
+        "passage-beishan-range1-summary"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-range1-summary",
+        "rite-beishan-range1-summary"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 86",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+      "source_unit_ids": [
+        "source-03-0096",
+        "source-03-0097",
+        "source-03-0098",
+        "source-03-0099"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "rite-beishan-raw-food-range1-summary",
+      "kind": "rite",
+      "name": "山北生食记述",
+      "description": "生食不火之物与异文分别存，不当现代族群习俗定论。",
+      "quote": "其山北人皆生食不火之物",
+      "commentary_quote": "或作皆生食而不火",
+      "source_passage_ids": [
+        "passage-beishan-range1-summary"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-range1-summary",
+        "rite-beishan-range1-summary"
+      ]
+    },
+    {
+      "source": "《山海经·北山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《北山经》",
+      "source_book": 3,
+      "region": "北山经",
+      "source_locator": "卷第三 · 影印页 87",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87",
+      "source_unit_ids": [
+        "source-03-0100",
+        "source-03-0101",
+        "source-03-0102"
+      ],
+      "reveal_chapter": "03",
+      "content_batch": "beishan-guancen",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。",
+      "id": "place-beishan-guancen",
+      "kind": "place",
+      "name": "管涔之山",
+      "description": "北次二经之首在河之东，首枕汾，名管涔。山上无木而多草，下多玉；汾水从此出，向西注河。郭注临汾、太原郡故汾阳县北秀容山及入河说明保留为古注，不换算现代坐标，也不补隄山至本山距离。",
+      "quote": "北次二經之首在河之東其首枕汾其名曰管涔之山其上無木而多草其下多玉汾水出焉而西流注于河",
+      "commentary_quote": "〔影印页87〕臨汾水上也音墳\n〔影印页87〕今在太原郡故汾陽縣北秀容山涔音岑也\n〔影印页87〕至汾陽縣北西入河",
+      "content_note": "0100—0102全核87页。临汾水上、音墳释枕汾；太原故汾阳北秀容山、音岑释管涔；至汾阳北西入河释汾水。古注不现代定位，跨列不补距离。0103少陽另段。",
+      "source_passage_ids": [
+        "passage-beishan-guancen"
+      ],
+      "related_entry_ids": [
+        "passage-beishan-guancen"
       ]
     }
   ]

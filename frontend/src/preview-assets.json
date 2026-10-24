@@ -4408,5 +4408,59 @@
         439
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/horse-yema-bicha-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/horse-yema-bicha-v1-card.webp",
+      "bytes": 35334,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/horse-yema-bicha-v1-preview.webp",
+      "bytes": 69500,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-yao-dishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-yao-dishan-v1-card.webp",
+      "bytes": 36622,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-yao-dishan-v1-preview.webp",
+      "bytes": 68948,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/deity-human-serpent-range1-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/deity-human-serpent-range1-v1-card.webp",
+      "bytes": 25822,
+      "dimensions": [
+        292,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/deity-human-serpent-range1-v1-preview.webp",
+      "bytes": 49210,
+      "dimensions": [
+        439,
+        480
+      ]
+    }
   }
 }

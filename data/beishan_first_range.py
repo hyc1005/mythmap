@@ -7,7 +7,8 @@ ROOT = Path(__file__).resolve().parents[1]
 PAGE_CORRECTIONS = {'source-03-0018': 77, 'source-03-0027': 78,
                     'source-03-0036': 79, 'source-03-0045': 80,
                     'source-03-0054': 81, 'source-03-0063': 82,
-                    'source-03-0072': 83, 'source-03-0081': 84}
+                    'source-03-0072': 83, 'source-03-0081': 84,
+                    'source-03-0090': 85, 'source-03-0099': 86}
 TEXT_CORRECTIONS = [
     dict(source_unit_id='source-03-0081',captured='⟦缺字图:⿱彐⿰垁凡--彘⟧',replacement='彘',page=84,basis='84页末人目彘耳，恢复缺字图，捕获另存。'),
     dict(source_unit_id='source-03-0082',captured='⟦缺字图:囂⟧',replacement='囂',page=85,basis='85页诸懐水西注囂水。'),
@@ -277,6 +278,11 @@ ENTITIES += [
 ]
 
 
+from beishan_range_transition import ROWS as TRANSITION_ROWS, entities as transition_entities
+ROWS += TRANSITION_ROWS
+ENTITIES += transition_entities(E)
+
+
 def extend(world, english, chapter, review):
     folder = ROOT / 'frontend/artwork-source/beishan'
     jobs = {a['entry_id']:a for a in json.loads((folder/'entities-generation.json').read_text(encoding='utf-8'))['assets']}
@@ -290,7 +296,7 @@ def extend(world, english, chapter, review):
         world[group] = [r for r in world[group] if r.get('content_batch') not in batches and r['id']!='beast-zhu-jian']
     passages, cards = [], []
     for order,row in enumerate(ROWS,3):
-        slug=row['slug']; first,last=row['units']; pid='passage-beishan-'+slug; place='place-beishan-'+slug
+        slug=row['slug']; first,last=row['units']; pid='passage-beishan-'+slug; place=('rite-' if row.get('entry_kind')=='rite' else 'place-')+'beishan-'+slug
         refs=[(f'source-03-{i+1:04}',lines[i]) for i in range(first-1,last)]
         pages=sorted({PAGE_CORRECTIONS.get(id,int(l['page'].rsplit('/',1)[1])) for id,l in refs})
         urls=[f'https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/{n}' for n in pages]
@@ -299,10 +305,11 @@ def extend(world, english, chapter, review):
         common=dict(source=source,source_chapter='《北山经》',source_book=3,region='北山经',source_locator='卷第三 · 影印页 '+'、'.join(map(str,pages)),source_pages=urls,url=urls[0],source_unit_ids=[id for id,_ in refs],reveal_chapter='03',content_batch='beishan-'+slug,review_status='facsimile_reviewed',artwork_pending=True,direction='按北山经篇内次序与方位阅读，不换算现代坐标或实测里程。',editorial_note='经文、捕获快照和郭注分存；白话及英文为项目整理。食用、治病与灾异为古籍记述。')
         translation=dict(source=en_source,source_chapter='Beishan Jing',region='Beishan Jing',source_locator='Volume 3 · scan pages '+', '.join(map(str,pages)),direction='Read the Northern textual sequence and directions; these are not modern coordinates or measured distances.',editorial_note='Text, captured transcription and commentary are separate; explanations and English are editorial. Eating, healing and omen claims are ancient accounts.')
         commentary='\n'.join(f'〔影印页{PAGE_CORRECTIONS.get(id,int(l["page"].rsplit("/",1)[1]))}〕'+'；'.join(l['annotations']) for id,l in refs if l['annotations'])
-        p={**common,'id':pid,'kind':'passage','name':row['name'],'range':1,'order':order,'description':row['description'],'quote':raw,'captured_text':captured,'commentary_quote':commentary,'content_note':row['note'],'captured_commentary':[{'source_unit_id':id,'annotations':l['annotations']} for id,l in refs],'source_span':[sum(len(l['text']) for l in lines[:first-1]),sum(len(l['text']) for l in lines[:last])],'related_entry_ids':[place],'subjects':[row['name']]}
+        p={**common,'id':pid,'kind':'passage','name':row['name'],'range':row.get('range',1),'order':order,'description':row['description'],'quote':raw,'captured_text':captured,'commentary_quote':commentary,'content_note':row['note'],'captured_commentary':[{'source_unit_id':id,'annotations':l['annotations']} for id,l in refs],'source_span':[sum(len(l['text']) for l in lines[:first-1]),sum(len(l['text']) for l in lines[:last])],'related_entry_ids':[place],'subjects':[row['name']]}
         english[pid]={**translation,'name':row['en_name'],'description':row['en_description'],'quote':row['en_quote'],'content_note':row['en_note']}
-        c={**common,'id':place,'kind':'place','name':row['name'],'description':row['description'],'quote':raw,'commentary_quote':commentary,'content_note':row['note'],'source_passage_ids':[pid],'related_entry_ids':[pid]}
+        c={**common,'id':place,'kind':row.get('entry_kind','place'),'name':row['name'],'description':row['description'],'quote':raw,'commentary_quote':commentary,'content_note':row['note'],'source_passage_ids':[pid],'related_entry_ids':[pid]}
         english[place]=dict(english[pid]); cards.append(c)
+        context_card=c
         for e in [e for e in ENTITIES if e['slug']==slug]:
             assert e['quote'] in raw,e['id']
             c={**(core if e['id']=='beast-zhu-jian' else {}),**common,**{k:e[k] for k in ['id','kind','name','description','quote']},'commentary_quote':e.get('commentary',''),'context_place_id':place,'source_passage_ids':[pid],'related_entry_ids':[pid]}
@@ -315,15 +322,19 @@ def extend(world, english, chapter, review):
             elif e['id']=='beast-zhu-jian':
                 c.update(artwork_pending=False,artwork_caption='旧图复核：独目、人首牛耳、豹身长尾；盘尾为居态演绎。')
                 english[e['id']]['artwork_caption']='Existing artwork reviewed: one eye, human head, ox ears, leopard body and long tail; the coiled tail interprets resting posture.'
-            elif e['kind']=='beast':
+            elif e['kind'] in {'beast','deity'}:
                 c.update(appearance_unknown=True,artwork_caption='形貌未详或依据不足 · 统一问号占位不代表本生物形态。')
                 english[e['id']]['artwork_caption']='Appearance unspecified or evidence insufficient; the shared question-mark placeholder is not a depiction.'
+            if row.get('entry_kind')=='rite':
+                c.pop('context_place_id',None)
+                c['related_entry_ids'].append(place)
+                context_card['related_entry_ids'].append(c['id'])
             cards.append(c);p['related_entry_ids'].append(c['id']);p['subjects'].append(c['name'])
         passages.append(p)
     byid={c['id']:c for c in cards}
-    contexts=[p for p in passages if p['id'] in {'passage-beishan-'+s for s in ['qiaoming','zhuoguang','guoshan','guowei','shizhe','dunhong']}]
-    he={**{k:v for k,v in contexts[0].items() if k not in ['id','kind','name','range','order','description','quote','captured_text','captured_commentary','commentary_quote','content_note','source_span','subjects']},'id':'water-beishan-he','kind':'water','name':'河（北山经）','description':'河分别承接譙水、囂水、伊水、魚水和泚水的西流。五段汇流与敦薨段崑崙东北隅实惟河源的古述分别保存，不据同名与西山河合并或认定现代汇流点。','quote':'；'.join(['譙水出焉西流注于河','囂水出焉而西流注于河','伊水出焉西流注于河','魚水出焉而西流注于河','泚水出焉而西流注于河','出于崑崙之東北隅實惟河源']),'commentary_quote':'','source_passage_ids':[p['id'] for p in contexts],'context_place_id':'place-beishan-qiaoming','context_place_ids':['place-beishan-zhuoguang','place-beishan-guoshan','place-beishan-guowei','place-beishan-shizhe','place-beishan-dunhong'],'source_unit_ids':list(dict.fromkeys(id for p in contexts for id in p['source_unit_ids'])),'source_pages':list(dict.fromkeys(u for p in contexts for u in p['source_pages'])),'source_locator':'卷第三 · 影印页 77、78、79、80、83','relation_scope':'water','related_entry_ids':[p['id'] for p in contexts],'content_note':'分号分开五段汇流摘句与敦薨河源古述，不是连续经文或现代河道。'}
-    english[he['id']]={**english['water-beishan-qiao-qiaoming'],'name':'He (Northern Mountains)','description':'The He separately receives the west-flowing Qiao, Xiao, Yi, Yu and Ci in five passages. Dunhong separately records an ancient source claim at Kunlun’s northeastern corner. These accounts remain separate, without a merger with the Western He or modern confluences.','quote':'The Qiao flows west into the He; separately, the Xiao flows west into the He; the Yi flows west into the He; the Yu flows west into the He; and the Ci flows west into the He; separately, the Dunhong passage describes Kunlun’s northeastern corner as a source of the He.','source_locator':'Volume 3 · scan pages 77, 78, 79, 80, 83','content_note':'Semicolons separate five confluence excerpts and the Dunhong source account, not a continuous quotation or modern river course.'}
+    contexts=[p for p in passages if p['id'] in {'passage-beishan-'+s for s in ['qiaoming','zhuoguang','guoshan','guowei','shizhe','dunhong','guancen']}]
+    he={**{k:v for k,v in contexts[0].items() if k not in ['id','kind','name','range','order','description','quote','captured_text','captured_commentary','commentary_quote','content_note','source_span','subjects']},'id':'water-beishan-he','kind':'water','name':'河（北山经）','description':'河分别承接譙水、囂水、伊水、魚水和泚水的西流。五段汇流与敦薨段崑崙东北隅实惟河源的古述分别保存，次二首山另记汾水西注河；不据同名与西山河合并或认定现代汇流点。','quote':'；'.join(['譙水出焉西流注于河','囂水出焉而西流注于河','伊水出焉西流注于河','魚水出焉而西流注于河','泚水出焉而西流注于河','出于崑崙之東北隅實惟河源','汾水出焉而西流注于河']),'commentary_quote':'','source_passage_ids':[p['id'] for p in contexts],'context_place_id':'place-beishan-qiaoming','context_place_ids':['place-beishan-zhuoguang','place-beishan-guoshan','place-beishan-guowei','place-beishan-shizhe','place-beishan-dunhong','place-beishan-guancen'],'source_unit_ids':list(dict.fromkeys(id for p in contexts for id in p['source_unit_ids'])),'source_pages':list(dict.fromkeys(u for p in contexts for u in p['source_pages'])),'source_locator':'卷第三 · 影印页 77、78、79、80、83、87','relation_scope':'water','related_entry_ids':[p['id'] for p in contexts],'content_note':'分号分开五段汇流摘句与敦薨河源古述，另列次二管涔汾水摘句，不是连续经文或现代河道。'}
+    english[he['id']]={**english['water-beishan-qiao-qiaoming'],'name':'He (Northern Mountains)','description':'The He separately receives the west-flowing Qiao, Xiao, Yi, Yu and Ci in five passages. Dunhong separately records an ancient source claim at Kunlun’s northeastern corner. These accounts remain separate, without a merger with the Western He or modern confluences. Range two separately adds the west-flowing Fen.','quote':'The Qiao flows west into the He; separately, the Xiao flows west into the He; the Yi flows west into the He; the Yu flows west into the He; and the Ci flows west into the He; separately, the Dunhong passage describes Kunlun’s northeastern corner as a source of the He; separately, the Fen rises at Guancen and flows west into the He.','source_locator':'Volume 3 · scan pages 77, 78, 79, 80, 83, 87','content_note':'Semicolons separate five confluence excerpts and the Dunhong source account, not a continuous quotation or modern river course. The Fen separately rises at Guancen and flows west into the He.'}
     cards.append(he);byid[he['id']]=he
     for p in contexts:p['related_entry_ids'].append(he['id'])
     links=[('water-beishan-peng-daishan','water-beishan-pihu-daishan'),('water-beishan-peng-daishan','beast-beishan-youyu-daishan'),('water-beishan-qiao-qiaoming','beast-beishan-heluo-qiaoming'),('water-beishan-xiao-zhuoguang','beast-beishan-xixi-zhuoguang'),('water-beishan-yu-guowei','material-beishan-wenbei-guowei')]
@@ -357,21 +368,32 @@ def extend(world, english, chapter, review):
     xiao.update(source_locator='卷第三 · 影印页 84、85',quote='西流注于囂水；囂水出焉而西北流注于海',content_note='分号分开北嶽与渾夕摘句；两处囂字缺图按85页恢复，不与涿光囂水合并。')
     hp['related_entry_ids'].append(xiao['id']);xiao['related_entry_ids'].append(hp['id'])
     english[xiao['id']].update(source_locator='Volume 3 · scan pages 84, 85',quote='It flows west into the Xiao; separately, the Xiao rises here and flows northwest into the sea.',content_note='Semicolons separate Beiyue and Hunxi excerpts; restored Xiao characters do not merge the Zhuoguang namesake.')
+    taize=byid['water-beishan-taize']; dp=next(p for p in passages if p['id']=='passage-beishan-dishan')
+    taize['source_passage_ids']=[*taize['source_passage_ids'],dp['id']]
+    taize['context_place_ids']=['place-beishan-dishan']
+    taize['source_unit_ids']=[*taize['source_unit_ids'],*dp['source_unit_ids']]
+    taize['source_pages']=list(dict.fromkeys([*taize['source_pages'],*dp['source_pages']]))
+    taize.update(source_locator='卷第三 · 影印页 84、86',quote='東北流注于㤗澤；隄水出焉而東流注于㤗澤',description='北山㤗澤分别承接瀤澤水东北流与隄水东流；出处分开，不定现代湖泊。',content_note='分号分开獄法、隄山摘句，不是连续经文。')
+    english[taize['id']].update(source_locator='Volume 3 · scan pages 84, 86',quote='It flows northeast into Taize; separately, the Di rises here and flows east into Taize.',description='Northern Taize receives the northeast-flowing Huaize and east-flowing Di in distinct passages, without a modern lake identification.',content_note='Semicolons separate Yufa and Di excerpts, not a continuous quotation.')
+    dp['related_entry_ids'].append(taize['id']);taize['related_entry_ids'].append(dp['id'])
+    links += [('water-beishan-xian-beixian','water-beishan-tuwu-beixian'),('water-beishan-di-dishan','water-beishan-taize'),('water-beishan-di-dishan','beast-beishan-longgui-dishan'),('water-beishan-fen-guancen','water-beishan-he')]
     for a,b in links:byid[a]['related_entry_ids'].append(b);byid[b]['related_entry_ids'].append(a)
-    for group,values in [('passages',passages),('text_entities',[c for c in cards if c['kind']=='place']),('natural_features',[c for c in cards if c['kind'] in {'plant','water','material'}]),('beasts',[c for c in cards if c['kind']=='beast'])]:world[group]+=values
+    for group,values in [('passages',passages),('text_entities',[c for c in cards if c['kind'] in {'place','rite','deity'}]),('natural_features',[c for c in cards if c['kind'] in {'plant','water','material'}]),('beasts',[c for c in cards if c['kind']=='beast'])]:world[group]+=values
     northern=sorted([p for p in world['passages'] if p.get('source_book')==3],key=lambda p:p['order'])
     for left,right in zip(northern,northern[1:]):
         for a,b in [(left,right),(right,left)]:
             if b['id'] not in a['related_entry_ids']:a['related_entry_ids'].append(b['id'])
-    world['revision']='myth-world-2026-10-24-beishan-twenty-two-v1'
-    review.update(scope='北山经首列前22段：單狐至北單，22阅读/141独立卡（含复用諸犍），后文待核。',scan_pages=[76,77,78,79,80,81,82,83,84,85],limits='已核76—85页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
+    world['revision']='myth-world-2026-10-24-beishan-twenty-seven-v1'
+    review.update(scope='北山经首列25山与总括、次二首山管涔：27阅读/160独立卡（含复用諸犍），后文待核。',scan_pages=list(range(76,88)),limits='已核76—87页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
     review['source_unit_page_corrections'].update(PAGE_CORRECTIONS)
     review['entry_ids'] += [c['id'] for c in cards]
     review['passages'] += [{'id':p['id'],'source_unit_ids':p['source_unit_ids'],'source_span':p['source_span'],'status':'facsimile_reviewed'} for p in passages]
     review['commentary_alignment'] += [{'source_unit_ids':p['source_unit_ids'],'basis':p['content_note']} for p in passages]
     review['text_corrections']=TEXT_CORRECTIONS
     review['extb_font_supplement']={'family':'Atlas Northern ExtB','characters':'𤟤𤠾𥬇𬋩𭥍','path':'frontend/public/fonts/atlas-northern-extb.woff2','license':'frontend/public/fonts/atlas-northern-extb-LICENSE.txt','source_url':'https://github.com/babelstone/babelstonehan-ufo/releases/download/v18.0.1/BabelStoneHanExtra.ttf','sha256':hashlib.sha256((ROOT/'frontend/public/fonts/atlas-northern-extb.woff2').read_bytes()).hexdigest(),'upstream_sha256':'cc8868109070c1813479dc2eb72fba508a1a6c33d807a485959e8f5dcd0e5724','weights':[400],'limits':'授权字体内存子集并改名，原版权许可保留；600由浏览器合成，旧30个本机依赖补2后仍有28个，不宣称全书补齐。'}
-    review['next']={'name':'羆差之山','source_units':[90,90],'captured_pages':[86],'facsimile_pages':[85],'status':'pending_facsimile_review','notes':'0090在85页末，下一轮核野马郭注与具体段界；0091北鮮另段，需核86页，不把野马现代物种补成正文。'}
+    review['next']={'name':'少陽之山','source_units':[103,105],'captured_pages':[87],'facsimile_pages':[87],'status':'pending_facsimile_review','notes':'0103—0105少陽，0105正文空但管子郭注承104；与0106縣雍分段，复用87页。'}
+    review['first_range_summary']={'status':'facsimile_reviewed','named_mountains':25,'reported_mountains':25,'reported_li':5490,'summary_units':[96,99],'note':'山数一致；里程保留原报，未以现代实测校正。'}
+
     review['five_stage_plan']=[{'name':r['name'],'passage_id':p['id'],'source_units':list(r['units']),'new_cards':sum(c.get('content_batch')=='beishan-'+r['slug'] and c['id']!='beast-zhu-jian' for c in cards),'reused_entry_ids':['beast-zhu-jian'] if r['slug']=='danzhang' else [],'text_status':'facsimile_reviewed','browser_status':'see local handoff stage results'} for r,p in zip(ROWS[-5:],passages[-5:])]
     review['reused_entry_ids']=['beast-zhu-jian']
-    assert len(cards)==126,len(cards)
+    assert len(cards)==145,len(cards)

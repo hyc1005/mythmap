@@ -533,6 +533,21 @@
   "beast-beishan-feiyi-hunxi": {
     "family": "shanhaijing"
   },
+  "beast-beishan-yema-bicha": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-ma-beixian": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-ma-dishan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-yao-dishan": {
+    "family": "shanhaijing"
+  },
+  "beast-beishan-longgui-dishan": {
+    "family": "shanhaijing"
+  },
   "place-qingqiu": {
     "family": "shanhaijing"
   },
@@ -1763,6 +1778,21 @@
   "plant-beishan-jiu-beidan": {
     "family": "shanhaijing"
   },
+  "water-beishan-xian-beixian": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-tuwu-beixian": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-di-dishan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-guancen": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-fen-guancen": {
+    "family": "shanhaijing"
+  },
   "water-beishan-he": {
     "family": "shanhaijing"
   },
@@ -2205,6 +2235,21 @@
     "family": "shanhaijing"
   },
   "passage-beishan-beidan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-bicha": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-beixian": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-dishan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-range1-summary": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-guancen": {
     "family": "shanhaijing"
   },
   "place-nanshan-tangting": {
@@ -2814,6 +2859,33 @@
     "family": "shanhaijing"
   },
   "place-beishan-beidan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-bicha": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-beixian": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-dishan": {
+    "family": "shanhaijing"
+  },
+  "rite-beishan-range1-summary": {
+    "family": "shanhaijing"
+  },
+  "deity-beishan-human-serpent-range1-summary": {
+    "family": "shanhaijing"
+  },
+  "rite-beishan-offerings-range1-summary": {
+    "family": "shanhaijing"
+  },
+  "rite-beishan-gui-range1-summary": {
+    "family": "shanhaijing"
+  },
+  "rite-beishan-raw-food-range1-summary": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-guancen": {
     "family": "shanhaijing"
   },
   "01-01": {

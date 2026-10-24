@@ -1,0 +1,53 @@
+"""Reviewed first-range close and second-range opening (source units 90–102)."""
+
+ROWS = [
+    dict(slug='bicha',name='羆差之山',en_name='Mount Bicha',units=(90,90),
+         description='北單向北百里为羆差，无草木，多马。郭注称野马、似马而小，作为注文形貌依据另记，不认定现代野马物种。',
+         en_description='Bicha lies 100 li north of Beidan, without vegetation and with many horses. Guo Pu describes wild horses resembling horses but smaller, without identifying a modern species.',
+         en_quote='One hundred li north is Mount Bicha, with no grasses or trees and many horses.',
+         note='0090正文与野马小注均在85页末，捕获86校回85；0091北鮮另段。小型马体依郭注，体色姿态为艺术解释。',
+         en_note='Unit 90 and its small-horse gloss are at the end of scan 85, captured as 86. Unit 91 begins Beixian. Small size follows commentary; color and pose are artistic.'),
+    dict(slug='beixian',name='北鮮之山',en_name='Mount Beixian',units=(91,92),
+         description='羆差向北百八十里为北鮮，多马。鮮水从此出，向西北流注涂吾之水。郭注汉元狩二年马出涂吾水中的记述另存，不据此画水马或添鱼尾。',
+         en_description='Beixian lies 180 li north of Bicha, with many horses. The Xian flows northwest into Tuwu water. Guo Pu separately records horses emerging from Tuwu in the second Yuanshou year; this adds no aquatic anatomy.',
+         en_quote='One hundred and eighty li north is Mount Beixian, with many horses. The Xian rises here and flows northwest into Tuwu water.',
+         note='0091—0092全核86页。西与北跨行连读作西北；郭注马出水中故事不当本山马形貌，不借羆差小马或求如水马图。',
+         en_note='Units 91–92 are on scan 86. The direction continues across the line break as northwest. The historical commentary supplies no horse anatomy or borrowed illustration.'),
+    dict(slug='dishan',name='隄山',en_name='Mount Di',units=(93,95),
+         description='北鮮向北百七十里为隄山，多马。狕豹状而文首；隄水东流注㤗澤，水中多龍龜。龍龜仅列名，不按名拼装龙首龟身；隄山异体䧑与狕音么为郭注。',
+         en_description='Di lies 170 li north of Beixian, with many horses. Yao is leopard-shaped with a patterned head. The Di flows east into Taize and the water account names longgui without specifying anatomy.',
+         en_quote='One hundred and seventy li north is Mount Di, with many horses. Yao is leopard-shaped with a patterned head. The Di rises here and flows east into Taize; longgui are abundant in this water account.',
+         note='0093—0095全核86页。狕音么独归兽名；䧑异体注独归山名。㤗澤复用獄法水文索引，保留东向与东北向来水区别。龍龜不补形。',
+         en_note='Units 93–95 are on scan 86. The pronunciation belongs to Yao and the variant to the mountain. Taize reuses the Yufa index with a distinct eastern inflow. Longgui remains unspecified.'),
+    dict(slug='range1-summary',name='北山经首列总括与祭礼',en_name='Northern first-range summary and rites',units=(96,99),entry_kind='rite',
+         description='首列自單狐至隄山，原报二十五山、五千四百九十里；逐段列名亦为25山。山神皆人面蛇身。祭文记雄鸡、彘、珪、瘗埋而不糈；郭注释不用米、牲玉皆埋。山北人生食不火之物及异文分别保留，不作现代族群定论。',
+         en_description='The first range runs from Danhu to Di, reporting 25 mountains and 5,490 li; 25 named mountain passages are present. Its deities have human faces and serpent bodies. The rites mention a cock, a pig, a gui tablet, burial and no ritual grain; Guo Pu explains burial of animal offerings and jade without rice. The northern raw-food account remains an ancient statement.',
+         en_quote='The first Northern range runs from Danhu to Di: twenty-five mountains, five thousand four hundred and ninety li. Its deities all have human faces and serpent bodies. The offering wording records one cock, a pig, burial and ji; one gui jade tablet is buried, without ritual grain. People north of these mountains all eat raw, uncooked things.',
+         note='0096—0099全在86页，0099捕获87校回86。总括不计第26山。雄鷄彘瘞吉按原序留存，吉不擅删改，不擅定彘数量；不糈与郭注不用米分列。0099异文皆生食而不火另记。0100管涔开启次二列。',
+         en_note='Units 96–99 are on scan 86; 99 was captured as 87. This is not a twenty-sixth mountain. The difficult offering sequence and ji remain without an invented pig count or substitution. The no-grain gloss and raw-food variant remain commentary. Unit 100 opens range two.'),
+    dict(slug='guancen',name='管涔之山',en_name='Mount Guancen',units=(100,102),range=2,
+         description='北次二经之首在河之东，首枕汾，名管涔。山上无木而多草，下多玉；汾水从此出，向西注河。郭注临汾、太原郡故汾阳县北秀容山及入河说明保留为古注，不换算现代坐标，也不补隄山至本山距离。',
+         en_description='The second Northern range begins east of the He, with its head resting on the Fen at Guancen. There are no trees but abundant grass above, and jade below. The Fen rises here and flows west into the He. Historical place glosses remain commentary, without modern coordinates or an invented distance from Di.',
+         en_quote='The second Northern range begins east of the He, with its head resting on the Fen, named Mount Guancen. Above it has no trees but much grass; below it has much jade. The Fen rises here and flows west into the He.',
+         note='0100—0102全核87页。临汾水上、音墳释枕汾；太原故汾阳北秀容山、音岑释管涔；至汾阳北西入河释汾水。古注不现代定位，跨列不补距离。0103少陽另段。',
+         en_note='Units 100–102 are on scan 87. The Fen, Guancen and river-mouth glosses are aligned separately. Historical locations give no modern coordinate or distance between ranges. Unit 103 begins Shaoyang.'),
+]
+
+
+def entities(E):
+    return [
+        E('bicha','beast','yema-bicha','野马（羆差郭注）','Wild horse (Bicha commentary)','多馬','正文多马，郭注野马似马而小；小型马体依注说，配色姿态为艺术解释，不定现代种。','Horses are named; Guo Pu describes wild horses resembling horses but smaller. Size follows commentary; color and pose are artistic, without a modern species.','Many horses occur here.',commentary='野馬也似馬而小',en_commentary='Guo Pu: wild horses, resembling horses but smaller.'),
+        E('beixian','beast','ma-beixian','马（北鮮）','Horses (Beixian)','是多馬','仅列马名，不借别山注说补形。','Only horses are named; other mountains supply no local anatomy.','There are many horses.',unknown=True),
+        E('beixian','water','xian-beixian','鮮水','Xian River','鮮水出焉而西北流注于涂吾之水','鮮水西北注涂吾，方向跨行。','The Xian flows northwest into the Tuwu across a captured line break.','The Xian rises here and flows northwest into Tuwu water.'),
+        E('beixian','water','tuwu-beixian','涂吾之水','Tuwu water','西北流注于涂吾之水','涂吾接鮮水，马出水中为郭注古事，不推现代位置或生物形态。','Tuwu receives the Xian; the historical horse account supplies no modern location or anatomy.','It flows northwest into Tuwu water.',commentary='漢元狩二年馬出涂吾水中也',en_commentary='Guo Pu records horses emerging from Tuwu in the second year of Yuanshou in the Han.'),
+        E('dishan','beast','ma-dishan','马（隄山）','Horses (Di)','多馬','马仅列名，保留占位。','Horses are only named and keep the placeholder.','There are many horses.',unknown=True),
+        E('dishan','beast','yao-dishan','狕','Yao','有獸焉其状如豹而文首名曰狕','狕豹状文首，音么依郭注；额纹几何、体色与低伏姿态为艺术解释，不增角翼人面。','Yao is leopard-shaped with a patterned head. Pattern geometry, color and crouching pose are artistic; no horns, wings or human face are added.','Yao is leopard-shaped with a patterned head.',commentary='音么',en_commentary='Guo Pu supplies the pronunciation yao.'),
+        E('dishan','water','di-dishan','隄水','Di River','隄水出焉而東流注于㤗澤','隄水东注㤗澤，与瀤澤水东北向来水分存。','The Di flows east into Taize, distinct from the Huaize’s northeastern flow.','The Di rises here and flows east into Taize.'),
+        E('dishan','beast','longgui-dishan','龍龜（隄山）','Longgui (Di)','其中多龍龜','龍龜只列名，不按名拼装龙首龟身；其中所指水域不强定。','Longgui is only named; no dragon head and turtle body are invented, and the water-account scope remains open.','Longgui are abundant in this water account.',unknown=True,water=True),
+        E('range1-summary','deity','human-serpent-range1-summary','首列山神（人面蛇身）','First-range deities (human face, serpent body)','其神皆人靣蛇身','首列山神皆人面蛇身；图为共同形貌代表，非25神合体。脸龄发式、配色盘曲为解释。','The deities have human faces and serpent bodies. One representative shows their shared form, not a fusion of 25 deities; age, hair, color and coil are artistic.','All its deities have human faces and serpent bodies.'),
+        E('range1-summary','rite','offerings-range1-summary','首列牲祭与瘗埋','First-range animal offerings and burial','其祠之毛用一雄鷄彘瘞吉','雄鷄彘瘞吉照录，不擅定彘数量或改吉；郭注牲玉皆埋另存。','The difficult cock, pig, burial and ji sequence is retained without inventing a pig count or substitution. Commentary explains burial of animal offerings and jade.','The offering wording records one cock, a pig, burial and ji.',commentary='言祭不用米皆埋其所用牲玉',en_commentary='Guo Pu explains no rice offering and burial of all animal offerings and jade.'),
+        E('range1-summary','rite','gui-range1-summary','珪（首列祭玉）','Gui jade tablet (first range)','玉用一珪瘞而不糈','一珪瘗埋、不糈依文；不补尺寸颜色或玉图。','One gui is buried without ritual grain; size and color are unspecified.','One gui jade tablet is buried, without ritual grain.'),
+        E('range1-summary','rite','raw-food-range1-summary','山北生食记述','Raw-food account north of the mountains','其山北人皆生食不火之物','生食不火之物与异文分别存，不当现代族群习俗定论。','The raw-food statement and variant remain ancient accounts, not findings about a modern population.','People north of these mountains all eat raw, uncooked things.',commentary='或作皆生食而不火',en_commentary='A variant reads that all eat raw and do not use fire.'),
+        E('guancen','material','jade-guancen','玉（管涔）','Jade (Guancen)','其下多玉','山下多玉，不补成分颜色。','Jade is abundant below, without an assigned composition or color.','Jade is abundant below.'),
+        E('guancen','water','fen-guancen','汾水（管涔）','Fen River (Guancen)','汾水出焉而西流注于河','汾水出管涔西注河；汾阳北西入河为古注，不现代定位。','The Fen rises at Guancen and flows west into the He; the Fenyang gloss gives no modern coordinate.','The Fen rises here and flows west into the He.',commentary='至汾陽縣北西入河',en_commentary='Guo Pu says it enters the He westward north of Fenyang county.'),
+    ]

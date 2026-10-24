@@ -435,6 +435,45 @@
       "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-a9a05197-bdcb-4a7a-b5e0-c16d0a141f7c.png",
       "sha256": "286e4b481680dbd1dd0d54013eb5bee0dbe9d81ab4306dd879cf251716da9cd7",
       "review_note": "一首即分两条完整蛇身、两尾，无足翼；不借西山同名蛇或鸟。"
+    },
+    {
+      "name": "horse-yema-bicha",
+      "entry_id": "beast-beishan-yema-bicha",
+      "prompt": "Use case: illustration-story. One full isolated creature on TRUE transparent background, generous clear margins around entire silhouette. Chinese hand-carved woodblock illustration: dark ink contours, flat mineral pigments, subtle cut-line grain. Supplied bird is a MEDIUM reference ONLY. Do not copy its owl face, eyes, feather crest or flame-shaped bands. Strongly distinct silhouette, anatomy and expression. No text, labels, frame, scenery, shadow, gradients or 3D. Every unmentioned color, pattern geometry and pose is an artistic interpretation. Subject: Bicha's wild horse, main text says many horses; Guo Pu specifically says WILD HORSE resembling a horse BUT SMALLER. Depict one small compact HORSE with short sturdy ordinary equine proportions, short straight mane, long horse muzzle, two horse ears, four single unsplit horse hooves, one hanging tail. It is a restrained ancient myth-book interpretation, not a named modern wild horse species. Three-quarter rear body turning its ordinary equine head toward viewer; four legs separated, front near hoof raised slightly in a wary step. Dull slate-blue hide with ochre mane is artistic. Sparse straight cut lines, NO ornate flame mane, no horns, wings, extra limbs, scales, human eyes or human face. Show a whole compact animal without a comparison animal or scale bar.",
+      "review_note": "正文多马；郭注野马似马而小。小型紧凑马体、四单蹄；不定现代种，体色姿态为解释。",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-e9ad6dda-e9a3-4e0f-8a98-47c477f2525d.png",
+      "source_file": "horse-yema-bicha-v1.png",
+      "sha256": "050d92a7b970c143a252b8dbf3ca7cf0452d8f74c0384cf1ed77582031902c23",
+      "status": "reviewed",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "creature-yao-dishan",
+      "entry_id": "beast-beishan-yao-dishan",
+      "prompt": "Use case: illustration-story. One full isolated creature on TRUE transparent background, generous clear margins around entire silhouette. Chinese hand-carved woodblock illustration: dark ink contours, flat mineral pigments, subtle cut-line grain. Supplied bird is a MEDIUM reference ONLY. Do not copy its owl face, eyes, feather crest or flame-shaped bands. Strongly distinct silhouette, anatomy and expression. No text, labels, frame, scenery, shadow, gradients or 3D. Every unmentioned color, pattern geometry and pose is an artistic interpretation. Subject: Yao 狕 from Mount Di. EXACT textual anatomy: LEOPARD-SHAPED body, PATTERNED HEAD. One feline leopard head with short muzzle, small rounded cat ears, alert slitted feline eyes and broad patterned forehead, no human features. Compact but long-backed leopard torso with four feline paws, one long curling leopard tail. Very low stalking pose, elbows bent, head raised facing almost front and hindquarters in profile, tail sweeping upward into empty space. All four paws distinct. Muted warm golden hide with small black rosettes; forehead has unique paired concentric oval markings rather than flame/tribal stripes. Pattern geometry and hide color interpret 文首 and leopard form, not a new textual attribute. NO mane, horns, wings, spikes, human face, owl eyes, multiple heads or oversized fangs. Make it feel like an uncanny ancient beast through crouched proportions and concentrated stare, not by inventing extra anatomy.",
+      "review_note": "豹状文首，一首四猫足长尾；额纹及低伏姿态为解释，不加角翼或人面。",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-a543c414-34ee-43f5-8184-22ef9eff8283.png",
+      "source_file": "creature-yao-dishan-v1.png",
+      "sha256": "9a08116b48ba5cc55c580451f73f5675d64331bd39917a65e99fc93044c0321d",
+      "status": "reviewed",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "deity-human-serpent-range1",
+      "entry_id": "deity-beishan-human-serpent-range1-summary",
+      "prompt": "Use case: illustration-story. One full isolated creature on TRUE transparent background, generous clear margins around entire silhouette. Chinese hand-carved woodblock illustration: dark ink contours, flat mineral pigments, subtle cut-line grain. Supplied bird is a MEDIUM reference ONLY. Do not copy its owl face, eyes, feather crest or flame-shaped bands. Strongly distinct silhouette, anatomy and expression. No text, labels, frame, scenery, shadow, gradients or 3D. Every unmentioned color, pattern geometry and pose is an artistic interpretation. Subject: collective deity FORM of Northern Mountains FIRST RANGE, exactly HUMAN FACE and SERPENT BODY. Illustrate ONE representative being, not 25 individuals. A single youthful ANDROGYNOUS human face with high cheekbones, calm CLOSED LIPS, narrow quiet human eyes, smooth closely cropped dark hair, NO beard/crown/headdress. The small human head joins directly to ONE long continuous snake neck and scaly snake body, no human torso, shoulders, arms or legs. One single S-curve body rises vertically, lower body makes one open loose coil tapering to ONE visible snake tail. Front-facing human face at upper left, long dark jade-green snake body curves right and down, pale belly scutes. Distinguished from the dog-bodied smiling elderly Shanhui by quiet youthful face and entirely limbless vertical silhouette; distinguished from Feiyi by EXACTLY ONE body and ONE tail. No horns, wings, jewelry, ritual props, fire, blood or victims.",
+      "review_note": "首列山神共同形貌人面蛇身，单个代表图不等于25神合体；一首一蛇身一尾无四肢，脸龄配色姿态为解释。",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-d9730aa3-46d8-4a6a-81e4-8d5c9cb1330f.png",
+      "source_file": "deity-human-serpent-range1-v1.png",
+      "sha256": "8442cff9a040c64ce08dab83f27a63843094ce258ab401c1fd8c19b58905ce82",
+      "status": "reviewed",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
     }
   ]
 }

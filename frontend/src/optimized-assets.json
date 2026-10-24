@@ -3300,5 +3300,44 @@
       1280,
       1170
     ]
+  },
+  "/data/atlas/myth-icons/beishan/horse-yema-bicha-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/horse-yema-bicha-v1.webp",
+    "original_bytes": 2100993,
+    "optimized_bytes": 386370,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-yao-dishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-yao-dishan-v1.webp",
+    "original_bytes": 2021035,
+    "optimized_bytes": 358418,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/deity-human-serpent-range1-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/deity-human-serpent-range1-v1.webp",
+    "original_bytes": 1483830,
+    "optimized_bytes": 253078,
+    "original_dimensions": [
+      1199,
+      1312
+    ],
+    "dimensions": [
+      1170,
+      1280
+    ]
   }
 }

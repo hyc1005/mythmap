@@ -68,5 +68,19 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-郭璞-山海經-2-1.djvu/page85-1280px-Sibu_Congkan0465-郭璞-山海經-2-1.djvu.jpg",
     "local_path": "data/reference-scans/beishan/page-85.jpg",
     "sha256": "531e7ec99110707155bb40b2442755cf2815e420b1c773975ea4eb36d70b2cb2"
+  },
+  {
+    "page": 86,
+    "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/86",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-郭璞-山海經-2-1.djvu/page86-1280px-Sibu_Congkan0465-郭璞-山海經-2-1.djvu.jpg",
+    "local_path": "data/reference-scans/beishan/page-86.jpg",
+    "sha256": "5a58a8c80f438443d2467ad65c288737834c32a32cd3eda7b2a735a4d5cf72ba"
+  },
+  {
+    "page": 87,
+    "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/87",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-郭璞-山海經-2-1.djvu/page87-1280px-Sibu_Congkan0465-郭璞-山海經-2-1.djvu.jpg",
+    "local_path": "data/reference-scans/beishan/page-87.jpg",
+    "sha256": "945ce66b4730cdea962398590554efdd36a98e0aba2d952d4e04aa60b276c521"
   }
 ]
