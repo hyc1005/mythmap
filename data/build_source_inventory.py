@@ -22,6 +22,11 @@ def build(check=False):
         northern_review = read(northern_review_path)
         page_corrections = {**page_corrections, **northern_review.get('source_unit_page_corrections', {})}
         heading_ids.update(northern_review.get('heading_unit_ids', []))
+    eastern_review_path = ROOT / 'data/dongshan-edition-review.json'
+    if eastern_review_path.exists():
+        eastern_review = read('data/dongshan-edition-review.json')
+        page_corrections = {**page_corrections, **eastern_review.get('source_unit_page_corrections', {})}
+        heading_ids.update(eastern_review.get('heading_unit_ids', []))
     confirmed = {}
     for passage in passages:
         for id in passage['source_unit_ids']:
