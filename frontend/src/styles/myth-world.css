@@ -1,7 +1,8 @@
+@font-face { font-family: 'Atlas Northern Tan'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-northern-tan.woff2) format("woff2"); unicode-range: U+28730; }
 @font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-rare.woff2) format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; unicode-range: U+3400-4DBF, U+20000-323AF; }
-@font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-title-beishan.woff2) format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+35F8, U+3D8C, U+40E4, U+4376, U+4406, U+444F, U+4455, U+47FD, U+49D1, U+4B9D, U+4C3D, U+4C47, U+4C83, U+4CD1, U+4D05, U+4D78; }
+@font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-title-beishan.woff2) format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+35F8, U+3D8C, U+40E4, U+4376, U+4406, U+444F, U+4455, U+47FD, U+49D1, U+4B05, U+4B9D, U+4C3D, U+4C47, U+4C83, U+4CD1, U+4D05, U+4D78; }
 @font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-title.woff2) format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+3917, U+3BF6, U+3C55, U+3C84, U+3CD9, U+41FF, U+4343, U+44DE, U+4580, U+45E1, U+45F1, U+4CB9, U+4CC7, U+4CDC, U+246CE, U+248CE; }
-@font-face { font-family: ShanhaiRare; src: local('SimSun-ExtB'), local('MingLiU-ExtB'); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+20542, U+21A1A, U+21EAF, U+221E8, U+224E8, U+2255F, U+23206, U+23FB0, U+2624D, U+264BF, U+26CD3, U+28D7F, U+28E67, U+28F06, U+29CB6, U+29CC1, U+29DAF, U+2A1F1, U+2ADDF, U+2B387, U+2B7CD, U+2D8E3, U+2D97B, U+2E5DA, U+2EA8D; }
+@font-face { font-family: ShanhaiRare; src: local('SimSun-ExtB'), local('MingLiU-ExtB'); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+20542, U+21A1A, U+21EAF, U+221E8, U+224E8, U+2255F, U+23206, U+23FB0, U+2624D, U+264BF, U+26CD3, U+28D7F, U+28F06, U+29CB6, U+29CC1, U+29DAF, U+2A1F1, U+2ADDF, U+2B387, U+2B7CD, U+2D8E3, U+2D97B, U+2E5DA, U+2EA8D; }
 @font-face {
   font-family: 'Lora Variable';
   font-style: normal;
@@ -17,7 +18,7 @@
   src: url('@fontsource-variable/source-sans-3/files/source-sans-3-latin-wght-normal.woff2') format('woff2');
 }
 :root {
-  font-family: ShanhaiRare, 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
+  font-family: 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'Noto Serif SC', 'Songti SC', 'SimSun', serif;
   color: #312a20;
   background: #e8dcc0;
   font-synthesis: none;
@@ -332,18 +333,18 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .language-switch { display: inline-flex; flex: none; padding: 2px; border: 1px solid #b8a27b; border-radius: 3px; }
 .map-overlay-controls, .map-orientation { pointer-events: none; }
 .map-overlay-controls>* { pointer-events: auto; }
-.language-switch button { min-height: 30px; padding: 4px 9px; border: 0; background: transparent; font-family: ShanhaiRare, 'Source Sans 3 Variable', 'SimSun', sans-serif; font-size: 13px; cursor: pointer; }
+.language-switch button { min-height: 30px; padding: 4px 9px; border: 0; background: transparent; font-family: 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'Source Sans 3 Variable', 'SimSun', sans-serif; font-size: 13px; cursor: pointer; }
 .language-switch button[aria-pressed='true'] { background: #964735; color: #fff5df; }
 .chapter-rail-details>small { display: block; margin: 7px 0 12px; color: #73624b; font-size: 12px; line-height: 1.6; }
 .original-text { margin-top: 14px; color: #64563f; font-size: 13px; }
 .original-text summary { cursor: pointer; }
-.original-text blockquote { font-family: ShanhaiRare, 'Noto Serif SC', 'Songti SC', 'SimSun', serif; }
-html[lang='en'] body { font-family: ShanhaiRare, 'Source Sans 3 Variable', Arial, sans-serif; }
-html[lang='en'] :is(h1, h2, .story-entry b, .beast-card>b, .timeline-current b, .prologue-caption) { font-family: ShanhaiRare, 'Lora Variable', Georgia, serif; }
+.original-text blockquote { font-family: 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'Noto Serif SC', 'Songti SC', 'SimSun', serif; }
+html[lang='en'] body { font-family: 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'Source Sans 3 Variable', Arial, sans-serif; }
+html[lang='en'] :is(h1, h2, .story-entry b, .beast-card>b, .timeline-current b, .prologue-caption) { font-family: 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'Lora Variable', Georgia, serif; }
 html[lang='en'] :is(.myth-header h1, .chapter-number, .reading-notes h2, .prologue-caption) { letter-spacing: .02em; }
 html[lang='en'] .myth-header h1 { font-size: 22px; white-space: nowrap; }
 html[lang='en'] .chapter-rail h2 { font-size: 26px; line-height: 1.25; }
-html[lang='en'] .seal { font-family: ShanhaiRare, 'SimSun', serif; }
+html[lang='en'] .seal { font-family: 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'SimSun', serif; }
 html[lang='en'] .map-overlay-controls { flex-wrap: wrap; max-width: calc(100% - 100px); justify-content: flex-end; }
 html[lang='en'] .map-animation-choice { max-width: 100%; min-width: 0; }
 html[lang='en'] .map-animation-choice select { min-width: 0; max-width: 175px; }
@@ -387,4 +388,4 @@ html[lang='en'] .reading-bookplate small { letter-spacing: .1em; }
   .bookplate-mark { width: 108px; height: 108px; margin: 0 auto; }
 }
 
-@font-face { font-family: ShanhaiRare; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-northern-extb.woff2) format("woff2"); unicode-range: U+23D40, U+24360, U+244F0, U+2479E, U+247E4, U+2483E, U+25B07, U+298E1, U+29E74, U+2A0D1, U+2A100, U+2A136, U+2C2E9, U+2C431, U+2D94D; }
+@font-face { font-family: 'Atlas Northern ExtB'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-northern-extb.woff2) format("woff2"); unicode-range: U+23D40, U+23E26, U+24360, U+244F0, U+2479E, U+247E4, U+2483E, U+25B07, U+28E67, U+298E1, U+29E74, U+2A0D1, U+2A100, U+2A136, U+2C2E9, U+2C431, U+2D94D; }

@@ -8874,6 +8874,234 @@
           ]
         }
       }
+    },
+    {
+      "id": "beishan-creature-yuan-ganshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-yuan-ganshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing figure, truly transparent square canvas with generous 10% clear margins; no scenery, ground, pedestals, text, seals, borders, numbers or watermark. Use supplied approved bird ONLY for Chinese carved woodblock technique: dark brown/black contour, flat ivory, muted ochre, restrained cinnabar/mineral-green, fine sparse incision and paper-print grain. No gradients, realistic lighting, 3D, repetitive flame decoration, copied owl face or bird anatomy. Yuan 獂: text says OX-SHAPED with exactly THREE LEGS (如牛而三足). A stout charcoal-grey ordinary cattle-shaped body, broad bovine muzzle and two cattle ears, NO horns for this interpretation, no hump, human face or wings. Three-quarter stance facing LEFT. Exactly ONE foreleg in the center of the chest and exactly TWO rear legs visibly separated: precisely THREE independent limb shafts and THREE whole cloven hooves, arranged as a stable tripod. No fourth hidden leg, no fourth hoof or limb-looking shadow. Count legs, not the two toes of each cloven hoof. One thin cattle tail ending in a small hair tuft. Calm alert face and quiet horizontal carving hatching; contrast with woolly single-eyed sheep and deer. Body color, hornless choice, leg positions and posture are artistic; do not add famine/drought/fire scenes.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "牛状三足，单前足与两后足、三组裂蹄完整可数；无角深色与站姿为解释，无第四足。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1.webp",
+          "bytes": 337954,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1-card.webp",
+          "bytes": 31306,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1-preview.webp",
+          "bytes": 62824,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-creature-pi-lunshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/creature-pi-lunshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing figure, truly transparent square canvas with generous 10% clear margins; no scenery, ground, pedestals, text, seals, borders, numbers or watermark. Use supplied approved bird ONLY for Chinese carved woodblock technique: dark brown/black contour, flat ivory, muted ochre, restrained cinnabar/mineral-green, fine sparse incision and paper-print grain. No gradients, realistic lighting, 3D, repetitive flame decoration, copied owl face or bird anatomy. Pi 羆 from Mount Lun, text says resembles MI DEER and its opening lies ABOVE the tail (如麋其川在尾上; commentary 川竅也). Depict ONE ordinary fully fur-covered deer-like quadruped, not a bear despite its name. Hornless deer silhouette, long deer muzzle, warm tawny short coat with simple quiet dark hatching, four cloven-hoof legs. Pose a three-quarter REAR view with head gently turned left so muzzle is still identifiable. One medium deer tail hangs DOWN. Immediately ABOVE the attachment/base of that tail on the upper rump, show one small plain dark oval pit/opening, clearly separated from and vertically higher than the tail root. No opening below the tail in this folklore anatomy. This is a small discreet non-graphic anatomical mark on a fully fur-covered mythical animal, not a wound; no blood, exposed tissue, sexual anatomy, close-up or labels. Do not give human body parts, bear claws, wings or extra faces. Short coat, hornless choice, four hooves, precise opening placement and pose are illustration interpretation; no specific modern deer species is asserted.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "麋状四足，尾根上方独立小窍，尾垂下；不画成熊、伤口或指定现代器官。无角、毛色与回首姿态为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1.webp",
+          "bytes": 260600,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1-card.webp",
+          "bytes": 25728,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1-preview.webp",
+          "bytes": 50554,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-snake-redhead-mufeng-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/snake-redhead-mufeng-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing figure, truly transparent square canvas with generous 10% clear margins; no scenery, ground, pedestals, text, seals, borders, numbers or watermark. Use supplied approved bird ONLY for Chinese carved woodblock technique: dark brown/black contour, flat ivory, muted ochre, restrained cinnabar/mineral-green, fine sparse incision and paper-print grain. No gradients, realistic lighting, 3D, repetitive flame decoration, copied owl face or bird anatomy. Unnamed GREAT SNAKE of the closing Northern mountain passage: precisely one RED HEAD and WHITE BODY (大蛇赤首白身), with an ox-like SOUND, not ox anatomy. One long thick white/ivory serpent body in a broad low S curve, a single small cinnabar snake head raised gently facing left, ordinary reptile eyes and a closed snake mouth. One continuous body ending in ONE tapering tail; all body fully visible with empty gaps between curves. Fine quiet grey geometric scale cuts on the white body, red confined to the head. No horns, ox ears, hooves, legs, wings, mane, human face, fangs display, split body or second head. Do not make the entire snake red or add blue-green body patches. The curve and scale treatment are artistic; do not depict drought or a disaster scene.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "一条赤首白身大蛇，连续蛇身与渐尖尾完整，未据牛音添加角耳。盘曲、鳞纹与头部细节为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1.webp",
+          "bytes": 279186,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1-card.webp",
+          "bytes": 26718,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1-preview.webp",
+          "bytes": 50772,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-deity-horse-human-range3-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/deity-horse-human-range3-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing figure, truly transparent square canvas with generous 10% clear margins; no scenery, ground, pedestals, text, seals, borders, numbers or watermark. Use supplied approved bird ONLY for Chinese carved woodblock technique: dark brown/black contour, flat ivory, muted ochre, restrained cinnabar/mineral-green, fine sparse incision and paper-print grain. No gradients, realistic lighting, 3D, repetitive flame decoration, copied owl face or bird anatomy. Representative of the TWENTY third-range deities: HORSE BODY and HUMAN FACE (馬身而人面). Exactly one fully equine quadruped torso, four horse legs ending in four single horse hooves, one natural horse-hair tail; at the end of its horse neck is ONE HUMAN HEAD/HUMAN FACE with no equine muzzle. NO human torso, bust, shoulders, breasts, arms or hands: this is a quadruped, not a centaur or mounted rider. Adult serene feminine human facial interpretation in three-quarter profile, hair gathered simply into a small low knot; two normal human eyes, human nose and mouth, no horse ears or horns on the human head. Quiet light mineral-grey horse coat with an ivory underside and dark narrow mane, no ornate saddle, harness, armor, fire or bird ornament. Gentle poised standing step facing right. Sex, hair, neck/head transition, four-hoof form, colors and pose are artistic choices; the text does not specify those features. Show one representative, not twenty overlapping copies.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "马身四独蹄、人面，头直接接马颈，无人躯干、人臂或骑者。女性面孔、长发、灰色及姿态为解释，单体代表二十神。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1.webp",
+          "bytes": 352468,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1-card.webp",
+          "bytes": 31274,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1-preview.webp",
+          "bytes": 62728,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-deity-pig-jade-range3-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/deity-pig-jade-range3-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing figure, truly transparent square canvas with generous 10% clear margins; no scenery, ground, pedestals, text, seals, borders, numbers or watermark. Use supplied approved bird ONLY for Chinese carved woodblock technique: dark brown/black contour, flat ivory, muted ochre, restrained cinnabar/mineral-green, fine sparse incision and paper-print grain. No gradients, realistic lighting, 3D, repetitive flame decoration, copied owl face or bird anatomy. Representative of the FOURTEEN third-range deities: PIG BODY CARRYING JADE (彘身而載玉). One compact warm chestnut ordinary pig-like quadruped, small pig head with short snout, four ordinary cloven-hoof legs, one short curled pig tail, sparse blunt bristles and quiet stippled cuts. On its mid BACK rests ONE small plain unpierced rough GREEN JADE SLAB, visibly supported by its back. This is a representative jade piece, not a textual fixed quantity or shape. No jade crown, clothing, saddle, written symbols, gold jewelry, human face, large tusks, wings or extra legs. Calm lateral standing pose facing LEFT, distinct from the human-faced horse and eight-legged grey pig. Pig head, four-hoof count, jade slab number/shape/placement and body color are artistic interpretation of the body-and-jade wording. No ritual burial or sacrifice scene.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "彘身四裂蹄，背载单块青绿玉，无人面或多余肢体；猪首、玉块形制与位置、体色为解释，单体代表十四神。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1.webp",
+          "bytes": 380290,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1-card.webp",
+          "bytes": 34000,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1-preview.webp",
+          "bytes": 69156,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-deity-pig-eight-snake-range3-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/deity-pig-eight-snake-range3-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1.webp",
+      "initial_prompt": "Use case: illustration-story. One complete isolated Shanhaijing figure, truly transparent square canvas with generous 10% clear margins; no scenery, ground, pedestals, text, seals, borders, numbers or watermark. Use supplied approved bird ONLY for Chinese carved woodblock technique: dark brown/black contour, flat ivory, muted ochre, restrained cinnabar/mineral-green, fine sparse incision and paper-print grain. No gradients, realistic lighting, 3D, repetitive flame decoration, copied owl face or bird anatomy. Representative of the TEN third-range deities: PIG BODY, exactly EIGHT FEET, SNAKE TAIL (彘身而八足蛇尾). ONE long rounded slate-grey pig-like torso with ONE ordinary pig head, a blunt pig snout and small pig ears; no human face, no large tusks, no jade. Exactly EIGHT independent short pig legs, each ending in ONE complete CLOVEN HOOF: EIGHT limb shafts and EIGHT separate hoof sets must be individually countable with clean empty gaps. Use a mostly lateral wide stance facing RIGHT; arrange four near-side and four far-side legs in a staggered row, all eight legs and feet visible, none hidden or merged. The two toes of each cloven hoof are ONE foot, not two. No ninth leg, extra hoof, duplicate body or limb-looking shadows. ONE LONG scaled serpent-like TAIL emerges from the rump, curves upward then tapers to a point, with NO snake head and NO additional pig curly tail. Fine restrained grey/ochre incision, low horizontal pig silhouette; no flame-shaped scales or back ornament. Pig head, leg arrangement, colors and pose are artistic; eight feet and serpent tail are mandatory. No ritual scene or injury.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "彘身八条独立足胫、八组裂蹄逐一可数，连续鳞纹蛇尾无蛇首，未加玉或人面；足位与体色为解释，单体代表十神。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1.webp",
+          "bytes": 337984,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1-card.webp",
+          "bytes": 31480,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1-preview.webp",
+          "bytes": 63352,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

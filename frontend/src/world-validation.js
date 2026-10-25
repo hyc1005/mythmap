@@ -22,7 +22,7 @@ export function validateWorld(data, bundled) {
       if (['places', 'domains', 'beasts', 'natural_features'].includes(key)) requireValue(text(record.name) && text(record.source), `${record.id}: name/source`);
       if (key === 'natural_features') requireValue(['plant', 'water', 'material'].includes(record.kind) && text(record.description) && text(record.quote) && text(record.context_place_id), `${record.id}: natural feature`);
       if (key === 'passages') requireValue(record.kind === 'passage' && text(record.name) && text(record.description) && text(record.quote) && text(record.source_locator) && Array.isArray(record.source_unit_ids) && record.source_unit_ids.length > 0 && !('x' in record || 'y' in record), `${record.id}: passage`);
-      if (key === 'text_entities') requireValue(['place','animal','valley','wind','deity','rite'].includes(record.kind) && text(record.name) && text(record.source) && text(record.description) && text(record.quote) && !('x' in record || 'y' in record), `${record.id}: independent text entity`);
+      if (key === 'text_entities') requireValue(['place','animal','valley','wind','deity','rite','plant','material'].includes(record.kind) && text(record.name) && text(record.source) && text(record.description) && text(record.quote) && !('x' in record || 'y' in record), `${record.id}: independent text entity`);
       if (['places', 'terrain'].includes(key)) requireValue(point([record.x, record.y]), `${record.id}: coordinates`);
       if (key === 'places') requireValue(text(record.direction), `${record.id}: direction`);
       if (key === 'beasts') requireValue(text(record.description) && text(record.region), `${record.id}: description/region`);

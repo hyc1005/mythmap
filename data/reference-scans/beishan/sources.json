@@ -201,5 +201,33 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu/page104-1920px-Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu.jpg",
     "local_path": "data/reference-scans/beishan/page-104.jpg",
     "sha256": "7c43eef74f20ac99cc7d7159ccfa7bc1e0fd55e71796437fd39d98a663863f0b"
+  },
+  {
+    "page": 105,
+    "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/105",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu/page105-1280px-Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu.jpg",
+    "local_path": "data/reference-scans/beishan/page-105.jpg",
+    "sha256": "f911794649a0d140daf1c1c52ac9b04f3abca81fefddac226e0ccedec0383e01"
+  },
+  {
+    "page": 106,
+    "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/106",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu/page106-1280px-Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu.jpg",
+    "local_path": "data/reference-scans/beishan/page-106.jpg",
+    "sha256": "c7a8220a40c7e6ae84339a3fa717a764d0f39d280b890490ff91e48c296282f2"
+  },
+  {
+    "page": 107,
+    "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/107",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu/page107-1280px-Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu.jpg",
+    "local_path": "data/reference-scans/beishan/page-107.jpg",
+    "sha256": "6b75fc84c301a797af8dfb5eb72177cc3993108329a0ea5acee06ff0febd9534"
+  },
+  {
+    "page": 108,
+    "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/108",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu/page108-1280px-Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu.jpg",
+    "local_path": "data/reference-scans/beishan/page-108.jpg",
+    "sha256": "9bea69aa6ad43a42944376ace4a74cbf9b9673465131cc8cb487178a7bdc8d42"
   }
 ]

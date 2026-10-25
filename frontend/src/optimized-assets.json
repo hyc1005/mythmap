@@ -3638,5 +3638,83 @@
       1254,
       1254
     ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1.webp",
+    "original_bytes": 1855919,
+    "optimized_bytes": 337954,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1.webp",
+    "original_bytes": 1417670,
+    "optimized_bytes": 260600,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1.webp",
+    "original_bytes": 1597487,
+    "optimized_bytes": 279186,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1.webp",
+    "original_bytes": 1812001,
+    "optimized_bytes": 352468,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1.webp",
+    "original_bytes": 1998753,
+    "optimized_bytes": 380290,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1.webp": {
+    "path": "/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1.webp",
+    "original_bytes": 1731047,
+    "optimized_bytes": 337984,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
   }
 }

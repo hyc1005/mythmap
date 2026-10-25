@@ -4,7 +4,7 @@ import { join } from 'node:path';
 export async function publishingFiles(publicDir, manifestPath) {
   const optimized = JSON.parse(await readFile(manifestPath, 'utf8'));
   const refined = JSON.parse(await readFile(new URL('../src/refined-artwork.json', import.meta.url), 'utf8'));
-  const files = new Set(['favicon.png', 'fonts/shanhai-title.woff2', 'fonts/shanhai-title-beishan.woff2', 'fonts/atlas-northern-extb.woff2', 'fonts/shanhai-rare.woff2', 'data/geography/relief.webp', 'data/atlas/land.geojson', 'data/atlas/rivers.geojson']);
+  const files = new Set(['favicon.png', 'fonts/shanhai-title.woff2', 'fonts/shanhai-title-beishan.woff2', 'fonts/atlas-northern-extb.woff2', 'fonts/atlas-northern-tan.woff2', 'fonts/shanhai-rare.woff2', 'data/geography/relief.webp', 'data/atlas/land.geojson', 'data/atlas/rivers.geojson']);
   const collect = value => {
     if (typeof value === 'string' && value.startsWith('/data/')) files.add((refined[value]?.full?.path || optimized[value]?.path || value).slice(1));
     else if (Array.isArray(value)) value.forEach(collect);

@@ -4876,5 +4876,113 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1-card.webp",
+      "bytes": 31306,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1-preview.webp",
+      "bytes": 62824,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1-card.webp",
+      "bytes": 25728,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1-preview.webp",
+      "bytes": 50554,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1-card.webp",
+      "bytes": 26718,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1-preview.webp",
+      "bytes": 50772,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1-card.webp",
+      "bytes": 31274,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1-preview.webp",
+      "bytes": 62728,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1-card.webp",
+      "bytes": 34000,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1-preview.webp",
+      "bytes": 69156,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1-card.webp",
+      "bytes": 31480,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1-preview.webp",
+      "bytes": 63352,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }
