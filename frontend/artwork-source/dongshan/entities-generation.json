@@ -1,0 +1,70 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "fish-yongyong-suzhu",
+      "prompt": "Use case: illustration-story. Create ONE complete isolated Shanhaijing creature, TRULY TRANSPARENT square canvas, at least 8% clear margins, no ground or scenery. Image reference is STYLE ONLY: Chinese carved woodblock, bold dark-brown contour, warm ivory with restrained flat mineral colors, fine short cut lines and sparse print grain. Do not copy the reference owl face, flared wing pose or flame-shaped ornament. No typography, border, seal, symbols, second creature or background. Preserve every stated anatomical feature, while color and pose are artistic interpretations. YONGYONG 鱅鱅 is called a fish but the main text says it RESEMBLES A LI OX (如犂牛), and Guo Pu glosses the ox as TIGER-PATTERNED (牛似虎文者). Draw a lean elongated OX, facing LEFT in quiet strict side profile, with one genuine cattle head, broad squared muzzle, bovine ears, exactly FOUR sturdy legs ending in cloven hooves, and one thin ox tail ending in a small brush. Hornless head is a deliberate artistic choice. Warm ivory hide with a few broad dark charcoal TIGER STRIPES following the trunk, not spots or flame scrolls. Slightly raised alert head and long low rectangular body distinguish it from stocky dark ox creatures. Its sound resembles a pig; do NOT add a pig snout, pig ears, fish fins, fish tail, gills, wings, extra heads or extra legs. All four hooves separate and visible.",
+      "entry_id": "beast-dongshan-yongyong-suzhu",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-32bc7836-eb34-46a1-8ec5-59b0e32ffac4.png",
+      "review_note": "牛状一头、四条足胫和四组裂蹄，无鱼鳍或猪首；虎纹依据郭注牛似虎文者，无角、配色、四足及侧身姿态为解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "fish-yongyong-suzhu-v1.png",
+      "sha256": "6cf03faf6d91de568c57bd27fb13a9e504d9a06fdc146f2639d7d4e79191bc5d"
+    },
+    {
+      "name": "creature-huoshi-leishan",
+      "prompt": "Use case: illustration-story. Create ONE complete isolated Shanhaijing creature, TRULY TRANSPARENT square canvas, at least 8% clear margins, no ground or scenery. Image reference is STYLE ONLY: Chinese carved woodblock, bold dark-brown contour, warm ivory with restrained flat mineral colors, fine short cut lines and sparse print grain. Do not copy the reference owl face, flared wing pose or flame-shaped ornament. No typography, border, seal, symbols, second creature or background. Preserve every stated anatomical feature, while color and pose are artistic interpretations. HUOSHI 活師 is only named in the main text; Guo Pu explicitly identifies it as KEDOU 科斗, a TADPOLE. Make a stylized tadpole, one rounded dark moss-green head/body with two tiny lateral eyes and one LONG thin tapering tail curved upward in a relaxed broad hook. A narrow continuous tail membrane is an artistic larval interpretation, incised ivory contour hatching, minimal restrained details. Compact oval head at lower-left with tail rising to upper-right makes a simple distinctive comma silhouette. NO LEGS, no adult frog body, no arms, no horns, no bird feathers, no wings, no whiskers, no scales, no surrounding bubbles or water. A single complete tadpole only, not a named modern species. Color, absence of visible developing legs, tail membrane and swimming pose are interpretations of the commentary tadpole identification.",
+      "entry_id": "beast-dongshan-huoshi-leishan",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-c18d239b-7160-47ea-9c23-d52695abe3ba.png",
+      "review_note": "单一圆体蝌蚪、双目与连续渐尖尾，无足或成年蛙体；蝌蚪释义据郭注科斗，尾膜、体色与游姿为解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-huoshi-leishan-v1.png",
+      "sha256": "b64f34a8b4351702092415ba358dd56e99338ba7f701a3b45168db53650d7867"
+    },
+    {
+      "name": "creature-congcong-xunzhuang",
+      "prompt": "Use case: illustration-story. Create ONE complete isolated Shanhaijing creature, TRULY TRANSPARENT square canvas, at least 8% clear margins, no ground or scenery. Image reference is STYLE ONLY: Chinese carved woodblock, bold dark-brown contour, warm ivory with restrained flat mineral colors, fine short cut lines and sparse print grain. Do not copy the reference owl face, flared wing pose or flame-shaped ornament. No typography, border, seal, symbols, second creature or background. Preserve every stated anatomical feature, while color and pose are artistic interpretations. CONGCONG 從從: main text DOG-shaped, EXACTLY SIX FEET (其状如犬六足), calls its own name. One distinctive low long DOG with narrow muzzle, warm muted ochre coat and ivory underside, small ordinary canine ears, one upturned dog tail and exactly SIX independent legs ending in SIX ordinary DOG PAWS. Arrange the six legs as THREE staggered PAIRS along the belly, all six lower legs and six paws individually countable without overlap. Low forward-leaning walking pose facing RIGHT, head lowered inquisitively and one forepaw reaching forward. No mane or tiger stripes, no hooves, no human face, no horns, no wings, no reptile tail. Six-leg count is the priority: not four legs, not eight, not six toes on four paws. All paws must fit inside the canvas.",
+      "entry_id": "beast-dongshan-congcong-xunzhuang",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-41d50ce3-ec4e-4ab1-8776-9f22f73f35c5.png",
+      "review_note": "犬状一首、六条独立足胫及六犬爪逐数可见，无角翼或人面；三对足位、毛色和低行姿为解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-congcong-xunzhuang-v1.png",
+      "sha256": "e5ad6e59ebf9f8049471102d3c555b51e2b3dacc471cd0006f915b5e6d9155ae"
+    },
+    {
+      "name": "bird-zishu-xunzhuang",
+      "prompt": "Use case: illustration-story. Create ONE complete isolated Shanhaijing creature, TRULY TRANSPARENT square canvas, at least 8% clear margins, no ground or scenery. Image reference is STYLE ONLY: Chinese carved woodblock, bold dark-brown contour, warm ivory with restrained flat mineral colors, fine short cut lines and sparse print grain. Do not copy the reference owl face, flared wing pose or flame-shaped ornament. No typography, border, seal, symbols, second creature or background. Preserve every stated anatomical feature, while color and pose are artistic interpretations. ZISHU 䖪䑕 is a BIRD whose body resembles a CHICKEN but covered with MOUSE-LIKE HAIR (如鷄而䑕毛). Draw a compact standing HEN-shaped bird facing LEFT with one SMALL genuine chicken head, small straight pale beak, understated ordinary chicken eyes, a plump rounded chicken body, two short folded bird wings against its sides, two slender ordinary chicken legs and bird feet. All surfaces of head, body, folded wings and short rounded rump are covered in SHORT SOFT GREY-BROWN MOUSE FUR shown as fine short parallel incised hatching, NOT layered feathers, scales or spiky flames. Ivory belly, muted umber head. Modestly stretched neck and alert sideways gaze; no spread wings. No mouse HEAD, no mouse ears, no rodent snout, no whiskers, no rodent tail, no mouse paws, no human face, no owl eye mask or predatory hooked beak, no big rooster tail plumes, no horns. Grey-brown coat, two wings, two bird feet and posture are artistic interpretations; do not depict drought or a ruined village.",
+      "entry_id": "beast-dongshan-zishu-xunzhuang",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-38fb4327-b2c5-4021-aec4-3514c221ce2b.png",
+      "review_note": "鸡首鸟体，体表细密短毛而非层叠羽片，无鼠首耳尾；两鸟足、收翼、红冠肉垂及灰褐色为解释，保留鸡状鼠毛核心。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "bird-zishu-xunzhuang-v1.png",
+      "sha256": "bda1a9157d20cb4eed8d47944bda93c6318600f1c11a0ddc8e8e7ab43f7c3eb3"
+    },
+    {
+      "name": "fish-zhen-xunzhuang",
+      "prompt": "Use case: illustration-story. Create ONE complete isolated Shanhaijing creature, TRULY TRANSPARENT square canvas, at least 8% clear margins, no ground or scenery. Image reference is STYLE ONLY: Chinese carved woodblock, bold dark-brown contour, warm ivory with restrained flat mineral colors, fine short cut lines and sparse print grain. Do not copy the reference owl face, flared wing pose or flame-shaped ornament. No typography, border, seal, symbols, second creature or background. Preserve every stated anatomical feature, while color and pose are artistic interpretations. ZHEN FISH 箴魚: main text compares it to the ancient fish SHU 儵 and gives a BEAK LIKE A NEEDLE (其喙如箴). Make a single slim small FISH with an EXTRAORDINARILY LONG, STRAIGHT, VERY NARROW NEEDLE-LIKE TAPERED SNOUT continuous with its small fish head, one ordinary fish body and a modest forked fish tail. Side profile facing RIGHT, body held along a gentle upward diagonal. Muted blue-grey back, warm ivory belly, sparse small incised scale marks, understated small ordinary fins kept close to the body. This is an artistic generalized fish interpretation, NOT a named modern species. The needle snout must be obvious at thumbnail size, with no teeth or tusks. One head, no legs, no wings, no fur, no bird beak or bird feet. Do NOT borrow the Northern Youyu / 儵魚 chicken form with four heads, six legs and three tails: this Eastern comparison is a separate account. No modern swordfish giant dorsal sail, no horn on top of the head, no text.",
+      "entry_id": "beast-dongshan-zhen-xunzhuang",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-944d19d5-937b-4569-876e-dc9334fcc3ef.png",
+      "review_note": "单首概括鱼体、细长针状喙及一尾，无腿翼或北山多首鸡体；鳍尾数量形制、蓝灰赤色与斜游姿均为解释，不定现代鱼种。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "fish-zhen-xunzhuang-v1.png",
+      "sha256": "9979c2b0f8bdd19d33ea8764549c176079cdd9d1637251964c55783be3a9e177"
+    }
+  ]
+}

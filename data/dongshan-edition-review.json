@@ -1,8 +1,8 @@
 {
   "chapter": 4,
   "edition": "《山海經（四部叢刊本）》卷第四，郭氏傳",
-  "status": "prepared_not_implemented",
-  "scope": "全篇影印段界与阶段规划；正文翻译、实体及浏览器尚未接入。",
+  "status": "partially_implemented",
+  "scope": "首列前5阅读段已核109—110页；全篇段界已规划，其他段待双语、实体及页面接入。",
   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854",
   "snapshot_sha256": "0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce",
   "scan_pages": [
@@ -52,8 +52,8 @@
     "source-04-0093"
   ],
   "planned_stages": 51,
-  "implemented_stages": 0,
-  "remaining_stages": 51,
+  "implemented_stages": 5,
+  "remaining_stages": 46,
   "stage_counts": [
     13,
     18,
@@ -146,9 +146,11 @@
         109
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "乾昧为北临山名，郭注亦山名；食水东北注海。鱅鱅如犂牛、音如彘，虎文来自郭注，不据鱼名补鱼鳍或把猪音画成猪头。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "乾昧为北临山名，郭注亦山名；食水东北注海。鱅鱅如犂牛、音如彘，虎文来自郭注，不据鱼名补鱼鳍或把猪音画成猪头。",
+      "passage_id": "passage-dongshan-suzhu",
+      "new_cards": 5
     },
     {
       "stage": 2,
@@ -171,9 +173,11 @@
         109
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "湖水东注食水，可与樕𧑤食水建同篇多出处索引。活師郭注科斗、爾雅称谓另列，不画成年蛙。藟山音注捕获疑字待逐字复核。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "湖水东注食水，可与樕𧑤食水建同篇多出处索引。活師郭注科斗、爾雅称谓另列，不画成年蛙。藟山音注捕获疑字待逐字复核。",
+      "passage_id": "passage-dongshan-leishan",
+      "new_cards": 5
     },
     {
       "stage": 3,
@@ -201,9 +205,11 @@
         110
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0009在109页末而非捕获110。從從犬状六足、䖪䑕鸡状鼠毛、箴魚如儵喙如箴分别建档；不把儵的比拟借成北山鸡状儵魚，不画鼠头鸟。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0009在109页末而非捕获110。從從犬状六足、䖪䑕鸡状鼠毛、箴魚如儵喙如箴分别建档；不把儵的比拟借成北山鸡状儵魚，不画鼠头鸟。",
+      "passage_id": "passage-dongshan-xunzhuang",
+      "new_cards": 8
     },
     {
       "stage": 4,
@@ -225,9 +231,11 @@
         110
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "无草木、无水整句保留；勃亝不自动规范为别本勃齊。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "无草木、无水整句保留；勃亝不自动规范为别本勃齊。",
+      "passage_id": "passage-dongshan-boqi",
+      "new_cards": 1
     },
     {
       "stage": 5,
@@ -250,9 +258,11 @@
         110
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "多沙、減水北注海、鱤魚另录；音同归減，减損之减与鱤鱼名注分开。鱤仅列名及黄颊释名，不据现代种名强配形貌。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "多沙、減水北注海、鱤魚另录；音同归減，减損之减与鱤鱼名注分开。鱤仅列名及黄颊释名，不据现代种名强配形貌。",
+      "passage_id": "passage-dongshan-fantiao",
+      "new_cards": 4
     },
     {
       "stage": 6,
@@ -1457,9 +1467,145 @@
   ],
   "limits": "已核16页段界、跨页出处与总计；不宣称逐字多版本校勘或东山阅读已完成。所有51阶段仍待双语、实体/关系、必要生图审形、字体及页面验收。电子捕获快照不改；分段规划不将42结构候选或56原报合计当阶段数。",
   "font_preflight": {
-    "missing_stage_title_characters": "䃌亝兒剡勃峩嶧曹樕烝犲番盧耿葛藟跂踇踵隅麗𧑤",
-    "status": "pending_batch_subset",
-    "limits": "仅按现有打包字体cmap检查阶段名；完整实体与注文另核，不能用本机可见代替跨设备补齐。",
-    "missing_stage_title_count": 22
-  }
+    "missing_stage_title_characters": "䃌兒剡峩嶧曹烝犲盧耿葛跂踇踵隅麗",
+    "status": "current_batch_covered_future_pending",
+    "limits": "首批标题及所需ExtB字已补；后续46阶段的完整实体和注文仍需逐批预检。",
+    "missing_stage_title_count": 16,
+    "implemented_batch_missing_characters": "",
+    "initial_missing_stage_title_characters": "䃌亝兒剡勃峩嶧曹樕烝犲番盧耿葛藟跂踇踵隅麗𧑤"
+  },
+  "entry_ids": [
+    "place-dongshan-suzhu",
+    "place-dongshan-qianmei-suzhu",
+    "water-dongshan-shi",
+    "water-dongshan-sea",
+    "beast-dongshan-yongyong-suzhu",
+    "place-dongshan-leishan",
+    "material-dongshan-jade-leishan",
+    "material-dongshan-gold-leishan",
+    "water-dongshan-hu",
+    "beast-dongshan-huoshi-leishan",
+    "place-dongshan-xunzhuang",
+    "material-dongshan-gold-xunzhuang",
+    "material-dongshan-jade-xunzhuang",
+    "material-dongshan-qingbistone-xunzhuang",
+    "beast-dongshan-congcong-xunzhuang",
+    "beast-dongshan-zishu-xunzhuang",
+    "water-dongshan-zhi-xunzhuang",
+    "beast-dongshan-zhen-xunzhuang",
+    "place-dongshan-boqi",
+    "place-dongshan-fantiao",
+    "material-dongshan-sand-fantiao",
+    "water-dongshan-jian-fantiao",
+    "beast-dongshan-gan-fantiao"
+  ],
+  "passages": [
+    {
+      "id": "passage-dongshan-suzhu",
+      "source_unit_ids": [
+        "source-04-0003",
+        "source-04-0004",
+        "source-04-0005"
+      ],
+      "source_span": [
+        8,
+        50
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-leishan",
+      "source_unit_ids": [
+        "source-04-0006",
+        "source-04-0007"
+      ],
+      "source_span": [
+        50,
+        81
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-xunzhuang",
+      "source_unit_ids": [
+        "source-04-0008",
+        "source-04-0009",
+        "source-04-0010",
+        "source-04-0011",
+        "source-04-0012"
+      ],
+      "source_span": [
+        81,
+        170
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-boqi",
+      "source_unit_ids": [
+        "source-04-0013"
+      ],
+      "source_span": [
+        170,
+        185
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-fantiao",
+      "source_unit_ids": [
+        "source-04-0014",
+        "source-04-0015"
+      ],
+      "source_span": [
+        185,
+        214
+      ],
+      "status": "facsimile_reviewed"
+    }
+  ],
+  "batch_size": 5,
+  "next": {
+    "name": "姑兒之山",
+    "source_units": [
+      16,
+      17
+    ],
+    "facsimile_pages": [
+      110
+    ],
+    "status": "pending_bilingual_entity_review"
+  },
+  "artwork_summary": {
+    "selected": 5,
+    "appearance_unknown": 1
+  },
+  "font_supplements": [
+    {
+      "family": "Shanhai Title",
+      "source_family": "Noto Serif SC",
+      "characters": "䖪亝勃從昧樕活減番箴藟鱅鱤",
+      "weights": [
+        400,
+        700
+      ],
+      "path": "frontend/public/fonts/shanhai-title-dongshan.woff2",
+      "license": "frontend/public/fonts/noto-serif-sc-LICENSE.txt",
+      "source_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E4%96%AA%E4%BA%9D%E5%8B%83%E5%BE%9E%E6%98%A7%E6%A8%95%E6%B4%BB%E6%B8%9B%E7%95%AA%E7%AE%B4%E8%97%9F%E9%B1%85%E9%B1%A4&display=swap",
+      "sha256": "52995a99a49ffb55de32f544cc3678bf3ad5162030a6ce2d5ddb83af8466e62d"
+    },
+    {
+      "family": "Atlas Eastern Rare",
+      "characters": "𣲵𧑤",
+      "weights": [
+        400
+      ],
+      "path": "frontend/public/fonts/atlas-eastern-rare.woff2",
+      "license": "frontend/public/fonts/atlas-eastern-rare-LICENSE.txt",
+      "source_url": "https://raw.githubusercontent.com/googlefonts/chinese/gh-pages/fonts/HanaMin/HanaMinB.ttf",
+      "upstream_sha256": "829543436cdf7b4c6730e2af5806fa406f8ddf0d4b656e0cd49c58d4db1c8d3c",
+      "sha256": "6ce08322f22c2f66ca05bc7ffc240470a6357db65b323fe9de02e3169df5573a",
+      "limits": "独立字体族优先回退，静态400字形，600显示沿用400且禁用伪粗；不复制系统字体。"
+    }
+  ]
 }

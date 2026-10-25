@@ -8,6 +8,7 @@
     "verify:nanshan": "node scripts/verify-nanshan.mjs",
     "verify:xishan": "node scripts/verify-xishan.mjs",
     "verify:beishan": "node scripts/verify-beishan.mjs",
+    "verify:dongshan": "node scripts/verify-dongshan.mjs",
     "verify:onboarding": "node scripts/verify-onboarding.mjs",
     "verify:place-search": "node scripts/verify-place-search.mjs",
     "verify:discovery": "node scripts/verify-discovery.mjs",

@@ -7,7 +7,7 @@ from PIL import Image
 FRONTEND = Path(__file__).resolve().parents[1]
 PUBLIC = FRONTEND / 'public'
 parser = argparse.ArgumentParser()
-parser.add_argument('--chapter', choices=['nanshan', 'xishan', 'beishan'], default='nanshan')
+parser.add_argument('--chapter', choices=['nanshan', 'xishan', 'beishan', 'dongshan'], default='nanshan')
 chapter = parser.parse_args().chapter
 SOURCE = FRONTEND / 'artwork-source' / chapter
 
@@ -34,7 +34,7 @@ if entity_manifest.exists():
 destination = PUBLIC / 'data/atlas/myth-icons' / chapter
 destination.mkdir(parents=True, exist_ok=True)
 for asset in generation['assets']:
-    if chapter in {'xishan', 'beishan'} and asset.get('status') != 'reviewed':
+    if chapter in {'xishan', 'beishan', 'dongshan'} and asset.get('status') != 'reviewed':
         continue
     name = asset['name']
     source = SOURCE / asset.get('source_file', f'{name}-v1.png')

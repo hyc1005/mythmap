@@ -4984,5 +4984,95 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/dongshan/fish-yongyong-suzhu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/dongshan/fish-yongyong-suzhu-v1-card.webp",
+      "bytes": 27954,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/dongshan/fish-yongyong-suzhu-v1-preview.webp",
+      "bytes": 53368,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/dongshan/creature-huoshi-leishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/dongshan/creature-huoshi-leishan-v1-card.webp",
+      "bytes": 20732,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/dongshan/creature-huoshi-leishan-v1-preview.webp",
+      "bytes": 40114,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/dongshan/creature-congcong-xunzhuang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/dongshan/creature-congcong-xunzhuang-v1-card.webp",
+      "bytes": 25450,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/dongshan/creature-congcong-xunzhuang-v1-preview.webp",
+      "bytes": 47728,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/dongshan/bird-zishu-xunzhuang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/dongshan/bird-zishu-xunzhuang-v1-card.webp",
+      "bytes": 28434,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/dongshan/bird-zishu-xunzhuang-v1-preview.webp",
+      "bytes": 58066,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/dongshan/fish-zhen-xunzhuang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/dongshan/fish-zhen-xunzhuang-v1-card.webp",
+      "bytes": 13996,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/dongshan/fish-zhen-xunzhuang-v1-preview.webp",
+      "bytes": 26022,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }

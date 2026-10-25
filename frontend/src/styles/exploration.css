@@ -1,3 +1,5 @@
+@font-face { font-family: 'Atlas Eastern Rare'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-eastern-rare.woff2) format("woff2"); unicode-range: U+23CB5, U+27464; }
+@font-face { font-family: 'Shanhai Title'; font-style: normal; font-weight: 400 700; font-display: swap; src: url(/fonts/shanhai-title-dongshan.woff2) format("woff2"); unicode-range: U+45AA, U+4E9D, U+52C3, U+5F9E, U+6627, U+6A15, U+6D3B, U+6E1B, U+756A, U+7BB4, U+85DF, U+9C45, U+9C64; }
 @font-face { font-family: 'Atlas Northern Tan'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-northern-tan.woff2) format("woff2"); unicode-range: U+28730; }
 @font-face { font-family: 'Atlas Northern ExtB'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-northern-extb.woff2) format("woff2"); unicode-range: U+23D40, U+23E26, U+24360, U+244F0, U+2479E, U+247E4, U+2483E, U+25B07, U+28E67, U+298E1, U+29E74, U+2A0D1, U+2A100, U+2A136, U+2C2E9, U+2C431, U+2D94D; }
 :root { --ink-title-duration: 450ms; --ink-phase-duration: 200ms; --ink-chapter-duration: 1200ms; }
@@ -10,7 +12,7 @@
 .journey-more>div { position: absolute; right: 0; bottom: calc(100% + 4px); display: flex; gap: 4px; padding: 6px; border: 1px solid #bba680; background: #eee1c4; z-index: 2; }
 .is-short-map .journey-more summary { min-width: 28px; min-height: 28px; padding: 3px; }
 .is-short-map .journey-heading>span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-html[lang='zh-CN'] :is(h1, h2, h3, .story-entry b, .beast-card>b, .timeline-current b, .fullscreen-chapter-nav b, .chapter-transition-veil>span) { font-family: 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'Shanhai Title', 'Noto Serif SC', 'SimSun', serif; }
+html[lang='zh-CN'] :is(h1, h2, h3, .story-entry b, .beast-card>b, .timeline-current b, .fullscreen-chapter-nav b, .chapter-transition-veil>span) { font-family: 'Atlas Eastern Rare', 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'Shanhai Title', 'Noto Serif SC', 'SimSun', serif; }
 
 /* Text and chapter motion */
 .ink-text { display: inline; }

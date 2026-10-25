@@ -3716,5 +3716,70 @@
       1254,
       1254
     ]
+  },
+  "/data/atlas/myth-icons/dongshan/fish-yongyong-suzhu-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/fish-yongyong-suzhu-v1.webp",
+    "original_bytes": 1513670,
+    "optimized_bytes": 274358,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-huoshi-leishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-huoshi-leishan-v1.webp",
+    "original_bytes": 1139236,
+    "optimized_bytes": 206486,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-congcong-xunzhuang-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-congcong-xunzhuang-v1.webp",
+    "original_bytes": 1303513,
+    "optimized_bytes": 223892,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/bird-zishu-xunzhuang-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/bird-zishu-xunzhuang-v1.webp",
+    "original_bytes": 1824620,
+    "optimized_bytes": 331694,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/fish-zhen-xunzhuang-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/fish-zhen-xunzhuang-v1.webp",
+    "original_bytes": 642230,
+    "optimized_bytes": 127000,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
   }
 }
