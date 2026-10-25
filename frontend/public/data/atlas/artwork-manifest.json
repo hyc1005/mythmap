@@ -8760,6 +8760,82 @@
           ]
         }
       }
+    },
+    {
+      "id": "beishan-bird-guxi-xiaohou-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-guxi-xiaohou-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-guxi-xiaohou-v1.webp",
+      "initial_prompt": "One isolated Guxi 鴣𪄶 from Shanhaijing, truly transparent square canvas with 10% clear margins, no scenery, ground, text, seal or frame. Reference ONLY the carved Chinese woodblock medium, flat dark ink and ivory incisions, restrained ochre; do NOT copy reference face, spread wings or flame-shaped feather motifs. Text: crow-shaped with white markings (如烏而白文). A lean BLACK CROW, long straight pointed BLACK bill, narrow sloping forehead, long straight tail, closed wings, walking LEFT with lowered head and one leg gently lifted, exactly two legs and two ordinary wings. A few clearly WHITE short transverse dashes and broken stripes on the black back, wing coverts and upper breast; white MARKINGS do not turn the entire head or body white. Carving fine short bar hatching and geometric cuts rather than flame curls. Distinct from a white-headed owl and the existing flying stone-carrying Jingwei. No crest, ear tufts, human face, extra eyes or limbs. White marking arrangement, black body color inferred from crow comparison, stride and bill/feet colors are artistic interpretation; do not depict eating/medical effects.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "乌状窄首长直喙、黑身白斑、双足行走、收翼与长尾，区别于白首梟形及展翼精衛；白纹位置、足色与姿态属解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-guxi-xiaohou-v1.webp",
+          "bytes": 232164,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-guxi-xiaohou-v1-card.webp",
+          "bytes": 23536,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-guxi-xiaohou-v1-preview.webp",
+          "bytes": 46738,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "beishan-bird-huangniao-xuanyuan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/beishan/bird-huangniao-xuanyuan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/beishan/bird-huangniao-xuanyuan-v1.webp",
+      "initial_prompt": "One isolated Huangniao 黄鳥 of Mount Xuanyuan in the Northern Shanhaijing, truly transparent square canvas, generous 10% margins, no branch, scenery, pedestal, text or seal. Reference ONLY Chinese woodblock medium, strong dark-brown contour, flat ivory and warm ochre inks with subtle carving grain. Text says OWL-SHAPED with WHITE HEAD (如梟而白首), and does not specify a yellow body. Compact upright owl with a broad rounded WHITE head, NO hornlike ear tufts, small dark hooked owl bill, two naturally proportioned eyes set in a soft pale facial disk, body turned three-quarter BACK with head calmly looking left over shoulder; two folded wings, short single fan tail, exactly two clearly visible clawed feet. Body quiet warm brown/ochre with restrained vertical dark barring, no decorative flame panels, no huge staring symmetrical medallion face. The white crown and face contrast clearly with the darker body. Distinct plump folded silhouette from the thin walking crow and spread-wing Jingwei. Body hue, bar pattern, small facial disk and pose are artistic choices, not extra textual claims. No phoenix crown, eagle head, snake anatomy, human face or injury.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_beishan_batch",
+      "visual_review_note": "梟状白首、双目短钩喙、无角羽、褐身收翼回首、双爪足与短尾；体色、面盘和姿态属解释，不据黄鸟名定黄身。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/beishan/bird-huangniao-xuanyuan-v1.webp",
+          "bytes": 337936,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/beishan/bird-huangniao-xuanyuan-v1-card.webp",
+          "bytes": 31790,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/beishan/bird-huangniao-xuanyuan-v1-preview.webp",
+          "bytes": 61346,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

@@ -827,6 +827,32 @@
       "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-3e193066-01a3-47a4-adcc-9b6da455c45e.png",
       "sha256": "888e7953810bdc236a702d25b59b3904faa0b6e383e07e3e131813c28ae43cd6",
       "review_note": "单一蛇形头身，六眼分三对可逐数，四片分离羽翼、三条独立腿足及单尾均可辨；无鹰喙猫头鹰面。眼位、羽翼类型、爪趾、鳞纹、叉舌与配色为插画解释；主体完整未裁切。"
+    },
+    {
+      "name": "bird-guxi-xiaohou",
+      "entry_id": "beast-beishan-guxi-xiaohou",
+      "prompt": "One isolated Guxi 鴣𪄶 from Shanhaijing, truly transparent square canvas with 10% clear margins, no scenery, ground, text, seal or frame. Reference ONLY the carved Chinese woodblock medium, flat dark ink and ivory incisions, restrained ochre; do NOT copy reference face, spread wings or flame-shaped feather motifs. Text: crow-shaped with white markings (如烏而白文). A lean BLACK CROW, long straight pointed BLACK bill, narrow sloping forehead, long straight tail, closed wings, walking LEFT with lowered head and one leg gently lifted, exactly two legs and two ordinary wings. A few clearly WHITE short transverse dashes and broken stripes on the black back, wing coverts and upper breast; white MARKINGS do not turn the entire head or body white. Carving fine short bar hatching and geometric cuts rather than flame curls. Distinct from a white-headed owl and the existing flying stone-carrying Jingwei. No crest, ear tufts, human face, extra eyes or limbs. White marking arrangement, black body color inferred from crow comparison, stride and bill/feet colors are artistic interpretation; do not depict eating/medical effects.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "bird-guxi-xiaohou-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-284a2023-f6e0-4c44-9478-a331c16525d4.png",
+      "sha256": "c430c89a849996f519be0bfacf7713b30e8bbe7451fdd816139a44cfb971565f",
+      "review_note": "乌状窄首长直喙、黑身白斑、双足行走、收翼与长尾，区别于白首梟形及展翼精衛；白纹位置、足色与姿态属解释。"
+    },
+    {
+      "name": "bird-huangniao-xuanyuan",
+      "entry_id": "beast-beishan-huangniao-xuanyuan",
+      "prompt": "One isolated Huangniao 黄鳥 of Mount Xuanyuan in the Northern Shanhaijing, truly transparent square canvas, generous 10% margins, no branch, scenery, pedestal, text or seal. Reference ONLY Chinese woodblock medium, strong dark-brown contour, flat ivory and warm ochre inks with subtle carving grain. Text says OWL-SHAPED with WHITE HEAD (如梟而白首), and does not specify a yellow body. Compact upright owl with a broad rounded WHITE head, NO hornlike ear tufts, small dark hooked owl bill, two naturally proportioned eyes set in a soft pale facial disk, body turned three-quarter BACK with head calmly looking left over shoulder; two folded wings, short single fan tail, exactly two clearly visible clawed feet. Body quiet warm brown/ochre with restrained vertical dark barring, no decorative flame panels, no huge staring symmetrical medallion face. The white crown and face contrast clearly with the darker body. Distinct plump folded silhouette from the thin walking crow and spread-wing Jingwei. Body hue, bar pattern, small facial disk and pose are artistic choices, not extra textual claims. No phoenix crown, eagle head, snake anatomy, human face or injury.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "bird-huangniao-xuanyuan-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-da1f3608-5cb4-4ab6-a860-6619dc72e420.png",
+      "sha256": "c6255cbe7242135d67b56b88a69b475db88d60de7e04088573b4a1c3307621e3",
+      "review_note": "梟状白首、双目短钩喙、无角羽、褐身收翼回首、双爪足与短尾；体色、面盘和姿态属解释，不据黄鸟名定黄身。"
     }
   ]
 }

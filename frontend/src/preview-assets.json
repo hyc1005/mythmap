@@ -4822,5 +4822,41 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/bird-guxi-xiaohou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-guxi-xiaohou-v1-card.webp",
+      "bytes": 23536,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-guxi-xiaohou-v1-preview.webp",
+      "bytes": 46738,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/beishan/bird-huangniao-xuanyuan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/bird-huangniao-xuanyuan-v1-card.webp",
+      "bytes": 31790,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/bird-huangniao-xuanyuan-v1-preview.webp",
+      "bytes": 61346,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }
