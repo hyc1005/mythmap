@@ -10412,6 +10412,44 @@
           ]
         }
       }
+    },
+    {
+      "id": "zhongshan-fish-hao-quzhu-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/fish-hao-quzhu-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/fish-hao-quzhu-v1.webp",
+      "initial_prompt": "Use case: illustration-story. Create ONE complete isolated HAO FISH 豪魚 from Shanhaijing Central Mountains, Quzhu mountain, on a truly TRANSPARENT canvas. STYLE-ONLY reference: Chinese carved woodblock, dark-brown contours, flat restrained mineral pigments, warm ivory carved incisions and subtle print grain. Do not copy the owl head, owl wings or decorative flame scrolls. Textual basis: fish shape compared to wei, which Guo Pu compares to zhan (a long-snouted generalized fish); the main text says 赤喙尾赤羽, without modern punctuation. Required image: ONE elongated fish body, ONE fish head with a conspicuously RED snout/mouth, and ONE RED tail with visibly RED feather-like rays/plumage at the rear. The feather construction at the tail is an EXPLICIT ARTISTIC INTERPRETATION of yu, not an asserted unique zoological identification. Keep every feather-like detail at the tail; NO paired bird wings, NO feet, NO legs, NO bird or duck head, NO second head, no horn. Generalized long snout, slim tapered deep olive/blue-green fish trunk and cream belly; subtle ordinary fish fins, not extra wing pairs. Pose in a distinctive graceful slightly descending curve, head to upper left and tail sweeping down-right, balanced wide composition with all parts and clear margins. Avoid a giant round carp head, multibody fish, a tiger face, human face or a cyclops eye. No text, border, ground, water, scene, halo, shadow or opaque background. Muted olive body versus bright cinnabar snout and red feathered tail gives clear differentiation. No modern species label.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "核一鱼首一鱼躯；红喙与红羽状单尾，未加双鸟翼、足或额外头。赤喙尾赤羽无句读，羽尾构造及其余细节标为艺术解释；不认定现代鲟种。透明通道完整。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/fish-hao-quzhu-v1.webp",
+          "bytes": 221210,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/fish-hao-quzhu-v1-card.webp",
+          "bytes": 22486,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/fish-hao-quzhu-v1-preview.webp",
+          "bytes": 41082,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

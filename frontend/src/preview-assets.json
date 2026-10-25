@@ -5596,5 +5596,23 @@
         320
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/fish-hao-quzhu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/fish-hao-quzhu-v1-card.webp",
+      "bytes": 22486,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/fish-hao-quzhu-v1-preview.webp",
+      "bytes": 41082,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
   }
 }

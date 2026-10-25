@@ -7,7 +7,7 @@ from PIL import Image
 FRONTEND = Path(__file__).resolve().parents[1]
 PUBLIC = FRONTEND / 'public'
 parser = argparse.ArgumentParser()
-parser.add_argument('--chapter', choices=['nanshan', 'xishan', 'beishan', 'dongshan'], default='nanshan')
+parser.add_argument('--chapter', choices=['nanshan', 'xishan', 'beishan', 'dongshan', 'zhongshan'], default='nanshan')
 chapter = parser.parse_args().chapter
 SOURCE = FRONTEND / 'artwork-source' / chapter
 
@@ -24,7 +24,7 @@ optimized = read(FRONTEND / 'src/optimized-assets.json')
 previews = read(FRONTEND / 'src/preview-assets.json')
 refined = read(FRONTEND / 'src/refined-artwork.json')
 artwork = read(PUBLIC / 'data/atlas/artwork-manifest.json')
-generation = read(SOURCE / 'generation.json')
+generation = read(SOURCE / 'generation.json') if (SOURCE / 'generation.json').exists() else {'assets': []}
 reader_manifest = SOURCE / 'reader-generation.json'
 if reader_manifest.exists():
     generation['assets'] += read(reader_manifest)['assets']
@@ -34,7 +34,7 @@ if entity_manifest.exists():
 destination = PUBLIC / 'data/atlas/myth-icons' / chapter
 destination.mkdir(parents=True, exist_ok=True)
 for asset in generation['assets']:
-    if chapter in {'xishan', 'beishan', 'dongshan'} and asset.get('status') != 'reviewed':
+    if chapter in {'xishan', 'beishan', 'dongshan', 'zhongshan'} and asset.get('status') != 'reviewed':
         continue
     name = asset['name']
     source = SOURCE / asset.get('source_file', f'{name}-v1.png')

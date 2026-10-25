@@ -1,0 +1,19 @@
+{
+  "chapter": 5,
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "fish-hao-quzhu",
+      "entry_id": "beast-zhongshan-hao-quzhu",
+      "prompt": "Use case: illustration-story. Create ONE complete isolated HAO FISH 豪魚 from Shanhaijing Central Mountains, Quzhu mountain, on a truly TRANSPARENT canvas. STYLE-ONLY reference: Chinese carved woodblock, dark-brown contours, flat restrained mineral pigments, warm ivory carved incisions and subtle print grain. Do not copy the owl head, owl wings or decorative flame scrolls. Textual basis: fish shape compared to wei, which Guo Pu compares to zhan (a long-snouted generalized fish); the main text says 赤喙尾赤羽, without modern punctuation. Required image: ONE elongated fish body, ONE fish head with a conspicuously RED snout/mouth, and ONE RED tail with visibly RED feather-like rays/plumage at the rear. The feather construction at the tail is an EXPLICIT ARTISTIC INTERPRETATION of yu, not an asserted unique zoological identification. Keep every feather-like detail at the tail; NO paired bird wings, NO feet, NO legs, NO bird or duck head, NO second head, no horn. Generalized long snout, slim tapered deep olive/blue-green fish trunk and cream belly; subtle ordinary fish fins, not extra wing pairs. Pose in a distinctive graceful slightly descending curve, head to upper left and tail sweeping down-right, balanced wide composition with all parts and clear margins. Avoid a giant round carp head, multibody fish, a tiger face, human face or a cyclops eye. No text, border, ground, water, scene, halo, shadow or opaque background. Muted olive body versus bright cinnabar snout and red feathered tail gives clear differentiation. No modern species label.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-c7fe275c-bb05-4f1d-8912-e4b9bc5752f6.png",
+      "source_file": "fish-hao-quzhu-v1.png",
+      "sha256": "c042d5ec0fbcd8be304938679851e88442867a0fef3f2ccf2bdf36b6c6554fc2",
+      "status": "reviewed",
+      "review_note": "核一鱼首一鱼躯；红喙与红羽状单尾，未加双鸟翼、足或额外头。赤喙尾赤羽无句读，羽尾构造及其余细节标为艺术解释；不认定现代鲟种。透明通道完整。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    }
+  ]
+}

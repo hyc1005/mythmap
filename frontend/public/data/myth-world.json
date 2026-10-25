@@ -1,5 +1,5 @@
 {
-  "revision": "myth-world-2026-10-25-dongshan-complete-v1",
+  "revision": "myth-world-2026-10-25-zhongshan-three-v1",
   "coordinate_system": "diagram-units",
   "coordinate_note": "x/y are layout hints only. They encode cardinal orientation when supported by text; no distance or scale is implied.",
   "stages": [
@@ -10632,6 +10632,84 @@
       ],
       "artwork": "dongshan/creature-fei-taishan-v1.webp",
       "artwork_caption": "经文或郭注形貌与木刻演绎 · 器官依据见说明，配色、比例和姿态为艺术解释。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0002",
+        "source-05-0003",
+        "source-05-0004",
+        "source-05-0005",
+        "source-05-0006"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-gancao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "beast-zhongshan-nuo-gancao",
+      "kind": "beast",
+      "name": "㔮（甘棗）",
+      "quote": "有獸焉其狀如𤠢鼠而文題其名曰㔮食之已癭",
+      "description": "㔮如𤠢鼠而文题；郭注明言参照鼠形未詳。保留文本与音注、暂用占位，不编成现代鼠种或把异字熊当熊形；食疗为古述。",
+      "commentary_quote": "𤠢䑕所未詳音虺字亦或作虺；音那或作熊也",
+      "context_place_id": "place-zhongshan-r01-gancao",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-gancao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-gancao"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "参照形貌未详 · 统一问号占位不代表本生物形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页3",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3",
+      "source_unit_ids": [
+        "source-05-0010",
+        "source-05-0011",
+        "source-05-0012"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-quzhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "beast-zhongshan-hao-quzhu",
+      "kind": "beast",
+      "name": "豪魚（渠豬）",
+      "quote": "其中是多豪魚狀如鮪赤喙尾赤羽可以已白癬",
+      "description": "豪鱼如鮪，郭注鮪似鱣。赤喙尾赤羽无现代句读，图中红喙及红羽状尾作明确演绎，不断言羽必指成对飞翼；细长鱼体、鳞鳍细节、羽尾构造、其余体色与姿态均为艺术解释，不强定现代鲟鱼种。食疗为古述。",
+      "commentary_quote": "鮪似鱣也",
+      "context_place_id": "place-zhongshan-r01-quzhu",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-quzhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-quzhu",
+        "water-zhongshan-quzhu"
+      ],
+      "relation_scope": "water",
+      "artwork": "zhongshan/fish-hao-quzhu-v1.webp",
+      "artwork_caption": "经文与郭注鱼形依据 · 红羽尾构造、比例和姿态为明确艺术解释。"
     }
   ],
   "natural_features": [
@@ -38537,6 +38615,312 @@
         "water-dongshan-gou-tai4"
       ],
       "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0002",
+        "source-05-0003",
+        "source-05-0004",
+        "source-05-0005",
+        "source-05-0006"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-gancao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "water-zhongshan-gong-gancao",
+      "kind": "water",
+      "name": "共水（甘棗）",
+      "quote": "共水出焉而西流注于河",
+      "description": "共水从甘棗出，西注河；音恭属于水名，不按现代河道定位。",
+      "commentary_quote": "音恭",
+      "context_place_id": "place-zhongshan-r01-gancao",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-gancao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-gancao",
+        "water-zhongshan-he"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2、3",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0002",
+        "source-05-0003",
+        "source-05-0004",
+        "source-05-0005",
+        "source-05-0006",
+        "source-05-0010",
+        "source-05-0011",
+        "source-05-0012"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-gancao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "water-zhongshan-he",
+      "kind": "water",
+      "name": "河（中山首列文本索引）",
+      "quote": "西流注于河；而南流注于河",
+      "description": "河为甘棗共水西注与渠豬水南注的受水体文本名目，各段方向分别保留，不据此认定现代水系。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r01-gancao",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-gancao",
+        "passage-zhongshan-r01-quzhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-gancao",
+        "passage-zhongshan-r01-quzhu",
+        "water-zhongshan-gong-gancao",
+        "water-zhongshan-quzhu"
+      ],
+      "relation_scope": "water",
+      "context_place_ids": [
+        "place-zhongshan-r01-gancao",
+        "place-zhongshan-r01-quzhu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0002",
+        "source-05-0003",
+        "source-05-0004",
+        "source-05-0005",
+        "source-05-0006"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-gancao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-niu-gancao",
+      "kind": "plant",
+      "name": "杻木（甘棗）",
+      "quote": "其上多杻木",
+      "description": "仅记山上多杻木，未载独立形貌，不借蘀草或櫔木的叶花特征。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r01-gancao",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-gancao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-gancao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0002",
+        "source-05-0003",
+        "source-05-0004",
+        "source-05-0005",
+        "source-05-0006"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-gancao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-tuo-gancao",
+      "kind": "plant",
+      "name": "蘀（甘棗）",
+      "quote": "其下有草焉葵本而杏葉黄華而莢實名曰蘀可以已瞢",
+      "description": "蘀草葵本、杏叶、黄华荚实；或作楛叶为郭注异说，不将两种比拟叶同时叠画。已瞢为古述，不作现代药效或种属认定。",
+      "commentary_quote": "或作楛葉；他落反；音盲",
+      "context_place_id": "place-zhongshan-r01-gancao",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-gancao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-gancao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0007",
+        "source-05-0008",
+        "source-05-0009"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-lier",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-jiang-lier",
+      "kind": "plant",
+      "name": "橿（歴兒）",
+      "quote": "其上多橿",
+      "description": "橿仅列名，方茎圆叶黄花等后文属于櫔木，不移给本卡。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r01-lier",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-lier"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-lier"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0007",
+        "source-05-0008",
+        "source-05-0009"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-lier",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-li-lier",
+      "kind": "plant",
+      "name": "櫔木（歴兒）",
+      "quote": "多櫔木是木也方莖而員葉黄華而毛其實如揀服之不忘",
+      "description": "櫔木方茎圆叶、黄华而毛、实如揀；具体毛生部位不超出原词强定。揀的白粘果注属于比拟树名，不反填櫔的果色；服之不忘为古述。",
+      "commentary_quote": "音厲",
+      "context_place_id": "place-zhongshan-r01-lier",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-lier"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-lier"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页3",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3",
+      "source_unit_ids": [
+        "source-05-0010",
+        "source-05-0011",
+        "source-05-0012"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-quzhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-bamboo-quzhu",
+      "kind": "plant",
+      "name": "竹（渠豬）",
+      "quote": "其上多竹",
+      "description": "渠豬山上多竹，仅记古物产名，不确定现代竹种。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r01-quzhu",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-quzhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-quzhu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页3",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3",
+      "source_unit_ids": [
+        "source-05-0010",
+        "source-05-0011",
+        "source-05-0012"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-quzhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "water-zhongshan-quzhu",
+      "kind": "water",
+      "name": "渠豬之水",
+      "quote": "渠豬之水出焉而南流注于河",
+      "description": "渠豬水源出后南注河；不把山名与水名合卡，方向与共水西注河分别存录。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r01-quzhu",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-quzhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-quzhu",
+        "water-zhongshan-he",
+        "beast-zhongshan-hao-quzhu"
+      ],
+      "relation_scope": "water"
     }
   ],
   "passages": [
@@ -55330,6 +55714,229 @@
         "rite-dongshan-book-total",
         "passage-dongshan-range4-summary"
       ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0002",
+        "source-05-0003",
+        "source-05-0004",
+        "source-05-0005",
+        "source-05-0006"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-gancao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r01-gancao",
+      "kind": "passage",
+      "name": "甘棗之山",
+      "range": 1,
+      "order": 1,
+      "description": "中山经薄山首甘棗，共水西注河，上多杻木。蘀草葵本杏叶、黄华荚实；或作楛叶为异说。㔮如𤠢鼠而文题，郭注明言参照鼠形未詳，故留形貌占位，不据鼠字强定现代物种，也不把或作熊画成熊。医食功效均为古述。",
+      "quote": "中山經薄山之首曰甘棗之山共水出焉而西流注于河其上多杻木其下有草焉葵本而杏葉黄華而莢實名曰蘀可以已瞢有獸焉其狀如𤠢鼠而文題其名曰㔮食之已癭",
+      "captured_text": "中山經薄山之首曰甘棗之山共水出焉而西流注于河其上多杻木其下有草焉葵本而杏葉黄華而莢實名曰蘀可以已瞢有獸焉其狀如𤠢鼠而文題其名曰㔮食之已癭",
+      "commentary_quote": "〔影印页2〕音恭\n〔影印页2〕或作楛葉\n〔影印页2〕他落反；音盲\n〔影印页2〕𤠢䑕所未詳音虺字亦或作虺；音那或作熊也",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0002",
+          "annotations": [
+            "音恭"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0003",
+          "annotations": [
+            "或作楛葉"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0004",
+          "annotations": [
+            "他落反",
+            "音盲"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0005",
+          "annotations": [
+            "𤠢䑕所未詳音虺字亦或作虺",
+            "音那或作熊也"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0006",
+          "annotations": []
+        }
+      ],
+      "content_note": "共水西注河；㔮为𤠢鼠状文题，郭注明言鼠形未详，不强定现代鼠种；医食功效仅作古述。",
+      "source_span": [
+        8,
+        76
+      ],
+      "subjects": [
+        "甘棗之山",
+        "共水（甘棗）",
+        "河（中山首列文本索引）",
+        "杻木（甘棗）",
+        "蘀（甘棗）",
+        "㔮（甘棗）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r01-gancao",
+        "water-zhongshan-gong-gancao",
+        "water-zhongshan-he",
+        "plant-zhongshan-niu-gancao",
+        "plant-zhongshan-tuo-gancao",
+        "beast-zhongshan-nuo-gancao",
+        "passage-zhongshan-r01-lier"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0007",
+        "source-05-0008",
+        "source-05-0009"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-lier",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r01-lier",
+      "kind": "passage",
+      "name": "歴兒之山",
+      "range": 1,
+      "order": 2,
+      "description": "甘棗向东二十里为歴兒，上多橿与櫔木。方茎圆叶、黄华而毛、实如揀属于櫔木，不移给仅列名的橿。揀为果实比拟且郭注称木名，单列参照卡，不作为本山实生植物。揀木注文跨8—9连读，服之不忘为古述。",
+      "quote": "又東二十里曰歴兒之山其上多橿多櫔木是木也方莖而員葉黄華而毛其實如揀服之不忘",
+      "captured_text": "又東二十里曰歴兒之山其上多橿多櫔木是木也方莖而員葉黄華而毛其實如揀服之不忘",
+      "commentary_quote": "〔影印页2〕音厲\n〔影印页2〕揀木名子如指頭白而粘可以\n〔影印页2〕浣衣也音練或作簡",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0007",
+          "annotations": [
+            "音厲"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0008",
+          "annotations": [
+            "揀木名子如指頭白而粘可以"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0009",
+          "annotations": [
+            "浣衣也音練或作簡"
+          ]
+        }
+      ],
+      "content_note": "櫔木方茎圆叶黄华而毛，实如揀；揀木音注跨8—9，9实在2页末，不并入渠猪山。",
+      "source_span": [
+        76,
+        113
+      ],
+      "subjects": [
+        "歴兒之山",
+        "橿（歴兒）",
+        "櫔木（歴兒）",
+        "揀（櫔实比拟）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r01-lier",
+        "plant-zhongshan-jiang-lier",
+        "plant-zhongshan-li-lier",
+        "plant-zhongshan-jian-comparison-lier",
+        "passage-zhongshan-r01-gancao",
+        "passage-zhongshan-r01-quzhu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页3",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3",
+      "source_unit_ids": [
+        "source-05-0010",
+        "source-05-0011",
+        "source-05-0012"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-quzhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r01-quzhu",
+      "kind": "passage",
+      "name": "渠豬之山",
+      "range": 1,
+      "order": 3,
+      "description": "歴兒向东十五里为渠豬，上多竹。渠豬水南注河，与甘棗共水西注河分别保留方向及出处，仅共享河的文本名目。豪鱼如鮪，郭注鮪似鱣；赤喙尾赤羽原词保留，图中红喙红羽尾是明确艺术解释，不把羽字擅定成对鸟翼。已白癣为古述。",
+      "quote": "又東十五里曰渠豬之山其上多竹渠豬之水出焉而南流注于河其中是多豪魚狀如鮪赤喙尾赤羽可以已白癬",
+      "captured_text": "又東十五里曰渠豬之山其上多竹渠豬之水出焉而南流注于河其中是多豪魚狀如鮪赤喙尾赤羽可以已白癬",
+      "commentary_quote": "〔影印页3〕鮪似鱣也",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0010",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0011",
+          "annotations": [
+            "鮪似鱣也"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0012",
+          "annotations": []
+        }
+      ],
+      "content_note": "豪鱼如鮪、赤喙尾赤羽；郭注鮪似鱣，羽字不自动推成鸟翼或鸭首。",
+      "source_span": [
+        113,
+        158
+      ],
+      "subjects": [
+        "渠豬之山",
+        "竹（渠豬）",
+        "渠豬之水",
+        "豪魚（渠豬）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r01-quzhu",
+        "plant-zhongshan-bamboo-quzhu",
+        "water-zhongshan-quzhu",
+        "beast-zhongshan-hao-quzhu",
+        "water-zhongshan-he",
+        "passage-zhongshan-r01-lier"
+      ]
     }
   ],
   "text_entities": [
@@ -69312,6 +69919,150 @@
       ],
       "related_entry_ids": [
         "passage-dongshan-book-total"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0002",
+        "source-05-0003",
+        "source-05-0004",
+        "source-05-0005",
+        "source-05-0006"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-gancao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r01-gancao",
+      "kind": "place",
+      "name": "甘棗之山",
+      "description": "中山经薄山首甘棗，共水西注河，上多杻木。蘀草葵本杏叶、黄华荚实；或作楛叶为异说。㔮如𤠢鼠而文题，郭注明言参照鼠形未詳，故留形貌占位，不据鼠字强定现代物种，也不把或作熊画成熊。医食功效均为古述。",
+      "quote": "中山經薄山之首曰甘棗之山共水出焉而西流注于河其上多杻木其下有草焉葵本而杏葉黄華而莢實名曰蘀可以已瞢有獸焉其狀如𤠢鼠而文題其名曰㔮食之已癭",
+      "commentary_quote": "〔影印页2〕音恭\n〔影印页2〕或作楛葉\n〔影印页2〕他落反；音盲\n〔影印页2〕𤠢䑕所未詳音虺字亦或作虺；音那或作熊也",
+      "content_note": "共水西注河；㔮为𤠢鼠状文题，郭注明言鼠形未详，不强定现代鼠种；医食功效仅作古述。",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-gancao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-gancao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0007",
+        "source-05-0008",
+        "source-05-0009"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-lier",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r01-lier",
+      "kind": "place",
+      "name": "歴兒之山",
+      "description": "甘棗向东二十里为歴兒，上多橿与櫔木。方茎圆叶、黄华而毛、实如揀属于櫔木，不移给仅列名的橿。揀为果实比拟且郭注称木名，单列参照卡，不作为本山实生植物。揀木注文跨8—9连读，服之不忘为古述。",
+      "quote": "又東二十里曰歴兒之山其上多橿多櫔木是木也方莖而員葉黄華而毛其實如揀服之不忘",
+      "commentary_quote": "〔影印页2〕音厲\n〔影印页2〕揀木名子如指頭白而粘可以\n〔影印页2〕浣衣也音練或作簡",
+      "content_note": "櫔木方茎圆叶黄华而毛，实如揀；揀木音注跨8—9，9实在2页末，不并入渠猪山。",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-lier"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-lier",
+        "plant-zhongshan-jian-comparison-lier"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页2",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/2",
+      "source_unit_ids": [
+        "source-05-0007",
+        "source-05-0008",
+        "source-05-0009"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-lier",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-jian-comparison-lier",
+      "kind": "plant",
+      "name": "揀（櫔实比拟）",
+      "quote": "其實如揀",
+      "description": "揀是櫔果实的比拟对象，郭注称木名，子如指头、白粘、可浣衣；不把本卡列成本山实生木。音練及或作簡跨8—9连读。",
+      "commentary_quote": "揀木名子如指頭白而粘可以；浣衣也音練或作簡",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-lier"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-lier",
+        "place-zhongshan-r01-lier"
+      ],
+      "comparison_only": true
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页3",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/3",
+      "source_unit_ids": [
+        "source-05-0010",
+        "source-05-0011",
+        "source-05-0012"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r01-quzhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r01-quzhu",
+      "kind": "place",
+      "name": "渠豬之山",
+      "description": "歴兒向东十五里为渠豬，上多竹。渠豬水南注河，与甘棗共水西注河分别保留方向及出处，仅共享河的文本名目。豪鱼如鮪，郭注鮪似鱣；赤喙尾赤羽原词保留，图中红喙红羽尾是明确艺术解释，不把羽字擅定成对鸟翼。已白癣为古述。",
+      "quote": "又東十五里曰渠豬之山其上多竹渠豬之水出焉而南流注于河其中是多豪魚狀如鮪赤喙尾赤羽可以已白癬",
+      "commentary_quote": "〔影印页3〕鮪似鱣也",
+      "content_note": "豪鱼如鮪、赤喙尾赤羽；郭注鮪似鱣，羽字不自动推成鸟翼或鸭首。",
+      "source_passage_ids": [
+        "passage-zhongshan-r01-quzhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r01-quzhu"
       ]
     }
   ]

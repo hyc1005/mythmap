@@ -33,7 +33,8 @@
     "preview:managed": "node scripts/with-preview.mjs --port 4183",
     "verify:geography": "node scripts/verify-geography.mjs",
     "verify:playback-speed": "node scripts/verify-playback-speed.mjs",
-    "verify:map-frame": "node scripts/verify-map-frame.mjs"
+    "verify:map-frame": "node scripts/verify-map-frame.mjs",
+    "verify:zhongshan": "node scripts/verify-zhongshan.mjs"
   },
   "dependencies": {
     "@fontsource-variable/lora": "^5.3.0",

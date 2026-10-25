@@ -1,8 +1,8 @@
 {
   "chapter": 5,
   "edition": "《山海經（四部叢刊本）》卷第五，郭氏傳",
-  "status": "planned_not_implemented",
-  "scope": "全篇录文段界规划，首五段影印段界核定；全部阶段仍待双语、实体关系、必要配图、字体及页面接入。",
+  "status": "partially_implemented",
+  "scope": "首三段正文、郭注、双语及实体接入；其余209阶段仍待逐批核定与页面接入。",
   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
   "snapshot_sha256": "0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce",
   "scan_pages": [
@@ -124,8 +124,8 @@
     "source-05-0573"
   ],
   "planned_stages": 212,
-  "implemented_stages": 0,
-  "remaining_stages": 212,
+  "implemented_stages": 3,
+  "remaining_stages": 209,
   "stage_counts": [
     16,
     10,
@@ -302,13 +302,13 @@
     "r01-wo"
   ],
   "next": {
-    "name": "甘棗之山",
+    "name": "葱聾之山",
     "source_units": [
-      2,
-      6
+      13,
+      14
     ],
     "facsimile_pages": [
-      2
+      3
     ],
     "status": "pending_bilingual_entity_review"
   },
@@ -341,9 +341,11 @@
         2
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "共水西注河；㔮为𤠢鼠状文题，郭注明言鼠形未详，不强定现代鼠种；医食功效仅作古述。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "共水西注河；㔮为𤠢鼠状文题，郭注明言鼠形未详，不强定现代鼠种；医食功效仅作古述。",
+      "passage_id": "passage-zhongshan-r01-gancao",
+      "new_cards": 6
     },
     {
       "stage": 2,
@@ -372,9 +374,11 @@
         3
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "櫔木方茎圆叶黄华而毛，实如揀；揀木音注跨8—9，9实在2页末，不并入渠猪山。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "櫔木方茎圆叶黄华而毛，实如揀；揀木音注跨8—9，9实在2页末，不并入渠猪山。",
+      "passage_id": "passage-zhongshan-r01-lier",
+      "new_cards": 4
     },
     {
       "stage": 3,
@@ -402,9 +406,11 @@
         3
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "豪鱼如鮪、赤喙尾赤羽；郭注鮪似鱣，羽字不自动推成鸟翼或鸭首。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "豪鱼如鮪、赤喙尾赤羽；郭注鮪似鱣，羽字不自动推成鸟翼或鸭首。",
+      "passage_id": "passage-zhongshan-r01-quzhu",
+      "new_cards": 4
     },
     {
       "stage": 4,
@@ -6724,17 +6730,106 @@
       "note": "五臧五篇15503字为底本文本计数说明，不当作当前录文实际字数或五篇语义段数。"
     }
   ],
-  "entry_ids": [],
-  "passages": [],
+  "entry_ids": [
+    "place-zhongshan-r01-gancao",
+    "water-zhongshan-gong-gancao",
+    "water-zhongshan-he",
+    "plant-zhongshan-niu-gancao",
+    "plant-zhongshan-tuo-gancao",
+    "beast-zhongshan-nuo-gancao",
+    "place-zhongshan-r01-lier",
+    "plant-zhongshan-jiang-lier",
+    "plant-zhongshan-li-lier",
+    "plant-zhongshan-jian-comparison-lier",
+    "place-zhongshan-r01-quzhu",
+    "plant-zhongshan-bamboo-quzhu",
+    "water-zhongshan-quzhu",
+    "beast-zhongshan-hao-quzhu"
+  ],
+  "passages": [
+    {
+      "id": "passage-zhongshan-r01-gancao",
+      "source_unit_ids": [
+        "source-05-0002",
+        "source-05-0003",
+        "source-05-0004",
+        "source-05-0005",
+        "source-05-0006"
+      ],
+      "source_span": [
+        8,
+        76
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r01-lier",
+      "source_unit_ids": [
+        "source-05-0007",
+        "source-05-0008",
+        "source-05-0009"
+      ],
+      "source_span": [
+        76,
+        113
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r01-quzhu",
+      "source_unit_ids": [
+        "source-05-0010",
+        "source-05-0011",
+        "source-05-0012"
+      ],
+      "source_span": [
+        113,
+        158
+      ],
+      "status": "facsimile_reviewed"
+    }
+  ],
   "artwork_summary": {
-    "selected": 0,
-    "appearance_unknown": 0
+    "selected": 1,
+    "appearance_unknown": 1
   },
   "font_preflight": {
-    "status": "future_content_pending",
-    "missing_stage_title_characters": "䣀丑丙仁休伯倚兎冝几凡勇匈半卑堇堯堵夫奧威婁媱嫗宣室密岷崌崍廆役復戯敏敖斸朝杳柄柴棗檷歌洞涹煇皮瞻祑綸縞繁繢羝脱臧臼苦茍葌葴蘇虛蠱視講豐豬賈超軲釐鐙陘雲霍驕鯢𥮐𩇵𫝊𭧂",
-    "missing_stage_title_count": 83,
-    "limits": "只预检规划标题；完整实体名、正文与注文仍须逐批预检。准备阶段不宣称字体或页面接入完成。"
+    "status": "current_batch_covered_future_pending",
+    "missing_stage_title_characters": "䣀丑丙仁休伯倚兎冝几凡勇匈半卑堇堯堵夫奧威婁媱嫗宣室密岷崌崍廆役復戯敏敖斸朝杳柄柴檷歌洞涹煇皮瞻祑綸縞繁繢羝脱臧臼苦茍葌葴蘇虛蠱視講豐賈軲釐鐙陘雲霍驕鯢𥮐𩇵𫝊𭧂",
+    "missing_stage_title_count": 80,
+    "limits": "已接入前三阶段标题、实体、正文与郭注所需字已补；后续209阶段完整内容仍需逐批预检。",
+    "initial_missing_stage_title_characters": "䣀丑丙仁休伯倚兎冝几凡勇匈半卑堇堯堵夫奧威婁媱嫗宣室密岷崌崍廆役復戯敏敖斸朝杳柄柴棗檷歌洞涹煇皮瞻祑綸縞繁繢羝脱臧臼苦茍葌葴蘇虛蠱視講豐豬賈超軲釐鐙陘雲霍驕鯢𥮐𩇵𫝊𭧂",
+    "implemented_batch_missing_characters": ""
   },
-  "limits": "197列名山+12总括祭礼+3收束=212规划阶段，不等于200自动结构候选；仅首五段核定影印段界，其余逐阶段核页、释字与形貌。所有扫描保存并校验，不代表全部逐字校勘。快照原样保留，未生成或发布生物图，未增加网页阅读。"
+  "limits": "197列名山+12总括祭礼+3收束=212阶段，不等于200自动结构候选。前三阶段已核双语、实体及形貌；其他209阶段仍逐批核页、释字和页面验收。快照原样保留，是否通过页面验收以本地逐阶段交接为准。",
+  "batch_size": 3,
+  "font_supplements": [
+    {
+      "family": "Shanhai Title",
+      "source_family": "Noto Serif SC",
+      "characters": "㔮且叠号忘恭揀杏棗櫔浣特癣癬癭盲瞢簡粘練红荚莖莢蘀衣豬超",
+      "weights": [
+        400,
+        700
+      ],
+      "path": "frontend/public/fonts/shanhai-title-zhongshan.woff2",
+      "license": "frontend/public/fonts/noto-serif-sc-LICENSE.txt",
+      "source_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E3%94%AE%E4%B8%94%E5%8F%A0%E5%8F%B7%E5%BF%98%E6%81%AD%E6%8F%80%E6%9D%8F%E6%A3%97%E6%AB%94%E6%B5%A3%E7%89%B9%E7%99%A3%E7%99%AC%E7%99%AD%E7%9B%B2%E7%9E%A2%E7%B0%A1%E7%B2%98%E7%B7%B4%E7%BA%A2%E8%8D%9A%E8%8E%96%E8%8E%A2%E8%98%80%E8%A1%A3%E8%B1%AC%E8%B6%85&display=swap",
+      "sha256": "ea6ae15482387f7df4c80a1f0edbe2913d502c99516722c70454d5e03f8b1b74"
+    },
+    {
+      "family": "Atlas Central Rare",
+      "characters": "𤠢",
+      "weights": [
+        400
+      ],
+      "path": "frontend/public/fonts/atlas-central-rare.woff2",
+      "license": "frontend/public/fonts/atlas-central-rare-LICENSE.txt",
+      "source_url": "https://raw.githubusercontent.com/googlefonts/chinese/gh-pages/fonts/HanaMin/HanaMinB.ttf",
+      "upstream_sha256": "829543436cdf7b4c6730e2af5806fa406f8ddf0d4b656e0cd49c58d4db1c8d3c",
+      "upstream_git_blob": "81c4df21cdbd2570fa92ac55c04b02198c4bf692",
+      "sha256": "53abd68331abd08b0631dedba21e676d03b643332136697be116107932aa9d51",
+      "limits": "独立字体族优先回退，静态400字形；600沿用400且禁用伪粗，不复制系统字体。"
+    }
+  ]
 }

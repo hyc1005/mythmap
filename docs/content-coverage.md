@@ -7,9 +7,9 @@
 - 十八篇录文块清单见 `data/shanhaijing-inventory.json`，每项保存页码、原文、注文与待核状态。《南山经》43段、《西山经》82段、《北山经》92段与《东山经》51段已接入说明；其余结构候选的段界、实体、关系和影印仍待人工核定。不是全书穷尽实体索引，也不是各版本校勘定本。
 - 已保存十八篇逐行正文、注文、影印页锚点、校对状态和固定修订链接，见 `data/shanhaijing-reference.json`。录文中缺字图保留显式标记，不猜字补齐。
 - 下表按当前条目声明的出处计数；同一条目可引用多篇，同名异篇保持分开。地点锚点、神域、异兽、故事不是同一统计单位，不能相加后声称全书覆盖率。
-- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。257条异兽记录，同名异篇分开；738条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
+- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。259条异兽记录，同名异篇分开；746条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
 - “常规入口”是地图、图鉴、章节目录中的独立条目；“非默认条目”是归档/组，仍可从搜索或直链打开；“未开放”指数据已有记录，但没有可用章节入口。引用某篇不等于完整收录该篇。
-- 项目共 1701 条上述记录（含268条经文阅读段，与独立实体不是同一统计单位）：常规入口 1691，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
+- 项目共 1718 条上述记录（含271条经文阅读段，与独立实体不是同一统计单位）：常规入口 1708，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
 
 ## 十八篇对应清单
 
@@ -19,7 +19,7 @@
 | [西山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%8C&oldid=2652852) | 596 | 0 | 2 | 82段、508张新卡已接入；其余仍待核 |
 | [北山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853) | 601 | 0 | 0 | 全篇92阅读段、507张独立卡已核；形貌不足者留占位 |
 | [东山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854) | 289 | 0 | 0 | 全篇51阅读段接入；疑难字与数字差异明确保留 |
-| [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 0 | 0 | 0 | 准备阶段完成；212阶段已规划、0阶段接入；逐阶段影印与实体仍待复核 |
+| [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 17 | 0 | 0 | 准备阶段完成；212阶段已规划、3阶段接入；逐阶段影印与实体仍待复核 |
 | [海外南经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AD&oldid=2652857) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
 | [海外西经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%83&oldid=2652858) | 1 | 0 | 1 | 选编，篇内仍有遗漏 |
 | [海外北经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AB&oldid=2652859) | 2 | 0 | 2 | 选编，篇内仍有遗漏 |
@@ -123,7 +123,8 @@
 
 ### 05 中山经
 
-- 待补方向：准备阶段已保存下册2—70页69张影印并规划212阶段：197列名山、12总括祭礼、3收束；首五段影印段界核定，其余仍需逐阶段复核。614录文块含1标题与613正文/注文块；200结构候选不是已核阶段数。次五15列名与原报16、各列原报合198与篇末197、里程合28595与篇末21371分别保留。已接入0阅读段，剩212阶段；疑字、同名异篇、纯注文与字体缺口详见data/zhongshan-edition-review.json。
+- 常规入口：㔮（甘棗）（`beast-zhongshan-nuo-gancao`）；豪魚（渠豬）（`beast-zhongshan-hao-quzhu`）；共水（甘棗）（`water-zhongshan-gong-gancao`）；河（中山首列文本索引）（`water-zhongshan-he`）；杻木（甘棗）（`plant-zhongshan-niu-gancao`）；蘀（甘棗）（`plant-zhongshan-tuo-gancao`）；橿（歴兒）（`plant-zhongshan-jiang-lier`）；櫔木（歴兒）（`plant-zhongshan-li-lier`）；竹（渠豬）（`plant-zhongshan-bamboo-quzhu`）；渠豬之水（`water-zhongshan-quzhu`）；甘棗之山（`passage-zhongshan-r01-gancao`）；歴兒之山（`passage-zhongshan-r01-lier`）；渠豬之山（`passage-zhongshan-r01-quzhu`）；甘棗之山（`place-zhongshan-r01-gancao`）；歴兒之山（`place-zhongshan-r01-lier`）；揀（櫔实比拟）（`plant-zhongshan-jian-comparison-lier`）；渠豬之山（`place-zhongshan-r01-quzhu`）。
+- 待补方向：准备阶段已保存下册2—70页69张影印并规划212阶段：197列名山、12总括祭礼、3收束；首五段影印段界核定，其余仍需逐阶段复核。614录文块含1标题与613正文/注文块；200结构候选不是已核阶段数。次五15列名与原报16、各列原报合198与篇末197、里程合28595与篇末21371分别保留。已接入3阅读段，剩209阶段；疑字、同名异篇、纯注文与字体缺口详见data/zhongshan-edition-review.json。
 - 校核入口：[该篇固定修订](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856)；录文尚需与影印页对校，不把自动导入视为已核对。
 
 ### 06 海外南经
@@ -488,6 +489,8 @@
 | `beast-dongshan-hua-zitong` | 䱻魚（子桐） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-heyu` | 合窳 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-fei` | 蜚 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-nuo-gancao` | 㔮（甘棗） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-hao-quzhu` | 豪魚（渠豬） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-qingqiu` | 青丘之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-kunlun` | 昆仑之墟 | 《山海经》 | 常规入口 | 《海内西经》 |
 | `place-yushan` | 玉山 | 《山海经》 | 常规入口 | 《西山经》 |
@@ -1243,6 +1246,14 @@
 | `plant-dongshan-zhenwood-tai4` | 楨木（太山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-dongshan-gou-tai4` | 鈎水（太山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-dongshan-lao-water` | 勞水 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-gong-gancao` | 共水（甘棗） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-he` | 河（中山首列文本索引） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-niu-gancao` | 杻木（甘棗） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-tuo-gancao` | 蘀（甘棗） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-jiang-lier` | 橿（歴兒） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-li-lier` | 櫔木（歴兒） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-bamboo-quzhu` | 竹（渠豬） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-quzhu` | 渠豬之水 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-zhaoyao` | 招摇之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-yuanyi` | 猨翼之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -1511,6 +1522,9 @@
 | `passage-dongshan-taishan-range4` | 太山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-dongshan-range4-summary` | 次四总括 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-dongshan-book-total` | 东山经篇末总计 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-gancao` | 甘棗之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-lier` | 歴兒之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-quzhu` | 渠豬之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-yuanyi` | 猨翼之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-di` | 祗山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -1889,6 +1903,10 @@
 | `place-dongshan-taishan-range4` | 太山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `rite-dongshan-range4-summary` | 次四总括 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `rite-dongshan-book-total` | 东山经篇末总计 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-gancao` | 甘棗之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-lier` | 歴兒之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-jian-comparison-lier` | 揀（櫔实比拟） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-quzhu` | 渠豬之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `01-01` | 盘古开天 | 其他古籍 | 常规入口 | 《三五历纪》（三国·吴·徐整），佚文见《艺文类聚》卷一引、《太平御览》卷二引 |
 | `01-02` | 女娲造人 | 其他古籍 | 常规入口 | 《风俗通义·皇霸》卷一（东汉·应劭），见王利器《风俗通义校注》 |
 | `01-03` | 女娲补天 | 其他古籍 | 非默认条目 | 《淮南子·览冥训》（西汉·刘安），高诱注 |
@@ -1987,6 +2005,7 @@
 - `python data/build_nanshan_entities.py`：在旧批次/阅读器构建之后运行，恢复最新实体、关系、图像状态和覆盖清单；不可将reader或首批构建器作为最后一步。
 - `python data/build_source_inventory.py`（可加`--check`）：生成/检查十八篇原文块清单及明确的待核状态。
 - `python data/prepare_zhongshan.py`（可加`--check`）：离线重建/检查中山212阶段准备计划、69影印哈希、标题字体预检；只规划，不增加网页阅读或配图。之后重建全书inventory/audit。
+- `python data/build_zhongshan.py`：合并中山首三段/14双语卡并保留其他篇；已接入后不要再运行准备构建器覆盖进度。插画通过prepare-nanshan-artwork.py --chapter zhongshan导出，之后重建inventory/audit。
 - `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。
 - `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。
 - `python data/build_xishan.py`：合并西山经82段与508张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。
