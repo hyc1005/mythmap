@@ -65,6 +65,58 @@
       "status": "reviewed",
       "source_file": "fish-zhen-xunzhuang-v1.png",
       "sha256": "9979c2b0f8bdd19d33ea8764549c176079cdd9d1637251964c55783be3a9e177"
+    },
+    {
+      "name": "snake-tiaoyong-dushan",
+      "prompt": "Use case: illustration-story. ONE complete Shanhaijing subject isolated on a TRULY TRANSPARENT square canvas, clear margin around every extremity. The reference is STYLE ONLY: Chinese carved woodblock, bold brown-black contour, warm ivory incisions, restrained flat mineral color, subtle print grain. Do not copy the owl face, spread feather wings or flame ornaments. No text, border, seal, landscape, ground, halo, second creature, weapons or dramatic disaster scene. TIAOYONG 䖺䗤: the Eastern Mount Du text says YELLOW SNAKE WITH FISH WINGS (如黄蛇魚翼), entering and leaving with light. Make a continuous golden-YELLOW serpent body curled into an OPEN broad sideways S, one narrow snake head turned downward LEFT, and one gradually tapering tail looping upward RIGHT. Exactly TWO small broad translucent-looking FISH-FIN MEMBRANES with fine RADIATING FIN RAYS emerge near the front of the snake body, one on either side visibly separated; they are soft rounded fins, NOT bird wings or feather layers, not bat fingers. Slim sinuous body with sparse understated snake-scale engraving, warm ochre/yellow over ivory, teal-green fin rays as artistic color. The two-fin arrangement, fin placement, eye details and curl are artistic; the yellow snake plus fish-wing form is mandatory. No legs, claws, horns, feather wings, fish head, extra tail or branching body. Light is conveyed only by pale incised lines on the body, NOT surrounding glowing rings or a colored background.",
+      "entry_id": "beast-dongshan-tiaoyong-dushan",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-aa8dad6c-5ad1-46c1-91a0-3bd3057f2b0c.png",
+      "review_note": "黄蛇连续单身、两片鱼鳍状膜翼，无足羽翼或光环；翼数位置、鳞纹亮纹为解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "snake-tiaoyong-dushan-v1.png",
+      "sha256": "e9582ae56423adb14b3941bbca64f6c8b5378d6402a65dbe6552305c10a6100a"
+    },
+    {
+      "name": "creature-tongtong-taishan",
+      "prompt": "Use case: illustration-story. ONE complete Shanhaijing subject isolated on a TRULY TRANSPARENT square canvas, clear margin around every extremity. The reference is STYLE ONLY: Chinese carved woodblock, bold brown-black contour, warm ivory incisions, restrained flat mineral color, subtle print grain. Do not copy the owl face, spread feather wings or flame ornaments. No text, border, seal, landscape, ground, halo, second creature, weapons or dramatic disaster scene. TONGTONG 狪狪 from Eastern first-range Mount Tai: PIGLET-SHAPED AND HAVING A PEARL (如豚而有珠). Draw a single small compact brown PIGLET in a low relaxed seated pose facing LEFT, true small pig head with flat snout, two pig ears, short pig tail, four ordinary short pig legs and cloven hooves. Place ONE small plain ivory PEARL immediately beside the nearest front hoof as a REPRESENTATIVE TEXTUAL ATTRIBUTE, not attached to its skin. The text does not fix pearl count or location: this single loose pearl and pose are clearly artistic staging. Dark reddish chestnut coat with a few broad ivory carved bands, rounded compact silhouette, kind ordinary pig gaze. No forehead pearl, no embedded gem, no jewelry, no tusks, no horns, no extra legs, no snake tail, no human face. Keep piglet and loose pearl well inside margins, with no drawn ground or props besides that text-supported pearl.",
+      "entry_id": "beast-dongshan-tongtong-taishan",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-266d7479-d6ba-428a-8d32-9048fcb1642b.png",
+      "review_note": "幼猪形、四裂蹄，一颗独立珠子置足旁；珠数位置为解释，无额珠或獠牙。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-tongtong-taishan-v1.png",
+      "sha256": "07972fcbc19714843cf754d28df16ada60eebb848e247f77c78c4d17b02993d4"
+    },
+    {
+      "name": "deity-dragonhead-human-range1",
+      "prompt": "Use case: illustration-story. ONE complete Shanhaijing subject isolated on a TRULY TRANSPARENT square canvas, clear margin around every extremity. The reference is STYLE ONLY: Chinese carved woodblock, bold brown-black contour, warm ivory incisions, restrained flat mineral color, subtle print grain. Do not copy the owl face, spread feather wings or flame ornaments. No text, border, seal, landscape, ground, halo, second creature, weapons or dramatic disaster scene. Representative FIRST EASTERN RANGE MOUNTAIN DEITY: HUMAN BODY and DRAGON HEAD (人身龍首). ONE upright human-shaped figure with exactly TWO HUMAN ARMS, TWO HUMAN LEGS, TWO normal HUMAN HANDS and TWO bare HUMAN FEET; robe does not obscure both feet. The single head is entirely an elongated CHINESE DRAGON HEAD with a long snout, whiskers and two modest branched antler-like horns; horn count, whiskers and colors are artistic interpretations of the dragon-head term. Body and neck are human proportions, with NO HUMAN FACE and NO dragon torso or serpentine lower body. Full standing figure, slightly turned RIGHT, hands relaxed openly at waist height, wearing a simple long muted indigo robe with sparse ochre carved folds and an ivory hem, no jewelry or elaborate costume symbols. Restrained teal-and-gold dragon head, neutral androgynous adult human build, no sexual emphasis. No dragon tail, no wings, no claws replacing hands or feet, no ritual animal or fish, no blood. This is one representative of the group, not an assertion of a fixed costume or a pictured sacrificial act.",
+      "entry_id": "deity-dongshan-human-dragon-range1",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-2905505d-4184-4d95-b59a-70dc74458730.png",
+      "review_note": "单一龙首、人身双人手双人足；角须服色为解释，无龙躯蛇尾或祭物。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "deity-dragonhead-human-range1-v1.png",
+      "sha256": "b867a22a59b5ff0bed6163d5bbc4108789a8745b323c3c6560f4e54cd5dec4b8"
+    },
+    {
+      "name": "creature-lingling-kongsang",
+      "prompt": "Use case: illustration-story. ONE complete Shanhaijing subject isolated on a TRULY TRANSPARENT square canvas, clear margin around every extremity. The reference is STYLE ONLY: Chinese carved woodblock, bold brown-black contour, warm ivory incisions, restrained flat mineral color, subtle print grain. Do not copy the owl face, spread feather wings or flame ornaments. No text, border, seal, landscape, ground, halo, second creature, weapons or dramatic disaster scene. LINGLING 軨軨 from Eastern Mount Kongsang: OX-SHAPED WITH TIGER PATTERN (如牛而虎文). Make a broad heavily built dark charcoal OX, facing almost FORWARD in a THREE-QUARTER stance, head lowered slightly and turned toward viewer. FOUR sturdy bovine legs and FOUR cloven hooves, all separable, wide squared cattle muzzle, large ordinary ox ears, one short tufted cattle tail. TWO short outward-swept simple cattle horns are an artistic choice, not a textual horn count. Muted GOLDEN-OCHRE TIGER STRIPES cross the charcoal body, distinct from an ivory striped hornless long-profile ox. Massive front shoulders and frontal gaze make a compact wedge silhouette, not a lean side profile. Plain carved stripes, not flaming feather motifs. No tiger head, no tiger paws, no pig snout, no fish fins, no wings, no human face, no extra legs or eyes. Its sound and flood omen do not add organs or a flood scene.",
+      "entry_id": "beast-dongshan-lingling-kongsang-east",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-d82a4bc8-96a9-4786-bfe6-985443f7600d.png",
+      "review_note": "牛形虎纹、四裂蹄，两短角为解释；炭黑金纹、厚重正面与旧鱅鱅侧身明确区分。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-lingling-kongsang-v1.png",
+      "sha256": "8be5edf36afa485da4d656ccd87416b755cad165aeb3ecdb32cce7f52f0ef998"
     }
   ]
 }

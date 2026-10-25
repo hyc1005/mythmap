@@ -3781,5 +3781,57 @@
       1254,
       1254
     ]
+  },
+  "/data/atlas/myth-icons/dongshan/snake-tiaoyong-dushan-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/snake-tiaoyong-dushan-v1.webp",
+    "original_bytes": 1769926,
+    "optimized_bytes": 344558,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-tongtong-taishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-tongtong-taishan-v1.webp",
+    "original_bytes": 1728520,
+    "optimized_bytes": 292742,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/deity-dragonhead-human-range1-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/deity-dragonhead-human-range1-v1.webp",
+    "original_bytes": 1271479,
+    "optimized_bytes": 253304,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-lingling-kongsang-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-lingling-kongsang-v1.webp",
+    "original_bytes": 2596133,
+    "optimized_bytes": 467410,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
   }
 }

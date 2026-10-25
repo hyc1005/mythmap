@@ -1,5 +1,5 @@
 {
-  "revision": "myth-world-2026-10-25-dongshan-opening-five-v1",
+  "revision": "myth-world-2026-10-25-dongshan-fifteen-v1",
   "coordinate_system": "diagram-units",
   "coordinate_note": "x/y are layout hints only. They encode cardinal orientation when supported by text; no distance or scale is implied.",
   "stages": [
@@ -9325,7 +9325,9 @@
       "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
       "source_unit_ids": [
         "source-04-0014",
-        "source-04-0015"
+        "source-04-0015",
+        "source-04-0016",
+        "source-04-0017"
       ],
       "reveal_chapter": "04",
       "content_batch": "dongshan-fantiao",
@@ -9336,20 +9338,257 @@
       "id": "beast-dongshan-gan-fantiao",
       "kind": "beast",
       "name": "鱤魚（番條）",
-      "quote": "其中多鱤魚",
+      "quote": "其中多鱤魚；其中多鱤魚",
       "description": "鱤魚正文只列名，郭注一名黄頰、音感，未详独立形貌；暂用占位，不按现代同名鱼补头身和鳍尾。",
       "commentary_quote": "一名黄頰音感",
       "context_place_id": "place-dongshan-fantiao",
       "source_passage_ids": [
-        "passage-dongshan-fantiao"
+        "passage-dongshan-fantiao",
+        "passage-dongshan-guer"
       ],
       "related_entry_ids": [
         "passage-dongshan-fantiao",
-        "water-dongshan-jian-fantiao"
+        "passage-dongshan-guer",
+        "water-dongshan-jian-fantiao",
+        "water-dongshan-guer"
+      ],
+      "relation_scope": "water",
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 统一问号占位不代表本生物形态。",
+      "context_place_ids": [
+        "place-dongshan-fantiao",
+        "place-dongshan-guer"
+      ],
+      "content_note": "分号分隔不同段落摘句；共享文本名目不代表现代地理同一性已定。"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0022",
+        "source-04-0023",
+        "source-04-0024"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-chaishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "beast-dongshan-kanyu-chai",
+      "kind": "beast",
+      "name": "堪㐨之魚",
+      "quote": "其中多堪㐨之魚",
+      "description": "堪㐨之鱼仅列名，郭注明言未详；统一占位不代表鱼形。",
+      "commentary_quote": "未詳音序",
+      "context_place_id": "place-dongshan-chaishan",
+      "source_passage_ids": [
+        "passage-dongshan-chaishan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-chaishan",
+        "water-dongshan-unnamed-chai"
       ],
       "relation_scope": "water",
       "appearance_unknown": true,
       "artwork_caption": "形貌未详或依据不足 · 统一问号占位不代表本生物形态。"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0022",
+        "source-04-0023",
+        "source-04-0024"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-chaishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "beast-dongshan-kuafu-like-chai",
+      "kind": "beast",
+      "name": "夸父状彘毛兽（犲山未名）",
+      "quote": "有獸焉其状如夸父而彘毛其音如呼見則天下大水",
+      "description": "未名兽如夸父而彘毛、音如呼，洪水兆为古述；不借逐日人物推定完整形貌。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-chaishan",
+      "source_passage_ids": [
+        "passage-dongshan-chaishan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-chaishan"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 统一问号占位不代表本生物形态。"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0025",
+        "source-04-0026",
+        "source-04-0027"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-dushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "beast-dongshan-tiaoyong-dushan",
+      "kind": "beast",
+      "name": "䖺䗤",
+      "quote": "其中多䖺䗤其状如黄蛇魚翼出入有光見則其邑大旱",
+      "description": "䖺䗤黄蛇状、鱼翼、出入有光。插画两片鱼鳍状膜翼的数量与位置、鳞纹与亮纹为艺术解释；不添羽翼、蝠翼、足或火焰。旱兆为古述。",
+      "commentary_quote": "條容二音",
+      "context_place_id": "place-dongshan-dushan",
+      "source_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-dushan",
+        "water-dongshan-motu"
+      ],
+      "relation_scope": "water",
+      "artwork": "dongshan/snake-tiaoyong-dushan-v1.webp",
+      "artwork_caption": "经文或郭注形貌与木刻演绎 · 器官依据见说明，配色、比例和姿态为艺术解释。"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0028",
+        "source-04-0029",
+        "source-04-0030",
+        "source-04-0031"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-taishan-range1",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "beast-dongshan-tongtong-taishan",
+      "kind": "beast",
+      "name": "狪狪",
+      "quote": "有獸焉其状如豚而有珠名曰狪狪其名自䚯",
+      "description": "狪狪豚状有珠、名自䚯；配图一颗独立珠子的数量与位置、四裂蹄、毛色与坐姿为艺术解释，不作额珠器官或獠牙兽。",
+      "commentary_quote": "音如吟桐之桐",
+      "context_place_id": "place-dongshan-taishan-range1",
+      "source_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
+      "artwork": "dongshan/creature-tongtong-taishan-v1.webp",
+      "artwork_caption": "经文或郭注形貌与木刻演绎 · 器官依据见说明，配色、比例和姿态为艺术解释。"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0032",
+        "source-04-0033"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-zhushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "beast-dongshan-zilei-zhu",
+      "kind": "beast",
+      "name": "茈羸（竹山）",
+      "quote": "其中多茈羸",
+      "description": "本段仅名茈羸，没有独立形貌；不借别篇造型。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-zhushan",
+      "source_passage_ids": [
+        "passage-dongshan-zhushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-zhushan",
+        "water-dongshan-ji-zhu"
+      ],
+      "relation_scope": "water",
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 统一问号占位不代表本生物形态。"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 113",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113",
+      "source_unit_ids": [
+        "source-04-0037",
+        "source-04-0038",
+        "source-04-0039",
+        "source-04-0040"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-kongsang-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "beast-dongshan-lingling-kongsang-east",
+      "kind": "beast",
+      "name": "軨軨（东次二）",
+      "quote": "有獸焉其状如牛而虎文其音如欽其名曰軨軨其鳴自叫見則天下大水",
+      "description": "軨軨牛状虎文，音如欽、鸣自叫。图中厚重前躯、炭黑底金纹、两短牛角、四裂蹄与近正面站姿为艺术解释；与首山鱅鱅分卡。洪水兆为古述。",
+      "commentary_quote": "或作吟；音靈",
+      "context_place_id": "place-dongshan-kongsang-east",
+      "source_passage_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
+      "artwork": "dongshan/creature-lingling-kongsang-v1.webp",
+      "artwork_caption": "经文或郭注形貌与木刻演绎 · 器官依据见说明，配色、比例和姿态为艺术解释。"
     }
   ],
   "natural_features": [
@@ -32654,9 +32893,10 @@
       "source_chapter": "《东山经》",
       "source_book": 4,
       "region": "东山经",
-      "source_locator": "卷第四 · 影印页 109",
+      "source_locator": "卷第四 · 影印页 109、113",
       "source_pages": [
-        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/109"
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/109",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
       ],
       "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/109",
       "source_unit_ids": [
@@ -32664,7 +32904,11 @@
         "source-04-0004",
         "source-04-0005",
         "source-04-0006",
-        "source-04-0007"
+        "source-04-0007",
+        "source-04-0037",
+        "source-04-0038",
+        "source-04-0039",
+        "source-04-0040"
       ],
       "reveal_chapter": "04",
       "content_batch": "dongshan-suzhu",
@@ -32675,17 +32919,19 @@
       "id": "water-dongshan-shi",
       "kind": "water",
       "name": "食水（东山文本索引）",
-      "quote": "食水出焉而東北流注于海；東流注于食水",
+      "quote": "食水出焉而東北流注于海；東流注于食水；北臨食水",
       "description": "樕𧑤记食水源出东北注海；藟山湖水东注食水另存。同篇索引不定现代河道，也不先并未核北號另一出处。",
       "commentary_quote": "",
       "context_place_id": "place-dongshan-suzhu",
       "source_passage_ids": [
         "passage-dongshan-suzhu",
-        "passage-dongshan-leishan"
+        "passage-dongshan-leishan",
+        "passage-dongshan-kongsang-east"
       ],
       "related_entry_ids": [
         "passage-dongshan-suzhu",
         "passage-dongshan-leishan",
+        "passage-dongshan-kongsang-east",
         "water-dongshan-sea",
         "beast-dongshan-yongyong-suzhu",
         "water-dongshan-hu"
@@ -32693,7 +32939,8 @@
       "relation_scope": "water",
       "context_place_ids": [
         "place-dongshan-suzhu",
-        "place-dongshan-leishan"
+        "place-dongshan-leishan",
+        "place-dongshan-kongsang-east"
       ],
       "content_note": "分号分隔不同段落摘句；共享文本名目不代表现代地理同一性已定。"
     },
@@ -32713,7 +32960,9 @@
         "source-04-0004",
         "source-04-0005",
         "source-04-0014",
-        "source-04-0015"
+        "source-04-0015",
+        "source-04-0016",
+        "source-04-0017"
       ],
       "reveal_chapter": "04",
       "content_batch": "dongshan-suzhu",
@@ -32724,24 +32973,28 @@
       "id": "water-dongshan-sea",
       "kind": "water",
       "name": "海（东山首列水文）",
-      "quote": "東北流注于海；北流注于海",
+      "quote": "東北流注于海；北流注于海；北流注于海",
       "description": "樕𧑤食水东北注海，番條減水北注海，方向与出处逐段分存，不补现代岸线。",
       "commentary_quote": "",
       "context_place_id": "place-dongshan-suzhu",
       "source_passage_ids": [
         "passage-dongshan-suzhu",
-        "passage-dongshan-fantiao"
+        "passage-dongshan-fantiao",
+        "passage-dongshan-guer"
       ],
       "related_entry_ids": [
         "passage-dongshan-suzhu",
         "passage-dongshan-fantiao",
+        "passage-dongshan-guer",
         "water-dongshan-shi",
-        "water-dongshan-jian-fantiao"
+        "water-dongshan-jian-fantiao",
+        "water-dongshan-guer"
       ],
       "relation_scope": "water",
       "context_place_ids": [
         "place-dongshan-suzhu",
-        "place-dongshan-fantiao"
+        "place-dongshan-fantiao",
+        "place-dongshan-guer"
       ],
       "content_note": "分号分隔不同段落摘句；共享文本名目不代表现代地理同一性已定。"
     },
@@ -33089,6 +33342,1154 @@
         "beast-dongshan-gan-fantiao"
       ],
       "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0016",
+        "source-04-0017"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-guer",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "plant-dongshan-qi-guer",
+      "kind": "plant",
+      "name": "漆（姑兒）",
+      "quote": "其上多漆",
+      "description": "姑兒山上多漆；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-guer",
+      "source_passage_ids": [
+        "passage-dongshan-guer"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-guer"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0016",
+        "source-04-0017"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-guer",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "plant-dongshan-sang-guer",
+      "kind": "plant",
+      "name": "桑（姑兒）",
+      "quote": "其下多桑柘",
+      "description": "姑兒山下多桑柘，此卡分录桑；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-guer",
+      "source_passage_ids": [
+        "passage-dongshan-guer"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-guer"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0016",
+        "source-04-0017"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-guer",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "plant-dongshan-zhe-guer",
+      "kind": "plant",
+      "name": "柘（姑兒）",
+      "quote": "其下多桑柘",
+      "description": "姑兒山下多桑柘，此卡分录柘；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-guer",
+      "source_passage_ids": [
+        "passage-dongshan-guer"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-guer"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0016",
+        "source-04-0017"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-guer",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-guer",
+      "kind": "water",
+      "name": "姑兒之水",
+      "quote": "姑兒之水出焉北流注于海",
+      "description": "姑兒水北注海，源、流向和受水体分录。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-guer",
+      "source_passage_ids": [
+        "passage-dongshan-guer"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-guer",
+        "water-dongshan-sea",
+        "beast-dongshan-gan-fantiao"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110、111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0018",
+        "source-04-0019"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-gaoshi-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-jade-gaoshi-east",
+      "kind": "material",
+      "name": "玉（髙氏山上）",
+      "quote": "其上多玉",
+      "description": "髙氏山上多玉；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-gaoshi-east",
+      "source_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-gaoshi-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110、111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0018",
+        "source-04-0019"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-gaoshi-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-gold-zhusheng",
+      "kind": "material",
+      "name": "金（諸繩水文）",
+      "quote": "其中多金玉",
+      "description": "諸繩水文多金玉，此卡分录金；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-gaoshi-east",
+      "source_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-gaoshi-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110、111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0018",
+        "source-04-0019"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-gaoshi-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-jade-zhusheng",
+      "kind": "material",
+      "name": "玉（諸繩水文）",
+      "quote": "其中多金玉",
+      "description": "諸繩水文多金玉，此卡分录玉；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-gaoshi-east",
+      "source_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-gaoshi-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110、111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0018",
+        "source-04-0019"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-gaoshi-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-zhusheng",
+      "kind": "water",
+      "name": "諸繩之水",
+      "quote": "諸繩之水出焉東流注于澤",
+      "description": "諸繩水东注未名泽，不定现代河道。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-gaoshi-east",
+      "source_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-gaoshi-east",
+        "water-dongshan-ze-gaoshi"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110、111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0018",
+        "source-04-0019"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-gaoshi-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-ze-gaoshi",
+      "kind": "water",
+      "name": "澤（髙氏受水体）",
+      "quote": "東流注于澤",
+      "description": "髙氏段受水体仅称泽，不强并嶽山未名泽。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-gaoshi-east",
+      "source_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-gaoshi-east",
+        "water-dongshan-zhusheng"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110、111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0018",
+        "source-04-0019"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-gaoshi-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-zhenstone-gaoshi",
+      "kind": "material",
+      "name": "箴石（髙氏）",
+      "quote": "其下多箴石",
+      "description": "箴石郭注可以／為砥針治癰腫者跨行连读，只作古代器用、治疗记载。",
+      "commentary_quote": "可以；為砥針治癰腫者",
+      "context_place_id": "place-dongshan-gaoshi-east",
+      "source_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-gaoshi-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0020",
+        "source-04-0021"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-yueshan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "plant-dongshan-sang-yue",
+      "kind": "plant",
+      "name": "桑（嶽山）",
+      "quote": "其上多桑",
+      "description": "嶽山上多桑；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-yueshan",
+      "source_passage_ids": [
+        "passage-dongshan-yueshan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-yueshan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0020",
+        "source-04-0021"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-yueshan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "plant-dongshan-chu-yue",
+      "kind": "plant",
+      "name": "樗（嶽山）",
+      "quote": "其下多樗",
+      "description": "嶽山下多樗；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-yueshan",
+      "source_passage_ids": [
+        "passage-dongshan-yueshan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-yueshan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0020",
+        "source-04-0021"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-yueshan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-gold-luo",
+      "kind": "material",
+      "name": "金（濼水文）",
+      "quote": "其中多金玉",
+      "description": "濼水文多金玉，此卡分录金；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-yueshan",
+      "source_passage_ids": [
+        "passage-dongshan-yueshan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-yueshan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0020",
+        "source-04-0021"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-yueshan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-jade-luo",
+      "kind": "material",
+      "name": "玉（濼水文）",
+      "quote": "其中多金玉",
+      "description": "濼水文多金玉，此卡分录玉；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-yueshan",
+      "source_passage_ids": [
+        "passage-dongshan-yueshan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-yueshan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0020",
+        "source-04-0021"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-yueshan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-luo",
+      "kind": "water",
+      "name": "濼水",
+      "quote": "濼水出焉東流注于澤",
+      "description": "濼水出嶽山而东注未名泽；音樂为水名注。",
+      "commentary_quote": "音樂",
+      "context_place_id": "place-dongshan-yueshan",
+      "source_passage_ids": [
+        "passage-dongshan-yueshan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-yueshan",
+        "water-dongshan-ze-yue"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0020",
+        "source-04-0021"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-yueshan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-ze-yue",
+      "kind": "water",
+      "name": "澤（嶽山受水体）",
+      "quote": "東流注于澤",
+      "description": "嶽山受水体仅称泽，与髙氏段各存出处。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-yueshan",
+      "source_passage_ids": [
+        "passage-dongshan-yueshan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-yueshan",
+        "water-dongshan-luo"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0022",
+        "source-04-0023",
+        "source-04-0024"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-chaishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-unnamed-chai",
+      "kind": "water",
+      "name": "水（犲山下）",
+      "quote": "其下多水",
+      "description": "犲山下多水，不补水名或流向。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-chaishan",
+      "source_passage_ids": [
+        "passage-dongshan-chaishan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-chaishan",
+        "beast-dongshan-kanyu-chai"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0025",
+        "source-04-0026",
+        "source-04-0027"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-dushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-gold-du",
+      "kind": "material",
+      "name": "金（獨山）",
+      "quote": "其上多金玉",
+      "description": "獨山上多金玉，此卡分录金；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-dushan",
+      "source_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-dushan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0025",
+        "source-04-0026",
+        "source-04-0027"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-dushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-jade-du",
+      "kind": "material",
+      "name": "玉（獨山）",
+      "quote": "其上多金玉",
+      "description": "獨山上多金玉，此卡分录玉；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-dushan",
+      "source_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-dushan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0025",
+        "source-04-0026",
+        "source-04-0027"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-dushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-fine-stone-du",
+      "kind": "material",
+      "name": "羙石（獨山）",
+      "quote": "其下多羙石",
+      "description": "獨山下多羙石；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-dushan",
+      "source_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-dushan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0025",
+        "source-04-0026",
+        "source-04-0027"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-dushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-motu",
+      "kind": "water",
+      "name": "末塗之水",
+      "quote": "末塗之水出焉而東南流注于沔",
+      "description": "末塗水东南注沔，保留古述方向。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-dushan",
+      "source_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-dushan",
+        "water-dongshan-mian",
+        "beast-dongshan-tiaoyong-dushan"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0025",
+        "source-04-0026",
+        "source-04-0027"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-dushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-mian",
+      "kind": "water",
+      "name": "沔（末塗受水体）",
+      "quote": "東南流注于沔",
+      "description": "沔为末塗受水体，不补现代河道。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-dushan",
+      "source_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-dushan",
+        "water-dongshan-motu"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0028",
+        "source-04-0029",
+        "source-04-0030",
+        "source-04-0031"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-taishan-range1",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-jade-tai",
+      "kind": "material",
+      "name": "玉（泰山）",
+      "quote": "其上多玉",
+      "description": "泰山上多玉；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-taishan-range1",
+      "source_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-taishan-range1"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0028",
+        "source-04-0029",
+        "source-04-0030",
+        "source-04-0031"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-taishan-range1",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-gold-tai",
+      "kind": "material",
+      "name": "金（泰山）",
+      "quote": "其下多金",
+      "description": "泰山下多金；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-taishan-range1",
+      "source_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-taishan-range1"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0028",
+        "source-04-0029",
+        "source-04-0030",
+        "source-04-0031"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-taishan-range1",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-water-jade-huan",
+      "kind": "material",
+      "name": "水玉（環水文）",
+      "quote": "其中多水玉",
+      "description": "環水文多水玉；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-taishan-range1",
+      "source_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-taishan-range1"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0028",
+        "source-04-0029",
+        "source-04-0030",
+        "source-04-0031"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-taishan-range1",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-huan",
+      "kind": "water",
+      "name": "環水",
+      "quote": "環水出焉東流注于江",
+      "description": "環水自泰山东注江；江另有一作海异文，不归水玉。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-taishan-range1",
+      "source_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-taishan-range1",
+        "water-dongshan-jiang"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0028",
+        "source-04-0029",
+        "source-04-0030",
+        "source-04-0031",
+        "source-04-0032",
+        "source-04-0033"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-taishan-range1",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-jiang",
+      "kind": "water",
+      "name": "江（泰山、竹山文本索引）",
+      "quote": "東流注于江；錞于江",
+      "description": "泰山環水注江、竹山錞于江逐段分录，不定现代同一河段。",
+      "commentary_quote": "一作海",
+      "context_place_id": "place-dongshan-taishan-range1",
+      "source_passage_ids": [
+        "passage-dongshan-taishan-range1",
+        "passage-dongshan-zhushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-taishan-range1",
+        "passage-dongshan-zhushan",
+        "water-dongshan-huan"
+      ],
+      "relation_scope": "water",
+      "context_place_ids": [
+        "place-dongshan-taishan-range1",
+        "place-dongshan-zhushan"
+      ],
+      "content_note": "分号分隔不同段落摘句；共享文本名目不代表现代地理同一性已定。"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0032",
+        "source-04-0033"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-zhushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "material-dongshan-yaobi-zhu",
+      "kind": "material",
+      "name": "瑶碧（竹山）",
+      "quote": "多瑶碧",
+      "description": "竹山多瑶碧；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-zhushan",
+      "source_passage_ids": [
+        "passage-dongshan-zhushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-zhushan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0032",
+        "source-04-0033"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-zhushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-ji-zhu",
+      "kind": "water",
+      "name": "激水（竹山）",
+      "quote": "激水出焉而東南流注于娶檀之水",
+      "description": "激水东南注娶檀，不将江旁一作涯移给激水。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-zhushan",
+      "source_passage_ids": [
+        "passage-dongshan-zhushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-zhushan",
+        "water-dongshan-qutan",
+        "beast-dongshan-zilei-zhu"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0032",
+        "source-04-0033"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-zhushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-qutan",
+      "kind": "water",
+      "name": "娶檀之水",
+      "quote": "東南流注于娶檀之水",
+      "description": "娶檀为激水受水体。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-zhushan",
+      "source_passage_ids": [
+        "passage-dongshan-zhushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-zhushan",
+        "water-dongshan-ji-zhu"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 113",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113",
+      "source_unit_ids": [
+        "source-04-0037",
+        "source-04-0038",
+        "source-04-0039",
+        "source-04-0040"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-kongsang-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "water-dongshan-min-marsh",
+      "kind": "water",
+      "name": "湣澤",
+      "quote": "西望湣澤",
+      "description": "空桑西望湣泽；音旻归此泽名。",
+      "commentary_quote": "音旻",
+      "context_place_id": "place-dongshan-kongsang-east",
+      "source_passage_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 113",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113",
+      "source_unit_ids": [
+        "source-04-0041"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-caoxi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "plant-dongshan-gu-caoxi",
+      "kind": "plant",
+      "name": "榖（曹夕）",
+      "quote": "其下多榖",
+      "description": "曹夕山下多榖；仅录本段名目，不补未述形貌、现代定位或成分。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-caoxi",
+      "source_passage_ids": [
+        "passage-dongshan-caoxi"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-caoxi"
+      ]
     }
   ],
   "passages": [
@@ -46794,7 +48195,687 @@
         "water-dongshan-jian-fantiao",
         "beast-dongshan-gan-fantiao",
         "water-dongshan-sea",
-        "passage-dongshan-boqi"
+        "passage-dongshan-boqi",
+        "passage-dongshan-guer"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0016",
+        "source-04-0017"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-guer",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-guer",
+      "kind": "passage",
+      "name": "姑兒之山",
+      "range": 1,
+      "order": 6,
+      "description": "番條向南四百里为姑兒，上多漆、下多桑柘。姑兒水北注海，其中鱤魚与番條共用文本索引，仍无可据以绘制的独立形貌。",
+      "quote": "又南四百里曰姑兒之山其上多漆其下多桑柘姑兒之水出焉北流注于海其中多鱤魚",
+      "captured_text": "又南四百里曰姑兒之山其上多漆其下多桑柘姑兒之水出焉北流注于海其中多鱤魚",
+      "commentary_quote": "",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0016",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-04-0017",
+          "annotations": []
+        }
+      ],
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_span": [
+        214,
+        249
+      ],
+      "subjects": [
+        "姑兒之山",
+        "漆（姑兒）",
+        "桑（姑兒）",
+        "柘（姑兒）",
+        "姑兒之水"
+      ],
+      "related_entry_ids": [
+        "place-dongshan-guer",
+        "plant-dongshan-qi-guer",
+        "plant-dongshan-sang-guer",
+        "plant-dongshan-zhe-guer",
+        "water-dongshan-guer",
+        "water-dongshan-sea",
+        "beast-dongshan-gan-fantiao",
+        "passage-dongshan-fantiao",
+        "passage-dongshan-gaoshi-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110、111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0018",
+        "source-04-0019"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-gaoshi-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-gaoshi-east",
+      "kind": "passage",
+      "name": "髙氏之山",
+      "range": 1,
+      "order": 7,
+      "description": "姑兒向南四百里为髙氏，上多玉、下多箴石。諸繩水东注泽，水中金玉另列。可以／為砥針治癰腫者跨行归箴石；古代治疗记述不作今用建议。不并北山髙是。",
+      "quote": "又南四百里曰髙氏之山其上多玉其下多箴石諸繩之水出焉東流注于澤其中多金玉",
+      "captured_text": "又南四百里曰髙氏之山其上多玉其下多箴石諸繩之水出焉東流注于澤其中多金玉",
+      "commentary_quote": "〔影印页110〕可以\n〔影印页111〕為砥針治癰腫者",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0018",
+          "annotations": [
+            "可以"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0019",
+          "annotations": [
+            "為砥針治癰腫者"
+          ]
+        }
+      ],
+      "content_note": "0018实际110页末，箴石郭注可以/為砥針治癰腫者跨18—19；不移为水中金玉注。髙氏不并北山髙是。",
+      "source_span": [
+        249,
+        284
+      ],
+      "subjects": [
+        "髙氏之山",
+        "玉（髙氏山上）",
+        "金（諸繩水文）",
+        "玉（諸繩水文）",
+        "諸繩之水",
+        "澤（髙氏受水体）",
+        "箴石（髙氏）"
+      ],
+      "related_entry_ids": [
+        "place-dongshan-gaoshi-east",
+        "material-dongshan-jade-gaoshi-east",
+        "material-dongshan-gold-zhusheng",
+        "material-dongshan-jade-zhusheng",
+        "water-dongshan-zhusheng",
+        "water-dongshan-ze-gaoshi",
+        "material-dongshan-zhenstone-gaoshi",
+        "passage-dongshan-guer",
+        "passage-dongshan-yueshan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0020",
+        "source-04-0021"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-yueshan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-yueshan",
+      "kind": "passage",
+      "name": "嶽山",
+      "range": 1,
+      "order": 8,
+      "description": "髙氏向南三百里为嶽山，上桑下樗。濼水东注泽，水中金玉分录；音樂为水名郭注，不将两处未名泽强并。",
+      "quote": "又南三百里曰嶽山其上多桑其下多樗濼水出焉東流注于澤其中多金玉",
+      "captured_text": "又南三百里曰嶽山其上多桑其下多樗濼水出焉東流注于澤其中多金玉",
+      "commentary_quote": "〔影印页111〕音樂",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0020",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-04-0021",
+          "annotations": [
+            "音樂"
+          ]
+        }
+      ],
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_span": [
+        284,
+        314
+      ],
+      "subjects": [
+        "嶽山",
+        "桑（嶽山）",
+        "樗（嶽山）",
+        "金（濼水文）",
+        "玉（濼水文）",
+        "濼水",
+        "澤（嶽山受水体）"
+      ],
+      "related_entry_ids": [
+        "place-dongshan-yueshan",
+        "plant-dongshan-sang-yue",
+        "plant-dongshan-chu-yue",
+        "material-dongshan-gold-luo",
+        "material-dongshan-jade-luo",
+        "water-dongshan-luo",
+        "water-dongshan-ze-yue",
+        "passage-dongshan-gaoshi-east",
+        "passage-dongshan-chaishan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0022",
+        "source-04-0023",
+        "source-04-0024"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-chaishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-chaishan",
+      "kind": "passage",
+      "name": "犲山",
+      "range": 1,
+      "order": 9,
+      "description": "嶽山向南三百里为犲山，上无草木、下多水。堪㐨之鱼郭注明言未详。另有未名兽状如夸父而彘毛、音如呼，洪水兆为古述；夸父比拟依据不足，不借逐日人物造型补图，两者均留占位。",
+      "quote": "又南三百里曰犲山其上無草木其下多水其中多堪㐨之魚有獸焉其状如夸父而彘毛其音如呼見則天下大水",
+      "captured_text": "又南三百里曰犲山其上無草木其下多水其中多堪㐨之魚有獸焉其状如夸父而彘毛其音如呼見則天下大水",
+      "commentary_quote": "〔影印页111〕未詳音序",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0022",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-04-0023",
+          "annotations": [
+            "未詳音序"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0024",
+          "annotations": []
+        }
+      ],
+      "content_note": "堪㐨郭注未詳，保留占位；夸父为兽状比拟，不直接借夸父逐日人物形象。",
+      "source_span": [
+        314,
+        359
+      ],
+      "subjects": [
+        "犲山",
+        "水（犲山下）",
+        "堪㐨之魚",
+        "夸父状彘毛兽（犲山未名）"
+      ],
+      "related_entry_ids": [
+        "place-dongshan-chaishan",
+        "water-dongshan-unnamed-chai",
+        "beast-dongshan-kanyu-chai",
+        "beast-dongshan-kuafu-like-chai",
+        "passage-dongshan-yueshan",
+        "passage-dongshan-dushan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0025",
+        "source-04-0026",
+        "source-04-0027"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-dushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-dushan",
+      "kind": "passage",
+      "name": "獨山",
+      "range": 1,
+      "order": 10,
+      "description": "犲山向南三百里为獨山，上多金玉、下多羙石。末塗水东南注沔。䖺䗤如黄蛇、鱼翼、出入有光，旱兆为古述；插画保蛇身及鱼鳍状膜翼，翼数、位置、鳞纹和亮纹为艺术解释。",
+      "quote": "又南三百里曰獨山其上多金玉其下多羙石末塗之水出焉而東南流注于沔其中多䖺䗤其状如黄蛇魚翼出入有光見則其邑大旱",
+      "captured_text": "又南三百里曰獨山其上多金玉其下多羙石末塗之水出焉而東南流注于沔其中多䖺䗤其状如黄蛇魚翼出入有光見則其邑大旱",
+      "commentary_quote": "〔影印页111〕條容二音",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0025",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-04-0026",
+          "annotations": [
+            "條容二音"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0027",
+          "annotations": []
+        }
+      ],
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_span": [
+        359,
+        412
+      ],
+      "subjects": [
+        "獨山",
+        "金（獨山）",
+        "玉（獨山）",
+        "羙石（獨山）",
+        "末塗之水",
+        "沔（末塗受水体）",
+        "䖺䗤"
+      ],
+      "related_entry_ids": [
+        "place-dongshan-dushan",
+        "material-dongshan-gold-du",
+        "material-dongshan-jade-du",
+        "material-dongshan-fine-stone-du",
+        "water-dongshan-motu",
+        "water-dongshan-mian",
+        "beast-dongshan-tiaoyong-dushan",
+        "passage-dongshan-chaishan",
+        "passage-dongshan-taishan-range1"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0028",
+        "source-04-0029",
+        "source-04-0030",
+        "source-04-0031"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-taishan-range1",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-taishan-range1",
+      "kind": "passage",
+      "name": "泰山",
+      "range": 1,
+      "order": 11,
+      "description": "獨山向南三百里为泰山，上玉下金。狪狪豚状有珠、名自䚯；独立珠子的数量与位置属艺术解释。環水东注江，其中水玉另列；一作海归江的异文。山顶四十八里三百步是跨行山名郭注，不是狪狪形貌。",
+      "quote": "又南三百里曰泰山其上多玉其下多金有獸焉其状如豚而有珠名曰狪狪其名自䚯環水出焉東流注于江其中多水玉",
+      "captured_text": "又南三百里曰泰山其上多玉其下多金有獸焉其状如豚而有珠名曰狪狪其名自䚯環水出焉東流注于江其中多水玉",
+      "commentary_quote": "〔影印页112〕即東嶽岱宗也今在泰山奉髙縣西北從山下至頂四十八里\n〔影印页112〕三百步也\n〔影印页112〕音如吟桐之桐\n〔影印页112〕一作海",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0028",
+          "annotations": [
+            "即東嶽岱宗也今在泰山奉髙縣西北從山下至頂四十八里"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0029",
+          "annotations": [
+            "三百步也"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0030",
+          "annotations": [
+            "音如吟桐之桐"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0031",
+          "annotations": [
+            "一作海"
+          ]
+        }
+      ],
+      "content_note": "郭注山顶距离四十八里/三百步也跨28—29，不当狪狪形貌。狪狪豚状有珠，不能以珠反推额珠位置或珠数。与次四太山分卡。",
+      "source_span": [
+        412,
+        460
+      ],
+      "subjects": [
+        "泰山",
+        "玉（泰山）",
+        "金（泰山）",
+        "水玉（環水文）",
+        "環水",
+        "江（泰山、竹山文本索引）",
+        "狪狪"
+      ],
+      "related_entry_ids": [
+        "place-dongshan-taishan-range1",
+        "material-dongshan-jade-tai",
+        "material-dongshan-gold-tai",
+        "material-dongshan-water-jade-huan",
+        "water-dongshan-huan",
+        "water-dongshan-jiang",
+        "beast-dongshan-tongtong-taishan",
+        "passage-dongshan-dushan",
+        "passage-dongshan-zhushan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0032",
+        "source-04-0033"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-zhushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-zhushan",
+      "kind": "passage",
+      "name": "竹山",
+      "range": 1,
+      "order": 12,
+      "description": "泰山向南三百里为竹山，錞于江，无草木、多瑶碧。江后一作涯按原位置保留。激水东南注娶檀水，其中茈羸仅有名目，形貌不足留占位，不据别篇补形。",
+      "quote": "又南三百里曰竹山錞于江無草木多瑶碧激水出焉而東南流注于娶檀之水其中多茈羸",
+      "captured_text": "又南三百里曰竹山錞于江無草木多瑶碧激水出焉而東南流注于娶檀之水其中多茈羸",
+      "commentary_quote": "〔影印页112〕一作涯",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0032",
+          "annotations": [
+            "一作涯"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0033",
+          "annotations": []
+        }
+      ],
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_span": [
+        460,
+        496
+      ],
+      "subjects": [
+        "竹山",
+        "瑶碧（竹山）",
+        "激水（竹山）",
+        "娶檀之水",
+        "茈羸（竹山）"
+      ],
+      "related_entry_ids": [
+        "place-dongshan-zhushan",
+        "material-dongshan-yaobi-zhu",
+        "water-dongshan-ji-zhu",
+        "water-dongshan-qutan",
+        "beast-dongshan-zilei-zhu",
+        "water-dongshan-jiang",
+        "passage-dongshan-taishan-range1",
+        "passage-dongshan-range1-summary"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0034",
+        "source-04-0035",
+        "source-04-0036"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-range1-summary",
+      "kind": "passage",
+      "name": "首列总括与祭礼",
+      "range": 1,
+      "order": 13,
+      "description": "首列从樕𧑤至竹山，正文总括十二山、三千六百里。神皆人身龍首；祠毛用一犬、祈䎶用鱼为古礼。郭注血涂祭及引公羊传独存，配图只示人身龙首神，不画祭杀。",
+      "quote": "凡東山經之首自樕𧑤之山以至于竹山凡十二山三千六百里其神状皆人身龍首祠毛用一犬祈䎶用魚",
+      "captured_text": "凡東山經之首自樕𧑤之山以至于竹山凡十二山三千六百里其神状皆人身龍首祠毛用一犬祈䎶用魚",
+      "commentary_quote": "〔影印页112〕以血塗祭為䎶也公羊傳云蓋叩其鼻以䎶社音鈎餌之餌",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0034",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-04-0035",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-04-0036",
+          "annotations": [
+            "以血塗祭為䎶也公羊傳云蓋叩其鼻以䎶社音鈎餌之餌"
+          ]
+        }
+      ],
+      "content_note": "0036实际112页末，䎶礼注跨段边界前完整收束；人身龍首为神形，犬与鱼为祭物，血涂祭的古礼说明不画血腥。",
+      "source_span": [
+        496,
+        538
+      ],
+      "subjects": [
+        "首列总括与祭礼",
+        "人身龍首神（东山首列）",
+        "祠毛用一犬（首列祭礼）",
+        "祈䎶用魚（首列祭礼）"
+      ],
+      "related_entry_ids": [
+        "rite-dongshan-range1-summary",
+        "deity-dongshan-human-dragon-range1",
+        "rite-dongshan-fur-offering-range1",
+        "rite-dongshan-fish-er-range1",
+        "passage-dongshan-zhushan",
+        "passage-dongshan-kongsang-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 113",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113",
+      "source_unit_ids": [
+        "source-04-0037",
+        "source-04-0038",
+        "source-04-0039",
+        "source-04-0040"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-kongsang-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-kongsang-east",
+      "kind": "passage",
+      "name": "空桑之山",
+      "range": 2,
+      "order": 14,
+      "description": "东次二经首为空桑，北临食水，东望沮呉、南望沙𨹧、西望湣泽，四向不混。軨軨如牛而虎文、音如欽、鸣自叫，洪水兆为古述；或作吟归声音异文，音靈归名。琴瑟材为山名郭注，不添树种。",
+      "quote": "東次二經之首曰空桑之山北臨食水東望沮呉南望沙𨹧西望湣澤有獸焉其状如牛而虎文其音如欽其名曰軨軨其鳴自叫見則天下大水",
+      "captured_text": "東次二經之首曰空桑之山北臨食水東望沮呉南望沙𨹧西望湣澤有獸焉其状如牛而虎文其音如欽其名曰軨軨其鳴自叫見則天下大水",
+      "commentary_quote": "〔影印页113〕此山出琴瑟材見周禮也\n〔影印页113〕音旻\n〔影印页113〕或作吟；音靈",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0037",
+          "annotations": [
+            "此山出琴瑟材見周禮也"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0038",
+          "annotations": [
+            "音旻"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0039",
+          "annotations": [
+            "或作吟",
+            "音靈"
+          ]
+        },
+        {
+          "source_unit_id": "source-04-0040",
+          "annotations": []
+        }
+      ],
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_span": [
+        538,
+        594
+      ],
+      "subjects": [
+        "空桑之山",
+        "湣澤",
+        "沮呉（空桑东望）",
+        "沙𨹧（空桑南望）",
+        "軨軨（东次二）"
+      ],
+      "related_entry_ids": [
+        "place-dongshan-kongsang-east",
+        "water-dongshan-min-marsh",
+        "place-dongshan-juwu",
+        "place-dongshan-shaling",
+        "beast-dongshan-lingling-kongsang-east",
+        "water-dongshan-shi",
+        "passage-dongshan-range1-summary",
+        "passage-dongshan-caoxi"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 113",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113",
+      "source_unit_ids": [
+        "source-04-0041"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-caoxi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "passage-dongshan-caoxi",
+      "kind": "passage",
+      "name": "曹夕之山",
+      "range": 2,
+      "order": 15,
+      "description": "空桑向南六百里为曹夕，山下多榖而无水、多鸟兽。榖按植物名保留，不改作谷物；鸟兽为泛称，不补具体种类或形貌。",
+      "quote": "又南六百里曰曹夕之山其下多榖而無水多鳥獸",
+      "captured_text": "又南六百里曰曹夕之山其下多榖而無水多鳥獸",
+      "commentary_quote": "",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-04-0041",
+          "annotations": []
+        }
+      ],
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_span": [
+        594,
+        614
+      ],
+      "subjects": [
+        "曹夕之山",
+        "榖（曹夕）"
+      ],
+      "related_entry_ids": [
+        "place-dongshan-caoxi",
+        "plant-dongshan-gu-caoxi",
+        "passage-dongshan-kongsang-east"
       ]
     }
   ],
@@ -58397,6 +60478,535 @@
       ],
       "related_entry_ids": [
         "passage-dongshan-fantiao"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0016",
+        "source-04-0017"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-guer",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-guer",
+      "kind": "place",
+      "name": "姑兒之山",
+      "description": "番條向南四百里为姑兒，上多漆、下多桑柘。姑兒水北注海，其中鱤魚与番條共用文本索引，仍无可据以绘制的独立形貌。",
+      "quote": "又南四百里曰姑兒之山其上多漆其下多桑柘姑兒之水出焉北流注于海其中多鱤魚",
+      "commentary_quote": "",
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_passage_ids": [
+        "passage-dongshan-guer"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-guer"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 110、111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/110",
+      "source_unit_ids": [
+        "source-04-0018",
+        "source-04-0019"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-gaoshi-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-gaoshi-east",
+      "kind": "place",
+      "name": "髙氏之山",
+      "description": "姑兒向南四百里为髙氏，上多玉、下多箴石。諸繩水东注泽，水中金玉另列。可以／為砥針治癰腫者跨行归箴石；古代治疗记述不作今用建议。不并北山髙是。",
+      "quote": "又南四百里曰髙氏之山其上多玉其下多箴石諸繩之水出焉東流注于澤其中多金玉",
+      "commentary_quote": "〔影印页110〕可以\n〔影印页111〕為砥針治癰腫者",
+      "content_note": "0018实际110页末，箴石郭注可以/為砥針治癰腫者跨18—19；不移为水中金玉注。髙氏不并北山髙是。",
+      "source_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-gaoshi-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0020",
+        "source-04-0021"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-yueshan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-yueshan",
+      "kind": "place",
+      "name": "嶽山",
+      "description": "髙氏向南三百里为嶽山，上桑下樗。濼水东注泽，水中金玉分录；音樂为水名郭注，不将两处未名泽强并。",
+      "quote": "又南三百里曰嶽山其上多桑其下多樗濼水出焉東流注于澤其中多金玉",
+      "commentary_quote": "〔影印页111〕音樂",
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_passage_ids": [
+        "passage-dongshan-yueshan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-yueshan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0022",
+        "source-04-0023",
+        "source-04-0024"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-chaishan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-chaishan",
+      "kind": "place",
+      "name": "犲山",
+      "description": "嶽山向南三百里为犲山，上无草木、下多水。堪㐨之鱼郭注明言未详。另有未名兽状如夸父而彘毛、音如呼，洪水兆为古述；夸父比拟依据不足，不借逐日人物造型补图，两者均留占位。",
+      "quote": "又南三百里曰犲山其上無草木其下多水其中多堪㐨之魚有獸焉其状如夸父而彘毛其音如呼見則天下大水",
+      "commentary_quote": "〔影印页111〕未詳音序",
+      "content_note": "堪㐨郭注未詳，保留占位；夸父为兽状比拟，不直接借夸父逐日人物形象。",
+      "source_passage_ids": [
+        "passage-dongshan-chaishan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-chaishan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 111",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/111",
+      "source_unit_ids": [
+        "source-04-0025",
+        "source-04-0026",
+        "source-04-0027"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-dushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-dushan",
+      "kind": "place",
+      "name": "獨山",
+      "description": "犲山向南三百里为獨山，上多金玉、下多羙石。末塗水东南注沔。䖺䗤如黄蛇、鱼翼、出入有光，旱兆为古述；插画保蛇身及鱼鳍状膜翼，翼数、位置、鳞纹和亮纹为艺术解释。",
+      "quote": "又南三百里曰獨山其上多金玉其下多羙石末塗之水出焉而東南流注于沔其中多䖺䗤其状如黄蛇魚翼出入有光見則其邑大旱",
+      "commentary_quote": "〔影印页111〕條容二音",
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-dushan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0028",
+        "source-04-0029",
+        "source-04-0030",
+        "source-04-0031"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-taishan-range1",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-taishan-range1",
+      "kind": "place",
+      "name": "泰山",
+      "description": "獨山向南三百里为泰山，上玉下金。狪狪豚状有珠、名自䚯；独立珠子的数量与位置属艺术解释。環水东注江，其中水玉另列；一作海归江的异文。山顶四十八里三百步是跨行山名郭注，不是狪狪形貌。",
+      "quote": "又南三百里曰泰山其上多玉其下多金有獸焉其状如豚而有珠名曰狪狪其名自䚯環水出焉東流注于江其中多水玉",
+      "commentary_quote": "〔影印页112〕即東嶽岱宗也今在泰山奉髙縣西北從山下至頂四十八里\n〔影印页112〕三百步也\n〔影印页112〕音如吟桐之桐\n〔影印页112〕一作海",
+      "content_note": "郭注山顶距离四十八里/三百步也跨28—29，不当狪狪形貌。狪狪豚状有珠，不能以珠反推额珠位置或珠数。与次四太山分卡。",
+      "source_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-taishan-range1"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0032",
+        "source-04-0033"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-zhushan",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-zhushan",
+      "kind": "place",
+      "name": "竹山",
+      "description": "泰山向南三百里为竹山，錞于江，无草木、多瑶碧。江后一作涯按原位置保留。激水东南注娶檀水，其中茈羸仅有名目，形貌不足留占位，不据别篇补形。",
+      "quote": "又南三百里曰竹山錞于江無草木多瑶碧激水出焉而東南流注于娶檀之水其中多茈羸",
+      "commentary_quote": "〔影印页112〕一作涯",
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_passage_ids": [
+        "passage-dongshan-zhushan"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-zhushan"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0034",
+        "source-04-0035",
+        "source-04-0036"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "rite-dongshan-range1-summary",
+      "kind": "rite",
+      "name": "首列总括与祭礼",
+      "description": "首列从樕𧑤至竹山，正文总括十二山、三千六百里。神皆人身龍首；祠毛用一犬、祈䎶用鱼为古礼。郭注血涂祭及引公羊传独存，配图只示人身龙首神，不画祭杀。",
+      "quote": "凡東山經之首自樕𧑤之山以至于竹山凡十二山三千六百里其神状皆人身龍首祠毛用一犬祈䎶用魚",
+      "commentary_quote": "〔影印页112〕以血塗祭為䎶也公羊傳云蓋叩其鼻以䎶社音鈎餌之餌",
+      "content_note": "0036实际112页末，䎶礼注跨段边界前完整收束；人身龍首为神形，犬与鱼为祭物，血涂祭的古礼说明不画血腥。",
+      "source_passage_ids": [
+        "passage-dongshan-range1-summary"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-range1-summary",
+        "deity-dongshan-human-dragon-range1",
+        "rite-dongshan-fur-offering-range1",
+        "rite-dongshan-fish-er-range1"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0034",
+        "source-04-0035",
+        "source-04-0036"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "deity-dongshan-human-dragon-range1",
+      "kind": "deity",
+      "name": "人身龍首神（东山首列）",
+      "quote": "其神状皆人身龍首",
+      "description": "神形据正文人身龍首；图中一位代表，双人手双人足、龙首角须、服装配色与站姿为艺术解释。不画龙躯蛇尾或祭杀。",
+      "commentary_quote": "",
+      "source_passage_ids": [
+        "passage-dongshan-range1-summary"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-range1-summary",
+        "rite-dongshan-range1-summary"
+      ],
+      "artwork": "dongshan/deity-dragonhead-human-range1-v1.webp",
+      "artwork_caption": "经文或郭注形貌与木刻演绎 · 器官依据见说明，配色、比例和姿态为艺术解释。"
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0034",
+        "source-04-0035",
+        "source-04-0036"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "rite-dongshan-fur-offering-range1",
+      "kind": "rite",
+      "name": "祠毛用一犬（首列祭礼）",
+      "quote": "祠毛用一犬",
+      "description": "古礼用一犬，独立于神形记载；不把祭物作新生物形貌或操作建议。",
+      "commentary_quote": "",
+      "source_passage_ids": [
+        "passage-dongshan-range1-summary"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-range1-summary",
+        "rite-dongshan-range1-summary"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 112",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/112",
+      "source_unit_ids": [
+        "source-04-0034",
+        "source-04-0035",
+        "source-04-0036"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-range1-summary",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "rite-dongshan-fish-er-range1",
+      "kind": "rite",
+      "name": "祈䎶用魚（首列祭礼）",
+      "quote": "祈䎶用魚",
+      "description": "用鱼为古礼，郭注血涂祭及公羊传引文完整独存，不画血腥祭杀。",
+      "commentary_quote": "以血塗祭為䎶也公羊傳云蓋叩其鼻以䎶社音鈎餌之餌",
+      "source_passage_ids": [
+        "passage-dongshan-range1-summary"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-range1-summary",
+        "rite-dongshan-range1-summary"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 113",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113",
+      "source_unit_ids": [
+        "source-04-0037",
+        "source-04-0038",
+        "source-04-0039",
+        "source-04-0040"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-kongsang-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-kongsang-east",
+      "kind": "place",
+      "name": "空桑之山",
+      "description": "东次二经首为空桑，北临食水，东望沮呉、南望沙𨹧、西望湣泽，四向不混。軨軨如牛而虎文、音如欽、鸣自叫，洪水兆为古述；或作吟归声音异文，音靈归名。琴瑟材为山名郭注，不添树种。",
+      "quote": "東次二經之首曰空桑之山北臨食水東望沮呉南望沙𨹧西望湣澤有獸焉其状如牛而虎文其音如欽其名曰軨軨其鳴自叫見則天下大水",
+      "commentary_quote": "〔影印页113〕此山出琴瑟材見周禮也\n〔影印页113〕音旻\n〔影印页113〕或作吟；音靈",
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_passage_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-kongsang-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 113",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113",
+      "source_unit_ids": [
+        "source-04-0037",
+        "source-04-0038",
+        "source-04-0039",
+        "source-04-0040"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-kongsang-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-juwu",
+      "kind": "place",
+      "name": "沮呉（空桑东望）",
+      "quote": "東望沮呉",
+      "description": "空桑所望名目，保留原字与方位，不定现代坐标或擅加地类。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-kongsang-east",
+      "source_passage_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-kongsang-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 113",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113",
+      "source_unit_ids": [
+        "source-04-0037",
+        "source-04-0038",
+        "source-04-0039",
+        "source-04-0040"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-kongsang-east",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-shaling",
+      "kind": "place",
+      "name": "沙𨹧（空桑南望）",
+      "quote": "南望沙𨹧",
+      "description": "空桑所望名目，保留原字与方位，不定现代坐标或擅加地类。",
+      "commentary_quote": "",
+      "context_place_id": "place-dongshan-kongsang-east",
+      "source_passage_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-kongsang-east"
+      ]
+    },
+    {
+      "source": "《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《东山经》",
+      "source_book": 4,
+      "region": "东山经",
+      "source_locator": "卷第四 · 影印页 113",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/113",
+      "source_unit_ids": [
+        "source-04-0041"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "dongshan-caoxi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。",
+      "id": "place-dongshan-caoxi",
+      "kind": "place",
+      "name": "曹夕之山",
+      "description": "空桑向南六百里为曹夕，山下多榖而无水、多鸟兽。榖按植物名保留，不改作谷物；鸟兽为泛称，不补具体种类或形貌。",
+      "quote": "又南六百里曰曹夕之山其下多榖而無水多鳥獸",
+      "commentary_quote": "",
+      "content_note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "source_passage_ids": [
+        "passage-dongshan-caoxi"
+      ],
+      "related_entry_ids": [
+        "passage-dongshan-caoxi"
       ]
     }
   ]

@@ -12,7 +12,7 @@ export default function ChapterEntries({ stories, records, naturalEntries = [], 
     { number: 1, title: '南山经 · 全篇阅读', ranges: ['䧿山', '南次二经', '南次三经'] },
     { number: 2, title: '西山经 · 分段阅读', ranges: ['华山山列 · 山段与总括', '西次二经 · 已核山段', '西次三经 · 已核山段', '西次四经 · 山段与总括', '西山经 · 篇末总计'] },
     { number: 3, title: '北山经 · 分段阅读', ranges: ['北山经首列 · 山段与总括', '北次二经 · 山段与总括', '北次三经 · 山段与总括', '北山经 · 篇末总计'] },
-    { number: 4, title: '东山经 · 分段阅读', ranges: ['东山经首列 · 已核山段', '东次二经 · 山段与总括', '东次三经 · 山段与总括', '东次四经 · 山段与总括', '东山经 · 篇末总计'] },
+    { number: 4, title: '东山经 · 分段阅读', ranges: ['东山经首列 · 山段与总括', '东次二经 · 山段与总括', '东次三经 · 山段与总括', '东次四经 · 山段与总括', '东山经 · 篇末总计'] },
   ];
   const list = items => <ul>{items.map(record => <li key={record.id}><button type="button" className="map-entry-button" data-entry-id={record.id} onClick={event => onOpen(record.id, event.currentTarget, sequence)}><b>{record.name}</b><ContentOrigin record={record} /><small>{t(entryTypes[record.kind])}{record.source && ` · ${record.source}`}</small><ReadingMarks reading={reading} id={record.id} /></button></li>)}</ul>;
   return <div className="chapter-entries">

@@ -5074,5 +5074,77 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/dongshan/snake-tiaoyong-dushan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/dongshan/snake-tiaoyong-dushan-v1-card.webp",
+      "bytes": 34802,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/dongshan/snake-tiaoyong-dushan-v1-preview.webp",
+      "bytes": 66688,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/dongshan/creature-tongtong-taishan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/dongshan/creature-tongtong-taishan-v1-card.webp",
+      "bytes": 25684,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/dongshan/creature-tongtong-taishan-v1-preview.webp",
+      "bytes": 51544,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/dongshan/deity-dragonhead-human-range1-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/dongshan/deity-dragonhead-human-range1-v1-card.webp",
+      "bytes": 25792,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/dongshan/deity-dragonhead-human-range1-v1-preview.webp",
+      "bytes": 48708,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/dongshan/creature-lingling-kongsang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/dongshan/creature-lingling-kongsang-v1-card.webp",
+      "bytes": 44374,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/dongshan/creature-lingling-kongsang-v1-preview.webp",
+      "bytes": 85448,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }

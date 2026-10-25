@@ -38,10 +38,10 @@
       "number": 4,
       "title": "东山经",
       "source_blocks": 141,
-      "explained_blocks": 13,
-      "semantic_passages": 5,
+      "explained_blocks": 39,
+      "semantic_passages": 15,
       "candidate_passages": 42,
-      "pending_candidate_passages": 37,
+      "pending_candidate_passages": 27,
       "semantic_review": "partial"
     },
     {
@@ -24637,11 +24637,21 @@
       "text": "又南四百里曰姑兒之山其上多漆其下多桑柘姑",
       "commentary": [],
       "text_sha256": "5a80a61450521fc2103a3f2f4ff3d2b71e1fb6c0b7dd2fe8136b49ab998eed5a",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-guer"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-guer"
+      ],
+      "objects": [
+        "姑兒之山",
+        "姑兒之水",
+        "柘（姑兒）",
+        "桑（姑兒）",
+        "漆（姑兒）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24653,11 +24663,19 @@
       "text": "兒之水出焉北流注于海其中多鱤魚",
       "commentary": [],
       "text_sha256": "4085fb64cd2093de7df3284c7f6880f14bc6c049c5e05b0e085883e7ceec57e0",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-guer"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "姑兒之山",
+        "姑兒之水",
+        "柘（姑兒）",
+        "桑（姑兒）",
+        "漆（姑兒）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24671,11 +24689,23 @@
         "可以"
       ],
       "text_sha256": "f9b94fb740a682289068ec40db949d6539caecf053c83430d10e298653cc2386",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-gaoshi-east"
+      ],
+      "objects": [
+        "澤（髙氏受水体）",
+        "玉（諸繩水文）",
+        "玉（髙氏山上）",
+        "箴石（髙氏）",
+        "諸繩之水",
+        "金（諸繩水文）",
+        "髙氏之山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
       "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/111"
     },
@@ -24690,11 +24720,23 @@
         "為砥針治癰腫者"
       ],
       "text_sha256": "53c9abc03fe214ffadc9165063561581fd32be9a1433f16f0b8d23b3e7b8b874",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ],
+      "candidate_entry_ids": [
+        "water-dongshan-zhusheng"
+      ],
+      "objects": [
+        "澤（髙氏受水体）",
+        "玉（諸繩水文）",
+        "玉（髙氏山上）",
+        "箴石（髙氏）",
+        "諸繩之水",
+        "金（諸繩水文）",
+        "髙氏之山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24706,11 +24748,24 @@
       "text": "又南三百里曰嶽山其上多桑其下多樗濼水出焉",
       "commentary": [],
       "text_sha256": "c6a10a6b04e5c7ffbcf6a846f4296e276bbef754bcdfef47423ea2977ad8cf40",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yueshan"
+      ],
+      "candidate_entry_ids": [
+        "water-dongshan-luo",
+        "place-dongshan-yueshan"
+      ],
+      "objects": [
+        "嶽山",
+        "桑（嶽山）",
+        "樗（嶽山）",
+        "澤（嶽山受水体）",
+        "濼水",
+        "玉（濼水文）",
+        "金（濼水文）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24724,11 +24779,21 @@
         "音樂"
       ],
       "text_sha256": "1a4d4f92f82e25c29d07e0c0f5da604dd1554c5715019763672565153f1854ac",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yueshan"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "嶽山",
+        "桑（嶽山）",
+        "樗（嶽山）",
+        "澤（嶽山受水体）",
+        "濼水",
+        "玉（濼水文）",
+        "金（濼水文）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24740,11 +24805,20 @@
       "text": "又南三百里曰犲山其上無草木其下多水其中多",
       "commentary": [],
       "text_sha256": "89f31d3972d32dedcba6542fce5fbf5e2964668524f5eb43301a7de49daf9904",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-chaishan"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-chaishan"
+      ],
+      "objects": [
+        "堪㐨之魚",
+        "夸父状彘毛兽（犲山未名）",
+        "水（犲山下）",
+        "犲山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24758,11 +24832,20 @@
         "未詳音序"
       ],
       "text_sha256": "1e70e87170a3fd2132df842e39a7e94f012baf68bb311f1b71977cdf6e586b39",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-chaishan"
+      ],
+      "candidate_entry_ids": [
+        "beast-dongshan-kanyu-chai"
+      ],
+      "objects": [
+        "堪㐨之魚",
+        "夸父状彘毛兽（犲山未名）",
+        "水（犲山下）",
+        "犲山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24774,11 +24857,18 @@
       "text": "呼見則天下大水",
       "commentary": [],
       "text_sha256": "deb3d1539783fbf86d0a50ee1d2926834651753516f46d321ee0f2e86aa39288",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-chaishan"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "堪㐨之魚",
+        "夸父状彘毛兽（犲山未名）",
+        "水（犲山下）",
+        "犲山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24790,11 +24880,23 @@
       "text": "又南三百里曰獨山其上多金玉其下多羙石末塗",
       "commentary": [],
       "text_sha256": "86fe3c9a9036da94affea264333044c6f4186360f68c28c903387eaa7177237c",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-dushan"
+      ],
+      "objects": [
+        "䖺䗤",
+        "末塗之水",
+        "沔（末塗受水体）",
+        "獨山",
+        "玉（獨山）",
+        "羙石（獨山）",
+        "金（獨山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24808,11 +24910,23 @@
         "條容二音"
       ],
       "text_sha256": "faf50a79db4770f3ded549ec667d2c2d1055a03fbf451eefa917ef3f448019e1",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
+      "candidate_entry_ids": [
+        "beast-dongshan-tiaoyong-dushan"
+      ],
+      "objects": [
+        "䖺䗤",
+        "末塗之水",
+        "沔（末塗受水体）",
+        "獨山",
+        "玉（獨山）",
+        "羙石（獨山）",
+        "金（獨山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24824,11 +24938,21 @@
       "text": "如黄蛇魚翼出入有光見則其邑大旱",
       "commentary": [],
       "text_sha256": "21cd59a39c12fee1bd67d9d968879a1a14890f606d27b79edb4402ddd37072e9",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-dushan"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "䖺䗤",
+        "末塗之水",
+        "沔（末塗受水体）",
+        "獨山",
+        "玉（獨山）",
+        "羙石（獨山）",
+        "金（獨山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
       "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/112"
     },
@@ -24843,11 +24967,23 @@
         "即東嶽岱宗也今在泰山奉髙縣西北從山下至頂四十八里"
       ],
       "text_sha256": "db82e10e062a5293d1163314491e1b587398f514d6a04ba206412886082b7019",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-taishan-range1"
+      ],
+      "objects": [
+        "水玉（環水文）",
+        "江（泰山、竹山文本索引）",
+        "泰山",
+        "狪狪",
+        "玉（泰山）",
+        "環水",
+        "金（泰山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24861,11 +24997,21 @@
         "三百步也"
       ],
       "text_sha256": "41f5c23afeea041a2296d6713ac3dbd4748184cc730201444c6b8c4c319da1e5",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "水玉（環水文）",
+        "江（泰山、竹山文本索引）",
+        "泰山",
+        "狪狪",
+        "玉（泰山）",
+        "環水",
+        "金（泰山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24879,11 +25025,24 @@
         "音如吟桐之桐"
       ],
       "text_sha256": "d56269f8f7a22b314a8b7311f79cfb834f46d9597016fa2e1d14fbfde1a66235",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
+      "candidate_entry_ids": [
+        "beast-dongshan-tongtong-taishan",
+        "water-dongshan-huan"
+      ],
+      "objects": [
+        "水玉（環水文）",
+        "江（泰山、竹山文本索引）",
+        "泰山",
+        "狪狪",
+        "玉（泰山）",
+        "環水",
+        "金（泰山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24897,11 +25056,21 @@
         "一作海"
       ],
       "text_sha256": "064f24db207a8b5f732d8bd97fca93a1b8fbf1bc2cf5a781f6321c0545977598",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "水玉（環水文）",
+        "江（泰山、竹山文本索引）",
+        "泰山",
+        "狪狪",
+        "玉（泰山）",
+        "環水",
+        "金（泰山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24915,11 +25084,21 @@
         "一作涯"
       ],
       "text_sha256": "51e6828acfd197766800a2ad151017cbd495515f12313b2ca2fec58fed6dc000",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-zhushan"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-zhushan"
+      ],
+      "objects": [
+        "娶檀之水",
+        "激水（竹山）",
+        "瑶碧（竹山）",
+        "竹山",
+        "茈羸（竹山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24931,11 +25110,21 @@
       "text": "水出焉而東南流注于娶檀之水其中多茈羸",
       "commentary": [],
       "text_sha256": "8a9f7ea7f43c12ee466a22b5acbd0f96a241bb7d4f375284cf11c5d88a3559dc",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-zhushan"
+      ],
+      "candidate_entry_ids": [
+        "water-dongshan-qutan"
+      ],
+      "objects": [
+        "娶檀之水",
+        "激水（竹山）",
+        "瑶碧（竹山）",
+        "竹山",
+        "茈羸（竹山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24947,13 +25136,21 @@
       "text": "凡東山經之首自樕𧑤之山以至于竹山凡十二山",
       "commentary": [],
       "text_sha256": "1b250d7deb99f81825974389d5e50e7ee279291311b315b83cfcbe20aa30de6a",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [
-        "place-dongshan-suzhu"
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-range1-summary"
       ],
-      "objects": [],
-      "relationship_review": "pending",
+      "candidate_entry_ids": [
+        "place-dongshan-suzhu",
+        "place-dongshan-zhushan"
+      ],
+      "objects": [
+        "人身龍首神（东山首列）",
+        "祈䎶用魚（首列祭礼）",
+        "祠毛用一犬（首列祭礼）",
+        "首列总括与祭礼"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24965,11 +25162,18 @@
       "text": "三千六百里其神状皆人身龍首祠毛用一犬祈䎶",
       "commentary": [],
       "text_sha256": "737d56e85f898449c15db0059af2ddf87a447f63293274859467335fb0bdf957",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-range1-summary"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "人身龍首神（东山首列）",
+        "祈䎶用魚（首列祭礼）",
+        "祠毛用一犬（首列祭礼）",
+        "首列总括与祭礼"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -24983,11 +25187,18 @@
         "以血塗祭為䎶也公羊傳云蓋叩其鼻以䎶社音鈎餌之餌"
       ],
       "text_sha256": "b000044b3e5ecc3c3255f7355b7af40b63d811a95bf4a88675c3e859dae125d9",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-range1-summary"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "人身龍首神（东山首列）",
+        "祈䎶用魚（首列祭礼）",
+        "祠毛用一犬（首列祭礼）",
+        "首列总括与祭礼"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
       "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/113"
     },
@@ -25002,11 +25213,21 @@
         "此山出琴瑟材見周禮也"
       ],
       "text_sha256": "9f2141fc648706653d7c55a7e6258bdbb50e30cc9ee6fd9eb7a8bbb000e3c9c9",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-kongsang-east"
+      ],
+      "objects": [
+        "沙𨹧（空桑南望）",
+        "沮呉（空桑东望）",
+        "湣澤",
+        "空桑之山",
+        "軨軨（东次二）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25020,11 +25241,21 @@
         "音旻"
       ],
       "text_sha256": "1ed39603b8f0d35974f4923c04515b2a381f5b7f7cff37cdd1d913ee878d71f3",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
+      "candidate_entry_ids": [
+        "water-dongshan-min-marsh"
+      ],
+      "objects": [
+        "沙𨹧（空桑南望）",
+        "沮呉（空桑东望）",
+        "湣澤",
+        "空桑之山",
+        "軨軨（东次二）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25039,11 +25270,19 @@
         "音靈"
       ],
       "text_sha256": "acd416bc7bf733400f038dc42afbf06ecccdab2e11c53611fc9d198a6f925cbf",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "沙𨹧（空桑南望）",
+        "沮呉（空桑东望）",
+        "湣澤",
+        "空桑之山",
+        "軨軨（东次二）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25055,11 +25294,19 @@
       "text": "則天下大水",
       "commentary": [],
       "text_sha256": "22d6e24d0bb8ad296bcc9de1069151eab1f52888b4abaf946fda146fb449c28e",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-kongsang-east"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "沙𨹧（空桑南望）",
+        "沮呉（空桑东望）",
+        "湣澤",
+        "空桑之山",
+        "軨軨（东次二）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25071,11 +25318,18 @@
       "text": "又南六百里曰曹夕之山其下多榖而無水多鳥獸",
       "commentary": [],
       "text_sha256": "f9c350aae7818b22f4de8807b556f7d8ab790193c30876442d49f62ad5b997cd",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-caoxi"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-caoxi"
+      ],
+      "objects": [
+        "曹夕之山",
+        "榖（曹夕）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25721,7 +25975,9 @@
       "text_sha256": "49310ed6489531f104f6158c38c233e715d2ac007b6f89cb7560dc26dbd42dad",
       "status": "pending_review",
       "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-kongsang-east"
+      ],
       "objects": [],
       "relationship_review": "pending",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
@@ -58141,13 +58397,18 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/110"
       ],
       "text": "又南四百里曰姑兒之山其上多漆其下多桑柘姑兒之水出焉北流注于海其中多鱤魚",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-guer"
+      ],
       "relationship_excerpts": [
         "上多漆其下多桑柘姑兒之水出焉北流注于海其中多鱤魚",
         "其下多桑柘姑兒之水出焉北流注于海其中多鱤魚"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-guer"
+      ]
     },
     {
       "id": "draft-04-0007",
@@ -58165,13 +58426,19 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/111"
       ],
       "text": "又南四百里曰髙氏之山其上多玉其下多箴石諸繩之水出焉東流注于澤其中多金玉",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-gaoshi-east",
+        "water-dongshan-zhusheng"
+      ],
       "relationship_excerpts": [
         "上多玉其下多箴石諸繩之水出焉東流注于澤其中多金玉",
         "其下多箴石諸繩之水出焉東流注于澤其中多金玉"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-gaoshi-east"
+      ]
     },
     {
       "id": "draft-04-0008",
@@ -58188,13 +58455,19 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/111"
       ],
       "text": "又南三百里曰嶽山其上多桑其下多樗濼水出焉東流注于澤其中多金玉",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-yueshan",
+        "water-dongshan-luo"
+      ],
       "relationship_excerpts": [
         "嶽山其上多桑其下多樗濼水出焉東流注于澤其中多金玉",
         "上多桑其下多樗濼水出焉東流注于澤其中多金玉"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yueshan"
+      ]
     },
     {
       "id": "draft-04-0009",
@@ -58212,10 +58485,16 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/111"
       ],
       "text": "又南三百里曰犲山其上無草木其下多水其中多堪㐨之魚有獸焉其状如夸父而彘毛其音如呼見則天下大水",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "beast-dongshan-kanyu-chai",
+        "place-dongshan-chaishan"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-chaishan"
+      ]
     },
     {
       "id": "draft-04-0010",
@@ -58233,13 +58512,19 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/111"
       ],
       "text": "又南三百里曰獨山其上多金玉其下多羙石末塗之水出焉而東南流注于沔其中多䖺䗤其状如黄蛇魚翼出入有光見則其邑大旱",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "beast-dongshan-tiaoyong-dushan",
+        "place-dongshan-dushan"
+      ],
       "relationship_excerpts": [
         "多金玉其下多羙石末塗之水出焉而東南流注于沔其中多䖺䗤其状如黄蛇魚",
         "多羙石末塗之水出焉而東南流注于沔其中多䖺䗤其状如黄蛇魚翼出入有光"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-dushan"
+      ]
     },
     {
       "id": "draft-04-0011",
@@ -58258,13 +58543,20 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/112"
       ],
       "text": "又南三百里曰泰山其上多玉其下多金有獸焉其状如豚而有珠名曰狪狪其名自䚯環水出焉東流注于江其中多水玉",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "beast-dongshan-tongtong-taishan",
+        "place-dongshan-taishan-range1",
+        "water-dongshan-huan"
+      ],
       "relationship_excerpts": [
         "有珠名曰狪狪其名自䚯環水出焉東流注于江其中多水玉",
         "曰狪狪其名自䚯環水出焉東流注于江其中多水玉"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-taishan-range1"
+      ]
     },
     {
       "id": "draft-04-0012",
@@ -58281,13 +58573,19 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/112"
       ],
       "text": "又南三百里曰竹山錞于江無草木多瑶碧激水出焉而東南流注于娶檀之水其中多茈羸",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-zhushan",
+        "water-dongshan-qutan"
+      ],
       "relationship_excerpts": [
         "山錞于江無草木多瑶碧激水出焉而東南流注于娶檀之水其中多茈羸",
         "草木多瑶碧激水出焉而東南流注于娶檀之水其中多茈羸"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-zhushan"
+      ]
     },
     {
       "id": "draft-04-0013",
@@ -58304,11 +58602,15 @@
       ],
       "text": "凡東山經之首自樕𧑤之山以至于竹山",
       "candidate_entry_ids": [
-        "place-dongshan-suzhu"
+        "place-dongshan-suzhu",
+        "place-dongshan-zhushan"
       ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-range1-summary"
+      ]
     },
     {
       "id": "draft-04-0014",
@@ -58332,11 +58634,18 @@
       ],
       "text": "凡十二山三千六百里其神状皆人身龍首祠毛用一犬祈䎶用魚東次二經之首曰空桑之山北臨食水東望沮呉南望沙𨹧西望湣澤有獸焉其状如牛而虎文其音如欽其名曰軨軨其鳴自叫見則天下大水",
       "candidate_entry_ids": [
-        "place-dongshan-suzhu"
+        "place-dongshan-kongsang-east",
+        "place-dongshan-suzhu",
+        "place-dongshan-zhushan",
+        "water-dongshan-min-marsh"
       ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-kongsang-east",
+        "passage-dongshan-range1-summary"
+      ]
     },
     {
       "id": "draft-04-0015",
@@ -58352,10 +58661,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/113"
       ],
       "text": "又南六百里曰曹夕之山其下多榖而無水多鳥獸",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-caoxi"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-caoxi"
+      ]
     },
     {
       "id": "draft-04-0016",
@@ -58660,7 +58974,9 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/117"
       ],
       "text": "凡東次二經之首自空桑之山至于䃌山",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-kongsang-east"
+      ],
       "relationship_excerpts": [],
       "status": "pending_review",
       "segmentation": "structural_candidate; boundaries and entities require manual review"
@@ -58708,7 +59024,9 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/120"
       ],
       "text": "凡十七山六千六百四十里其神状皆獸身人靣載觡其祠毛用一鷄祈嬰用一璧瘞又東次三經之首曰尸胡之山北望𦍙山其上多金玉其下多𣗥有獸焉其状如麋而魚目名曰妴胡其鳴自䚯又南水行八百里曰岐山其木多桃李其獸多虎又南水行五百里曰諸鈎之山無草木多沙石是山也廣員百里多𥧌魚又南水行七百里曰中父之山無草木多沙又東水行千里曰胡射之山無草木多沙石又南水行七百里曰孟子之山其木多梓桐多桃李其草多菌蒲其獸多麋鹿是山也廣員百里其上有水出焉名曰碧陽其中多鱣鮪又南水行五百里曰流沙行五百里有山焉曰跂踵之山廣員二百里無草木有大蛇其上多玉有水焉廣員四十里皆涌其名曰深澤其中多蠵龜有魚焉其状如鯉而六足鳥尾名曰鮯鮯之魚其鳴自叫又南水行九百里曰踇隅之山其上有草木多金玉多赭有獸焉其状如牛而馬尾名曰精精其鳴自呌又南水行五百里流沙三百里至于無皐之山南望幼海東望榑木無草木多風是山也廣員百里",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-kongsang-east"
+      ],
       "relationship_excerpts": [
         "鹿是山也廣員百里其上有水出焉名曰碧陽其中多鱣鮪又南水行五百里曰流"
       ],

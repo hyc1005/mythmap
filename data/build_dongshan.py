@@ -60,6 +60,10 @@ E('fantiao','water','jian-fantiao','減水（番條）','Jian water (Fantiao)','
 E('fantiao','beast','gan-fantiao','鱤魚（番條）','Gan fish (Fantiao)','其中多鱤魚','鱤魚正文只列名，郭注一名黄頰、音感，未详独立形貌；暂用占位，不按现代同名鱼补头身和鳍尾。','Gan fish are only named in the main text. Commentary gives Huangjia as another name and the pronunciation gan, without an independent anatomical description; the placeholder adds no modern namesake’s form.','Gan fish are abundant in the water account.',commentary='一名黄頰音感',en_commentary='Guo Pu gives Huangjia as another name and glosses gan.',water=True,unknown=True)
 ]
 
+from dongshan_second_batch import ROWS as SECOND_ROWS, entities as second_entities
+ROWS += SECOND_ROWS
+ENTITIES += second_entities(E)
+
 def build():
     review=read('data/dongshan-edition-review.json')
     chapter=read('data/shanhaijing-reference.json')['chapters'][3]
@@ -69,15 +73,15 @@ def build():
     passages=[];cards=[];corrections=review['source_unit_page_corrections']
     for order,row in enumerate(ROWS,1):
         slug=row['slug'];stage=stages[slug];a,b=stage['source_units'];refs=chapter['lines'][a-1:b]
-        raw=''.join(l['text'] for l in refs);pid='passage-dongshan-'+slug;place='place-dongshan-'+slug
+        raw=''.join(l['text'] for l in refs);pid='passage-dongshan-'+slug;place=('rite' if stage['kind']=='summary' else 'place')+'-dongshan-'+slug
         pages=stage['facsimile_pages'];urls=[f'https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/{p}' for p in pages]
         source='《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）'
         common=dict(source=source,source_chapter='《东山经》',source_book=4,region='东山经',source_locator='卷第四 · 影印页 '+'、'.join(map(str,pages)),source_pages=urls,url=urls[0],source_unit_ids=stage['source_unit_ids'],reveal_chapter='04',content_batch='dongshan-'+slug,review_status='facsimile_reviewed',artwork_pending=True,direction='按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。',editorial_note='经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。')
         encommon=dict(source='Shanhaijing · Eastern Mountains (Sibu Congkan edition, Guo Pu commentary)',source_chapter='Dongshan Jing',region='Dongshan Jing',source_locator='Volume 4 · scan pages '+', '.join(map(str,pages)),direction='Read the Eastern textual sequence and ancient directions, not modern coordinates or measured distances.',editorial_note='Text, captured transcription and commentary remain separate. Explanations and English are editorial; eating, healing and omen claims are ancient accounts.')
         commentary='\n'.join(f'〔影印页{corrections.get(id,int(line["page"].split("/")[-1]))}〕'+'；'.join(line['annotations']) for id,line in zip(stage['source_unit_ids'],refs) if line['annotations'])
-        p={**common,'id':pid,'kind':'passage','name':stage['name'],'range':1,'order':order,'description':row['description'],'quote':raw,'captured_text':raw,'commentary_quote':commentary,'captured_commentary':[{'source_unit_id':id,'annotations':l['annotations']} for id,l in zip(stage['source_unit_ids'],refs)],'content_note':stage['note'],'source_span':[sum(len(x['text']) for x in chapter['lines'][:a-1]),sum(len(x['text']) for x in chapter['lines'][:b])],'subjects':[stage['name']],'related_entry_ids':[place]}
+        p={**common,'id':pid,'kind':'passage','name':stage['name'],'range':stage['range'],'order':order,'description':row['description'],'quote':raw,'captured_text':raw,'commentary_quote':commentary,'captured_commentary':[{'source_unit_id':id,'annotations':l['annotations']} for id,l in zip(stage['source_unit_ids'],refs)],'content_note':stage['note'],'source_span':[sum(len(x['text']) for x in chapter['lines'][:a-1]),sum(len(x['text']) for x in chapter['lines'][:b])],'subjects':[stage['name']],'related_entry_ids':[place]}
         english[pid]={**encommon,'name':row['en_name'],'description':row['en_description'],'quote':row['en_quote'],'content_note':row['en_note']}
-        cards.append({**common,'id':place,'kind':'place','name':stage['name'],'description':row['description'],'quote':raw,'commentary_quote':commentary,'content_note':stage['note'],'source_passage_ids':[pid],'related_entry_ids':[pid]})
+        cards.append({**common,'id':place,'kind':('rite' if stage['kind']=='summary' else 'place'),'name':stage['name'],'description':row['description'],'quote':raw,'commentary_quote':commentary,'content_note':stage['note'],'source_passage_ids':[pid],'related_entry_ids':[pid]})
         english[place]=dict(english[pid])
         comments=''.join(x for l in refs for x in l['annotations'])
         for e in [e for e in ENTITIES if e['slug']==slug]:
@@ -93,6 +97,10 @@ def build():
             elif (art:=jobs.get(e['id'])) and art['status']=='reviewed':
                 c.update(artwork='dongshan/'+art['name']+'-v1.webp',artwork_pending=False,artwork_caption='经文或郭注形貌与木刻演绎 · 器官依据见说明，配色、比例和姿态为艺术解释。')
                 english[c['id']]['artwork_caption']='Textual or commentary-based form in woodcut interpretation; the description identifies the evidence, while colors, proportions and pose are artistic.'
+            if stage['kind']=='summary':
+                c.pop('context_place_id',None)
+                c['related_entry_ids'].append(place)
+                next(x for x in cards if x['id']==place)['related_entry_ids'].append(c['id'])
             cards.append(c);p['subjects'].append(c['name']);p['related_entry_ids'].append(c['id'])
         passages.append(p)
     index={x['id']:x for x in cards+passages}
@@ -111,20 +119,25 @@ def build():
     share('water-dongshan-shi','leishan','東流注于食水','the Hu flows east into the Shi.')
     share('water-dongshan-hu','xunzhuang','北流注于湖水','the Zhi flows north into the Hu.')
     share('water-dongshan-sea','fantiao','北流注于海','the Jian flows north into the sea.')
+    share('water-dongshan-sea','guer','北流注于海','the Guer flows north into the sea.')
+    share('beast-dongshan-gan-fantiao','guer','其中多鱤魚','Gan fish are abundant in the Guer water account.')
+    share('water-dongshan-shi','kongsang-east','北臨食水','Kongsang faces Shi water to the north.')
+    share('water-dongshan-jiang','zhushan','錞于江','Zhu adjoins the Jiang.')
     links=[('water-dongshan-shi','water-dongshan-sea'),('water-dongshan-shi','beast-dongshan-yongyong-suzhu'),('water-dongshan-hu','water-dongshan-shi'),('water-dongshan-hu','beast-dongshan-huoshi-leishan'),('water-dongshan-zhi-xunzhuang','water-dongshan-hu'),('water-dongshan-zhi-xunzhuang','beast-dongshan-zhen-xunzhuang'),('water-dongshan-jian-fantiao','water-dongshan-sea'),('water-dongshan-jian-fantiao','beast-dongshan-gan-fantiao')]
+    links += [('water-dongshan-guer','water-dongshan-sea'),('water-dongshan-guer','beast-dongshan-gan-fantiao'),('water-dongshan-zhusheng','water-dongshan-ze-gaoshi'),('water-dongshan-luo','water-dongshan-ze-yue'),('water-dongshan-unnamed-chai','beast-dongshan-kanyu-chai'),('water-dongshan-motu','water-dongshan-mian'),('water-dongshan-motu','beast-dongshan-tiaoyong-dushan'),('water-dongshan-huan','water-dongshan-jiang'),('water-dongshan-ji-zhu','water-dongshan-qutan'),('water-dongshan-ji-zhu','beast-dongshan-zilei-zhu')]
     for a,b in links:
         index[a]['related_entry_ids'].append(b);index[b]['related_entry_ids'].append(a)
     for a,b in zip(passages,passages[1:]):
         a['related_entry_ids'].append(b['id']);b['related_entry_ids'].append(a['id'])
     batches={'dongshan-'+r['slug'] for r in ROWS}
-    for group,values in [('passages',passages),('text_entities',[c for c in cards if c['kind']=='place']),('beasts',[c for c in cards if c['kind']=='beast']),('natural_features',[c for c in cards if c['kind'] in {'water','material','plant'}])]:
+    for group,values in [('passages',passages),('text_entities',[c for c in cards if c['kind'] in {'place','rite','deity'}]),('beasts',[c for c in cards if c['kind']=='beast']),('natural_features',[c for c in cards if c['kind'] in {'water','material','plant'}])]:
         world[group]=[c for c in world[group] if c.get('content_batch') not in batches]+values
-    world['revision']='myth-world-2026-10-25-dongshan-opening-five-v1'
-    review.update(status='partially_implemented',scope='首列前5阅读段已核109—110页；全篇段界已规划，其他段待双语、实体及页面接入。',implemented_stages=5,remaining_stages=46,entry_ids=[c['id'] for c in cards],passages=[dict(id=p['id'],source_unit_ids=p['source_unit_ids'],source_span=p['source_span'],status='facsimile_reviewed') for p in passages],batch_size=5,next=dict(name='姑兒之山',source_units=[16,17],facsimile_pages=[110],status='pending_bilingual_entity_review'),artwork_summary=dict(selected=sum(a['status']=='reviewed' for a in jobs.values()),appearance_unknown=sum(c.get('appearance_unknown',False) for c in cards)))
-    for stage in review['stage_plan'][:5]:
+    world['revision']='myth-world-2026-10-25-dongshan-fifteen-v1'
+    review.update(status='partially_implemented',scope='前15阅读段已核109—113页；全篇段界已规划，其他段待双语、实体及页面接入。',implemented_stages=15,remaining_stages=36,entry_ids=[c['id'] for c in cards],passages=[dict(id=p['id'],source_unit_ids=p['source_unit_ids'],source_span=p['source_span'],status='facsimile_reviewed') for p in passages],batch_size=10,next=dict(name='嶧皐之山',source_units=[42,44],facsimile_pages=[113],status='pending_bilingual_entity_review'),artwork_summary=dict(selected=sum(a['status']=='reviewed' for a in jobs.values()),appearance_unknown=sum(c.get('appearance_unknown',False) for c in cards)))
+    for stage in review['stage_plan'][:15]:
         stage.update(content_status='facsimile_reviewed',browser_status='see local handoff acceptance',passage_id='passage-dongshan-'+stage['slug'],new_cards=sum(c['content_batch']=='dongshan-'+stage['slug'] for c in cards))
-    assert len(cards)==23,len(cards)
+    assert len(cards)==len(ENTITIES)+len(ROWS),len(cards)
     write('frontend/public/data/myth-world.json',world);write('frontend/src/locale-content-en.json',english);write('data/dongshan-edition-review.json',review)
-    print('Built Eastern opening: 5 passages, 23 cards; 46 stages remain')
+    print(f'Built Eastern: {len(passages)} passages, {len(cards)} cards; 36 stages remain')
 if __name__=='__main__':
     build()

@@ -11,7 +11,7 @@ from fontTools import subset
 from fontTools.ttLib import TTFont
 
 ROOT=Path(__file__).resolve().parents[1]
-TITLE='䖪亝勃從昧樕活減番箴藟鱅鱤'
+TITLE='㐨䎶䖪䖺䗤䚯亝亦似低借傳兒則勃占卡厚叩叫吟否呉呼咨圆堪妺姿尔弯從手拆拟捕損擅改斗旱旻昧曹植樕活涯添減湣漠激濼炭為犂犬犲狪猪獠琴瑟環番疗疫疾癰矿社祈科箴细羸胫腫膜臨蓋藟蚪蛙蝌蝠血裂見詨謂跨躯軨針针雅靈頰颗额餌鱅鱤鳍鳞鳴鸣鼻'
 RARE='𣲵𧑤'
 url='https://fonts.googleapis.com/css2?'+urlencode({'family':'Noto Serif SC:wght@400..700','text':TITLE,'display':'swap'})
 agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
@@ -42,20 +42,18 @@ for record in rare['name'].names:
 rare.flavor='woff2'
 rare_target=ROOT/'public/fonts/atlas-eastern-rare.woff2';rare.save(rare_target)
 (ROOT/'public/fonts/atlas-eastern-rare-LICENSE.txt').write_text(
-    'Atlas Eastern Rare: two-glyph subset, renamed by the Shan-hai Atlas project.\n'
+    'Atlas Eastern Rare: Eastern subset, renamed by the Shan-hai Atlas project.\n'
     'Source: '+BASE+'HanaMinB.ttf\nModified by subsetting and renaming; original copyright and license retained.\n\n'+license_text,encoding='utf-8',newline='\n')
 assert set(map(ord,RARE))==set(TTFont(rare_target).getBestCmap())
 for name in ['exploration','myth-world']:
     p=ROOT/'src/styles'/f'{name}.css';s=p.read_text(encoding='utf-8')
-    if 'atlas-eastern-rare.woff2' not in s:
-        family="'Shanhai Title'" if name=='exploration' else 'ShanhaiRare'
-        chars=TITLE if name=='exploration' else ''.join(c for c in TITLE if ord(c)<0x4e00)
-        header="@font-face { font-family: 'Atlas Eastern Rare'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-eastern-rare.woff2) format(\"woff2\"); unicode-range: "+', '.join('U+'+format(ord(c),'X') for c in RARE)+"; }\n"
-        if chars:
-            header+="@font-face { font-family: "+family+"; font-style: normal; font-weight: 400 700; font-display: swap; src: url(/fonts/shanhai-title-dongshan.woff2) format(\"woff2\"); unicode-range: "+', '.join('U+'+format(ord(c),'X') for c in chars)+"; }\n"
-        s=header+s
-        s=s.replace("font-family: 'Atlas Northern Tan',","font-family: 'Atlas Eastern Rare', 'Atlas Northern Tan',")
-        p.write_text(s,encoding='utf-8')
+    family="'Shanhai Title'" if name=='exploration' else 'ShanhaiRare'
+    header="@font-face { font-family: 'Atlas Eastern Rare'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-eastern-rare.woff2) format(\"woff2\"); unicode-range: "+', '.join('U+'+format(ord(c),'X') for c in RARE)+"; }\n"
+    header+="@font-face { font-family: "+family+"; font-style: normal; font-weight: 400 700; font-display: swap; src: url(/fonts/shanhai-title-dongshan.woff2) format(\"woff2\"); unicode-range: "+', '.join('U+'+format(ord(c),'X') for c in TITLE)+"; }\n"
+    s=re.sub(r'@font-face\s*\{[^}]*?(?:atlas-eastern-rare|shanhai-title-dongshan)\.woff2[^}]*\}\s*','',s)
+    s=header+s
+    if "font-family: 'Atlas Eastern Rare'," not in s:s=s.replace("font-family: 'Atlas Northern Tan',","font-family: 'Atlas Eastern Rare', 'Atlas Northern Tan',")
+    p.write_text(s,encoding='utf-8')
 path=ROOT.parent/'data/dongshan-edition-review.json';review=json.loads(path.read_text(encoding='utf-8'))
 review['font_supplements']=[
 dict(family='Shanhai Title',source_family='Noto Serif SC',characters=TITLE,weights=[400,700],path='frontend/public/fonts/shanhai-title-dongshan.woff2',license='frontend/public/fonts/noto-serif-sc-LICENSE.txt',source_url=url,sha256=hashlib.sha256(data).hexdigest()),
@@ -68,6 +66,6 @@ preflight['missing_stage_title_characters']=''.join(sorted({c for stage in revie
 preflight['missing_stage_title_count']=len(preflight['missing_stage_title_characters'])
 preflight['status']='current_batch_covered_future_pending'
 review['font_preflight']['implemented_batch_missing_characters']=''
-review['font_preflight']['limits']='首批标题及所需ExtB字已补；后续46阶段的完整实体和注文仍需逐批预检。'
+review['font_preflight']['limits']='前15阶段标题及所需字已补；后续36阶段的完整实体和注文仍需逐批预检。'
 path.write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Eastern rare font',len(RARE),rare_target.stat().st_size,hashlib.sha256(rare_target.read_bytes()).hexdigest(),flush=True)
