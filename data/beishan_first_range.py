@@ -14,7 +14,7 @@ PAGE_CORRECTIONS = {'source-03-0018': 77, 'source-03-0027': 78,
                     'source-03-0153': 92, 'source-03-0162': 93,
                     'source-03-0171': 94, 'source-03-0180': 95,
                     'source-03-0189': 96, 'source-03-0198': 97,
-                    'source-03-0207': 98, 'source-03-0216': 99, 'source-03-0225': 100}
+                    'source-03-0207': 98, 'source-03-0216': 99, 'source-03-0225': 100, 'source-03-0234': 101, 'source-03-0243': 102}
 TEXT_CORRECTIONS = [
     dict(source_unit_id='source-03-0221',captured='⟦缺字图:滏⟧',replacement='滏',page=100,basis='100页神囷滏水按影印恢复，捕获不改。'),
     dict(source_unit_id='source-03-0233',captured='⟦缺字图:滏⟧',replacement='滏',page=101,basis='101页錫山牛首注滏按影印恢复，捕获不改。'),
@@ -299,6 +299,9 @@ ENTITIES += later_entities(E)
 from beishan_jingwei_range import ROWS as JINGWEI_ROWS, entities as jingwei_entities
 ROWS += JINGWEI_ROWS
 ENTITIES += jingwei_entities(E)
+from beishan_dunyu_range import ROWS as DUNYU_ROWS, entities as dunyu_entities, REMAINING
+ROWS += DUNYU_ROWS
+ENTITIES += dunyu_entities(E)
 
 
 def extend(world, english, chapter, review):
@@ -490,26 +493,31 @@ def extend(world, english, chapter, review):
       ('water-beishan-qi-juru',he['id']),('water-beishan-huang-shenqun','water-beishan-huan-shenqun'),('water-beishan-fu-shenqun','water-beishan-ou-shenqun'),
       ('water-beishan-zhang-fajiu',he['id']),('water-beishan-qingzhang-shaoshan','water-beishan-zhang-fajiu'),('water-beishan-niushou-xishan-north','water-beishan-fu-shenqun'),
       ('beast-jingwei','water-beishan-donghai-fajiu'),('beast-jingwei','place-beishan-western-mountains-fajiu'),('beast-jingwei','material-beishan-wood-fajiu'),('beast-jingwei','material-beishan-stones-fajiu')]
+    share(he['id'],'xiushan','洧水出焉而東流注于河','the Wei rises at Xiu and flows east into the He.','Xiu separately adds the east-flowing Wei.')
+    share(he['id'],'songshan','陽水出焉東北流注于河','the Yang rises at Song and flows northeast into the He.','Song separately adds the northeast-flowing Yang.')
+    he['description']+='繡山洧水东注、松山陽水东北注另记，方向不互换。'
+    links += [('water-beishan-jing-after-xi','water-beishan-haize-jingshan-after-xi'),('water-beishan-wei-xiushan',he['id']),('water-beishan-wei-xiushan','beast-beishan-huomin-xiushan'),('water-beishan-yang-songshan',he['id']),('water-beishan-suo-dunyu','water-beishan-tailu-dunyu'),('water-beishan-zhi-dunyu','water-beishan-peng-dunyu'),('water-beishan-huai-dunyu','water-beishan-zhize-dunyu')]
     for a,b in links:byid[a]['related_entry_ids'].append(b);byid[b]['related_entry_ids'].append(a)
     for group,values in [('passages',passages),('places',[c for c in cards if c['id']=='place-fajiu']),('text_entities',[c for c in cards if c['kind'] in {'place','rite','deity'} and c['id']!='place-fajiu']),('natural_features',[c for c in cards if c['kind'] in {'plant','water','material'}]),('beasts',[c for c in cards if c['kind']=='beast'])]:world[group]+=values
     northern=sorted([p for p in world['passages'] if p.get('source_book')==3],key=lambda p:p['order'])
     for left,right in zip(northern,northern[1:]):
         for a,b in [(left,right),(right,left)]:
             if b['id'] not in a['related_entry_ids']:a['related_entry_ids'].append(b['id'])
-    world['revision']='myth-world-2026-10-25-beishan-sixty-seven-v1'
-    review.update(scope='北山经首列25山与总括、次二16列名山与总括、次三至錫山：67阅读/385独立卡（含复用諸犍、精衛、發鳩），后文待核。',scan_pages=list(range(76,102)),limits='已核76—101页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
+    world['revision']='myth-world-2026-10-25-beishan-seventy-two-v1'
+    review.update(scope='北山经首列25山与总括、次二16列名山与总括、次三至敦與：72阅读/411独立卡（含复用諸犍、精衛、發鳩），后文待核。',scan_pages=list(range(76,104)),limits='已核76—103页正文段界与形貌，经文/逐行郭注/捕获/编辑说明分存；保留青雄黄异文、疑难注文和形貌不足占位，不宣称全篇或逐字多版本校勘。')
     review['source_unit_page_corrections'].update(PAGE_CORRECTIONS)
     review['entry_ids'] += [c['id'] for c in cards]
     review['passages'] += [{'id':p['id'],'source_unit_ids':p['source_unit_ids'],'source_span':p['source_span'],'status':'facsimile_reviewed'} for p in passages]
     review['commentary_alignment'] += [{'source_unit_ids':p['source_unit_ids'],'basis':p['content_note']} for p in passages]
     review['text_corrections']=TEXT_CORRECTIONS
     review['extb_font_supplement']={'family':'Atlas Northern ExtB','characters':'𤟤𤠾𥬇𬋩𭥍𤓰𤞞𩣡𪄀𪃑𣵀𩹴𬐱𪄶𤍠','path':'frontend/public/fonts/atlas-northern-extb.woff2','license':'frontend/public/fonts/atlas-northern-extb-LICENSE.txt','source_url':'https://github.com/babelstone/babelstonehan-ufo/releases/download/v18.0.1/BabelStoneHanExtra.ttf','sha256':hashlib.sha256((ROOT/'frontend/public/fonts/atlas-northern-extb.woff2').read_bytes()).hexdigest(),'upstream_sha256':'cc8868109070c1813479dc2eb72fba508a1a6c33d807a485959e8f5dcd0e5724','weights':[400],'limits':'授权字体内存子集并改名，原版权许可保留；仅400字重，页面禁用伪粗，600请求使用已有400字形；旧30个本机依赖补5后仍有25个，不宣称全书补齐。'}
-    review['next']={'name':'景山（錫山北）','source_units':[234,235],'captured_pages':[102],'facsimile_pages':[101,102],'status':'pending_facsimile_review','notes':'0234实际101页末而捕获102，待核校回101；0235在102页，下一轮首次保存核102页。此景山不同0186景山与0196京山，须另建稳定ID，勿并先前同名山。'}
+    review['next']={'name':'柘山','source_units':[245,246],'captured_pages':[103],'facsimile_pages':[103],'status':'pending_facsimile_review','notes':'复用103页；阳金玉、阴铁及歷聚水北注洧水待核。洧水是否与繡山同一索引须据上下文另核，不以同名或常见现代水名强并。'}
     review['second_range_summary']={'status':'facsimile_reviewed','named_mountains':16,'reported_mountains':17,'reported_li':5690,'summary_units':[147,150],'note':'原报17与逐段列名16不合，保留差异，不补山凑数；祭牲埋与玉投不埋分开。'}
 
     review['first_range_summary']={'status':'facsimile_reviewed','named_mountains':25,'reported_mountains':25,'reported_li':5490,'summary_units':[96,99],'note':'山数一致；里程保留原报，未以现代实测校正。'}
 
-    review['stage_plan']=[{'name':r['name'],'passage_id':p['id'],'source_units':list(r['units']),'new_cards':sum(c.get('content_batch')=='beishan-'+r['slug'] and c['id'] not in {'beast-zhu-jian','beast-jingwei','place-fajiu'} for c in cards),'reused_entry_ids':['beast-jingwei','place-fajiu'] if r['slug']=='fajiu' else [],'text_status':'facsimile_reviewed','browser_status':'see local handoff stage results'} for r,p in zip(ROWS[-10:],passages[-10:])]
-    review['batch_size']=10
+    review['stage_plan']=[{'name':r['name'],'passage_id':p['id'],'source_units':list(r['units']),'new_cards':sum(c.get('content_batch')=='beishan-'+r['slug'] and c['id'] not in {'beast-zhu-jian','beast-jingwei','place-fajiu'} for c in cards),'reused_entry_ids':['beast-jingwei','place-fajiu'] if r['slug']=='fajiu' else [],'text_status':'facsimile_reviewed','browser_status':'see local handoff stage results'} for r,p in zip(ROWS[-5:],passages[-5:])]
+    review['batch_size']=5
+    review['remaining_stage_estimate']={'scope':'北山经已核正文之后，其他篇目另计','count':len(REMAINING),'mountain_passages':18,'summary_and_total':2,'status':'transcription_based_pending_facsimile','basis':'按现有阅读段口径人工拆分录文；不等于结构候选数，后续影印可调整。','before_this_batch':25,'stages':[{'name':n,'source_units':[a,b],'status':'pending_facsimile_review'} for n,a,b in REMAINING]}
     review['reused_entry_ids']=['beast-zhu-jian','beast-jingwei','place-fajiu']
-    assert len(cards)==370,len(cards)
+    assert len(cards)==396,len(cards)
