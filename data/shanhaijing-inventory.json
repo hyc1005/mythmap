@@ -38,10 +38,10 @@
       "number": 4,
       "title": "东山经",
       "source_blocks": 141,
-      "explained_blocks": 39,
-      "semantic_passages": 15,
+      "explained_blocks": 53,
+      "semantic_passages": 20,
       "candidate_passages": 42,
-      "pending_candidate_passages": 27,
+      "pending_candidate_passages": 23,
       "semantic_review": "partial"
     },
     {
@@ -25343,11 +25343,24 @@
         "音亦"
       ],
       "text_sha256": "6d227c0cd4a52aee68eabfb62fc4380182ab71e680cd10ebbd204c2a4e1b9306",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yigao"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-yigao"
+      ],
+      "objects": [
+        "嶧皐之山",
+        "嶧皐之水",
+        "激女之水",
+        "玉（嶧皐）",
+        "珧（嶧皐）",
+        "白堊（嶧皐）",
+        "蜃（嶧皐）",
+        "金（嶧皐）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25359,11 +25372,25 @@
       "text": "白堊嶧皐之水出焉東流注于激女之水其中多蜃",
       "commentary": [],
       "text_sha256": "9f861763df7da2b2643ad062719473d563226ac72f92bf9c6972f286bd34cee1",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yigao"
+      ],
+      "candidate_entry_ids": [
+        "water-dongshan-yigao",
+        "water-dongshan-jinv"
+      ],
+      "objects": [
+        "嶧皐之山",
+        "嶧皐之水",
+        "激女之水",
+        "玉（嶧皐）",
+        "珧（嶧皐）",
+        "白堊（嶧皐）",
+        "蜃（嶧皐）",
+        "金（嶧皐）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25377,11 +25404,22 @@
         "蜃蚌也珧玉珧亦蚌屬腎遥兩音"
       ],
       "text_sha256": "279c8a9be3184801eb031d6e82a774d4a6f6b8b2a3d0db0595624622361266a5",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yigao"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "嶧皐之山",
+        "嶧皐之水",
+        "激女之水",
+        "玉（嶧皐）",
+        "珧（嶧皐）",
+        "白堊（嶧皐）",
+        "蜃（嶧皐）",
+        "金（嶧皐）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25393,11 +25431,16 @@
       "text": "又南水行五百里流沙三百里至于⟦缺字图:葛⟧山之尾無草",
       "commentary": [],
       "text_sha256": "d2c74d5bcb310d99296591e4e60bdb01583d73c9c479ed93a0c2b00d3759ed61",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-geshan-tail"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "砥礪（葛山之尾）",
+        "葛山之尾"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
       "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/114"
     },
@@ -25410,11 +25453,16 @@
       "text": "木多砥礪",
       "commentary": [],
       "text_sha256": "a8c278e4560a48c6b0f3c8e93286fa9f4e87562872552d65d5b78dd2d8f08ea4",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-geshan-tail"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "砥礪（葛山之尾）",
+        "葛山之尾"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25428,11 +25476,18 @@
         "音礼"
       ],
       "text_sha256": "0445f5f37866525e48286410ba14a61b3bf554b5b917f7f81d6016eb5fd65637",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-geshan-head"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "余澤（澧水受水体）",
+        "澧水（葛山之首）",
+        "珠蟞魚（葛山之首）",
+        "葛山之首"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25446,11 +25501,18 @@
         "音鼈"
       ],
       "text_sha256": "ef7dbb538572da4bead8ac6c6a2df83ce79d7637a92928465788a84a1f47f9c3",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-geshan-head"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "余澤（澧水受水体）",
+        "澧水（葛山之首）",
+        "珠蟞魚（葛山之首）",
+        "葛山之首"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25464,11 +25526,18 @@
         "無時氣病也吕氏春秋曰澧水之魚名曰"
       ],
       "text_sha256": "95b949584f3761f1b30e204df9798c5654a4cdcc9d7bc72cd52a5b60d4abd054",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-geshan-head"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "余澤（澧水受水体）",
+        "澧水（葛山之首）",
+        "珠蟞魚（葛山之首）",
+        "葛山之首"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25482,11 +25551,18 @@
         "朱蟞六足有珠魚之羙也"
       ],
       "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-geshan-head"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "余澤（澧水受水体）",
+        "澧水（葛山之首）",
+        "珠蟞魚（葛山之首）",
+        "葛山之首"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25498,11 +25574,26 @@
       "text": "又南三百八十里曰餘峩之山其上多梓柟其下多",
       "commentary": [],
       "text_sha256": "0eeaee2da9e879b3a3723882f40c96ee73c3bedb2cfe62e4732142cd17dd1911",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yue"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-yue"
+      ],
+      "objects": [
+        "柟（餘峩）",
+        "梓（餘峩）",
+        "犰狳（餘峩）",
+        "荆（餘峩）",
+        "蝗（餘峩灾异）",
+        "螽（餘峩灾异）",
+        "雜余之水",
+        "餘峩之山",
+        "黄水（雜余受水体）",
+        "𦬊（餘峩）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25514,11 +25605,26 @@
       "text": "荆𦬊雜余之水出焉東流注于黄水有獸焉其状如",
       "commentary": [],
       "text_sha256": "80c14cd5020058382fe4467165db5210c1583045e9bee623cd6745d50575d4e9",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yue"
+      ],
+      "candidate_entry_ids": [
+        "water-dongshan-zayu"
+      ],
+      "objects": [
+        "柟（餘峩）",
+        "梓（餘峩）",
+        "犰狳（餘峩）",
+        "荆（餘峩）",
+        "蝗（餘峩灾异）",
+        "螽（餘峩灾异）",
+        "雜余之水",
+        "餘峩之山",
+        "黄水（雜余受水体）",
+        "𦬊（餘峩）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25533,11 +25639,24 @@
         "仇餘二音"
       ],
       "text_sha256": "8cf1e05a978f9181489f376026ff1751188ae98dd0415ee629c6018b6990662f",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yue"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "柟（餘峩）",
+        "梓（餘峩）",
+        "犰狳（餘峩）",
+        "荆（餘峩）",
+        "蝗（餘峩灾异）",
+        "螽（餘峩灾异）",
+        "雜余之水",
+        "餘峩之山",
+        "黄水（雜余受水体）",
+        "𦬊（餘峩）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -25551,11 +25670,24 @@
         "螽蝗𩔗也言傷敗田苗音終"
       ],
       "text_sha256": "11cc09b1c414a9ed392b5c6abdceb7e2ef8d4c54c20988568d28c7979fc12445",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-yue"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "柟（餘峩）",
+        "梓（餘峩）",
+        "犰狳（餘峩）",
+        "荆（餘峩）",
+        "蝗（餘峩灾异）",
+        "螽（餘峩灾异）",
+        "雜余之水",
+        "餘峩之山",
+        "黄水（雜余受水体）",
+        "𦬊（餘峩）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
       "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/115"
     },
@@ -25568,11 +25700,18 @@
       "text": "又南三百里曰杜父之山無草木多水",
       "commentary": [],
       "text_sha256": "38c7a63dee7631c02edf5ee1da6cbfcfd1eefb6d3c9f9051fd9f0a0f1adb5d1a",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-dufu"
+      ],
+      "candidate_entry_ids": [
+        "place-dongshan-dufu"
+      ],
+      "objects": [
+        "杜父之山",
+        "水（杜父未名）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -58690,13 +58829,21 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/114"
       ],
       "text": "又西南四百里曰嶧皐之山其上多金玉其下多白堊嶧皐之水出焉東流注于激女之水其中多蜃珧又南水行五百里流沙三百里至于⟦缺字图:葛⟧山之尾無草木多砥礪",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-yigao",
+        "water-dongshan-jinv",
+        "water-dongshan-yigao"
+      ],
       "relationship_excerpts": [
         "多金玉其下多白堊嶧皐之水出焉東流注于激女之水其中多蜃珧又南水行五",
         "其下多白堊嶧皐之水出焉東流注于激女之水其中多蜃珧又南水行五百里流"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-geshan-tail",
+        "passage-dongshan-yigao"
+      ]
     },
     {
       "id": "draft-04-0017",
@@ -58719,8 +58866,11 @@
         "图:葛⟧山之首無草木澧水出焉東流注于余澤其中多珠蟞魚其状如肺而有",
         "⟧山之首無草木澧水出焉東流注于余澤其中多珠蟞魚其状如肺而有目六足"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-geshan-head"
+      ]
     },
     {
       "id": "draft-04-0018",
@@ -58740,13 +58890,20 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/114"
       ],
       "text": "又南三百八十里曰餘峩之山其上多梓柟其下多荆𦬊雜余之水出焉東流注于黄水有獸焉其状如莬而鳥喙䲭目蛇尾見人則眠名曰犰狳其鳴自䚯見則螽蝗為敗",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-yue",
+        "water-dongshan-zayu"
+      ],
       "relationship_excerpts": [
         "多梓柟其下多荆𦬊雜余之水出焉東流注于黄水有獸焉其状如莬而鳥喙䲭目",
         "其下多荆𦬊雜余之水出焉東流注于黄水有獸焉其状如莬而鳥喙䲭目蛇尾見"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-geshan-head",
+        "passage-dongshan-yue"
+      ]
     },
     {
       "id": "draft-04-0019",
@@ -58762,10 +58919,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0465-郭璞-山海經-2-1.djvu/115"
       ],
       "text": "又南三百里曰杜父之山無草木多水",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-dongshan-dufu"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-dongshan-dufu"
+      ]
     },
     {
       "id": "draft-04-0020",

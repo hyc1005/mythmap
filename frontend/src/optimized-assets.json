@@ -3833,5 +3833,57 @@
       1254,
       1254
     ]
+  },
+  "/data/atlas/myth-icons/dongshan/clam-shen-yigao-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/clam-shen-yigao-v1.webp",
+    "original_bytes": 2161728,
+    "optimized_bytes": 363264,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/clam-yao-yigao-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/clam-yao-yigao-v1.webp",
+    "original_bytes": 2041660,
+    "optimized_bytes": 366014,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/fish-zhubie-geshan-head-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/fish-zhubie-geshan-head-v1.webp",
+    "original_bytes": 1623246,
+    "optimized_bytes": 290020,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-qiuyu-yue-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-qiuyu-yue-v1.webp",
+    "original_bytes": 2155274,
+    "optimized_bytes": 381300,
+    "original_dimensions": [
+      1254,
+      1254
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ]
   }
 }

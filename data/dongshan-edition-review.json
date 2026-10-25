@@ -2,7 +2,7 @@
   "chapter": 4,
   "edition": "《山海經（四部叢刊本）》卷第四，郭氏傳",
   "status": "partially_implemented",
-  "scope": "前15阅读段已核109—113页；全篇段界已规划，其他段待双语、实体及页面接入。",
+  "scope": "前20阅读段已核109—115页；全篇段界已规划，其他段待双语、实体及页面接入。",
   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854",
   "snapshot_sha256": "0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce",
   "scan_pages": [
@@ -52,8 +52,8 @@
     "source-04-0093"
   ],
   "planned_stages": 51,
-  "implemented_stages": 15,
-  "remaining_stages": 36,
+  "implemented_stages": 20,
+  "remaining_stages": 31,
   "stage_counts": [
     13,
     18,
@@ -94,14 +94,16 @@
       "kind": "missing_image_glyph",
       "captured": "⟦缺字图:葛⟧",
       "facsimile_reading": "葛",
-      "status": "verified_for_future_reading_layer"
+      "status": "restored_in_reading_layer",
+      "passage_id": "passage-dongshan-geshan-tail"
     },
     {
       "source_unit_id": "source-04-0047",
       "kind": "missing_image_glyph",
       "captured": "⟦缺字图:葛⟧",
       "facsimile_reading": "葛",
-      "status": "verified_for_future_reading_layer"
+      "status": "restored_in_reading_layer",
+      "passage_id": "passage-dongshan-geshan-head"
     },
     {
       "source_unit_id": "source-04-0091",
@@ -565,9 +567,11 @@
         113
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-yigao",
+      "new_cards": 8
     },
     {
       "stage": 17,
@@ -591,9 +595,11 @@
         114
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0045实际113页末；缺字图葛见影印，后续仅恢复阅读层，捕获标记保留。水行500里与流沙300里分录。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0045实际113页末；缺字图葛见影印，后续仅恢复阅读层，捕获标记保留。水行500里与流沙300里分录。",
+      "passage_id": "passage-dongshan-geshan-tail",
+      "new_cards": 2
     },
     {
       "stage": 18,
@@ -618,9 +624,11 @@
         114
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0047同为葛缺字图；0050正文空但郭注续朱蟞六足有珠。珠蟞如肺、有目六足有珠，不画龟甲或强定珠位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0047同为葛缺字图；0050正文空但郭注续朱蟞六足有珠。珠蟞如肺、有目六足有珠，不画龟甲或强定珠位。",
+      "passage_id": "passage-dongshan-geshan-head",
+      "new_cards": 4
     },
     {
       "stage": 19,
@@ -646,9 +654,11 @@
         115
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0054实际114页末；犰狳兔状、鸟喙、䲭目、蛇尾，勿借现代犰狳有甲。眠与郭注佯死分开。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0054实际114页末；犰狳兔状、鸟喙、䲭目、蛇尾，勿借现代犰狳有甲。眠与郭注佯死分开。",
+      "passage_id": "passage-dongshan-yue",
+      "new_cards": 10
     },
     {
       "stage": 20,
@@ -670,9 +680,11 @@
         115
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-dufu",
+      "new_cards": 2
     },
     {
       "stage": 21,
@@ -1487,10 +1499,10 @@
   ],
   "limits": "已核16页段界、跨页出处与总计；不宣称逐字多版本校勘或东山阅读已完成。所有51阶段仍待双语、实体/关系、必要生图审形、字体及页面验收。电子捕获快照不改；分段规划不将42结构候选或56原报合计当阶段数。",
   "font_preflight": {
-    "missing_stage_title_characters": "䃌剡峩嶧烝盧耿葛跂踇踵隅麗",
+    "missing_stage_title_characters": "䃌剡烝盧耿跂踇踵隅麗",
     "status": "current_batch_covered_future_pending",
-    "limits": "前15阶段标题及所需字已补；后续36阶段的完整实体和注文仍需逐批预检。",
-    "missing_stage_title_count": 13,
+    "limits": "前20阶段标题及所需字已补；后续31阶段的完整实体和注文仍需逐批预检。",
+    "missing_stage_title_count": 10,
     "implemented_batch_missing_characters": "",
     "initial_missing_stage_title_characters": "䃌亝兒剡勃峩嶧曹樕烝犲番盧耿葛藟跂踇踵隅麗𧑤"
   },
@@ -1570,7 +1582,33 @@
     "place-dongshan-shaling",
     "beast-dongshan-lingling-kongsang-east",
     "place-dongshan-caoxi",
-    "plant-dongshan-gu-caoxi"
+    "plant-dongshan-gu-caoxi",
+    "place-dongshan-yigao",
+    "material-dongshan-gold-yigao",
+    "material-dongshan-jade-yigao",
+    "material-dongshan-white-earth-yigao",
+    "water-dongshan-yigao",
+    "water-dongshan-jinv",
+    "beast-dongshan-shen-yigao",
+    "beast-dongshan-yao-yigao",
+    "place-dongshan-geshan-tail",
+    "material-dongshan-dili-geshan-tail",
+    "place-dongshan-geshan-head",
+    "water-dongshan-li-geshan-head",
+    "water-dongshan-yu-marsh",
+    "beast-dongshan-zhubie-geshan-head",
+    "place-dongshan-yue",
+    "water-dongshan-zayu",
+    "water-dongshan-huang-yue",
+    "plant-dongshan-zi-yue",
+    "plant-dongshan-nan-yue",
+    "plant-dongshan-jing-yue",
+    "plant-dongshan-qi-yue",
+    "beast-dongshan-qiuyu-yue",
+    "animal-dongshan-zhong-yue",
+    "animal-dongshan-huang-insects-yue",
+    "place-dongshan-dufu",
+    "water-dongshan-unnamed-dufu"
   ],
   "passages": [
     {
@@ -1761,41 +1799,105 @@
         614
       ],
       "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-yigao",
+      "source_unit_ids": [
+        "source-04-0042",
+        "source-04-0043",
+        "source-04-0044"
+      ],
+      "source_span": [
+        614,
+        654
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-geshan-tail",
+      "source_unit_ids": [
+        "source-04-0045",
+        "source-04-0046"
+      ],
+      "source_span": [
+        654,
+        684
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-geshan-head",
+      "source_unit_ids": [
+        "source-04-0047",
+        "source-04-0048",
+        "source-04-0049",
+        "source-04-0050"
+      ],
+      "source_span": [
+        684,
+        740
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-yue",
+      "source_unit_ids": [
+        "source-04-0051",
+        "source-04-0052",
+        "source-04-0053",
+        "source-04-0054"
+      ],
+      "source_span": [
+        740,
+        806
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-dufu",
+      "source_unit_ids": [
+        "source-04-0055"
+      ],
+      "source_span": [
+        806,
+        821
+      ],
+      "status": "facsimile_reviewed"
     }
   ],
-  "batch_size": 10,
+  "batch_size": 5,
   "next": {
-    "name": "嶧皐之山",
+    "name": "耿山",
     "source_units": [
-      42,
-      44
+      56,
+      58
     ],
     "facsimile_pages": [
-      113
+      115
     ],
     "status": "pending_bilingual_entity_review"
   },
   "artwork_summary": {
-    "selected": 9,
-    "appearance_unknown": 4
+    "selected": 13,
+    "appearance_unknown": 6
   },
   "font_supplements": [
     {
       "family": "Shanhai Title",
       "source_family": "Noto Serif SC",
-      "characters": "㐨䎶䖪䖺䗤䚯亝亦似低借傳兒則勃占卡厚叩叫吟否呉呼咨圆堪妺姿尔弯從手拆拟捕損擅改斗旱旻昧曹植樕活涯添減湣漠激濼炭為犂犬犲狪猪獠琴瑟環番疗疫疾癰矿社祈科箴细羸胫腫膜臨蓋藟蚪蛙蝌蝠血裂見詨謂跨躯軨針针雅靈頰颗额餌鱅鱤鳍鳞鳴鸣鼻",
+      "characters": "㐨䎶䖪䖺䗤䚯亝亦仇伤似低佯借傳傷兒兔則勃占卡卵厚叩叫叶吟否呉呼咨圆堪壳妺姿学尔尖屬峩嶧廓弯彩從扇手拆拟捕損擅改敗斗斜旱旻昧普曹梓植樕氣活浅涯添減湣漠澧激濼炭為犂犬犰犲狪狭狳猪獠珧琴瑟環甲电番疗疠疫疾病癘癰眠矿社祈禽科等箴終细绎绿羸肺胫腫膜臨苗荆莬葛蓋藟蚌蚪蛙蜃蝌蝗蝠螽蟞血裂見觉詨謂警贝跨蹲躯軨轮針针铠雅雜靈頰颗额餌鱅鱤鳍鳞鳴鸣鼈鼻",
       "weights": [
         400,
         700
       ],
       "path": "frontend/public/fonts/shanhai-title-dongshan.woff2",
       "license": "frontend/public/fonts/noto-serif-sc-LICENSE.txt",
-      "source_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E3%90%A8%E4%8E%B6%E4%96%AA%E4%96%BA%E4%97%A4%E4%9A%AF%E4%BA%9D%E4%BA%A6%E4%BC%BC%E4%BD%8E%E5%80%9F%E5%82%B3%E5%85%92%E5%89%87%E5%8B%83%E5%8D%A0%E5%8D%A1%E5%8E%9A%E5%8F%A9%E5%8F%AB%E5%90%9F%E5%90%A6%E5%91%89%E5%91%BC%E5%92%A8%E5%9C%86%E5%A0%AA%E5%A6%BA%E5%A7%BF%E5%B0%94%E5%BC%AF%E5%BE%9E%E6%89%8B%E6%8B%86%E6%8B%9F%E6%8D%95%E6%90%8D%E6%93%85%E6%94%B9%E6%96%97%E6%97%B1%E6%97%BB%E6%98%A7%E6%9B%B9%E6%A4%8D%E6%A8%95%E6%B4%BB%E6%B6%AF%E6%B7%BB%E6%B8%9B%E6%B9%A3%E6%BC%A0%E6%BF%80%E6%BF%BC%E7%82%AD%E7%82%BA%E7%8A%82%E7%8A%AC%E7%8A%B2%E7%8B%AA%E7%8C%AA%E7%8D%A0%E7%90%B4%E7%91%9F%E7%92%B0%E7%95%AA%E7%96%97%E7%96%AB%E7%96%BE%E7%99%B0%E7%9F%BF%E7%A4%BE%E7%A5%88%E7%A7%91%E7%AE%B4%E7%BB%86%E7%BE%B8%E8%83%AB%E8%85%AB%E8%86%9C%E8%87%A8%E8%93%8B%E8%97%9F%E8%9A%AA%E8%9B%99%E8%9D%8C%E8%9D%A0%E8%A1%80%E8%A3%82%E8%A6%8B%E8%A9%A8%E8%AC%82%E8%B7%A8%E8%BA%AF%E8%BB%A8%E9%87%9D%E9%92%88%E9%9B%85%E9%9D%88%E9%A0%B0%E9%A2%97%E9%A2%9D%E9%A4%8C%E9%B1%85%E9%B1%A4%E9%B3%8D%E9%B3%9E%E9%B3%B4%E9%B8%A3%E9%BC%BB&display=swap",
-      "sha256": "97cb7a666e9a27cb70219af0c386d3d24d8c9dc244b1928797291ef830db6328"
+      "source_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E3%90%A8%E4%8E%B6%E4%96%AA%E4%96%BA%E4%97%A4%E4%9A%AF%E4%BA%9D%E4%BA%A6%E4%BB%87%E4%BC%A4%E4%BC%BC%E4%BD%8E%E4%BD%AF%E5%80%9F%E5%82%B3%E5%82%B7%E5%85%92%E5%85%94%E5%89%87%E5%8B%83%E5%8D%A0%E5%8D%A1%E5%8D%B5%E5%8E%9A%E5%8F%A9%E5%8F%AB%E5%8F%B6%E5%90%9F%E5%90%A6%E5%91%89%E5%91%BC%E5%92%A8%E5%9C%86%E5%A0%AA%E5%A3%B3%E5%A6%BA%E5%A7%BF%E5%AD%A6%E5%B0%94%E5%B0%96%E5%B1%AC%E5%B3%A9%E5%B6%A7%E5%BB%93%E5%BC%AF%E5%BD%A9%E5%BE%9E%E6%89%87%E6%89%8B%E6%8B%86%E6%8B%9F%E6%8D%95%E6%90%8D%E6%93%85%E6%94%B9%E6%95%97%E6%96%97%E6%96%9C%E6%97%B1%E6%97%BB%E6%98%A7%E6%99%AE%E6%9B%B9%E6%A2%93%E6%A4%8D%E6%A8%95%E6%B0%A3%E6%B4%BB%E6%B5%85%E6%B6%AF%E6%B7%BB%E6%B8%9B%E6%B9%A3%E6%BC%A0%E6%BE%A7%E6%BF%80%E6%BF%BC%E7%82%AD%E7%82%BA%E7%8A%82%E7%8A%AC%E7%8A%B0%E7%8A%B2%E7%8B%AA%E7%8B%AD%E7%8B%B3%E7%8C%AA%E7%8D%A0%E7%8F%A7%E7%90%B4%E7%91%9F%E7%92%B0%E7%94%B2%E7%94%B5%E7%95%AA%E7%96%97%E7%96%A0%E7%96%AB%E7%96%BE%E7%97%85%E7%99%98%E7%99%B0%E7%9C%A0%E7%9F%BF%E7%A4%BE%E7%A5%88%E7%A6%BD%E7%A7%91%E7%AD%89%E7%AE%B4%E7%B5%82%E7%BB%86%E7%BB%8E%E7%BB%BF%E7%BE%B8%E8%82%BA%E8%83%AB%E8%85%AB%E8%86%9C%E8%87%A8%E8%8B%97%E8%8D%86%E8%8E%AC%E8%91%9B%E8%93%8B%E8%97%9F%E8%9A%8C%E8%9A%AA%E8%9B%99%E8%9C%83%E8%9D%8C%E8%9D%97%E8%9D%A0%E8%9E%BD%E8%9F%9E%E8%A1%80%E8%A3%82%E8%A6%8B%E8%A7%89%E8%A9%A8%E8%AC%82%E8%AD%A6%E8%B4%9D%E8%B7%A8%E8%B9%B2%E8%BA%AF%E8%BB%A8%E8%BD%AE%E9%87%9D%E9%92%88%E9%93%A0%E9%9B%85%E9%9B%9C%E9%9D%88%E9%A0%B0%E9%A2%97%E9%A2%9D%E9%A4%8C%E9%B1%85%E9%B1%A4%E9%B3%8D%E9%B3%9E%E9%B3%B4%E9%B8%A3%E9%BC%88%E9%BC%BB&display=swap",
+      "sha256": "16cb478fb27b14b02b1d552b63c701d63d03444b072068dd3ae34ee4c3814f58"
     },
     {
       "family": "Atlas Eastern Rare",
-      "characters": "𣲵𧑤",
+      "characters": "𣲵𦬊𧑤",
       "weights": [
         400
       ],
@@ -1803,7 +1905,8 @@
       "license": "frontend/public/fonts/atlas-eastern-rare-LICENSE.txt",
       "source_url": "https://raw.githubusercontent.com/googlefonts/chinese/gh-pages/fonts/HanaMin/HanaMinB.ttf",
       "upstream_sha256": "829543436cdf7b4c6730e2af5806fa406f8ddf0d4b656e0cd49c58d4db1c8d3c",
-      "sha256": "d508a507af9c903da16f749ef9434762eed0e2b1dc83a2b71a5d3febd34efcd7",
+      "upstream_git_blob": "81c4df21cdbd2570fa92ac55c04b02198c4bf692",
+      "sha256": "2345a775e9799b8fb4700b901c432fb2883f992820f98bba3507d4e220a92a62",
       "limits": "独立字体族优先回退，静态400字形，600显示沿用400且禁用伪粗；不复制系统字体。"
     }
   ]

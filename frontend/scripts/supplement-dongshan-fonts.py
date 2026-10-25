@@ -1,9 +1,10 @@
-"""Build the two licensed opening-batch Eastern font subsets."""
+"""Build the two licensed Eastern font subsets from verified sources."""
 import hashlib
 import io
 import json
 import re
 import subprocess
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -11,8 +12,8 @@ from fontTools import subset
 from fontTools.ttLib import TTFont
 
 ROOT=Path(__file__).resolve().parents[1]
-TITLE='㐨䎶䖪䖺䗤䚯亝亦似低借傳兒則勃占卡厚叩叫吟否呉呼咨圆堪妺姿尔弯從手拆拟捕損擅改斗旱旻昧曹植樕活涯添減湣漠激濼炭為犂犬犲狪猪獠琴瑟環番疗疫疾癰矿社祈科箴细羸胫腫膜臨蓋藟蚪蛙蝌蝠血裂見詨謂跨躯軨針针雅靈頰颗额餌鱅鱤鳍鳞鳴鸣鼻'
-RARE='𣲵𧑤'
+TITLE='㐨䎶䖪䖺䗤䚯亝亦仇伤似低佯借傳傷兒兔則勃占卡卵厚叩叫叶吟否呉呼咨圆堪壳妺姿学尔尖屬峩嶧廓弯彩從扇手拆拟捕損擅改敗斗斜旱旻昧普曹梓植樕氣活浅涯添減湣漠澧激濼炭為犂犬犰犲狪狭狳猪獠珧琴瑟環甲电番疗疠疫疾病癘癰眠矿社祈禽科等箴終细绎绿羸肺胫腫膜臨苗荆莬葛蓋藟蚌蚪蛙蜃蝌蝗蝠螽蟞血裂見觉詨謂警贝跨蹲躯軨轮針针铠雅雜靈頰颗额餌鱅鱤鳍鳞鳴鸣鼈鼻'
+RARE='𣲵𦬊𧑤'
 url='https://fonts.googleapis.com/css2?'+urlencode({'family':'Noto Serif SC:wght@400..700','text':TITLE,'display':'swap'})
 agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
 css=urlopen(Request(url,headers={'User-Agent':agent}),timeout=30).read().decode()
@@ -25,11 +26,25 @@ target=ROOT/'public/fonts/shanhai-title-dongshan.woff2'
 target.write_bytes(data)
 print('Eastern title font',len(TITLE),len(data),hashlib.sha256(data).hexdigest(),flush=True)
 BASE='https://raw.githubusercontent.com/googlefonts/chinese/gh-pages/fonts/HanaMin/'
-license_text=urlopen(BASE+'LICENSE.txt',timeout=60).read().decode('utf-8')
+license_path=ROOT/'public/fonts/atlas-eastern-rare-LICENSE.txt'
+license_text=license_path.read_text(encoding='utf-8').split('\n\n',1)[1] if license_path.exists() else urlopen(BASE+'LICENSE.txt',timeout=60).read().decode('utf-8')
 license_text='\n'.join(line.rstrip() for line in license_text.splitlines())+'\n'
 assert 'Unlimited permission' in license_text and 'Hanazono' in license_text
-source=subprocess.check_output(['rtk','proxy','curl.exe','--fail','--location','--retry','2','--connect-timeout','15','--max-time','90','--silent',BASE+'HanaMinB.ttf'])
+source_size=30739236
+source_blob='81c4df21cdbd2570fa92ac55c04b02198c4bf692'
+def font_part(bounds):
+    first,last=bounds
+    for attempt in range(2):
+        part=subprocess.run(['rtk','proxy','curl.exe','--fail','--location','--range',f'{first}-{last}','--connect-timeout','10','--max-time','30','--silent','--show-error',BASE+'HanaMinB.ttf'],capture_output=True)
+        if part.returncode==0 and len(part.stdout)==last-first+1:return part.stdout
+    raise RuntimeError(f'Incomplete font range {first}-{last}; existing subset retained.')
+chunk=1024*1024
+bounds=[(start,min(start+chunk,source_size)-1) for start in range(0,source_size,chunk)]
+with ThreadPoolExecutor(max_workers=6) as pool:source=b''.join(pool.map(font_part,bounds))
+assert len(source)==source_size
+assert hashlib.sha1(b'blob '+str(len(source)).encode()+b'\0'+source).hexdigest()==source_blob
 assert hashlib.sha256(source).hexdigest()=='829543436cdf7b4c6730e2af5806fa406f8ddf0d4b656e0cd49c58d4db1c8d3c'
+print('Pinned source verified',len(source),source_blob,flush=True)
 rare=TTFont(io.BytesIO(source))
 assert set(map(ord,RARE))<=set(rare.getBestCmap())
 options=subset.Options();options.layout_features=[];options.layout_closure=False
@@ -57,7 +72,7 @@ for name in ['exploration','myth-world']:
 path=ROOT.parent/'data/dongshan-edition-review.json';review=json.loads(path.read_text(encoding='utf-8'))
 review['font_supplements']=[
 dict(family='Shanhai Title',source_family='Noto Serif SC',characters=TITLE,weights=[400,700],path='frontend/public/fonts/shanhai-title-dongshan.woff2',license='frontend/public/fonts/noto-serif-sc-LICENSE.txt',source_url=url,sha256=hashlib.sha256(data).hexdigest()),
-dict(family='Atlas Eastern Rare',characters=RARE,weights=[400],path='frontend/public/fonts/atlas-eastern-rare.woff2',license='frontend/public/fonts/atlas-eastern-rare-LICENSE.txt',source_url=BASE+'HanaMinB.ttf',upstream_sha256=hashlib.sha256(source).hexdigest(),sha256=hashlib.sha256(rare_target.read_bytes()).hexdigest(),limits='独立字体族优先回退，静态400字形，600显示沿用400且禁用伪粗；不复制系统字体。')]
+dict(family='Atlas Eastern Rare',characters=RARE,weights=[400],path='frontend/public/fonts/atlas-eastern-rare.woff2',license='frontend/public/fonts/atlas-eastern-rare-LICENSE.txt',source_url=BASE+'HanaMinB.ttf',upstream_sha256=hashlib.sha256(source).hexdigest(),upstream_git_blob=source_blob,sha256=hashlib.sha256(rare_target.read_bytes()).hexdigest(),limits='独立字体族优先回退，静态400字形，600显示沿用400且禁用伪粗；不复制系统字体。')]
 bundled=set()
 for font_path in (ROOT/'public/fonts').glob('*.woff2'):bundled.update(TTFont(font_path).getBestCmap())
 preflight=review['font_preflight']
@@ -66,6 +81,6 @@ preflight['missing_stage_title_characters']=''.join(sorted({c for stage in revie
 preflight['missing_stage_title_count']=len(preflight['missing_stage_title_characters'])
 preflight['status']='current_batch_covered_future_pending'
 review['font_preflight']['implemented_batch_missing_characters']=''
-review['font_preflight']['limits']='前15阶段标题及所需字已补；后续36阶段的完整实体和注文仍需逐批预检。'
+review['font_preflight']['limits']='前20阶段标题及所需字已补；后续31阶段的完整实体和注文仍需逐批预检。'
 path.write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Eastern rare font',len(RARE),rare_target.stat().st_size,hashlib.sha256(rare_target.read_bytes()).hexdigest(),flush=True)

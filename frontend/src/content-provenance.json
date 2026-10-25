@@ -698,6 +698,18 @@
   "beast-dongshan-lingling-kongsang-east": {
     "family": "shanhaijing"
   },
+  "beast-dongshan-shen-yigao": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-yao-yigao": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-zhubie-geshan-head": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-qiuyu-yue": {
+    "family": "shanhaijing"
+  },
   "place-qingqiu": {
     "family": "shanhaijing"
   },
@@ -2717,6 +2729,51 @@
   "plant-dongshan-gu-caoxi": {
     "family": "shanhaijing"
   },
+  "material-dongshan-gold-yigao": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-yigao": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-white-earth-yigao": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-yigao": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-jinv": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-dili-geshan-tail": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-li-geshan-head": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-yu-marsh": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-zayu": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-huang-yue": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-zi-yue": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-nan-yue": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-jing-yue": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-qi-yue": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-unnamed-dufu": {
+    "family": "shanhaijing"
+  },
   "passage-nanshan-zhaoyao": {
     "family": "shanhaijing"
   },
@@ -3411,6 +3468,21 @@
     "family": "shanhaijing"
   },
   "passage-dongshan-caoxi": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-yigao": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-geshan-tail": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-geshan-head": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-yue": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-dufu": {
     "family": "shanhaijing"
   },
   "place-nanshan-tangting": {
@@ -4389,6 +4461,27 @@
     "family": "shanhaijing"
   },
   "place-dongshan-caoxi": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-yigao": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-geshan-tail": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-geshan-head": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-yue": {
+    "family": "shanhaijing"
+  },
+  "animal-dongshan-zhong-yue": {
+    "family": "shanhaijing"
+  },
+  "animal-dongshan-huang-insects-yue": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-dufu": {
     "family": "shanhaijing"
   },
   "01-01": {

@@ -252,7 +252,7 @@ def generate(check=False):
             '- `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。',
             '- `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。',
             f'- `python data/build_xishan.py`：合并西山经{len(western_passages)}段与{len(western_cards)}张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。',
-            '- `python data/build_dongshan.py`：合并东山前15段/76双语卡，保留其他篇与东山既有稳定ID；东山插画通过prepare-nanshan-artwork.py --chapter dongshan导出，之后重建inventory/audit。',
+            '- `python data/build_dongshan.py`：合并东山前20段/102双语卡，保留其他篇与东山既有稳定ID；东山插画通过prepare-nanshan-artwork.py --chapter dongshan导出，之后重建inventory/audit。',
             '- `python data/build_beishan.py`：合并已核北山经全篇92段及507张双语卡（含复用諸犍、精衛、發鳩），保留其他篇目与旧ID；`python frontend/scripts/prepare-nanshan-artwork.py --chapter beishan`仅导出已审图。随后重建全书清单和本盘点。',
             '- `python frontend/scripts/prepare-nanshan-artwork.py --chapter xishan`：仅导出已审核西山经插画。随后运行全书清单和本盘点构建器更新统计。',
             '- `python data/audit_shanhaijing.py`：离线重建本清单和网页来源分类。',
