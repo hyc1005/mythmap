@@ -1,0 +1,6740 @@
+{
+  "chapter": 5,
+  "edition": "《山海經（四部叢刊本）》卷第五，郭氏傳",
+  "status": "planned_not_implemented",
+  "scope": "全篇录文段界规划，首五段影印段界核定；全部阶段仍待双语、实体关系、必要配图、字体及页面接入。",
+  "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
+  "snapshot_sha256": "0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce",
+  "scan_pages": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "scan_manifest": "data/reference-scans/zhongshan/sources.json",
+  "heading_unit_ids": [
+    "source-05-0001"
+  ],
+  "source_unit_page_corrections": {
+    "source-05-0009": 2,
+    "source-05-0018": 3,
+    "source-05-0027": 4,
+    "source-05-0036": 5,
+    "source-05-0045": 6,
+    "source-05-0162": 19,
+    "source-05-0603": 68,
+    "source-05-0612": 69
+  },
+  "source_blocks": 614,
+  "planned_content_blocks": 613,
+  "commentary_only_unit_ids": [
+    "source-05-0055",
+    "source-05-0056",
+    "source-05-0095",
+    "source-05-0108",
+    "source-05-0124",
+    "source-05-0133",
+    "source-05-0155",
+    "source-05-0157",
+    "source-05-0193",
+    "source-05-0230",
+    "source-05-0266",
+    "source-05-0286",
+    "source-05-0309",
+    "source-05-0315",
+    "source-05-0381",
+    "source-05-0407",
+    "source-05-0458",
+    "source-05-0464",
+    "source-05-0495",
+    "source-05-0506",
+    "source-05-0563",
+    "source-05-0564",
+    "source-05-0565",
+    "source-05-0566",
+    "source-05-0567",
+    "source-05-0568",
+    "source-05-0569",
+    "source-05-0570",
+    "source-05-0573"
+  ],
+  "planned_stages": 212,
+  "implemented_stages": 0,
+  "remaining_stages": 212,
+  "stage_counts": [
+    16,
+    10,
+    6,
+    10,
+    16,
+    15,
+    20,
+    24,
+    17,
+    10,
+    49,
+    16,
+    3
+  ],
+  "named_mountains": [
+    15,
+    9,
+    5,
+    9,
+    15,
+    14,
+    19,
+    23,
+    16,
+    9,
+    48,
+    15
+  ],
+  "reported_mountains": [
+    15,
+    9,
+    5,
+    9,
+    16,
+    14,
+    19,
+    23,
+    16,
+    9,
+    48,
+    15
+  ],
+  "reported_li": [
+    6670,
+    1670,
+    440,
+    1670,
+    2982,
+    790,
+    1184,
+    2890,
+    3500,
+    267,
+    3732,
+    2800
+  ],
+  "closing_total": {
+    "reported_mountains": 197,
+    "reported_li": 21371,
+    "named_mountain_sum": 197,
+    "range_reported_mountain_sum": 198,
+    "mountain_difference": 1,
+    "range_li_sum": 28595,
+    "li_difference": 7224,
+    "world_reported_mountains": 5370,
+    "world_reported_li": 64056,
+    "five_books_reported_characters": 15503
+  },
+  "glyph_issues": [
+    {
+      "source_unit_id": "source-05-0026",
+      "kind": "missing_image_glyph",
+      "captured_text": "有草焉名曰⟦缺字图:鬼⟧草其葉如葵而赤莖其秀如禾服之",
+      "captured_commentary": [],
+      "status": "facsimile_reading_confirmed_pending_reading_layer",
+      "facsimile_reading": "鬼"
+    },
+    {
+      "source_unit_id": "source-05-0159",
+      "kind": "missing_image_glyph",
+      "captured_text": "二千九百八十二里升山⟦缺字图:冢⟧也其祠禮太牢嬰用吉",
+      "captured_commentary": [],
+      "status": "facsimile_reading_confirmed_pending_reading_layer",
+      "facsimile_reading": "冢"
+    },
+    {
+      "source_unit_id": "source-05-0196",
+      "kind": "missing_image_glyph",
+      "captured_text": "名曰墦⟦缺字图:冢⟧穀水出焉而東流注于洛",
+      "captured_commentary": [
+        "音番",
+        "今榖水出谷陽谷東北至"
+      ],
+      "status": "preserved_pending_reading_layer_review"
+    },
+    {
+      "source_unit_id": "source-05-0290",
+      "kind": "missing_image_glyph",
+      "captured_text": "苦山少室太室皆⟦缺字图:冢⟧也其祠之太牢之",
+      "captured_commentary": [
+        "或曰所以盛玉藻藉也"
+      ],
+      "status": "preserved_pending_reading_layer_review"
+    },
+    {
+      "source_unit_id": "source-05-0308",
+      "kind": "replacement_character",
+      "captured_text": "白鷮多翟多�",
+      "captured_commentary": [
+        "鷮似雉而長尾走且鳴音驕",
+        "�大如鵰紫綠色長頭赤喙食蝠蛇頭雄"
+      ],
+      "status": "preserved_pending_reading_layer_review"
+    },
+    {
+      "source_unit_id": "source-05-0410",
+      "kind": "missing_image_glyph",
+      "captured_text": "瘞糈用稌文山勾檷風雨醜之山是皆⟦缺字图:冢⟧也其祠之",
+      "captured_commentary": [],
+      "status": "preserved_pending_reading_layer_review"
+    },
+    {
+      "source_unit_id": "source-05-0431",
+      "kind": "missing_image_glyph",
+      "captured_text": "糈用五種之糈堵山⟦缺字图:冢⟧也其祠之少牢具羞酒祠嬰",
+      "captured_commentary": [],
+      "status": "preserved_pending_reading_layer_review"
+    },
+    {
+      "source_unit_id": "source-05-0453",
+      "kind": "missing_image_glyph",
+      "captured_text": "又東北八百里曰⟦缺字图:兎⟧牀之山其陽多鐵其木多藷藇",
+      "captured_commentary": [],
+      "status": "preserved_pending_reading_layer_review"
+    },
+    {
+      "source_unit_id": "source-05-0539",
+      "kind": "replacement_character",
+      "captured_text": "天下大風",
+      "captured_commentary": [
+        "𧲂一作�音瓶"
+      ],
+      "status": "preserved_pending_reading_layer_review"
+    },
+    {
+      "source_unit_id": "source-05-0544",
+      "kind": "missing_image_glyph",
+      "captured_text": "山⟦缺字图:冢⟧也皆倒祠羞毛少牢嬰毛吉玉",
+      "captured_commentary": [],
+      "status": "preserved_pending_reading_layer_review"
+    },
+    {
+      "source_unit_id": "source-05-0576",
+      "kind": "missing_image_glyph",
+      "captured_text": "⟦缺字图:⿳𣅽大氺--𣊻⟧雨是多怪神狀如人而載蛇左右手操蛇多怪鳥",
+      "captured_commentary": [],
+      "status": "preserved_pending_reading_layer_review"
+    },
+    {
+      "source_unit_id": "source-05-0611",
+      "kind": "missing_image_glyph",
+      "captured_text": "矛之所發也刀鎩之所起也⟦缺字图:能⟧者有餘拙者不足封",
+      "captured_commentary": [],
+      "status": "facsimile_reading_confirmed_pending_reading_layer",
+      "facsimile_reading": "能"
+    }
+  ],
+  "first_batch": [
+    "r01-gancao",
+    "r01-lier",
+    "r01-quzhu",
+    "r01-conglong",
+    "r01-wo"
+  ],
+  "next": {
+    "name": "甘棗之山",
+    "source_units": [
+      2,
+      6
+    ],
+    "facsimile_pages": [
+      2
+    ],
+    "status": "pending_bilingual_entity_review"
+  },
+  "stage_plan": [
+    {
+      "stage": 1,
+      "slug": "r01-gancao",
+      "name": "甘棗之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        2,
+        6
+      ],
+      "source_unit_ids": [
+        "source-05-0002",
+        "source-05-0003",
+        "source-05-0004",
+        "source-05-0005",
+        "source-05-0006"
+      ],
+      "source_span": [
+        8,
+        76
+      ],
+      "facsimile_pages": [
+        2
+      ],
+      "captured_pages": [
+        2
+      ],
+      "boundary_status": "facsimile_boundary_reviewed",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "共水西注河；㔮为𤠢鼠状文题，郭注明言鼠形未详，不强定现代鼠种；医食功效仅作古述。"
+    },
+    {
+      "stage": 2,
+      "slug": "r01-lier",
+      "name": "歴兒之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        7,
+        9
+      ],
+      "source_unit_ids": [
+        "source-05-0007",
+        "source-05-0008",
+        "source-05-0009"
+      ],
+      "source_span": [
+        76,
+        113
+      ],
+      "facsimile_pages": [
+        2
+      ],
+      "captured_pages": [
+        2,
+        3
+      ],
+      "boundary_status": "facsimile_boundary_reviewed",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "櫔木方茎圆叶黄华而毛，实如揀；揀木音注跨8—9，9实在2页末，不并入渠猪山。"
+    },
+    {
+      "stage": 3,
+      "slug": "r01-quzhu",
+      "name": "渠豬之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        10,
+        12
+      ],
+      "source_unit_ids": [
+        "source-05-0010",
+        "source-05-0011",
+        "source-05-0012"
+      ],
+      "source_span": [
+        113,
+        158
+      ],
+      "facsimile_pages": [
+        3
+      ],
+      "captured_pages": [
+        3
+      ],
+      "boundary_status": "facsimile_boundary_reviewed",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "豪鱼如鮪、赤喙尾赤羽；郭注鮪似鱣，羽字不自动推成鸟翼或鸭首。"
+    },
+    {
+      "stage": 4,
+      "slug": "r01-conglong",
+      "name": "葱聾之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        13,
+        14
+      ],
+      "source_unit_ids": [
+        "source-05-0013",
+        "source-05-0014"
+      ],
+      "source_span": [
+        158,
+        182
+      ],
+      "facsimile_pages": [
+        3
+      ],
+      "captured_pages": [
+        3
+      ],
+      "boundary_status": "facsimile_boundary_reviewed",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "白垩黑青黄垩为颜色物产，不拆为四种生物。与次五同名葱聾山分开。"
+    },
+    {
+      "stage": 5,
+      "slug": "r01-wo",
+      "name": "涹山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        15,
+        15
+      ],
+      "source_unit_ids": [
+        "source-05-0015"
+      ],
+      "source_span": [
+        182,
+        199
+      ],
+      "facsimile_pages": [
+        3
+      ],
+      "captured_pages": [
+        3
+      ],
+      "boundary_status": "facsimile_boundary_reviewed",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "涹山阳面多赤铜、阴面多铁；不合并其他同音山。"
+    },
+    {
+      "stage": 6,
+      "slug": "r01-tuohu",
+      "name": "脱扈之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        16,
+        18
+      ],
+      "source_unit_ids": [
+        "source-05-0016",
+        "source-05-0017",
+        "source-05-0018"
+      ],
+      "source_span": [
+        199,
+        238
+      ],
+      "facsimile_pages": [
+        3
+      ],
+      "captured_pages": [
+        3,
+        4
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 7,
+      "slug": "r01-jinxing",
+      "name": "金星之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        19,
+        20
+      ],
+      "source_unit_ids": [
+        "source-05-0019",
+        "source-05-0020"
+      ],
+      "source_span": [
+        238,
+        260
+      ],
+      "facsimile_pages": [
+        4
+      ],
+      "captured_pages": [
+        4
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 8,
+      "slug": "r01-taiwei",
+      "name": "泰威之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        21,
+        22
+      ],
+      "source_unit_ids": [
+        "source-05-0021",
+        "source-05-0022"
+      ],
+      "source_span": [
+        260,
+        281
+      ],
+      "facsimile_pages": [
+        4
+      ],
+      "captured_pages": [
+        4
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 9,
+      "slug": "r01-jianggu",
+      "name": "橿谷之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        23,
+        23
+      ],
+      "source_unit_ids": [
+        "source-05-0023"
+      ],
+      "source_span": [
+        281,
+        296
+      ],
+      "facsimile_pages": [
+        4
+      ],
+      "captured_pages": [
+        4
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 10,
+      "slug": "r01-wulin",
+      "name": "吳林之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        24,
+        24
+      ],
+      "source_unit_ids": [
+        "source-05-0024"
+      ],
+      "source_span": [
+        296,
+        312
+      ],
+      "facsimile_pages": [
+        4
+      ],
+      "captured_pages": [
+        4
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 11,
+      "slug": "r01-niushou",
+      "name": "牛首之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        25,
+        28
+      ],
+      "source_unit_ids": [
+        "source-05-0025",
+        "source-05-0026",
+        "source-05-0027",
+        "source-05-0028"
+      ],
+      "source_span": [
+        312,
+        375
+      ],
+      "facsimile_pages": [
+        4,
+        5
+      ],
+      "captured_pages": [
+        4,
+        5
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "鬼草缺字图可据4页读鬼；飞鱼本段如鲋，不并次三騩山豚状赤文飞鱼或其他篇飞鱼。"
+    },
+    {
+      "stage": 12,
+      "slug": "r01-huo",
+      "name": "霍山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        29,
+        31
+      ],
+      "source_unit_ids": [
+        "source-05-0029",
+        "source-05-0030",
+        "source-05-0031"
+      ],
+      "source_span": [
+        375,
+        409
+      ],
+      "facsimile_pages": [
+        5
+      ],
+      "captured_pages": [
+        5
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "霍山郭注列举多处同名地并明言非一，不绑定现代单一坐标；朏朏狸状白尾有鬣。"
+    },
+    {
+      "stage": 13,
+      "slug": "r01-hegu",
+      "name": "合谷之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        32,
+        32
+      ],
+      "source_unit_ids": [
+        "source-05-0032"
+      ],
+      "source_span": [
+        409,
+        424
+      ],
+      "facsimile_pages": [
+        5
+      ],
+      "captured_pages": [
+        5
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 14,
+      "slug": "r01-yin",
+      "name": "隂山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        33,
+        35
+      ],
+      "source_unit_ids": [
+        "source-05-0033",
+        "source-05-0034",
+        "source-05-0035"
+      ],
+      "source_span": [
+        424,
+        463
+      ],
+      "facsimile_pages": [
+        5
+      ],
+      "captured_pages": [
+        5
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 15,
+      "slug": "r01-gudeng",
+      "name": "皷鐙之山",
+      "range": 1,
+      "kind": "mountain",
+      "source_units": [
+        36,
+        37
+      ],
+      "source_unit_ids": [
+        "source-05-0036",
+        "source-05-0037"
+      ],
+      "source_span": [
+        463,
+        497
+      ],
+      "facsimile_pages": [
+        5,
+        6
+      ],
+      "captured_pages": [
+        6
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 16,
+      "slug": "r01-summary",
+      "name": "次1总括与祭礼",
+      "range": 1,
+      "kind": "summary",
+      "source_units": [
+        38,
+        42
+      ],
+      "source_unit_ids": [
+        "source-05-0038",
+        "source-05-0039",
+        "source-05-0040",
+        "source-05-0041",
+        "source-05-0042"
+      ],
+      "source_span": [
+        497,
+        578
+      ],
+      "facsimile_pages": [
+        6
+      ],
+      "captured_pages": [
+        6
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "底本十五山、六千六百七十里照录，不因里程异常自行纠正；历儿为冢，其余十三山祭礼照录。"
+    },
+    {
+      "stage": 17,
+      "slug": "r02-huizhu",
+      "name": "煇諸之山",
+      "range": 2,
+      "kind": "mountain",
+      "source_units": [
+        43,
+        44
+      ],
+      "source_unit_ids": [
+        "source-05-0043",
+        "source-05-0044"
+      ],
+      "source_span": [
+        578,
+        604
+      ],
+      "facsimile_pages": [
+        6
+      ],
+      "captured_pages": [
+        6
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 18,
+      "slug": "r02-fashi",
+      "name": "發視之山",
+      "range": 2,
+      "kind": "mountain",
+      "source_units": [
+        45,
+        46
+      ],
+      "source_unit_ids": [
+        "source-05-0045",
+        "source-05-0046"
+      ],
+      "source_span": [
+        604,
+        638
+      ],
+      "facsimile_pages": [
+        6,
+        7
+      ],
+      "captured_pages": [
+        7
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 19,
+      "slug": "r02-hao",
+      "name": "豪山",
+      "range": 2,
+      "kind": "mountain",
+      "source_units": [
+        47,
+        47
+      ],
+      "source_unit_ids": [
+        "source-05-0047"
+      ],
+      "source_span": [
+        638,
+        655
+      ],
+      "facsimile_pages": [
+        7
+      ],
+      "captured_pages": [
+        7
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 20,
+      "slug": "r02-xian",
+      "name": "鮮山",
+      "range": 2,
+      "kind": "mountain",
+      "source_units": [
+        48,
+        50
+      ],
+      "source_unit_ids": [
+        "source-05-0048",
+        "source-05-0049",
+        "source-05-0050"
+      ],
+      "source_span": [
+        655,
+        702
+      ],
+      "facsimile_pages": [
+        7
+      ],
+      "captured_pages": [
+        7
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 21,
+      "slug": "r02-yang",
+      "name": "陽山",
+      "range": 2,
+      "kind": "mountain",
+      "source_units": [
+        51,
+        53
+      ],
+      "source_unit_ids": [
+        "source-05-0051",
+        "source-05-0052",
+        "source-05-0053"
+      ],
+      "source_span": [
+        702,
+        755
+      ],
+      "facsimile_pages": [
+        7
+      ],
+      "captured_pages": [
+        7
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 22,
+      "slug": "r02-kunwu",
+      "name": "昆吾之山",
+      "range": 2,
+      "kind": "mountain",
+      "source_units": [
+        54,
+        58
+      ],
+      "source_unit_ids": [
+        "source-05-0054",
+        "source-05-0055",
+        "source-05-0056",
+        "source-05-0057",
+        "source-05-0058"
+      ],
+      "source_span": [
+        755,
+        792
+      ],
+      "facsimile_pages": [
+        8
+      ],
+      "captured_pages": [
+        8
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "昆吾铜剑长注跨55—57，与蠪蚳彘状有角形貌分开；不混西山同名蠪蚳的人面羊角。"
+    },
+    {
+      "stage": 23,
+      "slug": "r02-jian",
+      "name": "葌山",
+      "range": 2,
+      "kind": "mountain",
+      "source_units": [
+        59,
+        61
+      ],
+      "source_unit_ids": [
+        "source-05-0059",
+        "source-05-0060",
+        "source-05-0061"
+      ],
+      "source_span": [
+        792,
+        841
+      ],
+      "facsimile_pages": [
+        8
+      ],
+      "captured_pages": [
+        8
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 24,
+      "slug": "r02-dusu",
+      "name": "獨蘇之山",
+      "range": 2,
+      "kind": "mountain",
+      "source_units": [
+        62,
+        62
+      ],
+      "source_unit_ids": [
+        "source-05-0062"
+      ],
+      "source_span": [
+        841,
+        859
+      ],
+      "facsimile_pages": [
+        8
+      ],
+      "captured_pages": [
+        8
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 25,
+      "slug": "r02-manqu",
+      "name": "蔓渠之山",
+      "range": 2,
+      "kind": "mountain",
+      "source_units": [
+        63,
+        66
+      ],
+      "source_unit_ids": [
+        "source-05-0063",
+        "source-05-0064",
+        "source-05-0065",
+        "source-05-0066"
+      ],
+      "source_span": [
+        859,
+        912
+      ],
+      "facsimile_pages": [
+        9
+      ],
+      "captured_pages": [
+        9
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 26,
+      "slug": "r02-summary",
+      "name": "次2总括与祭礼",
+      "range": 2,
+      "kind": "summary",
+      "source_units": [
+        67,
+        69
+      ],
+      "source_unit_ids": [
+        "source-05-0067",
+        "source-05-0068",
+        "source-05-0069"
+      ],
+      "source_span": [
+        912,
+        958
+      ],
+      "facsimile_pages": [
+        9
+      ],
+      "captured_pages": [
+        9
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 27,
+      "slug": "r03-aoan",
+      "name": "敖岸之山",
+      "range": 3,
+      "kind": "mountain",
+      "source_units": [
+        70,
+        73
+      ],
+      "source_unit_ids": [
+        "source-05-0070",
+        "source-05-0071",
+        "source-05-0072",
+        "source-05-0073"
+      ],
+      "source_span": [
+        958,
+        1025
+      ],
+      "facsimile_pages": [
+        9,
+        10
+      ],
+      "captured_pages": [
+        9,
+        10
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 28,
+      "slug": "r03-qingyao",
+      "name": "青要之山",
+      "range": 3,
+      "kind": "mountain",
+      "source_units": [
+        74,
+        84
+      ],
+      "source_unit_ids": [
+        "source-05-0074",
+        "source-05-0075",
+        "source-05-0076",
+        "source-05-0077",
+        "source-05-0078",
+        "source-05-0079",
+        "source-05-0080",
+        "source-05-0081",
+        "source-05-0082",
+        "source-05-0083",
+        "source-05-0084"
+      ],
+      "source_span": [
+        1025,
+        1157
+      ],
+      "facsimile_pages": [
+        10,
+        11
+      ],
+      "captured_pages": [
+        10,
+        11
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "青要武罗人面豹文小腰白齿、耳穿鐻；鴢鸟凫状青身朱目赤尾。鲧化注文另存，不把郭注比音添作器官。"
+    },
+    {
+      "stage": 29,
+      "slug": "r03-gui",
+      "name": "騩山",
+      "range": 3,
+      "kind": "mountain",
+      "source_units": [
+        85,
+        87
+      ],
+      "source_unit_ids": [
+        "source-05-0085",
+        "source-05-0086",
+        "source-05-0087"
+      ],
+      "source_span": [
+        1157,
+        1209
+      ],
+      "facsimile_pages": [
+        11
+      ],
+      "captured_pages": [
+        11
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 30,
+      "slug": "r03-yisu",
+      "name": "冝蘇之山",
+      "range": 3,
+      "kind": "mountain",
+      "source_units": [
+        88,
+        89
+      ],
+      "source_unit_ids": [
+        "source-05-0088",
+        "source-05-0089"
+      ],
+      "source_span": [
+        1209,
+        1247
+      ],
+      "facsimile_pages": [
+        11
+      ],
+      "captured_pages": [
+        11
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 31,
+      "slug": "r03-he",
+      "name": "和山",
+      "range": 3,
+      "kind": "mountain",
+      "source_units": [
+        90,
+        95
+      ],
+      "source_unit_ids": [
+        "source-05-0090",
+        "source-05-0091",
+        "source-05-0092",
+        "source-05-0093",
+        "source-05-0094",
+        "source-05-0095"
+      ],
+      "source_span": [
+        1247,
+        1324
+      ],
+      "facsimile_pages": [
+        12
+      ],
+      "captured_pages": [
+        12
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "和山泰逢人状虎尾；郭注或作雀尾为异说，不能两种尾部同时叠加。"
+    },
+    {
+      "stage": 32,
+      "slug": "r03-summary",
+      "name": "次3总括与祭礼",
+      "range": 3,
+      "kind": "summary",
+      "source_units": [
+        96,
+        98
+      ],
+      "source_unit_ids": [
+        "source-05-0096",
+        "source-05-0097",
+        "source-05-0098"
+      ],
+      "source_span": [
+        1324,
+        1375
+      ],
+      "facsimile_pages": [
+        12
+      ],
+      "captured_pages": [
+        12
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 33,
+      "slug": "r04-luti",
+      "name": "鹿蹄之山",
+      "range": 4,
+      "kind": "mountain",
+      "source_units": [
+        99,
+        100
+      ],
+      "source_unit_ids": [
+        "source-05-0099",
+        "source-05-0100"
+      ],
+      "source_span": [
+        1375,
+        1411
+      ],
+      "facsimile_pages": [
+        13
+      ],
+      "captured_pages": [
+        13
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "鹿蹄甘水北注洛，泠石郭注未闻；水名、物产与异说分存。"
+    },
+    {
+      "stage": 34,
+      "slug": "r04-fuzhu",
+      "name": "扶豬之山",
+      "range": 4,
+      "kind": "mountain",
+      "source_units": [
+        101,
+        103
+      ],
+      "source_unit_ids": [
+        "source-05-0101",
+        "source-05-0102",
+        "source-05-0103"
+      ],
+      "source_span": [
+        1411,
+        1454
+      ],
+      "facsimile_pages": [
+        13
+      ],
+      "captured_pages": [
+        13
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 35,
+      "slug": "r04-li",
+      "name": "釐山",
+      "range": 4,
+      "kind": "mountain",
+      "source_units": [
+        104,
+        108
+      ],
+      "source_unit_ids": [
+        "source-05-0104",
+        "source-05-0105",
+        "source-05-0106",
+        "source-05-0107",
+        "source-05-0108"
+      ],
+      "source_span": [
+        1454,
+        1526
+      ],
+      "facsimile_pages": [
+        13,
+        14
+      ],
+      "captured_pages": [
+        13,
+        14
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "犀渠牛状苍身，𤢺如獳犬有鳞、毛如彘鬣；𤢺生鳞间注文跨107—108。滽滽水与次三同音水暂分出处，不凭同名判定现代水系。"
+    },
+    {
+      "stage": 36,
+      "slug": "r04-jiwei",
+      "name": "箕尾之山",
+      "range": 4,
+      "kind": "mountain",
+      "source_units": [
+        109,
+        110
+      ],
+      "source_unit_ids": [
+        "source-05-0109",
+        "source-05-0110"
+      ],
+      "source_span": [
+        1526,
+        1548
+      ],
+      "facsimile_pages": [
+        14
+      ],
+      "captured_pages": [
+        14
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 37,
+      "slug": "r04-bing",
+      "name": "柄山",
+      "range": 4,
+      "kind": "mountain",
+      "source_units": [
+        111,
+        113
+      ],
+      "source_unit_ids": [
+        "source-05-0111",
+        "source-05-0112",
+        "source-05-0113"
+      ],
+      "source_span": [
+        1548,
+        1605
+      ],
+      "facsimile_pages": [
+        14
+      ],
+      "captured_pages": [
+        14
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "柄山滔雕水北注洛，其中多羬羊照录；不因水文叙述擅改为鱼种或合并其他篇羬羊。"
+    },
+    {
+      "stage": 38,
+      "slug": "r04-baibian",
+      "name": "白邊之山",
+      "range": 4,
+      "kind": "mountain",
+      "source_units": [
+        114,
+        115
+      ],
+      "source_unit_ids": [
+        "source-05-0114",
+        "source-05-0115"
+      ],
+      "source_span": [
+        1605,
+        1626
+      ],
+      "facsimile_pages": [
+        14
+      ],
+      "captured_pages": [
+        14
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 39,
+      "slug": "r04-xionger",
+      "name": "熊耳之山",
+      "range": 4,
+      "kind": "mountain",
+      "source_units": [
+        116,
+        119
+      ],
+      "source_unit_ids": [
+        "source-05-0116",
+        "source-05-0117",
+        "source-05-0118",
+        "source-05-0119"
+      ],
+      "source_span": [
+        1626,
+        1682
+      ],
+      "facsimile_pages": [
+        14,
+        15
+      ],
+      "captured_pages": [
+        14,
+        15
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 40,
+      "slug": "r04-mu",
+      "name": "牡山",
+      "range": 4,
+      "kind": "mountain",
+      "source_units": [
+        120,
+        121
+      ],
+      "source_unit_ids": [
+        "source-05-0120",
+        "source-05-0121"
+      ],
+      "source_span": [
+        1682,
+        1713
+      ],
+      "facsimile_pages": [
+        15
+      ],
+      "captured_pages": [
+        15
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 41,
+      "slug": "r04-huanju",
+      "name": "讙舉之山",
+      "range": 4,
+      "kind": "mountain",
+      "source_units": [
+        122,
+        124
+      ],
+      "source_unit_ids": [
+        "source-05-0122",
+        "source-05-0123",
+        "source-05-0124"
+      ],
+      "source_span": [
+        1713,
+        1753
+      ],
+      "facsimile_pages": [
+        15
+      ],
+      "captured_pages": [
+        15
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "讙举为最后列名山；玄扈在本段是受水体，总括却称玄扈之山，分别保留，不补造第十列名山。"
+    },
+    {
+      "stage": 42,
+      "slug": "r04-summary",
+      "name": "次4总括与祭礼",
+      "range": 4,
+      "kind": "summary",
+      "source_units": [
+        125,
+        127
+      ],
+      "source_unit_ids": [
+        "source-05-0125",
+        "source-05-0126",
+        "source-05-0127"
+      ],
+      "source_span": [
+        1753,
+        1802
+      ],
+      "facsimile_pages": [
+        15,
+        16
+      ],
+      "captured_pages": [
+        15,
+        16
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 43,
+      "slug": "r05-gouchuang",
+      "name": "茍牀之山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        128,
+        129
+      ],
+      "source_unit_ids": [
+        "source-05-0128",
+        "source-05-0129"
+      ],
+      "source_span": [
+        1802,
+        1821
+      ],
+      "facsimile_pages": [
+        16
+      ],
+      "captured_pages": [
+        16
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "首曰茍牀，郭注或作茍林，总括茍林；同段异名留存。"
+    },
+    {
+      "stage": 44,
+      "slug": "r05-shou",
+      "name": "首山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        130,
+        133
+      ],
+      "source_unit_ids": [
+        "source-05-0130",
+        "source-05-0131",
+        "source-05-0132",
+        "source-05-0133"
+      ],
+      "source_span": [
+        1821,
+        1874
+      ],
+      "facsimile_pages": [
+        16
+      ],
+      "captured_pages": [
+        16
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 45,
+      "slug": "r05-xianzhu",
+      "name": "縣斸之山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        134,
+        134
+      ],
+      "source_unit_ids": [
+        "source-05-0134"
+      ],
+      "source_span": [
+        1874,
+        1890
+      ],
+      "facsimile_pages": [
+        16
+      ],
+      "captured_pages": [
+        16
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 46,
+      "slug": "r05-conglong",
+      "name": "葱聾之山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        135,
+        135
+      ],
+      "source_unit_ids": [
+        "source-05-0135"
+      ],
+      "source_span": [
+        1890,
+        1906
+      ],
+      "facsimile_pages": [
+        17
+      ],
+      "captured_pages": [
+        17
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 47,
+      "slug": "r05-tiaogu",
+      "name": "條谷之山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        136,
+        137
+      ],
+      "source_unit_ids": [
+        "source-05-0136",
+        "source-05-0137"
+      ],
+      "source_span": [
+        1906,
+        1928
+      ],
+      "facsimile_pages": [
+        17
+      ],
+      "captured_pages": [
+        17
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 48,
+      "slug": "r05-chao",
+      "name": "超山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        138,
+        139
+      ],
+      "source_unit_ids": [
+        "source-05-0138",
+        "source-05-0139"
+      ],
+      "source_span": [
+        1928,
+        1950
+      ],
+      "facsimile_pages": [
+        17
+      ],
+      "captured_pages": [
+        17
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 49,
+      "slug": "r05-chenghou",
+      "name": "成侯之山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        140,
+        141
+      ],
+      "source_unit_ids": [
+        "source-05-0140",
+        "source-05-0141"
+      ],
+      "source_span": [
+        1950,
+        1969
+      ],
+      "facsimile_pages": [
+        17
+      ],
+      "captured_pages": [
+        17
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 50,
+      "slug": "r05-chaoge",
+      "name": "朝歌之山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        142,
+        142
+      ],
+      "source_unit_ids": [
+        "source-05-0142"
+      ],
+      "source_span": [
+        1969,
+        1983
+      ],
+      "facsimile_pages": [
+        17
+      ],
+      "captured_pages": [
+        17
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 51,
+      "slug": "r05-huai",
+      "name": "槐山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        143,
+        143
+      ],
+      "source_unit_ids": [
+        "source-05-0143"
+      ],
+      "source_span": [
+        1983,
+        1995
+      ],
+      "facsimile_pages": [
+        17
+      ],
+      "captured_pages": [
+        17
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 52,
+      "slug": "r05-li",
+      "name": "歴山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        144,
+        144
+      ],
+      "source_unit_ids": [
+        "source-05-0144"
+      ],
+      "source_span": [
+        1995,
+        2010
+      ],
+      "facsimile_pages": [
+        18
+      ],
+      "captured_pages": [
+        18
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 53,
+      "slug": "r05-shi",
+      "name": "尸山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        145,
+        146
+      ],
+      "source_unit_ids": [
+        "source-05-0145",
+        "source-05-0146"
+      ],
+      "source_span": [
+        2010,
+        2039
+      ],
+      "facsimile_pages": [
+        18
+      ],
+      "captured_pages": [
+        18
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 54,
+      "slug": "r05-liangyu",
+      "name": "良餘之山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        147,
+        149
+      ],
+      "source_unit_ids": [
+        "source-05-0147",
+        "source-05-0148",
+        "source-05-0149"
+      ],
+      "source_span": [
+        2039,
+        2080
+      ],
+      "facsimile_pages": [
+        18
+      ],
+      "captured_pages": [
+        18
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 55,
+      "slug": "r05-guwei",
+      "name": "蠱尾之山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        150,
+        151
+      ],
+      "source_unit_ids": [
+        "source-05-0150",
+        "source-05-0151"
+      ],
+      "source_span": [
+        2080,
+        2108
+      ],
+      "facsimile_pages": [
+        18
+      ],
+      "captured_pages": [
+        18
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 56,
+      "slug": "r05-sheng",
+      "name": "升山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        152,
+        155
+      ],
+      "source_unit_ids": [
+        "source-05-0152",
+        "source-05-0153",
+        "source-05-0154",
+        "source-05-0155"
+      ],
+      "source_span": [
+        2108,
+        2149
+      ],
+      "facsimile_pages": [
+        18,
+        19
+      ],
+      "captured_pages": [
+        18,
+        19
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 57,
+      "slug": "r05-yangxu",
+      "name": "陽虛之山",
+      "range": 5,
+      "kind": "mountain",
+      "source_units": [
+        156,
+        157
+      ],
+      "source_unit_ids": [
+        "source-05-0156",
+        "source-05-0157"
+      ],
+      "source_span": [
+        2149,
+        2167
+      ],
+      "facsimile_pages": [
+        19
+      ],
+      "captured_pages": [
+        19
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 58,
+      "slug": "r05-summary",
+      "name": "次5总括与祭礼",
+      "range": 5,
+      "kind": "summary",
+      "source_units": [
+        158,
+        164
+      ],
+      "source_unit_ids": [
+        "source-05-0158",
+        "source-05-0159",
+        "source-05-0160",
+        "source-05-0161",
+        "source-05-0162",
+        "source-05-0163",
+        "source-05-0164"
+      ],
+      "source_span": [
+        2167,
+        2273
+      ],
+      "facsimile_pages": [
+        19,
+        20
+      ],
+      "captured_pages": [
+        19,
+        20
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "次五列名15山而总括报16山，差1照录；尸水合天与祭礼注文跨161—162。"
+    },
+    {
+      "stage": 59,
+      "slug": "r06-pingfeng",
+      "name": "平逢之山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        165,
+        169
+      ],
+      "source_unit_ids": [
+        "source-05-0165",
+        "source-05-0166",
+        "source-05-0167",
+        "source-05-0168",
+        "source-05-0169"
+      ],
+      "source_span": [
+        2273,
+        2340
+      ],
+      "facsimile_pages": [
+        20
+      ],
+      "captured_pages": [
+        20
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "平逢人状二首骄虫；蜂蜜之庐为古述，二首必核，雄鸡禳而勿杀不画杀祭。"
+    },
+    {
+      "stage": 60,
+      "slug": "r06-gaodi",
+      "name": "縞羝之山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        170,
+        170
+      ],
+      "source_unit_ids": [
+        "source-05-0170"
+      ],
+      "source_span": [
+        2340,
+        2354
+      ],
+      "facsimile_pages": [
+        20
+      ],
+      "captured_pages": [
+        20
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 61,
+      "slug": "r06-hui",
+      "name": "廆山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        171,
+        175
+      ],
+      "source_unit_ids": [
+        "source-05-0171",
+        "source-05-0172",
+        "source-05-0173",
+        "source-05-0174",
+        "source-05-0175"
+      ],
+      "source_span": [
+        2354,
+        2442
+      ],
+      "facsimile_pages": [
+        21
+      ],
+      "captured_pages": [
+        21
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 62,
+      "slug": "r06-zhanzhu",
+      "name": "瞻諸之山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        176,
+        178
+      ],
+      "source_unit_ids": [
+        "source-05-0176",
+        "source-05-0177",
+        "source-05-0178"
+      ],
+      "source_span": [
+        2442,
+        2484
+      ],
+      "facsimile_pages": [
+        21
+      ],
+      "captured_pages": [
+        21
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 63,
+      "slug": "r06-louzhuo",
+      "name": "婁𣵠之山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        179,
+        181
+      ],
+      "source_unit_ids": [
+        "source-05-0179",
+        "source-05-0180",
+        "source-05-0181"
+      ],
+      "source_span": [
+        2484,
+        2532
+      ],
+      "facsimile_pages": [
+        21,
+        22
+      ],
+      "captured_pages": [
+        21,
+        22
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 64,
+      "slug": "r06-baishi",
+      "name": "白石之山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        182,
+        184
+      ],
+      "source_unit_ids": [
+        "source-05-0182",
+        "source-05-0183",
+        "source-05-0184"
+      ],
+      "source_span": [
+        2532,
+        2579
+      ],
+      "facsimile_pages": [
+        22
+      ],
+      "captured_pages": [
+        22
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 65,
+      "slug": "r06-gu",
+      "name": "榖山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        185,
+        186
+      ],
+      "source_unit_ids": [
+        "source-05-0185",
+        "source-05-0186"
+      ],
+      "source_span": [
+        2579,
+        2612
+      ],
+      "facsimile_pages": [
+        22
+      ],
+      "captured_pages": [
+        22
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 66,
+      "slug": "r06-mi",
+      "name": "密山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        187,
+        189
+      ],
+      "source_unit_ids": [
+        "source-05-0187",
+        "source-05-0188",
+        "source-05-0189"
+      ],
+      "source_span": [
+        2612,
+        2659
+      ],
+      "facsimile_pages": [
+        22,
+        23
+      ],
+      "captured_pages": [
+        22,
+        23
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "旋龟本段只给鸟首鳖尾与判木声，不从南山旋龟借赤黑色或现代种属。"
+    },
+    {
+      "stage": 67,
+      "slug": "r06-changshi",
+      "name": "長石之山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        190,
+        193
+      ],
+      "source_unit_ids": [
+        "source-05-0190",
+        "source-05-0191",
+        "source-05-0192",
+        "source-05-0193"
+      ],
+      "source_span": [
+        2659,
+        2700
+      ],
+      "facsimile_pages": [
+        23
+      ],
+      "captured_pages": [
+        23
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 68,
+      "slug": "r06-mountain-194",
+      "name": "𫝊山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        194,
+        197
+      ],
+      "source_unit_ids": [
+        "source-05-0194",
+        "source-05-0195",
+        "source-05-0196",
+        "source-05-0197"
+      ],
+      "source_span": [
+        2700,
+        2765
+      ],
+      "facsimile_pages": [
+        23
+      ],
+      "captured_pages": [
+        23
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "𫝊山保留底本文字；墦冢缺字图仅在阅读层校释，不改原快照。"
+    },
+    {
+      "stage": 69,
+      "slug": "r06-tuo",
+      "name": "橐山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        198,
+        201
+      ],
+      "source_unit_ids": [
+        "source-05-0198",
+        "source-05-0199",
+        "source-05-0200",
+        "source-05-0201"
+      ],
+      "source_span": [
+        2765,
+        2823
+      ],
+      "facsimile_pages": [
+        24
+      ],
+      "captured_pages": [
+        24
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 70,
+      "slug": "r06-changzheng",
+      "name": "常烝之山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        202,
+        204
+      ],
+      "source_unit_ids": [
+        "source-05-0202",
+        "source-05-0203",
+        "source-05-0204"
+      ],
+      "source_span": [
+        2823,
+        2864
+      ],
+      "facsimile_pages": [
+        24
+      ],
+      "captured_pages": [
+        24
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 71,
+      "slug": "r06-kuafu",
+      "name": "夸父之山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        205,
+        209
+      ],
+      "source_unit_ids": [
+        "source-05-0205",
+        "source-05-0206",
+        "source-05-0207",
+        "source-05-0208",
+        "source-05-0209"
+      ],
+      "source_span": [
+        2864,
+        2935
+      ],
+      "facsimile_pages": [
+        24,
+        25
+      ],
+      "captured_pages": [
+        24,
+        25
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 72,
+      "slug": "r06-yanghua",
+      "name": "陽華之山",
+      "range": 6,
+      "kind": "mountain",
+      "source_units": [
+        210,
+        215
+      ],
+      "source_unit_ids": [
+        "source-05-0210",
+        "source-05-0211",
+        "source-05-0212",
+        "source-05-0213",
+        "source-05-0214",
+        "source-05-0215"
+      ],
+      "source_span": [
+        2935,
+        3044
+      ],
+      "facsimile_pages": [
+        25
+      ],
+      "captured_pages": [
+        25
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "门水出河790里入雒与本段多水关系照录，不据现代水系消解矛盾。"
+    },
+    {
+      "stage": 73,
+      "slug": "r06-summary",
+      "name": "次6总括与祭礼",
+      "range": 6,
+      "kind": "summary",
+      "source_units": [
+        216,
+        218
+      ],
+      "source_unit_ids": [
+        "source-05-0216",
+        "source-05-0217",
+        "source-05-0218"
+      ],
+      "source_span": [
+        3044,
+        3090
+      ],
+      "facsimile_pages": [
+        26
+      ],
+      "captured_pages": [
+        26
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 74,
+      "slug": "r07-xiuyu",
+      "name": "休與之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        219,
+        223
+      ],
+      "source_unit_ids": [
+        "source-05-0219",
+        "source-05-0220",
+        "source-05-0221",
+        "source-05-0222",
+        "source-05-0223"
+      ],
+      "source_span": [
+        3090,
+        3159
+      ],
+      "facsimile_pages": [
+        26
+      ],
+      "captured_pages": [
+        26
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 75,
+      "slug": "r07-guzhong",
+      "name": "皷鍾之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        224,
+        226
+      ],
+      "source_unit_ids": [
+        "source-05-0224",
+        "source-05-0225",
+        "source-05-0226"
+      ],
+      "source_span": [
+        3159,
+        3207
+      ],
+      "facsimile_pages": [
+        26,
+        27
+      ],
+      "captured_pages": [
+        26,
+        27
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 76,
+      "slug": "r07-guyao",
+      "name": "姑媱之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        227,
+        230
+      ],
+      "source_unit_ids": [
+        "source-05-0227",
+        "source-05-0228",
+        "source-05-0229",
+        "source-05-0230"
+      ],
+      "source_span": [
+        3207,
+        3247
+      ],
+      "facsimile_pages": [
+        27
+      ],
+      "captured_pages": [
+        27
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "姑媱帝女女尸化䔄草；人神身份与植物分别建卡，不画无原文形貌的女神。"
+    },
+    {
+      "stage": 77,
+      "slug": "r07-ku",
+      "name": "苦山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        231,
+        234
+      ],
+      "source_unit_ids": [
+        "source-05-0231",
+        "source-05-0232",
+        "source-05-0233",
+        "source-05-0234"
+      ],
+      "source_span": [
+        3247,
+        3315
+      ],
+      "facsimile_pages": [
+        27,
+        28
+      ],
+      "captured_pages": [
+        27,
+        28
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 78,
+      "slug": "r07-du",
+      "name": "堵山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        235,
+        236
+      ],
+      "source_unit_ids": [
+        "source-05-0235",
+        "source-05-0236"
+      ],
+      "source_span": [
+        3315,
+        3352
+      ],
+      "facsimile_pages": [
+        28
+      ],
+      "captured_pages": [
+        28
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 79,
+      "slug": "r07-fanggao",
+      "name": "放皐之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        237,
+        240
+      ],
+      "source_unit_ids": [
+        "source-05-0237",
+        "source-05-0238",
+        "source-05-0239",
+        "source-05-0240"
+      ],
+      "source_span": [
+        3352,
+        3418
+      ],
+      "facsimile_pages": [
+        28
+      ],
+      "captured_pages": [
+        28
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "文文如蜂、枝尾反舌；呼声不添加人面人手。"
+    },
+    {
+      "stage": 80,
+      "slug": "r07-da-241",
+      "name": "大𩇵之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        241,
+        245
+      ],
+      "source_unit_ids": [
+        "source-05-0241",
+        "source-05-0242",
+        "source-05-0243",
+        "source-05-0244",
+        "source-05-0245"
+      ],
+      "source_span": [
+        3418,
+        3495
+      ],
+      "facsimile_pages": [
+        28,
+        29
+      ],
+      "captured_pages": [
+        28,
+        29
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "三足龟据正文；郭注地方例另提六眼龟，不自动把六眼强加正文生物。"
+    },
+    {
+      "stage": 81,
+      "slug": "r07-banshi",
+      "name": "半石之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        246,
+        252
+      ],
+      "source_unit_ids": [
+        "source-05-0246",
+        "source-05-0247",
+        "source-05-0248",
+        "source-05-0249",
+        "source-05-0250",
+        "source-05-0251",
+        "source-05-0252"
+      ],
+      "source_span": [
+        3495,
+        3597
+      ],
+      "facsimile_pages": [
+        29,
+        30
+      ],
+      "captured_pages": [
+        29,
+        30
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 82,
+      "slug": "r07-shaoshi",
+      "name": "少室之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        253,
+        258
+      ],
+      "source_unit_ids": [
+        "source-05-0253",
+        "source-05-0254",
+        "source-05-0255",
+        "source-05-0256",
+        "source-05-0257",
+        "source-05-0258"
+      ],
+      "source_span": [
+        3597,
+        3681
+      ],
+      "facsimile_pages": [
+        30
+      ],
+      "captured_pages": [
+        30
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "少室与泰室分段；䱱鱼如𥂕蜼，郭注未详，不强套现代娃娃鱼。"
+    },
+    {
+      "stage": 83,
+      "slug": "r07-taishi",
+      "name": "泰室之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        259,
+        262
+      ],
+      "source_unit_ids": [
+        "source-05-0259",
+        "source-05-0260",
+        "source-05-0261",
+        "source-05-0262"
+      ],
+      "source_span": [
+        3681,
+        3740
+      ],
+      "facsimile_pages": [
+        30,
+        31
+      ],
+      "captured_pages": [
+        30,
+        31
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 84,
+      "slug": "r07-jiang",
+      "name": "講山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        263,
+        264
+      ],
+      "source_unit_ids": [
+        "source-05-0263",
+        "source-05-0264"
+      ],
+      "source_span": [
+        3740,
+        3775
+      ],
+      "facsimile_pages": [
+        31
+      ],
+      "captured_pages": [
+        31
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 85,
+      "slug": "r07-yingliang",
+      "name": "嬰梁之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        265,
+        266
+      ],
+      "source_unit_ids": [
+        "source-05-0265",
+        "source-05-0266"
+      ],
+      "source_span": [
+        3775,
+        3793
+      ],
+      "facsimile_pages": [
+        31
+      ],
+      "captured_pages": [
+        31
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 86,
+      "slug": "r07-fuxi",
+      "name": "浮戯之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        267,
+        269
+      ],
+      "source_unit_ids": [
+        "source-05-0267",
+        "source-05-0268",
+        "source-05-0269"
+      ],
+      "source_span": [
+        3793,
+        3844
+      ],
+      "facsimile_pages": [
+        31
+      ],
+      "captured_pages": [
+        31
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 87,
+      "slug": "r07-shaoxing",
+      "name": "少陘之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        270,
+        272
+      ],
+      "source_unit_ids": [
+        "source-05-0270",
+        "source-05-0271",
+        "source-05-0272"
+      ],
+      "source_span": [
+        3844,
+        3891
+      ],
+      "facsimile_pages": [
+        32
+      ],
+      "captured_pages": [
+        32
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 88,
+      "slug": "r07-tai",
+      "name": "太山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        273,
+        276
+      ],
+      "source_unit_ids": [
+        "source-05-0273",
+        "source-05-0274",
+        "source-05-0275",
+        "source-05-0276"
+      ],
+      "source_span": [
+        3891,
+        3944
+      ],
+      "facsimile_pages": [
+        32
+      ],
+      "captured_pages": [
+        32
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 89,
+      "slug": "r07-mo",
+      "name": "末山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        277,
+        278
+      ],
+      "source_unit_ids": [
+        "source-05-0277",
+        "source-05-0278"
+      ],
+      "source_span": [
+        3944,
+        3965
+      ],
+      "facsimile_pages": [
+        32
+      ],
+      "captured_pages": [
+        32
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 90,
+      "slug": "r07-yi",
+      "name": "役山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        279,
+        280
+      ],
+      "source_unit_ids": [
+        "source-05-0279",
+        "source-05-0280"
+      ],
+      "source_span": [
+        3965,
+        3988
+      ],
+      "facsimile_pages": [
+        33
+      ],
+      "captured_pages": [
+        33
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 91,
+      "slug": "r07-min",
+      "name": "敏山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        281,
+        282
+      ],
+      "source_unit_ids": [
+        "source-05-0281",
+        "source-05-0282"
+      ],
+      "source_span": [
+        3988,
+        4025
+      ],
+      "facsimile_pages": [
+        33
+      ],
+      "captured_pages": [
+        33
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 92,
+      "slug": "r07-dagui",
+      "name": "大騩之山",
+      "range": 7,
+      "kind": "mountain",
+      "source_units": [
+        283,
+        286
+      ],
+      "source_unit_ids": [
+        "source-05-0283",
+        "source-05-0284",
+        "source-05-0285",
+        "source-05-0286"
+      ],
+      "source_span": [
+        4025,
+        4070
+      ],
+      "facsimile_pages": [
+        33
+      ],
+      "captured_pages": [
+        33
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 93,
+      "slug": "r07-summary",
+      "name": "次7总括与祭礼",
+      "range": 7,
+      "kind": "summary",
+      "source_units": [
+        287,
+        292
+      ],
+      "source_unit_ids": [
+        "source-05-0287",
+        "source-05-0288",
+        "source-05-0289",
+        "source-05-0290",
+        "source-05-0291",
+        "source-05-0292"
+      ],
+      "source_span": [
+        4070,
+        4167
+      ],
+      "facsimile_pages": [
+        33,
+        34
+      ],
+      "captured_pages": [
+        33,
+        34
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "十六神豕身人面，苦山少室太室三冢人面三首；不可把三首与豕身自动并给所有神。"
+    },
+    {
+      "stage": 94,
+      "slug": "r08-jing",
+      "name": "景山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        293,
+        296
+      ],
+      "source_unit_ids": [
+        "source-05-0293",
+        "source-05-0294",
+        "source-05-0295",
+        "source-05-0296"
+      ],
+      "source_span": [
+        4167,
+        4206
+      ],
+      "facsimile_pages": [
+        34
+      ],
+      "captured_pages": [
+        34
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 95,
+      "slug": "r08-jingshan",
+      "name": "荆山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        297,
+        302
+      ],
+      "source_unit_ids": [
+        "source-05-0297",
+        "source-05-0298",
+        "source-05-0299",
+        "source-05-0300",
+        "source-05-0301",
+        "source-05-0302"
+      ],
+      "source_span": [
+        4206,
+        4266
+      ],
+      "facsimile_pages": [
+        35
+      ],
+      "captured_pages": [
+        35
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 96,
+      "slug": "r08-jiao",
+      "name": "驕山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        303,
+        305
+      ],
+      "source_unit_ids": [
+        "source-05-0303",
+        "source-05-0304",
+        "source-05-0305"
+      ],
+      "source_span": [
+        4266,
+        4320
+      ],
+      "facsimile_pages": [
+        35
+      ],
+      "captured_pages": [
+        35
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "𧕛围人面羊角虎爪，躯形未定；不混人身龙首计蒙或方面三足涉𧕦。"
+    },
+    {
+      "stage": 97,
+      "slug": "r08-nvji",
+      "name": "女几之山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        306,
+        309
+      ],
+      "source_unit_ids": [
+        "source-05-0306",
+        "source-05-0307",
+        "source-05-0308",
+        "source-05-0309"
+      ],
+      "source_span": [
+        4320,
+        4360
+      ],
+      "facsimile_pages": [
+        36
+      ],
+      "captured_pages": [
+        36
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "鸟名及郭注有替换符；保留缺字待核，不拿现代鸟名或上一个白鷮强补。"
+    },
+    {
+      "stage": 98,
+      "slug": "r08-yizhu",
+      "name": "冝諸之山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        310,
+        312
+      ],
+      "source_unit_ids": [
+        "source-05-0310",
+        "source-05-0311",
+        "source-05-0312"
+      ],
+      "source_span": [
+        4360,
+        4396
+      ],
+      "facsimile_pages": [
+        36
+      ],
+      "captured_pages": [
+        36
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 99,
+      "slug": "r08-lun",
+      "name": "綸山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        313,
+        315
+      ],
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "source_span": [
+        4396,
+        4427
+      ],
+      "facsimile_pages": [
+        36,
+        37
+      ],
+      "captured_pages": [
+        36,
+        37
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 100,
+      "slug": "r08-lugui",
+      "name": "陸䣀之山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        316,
+        317
+      ],
+      "source_unit_ids": [
+        "source-05-0316",
+        "source-05-0317"
+      ],
+      "source_span": [
+        4427,
+        4454
+      ],
+      "facsimile_pages": [
+        37
+      ],
+      "captured_pages": [
+        37
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 101,
+      "slug": "r08-guang",
+      "name": "光山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        318,
+        320
+      ],
+      "source_unit_ids": [
+        "source-05-0318",
+        "source-05-0319",
+        "source-05-0320"
+      ],
+      "source_span": [
+        4454,
+        4496
+      ],
+      "facsimile_pages": [
+        37
+      ],
+      "captured_pages": [
+        37
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "计蒙人身龙首，飘风暴雨为出入古述；无需雷电光环或多龙首。"
+    },
+    {
+      "stage": 102,
+      "slug": "r08-qi",
+      "name": "岐山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        321,
+        323
+      ],
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "source_span": [
+        4496,
+        4543
+      ],
+      "facsimile_pages": [
+        37
+      ],
+      "captured_pages": [
+        37
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "涉𧕦人身方面三足；三足逐数，不能画成普通双足人。"
+    },
+    {
+      "stage": 103,
+      "slug": "r08-tong",
+      "name": "銅山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        324,
+        325
+      ],
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "source_span": [
+        4543,
+        4571
+      ],
+      "facsimile_pages": [
+        38
+      ],
+      "captured_pages": [
+        38
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 104,
+      "slug": "r08-mei",
+      "name": "羙山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        326,
+        327
+      ],
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "source_span": [
+        4571,
+        4600
+      ],
+      "facsimile_pages": [
+        38
+      ],
+      "captured_pages": [
+        38
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 105,
+      "slug": "r08-dayao",
+      "name": "大堯之山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        328,
+        329
+      ],
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "source_span": [
+        4600,
+        4631
+      ],
+      "facsimile_pages": [
+        38
+      ],
+      "captured_pages": [
+        38
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 106,
+      "slug": "r08-ling",
+      "name": "靈山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        330,
+        331
+      ],
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "source_span": [
+        4631,
+        4657
+      ],
+      "facsimile_pages": [
+        38
+      ],
+      "captured_pages": [
+        38
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 107,
+      "slug": "r08-long",
+      "name": "龍山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        332,
+        333
+      ],
+      "source_unit_ids": [
+        "source-05-0332",
+        "source-05-0333"
+      ],
+      "source_span": [
+        4657,
+        4686
+      ],
+      "facsimile_pages": [
+        38,
+        39
+      ],
+      "captured_pages": [
+        38,
+        39
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 108,
+      "slug": "r08-heng",
+      "name": "衡山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        334,
+        334
+      ],
+      "source_unit_ids": [
+        "source-05-0334"
+      ],
+      "source_span": [
+        4686,
+        4706
+      ],
+      "facsimile_pages": [
+        39
+      ],
+      "captured_pages": [
+        39
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 109,
+      "slug": "r08-shi",
+      "name": "石山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        335,
+        336
+      ],
+      "source_unit_ids": [
+        "source-05-0335",
+        "source-05-0336"
+      ],
+      "source_span": [
+        4706,
+        4727
+      ],
+      "facsimile_pages": [
+        39
+      ],
+      "captured_pages": [
+        39
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 110,
+      "slug": "r08-ruo",
+      "name": "若山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        337,
+        338
+      ],
+      "source_unit_ids": [
+        "source-05-0337",
+        "source-05-0338"
+      ],
+      "source_span": [
+        4727,
+        4753
+      ],
+      "facsimile_pages": [
+        39
+      ],
+      "captured_pages": [
+        39
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 111,
+      "slug": "r08-zhi",
+      "name": "彘山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        339,
+        339
+      ],
+      "source_unit_ids": [
+        "source-05-0339"
+      ],
+      "source_span": [
+        4753,
+        4769
+      ],
+      "facsimile_pages": [
+        39
+      ],
+      "captured_pages": [
+        39
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 112,
+      "slug": "r08-yu",
+      "name": "玉山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        340,
+        341
+      ],
+      "source_unit_ids": [
+        "source-05-0340",
+        "source-05-0341"
+      ],
+      "source_span": [
+        4769,
+        4794
+      ],
+      "facsimile_pages": [
+        39
+      ],
+      "captured_pages": [
+        39
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 113,
+      "slug": "r08-huan",
+      "name": "讙山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        342,
+        343
+      ],
+      "source_unit_ids": [
+        "source-05-0342",
+        "source-05-0343"
+      ],
+      "source_span": [
+        4794,
+        4828
+      ],
+      "facsimile_pages": [
+        40
+      ],
+      "captured_pages": [
+        40
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 114,
+      "slug": "r08-renju",
+      "name": "仁舉之山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        344,
+        345
+      ],
+      "source_unit_ids": [
+        "source-05-0344",
+        "source-05-0345"
+      ],
+      "source_span": [
+        4828,
+        4854
+      ],
+      "facsimile_pages": [
+        40
+      ],
+      "captured_pages": [
+        40
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 115,
+      "slug": "r08-shimei",
+      "name": "師每之山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        346,
+        347
+      ],
+      "source_unit_ids": [
+        "source-05-0346",
+        "source-05-0347"
+      ],
+      "source_span": [
+        4854,
+        4886
+      ],
+      "facsimile_pages": [
+        40
+      ],
+      "captured_pages": [
+        40
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 116,
+      "slug": "r08-qingu",
+      "name": "琴皷之山",
+      "range": 8,
+      "kind": "mountain",
+      "source_units": [
+        348,
+        350
+      ],
+      "source_unit_ids": [
+        "source-05-0348",
+        "source-05-0349",
+        "source-05-0350"
+      ],
+      "source_span": [
+        4886,
+        4926
+      ],
+      "facsimile_pages": [
+        40
+      ],
+      "captured_pages": [
+        40
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 117,
+      "slug": "r08-summary",
+      "name": "次8总括与祭礼",
+      "range": 8,
+      "kind": "summary",
+      "source_units": [
+        351,
+        354
+      ],
+      "source_unit_ids": [
+        "source-05-0351",
+        "source-05-0352",
+        "source-05-0353",
+        "source-05-0354"
+      ],
+      "source_span": [
+        4926,
+        4992
+      ],
+      "facsimile_pages": [
+        41
+      ],
+      "captured_pages": [
+        41
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 118,
+      "slug": "r09-nvfan",
+      "name": "女凡之山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        355,
+        357
+      ],
+      "source_unit_ids": [
+        "source-05-0355",
+        "source-05-0356",
+        "source-05-0357"
+      ],
+      "source_span": [
+        4992,
+        5038
+      ],
+      "facsimile_pages": [
+        41
+      ],
+      "captured_pages": [
+        41
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "正文女凡与总括女几异写分别保留；不并次八女几。"
+    },
+    {
+      "stage": 119,
+      "slug": "r09-min",
+      "name": "岷山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        358,
+        362
+      ],
+      "source_unit_ids": [
+        "source-05-0358",
+        "source-05-0359",
+        "source-05-0360",
+        "source-05-0361",
+        "source-05-0362"
+      ],
+      "source_span": [
+        5038,
+        5092
+      ],
+      "facsimile_pages": [
+        41,
+        42
+      ],
+      "captured_pages": [
+        41,
+        42
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 120,
+      "slug": "r09-lai",
+      "name": "崍山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        363,
+        366
+      ],
+      "source_unit_ids": [
+        "source-05-0363",
+        "source-05-0364",
+        "source-05-0365",
+        "source-05-0366"
+      ],
+      "source_span": [
+        5092,
+        5136
+      ],
+      "facsimile_pages": [
+        42
+      ],
+      "captured_pages": [
+        42
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "崍山㹮形貌只在郭注，正文与注文来源分层；别名和现代熊猫对应不直接确定。"
+    },
+    {
+      "stage": 121,
+      "slug": "r09-ju",
+      "name": "崌山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        367,
+        371
+      ],
+      "source_unit_ids": [
+        "source-05-0367",
+        "source-05-0368",
+        "source-05-0369",
+        "source-05-0370",
+        "source-05-0371"
+      ],
+      "source_span": [
+        5136,
+        5201
+      ],
+      "facsimile_pages": [
+        42,
+        43
+      ],
+      "captured_pages": [
+        42,
+        43
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "怪蛇郭注钩蛇为例，不自动并入其他篇同名蛇；竊脂枭状赤身白首，不用郭注所疑现代青萑替换。"
+    },
+    {
+      "stage": 122,
+      "slug": "r09-gaoliang",
+      "name": "髙梁之山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        372,
+        374
+      ],
+      "source_unit_ids": [
+        "source-05-0372",
+        "source-05-0373",
+        "source-05-0374"
+      ],
+      "source_span": [
+        5201,
+        5244
+      ],
+      "facsimile_pages": [
+        43
+      ],
+      "captured_pages": [
+        43
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 123,
+      "slug": "r09-she",
+      "name": "蛇山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        375,
+        377
+      ],
+      "source_unit_ids": [
+        "source-05-0375",
+        "source-05-0376",
+        "source-05-0377"
+      ],
+      "source_span": [
+        5244,
+        5296
+      ],
+      "facsimile_pages": [
+        43
+      ],
+      "captured_pages": [
+        43
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 124,
+      "slug": "r09-ge",
+      "name": "鬲山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        378,
+        381
+      ],
+      "source_unit_ids": [
+        "source-05-0378",
+        "source-05-0379",
+        "source-05-0380",
+        "source-05-0381"
+      ],
+      "source_span": [
+        5296,
+        5340
+      ],
+      "facsimile_pages": [
+        44
+      ],
+      "captured_pages": [
+        44
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 125,
+      "slug": "r09-yuyang",
+      "name": "隅陽之山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        382,
+        384
+      ],
+      "source_unit_ids": [
+        "source-05-0382",
+        "source-05-0383",
+        "source-05-0384"
+      ],
+      "source_span": [
+        5340,
+        5385
+      ],
+      "facsimile_pages": [
+        44
+      ],
+      "captured_pages": [
+        44
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 126,
+      "slug": "r09-qi",
+      "name": "岐山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        385,
+        387
+      ],
+      "source_unit_ids": [
+        "source-05-0385",
+        "source-05-0386",
+        "source-05-0387"
+      ],
+      "source_span": [
+        5385,
+        5422
+      ],
+      "facsimile_pages": [
+        44,
+        45
+      ],
+      "captured_pages": [
+        44,
+        45
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 127,
+      "slug": "r09-goumi",
+      "name": "勾檷之山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        388,
+        389
+      ],
+      "source_unit_ids": [
+        "source-05-0388",
+        "source-05-0389"
+      ],
+      "source_span": [
+        5422,
+        5451
+      ],
+      "facsimile_pages": [
+        45
+      ],
+      "captured_pages": [
+        45
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 128,
+      "slug": "r09-fengyu",
+      "name": "風雨之山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        390,
+        393
+      ],
+      "source_unit_ids": [
+        "source-05-0390",
+        "source-05-0391",
+        "source-05-0392",
+        "source-05-0393"
+      ],
+      "source_span": [
+        5451,
+        5509
+      ],
+      "facsimile_pages": [
+        45
+      ],
+      "captured_pages": [
+        45
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 129,
+      "slug": "r09-yu",
+      "name": "玉山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        394,
+        395
+      ],
+      "source_unit_ids": [
+        "source-05-0394",
+        "source-05-0395"
+      ],
+      "source_span": [
+        5509,
+        5545
+      ],
+      "facsimile_pages": [
+        45
+      ],
+      "captured_pages": [
+        45
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 130,
+      "slug": "r09-xiong",
+      "name": "熊山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        396,
+        399
+      ],
+      "source_unit_ids": [
+        "source-05-0396",
+        "source-05-0397",
+        "source-05-0398",
+        "source-05-0399"
+      ],
+      "source_span": [
+        5545,
+        5599
+      ],
+      "facsimile_pages": [
+        46
+      ],
+      "captured_pages": [
+        46
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 131,
+      "slug": "r09-gui",
+      "name": "騩山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        400,
+        401
+      ],
+      "source_unit_ids": [
+        "source-05-0400",
+        "source-05-0401"
+      ],
+      "source_span": [
+        5599,
+        5627
+      ],
+      "facsimile_pages": [
+        46
+      ],
+      "captured_pages": [
+        46
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 132,
+      "slug": "r09-ge-mountain",
+      "name": "葛山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        402,
+        404
+      ],
+      "source_unit_ids": [
+        "source-05-0402",
+        "source-05-0403",
+        "source-05-0404"
+      ],
+      "source_span": [
+        5627,
+        5664
+      ],
+      "facsimile_pages": [
+        46
+      ],
+      "captured_pages": [
+        46
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 133,
+      "slug": "r09-jiachao",
+      "name": "賈超之山",
+      "range": 9,
+      "kind": "mountain",
+      "source_units": [
+        405,
+        407
+      ],
+      "source_unit_ids": [
+        "source-05-0405",
+        "source-05-0406",
+        "source-05-0407"
+      ],
+      "source_span": [
+        5664,
+        5698
+      ],
+      "facsimile_pages": [
+        47
+      ],
+      "captured_pages": [
+        47
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 134,
+      "slug": "r09-summary",
+      "name": "次9总括与祭礼",
+      "range": 9,
+      "kind": "summary",
+      "source_units": [
+        408,
+        413
+      ],
+      "source_unit_ids": [
+        "source-05-0408",
+        "source-05-0409",
+        "source-05-0410",
+        "source-05-0411",
+        "source-05-0412",
+        "source-05-0413"
+      ],
+      "source_span": [
+        5698,
+        5799
+      ],
+      "facsimile_pages": [
+        47
+      ],
+      "captured_pages": [
+        47
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "次九总括女几、文山及醜之山与列名存在差异；不为总括提及名号补造路线山段。"
+    },
+    {
+      "stage": 135,
+      "slug": "r10-shouyang",
+      "name": "首陽之山",
+      "range": 10,
+      "kind": "mountain",
+      "source_units": [
+        414,
+        414
+      ],
+      "source_unit_ids": [
+        "source-05-0414"
+      ],
+      "source_span": [
+        5799,
+        5818
+      ],
+      "facsimile_pages": [
+        48
+      ],
+      "captured_pages": [
+        48
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 136,
+      "slug": "r10-huwei",
+      "name": "虎尾之山",
+      "range": 10,
+      "kind": "mountain",
+      "source_units": [
+        415,
+        416
+      ],
+      "source_unit_ids": [
+        "source-05-0415",
+        "source-05-0416"
+      ],
+      "source_span": [
+        5818,
+        5845
+      ],
+      "facsimile_pages": [
+        48
+      ],
+      "captured_pages": [
+        48
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 137,
+      "slug": "r10-fanhui",
+      "name": "繁繢之山",
+      "range": 10,
+      "kind": "mountain",
+      "source_units": [
+        417,
+        418
+      ],
+      "source_unit_ids": [
+        "source-05-0417",
+        "source-05-0418"
+      ],
+      "source_span": [
+        5845,
+        5866
+      ],
+      "facsimile_pages": [
+        48
+      ],
+      "captured_pages": [
+        48
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 138,
+      "slug": "r10-yongshi",
+      "name": "勇石之山",
+      "range": 10,
+      "kind": "mountain",
+      "source_units": [
+        419,
+        419
+      ],
+      "source_unit_ids": [
+        "source-05-0419"
+      ],
+      "source_span": [
+        5866,
+        5885
+      ],
+      "facsimile_pages": [
+        48
+      ],
+      "captured_pages": [
+        48
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 139,
+      "slug": "r10-fuzhou",
+      "name": "復州之山",
+      "range": 10,
+      "kind": "mountain",
+      "source_units": [
+        420,
+        422
+      ],
+      "source_unit_ids": [
+        "source-05-0420",
+        "source-05-0421",
+        "source-05-0422"
+      ],
+      "source_span": [
+        5885,
+        5927
+      ],
+      "facsimile_pages": [
+        48
+      ],
+      "captured_pages": [
+        48
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "跂踵鸟枭状一足彘尾；东山跂踵是山名，两者不合并。"
+    },
+    {
+      "stage": 140,
+      "slug": "r10-chu",
+      "name": "楮山",
+      "range": 10,
+      "kind": "mountain",
+      "source_units": [
+        423,
+        423
+      ],
+      "source_unit_ids": [
+        "source-05-0423"
+      ],
+      "source_span": [
+        5927,
+        5945
+      ],
+      "facsimile_pages": [
+        49
+      ],
+      "captured_pages": [
+        49
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 141,
+      "slug": "r10-youyuan",
+      "name": "又原之山",
+      "range": 10,
+      "kind": "mountain",
+      "source_units": [
+        424,
+        425
+      ],
+      "source_unit_ids": [
+        "source-05-0424",
+        "source-05-0425"
+      ],
+      "source_span": [
+        5945,
+        5969
+      ],
+      "facsimile_pages": [
+        49
+      ],
+      "captured_pages": [
+        49
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 142,
+      "slug": "r10-zhuo",
+      "name": "涿山",
+      "range": 10,
+      "kind": "mountain",
+      "source_units": [
+        426,
+        427
+      ],
+      "source_unit_ids": [
+        "source-05-0426",
+        "source-05-0427"
+      ],
+      "source_span": [
+        5969,
+        5990
+      ],
+      "facsimile_pages": [
+        49
+      ],
+      "captured_pages": [
+        49
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 143,
+      "slug": "r10-bing",
+      "name": "丙山",
+      "range": 10,
+      "kind": "mountain",
+      "source_units": [
+        428,
+        428
+      ],
+      "source_unit_ids": [
+        "source-05-0428"
+      ],
+      "source_span": [
+        5990,
+        6006
+      ],
+      "facsimile_pages": [
+        49
+      ],
+      "captured_pages": [
+        49
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 144,
+      "slug": "r10-summary",
+      "name": "次10总括与祭礼",
+      "range": 10,
+      "kind": "summary",
+      "source_units": [
+        429,
+        433
+      ],
+      "source_unit_ids": [
+        "source-05-0429",
+        "source-05-0430",
+        "source-05-0431",
+        "source-05-0432",
+        "source-05-0433"
+      ],
+      "source_span": [
+        6006,
+        6096
+      ],
+      "facsimile_pages": [
+        49,
+        50
+      ],
+      "captured_pages": [
+        49,
+        50
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "首陽/首山异写及堵山、騩山祭礼引用照录；不向本列添加缺失山段。"
+    },
+    {
+      "stage": 145,
+      "slug": "r11-yiwang",
+      "name": "翼望之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        434,
+        438
+      ],
+      "source_unit_ids": [
+        "source-05-0434",
+        "source-05-0435",
+        "source-05-0436",
+        "source-05-0437",
+        "source-05-0438"
+      ],
+      "source_span": [
+        6096,
+        6154
+      ],
+      "facsimile_pages": [
+        50
+      ],
+      "captured_pages": [
+        50
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "蛟形貌来自长郭注，四脚小首细颈白瘿等与正文来源分层。"
+    },
+    {
+      "stage": 146,
+      "slug": "r11-chaoge",
+      "name": "朝歌之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        439,
+        441
+      ],
+      "source_unit_ids": [
+        "source-05-0439",
+        "source-05-0440",
+        "source-05-0441"
+      ],
+      "source_span": [
+        6154,
+        6203
+      ],
+      "facsimile_pages": [
+        50,
+        51
+      ],
+      "captured_pages": [
+        50,
+        51
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 147,
+      "slug": "r11-diqun",
+      "name": "帝囷之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        442,
+        443
+      ],
+      "source_unit_ids": [
+        "source-05-0442",
+        "source-05-0443"
+      ],
+      "source_span": [
+        6203,
+        6240
+      ],
+      "facsimile_pages": [
+        51
+      ],
+      "captured_pages": [
+        51
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 148,
+      "slug": "r11-shi",
+      "name": "視山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        444,
+        445
+      ],
+      "source_unit_ids": [
+        "source-05-0444",
+        "source-05-0445"
+      ],
+      "source_span": [
+        6240,
+        6274
+      ],
+      "facsimile_pages": [
+        51
+      ],
+      "captured_pages": [
+        51
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 149,
+      "slug": "r11-qian",
+      "name": "前山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        446,
+        447
+      ],
+      "source_unit_ids": [
+        "source-05-0446",
+        "source-05-0447"
+      ],
+      "source_span": [
+        6274,
+        6297
+      ],
+      "facsimile_pages": [
+        51
+      ],
+      "captured_pages": [
+        51
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 150,
+      "slug": "r11-feng-first",
+      "name": "豐山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        448,
+        452
+      ],
+      "source_unit_ids": [
+        "source-05-0448",
+        "source-05-0449",
+        "source-05-0450",
+        "source-05-0451",
+        "source-05-0452"
+      ],
+      "source_span": [
+        6297,
+        6369
+      ],
+      "facsimile_pages": [
+        51,
+        52
+      ],
+      "captured_pages": [
+        51,
+        52
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "此豐山与509豐山同列重名分别建档；雍和蝯状赤目赤喙黄身，耕父仅记身份不编造独立神形。"
+    },
+    {
+      "stage": 151,
+      "slug": "r11-tuchuang",
+      "name": "⟦缺字图:兎⟧牀之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        453,
+        454
+      ],
+      "source_unit_ids": [
+        "source-05-0453",
+        "source-05-0454"
+      ],
+      "source_span": [
+        6369,
+        6414
+      ],
+      "facsimile_pages": [
+        52
+      ],
+      "captured_pages": [
+        52
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "兎牀缺字图待阅读层校释，不与茍牀相混。"
+    },
+    {
+      "stage": 152,
+      "slug": "r11-pi",
+      "name": "皮山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        455,
+        455
+      ],
+      "source_unit_ids": [
+        "source-05-0455"
+      ],
+      "source_span": [
+        6414,
+        6431
+      ],
+      "facsimile_pages": [
+        52
+      ],
+      "captured_pages": [
+        52
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 153,
+      "slug": "r11-yaobi",
+      "name": "瑶碧之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        456,
+        458
+      ],
+      "source_unit_ids": [
+        "source-05-0456",
+        "source-05-0457",
+        "source-05-0458"
+      ],
+      "source_span": [
+        6431,
+        6469
+      ],
+      "facsimile_pages": [
+        52
+      ],
+      "captured_pages": [
+        52
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "瑶碧鴆为雉状食蜚，郭注明言不是食蛇鴆，不借旧鴆图。"
+    },
+    {
+      "stage": 154,
+      "slug": "r11-zhili",
+      "name": "支離之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        459,
+        462
+      ],
+      "source_unit_ids": [
+        "source-05-0459",
+        "source-05-0460",
+        "source-05-0461",
+        "source-05-0462"
+      ],
+      "source_span": [
+        6469,
+        6520
+      ],
+      "facsimile_pages": [
+        53
+      ],
+      "captured_pages": [
+        53
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 155,
+      "slug": "r11-zhidiao",
+      "name": "祑𥮐之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        463,
+        464
+      ],
+      "source_unit_ids": [
+        "source-05-0463",
+        "source-05-0464"
+      ],
+      "source_span": [
+        6520,
+        6538
+      ],
+      "facsimile_pages": [
+        53
+      ],
+      "captured_pages": [
+        53
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 156,
+      "slug": "r11-jinli",
+      "name": "堇理之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        465,
+        467
+      ],
+      "source_unit_ids": [
+        "source-05-0465",
+        "source-05-0466",
+        "source-05-0467"
+      ],
+      "source_span": [
+        6538,
+        6596
+      ],
+      "facsimile_pages": [
+        53
+      ],
+      "captured_pages": [
+        53
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 157,
+      "slug": "r11-yiku",
+      "name": "依軲之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        468,
+        470
+      ],
+      "source_unit_ids": [
+        "source-05-0468",
+        "source-05-0469",
+        "source-05-0470"
+      ],
+      "source_span": [
+        6596,
+        6636
+      ],
+      "facsimile_pages": [
+        54
+      ],
+      "captured_pages": [
+        54
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 158,
+      "slug": "r11-jigu",
+      "name": "即谷之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        471,
+        472
+      ],
+      "source_unit_ids": [
+        "source-05-0471",
+        "source-05-0472"
+      ],
+      "source_span": [
+        6636,
+        6669
+      ],
+      "facsimile_pages": [
+        54
+      ],
+      "captured_pages": [
+        54
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 159,
+      "slug": "r11-ji",
+      "name": "鷄山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        473,
+        473
+      ],
+      "source_unit_ids": [
+        "source-05-0473"
+      ],
+      "source_span": [
+        6669,
+        6689
+      ],
+      "facsimile_pages": [
+        54
+      ],
+      "captured_pages": [
+        54
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 160,
+      "slug": "r11-gaoqian",
+      "name": "髙前之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        474,
+        476
+      ],
+      "source_unit_ids": [
+        "source-05-0474",
+        "source-05-0475",
+        "source-05-0476"
+      ],
+      "source_span": [
+        6689,
+        6728
+      ],
+      "facsimile_pages": [
+        54
+      ],
+      "captured_pages": [
+        54
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 161,
+      "slug": "r11-youxi",
+      "name": "游戯之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        477,
+        477
+      ],
+      "source_unit_ids": [
+        "source-05-0477"
+      ],
+      "source_span": [
+        6728,
+        6748
+      ],
+      "facsimile_pages": [
+        55
+      ],
+      "captured_pages": [
+        55
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 162,
+      "slug": "r11-cong",
+      "name": "從山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        478,
+        480
+      ],
+      "source_unit_ids": [
+        "source-05-0478",
+        "source-05-0479",
+        "source-05-0480"
+      ],
+      "source_span": [
+        6748,
+        6790
+      ],
+      "facsimile_pages": [
+        55
+      ],
+      "captured_pages": [
+        55
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "三足鳖枝尾与他篇旋龟、三足龟分开；三足和分枝尾分别核。"
+    },
+    {
+      "stage": 163,
+      "slug": "r11-yingzhen",
+      "name": "嬰䃌之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        481,
+        482
+      ],
+      "source_unit_ids": [
+        "source-05-0481",
+        "source-05-0482"
+      ],
+      "source_span": [
+        6790,
+        6811
+      ],
+      "facsimile_pages": [
+        55
+      ],
+      "captured_pages": [
+        55
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 164,
+      "slug": "r11-bi",
+      "name": "畢山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        483,
+        484
+      ],
+      "source_unit_ids": [
+        "source-05-0483",
+        "source-05-0484"
+      ],
+      "source_span": [
+        6811,
+        6846
+      ],
+      "facsimile_pages": [
+        55
+      ],
+      "captured_pages": [
+        55
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 165,
+      "slug": "r11-lema",
+      "name": "樂馬之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        485,
+        486
+      ],
+      "source_unit_ids": [
+        "source-05-0485",
+        "source-05-0486"
+      ],
+      "source_span": [
+        6846,
+        6878
+      ],
+      "facsimile_pages": [
+        55,
+        56
+      ],
+      "captured_pages": [
+        55,
+        56
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 166,
+      "slug": "r11-zhen",
+      "name": "葴山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        487,
+        488
+      ],
+      "source_unit_ids": [
+        "source-05-0487",
+        "source-05-0488"
+      ],
+      "source_span": [
+        6878,
+        6908
+      ],
+      "facsimile_pages": [
+        56
+      ],
+      "captured_pages": [
+        56
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 167,
+      "slug": "r11-ying",
+      "name": "嬰山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        489,
+        489
+      ],
+      "source_unit_ids": [
+        "source-05-0489"
+      ],
+      "source_span": [
+        6908,
+        6926
+      ],
+      "facsimile_pages": [
+        56
+      ],
+      "captured_pages": [
+        56
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 168,
+      "slug": "r11-hushou",
+      "name": "虎首之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        490,
+        490
+      ],
+      "source_unit_ids": [
+        "source-05-0490"
+      ],
+      "source_span": [
+        6926,
+        6940
+      ],
+      "facsimile_pages": [
+        56
+      ],
+      "captured_pages": [
+        56
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 169,
+      "slug": "r11-yinghou",
+      "name": "嬰侯之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        491,
+        491
+      ],
+      "source_unit_ids": [
+        "source-05-0491"
+      ],
+      "source_span": [
+        6940,
+        6960
+      ],
+      "facsimile_pages": [
+        56
+      ],
+      "captured_pages": [
+        56
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 170,
+      "slug": "r11-dashu",
+      "name": "大孰之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        492,
+        493
+      ],
+      "source_unit_ids": [
+        "source-05-0492",
+        "source-05-0493"
+      ],
+      "source_span": [
+        6960,
+        6986
+      ],
+      "facsimile_pages": [
+        56
+      ],
+      "captured_pages": [
+        56
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 171,
+      "slug": "r11-bei",
+      "name": "卑山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        494,
+        495
+      ],
+      "source_unit_ids": [
+        "source-05-0494",
+        "source-05-0495"
+      ],
+      "source_span": [
+        6986,
+        7003
+      ],
+      "facsimile_pages": [
+        56,
+        57
+      ],
+      "captured_pages": [
+        56,
+        57
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 172,
+      "slug": "r11-yidi",
+      "name": "倚帝之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        496,
+        498
+      ],
+      "source_unit_ids": [
+        "source-05-0496",
+        "source-05-0497",
+        "source-05-0498"
+      ],
+      "source_span": [
+        7003,
+        7044
+      ],
+      "facsimile_pages": [
+        57
+      ],
+      "captured_pages": [
+        57
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "狙如如鼣鼠白耳白喙，郭注鼠形未详，不强定现代种或借南山白耳鼠图。"
+    },
+    {
+      "stage": 173,
+      "slug": "r11-ni",
+      "name": "鯢山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        499,
+        500
+      ],
+      "source_unit_ids": [
+        "source-05-0499",
+        "source-05-0500"
+      ],
+      "source_span": [
+        7044,
+        7076
+      ],
+      "facsimile_pages": [
+        57
+      ],
+      "captured_pages": [
+        57
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 174,
+      "slug": "r11-ya",
+      "name": "雅山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        501,
+        502
+      ],
+      "source_unit_ids": [
+        "source-05-0501",
+        "source-05-0502"
+      ],
+      "source_span": [
+        7076,
+        7111
+      ],
+      "facsimile_pages": [
+        57
+      ],
+      "captured_pages": [
+        57
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 175,
+      "slug": "r11-xuan",
+      "name": "宣山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        503,
+        506
+      ],
+      "source_unit_ids": [
+        "source-05-0503",
+        "source-05-0504",
+        "source-05-0505",
+        "source-05-0506"
+      ],
+      "source_span": [
+        7111,
+        7164
+      ],
+      "facsimile_pages": [
+        57,
+        58
+      ],
+      "captured_pages": [
+        57,
+        58
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "帝女之桑是木名与蚕事解释，不自动新造帝女形貌。"
+    },
+    {
+      "stage": 176,
+      "slug": "r11-heng",
+      "name": "衡山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        507,
+        508
+      ],
+      "source_unit_ids": [
+        "source-05-0507",
+        "source-05-0508"
+      ],
+      "source_span": [
+        7164,
+        7185
+      ],
+      "facsimile_pages": [
+        58
+      ],
+      "captured_pages": [
+        58
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 177,
+      "slug": "r11-feng-second",
+      "name": "豐山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        509,
+        510
+      ],
+      "source_unit_ids": [
+        "source-05-0509",
+        "source-05-0510"
+      ],
+      "source_span": [
+        7185,
+        7216
+      ],
+      "facsimile_pages": [
+        58
+      ],
+      "captured_pages": [
+        58
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 178,
+      "slug": "r11-yu-mountain",
+      "name": "嫗山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        511,
+        512
+      ],
+      "source_unit_ids": [
+        "source-05-0511",
+        "source-05-0512"
+      ],
+      "source_span": [
+        7216,
+        7238
+      ],
+      "facsimile_pages": [
+        58
+      ],
+      "captured_pages": [
+        58
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 179,
+      "slug": "r11-xian",
+      "name": "鮮山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        513,
+        515
+      ],
+      "source_unit_ids": [
+        "source-05-0513",
+        "source-05-0514",
+        "source-05-0515"
+      ],
+      "source_span": [
+        7238,
+        7289
+      ],
+      "facsimile_pages": [
+        59
+      ],
+      "captured_pages": [
+        59
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 180,
+      "slug": "r11-zhang",
+      "name": "章山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        516,
+        517
+      ],
+      "source_unit_ids": [
+        "source-05-0516",
+        "source-05-0517"
+      ],
+      "source_span": [
+        7289,
+        7321
+      ],
+      "facsimile_pages": [
+        59
+      ],
+      "captured_pages": [
+        59
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 181,
+      "slug": "r11-dazhi",
+      "name": "大支之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        518,
+        519
+      ],
+      "source_unit_ids": [
+        "source-05-0518",
+        "source-05-0519"
+      ],
+      "source_span": [
+        7321,
+        7344
+      ],
+      "facsimile_pages": [
+        59
+      ],
+      "captured_pages": [
+        59
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "大支多榖柞后又无草木，矛盾如实保留，不删改其一。"
+    },
+    {
+      "stage": 182,
+      "slug": "r11-quwu",
+      "name": "區吴之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        520,
+        520
+      ],
+      "source_unit_ids": [
+        "source-05-0520"
+      ],
+      "source_span": [
+        7344,
+        7358
+      ],
+      "facsimile_pages": [
+        59
+      ],
+      "captured_pages": [
+        59
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 183,
+      "slug": "r11-shengxiong",
+      "name": "聲匈之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        521,
+        521
+      ],
+      "source_unit_ids": [
+        "source-05-0521"
+      ],
+      "source_span": [
+        7358,
+        7378
+      ],
+      "facsimile_pages": [
+        59
+      ],
+      "captured_pages": [
+        59
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 184,
+      "slug": "r11-dagui",
+      "name": "大騩之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        522,
+        523
+      ],
+      "source_unit_ids": [
+        "source-05-0522",
+        "source-05-0523"
+      ],
+      "source_span": [
+        7378,
+        7398
+      ],
+      "facsimile_pages": [
+        60
+      ],
+      "captured_pages": [
+        60
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 185,
+      "slug": "r11-zhongjiu",
+      "name": "踵臼之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        524,
+        524
+      ],
+      "source_unit_ids": [
+        "source-05-0524"
+      ],
+      "source_span": [
+        7398,
+        7410
+      ],
+      "facsimile_pages": [
+        60
+      ],
+      "captured_pages": [
+        60
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 186,
+      "slug": "r11-lishi",
+      "name": "歴石之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        525,
+        527
+      ],
+      "source_unit_ids": [
+        "source-05-0525",
+        "source-05-0526",
+        "source-05-0527"
+      ],
+      "source_span": [
+        7410,
+        7459
+      ],
+      "facsimile_pages": [
+        60
+      ],
+      "captured_pages": [
+        60
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "梁渠狸状白首虎爪，与北山梁渠山、囂鸟分开，逐一注明出处。"
+    },
+    {
+      "stage": 187,
+      "slug": "r11-qiu",
+      "name": "求山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        528,
+        529
+      ],
+      "source_unit_ids": [
+        "source-05-0528",
+        "source-05-0529"
+      ],
+      "source_span": [
+        7459,
+        7496
+      ],
+      "facsimile_pages": [
+        60
+      ],
+      "captured_pages": [
+        60
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 188,
+      "slug": "r11-chouyang",
+      "name": "丑陽之山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        530,
+        531
+      ],
+      "source_unit_ids": [
+        "source-05-0530",
+        "source-05-0531"
+      ],
+      "source_span": [
+        7496,
+        7529
+      ],
+      "facsimile_pages": [
+        60,
+        61
+      ],
+      "captured_pages": [
+        60,
+        61
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 189,
+      "slug": "r11-ao",
+      "name": "奧山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        532,
+        533
+      ],
+      "source_unit_ids": [
+        "source-05-0532",
+        "source-05-0533"
+      ],
+      "source_span": [
+        7529,
+        7560
+      ],
+      "facsimile_pages": [
+        61
+      ],
+      "captured_pages": [
+        61
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 190,
+      "slug": "r11-fu",
+      "name": "服山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        534,
+        535
+      ],
+      "source_unit_ids": [
+        "source-05-0534",
+        "source-05-0535"
+      ],
+      "source_span": [
+        7560,
+        7583
+      ],
+      "facsimile_pages": [
+        61
+      ],
+      "captured_pages": [
+        61
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 191,
+      "slug": "r11-yao",
+      "name": "杳山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        536,
+        536
+      ],
+      "source_unit_ids": [
+        "source-05-0536"
+      ],
+      "source_span": [
+        7583,
+        7600
+      ],
+      "facsimile_pages": [
+        61
+      ],
+      "captured_pages": [
+        61
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 192,
+      "slug": "r11-ji-mountain",
+      "name": "几山",
+      "range": 11,
+      "kind": "mountain",
+      "source_units": [
+        537,
+        539
+      ],
+      "source_unit_ids": [
+        "source-05-0537",
+        "source-05-0538",
+        "source-05-0539"
+      ],
+      "source_span": [
+        7600,
+        7643
+      ],
+      "facsimile_pages": [
+        61
+      ],
+      "captured_pages": [
+        61
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "聞𧲂彘状黄身白头白尾，539异体替换符留待字形复核。"
+    },
+    {
+      "stage": 193,
+      "slug": "r11-summary",
+      "name": "次11总括与祭礼",
+      "range": 11,
+      "kind": "summary",
+      "source_units": [
+        540,
+        544
+      ],
+      "source_unit_ids": [
+        "source-05-0540",
+        "source-05-0541",
+        "source-05-0542",
+        "source-05-0543",
+        "source-05-0544"
+      ],
+      "source_span": [
+        7643,
+        7739
+      ],
+      "facsimile_pages": [
+        62
+      ],
+      "captured_pages": [
+        62
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "次十一48列名与总括48相合；禾山、堵山、玉山是总括祭礼引用，不擅补路线。"
+    },
+    {
+      "stage": 194,
+      "slug": "r12-pianyu",
+      "name": "篇遇之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        545,
+        546
+      ],
+      "source_unit_ids": [
+        "source-05-0545",
+        "source-05-0546"
+      ],
+      "source_span": [
+        7739,
+        7760
+      ],
+      "facsimile_pages": [
+        62
+      ],
+      "captured_pages": [
+        62
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "篇遇原字保留，郭注或作肩；不按通行本自动改字。"
+    },
+    {
+      "stage": 195,
+      "slug": "r12-yun",
+      "name": "雲山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        547,
+        549
+      ],
+      "source_unit_ids": [
+        "source-05-0547",
+        "source-05-0548",
+        "source-05-0549"
+      ],
+      "source_span": [
+        7760,
+        7793
+      ],
+      "facsimile_pages": [
+        62,
+        63
+      ],
+      "captured_pages": [
+        62,
+        63
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 196,
+      "slug": "r12-gui",
+      "name": "龜山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        550,
+        551
+      ],
+      "source_unit_ids": [
+        "source-05-0550",
+        "source-05-0551"
+      ],
+      "source_span": [
+        7793,
+        7825
+      ],
+      "facsimile_pages": [
+        63
+      ],
+      "captured_pages": [
+        63
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 197,
+      "slug": "r12-bing",
+      "name": "丙山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        552,
+        552
+      ],
+      "source_unit_ids": [
+        "source-05-0552"
+      ],
+      "source_span": [
+        7825,
+        7843
+      ],
+      "facsimile_pages": [
+        63
+      ],
+      "captured_pages": [
+        63
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 198,
+      "slug": "r12-fengbo",
+      "name": "風伯之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        553,
+        555
+      ],
+      "source_unit_ids": [
+        "source-05-0553",
+        "source-05-0554",
+        "source-05-0555"
+      ],
+      "source_span": [
+        7843,
+        7891
+      ],
+      "facsimile_pages": [
+        63
+      ],
+      "captured_pages": [
+        63
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 199,
+      "slug": "r12-fufu",
+      "name": "夫夫之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        556,
+        558
+      ],
+      "source_unit_ids": [
+        "source-05-0556",
+        "source-05-0557",
+        "source-05-0558"
+      ],
+      "source_span": [
+        7891,
+        7948
+      ],
+      "facsimile_pages": [
+        63,
+        64
+      ],
+      "captured_pages": [
+        63,
+        64
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "于儿人身、身操两蛇照底本，不擅改为手操；数量两蛇必核，光为古述。"
+    },
+    {
+      "stage": 200,
+      "slug": "r12-dongting",
+      "name": "洞庭之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        559,
+        576
+      ],
+      "source_unit_ids": [
+        "source-05-0559",
+        "source-05-0560",
+        "source-05-0561",
+        "source-05-0562",
+        "source-05-0563",
+        "source-05-0564",
+        "source-05-0565",
+        "source-05-0566",
+        "source-05-0567",
+        "source-05-0568",
+        "source-05-0569",
+        "source-05-0570",
+        "source-05-0571",
+        "source-05-0572",
+        "source-05-0573",
+        "source-05-0574",
+        "source-05-0575",
+        "source-05-0576"
+      ],
+      "source_span": [
+        7948,
+        8053
+      ],
+      "facsimile_pages": [
+        64,
+        65,
+        66
+      ],
+      "captured_pages": [
+        64,
+        65,
+        66
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "洞庭长郭注563—575含多条纯注文，保留在洞庭段。郭璞辨帝之二女与尧女舜妃，不能把异说压成同一身份；怪神载蛇左右手操蛇与帝女分别录。575飘风接576复杂暴字缺字图雨仍属本段，不切给577𭧂山。"
+    },
+    {
+      "stage": 201,
+      "slug": "r12-bao",
+      "name": "𭧂山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        577,
+        579
+      ],
+      "source_unit_ids": [
+        "source-05-0577",
+        "source-05-0578",
+        "source-05-0579"
+      ],
+      "source_span": [
+        8053,
+        8094
+      ],
+      "facsimile_pages": [
+        66
+      ],
+      "captured_pages": [
+        66
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 202,
+      "slug": "r12-jigong",
+      "name": "即公之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        580,
+        582
+      ],
+      "source_unit_ids": [
+        "source-05-0580",
+        "source-05-0581",
+        "source-05-0582"
+      ],
+      "source_span": [
+        8094,
+        8144
+      ],
+      "facsimile_pages": [
+        66
+      ],
+      "captured_pages": [
+        66
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "蛫龟状白身赤首，御火为古述，不添加火焰器官。"
+    },
+    {
+      "stage": 203,
+      "slug": "r12-yao",
+      "name": "堯山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        583,
+        584
+      ],
+      "source_unit_ids": [
+        "source-05-0583",
+        "source-05-0584"
+      ],
+      "source_span": [
+        8144,
+        8179
+      ],
+      "facsimile_pages": [
+        66
+      ],
+      "captured_pages": [
+        66
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 204,
+      "slug": "r12-jiangfu",
+      "name": "江浮之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        585,
+        586
+      ],
+      "source_unit_ids": [
+        "source-05-0585",
+        "source-05-0586"
+      ],
+      "source_span": [
+        8179,
+        8204
+      ],
+      "facsimile_pages": [
+        67
+      ],
+      "captured_pages": [
+        67
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 205,
+      "slug": "r12-zhenling",
+      "name": "真𨹧之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        587,
+        588
+      ],
+      "source_unit_ids": [
+        "source-05-0587",
+        "source-05-0588"
+      ],
+      "source_span": [
+        8204,
+        8235
+      ],
+      "facsimile_pages": [
+        67
+      ],
+      "captured_pages": [
+        67
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 206,
+      "slug": "r12-yangdi",
+      "name": "陽帝之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        589,
+        590
+      ],
+      "source_unit_ids": [
+        "source-05-0589",
+        "source-05-0590"
+      ],
+      "source_span": [
+        8235,
+        8263
+      ],
+      "facsimile_pages": [
+        67
+      ],
+      "captured_pages": [
+        67
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 207,
+      "slug": "r12-chaisang",
+      "name": "柴桑之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        591,
+        593
+      ],
+      "source_unit_ids": [
+        "source-05-0591",
+        "source-05-0592",
+        "source-05-0593"
+      ],
+      "source_span": [
+        8263,
+        8302
+      ],
+      "facsimile_pages": [
+        67
+      ],
+      "captured_pages": [
+        67
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 208,
+      "slug": "r12-rongyu",
+      "name": "榮余之山",
+      "range": 12,
+      "kind": "mountain",
+      "source_units": [
+        594,
+        595
+      ],
+      "source_unit_ids": [
+        "source-05-0594",
+        "source-05-0595"
+      ],
+      "source_span": [
+        8302,
+        8334
+      ],
+      "facsimile_pages": [
+        68
+      ],
+      "captured_pages": [
+        68
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+    },
+    {
+      "stage": 209,
+      "slug": "r12-summary",
+      "name": "次12总括与祭礼",
+      "range": 12,
+      "kind": "summary",
+      "source_units": [
+        596,
+        602
+      ],
+      "source_unit_ids": [
+        "source-05-0596",
+        "source-05-0597",
+        "source-05-0598",
+        "source-05-0599",
+        "source-05-0600",
+        "source-05-0601",
+        "source-05-0602"
+      ],
+      "source_span": [
+        8334,
+        8445
+      ],
+      "facsimile_pages": [
+        68
+      ],
+      "captured_pages": [
+        68
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "次十二十五山与列名相合，祭礼中的圭璧十五、五彩等数量分别录，不视为新山神数量。"
+    },
+    {
+      "stage": 210,
+      "slug": "book-world-total",
+      "name": "中山及天下名山总计",
+      "range": 13,
+      "kind": "closing_total",
+      "source_units": [
+        603,
+        605
+      ],
+      "source_unit_ids": [
+        "source-05-0603",
+        "source-05-0604",
+        "source-05-0605"
+      ],
+      "source_span": [
+        8445,
+        8492
+      ],
+      "facsimile_pages": [
+        68,
+        69
+      ],
+      "captured_pages": [
+        69
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "中山197山21371里、天下5370山64056里在同一收束段；604同块含两项总计，分别作实体引文，不强切捕获行。各列报数198与197差1，里程和28595与21371差7224，照录。"
+    },
+    {
+      "stage": 211,
+      "slug": "yu-cosmography",
+      "name": "禹曰天地及国用",
+      "range": 13,
+      "kind": "cosmography",
+      "source_units": [
+        606,
+        613
+      ],
+      "source_unit_ids": [
+        "source-05-0606",
+        "source-05-0607",
+        "source-05-0608",
+        "source-05-0609",
+        "source-05-0610",
+        "source-05-0611",
+        "source-05-0612",
+        "source-05-0613"
+      ],
+      "source_span": [
+        8492,
+        8642
+      ],
+      "facsimile_pages": [
+        69,
+        70
+      ],
+      "captured_pages": [
+        69,
+        70
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "禹曰及天地尺寸、出受水山、铜铁山、封禅国用是古宇宙地理与国用论述，不作实测现代数据或新路线山段。"
+    },
+    {
+      "stage": 212,
+      "slug": "five-books-colophon",
+      "name": "五臧五篇题计",
+      "range": 13,
+      "kind": "colophon",
+      "source_units": [
+        614,
+        614
+      ],
+      "source_unit_ids": [
+        "source-05-0614"
+      ],
+      "source_span": [
+        8642,
+        8659
+      ],
+      "facsimile_pages": [
+        70
+      ],
+      "captured_pages": [
+        70
+      ],
+      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
+      "content_status": "pending_bilingual_entity_review",
+      "browser_status": "not_implemented",
+      "note": "五臧五篇15503字为底本文本计数说明，不当作当前录文实际字数或五篇语义段数。"
+    }
+  ],
+  "entry_ids": [],
+  "passages": [],
+  "artwork_summary": {
+    "selected": 0,
+    "appearance_unknown": 0
+  },
+  "font_preflight": {
+    "status": "future_content_pending",
+    "missing_stage_title_characters": "䣀丑丙仁休伯倚兎冝几凡勇匈半卑堇堯堵夫奧威婁媱嫗宣室密岷崌崍廆役復戯敏敖斸朝杳柄柴棗檷歌洞涹煇皮瞻祑綸縞繁繢羝脱臧臼苦茍葌葴蘇虛蠱視講豐豬賈超軲釐鐙陘雲霍驕鯢𥮐𩇵𫝊𭧂",
+    "missing_stage_title_count": 83,
+    "limits": "只预检规划标题；完整实体名、正文与注文仍须逐批预检。准备阶段不宣称字体或页面接入完成。"
+  },
+  "limits": "197列名山+12总括祭礼+3收束=212规划阶段，不等于200自动结构候选；仅首五段核定影印段界，其余逐阶段核页、释字与形貌。所有扫描保存并校验，不代表全部逐字校勘。快照原样保留，未生成或发布生物图，未增加网页阅读。"
+}

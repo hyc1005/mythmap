@@ -27,6 +27,11 @@ def build(check=False):
         eastern_review = read('data/dongshan-edition-review.json')
         page_corrections = {**page_corrections, **eastern_review.get('source_unit_page_corrections', {})}
         heading_ids.update(eastern_review.get('heading_unit_ids', []))
+    central_review_path = ROOT / 'data/zhongshan-edition-review.json'
+    central_review = read('data/zhongshan-edition-review.json') if central_review_path.exists() else {}
+    if central_review:
+        page_corrections = {**page_corrections, **central_review.get('source_unit_page_corrections', {})}
+        heading_ids.update(central_review.get('heading_unit_ids', []))
     confirmed = {}
     for passage in passages:
         for id in passage['source_unit_ids']:
@@ -89,6 +94,8 @@ def build(check=False):
             'pending_candidate_passages':sum(p['chapter']==c['number'] and p['status']=='pending_review' for p in drafts),
             'semantic_review':'reviewed' if all(u['confirmed_passage_ids'] or u['status']=='heading_metadata' for u in units if u['chapter']==c['number']) else 'partial' if any(p['region']==c['title'] for p in passages) else 'pending'} for c in snapshot['chapters']],
         'units':units, 'candidate_passages':drafts}
+    if central_review:
+        value['chapters'][4].update(planned_semantic_stages=central_review['planned_stages'], implemented_semantic_stages=central_review['implemented_stages'], preparation_status=central_review['status'], edition_review='data/zhongshan-edition-review.json')
     path=ROOT/'data/shanhaijing-inventory.json'
     output=json.dumps(value,ensure_ascii=False,indent=2)+'\n'
     if check:

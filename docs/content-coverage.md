@@ -19,7 +19,7 @@
 | [西山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%8C&oldid=2652852) | 596 | 0 | 2 | 82段、508张新卡已接入；其余仍待核 |
 | [北山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853) | 601 | 0 | 0 | 全篇92阅读段、507张独立卡已核；形貌不足者留占位 |
 | [东山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854) | 289 | 0 | 0 | 全篇51阅读段接入；疑难字与数字差异明确保留 |
-| [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 0 | 0 | 0 | 尚无明确篇目对应 |
+| [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 0 | 0 | 0 | 准备阶段完成；212阶段已规划、0阶段接入；逐阶段影印与实体仍待复核 |
 | [海外南经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AD&oldid=2652857) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
 | [海外西经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%83&oldid=2652858) | 1 | 0 | 1 | 选编，篇内仍有遗漏 |
 | [海外北经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AB&oldid=2652859) | 2 | 0 | 2 | 选编，篇内仍有遗漏 |
@@ -123,7 +123,7 @@
 
 ### 05 中山经
 
-- 待补方向：补具体山系、山水、物产与祭祀记述，避免只凭少量异兽代表全篇。
+- 待补方向：准备阶段已保存下册2—70页69张影印并规划212阶段：197列名山、12总括祭礼、3收束；首五段影印段界核定，其余仍需逐阶段复核。614录文块含1标题与613正文/注文块；200结构候选不是已核阶段数。次五15列名与原报16、各列原报合198与篇末197、里程合28595与篇末21371分别保留。已接入0阅读段，剩212阶段；疑字、同名异篇、纯注文与字体缺口详见data/zhongshan-edition-review.json。
 - 校核入口：[该篇固定修订](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856)；录文尚需与影印页对校，不把自动导入视为已核对。
 
 ### 06 海外南经
@@ -1986,6 +1986,7 @@
 - `python data/build_nanshan_reader.py`：重建43段双语正文、出处和校核差异，保留既有独立条目。
 - `python data/build_nanshan_entities.py`：在旧批次/阅读器构建之后运行，恢复最新实体、关系、图像状态和覆盖清单；不可将reader或首批构建器作为最后一步。
 - `python data/build_source_inventory.py`（可加`--check`）：生成/检查十八篇原文块清单及明确的待核状态。
+- `python data/prepare_zhongshan.py`（可加`--check`）：离线重建/检查中山212阶段准备计划、69影印哈希、标题字体预检；只规划，不增加网页阅读或配图。之后重建全书inventory/audit。
 - `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。
 - `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。
 - `python data/build_xishan.py`：合并西山经82段与508张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。

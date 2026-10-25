@@ -103,6 +103,7 @@ def generate(check=False):
     northern_passages = [p for p in world['passages'] if p.get('source_book') == 3]
     northern_cards = [r for group in ['beasts', 'natural_features', 'text_entities', 'places'] for r in world[group] if r.get('content_batch', '').startswith('beishan-')]
     eastern_review = read('data/dongshan-edition-review.json') if (ROOT / 'data/dongshan-edition-review.json').exists() else {}
+    central_review = read('data/zhongshan-edition-review.json') if (ROOT / 'data/zhongshan-edition-review.json').exists() else {}
     coverage = read('data/nanshan-entity-coverage.json')
     artwork_jobs = read('frontend/artwork-source/nanshan/entities-generation.json')['assets']
     reviewed_artwork = sum(asset['status'] == 'reviewed' for asset in artwork_jobs)
@@ -140,6 +141,8 @@ def generate(check=False):
             state = f'全篇{len(northern_passages)}阅读段、{len(northern_cards)}张独立卡已核；形貌不足者留占位'
         if chapter['number'] == 4 and eastern_review:
             state = f'全篇{eastern_review["implemented_stages"]}阅读段接入；疑难字与数字差异明确保留' if eastern_review['remaining_stages']==0 else f'{eastern_review["planned_stages"]}阶段已规划、{eastern_review["implemented_stages"]}阶段接入；其余仍待接入'
+        if chapter['number'] == 5 and central_review:
+            state = f'准备阶段完成；{central_review["planned_stages"]}阶段已规划、{central_review["implemented_stages"]}阶段接入；逐阶段影印与实体仍待复核'
         out.append(f'| [{chapter["title"]}]({chapter["revision_url"]}) | {counts["web"]} | {counts["archive_or_group"]} | {counts["unexposed"]} | {state} |')
     out += ['', '## 逐篇已收录与待补方向', '']
     gaps = {
@@ -147,7 +150,7 @@ def generate(check=False):
         '西山经': f'{western_names}共{len(western_passages)}段和{len(western_cards)}张独立卡已核对接入；保留原有异兽与玉山等ID。全篇正文、山水物产与主要具名神祇已接入；第三列报山数与里程合计差异保留。配图仍按形貌依据审核，不宣称多版本逐字校勘或实体穷尽。',
         '北山经': f'全篇{len(northern_passages)}阅读段、{len(northern_cards)}张独立卡已核，對照76—108页影印。北山57幅新图已审，諸犍与精衛复用旧图；26个形貌不足对象留占位。297录文块含1标题与296正文/注文块，全部映射到阅读段。三列原报山数合88、里程23530，与篇末87山、23230里分别保留；列名阅读山段25/16/47与原报25/17/46分开，不补删凑数。独立实体仍为项目整理，不宣称多版本逐字校勘或全书完成。',
         '东山经': (f'已核影印109—124页段界并规划{eastern_review["planned_stages"]}阶段：46列名山段、4总括、1篇末；141录文块含2标题/署名与139正文/注文块，42结构候选不等于阶段数。次三列名9与原报19、四列原报合56与篇末46并存；里程合18860与篇末一致。已接入{eastern_review["implemented_stages"]}阅读段、{len(eastern_review.get("entry_ids",[]))}独立卡，余{eastern_review["remaining_stages"]}阶段；已审图{eastern_review.get("artwork_summary",{}).get("selected",0)}幅、形貌不足占位{eastern_review.get("artwork_summary",{}).get("appearance_unknown",0)}项。食/湖/海/江与鱤鱼的不同出处分别保留。计划及15页界修正见data/dongshan-edition-review.json。' if eastern_review else '山列只是集合锚点；具体山水与各类物产尚未形成逐山索引。'),
-        '中山经': '补具体山系、山水、物产与祭祀记述，避免只凭少量异兽代表全篇。',
+        '中山经': (f'准备阶段已保存下册2—70页69张影印并规划{central_review["planned_stages"]}阶段：197列名山、12总括祭礼、3收束；首五段影印段界核定，其余仍需逐阶段复核。614录文块含1标题与613正文/注文块；200结构候选不是已核阶段数。次五15列名与原报16、各列原报合198与篇末197、里程合28595与篇末21371分别保留。已接入{central_review["implemented_stages"]}阅读段，剩{central_review["remaining_stages"]}阶段；疑字、同名异篇、纯注文与字体缺口详见data/zhongshan-edition-review.json。' if central_review else '补具体山系、山水、物产与祭祀记述，避免只凭少量异兽代表全篇。'),
         '海外南经': '国家、异人、神祇及明确方位关系未形成完整可达条目。',
         '海外西经': '刑天故事之外，诸国、异人与神祇关系待系统整理。',
         '海外北经': '夸父、相柳之外的国家、神祇与方位关系仍有大量缺口。',
@@ -249,6 +252,7 @@ def generate(check=False):
             '- `python data/build_nanshan_reader.py`：重建43段双语正文、出处和校核差异，保留既有独立条目。',
             '- `python data/build_nanshan_entities.py`：在旧批次/阅读器构建之后运行，恢复最新实体、关系、图像状态和覆盖清单；不可将reader或首批构建器作为最后一步。',
             '- `python data/build_source_inventory.py`（可加`--check`）：生成/检查十八篇原文块清单及明确的待核状态。',
+            '- `python data/prepare_zhongshan.py`（可加`--check`）：离线重建/检查中山212阶段准备计划、69影印哈希、标题字体预检；只规划，不增加网页阅读或配图。之后重建全书inventory/audit。',
             '- `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。',
             '- `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。',
             f'- `python data/build_xishan.py`：合并西山经{len(western_passages)}段与{len(western_cards)}张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。',

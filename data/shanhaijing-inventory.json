@@ -52,7 +52,11 @@
       "semantic_passages": 0,
       "candidate_passages": 200,
       "pending_candidate_passages": 200,
-      "semantic_review": "pending"
+      "semantic_review": "pending",
+      "planned_semantic_stages": 212,
+      "implemented_semantic_stages": 0,
+      "preparation_status": "planned_not_implemented",
+      "edition_review": "data/zhongshan-edition-review.json"
     },
     {
       "number": 6,
@@ -27963,7 +27967,7 @@
       "text": "中山經第五郭氏傳",
       "commentary": [],
       "text_sha256": "3a2756c2a41d59bd5eebb101191340a2cefa4d5e3bd0ca185767d01ae922a51d",
-      "status": "pending_review",
+      "status": "heading_metadata",
       "confirmed_passage_ids": [],
       "candidate_entry_ids": [],
       "objects": [],
@@ -28100,7 +28104,7 @@
       "id": "source-05-0009",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/3",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/2",
       "page_quality": "1",
       "text": "服之不忘",
       "commentary": [
@@ -28112,7 +28116,8 @@
       "candidate_entry_ids": [],
       "objects": [],
       "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/3"
     },
     {
       "id": "source-05-0010",
@@ -28255,7 +28260,7 @@
       "id": "source-05-0018",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/4",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/3",
       "page_quality": "1",
       "text": "食之不眯",
       "commentary": [
@@ -28267,7 +28272,8 @@
       "candidate_entry_ids": [],
       "objects": [],
       "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/4"
     },
     {
       "id": "source-05-0019",
@@ -28411,7 +28417,7 @@
       "id": "source-05-0027",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/5",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/4",
       "page_quality": "1",
       "text": "不憂勞水出焉而西流注于潏水是多飛魚",
       "commentary": [
@@ -28423,7 +28429,8 @@
       "candidate_entry_ids": [],
       "objects": [],
       "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/5"
     },
     {
       "id": "source-05-0028",
@@ -28570,7 +28577,7 @@
       "id": "source-05-0036",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/6",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/5",
       "page_quality": "1",
       "text": "又東北四百里曰皷鐙之山多赤銅有草焉名曰榮",
       "commentary": [],
@@ -28580,7 +28587,8 @@
       "candidate_entry_ids": [],
       "objects": [],
       "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/6"
     },
     {
       "id": "source-05-0037",
@@ -28720,7 +28728,7 @@
       "id": "source-05-0045",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/7",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/6",
       "page_quality": "1",
       "text": "又西南二百里曰發視之山其上多金玉其下多砥",
       "commentary": [],
@@ -28730,7 +28738,8 @@
       "candidate_entry_ids": [],
       "objects": [],
       "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/7"
     },
     {
       "id": "source-05-0046",
@@ -30743,7 +30752,7 @@
       "id": "source-05-0162",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/20",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/19",
       "page_quality": "1",
       "text": "𦘺牲祠之用一黑犬于上用一雌鷄于下刉一",
       "commentary": [
@@ -30755,7 +30764,8 @@
       "candidate_entry_ids": [],
       "objects": [],
       "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/20"
     },
     {
       "id": "source-05-0163",
@@ -38328,7 +38338,7 @@
       "id": "source-05-0603",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/69",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/68",
       "page_quality": "1",
       "text": "右中經之山志大凡百九十七山二萬一千三百七",
       "commentary": [],
@@ -38338,7 +38348,8 @@
       "candidate_entry_ids": [],
       "objects": [],
       "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/69"
     },
     {
       "id": "source-05-0604",
@@ -38472,7 +38483,7 @@
       "id": "source-05-0612",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/70",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/69",
       "page_quality": "1",
       "text": "於太山禪於梁父七十二家得失之數皆在此内是",
       "commentary": [],
@@ -38482,7 +38493,8 @@
       "candidate_entry_ids": [],
       "objects": [],
       "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/70"
     },
     {
       "id": "source-05-0613",
@@ -60439,8 +60451,7 @@
         "source-05-0009"
       ],
       "source_pages": [
-        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/2",
-        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/3"
+        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/2"
       ],
       "text": "又東二十里曰歴兒之山其上多橿多櫔木是木也方莖而員葉黄華而毛其實如揀服之不忘",
       "candidate_entry_ids": [],
@@ -60524,8 +60535,7 @@
         "source-05-0018"
       ],
       "source_pages": [
-        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/3",
-        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/4"
+        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/3"
       ],
       "text": "又東七十里曰脱扈之山有草焉其狀如葵葉而赤華莢實實如㯶莢名曰植楮可以已癙食之不眯",
       "candidate_entry_ids": [],
@@ -60713,6 +60723,7 @@
         "source-05-0038"
       ],
       "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/5",
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/6"
       ],
       "text": "又東北四百里曰皷鐙之山多赤銅有草焉名曰榮草其葉如柳其本如鷄卵食之已風凡薄山之首自甘棗之山至于皷鐙之山",
@@ -60758,6 +60769,7 @@
         "source-05-0046"
       ],
       "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/6",
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/7"
       ],
       "text": "又西南二百里曰發視之山其上多金玉其下多砥礪即魚之水出焉而西流注于伊水",
