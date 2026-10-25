@@ -7,9 +7,9 @@
 - 十八篇录文块清单见 `data/shanhaijing-inventory.json`，每项保存页码、原文、注文与待核状态。《南山经》43段、《西山经》82段、《北山经》92段与《东山经》51段已接入说明；其余结构候选的段界、实体、关系和影印仍待人工核定。不是全书穷尽实体索引，也不是各版本校勘定本。
 - 已保存十八篇逐行正文、注文、影印页锚点、校对状态和固定修订链接，见 `data/shanhaijing-reference.json`。录文中缺字图保留显式标记，不猜字补齐。
 - 下表按当前条目声明的出处计数；同一条目可引用多篇，同名异篇保持分开。地点锚点、神域、异兽、故事不是同一统计单位，不能相加后声称全书覆盖率。
-- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。259条异兽记录，同名异篇分开；746条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
+- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。270条异兽记录，同名异篇分开；815条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
 - “常规入口”是地图、图鉴、章节目录中的独立条目；“非默认条目”是归档/组，仍可从搜索或直链打开；“未开放”指数据已有记录，但没有可用章节入口。引用某篇不等于完整收录该篇。
-- 项目共 1718 条上述记录（含271条经文阅读段，与独立实体不是同一统计单位）：常规入口 1708，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
+- 项目共 1880 条上述记录（含301条经文阅读段，与独立实体不是同一统计单位）：常规入口 1870，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
 
 ## 十八篇对应清单
 
@@ -19,7 +19,7 @@
 | [西山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%8C&oldid=2652852) | 596 | 0 | 2 | 82段、508张新卡已接入；其余仍待核 |
 | [北山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853) | 601 | 0 | 0 | 全篇92阅读段、507张独立卡已核；形貌不足者留占位 |
 | [东山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854) | 289 | 0 | 0 | 全篇51阅读段接入；疑难字与数字差异明确保留 |
-| [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 17 | 0 | 0 | 准备阶段完成；212阶段已规划、3阶段接入；逐阶段影印与实体仍待复核 |
+| [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 179 | 0 | 0 | 准备阶段完成；212阶段已规划、33阶段接入；逐阶段影印与实体仍待复核 |
 | [海外南经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AD&oldid=2652857) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
 | [海外西经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%83&oldid=2652858) | 1 | 0 | 1 | 选编，篇内仍有遗漏 |
 | [海外北经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AB&oldid=2652859) | 2 | 0 | 2 | 选编，篇内仍有遗漏 |
@@ -123,8 +123,8 @@
 
 ### 05 中山经
 
-- 常规入口：㔮（甘棗）（`beast-zhongshan-nuo-gancao`）；豪魚（渠豬）（`beast-zhongshan-hao-quzhu`）；共水（甘棗）（`water-zhongshan-gong-gancao`）；河（中山首列文本索引）（`water-zhongshan-he`）；杻木（甘棗）（`plant-zhongshan-niu-gancao`）；蘀（甘棗）（`plant-zhongshan-tuo-gancao`）；橿（歴兒）（`plant-zhongshan-jiang-lier`）；櫔木（歴兒）（`plant-zhongshan-li-lier`）；竹（渠豬）（`plant-zhongshan-bamboo-quzhu`）；渠豬之水（`water-zhongshan-quzhu`）；甘棗之山（`passage-zhongshan-r01-gancao`）；歴兒之山（`passage-zhongshan-r01-lier`）；渠豬之山（`passage-zhongshan-r01-quzhu`）；甘棗之山（`place-zhongshan-r01-gancao`）；歴兒之山（`place-zhongshan-r01-lier`）；揀（櫔实比拟）（`plant-zhongshan-jian-comparison-lier`）；渠豬之山（`place-zhongshan-r01-quzhu`）。
-- 待补方向：准备阶段已保存下册2—70页69张影印并规划212阶段：197列名山、12总括祭礼、3收束；首五段影印段界核定，其余仍需逐阶段复核。614录文块含1标题与613正文/注文块；200结构候选不是已核阶段数。次五15列名与原报16、各列原报合198与篇末197、里程合28595与篇末21371分别保留。已接入3阅读段，剩209阶段；疑字、同名异篇、纯注文与字体缺口详见data/zhongshan-edition-review.json。
+- 常规入口：㔮（甘棗）（`beast-zhongshan-nuo-gancao`）；豪魚（渠豬）（`beast-zhongshan-hao-quzhu`）；飛魚（牛首）（`beast-zhongshan-feiyu-niushou`）；朏朏（霍山）（`beast-zhongshan-feifei-huo`）；鶡（煇諸）（`beast-zhongshan-he-huizhu`）；鳴蛇（鮮水）（`beast-zhongshan-mingshe-xian`）；化蛇（陽水）（`beast-zhongshan-huashe-yang`）；蠪蚳（昆吾）（`beast-zhongshan-longchi-kunwu`）；馬腹（蔓渠）（`beast-zhongshan-mafu-manqu`）；夫諸（敖岸）（`beast-zhongshan-fuzhu-aoan`）；駕鳥（青要）（`beast-zhongshan-jia-qingyao`）；鴢（畛水）（`beast-zhongshan-yao-qingyao`）；飛魚（騩山）（`beast-zhongshan-feiyu-gui`）；共水（甘棗）（`water-zhongshan-gong-gancao`）；河（中山水文文本索引）（`water-zhongshan-he`）；杻木（甘棗）（`plant-zhongshan-niu-gancao`）；蘀（甘棗）（`plant-zhongshan-tuo-gancao`）；橿（歴兒）（`plant-zhongshan-jiang-lier`）；櫔木（歴兒）（`plant-zhongshan-li-lier`）；竹（渠豬）（`plant-zhongshan-bamboo-quzhu`）；渠豬之水（`water-zhongshan-quzhu`）；白堊（葱聾）（`material-zhongshan-white-e-conglong`）；黑堊（葱聾）（`material-zhongshan-black-e-conglong`）；青堊（葱聾）（`material-zhongshan-blue-e-conglong`）；黄堊（葱聾）（`material-zhongshan-yellow-e-conglong`）；赤銅（涹山）（`material-zhongshan-red-copper-r01-wo`）；鐵（涹山阴）（`material-zhongshan-iron-wo`）；植楮（脱扈）（`plant-zhongshan-zhichu-tuohu`）；天嬰（金星）（`material-zhongshan-tianying-jinxing`）；鐵（梟谷）（`material-zhongshan-iron-taiwei`）；赤銅（橿谷）（`material-zhongshan-red-copper-r01-jianggu`）；葌草（吳林）（`plant-zhongshan-jian-wulin`）；鬼草（牛首）（`plant-zhongshan-gui-niushou`）；勞水（牛首）（`water-zhongshan-lao-niushou`）；潏水（勞水受水体）（`water-zhongshan-yu-niushou`）；榖（霍山）（`plant-zhongshan-gu-huo`）；薝棘（合谷）（`plant-zhongshan-zhanji-hegu`）；礪石（隂山）（`material-zhongshan-li-stone-yin`）；文石（隂山）（`material-zhongshan-patterned-stone-yin`）；少水（隂山）（`water-zhongshan-shao-yin`）；彫棠（隂山水文）（`plant-zhongshan-diaotang-yin`）；赤銅（皷鐙）（`material-zhongshan-red-copper-r01-gudeng`）；榮草（皷鐙）（`plant-zhongshan-rong-gudeng`）；桑（煇諸）（`plant-zhongshan-mulberry-huizhu`）；金（發視）（`material-zhongshan-gold-r02-fashi`）；玉（發視）（`material-zhongshan-jade-r02-fashi`）；砥（發視）（`material-zhongshan-di-fashi`）；礪（發視）（`material-zhongshan-li-fashi`）；即魚之水（`water-zhongshan-jiyu-fashi`）；伊水（中山次二文本索引）（`water-zhongshan-yi`）；金（豪山）（`material-zhongshan-gold-r02-hao`）；玉（豪山）（`material-zhongshan-jade-r02-hao`）；金（鮮山）（`material-zhongshan-gold-r02-xian`）；玉（鮮山）（`material-zhongshan-jade-r02-xian`）；鮮水（鮮山）（`water-zhongshan-xian-xian`）；石（陽山）（`material-zhongshan-stone-yang`）；陽水（陽山）（`water-zhongshan-yang-yang`）；赤銅（昆吾）（`material-zhongshan-red-copper-r02-kunwu`）；金（葌山）（`material-zhongshan-gold-r02-jian`）；玉（葌山）（`material-zhongshan-jade-r02-jian`）；青雄黃（葌山）（`material-zhongshan-green-xionghuang-jian`）；葌水（葌山）（`water-zhongshan-jian-jian`）；芒草（葌山之木）（`plant-zhongshan-mangcao-jian`）；水（獨蘇未名）（`water-zhongshan-unnamed-dusu`）；金（蔓渠）（`material-zhongshan-gold-r02-manqu`）；玉（蔓渠）（`material-zhongshan-jade-r02-manqu`）；竹箭（蔓渠）（`plant-zhongshan-arrow-bamboo-manqu`）；洛（中山文本索引）（`water-zhongshan-luo`）；㻬琈玉（敖岸阳）（`material-zhongshan-tufu-aoan`）；赭（敖岸阴）（`material-zhongshan-ochre-aoan`）；黄金（敖岸阴）（`material-zhongshan-gold-aoan`）；羙玉（熏池居处）（`material-zhongshan-fine-jade-aoan`）；河曲（青要北望）（`water-zhongshan-he-bend-qingyao`）；畛水（青要）（`water-zhongshan-zhen-qingyao`）；荀草（青要）（`plant-zhongshan-xun-qingyao`）；羙棗（騩山）（`plant-zhongshan-jujube-gui`）；㻬琈玉（騩山阴）（`material-zhongshan-tufu-gui`）；正回之水（`water-zhongshan-zhenghui-gui`）；金（冝蘇）（`material-zhongshan-gold-r03-yisu`）；玉（冝蘇）（`material-zhongshan-jade-r03-yisu`）；蔓居木（冝蘇）（`plant-zhongshan-manju-yisu`）；滽滽之水（冝蘇）（`water-zhongshan-yongyong-yisu`）；黄貝（冝蘇水文）（`material-zhongshan-yellow-shells-yisu`）；瑶碧（和山）（`material-zhongshan-yaobi-he`）；九水（和山）（`water-zhongshan-nine-waters-he`）；蒼玉（和山水文）（`material-zhongshan-cang-jade-he`）；玉（鹿蹄上）（`material-zhongshan-jade-luti`）；金（鹿蹄下）（`material-zhongshan-gold-luti`）；甘水（鹿蹄）（`water-zhongshan-gan-luti`）；泠石（甘水）（`material-zhongshan-ling-stone-luti`）；甘棗之山（`passage-zhongshan-r01-gancao`）；歴兒之山（`passage-zhongshan-r01-lier`）；渠豬之山（`passage-zhongshan-r01-quzhu`）；葱聾之山（`passage-zhongshan-r01-conglong`）；涹山（`passage-zhongshan-r01-wo`）；脱扈之山（`passage-zhongshan-r01-tuohu`）；金星之山（`passage-zhongshan-r01-jinxing`）；泰威之山（`passage-zhongshan-r01-taiwei`）；橿谷之山（`passage-zhongshan-r01-jianggu`）；吳林之山（`passage-zhongshan-r01-wulin`）；牛首之山（`passage-zhongshan-r01-niushou`）；霍山（`passage-zhongshan-r01-huo`）；合谷之山（`passage-zhongshan-r01-hegu`）；隂山（`passage-zhongshan-r01-yin`）；皷鐙之山（`passage-zhongshan-r01-gudeng`）；次1总括与祭礼（`passage-zhongshan-r01-summary`）；煇諸之山（`passage-zhongshan-r02-huizhu`）；發視之山（`passage-zhongshan-r02-fashi`）；豪山（`passage-zhongshan-r02-hao`）；鮮山（`passage-zhongshan-r02-xian`）；陽山（`passage-zhongshan-r02-yang`）；昆吾之山（`passage-zhongshan-r02-kunwu`）；葌山（`passage-zhongshan-r02-jian`）；獨蘇之山（`passage-zhongshan-r02-dusu`）；蔓渠之山（`passage-zhongshan-r02-manqu`）；次2总括与祭礼（`passage-zhongshan-r02-summary`）；敖岸之山（`passage-zhongshan-r03-aoan`）；青要之山（`passage-zhongshan-r03-qingyao`）；騩山（`passage-zhongshan-r03-gui`）；冝蘇之山（`passage-zhongshan-r03-yisu`）；和山（`passage-zhongshan-r03-he`）；次3总括与祭礼（`passage-zhongshan-r03-summary`）；鹿蹄之山（`passage-zhongshan-r04-luti`）；甘棗之山（`place-zhongshan-r01-gancao`）；歴兒之山（`place-zhongshan-r01-lier`）；揀（櫔实比拟）（`plant-zhongshan-jian-comparison-lier`）；渠豬之山（`place-zhongshan-r01-quzhu`）；葱聾之山（`place-zhongshan-r01-conglong`）；大谷（葱聾）（`place-zhongshan-valleys-conglong`）；涹山（`place-zhongshan-r01-wo`）；脱扈之山（`place-zhongshan-r01-tuohu`）；金星之山（`place-zhongshan-r01-jinxing`）；泰威之山（`place-zhongshan-r01-taiwei`）；梟谷（泰威）（`place-zhongshan-xiaogu-taiwei`）；橿谷之山（`place-zhongshan-r01-jianggu`）；吳林之山（`place-zhongshan-r01-wulin`）；牛首之山（`place-zhongshan-r01-niushou`）；霍山（`place-zhongshan-r01-huo`）；合谷之山（`place-zhongshan-r01-hegu`）；隂山（`place-zhongshan-r01-yin`）；皷鐙之山（`place-zhongshan-r01-gudeng`）；次1总括与祭礼（`rite-zhongshan-r01-summary`）；歴兒冢祭（首列）（`rite-zhongshan-lier-offering-range1`）；余十三山礼（首列）（`rite-zhongshan-other-offering-range1`）；桑封（首列神主）（`rite-zhongshan-sangfeng-range1`）；煇諸之山（`place-zhongshan-r02-huizhu`）；閭（煇諸泛称）（`animal-zhongshan-lu-huizhu`）；麋（煇諸泛称）（`animal-zhongshan-mi-huizhu`）；發視之山（`place-zhongshan-r02-fashi`）；豪山（`place-zhongshan-r02-hao`）；鮮山（`place-zhongshan-r02-xian`）；陽山（`place-zhongshan-r02-yang`）；昆吾之山（`place-zhongshan-r02-kunwu`）；葌山（`place-zhongshan-r02-jian`）；獨蘇之山（`place-zhongshan-r02-dusu`）；蔓渠之山（`place-zhongshan-r02-manqu`）；次2总括与祭礼（`rite-zhongshan-r02-summary`）；人面鳥身神（中次二）（`deity-zhongshan-humanbird-range2`）；择毛吉玉礼（中次二）（`rite-zhongshan-offering-range2`）；敖岸之山（`place-zhongshan-r03-aoan`）；熏池（敖岸）（`deity-zhongshan-xunchi-aoan`）；河林（敖岸北望）（`place-zhongshan-helin-aoan`）；青要之山（`place-zhongshan-r03-qingyao`）；帝之密都（青要）（`place-zhongshan-secret-capital-qingyao`）；墠渚（青要南望）（`place-zhongshan-shanzhu-qingyao`）；禹父（墠渚变化述）（`deity-zhongshan-yufu-qingyao`）；僕纍（青要注释泛称）（`animal-zhongshan-pule-qingyao`）；蒲盧（青要注释泛称）（`animal-zhongshan-pulu-qingyao`）；武羅（青要）（`deity-zhongshan-wuluo-qingyao`）；騩山（`place-zhongshan-r03-gui`）；冝蘇之山（`place-zhongshan-r03-yisu`）；和山（`place-zhongshan-r03-he`）；泰逢（和山）（`deity-zhongshan-taifeng-he`）；萯山阳（泰逢所好居）（`place-zhongshan-fu-sunny-taifeng`）；次3总括与祭礼（`rite-zhongshan-r03-summary`）；三神牡羊副礼（中次三）（`rite-zhongshan-ram-rite-range3`）；二神雄鸡礼（中次三）（`rite-zhongshan-other-gods-range3`）；稌（中次三祭米）（`material-zhongshan-rice-range3`）；鹿蹄之山（`place-zhongshan-r04-luti`）。
+- 待补方向：准备阶段已保存下册2—70页69张影印并规划212阶段：197列名山、12总括祭礼、3收束；首五段影印段界核定，其余仍需逐阶段复核。614录文块含1标题与613正文/注文块；200结构候选不是已核阶段数。次五15列名与原报16、各列原报合198与篇末197、里程合28595与篇末21371分别保留。已接入33阅读段，剩179阶段；疑字、同名异篇、纯注文与字体缺口详见data/zhongshan-edition-review.json。
 - 校核入口：[该篇固定修订](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856)；录文尚需与影印页对校，不把自动导入视为已核对。
 
 ### 06 海外南经
@@ -491,6 +491,17 @@
 | `beast-fei` | 蜚 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-zhongshan-nuo-gancao` | 㔮（甘棗） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-zhongshan-hao-quzhu` | 豪魚（渠豬） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-feiyu-niushou` | 飛魚（牛首） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-feifei-huo` | 朏朏（霍山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-he-huizhu` | 鶡（煇諸） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-mingshe-xian` | 鳴蛇（鮮水） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-huashe-yang` | 化蛇（陽水） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-longchi-kunwu` | 蠪蚳（昆吾） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-mafu-manqu` | 馬腹（蔓渠） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-fuzhu-aoan` | 夫諸（敖岸） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-jia-qingyao` | 駕鳥（青要） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-yao-qingyao` | 鴢（畛水） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-zhongshan-feiyu-gui` | 飛魚（騩山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-qingqiu` | 青丘之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-kunlun` | 昆仑之墟 | 《山海经》 | 常规入口 | 《海内西经》 |
 | `place-yushan` | 玉山 | 《山海经》 | 常规入口 | 《西山经》 |
@@ -1247,13 +1258,82 @@
 | `water-dongshan-gou-tai4` | 鈎水（太山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-dongshan-lao-water` | 勞水 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-zhongshan-gong-gancao` | 共水（甘棗） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
-| `water-zhongshan-he` | 河（中山首列文本索引） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-he` | 河（中山水文文本索引） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `plant-zhongshan-niu-gancao` | 杻木（甘棗） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `plant-zhongshan-tuo-gancao` | 蘀（甘棗） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `plant-zhongshan-jiang-lier` | 橿（歴兒） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `plant-zhongshan-li-lier` | 櫔木（歴兒） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `plant-zhongshan-bamboo-quzhu` | 竹（渠豬） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-zhongshan-quzhu` | 渠豬之水 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-white-e-conglong` | 白堊（葱聾） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-black-e-conglong` | 黑堊（葱聾） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-blue-e-conglong` | 青堊（葱聾） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-yellow-e-conglong` | 黄堊（葱聾） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-red-copper-r01-wo` | 赤銅（涹山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-iron-wo` | 鐵（涹山阴） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-zhichu-tuohu` | 植楮（脱扈） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-tianying-jinxing` | 天嬰（金星） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-iron-taiwei` | 鐵（梟谷） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-red-copper-r01-jianggu` | 赤銅（橿谷） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-jian-wulin` | 葌草（吳林） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-gui-niushou` | 鬼草（牛首） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-lao-niushou` | 勞水（牛首） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-yu-niushou` | 潏水（勞水受水体） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-gu-huo` | 榖（霍山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-zhanji-hegu` | 薝棘（合谷） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-li-stone-yin` | 礪石（隂山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-patterned-stone-yin` | 文石（隂山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-shao-yin` | 少水（隂山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-diaotang-yin` | 彫棠（隂山水文） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-red-copper-r01-gudeng` | 赤銅（皷鐙） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-rong-gudeng` | 榮草（皷鐙） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-mulberry-huizhu` | 桑（煇諸） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-gold-r02-fashi` | 金（發視） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-jade-r02-fashi` | 玉（發視） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-di-fashi` | 砥（發視） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-li-fashi` | 礪（發視） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-jiyu-fashi` | 即魚之水 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-yi` | 伊水（中山次二文本索引） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-gold-r02-hao` | 金（豪山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-jade-r02-hao` | 玉（豪山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-gold-r02-xian` | 金（鮮山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-jade-r02-xian` | 玉（鮮山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-xian-xian` | 鮮水（鮮山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-stone-yang` | 石（陽山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-yang-yang` | 陽水（陽山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-red-copper-r02-kunwu` | 赤銅（昆吾） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-gold-r02-jian` | 金（葌山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-jade-r02-jian` | 玉（葌山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-green-xionghuang-jian` | 青雄黃（葌山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-jian-jian` | 葌水（葌山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-mangcao-jian` | 芒草（葌山之木） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-unnamed-dusu` | 水（獨蘇未名） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-gold-r02-manqu` | 金（蔓渠） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-jade-r02-manqu` | 玉（蔓渠） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-arrow-bamboo-manqu` | 竹箭（蔓渠） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-luo` | 洛（中山文本索引） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-tufu-aoan` | 㻬琈玉（敖岸阳） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-ochre-aoan` | 赭（敖岸阴） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-gold-aoan` | 黄金（敖岸阴） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-fine-jade-aoan` | 羙玉（熏池居处） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-he-bend-qingyao` | 河曲（青要北望） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-zhen-qingyao` | 畛水（青要） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-xun-qingyao` | 荀草（青要） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-jujube-gui` | 羙棗（騩山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-tufu-gui` | 㻬琈玉（騩山阴） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-zhenghui-gui` | 正回之水 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-gold-r03-yisu` | 金（冝蘇） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-jade-r03-yisu` | 玉（冝蘇） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-zhongshan-manju-yisu` | 蔓居木（冝蘇） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-yongyong-yisu` | 滽滽之水（冝蘇） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-yellow-shells-yisu` | 黄貝（冝蘇水文） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-yaobi-he` | 瑶碧（和山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-nine-waters-he` | 九水（和山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-cang-jade-he` | 蒼玉（和山水文） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-jade-luti` | 玉（鹿蹄上） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-gold-luti` | 金（鹿蹄下） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-zhongshan-gan-luti` | 甘水（鹿蹄） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-ling-stone-luti` | 泠石（甘水） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-zhaoyao` | 招摇之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-yuanyi` | 猨翼之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -1525,6 +1605,36 @@
 | `passage-zhongshan-r01-gancao` | 甘棗之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-zhongshan-r01-lier` | 歴兒之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-zhongshan-r01-quzhu` | 渠豬之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-conglong` | 葱聾之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-wo` | 涹山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-tuohu` | 脱扈之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-jinxing` | 金星之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-taiwei` | 泰威之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-jianggu` | 橿谷之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-wulin` | 吳林之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-niushou` | 牛首之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-huo` | 霍山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-hegu` | 合谷之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-yin` | 隂山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-gudeng` | 皷鐙之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r01-summary` | 次1总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-huizhu` | 煇諸之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-fashi` | 發視之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-hao` | 豪山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-xian` | 鮮山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-yang` | 陽山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-kunwu` | 昆吾之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-jian` | 葌山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-dusu` | 獨蘇之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-manqu` | 蔓渠之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r02-summary` | 次2总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r03-aoan` | 敖岸之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r03-qingyao` | 青要之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r03-gui` | 騩山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r03-yisu` | 冝蘇之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r03-he` | 和山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r03-summary` | 次3总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-zhongshan-r04-luti` | 鹿蹄之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-yuanyi` | 猨翼之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-di` | 祗山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -1907,6 +2017,58 @@
 | `place-zhongshan-r01-lier` | 歴兒之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `plant-zhongshan-jian-comparison-lier` | 揀（櫔实比拟） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-zhongshan-r01-quzhu` | 渠豬之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-conglong` | 葱聾之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-valleys-conglong` | 大谷（葱聾） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-wo` | 涹山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-tuohu` | 脱扈之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-jinxing` | 金星之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-taiwei` | 泰威之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-xiaogu-taiwei` | 梟谷（泰威） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-jianggu` | 橿谷之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-wulin` | 吳林之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-niushou` | 牛首之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-huo` | 霍山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-hegu` | 合谷之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-yin` | 隂山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r01-gudeng` | 皷鐙之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-zhongshan-r01-summary` | 次1总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-zhongshan-lier-offering-range1` | 歴兒冢祭（首列） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-zhongshan-other-offering-range1` | 余十三山礼（首列） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-zhongshan-sangfeng-range1` | 桑封（首列神主） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r02-huizhu` | 煇諸之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `animal-zhongshan-lu-huizhu` | 閭（煇諸泛称） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `animal-zhongshan-mi-huizhu` | 麋（煇諸泛称） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r02-fashi` | 發視之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r02-hao` | 豪山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r02-xian` | 鮮山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r02-yang` | 陽山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r02-kunwu` | 昆吾之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r02-jian` | 葌山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r02-dusu` | 獨蘇之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r02-manqu` | 蔓渠之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-zhongshan-r02-summary` | 次2总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `deity-zhongshan-humanbird-range2` | 人面鳥身神（中次二） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-zhongshan-offering-range2` | 择毛吉玉礼（中次二） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r03-aoan` | 敖岸之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `deity-zhongshan-xunchi-aoan` | 熏池（敖岸） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-helin-aoan` | 河林（敖岸北望） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r03-qingyao` | 青要之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-secret-capital-qingyao` | 帝之密都（青要） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-shanzhu-qingyao` | 墠渚（青要南望） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `deity-zhongshan-yufu-qingyao` | 禹父（墠渚变化述） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `animal-zhongshan-pule-qingyao` | 僕纍（青要注释泛称） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `animal-zhongshan-pulu-qingyao` | 蒲盧（青要注释泛称） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `deity-zhongshan-wuluo-qingyao` | 武羅（青要） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r03-gui` | 騩山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r03-yisu` | 冝蘇之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r03-he` | 和山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `deity-zhongshan-taifeng-he` | 泰逢（和山） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-fu-sunny-taifeng` | 萯山阳（泰逢所好居） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-zhongshan-r03-summary` | 次3总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-zhongshan-ram-rite-range3` | 三神牡羊副礼（中次三） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-zhongshan-other-gods-range3` | 二神雄鸡礼（中次三） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-zhongshan-rice-range3` | 稌（中次三祭米） | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-zhongshan-r04-luti` | 鹿蹄之山 | 《山海经》 | 常规入口 | 《山海经·中山经》（《四部丛刊》景明成化本，郭璞传） |
 | `01-01` | 盘古开天 | 其他古籍 | 常规入口 | 《三五历纪》（三国·吴·徐整），佚文见《艺文类聚》卷一引、《太平御览》卷二引 |
 | `01-02` | 女娲造人 | 其他古籍 | 常规入口 | 《风俗通义·皇霸》卷一（东汉·应劭），见王利器《风俗通义校注》 |
 | `01-03` | 女娲补天 | 其他古籍 | 非默认条目 | 《淮南子·览冥训》（西汉·刘安），高诱注 |
@@ -2005,7 +2167,7 @@
 - `python data/build_nanshan_entities.py`：在旧批次/阅读器构建之后运行，恢复最新实体、关系、图像状态和覆盖清单；不可将reader或首批构建器作为最后一步。
 - `python data/build_source_inventory.py`（可加`--check`）：生成/检查十八篇原文块清单及明确的待核状态。
 - `python data/prepare_zhongshan.py`（可加`--check`）：离线重建/检查中山212阶段准备计划、69影印哈希、标题字体预检；只规划，不增加网页阅读或配图。之后重建全书inventory/audit。
-- `python data/build_zhongshan.py`：合并中山首三段/14双语卡并保留其他篇；已接入后不要再运行准备构建器覆盖进度。插画通过prepare-nanshan-artwork.py --chapter zhongshan导出，之后重建inventory/audit。
+- `python data/build_zhongshan.py`：合并中山前33段/146双语卡并保留其他篇；已接入后不要再运行准备构建器覆盖进度。插画通过prepare-nanshan-artwork.py --chapter zhongshan导出，之后重建inventory/audit。
 - `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。
 - `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。
 - `python data/build_xishan.py`：合并西山经82段与508张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。

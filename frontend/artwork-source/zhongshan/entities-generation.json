@@ -14,6 +14,190 @@
       "reference_images": [
         "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
       ]
+    },
+    {
+      "name": "fish-feiyu-niushou",
+      "entry_id": "beast-zhongshan-feiyu-niushou",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. NIUSHOU FEIYU: one compact crucian-carp-like FISH, ordinary fish head and single forked fish tail. The text names flying fish but gives ONLY crucian-carp form: NO wings, legs or bird feathers. Deep rounded silver-blue body, small blunt mouth, subdued ochre fins; slightly curved upright swimming pose. All fin details and colors artistic, no modern species identification.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-7756f66f-3087-4296-89cc-2d4c10f4a647.png",
+      "source_file": "fish-feiyu-niushou-v1.png",
+      "sha256": "b3c66d45d3c6ca61f8c555bfa06eaf4d9cfe727d74013f979267eedec1b8f370",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "creature-feifei-huo",
+      "entry_id": "beast-zhongshan-feifei-huo",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. FEIFEI: one small wild-cat-like quadruped, conspicuously WHITE furry tail and a visible MANE around the neck/shoulders. Compact low feline body, four cat paws; soft tawny/olive coat, white long tail curved upward. Mane is a small standing fur ruff, not an enormous lion head. NO horns, wings, human face, red feathered tail or extra tails. Cat-like form, white tail and mane mandatory; pose, limb count and other colors artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-1f7d3fb4-15f3-46bd-926a-cfb3d61cb547.png",
+      "source_file": "creature-feifei-huo-v1.png",
+      "sha256": "b59f2543d1b27f601166285b5ece756fb1f953eeb4e2a5753a3bccff5ea59d34",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "bird-he-huizhu",
+      "entry_id": "beast-zhongshan-he-huizhu",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. HE BIRD: commentary describes a PHEASANT-LIKE but LARGE BLUE/GREEN FEATHERED BIRD. One low horizontal heavy bird body, small pheasant head, short modest crest, long naturally feathered tail and two ordinary bird legs, folded wings. Deep blue-green dominant plumage, ivory fine incisions. No human face, owl ear tufts, tiger claws or invented special organs. Exact feather palette, crest, leg number and tail details artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-5fcb3516-254c-4ede-bbe7-96508afca7de.png",
+      "source_file": "bird-he-huizhu-v1.png",
+      "sha256": "f8f3603d467f4fc1aa91841d92fdc00c68529f14a5ccb8bddb58e286c881a481",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "snake-ming-xian",
+      "entry_id": "beast-zhongshan-mingshe-xian",
+      "prompt": "Correct the attached Ming snake illustration: it currently shows only THREE wings; Shanhaijing explicitly requires FOUR wings. Draw exactly FOUR clearly separate and countable membranous wings: upper left, lower left, upper right, lower right, each visibly rooted to the same snake trunk with no occlusion. Preserve ONE snake head, ONE continuous scaled legless snake body and ONE tail. Keep the Chinese carved woodblock style, ivory/blue-green/cinnabar palette and transparent background. No legs, no second head, no text, no scene, no halo. Widen the canvas as necessary for all four complete wings with clear margins.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-22277e8f-65af-4450-a024-24ce29ad0494.png",
+      "source_file": "snake-ming-xian-v2.png",
+      "sha256": "520c1b2520e746a6a79da1a7639e35e16aa22ff9a5c7640f8336f7f7fdcf5e82",
+      "status": "reviewed",
+      "review_note": "修订图已核对：四片独立膜翼清晰可数，一蛇首一连续蛇躯一尾，无足；膜翼结构、未定配色与姿态为艺术解释。保留三翼初稿。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "revision_history": [
+        {
+          "name": "snake-ming-xian",
+          "entry_id": "beast-zhongshan-mingshe-xian",
+          "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. MING SNAKE: ONE snake with EXACTLY FOUR separate wings. Broad clear view of one looping slender dark indigo serpent trunk and one snake head; TWO wings on each side at two distinct trunk positions. Use slender membrane wings with clearly visible FOUR distinct tips, all four wing roots separately visible and transparent gaps. Membrane type and two-pair placement artistic, because text only says four wings. NO legs, feet, extra heads, bird head, human face, horns or second tail. One snake, FOUR wings: count carefully. Not just two wings with split tips.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-3795f2ec-9c98-4c84-915e-acc825a67ea6.png",
+          "source_file": "snake-ming-xian-v1.png",
+          "sha256": "76a639f15ee18bdf600b3000c9fc20ee281e1c0828f110591552e7424ae323ae",
+          "status": "needs_revision",
+          "review_note": "初稿三翼，须修正为四翼。",
+          "reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "creature-huashe-yang",
+      "entry_id": "beast-zhongshan-huashe-yang",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. HUA SNAKE: human FACE, JACKAL BODY, BIRD WINGS; text says it moves like a snake, NOT that it has a snake tail. One calm adult human face with two eyes on one low elongated jackal-shaped tawny quadruped torso; one ordinary furry jackal tail, four low ordinary canine feet as artistic anatomy, one pair of gray feathered bird wings, slim head ears understated. Crouched undulating low posture suggests snake-like movement WITHOUT a snake torso, serpentine tail or extra serpent head. No wolf face replacing human face, no horns, no multiple heads, no disaster scene. Limb and wing counts, colors and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-ef5e9831-bff6-4f5f-928f-91661aa88669.png",
+      "source_file": "creature-huashe-yang-v1.png",
+      "sha256": "8a4e6645ab1daf4f237ded1fb933159daa165a5ca0317e9211ad7bde29631998",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "creature-longchi-kunwu",
+      "entry_id": "beast-zhongshan-longchi-kunwu",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. KUNWU LONGCHI: ONE pig/boar-shaped beast WITH HORNS. Clearly pig head, round snout and stout boar body, four cloven hooves. Choose TWO SHORT SIMPLE STRAIGHT CONICAL HORNS as an explicitly artistic horn-count choice, both separately visible. Rust-brown bristly pig, broad side view, short ordinary pig tail. NO human face, ram curls, lion mane, fox heads, tiger claws or wings. Do not copy the Western same-name human-faced ram-horned form. Pig shape and horns mandatory; colors, count and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-d3f48066-f4ac-44d3-aeb8-c83615d9efb8.png",
+      "source_file": "creature-longchi-kunwu-v1.png",
+      "sha256": "475ffc5d6f97ef5eece2907077b660c626313a7fda876fba4d1f3a9073cdebcb",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "creature-mafu-manqu",
+      "entry_id": "beast-zhongshan-mafu-manqu",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. MAFU: ONE HUMAN FACE on a full TIGER BODY. Quiet adult human face, human nose/mouth/two eyes, no cat muzzle. Four powerful tiger paws, ochre body with clear black tiger stripes and one striped furry tiger tail, low crouching side pose with face turned toward viewer. No human torso or hands, no wings, horns or extra heads. Human age, four paws, colors and pose artistic. Infant-like cry is sound, NOT a baby carried on its back. No violent scene.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-b853cf83-3ee4-40a8-b07d-743dff2ee450.png",
+      "source_file": "creature-mafu-manqu-v1.png",
+      "sha256": "d01b02b4912d32bed074ed1a397c75c1f5f7d1f2b399d2006b33d39caa858266",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "deity-humanbird-range2",
+      "entry_id": "deity-zhongshan-humanbird-range2",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. SECOND CENTRAL RANGE GOD: HUMAN FACE and BIRD BODY. One calm androgynous adult human face smoothly meeting a full rounded bird neck and dark charcoal/gold feathered bird torso, two folded wings and TWO ordinary bird legs ending in bird claws, short fan tail. NO human torso, breasts, human arms or hands, no quadruped beast body, horns, serpent tail or wings attached to a human chest. Human face and complete bird body mandatory; species, sex styling, feather colors and leg count artistic. Upright compact stance, no halo or religious symbol.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-5359045f-604e-4a61-9ec0-fd82eb222457.png",
+      "source_file": "deity-humanbird-range2-v1.png",
+      "sha256": "25d3cef0ce118b228344e0e2aa79614e1234b2c4512bccfda0399bfa30fec5d0",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "creature-fuzhu-aoan",
+      "entry_id": "beast-zhongshan-fuzhu-aoan",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. FUZHU: ONE entirely WHITE DEER with EXACTLY FOUR independent HORNS/ANTLER STEMS. Four separate unbranched slender gently swept horns, with FOUR independently visible roots on forehead crown and FOUR separated tips; not two branched antlers ending in four tines. Choose simple unbranched stems to make four root count unambiguous, as artistic horn styling. Cream-white deer coat over full body, gray/ivory fur incisions, ordinary four cloven deer hooves and short white deer tail. Three-quarter head allows all four horns visible, quiet poised stance. No wings, extra heads, red coat, tiger paws, halo or water scene. White deer and four horns mandatory.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-00d81a77-6869-4bdc-a0a4-85adbb434461.png",
+      "source_file": "creature-fuzhu-aoan-v1.png",
+      "sha256": "0ad3e9bbea10af7dd3f09c47bf382789ade9204b7e3435901d9dfb401728fcc4",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "deity-wuluo-qingyao",
+      "entry_id": "deity-zhongshan-wuluo-qingyao",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. WULUO: mandatory HUMAN FACE, LEOPARD PATTERN, SLENDER WAIST, WHITE TEETH, PIERCED EARS with metal ju ornaments. One slim adult androgynous human figure with calm open mouth revealing a small row of WHITE teeth, distinctly human nose and eyes; pierced ears carry two simple visible metal loops, an artistic interpretation of unspecified ju object. Mottled leopard spots on shoulders and simple short wrap, visibly narrow waist. Upright relaxed stance, muted ochre/cream and dark spots, subtle russet wrap. Human torso and arms/legs, ornament shape, clothing, sex styling and colors artistic; text only states human face, pattern and waist features. NO leopard head or full leopard quadruped, tiger tail, antlers, wings, halo or weapons. Keep full figure on canvas with ordinary two hands and two feet.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-b6209338-5aee-447c-af46-9e282027317a.png",
+      "source_file": "deity-wuluo-qingyao-v1.png",
+      "sha256": "a8f075133681be57adb1b3798777b618ab9fc5d975fe11775c22e20535aeacbb",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "bird-yao-qingyao",
+      "entry_id": "beast-zhongshan-yao-qingyao",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. YAO BIRD: one DUCK-LIKE bird with BLUE/GREEN BODY, RED EYES and RED TAIL. Compact teal duck torso, low head with ordinary duck bill, scarlet irises conspicuous, short scarlet duck-feather tail. Two ordinary webbed duck feet as artistic detail; folded ordinary wings. No human feet, rat tail, tiger claws, human face, crest crown or owl ears. Red belongs to eyes and tail, not entire head. Simple side view, body-blue color dominant, no water scene.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-66a2c196-81c4-454b-8425-08237ac3eab0.png",
+      "source_file": "bird-yao-qingyao-v1.png",
+      "sha256": "0d740979d0ee5833f7436608368e30530400f3828ce127ce5fab86431e7c637d",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "creature-feiyu-gui",
+      "entry_id": "beast-zhongshan-feiyu-gui",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. GUI MOUNTAIN FEIYU: the text calls it a flying FISH but says its FORM RESEMBLES A PIG with RED PATTERNS. Draw ONE entirely pig-shaped quadruped, one pig head with blunt pig snout and ordinary pig ears, cream-pink stout torso carrying distinct irregular scarlet patterned patches, four cloven pig hooves and one short curled pig tail. NO fish fins, fish fork-tail, bird wings, feathers, horns, extra tusks or human face: do not let the fish name add anatomy absent from the comparison. Light prancing squat pose, red patches rather than all-red body. Four feet, patch geometry, base color and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-838a7288-896e-4694-9293-27fdcba7c2ab.png",
+      "source_file": "creature-feiyu-gui-v1.png",
+      "sha256": "8490b1f512d5b458ba093c10d7766eb2b298d9f03bf00b9dffbffd81938c9914",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "deity-taifeng-heshan",
+      "entry_id": "deity-zhongshan-taifeng-he",
+      "prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide margins. STYLE ONLY reference: Chinese carved woodblock, dark brown outlines, restrained mineral colors, warm ivory incisions, subtle print grain. Do NOT copy owl face, owl wings or flame ornaments onto unrelated subjects. No text, number, seal, border, ground, background, halo, scene, gore or extra subject. Required forms and organ counts first; unspecified anatomy and styling explicitly artistic. TAIFENG: HUMAN SHAPE with ONE TIGER TAIL. A broad calm adult human figure, clearly human face, two human arms and hands, two human legs and feet, simple muted blue-green knee-length robe; one long ochre-and-black TIGER-STRIPED FURRY TAIL emerges behind lower back and curves to side. Tail ends in fur, no snake head. Slight forward walking three-quarter pose, distinct from Wuluo's slim upright leopard-spotted figure. NO tiger head, tiger paws or spots on human face, no horns, wings, extra tails, halo, lightning or scene. Main text tiger tail is followed; commentary alternative bird tail is NOT added. Clothing, age, sex styling, colors and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-ac07b7c7-eff1-47ea-8eb9-a96de653a235.png",
+      "source_file": "deity-taifeng-heshan-v1.png",
+      "sha256": "02c756cf230dd01c0c9a84447fc04ceed74d592ad8fd78b68b72d2002b0807a4",
+      "status": "reviewed",
+      "review_note": "已逐张核对原著/郭注形貌及完整器官，未定的细节、配色与姿态为艺术解释；原始文件保留。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
     }
   ]
 }

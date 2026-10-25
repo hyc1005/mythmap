@@ -51,6 +51,10 @@ ENTITIES = [
     E('r01-quzhu', 'beast', 'hao-quzhu', '豪魚（渠豬）', 'Hao fish (Quzhu)', '其中是多豪魚狀如鮪赤喙尾赤羽可以已白癬', '豪鱼如鮪，郭注鮪似鱣。赤喙尾赤羽无现代句读，图中红喙及红羽状尾作明确演绎，不断言羽必指成对飞翼；细长鱼体、鳞鳍细节、羽尾构造、其余体色与姿态均为艺术解释，不强定现代鲟鱼种。食疗为古述。', 'Hao fish resemble wei, with red beak/tail and red yu, and are said to relieve white skin lesions.', 'Guo Pu compares wei with zhan. The red snout and red feather-like tail explicitly interpret the unpunctuated wording; elongated body proportions, scales/fins, tail-feather construction, other colors and pose are artistic. No paired bird wings or modern species identification are asserted.', commentary='鮪似鱣也', en_commentary='Guo Pu compares wei with zhan.', water=True)
 ]
 
+from zhongshan_next30 import ROWS as NEXT_ROWS, entities as next_entities, LINKS as NEXT_LINKS, SHARES as NEXT_SHARES
+ROWS += NEXT_ROWS
+ENTITIES += next_entities(E)
+
 
 def build():
     review = read('data/zhongshan-edition-review.json')
@@ -63,14 +67,14 @@ def build():
     for order, row in enumerate(ROWS, 1):
         stage = next(s for s in review['stage_plan'] if s['slug'] == row['slug'])
         first, last = stage['source_units']; refs = chapter['lines'][first - 1:last]
-        raw = ''.join(l['text'] for l in refs); pid = 'passage-zhongshan-' + row['slug']; place = 'place-zhongshan-' + row['slug']
+        captured = ''.join(l['text'] for l in refs); raw = captured.replace('⟦缺字图:鬼⟧', '鬼'); pid = 'passage-zhongshan-' + row['slug']; root_kind = 'place' if stage['kind'] == 'mountain' else 'rite'; place = root_kind + '-zhongshan-' + row['slug']
         pages = stage['facsimile_pages']; urls = [f'https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/{p}' for p in pages]
         common = dict(source='《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）', source_chapter='《中山经》', source_book=5, region='中山经', source_locator='卷第五 · 影印页' + '、'.join(map(str, pages)), source_pages=urls, url=urls[0], source_unit_ids=stage['source_unit_ids'], reveal_chapter='04', content_batch='zhongshan-' + row['slug'], review_status='facsimile_reviewed', artwork_pending=True, direction='按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。', editorial_note='正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。')
         encommon = dict(source='Shanhaijing · Central Mountains (Sibu Congkan edition, Guo Pu commentary)', source_chapter='Zhongshan Jing', region='Zhongshan Jing', source_locator='Volume 5 · scan pages ' + ', '.join(map(str, pages)), direction='Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.', editorial_note='Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.')
         commentary = '\n'.join('〔影印页' + str(review['source_unit_page_corrections'].get(id, int(l['page'].rsplit('/', 1)[-1]))) + '〕' + '；'.join(l['annotations']) for id, l in zip(stage['source_unit_ids'], refs) if l['annotations'])
-        p = {**common, 'id': pid, 'kind': 'passage', 'name': stage['name'], 'range': stage['range'], 'order': order, 'description': row['description'], 'quote': raw, 'captured_text': raw, 'commentary_quote': commentary, 'captured_commentary': [dict(source_unit_id=id, annotations=l['annotations']) for id, l in zip(stage['source_unit_ids'], refs)], 'content_note': stage['note'], 'source_span': stage['source_span'], 'subjects': [stage['name']], 'related_entry_ids': [place]}
+        p = {**common, 'id': pid, 'kind': 'passage', 'name': stage['name'], 'range': stage['range'], 'order': order, 'description': row['description'], 'quote': raw, 'captured_text': captured, 'commentary_quote': commentary, 'captured_commentary': [dict(source_unit_id=id, annotations=l['annotations']) for id, l in zip(stage['source_unit_ids'], refs)], 'content_note': stage['note'], 'source_span': stage['source_span'], 'subjects': [stage['name']], 'related_entry_ids': [place]}
         english[pid] = {**encommon, 'name': row['en_name'], 'description': row['en_description'], 'quote': row['en_quote'], 'content_note': row['en_note']}
-        cards.append({**common, 'id': place, 'kind': 'place', 'name': stage['name'], 'description': row['description'], 'quote': raw, 'commentary_quote': commentary, 'content_note': stage['note'], 'source_passage_ids': [pid], 'related_entry_ids': [pid]})
+        cards.append({**common, 'id': place, 'kind': root_kind, 'name': stage['name'], 'description': row['description'], 'quote': raw, 'commentary_quote': commentary, 'content_note': stage['note'], 'source_passage_ids': [pid], 'related_entry_ids': [pid]})
         english[place] = dict(english[pid]); comments = ''.join(a for l in refs for a in l['annotations'])
         for e in [e for e in ENTITIES if e['slug'] == row['slug']]:
             assert e['quote'] in raw, e['id']
@@ -81,11 +85,18 @@ def build():
             if e.get('unknown'):
                 c.update(appearance_unknown=True, artwork_caption='参照形貌未详 · 统一问号占位不代表本生物形态。')
                 english[c['id']]['artwork_caption'] = 'The comparison form is unknown; the shared question-mark placeholder is not a depiction.'
+                if e['id'] != 'beast-zhongshan-nuo-gancao':
+                    c['artwork_caption'] = '形貌未详或依据不足 · 问号占位不代表形态。'
+                    english[c['id']]['artwork_caption'] = 'Insufficient independent form evidence; the question-mark placeholder is not a depiction.'
             elif (art := jobs.get(e['id'])) and art['status'] == 'reviewed':
                 c.update(artwork='zhongshan/' + art['name'] + '-v1.webp', artwork_pending=False, artwork_caption='经文与郭注鱼形依据 · 红羽尾构造、比例和姿态为明确艺术解释。')
                 english[c['id']]['artwork_caption'] = 'Fish-form evidence follows the text and commentary; the red feather-like tail construction, proportions and pose are explicitly artistic.'
-            if e.get('comparison_only'):
-                c.pop('context_place_id'); c['comparison_only'] = True
+                if e['id'] != 'beast-zhongshan-hao-quzhu':
+                    c['artwork_caption'] = '经文/郭注形貌与木刻演绎 · 器官依据见说明，未定细节、配色及姿态为艺术解释。'
+                    english[c['id']]['artwork_caption'] = 'Textual or commentary-based form in woodcut interpretation; unspecified details, colors and pose are artistic.'
+            if e.get('comparison_only') or stage['kind'] != 'mountain':
+                c.pop('context_place_id')
+                if e.get('comparison_only'): c['comparison_only'] = True
                 c['related_entry_ids'].append(place); next(x for x in cards if x['id'] == place)['related_entry_ids'].append(c['id'])
             cards.append(c); p['subjects'].append(c['name']); p['related_entry_ids'].append(c['id'])
         passages.append(p)
@@ -94,20 +105,34 @@ def build():
     river.update(context_place_ids=[river['context_place_id'], 'place-zhongshan-r01-quzhu'], source_passage_ids=[*river['source_passage_ids'], recipient['id']], source_unit_ids=[*river['source_unit_ids'], *recipient['source_unit_ids']], source_pages=list(dict.fromkeys([*river['source_pages'], *recipient['source_pages']])), source_locator='卷第五 · 影印页2、3', quote=river['quote'] + '；而南流注于河')
     river['related_entry_ids'].append(recipient['id']); recipient['related_entry_ids'].append(river['id'])
     english[river['id']].update(quote='Gong water flows west into the He. Separately, Quzhu water flows south into the He.', source_locator='Volume 5 · scan pages 2, 3')
-    for a, b in [('water-zhongshan-gong-gancao', river['id']), ('water-zhongshan-quzhu', river['id']), ('water-zhongshan-quzhu', 'beast-zhongshan-hao-quzhu')]:
+    for id, slug, q, eq in NEXT_SHARES:
+        c = index[id]; p = index['passage-zhongshan-' + slug]; stage = next(s for s in review['stage_plan'] if s['slug'] == slug)
+        assert q in p['quote'], (id, q)
+        root = ('place' if stage['kind'] == 'mountain' else 'rite') + '-zhongshan-' + slug
+        c['source_passage_ids'] = list(dict.fromkeys([*c['source_passage_ids'], p['id']]))
+        if stage['kind'] == 'mountain': c['context_place_ids'] = list(dict.fromkeys([c['context_place_id'], *c.get('context_place_ids', []), root]))
+        c['source_unit_ids'] = list(dict.fromkeys([*c['source_unit_ids'], *p['source_unit_ids']]))
+        c['source_pages'] = list(dict.fromkeys([*c['source_pages'], *p['source_pages']]))
+        page_numbers = sorted({int(url.rsplit('/', 1)[-1]) for url in c['source_pages']})
+        c['source_locator'] = '卷第五 · 影印页' + '、'.join(map(str, page_numbers)); english[id]['source_locator'] = 'Volume 5 · scan pages ' + ', '.join(map(str, page_numbers))
+        c['quote'] += '；' + q; english[id]['quote'] += ' Separately, ' + eq
+        c['related_entry_ids'] += [p['id'], root]; p['related_entry_ids'].append(id); index[root]['related_entry_ids'].append(id)
+    river.update(name='河（中山水文文本索引）', description='河文本索引分别存甘棗共水西注、渠豬水南注及青要畛水、騩山正回水、冝蘇滽滽水、和山九水北注六出处，不认定现代水系同一性。')
+    english[river['id']].update(name='He (Central textual index)', description='This textual index preserves separate recipient accounts at Ganzao, Quzhu, Qingyao, Wei, Yisu and He, without settling modern geographic identity.')
+    for a, b in [('water-zhongshan-gong-gancao', river['id']), ('water-zhongshan-quzhu', river['id']), ('water-zhongshan-quzhu', 'beast-zhongshan-hao-quzhu'), *NEXT_LINKS]:
         index[a]['related_entry_ids'].append(b); index[b]['related_entry_ids'].append(a)
     for a, b in zip(passages, passages[1:]):
         a['related_entry_ids'].append(b['id']); b['related_entry_ids'].append(a['id'])
     batches = {'zhongshan-' + r['slug'] for r in ROWS}
-    for group, values in [('passages', passages), ('text_entities', [c for c in cards if c['kind'] == 'place' or c.get('comparison_only')]), ('beasts', [c for c in cards if c['kind'] == 'beast']), ('natural_features', [c for c in cards if c['kind'] in {'plant', 'water'} and not c.get('comparison_only')])]:
+    for group, values in [('passages', passages), ('text_entities', [c for c in cards if c['kind'] in {'place', 'rite', 'deity', 'animal'} or c['kind'] in {'plant', 'material'} and not c.get('context_place_id')]), ('beasts', [c for c in cards if c['kind'] == 'beast']), ('natural_features', [c for c in cards if c['kind'] in {'plant', 'water', 'material'} and c.get('context_place_id')])]:
         world[group] = [c for c in world[group] if c.get('content_batch') not in batches] + values
-    world['revision'] = 'myth-world-2026-10-25-zhongshan-three-v1'
-    review.update(status='partially_implemented', implemented_stages=3, remaining_stages=209, scope='首三段正文、郭注、双语及实体接入；其余209阶段仍待逐批核定与页面接入。', batch_size=3, entry_ids=[c['id'] for c in cards], passages=[dict(id=p['id'], source_unit_ids=p['source_unit_ids'], source_span=p['source_span'], status='facsimile_reviewed') for p in passages], artwork_summary=dict(selected=sum(a['status'] == 'reviewed' for a in jobs.values()), appearance_unknown=sum(c.get('appearance_unknown', False) for c in cards)), next=dict(name=review['stage_plan'][3]['name'], source_units=review['stage_plan'][3]['source_units'], facsimile_pages=review['stage_plan'][3]['facsimile_pages'], status='pending_bilingual_entity_review'))
-    review['limits'] = '197列名山+12总括祭礼+3收束=212阶段，不等于200自动结构候选。前三阶段已核双语、实体及形貌；其他209阶段仍逐批核页、释字和页面验收。快照原样保留，是否通过页面验收以本地逐阶段交接为准。'
-    for stage in review['stage_plan'][:3]:
+    world['revision'] = 'myth-world-2026-10-25-zhongshan-thirtythree-v1'
+    review.update(status='partially_implemented', implemented_stages=33, remaining_stages=179, scope='前33段正文、郭注、双语及实体接入；后179阶段仍待逐批核定。', batch_size=30, entry_ids=[c['id'] for c in cards], passages=[dict(id=p['id'], source_unit_ids=p['source_unit_ids'], source_span=p['source_span'], status='facsimile_reviewed') for p in passages], artwork_summary=dict(selected=sum(a['status'] == 'reviewed' for a in jobs.values()), appearance_unknown=sum(c.get('appearance_unknown', False) for c in cards)), next=dict(name=review['stage_plan'][33]['name'], source_units=review['stage_plan'][33]['source_units'], facsimile_pages=review['stage_plan'][33]['facsimile_pages'], status='pending_bilingual_entity_review'))
+    review['limits'] = '212阶段中前33阶段已接入，余179；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。'
+    for stage in review['stage_plan'][:33]:
         stage.update(content_status='facsimile_reviewed', browser_status='see local handoff acceptance', passage_id='passage-zhongshan-' + stage['slug'], new_cards=sum(c['content_batch'] == 'zhongshan-' + stage['slug'] for c in cards))
     write('frontend/public/data/myth-world.json', world); write('frontend/src/locale-content-en.json', english); write('data/zhongshan-edition-review.json', review)
-    print('Built Central: 3 passages, 14 cards; 209 stages remain')
+    print(f'Built Central: {len(passages)} passages, {len(cards)} cards; 179 stages remain')
 
 
 if __name__ == '__main__':

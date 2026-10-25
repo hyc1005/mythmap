@@ -5614,5 +5614,239 @@
         320
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/fish-feiyu-niushou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/fish-feiyu-niushou-v1-card.webp",
+      "bytes": 29652,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/fish-feiyu-niushou-v1-preview.webp",
+      "bytes": 57660,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-feifei-huo-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-feifei-huo-v1-card.webp",
+      "bytes": 39680,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-feifei-huo-v1-preview.webp",
+      "bytes": 73412,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-he-huizhu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-he-huizhu-v1-card.webp",
+      "bytes": 28186,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-he-huizhu-v1-preview.webp",
+      "bytes": 52914,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/snake-ming-xian-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/snake-ming-xian-v1-card.webp",
+      "bytes": 35834,
+      "dimensions": [
+        320,
+        247
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/snake-ming-xian-v1-preview.webp",
+      "bytes": 67460,
+      "dimensions": [
+        480,
+        370
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-huashe-yang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-huashe-yang-v1-card.webp",
+      "bytes": 30880,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-huashe-yang-v1-preview.webp",
+      "bytes": 58940,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-longchi-kunwu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-longchi-kunwu-v1-card.webp",
+      "bytes": 30534,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-longchi-kunwu-v1-preview.webp",
+      "bytes": 58704,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-mafu-manqu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-mafu-manqu-v1-card.webp",
+      "bytes": 31932,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-mafu-manqu-v1-preview.webp",
+      "bytes": 58878,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-humanbird-range2-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range2-v1-card.webp",
+      "bytes": 29402,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range2-v1-preview.webp",
+      "bytes": 55718,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-fuzhu-aoan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-fuzhu-aoan-v1-card.webp",
+      "bytes": 27600,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-fuzhu-aoan-v1-preview.webp",
+      "bytes": 50594,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-wuluo-qingyao-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-wuluo-qingyao-v1-card.webp",
+      "bytes": 22378,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-wuluo-qingyao-v1-preview.webp",
+      "bytes": 39056,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-yao-qingyao-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-yao-qingyao-v1-card.webp",
+      "bytes": 24594,
+      "dimensions": [
+        320,
+        231
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-yao-qingyao-v1-preview.webp",
+      "bytes": 46674,
+      "dimensions": [
+        480,
+        346
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-feiyu-gui-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-feiyu-gui-v1-card.webp",
+      "bytes": 28472,
+      "dimensions": [
+        320,
+        225
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-feiyu-gui-v1-preview.webp",
+      "bytes": 53412,
+      "dimensions": [
+        480,
+        338
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-taifeng-heshan-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-taifeng-heshan-v1-card.webp",
+      "bytes": 30308,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-taifeng-heshan-v1-preview.webp",
+      "bytes": 58138,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
   }
 }

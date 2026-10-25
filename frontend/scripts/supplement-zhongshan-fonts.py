@@ -17,7 +17,7 @@ args = parser.parse_args()
 
 
 def fetch(url):
-    cmd = ['rtk', 'proxy', 'curl.exe', '--ssl-revoke-best-effort', '--fail', '--location', '--connect-timeout', '10', '--max-time', '60', '--silent', '--show-error', '--user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36']
+    cmd = ['rtk', 'proxy', 'curl.exe', '--ssl-revoke-best-effort', '--fail', '--location', '--retry', '3', '--retry-all-errors', '--retry-delay', '1', '--connect-timeout', '25', '--max-time', '60', '--silent', '--show-error', '--user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36']
     if args.proxy:
         cmd += ['--proxy', args.proxy]
     result = subprocess.run([*cmd, url], capture_output=True)
@@ -83,6 +83,6 @@ preflight['missing_stage_title_characters'] = ''.join(sorted({c for s in review[
 preflight['missing_stage_title_count'] = len(preflight['missing_stage_title_characters'])
 preflight['implemented_batch_missing_characters'] = ''.join(c for c in missing if ord(c) not in bundled)
 assert not preflight['implemented_batch_missing_characters']
-preflight.update(status='current_batch_covered_future_pending', limits='已接入前三阶段标题、实体、正文与郭注所需字已补；后续209阶段完整内容仍需逐批预检。')
+preflight.update(status='current_batch_covered_future_pending', limits='已接入前33阶段标题、实体、正文与郭注所需字已补；后续179阶段完整内容仍需逐批预检。')
 review_path.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print('Central rare subset', RARE, rare_target.stat().st_size, 'future title gaps', preflight['missing_stage_title_count'], flush=True)
