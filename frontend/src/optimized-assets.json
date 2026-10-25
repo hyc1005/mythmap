@@ -3885,5 +3885,278 @@
       1254,
       1254
     ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-zhunou-gengshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-zhunou-gengshan-v1.webp",
+    "original_bytes": 1729165,
+    "optimized_bytes": 297528,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/bird-lihu-luqi-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/bird-lihu-luqi-v1.webp",
+    "original_bytes": 1911291,
+    "optimized_bytes": 309612,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-bibi-gufeng-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-bibi-gufeng-v1.webp",
+    "original_bytes": 2122520,
+    "optimized_bytes": 392474,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-longzhi-fuli-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-longzhi-fuli-v1.webp",
+    "original_bytes": 2765072,
+    "optimized_bytes": 374438,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-youyou-zhenshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-youyou-zhenshan-v1.webp",
+    "original_bytes": 1525714,
+    "optimized_bytes": 254278,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/bird-jiegou-zhenshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/bird-jiegou-zhenshan-v1.webp",
+    "original_bytes": 1542887,
+    "optimized_bytes": 268440,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/deity-humanface-antlers-range2-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/deity-humanface-antlers-range2-v1.webp",
+    "original_bytes": 2099040,
+    "optimized_bytes": 393734,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-yuanhu-shihu-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-yuanhu-shihu-v1.webp",
+    "original_bytes": 1267974,
+    "optimized_bytes": 239792,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/fish-wei-mengzi-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/fish-wei-mengzi-v1.webp",
+    "original_bytes": 1163417,
+    "optimized_bytes": 118160,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/fish-zi-dongshi-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/fish-zi-dongshi-v1.webp",
+    "original_bytes": 2403673,
+    "optimized_bytes": 325556,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/fish-bo-nvzheng-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/fish-bo-nvzheng-v1.webp",
+    "original_bytes": 1639918,
+    "optimized_bytes": 270174,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/fish-hua-zitong-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/fish-hua-zitong-v1.webp",
+    "original_bytes": 1875491,
+    "optimized_bytes": 319812,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-heyu-yanshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-heyu-yanshan-v1.webp",
+    "original_bytes": 2884665,
+    "optimized_bytes": 310130,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-fei-taishan-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-fei-taishan-v1.webp",
+    "original_bytes": 2003198,
+    "optimized_bytes": 318240,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/turtle-xigui-qizhong-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/turtle-xigui-qizhong-v1.webp",
+    "original_bytes": 2086586,
+    "optimized_bytes": 355062,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/fish-gege-qizhong-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/fish-gege-qizhong-v1.webp",
+    "original_bytes": 2182238,
+    "optimized_bytes": 225200,
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "dimensions": [
+      853,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-jingjing-muyu-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-jingjing-muyu-v1.webp",
+    "original_bytes": 2499699,
+    "optimized_bytes": 271750,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/deity-human-ramhorn-range3-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/deity-human-ramhorn-range3-v1.webp",
+    "original_bytes": 1543757,
+    "optimized_bytes": 263504,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/creature-xieju-beihao-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/creature-xieju-beihao-v1.webp",
+    "original_bytes": 2409515,
+    "optimized_bytes": 259044,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/bird-qique-beihao-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/bird-qique-beihao-v1.webp",
+    "original_bytes": 1756102,
+    "optimized_bytes": 307704,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/dongshan/fish-qiu-maoshan-v1.webp": {
+    "path": "/data/atlas/myth-icons/dongshan/fish-qiu-maoshan-v1.webp",
+    "original_bytes": 2657991,
+    "optimized_bytes": 298932,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
   }
 }

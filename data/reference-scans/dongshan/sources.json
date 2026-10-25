@@ -74,7 +74,10 @@
     "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/119",
     "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu/page119-1280px-Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu.jpg",
     "local_path": "data/reference-scans/dongshan/page-119.jpg",
-    "sha256": "60f32939c7f49dca4423b0858a1a0ad2076723c3b82e4b2664da881849e70faa"
+    "sha256": "60f32939c7f49dca4423b0858a1a0ad2076723c3b82e4b2664da881849e70faa",
+    "detail_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu/page119-1920px-Sibu_Congkan0465-%E9%83%AD%E7%92%9E-%E5%B1%B1%E6%B5%B7%E7%B6%93-2-1.djvu.jpg",
+    "detail_local_path": "data/reference-scans/dongshan/page-119-detail-1920.jpg",
+    "detail_sha256": "c5814b5f10b6dc5697f760caf5edafe52326a18a52c5b3e7c6798ae533ce3d9f"
   },
   {
     "page": 120,

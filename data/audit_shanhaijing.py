@@ -139,7 +139,7 @@ def generate(check=False):
         if chapter['number'] == 3 and northern_passages:
             state = f'全篇{len(northern_passages)}阅读段、{len(northern_cards)}张独立卡已核；形貌不足者留占位'
         if chapter['number'] == 4 and eastern_review:
-            state = f'{eastern_review["planned_stages"]}阶段已规划、{eastern_review["implemented_stages"]}阶段接入；其余仍待接入'
+            state = f'全篇{eastern_review["implemented_stages"]}阅读段接入；疑难字与数字差异明确保留' if eastern_review['remaining_stages']==0 else f'{eastern_review["planned_stages"]}阶段已规划、{eastern_review["implemented_stages"]}阶段接入；其余仍待接入'
         out.append(f'| [{chapter["title"]}]({chapter["revision_url"]}) | {counts["web"]} | {counts["archive_or_group"]} | {counts["unexposed"]} | {state} |')
     out += ['', '## 逐篇已收录与待补方向', '']
     gaps = {
@@ -252,7 +252,7 @@ def generate(check=False):
             '- `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。',
             '- `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。',
             f'- `python data/build_xishan.py`：合并西山经{len(western_passages)}段与{len(western_cards)}张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。',
-            '- `python data/build_dongshan.py`：合并东山前20段/102双语卡，保留其他篇与东山既有稳定ID；东山插画通过prepare-nanshan-artwork.py --chapter dongshan导出，之后重建inventory/audit。',
+            '- `python data/build_dongshan.py`：合并东山全篇51段/237双语卡（含3张稳定旧卡接入），保留其他篇与东山既有稳定ID；东山插画通过prepare-nanshan-artwork.py --chapter dongshan导出，之后重建inventory/audit。',
             '- `python data/build_beishan.py`：合并已核北山经全篇92段及507张双语卡（含复用諸犍、精衛、發鳩），保留其他篇目与旧ID；`python frontend/scripts/prepare-nanshan-artwork.py --chapter beishan`仅导出已审图。随后重建全书清单和本盘点。',
             '- `python frontend/scripts/prepare-nanshan-artwork.py --chapter xishan`：仅导出已审核西山经插画。随后运行全书清单和本盘点构建器更新统计。',
             '- `python data/audit_shanhaijing.py`：离线重建本清单和网页来源分类。',

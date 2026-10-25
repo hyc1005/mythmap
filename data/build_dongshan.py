@@ -67,6 +67,9 @@ ENTITIES += second_entities(E)
 from dongshan_third_batch import ROWS as THIRD_ROWS, entities as third_entities
 ROWS += THIRD_ROWS
 ENTITIES += third_entities(E)
+from dongshan_completion import ROWS as FINAL_ROWS, entities as final_entities, LINKS as FINAL_LINKS, SHARES as FINAL_SHARES
+ROWS += FINAL_ROWS
+ENTITIES += final_entities(E)
 
 def build():
     review=read('data/dongshan-edition-review.json')
@@ -77,7 +80,7 @@ def build():
     passages=[];cards=[];corrections=review['source_unit_page_corrections']
     for order,row in enumerate(ROWS,1):
         slug=row['slug'];stage=stages[slug];a,b=stage['source_units'];refs=chapter['lines'][a-1:b]
-        captured=''.join(l['text'] for l in refs);raw=re.sub(r'⟦缺字图:([^⟧]+)⟧',r'\1',captured);pid='passage-dongshan-'+slug;place=('rite' if stage['kind']=='summary' else 'place')+'-dongshan-'+slug
+        captured=''.join(l['text'] for l in refs);raw=re.sub(r'⟦缺字图:([^⟧]+)⟧',r'\1',captured);pid='passage-dongshan-'+slug;place=('rite' if stage['kind']!='mountain' else 'place')+'-dongshan-'+slug
         pages=stage['facsimile_pages'];urls=[f'https://zh.wikisource.org/wiki/Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/{p}' for p in pages]
         source='《山海经·东山经》（《四部丛刊》景明成化本，郭璞传）'
         common=dict(source=source,source_chapter='《东山经》',source_book=4,region='东山经',source_locator='卷第四 · 影印页 '+'、'.join(map(str,pages)),source_pages=urls,url=urls[0],source_unit_ids=stage['source_unit_ids'],reveal_chapter='04',content_batch='dongshan-'+slug,review_status='facsimile_reviewed',artwork_pending=True,direction='按东山经篇内顺序及古述方位阅读，不换算现代坐标或实测里程。',editorial_note='经文、捕获和郭注分存；白话及英文为项目整理。食用、治病与灾异属古籍记述。')
@@ -85,7 +88,7 @@ def build():
         commentary='\n'.join(f'〔影印页{corrections.get(id,int(line["page"].split("/")[-1]))}〕'+'；'.join(line['annotations']) for id,line in zip(stage['source_unit_ids'],refs) if line['annotations'])
         p={**common,'id':pid,'kind':'passage','name':stage['name'],'range':stage['range'],'order':order,'description':row['description'],'quote':raw,'captured_text':captured,'commentary_quote':commentary,'captured_commentary':[{'source_unit_id':id,'annotations':l['annotations']} for id,l in zip(stage['source_unit_ids'],refs)],'content_note':stage['note'],'source_span':[sum(len(x['text']) for x in chapter['lines'][:a-1]),sum(len(x['text']) for x in chapter['lines'][:b])],'subjects':[stage['name']],'related_entry_ids':[place]}
         english[pid]={**encommon,'name':row['en_name'],'description':row['en_description'],'quote':row['en_quote'],'content_note':row['en_note']}
-        cards.append({**common,'id':place,'kind':('rite' if stage['kind']=='summary' else 'place'),'name':stage['name'],'description':row['description'],'quote':raw,'commentary_quote':commentary,'content_note':stage['note'],'source_passage_ids':[pid],'related_entry_ids':[pid]})
+        cards.append({**common,'id':place,'kind':('rite' if stage['kind']!='mountain' else 'place'),'name':stage['name'],'description':row['description'],'quote':raw,'commentary_quote':commentary,'content_note':stage['note'],'source_passage_ids':[pid],'related_entry_ids':[pid]})
         english[place]=dict(english[pid])
         comments=''.join(x for l in refs for x in l['annotations'])
         for e in [e for e in ENTITIES if e['slug']==slug]:
@@ -98,10 +101,13 @@ def build():
             if e.get('unknown'):
                 c.update(appearance_unknown=True,artwork_caption='形貌未详或依据不足 · 统一问号占位不代表本生物形态。')
                 english[c['id']]['artwork_caption']='Appearance unspecified or evidence insufficient; the shared question-mark placeholder is not a depiction.'
+            elif e.get('reuse_artwork'):
+                c.update(artwork=e['reuse_artwork'],artwork_pending=False,artwork_caption='旧图复核采用：豚状有牙，牙数、配色及姿态为艺术解释。')
+                english[c['id']]['artwork_caption']='Reviewed existing image: pig-like with tusks; tusk count, colors and pose are artistic.'
             elif (art:=jobs.get(e['id'])) and art['status']=='reviewed':
                 c.update(artwork='dongshan/'+art['name']+'-v1.webp',artwork_pending=False,artwork_caption='经文或郭注形貌与木刻演绎 · 器官依据见说明，配色、比例和姿态为艺术解释。')
                 english[c['id']]['artwork_caption']='Textual or commentary-based form in woodcut interpretation; the description identifies the evidence, while colors, proportions and pose are artistic.'
-            if stage['kind']=='summary':
+            if stage['kind']!='mountain' or e.get('contextless'):
                 c.pop('context_place_id',None)
                 c['related_entry_ids'].append(place)
                 next(x for x in cards if x['id']==place)['related_entry_ids'].append(c['id'])
@@ -127,26 +133,36 @@ def build():
     share('beast-dongshan-gan-fantiao','guer','其中多鱤魚','Gan fish are abundant in the Guer water account.')
     share('water-dongshan-shi','kongsang-east','北臨食水','Kongsang faces Shi water to the north.')
     share('water-dongshan-jiang','zhushan','錞于江','Zhu adjoins the Jiang.')
+    for args in FINAL_SHARES:share(*args)
+    index['water-dongshan-shi']['description']='食水文本索引并列樕𧑤源出、藟山湖水注入、空桑北临与北號源出四出处；流向逐段保留，不认定现代水系同一性。'
+    english['water-dongshan-shi']['description']='This Shi textual index preserves Suzhu and Beihao source accounts, the Hu confluence at Lei and the northward reference at Kongsang, without settling modern geographic identity.'
+    index['water-dongshan-sea'].update(name='海（东山水文文本索引）',description='海为樕𧑤、番條、姑兒、北號及東始各段受水体泛称；方向逐段存录，不并北海或现代岸线。')
+    english['water-dongshan-sea'].update(name='Sea (Eastern water textual index)',description='This shared recipient index preserves separate accounts at Suzhu, Fantiao, Guer, Beihao and Dongshi, without merging the Northern Sea or specifying a modern coastline.')
     links=[('water-dongshan-shi','water-dongshan-sea'),('water-dongshan-shi','beast-dongshan-yongyong-suzhu'),('water-dongshan-hu','water-dongshan-shi'),('water-dongshan-hu','beast-dongshan-huoshi-leishan'),('water-dongshan-zhi-xunzhuang','water-dongshan-hu'),('water-dongshan-zhi-xunzhuang','beast-dongshan-zhen-xunzhuang'),('water-dongshan-jian-fantiao','water-dongshan-sea'),('water-dongshan-jian-fantiao','beast-dongshan-gan-fantiao')]
     links += [('water-dongshan-guer','water-dongshan-sea'),('water-dongshan-guer','beast-dongshan-gan-fantiao'),('water-dongshan-zhusheng','water-dongshan-ze-gaoshi'),('water-dongshan-luo','water-dongshan-ze-yue'),('water-dongshan-unnamed-chai','beast-dongshan-kanyu-chai'),('water-dongshan-motu','water-dongshan-mian'),('water-dongshan-motu','beast-dongshan-tiaoyong-dushan'),('water-dongshan-huan','water-dongshan-jiang'),('water-dongshan-ji-zhu','water-dongshan-qutan'),('water-dongshan-ji-zhu','beast-dongshan-zilei-zhu')]
     links += [('water-dongshan-yigao', 'water-dongshan-jinv'), ('water-dongshan-yigao', 'beast-dongshan-shen-yigao'), ('water-dongshan-yigao', 'beast-dongshan-yao-yigao'), ('water-dongshan-li-geshan-head', 'water-dongshan-yu-marsh'), ('water-dongshan-li-geshan-head', 'beast-dongshan-zhubie-geshan-head'), ('water-dongshan-zayu', 'water-dongshan-huang-yue'), ('beast-dongshan-qiuyu-yue', 'animal-dongshan-zhong-yue'), ('beast-dongshan-qiuyu-yue', 'animal-dongshan-huang-insects-yue')]
+    links += FINAL_LINKS
     for a,b in links:
         index[a]['related_entry_ids'].append(b);index[b]['related_entry_ids'].append(a)
     for a,b in zip(passages,passages[1:]):
         a['related_entry_ids'].append(b['id']);b['related_entry_ids'].append(a['id'])
     batches={'dongshan-'+r['slug'] for r in ROWS}
-    for group,values in [('passages',passages),('text_entities',[c for c in cards if c['kind'] in {'place','rite','deity','animal'}]),('beasts',[c for c in cards if c['kind']=='beast']),('natural_features',[c for c in cards if c['kind'] in {'water','material','plant'}])]:
-        world[group]=[c for c in world[group] if c.get('content_batch') not in batches]+values
-    world['revision']='myth-world-2026-10-25-dongshan-twenty-v1'
-    review.update(status='partially_implemented',scope='前20阅读段已核109—115页；全篇段界已规划，其他段待双语、实体及页面接入。',implemented_stages=20,remaining_stages=31,entry_ids=[c['id'] for c in cards],passages=[dict(id=p['id'],source_unit_ids=p['source_unit_ids'],source_span=p['source_span'],status='facsimile_reviewed') for p in passages],batch_size=5,next=dict(name='耿山',source_units=[56,58],facsimile_pages=[115],status='pending_bilingual_entity_review'),artwork_summary=dict(selected=sum(a['status']=='reviewed' for a in jobs.values()),appearance_unknown=sum(c.get('appearance_unknown',False) for c in cards)))
-    for stage in review['stage_plan'][:20]:
+    for group,values in [('passages',passages),('text_entities',[c for c in cards if c['kind'] in {'place','rite','deity','animal','wind'} or c['kind'] in {'plant','material'} and not c.get('context_place_id')]),('beasts',[c for c in cards if c['kind']=='beast']),('natural_features',[c for c in cards if c['kind'] in {'water','material','plant'} and c.get('context_place_id')])]:
+        world[group]=[c for c in world[group] if c.get('content_batch') not in batches and c['id'] not in index]+values
+    world['revision']='myth-world-2026-10-25-dongshan-complete-v1'
+    review.update(status='complete',scope='全篇51阅读段及正文/郭注已对照109—124页影印接入；列名山数与原报差异分别保留。',implemented_stages=51,remaining_stages=0,entry_ids=[c['id'] for c in cards],passages=[dict(id=p['id'],source_unit_ids=p['source_unit_ids'],source_span=p['source_span'],status='facsimile_reviewed') for p in passages],batch_size=31,next=None,artwork_summary=dict(selected=sum(a['status']=='reviewed' for a in jobs.values()),appearance_unknown=sum(c.get('appearance_unknown',False) for c in cards)))
+    for stage in review['stage_plan'][:51]:
         stage.update(content_status='facsimile_reviewed',browser_status='see local handoff acceptance',passage_id='passage-dongshan-'+stage['slug'],new_cards=sum(c['content_batch']=='dongshan-'+stage['slug'] for c in cards))
+    for stage in review['stage_plan'][20:]:
+        owned=[c for c in cards if c['content_batch']=='dongshan-'+stage['slug']]
+        reused=[c['id'] for c in owned if c['id'] in {'beast-dangkang','beast-heyu','beast-fei'}]
+        stage.update(context_cards=len(owned),new_cards=len(owned)-len(reused),reused_entry_ids=reused)
     for issue in review['glyph_issues']:
         if issue['kind']=='missing_image_glyph':
             matches=[p for p in passages if issue['source_unit_id'] in p['source_unit_ids']]
             if matches:issue.update(status='restored_in_reading_layer',passage_id=matches[0]['id'])
     assert len(cards)==len(ENTITIES)+len(ROWS),len(cards)
     write('frontend/public/data/myth-world.json',world);write('frontend/src/locale-content-en.json',english);write('data/dongshan-edition-review.json',review)
-    print(f'Built Eastern: {len(passages)} passages, {len(cards)} cards; 31 stages remain')
+    print(f'Built Eastern: {len(passages)} passages, {len(cards)} cards; 0 stages remain')
 if __name__=='__main__':
     build()

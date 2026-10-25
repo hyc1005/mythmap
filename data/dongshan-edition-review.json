@@ -1,8 +1,8 @@
 {
   "chapter": 4,
   "edition": "《山海經（四部叢刊本）》卷第四，郭氏傳",
-  "status": "partially_implemented",
-  "scope": "前20阅读段已核109—115页；全篇段界已规划，其他段待双语、实体及页面接入。",
+  "status": "complete",
+  "scope": "全篇51阅读段及正文/郭注已对照109—124页影印接入；列名山数与原报差异分别保留。",
   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854",
   "snapshot_sha256": "0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce",
   "scan_pages": [
@@ -52,8 +52,8 @@
     "source-04-0093"
   ],
   "planned_stages": 51,
-  "implemented_stages": 20,
-  "remaining_stages": 31,
+  "implemented_stages": 51,
+  "remaining_stages": 0,
   "stage_counts": [
     13,
     18,
@@ -108,8 +108,9 @@
     {
       "source_unit_id": "source-04-0091",
       "kind": "replacement_character_in_commentary",
-      "status": "pending_character_level_review",
-      "note": "不猜補�，后续按119页逐字核。"
+      "status": "facsimile_checked_uncertain_codepoints",
+      "note": "已核119页及1920像素详图；捕获未詳音�𣆆之�原样保留，日部复杂字未能安全编码，明确提示待专门字形复核，不猜字。",
+      "detail_scan": "data/reference-scans/dongshan/page-119-detail-1920.jpg"
     }
   ],
   "stable_existing_ids": [
@@ -708,9 +709,13 @@
         115
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "朱獳狐状鱼翼，与姑逢狐状有翼獙獙分开；大蛇仅列名不补造。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "朱獳狐状鱼翼，与姑逢狐状有翼獙獙分开；大蛇仅列名不补造。",
+      "passage_id": "passage-dongshan-gengshan",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 22,
@@ -734,9 +739,13 @@
         115
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-luqi",
+      "new_cards": 6,
+      "context_cards": 6,
+      "reused_entry_ids": []
     },
     {
       "stage": 23,
@@ -758,9 +767,13 @@
         115
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-gushe",
+      "new_cards": 2,
+      "context_cards": 2,
+      "reused_entry_ids": []
     },
     {
       "stage": 24,
@@ -784,9 +797,13 @@
         116
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0063实际115页末，与姑射、南姑射各自独立；水行300里及流沙100里不合成一个现代距离。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0063实际115页末，与姑射、南姑射各自独立；水行300里及流沙100里不合成一个现代距离。",
+      "passage_id": "passage-dongshan-north-gushe",
+      "new_cards": 2,
+      "context_cards": 2,
+      "reused_entry_ids": []
     },
     {
       "stage": 25,
@@ -808,9 +825,13 @@
         116
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-south-gushe",
+      "new_cards": 2,
+      "context_cards": 2,
+      "reused_entry_ids": []
     },
     {
       "stage": 26,
@@ -832,9 +853,13 @@
         116
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-bishan",
+      "new_cards": 3,
+      "context_cards": 3,
+      "reused_entry_ids": []
     },
     {
       "stage": 27,
@@ -857,9 +882,13 @@
         116
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-weishi",
+      "new_cards": 5,
+      "context_cards": 5,
+      "reused_entry_ids": []
     },
     {
       "stage": 28,
@@ -883,9 +912,13 @@
         116
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-gufeng",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 29,
@@ -910,9 +943,13 @@
         117
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0072实际116页末；蠪姪狐状九首九尾虎爪，逐数而非借九尾狐单首旧图。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0072实际116页末；蠪姪狐状九首九尾虎爪，逐数而非借九尾狐单首旧图。",
+      "passage_id": "passage-dongshan-fuli",
+      "new_cards": 5,
+      "context_cards": 5,
+      "reused_entry_ids": []
     },
     {
       "stage": 30,
@@ -937,9 +974,13 @@
         117
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-zhenshan",
+      "new_cards": 5,
+      "context_cards": 5,
+      "reused_entry_ids": []
     },
     {
       "stage": 31,
@@ -964,9 +1005,13 @@
         118
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0081实际117页末。獸身人靣載觡与郭注麋鹿属角为觡分别记录，鷄/璧瘗为礼。17列名与原报17相合。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0081实际117页末。獸身人靣載觡与郭注麋鹿属角为觡分别记录，鷄/璧瘗为礼。17列名与原报17相合。",
+      "passage_id": "passage-dongshan-range2-summary",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 32,
@@ -990,9 +1035,13 @@
         118
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-shihu",
+      "new_cards": 6,
+      "context_cards": 6,
+      "reused_entry_ids": []
     },
     {
       "stage": 33,
@@ -1014,9 +1063,13 @@
         118
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-qishan",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 34,
@@ -1039,9 +1092,13 @@
         118
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-zhugou",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 35,
@@ -1063,9 +1120,13 @@
         118
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-zhongfu",
+      "new_cards": 2,
+      "context_cards": 2,
+      "reused_entry_ids": []
     },
     {
       "stage": 36,
@@ -1087,9 +1148,13 @@
         118
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-hushe",
+      "new_cards": 3,
+      "context_cards": 3,
+      "reused_entry_ids": []
     },
     {
       "stage": 37,
@@ -1115,9 +1180,13 @@
         119
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0090实际118页末；0093正文空，续鮪长鼻无鳞甲注。0091注文捕获有替换符�，需单独对影印恢复，不擅猜字。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0090实际118页末；0093正文空，续鮪长鼻无鳞甲注。0091注文捕获有替换符�，需单独对影印恢复，不擅猜字。",
+      "passage_id": "passage-dongshan-mengzi",
+      "new_cards": 11,
+      "context_cards": 11,
+      "reused_entry_ids": []
     },
     {
       "stage": 38,
@@ -1145,9 +1214,13 @@
         120
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "水行500里与流沙500里分开。山广员200里、水40里不是现代面积；瀵水郭注跨96—97。蠵龟注音跨97—98，不归鮯鮯；鮯鮯鲤状六足鸟尾。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "水行500里与流沙500里分开。山广员200里、水40里不是现代面积；瀵水郭注跨96—97。蠵龟注音跨97—98，不归鮯鮯；鮯鮯鲤状六足鸟尾。",
+      "passage_id": "passage-dongshan-qizhong",
+      "new_cards": 5,
+      "context_cards": 5,
+      "reused_entry_ids": []
     },
     {
       "stage": 39,
@@ -1171,9 +1244,13 @@
         120
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-muyu",
+      "new_cards": 5,
+      "context_cards": 5,
+      "reused_entry_ids": []
     },
     {
       "stage": 40,
@@ -1197,9 +1274,13 @@
         120
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "主段無皐与总括無睪写法分别保留；榑木是东望对象，不和本山无草木矛盾强合或并成其他篇扶桑。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "主段無皐与总括無睪写法分别保留；榑木是东望对象，不和本山无草木矛盾强合或并成其他篇扶桑。",
+      "passage_id": "passage-dongshan-wugao",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 41,
@@ -1224,9 +1305,13 @@
         121
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0108实际120页末。影印确为十九山，逐段列名仅9山，差10不静默校成九；黍字异体𮮐后续字形对照。人身羊角不画羊首。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0108实际120页末。影印确为十九山，逐段列名仅9山，差10不静默校成九；黍字异体𮮐后续字形对照。人身羊角不画羊首。",
+      "passage_id": "passage-dongshan-range3-summary",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 42,
@@ -1252,9 +1337,13 @@
         121
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "食水同篇第二出处，先作文本索引不认定现代水系。猲狙狼状赤首鼠目；鬿雀鸡状白首鼠足虎爪。树仅比形杨、赤华、枣状无核果，不强命名枣树。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "食水同篇第二出处，先作文本索引不认定现代水系。猲狙狼状赤首鼠目；鬿雀鸡状白首鼠足虎爪。树仅比形杨、赤华、枣状无核果，不强命名枣树。",
+      "passage_id": "passage-dongshan-beihao",
+      "new_cards": 5,
+      "context_cards": 5,
+      "reused_entry_ids": []
     },
     {
       "stage": 43,
@@ -1278,9 +1367,13 @@
         121
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-maoshan",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 44,
@@ -1307,9 +1400,13 @@
         122
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0117实际121页末。𦬊树杨状赤理、血状汁、不实；服马郭注跨118—119。茈魚鲋状一首十身、蘪蕪臭，不借北山何羅图。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0117实际121页末。𦬊树杨状赤理、血状汁、不实；服马郭注跨118—119。茈魚鲋状一首十身、蘪蕪臭，不借北山何羅图。",
+      "passage_id": "passage-dongshan-dongshi",
+      "new_cards": 6,
+      "context_cards": 6,
+      "reused_entry_ids": []
     },
     {
       "stage": 45,
@@ -1333,9 +1430,13 @@
         122
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "按本段独立整理正文、郭注、水文方向及同名物产；形貌不足留占位。",
+      "passage_id": "passage-dongshan-nvzheng",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 46,
@@ -1361,9 +1462,15 @@
         123
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0126实际122页末；當康稳定旧ID候选复用，先按豚状有牙复核旧图，不能把夸张牙数当原文。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0126实际122页末；當康稳定旧ID候选复用，先按豚状有牙复核旧图，不能把夸张牙数当原文。",
+      "passage_id": "passage-dongshan-qinshan",
+      "new_cards": 6,
+      "context_cards": 7,
+      "reused_entry_ids": [
+        "beast-dangkang"
+      ]
     },
     {
       "stage": 47,
@@ -1387,9 +1494,13 @@
         123
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "䱻魚鱼状鸟翼出入有光，音如鸳鸯不加鸳鸯头；不混北山求如滑魚或西山滑魚。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "䱻魚鱼状鸟翼出入有光，音如鸳鸯不加鸳鸯头；不混北山求如滑魚或西山滑魚。",
+      "passage_id": "passage-dongshan-zitong",
+      "new_cards": 4,
+      "context_cards": 4,
+      "reused_entry_ids": []
     },
     {
       "stage": 48,
@@ -1413,9 +1524,15 @@
         123
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "合窳稳定旧ID候选复用，彘状人面黄身赤尾逐项核旧图；与北山载玉猪神分开。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "合窳稳定旧ID候选复用，彘状人面黄身赤尾逐项核旧图；与北山载玉猪神分开。",
+      "passage_id": "passage-dongshan-yanshan",
+      "new_cards": 5,
+      "context_cards": 6,
+      "reused_entry_ids": [
+        "beast-heyu"
+      ]
     },
     {
       "stage": 49,
@@ -1443,9 +1560,15 @@
         124
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "0135实际123页末；蜚稳定ID旧图复核牛状白首一目蛇尾。郭注其铭曰蜚之/为名…跨136—137，不移到鈎水。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "0135实际123页末；蜚稳定ID旧图复核牛状白首一目蛇尾。郭注其铭曰蜚之/为名…跨136—137，不移到鈎水。",
+      "passage_id": "passage-dongshan-taishan-range4",
+      "new_cards": 6,
+      "context_cards": 7,
+      "reused_entry_ids": [
+        "beast-fei"
+      ]
     },
     {
       "stage": 50,
@@ -1468,9 +1591,13 @@
         124
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "正文太山与总括大山写法分存；八山1720里照录，未载本组神形祭礼，不补造统一祭仪。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "正文太山与总括大山写法分存；八山1720里照录，未载本组神形祭礼，不补造统一祭仪。",
+      "passage_id": "passage-dongshan-range4-summary",
+      "new_cards": 1,
+      "context_cards": 1,
+      "reused_entry_ids": []
     },
     {
       "stage": 51,
@@ -1492,17 +1619,21 @@
         124
       ],
       "boundary_status": "facsimile_boundary_reviewed",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "篇末46山18860里；列名12+17+9+8=46与篇末合，四列原报12+17+19+8=56差10；里程3600+6640+6900+1720=18860相合。"
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "篇末46山18860里；列名12+17+9+8=46与篇末合，四列原报12+17+19+8=56差10；里程3600+6640+6900+1720=18860相合。",
+      "passage_id": "passage-dongshan-book-total",
+      "new_cards": 1,
+      "context_cards": 1,
+      "reused_entry_ids": []
     }
   ],
   "limits": "已核16页段界、跨页出处与总计；不宣称逐字多版本校勘或东山阅读已完成。所有51阶段仍待双语、实体/关系、必要生图审形、字体及页面验收。电子捕获快照不改；分段规划不将42结构候选或56原报合计当阶段数。",
   "font_preflight": {
-    "missing_stage_title_characters": "䃌剡烝盧耿跂踇踵隅麗",
-    "status": "current_batch_covered_future_pending",
-    "limits": "前20阶段标题及所需字已补；后续31阶段的完整实体和注文仍需逐批预检。",
-    "missing_stage_title_count": 10,
+    "missing_stage_title_characters": "",
+    "status": "required_glyphs_covered",
+    "limits": "全篇51阶段标题及所需字已补；0091郭注疑难字保留捕获及影印提示，不猜补。",
+    "missing_stage_title_count": 0,
     "implemented_batch_missing_characters": "",
     "initial_missing_stage_title_characters": "䃌亝兒剡勃峩嶧曹樕烝犲番盧耿葛藟跂踇踵隅麗𧑤"
   },
@@ -1608,7 +1739,142 @@
     "animal-dongshan-zhong-yue",
     "animal-dongshan-huang-insects-yue",
     "place-dongshan-dufu",
-    "water-dongshan-unnamed-dufu"
+    "water-dongshan-unnamed-dufu",
+    "place-dongshan-gengshan",
+    "material-dongshan-shuibi-geng",
+    "beast-dongshan-large-snake",
+    "beast-dongshan-zhunou-gengshan",
+    "place-dongshan-luqi",
+    "material-dongshan-sand-luqi",
+    "material-dongshan-stone-luqi",
+    "water-dongshan-sha-luqi",
+    "water-dongshan-cen",
+    "beast-dongshan-lihu-luqi",
+    "place-dongshan-gushe",
+    "water-dongshan-unnamed-gushe",
+    "place-dongshan-north-gushe",
+    "material-dongshan-stone-north-gushe",
+    "place-dongshan-south-gushe",
+    "water-dongshan-unnamed-south-gushe",
+    "place-dongshan-bishan",
+    "material-dongshan-bi-bishan",
+    "material-dongshan-water-jade-bishan",
+    "place-dongshan-weishi",
+    "material-dongshan-gold-weishi",
+    "material-dongshan-jade-weishi",
+    "water-dongshan-yuan-weishi",
+    "water-dongshan-sha-marsh",
+    "place-dongshan-gufeng",
+    "material-dongshan-gold-gufeng",
+    "material-dongshan-jade-gufeng",
+    "beast-dongshan-bibi-gufeng",
+    "place-dongshan-fuli",
+    "material-dongshan-gold-fuli",
+    "material-dongshan-jade-fuli",
+    "material-dongshan-zhenstone-fuli",
+    "beast-dongshan-longzhi-fuli",
+    "place-dongshan-zhenshan",
+    "water-dongshan-zhen",
+    "water-dongshan-hu-marsh",
+    "beast-dongshan-youyou-zhenshan",
+    "beast-dongshan-jiegou-zhenshan",
+    "rite-dongshan-range2-summary",
+    "deity-dongshan-humanface-antlers-range2",
+    "rite-dongshan-chicken-range2",
+    "rite-dongshan-bi-burial-range2",
+    "place-dongshan-shihu",
+    "place-dongshan-xiang-shihu",
+    "material-dongshan-gold-shihu",
+    "material-dongshan-jade-shihu",
+    "plant-dongshan-ji-shihu",
+    "beast-dongshan-yuanhu-shihu",
+    "place-dongshan-qishan",
+    "plant-dongshan-peach-qi",
+    "plant-dongshan-plum-qi",
+    "animal-dongshan-tiger-qi",
+    "place-dongshan-zhugou",
+    "material-dongshan-sand-zhugou",
+    "material-dongshan-stone-zhugou",
+    "beast-dongshan-qin-zhugou",
+    "place-dongshan-zhongfu",
+    "material-dongshan-sand-zhongfu",
+    "place-dongshan-hushe",
+    "material-dongshan-sand-hushe",
+    "material-dongshan-stone-hushe",
+    "place-dongshan-mengzi",
+    "plant-dongshan-zi-mengzi",
+    "plant-dongshan-tong-mengzi",
+    "plant-dongshan-peach-mengzi",
+    "plant-dongshan-plum-mengzi",
+    "plant-dongshan-junpu-mengzi",
+    "animal-dongshan-mi-mengzi",
+    "animal-dongshan-lu-mengzi",
+    "water-dongshan-biyang",
+    "beast-dongshan-zhan-mengzi",
+    "beast-dongshan-wei-mengzi",
+    "place-dongshan-qizhong",
+    "material-dongshan-jade-qizhong",
+    "water-dongshan-shen-marsh",
+    "beast-dongshan-xigui-qizhong",
+    "beast-dongshan-gege-qizhong",
+    "place-dongshan-muyu",
+    "material-dongshan-gold-muyu",
+    "material-dongshan-jade-muyu",
+    "material-dongshan-ochre-muyu",
+    "beast-dongshan-jingjing-muyu",
+    "place-dongshan-wugao",
+    "water-dongshan-you-sea",
+    "plant-dongshan-fu-wood-wugao",
+    "wind-dongshan-wind-wugao",
+    "rite-dongshan-range3-summary",
+    "deity-dongshan-human-ramhorn-range3",
+    "rite-dongshan-ram-offering-range3",
+    "material-dongshan-millet-range3",
+    "place-dongshan-beihao",
+    "water-dongshan-north-sea",
+    "plant-dongshan-unnamed-tree-beihao",
+    "beast-dongshan-xieju-beihao",
+    "beast-dongshan-qique-beihao",
+    "place-dongshan-maoshan",
+    "water-dongshan-cangti",
+    "water-dongshan-zhan-water",
+    "beast-dongshan-qiu-maoshan",
+    "place-dongshan-dongshi",
+    "material-dongshan-cang-jade-dongshi",
+    "plant-dongshan-qi-tree-dongshi",
+    "water-dongshan-ci-dongshi",
+    "material-dongshan-fine-shell-dongshi",
+    "beast-dongshan-zi-dongshi",
+    "place-dongshan-nvzheng",
+    "water-dongshan-shigao",
+    "water-dongshan-ge-water",
+    "beast-dongshan-bo-nvzheng",
+    "place-dongshan-qinshan",
+    "material-dongshan-gold-qinshan",
+    "material-dongshan-jade-qinshan",
+    "water-dongshan-shi-qinshan",
+    "water-dongshan-gao-marsh",
+    "material-dongshan-patterned-shell-qin",
+    "beast-dangkang",
+    "place-dongshan-zitong",
+    "water-dongshan-zitong",
+    "water-dongshan-yuru-marsh",
+    "beast-dongshan-hua-zitong",
+    "place-dongshan-yanshan",
+    "material-dongshan-gold-yanshan",
+    "material-dongshan-jade-yanshan",
+    "beast-heyu",
+    "animal-dongshan-insects-yanshan",
+    "animal-dongshan-snakes-yanshan",
+    "place-dongshan-taishan-range4",
+    "material-dongshan-gold-taishan-range4",
+    "material-dongshan-jade-taishan-range4",
+    "plant-dongshan-zhenwood-tai4",
+    "beast-fei",
+    "water-dongshan-gou-tai4",
+    "water-dongshan-lao-water",
+    "rite-dongshan-range4-summary",
+    "rite-dongshan-book-total"
   ],
   "passages": [
     {
@@ -1863,41 +2129,427 @@
         821
       ],
       "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-gengshan",
+      "source_unit_ids": [
+        "source-04-0056",
+        "source-04-0057",
+        "source-04-0058"
+      ],
+      "source_span": [
+        821,
+        863
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-luqi",
+      "source_unit_ids": [
+        "source-04-0059",
+        "source-04-0060",
+        "source-04-0061"
+      ],
+      "source_span": [
+        863,
+        913
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-gushe",
+      "source_unit_ids": [
+        "source-04-0062"
+      ],
+      "source_span": [
+        913,
+        930
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-north-gushe",
+      "source_unit_ids": [
+        "source-04-0063",
+        "source-04-0064"
+      ],
+      "source_span": [
+        930,
+        952
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-south-gushe",
+      "source_unit_ids": [
+        "source-04-0065"
+      ],
+      "source_span": [
+        952,
+        968
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-bishan",
+      "source_unit_ids": [
+        "source-04-0066"
+      ],
+      "source_span": [
+        968,
+        986
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-weishi",
+      "source_unit_ids": [
+        "source-04-0067",
+        "source-04-0068"
+      ],
+      "source_span": [
+        986,
+        1012
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-gufeng",
+      "source_unit_ids": [
+        "source-04-0069",
+        "source-04-0070",
+        "source-04-0071"
+      ],
+      "source_span": [
+        1012,
+        1054
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-fuli",
+      "source_unit_ids": [
+        "source-04-0072",
+        "source-04-0073",
+        "source-04-0074"
+      ],
+      "source_span": [
+        1054,
+        1100
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-zhenshan",
+      "source_unit_ids": [
+        "source-04-0075",
+        "source-04-0076",
+        "source-04-0077",
+        "source-04-0078"
+      ],
+      "source_span": [
+        1100,
+        1171
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-range2-summary",
+      "source_unit_ids": [
+        "source-04-0079",
+        "source-04-0080",
+        "source-04-0081"
+      ],
+      "source_span": [
+        1171,
+        1220
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-shihu",
+      "source_unit_ids": [
+        "source-04-0082",
+        "source-04-0083",
+        "source-04-0084"
+      ],
+      "source_span": [
+        1220,
+        1263
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-qishan",
+      "source_unit_ids": [
+        "source-04-0085"
+      ],
+      "source_span": [
+        1263,
+        1282
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-zhugou",
+      "source_unit_ids": [
+        "source-04-0086",
+        "source-04-0087"
+      ],
+      "source_span": [
+        1282,
+        1310
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-zhongfu",
+      "source_unit_ids": [
+        "source-04-0088"
+      ],
+      "source_span": [
+        1310,
+        1327
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-hushe",
+      "source_unit_ids": [
+        "source-04-0089"
+      ],
+      "source_span": [
+        1327,
+        1344
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-mengzi",
+      "source_unit_ids": [
+        "source-04-0090",
+        "source-04-0091",
+        "source-04-0092",
+        "source-04-0093"
+      ],
+      "source_span": [
+        1344,
+        1396
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-qizhong",
+      "source_unit_ids": [
+        "source-04-0094",
+        "source-04-0095",
+        "source-04-0096",
+        "source-04-0097",
+        "source-04-0098",
+        "source-04-0099"
+      ],
+      "source_span": [
+        1396,
+        1475
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-muyu",
+      "source_unit_ids": [
+        "source-04-0100",
+        "source-04-0101",
+        "source-04-0102"
+      ],
+      "source_span": [
+        1475,
+        1515
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-wugao",
+      "source_unit_ids": [
+        "source-04-0103",
+        "source-04-0104",
+        "source-04-0105"
+      ],
+      "source_span": [
+        1515,
+        1553
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-range3-summary",
+      "source_unit_ids": [
+        "source-04-0106",
+        "source-04-0107",
+        "source-04-0108"
+      ],
+      "source_span": [
+        1553,
+        1608
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-beihao",
+      "source_unit_ids": [
+        "source-04-0109",
+        "source-04-0110",
+        "source-04-0111",
+        "source-04-0112",
+        "source-04-0113"
+      ],
+      "source_span": [
+        1608,
+        1704
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-maoshan",
+      "source_unit_ids": [
+        "source-04-0114",
+        "source-04-0115",
+        "source-04-0116"
+      ],
+      "source_span": [
+        1704,
+        1744
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-dongshi",
+      "source_unit_ids": [
+        "source-04-0117",
+        "source-04-0118",
+        "source-04-0119",
+        "source-04-0120",
+        "source-04-0121"
+      ],
+      "source_span": [
+        1744,
+        1821
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-nvzheng",
+      "source_unit_ids": [
+        "source-04-0122",
+        "source-04-0123",
+        "source-04-0124"
+      ],
+      "source_span": [
+        1821,
+        1871
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-qinshan",
+      "source_unit_ids": [
+        "source-04-0125",
+        "source-04-0126",
+        "source-04-0127"
+      ],
+      "source_span": [
+        1871,
+        1930
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-zitong",
+      "source_unit_ids": [
+        "source-04-0128",
+        "source-04-0129",
+        "source-04-0130"
+      ],
+      "source_span": [
+        1930,
+        1983
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-yanshan",
+      "source_unit_ids": [
+        "source-04-0131",
+        "source-04-0132",
+        "source-04-0133"
+      ],
+      "source_span": [
+        1983,
+        2035
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-taishan-range4",
+      "source_unit_ids": [
+        "source-04-0134",
+        "source-04-0135",
+        "source-04-0136",
+        "source-04-0137",
+        "source-04-0138"
+      ],
+      "source_span": [
+        2035,
+        2098
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-range4-summary",
+      "source_unit_ids": [
+        "source-04-0139",
+        "source-04-0140"
+      ],
+      "source_span": [
+        2098,
+        2124
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-dongshan-book-total",
+      "source_unit_ids": [
+        "source-04-0141"
+      ],
+      "source_span": [
+        2124,
+        2143
+      ],
+      "status": "facsimile_reviewed"
     }
   ],
-  "batch_size": 5,
-  "next": {
-    "name": "耿山",
-    "source_units": [
-      56,
-      58
-    ],
-    "facsimile_pages": [
-      115
-    ],
-    "status": "pending_bilingual_entity_review"
-  },
+  "batch_size": 31,
+  "next": null,
   "artwork_summary": {
-    "selected": 13,
-    "appearance_unknown": 6
+    "selected": 34,
+    "appearance_unknown": 14
   },
   "font_supplements": [
     {
       "family": "Shanhai Title",
       "source_family": "Noto Serif SC",
-      "characters": "㐨䎶䖪䖺䗤䚯亝亦仇伤似低佯借傳傷兒兔則勃占卡卵厚叩叫叶吟否呉呼咨圆堪壳妺姿学尔尖屬峩嶧廓弯彩從扇手拆拟捕損擅改敗斗斜旱旻昧普曹梓植樕氣活浅涯添減湣漠澧激濼炭為犂犬犰犲狪狭狳猪獠珧琴瑟環甲电番疗疠疫疾病癘癰眠矿社祈禽科等箴終细绎绿羸肺胫腫膜臨苗荆莬葛蓋藟蚌蚪蛙蜃蝌蝗蝠螽蟞血裂見觉詨謂警贝跨蹲躯軨轮針针铠雅雜靈頰颗额餌鱅鱤鳍鳞鳴鸣鼈鼻",
+      "characters": "㐨䃌䊧䎶䖪䖺䗤䚯䱎䱻䲛万亝亦仇伤似但低佯俠借傳傷儒充兒兔冒冬凋凫則剡功勃医占卡卵厚厲叉叩叫叶吐吟否含吻呉呌呕呼咨善嘔圆國培堪壳妴妺姪姿婉孚学客害實尔尖屬峩峳嶧幼庾廓廣弯彩從思性恐惧懼扇手拆拟捕損擅攸改敗斃斑斗斜旧旱旻昧普曹杨枣枪枯枽格栽梓植楊楨榑樕气氣汁沸活浅涌涯深添渚減湣漠澧激濆濼瀵災炭為烝牡犂犬犰犲狀狙狪狭狳猩猪猲獋獙獠獳环珍珧琴瑁瑇瑟環甚甲电番疗疟疠疣疫疾病瘞瘧癘癰盧眠睪知矿社祈禽科稳穰等算箴素終絜經纠纯细绎绿羸翡耿聲肺胫脚腫膜臨臭花苗苴荆药莬菌葉葛蓋蕪藟蘪蚌蚪蛙蛤蛭蜃蝌蝗蝠蝦螽蟞蠪蠵血裂裸褐見觉觜觡詨調謂警误调贝趾跂跨踇踵蹲躯軨轮逝遐針銘针铠铭限隅雀雁雅雜雨靈頗頰颈颗额風餌體鬲鬿鮇鮒鮯鯉鰌鱃鱅鱏鱑鱗鱣鱤鲋鲟鲤鳃鳍鳞鳴鴆鴛鴦鴻鵜鶘鸣鸭鸿鹈鹕麗黍鼈鼻",
       "weights": [
         400,
         700
       ],
       "path": "frontend/public/fonts/shanhai-title-dongshan.woff2",
       "license": "frontend/public/fonts/noto-serif-sc-LICENSE.txt",
-      "source_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E3%90%A8%E4%8E%B6%E4%96%AA%E4%96%BA%E4%97%A4%E4%9A%AF%E4%BA%9D%E4%BA%A6%E4%BB%87%E4%BC%A4%E4%BC%BC%E4%BD%8E%E4%BD%AF%E5%80%9F%E5%82%B3%E5%82%B7%E5%85%92%E5%85%94%E5%89%87%E5%8B%83%E5%8D%A0%E5%8D%A1%E5%8D%B5%E5%8E%9A%E5%8F%A9%E5%8F%AB%E5%8F%B6%E5%90%9F%E5%90%A6%E5%91%89%E5%91%BC%E5%92%A8%E5%9C%86%E5%A0%AA%E5%A3%B3%E5%A6%BA%E5%A7%BF%E5%AD%A6%E5%B0%94%E5%B0%96%E5%B1%AC%E5%B3%A9%E5%B6%A7%E5%BB%93%E5%BC%AF%E5%BD%A9%E5%BE%9E%E6%89%87%E6%89%8B%E6%8B%86%E6%8B%9F%E6%8D%95%E6%90%8D%E6%93%85%E6%94%B9%E6%95%97%E6%96%97%E6%96%9C%E6%97%B1%E6%97%BB%E6%98%A7%E6%99%AE%E6%9B%B9%E6%A2%93%E6%A4%8D%E6%A8%95%E6%B0%A3%E6%B4%BB%E6%B5%85%E6%B6%AF%E6%B7%BB%E6%B8%9B%E6%B9%A3%E6%BC%A0%E6%BE%A7%E6%BF%80%E6%BF%BC%E7%82%AD%E7%82%BA%E7%8A%82%E7%8A%AC%E7%8A%B0%E7%8A%B2%E7%8B%AA%E7%8B%AD%E7%8B%B3%E7%8C%AA%E7%8D%A0%E7%8F%A7%E7%90%B4%E7%91%9F%E7%92%B0%E7%94%B2%E7%94%B5%E7%95%AA%E7%96%97%E7%96%A0%E7%96%AB%E7%96%BE%E7%97%85%E7%99%98%E7%99%B0%E7%9C%A0%E7%9F%BF%E7%A4%BE%E7%A5%88%E7%A6%BD%E7%A7%91%E7%AD%89%E7%AE%B4%E7%B5%82%E7%BB%86%E7%BB%8E%E7%BB%BF%E7%BE%B8%E8%82%BA%E8%83%AB%E8%85%AB%E8%86%9C%E8%87%A8%E8%8B%97%E8%8D%86%E8%8E%AC%E8%91%9B%E8%93%8B%E8%97%9F%E8%9A%8C%E8%9A%AA%E8%9B%99%E8%9C%83%E8%9D%8C%E8%9D%97%E8%9D%A0%E8%9E%BD%E8%9F%9E%E8%A1%80%E8%A3%82%E8%A6%8B%E8%A7%89%E8%A9%A8%E8%AC%82%E8%AD%A6%E8%B4%9D%E8%B7%A8%E8%B9%B2%E8%BA%AF%E8%BB%A8%E8%BD%AE%E9%87%9D%E9%92%88%E9%93%A0%E9%9B%85%E9%9B%9C%E9%9D%88%E9%A0%B0%E9%A2%97%E9%A2%9D%E9%A4%8C%E9%B1%85%E9%B1%A4%E9%B3%8D%E9%B3%9E%E9%B3%B4%E9%B8%A3%E9%BC%88%E9%BC%BB&display=swap",
-      "sha256": "16cb478fb27b14b02b1d552b63c701d63d03444b072068dd3ae34ee4c3814f58"
+      "source_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E3%90%A8%E4%83%8C%E4%8A%A7%E4%8E%B6%E4%96%AA%E4%96%BA%E4%97%A4%E4%9A%AF%E4%B1%8E%E4%B1%BB%E4%B2%9B%E4%B8%87%E4%BA%9D%E4%BA%A6%E4%BB%87%E4%BC%A4%E4%BC%BC%E4%BD%86%E4%BD%8E%E4%BD%AF%E4%BF%A0%E5%80%9F%E5%82%B3%E5%82%B7%E5%84%92%E5%85%85%E5%85%92%E5%85%94%E5%86%92%E5%86%AC%E5%87%8B%E5%87%AB%E5%89%87%E5%89%A1%E5%8A%9F%E5%8B%83%E5%8C%BB%E5%8D%A0%E5%8D%A1%E5%8D%B5%E5%8E%9A%E5%8E%B2%E5%8F%89%E5%8F%A9%E5%8F%AB%E5%8F%B6%E5%90%90%E5%90%9F%E5%90%A6%E5%90%AB%E5%90%BB%E5%91%89%E5%91%8C%E5%91%95%E5%91%BC%E5%92%A8%E5%96%84%E5%98%94%E5%9C%86%E5%9C%8B%E5%9F%B9%E5%A0%AA%E5%A3%B3%E5%A6%B4%E5%A6%BA%E5%A7%AA%E5%A7%BF%E5%A9%89%E5%AD%9A%E5%AD%A6%E5%AE%A2%E5%AE%B3%E5%AF%A6%E5%B0%94%E5%B0%96%E5%B1%AC%E5%B3%A9%E5%B3%B3%E5%B6%A7%E5%B9%BC%E5%BA%BE%E5%BB%93%E5%BB%A3%E5%BC%AF%E5%BD%A9%E5%BE%9E%E6%80%9D%E6%80%A7%E6%81%90%E6%83%A7%E6%87%BC%E6%89%87%E6%89%8B%E6%8B%86%E6%8B%9F%E6%8D%95%E6%90%8D%E6%93%85%E6%94%B8%E6%94%B9%E6%95%97%E6%96%83%E6%96%91%E6%96%97%E6%96%9C%E6%97%A7%E6%97%B1%E6%97%BB%E6%98%A7%E6%99%AE%E6%9B%B9%E6%9D%A8%E6%9E%A3%E6%9E%AA%E6%9E%AF%E6%9E%BD%E6%A0%BC%E6%A0%BD%E6%A2%93%E6%A4%8D%E6%A5%8A%E6%A5%A8%E6%A6%91%E6%A8%95%E6%B0%94%E6%B0%A3%E6%B1%81%E6%B2%B8%E6%B4%BB%E6%B5%85%E6%B6%8C%E6%B6%AF%E6%B7%B1%E6%B7%BB%E6%B8%9A%E6%B8%9B%E6%B9%A3%E6%BC%A0%E6%BE%A7%E6%BF%80%E6%BF%86%E6%BF%BC%E7%80%B5%E7%81%BD%E7%82%AD%E7%82%BA%E7%83%9D%E7%89%A1%E7%8A%82%E7%8A%AC%E7%8A%B0%E7%8A%B2%E7%8B%80%E7%8B%99%E7%8B%AA%E7%8B%AD%E7%8B%B3%E7%8C%A9%E7%8C%AA%E7%8C%B2%E7%8D%8B%E7%8D%99%E7%8D%A0%E7%8D%B3%E7%8E%AF%E7%8F%8D%E7%8F%A7%E7%90%B4%E7%91%81%E7%91%87%E7%91%9F%E7%92%B0%E7%94%9A%E7%94%B2%E7%94%B5%E7%95%AA%E7%96%97%E7%96%9F%E7%96%A0%E7%96%A3%E7%96%AB%E7%96%BE%E7%97%85%E7%98%9E%E7%98%A7%E7%99%98%E7%99%B0%E7%9B%A7%E7%9C%A0%E7%9D%AA%E7%9F%A5%E7%9F%BF%E7%A4%BE%E7%A5%88%E7%A6%BD%E7%A7%91%E7%A8%B3%E7%A9%B0%E7%AD%89%E7%AE%97%E7%AE%B4%E7%B4%A0%E7%B5%82%E7%B5%9C%E7%B6%93%E7%BA%A0%E7%BA%AF%E7%BB%86%E7%BB%8E%E7%BB%BF%E7%BE%B8%E7%BF%A1%E8%80%BF%E8%81%B2%E8%82%BA%E8%83%AB%E8%84%9A%E8%85%AB%E8%86%9C%E8%87%A8%E8%87%AD%E8%8A%B1%E8%8B%97%E8%8B%B4%E8%8D%86%E8%8D%AF%E8%8E%AC%E8%8F%8C%E8%91%89%E8%91%9B%E8%93%8B%E8%95%AA%E8%97%9F%E8%98%AA%E8%9A%8C%E8%9A%AA%E8%9B%99%E8%9B%A4%E8%9B%AD%E8%9C%83%E8%9D%8C%E8%9D%97%E8%9D%A0%E8%9D%A6%E8%9E%BD%E8%9F%9E%E8%A0%AA%E8%A0%B5%E8%A1%80%E8%A3%82%E8%A3%B8%E8%A4%90%E8%A6%8B%E8%A7%89%E8%A7%9C%E8%A7%A1%E8%A9%A8%E8%AA%BF%E8%AC%82%E8%AD%A6%E8%AF%AF%E8%B0%83%E8%B4%9D%E8%B6%BE%E8%B7%82%E8%B7%A8%E8%B8%87%E8%B8%B5%E8%B9%B2%E8%BA%AF%E8%BB%A8%E8%BD%AE%E9%80%9D%E9%81%90%E9%87%9D%E9%8A%98%E9%92%88%E9%93%A0%E9%93%AD%E9%99%90%E9%9A%85%E9%9B%80%E9%9B%81%E9%9B%85%E9%9B%9C%E9%9B%A8%E9%9D%88%E9%A0%97%E9%A0%B0%E9%A2%88%E9%A2%97%E9%A2%9D%E9%A2%A8%E9%A4%8C%E9%AB%94%E9%AC%B2%E9%AC%BF%E9%AE%87%E9%AE%92%E9%AE%AF%E9%AF%89%E9%B0%8C%E9%B1%83%E9%B1%85%E9%B1%8F%E9%B1%91%E9%B1%97%E9%B1%A3%E9%B1%A4%E9%B2%8B%E9%B2%9F%E9%B2%A4%E9%B3%83%E9%B3%8D%E9%B3%9E%E9%B3%B4%E9%B4%86%E9%B4%9B%E9%B4%A6%E9%B4%BB%E9%B5%9C%E9%B6%98%E9%B8%A3%E9%B8%AD%E9%B8%BF%E9%B9%88%E9%B9%95%E9%BA%97%E9%BB%8D%E9%BC%88%E9%BC%BB&display=swap",
+      "sha256": "b6130f18c03ac46eb528ddfc5f7b1f291f3f018768964406404011b5c85fca33"
     },
     {
       "family": "Atlas Eastern Rare",
-      "characters": "𣲵𦬊𧑤",
+      "characters": "𣲵𥠖𥧌𦍙𦬊𧑤𪁐𮮐",
       "weights": [
         400
       ],
@@ -1906,8 +2558,15 @@
       "source_url": "https://raw.githubusercontent.com/googlefonts/chinese/gh-pages/fonts/HanaMin/HanaMinB.ttf",
       "upstream_sha256": "829543436cdf7b4c6730e2af5806fa406f8ddf0d4b656e0cd49c58d4db1c8d3c",
       "upstream_git_blob": "81c4df21cdbd2570fa92ac55c04b02198c4bf692",
-      "sha256": "2345a775e9799b8fb4700b901c432fb2883f992820f98bba3507d4e220a92a62",
+      "sha256": "f0317b09a3510d931d82717a311423726ee92c33805ba697720d4a0a7ca7a81b",
       "limits": "独立字体族优先回退，静态400字形，600显示沿用400且禁用伪粗；不复制系统字体。"
     }
+  ],
+  "reused_artwork_ids": [
+    "beast-dangkang"
+  ],
+  "corrected_legacy_artwork_ids": [
+    "beast-heyu",
+    "beast-fei"
   ]
 }

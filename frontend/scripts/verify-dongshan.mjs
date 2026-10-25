@@ -14,28 +14,28 @@ const [world,english,inventory,review,scans,snapshot,catalog,generation]=await P
 '../../data/shanhaijing-reference.json','../public/data/atlas/catalog.json','../artwork-source/dongshan/entities-generation.json'].map(json));
 const entries=worldEntries(world),index=new Map(entries.map(e=>[e.id,e]));
 const selected=entries.filter(e=>e.content_batch?.startsWith('dongshan-'));
-const newBatches=['yigao','geshan-tail','geshan-head','yue','dufu'].map(s=>'dongshan-'+s);
+const newBatches=review.stage_plan.slice(20).map(s=>'dongshan-'+s.slug);
 const commonChecks=process.env.ATLAS_COMMON_CHECKS!=='0';
 const activeBatches=process.env.ATLAS_BATCH?[process.env.ATLAS_BATCH]:newBatches;
 assert.ok(activeBatches.every(b=>newBatches.includes(b)));
-const sharedBatches={};
+const sharedBatches={'water-dongshan-shi':['beihao'],'water-dongshan-sea':['beihao','dongshi'],'beast-dongshan-large-snake':['bishan','qizhong'],'beast-dongshan-qiu-maoshan':['qinshan','taishan-range4']};
 const browserEntries=selected.filter(e=>activeBatches.includes(e.content_batch)||sharedBatches[e.id]?.some(s=>activeBatches.includes('dongshan-'+s)));
 const activePassages=world.passages.filter(p=>activeBatches.includes(p.content_batch));
 const layoutEntries=[...activePassages,...browserEntries.filter(e=>e.artwork)];
 assert.equal(index.size,entries.length);
-assert.equal(selected.length,122);assert.equal(review.entry_ids.length,102);
-assert.deepEqual([1,2,3,4].map(b=>world.passages.filter(p=>(p.source_book||1)===b).length),[43,82,92,20]);
-assert.equal(review.implemented_stages,20);assert.equal(review.remaining_stages,31);assert.equal(review.planned_stages,51);
-assert.equal(review.next.name,'耿山');assert.deepEqual(review.next.source_units,[56,58]);
-assert.equal(inventory.chapters[3].explained_blocks,53);assert.equal(inventory.chapters[3].semantic_passages,20);
-assert.equal(inventory.chapters[3].semantic_review,'partial');assert.equal(inventory.chapters[3].pending_candidate_passages,23);
+assert.equal(selected.length,288);assert.equal(review.entry_ids.length,237);
+assert.deepEqual([1,2,3,4].map(b=>world.passages.filter(p=>(p.source_book||1)===b).length),[43,82,92,51]);
+assert.equal(review.implemented_stages,51);assert.equal(review.remaining_stages,0);assert.equal(review.planned_stages,51);
+assert.equal(review.next,null);assert.equal(review.status,'complete');
+assert.equal(inventory.chapters[3].explained_blocks,139);assert.equal(inventory.chapters[3].semantic_passages,51);
+assert.equal(inventory.chapters[3].semantic_review,'reviewed');assert.equal(inventory.chapters[3].pending_candidate_passages,0);
 const unitIndex=new Map(inventory.units.map(u=>[u.id,u]));
 for(const id of review.heading_unit_ids)assert.equal(unitIndex.get(id).status,'heading_metadata');
-assert.equal(unitIndex.get('source-04-0056').status,'pending_review');
+for(const u of inventory.units.filter(u=>u.chapter===4))assert.ok(u.status==='heading_metadata'||u.status==='explained_in_reader',u.id);
 assert.ok(unitIndex.get('source-04-0009').page_url.endsWith('/109'));
 assert.ok(unitIndex.get('source-04-0009').captured_page_url.endsWith('/110'));
 const covered=new Set(world.passages.filter(p=>p.source_book===4).flatMap(p=>p.source_unit_ids));
-assert.deepEqual([...covered],Array.from({length:53},(_,i)=>'source-04-'+String(i+3).padStart(4,'0')));
+assert.deepEqual([...covered],Array.from({length:139},(_,i)=>'source-04-'+String(i+3).padStart(4,'0')));
 for(const p of world.passages.filter(p=>p.source_book===4)){
  const raw=p.source_unit_ids.map(id=>snapshot.chapters[3].lines[Number(id.slice(-4))-1].text).join('');
  assert.equal(p.quote,raw.replace(/⟦缺字图:([^⟧]+)⟧/g,'$1'));assert.equal(p.captured_text,raw);
@@ -46,10 +46,10 @@ assert.equal(createHash('sha256').update(await readFile(new URL('../../data/shan
 for(const s of scans)assert.equal(createHash('sha256').update(await readFile(new URL('../../'+s.local_path,import.meta.url))).digest('hex'),s.sha256);
 assert.equal(scans.length,16);
 for(const f of review.font_supplements)assert.equal(createHash('sha256').update(await readFile(new URL('../../'+f.path,import.meta.url))).digest('hex'),f.sha256);
-assert.equal(generation.assets.length,13);
+assert.equal(generation.assets.length,34);
 for(const a of generation.assets){
  assert.equal(a.status,'reviewed');
- for(const old of a.revision_history||[]){assert.equal(old.status,'rejected');assert.equal(createHash('sha256').update(await readFile(new URL('../artwork-source/dongshan/'+old.source_file,import.meta.url))).digest('hex'),old.sha256);assert.equal(createHash('sha256').update(await readFile(old.original_path)).digest('hex'),old.sha256);}
+ for(const old of a.revision_history||[]){assert.ok(['rejected','superseded'].includes(old.status));assert.equal(createHash('sha256').update(await readFile(new URL('../artwork-source/dongshan/'+old.source_file,import.meta.url))).digest('hex'),old.sha256);assert.equal(createHash('sha256').update(await readFile(old.original_path)).digest('hex'),old.sha256);}
  assert.equal(createHash('sha256').update(await readFile(new URL('../artwork-source/dongshan/'+a.source_file,import.meta.url))).digest('hex'),a.sha256);
  assert.equal(createHash('sha256').update(await readFile(a.original_path)).digest('hex'),a.sha256);
  assert.equal(index.get(a.entry_id).artwork,'dongshan/'+a.name+'-v1.webp');
@@ -65,7 +65,7 @@ for(const e of selected){
  else assert.ok(!e.artwork,e.id+' has no borrowed artwork');
  if(e.source_passage_ids?.length===1)assert.deepEqual(e.source_unit_ids,index.get(e.source_passage_ids[0]).source_unit_ids);
 }
-for(const [id,count] of [['water-dongshan-shi',3],['water-dongshan-hu',2],['water-dongshan-sea',3],['beast-dongshan-gan-fantiao',2],['water-dongshan-jiang',2]]){
+for(const [id,count] of [['water-dongshan-shi',4],['water-dongshan-hu',2],['water-dongshan-sea',5],['beast-dongshan-gan-fantiao',2],['water-dongshan-jiang',2],['beast-dongshan-large-snake',3],['beast-dongshan-qiu-maoshan',3]]){
  const e=index.get(id),ps=e.source_passage_ids.map(id=>index.get(id));assert.equal(ps.length,count);
  assert.deepEqual(new Set(e.source_unit_ids),new Set(ps.flatMap(p=>p.source_unit_ids)));
  assert.deepEqual(new Set(e.source_pages),new Set(ps.flatMap(p=>p.source_pages)));
@@ -79,12 +79,12 @@ assert.equal(index.get('beast-dongshan-huoshi-leishan').commentary_quote,'科斗
 assert.equal(index.get('place-dongshan-qianmei-suzhu').commentary_quote,'亦山名也音妺');
 assert.equal(index.get('water-dongshan-jian-fantiao').commentary_quote,'音同减損之减');
 assert.equal(index.get('material-dongshan-qingbistone-xunzhuang').quote,'其下多青碧石');
-assert.equal(selected.filter(e=>e.appearance_unknown).length,6);
+assert.equal(selected.filter(e=>e.appearance_unknown).length,14);
 assert.ok(index.get('beast-dongshan-gan-fantiao').appearance_unknown&&!index.get('beast-dongshan-gan-fantiao').artwork);
 for(const id of review.stable_existing_ids)assert.ok(index.has(id));
 assert.equal(index.get('beast-dangkang').artwork,'beasts/beast-dangkang.webp');
-assert.equal(index.get('beast-fei').artwork,'beasts/beast-fei.webp');
-assert.equal(index.get('beast-heyu').artwork,'beasts/beast-heyu.webp');
+assert.equal(index.get('beast-fei').artwork,'dongshan/creature-fei-taishan-v1.webp');
+assert.equal(index.get('beast-heyu').artwork,'dongshan/creature-heyu-yanshan-v1.webp');
 assert.equal(index.get('material-dongshan-zhenstone-gaoshi').commentary_quote,'可以；為砥針治癰腫者');
 assert.equal(index.get('water-dongshan-jiang').commentary_quote,'一作海');
 assert.equal(index.get('beast-dongshan-kanyu-chai').commentary_quote,'未詳音序');
@@ -116,7 +116,24 @@ assert.ok(tail.quote.includes('水行五百里流沙三百里'));
 for(const g of review.glyph_issues.slice(0,2)){assert.equal(g.status,'restored_in_reading_layer');assert.ok(index.get(g.passage_id).captured_text.includes(g.captured));}
 assert.ok(unitIndex.get('source-04-0045').page_url.endsWith('/113'));
 assert.ok(unitIndex.get('source-04-0054').page_url.endsWith('/114'));
-console.log('PASS data: Eastern 20 passages, 102 cards, 53 source blocks; 13 reviewed images and 6 documented placeholders; retained legacy IDs');
+const easternPassages=world.passages.filter(p=>p.source_book===4);
+assert.deepEqual([1,2,3,4,5].map(r=>easternPassages.filter(p=>p.range===r).length),[13,18,10,9,1]);
+for(let i=1;i<easternPassages.length;i++)assert.equal(easternPassages[i-1].source_span[1],easternPassages[i].source_span[0]);
+assert.deepEqual([1,2,3,4].map(r=>review.stage_plan.filter(s=>s.range===r&&s.kind==='mountain').length),[12,17,9,8]);
+assert.ok(index.get('passage-dongshan-range3-summary').quote.includes('十九山'));
+assert.ok(index.get('passage-dongshan-book-total').quote.includes('四十六山萬八千八百六十里'));
+assert.equal(index.get('rite-dongshan-book-total').kind,'rite');
+assert.ok(!index.get('plant-dongshan-fu-wood-wugao').context_place_id);
+assert.equal(index.get('material-dongshan-millet-range3').quote,'米用𮮐');
+assert.equal(index.get('beast-dongshan-wei-mengzi').commentary_quote,'鮪即鱏也似鱣而長；鼻體無鱗甲别名䱎䲛一名鱑也');
+assert.deepEqual(index.get('passage-dongshan-mengzi').captured_commentary.at(-1).annotations,['鼻體無鱗甲别名䱎䲛一名鱑也']);
+assert.ok(index.get('passage-dongshan-mengzi').captured_commentary.find(c=>c.source_unit_id==='source-04-0091').annotations[0].includes('�'));
+assert.equal(review.glyph_issues.find(g=>g.source_unit_id==='source-04-0091').status,'facsimile_checked_uncertain_codepoints');
+for(const scan of scans.filter(s=>s.detail_local_path))assert.equal(createHash('sha256').update(await readFile(new URL('../../'+scan.detail_local_path,import.meta.url))).digest('hex'),scan.detail_sha256);
+for(const [id,q] of [['beast-dongshan-longzhi-fuli','九尾九首虎爪'],['beast-dongshan-youyou-zhenshan','羊目四角牛尾'],['beast-dongshan-gege-qizhong','六足鳥尾'],['beast-dongshan-zi-dongshi','一首而十身'],['beast-fei','白首一目而蛇尾'],['beast-heyu','人面黄身而赤尾']])assert.ok(index.get(id).quote.includes(q),id);
+assert.equal(index.get('beast-dangkang').name,'当康');
+assert.equal(english['plant-dongshan-junpu-mengzi'].name,'Junpu (Mengzi)');
+console.log('PASS data: Eastern complete: 51 passages, 237 cards, 139 source blocks; 34 selected images plus retained Dangkang and 14 documented placeholders; retained legacy IDs');
 if(process.env.ATLAS_DATA_ONLY==='1')process.exit(0);
 
 const root = resolve(process.env.ATLAS_STATIC_DIR || 'dist');
@@ -199,12 +216,12 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
         }
         await page.goto(base+'?chapter=04&lang='+lang);
         await page.locator('.mobile-explore-nav button').nth(1).click();
-        for(const [book,count] of [[1,43],[2,82],[3,92],[4,20]])assert.equal(await page.locator('[data-source-book="'+book+'"] [data-entry-id]').count(),count);
+        for(const [book,count] of [[1,43],[2,82],[3,92],[4,51]])assert.equal(await page.locator('[data-source-book="'+book+'"] [data-entry-id]').count(),count);
         const eastern=page.locator('[data-source-book="4"]');
         await eastern.locator(':scope > summary').click();
-        assert.equal(await eastern.locator('.passage-range').count(),2,'First two ranges visible');
+        assert.equal(await eastern.locator('.passage-range').count(),5,'All ranges and closing total visible');
         assert.equal(await eastern.locator('.passage-range').nth(0).locator('[data-entry-id]').count(),13);
-        assert.equal(await eastern.locator('.passage-range').nth(1).locator('[data-entry-id]').count(),7);
+        for(const [i,n] of [[1,18],[2,10],[3,9],[4,1]])assert.equal(await eastern.locator('.passage-range').nth(i).locator('[data-entry-id]').count(),n);
         for(const group of await eastern.locator('.passage-range > summary').all())await group.click();
         for(const p of activePassages)assert.equal(await eastern.locator('[data-entry-id="'+p.id+'"]').count(),1);
         await eastern.locator('[data-entry-id="'+activePassages[0].id+'"]').click();await ready(activePassages[0].id);
@@ -214,7 +231,7 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
       await page.locator('.global-search-input').fill(lang === 'zh' ? currentPlace.name : english[currentPlace.id].name);
       await page.locator(`.search-result[data-result-kind="${currentPlace.kind}"][data-result-id="${currentPlace.id}"]`).click();
       await ready(currentPlace.id);
-      console.log(`PASS ${engine} ${lang}: ${browserEntries.length} current/shared records, 4 viewports, ${roundTrips} nested/context round trips, images, ${commonChecks?'Eastern 20 and previous 217 catalog passages, retained legacy links; ':''}current search`);
+      console.log(`PASS ${engine} ${lang}: ${browserEntries.length} current/shared records, 4 viewports, ${roundTrips} nested/context round trips, images, ${commonChecks?'Eastern 51 and previous 217 catalog passages, retained legacy links; ':''}current search`);
     }
     const readingPassage=activePassages[0];
     let d = await open(readingPassage.id);

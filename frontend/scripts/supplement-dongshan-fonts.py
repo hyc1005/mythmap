@@ -12,8 +12,8 @@ from fontTools import subset
 from fontTools.ttLib import TTFont
 
 ROOT=Path(__file__).resolve().parents[1]
-TITLE='㐨䎶䖪䖺䗤䚯亝亦仇伤似低佯借傳傷兒兔則勃占卡卵厚叩叫叶吟否呉呼咨圆堪壳妺姿学尔尖屬峩嶧廓弯彩從扇手拆拟捕損擅改敗斗斜旱旻昧普曹梓植樕氣活浅涯添減湣漠澧激濼炭為犂犬犰犲狪狭狳猪獠珧琴瑟環甲电番疗疠疫疾病癘癰眠矿社祈禽科等箴終细绎绿羸肺胫腫膜臨苗荆莬葛蓋藟蚌蚪蛙蜃蝌蝗蝠螽蟞血裂見觉詨謂警贝跨蹲躯軨轮針针铠雅雜靈頰颗额餌鱅鱤鳍鳞鳴鸣鼈鼻'
-RARE='𣲵𦬊𧑤'
+TITLE='㐨䃌䊧䎶䖪䖺䗤䚯䱎䱻䲛万亝亦仇伤似但低佯俠借傳傷儒充兒兔冒冬凋凫則剡功勃医占卡卵厚厲叉叩叫叶吐吟否含吻呉呌呕呼咨善嘔圆國培堪壳妴妺姪姿婉孚学客害實尔尖屬峩峳嶧幼庾廓廣弯彩從思性恐惧懼扇手拆拟捕損擅攸改敗斃斑斗斜旧旱旻昧普曹杨枣枪枯枽格栽梓植楊楨榑樕气氣汁沸活浅涌涯深添渚減湣漠澧激濆濼瀵災炭為烝牡犂犬犰犲狀狙狪狭狳猩猪猲獋獙獠獳环珍珧琴瑁瑇瑟環甚甲电番疗疟疠疣疫疾病瘞瘧癘癰盧眠睪知矿社祈禽科稳穰等算箴素終絜經纠纯细绎绿羸翡耿聲肺胫脚腫膜臨臭花苗苴荆药莬菌葉葛蓋蕪藟蘪蚌蚪蛙蛤蛭蜃蝌蝗蝠蝦螽蟞蠪蠵血裂裸褐見觉觜觡詨調謂警误调贝趾跂跨踇踵蹲躯軨轮逝遐針銘针铠铭限隅雀雁雅雜雨靈頗頰颈颗额風餌體鬲鬿鮇鮒鮯鯉鰌鱃鱅鱏鱑鱗鱣鱤鲋鲟鲤鳃鳍鳞鳴鴆鴛鴦鴻鵜鶘鸣鸭鸿鹈鹕麗黍鼈鼻'
+RARE='𣲵𥠖𥧌𦍙𦬊𧑤𪁐𮮐'
 url='https://fonts.googleapis.com/css2?'+urlencode({'family':'Noto Serif SC:wght@400..700','text':TITLE,'display':'swap'})
 agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
 css=urlopen(Request(url,headers={'User-Agent':agent}),timeout=30).read().decode()
@@ -34,13 +34,13 @@ source_size=30739236
 source_blob='81c4df21cdbd2570fa92ac55c04b02198c4bf692'
 def font_part(bounds):
     first,last=bounds
-    for attempt in range(2):
-        part=subprocess.run(['rtk','proxy','curl.exe','--fail','--location','--range',f'{first}-{last}','--connect-timeout','10','--max-time','30','--silent','--show-error',BASE+'HanaMinB.ttf'],capture_output=True)
+    for attempt in range(3):
+        part=subprocess.run(['rtk','proxy','curl.exe','--fail','--location','--range',f'{first}-{last}','--connect-timeout','10','--max-time','30','--silent','--show-error',BASE+f'HanaMinB.ttf?atlas_range={first}-{last}'],capture_output=True)
         if part.returncode==0 and len(part.stdout)==last-first+1:return part.stdout
     raise RuntimeError(f'Incomplete font range {first}-{last}; existing subset retained.')
 chunk=1024*1024
 bounds=[(start,min(start+chunk,source_size)-1) for start in range(0,source_size,chunk)]
-with ThreadPoolExecutor(max_workers=6) as pool:source=b''.join(pool.map(font_part,bounds))
+with ThreadPoolExecutor(max_workers=4) as pool:source=b''.join(pool.map(font_part,bounds))
 assert len(source)==source_size
 assert hashlib.sha1(b'blob '+str(len(source)).encode()+b'\0'+source).hexdigest()==source_blob
 assert hashlib.sha256(source).hexdigest()=='829543436cdf7b4c6730e2af5806fa406f8ddf0d4b656e0cd49c58d4db1c8d3c'
@@ -79,8 +79,8 @@ preflight=review['font_preflight']
 preflight.setdefault('initial_missing_stage_title_characters',preflight['missing_stage_title_characters'])
 preflight['missing_stage_title_characters']=''.join(sorted({c for stage in review['stage_plan'] for c in stage['name'] if ord(c) not in bundled}))
 preflight['missing_stage_title_count']=len(preflight['missing_stage_title_characters'])
-preflight['status']='current_batch_covered_future_pending'
+preflight['status']='required_glyphs_covered' if review['remaining_stages']==0 else 'current_batch_covered_future_pending'
 review['font_preflight']['implemented_batch_missing_characters']=''
-review['font_preflight']['limits']='前20阶段标题及所需字已补；后续31阶段的完整实体和注文仍需逐批预检。'
+review['font_preflight']['limits']='全篇51阶段标题及所需字已补；0091郭注疑难字保留捕获及影印提示，不猜补。'
 path.write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Eastern rare font',len(RARE),rare_target.stat().st_size,hashlib.sha256(rare_target.read_bytes()).hexdigest(),flush=True)

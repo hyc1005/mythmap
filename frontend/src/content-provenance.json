@@ -23,9 +23,6 @@
   "beast-qiongqi-hainei": {
     "family": "shanhaijing"
   },
-  "beast-dangkang": {
-    "family": "shanhaijing"
-  },
   "beast-zhuyan": {
     "family": "shanhaijing"
   },
@@ -33,9 +30,6 @@
     "family": "shanhaijing"
   },
   "beast-wenyaoyu": {
-    "family": "shanhaijing"
-  },
-  "beast-fei": {
     "family": "shanhaijing"
   },
   "beast-qiangliang": {
@@ -51,9 +45,6 @@
     "family": "shanhaijing"
   },
   "beast-phoenix": {
-    "family": "shanhaijing"
-  },
-  "beast-heyu": {
     "family": "shanhaijing"
   },
   "beast-guanguan": {
@@ -708,6 +699,75 @@
     "family": "shanhaijing"
   },
   "beast-dongshan-qiuyu-yue": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-large-snake": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-zhunou-gengshan": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-lihu-luqi": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-bibi-gufeng": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-longzhi-fuli": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-youyou-zhenshan": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-jiegou-zhenshan": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-yuanhu-shihu": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-qin-zhugou": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-zhan-mengzi": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-wei-mengzi": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-xigui-qizhong": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-gege-qizhong": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-jingjing-muyu": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-xieju-beihao": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-qique-beihao": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-qiu-maoshan": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-zi-dongshi": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-bo-nvzheng": {
+    "family": "shanhaijing"
+  },
+  "beast-dangkang": {
+    "family": "shanhaijing"
+  },
+  "beast-dongshan-hua-zitong": {
+    "family": "shanhaijing"
+  },
+  "beast-heyu": {
+    "family": "shanhaijing"
+  },
+  "beast-fei": {
     "family": "shanhaijing"
   },
   "place-qingqiu": {
@@ -2774,6 +2834,207 @@
   "water-dongshan-unnamed-dufu": {
     "family": "shanhaijing"
   },
+  "material-dongshan-shuibi-geng": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-sand-luqi": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-stone-luqi": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-sha-luqi": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-cen": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-unnamed-gushe": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-stone-north-gushe": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-unnamed-south-gushe": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-bi-bishan": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-water-jade-bishan": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-gold-weishi": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-weishi": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-yuan-weishi": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-sha-marsh": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-gold-gufeng": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-gufeng": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-gold-fuli": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-fuli": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-zhenstone-fuli": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-zhen": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-hu-marsh": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-gold-shihu": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-shihu": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-ji-shihu": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-peach-qi": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-plum-qi": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-sand-zhugou": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-stone-zhugou": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-sand-zhongfu": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-sand-hushe": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-stone-hushe": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-zi-mengzi": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-tong-mengzi": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-peach-mengzi": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-plum-mengzi": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-junpu-mengzi": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-biyang": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-qizhong": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-shen-marsh": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-gold-muyu": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-muyu": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-ochre-muyu": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-you-sea": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-north-sea": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-unnamed-tree-beihao": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-cangti": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-zhan-water": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-cang-jade-dongshi": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-qi-tree-dongshi": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-ci-dongshi": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-fine-shell-dongshi": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-shigao": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-ge-water": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-gold-qinshan": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-qinshan": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-shi-qinshan": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-gao-marsh": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-patterned-shell-qin": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-zitong": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-yuru-marsh": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-gold-yanshan": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-yanshan": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-gold-taishan-range4": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-jade-taishan-range4": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-zhenwood-tai4": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-gou-tai4": {
+    "family": "shanhaijing"
+  },
+  "water-dongshan-lao-water": {
+    "family": "shanhaijing"
+  },
   "passage-nanshan-zhaoyao": {
     "family": "shanhaijing"
   },
@@ -3483,6 +3744,99 @@
     "family": "shanhaijing"
   },
   "passage-dongshan-dufu": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-gengshan": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-luqi": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-gushe": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-north-gushe": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-south-gushe": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-bishan": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-weishi": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-gufeng": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-fuli": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-zhenshan": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-range2-summary": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-shihu": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-qishan": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-zhugou": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-zhongfu": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-hushe": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-mengzi": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-qizhong": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-muyu": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-wugao": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-range3-summary": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-beihao": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-maoshan": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-dongshi": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-nvzheng": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-qinshan": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-zitong": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-yanshan": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-taishan-range4": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-range4-summary": {
+    "family": "shanhaijing"
+  },
+  "passage-dongshan-book-total": {
     "family": "shanhaijing"
   },
   "place-nanshan-tangting": {
@@ -4482,6 +4836,141 @@
     "family": "shanhaijing"
   },
   "place-dongshan-dufu": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-gengshan": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-luqi": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-gushe": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-north-gushe": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-south-gushe": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-bishan": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-weishi": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-gufeng": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-fuli": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-zhenshan": {
+    "family": "shanhaijing"
+  },
+  "rite-dongshan-range2-summary": {
+    "family": "shanhaijing"
+  },
+  "deity-dongshan-humanface-antlers-range2": {
+    "family": "shanhaijing"
+  },
+  "rite-dongshan-chicken-range2": {
+    "family": "shanhaijing"
+  },
+  "rite-dongshan-bi-burial-range2": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-shihu": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-xiang-shihu": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-qishan": {
+    "family": "shanhaijing"
+  },
+  "animal-dongshan-tiger-qi": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-zhugou": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-zhongfu": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-hushe": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-mengzi": {
+    "family": "shanhaijing"
+  },
+  "animal-dongshan-mi-mengzi": {
+    "family": "shanhaijing"
+  },
+  "animal-dongshan-lu-mengzi": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-qizhong": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-muyu": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-wugao": {
+    "family": "shanhaijing"
+  },
+  "plant-dongshan-fu-wood-wugao": {
+    "family": "shanhaijing"
+  },
+  "wind-dongshan-wind-wugao": {
+    "family": "shanhaijing"
+  },
+  "rite-dongshan-range3-summary": {
+    "family": "shanhaijing"
+  },
+  "deity-dongshan-human-ramhorn-range3": {
+    "family": "shanhaijing"
+  },
+  "rite-dongshan-ram-offering-range3": {
+    "family": "shanhaijing"
+  },
+  "material-dongshan-millet-range3": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-beihao": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-maoshan": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-dongshi": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-nvzheng": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-qinshan": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-zitong": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-yanshan": {
+    "family": "shanhaijing"
+  },
+  "animal-dongshan-insects-yanshan": {
+    "family": "shanhaijing"
+  },
+  "animal-dongshan-snakes-yanshan": {
+    "family": "shanhaijing"
+  },
+  "place-dongshan-taishan-range4": {
+    "family": "shanhaijing"
+  },
+  "rite-dongshan-range4-summary": {
+    "family": "shanhaijing"
+  },
+  "rite-dongshan-book-total": {
     "family": "shanhaijing"
   },
   "01-01": {

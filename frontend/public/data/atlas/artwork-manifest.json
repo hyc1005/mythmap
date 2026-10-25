@@ -9598,6 +9598,820 @@
           ]
         }
       }
+    },
+    {
+      "id": "dongshan-creature-zhunou-gengshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/creature-zhunou-gengshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/creature-zhunou-gengshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. ZHUNOU 朱獳: FOX-SHAPED WITH FISH WINGS. Lean muted grey fox body, single narrow fox head turned RIGHT, four small canine legs and one long plain fox tail. TWO small broad rounded FISH-FIN MEMBRANES emerge near shoulders, fine radiating fin rays, pale teal membranes, no feathers or bat fingers. Quiet low trotting side profile, no horns. Fin count/placement/colors are artistic. Fish-wing form must be distinct from a feather-winged fox; sound/fear omen add no anatomy.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "初审核心形貌匹配，最终目录与图片验收见交接。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-zhunou-gengshan-v1.webp",
+          "bytes": 297528,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-zhunou-gengshan-v1-card.webp",
+          "bytes": 29574,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-zhunou-gengshan-v1-preview.webp",
+          "bytes": 55540,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-bird-lihu-luqi-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/bird-lihu-luqi-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/bird-lihu-luqi-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. LIHU 𪁐鶘: MANDARIN-DUCK-LIKE BIRD with HUMAN FEET. One plump low duck body angled LEFT, short duck bill, restrained cinnamon and dusty blue-green duck plumage, TWO bird wings folded, but TWO anatomically HUMAN BARE FEET ending the short lower legs. Each visible human foot has five normal human toes and a human heel, not webbing, bird talons or mammal paws. Side three-quarter pose so both human feet visible. No pelican pouch or long beak inferred from modern name; no human face, no human arms, no extra legs. Commentary compares feet only; duck form and human feet mandatory.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "初审核心形貌匹配，最终目录与图片验收见交接。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/bird-lihu-luqi-v1.webp",
+          "bytes": 309612,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/bird-lihu-luqi-v1-card.webp",
+          "bytes": 30016,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/bird-lihu-luqi-v1-preview.webp",
+          "bytes": 57306,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-creature-bibi-gufeng-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/creature-bibi-gufeng-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/creature-bibi-gufeng-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. BIBI 獙獙: FOX-shaped WITH WINGS; wing type/count unspecified. Create a slim reddish-maroon fox in a seated almost-front three-quarter pose turned LEFT, exactly one fox head, four canine legs with two resting forepaws clearly shown, one modest fox tail curled around haunches. TWO short ivory FEATHERED birdlike wings raised in a narrow V are an explicitly artistic interpretation of unspecified wings; modest ordinary feathers, no fiery curls. Distinct from a grey trotting fox with fish-fin membranes. No horns, no multiple tails or heads, no goose head from the sound comparison.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "初审核心形貌匹配，最终目录与图片验收见交接。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-bibi-gufeng-v1.webp",
+          "bytes": 392474,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-bibi-gufeng-v1-card.webp",
+          "bytes": 36160,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-bibi-gufeng-v1-preview.webp",
+          "bytes": 68788,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-creature-longzhi-fuli-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/creature-longzhi-fuli-v4.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/creature-longzhi-fuli-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. LONGZHI 蠪姪: one FOX-LIKE BEAST with EXACTLY NINE FOX HEADS, EXACTLY NINE FOX TAILS, TIGER CLAWS. Choose a WIDE composition with a small single central russet fox-like trunk, four sturdy legs ending in tiger paws with curved claws (four-leg number artistic). Nine distinct complete fox heads on separate short necks form a clearly countable 3-by-3 staggered crown over the shoulders on the LEFT HALF; each fox head has one muzzle, paired fox ears, no human faces. Exactly nine long tapering bushy fox tails fan separately behind the rump on RIGHT HALF, with clear transparent gaps between all nine tail tips. Keep trunk small so both head cluster and tail fan have plenty of room. Organ count first: 9 complete heads and 9 separate tails, not one head with nine ears, not eight, ten, or a standard one-headed nine-tail fox. Ivory, muted russet and dark ochre; no flame ornament, halos, wings, extra torsos, detached heads, text or numbered labels.",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-83c86443-e402-4727-af00-75f65ac86e15.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "人工逐项核九狐首、九条独立奶白尾尖、四虎爪，透明通道保留；色彩姿态为艺术解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-longzhi-fuli-v1.webp",
+          "bytes": 374438,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-longzhi-fuli-v1-card.webp",
+          "bytes": 42258,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-longzhi-fuli-v1-preview.webp",
+          "bytes": 78660,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      },
+      "revision_prompt": "Edit only the tail fan: this reference has EIGHT distinct cream-tipped fox tails. Add ONE additional fully visible separate fox tail, so the total is exactly NINE. Keep all NINE existing fox heads unchanged, four tiger-clawed feet unchanged, the single fox torso and illustration style unchanged. Space all nine separate tail tips visibly from top to bottom. Transparent background. No text.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "id": "dongshan-creature-youyou-zhenshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/creature-youyou-zhenshan-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/creature-youyou-zhenshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. YOUYOU 峳峳: HORSE-SHAPED with GOAT EYES, EXACTLY FOUR HORNS, and OX TAIL. One long-legged sand-colored horse body in clean right-facing side/three-quarter stance, four ordinary hooved horse legs, one horse-like head with goat horizontal slit pupils. FOUR separate simple unbranched horns on the crown arranged as two staggered pairs, ALL FOUR horn tips and bases clearly visible with gaps; no antler branches. Horse mane short dark umber, single thin ox tail ending in a compact brush tuft, NOT flowing horse tail. Four-horn count, goat eye and ox tail mandatory; position, colors, horn shape are artistic. No sheep body, wings, human face or dog head from the sound.",
+      "reference_images": [
+        "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-4f08b0ae-8cd4-4862-9b08-4b0f864e532e.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "四角分别可数，羊目横向瞳孔已修正；马躯牛尾，角位、四蹄和配色为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-youyou-zhenshan-v1.webp",
+          "bytes": 254278,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-youyou-zhenshan-v1-card.webp",
+          "bytes": 29254,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-youyou-zhenshan-v1-preview.webp",
+          "bytes": 53452,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      },
+      "revision_prompt": "Use case: precise-object-edit. Change ONLY the visible pupil of this four-horned horse's goat/sheep eye: replace the current VERTICAL pupil with a clear HORIZONTAL RECTANGULAR SLIT PUPIL, like a goat. Keep all FOUR separate horns, horse body/head, four horse legs, ox tail, colors, pose and transparent background. Do not add eyes, horns or organs; the single visible eye stays at the same location, with only pupil orientation corrected.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "id": "dongshan-bird-jiegou-zhenshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/bird-jiegou-zhenshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/bird-jiegou-zhenshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. JIEGOU 絜鈎: DUCK-like BIRD with RAT TAIL, good at climbing trees. One compact muted olive-grey duck, near side profile facing RIGHT, broad short flat duck bill, two small folded feather wings, two ordinary bird feet (artistic), one long THIN NAKED RAT TAIL extending from rump and curling down-left in a simple hook, sparse ring incisions on tail. No duck feather tail replacing the naked rat tail. No tree/branch prop, no rat head or ears, no human feet. A restrained standing duck silhouette very different from owl or mandarin-duck hybrid.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "初审核心形貌匹配，最终目录与图片验收见交接。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/bird-jiegou-zhenshan-v1.webp",
+          "bytes": 268440,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/bird-jiegou-zhenshan-v1-card.webp",
+          "bytes": 26574,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/bird-jiegou-zhenshan-v1-preview.webp",
+          "bytes": 50480,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-deity-humanface-antlers-range2-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/deity-humanface-antlers-range2-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/deity-humanface-antlers-range2-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. Representative SECOND EASTERN RANGE GOD: BEAST BODY, HUMAN FACE, WEARING ANTLERS (獸身人靣載觡). One QUADRUPED dark moss-brown ungulate-like beast body with FOUR ordinary hoof legs, and an unmistakably adult androgynous HUMAN FACE looking directly at viewer, normal human eyes/nose/lips instead of an animal muzzle. TWO modest branched deer-like antlers above its head follow the commentary about deer-kind antlers; antler number, chosen ungulate body, dark coat and pose are artistic, not text specifying a deer body. Low broad symmetrical standing posture, quiet expression, simple short tail. No human torso/arms, no deer muzzle, wings, snake lower body, goat head, robe or sacrificial objects.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "初审核心形貌匹配，最终目录与图片验收见交接。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/deity-humanface-antlers-range2-v1.webp",
+          "bytes": 393734,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/deity-humanface-antlers-range2-v1-card.webp",
+          "bytes": 37594,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/deity-humanface-antlers-range2-v1-preview.webp",
+          "bytes": 72538,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-creature-yuanhu-shihu-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/creature-yuanhu-shihu-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/creature-yuanhu-shihu-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. YUANHU 妴胡: ELK/DEER-like with FISH EYES. One slender warm taupe elk-like ungulate body, four long hooved legs, one elk-like head turned slightly toward viewer with TWO large ROUND FISH-LIKE EYES and plain round dark pupils, smooth nearly lidless circular eye contours rather than goat slit pupils. A modest pair of branched antlers is an artistic elk interpretation, no horn count claim. Small ears, pale throat and one short deer tail. Quiet left-facing lifted-foreleg pose, not a tiger-pattern ox. NO fish fins, fish body, gills, wings, human face or multiple heads.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "初审核心形貌匹配，最终目录与图片验收见交接。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-yuanhu-shihu-v1.webp",
+          "bytes": 239792,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-yuanhu-shihu-v1-card.webp",
+          "bytes": 24638,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-yuanhu-shihu-v1-preview.webp",
+          "bytes": 45700,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-fish-wei-mengzi-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/fish-wei-mengzi-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/fish-wei-mengzi-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. WEI 鮪: commentary describes a FISH like zhan but with LONG SNOUT and BODY WITHOUT SCALES/ARMOR (長鼻體無鱗甲). One slender long smooth grey-violet fish facing LEFT in a low diagonal swim, an obviously elongated narrow rounded snout continuous with the fish head, ordinary small fish fins and one fish tail as artistic generalized fish interpretation. Smooth skin, sparse simple contour lines, NO scales, NO sturgeon bony scutes or plate rows, no shell or armor. Do not identify a modern tuna or sturgeon species. One head, no legs or wings; ivory belly, quiet streamlined silhouette.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "初审核心形貌匹配，最终目录与图片验收见交接。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-wei-mengzi-v1.webp",
+          "bytes": 118160,
+          "dimensions": [
+            1280,
+            640
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-wei-mengzi-v1-card.webp",
+          "bytes": 11628,
+          "dimensions": [
+            320,
+            160
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-wei-mengzi-v1-preview.webp",
+          "bytes": 20820,
+          "dimensions": [
+            480,
+            240
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-fish-zi-dongshi-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/fish-zi-dongshi-v6.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/fish-zi-dongshi-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. ZI FISH 茈魚: CRUCIAN-CARP-LIKE, EXACTLY ONE HEAD AND TEN BODIES (一首而十身). Wide transparent canvas, editorially clear anatomical illustration in woodblock style. A single small pale blue-grey CRUCIAN FISH HEAD faces LEFT at x20/y50, with one ordinary paired-eye head, no second heads. Behind it, EXACTLY TEN separately traceable narrow SCALED FISH BODIES emerge from a common attachment, spreading toward the RIGHT as a clean fan. Each body is a continuous substantial fish trunk ending in ONE modest fish tail, not a tentacle. Arrange five distinct upper trunks ending at right-edge y12,21,30,39,48%, and five distinct lower trunks ending at y57,66,75,84,93%. Ten tail tips with clear transparent gaps; body centerlines visible all the way from the common head attachment. Exactly 10 bodies/tails and 1 head, not nine, eleven or ten fish with separate heads. Muted slate blue with ivory bellies, simplified fine scale rows so body count stays legible. No legs, bird wings, flowers/odor clouds, plants, caption or labels.",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-a5d607f4-2d75-47a4-a1c3-6bf2defdd373.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "人工逐数：一鱼首、十个有鳞独立鱼躯和十枚叉尾；上五支、中新增一支、下四支，共十支。连接布局、鳍鳞配色为艺术解释，透明通道保留。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-zi-dongshi-v1.webp",
+          "bytes": 325556,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-zi-dongshi-v1-card.webp",
+          "bytes": 37452,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-zi-dongshi-v1-preview.webp",
+          "bytes": 69732,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      },
+      "revision_prompt": "Minimal surgical edit. Current image has FIVE body branches in the upper fan and FOUR body branches in the lower fan: NINE total. ADD ONE fish body branch at the UPPER EDGE OF THE LOWER FAN, inside the large empty central gap: extend from the single head junction near x400,y520 to a new forked tail at x1450,y540. This fills the gap immediately ABOVE the current first lower body at y650. Keep every one of the existing nine bodies, tails and the single head unchanged. Final total FIVE upper + FIVE lower = TEN full bodies and TEN forked tails. Same blue/cream engraving, transparent background, no text.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "id": "dongshan-fish-bo-nvzheng-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/fish-bo-nvzheng-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/fish-bo-nvzheng-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. BO 薄魚: FISH compared to zhan, with EXACTLY ONE EYE. Draw one long grey-indigo generalized ancient fish with a slender tapered snout and a simple smooth streamlined body, not a named modern species. Three-quarter NEAR-FRONTAL VIEW with face pointing down-left, so there is visibly ONE SINGLE CENTRAL ROUND EYE on the midline of the forehead, both sides of the head otherwise eyeless. Not an ordinary side-view fish with its second eye hidden. Body sweeps back to upper-right, one plain fish tail, small close fish fins and skin details artistic. No second eye anywhere, no head duplication, armor plates, horns, limbs, wings or vomiting scene. The one-eye count is mandatory, central placement artistic.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "初审核心形貌匹配，最终目录与图片验收见交接。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-bo-nvzheng-v1.webp",
+          "bytes": 270174,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-bo-nvzheng-v1-card.webp",
+          "bytes": 27240,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-bo-nvzheng-v1-preview.webp",
+          "bytes": 51560,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-fish-hua-zitong-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/fish-hua-zitong-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/fish-hua-zitong-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. HUA 䱻魚: FISH-SHAPED WITH BIRD WINGS, entering/emerging with LIGHT. One short deep-bodied SILVER-BLUE FISH angled upward LEFT, one ordinary fish head with round fish eye and plain mouth, one small ordinary forked fish tail. TWO BROAD ROUNDED FEATHERED BIRD WINGS extend to either side, with clear ordinary feather rows, pale ivory and muted violet-blue accents. Distinct from a slender red-headed side-profile flying fish: compact high body, upward-left diagonal and rounded wings. Light conveyed only by pale carved incisions on the fish and feathers, no halo or flames. Wing count/placement/colors artistic. No duck head from the mandarin-duck sound, no legs, extra heads, bat membrane or fish-fin wings.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "初审核心形貌匹配，最终目录与图片验收见交接。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-hua-zitong-v1.webp",
+          "bytes": 319812,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-hua-zitong-v1-card.webp",
+          "bytes": 30138,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-hua-zitong-v1-preview.webp",
+          "bytes": 57756,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-creature-heyu-yanshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/creature-heyu-yanshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/creature-heyu-yanshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. HEYU 合窳: PIG-LIKE BODY with HUMAN FACE, YELLOW BODY and RED TAIL. One squat golden-YELLOW pig/boar trunk with four short cloven-hoof pig legs, one unmistakeably adult HUMAN FACE at the front of its head, normal HUMAN nose/lips/eyes instead of a pig snout. Human face skin tone artistic, neutral androgynous calm expression; no animal muzzle, no beard requirement. One short RED PIG TAIL curls lightly behind rump, not a snake tail or flame plume. Three-quarter view facing LEFT so human face and yellow pig body are both obvious. Four legs, hoof shape, ears and pose artistic. No human torso or arms, no fish, bird wings, tiger stripes, horns, extra heads, babies or violent eating scene.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "人面、黄猪躯、赤猪尾与四裂蹄；脸足耳尾细节为解释。源PNG外部alpha为0，选v1，预览RGB底色不作为透明度判断。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-heyu-yanshan-v1.webp",
+          "bytes": 310130,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-heyu-yanshan-v1-card.webp",
+          "bytes": 28206,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-heyu-yanshan-v1-preview.webp",
+          "bytes": 54086,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-creature-fei-taishan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/creature-fei-taishan-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/creature-fei-taishan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. FEI 蜚: OX-SHAPED, WHITE HEAD, EXACTLY ONE EYE, SNAKE TAIL. One broad dark warm-grey ox trunk with a WHITE CATTLE HEAD facing almost DIRECTLY FRONT, ONE SINGLE CENTRAL EYE on the forehead and NO other eyes on either cheek. Four sturdy cloven-hoof cattle legs artistic, two modest simple cattle horns artistic. One long slim tapering scaled SNAKE-LIKE TAIL curls to the RIGHT, but ends in a PLAIN TAPER: NO SNAKE HEAD, NO tail eyes or mouth. Near-frontal heavy stance, white head clearly distinct from dark body. Ox form, white head, one eye and serpentine tail mandatory; colors of non-head parts, four legs, horn count and eye position artistic. No wings, human face, extra heads, hidden second eye, flames or dead vegetation.",
+      "reference_images": [
+        "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-f2f71cd5-3f48-4206-8dc0-63e63a7c1397.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "蜚：白首、仅额心单目、牛躯蛇尾无蛇首；四蹄双角、眼位配色为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-fei-taishan-v1.webp",
+          "bytes": 318240,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-fei-taishan-v1-card.webp",
+          "bytes": 35912,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-fei-taishan-v1-preview.webp",
+          "bytes": 66540,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      },
+      "revision_prompt": "Use case: precise-object-edit. This Fei must have EXACTLY ONE EYE TOTAL. KEEP the large SINGLE CENTRAL FOREHEAD EYE. REMOVE BOTH small extra eyes from the left and right cheeks/temples, replacing their sockets/marks with uninterrupted ivory WHITE HEAD FUR. There must be NO lateral eyes and NO eye-shaped black marks on either cheek. Keep ox body, white head, existing two horns, four hooves, one tapering snake-like tail with NO snake head/eyes, texture/colors and transparent background. Exactly one central eye only; not three eyes, not one central eye plus hidden side eyes. Do not change anything else.",
+      "initial_reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "id": "dongshan-turtle-xigui-qizhong-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/turtle-xigui-qizhong-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/turtle-xigui-qizhong-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. XIGUI 蠵龜: commentary explicitly calls it a LARGE TURTLE with a thin patterned shell resembling daimao. One broad large TURTLE seen from a high three-quarter top view, oval low thin-looking ochre-ivory shell with restrained dark brown mosaic-like patches, one small ordinary turtle head looking upper LEFT, exactly FOUR ordinary short turtle legs/feet and one small tapered tail. Shell thinness/pattern/colors and four ordinary feet are artistic; no modern sea-turtle species identification, no ocean or huge paddle flippers. No horns, feathers, dragon head, multiple shells or extra legs. Keep all four limbs separate and visible.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "蠵龟：大龟薄纹甲，四足一首一尾，纹色与足形为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/turtle-xigui-qizhong-v1.webp",
+          "bytes": 355062,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/turtle-xigui-qizhong-v1-card.webp",
+          "bytes": 32196,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/turtle-xigui-qizhong-v1-preview.webp",
+          "bytes": 62746,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-fish-gege-qizhong-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/fish-gege-qizhong-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/fish-gege-qizhong-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. GEGE 鮯鮯: CARP-shaped FISH, EXACTLY SIX FEET, BIRD TAIL. Strict front-facing slightly elevated view, central slim blue-green scaled carp-like fish body only 45% canvas width, head at upper center, one broad FEATHERED BIRD TAIL at lower center (no ordinary forked fish tail). SIX separate short legs and feet fan from its sides as THREE symmetric pairs with gaps: upper feet at x12/y42 and x88/y42; middle feet x18/y62 and x82/y62; lower feet x29/y82 and x71/y82. Exactly THREE FEET on left, THREE FEET on right, SIX total, not toes or fins counted as feet. Each connected by one obvious leg, no hidden limbs. The small simple claw/foot shape, positions, ordinary carp face details and colors are artistic. No bird head or wings, no seventh leg, extra tail or shell. Leave generous space so six feet and single feather tail are individually countable.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "鮯鮯：鲤状，左三/右三共六足独立可数，单一羽状鸟尾；足趾形、鳍鳞细节与配色为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-gege-qizhong-v1.webp",
+          "bytes": 225200,
+          "dimensions": [
+            853,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-gege-qizhong-v1-card.webp",
+          "bytes": 25140,
+          "dimensions": [
+            213,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-gege-qizhong-v1-preview.webp",
+          "bytes": 45928,
+          "dimensions": [
+            320,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-creature-jingjing-muyu-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/creature-jingjing-muyu-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/creature-jingjing-muyu-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. JINGJING 精精: OX-SHAPED with HORSE TAIL. One sturdy plain BURGUNDY-BROWN ox with ivory muzzle and four cloven-hoof legs, facing RIGHT in a calm slightly elevated side profile, two short simple cattle horns artistic. One visibly LONG DENSE FLOWING HORSE TAIL with hair along the lower length and broad mane-like tip, NOT a thin ox tail with isolated little brush. No tiger stripes, human face, extra eyes, snake tail or wings. Broad low back, solid unpatterned coat and long horse tail distinguish it from other illustrated cattle.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "精精：牛躯四蹄、马尾长毛，不添虎纹；角数姿色为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-jingjing-muyu-v1.webp",
+          "bytes": 271750,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-jingjing-muyu-v1-card.webp",
+          "bytes": 25168,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-jingjing-muyu-v1-preview.webp",
+          "bytes": 47650,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-deity-human-ramhorn-range3-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/deity-human-ramhorn-range3-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/deity-human-ramhorn-range3-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. Representative THIRD EASTERN RANGE GOD: HUMAN BODY WITH SHEEP HORNS (人身而羊角), NOT a sheep head. One standing adult androgynous HUMAN with a fully HUMAN FACE and human nose/lips, two normal human hands and two bare HUMAN FEET visible. TWO curled RAM HORNS frame the human temples as artistic horn form/count; keep human head, not a goat snout. Simple muted sea-green and warm ivory long robe, a slightly bent-knee three-quarter stance facing LEFT with arms relaxed low, minimal folds, no jewelry or halo. No dragon head, animal torso, hooves, sheep ears, snake tail, wings or sacrificial sheep/fish. Costume/color/pose artistic, not a fixed ritual uniform.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "次三神：人面人身双卷羊角、双人手双人足，不画羊首；服色姿态为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/deity-human-ramhorn-range3-v1.webp",
+          "bytes": 263504,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/deity-human-ramhorn-range3-v1-card.webp",
+          "bytes": 26390,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/deity-human-ramhorn-range3-v1-preview.webp",
+          "bytes": 49224,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-creature-xieju-beihao-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/creature-xieju-beihao-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/creature-xieju-beihao-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. XIEJU 猲狙: WOLF-like with RED HEAD and RAT EYES. One lean long-legged charcoal-grey WOLF body in a cautious low left-facing trot, single RUST-RED entire wolf head with narrow wolf muzzle, upright wolf ears and TWO small glossy bead-like rat eyes (eye count artistic); no owl eye mask or huge raptor eyes. Four canine legs/paws and one ordinary bushy wolf tail artistic. Red head sharply distinguished from grey body, short carved fur marks. No horns, wings, human face or pig snout from the pig-like sound; no prey or violent scene.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "猲狙：狼躯赤首鼠样小目、四犬足一尾，无猪首；配色姿态足数为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-xieju-beihao-v1.webp",
+          "bytes": 259044,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-xieju-beihao-v1-card.webp",
+          "bytes": 25026,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/creature-xieju-beihao-v1-preview.webp",
+          "bytes": 46774,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-bird-qique-beihao-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/bird-qique-beihao-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/bird-qique-beihao-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. QIQUE 鬿雀: CHICKEN-like BIRD, WHITE HEAD, RAT FEET WITH TIGER CLAWS. One stocky dark olive-brown chicken body with a CLEAR WHITE chicken head, short ordinary pale chicken beak and restrained small comb artistic, wings folded. TWO thin grey mouse-like lower limbs ending in TWO MOUSE-LIKE FEET with narrow toes, each toe bearing a clearly long curved TIGER CLAW; the bird’s normal scaled chicken feet are replaced. Foot count, toe/claw number, lower-limb fur and body colors are artistic; no extra arms. Right-facing alert stance with short small chicken feather tail, no big owl face or mouse head/ears/tail, no striped tiger torso, no wings spread or prey.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "鬿雀：鸡体白首，鼠样灰足虎爪，无鼠首虎躯；趾爪数、足形细节与配色为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/bird-qique-beihao-v1.webp",
+          "bytes": 307704,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/bird-qique-beihao-v1-card.webp",
+          "bytes": 29434,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/bird-qique-beihao-v1-preview.webp",
+          "bytes": 56566,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "dongshan-fish-qiu-maoshan-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/dongshan/fish-qiu-maoshan-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/dongshan/fish-qiu-maoshan-v1.webp",
+      "initial_prompt": "Use case: illustration-story. ONE complete isolated Shanhaijing subject on a truly TRANSPARENT canvas, wide clear margins around ALL parts. STYLE ONLY reference: Chinese carved woodblock, dark-brown contours, restrained flat mineral pigments, warm ivory incisions and subtle print grain. Do not copy the owl face, flame scrolls or feather layers onto unrelated subjects. No text, number, border, seal, ground, scenery, halo, disaster scene or other creature. Textual organs/counts are mandatory; specified pose/color arrangements not in the text are artistic. QIU 鱃魚: resembles CARP but with a LARGE HEAD (如鯉而大首). One squat muted bronze-green scaled carp-like fish with a markedly OVERSIZED ROUND FISH HEAD about 40% of total body length and a shorter plump body, tiny ordinary eyes and a plain fish mouth, one tail. Side profile facing RIGHT, body tilted slightly down, modest close-set fish fins and small scale engraving are artistic. No needle snout, horns, wings, extra heads, legs, armor plates, owl face or teeth. Show big head through proportion, not a giant eye.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed_for_dongshan_batch",
+      "visual_review_note": "鱃鱼：概括鲤状大首，鳞鳍尾比例与配色为解释，不定现代种。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-qiu-maoshan-v1.webp",
+          "bytes": 298932,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-qiu-maoshan-v1-card.webp",
+          "bytes": 26474,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/dongshan/fish-qiu-maoshan-v1-preview.webp",
+          "bytes": 51274,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

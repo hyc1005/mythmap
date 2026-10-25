@@ -4,12 +4,12 @@
 
 ## 统计口径
 
-- 十八篇录文块清单见 `data/shanhaijing-inventory.json`，每项保存页码、原文、注文与待核状态。《南山经》43段、《西山经》82段、《北山经》92段与《东山经》20段已接入说明；其余结构候选的段界、实体、关系和影印仍待人工核定。不是全书穷尽实体索引，也不是各版本校勘定本。
+- 十八篇录文块清单见 `data/shanhaijing-inventory.json`，每项保存页码、原文、注文与待核状态。《南山经》43段、《西山经》82段、《北山经》92段与《东山经》51段已接入说明；其余结构候选的段界、实体、关系和影印仍待人工核定。不是全书穷尽实体索引，也不是各版本校勘定本。
 - 已保存十八篇逐行正文、注文、影印页锚点、校对状态和固定修订链接，见 `data/shanhaijing-reference.json`。录文中缺字图保留显式标记，不猜字补齐。
 - 下表按当前条目声明的出处计数；同一条目可引用多篇，同名异篇保持分开。地点锚点、神域、异兽、故事不是同一统计单位，不能相加后声称全书覆盖率。
-- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。237条异兽记录，同名异篇分开；671条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
+- 14条地点记录含4条山列集合锚点；3条神域与相关地点分别建档。257条异兽记录，同名异篇分开；738条自然条目含草木、水域、物产。43条事件记录含拆分子事件、归档、组和未开放资料，不等于43个独立故事。
 - “常规入口”是地图、图鉴、章节目录中的独立条目；“非默认条目”是归档/组，仍可从搜索或直链打开；“未开放”指数据已有记录，但没有可用章节入口。引用某篇不等于完整收录该篇。
-- 项目共 1538 条上述记录（含237条经文阅读段，与独立实体不是同一统计单位）：常规入口 1528，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
+- 项目共 1701 条上述记录（含268条经文阅读段，与独立实体不是同一统计单位）：常规入口 1691，非默认条目 3，未开放 7。另有39条书目记录、32条现代地点关联，不混入该统计。
 
 ## 十八篇对应清单
 
@@ -18,7 +18,7 @@
 | [南山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%80&oldid=2652851) | 161 | 0 | 0 | 全篇43段说明可读；独立实体仍选编 |
 | [西山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%8C&oldid=2652852) | 596 | 0 | 2 | 82段、508张新卡已接入；其余仍待核 |
 | [北山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%89&oldid=2652853) | 601 | 0 | 0 | 全篇92阅读段、507张独立卡已核；形貌不足者留占位 |
-| [东山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854) | 126 | 0 | 0 | 51阶段已规划、20阶段接入；其余仍待接入 |
+| [东山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854) | 289 | 0 | 0 | 全篇51阅读段接入；疑难字与数字差异明确保留 |
 | [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 0 | 0 | 0 | 尚无明确篇目对应 |
 | [海外南经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AD&oldid=2652857) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
 | [海外西经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%83&oldid=2652858) | 1 | 0 | 1 | 选编，篇内仍有遗漏 |
@@ -59,8 +59,8 @@
 
 ### 04 东山经
 
-- 常规入口：当康（`beast-dangkang`）；蜚（`beast-fei`）；合窳（`beast-heyu`）；鱅鱅之魚（`beast-dongshan-yongyong-suzhu`）；活師（藟山）（`beast-dongshan-huoshi-leishan`）；從從（`beast-dongshan-congcong-xunzhuang`）；䖪䑕（`beast-dongshan-zishu-xunzhuang`）；箴魚（栒状）（`beast-dongshan-zhen-xunzhuang`）；鱤魚（番條）（`beast-dongshan-gan-fantiao`）；堪㐨之魚（`beast-dongshan-kanyu-chai`）；夸父状彘毛兽（犲山未名）（`beast-dongshan-kuafu-like-chai`）；䖺䗤（`beast-dongshan-tiaoyong-dushan`）；狪狪（`beast-dongshan-tongtong-taishan`）；茈羸（竹山）（`beast-dongshan-zilei-zhu`）；軨軨（东次二）（`beast-dongshan-lingling-kongsang-east`）；蜃（嶧皐）（`beast-dongshan-shen-yigao`）；珧（嶧皐）（`beast-dongshan-yao-yigao`）；珠蟞魚（葛山之首）（`beast-dongshan-zhubie-geshan-head`）；犰狳（餘峩）（`beast-dongshan-qiuyu-yue`）；东山经山列（`place-east-ranges`）；食水（东山文本索引）（`water-dongshan-shi`）；海（东山首列水文）（`water-dongshan-sea`）；玉（藟山）（`material-dongshan-jade-leishan`）；金（藟山）（`material-dongshan-gold-leishan`）；湖水（藟山、栒状文本索引）（`water-dongshan-hu`）；金（栒状）（`material-dongshan-gold-xunzhuang`）；玉（栒状）（`material-dongshan-jade-xunzhuang`）；青碧石（栒状）（`material-dongshan-qingbistone-xunzhuang`）；𣲵水（栒状）（`water-dongshan-zhi-xunzhuang`）；沙（番條）（`material-dongshan-sand-fantiao`）；減水（番條）（`water-dongshan-jian-fantiao`）；漆（姑兒）（`plant-dongshan-qi-guer`）；桑（姑兒）（`plant-dongshan-sang-guer`）；柘（姑兒）（`plant-dongshan-zhe-guer`）；姑兒之水（`water-dongshan-guer`）；玉（髙氏山上）（`material-dongshan-jade-gaoshi-east`）；金（諸繩水文）（`material-dongshan-gold-zhusheng`）；玉（諸繩水文）（`material-dongshan-jade-zhusheng`）；諸繩之水（`water-dongshan-zhusheng`）；澤（髙氏受水体）（`water-dongshan-ze-gaoshi`）；箴石（髙氏）（`material-dongshan-zhenstone-gaoshi`）；桑（嶽山）（`plant-dongshan-sang-yue`）；樗（嶽山）（`plant-dongshan-chu-yue`）；金（濼水文）（`material-dongshan-gold-luo`）；玉（濼水文）（`material-dongshan-jade-luo`）；濼水（`water-dongshan-luo`）；澤（嶽山受水体）（`water-dongshan-ze-yue`）；水（犲山下）（`water-dongshan-unnamed-chai`）；金（獨山）（`material-dongshan-gold-du`）；玉（獨山）（`material-dongshan-jade-du`）；羙石（獨山）（`material-dongshan-fine-stone-du`）；末塗之水（`water-dongshan-motu`）；沔（末塗受水体）（`water-dongshan-mian`）；玉（泰山）（`material-dongshan-jade-tai`）；金（泰山）（`material-dongshan-gold-tai`）；水玉（環水文）（`material-dongshan-water-jade-huan`）；環水（`water-dongshan-huan`）；江（泰山、竹山文本索引）（`water-dongshan-jiang`）；瑶碧（竹山）（`material-dongshan-yaobi-zhu`）；激水（竹山）（`water-dongshan-ji-zhu`）；娶檀之水（`water-dongshan-qutan`）；湣澤（`water-dongshan-min-marsh`）；榖（曹夕）（`plant-dongshan-gu-caoxi`）；金（嶧皐）（`material-dongshan-gold-yigao`）；玉（嶧皐）（`material-dongshan-jade-yigao`）；白堊（嶧皐）（`material-dongshan-white-earth-yigao`）；嶧皐之水（`water-dongshan-yigao`）；激女之水（`water-dongshan-jinv`）；砥礪（葛山之尾）（`material-dongshan-dili-geshan-tail`）；澧水（葛山之首）（`water-dongshan-li-geshan-head`）；余澤（澧水受水体）（`water-dongshan-yu-marsh`）；雜余之水（`water-dongshan-zayu`）；黄水（雜余受水体）（`water-dongshan-huang-yue`）；梓（餘峩）（`plant-dongshan-zi-yue`）；柟（餘峩）（`plant-dongshan-nan-yue`）；荆（餘峩）（`plant-dongshan-jing-yue`）；𦬊（餘峩）（`plant-dongshan-qi-yue`）；水（杜父未名）（`water-dongshan-unnamed-dufu`）；樕𧑤之山（`passage-dongshan-suzhu`）；藟山（`passage-dongshan-leishan`）；栒状之山（`passage-dongshan-xunzhuang`）；勃亝之山（`passage-dongshan-boqi`）；番條之山（`passage-dongshan-fantiao`）；姑兒之山（`passage-dongshan-guer`）；髙氏之山（`passage-dongshan-gaoshi-east`）；嶽山（`passage-dongshan-yueshan`）；犲山（`passage-dongshan-chaishan`）；獨山（`passage-dongshan-dushan`）；泰山（`passage-dongshan-taishan-range1`）；竹山（`passage-dongshan-zhushan`）；首列总括与祭礼（`passage-dongshan-range1-summary`）；空桑之山（`passage-dongshan-kongsang-east`）；曹夕之山（`passage-dongshan-caoxi`）；嶧皐之山（`passage-dongshan-yigao`）；葛山之尾（`passage-dongshan-geshan-tail`）；葛山之首（`passage-dongshan-geshan-head`）；餘峩之山（`passage-dongshan-yue`）；杜父之山（`passage-dongshan-dufu`）；樕𧑤之山（`place-dongshan-suzhu`）；乾昧之山（北临）（`place-dongshan-qianmei-suzhu`）；藟山（`place-dongshan-leishan`）；栒状之山（`place-dongshan-xunzhuang`）；勃亝之山（`place-dongshan-boqi`）；番條之山（`place-dongshan-fantiao`）；姑兒之山（`place-dongshan-guer`）；髙氏之山（`place-dongshan-gaoshi-east`）；嶽山（`place-dongshan-yueshan`）；犲山（`place-dongshan-chaishan`）；獨山（`place-dongshan-dushan`）；泰山（`place-dongshan-taishan-range1`）；竹山（`place-dongshan-zhushan`）；首列总括与祭礼（`rite-dongshan-range1-summary`）；人身龍首神（东山首列）（`deity-dongshan-human-dragon-range1`）；祠毛用一犬（首列祭礼）（`rite-dongshan-fur-offering-range1`）；祈䎶用魚（首列祭礼）（`rite-dongshan-fish-er-range1`）；空桑之山（`place-dongshan-kongsang-east`）；沮呉（空桑东望）（`place-dongshan-juwu`）；沙𨹧（空桑南望）（`place-dongshan-shaling`）；曹夕之山（`place-dongshan-caoxi`）；嶧皐之山（`place-dongshan-yigao`）；葛山之尾（`place-dongshan-geshan-tail`）；葛山之首（`place-dongshan-geshan-head`）；餘峩之山（`place-dongshan-yue`）；螽（餘峩灾异）（`animal-dongshan-zhong-yue`）；蝗（餘峩灾异）（`animal-dongshan-huang-insects-yue`）；杜父之山（`place-dongshan-dufu`）。
-- 待补方向：已核影印109—124页段界并规划51阶段：46列名山段、4总括、1篇末；141录文块含2标题/署名与139正文/注文块，42结构候选不等于阶段数。次三列名9与原报19、四列原报合56与篇末46并存；里程合18860与篇末一致。已接入20阅读段、102独立卡，余31阶段；已审图13幅、形貌不足占位6项。食/湖/海/江与鱤鱼的不同出处分别保留。计划及15页界修正见data/dongshan-edition-review.json。
+- 常规入口：鱅鱅之魚（`beast-dongshan-yongyong-suzhu`）；活師（藟山）（`beast-dongshan-huoshi-leishan`）；從從（`beast-dongshan-congcong-xunzhuang`）；䖪䑕（`beast-dongshan-zishu-xunzhuang`）；箴魚（栒状）（`beast-dongshan-zhen-xunzhuang`）；鱤魚（番條）（`beast-dongshan-gan-fantiao`）；堪㐨之魚（`beast-dongshan-kanyu-chai`）；夸父状彘毛兽（犲山未名）（`beast-dongshan-kuafu-like-chai`）；䖺䗤（`beast-dongshan-tiaoyong-dushan`）；狪狪（`beast-dongshan-tongtong-taishan`）；茈羸（竹山）（`beast-dongshan-zilei-zhu`）；軨軨（东次二）（`beast-dongshan-lingling-kongsang-east`）；蜃（嶧皐）（`beast-dongshan-shen-yigao`）；珧（嶧皐）（`beast-dongshan-yao-yigao`）；珠蟞魚（葛山之首）（`beast-dongshan-zhubie-geshan-head`）；犰狳（餘峩）（`beast-dongshan-qiuyu-yue`）；大蛇（东山文本索引）（`beast-dongshan-large-snake`）；朱獳（`beast-dongshan-zhunou-gengshan`）；𪁐鶘（盧其）（`beast-dongshan-lihu-luqi`）；獙獙（姑逢）（`beast-dongshan-bibi-gufeng`）；蠪姪（`beast-dongshan-longzhi-fuli`）；峳峳（`beast-dongshan-youyou-zhenshan`）；絜鈎（`beast-dongshan-jiegou-zhenshan`）；妴胡（`beast-dongshan-yuanhu-shihu`）；𥧌魚（諸鈎）（`beast-dongshan-qin-zhugou`）；鱣（孟子）（`beast-dongshan-zhan-mengzi`）；鮪（孟子）（`beast-dongshan-wei-mengzi`）；蠵龜（深澤）（`beast-dongshan-xigui-qizhong`）；鮯鮯之魚（`beast-dongshan-gege-qizhong`）；精精（踇隅）（`beast-dongshan-jingjing-muyu`）；猲狙（`beast-dongshan-xieju-beihao`）；鬿雀（`beast-dongshan-qique-beihao`）；鱃魚（东山文本索引）（`beast-dongshan-qiu-maoshan`）；茈魚（東始）（`beast-dongshan-zi-dongshi`）；薄魚（女烝）（`beast-dongshan-bo-nvzheng`）；当康（`beast-dangkang`）；䱻魚（子桐）（`beast-dongshan-hua-zitong`）；合窳（`beast-heyu`）；蜚（`beast-fei`）；东山经山列（`place-east-ranges`）；食水（东山文本索引）（`water-dongshan-shi`）；海（东山水文文本索引）（`water-dongshan-sea`）；玉（藟山）（`material-dongshan-jade-leishan`）；金（藟山）（`material-dongshan-gold-leishan`）；湖水（藟山、栒状文本索引）（`water-dongshan-hu`）；金（栒状）（`material-dongshan-gold-xunzhuang`）；玉（栒状）（`material-dongshan-jade-xunzhuang`）；青碧石（栒状）（`material-dongshan-qingbistone-xunzhuang`）；𣲵水（栒状）（`water-dongshan-zhi-xunzhuang`）；沙（番條）（`material-dongshan-sand-fantiao`）；減水（番條）（`water-dongshan-jian-fantiao`）；漆（姑兒）（`plant-dongshan-qi-guer`）；桑（姑兒）（`plant-dongshan-sang-guer`）；柘（姑兒）（`plant-dongshan-zhe-guer`）；姑兒之水（`water-dongshan-guer`）；玉（髙氏山上）（`material-dongshan-jade-gaoshi-east`）；金（諸繩水文）（`material-dongshan-gold-zhusheng`）；玉（諸繩水文）（`material-dongshan-jade-zhusheng`）；諸繩之水（`water-dongshan-zhusheng`）；澤（髙氏受水体）（`water-dongshan-ze-gaoshi`）；箴石（髙氏）（`material-dongshan-zhenstone-gaoshi`）；桑（嶽山）（`plant-dongshan-sang-yue`）；樗（嶽山）（`plant-dongshan-chu-yue`）；金（濼水文）（`material-dongshan-gold-luo`）；玉（濼水文）（`material-dongshan-jade-luo`）；濼水（`water-dongshan-luo`）；澤（嶽山受水体）（`water-dongshan-ze-yue`）；水（犲山下）（`water-dongshan-unnamed-chai`）；金（獨山）（`material-dongshan-gold-du`）；玉（獨山）（`material-dongshan-jade-du`）；羙石（獨山）（`material-dongshan-fine-stone-du`）；末塗之水（`water-dongshan-motu`）；沔（末塗受水体）（`water-dongshan-mian`）；玉（泰山）（`material-dongshan-jade-tai`）；金（泰山）（`material-dongshan-gold-tai`）；水玉（環水文）（`material-dongshan-water-jade-huan`）；環水（`water-dongshan-huan`）；江（泰山、竹山文本索引）（`water-dongshan-jiang`）；瑶碧（竹山）（`material-dongshan-yaobi-zhu`）；激水（竹山）（`water-dongshan-ji-zhu`）；娶檀之水（`water-dongshan-qutan`）；湣澤（`water-dongshan-min-marsh`）；榖（曹夕）（`plant-dongshan-gu-caoxi`）；金（嶧皐）（`material-dongshan-gold-yigao`）；玉（嶧皐）（`material-dongshan-jade-yigao`）；白堊（嶧皐）（`material-dongshan-white-earth-yigao`）；嶧皐之水（`water-dongshan-yigao`）；激女之水（`water-dongshan-jinv`）；砥礪（葛山之尾）（`material-dongshan-dili-geshan-tail`）；澧水（葛山之首）（`water-dongshan-li-geshan-head`）；余澤（澧水受水体）（`water-dongshan-yu-marsh`）；雜余之水（`water-dongshan-zayu`）；黄水（雜余受水体）（`water-dongshan-huang-yue`）；梓（餘峩）（`plant-dongshan-zi-yue`）；柟（餘峩）（`plant-dongshan-nan-yue`）；荆（餘峩）（`plant-dongshan-jing-yue`）；𦬊（餘峩）（`plant-dongshan-qi-yue`）；水（杜父未名）（`water-dongshan-unnamed-dufu`）；水碧（耿山）（`material-dongshan-shuibi-geng`）；沙（盧其）（`material-dongshan-sand-luqi`）；石（盧其）（`material-dongshan-stone-luqi`）；沙水（盧其）（`water-dongshan-sha-luqi`）；涔水（`water-dongshan-cen`）；水（姑射未名）（`water-dongshan-unnamed-gushe`）；石（北姑射）（`material-dongshan-stone-north-gushe`）；水（南姑射未名）（`water-dongshan-unnamed-south-gushe`）；碧（碧山）（`material-dongshan-bi-bishan`）；水玉（碧山）（`material-dongshan-water-jade-bishan`）；金（維氏）（`material-dongshan-gold-weishi`）；玉（維氏）（`material-dongshan-jade-weishi`）；原水（維氏）（`water-dongshan-yuan-weishi`）；沙澤（原水受水体）（`water-dongshan-sha-marsh`）；金（姑逢）（`material-dongshan-gold-gufeng`）；玉（姑逢）（`material-dongshan-jade-gufeng`）；金（鳬麗）（`material-dongshan-gold-fuli`）；玉（鳬麗）（`material-dongshan-jade-fuli`）；箴石（鳬麗）（`material-dongshan-zhenstone-fuli`）；䃌水（`water-dongshan-zhen`）；湖澤（䃌山东望）（`water-dongshan-hu-marsh`）；金（尸胡）（`material-dongshan-gold-shihu`）；玉（尸胡）（`material-dongshan-jade-shihu`）；𣗥（尸胡）（`plant-dongshan-ji-shihu`）；桃（岐山）（`plant-dongshan-peach-qi`）；李（岐山）（`plant-dongshan-plum-qi`）；沙（諸鈎）（`material-dongshan-sand-zhugou`）；石（諸鈎）（`material-dongshan-stone-zhugou`）；沙（中父）（`material-dongshan-sand-zhongfu`）；沙（胡射）（`material-dongshan-sand-hushe`）；石（胡射）（`material-dongshan-stone-hushe`）；梓（孟子）（`plant-dongshan-zi-mengzi`）；桐（孟子）（`plant-dongshan-tong-mengzi`）；桃（孟子）（`plant-dongshan-peach-mengzi`）；李（孟子）（`plant-dongshan-plum-mengzi`）；菌蒲（孟子）（`plant-dongshan-junpu-mengzi`）；碧陽水（孟子）（`water-dongshan-biyang`）；玉（跂踵）（`material-dongshan-jade-qizhong`）；深澤（跂踵）（`water-dongshan-shen-marsh`）；金（踇隅）（`material-dongshan-gold-muyu`）；玉（踇隅）（`material-dongshan-jade-muyu`）；赭（踇隅）（`material-dongshan-ochre-muyu`）；幼海（無皐南望）（`water-dongshan-you-sea`）；北海（北號所临）（`water-dongshan-north-sea`）；木（北號未名）（`plant-dongshan-unnamed-tree-beihao`）；蒼體之水（`water-dongshan-cangti`）；展水（`water-dongshan-zhan-water`）；蒼玉（東始）（`material-dongshan-cang-jade-dongshi`）；𦬊木（東始）（`plant-dongshan-qi-tree-dongshi`）；泚水（東始）（`water-dongshan-ci-dongshi`）；羙貝（東始水文）（`material-dongshan-fine-shell-dongshi`）；石膏水（女烝）（`water-dongshan-shigao`）；鬲水（`water-dongshan-ge-water`）；金（欽山）（`material-dongshan-gold-qinshan`）；玉（欽山）（`material-dongshan-jade-qinshan`）；師水（欽山）（`water-dongshan-shi-qinshan`）；皐澤（師水受水体）（`water-dongshan-gao-marsh`）；文貝（欽山水文）（`material-dongshan-patterned-shell-qin`）；子桐之水（`water-dongshan-zitong`）；餘如之澤（`water-dongshan-yuru-marsh`）；金（剡山）（`material-dongshan-gold-yanshan`）；玉（剡山）（`material-dongshan-jade-yanshan`）；金（太山）（`material-dongshan-gold-taishan-range4`）；玉（太山）（`material-dongshan-jade-taishan-range4`）；楨木（太山）（`plant-dongshan-zhenwood-tai4`）；鈎水（太山）（`water-dongshan-gou-tai4`）；勞水（`water-dongshan-lao-water`）；樕𧑤之山（`passage-dongshan-suzhu`）；藟山（`passage-dongshan-leishan`）；栒状之山（`passage-dongshan-xunzhuang`）；勃亝之山（`passage-dongshan-boqi`）；番條之山（`passage-dongshan-fantiao`）；姑兒之山（`passage-dongshan-guer`）；髙氏之山（`passage-dongshan-gaoshi-east`）；嶽山（`passage-dongshan-yueshan`）；犲山（`passage-dongshan-chaishan`）；獨山（`passage-dongshan-dushan`）；泰山（`passage-dongshan-taishan-range1`）；竹山（`passage-dongshan-zhushan`）；首列总括与祭礼（`passage-dongshan-range1-summary`）；空桑之山（`passage-dongshan-kongsang-east`）；曹夕之山（`passage-dongshan-caoxi`）；嶧皐之山（`passage-dongshan-yigao`）；葛山之尾（`passage-dongshan-geshan-tail`）；葛山之首（`passage-dongshan-geshan-head`）；餘峩之山（`passage-dongshan-yue`）；杜父之山（`passage-dongshan-dufu`）；耿山（`passage-dongshan-gengshan`）；盧其之山（`passage-dongshan-luqi`）；姑射之山（`passage-dongshan-gushe`）；北姑射之山（`passage-dongshan-north-gushe`）；南姑射之山（`passage-dongshan-south-gushe`）；碧山（`passage-dongshan-bishan`）；維氏之山（`passage-dongshan-weishi`）；姑逢之山（`passage-dongshan-gufeng`）；鳬麗之山（`passage-dongshan-fuli`）；䃌山（`passage-dongshan-zhenshan`）；次二总括与祭礼（`passage-dongshan-range2-summary`）；尸胡之山（`passage-dongshan-shihu`）；岐山（`passage-dongshan-qishan`）；諸鈎之山（`passage-dongshan-zhugou`）；中父之山（`passage-dongshan-zhongfu`）；胡射之山（`passage-dongshan-hushe`）；孟子之山（`passage-dongshan-mengzi`）；跂踵之山（`passage-dongshan-qizhong`）；踇隅之山（`passage-dongshan-muyu`）；無皐之山（`passage-dongshan-wugao`）；次三总括与祭礼（`passage-dongshan-range3-summary`）；北號之山（`passage-dongshan-beihao`）；旄山（`passage-dongshan-maoshan`）；東始之山（`passage-dongshan-dongshi`）；女烝之山（`passage-dongshan-nvzheng`）；欽山（`passage-dongshan-qinshan`）；子桐之山（`passage-dongshan-zitong`）；剡山（`passage-dongshan-yanshan`）；太山（`passage-dongshan-taishan-range4`）；次四总括（`passage-dongshan-range4-summary`）；东山经篇末总计（`passage-dongshan-book-total`）；樕𧑤之山（`place-dongshan-suzhu`）；乾昧之山（北临）（`place-dongshan-qianmei-suzhu`）；藟山（`place-dongshan-leishan`）；栒状之山（`place-dongshan-xunzhuang`）；勃亝之山（`place-dongshan-boqi`）；番條之山（`place-dongshan-fantiao`）；姑兒之山（`place-dongshan-guer`）；髙氏之山（`place-dongshan-gaoshi-east`）；嶽山（`place-dongshan-yueshan`）；犲山（`place-dongshan-chaishan`）；獨山（`place-dongshan-dushan`）；泰山（`place-dongshan-taishan-range1`）；竹山（`place-dongshan-zhushan`）；首列总括与祭礼（`rite-dongshan-range1-summary`）；人身龍首神（东山首列）（`deity-dongshan-human-dragon-range1`）；祠毛用一犬（首列祭礼）（`rite-dongshan-fur-offering-range1`）；祈䎶用魚（首列祭礼）（`rite-dongshan-fish-er-range1`）；空桑之山（`place-dongshan-kongsang-east`）；沮呉（空桑东望）（`place-dongshan-juwu`）；沙𨹧（空桑南望）（`place-dongshan-shaling`）；曹夕之山（`place-dongshan-caoxi`）；嶧皐之山（`place-dongshan-yigao`）；葛山之尾（`place-dongshan-geshan-tail`）；葛山之首（`place-dongshan-geshan-head`）；餘峩之山（`place-dongshan-yue`）；螽（餘峩灾异）（`animal-dongshan-zhong-yue`）；蝗（餘峩灾异）（`animal-dongshan-huang-insects-yue`）；杜父之山（`place-dongshan-dufu`）；耿山（`place-dongshan-gengshan`）；盧其之山（`place-dongshan-luqi`）；姑射之山（`place-dongshan-gushe`）；北姑射之山（`place-dongshan-north-gushe`）；南姑射之山（`place-dongshan-south-gushe`）；碧山（`place-dongshan-bishan`）；維氏之山（`place-dongshan-weishi`）；姑逢之山（`place-dongshan-gufeng`）；鳬麗之山（`place-dongshan-fuli`）；䃌山（`place-dongshan-zhenshan`）；次二总括与祭礼（`rite-dongshan-range2-summary`）；兽身人面载觡神（东次二）（`deity-dongshan-humanface-antlers-range2`）；祠毛一鷄（次二祭礼）（`rite-dongshan-chicken-range2`）；一璧瘞（次二祭礼）（`rite-dongshan-bi-burial-range2`）；尸胡之山（`place-dongshan-shihu`）；𦍙山（尸湖北望）（`place-dongshan-xiang-shihu`）；岐山（`place-dongshan-qishan`）；虎（岐山泛称）（`animal-dongshan-tiger-qi`）；諸鈎之山（`place-dongshan-zhugou`）；中父之山（`place-dongshan-zhongfu`）；胡射之山（`place-dongshan-hushe`）；孟子之山（`place-dongshan-mengzi`）；麋（孟子泛称）（`animal-dongshan-mi-mengzi`）；鹿（孟子泛称）（`animal-dongshan-lu-mengzi`）；跂踵之山（`place-dongshan-qizhong`）；踇隅之山（`place-dongshan-muyu`）；無皐之山（`place-dongshan-wugao`）；榑木（無皐东望）（`plant-dongshan-fu-wood-wugao`）；风（無皐）（`wind-dongshan-wind-wugao`）；次三总括与祭礼（`rite-dongshan-range3-summary`）；人身羊角神（东次三）（`deity-dongshan-human-ramhorn-range3`）；一牡羊（次三祭礼）（`rite-dongshan-ram-offering-range3`）；𮮐（次三祭米）（`material-dongshan-millet-range3`）；北號之山（`place-dongshan-beihao`）；旄山（`place-dongshan-maoshan`）；東始之山（`place-dongshan-dongshi`）；女烝之山（`place-dongshan-nvzheng`）；欽山（`place-dongshan-qinshan`）；子桐之山（`place-dongshan-zitong`）；剡山（`place-dongshan-yanshan`）；蟲（合窳食性泛称）（`animal-dongshan-insects-yanshan`）；蛇（合窳食性泛称）（`animal-dongshan-snakes-yanshan`）；太山（`place-dongshan-taishan-range4`）；次四总括（`rite-dongshan-range4-summary`）；东山经篇末总计（`rite-dongshan-book-total`）。
+- 待补方向：已核影印109—124页段界并规划51阶段：46列名山段、4总括、1篇末；141录文块含2标题/署名与139正文/注文块，42结构候选不等于阶段数。次三列名9与原报19、四列原报合56与篇末46并存；里程合18860与篇末一致。已接入51阅读段、237独立卡，余0阶段；已审图34幅、形貌不足占位14项。食/湖/海/江与鱤鱼的不同出处分别保留。计划及15页界修正见data/dongshan-edition-review.json。
 - 校核入口：[该篇固定修订](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%9B%9B&oldid=2652854)；109—124页段界已核，前5段已核文并接入双语及对象，其余仍待接入，不将51阶段规划视为阅读已完成。
 
 - 阶段总表（状态以各阶段交接验收为准）：
@@ -87,37 +87,37 @@
 | 18 | 葛山之首 | source-04-0047—0050 | 114 | 已接入，验收见交接 |
 | 19 | 餘峩之山 | source-04-0051—0054 | 114 | 已接入，验收见交接 |
 | 20 | 杜父之山 | source-04-0055—0055 | 115 | 已接入，验收见交接 |
-| 21 | 耿山 | source-04-0056—0058 | 115 | 待接入 |
-| 22 | 盧其之山 | source-04-0059—0061 | 115 | 待接入 |
-| 23 | 姑射之山 | source-04-0062—0062 | 115 | 待接入 |
-| 24 | 北姑射之山 | source-04-0063—0064 | 115、116 | 待接入 |
-| 25 | 南姑射之山 | source-04-0065—0065 | 116 | 待接入 |
-| 26 | 碧山 | source-04-0066—0066 | 116 | 待接入 |
-| 27 | 維氏之山 | source-04-0067—0068 | 116 | 待接入 |
-| 28 | 姑逢之山 | source-04-0069—0071 | 116 | 待接入 |
-| 29 | 鳬麗之山 | source-04-0072—0074 | 116、117 | 待接入 |
-| 30 | 䃌山 | source-04-0075—0078 | 117 | 待接入 |
-| 31 | 次二总括与祭礼 | source-04-0079—0081 | 117 | 待接入 |
-| 32 | 尸胡之山 | source-04-0082—0084 | 118 | 待接入 |
-| 33 | 岐山 | source-04-0085—0085 | 118 | 待接入 |
-| 34 | 諸鈎之山 | source-04-0086—0087 | 118 | 待接入 |
-| 35 | 中父之山 | source-04-0088—0088 | 118 | 待接入 |
-| 36 | 胡射之山 | source-04-0089—0089 | 118 | 待接入 |
-| 37 | 孟子之山 | source-04-0090—0093 | 118、119 | 待接入 |
-| 38 | 跂踵之山 | source-04-0094—0099 | 119 | 待接入 |
-| 39 | 踇隅之山 | source-04-0100—0102 | 120 | 待接入 |
-| 40 | 無皐之山 | source-04-0103—0105 | 120 | 待接入 |
-| 41 | 次三总括与祭礼 | source-04-0106—0108 | 120 | 待接入 |
-| 42 | 北號之山 | source-04-0109—0113 | 121 | 待接入 |
-| 43 | 旄山 | source-04-0114—0116 | 121 | 待接入 |
-| 44 | 東始之山 | source-04-0117—0121 | 121、122 | 待接入 |
-| 45 | 女烝之山 | source-04-0122—0124 | 122 | 待接入 |
-| 46 | 欽山 | source-04-0125—0127 | 122、123 | 待接入 |
-| 47 | 子桐之山 | source-04-0128—0130 | 123 | 待接入 |
-| 48 | 剡山 | source-04-0131—0133 | 123 | 待接入 |
-| 49 | 太山 | source-04-0134—0138 | 123、124 | 待接入 |
-| 50 | 次四总括 | source-04-0139—0140 | 124 | 待接入 |
-| 51 | 东山经篇末总计 | source-04-0141—0141 | 124 | 待接入 |
+| 21 | 耿山 | source-04-0056—0058 | 115 | 已接入，验收见交接 |
+| 22 | 盧其之山 | source-04-0059—0061 | 115 | 已接入，验收见交接 |
+| 23 | 姑射之山 | source-04-0062—0062 | 115 | 已接入，验收见交接 |
+| 24 | 北姑射之山 | source-04-0063—0064 | 115、116 | 已接入，验收见交接 |
+| 25 | 南姑射之山 | source-04-0065—0065 | 116 | 已接入，验收见交接 |
+| 26 | 碧山 | source-04-0066—0066 | 116 | 已接入，验收见交接 |
+| 27 | 維氏之山 | source-04-0067—0068 | 116 | 已接入，验收见交接 |
+| 28 | 姑逢之山 | source-04-0069—0071 | 116 | 已接入，验收见交接 |
+| 29 | 鳬麗之山 | source-04-0072—0074 | 116、117 | 已接入，验收见交接 |
+| 30 | 䃌山 | source-04-0075—0078 | 117 | 已接入，验收见交接 |
+| 31 | 次二总括与祭礼 | source-04-0079—0081 | 117 | 已接入，验收见交接 |
+| 32 | 尸胡之山 | source-04-0082—0084 | 118 | 已接入，验收见交接 |
+| 33 | 岐山 | source-04-0085—0085 | 118 | 已接入，验收见交接 |
+| 34 | 諸鈎之山 | source-04-0086—0087 | 118 | 已接入，验收见交接 |
+| 35 | 中父之山 | source-04-0088—0088 | 118 | 已接入，验收见交接 |
+| 36 | 胡射之山 | source-04-0089—0089 | 118 | 已接入，验收见交接 |
+| 37 | 孟子之山 | source-04-0090—0093 | 118、119 | 已接入，验收见交接 |
+| 38 | 跂踵之山 | source-04-0094—0099 | 119 | 已接入，验收见交接 |
+| 39 | 踇隅之山 | source-04-0100—0102 | 120 | 已接入，验收见交接 |
+| 40 | 無皐之山 | source-04-0103—0105 | 120 | 已接入，验收见交接 |
+| 41 | 次三总括与祭礼 | source-04-0106—0108 | 120 | 已接入，验收见交接 |
+| 42 | 北號之山 | source-04-0109—0113 | 121 | 已接入，验收见交接 |
+| 43 | 旄山 | source-04-0114—0116 | 121 | 已接入，验收见交接 |
+| 44 | 東始之山 | source-04-0117—0121 | 121、122 | 已接入，验收见交接 |
+| 45 | 女烝之山 | source-04-0122—0124 | 122 | 已接入，验收见交接 |
+| 46 | 欽山 | source-04-0125—0127 | 122、123 | 已接入，验收见交接 |
+| 47 | 子桐之山 | source-04-0128—0130 | 123 | 已接入，验收见交接 |
+| 48 | 剡山 | source-04-0131—0133 | 123 | 已接入，验收见交接 |
+| 49 | 太山 | source-04-0134—0138 | 123、124 | 已接入，验收见交接 |
+| 50 | 次四总括 | source-04-0139—0140 | 124 | 已接入，验收见交接 |
+| 51 | 东山经篇末总计 | source-04-0141—0141 | 124 | 已接入，验收见交接 |
 
 - 跨行与形貌风险以data/dongshan-edition-review.json各阶段note为准；保留当康、蜚、合窳与东山山列既有稳定ID。
 
@@ -239,17 +239,14 @@
 | `beast-xuangui` | 旋龟 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-gudiao` | 蛊雕 | 《山海经》 | 常规入口 | 《南山经》 |
 | `beast-qiongqi-hainei` | 穷奇（海内北经） | 《山海经》 | 常规入口 | 《海内北经》 |
-| `beast-dangkang` | 当康 | 《山海经》 | 常规入口 | 《东山经》 |
 | `beast-zhuyan` | 朱厌 | 《山海经》 | 常规入口 | 《西山经》 |
 | `beast-yingzhao` | 英招 | 《山海经》 | 常规入口 | 《西山经》 |
 | `beast-wenyaoyu` | 文鳐鱼 | 《山海经》 | 常规入口 | 《西山经》 |
-| `beast-fei` | 蜚 | 《山海经》 | 常规入口 | 《东山经》 |
 | `beast-qiangliang` | 彊良（强良） | 《山海经》 | 常规入口 | 《大荒北经》 |
 | `beast-zhulong` | 烛龙 | 《山海经》 | 常规入口 | 《大荒北经》 |
 | `beast-xiangliu` | 相柳 | 《山海经》 | 常规入口 | 《大荒北经》 |
 | `beast-kaiming` | 开明兽 | 《山海经》 | 常规入口 | 《海内西经》 |
 | `beast-phoenix` | 凤皇 | 《山海经》 | 常规入口 | 《南山经》 |
-| `beast-heyu` | 合窳 | 《山海经》 | 常规入口 | 《东山经》 |
 | `beast-guanguan` | 灌灌 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-nanshan-lu` | 鯥 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-nanshan-lei` | 𩔗 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -468,6 +465,29 @@
 | `beast-dongshan-yao-yigao` | 珧（嶧皐） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-dongshan-zhubie-geshan-head` | 珠蟞魚（葛山之首） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `beast-dongshan-qiuyu-yue` | 犰狳（餘峩） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-large-snake` | 大蛇（东山文本索引） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-zhunou-gengshan` | 朱獳 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-lihu-luqi` | 𪁐鶘（盧其） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-bibi-gufeng` | 獙獙（姑逢） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-longzhi-fuli` | 蠪姪 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-youyou-zhenshan` | 峳峳 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-jiegou-zhenshan` | 絜鈎 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-yuanhu-shihu` | 妴胡 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-qin-zhugou` | 𥧌魚（諸鈎） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-zhan-mengzi` | 鱣（孟子） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-wei-mengzi` | 鮪（孟子） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-xigui-qizhong` | 蠵龜（深澤） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-gege-qizhong` | 鮯鮯之魚 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-jingjing-muyu` | 精精（踇隅） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-xieju-beihao` | 猲狙 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-qique-beihao` | 鬿雀 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-qiu-maoshan` | 鱃魚（东山文本索引） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-zi-dongshi` | 茈魚（東始） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-bo-nvzheng` | 薄魚（女烝） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dangkang` | 当康 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-dongshan-hua-zitong` | 䱻魚（子桐） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-heyu` | 合窳 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `beast-fei` | 蜚 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-qingqiu` | 青丘之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-kunlun` | 昆仑之墟 | 《山海经》 | 常规入口 | 《海内西经》 |
 | `place-yushan` | 玉山 | 《山海经》 | 常规入口 | 《西山经》 |
@@ -1099,7 +1119,7 @@
 | `water-beishan-yu-youdu-mufeng` | 浴水（幽都相邻记述） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-beishan-he` | 河（北山经） | 《山海经》 | 常规入口 | 《山海经·北山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-dongshan-shi` | 食水（东山文本索引） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
-| `water-dongshan-sea` | 海（东山首列水文） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-sea` | 海（东山水文文本索引） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `material-dongshan-jade-leishan` | 玉（藟山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `material-dongshan-gold-leishan` | 金（藟山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-dongshan-hu` | 湖水（藟山、栒状文本索引） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -1156,6 +1176,73 @@
 | `plant-dongshan-jing-yue` | 荆（餘峩） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `plant-dongshan-qi-yue` | 𦬊（餘峩） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `water-dongshan-unnamed-dufu` | 水（杜父未名） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-shuibi-geng` | 水碧（耿山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-sand-luqi` | 沙（盧其） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-stone-luqi` | 石（盧其） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-sha-luqi` | 沙水（盧其） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-cen` | 涔水 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-unnamed-gushe` | 水（姑射未名） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-stone-north-gushe` | 石（北姑射） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-unnamed-south-gushe` | 水（南姑射未名） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-bi-bishan` | 碧（碧山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-water-jade-bishan` | 水玉（碧山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-gold-weishi` | 金（維氏） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-jade-weishi` | 玉（維氏） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-yuan-weishi` | 原水（維氏） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-sha-marsh` | 沙澤（原水受水体） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-gold-gufeng` | 金（姑逢） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-jade-gufeng` | 玉（姑逢） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-gold-fuli` | 金（鳬麗） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-jade-fuli` | 玉（鳬麗） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-zhenstone-fuli` | 箴石（鳬麗） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-zhen` | 䃌水 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-hu-marsh` | 湖澤（䃌山东望） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-gold-shihu` | 金（尸胡） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-jade-shihu` | 玉（尸胡） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-ji-shihu` | 𣗥（尸胡） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-peach-qi` | 桃（岐山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-plum-qi` | 李（岐山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-sand-zhugou` | 沙（諸鈎） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-stone-zhugou` | 石（諸鈎） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-sand-zhongfu` | 沙（中父） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-sand-hushe` | 沙（胡射） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-stone-hushe` | 石（胡射） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-zi-mengzi` | 梓（孟子） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-tong-mengzi` | 桐（孟子） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-peach-mengzi` | 桃（孟子） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-plum-mengzi` | 李（孟子） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-junpu-mengzi` | 菌蒲（孟子） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-biyang` | 碧陽水（孟子） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-jade-qizhong` | 玉（跂踵） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-shen-marsh` | 深澤（跂踵） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-gold-muyu` | 金（踇隅） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-jade-muyu` | 玉（踇隅） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-ochre-muyu` | 赭（踇隅） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-you-sea` | 幼海（無皐南望） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-north-sea` | 北海（北號所临） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-unnamed-tree-beihao` | 木（北號未名） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-cangti` | 蒼體之水 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-zhan-water` | 展水 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-cang-jade-dongshi` | 蒼玉（東始） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-qi-tree-dongshi` | 𦬊木（東始） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-ci-dongshi` | 泚水（東始） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-fine-shell-dongshi` | 羙貝（東始水文） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-shigao` | 石膏水（女烝） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-ge-water` | 鬲水 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-gold-qinshan` | 金（欽山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-jade-qinshan` | 玉（欽山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-shi-qinshan` | 師水（欽山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-gao-marsh` | 皐澤（師水受水体） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-patterned-shell-qin` | 文貝（欽山水文） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-zitong` | 子桐之水 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-yuru-marsh` | 餘如之澤 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-gold-yanshan` | 金（剡山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-jade-yanshan` | 玉（剡山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-gold-taishan-range4` | 金（太山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-jade-taishan-range4` | 玉（太山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-zhenwood-tai4` | 楨木（太山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-gou-tai4` | 鈎水（太山） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `water-dongshan-lao-water` | 勞水 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-zhaoyao` | 招摇之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-nanshan-yuanyi` | 猨翼之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -1393,6 +1480,37 @@
 | `passage-dongshan-geshan-head` | 葛山之首 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-dongshan-yue` | 餘峩之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `passage-dongshan-dufu` | 杜父之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-gengshan` | 耿山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-luqi` | 盧其之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-gushe` | 姑射之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-north-gushe` | 北姑射之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-south-gushe` | 南姑射之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-bishan` | 碧山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-weishi` | 維氏之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-gufeng` | 姑逢之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-fuli` | 鳬麗之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-zhenshan` | 䃌山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-range2-summary` | 次二总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-shihu` | 尸胡之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-qishan` | 岐山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-zhugou` | 諸鈎之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-zhongfu` | 中父之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-hushe` | 胡射之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-mengzi` | 孟子之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-qizhong` | 跂踵之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-muyu` | 踇隅之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-wugao` | 無皐之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-range3-summary` | 次三总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-beihao` | 北號之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-maoshan` | 旄山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-dongshi` | 東始之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-nvzheng` | 女烝之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-qinshan` | 欽山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-zitong` | 子桐之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-yanshan` | 剡山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-taishan-range4` | 太山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-range4-summary` | 次四总括 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `passage-dongshan-book-total` | 东山经篇末总计 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-tangting` | 堂庭之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-yuanyi` | 猨翼之山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-nanshan-di` | 祗山 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |
@@ -1726,6 +1844,51 @@
 | `animal-dongshan-zhong-yue` | 螽（餘峩灾异） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `animal-dongshan-huang-insects-yue` | 蝗（餘峩灾异） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `place-dongshan-dufu` | 杜父之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-gengshan` | 耿山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-luqi` | 盧其之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-gushe` | 姑射之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-north-gushe` | 北姑射之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-south-gushe` | 南姑射之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-bishan` | 碧山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-weishi` | 維氏之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-gufeng` | 姑逢之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-fuli` | 鳬麗之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-zhenshan` | 䃌山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-dongshan-range2-summary` | 次二总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `deity-dongshan-humanface-antlers-range2` | 兽身人面载觡神（东次二） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-dongshan-chicken-range2` | 祠毛一鷄（次二祭礼） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-dongshan-bi-burial-range2` | 一璧瘞（次二祭礼） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-shihu` | 尸胡之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-xiang-shihu` | 𦍙山（尸湖北望） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-qishan` | 岐山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `animal-dongshan-tiger-qi` | 虎（岐山泛称） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-zhugou` | 諸鈎之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-zhongfu` | 中父之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-hushe` | 胡射之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-mengzi` | 孟子之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `animal-dongshan-mi-mengzi` | 麋（孟子泛称） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `animal-dongshan-lu-mengzi` | 鹿（孟子泛称） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-qizhong` | 跂踵之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-muyu` | 踇隅之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-wugao` | 無皐之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `plant-dongshan-fu-wood-wugao` | 榑木（無皐东望） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `wind-dongshan-wind-wugao` | 风（無皐） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-dongshan-range3-summary` | 次三总括与祭礼 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `deity-dongshan-human-ramhorn-range3` | 人身羊角神（东次三） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-dongshan-ram-offering-range3` | 一牡羊（次三祭礼） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `material-dongshan-millet-range3` | 𮮐（次三祭米） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-beihao` | 北號之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-maoshan` | 旄山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-dongshi` | 東始之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-nvzheng` | 女烝之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-qinshan` | 欽山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-zitong` | 子桐之山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-yanshan` | 剡山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `animal-dongshan-insects-yanshan` | 蟲（合窳食性泛称） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `animal-dongshan-snakes-yanshan` | 蛇（合窳食性泛称） | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `place-dongshan-taishan-range4` | 太山 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-dongshan-range4-summary` | 次四总括 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
+| `rite-dongshan-book-total` | 东山经篇末总计 | 《山海经》 | 常规入口 | 《山海经·东山经》（《四部丛刊》景明成化本，郭璞传） |
 | `01-01` | 盘古开天 | 其他古籍 | 常规入口 | 《三五历纪》（三国·吴·徐整），佚文见《艺文类聚》卷一引、《太平御览》卷二引 |
 | `01-02` | 女娲造人 | 其他古籍 | 常规入口 | 《风俗通义·皇霸》卷一（东汉·应劭），见王利器《风俗通义校注》 |
 | `01-03` | 女娲补天 | 其他古籍 | 非默认条目 | 《淮南子·览冥训》（西汉·刘安），高诱注 |
@@ -1826,7 +1989,7 @@
 - `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。
 - `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。
 - `python data/build_xishan.py`：合并西山经82段与508张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。
-- `python data/build_dongshan.py`：合并东山前20段/102双语卡，保留其他篇与东山既有稳定ID；东山插画通过prepare-nanshan-artwork.py --chapter dongshan导出，之后重建inventory/audit。
+- `python data/build_dongshan.py`：合并东山全篇51段/237双语卡（含3张稳定旧卡接入），保留其他篇与东山既有稳定ID；东山插画通过prepare-nanshan-artwork.py --chapter dongshan导出，之后重建inventory/audit。
 - `python data/build_beishan.py`：合并已核北山经全篇92段及507张双语卡（含复用諸犍、精衛、發鳩），保留其他篇目与旧ID；`python frontend/scripts/prepare-nanshan-artwork.py --chapter beishan`仅导出已审图。随后重建全书清单和本盘点。
 - `python frontend/scripts/prepare-nanshan-artwork.py --chapter xishan`：仅导出已审核西山经插画。随后运行全书清单和本盘点构建器更新统计。
 - `python data/audit_shanhaijing.py`：离线重建本清单和网页来源分类。
