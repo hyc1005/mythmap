@@ -853,6 +853,19 @@
       "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-da1f3608-5cb4-4ab6-a860-6619dc72e420.png",
       "sha256": "c6255cbe7242135d67b56b88a69b475db88d60de7e04088573b4a1c3307621e3",
       "review_note": "梟状白首、双目短钩喙、无角羽、褐身收翼回首、双爪足与短尾；体色、面盘和姿态属解释，不据黄鸟名定黄身。"
+    },
+    {
+      "name": "creature-dongdong-taixi",
+      "entry_id": "beast-beishan-dongdong-taixi",
+      "prompt": "Use case: illustration-story. One complete Dongdong 䍶䍶 from the Shanhaijing Mount Taixi, isolated on a TRULY TRANSPARENT square canvas with generous 10% clear margins. Reference ONLY the Chinese carved woodblock medium: bold dark-brown contour, flat warm ivory and muted ochre, fine short incised wool curls, sparse print grain; do not copy the reference bird face, pointed flame ornament, wings or red tail. Text: SHEEP-shaped, exactly ONE horn, exactly ONE eye, the eye BEHIND THE EAR (如羊一角一目目在耳後). Make a compact thick-wool sheep, four ordinary cloven-hoof legs and a short sheep tail, standing quietly in profile facing RIGHT, shoulders low and head gently lowered. Sheep muzzle, not horse/dog/human/cattle. Anatomical priority: ONE visible ordinary sheep ear high on the head points forward toward the muzzle; the ONE gold-rimmed eye with black pupil is visibly placed on the REAR SIDE of the skull immediately BEHIND that ear, toward the neck (left of the ear in this right-facing view). The usual eye position between ear and nose must be entirely BLANK wool/skin, no normal face eye on either side, no decorative circles or dots that look like additional eyes. The rear ear can remain occluded. ONE short unbranched tapered horn rises from the central forehead, distinct from the flat pointed ear; no pair of curling ram horns, no antlers. A tiny dark nostril at the end of the muzzle must clearly be a nostril, not another eye. Whole body including all hooves and horn inside the margins, no ground, rocks, landscape, border, seal, text, numbers, human face, wings, flames, second eye or second horn. Warm ivory sheep fleece with quiet ochre belly/legs, soft scalloped wool rather than repeated flame panels. Four hooves, horn shape, ear visibility, color and stance are artistic choices; do not add organs beyond the text.",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "status": "reviewed",
+      "source_file": "creature-dongdong-taixi-v1.png",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a16b76-d318-76f3-9d88-37e99e1d05b0/exec-63da7554-fcd0-4576-8785-a97f43fb20fd.png",
+      "sha256": "6ee1bcb36e24d46054c6d52019dfc7a0c35059036829113cc11c6ffd3c0e11e9",
+      "review_note": "羊状绵毛身、单一无分叉角、唯一金边目位于可见耳的后侧，面前无通常位置的眼；鼻端黑点为鼻孔。四裂蹄、短羊尾完整可辨；角形、毛色、耳可见性和站姿属解释，无翼或人面。"
     }
   ]
 }

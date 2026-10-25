@@ -638,6 +638,9 @@
   "beast-beishan-huomin-xiushan": {
     "family": "shanhaijing"
   },
+  "beast-beishan-dongdong-taixi": {
+    "family": "shanhaijing"
+  },
   "place-qingqiu": {
     "family": "shanhaijing"
   },
@@ -2378,6 +2381,69 @@
   "water-beishan-zhize-dunyu": {
     "family": "shanhaijing"
   },
+  "material-beishan-gold-zheshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-zheshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-iron-zheshan": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-liju-zheshan": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-green-jade-weilong": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-weilong": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-iron-weilong": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-fei-weilong": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-gaoze-weilong": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-changtie-weilong": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-daze-weilong": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-leishi-weilong": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-shiyu-baima": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-iron-baima": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-red-copper-baima": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-muma-baima": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-kongsang-north": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-gold-taixi": {
+    "family": "shanhaijing"
+  },
+  "material-beishan-jade-taixi": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-lou-taixi": {
+    "family": "shanhaijing"
+  },
+  "water-beishan-yenu-taixi": {
+    "family": "shanhaijing"
+  },
   "water-beishan-he": {
     "family": "shanhaijing"
   },
@@ -2970,6 +3036,21 @@
     "family": "shanhaijing"
   },
   "passage-beishan-dunyu": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-zheshan": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-weilong": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-baima": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-kongsang-north": {
+    "family": "shanhaijing"
+  },
+  "passage-beishan-taixi": {
     "family": "shanhaijing"
   },
   "place-nanshan-tangting": {
@@ -3768,6 +3849,21 @@
     "family": "shanhaijing"
   },
   "place-beishan-dunyu": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-zheshan": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-weilong": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-baima": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-kongsang-north": {
+    "family": "shanhaijing"
+  },
+  "place-beishan-taixi": {
     "family": "shanhaijing"
   },
   "01-01": {

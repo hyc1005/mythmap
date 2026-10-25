@@ -213,13 +213,13 @@ def build():
                 {'source_units': [290, 297], 'note': '次三总括与篇末总计被重复切分；须核290—296及297。'}]},
         'stable_existing_ids': ['03-04', 'beast-jingwei', 'beast-zhu-jian', 'place-fajiu', 'place-north-ranges'],
         'title_font_supplement': {
-            'family': 'Noto Serif SC', 'characters': '單机華漨求䑏䟽何儵孟寓帶彭栢椐橐虢譙駝鰼䑕幽張杠極樗熏聮葵蔓薤訾雘韭鴳鵁鵺䐆㗸侯匠柘潘磁竦薨那韓題鮭鳲䰽䲃刚夕懐枳渾瀤獄窫鮨鴈埋牲狕珪瘗隄鮮䧑䳑勝岐晉爾縣蒼酸閭雍鮪卭狂狍獨鉤頭餘㶌䮝䱇䴅丸乾决姑屋教暨梁歸洹澠璧發聞胡賁領飛鶋鶌糈树脩䃤京椒秦與薄藇藷販囷戾歐沁沮泰洳滏漳濝蚤蟲衛謁錫鴣䵸栒泜洧溹繡芍藥鱯黽', 'weights': [400, 700],
+            'family': 'Noto Serif SC', 'characters': '單机華漨求䑏䟽何儵孟寓帶彭栢椐橐虢譙駝鰼䑕幽張杠極樗熏聮葵蔓薤訾雘韭鴳鵁鵺䐆㗸侯匠柘潘磁竦薨那韓題鮭鳲䰽䲃刚夕懐枳渾瀤獄窫鮨鴈埋牲狕珪瘗隄鮮䧑䳑勝岐晉爾縣蒼酸閭雍鮪卭狂狍獨鉤頭餘㶌䮝䱇䴅丸乾决姑屋教暨梁歸洹澠璧發聞胡賁領飛鶋鶌糈树脩䃤京椒秦與薄藇藷販囷戾歐沁沮泰洳滏漳濝蚤蟲衛謁錫鴣䵸栒泜洧溹繡芍藥鱯黽䍶戱敞歷液漊礨維', 'weights': [400, 700],
             'path': 'frontend/public/fonts/shanhai-title-beishan.woff2',
-            'source_url': 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E5%96%AE%E6%9C%BA%E8%8F%AF%E6%BC%A8%E6%B1%82%E4%91%8F%E4%9F%BD%E4%BD%95%E5%84%B5%E5%AD%9F%E5%AF%93%E5%B8%B6%E5%BD%AD%E6%A0%A2%E6%A4%90%E6%A9%90%E8%99%A2%E8%AD%99%E9%A7%9D%E9%B0%BC%E4%91%95%E5%B9%BD%E5%BC%B5%E6%9D%A0%E6%A5%B5%E6%A8%97%E7%86%8F%E8%81%AE%E8%91%B5%E8%94%93%E8%96%A4%E8%A8%BE%E9%9B%98%E9%9F%AD%E9%B4%B3%E9%B5%81%E9%B5%BA%E4%90%86%E3%97%B8%E4%BE%AF%E5%8C%A0%E6%9F%98%E6%BD%98%E7%A3%81%E7%AB%A6%E8%96%A8%E9%82%A3%E9%9F%93%E9%A1%8C%E9%AE%AD%E9%B3%B2%E4%B0%BD%E4%B2%83%E5%88%9A%E5%A4%95%E6%87%90%E6%9E%B3%E6%B8%BE%E7%80%A4%E7%8D%84%E7%AA%AB%E9%AE%A8%E9%B4%88%E5%9F%8B%E7%89%B2%E7%8B%95%E7%8F%AA%E7%98%97%E9%9A%84%E9%AE%AE%E4%A7%91%E4%B3%91%E5%8B%9D%E5%B2%90%E6%99%89%E7%88%BE%E7%B8%A3%E8%92%BC%E9%85%B8%E9%96%AD%E9%9B%8D%E9%AE%AA%E5%8D%AD%E7%8B%82%E7%8B%8D%E7%8D%A8%E9%89%A4%E9%A0%AD%E9%A4%98%E3%B6%8C%E4%AE%9D%E4%B1%87%E4%B4%85%E4%B8%B8%E4%B9%BE%E5%86%B3%E5%A7%91%E5%B1%8B%E6%95%99%E6%9A%A8%E6%A2%81%E6%AD%B8%E6%B4%B9%E6%BE%A0%E7%92%A7%E7%99%BC%E8%81%9E%E8%83%A1%E8%B3%81%E9%A0%98%E9%A3%9B%E9%B6%8B%E9%B6%8C%E7%B3%88%E6%A0%91%E8%84%A9%E4%83%A4%E4%BA%AC%E6%A4%92%E7%A7%A6%E8%88%87%E8%96%84%E8%97%87%E8%97%B7%E8%B2%A9%E5%9B%B7%E6%88%BE%E6%AD%90%E6%B2%81%E6%B2%AE%E6%B3%B0%E6%B4%B3%E6%BB%8F%E6%BC%B3%E6%BF%9D%E8%9A%A4%E8%9F%B2%E8%A1%9B%E8%AC%81%E9%8C%AB%E9%B4%A3%E4%B5%B8%E6%A0%92%E6%B3%9C%E6%B4%A7%E6%BA%B9%E7%B9%A1%E8%8A%8D%E8%97%A5%E9%B1%AF%E9%BB%BD&display=swap',
-            'sha256': '333f3b1a99096bedce0853a7598e2e313a2401b615db3d63ec062c0bc0577c3e',
+            'source_url': 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E5%96%AE%E6%9C%BA%E8%8F%AF%E6%BC%A8%E6%B1%82%E4%91%8F%E4%9F%BD%E4%BD%95%E5%84%B5%E5%AD%9F%E5%AF%93%E5%B8%B6%E5%BD%AD%E6%A0%A2%E6%A4%90%E6%A9%90%E8%99%A2%E8%AD%99%E9%A7%9D%E9%B0%BC%E4%91%95%E5%B9%BD%E5%BC%B5%E6%9D%A0%E6%A5%B5%E6%A8%97%E7%86%8F%E8%81%AE%E8%91%B5%E8%94%93%E8%96%A4%E8%A8%BE%E9%9B%98%E9%9F%AD%E9%B4%B3%E9%B5%81%E9%B5%BA%E4%90%86%E3%97%B8%E4%BE%AF%E5%8C%A0%E6%9F%98%E6%BD%98%E7%A3%81%E7%AB%A6%E8%96%A8%E9%82%A3%E9%9F%93%E9%A1%8C%E9%AE%AD%E9%B3%B2%E4%B0%BD%E4%B2%83%E5%88%9A%E5%A4%95%E6%87%90%E6%9E%B3%E6%B8%BE%E7%80%A4%E7%8D%84%E7%AA%AB%E9%AE%A8%E9%B4%88%E5%9F%8B%E7%89%B2%E7%8B%95%E7%8F%AA%E7%98%97%E9%9A%84%E9%AE%AE%E4%A7%91%E4%B3%91%E5%8B%9D%E5%B2%90%E6%99%89%E7%88%BE%E7%B8%A3%E8%92%BC%E9%85%B8%E9%96%AD%E9%9B%8D%E9%AE%AA%E5%8D%AD%E7%8B%82%E7%8B%8D%E7%8D%A8%E9%89%A4%E9%A0%AD%E9%A4%98%E3%B6%8C%E4%AE%9D%E4%B1%87%E4%B4%85%E4%B8%B8%E4%B9%BE%E5%86%B3%E5%A7%91%E5%B1%8B%E6%95%99%E6%9A%A8%E6%A2%81%E6%AD%B8%E6%B4%B9%E6%BE%A0%E7%92%A7%E7%99%BC%E8%81%9E%E8%83%A1%E8%B3%81%E9%A0%98%E9%A3%9B%E9%B6%8B%E9%B6%8C%E7%B3%88%E6%A0%91%E8%84%A9%E4%83%A4%E4%BA%AC%E6%A4%92%E7%A7%A6%E8%88%87%E8%96%84%E8%97%87%E8%97%B7%E8%B2%A9%E5%9B%B7%E6%88%BE%E6%AD%90%E6%B2%81%E6%B2%AE%E6%B3%B0%E6%B4%B3%E6%BB%8F%E6%BC%B3%E6%BF%9D%E8%9A%A4%E8%9F%B2%E8%A1%9B%E8%AC%81%E9%8C%AB%E9%B4%A3%E4%B5%B8%E6%A0%92%E6%B3%9C%E6%B4%A7%E6%BA%B9%E7%B9%A1%E8%8A%8D%E8%97%A5%E9%B1%AF%E9%BB%BD%E4%8D%B6%E6%88%B1%E6%95%9E%E6%AD%B7%E6%B6%B2%E6%BC%8A%E7%A4%A8%E7%B6%AD&display=swap',
+            'sha256': '39f28cb8a0a285e827b4cc5d3e5dfec2aebee996ca3037f7b92fdcec9e0119e0',
             'license': 'frontend/public/fonts/noto-serif-sc-LICENSE.txt',
             'rebuild': 'python frontend/scripts/supplement-title-font.py',
-            'limits': '151字小子集随站点发布，不在运行时请求Google；原标题与罕字字库不改，既有30字本机依赖累计补5，另有25字限制，见独立ExtB子集记录。'},
+            'limits': '159字小子集随站点发布，不在运行时请求Google；原标题与罕字字库不改，既有30字本机依赖累计补5，另有25字限制，见独立ExtB子集记录。'},
         'limits': NOTE + '本批没有生物插画任务，7卡及阅读段均无图；不把西山同名水域或其他山的植物图用于本段。',
         'next': {'name': '求如之山', 'source_units': [5, 10], 'captured_pages': [76, 77],
                  'status': 'pending_facsimile_review', 'notes': '复用76页，首次核存77页；0009牛尾及水马注的实际页界须核。北山滑魚如鱓赤背，不借西山滑魚蛇状四足；水馬文臂牛尾与郭注前脚释义分开。'}}
@@ -228,7 +228,7 @@ def build():
     write('frontend/public/data/myth-world.json', world)
     write('frontend/src/locale-content-en.json', english)
     write('data/beishan-edition-review.json', review)
-    print('Built Northern first range and third range through Dunyu: 72 passages, 411 cards; later passages remain pending')
+    print('Built Northern first range and third range through Taixi: 77 passages, 438 cards; later passages remain pending')
 
 
 if __name__ == '__main__':

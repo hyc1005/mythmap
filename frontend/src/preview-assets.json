@@ -4858,5 +4858,23 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/beishan/creature-dongdong-taixi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/creature-dongdong-taixi-v1-card.webp",
+      "bytes": 32702,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/creature-dongdong-taixi-v1-preview.webp",
+      "bytes": 61028,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }
