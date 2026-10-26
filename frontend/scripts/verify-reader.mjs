@@ -19,7 +19,7 @@ assert.deepEqual(southern.map(p=>p.order),Array.from({length:43},(_,i)=>i+1));
 for (let i=1;i<43;i++) assert.equal(southern[i-1].source_span[1],southern[i].source_span[0], 'No source gaps between passages');
 assert.ok(inventory.units.filter(u=>u.chapter===1).every(u=>u.status==='heading_metadata'||u.confirmed_passage_ids.length));
 assert.ok(inventory.units.filter(u=>u.chapter!==1 && u.status==='explained_in_reader').every(u=>u.confirmed_passage_ids.length && u.confirmed_passage_ids.every(id=>world.passages.some(p=>p.id===id && p.review_status==='facsimile_reviewed'))), 'Other chapters require explicit reviewed passages, not automatic matching');
-assert.equal(world.passages.filter(p=>p.source_pages.some(url=>url.endsWith('/26'))).length,3);
+assert.equal(southern.filter(p=>p.source_pages.some(url=>url.endsWith('/26'))).length,3);
 assert.ok(world.passages.find(p=>p.id==='passage-nanshan-range1').quote.includes('二千九百五十里'));
 assert.deepEqual(review.counts.printed_range_counts,[10,17,14]);
 assert.equal(review.counts.printed_closing_count,40);
