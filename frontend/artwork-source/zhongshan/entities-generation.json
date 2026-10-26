@@ -198,6 +198,151 @@
       "reference_images": [
         "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
       ]
+    },
+    {
+      "name": "creature-yin-fuzhu",
+      "entry_id": "beast-zhongshan-yin-fuzhu",
+      "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. A compact HAO/MO-like furry quadruped 䴦 with HUMAN EYES, not a human face. Ancient text: shaped like a hao (generalized small stout mammal), human eyes. Rounded low body, short muzzle, small round ears, four short feet, single low tail. Rust-brown fur with dark umber lower legs, pale muzzle, almond human eyes visibly distinctive. Curled seated posture looking left. No horns, scales, wings or mask markings identifying a modern raccoon.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-bf00fbcb-7806-48af-a304-4f6313b449bf.png",
+      "source_file": "creature-yin-fuzhu-v1.png",
+      "sha256": "b6b73cfc82957fd215c63cb37febab820d7403d41a72a3dfca81c1337229e03d",
+      "status": "reviewed",
+      "review_note": "已逐图核对正文/郭注形貌与完整器官；未定细节、配色及姿态为艺术解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "creature-xiqu-li",
+      "entry_id": "beast-zhongshan-xiqu-li",
+      "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. XIQU 犀渠: one bovine-shaped beast with a DARK BLUE-GREEN body, infant-like cry is SOUND only. Massive low ox torso, ordinary bovine head and broad muzzle, two small modest ox horns as artistic detail, four hooves, one long ox tail. Deep indigo hide with subdued turquoise carved highlights. Three-quarter charging pose facing left, head lowered, no human/baby face, no rhino horn, no wings. Do not depict violence.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-0a4d967b-8349-4fbb-8068-2859e8861d3d.png",
+      "source_file": "creature-xiqu-li-v1.png",
+      "sha256": "32bc4b816b62ed2ac05f22f8093a5ec22357d64874850d7820492d2d32c714cf",
+      "status": "reviewed",
+      "review_note": "已逐图核对正文/郭注形貌与完整器官；未定细节、配色及姿态为艺术解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "creature-jie-li",
+      "entry_id": "beast-zhongshan-jie-li",
+      "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. JIE 𤢺: dog-like body WITH SCALES, hair like PIG BRISTLES emerging BETWEEN scales (Guo commentary). One slender alert canid head, narrow muzzle, four canine paws, one slim uncurled dog tail. Olive-gray overlapping scales, stiff dark umber bristles clearly projecting between scale seams along neck/back/flanks. Standing slightly twisted looking back right. No horns, wings, reptile feet or human face. Do not use dragon head or fish tail.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-b8e569b7-84b8-4bbd-bb30-c4afad424718.png",
+      "source_file": "creature-jie-li-v1.png",
+      "sha256": "2ac2f49fb6ead31d6263c086b8549b02307c292edf529b8e97f322f969a73a73",
+      "status": "reviewed",
+      "review_note": "已逐图核对正文/郭注形貌与完整器官；未定细节、配色及姿态为艺术解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "deity-humanbeast-range4",
+      "entry_id": "deity-zhongshan-humanbeast-range4",
+      "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. Human-faced BEAST-BODIED mountain deity, Central fourth-range summary. Human FACE, full quadrupedal BEAST torso. Since beast species unspecified, use a restrained generalized smooth mammal body, four ordinary paws and short plain tail, WITHOUT any tiger stripes, leopard spots, animal species horns or human hands. Mature broad calm male human face, short swept hair integrated into neck, no clothing. Muted warm gray-brown body, pale face, dark carved hatching. Reclining horizontal body, face toward viewer, all four feet countable. No wings or serpentine tail.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-2eca685f-a497-49f6-8945-20b9b1cfbba6.png",
+      "source_file": "deity-humanbeast-range4-v1.png",
+      "sha256": "65eca7796d15377c607fcb6ee113764a26d3258fb9d7142c6426a36e98fadfa9",
+      "status": "reviewed",
+      "review_note": "已逐图核对正文/郭注形貌与完整器官；未定细节、配色及姿态为艺术解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "bird-bi-mu",
+      "entry_id": "beast-zhongshan-red-bi-mu",
+      "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. RED BI 赤鷩, commentary identifies pheasant. ONE generalized red pheasant, no exact modern species identification. Crimson and burnt orange feathered torso, small dark head with ivory cheek carve, two ordinary bird feet, modest long swept tail, compact folded wings. Side profile head left, one foot lifted in a gentle step. No third eye, external mammal ears, human face, peacock eye markings, giant crest or wings spread like an eagle. Long tail details and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-92fe2e72-365d-4a49-9b52-4cd0345710da.png",
+      "source_file": "bird-bi-mu-v1.png",
+      "sha256": "478f14e9180608a30d6cc3b17c09ceaba5d092e01ef0916ebaecdd2571a9676f",
+      "status": "reviewed",
+      "review_note": "已逐图核对正文/郭注形貌与完整器官；未定细节、配色及姿态为艺术解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "bird-jue-shou",
+      "entry_id": "beast-zhongshan-jue-shou",
+      "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. THREE-EYED OWL-LIKE bird 𩿁 from Mount Shou. Exactly THREE eyes: two ordinary side/front eyes PLUS one clearly separate central forehead eye above them. Has TWO visible external ear-like tufts/ears as required by 有耳. One owl-like head and compact bird torso, two folded wings, two taloned feet and a short tail. All three eyes must be clearly countable with space around the forehead eye. Warm ochre/copper body with ivory facial disk and sage carved feather accents. Frontal perched-in-air stance, no branch or ground. No second head or additional eyes on feathers, no wings on head.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-37dfac06-7b73-4a2f-aec2-b1d3585cbc36.png",
+      "source_file": "bird-jue-shou-v1.png",
+      "sha256": "52896478cd7412bcd818643a0bda761931fd93bc8245575773cf8bcb2c8f6a22",
+      "status": "reviewed",
+      "review_note": "已逐图核对正文/郭注形貌与完整器官；未定细节、配色及姿态为艺术解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "creature-jing-shi",
+      "entry_id": "beast-zhongshan-jing-shi",
+      "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. JING 麖 in Guo commentary: DEER-LIKE, SMALL, BLACK. A small graceful black deer without antlers (not stated), short neck, large deer ears, delicate legs, four narrow hooves, short tail. Charcoal-black coat with subtle warm-gray carved incisions, no white spots, no tiger markings, no horns. Low grazing-like crouched posture head turned left, all four legs visible. No scene, no grass held in mouth. Keep modest body proportions distinct from white four-horned Fuzhu.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-86576203-0974-4ac9-a277-fa24c37991b6.png",
+      "source_file": "creature-jing-shi-v1.png",
+      "sha256": "eb84bde5c6839552bd5756f8283d59d5adfa80d18effe871a552a193d6bec096",
+      "status": "reviewed",
+      "review_note": "已逐图核对正文/郭注形貌与完整器官；未定细节、配色及姿态为艺术解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "turtle-linggui-yangxu",
+      "entry_id": "beast-zhongshan-linggui-yangxu",
+      "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. A single SPIRIT TURTLE from Guo commentary at Yangxu: RED SHELL, BLUE-GREEN PATTERNS, bears a writing/book (負書), emerging from water is textual context only. Paint one ordinary broad turtle with domed cinnabar red shell and abstract blue-green carved markings on shell. Add ONE small plain folded tablet/book resting on shell as an EXPLICIT artistic interpretation of 負書, with abstract blue-green marks but NO legible characters. Four ordinary turtle legs and short single tail, one ordinary turtle head, no snake neck or dragon horns. Broad low three-quarter view facing upper right, muted olive limbs, no water scene, no halo. Artifact placement and turtle anatomy are artistic; no invented sacred script.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-0018a108-7215-43b9-901b-8633494ed731.png",
+      "source_file": "turtle-linggui-yangxu-v1.png",
+      "sha256": "882a55519ecfcc4e44cedaf4c0ef849cabd8aacf6a37a40d7afae30533ca1500",
+      "status": "reviewed",
+      "review_note": "已逐图核对正文/郭注形貌与完整器官；未定细节、配色及姿态为艺术解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "deity-jiaochong-pingfeng",
+      "entry_id": "deity-zhongshan-jiaochong-pingfeng",
+      "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. JIAOCHONG 驕蟲 is HUMAN-SHAPED with exactly TWO HUMAN HEADS. ONE human torso, TWO independently rooted necks side by side, TWO complete human heads clearly separated. TWO human arms/hands and TWO human legs/feet, no extra limbs. Mature man with one clean-shaven face looking left, other short-bearded face looking right, varied calm expressions, simple ochre/tan ancient wrap garment with dark red hem. Upright balanced stance, hands low and separate, no weapons. The insect/chief association is role only: no insect antennae, bee wings, extra insect legs, insect head or bee swarm. No third head, no fused double face, no crown or halo.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-147abbe3-d9f1-4e09-b8ff-55b8e9e36ca6.png",
+      "source_file": "deity-jiaochong-pingfeng-v1.png",
+      "sha256": "d99d6cd612f0afc73ac95157edbb09b6741de8f7c95edcbffbbd7197435daaf7",
+      "status": "reviewed",
+      "review_note": "已逐图核对正文/郭注形貌与完整器官；未定细节、配色及姿态为艺术解释。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ]
+    },
+    {
+      "name": "bird-lingyao-hui",
+      "entry_id": "beast-zhongshan-lingyao-hui",
+      "prompt": "Reframe this same Lingyao bird on a larger transparent canvas: the rightmost body and beak currently touch/crop against the edge. Keep the exact red pheasant, long red tail and blue-green bill and existing woodcut drawing. Scale the entire bird down uniformly and center it, leaving generous fully transparent 10 percent margins on ALL FOUR sides. Ensure the entire beak, right shoulder/chest/body, both feet and all long tail feathers are wholly within canvas without clipping. Do not add any anatomy, text, scene, ground, halo or decoration.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-7a6a91d1-038d-42db-9103-a0b04c5f7324.png",
+      "source_file": "bird-lingyao-hui-v2.png",
+      "sha256": "85e1c631496ff4510ba0d6a6309bf6edc16ad1a2b14b68a7eababe7836c065ab",
+      "status": "reviewed",
+      "review_note": "修订版整鸟、青喙、双足及长红尾完整入框，留透明边距；无火焰、冠、额外器官。",
+      "reference_images": [
+        "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+      ],
+      "revision_history": [
+        {
+          "name": "bird-lingyao-hui",
+          "entry_id": "beast-zhongshan-lingyao-hui",
+          "prompt": "Use case: illustration-story. ONE isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, dark brown carved contours, flat mineral pigments, cream incisions and restrained print grain. TRUE transparent background. Entire subject and all limbs visible with clear margins. No text, border, scene, ground, halo, shadow, gore, other creatures or decorative flames. Unspecified details are artistic interpretation, not canonical. LINGYAO 鴒䳩: mountain-pheasant-shaped, LONG TAIL, RED like cinnabar fire, BLUE-GREEN BEAK. One streamlined pheasant body, red plumage, two ordinary bird legs, folded wings, very long flowing plain red tail, clearly turquoise/blue-green bill. Elegant diagonal upward neck head toward right, long tail curling downward left; one leg slightly lifted. Dark maroon feather outlines with ivory incisions. NO literal flames, phoenix crown, peacock eye-spots, mammal ears, human face or additional eyes. Red body and blue-green bill mandatory; exact feather patterns, feet colors and pose artistic.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-526ef1fe-4ef8-449a-8eb3-7d0c93d0820d.png",
+          "source_file": "bird-lingyao-hui-v1.png",
+          "sha256": "ef9ee66fda066f293a2c28d30cfbf96e9fa30e86c15e8e0cb2b4f03817ca32dd",
+          "status": "needs_revision",
+          "review_note": "初稿右侧轮廓过贴边，修订完整留白。",
+          "reference_images": [
+            "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -48,13 +48,13 @@
       "number": 5,
       "title": "中山经",
       "source_blocks": 614,
-      "explained_blocks": 99,
-      "semantic_passages": 33,
+      "explained_blocks": 180,
+      "semantic_passages": 63,
       "candidate_passages": 200,
-      "pending_candidate_passages": 170,
+      "pending_candidate_passages": 142,
       "semantic_review": "partial",
       "planned_semantic_stages": 212,
-      "implemented_semantic_stages": 33,
+      "implemented_semantic_stages": 63,
       "preparation_status": "partially_implemented",
       "edition_review": "data/zhongshan-edition-review.json"
     },
@@ -28277,7 +28277,8 @@
         "passage-zhongshan-r01-conglong"
       ],
       "candidate_entry_ids": [
-        "place-zhongshan-r01-conglong"
+        "place-zhongshan-r01-conglong",
+        "place-zhongshan-r05-conglong"
       ],
       "objects": [
         "大谷（葱聾）",
@@ -30573,7 +30574,8 @@
         "passage-zhongshan-r04-luti"
       ],
       "candidate_entry_ids": [
-        "place-zhongshan-r04-luti"
+        "place-zhongshan-r04-luti",
+        "place-zhongshan-r04-li"
       ],
       "objects": [
         "泠石（甘水）",
@@ -30623,11 +30625,21 @@
         "音耎今鴈門山中出礝石白者"
       ],
       "text_sha256": "9a5e49897291e8321dd5f82abdd784706b4a4c089064f55271c20db8e32746e0",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-fuzhu"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-fuzhu"
+      ],
+      "objects": [
+        "䴦（扶豬）",
+        "扶豬之山",
+        "瓀石（扶豬）",
+        "礝石（扶豬）",
+        "虢水（扶豬）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30642,11 +30654,19 @@
         "貉或作𧴘古字"
       ],
       "text_sha256": "0677fb4a1a8e6a825b867bc00bf775ccd20aa20cf6acb17bc20748a4f2e48510",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-fuzhu"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "䴦（扶豬）",
+        "扶豬之山",
+        "瓀石（扶豬）",
+        "礝石（扶豬）",
+        "虢水（扶豬）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30661,11 +30681,19 @@
         "言亦出水中"
       ],
       "text_sha256": "5858444e8cf45b4cf57aa7965ddad5ddecdef05098bc3a01f7fb862966c62f31",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-fuzhu"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "䴦（扶豬）",
+        "扶豬之山",
+        "瓀石（扶豬）",
+        "礝石（扶豬）",
+        "虢水（扶豬）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30679,11 +30707,22 @@
         "音捜茅蒐"
       ],
       "text_sha256": "59bd6d593f18980548191eca373a7d3c652c8b1a570f6edcadfdfd2419c86cfa",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-li"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-li"
+      ],
+      "objects": [
+        "滽滽之水（釐山）",
+        "犀渠（釐山）",
+        "玉（阳）（釐山）",
+        "蒐（釐山）",
+        "釐山",
+        "𤢺（釐山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30697,11 +30736,20 @@
         "今之蒨草也"
       ],
       "text_sha256": "65b920f6a290ef683543b3823b3e669c47224c3514f53ef08f2199fdf03abe95",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-li"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "滽滽之水（釐山）",
+        "犀渠（釐山）",
+        "玉（阳）（釐山）",
+        "蒐（釐山）",
+        "釐山",
+        "𤢺（釐山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30713,11 +30761,20 @@
       "text": "其名曰犀渠滽滽之水出焉而南流注于伊水有獸",
       "commentary": [],
       "text_sha256": "0c0b1c6b1ec1794657d6aea4284676d47d783e707a2895c85a5535da814b5c6d",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-li"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "滽滽之水（釐山）",
+        "犀渠（釐山）",
+        "玉（阳）（釐山）",
+        "蒐（釐山）",
+        "釐山",
+        "𤢺（釐山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30731,30 +30788,49 @@
         "音蒼頡之頡"
       ],
       "text_sha256": "962c3c280d80b8160ba03d3bc275575be1cab3a3b71040862eb8e0d9852ad638",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-li"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "滽滽之水（釐山）",
+        "犀渠（釐山）",
+        "玉（阳）（釐山）",
+        "蒐（釐山）",
+        "釐山",
+        "𤢺（釐山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
       "id": "source-05-0108",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/14",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/13",
       "page_quality": "1",
       "text": "",
       "commentary": [
         "生鱗間也"
       ],
       "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-li"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "objects": [
+        "滽滽之水（釐山）",
+        "犀渠（釐山）",
+        "玉（阳）（釐山）",
+        "蒐（釐山）",
+        "釐山",
+        "𤢺（釐山）"
+      ],
+      "relationship_review": "passage_context_only",
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/14"
     },
     {
       "id": "source-05-0109",
@@ -30765,11 +30841,20 @@
       "text": "又西二百里曰箕尾之山多榖多涂石其上多㻬琈",
       "commentary": [],
       "text_sha256": "24c01213e36f1a51cacc9825813ef744b0b9844bdbd6fb1ce5468bb8d0a5e9f8",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-jiwei"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-jiwei"
+      ],
+      "objects": [
+        "㻬琈玉（箕尾）",
+        "榖（箕尾）",
+        "涂石（箕尾）",
+        "箕尾之山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30781,11 +30866,18 @@
       "text": "之玉",
       "commentary": [],
       "text_sha256": "e80773b0e2b34bd2d346007913017deaa3615d4c5c48c6fc6dbe8b326dc7a56a",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-jiwei"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㻬琈玉（箕尾）",
+        "榖（箕尾）",
+        "涂石（箕尾）",
+        "箕尾之山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30797,11 +30889,22 @@
       "text": "又西二百五十里曰柄山其上多玉其下多銅滔雕",
       "commentary": [],
       "text_sha256": "2da586d9a2611e643532bd7bdd3e904bfc3234c76a41632f3d41393e259fdc72",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-bing"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-bing"
+      ],
+      "objects": [
+        "柄山",
+        "滔雕之水",
+        "玉（柄山）",
+        "羬羊（柄山）",
+        "苃（柄山）",
+        "銅（柄山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30813,11 +30916,20 @@
       "text": "之水出焉而北流注于洛其中多羬羊有木焉其狀",
       "commentary": [],
       "text_sha256": "1981600d8a0bac63c5ef0bc9e33ae234d874280c3625e3c0f484ae8f27915f63",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-bing"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "柄山",
+        "滔雕之水",
+        "玉（柄山）",
+        "羬羊（柄山）",
+        "苃（柄山）",
+        "銅（柄山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30831,11 +30943,20 @@
         "苃一作艾"
       ],
       "text_sha256": "2f4798b4f90ff3dbfbd1bf9833cd0752053f4e1275b5795fd8a8171a51795bd1",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-bing"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "柄山",
+        "滔雕之水",
+        "玉（柄山）",
+        "羬羊（柄山）",
+        "苃（柄山）",
+        "銅（柄山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30847,11 +30968,20 @@
       "text": "又西二百里曰白邊之山其上多金玉其下多青雄",
       "commentary": [],
       "text_sha256": "2cb0bf5fed1e2b5184d1f3df1638c1666a79b366ba109318fe54b6381a73c328",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-baibian"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-baibian"
+      ],
+      "objects": [
+        "玉（白邊）",
+        "白邊之山",
+        "金（白邊）",
+        "青雄黃（白邊）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30863,11 +30993,18 @@
       "text": "黄",
       "commentary": [],
       "text_sha256": "c732e4d7e3805bf45ca30b2a35b9eca7daec5e5a1cfcb098e8fdded9ea7a66ef",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-baibian"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "玉（白邊）",
+        "白邊之山",
+        "金（白邊）",
+        "青雄黃（白邊）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30881,28 +31018,53 @@
         "今在上洛縣南"
       ],
       "text_sha256": "6df288ff156528ddb0c7bdc114621758a9035f16ef466a28b399ed71cc85e4d4",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-xionger"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-xionger"
+      ],
+      "objects": [
+        "㯶（熊耳）",
+        "人魚（熊耳）",
+        "水玉（熊耳）",
+        "浮濠之水",
+        "漆（熊耳）",
+        "熊耳之山",
+        "葶䔭（熊耳）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
       "id": "source-05-0117",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/15",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/14",
       "page_quality": "1",
       "text": "浮濠之水出焉而西流注于洛其中多水玉多人魚",
       "commentary": [],
       "text_sha256": "f7758eacf43e9e062c326fa768cdb8d0c8e7f30e6298e8236ca22ff454be7699",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-xionger"
+      ],
+      "candidate_entry_ids": [
+        "water-zhongshan-fuhao-xionger"
+      ],
+      "objects": [
+        "㯶（熊耳）",
+        "人魚（熊耳）",
+        "水玉（熊耳）",
+        "浮濠之水",
+        "漆（熊耳）",
+        "熊耳之山",
+        "葶䔭（熊耳）"
+      ],
+      "relationship_review": "passage_context_only",
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/15"
     },
     {
       "id": "source-05-0118",
@@ -30915,11 +31077,21 @@
         "亭寧耵聹二音"
       ],
       "text_sha256": "892af64fd305abe7e68a704f426d1759dc80be769326ea51304e1a017d814149",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-xionger"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㯶（熊耳）",
+        "人魚（熊耳）",
+        "水玉（熊耳）",
+        "浮濠之水",
+        "漆（熊耳）",
+        "熊耳之山",
+        "葶䔭（熊耳）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30931,11 +31103,21 @@
       "text": "魚",
       "commentary": [],
       "text_sha256": "b481cb1bcb3f18baeb07562c6c7f915b28b804d09c90d0b495945f164eacca2a",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-xionger"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㯶（熊耳）",
+        "人魚（熊耳）",
+        "水玉（熊耳）",
+        "浮濠之水",
+        "漆（熊耳）",
+        "熊耳之山",
+        "葶䔭（熊耳）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30947,11 +31129,23 @@
       "text": "又西三百里曰牡山其上多文石其下多竹箭竹䉋",
       "commentary": [],
       "text_sha256": "c4dead1c06f825f6d800a1b431b6ac111f6702691ac35ba9c6f2227faf2c6fa0",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-mu"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-mu"
+      ],
+      "objects": [
+        "㸲牛（牡山）",
+        "文石（牡山）",
+        "牡山",
+        "竹䉋（牡山）",
+        "竹箭（牡山）",
+        "羬羊（牡山）",
+        "赤鷩（牡山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30965,11 +31159,21 @@
         "音閉即鷩雉也"
       ],
       "text_sha256": "c8a5a7fcbbea1e1523a32a48ca67496a0ef5149ec672dfbd1acd68f00e2fa5c8",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-mu"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㸲牛（牡山）",
+        "文石（牡山）",
+        "牡山",
+        "竹䉋（牡山）",
+        "竹箭（牡山）",
+        "羬羊（牡山）",
+        "赤鷩（牡山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30981,11 +31185,21 @@
       "text": "又西三百五十里曰讙舉之山雒水出焉而東北流",
       "commentary": [],
       "text_sha256": "5a0737c7c420ed789a8340d195a3cb78dfbec8942259d32800f8fc3ca08ea905",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-huanju"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-huanju"
+      ],
+      "objects": [
+        "洛間（二山语境）",
+        "玄扈之水（中山文本索引）",
+        "讙舉之山",
+        "雒水（讙舉出水）",
+        "馬腸之物（讙舉）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -30997,11 +31211,19 @@
       "text": "注于玄扈之水其中多馬腸之物此二山者洛間也",
       "commentary": [],
       "text_sha256": "1753c073cc11d2876dc8c0763d418f27366d2a2fd4c5d5b204563f323fec8d0d",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-huanju"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "洛間（二山语境）",
+        "玄扈之水（中山文本索引）",
+        "讙舉之山",
+        "雒水（讙舉出水）",
+        "馬腸之物（讙舉）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31015,11 +31237,19 @@
         "洛水今出上洛縣嶺山河圗曰玄扈洛汭謂此間也"
       ],
       "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-huanju"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "洛間（二山语境）",
+        "玄扈之水（中山文本索引）",
+        "讙舉之山",
+        "雒水（讙舉出水）",
+        "馬腸之物（讙舉）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31031,30 +31261,44 @@
       "text": "凡釐山之首自鹿蹄之山至于玄扈之山凡九山千",
       "commentary": [],
       "text_sha256": "75081e7ca4a81966aff31c130329453eb88c02d1b2ed750cb3933102889c774e",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [
-        "place-zhongshan-r04-luti"
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-summary"
       ],
-      "objects": [],
-      "relationship_review": "pending",
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-luti",
+        "place-zhongshan-r04-li"
+      ],
+      "objects": [
+        "人面獸身神（中次四）",
+        "次4总括与祭礼",
+        "白鸡祈礼（中次四）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
       "id": "source-05-0126",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/16",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/15",
       "page_quality": "1",
       "text": "六百七十里其神狀皆人面獸身其祠之毛用一白",
       "commentary": [],
       "text_sha256": "c2ecd0cb6f165af55f6dd29f1a312031d836fe04c533717b607df7a2134cb1cb",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-summary"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "objects": [
+        "人面獸身神（中次四）",
+        "次4总括与祭礼",
+        "白鸡祈礼（中次四）"
+      ],
+      "relationship_review": "passage_context_only",
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/16"
     },
     {
       "id": "source-05-0127",
@@ -31068,11 +31312,17 @@
         "以彩飾鷄"
       ],
       "text_sha256": "d0c3f52eb82ee6bf4ed1d2e50e06bfa59893e498b06f28b3283a0ab4e576361f",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-summary"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "人面獸身神（中次四）",
+        "次4总括与祭礼",
+        "白鸡祈礼（中次四）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31086,11 +31336,18 @@
         "或作茍林山"
       ],
       "text_sha256": "68a83de2975b2043f2180202428c4ed967ccf9545614f2aafad4e5b9ab32d988",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-gouchuang"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-gouchuang"
+      ],
+      "objects": [
+        "怪石（茍牀）",
+        "茍牀之山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31104,11 +31361,16 @@
         "怪石似玉也書曰鉛松怪石也"
       ],
       "text_sha256": "a027cad3fe99e5e5406ef18dc6d714c30d50dba6cf79dfeb9edbf0a002caa4ac",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-gouchuang"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "怪石（茍牀）",
+        "茍牀之山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31122,11 +31384,25 @@
         "𦬸山薊也芫華中藥"
       ],
       "text_sha256": "58ca5aa6a57258a3943c72c4abc7bd1ad8b2614102cfcb17043bdb2e35693539",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-shou"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-shou"
+      ],
+      "objects": [
+        "㻬琈玉（首山）",
+        "机谷（首山阴）",
+        "柞（首山）",
+        "榖（首山）",
+        "槐（首山）",
+        "芫（首山）",
+        "首山",
+        "𦬸（首山）",
+        "𩿁鳥（首山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31138,11 +31414,23 @@
       "text": "其陽多㻬琈之玉木多槐其隂有谷曰机谷多𩿁鳥",
       "commentary": [],
       "text_sha256": "d9856195710c4aa8860482ad3d74971fc6e131742e399e656d49875d0857ea7e",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-shou"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㻬琈玉（首山）",
+        "机谷（首山阴）",
+        "柞（首山）",
+        "榖（首山）",
+        "槐（首山）",
+        "芫（首山）",
+        "首山",
+        "𦬸（首山）",
+        "𩿁鳥（首山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31156,11 +31444,23 @@
         "音如鉗𮡧之𮡧"
       ],
       "text_sha256": "150b1b71dd0f0af261b6a61bd995ee9b316668538574be20ca4b8bf9fc95527d",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-shou"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㻬琈玉（首山）",
+        "机谷（首山阴）",
+        "柞（首山）",
+        "榖（首山）",
+        "槐（首山）",
+        "芫（首山）",
+        "首山",
+        "𦬸（首山）",
+        "𩿁鳥（首山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31174,11 +31474,23 @@
         "未聞"
       ],
       "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-shou"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㻬琈玉（首山）",
+        "机谷（首山阴）",
+        "柞（首山）",
+        "榖（首山）",
+        "槐（首山）",
+        "芫（首山）",
+        "首山",
+        "𦬸（首山）",
+        "𩿁鳥（首山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31192,32 +31504,46 @@
         "音如斤斸之斸"
       ],
       "text_sha256": "03327c4e573b6cfefd2a87f487d4873e36f52416ebae1914df78f33197b8c377",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-xianzhu"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-xianzhu"
+      ],
+      "objects": [
+        "文石（縣斸）",
+        "縣斸之山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
       "id": "source-05-0135",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/16",
       "page_quality": "1",
       "text": "又東三百里曰葱聾之山無草木多𢈦石",
       "commentary": [
         "未詳"
       ],
       "text_sha256": "4dbcbae5d7f552931ef01f27e336522bb56e044bea37b871f6bae81a6ef57055",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [
-        "place-zhongshan-r01-conglong"
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-conglong"
       ],
-      "objects": [],
-      "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "candidate_entry_ids": [
+        "place-zhongshan-r01-conglong",
+        "place-zhongshan-r05-conglong"
+      ],
+      "objects": [
+        "葱聾之山",
+        "𢈦石（葱聾）"
+      ],
+      "relationship_review": "passage_context_only",
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17"
     },
     {
       "id": "source-05-0136",
@@ -31228,11 +31554,21 @@
       "text": "東北五百里曰條谷之山其木多槐桐其草多芍藥",
       "commentary": [],
       "text_sha256": "619c257eb8976e0829462fffc191b61f78cac4638d995a14f090db6a49c2920d",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-tiaogu"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-tiaogu"
+      ],
+      "objects": [
+        "桐（條谷）",
+        "條谷之山",
+        "槐（條谷）",
+        "芍藥（條谷）",
+        "𧄸冬（條谷）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31246,11 +31582,19 @@
         "本草經曰𧄸冬一名滿冬今作門俗作耳"
       ],
       "text_sha256": "88bfd0343f91fc8dfac4046491ca316b8202b59c43abb072f8a7c82933481130",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-tiaogu"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "桐（條谷）",
+        "條谷之山",
+        "槐（條谷）",
+        "芍藥（條谷）",
+        "𧄸冬（條谷）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31262,11 +31606,19 @@
       "text": "又北十里曰超山其隂多蒼玉其陽有井冬有水而",
       "commentary": [],
       "text_sha256": "d2eb70e60c1611c41e9f0f97858477aedbb8fd270f0afa2259a661e076825acf",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-chao"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-chao"
+      ],
+      "objects": [
+        "井（超山阳）",
+        "蒼玉（超山）",
+        "超山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31278,11 +31630,17 @@
       "text": "夏竭",
       "commentary": [],
       "text_sha256": "1111b79cb3ce7f16d34e8ab8abdea3a81bc6065f12bc20d83c63768586b34eab",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-chao"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "井（超山阳）",
+        "蒼玉（超山）",
+        "超山"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31296,11 +31654,19 @@
         "似樗樹材中車轅吳人呼"
       ],
       "text_sha256": "d4190747abcf901e186bb60c66069d9c5acf92df3c641939008342ecdf960e57",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-chenghou"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-chenghou"
+      ],
+      "objects": [
+        "成侯之山",
+        "櫄木（成侯）",
+        "芃草（成侯）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31314,11 +31680,17 @@
         "櫄音輴車或曰輶車"
       ],
       "text_sha256": "ab86517bdcfd3aa48208c17a238ed6b14ec55830565bc1363cbda4a4c9c893d4",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-chenghou"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "成侯之山",
+        "櫄木（成侯）",
+        "芃草（成侯）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31330,11 +31702,18 @@
       "text": "又東五百里曰朝歌之山谷多羙堊",
       "commentary": [],
       "text_sha256": "e62f1ea9fc1d5e28b941083488be581b54b4ee0667a25cc5949fd1b5712258b5",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-chaoge"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-chaoge"
+      ],
+      "objects": [
+        "朝歌之山",
+        "羙堊（朝歌）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31346,28 +31725,45 @@
       "text": "又東五百里曰槐山谷多金錫",
       "commentary": [],
       "text_sha256": "5c90fdf53bae62cae60275275b78ff9023a32977258978f12f622fc225916879",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-huai"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-huai"
+      ],
+      "objects": [
+        "槐山",
+        "金（槐山）",
+        "錫（槐山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
       "id": "source-05-0144",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/18",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17",
       "page_quality": "1",
       "text": "又東十里曰歴山其木多槐其陽多玉",
       "commentary": [],
       "text_sha256": "1c2b88f84ac47a306429e786bf49fe4ae062a799f069c69346667b7148b28529",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-li"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-li"
+      ],
+      "objects": [
+        "槐（歴山）",
+        "歴山",
+        "玉（歴山）"
+      ],
+      "relationship_review": "passage_context_only",
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/18"
     },
     {
       "id": "source-05-0145",
@@ -31380,11 +31776,21 @@
         "似鹿而小黑色"
       ],
       "text_sha256": "88d09d2ad260d2887c62e35d38c601b60d6edabcd7f257633ec3be976d834e09",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-shi"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-shi"
+      ],
+      "objects": [
+        "尸山",
+        "尸水（尸山）",
+        "羙玉（尸山）",
+        "蒼玉（尸山）",
+        "麖（尸山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31396,11 +31802,19 @@
       "text": "焉南流注于洛水其中多羙玉",
       "commentary": [],
       "text_sha256": "1cedbfc5012276afe417c3d84a0f42345025475249b9a57105d07660e8ae3184",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-shi"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "尸山",
+        "尸水（尸山）",
+        "羙玉（尸山）",
+        "蒼玉（尸山）",
+        "麖（尸山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31412,11 +31826,21 @@
       "text": "又東十里曰良餘之山其上多榖柞無石餘水出于",
       "commentary": [],
       "text_sha256": "39541febcaca08a63ae2f77a7436bf2b705139369adcb68c486fe86fe5fee49a",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-liangyu"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-liangyu"
+      ],
+      "objects": [
+        "乳水（良餘阳）",
+        "柞（良餘）",
+        "榖（良餘）",
+        "良餘之山",
+        "餘水（良餘阴）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31428,11 +31852,19 @@
       "text": "其隂而北流注于河乳水出于其陽而東南流注于",
       "commentary": [],
       "text_sha256": "4b073e9d644ba68d9d47009d7ad575142197b4da901b89d0e9982c576d03cd1f",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-liangyu"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "乳水（良餘阳）",
+        "柞（良餘）",
+        "榖（良餘）",
+        "良餘之山",
+        "餘水（良餘阴）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31444,11 +31876,19 @@
       "text": "洛",
       "commentary": [],
       "text_sha256": "6f4ea83a28b55a99692914a5cb8b25b784a34c569ad01b0e74ef01216d526c34",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-liangyu"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "乳水（良餘阳）",
+        "柞（良餘）",
+        "榖（良餘）",
+        "良餘之山",
+        "餘水（良餘阴）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31460,11 +31900,21 @@
       "text": "又東南十里曰蠱尾之山多礪石赤銅龍餘之水出",
       "commentary": [],
       "text_sha256": "344bed61305bda4413d500afa8cd26180576ea08d81b14776b6397413d0ae2cd",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-guwei"
+      ],
+      "candidate_entry_ids": [
+        "water-zhongshan-longyu-guwei",
+        "place-zhongshan-r05-guwei"
+      ],
+      "objects": [
+        "礪石（蠱尾）",
+        "蠱尾之山",
+        "赤銅（蠱尾）",
+        "龍餘之水"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31476,11 +31926,18 @@
       "text": "焉而東南流注于洛",
       "commentary": [],
       "text_sha256": "8a297273e98777ef105c074806041a246e3117aada7d6c16624dd825440ec0d3",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-guwei"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "礪石（蠱尾）",
+        "蠱尾之山",
+        "赤銅（蠱尾）",
+        "龍餘之水"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31492,18 +31949,32 @@
       "text": "又東北二十里曰升山其木多榖柞棘其草多藷藇",
       "commentary": [],
       "text_sha256": "6a4b415ca26f8208173986416d96cb7f34e4790f359bae6f1a89e65efb9b5bb5",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-sheng"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-sheng"
+      ],
+      "objects": [
+        "冦脫（升山）",
+        "升山",
+        "柞（升山）",
+        "棘（升山）",
+        "榖（升山）",
+        "琁玉（升山）",
+        "蕙（升山）",
+        "藷藇（升山）",
+        "黄酸之水"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
       "id": "source-05-0153",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/19",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/18",
       "page_quality": "1",
       "text": "蕙多冦脫",
       "commentary": [
@@ -31511,12 +31982,25 @@
         "冦脫草生南方髙丈許似荷葉而堇中有瓤正白零桂人植而日灌之以"
       ],
       "text_sha256": "c54d941127aa2710bfd3ed7ca6c294a677899dbb8da4c7f04cf81c21c1e2d9ab",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-sheng"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "objects": [
+        "冦脫（升山）",
+        "升山",
+        "柞（升山）",
+        "棘（升山）",
+        "榖（升山）",
+        "琁玉（升山）",
+        "蕙（升山）",
+        "藷藇（升山）",
+        "黄酸之水"
+      ],
+      "relationship_review": "passage_context_only",
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/19"
     },
     {
       "id": "source-05-0154",
@@ -31530,11 +32014,25 @@
         "石次"
       ],
       "text_sha256": "91f57ad2af6073c602ac4b6de47474402a8d5e0eee70d1ac218d4320dac26753",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-sheng"
+      ],
+      "candidate_entry_ids": [
+        "water-zhongshan-huangsuan-sheng"
+      ],
+      "objects": [
+        "冦脫（升山）",
+        "升山",
+        "柞（升山）",
+        "棘（升山）",
+        "榖（升山）",
+        "琁玉（升山）",
+        "蕙（升山）",
+        "藷藇（升山）",
+        "黄酸之水"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31548,11 +32046,23 @@
         "玉者也荀卿曰旋玉瑶珠不知佩音旋"
       ],
       "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-sheng"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "冦脫（升山）",
+        "升山",
+        "柞（升山）",
+        "棘（升山）",
+        "榖（升山）",
+        "琁玉（升山）",
+        "蕙（升山）",
+        "藷藇（升山）",
+        "黄酸之水"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31566,11 +32076,19 @@
         "河圗曰蒼"
       ],
       "text_sha256": "1a1bfe5fe08c51f133547511b6ef660204935964457446dde674a1fa9804a7cd",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-yangxu"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-yangxu"
+      ],
+      "objects": [
+        "金（陽虛）",
+        "陽虛之山",
+        "靈龜（陽虛郭注）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31584,11 +32102,17 @@
         "頡為帝南巡狩登陽虚之山臨于玄扈洛汭靈龜負書丹甲青文以授之出此水中也"
       ],
       "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-yangxu"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "金（陽虛）",
+        "陽虛之山",
+        "靈龜（陽虛郭注）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31600,11 +32124,20 @@
       "text": "凡薄山之首自茍林之山至于陽虚之山凡十六山",
       "commentary": [],
       "text_sha256": "18e4e9fd8d8f9d625a09512b04a7bc2ad3c0cdf472b84a7654de232d2de6a486",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-summary"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "升山冢礼（中次五）",
+        "天神（尸水郭注）",
+        "尸水牲祠（中次五）",
+        "次5总括与祭礼",
+        "首山干舞礼（中次五）",
+        "首山神（中次五礼）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31616,11 +32149,22 @@
       "text": "二千九百八十二里升山⟦缺字图:冢⟧也其祠禮太牢嬰用吉",
       "commentary": [],
       "text_sha256": "a86c8c7bf1ca33dc2f2ef8e0ebefa87938914ebc0fc6a9a7104dee495716db06",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-summary"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-sheng"
+      ],
+      "objects": [
+        "升山冢礼（中次五）",
+        "天神（尸水郭注）",
+        "尸水牲祠（中次五）",
+        "次5总括与祭礼",
+        "首山干舞礼（中次五）",
+        "首山神（中次五礼）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31634,11 +32178,22 @@
         "以蘖作醴酒也"
       ],
       "text_sha256": "1a95cd8ef4808e4714f00548d5340d2c4e33de5458c8283c56103c7c7fcf147d",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-summary"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-shou"
+      ],
+      "objects": [
+        "升山冢礼（中次五）",
+        "天神（尸水郭注）",
+        "尸水牲祠（中次五）",
+        "次5总括与祭礼",
+        "首山干舞礼（中次五）",
+        "首山神（中次五礼）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31654,11 +32209,20 @@
         "天神"
       ],
       "text_sha256": "a450a7f175d3e80bd077c729f024bae3cf24042f7ac8f1fa9cdacfa3e6498f6b",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-summary"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "升山冢礼（中次五）",
+        "天神（尸水郭注）",
+        "尸水牲祠（中次五）",
+        "次5总括与祭礼",
+        "首山干舞礼（中次五）",
+        "首山神（中次五礼）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31672,11 +32236,20 @@
         "之所馮也"
       ],
       "text_sha256": "0e04b6764a94c89e7590e630ade4dccb9f0ca12d496740c8af5b688e190c6418",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-summary"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "升山冢礼（中次五）",
+        "天神（尸水郭注）",
+        "尸水牲祠（中次五）",
+        "次5总括与祭礼",
+        "首山干舞礼（中次五）",
+        "首山神（中次五礼）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
       "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/20"
     },
@@ -31692,11 +32265,20 @@
         "又加以繒"
       ],
       "text_sha256": "1de552bba801680ffd528a2dceeee2f305f41853320e30ba0730240a23e09744",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-summary"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "升山冢礼（中次五）",
+        "天神（尸水郭注）",
+        "尸水牲祠（中次五）",
+        "次5总括与祭礼",
+        "首山干舞礼（中次五）",
+        "首山神（中次五礼）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31711,11 +32293,20 @@
         "勸強之也特牲饋食禮曰執奠祝饗是也"
       ],
       "text_sha256": "e083ef76ae0fd80c2d0726d9f35f52854d40a126f44caef45711a4e1b6763ec9",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-summary"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "升山冢礼（中次五）",
+        "天神（尸水郭注）",
+        "尸水牲祠（中次五）",
+        "次5总括与祭礼",
+        "首山干舞礼（中次五）",
+        "首山神（中次五礼）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31727,11 +32318,25 @@
       "text": "中次六經縞羝山之首曰平逢之山南望伊洛東望",
       "commentary": [],
       "text_sha256": "a4c5577b5af3cea719f465691ef4e4dac6ba57f0115aa2bc445619b1e9d4d77f",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-pingfeng"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-pingfeng"
+      ],
+      "objects": [
+        "伊洛（平逢南望）",
+        "平逢之山",
+        "榖城之山（平逢东望）",
+        "水（平逢未名）",
+        "沙石（平逢）",
+        "蜂（平逢类称）",
+        "蜜（郭注赤蜂名）",
+        "雄鸡禳礼（平逢）",
+        "驕蟲（平逢）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31745,11 +32350,23 @@
         "在濟北榖城縣西黄石公石在此山下張良取以合葬爾"
       ],
       "text_sha256": "74efe0f9f2d2d01386ddbba6318e814925595372dcef61d269b8752454f79f16",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-pingfeng"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "伊洛（平逢南望）",
+        "平逢之山",
+        "榖城之山（平逢东望）",
+        "水（平逢未名）",
+        "沙石（平逢）",
+        "蜂（平逢类称）",
+        "蜜（郭注赤蜂名）",
+        "雄鸡禳礼（平逢）",
+        "驕蟲（平逢）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31761,11 +32378,23 @@
       "text": "多沙石有神焉其狀如人而二首名曰驕蟲是為螫",
       "commentary": [],
       "text_sha256": "056ccca12d3bbdf356fd8736e3331c14fa12018f8743e4644044914344527bd6",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-pingfeng"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "伊洛（平逢南望）",
+        "平逢之山",
+        "榖城之山（平逢东望）",
+        "水（平逢未名）",
+        "沙石（平逢）",
+        "蜂（平逢类称）",
+        "蜜（郭注赤蜂名）",
+        "雄鸡禳礼（平逢）",
+        "驕蟲（平逢）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31780,11 +32409,23 @@
         "言群蜂之所舎集蜜赤蜂名"
       ],
       "text_sha256": "dc29dcf5546ecda5d897e8734f6d8413d72c4b8637bf9947f9faf5e9cfe5c402",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-pingfeng"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "伊洛（平逢南望）",
+        "平逢之山",
+        "榖城之山（平逢东望）",
+        "水（平逢未名）",
+        "沙石（平逢）",
+        "蜂（平逢类称）",
+        "蜜（郭注赤蜂名）",
+        "雄鸡禳礼（平逢）",
+        "驕蟲（平逢）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31798,11 +32439,23 @@
         "禳亦祭名謂禳却惡氣也"
       ],
       "text_sha256": "9cbe6765aab086bf5f1e002e66e1fb26f8941197d084161d8d7cd5a20505d93a",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-pingfeng"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "伊洛（平逢南望）",
+        "平逢之山",
+        "榖城之山（平逢东望）",
+        "水（平逢未名）",
+        "沙石（平逢）",
+        "蜂（平逢类称）",
+        "蜜（郭注赤蜂名）",
+        "雄鸡禳礼（平逢）",
+        "驕蟲（平逢）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31814,30 +32467,53 @@
       "text": "西十里曰縞羝之山無草木多金玉",
       "commentary": [],
       "text_sha256": "2d60fc01abda11b102061f2dc53abb59d1fc6e0e3f189f327d76fc9c5cf4aa5a",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-gaodi"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-gaodi"
+      ],
+      "objects": [
+        "玉（縞羝）",
+        "縞羝之山",
+        "金（縞羝）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
       "id": "source-05-0171",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/21",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/20",
       "page_quality": "1",
       "text": "又西十里曰廆山其隂多㻬琈之玉其西有",
       "commentary": [
         "音如瓌偉之瓌"
       ],
       "text_sha256": "139bf7289bd2574734998788e662c41ad57659bd7dbc2787d9e93512c8f73854",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-hui"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-hui"
+      ],
+      "objects": [
+        "㻬琈玉（廆山）",
+        "交觴之水",
+        "俞隨之水",
+        "廆山",
+        "柳（廆山）",
+        "楮（廆山）",
+        "榖水（中山文本索引）",
+        "雚谷（廆山西）",
+        "鴒䳩（廆山）"
+      ],
+      "relationship_review": "passage_context_only",
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/21"
     },
     {
       "id": "source-05-0172",
@@ -31848,11 +32524,23 @@
       "text": "谷焉名曰雚谷其木多柳楮其中有鳥焉狀如山鷄",
       "commentary": [],
       "text_sha256": "0e4dfa14745e9c6e78d53100be0d4f23d3679592ab1d2bae4bf1d2c2924832d2",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-hui"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㻬琈玉（廆山）",
+        "交觴之水",
+        "俞隨之水",
+        "廆山",
+        "柳（廆山）",
+        "楮（廆山）",
+        "榖水（中山文本索引）",
+        "雚谷（廆山西）",
+        "鴒䳩（廆山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31866,11 +32554,23 @@
         "鈴要二音"
       ],
       "text_sha256": "a5c888c19721d1806681c9f05ec8ad453fc06f40fe9510823b7a3c914545e66c",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-hui"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㻬琈玉（廆山）",
+        "交觴之水",
+        "俞隨之水",
+        "廆山",
+        "柳（廆山）",
+        "楮（廆山）",
+        "榖水（中山文本索引）",
+        "雚谷（廆山西）",
+        "鴒䳩（廆山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31882,11 +32582,25 @@
       "text": "服之不眯交觴之水出于其陽而南流注于洛俞隨",
       "commentary": [],
       "text_sha256": "4a9134a3c6b89a171d85bf0335d8984a8091e0b58d9b58014daff681338f0a22",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-hui"
+      ],
+      "candidate_entry_ids": [
+        "water-zhongshan-jiaoshang-hui"
+      ],
+      "objects": [
+        "㻬琈玉（廆山）",
+        "交觴之水",
+        "俞隨之水",
+        "廆山",
+        "柳（廆山）",
+        "楮（廆山）",
+        "榖水（中山文本索引）",
+        "雚谷（廆山西）",
+        "鴒䳩（廆山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31898,11 +32612,23 @@
       "text": "之水出于其隂而北流注于榖水",
       "commentary": [],
       "text_sha256": "9a79a35935aa169b7432d828ee0f27a6040d69bb1b9ab045abab11a5642da991",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-hui"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㻬琈玉（廆山）",
+        "交觴之水",
+        "俞隨之水",
+        "廆山",
+        "柳（廆山）",
+        "楮（廆山）",
+        "榖水（中山文本索引）",
+        "雚谷（廆山西）",
+        "鴒䳩（廆山）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31914,11 +32640,21 @@
       "text": "又西三十里曰瞻諸之山其陽多金其隂多文石㴬",
       "commentary": [],
       "text_sha256": "fdd4e632aa7299e1acc1d0910a7d5560e7982c02e9ba38382ad03eaf4f6be825",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-zhanzhu"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-zhanzhu"
+      ],
+      "objects": [
+        "㴬水（瞻諸）",
+        "少水（瞻諸阴）",
+        "文石（瞻諸）",
+        "瞻諸之山",
+        "金（瞻諸）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31932,11 +32668,19 @@
         "音謝"
       ],
       "text_sha256": "fbc48a133c3609457cb57853bebb9e3862b89fb1526039ce94c51b6255b64ce4",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-zhanzhu"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㴬水（瞻諸）",
+        "少水（瞻諸阴）",
+        "文石（瞻諸）",
+        "瞻諸之山",
+        "金（瞻諸）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31950,11 +32694,19 @@
         "世謂之慈澗"
       ],
       "text_sha256": "18b54966a23d7115e891766d186a8505cc096b38906e1b6a122117ba8c0ff7e8",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-zhanzhu"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "㴬水（瞻諸）",
+        "少水（瞻諸阴）",
+        "文石（瞻諸）",
+        "瞻諸之山",
+        "金（瞻諸）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -31966,30 +32718,53 @@
       "text": "又西三十里曰婁𣵠之山無草木多金玉瞻水出于",
       "commentary": [],
       "text_sha256": "a25edc2fba5798b3a62db42e6c55931a46c2f89dd161c3a9b0187199a9219763",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-louzhuo"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-louzhuo"
+      ],
+      "objects": [
+        "婁𣵠之山",
+        "文石（婁𣵠）",
+        "玉（婁𣵠）",
+        "瞻水（婁𣵠阳）",
+        "茈石（婁𣵠）",
+        "金（婁𣵠）",
+        "陂水（婁𣵠阴）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
       "id": "source-05-0180",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/22",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/21",
       "page_quality": "1",
       "text": "其陽而東流注于洛陂水出于其隂而北流",
       "commentary": [
         "世謂之百荅水"
       ],
       "text_sha256": "8372a1a6bb6b3815d39728a6ea1a9cd4e7b680f71b8f2c85748579837a59fb5d",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-louzhuo"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "objects": [
+        "婁𣵠之山",
+        "文石（婁𣵠）",
+        "玉（婁𣵠）",
+        "瞻水（婁𣵠阳）",
+        "茈石（婁𣵠）",
+        "金（婁𣵠）",
+        "陂水（婁𣵠阴）"
+      ],
+      "relationship_review": "passage_context_only",
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/22"
     },
     {
       "id": "source-05-0181",
@@ -32000,11 +32775,21 @@
       "text": "注于榖水其中多茈石文石",
       "commentary": [],
       "text_sha256": "4538eb72e187db548a26e26b619f3973b543c25f91399afbd03de99a0efa4344",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-louzhuo"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "婁𣵠之山",
+        "文石（婁𣵠）",
+        "玉（婁𣵠）",
+        "瞻水（婁𣵠阳）",
+        "茈石（婁𣵠）",
+        "金（婁𣵠）",
+        "陂水（婁𣵠阴）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -32602,7 +33387,9 @@
       "text_sha256": "11f507194b46311943e15eafc41fa6b1b8472775713a3fc716deba2163aa8fdb",
       "status": "pending_review",
       "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-pingfeng"
+      ],
       "objects": [],
       "relationship_review": "pending",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
@@ -36294,7 +37081,8 @@
       "status": "pending_review",
       "confirmed_passage_ids": [],
       "candidate_entry_ids": [
-        "place-zhongshan-r02-yang"
+        "place-zhongshan-r02-yang",
+        "place-zhongshan-r05-shou"
       ],
       "objects": [],
       "relationship_review": "pending",
@@ -36467,7 +37255,9 @@
       "text_sha256": "4dad9482452320dc40729ac287c8fe107c7a6b7e018adecf857db07e07179e6b",
       "status": "pending_review",
       "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-chaoge"
+      ],
       "objects": [],
       "relationship_review": "pending",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
@@ -61436,7 +62226,8 @@
       ],
       "text": "又東三十五里曰葱聾之山其中多大谷是多白堊黑青黄堊",
       "candidate_entry_ids": [
-        "place-zhongshan-r01-conglong"
+        "place-zhongshan-r01-conglong",
+        "place-zhongshan-r05-conglong"
       ],
       "relationship_excerpts": [],
       "status": "reviewed_in_reader",
@@ -62180,6 +62971,7 @@
       "candidate_entry_ids": [
         "place-zhongshan-r03-aoan",
         "place-zhongshan-r03-he",
+        "place-zhongshan-r04-li",
         "place-zhongshan-r04-luti"
       ],
       "relationship_excerpts": [
@@ -62209,13 +63001,18 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/13"
       ],
       "text": "西五十里曰扶豬之山其上多礝石有獸焉其狀如貉而人目其名曰䴦虢水出焉而北流注于洛其中多瓀石",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-fuzhu"
+      ],
       "relationship_excerpts": [
         "狀如貉而人目其名曰䴦虢水出焉而北流注于洛其中多瓀石",
         "人目其名曰䴦虢水出焉而北流注于洛其中多瓀石"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-fuzhu"
+      ]
     },
     {
       "id": "draft-05-0032",
@@ -62234,13 +63031,18 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/13"
       ],
       "text": "又西一百二十里曰釐山其陽多玉其隂多蒐有獸焉其狀如牛蒼身其音如嬰兒是食人其名曰犀渠滽滽之水出焉而南流注于伊水有獸焉名曰𤢺其狀如獳犬而有鱗其毛如彘鬛",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-li"
+      ],
       "relationship_excerpts": [
         "是食人其名曰犀渠滽滽之水出焉而南流注于伊水有獸焉名曰𤢺其狀如獳犬",
         "名曰犀渠滽滽之水出焉而南流注于伊水有獸焉名曰𤢺其狀如獳犬而有鱗其"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-li"
+      ]
     },
     {
       "id": "draft-05-0033",
@@ -62255,13 +63057,20 @@
         "source-05-0110"
       ],
       "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/13",
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/14"
       ],
       "text": "又西二百里曰箕尾之山多榖多涂石其上多㻬琈之玉",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-jiwei"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-jiwei",
+        "passage-zhongshan-r04-li"
+      ]
     },
     {
       "id": "draft-05-0034",
@@ -62279,13 +63088,18 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/14"
       ],
       "text": "又西二百五十里曰柄山其上多玉其下多銅滔雕之水出焉而北流注于洛其中多羬羊有木焉其狀如樗其葉如桐而莢實其名曰苃可以毒魚",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-bing"
+      ],
       "relationship_excerpts": [
         "其上多玉其下多銅滔雕之水出焉而北流注于洛其中多羬羊有木焉其狀如樗",
         "其下多銅滔雕之水出焉而北流注于洛其中多羬羊有木焉其狀如樗其葉如桐"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-bing"
+      ]
     },
     {
       "id": "draft-05-0035",
@@ -62302,10 +63116,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/14"
       ],
       "text": "又西二百里曰白邊之山其上多金玉其下多青雄黄",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-baibian"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-baibian"
+      ]
     },
     {
       "id": "draft-05-0036",
@@ -62325,13 +63144,19 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/15"
       ],
       "text": "又西二百里曰熊耳之山其上多漆其下多㯶浮濠之水出焉而西流注于洛其中多水玉多人魚有草焉其狀如蘇而赤華名曰葶䔭可以毒魚",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-xionger",
+        "water-zhongshan-fuhao-xionger"
+      ],
       "relationship_excerpts": [
         "其上多漆其下多㯶浮濠之水出焉而西流注于洛其中多水玉多人魚有草焉其",
         "其下多㯶浮濠之水出焉而西流注于洛其中多水玉多人魚有草焉其狀如蘇而"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-xionger"
+      ]
     },
     {
       "id": "draft-05-0037",
@@ -62348,10 +63173,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/15"
       ],
       "text": "又西三百里曰牡山其上多文石其下多竹箭竹䉋其獸多㸲牛羬羊鳥多赤鷩",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r04-mu"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-mu"
+      ]
     },
     {
       "id": "draft-05-0038",
@@ -62371,14 +63201,20 @@
       ],
       "text": "又西三百五十里曰讙舉之山雒水出焉而東北流注于玄扈之水其中多馬腸之物此二山者洛間也凡釐山之首自鹿蹄之山至于玄扈之山",
       "candidate_entry_ids": [
+        "place-zhongshan-r04-huanju",
+        "place-zhongshan-r04-li",
         "place-zhongshan-r04-luti"
       ],
       "relationship_excerpts": [
         "三百五十里曰讙舉之山雒水出焉而東北流注于玄扈之水其中多馬腸之物此",
         "曰讙舉之山雒水出焉而東北流注于玄扈之水其中多馬腸之物此二山者洛間"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-huanju",
+        "passage-zhongshan-r04-summary"
+      ]
     },
     {
       "id": "draft-05-0039",
@@ -62400,11 +63236,17 @@
       ],
       "text": "凡九山千六百七十里其神狀皆人面獸身其祠之毛用一白鷄祈而不糈以彩衣之中次五經薄山之首曰茍牀之山無草木多怪石",
       "candidate_entry_ids": [
-        "place-zhongshan-r04-luti"
+        "place-zhongshan-r04-li",
+        "place-zhongshan-r04-luti",
+        "place-zhongshan-r05-gouchuang"
       ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r04-summary",
+        "passage-zhongshan-r05-gouchuang"
+      ]
     },
     {
       "id": "draft-05-0040",
@@ -62422,10 +63264,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/16"
       ],
       "text": "東三百里曰首山其隂多穀柞草多𦬸芫其陽多㻬琈之玉木多槐其隂有谷曰机谷多𩿁鳥其狀如梟而三目有耳其音如錄食之已墊",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-shou"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-shou"
+      ]
     },
     {
       "id": "draft-05-0041",
@@ -62442,10 +63289,16 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/16"
       ],
       "text": "又東三百里曰縣斸之山無草木多文石",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-xianzhu"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-shou",
+        "passage-zhongshan-r05-xianzhu"
+      ]
     },
     {
       "id": "draft-05-0042",
@@ -62458,15 +63311,19 @@
         "source-05-0135"
       ],
       "source_pages": [
-        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17"
+        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/16"
       ],
       "text": "又東三百里曰葱聾之山無草木多𢈦石",
       "candidate_entry_ids": [
-        "place-zhongshan-r01-conglong"
+        "place-zhongshan-r01-conglong",
+        "place-zhongshan-r05-conglong"
       ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-conglong"
+      ]
     },
     {
       "id": "draft-05-0043",
@@ -62483,10 +63340,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17"
       ],
       "text": "東北五百里曰條谷之山其木多槐桐其草多芍藥𧄸冬",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-tiaogu"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-tiaogu"
+      ]
     },
     {
       "id": "draft-05-0044",
@@ -62503,10 +63365,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17"
       ],
       "text": "又北十里曰超山其隂多蒼玉其陽有井冬有水而夏竭",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-chao"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-chao"
+      ]
     },
     {
       "id": "draft-05-0045",
@@ -62523,10 +63390,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17"
       ],
       "text": "又東五百里曰成侯之山其上多櫄木其草多芃",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-chenghou"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-chenghou"
+      ]
     },
     {
       "id": "draft-05-0046",
@@ -62542,10 +63414,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17"
       ],
       "text": "又東五百里曰朝歌之山谷多羙堊",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-chaoge"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-chaoge"
+      ]
     },
     {
       "id": "draft-05-0047",
@@ -62561,10 +63438,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17"
       ],
       "text": "又東五百里曰槐山谷多金錫",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-huai"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-huai"
+      ]
     },
     {
       "id": "draft-05-0048",
@@ -62577,13 +63459,18 @@
         "source-05-0144"
       ],
       "source_pages": [
-        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/18"
+        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/17"
       ],
       "text": "又東十里曰歴山其木多槐其陽多玉",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-li"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-li"
+      ]
     },
     {
       "id": "draft-05-0049",
@@ -62600,13 +63487,18 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/18"
       ],
       "text": "又東十里曰尸山多蒼玉其獸多麖尸水出焉南流注于洛水其中多羙玉",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-shi"
+      ],
       "relationship_excerpts": [
         "曰尸山多蒼玉其獸多麖尸水出焉南流注于洛水其中多羙玉",
         "多蒼玉其獸多麖尸水出焉南流注于洛水其中多羙玉"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-shi"
+      ]
     },
     {
       "id": "draft-05-0050",
@@ -62624,13 +63516,18 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/18"
       ],
       "text": "又東十里曰良餘之山其上多榖柞無石餘水出于其隂而北流注于河乳水出于其陽而東南流注于洛",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-liangyu"
+      ],
       "relationship_excerpts": [
         "榖柞無石餘水出于其隂而北流注于河乳水出于其陽而東南流注于洛",
         "注于河乳水出于其陽而東南流注于洛"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-liangyu"
+      ]
     },
     {
       "id": "draft-05-0051",
@@ -62647,13 +63544,19 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/18"
       ],
       "text": "又東南十里曰蠱尾之山多礪石赤銅龍餘之水出焉而東南流注于洛",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-guwei",
+        "water-zhongshan-longyu-guwei"
+      ],
       "relationship_excerpts": [
         "尾之山多礪石赤銅龍餘之水出焉而東南流注于洛",
         "石赤銅龍餘之水出焉而東南流注于洛"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-guwei"
+      ]
     },
     {
       "id": "draft-05-0052",
@@ -62672,13 +63575,19 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/19"
       ],
       "text": "又東北二十里曰升山其木多榖柞棘其草多藷藇蕙多冦脫黄酸之水出焉而北流注于河其中多琁玉",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-sheng",
+        "water-zhongshan-huangsuan-sheng"
+      ],
       "relationship_excerpts": [
         "草多藷藇蕙多冦脫黄酸之水出焉而北流注于河其中多琁玉",
         "蕙多冦脫黄酸之水出焉而北流注于河其中多琁玉"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-sheng"
+      ]
     },
     {
       "id": "draft-05-0053",
@@ -62697,10 +63606,17 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/19"
       ],
       "text": "又東十二里曰陽虛之山多金臨于玄扈之水凡薄山之首自茍林之山至于陽虚之山",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-yangxu"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-sheng",
+        "passage-zhongshan-r05-summary",
+        "passage-zhongshan-r05-yangxu"
+      ]
     },
     {
       "id": "draft-05-0054",
@@ -62728,10 +63644,18 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/20"
       ],
       "text": "凡十六山二千九百八十二里升山⟦缺字图:冢⟧也其祠禮太牢嬰用吉玉首山䰠也其祠用稌黑犧大牢之具蘖釀干儛置皷嬰用一璧尸水合天也𦘺牲祠之用一黑犬于上用一雌鷄于下刉一牝羊獻血嬰用吉玉彩之饗之中次六經縞羝山之首曰平逢之山南望伊洛東望榖城之山無草無木水多沙石有神焉其狀如人而二首名曰驕蟲是為螫蟲實惟蜂蜜之廬其祠之用一雄鷄禳而勿殺",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-sheng",
+        "place-zhongshan-r05-shou",
+        "place-zhongshan-r06-pingfeng"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r05-summary",
+        "passage-zhongshan-r06-pingfeng"
+      ]
     },
     {
       "id": "draft-05-0055",
@@ -62747,10 +63671,15 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/20"
       ],
       "text": "西十里曰縞羝之山無草木多金玉",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-gaodi"
+      ],
       "relationship_excerpts": [],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-gaodi"
+      ]
     },
     {
       "id": "draft-05-0056",
@@ -62767,16 +63696,23 @@
         "source-05-0175"
       ],
       "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/20",
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/21"
       ],
       "text": "又西十里曰廆山其隂多㻬琈之玉其西有谷焉名曰雚谷其木多柳楮其中有鳥焉狀如山鷄而長尾赤如丹火而青喙名曰鴒䳩其鳴自呼服之不眯交觴之水出于其陽而南流注于洛俞隨之水出于其隂而北流注于榖水",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-hui",
+        "water-zhongshan-jiaoshang-hui"
+      ],
       "relationship_excerpts": [
         "不眯交觴之水出于其陽而南流注于洛俞隨之水出于其隂而北流注于榖水",
         "于洛俞隨之水出于其隂而北流注于榖水"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-hui"
+      ]
     },
     {
       "id": "draft-05-0057",
@@ -62794,14 +63730,19 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/21"
       ],
       "text": "又西三十里曰瞻諸之山其陽多金其隂多文石㴬水出焉而東南流注于洛少水出其隂而東流注于榖水",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-zhanzhu"
+      ],
       "relationship_excerpts": [
         "山其陽多金其隂多文石㴬水出焉而東南流注于洛少水出其隂而東流注于榖",
         "其隂多文石㴬水出焉而東南流注于洛少水出其隂而東流注于榖水",
         "南流注于洛少水出其隂而東流注于榖水"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-zhanzhu"
+      ]
     },
     {
       "id": "draft-05-0058",
@@ -62820,13 +63761,18 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/22"
       ],
       "text": "又西三十里曰婁𣵠之山無草木多金玉瞻水出于其陽而東流注于洛陂水出于其隂而北流注于榖水其中多茈石文石",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-louzhuo"
+      ],
       "relationship_excerpts": [
         "木多金玉瞻水出于其陽而東流注于洛陂水出于其隂而北流注于榖水其中多",
         "流注于洛陂水出于其隂而北流注于榖水其中多茈石文石"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r06-louzhuo"
+      ]
     },
     {
       "id": "draft-05-0059",
@@ -63050,7 +63996,9 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/26"
       ],
       "text": "又西九十里曰陽華之山其陽多金玉其隂多青雄黄其草多藷藇多苦辛其狀如橚其實如𤓰其味酸甘食之已𭼠楊水出焉而西南流注于洛其中多人魚門水出焉而東北流注于河其中多玄䃤𦁎姑之水出于其隂而東流注于門水其上多銅門水出于河七百九十里入雒水凡縞羝山之首自平逢之山至于陽華之山",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-pingfeng"
+      ],
       "relationship_excerpts": [
         "如𤓰其味酸甘食之已𭼠楊水出焉而西南流注于洛其中多人魚門水出焉而東",
         "甘食之已𭼠楊水出焉而西南流注于洛其中多人魚門水出焉而東北流注于河",
@@ -63082,7 +64030,9 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/26"
       ],
       "text": "凡十四山七百九十里嶽在其中以六月祭之如諸嶽之祠法則天下安寧中次七經苦山之首曰休與之山其上有石焉名曰帝臺之棋五色而文其狀如鶉卵帝臺之石所以禱百神者也服之不蠱有草焉其狀如蓍赤葉而本叢生名曰風條可以為簳",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r06-pingfeng"
+      ],
       "relationship_excerpts": [],
       "status": "pending_review",
       "segmentation": "structural_candidate; boundaries and entities require manual review"
@@ -64554,7 +65504,8 @@
       ],
       "text": "又西七十里曰丙山其木多梓檀多弞杻凡首陽山之首自首山至于丙山",
       "candidate_entry_ids": [
-        "place-zhongshan-r02-yang"
+        "place-zhongshan-r02-yang",
+        "place-zhongshan-r05-shou"
       ],
       "relationship_excerpts": [],
       "status": "pending_review",
@@ -64586,7 +65537,8 @@
       "text": "凡九山二百六十七里其神狀皆龍身而人面其祠之毛用一雄雞瘞糈用五種之糈堵山⟦缺字图:冢⟧也其祠之少牢具羞酒祠嬰毛一璧瘞騩山帝也其祠羞酒太牢其合巫祝二人儛嬰一璧中次一十一山經荆山之首曰翼望之山湍水出焉東流注于濟貺水出焉東南流注于漢其中多蛟其上多松栢其下多漆梓其陽多赤金其隂多珉",
       "candidate_entry_ids": [
         "place-zhongshan-r02-yang",
-        "place-zhongshan-r03-gui"
+        "place-zhongshan-r03-gui",
+        "place-zhongshan-r05-shou"
       ],
       "relationship_excerpts": [
         "經荆山之首曰翼望之山湍水出焉東流注于濟貺水出焉東南流注于漢其中多",
@@ -64614,7 +65566,9 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/51"
       ],
       "text": "又東北一百五十里曰朝歌之山潕水出焉東南流注于榮其中多人魚其上多梓柟其獸多麢麋有草焉名曰莽草可以毒魚",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r05-chaoge"
+      ],
       "relationship_excerpts": [
         "一百五十里曰朝歌之山潕水出焉東南流注于榮其中多人魚其上多梓柟其獸",
         "里曰朝歌之山潕水出焉東南流注于榮其中多人魚其上多梓柟其獸多麢麋有"

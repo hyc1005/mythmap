@@ -54,6 +54,11 @@ ENTITIES = [
 from zhongshan_next30 import ROWS as NEXT_ROWS, entities as next_entities, LINKS as NEXT_LINKS, SHARES as NEXT_SHARES
 ROWS += NEXT_ROWS
 ENTITIES += next_entities(E)
+from zhongshan_stages34_63 import ROWS as B2_ROWS, entities as b2_entities, LINKS as B2_LINKS, SHARES as B2_SHARES, OVERRIDES
+ROWS += B2_ROWS
+ENTITIES += b2_entities(E)
+NEXT_LINKS += B2_LINKS
+NEXT_SHARES += B2_SHARES
 
 
 def build():
@@ -67,7 +72,7 @@ def build():
     for order, row in enumerate(ROWS, 1):
         stage = next(s for s in review['stage_plan'] if s['slug'] == row['slug'])
         first, last = stage['source_units']; refs = chapter['lines'][first - 1:last]
-        captured = ''.join(l['text'] for l in refs); raw = captured.replace('⟦缺字图:鬼⟧', '鬼'); pid = 'passage-zhongshan-' + row['slug']; root_kind = 'place' if stage['kind'] == 'mountain' else 'rite'; place = root_kind + '-zhongshan-' + row['slug']
+        captured = ''.join(l['text'] for l in refs); raw = captured.replace('⟦缺字图:鬼⟧', '鬼').replace('⟦缺字图:冢⟧', '冢'); pid = 'passage-zhongshan-' + row['slug']; root_kind = 'place' if stage['kind'] == 'mountain' else 'rite'; place = root_kind + '-zhongshan-' + row['slug']
         pages = stage['facsimile_pages']; urls = [f'https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/{p}' for p in pages]
         common = dict(source='《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）', source_chapter='《中山经》', source_book=5, region='中山经', source_locator='卷第五 · 影印页' + '、'.join(map(str, pages)), source_pages=urls, url=urls[0], source_unit_ids=stage['source_unit_ids'], reveal_chapter='04', content_batch='zhongshan-' + row['slug'], review_status='facsimile_reviewed', artwork_pending=True, direction='按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。', editorial_note='正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。')
         encommon = dict(source='Shanhaijing · Central Mountains (Sibu Congkan edition, Guo Pu commentary)', source_chapter='Zhongshan Jing', region='Zhongshan Jing', source_locator='Volume 5 · scan pages ' + ', '.join(map(str, pages)), direction='Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.', editorial_note='Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.')
@@ -77,9 +82,10 @@ def build():
         cards.append({**common, 'id': place, 'kind': root_kind, 'name': stage['name'], 'description': row['description'], 'quote': raw, 'commentary_quote': commentary, 'content_note': stage['note'], 'source_passage_ids': [pid], 'related_entry_ids': [pid]})
         english[place] = dict(english[pid]); comments = ''.join(a for l in refs for a in l['annotations'])
         for e in [e for e in ENTITIES if e['slug'] == row['slug']]:
-            assert e['quote'] in raw, e['id']
+            assert e['quote'] in (comments if e.get('commentary_only') else raw), e['id']
             assert all(not q or q in comments for q in e.get('commentary', '').split('；')), e['id']
             c = {**common, **{k: e[k] for k in ['id', 'kind', 'name', 'quote', 'description']}, 'commentary_quote': e.get('commentary', ''), 'context_place_id': place, 'source_passage_ids': [pid], 'related_entry_ids': [pid]}
+            if e.get('commentary_only'): c['commentary_only'] = True
             english[c['id']] = {**encommon, 'name': e['en_name'], 'description': e['en_description'], 'quote': e['en_quote'], 'commentary_quote': e.get('en_commentary', '')}
             if e['kind'] == 'water' or e.get('water'): c['relation_scope'] = 'water'
             if e.get('unknown'):
@@ -119,6 +125,9 @@ def build():
         c['related_entry_ids'] += [p['id'], root]; p['related_entry_ids'].append(id); index[root]['related_entry_ids'].append(id)
     river.update(name='河（中山水文文本索引）', description='河文本索引分别存甘棗共水西注、渠豬水南注及青要畛水、騩山正回水、冝蘇滽滽水、和山九水北注六出处，不认定现代水系同一性。')
     english[river['id']].update(name='He (Central textual index)', description='This textual index preserves separate recipient accounts at Ganzao, Quzhu, Qingyao, Wei, Yisu and He, without settling modern geographic identity.')
+    for id, (name, en_name, description, en_description) in OVERRIDES.items():
+        index[id].update(name=name, description=description)
+        english[id].update(name=en_name, description=en_description)
     for a, b in [('water-zhongshan-gong-gancao', river['id']), ('water-zhongshan-quzhu', river['id']), ('water-zhongshan-quzhu', 'beast-zhongshan-hao-quzhu'), *NEXT_LINKS]:
         index[a]['related_entry_ids'].append(b); index[b]['related_entry_ids'].append(a)
     for a, b in zip(passages, passages[1:]):
@@ -126,13 +135,13 @@ def build():
     batches = {'zhongshan-' + r['slug'] for r in ROWS}
     for group, values in [('passages', passages), ('text_entities', [c for c in cards if c['kind'] in {'place', 'rite', 'deity', 'animal'} or c['kind'] in {'plant', 'material'} and not c.get('context_place_id')]), ('beasts', [c for c in cards if c['kind'] == 'beast']), ('natural_features', [c for c in cards if c['kind'] in {'plant', 'water', 'material'} and c.get('context_place_id')])]:
         world[group] = [c for c in world[group] if c.get('content_batch') not in batches] + values
-    world['revision'] = 'myth-world-2026-10-25-zhongshan-thirtythree-v1'
-    review.update(status='partially_implemented', implemented_stages=33, remaining_stages=179, scope='前33段正文、郭注、双语及实体接入；后179阶段仍待逐批核定。', batch_size=30, entry_ids=[c['id'] for c in cards], passages=[dict(id=p['id'], source_unit_ids=p['source_unit_ids'], source_span=p['source_span'], status='facsimile_reviewed') for p in passages], artwork_summary=dict(selected=sum(a['status'] == 'reviewed' for a in jobs.values()), appearance_unknown=sum(c.get('appearance_unknown', False) for c in cards)), next=dict(name=review['stage_plan'][33]['name'], source_units=review['stage_plan'][33]['source_units'], facsimile_pages=review['stage_plan'][33]['facsimile_pages'], status='pending_bilingual_entity_review'))
-    review['limits'] = '212阶段中前33阶段已接入，余179；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。'
-    for stage in review['stage_plan'][:33]:
+    world['revision'] = 'myth-world-2026-10-25-zhongshan-sixtythree-v1'
+    review.update(status='partially_implemented', implemented_stages=63, remaining_stages=149, scope='前63段正文、郭注、双语及实体接入；后149阶段仍待逐批核定。', batch_size=30, entry_ids=[c['id'] for c in cards], passages=[dict(id=p['id'], source_unit_ids=p['source_unit_ids'], source_span=p['source_span'], status='facsimile_reviewed') for p in passages], artwork_summary=dict(selected=sum(a['status'] == 'reviewed' for a in jobs.values()), appearance_unknown=sum(c.get('appearance_unknown', False) for c in cards)), next=dict(name=review['stage_plan'][63]['name'], source_units=review['stage_plan'][63]['source_units'], facsimile_pages=review['stage_plan'][63]['facsimile_pages'], status='pending_bilingual_entity_review'))
+    review['limits'] = '212阶段中前63阶段已接入，余149；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。'
+    for stage in review['stage_plan'][:63]:
         stage.update(content_status='facsimile_reviewed', browser_status='see local handoff acceptance', passage_id='passage-zhongshan-' + stage['slug'], new_cards=sum(c['content_batch'] == 'zhongshan-' + stage['slug'] for c in cards))
     write('frontend/public/data/myth-world.json', world); write('frontend/src/locale-content-en.json', english); write('data/zhongshan-edition-review.json', review)
-    print(f'Built Central: {len(passages)} passages, {len(cards)} cards; 179 stages remain')
+    print(f'Built Central: {len(passages)} passages, {len(cards)} cards; 149 stages remain')
 
 
 if __name__ == '__main__':

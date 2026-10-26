@@ -5848,5 +5848,185 @@
         439
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-yin-fuzhu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-yin-fuzhu-v1-card.webp",
+      "bytes": 33036,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-yin-fuzhu-v1-preview.webp",
+      "bytes": 69850,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-xiqu-li-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-xiqu-li-v1-card.webp",
+      "bytes": 27956,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-xiqu-li-v1-preview.webp",
+      "bytes": 56532,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-jie-li-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-jie-li-v1-card.webp",
+      "bytes": 26950,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-jie-li-v1-preview.webp",
+      "bytes": 53040,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-humanbeast-range4-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanbeast-range4-v1-card.webp",
+      "bytes": 20880,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanbeast-range4-v1-preview.webp",
+      "bytes": 42046,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-bi-mu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-bi-mu-v1-card.webp",
+      "bytes": 17684,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-bi-mu-v1-preview.webp",
+      "bytes": 33432,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-jue-shou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-jue-shou-v1-card.webp",
+      "bytes": 36520,
+      "dimensions": [
+        296,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-jue-shou-v1-preview.webp",
+      "bytes": 72326,
+      "dimensions": [
+        444,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-jing-shi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-jing-shi-v1-card.webp",
+      "bytes": 22334,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-jing-shi-v1-preview.webp",
+      "bytes": 42530,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/turtle-linggui-yangxu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-linggui-yangxu-v1-card.webp",
+      "bytes": 27594,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-linggui-yangxu-v1-preview.webp",
+      "bytes": 54642,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-jiaochong-pingfeng-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-jiaochong-pingfeng-v1-card.webp",
+      "bytes": 20624,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-jiaochong-pingfeng-v1-preview.webp",
+      "bytes": 38006,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-lingyao-hui-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-lingyao-hui-v1-card.webp",
+      "bytes": 21948,
+      "dimensions": [
+        267,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-lingyao-hui-v1-preview.webp",
+      "bytes": 42092,
+      "dimensions": [
+        400,
+        480
+      ]
+    }
   }
 }
