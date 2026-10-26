@@ -6028,5 +6028,185 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/turtle-xuangui-mi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-xuangui-mi-v1-card.webp",
+      "bytes": 24432,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-xuangui-mi-v1-preview.webp",
+      "bytes": 46996,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/frog-xiubi-tuo-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/frog-xiubi-tuo-v1-card.webp",
+      "bytes": 24028,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/frog-xiubi-tuo-v1-preview.webp",
+      "bytes": 45472,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/pig-shangao-ku-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/pig-shangao-ku-v1-card.webp",
+      "bytes": 23344,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/pig-shangao-ku-v1-preview.webp",
+      "bytes": 47130,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/insect-wenwen-fanggao-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/insect-wenwen-fanggao-v1-card.webp",
+      "bytes": 24212,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/insect-wenwen-fanggao-v1-preview.webp",
+      "bytes": 46724,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/turtle-threeleg-da241-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-threeleg-da241-v1-card.webp",
+      "bytes": 27564,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-threeleg-da241-v1-preview.webp",
+      "bytes": 53232,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/turtle-sixeye-comment-da241-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-sixeye-comment-da241-v1-card.webp",
+      "bytes": 37032,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-sixeye-comment-da241-v1-preview.webp",
+      "bytes": 71630,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/fish-lun-banshi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/fish-lun-banshi-v1-card.webp",
+      "bytes": 21586,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/fish-lun-banshi-v1-preview.webp",
+      "bytes": 41848,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/fish-teng-banshi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/fish-teng-banshi-v1-card.webp",
+      "bytes": 21162,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/fish-teng-banshi-v1-preview.webp",
+      "bytes": 42068,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-threeheads-range7-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-threeheads-range7-v1-card.webp",
+      "bytes": 23882,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-threeheads-range7-v1-preview.webp",
+      "bytes": 47352,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-humanpig-range7-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanpig-range7-v1-card.webp",
+      "bytes": 19806,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanpig-range7-v1-preview.webp",
+      "bytes": 38824,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
   }
 }

@@ -59,6 +59,11 @@ ROWS += B2_ROWS
 ENTITIES += b2_entities(E)
 NEXT_LINKS += B2_LINKS
 NEXT_SHARES += B2_SHARES
+from zhongshan_stages64_93 import ROWS as B3_ROWS, entities as b3_entities, LINKS as B3_LINKS, SHARES as B3_SHARES
+ROWS += B3_ROWS
+ENTITIES += b3_entities(E)
+NEXT_LINKS += B3_LINKS
+NEXT_SHARES += B3_SHARES
 
 
 def build():
@@ -128,6 +133,8 @@ def build():
     for id, (name, en_name, description, en_description) in OVERRIDES.items():
         index[id].update(name=name, description=description)
         english[id].update(name=en_name, description=en_description)
+    for id, cn, en in [('water-zhongshan-he', '各段入河水文的方向、源侧及出处分存，不强定现代水系同一性。', 'Separate recipient accounts retain their directions, source sides and textual provenance, without settling modern river identity.'), ('water-zhongshan-yi', '各段伊水上下文分别保留，不并役水或同名滽滽水，不定现代河道。', 'The Yi contexts remain separate from service-character Yi water and the Yongyong namesakes, without modern river identification.')]:
+        index[id]['description'] = cn; english[id]['description'] = en
     for a, b in [('water-zhongshan-gong-gancao', river['id']), ('water-zhongshan-quzhu', river['id']), ('water-zhongshan-quzhu', 'beast-zhongshan-hao-quzhu'), *NEXT_LINKS]:
         index[a]['related_entry_ids'].append(b); index[b]['related_entry_ids'].append(a)
     for a, b in zip(passages, passages[1:]):
@@ -135,13 +142,13 @@ def build():
     batches = {'zhongshan-' + r['slug'] for r in ROWS}
     for group, values in [('passages', passages), ('text_entities', [c for c in cards if c['kind'] in {'place', 'rite', 'deity', 'animal'} or c['kind'] in {'plant', 'material'} and not c.get('context_place_id')]), ('beasts', [c for c in cards if c['kind'] == 'beast']), ('natural_features', [c for c in cards if c['kind'] in {'plant', 'water', 'material'} and c.get('context_place_id')])]:
         world[group] = [c for c in world[group] if c.get('content_batch') not in batches] + values
-    world['revision'] = 'myth-world-2026-10-25-zhongshan-sixtythree-v1'
-    review.update(status='partially_implemented', implemented_stages=63, remaining_stages=149, scope='前63段正文、郭注、双语及实体接入；后149阶段仍待逐批核定。', batch_size=30, entry_ids=[c['id'] for c in cards], passages=[dict(id=p['id'], source_unit_ids=p['source_unit_ids'], source_span=p['source_span'], status='facsimile_reviewed') for p in passages], artwork_summary=dict(selected=sum(a['status'] == 'reviewed' for a in jobs.values()), appearance_unknown=sum(c.get('appearance_unknown', False) for c in cards)), next=dict(name=review['stage_plan'][63]['name'], source_units=review['stage_plan'][63]['source_units'], facsimile_pages=review['stage_plan'][63]['facsimile_pages'], status='pending_bilingual_entity_review'))
-    review['limits'] = '212阶段中前63阶段已接入，余149；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。'
-    for stage in review['stage_plan'][:63]:
+    world['revision'] = 'myth-world-2026-10-26-zhongshan-ninetythree-v1'
+    review.update(status='partially_implemented', implemented_stages=93, remaining_stages=119, scope='前93段正文、郭注、双语及实体接入；后119阶段仍待逐批核定。', batch_size=30, entry_ids=[c['id'] for c in cards], passages=[dict(id=p['id'], source_unit_ids=p['source_unit_ids'], source_span=p['source_span'], status='facsimile_reviewed') for p in passages], artwork_summary=dict(selected=sum(a['status'] == 'reviewed' for a in jobs.values()), appearance_unknown=sum(c.get('appearance_unknown', False) for c in cards)), next=dict(name=review['stage_plan'][93]['name'], source_units=review['stage_plan'][93]['source_units'], facsimile_pages=review['stage_plan'][93]['facsimile_pages'], status='pending_bilingual_entity_review'))
+    review['limits'] = '212阶段中前93阶段已接入，余119；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。'
+    for stage in review['stage_plan'][:93]:
         stage.update(content_status='facsimile_reviewed', browser_status='see local handoff acceptance', passage_id='passage-zhongshan-' + stage['slug'], new_cards=sum(c['content_batch'] == 'zhongshan-' + stage['slug'] for c in cards))
     write('frontend/public/data/myth-world.json', world); write('frontend/src/locale-content-en.json', english); write('data/zhongshan-edition-review.json', review)
-    print(f'Built Central: {len(passages)} passages, {len(cards)} cards; 149 stages remain')
+    print(f'Built Central: {len(passages)} passages, {len(cards)} cards; 119 stages remain')
 
 
 if __name__ == '__main__':

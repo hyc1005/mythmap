@@ -33,12 +33,9 @@ bundled = set()
 for path in (ROOT / 'frontend/public/fonts').glob('*.woff2'):
     if path.name not in {'shanhai-title-zhongshan.woff2', 'atlas-central-rare.woff2'}:
         bundled.update(TTFont(path).getBestCmap())
-missing = sorted({c for c in text if (0x3400 <= ord(c) <= 0x9fff or 0x20000 <= ord(c) <= 0x323af) and ord(c) not in bundled})
+missing = sorted({c for c in text if (0x3400 <= ord(c) <= 0x9fff or 0x20000 <= ord(c) <= 0x323af) and (ord(c) not in bundled or ord(c) > 0xffff)})
 TITLE = ''.join(c for c in missing if ord(c) <= 0xffff)
 RARE = ''.join(c for c in missing if ord(c) > 0xffff)
-LOCAL = ''.join(c for c in '𣵠' if c in text)
-local_target = ROOT / 'frontend/public/fonts/shanhai-rare.woff2'
-assert set(map(ord, LOCAL)) <= set(TTFont(local_target).getBestCmap())
 assert TITLE and RARE
 url = 'https://fonts.googleapis.com/css2?' + urlencode({'family': 'Noto Serif SC:wght@400..700', 'text': TITLE, 'display': 'swap'})
 css = fetch(url).decode()
@@ -71,7 +68,6 @@ for name in ['exploration', 'myth-world']:
     path = ROOT / 'frontend/src/styles' / (name + '.css'); style = path.read_text(encoding='utf-8')
     family = "'Shanhai Title'" if name == 'exploration' else 'ShanhaiRare'
     header = "@font-face { font-family: 'Atlas Central Rare'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/atlas-central-rare.woff2) format(\"woff2\"); unicode-range: " + ', '.join('U+' + format(ord(c), 'X') for c in RARE) + '; }\n'
-    if LOCAL: header += "@font-face { font-family: 'Atlas Central Rare'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/shanhai-rare.woff2) format(\"woff2\"); unicode-range: " + ', '.join('U+' + format(ord(c), 'X') for c in LOCAL) + '; }\n'
     header += '@font-face { font-family: ' + family + '; font-style: normal; font-weight: 400 700; font-display: swap; src: url(/fonts/shanhai-title-zhongshan.woff2) format("woff2"); unicode-range: ' + ', '.join('U+' + format(ord(c), 'X') for c in TITLE) + '; }\n'
     style = re.sub(r'@font-face\s*\{[^}]*?(?:atlas-central-rare|shanhai-title-zhongshan)\.woff2[^}]*\}\s*', '', style)
     style = re.sub(r"@font-face\s*\{[^}]*font-family: 'Atlas Central Rare';[^}]*shanhai-rare\.woff2[^}]*\}\s*", '', style)
@@ -82,13 +78,12 @@ review_path = ROOT / 'data/zhongshan-edition-review.json'; review = json.loads(r
 review['font_supplements'] = [
     dict(family='Shanhai Title', source_family='Noto Serif SC', characters=TITLE, weights=[400, 700], path=target.relative_to(ROOT).as_posix(), license='frontend/public/fonts/noto-serif-sc-LICENSE.txt', source_url=url, sha256=hashlib.sha256(data).hexdigest()),
     dict(family='Atlas Central Rare', characters=RARE, weights=[400], path=rare_target.relative_to(ROOT).as_posix(), license='frontend/public/fonts/atlas-central-rare-LICENSE.txt', source_url=source_url, upstream_sha256=source_sha, upstream_git_blob='81c4df21cdbd2570fa92ac55c04b02198c4bf692', sha256=hashlib.sha256(rare_target.read_bytes()).hexdigest(), limits='独立字体族优先回退，静态400字形；600沿用400且禁用伪粗，不复制系统字体。')]
-if LOCAL: review['font_supplements'].append(dict(family='Atlas Central Rare', source_family='Shanhai Rare', characters=LOCAL, weights=[400], path=local_target.relative_to(ROOT).as_posix(), license='frontend/public/fonts/ShanhaiRare-LICENSE.txt', sha256=hashlib.sha256(local_target.read_bytes()).hexdigest(), limits='复用已授权打包字形，仅补CSS映射，不复制系统字体或合并不同授权字体。'))
 bundled.update(font.getBestCmap()); bundled.update(TTFont(rare_target).getBestCmap())
 preflight = review['font_preflight']; preflight.setdefault('initial_missing_stage_title_characters', preflight['missing_stage_title_characters'])
 preflight['missing_stage_title_characters'] = ''.join(sorted({c for s in review['stage_plan'] for c in re.sub(r'⟦缺字图:([^⟧]+)⟧', r'\1', s['name']) if ord(c) not in bundled}))
 preflight['missing_stage_title_count'] = len(preflight['missing_stage_title_characters'])
 preflight['implemented_batch_missing_characters'] = ''.join(c for c in missing if ord(c) not in bundled)
 assert not preflight['implemented_batch_missing_characters']
-preflight.update(status='current_batch_covered_future_pending', limits='已接入前63阶段标题、实体、正文与郭注所需字已补；后续149阶段完整内容仍需逐批预检。')
+preflight.update(status='current_batch_covered_future_pending', limits='已接入前93阶段标题、实体、正文与郭注所需字已补；后续119阶段完整内容仍需逐批预检。')
 review_path.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print('Central rare subset', RARE, rare_target.stat().st_size, 'future title gaps', preflight['missing_stage_title_count'], flush=True)

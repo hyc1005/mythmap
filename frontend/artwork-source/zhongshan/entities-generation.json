@@ -343,6 +343,132 @@
           ]
         }
       ]
+    },
+    {
+      "name": "turtle-xuangui-mi",
+      "entry_id": "beast-zhongshan-xuangui-mi",
+      "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. Xuangui at Mount Mi: TURTLE with a BIRD HEAD and SOFTSHELL-TURTLE TAIL. Do NOT reuse the Southern account's snake-tail form. One broad low turtle shell, one compact bird head with a short ordinary beak, one short narrow softshell-like tail, four ordinary turtle feet. Flat slate-gray/blue shell with cream incisions, warm ivory bird neck, muted olive legs, small rust-red beak as artistic color. Three-quarter low view facing left, tail clearly visible to right. No snake head, snake tail, dragon horns, paired wings or feathers on the shell.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-5803abcb-5124-46d3-a156-9a0a2e1be5fa.png",
+      "source_file": "turtle-xuangui-mi-v1.png",
+      "status": "reviewed",
+      "review_note": "鸟首鳖尾；壳色姿态足爪为创作，不借用南山蛇尾。",
+      "sha256": "7c292dc8c5afc4641765f2f5b263f82f0c9255fdc3c5cb350ce5e5f7855e6113",
+      "reference_images": []
+    },
+    {
+      "name": "frog-xiubi-tuo",
+      "entry_id": "beast-zhongshan-xiubi-tuo",
+      "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. Xiubi fish 脩辟之魚: shaped like a FROG (Guo gloss for min), WHITE MOUTH/SNOUT; the kite-like cry is sound only. One compact frog-like body, four ordinary frog legs, two ordinary frog eyes, broad conspicuously WHITE lips and short white muzzle. Moss/olive green skin and ochre belly as artistic colors. Crouch broad front-three-quarter with left hind leg stretched and right tucked, all limbs distinct. No bird head, bird wings, feathers, fishtail, human face or horns. Do not draw a winged frog.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-f03e2f44-9d15-4262-a7ab-407a1fa41e7d.png",
+      "source_file": "frog-xiubi-tuo-v1.png",
+      "status": "reviewed",
+      "review_note": "蛙状白喙，鸱声不画成翅膀；斑纹色彩为创作。",
+      "sha256": "98633c716c09277bc51827ec95215933b50128bbde71991c07ec2dcd9199d2ab",
+      "reference_images": []
+    },
+    {
+      "name": "pig-shangao-ku",
+      "entry_id": "beast-zhongshan-shangao-ku",
+      "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. Shangao 山膏: PIG-LIKE, RED like cinnabar fire, good at cursing. One stocky terrestrial pig, four cloven-hoof legs, one curled ordinary pig tail, red vermilion hide. Strong grumpy open ordinary pig mouth, small swept pig ears, eyes glancing sideways, body in low trotting pose facing left. Swearing is sound only: no written words or human mouth/face. No flames, horns, wings, fish fins or patterned red-on-white body. Keep full body red, contrasting dark umber hooves.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-9c9a862d-d672-4ef7-ae89-6cb3eefc6e43.png",
+      "source_file": "pig-shangao-ku-v1.png",
+      "status": "reviewed",
+      "review_note": "猪形赤色，张口示意叫声，无火焰人脸；鬃毛姿态为创作。",
+      "sha256": "7bd73fba0bf404e1de867d61de7c15010503d8abe749b91cf5f14de1cddea448",
+      "reference_images": []
+    },
+    {
+      "name": "insect-wenwen-fanggao",
+      "entry_id": "beast-zhongshan-wenwen-fanggao",
+      "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. Wenwen 文文: BEE-LIKE beast, BRANCHED TAIL, REVERSED TONGUE, good at calling. One generalized bee-like insect, one bee head, one striped ochre/black compact bee torso, six ordinary insect legs, translucent pale sage ordinary bee wing pairs as artistic interpretation. Rear abdomen ends in ONE clearly branched tail, choose two short diverging furry branches as artistic detail. A single small tongue visibly curves BACK toward its own chest, not projecting straight out. Diagonal hovering pose head upper right and branched tail lower left. No human face, snake tail, horns, floral scenery or swarm. Branch count, wing arrangement and colors are artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-4d6e582d-e660-4c3f-a239-7722143a0810.png",
+      "source_file": "insect-wenwen-fanggao-v1.png",
+      "status": "reviewed",
+      "review_note": "蜂形枝尾反舌；分叉尾与回卷舌可见，蜂足翅和两叉数为创作。",
+      "sha256": "819e61dcc446e0766ca2673b84a0e389a0783f0f83e5d8835ebb6f8e17d28e7e",
+      "reference_images": []
+    },
+    {
+      "name": "turtle-threeleg-da241",
+      "entry_id": "beast-zhongshan-threeleg-da241",
+      "prompt": "Edit this isolated three-legged turtle illustration. Preserve the olive head, ochre shell, carved woodblock mineral pigment style and transparent background. The current image shows only TWO feet: correct this to EXACTLY THREE fully visible, clearly separated turtle legs and feet, all attached to the same body. Use two broad front legs separated left and right and one central rear leg visibly projecting below the rear shell; a slightly elevated frontal three-quarter pose makes all three countable. Exactly three legs total, none hidden or implied. Two ordinary eyes only, no six-eye borrowing. Keep one small ordinary tail. No text, ground, shadow, scenery or extra animals. Entire silhouette inside canvas with generous transparent margins.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-78bf71d9-35cb-498e-b3b1-655ebfa54fac.png",
+      "source_file": "turtle-threeleg-da241-v2.png",
+      "status": "reviewed",
+      "review_note": "修订后三足清楚可数，普通双目；不移入郭注外地六目。",
+      "sha256": "ffd1b9af04f4fd76c1a2640f2156af232e28a93acd23417b82799eecb00bcb62",
+      "revision_history": [
+        {
+          "name": "turtle-threeleg-da241",
+          "entry_id": "beast-zhongshan-threeleg-da241",
+          "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. Native three-legged turtle at Da mountain: exactly THREE separate TURTLE LEGS with exactly THREE feet, ALL visible, ordinary turtle shell and ONE head with exactly TWO ordinary turtle eyes. This local main text does NOT state six eyes. Choose two front feet and ONE central rear foot, short tapered pointed tail clearly NOT a fourth foot. Slightly top-down front-three-quarter composition showing all three leg attachments. Ochre shell, green-gray skin, cream carved grooves. No hidden extra leg, no eye spots on shell, no six eyes, no second head or dragon anatomy.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-db9f43e0-e255-4302-9d6c-1e62ee572101.png",
+          "source_file": "turtle-threeleg-da241-v1.png",
+          "status": "needs_revision",
+          "review_note": "初版仅两足可见，不符合三足可核验要求，保留原文件。",
+          "sha256": "b95374a24d89b44bbed1f901849cefe9d1110a8b375c465d6ae2b7613a9088e6",
+          "reference_images": []
+        }
+      ],
+      "reference_images": [],
+      "edit_reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-db9f43e0-e255-4302-9d6c-1e62ee572101.png"
+      ]
+    },
+    {
+      "name": "turtle-sixeye-comment-da241",
+      "entry_id": "beast-zhongshan-sixeye-comment-da241",
+      "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. COMMENTARY COMPARISON ONLY, a DIFFERENT outside-locality turtle cited by Guo Pu: exactly THREE separate turtle legs and exactly SIX EYES on ONE turtle head. All SIX eyes clearly countable as THREE PAIRS in three separated rows on a slightly broad single head; no eyes anywhere else. Two front legs and ONE central rear leg with three feet all visible, no fourth foot. One low turtle shell, very short pointed tail. Muted olive shell and warm brown head/legs with cream grooves, top-down frontal pose that clearly shows six eyes and three feet. No duplicated heads, horns, wings, snake neck, decorations or text. Distinct image from the two-eyed native three-legged turtle.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-53b2a88b-6180-4cde-9884-50cf4f89c73e.png",
+      "source_file": "turtle-sixeye-comment-da241-v1.png",
+      "status": "reviewed",
+      "review_note": "郭注外地三足六目引例，正面三足六目可数；纯注文比较卡，不作本山本土动物。",
+      "sha256": "dc2f333f9c0d51cf5da1b0c977a6c9362ccc3e55e1648f42a48cfe193d3f5dcf",
+      "reference_images": []
+    },
+    {
+      "name": "fish-lun-banshi",
+      "entry_id": "beast-zhongshan-lun-banshi",
+      "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. Lun fish 鯩魚: CRUCIAN-CARP-LIKE ordinary fish with BLACK MARKINGS. One deep silver/ivory fish body, one ordinary fish head, ordinary fish fins and one plain fish tail. Bold dark charcoal bars and spots, no blue-green or red pattern. Gentle downward curving pose with head down-right and tail upper-left. No wings, feathers, legs, horns, human face or bird beak. Ordinary fin details, base color and pose are artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-b253efc0-c18d-4e58-bf13-d73f8ba2bb5d.png",
+      "source_file": "fish-lun-banshi-v1.png",
+      "status": "reviewed",
+      "review_note": "鲋状黑文据正文，鱼鳍尾、银白底色、具体斑纹布局与曲姿为创作；郭注仅音伦，不声称郭注给出鲤属。",
+      "sha256": "187f5cb064defc3da57b45ed707e5aaa68a8d6daebb78646630cec5533c543b9",
+      "reference_images": []
+    },
+    {
+      "name": "fish-teng-banshi",
+      "entry_id": "beast-zhongshan-teng-banshi",
+      "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. Teng fish 鰧魚: gui-like fish, Guo gloss LARGE MOUTH, LARGE EYES, FINE SCALES and markings; main text BLUE-GREEN PATTERNS and RED TAIL. One long ochre/gold fish torso with fine small scales and clear teal patterns, one large ordinary fish mouth and large ordinary fish eyes, one vivid cinnabar RED ordinary fish tail, ordinary fish fins. Horizontal side profile facing right, tail sweeping to left. No bird feathers/wings, legs, human face, extra heads or eel tentacles. Red tail is a fin, NOT feather tail. Water-channel dwelling is context only, no landscape.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-20badf28-66ee-43b4-9c23-cb3d144d128c.png",
+      "source_file": "fish-teng-banshi-v1.png",
+      "status": "reviewed",
+      "review_note": "鳜状苍文赤尾据正文，大口大目细鳞据郭注；鱼鳍和浅金底色、姿态为创作，不写成白鱼赤尾引文。",
+      "sha256": "b485e809807b6255f2107ee079cad7b29bd75c172e9159d683ff3595954b41c6",
+      "reference_images": []
+    },
+    {
+      "name": "deity-threeheads-range7",
+      "entry_id": "deity-zhongshan-threeheads-range7",
+      "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. Known-anatomy-only HEAD STUDY for third-class main mountain gods in Central seventh-range summary: HUMAN FACES and exactly THREE HEADS. The source does NOT specify a torso, so depict a SINGLE coherent THREE-HEADED BUST ONLY, three short necks meeting at one small neutral plain gray base; absolutely NO torso, arms, legs or inferred beast body. One central mature serious human face front-on, one younger face turned left and one elder face turned right; all three complete faces and heads separate and countable. Natural dark hair with subtle different hair arrangements, no crowns or halos. Plain small base is artistic framing, not a canonical garment. Do not draw three full people, a pig body, wings or three faces fused into one head.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-5c6d6c4d-4464-43f2-9dd3-ddc994765ee0.png",
+      "source_file": "deity-threeheads-range7-v1.png",
+      "status": "reviewed",
+      "review_note": "三个人首仅头颈研究图，无未载躯体；年龄发式底座为创作，不对应三位分别命名人物。",
+      "sha256": "fec06ba461823bb20e6a5584fd2614cc04db9ce5267a33e4d6cbba4d89a153e3",
+      "reference_images": []
+    },
+    {
+      "name": "deity-humanpig-range7",
+      "entry_id": "deity-zhongshan-humanpig-range7",
+      "prompt": "Use case: illustration-story. One isolated subject in Chinese carved woodblock illustration: dark-brown outlines, flat restrained mineral pigments, cream carved incisions, print grain. Fully TRANSPARENT background. Whole intended subject in frame with generous transparent margins. No text, scene, ground, border, shadow, halo, extra creatures or gore. Unspecified anatomy, colors and pose are explicitly artistic. Seventh-range OTHER gods: PIG BODY, HUMAN FACE. One low stocky PIG quadruped with four short cloven-hoof legs and one small curly pig tail, ONE mature woman human FACE with human nose/mouth and two human eyes. Human facial features must NOT become a pig snout. Short dark plain hair, muted warm pale-gray/pink pig hide, dark brown hooves; no stripes or spots. Horizontal walking pose facing left, human face turned a little toward viewer. Face age/sex, ordinary pig limbs/tail, color and pose are artistic. No horns, wings, tiger tail, leopard marks, extra heads or human arms.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-e692bc28-ec60-4d55-ae7f-94b9805257e9.png",
+      "source_file": "deity-humanpig-range7-v1.png",
+      "status": "reviewed",
+      "review_note": "人面豕身明确；女性面容发式体色姿态为创作，不把总括神型逐山虚构。",
+      "sha256": "99420a73a85e9d0386a882fd6c54e93b28164dc8189df5a3c2c928c7fb14e718",
+      "reference_images": []
     }
   ]
 }
