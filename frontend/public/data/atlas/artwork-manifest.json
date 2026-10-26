@@ -11684,6 +11684,42 @@
           ]
         }
       }
+    },
+    {
+      "id": "zhongshan-cattle-li-jingshan8-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/cattle-li-jingshan8-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/cattle-li-jingshan8-v1.webp",
+      "initial_prompt": "Reframe this same black shaggy cattle illustration on a larger transparent canvas. Preserve the existing animal, four legs and feet, paired horns, tail, black coat and carved woodblock style. The tail touches the right edge: scale the WHOLE animal down uniformly and center it so there are clear fully transparent margins of at least 8 percent on all four sides. Entire tail, all hair edges, both horns and all four hooves must be fully inside the canvas, with no clipping. No new anatomy, scene, ground, halo, text, border or background. Preserve true alpha.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "黑色旄牛属依据郭注；修订后双角、四蹄、尾及毛缘完整留白。长毛牛体、角形蹄尾细节与姿态为艺术解释，不强定现代亚种。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/cattle-li-jingshan8-v1.webp",
+          "bytes": 275222,
+          "dimensions": [
+            1280,
+            1067
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/cattle-li-jingshan8-v1-card.webp",
+          "bytes": 25860,
+          "dimensions": [
+            320,
+            267
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/cattle-li-jingshan8-v1-preview.webp",
+          "bytes": 51508,
+          "dimensions": [
+            480,
+            400
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

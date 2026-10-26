@@ -48,13 +48,13 @@
       "number": 5,
       "title": "中山经",
       "source_blocks": 614,
-      "explained_blocks": 291,
-      "semantic_passages": 93,
+      "explained_blocks": 301,
+      "semantic_passages": 95,
       "candidate_passages": 200,
-      "pending_candidate_passages": 115,
+      "pending_candidate_passages": 113,
       "semantic_review": "partial",
       "planned_semantic_stages": 212,
-      "implemented_semantic_stages": 93,
+      "implemented_semantic_stages": 95,
       "preparation_status": "partially_implemented",
       "edition_review": "data/zhongshan-edition-review.json"
     },
@@ -35814,11 +35814,26 @@
         "今在南郡界中"
       ],
       "text_sha256": "7f9eeb8075c6b4437dbb9f07939870f01c6b03ac1c59bc9fb021dfb3722108ef",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jing"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r08-jing",
+        "place-zhongshan-r08-jingshan"
+      ],
+      "objects": [
+        "丹粟（雎水）",
+        "文魚（景山雎水）",
+        "景山",
+        "杼（景山）",
+        "檀（景山）",
+        "江（中次八受水文本索引）",
+        "玉（景山）",
+        "金（景山）",
+        "雎水（中次八文本索引）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -35833,11 +35848,23 @@
         "雎音癰疽之疽"
       ],
       "text_sha256": "92236afb9c308cfa9b6af5cb97ebc04d5f2448db57d6f19376f64e6c0e8c5480",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jing"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "丹粟（雎水）",
+        "文魚（景山雎水）",
+        "景山",
+        "杼（景山）",
+        "檀（景山）",
+        "江（中次八受水文本索引）",
+        "玉（景山）",
+        "金（景山）",
+        "雎水（中次八文本索引）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -35851,11 +35878,23 @@
         "今睢水出新城魏昌縣東南發阿山東南至南郡枝江縣入江也"
       ],
       "text_sha256": "d7573302db6476f8e29cd5896f40f37259a2d7dd09e01ce53f04bc20b42bc303",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jing"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "丹粟（雎水）",
+        "文魚（景山雎水）",
+        "景山",
+        "杼（景山）",
+        "檀（景山）",
+        "江（中次八受水文本索引）",
+        "玉（景山）",
+        "金（景山）",
+        "雎水（中次八文本索引）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -35869,30 +35908,63 @@
         "有斑"
       ],
       "text_sha256": "b481cb1bcb3f18baeb07562c6c7f915b28b804d09c90d0b495945f164eacca2a",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jing"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "丹粟（雎水）",
+        "文魚（景山雎水）",
+        "景山",
+        "杼（景山）",
+        "檀（景山）",
+        "江（中次八受水文本索引）",
+        "玉（景山）",
+        "金（景山）",
+        "雎水（中次八文本索引）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
       "id": "source-05-0297",
       "chapter": 5,
       "source_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
-      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/35",
+      "page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/34",
       "page_quality": "1",
       "text": "東北百里曰荆山其隂多鐵其陽多赤金",
       "commentary": [
         "今在新城沐鄉縣南"
       ],
       "text_sha256": "ac272c9f4844c9d86777c07fede35e478a259d459e1b2d64faab6bb2b8cc5f5c",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
-      "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jingshan"
+      ],
+      "candidate_entry_ids": [
+        "place-zhongshan-r08-jingshan"
+      ],
+      "objects": [
+        "松（荆山）",
+        "栢（荆山）",
+        "橘（荆山）",
+        "櫾（荆山）",
+        "漳水（荆山）",
+        "犛牛（荆山）",
+        "竹（荆山）",
+        "荆山",
+        "虎（荆山）",
+        "豹（荆山）",
+        "赤金（荆山阳）",
+        "鐵（荆山阴）",
+        "閭麋（荆山原词）",
+        "鮫魚（漳水）",
+        "黃金（漳水）"
+      ],
+      "relationship_review": "passage_context_only",
+      "segmentation": "captured_source_block; reviewed semantic passages are linked separately",
+      "captured_page_url": "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/35"
     },
     {
       "id": "source-05-0298",
@@ -35905,11 +35977,29 @@
         "旄牛属也黑色出西南徼外也音狸一音來"
       ],
       "text_sha256": "e9860a2f3e42a9cb16c9f5dc5b65c81c007ba0595c68988b7d0935caf25bf002",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jingshan"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "松（荆山）",
+        "栢（荆山）",
+        "橘（荆山）",
+        "櫾（荆山）",
+        "漳水（荆山）",
+        "犛牛（荆山）",
+        "竹（荆山）",
+        "荆山",
+        "虎（荆山）",
+        "豹（荆山）",
+        "赤金（荆山阳）",
+        "鐵（荆山阴）",
+        "閭麋（荆山原词）",
+        "鮫魚（漳水）",
+        "黃金（漳水）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -35923,11 +36013,29 @@
         "櫾似橘而大也皮厚味酸"
       ],
       "text_sha256": "333dc3837d96a4596d4a8ffd71624704ab371f2ee81f8bf0599a0482773ae489",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jingshan"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "松（荆山）",
+        "栢（荆山）",
+        "橘（荆山）",
+        "櫾（荆山）",
+        "漳水（荆山）",
+        "犛牛（荆山）",
+        "竹（荆山）",
+        "荆山",
+        "虎（荆山）",
+        "豹（荆山）",
+        "赤金（荆山阳）",
+        "鐵（荆山阴）",
+        "閭麋（荆山原词）",
+        "鮫魚（漳水）",
+        "黃金（漳水）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -35942,11 +36050,29 @@
         "鮫鮒"
       ],
       "text_sha256": "87ddadbf9511a84330aa28d959e149fbd989601c37483c516b25ccb85c507087",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jingshan"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "松（荆山）",
+        "栢（荆山）",
+        "橘（荆山）",
+        "櫾（荆山）",
+        "漳水（荆山）",
+        "犛牛（荆山）",
+        "竹（荆山）",
+        "荆山",
+        "虎（荆山）",
+        "豹（荆山）",
+        "赤金（荆山阳）",
+        "鐵（荆山阴）",
+        "閭麋（荆山原词）",
+        "鮫魚（漳水）",
+        "黃金（漳水）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -35960,11 +36086,29 @@
         "魚𩔖也皮有珠文而堅尾長三四尺末有毒螫人皮可飾刀劒口錯治材角今臨海郡亦有之音交"
       ],
       "text_sha256": "9626329d6ccf053d75ee3aeb4fb82828a4d3d8583a7554912a6ab89578321eb7",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jingshan"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "松（荆山）",
+        "栢（荆山）",
+        "橘（荆山）",
+        "櫾（荆山）",
+        "漳水（荆山）",
+        "犛牛（荆山）",
+        "竹（荆山）",
+        "荆山",
+        "虎（荆山）",
+        "豹（荆山）",
+        "赤金（荆山阳）",
+        "鐵（荆山阴）",
+        "閭麋（荆山原词）",
+        "鮫魚（漳水）",
+        "黃金（漳水）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -35978,11 +36122,29 @@
         "似鹿而大也"
       ],
       "text_sha256": "4aff4d950abefe29304abab16788f86aca51c9e745edee80d9e572a199146619",
-      "status": "pending_review",
-      "confirmed_passage_ids": [],
+      "status": "explained_in_reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jingshan"
+      ],
       "candidate_entry_ids": [],
-      "objects": [],
-      "relationship_review": "pending",
+      "objects": [
+        "松（荆山）",
+        "栢（荆山）",
+        "橘（荆山）",
+        "櫾（荆山）",
+        "漳水（荆山）",
+        "犛牛（荆山）",
+        "竹（荆山）",
+        "荆山",
+        "虎（荆山）",
+        "豹（荆山）",
+        "赤金（荆山阳）",
+        "鐵（荆山阴）",
+        "閭麋（荆山原词）",
+        "鮫魚（漳水）",
+        "黃金（漳水）"
+      ],
+      "relationship_review": "passage_context_only",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
     },
     {
@@ -36812,7 +36974,10 @@
       "text_sha256": "7cf620559256c69c41f9a756045e1d89ec8d90ec45094d885e175d310d22d0db",
       "status": "pending_review",
       "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r08-jing",
+        "place-zhongshan-r08-jingshan"
+      ],
       "objects": [],
       "relationship_review": "pending",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
@@ -38236,7 +38401,9 @@
       "text_sha256": "a913ad2ee61c727ee7aee36a44b1172d56a1664bb8c04d6e862114193902b53d",
       "status": "pending_review",
       "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r08-jingshan"
+      ],
       "objects": [],
       "relationship_review": "pending",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
@@ -40053,7 +40220,9 @@
       "text_sha256": "f5335ec827780507fb307e88ae5b86d10c051bd5342c5c3cfbbc6bfe2ea1d5c8",
       "status": "pending_review",
       "confirmed_passage_ids": [],
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r08-jingshan"
+      ],
       "objects": [],
       "relationship_review": "pending",
       "segmentation": "captured_source_block; reviewed semantic passages are linked separately"
@@ -65684,14 +65853,21 @@
       "candidate_entry_ids": [
         "place-zhongshan-r07-dagui",
         "place-zhongshan-r07-ku",
-        "place-zhongshan-r07-xiuyu"
+        "place-zhongshan-r07-xiuyu",
+        "place-zhongshan-r08-jing",
+        "place-zhongshan-r08-jingshan"
       ],
       "relationship_excerpts": [
         "其上多金玉其木多杼檀雎水出焉東南流注于江其中多丹粟多文魚",
         "玉其木多杼檀雎水出焉東南流注于江其中多丹粟多文魚"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r07-dagui",
+        "passage-zhongshan-r07-summary",
+        "passage-zhongshan-r08-jing"
+      ]
     },
     {
       "id": "draft-05-0087",
@@ -65709,16 +65885,22 @@
         "source-05-0302"
       ],
       "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/34",
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/35"
       ],
       "text": "東北百里曰荆山其隂多鐵其陽多赤金其中多犛牛多虎豹其木多松栢其草多竹多橘櫾漳水出焉而東南流注于雎其中多黃金多鮫魚其獸多閭麋",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r08-jingshan"
+      ],
       "relationship_excerpts": [
         "多松栢其草多竹多橘櫾漳水出焉而東南流注于雎其中多黃金多鮫魚其獸多",
         "多竹多橘櫾漳水出焉而東南流注于雎其中多黃金多鮫魚其獸多閭麋"
       ],
-      "status": "pending_review",
-      "segmentation": "structural_candidate; boundaries and entities require manual review"
+      "status": "reviewed_in_reader",
+      "segmentation": "reviewed semantic passage linked; heading metadata excluded from reader",
+      "confirmed_passage_ids": [
+        "passage-zhongshan-r08-jingshan"
+      ]
     },
     {
       "id": "draft-05-0088",
@@ -66147,7 +66329,10 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/41"
       ],
       "text": "又東南二百里曰琴皷之山其木多榖柞椒柘其上多白珉其下多洗石其獸多豕鹿多白犀其鳥多鴆凡荆山之首自景山至琴皷之山",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r08-jing",
+        "place-zhongshan-r08-jingshan"
+      ],
       "relationship_excerpts": [],
       "status": "pending_review",
       "segmentation": "structural_candidate; boundaries and entities require manual review"
@@ -66170,7 +66355,10 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/41"
       ],
       "text": "凡二十三山二千八百九十里其神狀皆鳥身而人面其祠用一雄雞祈瘞用一藻圭糈用稌驕山冡也其祠用羞酒少牢祈瘞嬰毛一璧中次九經岷山之首曰女",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r08-jing",
+        "place-zhongshan-r08-jingshan"
+      ],
       "relationship_excerpts": [],
       "status": "pending_review",
       "segmentation": "structural_candidate; boundaries and entities require manual review"
@@ -66762,7 +66950,8 @@
         "place-zhongshan-r02-yang",
         "place-zhongshan-r03-gui",
         "place-zhongshan-r05-shou",
-        "place-zhongshan-r07-du"
+        "place-zhongshan-r07-du",
+        "place-zhongshan-r08-jingshan"
       ],
       "relationship_excerpts": [
         "經荆山之首曰翼望之山湍水出焉東流注于濟貺水出焉東南流注于漢其中多",
@@ -67756,7 +67945,9 @@
         "https://zh.wikisource.org/wiki/Page:Sibu Congkan0466-郭璞-山海經-2-2.djvu/62"
       ],
       "text": "又東三百五十里曰几山其木多楢檀杻其草多香有獸焉其狀如彘黃身白頭白尾名曰聞𧲂見則天下大風凡荆山之首自翼望之山至于几山",
-      "candidate_entry_ids": [],
+      "candidate_entry_ids": [
+        "place-zhongshan-r08-jingshan"
+      ],
       "relationship_excerpts": [],
       "status": "pending_review",
       "segmentation": "structural_candidate; boundaries and entities require manual review"
@@ -67782,7 +67973,8 @@
       ],
       "text": "凡四十八山三千七百三十二里其神狀皆彘身人首其祠毛用一雄雞祈瘞用一珪糈用五種之精禾山帝也其祠太牢之具羞瘞倒毛用一璧牛無常堵山玉山⟦缺字图:冢⟧也皆倒祠羞毛少牢嬰毛吉玉中次十二經洞庭山之首曰篇遇之山無草木多黃金",
       "candidate_entry_ids": [
-        "place-zhongshan-r07-du"
+        "place-zhongshan-r07-du",
+        "place-zhongshan-r08-jingshan"
       ],
       "relationship_excerpts": [],
       "status": "pending_review",

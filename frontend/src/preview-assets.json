@@ -6208,5 +6208,23 @@
         320
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/cattle-li-jingshan8-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/cattle-li-jingshan8-v1-card.webp",
+      "bytes": 25860,
+      "dimensions": [
+        320,
+        267
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/cattle-li-jingshan8-v1-preview.webp",
+      "bytes": 51508,
+      "dimensions": [
+        480,
+        400
+      ]
+    }
   }
 }

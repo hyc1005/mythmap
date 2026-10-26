@@ -84,6 +84,6 @@ preflight['missing_stage_title_characters'] = ''.join(sorted({c for s in review[
 preflight['missing_stage_title_count'] = len(preflight['missing_stage_title_characters'])
 preflight['implemented_batch_missing_characters'] = ''.join(c for c in missing if ord(c) not in bundled)
 assert not preflight['implemented_batch_missing_characters']
-preflight.update(status='current_batch_covered_future_pending', limits='已接入前93阶段标题、实体、正文与郭注所需字已补；后续119阶段完整内容仍需逐批预检。')
+preflight.update(status='current_batch_covered_future_pending', limits='已接入前95阶段标题、实体、正文与郭注所需字已补；后续117阶段完整内容仍需逐批预检。')
 review_path.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print('Central rare subset', RARE, rare_target.stat().st_size, 'future title gaps', preflight['missing_stage_title_count'], flush=True)

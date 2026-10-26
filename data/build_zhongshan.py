@@ -64,6 +64,11 @@ ROWS += B3_ROWS
 ENTITIES += b3_entities(E)
 NEXT_LINKS += B3_LINKS
 NEXT_SHARES += B3_SHARES
+from zhongshan_stages94_95 import ROWS as B4_ROWS, entities as b4_entities, LINKS as B4_LINKS, SHARES as B4_SHARES
+ROWS += B4_ROWS
+ENTITIES += b4_entities(E)
+NEXT_LINKS += B4_LINKS
+NEXT_SHARES += B4_SHARES
 
 
 def build():
@@ -142,13 +147,13 @@ def build():
     batches = {'zhongshan-' + r['slug'] for r in ROWS}
     for group, values in [('passages', passages), ('text_entities', [c for c in cards if c['kind'] in {'place', 'rite', 'deity', 'animal'} or c['kind'] in {'plant', 'material'} and not c.get('context_place_id')]), ('beasts', [c for c in cards if c['kind'] == 'beast']), ('natural_features', [c for c in cards if c['kind'] in {'plant', 'water', 'material'} and c.get('context_place_id')])]:
         world[group] = [c for c in world[group] if c.get('content_batch') not in batches] + values
-    world['revision'] = 'myth-world-2026-10-26-zhongshan-ninetythree-v1'
-    review.update(status='partially_implemented', implemented_stages=93, remaining_stages=119, scope='前93段正文、郭注、双语及实体接入；后119阶段仍待逐批核定。', batch_size=30, entry_ids=[c['id'] for c in cards], passages=[dict(id=p['id'], source_unit_ids=p['source_unit_ids'], source_span=p['source_span'], status='facsimile_reviewed') for p in passages], artwork_summary=dict(selected=sum(a['status'] == 'reviewed' for a in jobs.values()), appearance_unknown=sum(c.get('appearance_unknown', False) for c in cards)), next=dict(name=review['stage_plan'][93]['name'], source_units=review['stage_plan'][93]['source_units'], facsimile_pages=review['stage_plan'][93]['facsimile_pages'], status='pending_bilingual_entity_review'))
-    review['limits'] = '212阶段中前93阶段已接入，余119；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。'
-    for stage in review['stage_plan'][:93]:
+    world['revision'] = 'myth-world-2026-10-26-zhongshan-ninetyfive-v1'
+    review.update(status='partially_implemented', implemented_stages=95, remaining_stages=117, scope='前95段正文、郭注、双语及实体接入；后117阶段仍待逐批核定。', batch_size=2, entry_ids=[c['id'] for c in cards], passages=[dict(id=p['id'], source_unit_ids=p['source_unit_ids'], source_span=p['source_span'], status='facsimile_reviewed') for p in passages], artwork_summary=dict(selected=sum(a['status'] == 'reviewed' for a in jobs.values()), appearance_unknown=sum(c.get('appearance_unknown', False) for c in cards)), next=dict(name=review['stage_plan'][95]['name'], source_units=review['stage_plan'][95]['source_units'], facsimile_pages=review['stage_plan'][95]['facsimile_pages'], status='pending_bilingual_entity_review'))
+    review['limits'] = '212阶段中前95阶段已接入，余117；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。'
+    for stage in review['stage_plan'][:95]:
         stage.update(content_status='facsimile_reviewed', browser_status='see local handoff acceptance', passage_id='passage-zhongshan-' + stage['slug'], new_cards=sum(c['content_batch'] == 'zhongshan-' + stage['slug'] for c in cards))
     write('frontend/public/data/myth-world.json', world); write('frontend/src/locale-content-en.json', english); write('data/zhongshan-edition-review.json', review)
-    print(f'Built Central: {len(passages)} passages, {len(cards)} cards; 119 stages remain')
+    print(f'Built Central: {len(passages)} passages, {len(cards)} cards; 117 stages remain')
 
 
 if __name__ == '__main__':

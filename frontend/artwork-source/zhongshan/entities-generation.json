@@ -469,6 +469,33 @@
       "review_note": "人面豕身明确；女性面容发式体色姿态为创作，不把总括神型逐山虚构。",
       "sha256": "99420a73a85e9d0386a882fd6c54e93b28164dc8189df5a3c2c928c7fb14e718",
       "reference_images": []
+    },
+    {
+      "name": "cattle-li-jingshan8",
+      "entry_id": "beast-zhongshan-li-cattle-jingshan8",
+      "prompt": "Reframe this same black shaggy cattle illustration on a larger transparent canvas. Preserve the existing animal, four legs and feet, paired horns, tail, black coat and carved woodblock style. The tail touches the right edge: scale the WHOLE animal down uniformly and center it so there are clear fully transparent margins of at least 8 percent on all four sides. Entire tail, all hair edges, both horns and all four hooves must be fully inside the canvas, with no clipping. No new anatomy, scene, ground, halo, text, border or background. Preserve true alpha.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-e261dd99-48b1-40c6-8037-99d33cedc81c.png",
+      "source_file": "cattle-li-jingshan8-v2.png",
+      "reference_images": [],
+      "edit_reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-eafaf1fd-0365-4bc8-9857-b80087436b7b.png"
+      ],
+      "status": "reviewed",
+      "review_note": "黑色旄牛属依据郭注；修订后双角、四蹄、尾及毛缘完整留白。长毛牛体、角形蹄尾细节与姿态为艺术解释，不强定现代亚种。",
+      "revision_history": [
+        {
+          "name": "cattle-li-jingshan8",
+          "entry_id": "beast-zhongshan-li-cattle-jingshan8",
+          "prompt": "Use case: illustration-story. One complete isolated subject for the Shan-hai Atlas. Chinese carved woodblock print, strong dark brown carved contours, muted mineral pigments, warm cream incisions and print grain. TRUE transparent background with generous margins. No scene, ground, shadow, halo, text or extra subjects. LI 犛牛 of Mount Jing (Central Mountains eighth range): main text names li cattle; Guo Pu calls it MAO-CATTLE KIND, BLACK IN COLOR. Draw one heavy BLACK long-haired cattle-like animal, broad low body, hanging shaggy fleece and lowered bovine head, ordinary paired cattle horns, four hooved legs clearly visible and one ordinary hairy tail. Three-quarter front view facing LEFT with a slight head tilt, standing calmly, black hair articulated by sparse warm ivory carved strokes. Distinct from previous slim deer forms or red pig. Do not add tiger stripes, wings, human eyes, flames, extra horns or body parts. The shaggy mao-cattle interpretation follows the commentary; precise horn curvature, leg anatomy, facial proportions and pose are artistic, not independent ancient claims. Whole horns, tail and feet within frame.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-eafaf1fd-0365-4bc8-9857-b80087436b7b.png",
+          "source_file": "cattle-li-jingshan8-v1.png",
+          "reference_images": [],
+          "status": "needs_revision",
+          "review_note": "初版尾部过贴右边缘，保留原件，修订整体缩放留白。",
+          "sha256": "bb74f58f4d9b560670c63bf4035f88714aada2cc1ef1b99848076d74cfd68f7e"
+        }
+      ],
+      "sha256": "5baabb5c8c9a81253b79a76e2ce5e4b9c557ddfb26f662b23fbe995a7a894e08"
     }
   ]
 }

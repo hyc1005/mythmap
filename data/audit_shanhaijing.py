@@ -125,6 +125,7 @@ def generate(check=False):
         dump(PROVENANCE, origins)
     count = Counter(item['visibility'] for item in records)
     out = ['# 《山海经》内容覆盖盘点', '', f'盘点基准：{snapshot["edition"]}。电子录文取自[维基文库]({snapshot["url"]})，快照日期 {snapshot["retrieved_on"]}。', '',
+           f'当前里程碑：先完成五山经再休息，海外四经、海内四经、大荒四经及末篇海内经共13篇作为休息后的后续目标。山经计划{268 + central_review.get("planned_stages",212)}内容阶段，已接入{268 + central_review.get("implemented_stages",0)}，余{central_review.get("remaining_stages",212)}；本数不含海经。', '',
            '## 统计口径', '',
            f'- 十八篇录文块清单见 `data/shanhaijing-inventory.json`，每项保存页码、原文、注文与待核状态。《南山经》43段、《西山经》{len(western_passages)}段、《北山经》{len(northern_passages)}段与《东山经》{eastern_review.get("implemented_stages",0)}段已接入说明；其余结构候选的段界、实体、关系和影印仍待人工核定。不是全书穷尽实体索引，也不是各版本校勘定本。',
            '- 已保存十八篇逐行正文、注文、影印页锚点、校对状态和固定修订链接，见 `data/shanhaijing-reference.json`。录文中缺字图保留显式标记，不猜字补齐。',
@@ -253,7 +254,7 @@ def generate(check=False):
             '- `python data/build_nanshan_entities.py`：在旧批次/阅读器构建之后运行，恢复最新实体、关系、图像状态和覆盖清单；不可将reader或首批构建器作为最后一步。',
             '- `python data/build_source_inventory.py`（可加`--check`）：生成/检查十八篇原文块清单及明确的待核状态。',
             '- `python data/prepare_zhongshan.py`（可加`--check`）：离线重建/检查中山212阶段准备计划、69影印哈希、标题字体预检；只规划，不增加网页阅读或配图。之后重建全书inventory/audit。',
-            '- `python data/build_zhongshan.py`：合并中山前93段/454双语卡并保留其他篇；已接入后不要再运行准备构建器覆盖进度。插画通过prepare-nanshan-artwork.py --chapter zhongshan导出，之后重建inventory/audit。',
+            '- `python data/build_zhongshan.py`：合并中山前95段/478双语卡并保留其他篇；已接入后不要再运行准备构建器覆盖进度。插画通过prepare-nanshan-artwork.py --chapter zhongshan导出，之后重建inventory/audit。',
             '- `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。',
             '- `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。',
             f'- `python data/build_xishan.py`：合并西山经{len(western_passages)}段与{len(western_cards)}张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。',
