@@ -4613,5 +4613,44 @@
       1280,
       1067
     ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-tuowei-jiao-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-tuowei-jiao-v1.webp",
+    "original_bytes": 2425088,
+    "optimized_bytes": 239802,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-whitejiao-nvji-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/bird-whitejiao-nvji-v1.webp",
+    "original_bytes": 1857131,
+    "optimized_bytes": 152580,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-zhen-nvji-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/bird-zhen-nvji-v1.webp",
+    "original_bytes": 1497859,
+    "optimized_bytes": 242646,
+    "original_dimensions": [
+      1145,
+      1374
+    ],
+    "dimensions": [
+      1067,
+      1280
+    ]
   }
 }

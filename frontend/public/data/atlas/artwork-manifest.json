@@ -11720,6 +11720,114 @@
           ]
         }
       }
+    },
+    {
+      "id": "zhongshan-deity-tuowei-jiao-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/deity-tuowei-jiao-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/deity-tuowei-jiao-v1.webp",
+      "initial_prompt": "Reframe this same illustration on a larger truly TRANSPARENT canvas. Preserve all existing subject details and anatomy and the carved woodblock style. Uniformly shrink and center the entire composition, leaving fully transparent margins at least 8 percent on ALL FOUR sides. All horns/paws if present, beak, feather edges and feet if present must be complete and clearly away from canvas edges. Do not crop or change anatomy. Remove any background glow or halo; no ground, shadows, scene, text or extra elements. Existing neutral small display base in anatomy study may remain.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "仅人面羊角与分列虎爪局部，不补躯干或肢数；双角双爪布局、年龄、底座与配色为艺术解释。选留白v2。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-tuowei-jiao-v1.webp",
+          "bytes": 239802,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-tuowei-jiao-v1-card.webp",
+          "bytes": 23170,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-tuowei-jiao-v1-preview.webp",
+          "bytes": 43224,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-bird-whitejiao-nvji-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/bird-whitejiao-nvji-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/bird-whitejiao-nvji-v1.webp",
+      "initial_prompt": "Use case illustration-story. One isolated complete WHITE pheasant-like bird with a LONG WHITE TAIL, based on Bai Jiao at Mount Nüji: Guo Pu compares it with a pheasant with long tail, moving and calling. Chinese carved woodblock illustration, dark brown carved outlines, ivory cut strokes, subtly warm WHITE feathers with pale cool gray shading. TRUE transparent background, generous margins. A lean pheasant body with one ordinary small bird head and bill, exactly two ordinary bird legs and folded wings, slender very long plain white tail sweeping to the lower RIGHT. Bird head facing LEFT in a brisk walking pose, mouth slightly open to suggest calling, no words. Use ordinary bird feet and soft gray bill as artistic details, no decorative crown, peacock eyes, flames, additional eyes, horns or human features. No ground, scene, halo, border or text. Whole tail, beak, both feet and all feather tips fully within frame. The white color and long tail are required; precise plumage pattern, bill/feet coloring, pose and expression artistic.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "白色与长尾有据，双足行姿、喙足颜色和羽纹为解释，尾喙足完整入框。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/bird-whitejiao-nvji-v1.webp",
+          "bytes": 152580,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/bird-whitejiao-nvji-v1-card.webp",
+          "bytes": 15946,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/bird-whitejiao-nvji-v1-preview.webp",
+          "bytes": 28844,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-bird-zhen-nvji-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/bird-zhen-nvji-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/bird-zhen-nvji-v1.webp",
+      "initial_prompt": "Reframe this same illustration on a larger truly TRANSPARENT canvas. Preserve all existing subject details and anatomy and the carved woodblock style. Uniformly shrink and center the entire composition, leaving fully transparent margins at least 8 percent on ALL FOUR sides. All horns/paws if present, beak, feather edges and feet if present must be complete and clearly away from canvas edges. Do not crop or change anatomy. Remove any background glow or halo; no ground, shadows, scene, text or extra elements. Existing neutral small display base in anatomy study may remain.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "紫绿赤喙及長頭按本底本；普通鸟足翅尾、头喙比例与站姿为解释，不强定现代种或性别。选留白v2。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/bird-zhen-nvji-v1.webp",
+          "bytes": 242646,
+          "dimensions": [
+            1067,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/bird-zhen-nvji-v1-card.webp",
+          "bytes": 23546,
+          "dimensions": [
+            267,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/bird-zhen-nvji-v1-preview.webp",
+          "bytes": 46434,
+          "dimensions": [
+            400,
+            480
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

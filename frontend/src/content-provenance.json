@@ -869,6 +869,12 @@
   "beast-zhongshan-jiao-zhang8": {
     "family": "shanhaijing"
   },
+  "beast-zhongshan-whitejiao-nvji": {
+    "family": "shanhaijing"
+  },
+  "beast-zhongshan-zhen-nvji": {
+    "family": "shanhaijing"
+  },
   "place-qingqiu": {
     "family": "shanhaijing"
   },
@@ -3986,6 +3992,33 @@
   "material-zhongshan-gold-zhang8": {
     "family": "shanhaijing"
   },
+  "material-zhongshan-jade-jiao8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-qinghu-jiao8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-song-jiao8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-bai-jiao8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-taozhi-jiao8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-gouduan-jiao8": {
+    "family": "shanhaijing"
+  },
+  "water-zhongshan-sui-zhang-pool-jiao": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-jade-nvji8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-gold-nvji8": {
+    "family": "shanhaijing"
+  },
   "passage-nanshan-zhaoyao": {
     "family": "shanhaijing"
   },
@@ -5073,6 +5106,12 @@
     "family": "shanhaijing"
   },
   "passage-zhongshan-r08-jingshan": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-jiao": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-nvji": {
     "family": "shanhaijing"
   },
   "place-nanshan-tangting": {
@@ -6690,6 +6729,33 @@
     "family": "shanhaijing"
   },
   "animal-zhongshan-lvmi-jingshan8": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-jiao": {
+    "family": "shanhaijing"
+  },
+  "deity-zhongshan-tuowei-jiao": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-nvji": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-leopard-nvji8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-tiger-nvji8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-lvmi-nvji8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-jing-nvji8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-ji-nvji8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-zhai-nvji8": {
     "family": "shanhaijing"
   },
   "01-01": {

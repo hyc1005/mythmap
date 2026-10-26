@@ -496,6 +496,71 @@
         }
       ],
       "sha256": "5baabb5c8c9a81253b79a76e2ce5e4b9c557ddfb26f662b23fbe995a7a894e08"
+    },
+    {
+      "name": "deity-tuowei-jiao",
+      "entry_id": "deity-zhongshan-tuowei-jiao",
+      "prompt": "Reframe this same illustration on a larger truly TRANSPARENT canvas. Preserve all existing subject details and anatomy and the carved woodblock style. Uniformly shrink and center the entire composition, leaving fully transparent margins at least 8 percent on ALL FOUR sides. All horns/paws if present, beak, feather edges and feet if present must be complete and clearly away from canvas edges. Do not crop or change anatomy. Remove any background glow or halo; no ground, shadows, scene, text or extra elements. Existing neutral small display base in anatomy study may remain.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-50d98e9b-3632-4f71-a8ae-94455a6078ce.png",
+      "source_file": "deity-tuowei-jiao-v2.png",
+      "status": "reviewed",
+      "review_note": "仅人面羊角与分列虎爪局部，不补躯干或肢数；双角双爪布局、年龄、底座与配色为艺术解释。选留白v2。",
+      "reference_images": [],
+      "sha256": "f6d3d8a662da0b9559b93f733c11b4af4470b2891ebab61e6e907dc252462ba9",
+      "edit_reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-14f3a12a-d244-4529-9364-d6d58bd7ed64.png"
+      ],
+      "revision_history": [
+        {
+          "name": "deity-tuowei-jiao",
+          "entry_id": "deity-zhongshan-tuowei-jiao",
+          "prompt": "Use case illustration-story. Isolated PARTIAL ANATOMY STUDY of Tuowei deity from Mount Jiao in Shanhaijing. Chinese carved woodblock, dark brown contours, subdued mineral colors and warm ivory carved incisions; true TRANSPARENT background with generous margins. The text states HUMAN FACE, GOAT HORNS, TIGER CLAWS, but NO TORSO FORM: show only one calm elderly HUMAN HEAD bearing exactly TWO ordinary curved goat horns, together with exactly TWO separate TIGER PAWS presented below to either side as an anatomical study. No torso, body, arms, legs, human hands, or invented hybrid connecting anatomy. Short neck and neutral small display base only are artistic framing, not a body. Human face entirely human, no tiger snout. Paws have dark ochre fur and sparse black tiger stripes with ordinary visible claws. No text, borders, scene, landscape, ground, halos, flames, luminescent glow, snake tail, wings, extra heads or other animals. Antiquarian specimen-study layout, three clearly separated parts all inside frame. Age, colors beyond explicit forms, horn curvature and neutral base are artistic. Do not interpret the luminous travel claim as flames.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-14f3a12a-d244-4529-9364-d6d58bd7ed64.png",
+          "source_file": "deity-tuowei-jiao-v1.png",
+          "status": "needs_revision",
+          "review_note": "初版轮廓过贴边，保留源图，选整体留白修订。",
+          "reference_images": [],
+          "sha256": "97924ed922f3d1126a3559f6c95003b7d3686bf74597a19e8e9e1d97d39cce93"
+        }
+      ]
+    },
+    {
+      "name": "bird-whitejiao-nvji",
+      "entry_id": "beast-zhongshan-whitejiao-nvji",
+      "prompt": "Use case illustration-story. One isolated complete WHITE pheasant-like bird with a LONG WHITE TAIL, based on Bai Jiao at Mount Nüji: Guo Pu compares it with a pheasant with long tail, moving and calling. Chinese carved woodblock illustration, dark brown carved outlines, ivory cut strokes, subtly warm WHITE feathers with pale cool gray shading. TRUE transparent background, generous margins. A lean pheasant body with one ordinary small bird head and bill, exactly two ordinary bird legs and folded wings, slender very long plain white tail sweeping to the lower RIGHT. Bird head facing LEFT in a brisk walking pose, mouth slightly open to suggest calling, no words. Use ordinary bird feet and soft gray bill as artistic details, no decorative crown, peacock eyes, flames, additional eyes, horns or human features. No ground, scene, halo, border or text. Whole tail, beak, both feet and all feather tips fully within frame. The white color and long tail are required; precise plumage pattern, bill/feet coloring, pose and expression artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-4ba2c3b8-6e50-4875-be0a-d921f3c88ac0.png",
+      "source_file": "bird-whitejiao-nvji-v1.png",
+      "status": "reviewed",
+      "review_note": "白色与长尾有据，双足行姿、喙足颜色和羽纹为解释，尾喙足完整入框。",
+      "reference_images": [],
+      "sha256": "c05c556e48e7b80d034911617c7135afe3658517c126b05e0e00d4712e440d5c"
+    },
+    {
+      "name": "bird-zhen-nvji",
+      "entry_id": "beast-zhongshan-zhen-nvji",
+      "prompt": "Reframe this same illustration on a larger truly TRANSPARENT canvas. Preserve all existing subject details and anatomy and the carved woodblock style. Uniformly shrink and center the entire composition, leaving fully transparent margins at least 8 percent on ALL FOUR sides. All horns/paws if present, beak, feather edges and feet if present must be complete and clearly away from canvas edges. Do not crop or change anatomy. Remove any background glow or halo; no ground, shadows, scene, text or extra elements. Existing neutral small display base in anatomy study may remain.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-d657f17a-31a5-4056-81cb-2dd0d752ec01.png",
+      "source_file": "bird-zhen-nvji-v2.png",
+      "status": "reviewed",
+      "review_note": "紫绿赤喙及長頭按本底本；普通鸟足翅尾、头喙比例与站姿为解释，不强定现代种或性别。选留白v2。",
+      "reference_images": [],
+      "sha256": "518f07b9fe008dcae039727bce30a1db52e8d724b1e1adb958ac9fd57b83b87a",
+      "edit_reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-094d1835-0bd3-4b17-8656-e8572c5f2c6b.png"
+      ],
+      "revision_history": [
+        {
+          "name": "bird-zhen-nvji",
+          "entry_id": "beast-zhongshan-zhen-nvji",
+          "prompt": "Use case illustration-story. One isolated complete ZHEN bird 鴆 from the Mount Nüji commentary, NOT a modern identified species. Large eagle-sized BIRD with PURPLE AND GREEN plumage, an ELONGATED HEAD and clearly RED BEAK. Follow this edition's literal long-head wording without replacing it by a long neck: use a long narrow ordinary bird head with a medium natural neck. Robust high-chested silhouette in an upright three-quarter view facing RIGHT, one ordinary hooked red bill, two normal bird eyes, two ordinary bird feet visible, folded wings and a compact plain tail. Deep plum purple back and breast, dark jade-green layered wing feathers, sparse warm ivory carved incisions. Chinese carved woodblock, dark-brown contours, mineral pigments, restrained grain. TRUE transparent background, large clear margins. No literal poison, drinking vessels, snakes, prey, gore, flames, horn, extra eyes, peacock-tail eyes, text, ground, scene, halo or border. Head length, feather layout, bill curvature, feet, tail length and pose are explicitly artistic, without inventing a gender or a modern species.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a16b76-d318-76f3-9d88-37e99e1d05b0\\exec-094d1835-0bd3-4b17-8656-e8572c5f2c6b.png",
+          "source_file": "bird-zhen-nvji-v1.png",
+          "status": "needs_revision",
+          "review_note": "初版轮廓过贴边，保留源图，选整体留白修订。",
+          "reference_images": [],
+          "sha256": "2e57b86359bba6a8b30d24c592493d0bae498447d824bf445d3535e378f39057"
+        }
+      ]
     }
   ]
 }

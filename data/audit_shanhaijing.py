@@ -254,7 +254,7 @@ def generate(check=False):
             '- `python data/build_nanshan_entities.py`：在旧批次/阅读器构建之后运行，恢复最新实体、关系、图像状态和覆盖清单；不可将reader或首批构建器作为最后一步。',
             '- `python data/build_source_inventory.py`（可加`--check`）：生成/检查十八篇原文块清单及明确的待核状态。',
             '- `python data/prepare_zhongshan.py`（可加`--check`）：离线重建/检查中山212阶段准备计划、69影印哈希、标题字体预检；只规划，不增加网页阅读或配图。之后重建全书inventory/audit。',
-            '- `python data/build_zhongshan.py`：合并中山前95段/478双语卡并保留其他篇；已接入后不要再运行准备构建器覆盖进度。插画通过prepare-nanshan-artwork.py --chapter zhongshan导出，之后重建inventory/audit。',
+            '- `python data/build_zhongshan.py`：合并中山前97段/498双语卡并保留其他篇；已接入后不要再运行准备构建器覆盖进度。插画通过prepare-nanshan-artwork.py --chapter zhongshan导出，之后重建inventory/audit。',
             '- `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。',
             '- `python frontend/scripts/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。',
             f'- `python data/build_xishan.py`：合并西山经{len(western_passages)}段与{len(western_cards)}张双语卡，并记录影印页码和缺字图校正；在南山经构建器之后运行。',
