@@ -875,6 +875,9 @@
   "beast-zhongshan-zhen-nvji": {
     "family": "shanhaijing"
   },
+  "beast-zhongshan-chuo-lun8": {
+    "family": "shanhaijing"
+  },
   "place-qingqiu": {
     "family": "shanhaijing"
   },
@@ -4019,6 +4022,228 @@
   "material-zhongshan-gold-nvji8": {
     "family": "shanhaijing"
   },
+  "material-zhongshan-gold-yizhu8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-jade-yizhu8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-qinghu-yizhu8": {
+    "family": "shanhaijing"
+  },
+  "water-zhongshan-wei-yizhu8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-white-jade-yizhu8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-zi-lun8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-nan-lun8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-taozhi-lun8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-li-lun8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-ju-lun8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-you-lun8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-zha-lun8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-tufu-jade-lugui8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-e-lugui8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-niu-lugui8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-jiang-lugui8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-bi-guang8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-trees-guang8": {
+    "family": "shanhaijing"
+  },
+  "water-zhongshan-zhang-pool-guang8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-red-metal-qi8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-gold-qi8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-jade-qi8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-qinghu-qi8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-white-min-qi8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-chu-qi8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-gold-tong8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-silver-tong8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-iron-tong8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-gu-tong8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-zuo-tong8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-zha-tong8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-li-tong8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-ju-tong8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-you-tong8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-gold-mei8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-qinghu-mei8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-song-dayao8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-bai-dayao8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-zi-dayao8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-sang-dayao8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-ji-dayao8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-bamboo-dayao8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-gold-ling8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-jade-ling8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-qinghu-ling8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-tao-ling8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-li-ling8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-xing-ling8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-mei-ling8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-yumu-long8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-bi-long8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-red-tin-long8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-taozhi-long8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-gouduan-long8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-yumu-heng8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-gu-heng8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-zuo-heng8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-yellow-e-heng8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-white-e-heng8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-gold-shi8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-qinghu-shi8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-yumu-shi8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-tufu-jade-ruo8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-ochre-ruo8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-gui-stone-ruo8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-yumu-ruo8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-zhe-ruo8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-fine-stone-zhi8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-zhe-zhi8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-gold-yu8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-jade-yu8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-bi-yu8": {
+    "family": "shanhaijing"
+  },
+  "material-zhongshan-iron-yu8": {
+    "family": "shanhaijing"
+  },
+  "plant-zhongshan-bai-yu8": {
+    "family": "shanhaijing"
+  },
   "passage-nanshan-zhaoyao": {
     "family": "shanhaijing"
   },
@@ -5112,6 +5337,51 @@
     "family": "shanhaijing"
   },
   "passage-zhongshan-r08-nvji": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-yizhu": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-lun": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-lugui": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-guang": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-qi": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-tong": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-mei": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-dayao": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-ling": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-long": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-heng": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-shi": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-ruo": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-zhi": {
+    "family": "shanhaijing"
+  },
+  "passage-zhongshan-r08-yu": {
     "family": "shanhaijing"
   },
   "place-nanshan-tangting": {
@@ -6756,6 +7026,93 @@
     "family": "shanhaijing"
   },
   "animal-zhongshan-zhai-nvji8": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-yizhu": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-lun": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-lvchen-lun8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-ling-lun8": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-lugui": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-guang": {
+    "family": "shanhaijing"
+  },
+  "deity-zhongshan-jimeng-guang8": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-qi": {
+    "family": "shanhaijing"
+  },
+  "deity-zhongshan-shetuo-qi8": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-tong": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-leopard-tong8": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-mei": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-si-mei8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-cattle-mei8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-lvchen-mei8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-pig-mei8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-deer-mei8": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-dayao": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-leopard-dayao8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-tiger-dayao8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-ling-dayao8": {
+    "family": "shanhaijing"
+  },
+  "animal-zhongshan-chuo-dayao8": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-ling": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-long": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-heng": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-shi": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-ruo": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-zhi": {
+    "family": "shanhaijing"
+  },
+  "place-zhongshan-r08-yu": {
     "family": "shanhaijing"
   },
   "01-01": {

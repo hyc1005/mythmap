@@ -6280,5 +6280,59 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1-card.webp",
+      "bytes": 19514,
+      "dimensions": [
+        320,
+        261
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1-preview.webp",
+      "bytes": 38588,
+      "dimensions": [
+        480,
+        392
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1-card.webp",
+      "bytes": 18024,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1-preview.webp",
+      "bytes": 33042,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1-card.webp",
+      "bytes": 15774,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1-preview.webp",
+      "bytes": 29504,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
   }
 }

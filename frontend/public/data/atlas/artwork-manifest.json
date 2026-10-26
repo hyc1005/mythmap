@@ -11828,6 +11828,116 @@
           ]
         }
       }
+    },
+    {
+      "id": "zhongshan-beast-chuo-lun-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/beast-chuo-lun-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1.webp",
+      "initial_prompt": "Use case illustration-story. One isolated mythical CHUO 㚟 from Mount Lun, based strictly on Guo Pu: resembles a HARE, with DEER FEET/LEGS, and BLUE-GREEN body color. Hand-carved Chinese woodblock illustration, dark umber contours, ivory cut hatching, restrained mineral teal pigment. One complete unusual hare-shaped body and hare head, long ordinary hare ears, exactly FOUR slender deer-like legs ending in clearly CLOVEN HOOVES rather than rabbit paws, all four hooves separated and countable. No antlers, no horns, no wings, no extra heads, no flame motifs, no text, no scenery, no ground or halo. Alert still three-quarter profile looking LEFT; compact rounded hare silhouette contrasted with slender ungulate lower legs. Face, proportions, precise teal hue, fur texture and pose are artistic details. TRUE TRANSPARENT background. Compose at only 70 percent of canvas, leave at least 12 percent fully transparent clear margin around ALL edges including ears and feet. Whole figure fully in frame.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "兔状、鹿足与青色据綸山郭注；四足分蹄可数，耳长、毛纹、浅色刻线与站姿为艺术解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1.webp",
+          "bytes": 233646,
+          "dimensions": [
+            1280,
+            1045
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1-card.webp",
+          "bytes": 19514,
+          "dimensions": [
+            320,
+            261
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1-preview.webp",
+          "bytes": 38588,
+          "dimensions": [
+            480,
+            392
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-deity-shetuo-qi-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/deity-shetuo-qi-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1.webp",
+      "initial_prompt": "Use case illustration-story. One FULL-BODY Shanhaijing deity SHETUO 涉𧕦, main text: HUMAN BODY, SQUARE FACE, THREE FEET. Ancient Chinese carved woodblock, dark umber contours, flat muted terracotta and ivory carved cuts, restrained mineral colors. Exactly ONE entirely HUMAN head with a distinctly broad SQUARE human face and square jaw, calm stern middle-aged expression. Exactly TWO normal human arms and hands, no objects. Exactly THREE separately visible HUMAN LEGS with THREE bare human FEET total, growing naturally under a single human torso: left leg, center leg, right leg spaced apart in a clear frontal stance, all three complete and individually countable. Short plain dark-red wrapped tunic ending well above knees, simple waist sash, no robe hiding third leg. Head is entirely human, no crown, horns, snout or animal ears; no wings, tail, tiger claws, dragon parts, goat horns, extra heads, extra arms or fourth leg. Square face and three feet are text evidence. Two arms, anatomy of three leg attachments, facial age, tunic, colors and pose are artistic interpretations. True transparent canvas, zero paint outside silhouette, no paper, no halo, glow, shadow, aura, ground, scenery, text or border. Small centered figure only 70 percent of canvas height, generous fully empty transparent margins at least 12 percent every edge. Strong frontal squat three-legged silhouette different from upright dragon-headed deity.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "人身、方面、三足据正文，三条人腿三足分离可数；双臂、衣装、年龄、发髻、配色比例和姿态为艺术解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1.webp",
+          "bytes": 177178,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1-card.webp",
+          "bytes": 18024,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1-preview.webp",
+          "bytes": 33042,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-deity-jimeng-guang-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/deity-jimeng-guang-v4.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1.webp",
+      "initial_prompt": "Use attached image ONLY as a reference for the flat carved woodcut medium and perfectly EMPTY transparent space outside the silhouette. Make a different character, Jimeng: ONE dragon head on an ordinary HUMAN BODY, TWO arms, TWO legs (not three). A calm dragon head in profile with long snout and small whiskers; simple brown-gray knee-length human tunic, plain cloth trousers, human hands and bare feet. Upright full body. No human face. EXACTLY TWO human legs with TWO feet, separately visible. No animal body, tail, wings, weapons, scene or labels. Only head and human-body structure are text evidence; all clothes, horns, whisker shape, colors and proportions are artistic. Flat carved woodblock linework, opaque shapes INSIDE character, and alpha zero everywhere OUTSIDE. Preserve reference's complete absence of halo/glow/shadow/backdrop: no such effects of any kind. Centered at 65 percent of canvas height, generous transparent margins. This is an ordinary flat cutout drawing, no divine visual effects.",
+      "reference_images": [
+        "C:/Users/48427/.codex/generated_images/01a1772c-1faf-7571-8042-a97426b837d2/exec-dfe71ae0-fb2f-45ff-8e0f-7fd033a40ec9.png"
+      ],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "人身龙首据正文；双人臂双人腿、龙角须、衣装、配色比例及站姿为艺术解释。无多余光晕；前三版保留。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1.webp",
+          "bytes": 153898,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1-card.webp",
+          "bytes": 15774,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1-preview.webp",
+          "bytes": 29504,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

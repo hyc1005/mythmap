@@ -561,6 +561,72 @@
           "sha256": "2e57b86359bba6a8b30d24c592493d0bae498447d824bf445d3535e378f39057"
         }
       ]
+    },
+    {
+      "name": "beast-chuo-lun",
+      "entry_id": "beast-zhongshan-chuo-lun8",
+      "prompt": "Use case illustration-story. One isolated mythical CHUO 㚟 from Mount Lun, based strictly on Guo Pu: resembles a HARE, with DEER FEET/LEGS, and BLUE-GREEN body color. Hand-carved Chinese woodblock illustration, dark umber contours, ivory cut hatching, restrained mineral teal pigment. One complete unusual hare-shaped body and hare head, long ordinary hare ears, exactly FOUR slender deer-like legs ending in clearly CLOVEN HOOVES rather than rabbit paws, all four hooves separated and countable. No antlers, no horns, no wings, no extra heads, no flame motifs, no text, no scenery, no ground or halo. Alert still three-quarter profile looking LEFT; compact rounded hare silhouette contrasted with slender ungulate lower legs. Face, proportions, precise teal hue, fur texture and pose are artistic details. TRUE TRANSPARENT background. Compose at only 70 percent of canvas, leave at least 12 percent fully transparent clear margin around ALL edges including ears and feet. Whole figure fully in frame.",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a1772c-1faf-7571-8042-a97426b837d2/exec-d456a86f-f4d6-4cb9-93e5-baf5ad85b1f3.png",
+      "source_file": "beast-chuo-lun-v1.png",
+      "status": "reviewed",
+      "reference_images": [],
+      "review_note": "兔状、鹿足与青色据綸山郭注；四足分蹄可数，耳长、毛纹、浅色刻线与站姿为艺术解释。",
+      "sha256": "ab60703a1549d5e95ebaa6086fe77185fad6ff18f5cded596ea93f0a5b37a97f"
+    },
+    {
+      "name": "deity-shetuo-qi",
+      "entry_id": "deity-zhongshan-shetuo-qi8",
+      "prompt": "Use case illustration-story. One FULL-BODY Shanhaijing deity SHETUO 涉𧕦, main text: HUMAN BODY, SQUARE FACE, THREE FEET. Ancient Chinese carved woodblock, dark umber contours, flat muted terracotta and ivory carved cuts, restrained mineral colors. Exactly ONE entirely HUMAN head with a distinctly broad SQUARE human face and square jaw, calm stern middle-aged expression. Exactly TWO normal human arms and hands, no objects. Exactly THREE separately visible HUMAN LEGS with THREE bare human FEET total, growing naturally under a single human torso: left leg, center leg, right leg spaced apart in a clear frontal stance, all three complete and individually countable. Short plain dark-red wrapped tunic ending well above knees, simple waist sash, no robe hiding third leg. Head is entirely human, no crown, horns, snout or animal ears; no wings, tail, tiger claws, dragon parts, goat horns, extra heads, extra arms or fourth leg. Square face and three feet are text evidence. Two arms, anatomy of three leg attachments, facial age, tunic, colors and pose are artistic interpretations. True transparent canvas, zero paint outside silhouette, no paper, no halo, glow, shadow, aura, ground, scenery, text or border. Small centered figure only 70 percent of canvas height, generous fully empty transparent margins at least 12 percent every edge. Strong frontal squat three-legged silhouette different from upright dragon-headed deity.",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a1772c-1faf-7571-8042-a97426b837d2/exec-dfe71ae0-fb2f-45ff-8e0f-7fd033a40ec9.png",
+      "source_file": "deity-shetuo-qi-v1.png",
+      "status": "reviewed",
+      "reference_images": [],
+      "review_note": "人身、方面、三足据正文，三条人腿三足分离可数；双臂、衣装、年龄、发髻、配色比例和姿态为艺术解释。",
+      "sha256": "c5fede2330060653390e02eed5f2d6c724bd2fa7af0aae8e718c088c222b6812"
+    },
+    {
+      "name": "deity-jimeng-guang",
+      "entry_id": "deity-zhongshan-jimeng-guang8",
+      "prompt": "Use attached image ONLY as a reference for the flat carved woodcut medium and perfectly EMPTY transparent space outside the silhouette. Make a different character, Jimeng: ONE dragon head on an ordinary HUMAN BODY, TWO arms, TWO legs (not three). A calm dragon head in profile with long snout and small whiskers; simple brown-gray knee-length human tunic, plain cloth trousers, human hands and bare feet. Upright full body. No human face. EXACTLY TWO human legs with TWO feet, separately visible. No animal body, tail, wings, weapons, scene or labels. Only head and human-body structure are text evidence; all clothes, horns, whisker shape, colors and proportions are artistic. Flat carved woodblock linework, opaque shapes INSIDE character, and alpha zero everywhere OUTSIDE. Preserve reference's complete absence of halo/glow/shadow/backdrop: no such effects of any kind. Centered at 65 percent of canvas height, generous transparent margins. This is an ordinary flat cutout drawing, no divine visual effects.",
+      "original_path": "C:/Users/48427/.codex/generated_images/01a1772c-1faf-7571-8042-a97426b837d2/exec-c62d969e-26d2-4584-8651-39c53191f9a2.png",
+      "source_file": "deity-jimeng-guang-v4.png",
+      "status": "reviewed",
+      "review_note": "人身龙首据正文；双人臂双人腿、龙角须、衣装、配色比例及站姿为艺术解释。无多余光晕；前三版保留。",
+      "reference_images": [
+        "C:/Users/48427/.codex/generated_images/01a1772c-1faf-7571-8042-a97426b837d2/exec-dfe71ae0-fb2f-45ff-8e0f-7fd033a40ec9.png"
+      ],
+      "revision_history": [
+        {
+          "prompt": "Use case illustration-story. Single full-body deity JIMENG 計蒙 from Mount Guang in Shanhaijing, main text: HUMAN BODY with DRAGON HEAD. Ancient Chinese woodblock engraving, strong dark brown carved contours, muted mineral moss-green, ochre and ivory incisions. Exactly one complete classical Chinese DRAGON HEAD on an ordinary HUMAN BODY, head in calm three-quarter profile facing right; unmistakable long dragon snout and short whiskers, modest ordinary dragon horns as an explicitly artistic detail. Exactly TWO human arms with human hands and exactly TWO human legs with normal human feet; full limbs clearly separated. Wear a simple antique wrapped ochre tunic and plain loose knee-length cloth for modesty; all clothing, body proportions, colors, horns, whisker design and stance are artistic rather than text-specified. No dragon body, serpent tail, wings, extra limbs, scales covering torso, goat horns, tiger claws, additional heads, weapons, regalia, elaborate headdress, flame motifs, text, halo, rainstorm scene, landscape or ground. The storm on entering/leaving is textual only, no weather decoration. True TRANSPARENT background. Strong upright human silhouette, quiet balanced pose different from a three-legged square-faced god or partial head/paw study. Occupy only 70 percent of canvas height with at least 12 percent transparent margins on all four edges. Whole head, horns, hands and feet complete in frame.",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a1772c-1faf-7571-8042-a97426b837d2/exec-a6e589fa-f5ba-466d-9e42-28f8b1e9099c.png",
+          "source_file": "deity-jimeng-guang-v1.png",
+          "status": "needs_revision",
+          "review_note": "背景多余光晕，不用于网页。",
+          "reference_images": [],
+          "sha256": "eceafa7f7b62088739440fbdb67a21474a3ddde9f87f6597f4c1de814c16e76b"
+        },
+        {
+          "prompt": "Edit only the backdrop of this same Jimeng illustration: REMOVE the entire brown/gold halo, glow, haze, shadow and ALL colored pixels outside the figure. Replace that whole outside area with genuine alpha TRANSPARENCY, absolutely empty, not a dark background or checkerboard image. Keep the complete dragon-headed human figure and its exact anatomy, clothes, colors, carved woodblock linework, pose, hands and feet unchanged. No halo whatsoever. Reframe this figure uniformly smaller and centered if needed to leave at least 10 percent fully TRANSPARENT empty margin all four sides; all horns, whiskers, toes and fingers complete in frame. No new elements.",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a1772c-1faf-7571-8042-a97426b837d2/exec-d86b6837-9e89-442c-9ada-4b712199f601.png",
+          "source_file": "deity-jimeng-guang-v2.png",
+          "status": "needs_revision",
+          "review_note": "光晕修订仍未移除，不用于网页。",
+          "reference_images": [
+            "C:/Users/48427/.codex/generated_images/01a1772c-1faf-7571-8042-a97426b837d2/exec-a6e589fa-f5ba-466d-9e42-28f8b1e9099c.png"
+          ],
+          "sha256": "ff30bfe995b9fd2ae13c41c75c8e79af2ec83996f48e92c68384fa6cf7d54d2a"
+        },
+        {
+          "prompt": "A small clean isolated character sprite, full-body Jimeng, dragon head on human body. EXACTLY transparent background like a PNG game sprite, no aura, no vignette, no halo, no painted backdrop, no fog, no gradient, no shadow. Outside silhouette pixels must be zero-alpha. Single Chinese dragon head, long snout, whiskers, human torso in a simple pale gray short robe with dull moss sash, two normal human arms and hands, two normal human legs and feet. One head. No wings, tail, weapons or animal paws. Ancient Chinese WOODCUT with flat limited colors, dark brown carved outlines and ivory incisions; matte gray robe, muted celadon green head. Still sideways standing pose facing LEFT, strong human silhouette, full feet and head visible. Human body and dragon head follow the Shanhaijing; clothing, horns, whiskers, precise proportions, colors and pose artistic. Entire subject only middle 65 percent of canvas, empty generous transparent border all sides. Cut-out silhouette only.",
+          "original_path": "C:/Users/48427/.codex/generated_images/01a1772c-1faf-7571-8042-a97426b837d2/exec-f76aed35-b4bd-4e61-ace7-c13153831371.png",
+          "source_file": "deity-jimeng-guang-v3.png",
+          "status": "needs_revision",
+          "review_note": "重新生成仍带光晕，不用于网页。",
+          "reference_images": [],
+          "sha256": "1ec26399ce49f0be7d3928816f1dca4069e7f38ec5d452064bf3fa9f2cce6271"
+        }
+      ],
+      "sha256": "85485afb5d3c26082cc38eaf9b53aa07485d18edb021ee9ccaab5904e4c3e099"
     }
   ]
 }

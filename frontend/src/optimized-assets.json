@@ -4652,5 +4652,44 @@
       1067,
       1280
     ]
+  },
+  "/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1.webp",
+    "original_bytes": 1209813,
+    "optimized_bytes": 233646,
+    "original_dimensions": [
+      1388,
+      1133
+    ],
+    "dimensions": [
+      1280,
+      1045
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1.webp",
+    "original_bytes": 859202,
+    "optimized_bytes": 177178,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1.webp",
+    "original_bytes": 826625,
+    "optimized_bytes": 153898,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
   }
 }

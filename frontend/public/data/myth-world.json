@@ -1,5 +1,5 @@
 {
-  "revision": "myth-world-2026-10-26-zhongshan-ninetyseven-v1",
+  "revision": "myth-world-2026-10-26-zhongshan-112-v1",
   "coordinate_system": "diagram-units",
   "coordinate_note": "x/y are layout hints only. They encode cardinal orientation when supported by text; no distance or scale is implied.",
   "stages": [
@@ -12025,6 +12025,43 @@
         "passage-zhongshan-r08-nvji"
       ],
       "artwork": "zhongshan/bird-zhen-nvji-v1.webp",
+      "artwork_caption": "经文/郭注形貌与木刻演绎 · 器官依据见说明，未定细节、配色及姿态为艺术解释。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "beast-zhongshan-chuo-lun8",
+      "kind": "beast",
+      "name": "㚟（綸山）",
+      "quote": "其獸多閭麈麢㚟",
+      "description": "形貌依据是郭注似菟而鹿脚青色；兔状鹿足青色据注，四条分蹄腿、耳长、毛纹、浅色刻线及站姿为艺术解释，不加鹿角或翼。音勑略反跨314—315连续。",
+      "commentary_quote": "㚟似菟而鹿脚青色音勑；略反",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "artwork": "zhongshan/beast-chuo-lun-v1.webp",
       "artwork_caption": "经文/郭注形貌与木刻演绎 · 器官依据见说明，未定细节、配色及姿态为艺术解释。"
     }
   ],
@@ -50673,10 +50710,11 @@
       "source_chapter": "《中山经》",
       "source_book": 5,
       "region": "中山经",
-      "source_locator": "卷第五 · 影印页34、35",
+      "source_locator": "卷第五 · 影印页34、35、36",
       "source_pages": [
         "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/34",
-        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/35"
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/35",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
       ],
       "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/34",
       "source_unit_ids": [
@@ -50685,7 +50723,10 @@
         "source-05-0299",
         "source-05-0300",
         "source-05-0301",
-        "source-05-0302"
+        "source-05-0302",
+        "source-05-0310",
+        "source-05-0311",
+        "source-05-0312"
       ],
       "reveal_chapter": "04",
       "content_batch": "zhongshan-r08-jingshan",
@@ -50696,19 +50737,27 @@
       "id": "water-zhongshan-zhang-jingshan8",
       "kind": "water",
       "name": "漳水（荆山）",
-      "quote": "漳水出焉而東南流注于雎",
+      "quote": "漳水出焉而東南流注于雎；洈水出焉而南流注于漳",
       "description": "出荆山东南注雎，郭注古县与沮水写法分存；不以近音字合并现代水系。",
       "commentary_quote": "出荆山至南郡當陽縣入沮水",
       "context_place_id": "place-zhongshan-r08-jingshan",
       "source_passage_ids": [
-        "passage-zhongshan-r08-jingshan"
+        "passage-zhongshan-r08-jingshan",
+        "passage-zhongshan-r08-yizhu"
       ],
       "related_entry_ids": [
         "passage-zhongshan-r08-jingshan",
+        "passage-zhongshan-r08-yizhu",
+        "place-zhongshan-r08-yizhu",
         "water-zhongshan-ju-range8",
-        "beast-zhongshan-jiao-zhang8"
+        "beast-zhongshan-jiao-zhang8",
+        "water-zhongshan-wei-yizhu8"
       ],
-      "relation_scope": "water"
+      "relation_scope": "water",
+      "context_place_ids": [
+        "place-zhongshan-r08-jingshan",
+        "place-zhongshan-r08-yizhu"
+      ]
     },
     {
       "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
@@ -51068,6 +51117,2551 @@
       ],
       "related_entry_ids": [
         "passage-zhongshan-r08-nvji"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0310",
+        "source-05-0311",
+        "source-05-0312"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yizhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-gold-yizhu8",
+      "kind": "material",
+      "name": "金（冝諸之山）",
+      "quote": "其上多金玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-yizhu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yizhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yizhu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0310",
+        "source-05-0311",
+        "source-05-0312"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yizhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-jade-yizhu8",
+      "kind": "material",
+      "name": "玉（冝諸之山）",
+      "quote": "其上多金玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-yizhu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yizhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yizhu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0310",
+        "source-05-0311",
+        "source-05-0312"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yizhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-qinghu-yizhu8",
+      "kind": "material",
+      "name": "青䨼（冝諸之山）",
+      "quote": "其下多青䨼",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-yizhu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yizhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yizhu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0310",
+        "source-05-0311",
+        "source-05-0312"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yizhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "water-zhongshan-wei-yizhu8",
+      "kind": "water",
+      "name": "洈水（冝諸）",
+      "quote": "洈水出焉而南流注于漳",
+      "description": "正文南注漳；郭注古路线入江另存，不据古地名坐标化或改写受水体。",
+      "commentary_quote": "音詭；今洈水出南郡東洈山至華容縣入江也",
+      "context_place_id": "place-zhongshan-r08-yizhu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yizhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yizhu",
+        "water-zhongshan-zhang-jingshan8",
+        "material-zhongshan-white-jade-yizhu8"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0310",
+        "source-05-0311",
+        "source-05-0312"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yizhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-white-jade-yizhu8",
+      "kind": "material",
+      "name": "白玉（洈水）（冝諸之山）",
+      "quote": "其中多白玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-yizhu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yizhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yizhu",
+        "water-zhongshan-wei-yizhu8"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-zi-lun8",
+      "kind": "plant",
+      "name": "梓（綸山）",
+      "quote": "其木多梓柟",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-nan-lun8",
+      "kind": "plant",
+      "name": "柟（綸山）",
+      "quote": "其木多梓柟",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-taozhi-lun8",
+      "kind": "plant",
+      "name": "桃枝（綸山）",
+      "quote": "多桃枝",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-li-lun8",
+      "kind": "plant",
+      "name": "栗（綸山）",
+      "quote": "多柤栗橘櫾",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-ju-lun8",
+      "kind": "plant",
+      "name": "橘（綸山）",
+      "quote": "多柤栗橘櫾",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-you-lun8",
+      "kind": "plant",
+      "name": "櫾（綸山）",
+      "quote": "多柤栗橘櫾",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-zha-lun8",
+      "kind": "plant",
+      "name": "柤（綸山）",
+      "quote": "多柤栗橘櫾",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "柤似棃而酢濇",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0316",
+        "source-05-0317"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lugui",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-tufu-jade-lugui8",
+      "kind": "material",
+      "name": "㻬琈之玉（陸䣀之山）",
+      "quote": "其上多㻬琈之玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lugui",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lugui"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lugui"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0316",
+        "source-05-0317"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lugui",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-e-lugui8",
+      "kind": "material",
+      "name": "堊（陸䣀之山）",
+      "quote": "其下多堊",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lugui",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lugui"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lugui"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0316",
+        "source-05-0317"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lugui",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-niu-lugui8",
+      "kind": "plant",
+      "name": "杻（陸䣀之山）",
+      "quote": "其木多杻橿",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lugui",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lugui"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lugui"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0316",
+        "source-05-0317"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lugui",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-jiang-lugui8",
+      "kind": "plant",
+      "name": "橿（陸䣀之山）",
+      "quote": "其木多杻橿",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lugui",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lugui"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lugui"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0318",
+        "source-05-0319",
+        "source-05-0320"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-guang",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-bi-guang8",
+      "kind": "material",
+      "name": "碧（光山）",
+      "quote": "其上多碧",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-guang",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-guang"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-guang"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0318",
+        "source-05-0319",
+        "source-05-0320"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-guang",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-trees-guang8",
+      "kind": "plant",
+      "name": "木（未列种）（光山）",
+      "quote": "其下多木",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-guang",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-guang"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-guang"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0318",
+        "source-05-0319",
+        "source-05-0320"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-guang",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "water-zhongshan-zhang-pool-guang8",
+      "kind": "water",
+      "name": "漳淵（光山）",
+      "quote": "恒遊于漳淵",
+      "description": "神游处漳渊单列；不将渊默并入漳水，亦不并驕山睢漳之渊。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-guang",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-guang"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-guang",
+        "deity-zhongshan-jimeng-guang8"
+      ],
+      "relation_scope": "water"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-qi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-red-metal-qi8",
+      "kind": "material",
+      "name": "赤金（阳）（岐山）",
+      "quote": "其陽多赤金",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-qi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-qi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-qi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-qi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-gold-qi8",
+      "kind": "material",
+      "name": "金（上）（岐山）",
+      "quote": "其上多金玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-qi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-qi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-qi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-qi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-jade-qi8",
+      "kind": "material",
+      "name": "玉（上）（岐山）",
+      "quote": "其上多金玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-qi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-qi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-qi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-qi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-qinghu-qi8",
+      "kind": "material",
+      "name": "青䨼（下）（岐山）",
+      "quote": "其下多青䨼",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-qi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-qi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-qi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-qi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-white-min-qi8",
+      "kind": "material",
+      "name": "白珉（阴）（岐山）",
+      "quote": "其隂多白珉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "石似；玉者音旻",
+      "context_place_id": "place-zhongshan-r08-qi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-qi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-qi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-qi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-chu-qi8",
+      "kind": "plant",
+      "name": "樗（岐山）",
+      "quote": "其木多樗",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-qi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-qi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-qi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-gold-tong8",
+      "kind": "material",
+      "name": "金（銅山）",
+      "quote": "其上多金銀鐵",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-silver-tong8",
+      "kind": "material",
+      "name": "銀（銅山）",
+      "quote": "其上多金銀鐵",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-iron-tong8",
+      "kind": "material",
+      "name": "鐵（銅山）",
+      "quote": "其上多金銀鐵",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-gu-tong8",
+      "kind": "plant",
+      "name": "榖（銅山）",
+      "quote": "其木多榖柞",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-zuo-tong8",
+      "kind": "plant",
+      "name": "柞（銅山）",
+      "quote": "其木多榖柞",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-zha-tong8",
+      "kind": "plant",
+      "name": "柤（銅山）",
+      "quote": "柤栗橘櫾",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-li-tong8",
+      "kind": "plant",
+      "name": "栗（銅山）",
+      "quote": "柤栗橘櫾",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-ju-tong8",
+      "kind": "plant",
+      "name": "橘（銅山）",
+      "quote": "柤栗橘櫾",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-you-tong8",
+      "kind": "plant",
+      "name": "櫾（銅山）",
+      "quote": "柤栗橘櫾",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-mei",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-gold-mei8",
+      "kind": "material",
+      "name": "金（羙山）",
+      "quote": "其上多金",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-mei",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-mei"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-mei",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-qinghu-mei8",
+      "kind": "material",
+      "name": "青䨼（羙山）",
+      "quote": "其下多青䨼",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-mei",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-mei"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-song-dayao8",
+      "kind": "plant",
+      "name": "松（大堯之山）",
+      "quote": "其木多松栢",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-bai-dayao8",
+      "kind": "plant",
+      "name": "栢（大堯之山）",
+      "quote": "其木多松栢",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-zi-dayao8",
+      "kind": "plant",
+      "name": "梓（大堯之山）",
+      "quote": "多梓桑",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-sang-dayao8",
+      "kind": "plant",
+      "name": "桑（大堯之山）",
+      "quote": "多梓桑",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-ji-dayao8",
+      "kind": "plant",
+      "name": "机（大堯之山）",
+      "quote": "多机",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-bamboo-dayao8",
+      "kind": "plant",
+      "name": "竹（大堯之山）",
+      "quote": "其草多竹",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ling",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-gold-ling8",
+      "kind": "material",
+      "name": "金（靈山）",
+      "quote": "其上多金玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-ling",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ling"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ling"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ling",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-jade-ling8",
+      "kind": "material",
+      "name": "玉（靈山）",
+      "quote": "其上多金玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-ling",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ling"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ling"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ling",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-qinghu-ling8",
+      "kind": "material",
+      "name": "青䨼（靈山）",
+      "quote": "其下多青䨼",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-ling",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ling"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ling"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ling",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-tao-ling8",
+      "kind": "plant",
+      "name": "桃（靈山）",
+      "quote": "其木多桃李梅杏",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-ling",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ling"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ling"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ling",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-li-ling8",
+      "kind": "plant",
+      "name": "李（靈山）",
+      "quote": "其木多桃李梅杏",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-ling",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ling"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ling"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ling",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-xing-ling8",
+      "kind": "plant",
+      "name": "杏（靈山）",
+      "quote": "其木多桃李梅杏",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-ling",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ling"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ling"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ling",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-mei-ling8",
+      "kind": "plant",
+      "name": "梅（靈山）",
+      "quote": "其木多桃李梅杏",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "梅似杏而酢也",
+      "context_place_id": "place-zhongshan-r08-ling",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ling"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ling"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0332",
+        "source-05-0333"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-long",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-yumu-long8",
+      "kind": "plant",
+      "name": "寓木（龍山）",
+      "quote": "上多寓木",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "寄生也一名宛童見爾雅",
+      "context_place_id": "place-zhongshan-r08-long",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-long"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-long"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0332",
+        "source-05-0333"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-long",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-bi-long8",
+      "kind": "material",
+      "name": "碧（龍山）",
+      "quote": "其上多碧",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-long",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-long"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-long"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0332",
+        "source-05-0333"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-long",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-red-tin-long8",
+      "kind": "material",
+      "name": "赤錫（龍山）",
+      "quote": "其下多赤錫",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-long",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-long"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-long"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0332",
+        "source-05-0333"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-long",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-taozhi-long8",
+      "kind": "plant",
+      "name": "桃枝（龍山）",
+      "quote": "其草多桃枝鈎端",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-long",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-long"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-long"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0332",
+        "source-05-0333"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-long",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-gouduan-long8",
+      "kind": "plant",
+      "name": "鈎端（龍山）",
+      "quote": "其草多桃枝鈎端",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-long",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-long"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-long"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0334"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-heng",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-yumu-heng8",
+      "kind": "plant",
+      "name": "寓木（衡山）",
+      "quote": "上多寓木榖柞",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-heng",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-heng"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-heng"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0334"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-heng",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-gu-heng8",
+      "kind": "plant",
+      "name": "榖（衡山）",
+      "quote": "上多寓木榖柞",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-heng",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-heng"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-heng"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0334"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-heng",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-zuo-heng8",
+      "kind": "plant",
+      "name": "柞（衡山）",
+      "quote": "上多寓木榖柞",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-heng",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-heng"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-heng"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0334"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-heng",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-yellow-e-heng8",
+      "kind": "material",
+      "name": "黄堊（衡山）",
+      "quote": "多黄堊白堊",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-heng",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-heng"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-heng"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0334"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-heng",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-white-e-heng8",
+      "kind": "material",
+      "name": "白堊（衡山）",
+      "quote": "多黄堊白堊",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-heng",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-heng"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-heng"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0335",
+        "source-05-0336"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-shi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-gold-shi8",
+      "kind": "material",
+      "name": "金（石山）",
+      "quote": "其上多金",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-shi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-shi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-shi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0335",
+        "source-05-0336"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-shi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-qinghu-shi8",
+      "kind": "material",
+      "name": "青䨼（石山）",
+      "quote": "其下多青䨼",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-shi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-shi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-shi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0335",
+        "source-05-0336"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-shi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-yumu-shi8",
+      "kind": "plant",
+      "name": "寓木（石山）",
+      "quote": "多寓木",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-shi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-shi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-shi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0337",
+        "source-05-0338"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ruo",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-tufu-jade-ruo8",
+      "kind": "material",
+      "name": "㻬琈之玉（若山）",
+      "quote": "其上多㻬琈之玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-ruo",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ruo"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ruo"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0337",
+        "source-05-0338"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ruo",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-ochre-ruo8",
+      "kind": "material",
+      "name": "赭（若山）",
+      "quote": "多赭",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "赤土",
+      "context_place_id": "place-zhongshan-r08-ruo",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ruo"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ruo"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0337",
+        "source-05-0338"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ruo",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-gui-stone-ruo8",
+      "kind": "material",
+      "name": "邽石（若山）",
+      "quote": "多邽石",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "未詳",
+      "context_place_id": "place-zhongshan-r08-ruo",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ruo"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ruo"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0337",
+        "source-05-0338"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ruo",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-yumu-ruo8",
+      "kind": "plant",
+      "name": "寓木（若山）",
+      "quote": "多寓木",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-ruo",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ruo"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ruo"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0337",
+        "source-05-0338"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ruo",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-zhe-ruo8",
+      "kind": "plant",
+      "name": "柘（若山）",
+      "quote": "多柘",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-ruo",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ruo"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ruo"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0339"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-zhi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-fine-stone-zhi8",
+      "kind": "material",
+      "name": "羙石（彘山）",
+      "quote": "多羙石",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-zhi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-zhi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-zhi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0339"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-zhi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-zhe-zhi8",
+      "kind": "plant",
+      "name": "柘（彘山）",
+      "quote": "多柘",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-zhi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-zhi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-zhi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0340",
+        "source-05-0341"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-gold-yu8",
+      "kind": "material",
+      "name": "金（玉山）",
+      "quote": "其上多金玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-yu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0340",
+        "source-05-0341"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-jade-yu8",
+      "kind": "material",
+      "name": "玉（玉山）",
+      "quote": "其上多金玉",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-yu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0340",
+        "source-05-0341"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-bi-yu8",
+      "kind": "material",
+      "name": "碧（玉山）",
+      "quote": "其下多碧鐵",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-yu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0340",
+        "source-05-0341"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "material-zhongshan-iron-yu8",
+      "kind": "material",
+      "name": "鐵（玉山）",
+      "quote": "其下多碧鐵",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-yu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0340",
+        "source-05-0341"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "plant-zhongshan-bai-yu8",
+      "kind": "plant",
+      "name": "栢（玉山）",
+      "quote": "其木多栢",
+      "description": "按本段原名与方位分别存录；不强定现代种属、成分或坐标。",
+      "commentary_quote": "一作楢",
+      "context_place_id": "place-zhongshan-r08-yu",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yu"
       ]
     }
   ],
@@ -74882,7 +77476,1021 @@
         "beast-zhongshan-whitejiao-nvji",
         "animal-zhongshan-zhai-nvji8",
         "beast-zhongshan-zhen-nvji",
-        "passage-zhongshan-r08-jiao"
+        "passage-zhongshan-r08-jiao",
+        "passage-zhongshan-r08-yizhu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0310",
+        "source-05-0311",
+        "source-05-0312"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yizhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-yizhu",
+      "kind": "passage",
+      "name": "冝諸之山",
+      "range": 8,
+      "order": 98,
+      "description": "东北二百里冝諸，上多金玉，下多青䨼。洈水南注漳，水中白玉单列；郭注所述古郡县与入江路线另存，不覆盖正文南注漳，也不按现代地图定位。",
+      "quote": "又東北二百里曰冝諸之山其上多金玉其下多青䨼洈水出焉而南流注于漳其中多白玉",
+      "captured_text": "又東北二百里曰冝諸之山其上多金玉其下多青䨼洈水出焉而南流注于漳其中多白玉",
+      "commentary_quote": "〔影印页36〕音詭；今洈水出南郡東洈山至華容縣入江也",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0310",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0311",
+          "annotations": [
+            "音詭",
+            "今洈水出南郡東洈山至華容縣入江也"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0312",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4360,
+        4396
+      ],
+      "subjects": [
+        "冝諸之山",
+        "金（冝諸之山）",
+        "玉（冝諸之山）",
+        "青䨼（冝諸之山）",
+        "洈水（冝諸）",
+        "白玉（洈水）（冝諸之山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-yizhu",
+        "material-zhongshan-gold-yizhu8",
+        "material-zhongshan-jade-yizhu8",
+        "material-zhongshan-qinghu-yizhu8",
+        "water-zhongshan-wei-yizhu8",
+        "material-zhongshan-white-jade-yizhu8",
+        "water-zhongshan-zhang-jingshan8",
+        "passage-zhongshan-r08-nvji",
+        "passage-zhongshan-r08-lun"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-lun",
+      "kind": "passage",
+      "name": "綸山",
+      "range": 8,
+      "order": 99,
+      "description": "东北三百五十里綸山，多梓柟桃枝柤栗橘櫾，兽列閭麈麢㚟。柤似棃而酢濇为郭注；㚟似菟而鹿脚青色，图依兔状鹿足青色，四足分蹄、长耳比例及姿态为解释。音勑略反跨314—315连读，两块均在36页，其他兽仅名留空。",
+      "quote": "又東北三百五十里曰綸山其木多梓柟多桃枝多柤栗橘櫾其獸多閭麈麢㚟",
+      "captured_text": "又東北三百五十里曰綸山其木多梓柟多桃枝多柤栗橘櫾其獸多閭麈麢㚟",
+      "commentary_quote": "〔影印页36〕音倫\n〔影印页36〕柤似棃而酢濇；㚟似菟而鹿脚青色音勑\n〔影印页36〕略反",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0313",
+          "annotations": [
+            "音倫"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0314",
+          "annotations": [
+            "柤似棃而酢濇",
+            "㚟似菟而鹿脚青色音勑"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0315",
+          "annotations": [
+            "略反"
+          ]
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4396,
+        4427
+      ],
+      "subjects": [
+        "綸山",
+        "梓（綸山）",
+        "柟（綸山）",
+        "桃枝（綸山）",
+        "栗（綸山）",
+        "橘（綸山）",
+        "櫾（綸山）",
+        "柤（綸山）",
+        "閭麈（綸山原词）",
+        "麢（綸山）",
+        "㚟（綸山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-lun",
+        "plant-zhongshan-zi-lun8",
+        "plant-zhongshan-nan-lun8",
+        "plant-zhongshan-taozhi-lun8",
+        "plant-zhongshan-li-lun8",
+        "plant-zhongshan-ju-lun8",
+        "plant-zhongshan-you-lun8",
+        "plant-zhongshan-zha-lun8",
+        "animal-zhongshan-lvchen-lun8",
+        "animal-zhongshan-ling-lun8",
+        "beast-zhongshan-chuo-lun8",
+        "passage-zhongshan-r08-yizhu",
+        "passage-zhongshan-r08-lugui"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0316",
+        "source-05-0317"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lugui",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-lugui",
+      "kind": "passage",
+      "name": "陸䣀之山",
+      "range": 8,
+      "order": 100,
+      "description": "东北二百里陸䣀，上多㻬琈玉，下多堊，木多杻橿。䣀读音按郭注跪告之跪记录，不并陆吾神或其他近字山。㻬琈之玉跨316—317，仍属上部物产。",
+      "quote": "又東北二百里曰陸䣀之山其上多㻬琈之玉其下多堊其木多杻橿",
+      "captured_text": "又東北二百里曰陸䣀之山其上多㻬琈之玉其下多堊其木多杻橿",
+      "commentary_quote": "〔影印页37〕音如跪告之跪",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0316",
+          "annotations": [
+            "音如跪告之跪"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0317",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4427,
+        4454
+      ],
+      "subjects": [
+        "陸䣀之山",
+        "㻬琈之玉（陸䣀之山）",
+        "堊（陸䣀之山）",
+        "杻（陸䣀之山）",
+        "橿（陸䣀之山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-lugui",
+        "material-zhongshan-tufu-jade-lugui8",
+        "material-zhongshan-e-lugui8",
+        "plant-zhongshan-niu-lugui8",
+        "plant-zhongshan-jiang-lugui8",
+        "passage-zhongshan-r08-lun",
+        "passage-zhongshan-r08-guang"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0318",
+        "source-05-0319",
+        "source-05-0320"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-guang",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-guang",
+      "kind": "passage",
+      "name": "光山",
+      "range": 8,
+      "order": 101,
+      "description": "东百三十里光山，上多碧，下多木。计蒙人身龙首，常游漳渊，出入必有飘风暴雨；人身与龙首为图像依据，衣装、双臂双腿、龙角须、配色与姿态为艺术解释，不画蛇身、翼或虎爪。漳渊单列，不强并漳水或睢漳之渊。",
+      "quote": "又東百三十里曰光山其上多碧其下多木神計蒙處之其狀人身而龍首恒遊于漳淵出入必有飄風暴雨",
+      "captured_text": "又東百三十里曰光山其上多碧其下多木神計蒙處之其狀人身而龍首恒遊于漳淵出入必有飄風暴雨",
+      "commentary_quote": "",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0318",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0319",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0320",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4454,
+        4496
+      ],
+      "subjects": [
+        "光山",
+        "碧（光山）",
+        "木（未列种）（光山）",
+        "漳淵（光山）",
+        "計蒙（光山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-guang",
+        "material-zhongshan-bi-guang8",
+        "plant-zhongshan-trees-guang8",
+        "water-zhongshan-zhang-pool-guang8",
+        "deity-zhongshan-jimeng-guang8",
+        "passage-zhongshan-r08-lugui",
+        "passage-zhongshan-r08-qi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-qi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-qi",
+      "kind": "passage",
+      "name": "岐山",
+      "range": 8,
+      "order": 102,
+      "description": "东百五十里岐山，阳赤金、阴白珉，上金玉、下青䨼，多樗。白珉似玉石郭注跨321—322连读。神涉𧕦人身方面三足；三条人腿须可数，面形、衣装、手臂与配色为艺术解释，不并计蒙或𧕛围，不加龙首羊角虎爪。",
+      "quote": "又東百五十里曰岐山其陽多赤金其隂多白珉其上多金玉其下多青䨼其木多樗神涉𧕦處之其狀人身而方面三足",
+      "captured_text": "又東百五十里曰岐山其陽多赤金其隂多白珉其上多金玉其下多青䨼其木多樗神涉𧕦處之其狀人身而方面三足",
+      "commentary_quote": "〔影印页37〕石似\n〔影印页37〕玉者音旻\n〔影印页37〕徒河切一作𧔳笑逰切",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0321",
+          "annotations": [
+            "石似"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0322",
+          "annotations": [
+            "玉者音旻"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0323",
+          "annotations": [
+            "徒河切一作𧔳笑逰切"
+          ]
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4496,
+        4543
+      ],
+      "subjects": [
+        "岐山",
+        "赤金（阳）（岐山）",
+        "金（上）（岐山）",
+        "玉（上）（岐山）",
+        "青䨼（下）（岐山）",
+        "白珉（阴）（岐山）",
+        "樗（岐山）",
+        "涉𧕦（岐山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-qi",
+        "material-zhongshan-red-metal-qi8",
+        "material-zhongshan-gold-qi8",
+        "material-zhongshan-jade-qi8",
+        "material-zhongshan-qinghu-qi8",
+        "material-zhongshan-white-min-qi8",
+        "plant-zhongshan-chu-qi8",
+        "deity-zhongshan-shetuo-qi8",
+        "passage-zhongshan-r08-guang",
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-tong",
+      "kind": "passage",
+      "name": "銅山",
+      "range": 8,
+      "order": 103,
+      "description": "东百三十里銅山，上多金银铁，木列榖柞柤栗橘櫾，豹仅列名不补形。324实际37页末，325续38页；山名有铜不等于正文另列铜矿，不借綸山柤注覆盖本地植物。",
+      "quote": "又東百三十里曰銅山其上多金銀鐵其木多榖柞柤栗橘櫾其獸多豹",
+      "captured_text": "又東百三十里曰銅山其上多金銀鐵其木多榖柞柤栗橘櫾其獸多豹",
+      "commentary_quote": "",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0324",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0325",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4543,
+        4571
+      ],
+      "subjects": [
+        "銅山",
+        "金（銅山）",
+        "銀（銅山）",
+        "鐵（銅山）",
+        "榖（銅山）",
+        "柞（銅山）",
+        "柤（銅山）",
+        "栗（銅山）",
+        "橘（銅山）",
+        "櫾（銅山）",
+        "豹（銅山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-tong",
+        "material-zhongshan-gold-tong8",
+        "material-zhongshan-silver-tong8",
+        "material-zhongshan-iron-tong8",
+        "plant-zhongshan-gu-tong8",
+        "plant-zhongshan-zuo-tong8",
+        "plant-zhongshan-zha-tong8",
+        "plant-zhongshan-li-tong8",
+        "plant-zhongshan-ju-tong8",
+        "plant-zhongshan-you-tong8",
+        "animal-zhongshan-leopard-tong8",
+        "passage-zhongshan-r08-qi",
+        "passage-zhongshan-r08-mei"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-mei",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-mei",
+      "kind": "passage",
+      "name": "羙山",
+      "range": 8,
+      "order": 104,
+      "description": "东北一百里羙山，兽列兕牛、閭麈、豕鹿，上多金、下青䨼。保留閭麈分合疑点；本段动物无独立细部，不借他篇犀角、牛形或鹿角强画像。羙字依本底本保留。",
+      "quote": "又東北一百里曰羙山其獸多兕牛多閭麈多豕鹿其上多金其下多青䨼",
+      "captured_text": "又東北一百里曰羙山其獸多兕牛多閭麈多豕鹿其上多金其下多青䨼",
+      "commentary_quote": "",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0326",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0327",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4571,
+        4600
+      ],
+      "subjects": [
+        "羙山",
+        "兕（羙山）",
+        "牛（羙山）",
+        "閭麈（羙山）",
+        "豕（羙山）",
+        "鹿（羙山）",
+        "金（羙山）",
+        "青䨼（羙山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-mei",
+        "animal-zhongshan-si-mei8",
+        "animal-zhongshan-cattle-mei8",
+        "animal-zhongshan-lvchen-mei8",
+        "animal-zhongshan-pig-mei8",
+        "animal-zhongshan-deer-mei8",
+        "material-zhongshan-gold-mei8",
+        "material-zhongshan-qinghu-mei8",
+        "passage-zhongshan-r08-tong",
+        "passage-zhongshan-r08-dayao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-dayao",
+      "kind": "passage",
+      "name": "大堯之山",
+      "range": 8,
+      "order": 105,
+      "description": "东北百里大堯，多松栢梓桑机，草多竹，兽多豹虎麢㚟。本段㚟仅列名，不把綸山郭注默作本地正文；四项动物均留占位。",
+      "quote": "又東北百里曰大堯之山其木多松栢多梓桑多机其草多竹其獸多豹虎麢㚟",
+      "captured_text": "又東北百里曰大堯之山其木多松栢多梓桑多机其草多竹其獸多豹虎麢㚟",
+      "commentary_quote": "",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0328",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0329",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4600,
+        4631
+      ],
+      "subjects": [
+        "大堯之山",
+        "松（大堯之山）",
+        "栢（大堯之山）",
+        "梓（大堯之山）",
+        "桑（大堯之山）",
+        "机（大堯之山）",
+        "竹（大堯之山）",
+        "豹（大堯）",
+        "虎（大堯）",
+        "麢（大堯）",
+        "㚟（大堯）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-dayao",
+        "plant-zhongshan-song-dayao8",
+        "plant-zhongshan-bai-dayao8",
+        "plant-zhongshan-zi-dayao8",
+        "plant-zhongshan-sang-dayao8",
+        "plant-zhongshan-ji-dayao8",
+        "plant-zhongshan-bamboo-dayao8",
+        "animal-zhongshan-leopard-dayao8",
+        "animal-zhongshan-tiger-dayao8",
+        "animal-zhongshan-ling-dayao8",
+        "animal-zhongshan-chuo-dayao8",
+        "passage-zhongshan-r08-mei",
+        "passage-zhongshan-r08-ling"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ling",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-ling",
+      "kind": "passage",
+      "name": "靈山",
+      "range": 8,
+      "order": 106,
+      "description": "东北三百里靈山，上多金玉、下青䨼，木多桃李梅杏。梅注似杏而酢按捕获原词分存，不据现代植物分类合并梅与杏，也不将郭注变成本山独立新物种。",
+      "quote": "又東北三百里曰靈山其上多金玉其下多青䨼其木多桃李梅杏",
+      "captured_text": "又東北三百里曰靈山其上多金玉其下多青䨼其木多桃李梅杏",
+      "commentary_quote": "〔影印页38〕梅似杏而酢也",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0330",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0331",
+          "annotations": [
+            "梅似杏而酢也"
+          ]
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4631,
+        4657
+      ],
+      "subjects": [
+        "靈山",
+        "金（靈山）",
+        "玉（靈山）",
+        "青䨼（靈山）",
+        "桃（靈山）",
+        "李（靈山）",
+        "杏（靈山）",
+        "梅（靈山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-ling",
+        "material-zhongshan-gold-ling8",
+        "material-zhongshan-jade-ling8",
+        "material-zhongshan-qinghu-ling8",
+        "plant-zhongshan-tao-ling8",
+        "plant-zhongshan-li-ling8",
+        "plant-zhongshan-xing-ling8",
+        "plant-zhongshan-mei-ling8",
+        "passage-zhongshan-r08-dayao",
+        "passage-zhongshan-r08-long"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0332",
+        "source-05-0333"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-long",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-long",
+      "kind": "passage",
+      "name": "龍山",
+      "range": 8,
+      "order": 107,
+      "description": "东北七十里龍山，上多寓木与碧，下多赤锡，草列桃枝鈎端。郭注寓木为寄生、一名宛童并引尔雅，不借龙名补龙兽。332—333均38页，原捕获333为39页另存。",
+      "quote": "又東北七十里曰龍山上多寓木其上多碧其下多赤錫其草多桃枝鈎端",
+      "captured_text": "又東北七十里曰龍山上多寓木其上多碧其下多赤錫其草多桃枝鈎端",
+      "commentary_quote": "〔影印页38〕寄生也一名宛童見爾雅",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0332",
+          "annotations": [
+            "寄生也一名宛童見爾雅"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0333",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4657,
+        4686
+      ],
+      "subjects": [
+        "龍山",
+        "寓木（龍山）",
+        "碧（龍山）",
+        "赤錫（龍山）",
+        "桃枝（龍山）",
+        "鈎端（龍山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-long",
+        "plant-zhongshan-yumu-long8",
+        "material-zhongshan-bi-long8",
+        "material-zhongshan-red-tin-long8",
+        "plant-zhongshan-taozhi-long8",
+        "plant-zhongshan-gouduan-long8",
+        "passage-zhongshan-r08-ling",
+        "passage-zhongshan-r08-heng"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0334"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-heng",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-heng",
+      "kind": "passage",
+      "name": "衡山",
+      "range": 8,
+      "order": 108,
+      "description": "东南五十里衡山，上多寓木榖柞及黄堊白堊。334捕获寓不，据39页木字仅阅读层恢复为寓木；不作全书不字替换。榖与柞各列，堊颜色分存，不强定现代矿物或现代衡山。",
+      "quote": "又東南五十里曰衡山上多寓木榖柞多黄堊白堊",
+      "captured_text": "又東南五十里曰衡山上多寓不榖柞多黄堊白堊",
+      "commentary_quote": "",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0334",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4686,
+        4706
+      ],
+      "subjects": [
+        "衡山",
+        "寓木（衡山）",
+        "榖（衡山）",
+        "柞（衡山）",
+        "黄堊（衡山）",
+        "白堊（衡山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-heng",
+        "plant-zhongshan-yumu-heng8",
+        "plant-zhongshan-gu-heng8",
+        "plant-zhongshan-zuo-heng8",
+        "material-zhongshan-yellow-e-heng8",
+        "material-zhongshan-white-e-heng8",
+        "passage-zhongshan-r08-long",
+        "passage-zhongshan-r08-shi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0335",
+        "source-05-0336"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-shi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-shi",
+      "kind": "passage",
+      "name": "石山",
+      "range": 8,
+      "order": 109,
+      "description": "东南七十里石山，上多金、下多青䨼，多寓木。寓木二字跨335—336连读，不因分行拆词；不并其他篇同名石山，不借龍山郭注新增外形。",
+      "quote": "又東南七十里曰石山其上多金其下多青䨼多寓木",
+      "captured_text": "又東南七十里曰石山其上多金其下多青䨼多寓木",
+      "commentary_quote": "",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0335",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0336",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4706,
+        4727
+      ],
+      "subjects": [
+        "石山",
+        "金（石山）",
+        "青䨼（石山）",
+        "寓木（石山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-shi",
+        "material-zhongshan-gold-shi8",
+        "material-zhongshan-qinghu-shi8",
+        "plant-zhongshan-yumu-shi8",
+        "passage-zhongshan-r08-heng",
+        "passage-zhongshan-r08-ruo"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0337",
+        "source-05-0338"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ruo",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-ruo",
+      "kind": "passage",
+      "name": "若山",
+      "range": 8,
+      "order": 110,
+      "description": "南百二十里若山，上多㻬琈玉，又多赭、邽石、寓木与柘。赭为赤土、邽石未详分属不同郭注；若或作前为山名异说，不新增前山阶段，邽石不强定现代矿物。",
+      "quote": "又南百二十里曰若山其上多㻬琈之玉多赭多邽石多寓木多柘",
+      "captured_text": "又南百二十里曰若山其上多㻬琈之玉多赭多邽石多寓木多柘",
+      "commentary_quote": "〔影印页39〕赤土\n〔影印页39〕未詳；若或作前",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0337",
+          "annotations": [
+            "赤土"
+          ]
+        },
+        {
+          "source_unit_id": "source-05-0338",
+          "annotations": [
+            "未詳",
+            "若或作前"
+          ]
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4727,
+        4753
+      ],
+      "subjects": [
+        "若山",
+        "㻬琈之玉（若山）",
+        "赭（若山）",
+        "邽石（若山）",
+        "寓木（若山）",
+        "柘（若山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-ruo",
+        "material-zhongshan-tufu-jade-ruo8",
+        "material-zhongshan-ochre-ruo8",
+        "material-zhongshan-gui-stone-ruo8",
+        "plant-zhongshan-yumu-ruo8",
+        "plant-zhongshan-zhe-ruo8",
+        "passage-zhongshan-r08-shi",
+        "passage-zhongshan-r08-zhi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0339"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-zhi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-zhi",
+      "kind": "passage",
+      "name": "彘山",
+      "range": 8,
+      "order": 111,
+      "description": "东南一百二十里彘山，多羙石与柘。羙石仅泛称美石，不凭空拆成玉或矿种；山名彘不是本段有猪的物产依据。",
+      "quote": "又東南一百二十里曰彘山多羙石多柘",
+      "captured_text": "又東南一百二十里曰彘山多羙石多柘",
+      "commentary_quote": "",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0339",
+          "annotations": []
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4753,
+        4769
+      ],
+      "subjects": [
+        "彘山",
+        "羙石（彘山）",
+        "柘（彘山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-zhi",
+        "material-zhongshan-fine-stone-zhi8",
+        "plant-zhongshan-zhe-zhi8",
+        "passage-zhongshan-r08-ruo",
+        "passage-zhongshan-r08-yu"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0340",
+        "source-05-0341"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "passage-zhongshan-r08-yu",
+      "kind": "passage",
+      "name": "玉山",
+      "range": 8,
+      "order": 112,
+      "description": "东南一百五十里玉山，上多金玉、下多碧铁，木多栢。郭注一作楢为栢字异文，单独记录，不把栢楢都算本山实生木；同名玉山不跨篇强合。",
+      "quote": "又東南一百五十里曰玉山其上多金玉其下多碧鐵其木多栢",
+      "captured_text": "又東南一百五十里曰玉山其上多金玉其下多碧鐵其木多栢",
+      "commentary_quote": "〔影印页39〕一作楢",
+      "captured_commentary": [
+        {
+          "source_unit_id": "source-05-0340",
+          "annotations": []
+        },
+        {
+          "source_unit_id": "source-05-0341",
+          "annotations": [
+            "一作楢"
+          ]
+        }
+      ],
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_span": [
+        4769,
+        4794
+      ],
+      "subjects": [
+        "玉山",
+        "金（玉山）",
+        "玉（玉山）",
+        "碧（玉山）",
+        "鐵（玉山）",
+        "栢（玉山）"
+      ],
+      "related_entry_ids": [
+        "place-zhongshan-r08-yu",
+        "material-zhongshan-gold-yu8",
+        "material-zhongshan-jade-yu8",
+        "material-zhongshan-bi-yu8",
+        "material-zhongshan-iron-yu8",
+        "plant-zhongshan-bai-yu8",
+        "passage-zhongshan-r08-zhi"
       ]
     }
   ],
@@ -95254,6 +98862,1030 @@
       ],
       "appearance_unknown": true,
       "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0310",
+        "source-05-0311",
+        "source-05-0312"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yizhu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-yizhu",
+      "kind": "place",
+      "name": "冝諸之山",
+      "description": "东北二百里冝諸，上多金玉，下多青䨼。洈水南注漳，水中白玉单列；郭注所述古郡县与入江路线另存，不覆盖正文南注漳，也不按现代地图定位。",
+      "quote": "又東北二百里曰冝諸之山其上多金玉其下多青䨼洈水出焉而南流注于漳其中多白玉",
+      "commentary_quote": "〔影印页36〕音詭；今洈水出南郡東洈山至華容縣入江也",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yizhu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yizhu",
+        "water-zhongshan-zhang-jingshan8"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-lun",
+      "kind": "place",
+      "name": "綸山",
+      "description": "东北三百五十里綸山，多梓柟桃枝柤栗橘櫾，兽列閭麈麢㚟。柤似棃而酢濇为郭注；㚟似菟而鹿脚青色，图依兔状鹿足青色，四足分蹄、长耳比例及姿态为解释。音勑略反跨314—315连读，两块均在36页，其他兽仅名留空。",
+      "quote": "又東北三百五十里曰綸山其木多梓柟多桃枝多柤栗橘櫾其獸多閭麈麢㚟",
+      "commentary_quote": "〔影印页36〕音倫\n〔影印页36〕柤似棃而酢濇；㚟似菟而鹿脚青色音勑\n〔影印页36〕略反",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-lvchen-lun8",
+      "kind": "animal",
+      "name": "閭麈（綸山原词）",
+      "quote": "其獸多閭麈麢㚟",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页36",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/36",
+      "source_unit_ids": [
+        "source-05-0313",
+        "source-05-0314",
+        "source-05-0315"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lun",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-ling-lun8",
+      "kind": "animal",
+      "name": "麢（綸山）",
+      "quote": "其獸多閭麈麢㚟",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-lun",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lun"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0316",
+        "source-05-0317"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-lugui",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-lugui",
+      "kind": "place",
+      "name": "陸䣀之山",
+      "description": "东北二百里陸䣀，上多㻬琈玉，下多堊，木多杻橿。䣀读音按郭注跪告之跪记录，不并陆吾神或其他近字山。㻬琈之玉跨316—317，仍属上部物产。",
+      "quote": "又東北二百里曰陸䣀之山其上多㻬琈之玉其下多堊其木多杻橿",
+      "commentary_quote": "〔影印页37〕音如跪告之跪",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-lugui"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-lugui"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0318",
+        "source-05-0319",
+        "source-05-0320"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-guang",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-guang",
+      "kind": "place",
+      "name": "光山",
+      "description": "东百三十里光山，上多碧，下多木。计蒙人身龙首，常游漳渊，出入必有飘风暴雨；人身与龙首为图像依据，衣装、双臂双腿、龙角须、配色与姿态为艺术解释，不画蛇身、翼或虎爪。漳渊单列，不强并漳水或睢漳之渊。",
+      "quote": "又東百三十里曰光山其上多碧其下多木神計蒙處之其狀人身而龍首恒遊于漳淵出入必有飄風暴雨",
+      "commentary_quote": "",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-guang"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-guang"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0318",
+        "source-05-0319",
+        "source-05-0320"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-guang",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "deity-zhongshan-jimeng-guang8",
+      "kind": "deity",
+      "name": "計蒙（光山）",
+      "quote": "神計蒙處之其狀人身而龍首恒遊于漳淵出入必有飄風暴雨",
+      "description": "人身龙首据正文；双人臂双人腿、衣装、龙角须、色彩及站姿为艺术解释，不补蛇躯、尾翼、虎爪或气象背景。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-guang",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-guang"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-guang",
+        "water-zhongshan-zhang-pool-guang8"
+      ],
+      "artwork": "zhongshan/deity-jimeng-guang-v1.webp",
+      "artwork_caption": "经文/郭注形貌与木刻演绎 · 器官依据见说明，未定细节、配色及姿态为艺术解释。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-qi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-qi",
+      "kind": "place",
+      "name": "岐山",
+      "description": "东百五十里岐山，阳赤金、阴白珉，上金玉、下青䨼，多樗。白珉似玉石郭注跨321—322连读。神涉𧕦人身方面三足；三条人腿须可数，面形、衣装、手臂与配色为艺术解释，不并计蒙或𧕛围，不加龙首羊角虎爪。",
+      "quote": "又東百五十里曰岐山其陽多赤金其隂多白珉其上多金玉其下多青䨼其木多樗神涉𧕦處之其狀人身而方面三足",
+      "commentary_quote": "〔影印页37〕石似\n〔影印页37〕玉者音旻\n〔影印页37〕徒河切一作𧔳笑逰切",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-qi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-qi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0321",
+        "source-05-0322",
+        "source-05-0323"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-qi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": false,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "deity-zhongshan-shetuo-qi8",
+      "kind": "deity",
+      "name": "涉𧕦（岐山）",
+      "quote": "神涉𧕦處之其狀人身而方面三足",
+      "description": "人身、方面、三足据正文，图中三条人腿与三只足分离可数；双臂、衣装、年龄、比例、配色及站姿为解释。不增龙首、羊角虎爪；异字𧔳只存郭注。",
+      "commentary_quote": "徒河切一作𧔳笑逰切",
+      "context_place_id": "place-zhongshan-r08-qi",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-qi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-qi"
+      ],
+      "artwork": "zhongshan/deity-shetuo-qi-v1.webp",
+      "artwork_caption": "经文/郭注形貌与木刻演绎 · 器官依据见说明，未定细节、配色及姿态为艺术解释。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-tong",
+      "kind": "place",
+      "name": "銅山",
+      "description": "东百三十里銅山，上多金银铁，木列榖柞柤栗橘櫾，豹仅列名不补形。324实际37页末，325续38页；山名有铜不等于正文另列铜矿，不借綸山柤注覆盖本地植物。",
+      "quote": "又東百三十里曰銅山其上多金銀鐵其木多榖柞柤栗橘櫾其獸多豹",
+      "commentary_quote": "",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页37、38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/37",
+      "source_unit_ids": [
+        "source-05-0324",
+        "source-05-0325"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-tong",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-leopard-tong8",
+      "kind": "animal",
+      "name": "豹（銅山）",
+      "quote": "其獸多豹",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-tong",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-tong"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-mei",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-mei",
+      "kind": "place",
+      "name": "羙山",
+      "description": "东北一百里羙山，兽列兕牛、閭麈、豕鹿，上多金、下青䨼。保留閭麈分合疑点；本段动物无独立细部，不借他篇犀角、牛形或鹿角强画像。羙字依本底本保留。",
+      "quote": "又東北一百里曰羙山其獸多兕牛多閭麈多豕鹿其上多金其下多青䨼",
+      "commentary_quote": "",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-mei"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-mei",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-si-mei8",
+      "kind": "animal",
+      "name": "兕（羙山）",
+      "quote": "其獸多兕牛",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-mei",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-mei",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-cattle-mei8",
+      "kind": "animal",
+      "name": "牛（羙山）",
+      "quote": "其獸多兕牛",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-mei",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-mei",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-lvchen-mei8",
+      "kind": "animal",
+      "name": "閭麈（羙山）",
+      "quote": "多閭麈",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-mei",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-mei",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-pig-mei8",
+      "kind": "animal",
+      "name": "豕（羙山）",
+      "quote": "多豕鹿",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-mei",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0326",
+        "source-05-0327"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-mei",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-deer-mei8",
+      "kind": "animal",
+      "name": "鹿（羙山）",
+      "quote": "多豕鹿",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-mei",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-mei"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-dayao",
+      "kind": "place",
+      "name": "大堯之山",
+      "description": "东北百里大堯，多松栢梓桑机，草多竹，兽多豹虎麢㚟。本段㚟仅列名，不把綸山郭注默作本地正文；四项动物均留占位。",
+      "quote": "又東北百里曰大堯之山其木多松栢多梓桑多机其草多竹其獸多豹虎麢㚟",
+      "commentary_quote": "",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-leopard-dayao8",
+      "kind": "animal",
+      "name": "豹（大堯）",
+      "quote": "其獸多豹虎麢㚟",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-tiger-dayao8",
+      "kind": "animal",
+      "name": "虎（大堯）",
+      "quote": "其獸多豹虎麢㚟",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-ling-dayao8",
+      "kind": "animal",
+      "name": "麢（大堯）",
+      "quote": "其獸多豹虎麢㚟",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0328",
+        "source-05-0329"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-dayao",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "animal-zhongshan-chuo-dayao8",
+      "kind": "animal",
+      "name": "㚟（大堯）",
+      "quote": "其獸多豹虎麢㚟",
+      "description": "本段仅列名，未给独立细部；词义分合保留，不借他山形貌或现代物种强配图。",
+      "commentary_quote": "",
+      "context_place_id": "place-zhongshan-r08-dayao",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-dayao"
+      ],
+      "appearance_unknown": true,
+      "artwork_caption": "形貌未详或依据不足 · 问号占位不代表形态。"
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0330",
+        "source-05-0331"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ling",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-ling",
+      "kind": "place",
+      "name": "靈山",
+      "description": "东北三百里靈山，上多金玉、下青䨼，木多桃李梅杏。梅注似杏而酢按捕获原词分存，不据现代植物分类合并梅与杏，也不将郭注变成本山独立新物种。",
+      "quote": "又東北三百里曰靈山其上多金玉其下多青䨼其木多桃李梅杏",
+      "commentary_quote": "〔影印页38〕梅似杏而酢也",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ling"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ling"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页38",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/38",
+      "source_unit_ids": [
+        "source-05-0332",
+        "source-05-0333"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-long",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-long",
+      "kind": "place",
+      "name": "龍山",
+      "description": "东北七十里龍山，上多寓木与碧，下多赤锡，草列桃枝鈎端。郭注寓木为寄生、一名宛童并引尔雅，不借龙名补龙兽。332—333均38页，原捕获333为39页另存。",
+      "quote": "又東北七十里曰龍山上多寓木其上多碧其下多赤錫其草多桃枝鈎端",
+      "commentary_quote": "〔影印页38〕寄生也一名宛童見爾雅",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-long"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-long"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0334"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-heng",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-heng",
+      "kind": "place",
+      "name": "衡山",
+      "description": "东南五十里衡山，上多寓木榖柞及黄堊白堊。334捕获寓不，据39页木字仅阅读层恢复为寓木；不作全书不字替换。榖与柞各列，堊颜色分存，不强定现代矿物或现代衡山。",
+      "quote": "又東南五十里曰衡山上多寓木榖柞多黄堊白堊",
+      "commentary_quote": "",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-heng"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-heng"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0335",
+        "source-05-0336"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-shi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-shi",
+      "kind": "place",
+      "name": "石山",
+      "description": "东南七十里石山，上多金、下多青䨼，多寓木。寓木二字跨335—336连读，不因分行拆词；不并其他篇同名石山，不借龍山郭注新增外形。",
+      "quote": "又東南七十里曰石山其上多金其下多青䨼多寓木",
+      "commentary_quote": "",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-shi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-shi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0337",
+        "source-05-0338"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-ruo",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-ruo",
+      "kind": "place",
+      "name": "若山",
+      "description": "南百二十里若山，上多㻬琈玉，又多赭、邽石、寓木与柘。赭为赤土、邽石未详分属不同郭注；若或作前为山名异说，不新增前山阶段，邽石不强定现代矿物。",
+      "quote": "又南百二十里曰若山其上多㻬琈之玉多赭多邽石多寓木多柘",
+      "commentary_quote": "〔影印页39〕赤土\n〔影印页39〕未詳；若或作前",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-ruo"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-ruo"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0339"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-zhi",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-zhi",
+      "kind": "place",
+      "name": "彘山",
+      "description": "东南一百二十里彘山，多羙石与柘。羙石仅泛称美石，不凭空拆成玉或矿种；山名彘不是本段有猪的物产依据。",
+      "quote": "又東南一百二十里曰彘山多羙石多柘",
+      "commentary_quote": "",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-zhi"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-zhi"
+      ]
+    },
+    {
+      "source": "《山海经·中山经》（《四部丛刊》景明成化本，郭璞传）",
+      "source_chapter": "《中山经》",
+      "source_book": 5,
+      "region": "中山经",
+      "source_locator": "卷第五 · 影印页39",
+      "source_pages": [
+        "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39"
+      ],
+      "url": "https://zh.wikisource.org/wiki/Page:Sibu_Congkan0466-郭璞-山海經-2-2.djvu/39",
+      "source_unit_ids": [
+        "source-05-0340",
+        "source-05-0341"
+      ],
+      "reveal_chapter": "04",
+      "content_batch": "zhongshan-r08-yu",
+      "review_status": "facsimile_reviewed",
+      "artwork_pending": true,
+      "direction": "按中山经篇内顺序与古述方位阅读，不换算现代坐标或实测里程。",
+      "editorial_note": "正文、捕获与郭注分存；解释与英文为项目整理。食疗及灾异属古籍记述。",
+      "id": "place-zhongshan-r08-yu",
+      "kind": "place",
+      "name": "玉山",
+      "description": "东南一百五十里玉山，上多金玉、下多碧铁，木多栢。郭注一作楢为栢字异文，单独记录，不把栢楢都算本山实生木；同名玉山不跨篇强合。",
+      "quote": "又東南一百五十里曰玉山其上多金玉其下多碧鐵其木多栢",
+      "commentary_quote": "〔影印页39〕一作楢",
+      "content_note": "正文、郭注及跨页段界已据影印复核；原始捕获保留，物产、形貌与异说分存。",
+      "source_passage_ids": [
+        "passage-zhongshan-r08-yu"
+      ],
+      "related_entry_ids": [
+        "passage-zhongshan-r08-yu"
+      ]
     }
   ]
 }
