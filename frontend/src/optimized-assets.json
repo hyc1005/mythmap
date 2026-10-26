@@ -4795,5 +4795,122 @@
       1280,
       1170
     ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-horsedragon-summary9-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-horsedragon-summary9-v1.webp",
+    "original_bytes": 2659583,
+    "optimized_bytes": 363514,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-humandragon-summary10-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-humandragon-summary10-v1.webp",
+    "original_bytes": 2238428,
+    "optimized_bytes": 496686,
+    "original_dimensions": [
+      1199,
+      1312
+    ],
+    "dimensions": [
+      1170,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-qizhong-fuzhou-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/bird-qizhong-fuzhou-v1.webp",
+    "original_bytes": 1634439,
+    "optimized_bytes": 305764,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-jiao-kuang-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/creature-jiao-kuang-v1.webp",
+    "original_bytes": 1982889,
+    "optimized_bytes": 195864,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-yonghe-feng-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/creature-yonghe-feng-v1.webp",
+    "original_bytes": 2223093,
+    "optimized_bytes": 458122,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-zhen-yaobi-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/bird-zhen-yaobi-v1.webp",
+    "original_bytes": 2198990,
+    "optimized_bytes": 234940,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-yingshao-zhili-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/bird-yingshao-zhili-v1.webp",
+    "original_bytes": 1255056,
+    "optimized_bytes": 234158,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-qinggeng-jinli-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/bird-qinggeng-jinli-v1.webp",
+    "original_bytes": 1578983,
+    "optimized_bytes": 304464,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-lin-yiku-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/creature-lin-yiku-v1.webp",
+    "original_bytes": 2491442,
+    "optimized_bytes": 486362,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
   }
 }

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {readFile,stat} from 'node:fs/promises';
+import {mkdir,readFile,stat} from 'node:fs/promises';
 import {resolve,sep} from 'node:path';
 import {chromium,webkit} from 'playwright';
 import {worldEntries} from '../src/entries.js';
@@ -14,7 +14,7 @@ const [world,english,inventory,review,scans,snapshot,catalog,generation]=await P
 '../../data/shanhaijing-reference.json','../public/data/atlas/catalog.json','../artwork-source/zhongshan/entities-generation.json'].map(json));
 const entries=worldEntries(world),index=new Map(entries.map(e=>[e.id,e]));
 const selected=entries.filter(e=>e.content_batch?.startsWith('zhongshan-'));
-const newBatches=review.stage_plan.slice(112,127).map(s=>'zhongshan-'+s.slug);
+const newBatches=review.stage_plan.slice(127,157).map(s=>'zhongshan-'+s.slug);
 const commonChecks=process.env.ATLAS_COMMON_CHECKS!=='0';
 const activeBatches=process.env.ATLAS_BATCH?[process.env.ATLAS_BATCH]:newBatches;
 assert.ok(activeBatches.every(b=>newBatches.includes(b)));
@@ -22,24 +22,24 @@ const activeIds=new Set(world.passages.filter(p=>activeBatches.includes(p.conten
 const browserEntries=selected.filter(e=>activeBatches.includes(e.content_batch)||e.source_passage_ids?.some(id=>activeIds.has(id)));
 const activePassages=world.passages.filter(p=>activeBatches.includes(p.content_batch));
 const layoutEntries=[...activePassages,...browserEntries.filter(e=>e.artwork)];
-assert.equal(index.size,entries.length);assert.equal(selected.length,868);assert.equal(review.entry_ids.length,741);
-assert.deepEqual([1,2,3,4,5].map(b=>world.passages.filter(p=>(p.source_book||1)===b).length),[43,82,92,51,127]);
-assert.equal(review.implemented_stages,127);assert.equal(review.remaining_stages,85);assert.equal(review.planned_stages,212);
-assert.equal(review.status,'partially_implemented');assert.equal(review.next.name,'風雨之山');
-assert.equal(inventory.chapters[4].explained_blocks,388);assert.equal(inventory.chapters[4].semantic_passages,127);
+assert.equal(index.size,entries.length);assert.equal(selected.length,1097);assert.equal(review.entry_ids.length,940);
+assert.deepEqual([1,2,3,4,5].map(b=>world.passages.filter(p=>(p.source_book||1)===b).length),[43,82,92,51,157]);
+assert.equal(review.implemented_stages,157);assert.equal(review.remaining_stages,55);assert.equal(review.planned_stages,212);
+assert.equal(review.status,'partially_implemented');assert.equal(review.next.name,'即谷之山');
+assert.equal(inventory.chapters[4].explained_blocks,469);assert.equal(inventory.chapters[4].semantic_passages,157);
 assert.equal(inventory.chapters[4].semantic_review,'partial');
 const unitIndex=new Map(inventory.units.map(u=>[u.id,u]));
 assert.equal(unitIndex.get('source-05-0001').status,'heading_metadata');
-for(let i=2;i<=389;i++)assert.equal(unitIndex.get('source-05-'+String(i).padStart(4,'0')).status,'explained_in_reader');
-assert.equal(unitIndex.get('source-05-0390').status,'pending_review');
+for(let i=2;i<=470;i++)assert.equal(unitIndex.get('source-05-'+String(i).padStart(4,'0')).status,'explained_in_reader');
+assert.equal(unitIndex.get('source-05-0471').status,'pending_review');
 assert.ok(unitIndex.get('source-05-0009').page_url.endsWith('/2'));
 assert.ok(unitIndex.get('source-05-0009').captured_page_url.endsWith('/3'));
 for(const p of world.passages.filter(p=>p.source_book===5)){
  const refs=p.source_unit_ids.map(id=>snapshot.chapters[4].lines[Number(id.slice(-4))-1]);
  const raw=refs.map(l=>l.text).join('');
- assert.equal(p.quote,refs.map((l,i)=>p.source_unit_ids[i]==='source-05-0308'?l.text.replaceAll('�','鴆'):p.source_unit_ids[i]==='source-05-0334'?l.text.replace('寓不','寓木'):l.text).join('').replaceAll('⟦缺字图:鬼⟧','鬼').replaceAll('⟦缺字图:冢⟧','冢'));assert.equal(p.captured_text,raw);
+ assert.equal(p.quote,refs.map((l,i)=>p.source_unit_ids[i]==='source-05-0308'?l.text.replaceAll('�','鴆'):p.source_unit_ids[i]==='source-05-0334'?l.text.replace('寓不','寓木'):l.text).join('').replaceAll('⟦缺字图:鬼⟧','鬼').replaceAll('⟦缺字图:冢⟧','冢').replaceAll('⟦缺字图:兎⟧','兎'));assert.equal(p.captured_text,raw);
  assert.deepEqual(p.captured_commentary.map(c=>c.annotations),refs.map(l=>l.annotations));
- assert.ok(p.range>=1&&p.range<=9);
+ assert.ok(p.range>=1&&p.range<=11);
 }
 assert.equal(createHash('sha256').update(await readFile(new URL('../../data/shanhaijing-reference.json',import.meta.url))).digest('hex'),review.snapshot_sha256);
 assert.equal(scans.length,69);
@@ -47,7 +47,7 @@ for(const s of scans)assert.equal(createHash('sha256').update(await readFile(new
 assert.equal(review.font_supplements.length,3);
 for(const f of review.font_supplements)assert.equal(createHash('sha256').update(await readFile(new URL('../../'+f.path,import.meta.url))).digest('hex'),f.sha256);
 assert.equal(review.font_preflight.implemented_batch_missing_characters,'');
-assert.equal(generation.assets.length,49);
+assert.equal(generation.assets.length,58);
 for(const a of generation.assets){
  assert.equal(a.status,'reviewed');
  assert.equal(createHash('sha256').update(await readFile(new URL('../artwork-source/zhongshan/'+a.source_file,import.meta.url))).digest('hex'),a.sha256);
@@ -64,7 +64,7 @@ for(const e of selected){
 
  if(e.source_passage_ids?.length===1)assert.deepEqual(e.source_unit_ids,index.get(e.source_passage_ids[0]).source_unit_ids);
 }
-assert.equal(selected.filter(e=>e.appearance_unknown).length,75);
+assert.equal(selected.filter(e=>e.appearance_unknown).length,100);
 assert.ok(index.get('beast-zhongshan-nuo-gancao').appearance_unknown);
 assert.equal(english['place-zhongshan-r01-gancao'].name,'Mount Ganzao');
 assert.ok(!index.get('beast-zhongshan-nuo-gancao').artwork);
@@ -172,7 +172,7 @@ assert.deepEqual(index.get('passage-zhongshan-r08-summary').source_pages.map(p=>
 assert.deepEqual(index.get('passage-zhongshan-r09-min').source_pages.map(p=>Number(p.split('/').at(-1))),[41,42]);
 assert.ok(index.get('deity-zhongshan-humanbird-summary8').quote.includes('鳥身而人面'));
 const centralJiang=index.get('water-zhongshan-jiang-range9-nvfan9');
-assert.equal(centralJiang.source_passage_ids.length,5);
+assert.equal(centralJiang.source_passage_ids.length,6);
 assert.equal(index.get('water-zhongshan-luo').source_passage_ids.length,18);
 assert.equal(index.get('water-zhongshan-luo-nvfan9').source_passage_ids.length,1);
 assert.equal(index.get('water-zhongshan-great-jiang-lai9').source_passage_ids.length,2);
@@ -186,7 +186,29 @@ assert.ok(index.get('beast-zhongshan-qiezhi-ju9').quote.includes('赤身白首')
 assert.ok(index.get('beast-zhongshan-balang-she9').quote.includes('白尾長耳'));
 assert.ok(index.get('beast-zhongshan-wei-ge9').commentary_quote.includes('尾四五尺頭有岐'));
 assert.ok(index.get('plant-zhongshan-mei-qi9').commentary_quote.includes('𱾗'));
-console.log('PASS data: Central 127 passages /741 cards, 388 source blocks, 49 reviewed images and 75 documented placeholders; local anatomy, reading restoration and shared river contexts');
+for(const [unit,page] of [[396,45],[405,46],[414,47],[423,48],[432,49],[441,50],[450,51],[459,52],[468,53]]){
+ const u=unitIndex.get('source-05-'+String(unit).padStart(4,'0'));
+ assert.ok(u.page_url.endsWith('/'+page));assert.ok(u.captured_page_url.endsWith('/'+(page+1)));
+}
+assert.ok(index.get('passage-zhongshan-r11-tuchuang').captured_text.includes('⟦缺字图:兎⟧'));
+assert.ok(!index.get('passage-zhongshan-r11-tuchuang').quote.includes('⟦'));
+assert.equal(index.get('passage-zhongshan-r11-tuchuang').name,'兎牀之山');
+assert.ok(index.get('beast-zhongshan-qizhong-fuzhou10').quote.includes('一足彘尾'));
+assert.ok(index.get('deity-zhongshan-horsedragon-summary09').quote.includes('馬身而龍首'));
+assert.ok(index.get('deity-zhongshan-human-dragon-summary10').quote.includes('龍身而人面'));
+assert.ok(index.get('beast-zhongshan-jiao-yiwang11').commentary_quote.includes('四脚小頭細頸頸有白癭'));
+assert.ok(index.get('animal-zhongshan-mingshe-diqun11').appearance_unknown);
+assert.ok(!index.get('animal-zhongshan-mingshe-diqun11').artwork);
+assert.ok(index.get('beast-zhongshan-zhen-yaobi11').commentary_quote.includes('非食蛇之鴆'));
+assert.ok(index.get('beast-zhongshan-yingshao-zhili11').quote.includes('其尾若勺'));
+assert.ok(index.get('beast-zhongshan-qinggeng-jinli11').quote.includes('白喙白目白尾'));
+assert.ok(index.get('beast-zhongshan-lin-yiku11').commentary_quote.includes('體有鱗甲'));
+assert.equal(index.get('water-zhongshan-han-recipient-yiwang11').source_passage_ids.length,2);
+assert.equal(index.get('water-zhongshan-ji-recipient-yiwang11').source_passage_ids.length,1);
+assert.ok(index.get('place-zhongshan-drum-comparison-xiong09').comparison_only);
+assert.ok(!index.get('place-zhongshan-drum-comparison-xiong09').context_place_id);
+assert.ok(index.get('deity-zhongshan-gengfu-feng-first11').appearance_unknown);
+console.log('PASS data: Central 157 passages /940 cards, 469 source blocks, 58 reviewed images and 100 documented placeholders; local anatomy, reading restoration and shared river contexts');
 if(process.env.ATLAS_DATA_ONLY==='1')process.exit(0);
 
 const root = resolve(process.env.ATLAS_STATIC_DIR || 'dist');
@@ -242,6 +264,11 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
         if (e.artwork) {
           await d.locator('.drawer-art').evaluate(i => i.decode());
           assert.ok((await d.locator('.drawer-art').getAttribute('src')).includes(e.artwork));
+          if(process.env.ATLAS_QA_DIR&&engine==='chromium'&&lang==='zh'){
+            await mkdir(process.env.ATLAS_QA_DIR,{recursive:true});
+            await d.locator('.drawer-art').scrollIntoViewIfNeeded();
+            await page.screenshot({path:resolve(process.env.ATLAS_QA_DIR,e.id+'.png')});
+          }
         }
         if(e.appearance_unknown){await d.locator('.drawer-art').evaluate(i=>i.decode());assert.ok((await d.locator('.drawer-art').getAttribute('src')).includes('unknown-creature-v4'));}
         if (lang === 'en') assert.deepEqual(await d.evaluate(n => [...n.querySelectorAll('*')].filter(e => !e.children.length && e.getClientRects().length && !e.closest('.original-text,[lang="zh-CN"]') && /[\u3400-\u9fff]/u.test(e.textContent)).map(e => e.textContent)), []);
@@ -296,10 +323,10 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
         }
         await page.goto(base+'?chapter=04&lang='+lang);
         await page.locator('.mobile-explore-nav button').nth(1).click();
-        for(const [book,count] of [[1,43],[2,82],[3,92],[4,51],[5,127]])assert.equal(await page.locator('[data-source-book="'+book+'"] [data-entry-id]').count(),count);
+        for(const [book,count] of [[1,43],[2,82],[3,92],[4,51],[5,157]])assert.equal(await page.locator('[data-source-book="'+book+'"] [data-entry-id]').count(),count);
         const central=page.locator('[data-source-book="5"]');
         await central.locator(':scope > summary').click();
-        assert.equal(await central.locator('.passage-range').count(),9);
+        assert.equal(await central.locator('.passage-range').count(),11);
         assert.equal(await central.locator('.passage-range').nth(0).locator('[data-entry-id]').count(),16);
         for(const range of await central.locator('.passage-range').all())await range.locator(':scope > summary').click();
         for(const p of activePassages)assert.equal(await central.locator('[data-entry-id="'+p.id+'"]').count(),1);
@@ -310,7 +337,7 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
       await page.locator('.global-search-input').fill(lang === 'zh' ? currentPlace.name : english[currentPlace.id].name);
       await page.locator(`.search-result[data-result-kind="${currentPlace.kind}"][data-result-id="${currentPlace.id}"]`).click();
       await ready(currentPlace.id);
-      console.log(`PASS ${engine} ${lang}: ${browserEntries.length} current/shared records, direct loads and client history, 4 viewports, ${roundTrips} nested/context round trips, images, ${commonChecks?'Central 127 and previous 268 catalog passages, retained legacy links; ':''}current search`);
+      console.log(`PASS ${engine} ${lang}: ${browserEntries.length} current/shared records, direct loads and client history, 4 viewports, ${roundTrips} nested/context round trips, images, ${commonChecks?'Central 157 and previous 268 catalog passages, retained legacy links; ':''}current search`);
     }
     const readingPassage=activePassages[0];
     let d = await open(readingPassage.id);

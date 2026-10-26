@@ -797,6 +797,138 @@
       ],
       "review_note": "猕猴状、鼻露上向、苍黄色、四五尺长尾头岐按郭注；岐解释为尾末分叉。四肢、毛纹、长尾比例及坐姿为解释，未添头角。",
       "sha256": "75459d28bf9330a6b1467f0638e6f8bafb0be93377485b4c3912b614b3f269a4"
+    },
+    {
+      "name": "deity-horsedragon-summary9",
+      "entry_id": "deity-zhongshan-horsedragon-summary09",
+      "prompt": "Edit the FIRST reference (horse-body dragon-head deity). Preserve one dragon head, full horse trunk, exactly four horse legs and hooves, one horse tail. Remove ALL brown haze and glow outside the silhouette; make every background area completely transparent. Match the SECOND reference ONLY in woodcut technique and opaque flat mineral pigments, not its owl body. No wings, human body, scenery, text or shadow. Crisp clean alpha cutout. Colors, horns, whiskers and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-f0c21475-2900-40b3-bde1-4ff3b0a1d463.png",
+      "source_file": "deity-horsedragon-summary9-v2.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/deity-horsedragon-summary9-v1.png",
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "逐图核对：一龙首、完整马躯、四蹄与单尾；无翼或人身。初稿与修订均保留，背景alpha核对。未定细节、配色与姿态为艺术解释。",
+      "sha256": "c07478a6e10d8df3309ac45c0df33c78f24429a4ab56b2a6d8285df50783c142",
+      "initial_prompt": "Use case: illustration-story. Create ONE isolated Shanhaijing ninth-range mountain deity: a COMPLETE HORSE BODY with a DRAGON HEAD, not human torso. Four horse legs and hooves clearly countable, one horse tail, one dragon head on the horse neck. Dark brown carved Chinese woodblock contours, restrained muted jade-green and ochre mineral pigments, warm ivory incisions and print grain. Full body side three-quarter view, head turned left, natural level standing pose, wide transparent margins. Horse body and dragon head follow the text; leg count, horns, whiskers, colors and pose are artistic. Do not add wings, scales over the entire horse trunk, human limbs, additional heads, floating symbols, text, border, scenery or ground shadow. Truly transparent background.",
+      "initial_reference_images": [],
+      "revision_prompt": "Edit the FIRST reference (horse-body dragon-head deity). Preserve one dragon head, full horse trunk, exactly four horse legs and hooves, one horse tail. Remove ALL brown haze and glow outside the silhouette; make every background area completely transparent. Match the SECOND reference ONLY in woodcut technique and opaque flat mineral pigments, not its owl body. No wings, human body, scenery, text or shadow. Crisp clean alpha cutout. Colors, horns, whiskers and pose artistic.",
+      "revisions": [
+        {
+          "source_file": "deity-horsedragon-summary9-v1.png",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-5ba2e9bd-be62-4b22-b7d4-f81d0892bb04.png",
+          "sha256": "bf5b4fe94e90111c88bee1abb79672a81d21cf52321286cf94d8b92eac2eb4b4",
+          "prompt": "Use case: illustration-story. Create ONE isolated Shanhaijing ninth-range mountain deity: a COMPLETE HORSE BODY with a DRAGON HEAD, not human torso. Four horse legs and hooves clearly countable, one horse tail, one dragon head on the horse neck. Dark brown carved Chinese woodblock contours, restrained muted jade-green and ochre mineral pigments, warm ivory incisions and print grain. Full body side three-quarter view, head turned left, natural level standing pose, wide transparent margins. Horse body and dragon head follow the text; leg count, horns, whiskers, colors and pose are artistic. Do not add wings, scales over the entire horse trunk, human limbs, additional heads, floating symbols, text, border, scenery or ground shadow. Truly transparent background.",
+          "reference_images": [],
+          "status": "not_selected",
+          "review_note": "统一木刻矿色与透明背景后选v2，原稿不删除。"
+        }
+      ]
+    },
+    {
+      "name": "deity-humandragon-summary10",
+      "entry_id": "deity-zhongshan-human-dragon-summary10",
+      "prompt": "STYLE ONLY reference: old Chinese carved woodblock with dark brown fine contours, opaque restrained mineral pigment fills and ivory incisions. Do not copy owl anatomy onto unrelated subjects. ONE complete isolated subject, fully transparent background with no color fog, halo, glow, shadow, scene, text or border. Crisp alpha cutout with clear margins. All unspecified details explicitly artistic. Tenth-range deity: ONE DRAGON BODY with ONE HUMAN FACE at its head. Long coiled scaled jade-blue dragon body with exactly four short dragon legs, a single tapering tail; head bears a clearly human mature face with two eyes, ordinary human nose and mouth, not dragon muzzle. Human face and dragon body mandatory. Ivory beard, horns and four legs are artistic. No human torso, robes or human arms. No wings. Upright S-shaped composition, calm distinctive older human face.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-dfc13f47-81ba-4288-8d6a-08066a23a0b1.png",
+      "source_file": "deity-humandragon-summary10-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "逐图核对：一人面、连续龙躯与单尾，四足清晰；无人体或龙袍。未定细节、配色与姿态为艺术解释。",
+      "sha256": "b336d56cf6aaa344e8e199814e6927e3f5a903c24441cae03787a0ca7ebc4f1b"
+    },
+    {
+      "name": "bird-qizhong-fuzhou",
+      "entry_id": "beast-zhongshan-qizhong-fuzhou10",
+      "prompt": "STYLE ONLY reference: old Chinese carved woodblock with dark brown fine contours, opaque restrained mineral pigment fills and ivory incisions. Do not copy owl anatomy onto unrelated subjects. ONE complete isolated subject, fully transparent background with no color fog, halo, glow, shadow, scene, text or border. Crisp alpha cutout with clear margins. All unspecified details explicitly artistic. QIZHONG: ONE OWL-LIKE BIRD with EXACTLY ONE LEG AND ONE FOOT, plus a PIG TAIL replacing the feather tail. One full compact owl body, two folded wings, a single centrally rooted bird leg and claw foot visibly distinct. ONE short curled pink pig tail visible emerging from rear left, NO feathered tail. Brown and cream plumage, small owl ears, head looking right, tilted balancing posture. No second leg or hidden stump. No pig head, pig ears or hooves; no epidemic scene. Owl form, one foot and pig tail follow the text; color, feather details and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-59d0e9f1-a416-4f05-bdcf-1e8562605af3.png",
+      "source_file": "bird-qizhong-fuzhou-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "逐图核对：鸮形、一条可数鸟腿和一足、单卷猪尾；未加第二腿或羽尾。未定细节、配色与姿态为艺术解释。",
+      "sha256": "28cf72d45a161faec818dfd45810177e329145bf5695813f9e49376b8def77f0"
+    },
+    {
+      "name": "creature-jiao-kuang",
+      "entry_id": "beast-zhongshan-jiao-yiwang11",
+      "prompt": "STYLE ONLY reference: Chinese carved woodblock, fine dark brown contours, opaque flat mineral colors, ivory carved incisions; do not copy owl anatomy. ONE complete isolated subject on truly TRANSPARENT background, clean alpha cutout, wide clear margins. No scene, glow, shadow, text or border. KUANG WATER JIAO, based ONLY on local Guo Pu commentary: a long SNAKE-LIKE SCALED BODY with EXACTLY FOUR small reptile feet, a noticeably SMALL smooth snake head, slender thin neck, and ONE WHITE SWELLING on the neck just under the head. Single tapered tail, no horns, no antlers, no wings, no whiskers, no dragon beard or mane. Deep muted olive body, pale ivory white rounded neck nodule. Gentle horizontal S-curve, four limbs separated from the trunk and countable. Whole subject visible. Snake form, four feet, small head, slender neck and white neck swelling mandatory; scale color, feet details and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-33263d6b-afc6-4092-9906-c43bea37953d.png",
+      "source_file": "creature-jiao-kuang-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "逐图核对：一蛇状躯、小头细颈白瘿、四条可数足，无角翼或龙须。未定细节、配色与姿态为艺术解释。",
+      "sha256": "f169951ebff6505360c1e51b5647e0a44a0df34534394075917de6beb797581d"
+    },
+    {
+      "name": "creature-yonghe-feng",
+      "entry_id": "beast-zhongshan-yonghe-feng-first11",
+      "prompt": "STYLE ONLY reference: Chinese carved woodblock, fine dark brown contours, opaque flat mineral colors, ivory carved incisions; do not copy owl anatomy. ONE complete isolated subject on truly TRANSPARENT background, clean alpha cutout, wide clear margins. No scene, glow, shadow, text or border. YONGHE: ONE APE-LIKE animal with RED EYES, RED MUZZLE/MOUTH and a YELLOW furry body. Ape comparison, not monkey with long decorative tail; use one full ape-like trunk with exactly two long arms and two shorter legs, all four hands/feet visible. Slightly leaning forward, one hand down and opposite arm raised gently. Ochre-yellow fur, clear cinnabar eye irises and red skin around lips and muzzle, NOT bird beak. Broad ape nose, distinct solemn face without owl disks or tiger stripes, no horns or wings. No fear scene or symbol. Limb proportions, fur, tail omission and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-3ca05ab0-7374-4ce5-9636-71ab543e3c0a.png",
+      "source_file": "creature-yonghe-feng-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "逐图核对：蝯状黄身、红眼红口鼻、四肢；无鸟喙角翼。未定细节、配色与姿态为艺术解释。",
+      "sha256": "658562e656b19fd26d36dcd103f46986ca23cf38976286d9e68811bdad3f0b27"
+    },
+    {
+      "name": "bird-zhen-yaobi",
+      "entry_id": "beast-zhongshan-zhen-yaobi11",
+      "prompt": "STYLE ONLY reference: Chinese carved woodblock, fine dark brown contours, opaque flat mineral colors, ivory carved incisions; do not copy owl anatomy. ONE complete isolated subject on truly TRANSPARENT background, clean alpha cutout, wide clear margins. No scene, glow, shadow, text or border. YAOBI ZHEN, a PHEASANT-LIKE BIRD, explicitly a different bird from snake-eating Zhen. ONE long low horizontal pheasant body, small head, short modest crest, two bird legs, folded wings and long single feathered tail sweeping left. MUTED olive and buff-brown plumage with a little rust-orange on neck, not purple-green poisonous bird. Side view, head right. No snakes, prey, poison, venom symbols, owl face or special organs. Pheasant-like form follows text; specific colors, crest, legs, pattern and pose are artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-9f02b268-c9ac-490a-b59c-1664309137f6.png",
+      "source_file": "bird-zhen-yaobi-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "逐图核对：雉状完整鸟体双足，无蛇或毒性象征；与女几食蛇鴆独立。未定细节、配色与姿态为艺术解释。",
+      "sha256": "ffca8dc82ebb73975bd94da1f30465f09f32371849fc6156bba3c70d279a4975"
+    },
+    {
+      "name": "bird-yingshao-zhili",
+      "entry_id": "beast-zhongshan-yingshao-zhili11",
+      "prompt": "STYLE ONLY reference Chinese woodblock carving: thin dark brown outlines, opaque mineral pigment, fine ivory incisions and controlled print texture. Do not borrow owl anatomy. One full isolated subject on a truly TRANSPARENT alpha background, clear margins, no glow, haze, shadow, scenery, text or border. YINGSHAO: ONE MAGPIE-LIKE BIRD, WHITE BODY, bright RED EYES and RED BILL. A SINGLE long feather tail shaped like a WINE LADLE: narrow stalk of white feathers extending left, ending in ONE broad rounded bowl-shaped feather fan, visually like a scoop silhouette. Tail is ORGANIC FEATHERS, not a literal metal spoon, no handle held in foot. Small pointed bird head faces right, slim magpie body, two ordinary bird legs and folded wings, white ivory plumage with thin dark incisions. Avoid owl disks, crest, black body or red feathers. Feathered ladle-tail construction, legs and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-ef6d5ba5-96bb-4cf7-8b6d-393f3ea73a29.png",
+      "source_file": "bird-yingshao-zhili-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "逐图核对：鹊状白躯红眼红喙、单勺形羽尾与双足；无金属器具。未定细节、配色与姿态为艺术解释。",
+      "sha256": "781ad240e05744e7d5da70fb832a230c3ab8f5667f1ee1ac2d735c156f654d44"
+    },
+    {
+      "name": "bird-qinggeng-jinli",
+      "entry_id": "beast-zhongshan-qinggeng-jinli11",
+      "prompt": "STYLE ONLY reference Chinese woodblock carving: thin dark brown outlines, opaque mineral pigment, fine ivory incisions and controlled print texture. Do not borrow owl anatomy. One full isolated subject on a truly TRANSPARENT alpha background, clear margins, no glow, haze, shadow, scenery, text or border. QINGGENG: ONE elegant MAGPIE-LIKE BIRD with BLUE-GREEN BODY and WHITE BILL, WHITE EYES and a WHITE TAIL. Exact color regions mandatory: solid ivory beak, conspicuously white eye irises with small dark pupil for legibility, long ivory-white feathered tail, jade teal body and folded wings. Two small dark ordinary bird legs. Distinctive upright alert pose head left tail angled down-right. No owl face, no red eyes, no black beak, no green tail, no medical symbols or epidemic scene. Feather details, legs, pupil rendering and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-e99b2843-157e-45f2-baa4-cd767911a422.png",
+      "source_file": "bird-qinggeng-jinli-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "逐图核对：鹊状青身、白喙白眼白尾与双足，未借嬰勺红眼。未定细节、配色与姿态为艺术解释。",
+      "sha256": "5c2571bb5cf92379f583a92dd3e8b7d9770debead47fd74d3474bc7a9f464ae0"
+    },
+    {
+      "name": "creature-lin-yiku",
+      "entry_id": "beast-zhongshan-lin-yiku11",
+      "prompt": "STYLE ONLY reference Chinese woodblock carving: thin dark brown outlines, opaque mineral pigment, fine ivory incisions and controlled print texture. Do not borrow owl anatomy. One full isolated subject on a truly TRANSPARENT alpha background, clear margins, no glow, haze, shadow, scenery, text or border. LIN from Mount Yiku: ONE DOG-LIKE QUADRUPED with TIGER CLAWS and a body covered with overlapping ARMOR SCALES. Exactly FOUR canine legs, four large rounded feline tiger paws with curved claws, one dog head with ordinary canine ears, muzzle and nose, one dog tail. Slate blue-gray scales cover torso, neck and upper legs; muted tawny paws, cream muzzle and belly. Lively low leaping pose with feet apart and all clearly visible, no ground. Not a qilin: NO antlers, horns, hooves, wings, flames or additional heads. Dog form, tiger claws and body scale armor follow text and commentary; scale arrangement, colors, four legs and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-9c66048d-321a-4528-8a77-b9b743f59813.png",
+      "source_file": "creature-lin-yiku-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "逐图核对：犬形单头单尾、四条腿及虎爪，鳞甲清楚；无麒麟角蹄。未定细节、配色与姿态为艺术解释。",
+      "sha256": "2146a6d3d9af158a17dca39a14b992ba12d72d69ee6a9ca1f4dfdcd4f8d08d93"
     }
   ]
 }

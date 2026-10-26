@@ -6478,5 +6478,167 @@
         439
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-horsedragon-summary9-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-horsedragon-summary9-v1-card.webp",
+      "bytes": 33220,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-horsedragon-summary9-v1-preview.webp",
+      "bytes": 64576,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-humandragon-summary10-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humandragon-summary10-v1-card.webp",
+      "bytes": 46608,
+      "dimensions": [
+        292,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humandragon-summary10-v1-preview.webp",
+      "bytes": 91854,
+      "dimensions": [
+        439,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-qizhong-fuzhou-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-qizhong-fuzhou-v1-card.webp",
+      "bytes": 25162,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-qizhong-fuzhou-v1-preview.webp",
+      "bytes": 50736,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-jiao-kuang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-jiao-kuang-v1-card.webp",
+      "bytes": 19264,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-jiao-kuang-v1-preview.webp",
+      "bytes": 35666,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-yonghe-feng-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-yonghe-feng-v1-card.webp",
+      "bytes": 38002,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-yonghe-feng-v1-preview.webp",
+      "bytes": 77114,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-zhen-yaobi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-zhen-yaobi-v1-card.webp",
+      "bytes": 20750,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-zhen-yaobi-v1-preview.webp",
+      "bytes": 39098,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-yingshao-zhili-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-yingshao-zhili-v1-card.webp",
+      "bytes": 21536,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-yingshao-zhili-v1-preview.webp",
+      "bytes": 41466,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-qinggeng-jinli-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-qinggeng-jinli-v1-card.webp",
+      "bytes": 26998,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-qinggeng-jinli-v1-preview.webp",
+      "bytes": 52792,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-lin-yiku-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-lin-yiku-v1-card.webp",
+      "bytes": 41712,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-lin-yiku-v1-preview.webp",
+      "bytes": 82718,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
   }
 }
