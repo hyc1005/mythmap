@@ -1169,7 +1169,7 @@ ENTITIES += [
         'name': '招水（英山段）', 'en_name': 'Shao (Ying passage)', 'art': 'scene-ying',
         'quote': '禺水出焉北流注于招水',
         'description': '招水在英山段作为禺水的汇入水域出现；郭注作音韶，因此英文采用Shao而保留中文招字。本段没有说明其源头、全程或现代位置，配图只提供英山阅读上下文。',
-        'en_description': 'The Shao receives the Yu in the Ying passage. Guo Pu reads the character 招 as shao; its source spelling is retained. No source, full course or modern position is supplied. The shared Ying scene gives reading context only.',
+        'en_description': 'The Shao receives the Yu in the Ying passage. Guo Pu reads the character U+62DB as shao; its source spelling is retained. No source, full course or modern position is supplied. The shared Ying scene gives reading context only.',
         'commentary_quote': '音韶',
         'en_quote': 'The Yu rises here and flows north into the Shao.',
     },
@@ -2350,7 +2350,7 @@ ENTITIES += [
      'en_description': 'Zhuyan resembles an ape with a white head and red feet; the text does not make its entire body red. Great warfare and two commentary variants remain ancient omen statements. No horns, wings, weapons or actual battle scene are added. The shared placeholder is not a depiction of Zhuyan.',
      'en_quote': 'A beast shaped like an ape, with a white head and red feet, is called Zhuyan. Its appearance is said to herald great warfare.',
      'content_note': '0137影印猨字与快照猿不同，仅阅读引文补作猨；0138空正文单元承接本兽郭注，仍纳入小次段来源；正文見則大兵不以异文替换，不将兵事征兆说成已验证预测。',
-     'en_content_note': 'Scan49 has yuan 猨 while unit137 captures 猿; only the reading quotation is corrected. Annotation-only unit138 continues this beast’s commentary and remains in the passage sources. The main-text omen is not replaced by a variant or presented as a verified prediction.'},
+     'en_content_note': 'Scan49 has yuan (U+7328) while unit137 captures the variant U+733F; only the reading quotation is corrected. Annotation-only unit138 continues this beast’s commentary and remains in the passage sources. The main-text omen is not replaced by a variant or presented as a verified prediction.'},
 ]
 
 
@@ -3861,7 +3861,7 @@ def build():
             en[passage_id]['content_note'] = 'Units139–140 are on scan49; the shaded-side bi phrase continues across lines. Unit141 begins Xunwu. The soil-like white gloss and pronunciation belong only to e, not bi or the beasts. Lingyang remains distinct from Qianyang; neither beast inherits forms from other passages.'
         if slug == 'xiaoci':
             passage['content_note'] = '0136—0138核49页；0137影印猨、快照猿，阅读引文补作猨而captured_text及快照不改。0138只有朱厭郭注而无正文，不丢弃；0139大次另段。白玉归上、赤銅归下，朱厭猿状白首赤足与見則大兵正文保留，两种一作异文另列。此段无水文，不据山名或兵事补现代坐标与史实。'
-            en[passage_id]['content_note'] = 'Units136–138 are on scan49. The scan has yuan 猨 where unit137 captures 猿; only the reading quotation is corrected, with captured text and snapshot retained. Unit138 contains only Zhuyan commentary and is retained. Unit139 begins Daci. White jade above, red copper below and Zhuyan’s form and omen remain main text; the two alternative wordings stay in commentary. No waterway, modern coordinates or historical event is added.'
+            en[passage_id]['content_note'] = 'Units136–138 are on scan49. The scan has yuan (U+7328) where unit137 captures the variant U+733F; only the reading quotation is corrected, with captured text and snapshot retained. Unit138 contains only Zhuyan commentary and is retained. Unit139 begins Daci. White jade above, red copper below and Zhuyan’s form and omen remain main text; the two alternative wordings stay in commentary. No waterway, modern coordinates or historical event is added.'
         if slug == 'niaowei':
             passage['content_note'] = '0133—0135均见48页，0135其中多丹粟捕获49页但实际在48页末列，原快照保留；0136小次另段。0134所附楮即榖木解释前行楮，未詳释女牀，二注不可混同。女牀仅存未定性索引，不移入女牀山或任何生物形象。'
             en[passage_id]['content_note'] = 'Units133–135 are on scan48;135 was captured as49 but appears in the last column of48. The snapshot is retained and136 begins Xiaoci. The chu gloss in134 explains the preceding line, while unexplained belongs to nvchuang. The latter remains an unclassified index item, not Mount Nvchuang or a creature.'

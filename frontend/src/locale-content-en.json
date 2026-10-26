@@ -816,7 +816,7 @@
   "passage-nanshan-cheng": {
     "name": "Mount Cheng",
     "description": "The mountain’s layered form is compared to terraces.",
-    "quote": "Another 500 li east is Mount Cheng, square and in three terrace-like tiers. Metals and jade occur above, green mineral below. The 䦠 River flows south into Hushao and contains much gold.",
+    "quote": "Another 500 li east is Mount Cheng, square and in three terrace-like tiers. Metals and jade occur above, green mineral below. A river flows south into Hushao and contains much gold.",
     "source": "Shanhaijing · Nanshan Jing (Sibu Congkan facsimile; Guo Pu commentary)",
     "source_chapter": "Nanshan Jing",
     "region": "Nanshan Jing",
@@ -1049,7 +1049,7 @@
   "passage-nanshan-lunzhe": {
     "name": "Mount Lunzhe",
     "description": "A tree is described by grain, sap, taste and attributed uses.",
-    "quote": "Another 370 li east is Lunzhe, with metals and jade above and green mineral below. The tree Bai䓘 resembles gu with red grain, lacquer-like sap and a sweet taste like malt syrup. Eating it is said to prevent hunger and relieve fatigue. It can be used to “blood jade,” explained by the commentary as dyeing jade.",
+    "quote": "Another 370 li east is Lunzhe, with metals and jade above and green mineral below. The tree named here resembles gu with red grain, lacquer-like sap and a sweet taste like malt syrup. Eating it is said to prevent hunger and relieve fatigue. It can be used to “blood jade,” explained by the commentary as dyeing jade.",
     "source": "Shanhaijing · Nanshan Jing (Sibu Congkan facsimile; Guo Pu commentary)",
     "source_chapter": "Nanshan Jing",
     "region": "Nanshan Jing",
@@ -2686,7 +2686,7 @@
     "direction": "Read the textual sequence and directions; these are not modern coordinates or measured distances.",
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "Shao (Ying passage)",
-    "description": "The Shao receives the Yu in the Ying passage. Guo Pu reads the character 招 as shao; its source spelling is retained. No source, full course or modern position is supplied. The shared Ying scene gives reading context only.",
+    "description": "The Shao receives the Yu in the Ying passage. Guo Pu reads the character U+62DB as shao; its source spelling is retained. No source, full course or modern position is supplied. The shared Ying scene gives reading context only.",
     "quote": "The Yu rises here and flows north into the Shao.",
     "artwork_caption": "Place scene · Landforms, colors and water are artistic interpretations, not a reconstruction of modern geography."
   },
@@ -4714,7 +4714,7 @@
     "name": "Mount Xiaoci",
     "description": "Four hundred li west of Niaowei is Xiaoci, with white jade above and red copper below. Zhuyan resembles an ape with a white head and red feet; its appearance is described as an omen of great warfare. Two alternative omen wordings remain separate in commentary rather than replacing the main text. No river, modern location, extra body parts or historical war is inferred.",
     "quote": "Another four hundred li west is Mount Xiaoci. White jade is abundant above and red copper below. A beast shaped like an ape, with a white head and red feet, is called Zhuyan. Its appearance is said to herald great warfare.",
-    "content_note": "Units136–138 are on scan49. The scan has yuan 猨 where unit137 captures 猿; only the reading quotation is corrected, with captured text and snapshot retained. Unit138 contains only Zhuyan commentary and is retained. Unit139 begins Daci. White jade above, red copper below and Zhuyan’s form and omen remain main text; the two alternative wordings stay in commentary. No waterway, modern coordinates or historical event is added.",
+    "content_note": "Units136–138 are on scan49. The scan has yuan (U+7328) where unit137 captures the variant U+733F; only the reading quotation is corrected, with captured text and snapshot retained. Unit138 contains only Zhuyan commentary and is retained. Unit139 begins Daci. White jade above, red copper below and Zhuyan’s form and omen remain main text; the two alternative wordings stay in commentary. No waterway, modern coordinates or historical event is added.",
     "artwork_caption": "Place scene · Landforms, colors and water are artistic interpretations, not a reconstruction of modern geography."
   },
   "place-xishan-xiaoci": {
@@ -4728,7 +4728,7 @@
     "description": "Four hundred li west of Niaowei is Xiaoci, with white jade above and red copper below. Zhuyan resembles an ape with a white head and red feet; its appearance is described as an omen of great warfare. Two alternative omen wordings remain separate in commentary rather than replacing the main text. No river, modern location, extra body parts or historical war is inferred.",
     "quote": "Another four hundred li west is Mount Xiaoci. White jade is abundant above and red copper below. A beast shaped like an ape, with a white head and red feet, is called Zhuyan. Its appearance is said to herald great warfare.",
     "artwork_caption": "Place scene · Landforms, colors and water are artistic interpretations, not a reconstruction of modern geography.",
-    "content_note": "Units136–138 are on scan49. The scan has yuan 猨 where unit137 captures 猿; only the reading quotation is corrected, with captured text and snapshot retained. Unit138 contains only Zhuyan commentary and is retained. Unit139 begins Daci. White jade above, red copper below and Zhuyan’s form and omen remain main text; the two alternative wordings stay in commentary. No waterway, modern coordinates or historical event is added."
+    "content_note": "Units136–138 are on scan49. The scan has yuan (U+7328) where unit137 captures the variant U+733F; only the reading quotation is corrected, with captured text and snapshot retained. Unit138 contains only Zhuyan commentary and is retained. Unit139 begins Daci. White jade above, red copper below and Zhuyan’s form and omen remain main text; the two alternative wordings stay in commentary. No waterway, modern coordinates or historical event is added."
   },
   "material-xishan-white-jade-xiaoci": {
     "source": "Shanhaijing · Xishan Jing (Sibu Congkan facsimile; Guo Pu commentary)",
@@ -4763,7 +4763,7 @@
     "description": "Zhuyan resembles an ape with a white head and red feet; the text does not make its entire body red. Great warfare and two commentary variants remain ancient omen statements. No horns, wings, weapons or actual battle scene are added. The shared placeholder is not a depiction of Zhuyan.",
     "quote": "A beast shaped like an ape, with a white head and red feet, is called Zhuyan. Its appearance is said to herald great warfare.",
     "artwork_caption": "Textual form, woodcut interpretation · Carved patterns, colors and pose are artistic choices.",
-    "content_note": "Scan49 has yuan 猨 while unit137 captures 猿; only the reading quotation is corrected. Annotation-only unit138 continues this beast’s commentary and remains in the passage sources. The main-text omen is not replaced by a variant or presented as a verified prediction."
+    "content_note": "Scan49 has yuan (U+7328) while unit137 captures the variant U+733F; only the reading quotation is corrected. Annotation-only unit138 continues this beast’s commentary and remains in the passage sources. The main-text omen is not replaced by a variant or presented as a verified prediction."
   },
   "passage-xishan-daci": {
     "source": "Shanhaijing · Xishan Jing (Sibu Congkan facsimile; Guo Pu commentary)",

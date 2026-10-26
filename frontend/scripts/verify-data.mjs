@@ -8,6 +8,12 @@ import { geographicReferences } from '../src/geography.js';
 
 const read = async path => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const world = await read('../public/data/myth-world.json');
+const english = await read('../src/locale-content-en.json');
+for (const [id, translation] of Object.entries(english)) {
+  for (const field of ['name', 'label', 'source', 'quote', 'description', 'direction', 'place_basis', 'content_note', 'editorial_note', 'artwork_caption']) {
+    assert.doesNotMatch(translation[field] || '', /[\u3400-\u9fff]/, `${id}: English ${field}`);
+  }
+}
 const catalog = await read('../public/data/atlas/catalog.json');
 assert.equal(contentOrigin('01-01').family, 'other_classic', 'Pangu is not attributed to the Shanhaijing');
 assert.equal(contentOrigin('01-02').family, 'other_classic', 'Nuwa creating humans keeps its actual book family');
