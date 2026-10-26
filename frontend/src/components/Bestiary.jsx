@@ -14,7 +14,7 @@ export default function Bestiary({ beasts, onOpen, reading }) {
   const [readingFilter, setReadingFilter] = useState('');
   const seenCards = useRef(new Set());
   const hasFilter = Boolean(search.trim()) || bookFilter !== '' || readingFilter !== '';
-  const list = beasts.filter(beast => (readingFilter === '' || readingFilter === 'read' && reading.read.includes(beast.id) || readingFilter === 'unread' && !reading.read.includes(beast.id) || readingFilter === 'favorites' && reading.favorites.includes(beast.id)) && (bookFilter === '' || beast.region === bookFilter) && (!search.trim() || `${beast.name} ${beast.originalName || ""} ${beast.region} ${beast.description}`.toLocaleLowerCase().includes(search.trim().toLocaleLowerCase())));
+  const list = beasts.filter(beast => (readingFilter === '' || readingFilter === 'read' && reading.read.includes(beast.id) || readingFilter === 'unread' && !reading.read.includes(beast.id) || readingFilter === 'favorites' && reading.favorites.includes(beast.id)) && (bookFilter === '' || beast.region === bookFilter) && (!search.trim() || `${beast.name} ${beast.originalName || ""} ${(beast.aliases || []).join(' ')} ${beast.region} ${beast.description}`.toLocaleLowerCase().includes(search.trim().toLocaleLowerCase())));
   const showAll = expanded || hasFilter;
   useEffect(() => {
     const measure = () => setColumns(getComputedStyle(grid.current).gridTemplateColumns.split(' ').length);

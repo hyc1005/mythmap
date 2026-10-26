@@ -14,6 +14,7 @@ try {
   for (const group of ['regions', 'places', 'domains', 'relations', 'beasts', 'natural_features', 'text_entities']) {
     assert.deepEqual(translated[group].map(item => item.id), original[group].map(item => item.id));
     for (const [index, item] of translated[group].entries()) {
+      if (original[group][index].aliases) assert.deepEqual(item.aliases, original[group][index].aliases, 'Search aliases preserve original spellings');
       for (const field of ['name', 'label', 'source', 'quote', 'direction', 'place_basis']) {
         assert.ok(!/[\u3400-\u9fff]/.test(item[field] || ''), group + ': English map field ' + field);
       }

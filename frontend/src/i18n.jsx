@@ -20,7 +20,7 @@ export function localize(data, locale) {
   if (Array.isArray(data)) return data.map(value => localize(value, locale));
   if (!data || typeof data !== 'object') return data;
   const result = Object.fromEntries(Object.entries(data).map(([key, value]) => [key,
-    typeof value === 'string' && !textFields.has(key) ? value : localize(value, locale)]));
+    key === 'aliases' || typeof value === 'string' && !textFields.has(key) ? value : localize(value, locale)]));
   if (content[data.id]) {
     const fields = content[data.id];
     for (const key of Object.keys(fields)) {
