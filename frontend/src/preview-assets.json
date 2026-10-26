@@ -6334,5 +6334,149 @@
         439
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1-card.webp",
+      "bytes": 25598,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1-preview.webp",
+      "bytes": 52176,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1-card.webp",
+      "bytes": 15604,
+      "dimensions": [
+        320,
+        160
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1-preview.webp",
+      "bytes": 29510,
+      "dimensions": [
+        480,
+        240
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1-card.webp",
+      "bytes": 34924,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1-preview.webp",
+      "bytes": 73458,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1-card.webp",
+      "bytes": 34768,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1-preview.webp",
+      "bytes": 72670,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1-card.webp",
+      "bytes": 26764,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1-preview.webp",
+      "bytes": 52104,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1-card.webp",
+      "bytes": 26784,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1-preview.webp",
+      "bytes": 54344,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/fox-balang-she-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/fox-balang-she-v1-card.webp",
+      "bytes": 26938,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/fox-balang-she-v1-preview.webp",
+      "bytes": 54258,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1-card.webp",
+      "bytes": 28030,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1-preview.webp",
+      "bytes": 57184,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
   }
 }

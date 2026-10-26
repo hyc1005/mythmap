@@ -34,5 +34,6 @@ await access(new URL('dist/fonts/shanhai-title-dongshan.woff2', frontend));
 await access(new URL('dist/fonts/atlas-eastern-rare.woff2', frontend));
 await access(new URL('dist/fonts/shanhai-title-zhongshan.woff2', frontend));
 await access(new URL('dist/fonts/atlas-central-rare.woff2', frontend));
+await access(new URL('dist/fonts/atlas-central-exth.woff2', frontend));
 await access(new URL('dist/fonts/noto-serif-sc-LICENSE.txt', frontend));
 console.log(`PASS: ${files} public assets (${(retainedBytes / 1e6).toFixed(1)} MB); ${(excludedBytes / 1e6).toFixed(1)} MB duplicate originals excluded, all sources retained.`);

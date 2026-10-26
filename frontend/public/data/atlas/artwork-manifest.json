@@ -11938,6 +11938,308 @@
           ]
         }
       }
+    },
+    {
+      "id": "zhongshan-deity-humanbird-range8-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/deity-humanbird-range8-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1.webp",
+      "initial_prompt": "Use case illustration-story. One complete creature representing the eighth Central range gods in Shanhaijing: BIRD BODY and HUMAN FACE, exactly one fully human adult face on an otherwise complete feathered bird body with two natural bird legs, two folded bird wings and short bird tail. No human torso, arms or hands, no beak overlaying face, no horns or extra heads. Chinese carved WOODBLOCK engraving, dark brown outlines, restrained mineral ochre and muted charcoal feathers with ivory cuts. Thoughtful broad middle-aged human face, compact heavy bird silhouette in left-facing three-quarter pose, unlike a winged standing human. Human face and bird body are the only textual anatomy; bird species, two legs, feather layout, coloring, age, neck and pose artistic. TRUE TRANSPARENT background, no halo, glow, shadow, ground, paper, scenery, border or text. Small centered full subject occupying only 70 percent canvas with 12 percent empty transparent margin every side.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "鸟身人面据正文，完整鸟体、双鸟足、折翼短尾清楚。两足、鸟种、羽纹、色彩、面貌年龄及姿态为艺术解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1.webp",
+          "bytes": 319786,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1-card.webp",
+          "bytes": 25598,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1-preview.webp",
+          "bytes": 52176,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-reptile-tuo-min-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/reptile-tuo-min-v2.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1.webp",
+      "initial_prompt": "Use case illustration-story. An isolated complete TUO animal from the Mount Min commentary in Shanhaijing. Guo Pu compares it to a LIZARD, describes large examples as two zhang long, with patterned SCALES. Draw a long low lizard-like body, one lizard head, exactly FOUR short reptile legs and a long tapered reptile tail, all complete and separate; no crocodile-specific modern identification, no horns, wings, extra eyes or mammal fur. Ancient Chinese carved woodblock, dark umber contours, desaturated slate-green scales with small ochre scale patterns and warm ivory carved incisions. Side view head facing right, tail looping gently behind without touching legs. Exact scale motif, toes, colors, proportions and pose artistic. Do not depict drums, flayed skin, people, prey or a size ruler. TRUE TRANSPARENT background with generous empty border at least 12 percent all edges; full tail tip, snout and all four feet visible. No halo, glow, shadow, ground, landscape, text or frame.",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-9639df35-5a27-417c-8f8b-a50d7e1540cb.png"
+      ],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "蜥蜴状有鳞彩按郭注；修订四足分离可数。鳞纹、颜色、比例及姿态为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1.webp",
+          "bytes": 146154,
+          "dimensions": [
+            1280,
+            640
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1-card.webp",
+          "bytes": 15604,
+          "dimensions": [
+            320,
+            160
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1-preview.webp",
+          "bytes": 29510,
+          "dimensions": [
+            480,
+            240
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-cattle-kui-min-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/cattle-kui-min-v3.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1.webp",
+      "initial_prompt": "Use case illustration-story. One isolated complete KUI CATTLE animal from Mount Min commentary, explicitly described as a very LARGE OX. Draw a powerful large bovine, very broad low chest and barrel torso, compact head lowered toward left, exactly FOUR ordinary cloven-hoofed cattle legs clearly visible, modest pair of ordinary ox horns and a single ordinary cattle tail. NO one-legged monster, no dragon face, wings, scales, lightning, drum, flames or extra limbs. Chinese carved woodblock, dark brown outlines, muted russet-brown coat, ivory hatching, slightly shaggy shoulder; exact coat, horn form, hump, proportions and pose are artistic. Large-cattle form is the only evidence; not a modern breed identification or literal weight measurement. Quiet planted stance with strong compact silhouette. TRUE TRANSPARENT empty background, no halo, glow, shadow, ground, border, text or size ruler. Entire figure fits center 70 percent of canvas, 12 percent empty transparent margins, whole horns/tail/hooves visible.",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "夔牛按郭注大牛；四足分蹄可数，不借一足雷兽形。角形、毛色、比例及姿态为艺术解释，选无晕影v3。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1.webp",
+          "bytes": 477856,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1-card.webp",
+          "bytes": 34924,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1-preview.webp",
+          "bytes": 73458,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-beast-mo-lai-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/beast-mo-lai-v3.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1.webp",
+      "initial_prompt": "Use case illustration-story. One isolated MO animal from Mount Lai commentary in Shanhaijing, which says BEAR-LIKE and MOTTLED BLACK AND WHITE. Make an unusual bear-shaped quadruped with a long bear muzzle, small ordinary rounded bear ears, exactly FOUR sturdy bear feet visible and irregular BLACK/IVORY-WHITE mottled patches over a compact large body. Specifically NOT a modern giant panda: NO black panda eye masks or symmetrical panda shoulder/limb pattern; keep face mostly charcoal with irregular ivory cheek/forehead patches and scattered irregular patches on body. Broad head facing RIGHT in a low moving three-quarter pose. Ancient Chinese woodblock with dark umber carved contours and warm ivory cut marks. Bear-like and black-white mottled form are commentary evidence; muzzle/ear/tail proportions, four paws, patch map and pose artistic. No copper, iron, prey, people, horns, wings, flames or modern natural-history labels. TRUE TRANSPARENT backdrop, no halo/glow/shadow/ground/scene. Whole creature, all four paws and short tail fully inside center 70 percent canvas with generous transparent margins.",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "㹮按郭注熊状黑白驳，四足可数、非现代熊猫定种。斑块、比例及姿态为解释，选无晕影v3。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1.webp",
+          "bytes": 446670,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1-card.webp",
+          "bytes": 34768,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1-preview.webp",
+          "bytes": 72670,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-snake-hooked-ju-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/snake-hooked-ju-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1.webp",
+      "initial_prompt": "Use this image ONLY for its carved woodblock technique and perfectly clear transparent space outside its silhouette. Do not copy its bird/human anatomy. Flat colored ink cutout sprite, precise dark outlines and ivory incised texture INSIDE the body, NO color, halo, shadow, light, texture, gradient or haze outside the creature. No ground, labels or border. Genuine transparent alpha. Whole creature inside middle 70 percent of image with generous transparent margins all around. NEW SUBJECT: one ancient long SNAKE from the Yongchang commentary comparison. One ordinary snake head and one continuous long snake body loosely coiled in a clear S curve. Its SINGLE TAIL END divides into TWO soft tapering branches forming a clearly readable Y fork; show both tail tips separated at right. No metal hooks, no legs, wings, horns, extra heads or human parts. Restrained slate green scales, warm ivory belly, head raised to left. Long snake and forked tail follow commentary; precise fork layout, scale design, body color and pose are artistic. No predation or water scene.",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "外地永昌比拟，长蛇尾末二叉，不作崌山本地产。鳞色、尾叉布局及盘曲为解释，未画金属钩或捕食。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1.webp",
+          "bytes": 288728,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1-card.webp",
+          "bytes": 26764,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1-preview.webp",
+          "bytes": 52104,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-bird-qiezhi-ju-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1.webp",
+      "initial_prompt": "Use this image ONLY for its carved woodblock technique and perfectly clear transparent space outside its silhouette. Do not copy its bird/human anatomy. Flat colored ink cutout sprite, precise dark outlines and ivory incised texture INSIDE the body, NO color, halo, shadow, light, texture, gradient or haze outside the creature. No ground, labels or border. Genuine transparent alpha. Whole creature inside middle 70 percent of image with generous transparent margins all around. NEW SUBJECT: Qiezhi, an OWL-LIKE bird with a RED BODY and WHITE HEAD. One entire owl-shaped bird, rounded WHITE FEATHERED HEAD, two large ordinary bird eyes, small normal bill, RED torso and folded red wings, short red tail, two normal bird legs and two separately visible feet. Compact upright three-quarter stance looking right. Do not turn it into a small green bird, do not add fire or red halo. Owl-like form, red body and white head follow main text. Exact owl species, facial disk, eye/bill color, feather marks and pose are artistic. No human face, horn, extra eyes or scenery.",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "鴞状赤身白首按正文；双足可数，眼喙色、羽纹及姿态为解释，不按存疑小青鸟改形。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1.webp",
+          "bytes": 328722,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1-card.webp",
+          "bytes": 26784,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1-preview.webp",
+          "bytes": 54344,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-fox-balang-she-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/fox-balang-she-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/fox-balang-she-v1.webp",
+      "initial_prompt": "Use this image ONLY for its carved woodblock technique and clear transparent space outside silhouette. Do not copy bird or human anatomy. Flat colored ink cutout sprite, dark outlines and ivory incisions INSIDE creature. NO halo, glow, shadow, scene, ground, paper, labels or border. Genuine transparent alpha background. Whole creature small, inside middle 70 percent of image, with ample fully transparent margin around ears, tail and feet. NEW SUBJECT: Balang from Mount She. One FOX-LIKE animal with a WHITE TAIL and unusually LONG EARS, both long fox ears visible. Ordinary slim quadruped fox body, pointed fox muzzle, FOUR distinct ordinary fox feet. One entirely WHITE fluffy fox tail from base to tip, no snake tail. Muted russet/gray-brown body fur; alert still three-quarter pose facing left, tail curling to right so it remains visible. Fox-like form, white tail and long ears follow text; ear proportions, four feet, coat colors, face and pose are artistic. No weapons, war scene, wings, horns, extra tails or human face.",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "狐状白尾长耳按正文，四足及单白尾完整可辨，身色、耳长比例及姿态为解释。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/fox-balang-she-v1.webp",
+          "bytes": 331998,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/fox-balang-she-v1-card.webp",
+          "bytes": 26938,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/fox-balang-she-v1-preview.webp",
+          "bytes": 54258,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-monkey-wei-ge-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/monkey-wei-ge-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1.webp",
+      "initial_prompt": "Use this image ONLY for its carved woodblock technique and clear transparent space outside silhouette. Do not copy bird or human anatomy. Flat colored ink cutout sprite, dark outlines and ivory incisions INSIDE creature. NO halo, glow, shadow, scene, ground, paper, labels or border. Genuine transparent alpha background. Whole creature small, inside middle 70 percent of image, with ample fully transparent margin around ears, tail and feet. NEW SUBJECT: Wei from Mount Ge commentary. One MACAQUE-LIKE animal with GRAY-YELLOW fur, ordinary monkey body, one monkey head whose nostrils are visibly EXPOSED AND TURN UPWARD. Exactly FOUR ordinary monkey limbs visible, two arms with hands and two hindlegs with feet. One very LONG TAIL sweeping behind and to right, its far END clearly split into TWO tapering branches like a Y fork. The fork belongs at TAIL END, no horns on head. Tail four-to-five-chi wording rendered by long tail, not a length scale. Upright seated three-quarter pose, all hands and feet visible; no tree and no nose-stuffing behavior. Macaque-like form, upward nostrils, gray-yellow and forked long tail follow commentary; precise anatomy, shade, proportions and pose artistic. No human face, clothes, weapons, wings, horns or extra tails.",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "猕猴状、鼻露上向、苍黄色、四五尺长尾头岐按郭注；岐解释为尾末分叉。四肢、毛纹、长尾比例及坐姿为解释，未添头角。",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1.webp",
+          "bytes": 348326,
+          "dimensions": [
+            1280,
+            1170
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1-card.webp",
+          "bytes": 28030,
+          "dimensions": [
+            320,
+            292
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1-preview.webp",
+          "bytes": 57184,
+          "dimensions": [
+            480,
+            439
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

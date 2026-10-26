@@ -627,6 +627,176 @@
         }
       ],
       "sha256": "85485afb5d3c26082cc38eaf9b53aa07485d18edb021ee9ccaab5904e4c3e099"
+    },
+    {
+      "name": "deity-humanbird-range8",
+      "entry_id": "deity-zhongshan-humanbird-summary8",
+      "prompt": "Use case illustration-story. One complete creature representing the eighth Central range gods in Shanhaijing: BIRD BODY and HUMAN FACE, exactly one fully human adult face on an otherwise complete feathered bird body with two natural bird legs, two folded bird wings and short bird tail. No human torso, arms or hands, no beak overlaying face, no horns or extra heads. Chinese carved WOODBLOCK engraving, dark brown outlines, restrained mineral ochre and muted charcoal feathers with ivory cuts. Thoughtful broad middle-aged human face, compact heavy bird silhouette in left-facing three-quarter pose, unlike a winged standing human. Human face and bird body are the only textual anatomy; bird species, two legs, feather layout, coloring, age, neck and pose artistic. TRUE TRANSPARENT background, no halo, glow, shadow, ground, paper, scenery, border or text. Small centered full subject occupying only 70 percent canvas with 12 percent empty transparent margin every side.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png",
+      "source_file": "deity-humanbird-range8-v1.png",
+      "status": "reviewed",
+      "reference_images": [],
+      "review_note": "鸟身人面据正文，完整鸟体、双鸟足、折翼短尾清楚。两足、鸟种、羽纹、色彩、面貌年龄及姿态为艺术解释。",
+      "sha256": "5c85d44178887089f997fe1cde4185cf9e905933b60483a3d68270c5c13297d6"
+    },
+    {
+      "name": "reptile-tuo-min",
+      "entry_id": "beast-zhongshan-tuo-min9",
+      "prompt": "Use case: precise-object-edit. Edit this Tuo lizard illustration for a historical Shan Hai Jing atlas. Preserve the patterned scales, long curling tail, lizard-like head and engraved ink style. Correct only the legs and framing: show FOUR distinct fully visible legs with four separate feet, two forelegs and two hindlegs. Reposition far-side hindleg below the rear belly so it is visible, not merged into the body. Give head and tail ample empty margins. Subject isolated on genuine fully transparent background, absolutely no glow, ground, texture or shadow outside the animal. No labels.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-21eb107d-da32-4bab-aa24-d57e229fdd03.png",
+      "source_file": "reptile-tuo-min-v2.png",
+      "status": "reviewed",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-9639df35-5a27-417c-8f8b-a50d7e1540cb.png"
+      ],
+      "review_note": "蜥蜴状有鳞彩按郭注；修订四足分离可数。鳞纹、颜色、比例及姿态为解释。",
+      "sha256": "5b887a642ce884415f9b70ec8154248079612babaf5a3833015f8d9d69878b65",
+      "initial_prompt": "Use case illustration-story. An isolated complete TUO animal from the Mount Min commentary in Shanhaijing. Guo Pu compares it to a LIZARD, describes large examples as two zhang long, with patterned SCALES. Draw a long low lizard-like body, one lizard head, exactly FOUR short reptile legs and a long tapered reptile tail, all complete and separate; no crocodile-specific modern identification, no horns, wings, extra eyes or mammal fur. Ancient Chinese carved woodblock, dark umber contours, desaturated slate-green scales with small ochre scale patterns and warm ivory carved incisions. Side view head facing right, tail looping gently behind without touching legs. Exact scale motif, toes, colors, proportions and pose artistic. Do not depict drums, flayed skin, people, prey or a size ruler. TRUE TRANSPARENT background with generous empty border at least 12 percent all edges; full tail tip, snout and all four feet visible. No halo, glow, shadow, ground, landscape, text or frame.",
+      "revision_history": [
+        {
+          "name": "reptile-tuo-min",
+          "entry_id": "beast-zhongshan-tuo-min9",
+          "prompt": "Use case illustration-story. An isolated complete TUO animal from the Mount Min commentary in Shanhaijing. Guo Pu compares it to a LIZARD, describes large examples as two zhang long, with patterned SCALES. Draw a long low lizard-like body, one lizard head, exactly FOUR short reptile legs and a long tapered reptile tail, all complete and separate; no crocodile-specific modern identification, no horns, wings, extra eyes or mammal fur. Ancient Chinese carved woodblock, dark umber contours, desaturated slate-green scales with small ochre scale patterns and warm ivory carved incisions. Side view head facing right, tail looping gently behind without touching legs. Exact scale motif, toes, colors, proportions and pose artistic. Do not depict drums, flayed skin, people, prey or a size ruler. TRUE TRANSPARENT background with generous empty border at least 12 percent all edges; full tail tip, snout and all four feet visible. No halo, glow, shadow, ground, landscape, text or frame.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-9639df35-5a27-417c-8f8b-a50d7e1540cb.png",
+          "source_file": "reptile-tuo-min-v1.png",
+          "status": "needs_revision",
+          "reference_images": [],
+          "review_note": "首稿仅三足可见，保留未用。",
+          "sha256": "0fd9852e1426822ee7cc2bcdf108330fa5f5a2f4c054bf9195ff7b424b407633"
+        }
+      ]
+    },
+    {
+      "name": "cattle-kui-min",
+      "entry_id": "beast-zhongshan-kui-cattle-min9",
+      "prompt": "Use this image ONLY for its carved woodblock technique and perfectly clear transparent space outside its silhouette. Do not copy its bird/human anatomy. Flat colored ink cutout sprite, precise dark outlines and ivory incised texture INSIDE the body, NO color, halo, shadow, light, texture, gradient or haze outside the creature. No ground, labels or border. Genuine transparent alpha. Whole creature inside middle 70 percent of image with generous transparent margins all around. NEW SUBJECT: a very LARGE ordinary ancient CATTLE animal, Kui cattle from the Mount Min commentary, four legs with FOUR separately visible cloven hooves, one cattle head, two ordinary cattle horns and one normal bovine tail. NOT a one-legged thunder deity. Powerful heavy torso, muted brown fur, calm three-quarter standing pose looking left. No bird body or human face, no supernatural limbs or symbols. Cattle form and large size follow the commentary; horn design, colors, hair, proportions and stance are artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-c691c0c9-38f3-4ce2-a631-ba7486ff4b60.png",
+      "source_file": "cattle-kui-min-v3.png",
+      "status": "reviewed",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "review_note": "夔牛按郭注大牛；四足分蹄可数，不借一足雷兽形。角形、毛色、比例及姿态为艺术解释，选无晕影v3。",
+      "sha256": "88ec31f8247358d130829f9041796914076322d5b7b869f90e4d65ee6782cf67",
+      "initial_prompt": "Use case illustration-story. One isolated complete KUI CATTLE animal from Mount Min commentary, explicitly described as a very LARGE OX. Draw a powerful large bovine, very broad low chest and barrel torso, compact head lowered toward left, exactly FOUR ordinary cloven-hoofed cattle legs clearly visible, modest pair of ordinary ox horns and a single ordinary cattle tail. NO one-legged monster, no dragon face, wings, scales, lightning, drum, flames or extra limbs. Chinese carved woodblock, dark brown outlines, muted russet-brown coat, ivory hatching, slightly shaggy shoulder; exact coat, horn form, hump, proportions and pose are artistic. Large-cattle form is the only evidence; not a modern breed identification or literal weight measurement. Quiet planted stance with strong compact silhouette. TRUE TRANSPARENT empty background, no halo, glow, shadow, ground, border, text or size ruler. Entire figure fits center 70 percent of canvas, 12 percent empty transparent margins, whole horns/tail/hooves visible.",
+      "revision_history": [
+        {
+          "name": "cattle-kui-min",
+          "entry_id": "beast-zhongshan-kui-cattle-min9",
+          "prompt": "Use case illustration-story. One isolated complete KUI CATTLE animal from Mount Min commentary, explicitly described as a very LARGE OX. Draw a powerful large bovine, very broad low chest and barrel torso, compact head lowered toward left, exactly FOUR ordinary cloven-hoofed cattle legs clearly visible, modest pair of ordinary ox horns and a single ordinary cattle tail. NO one-legged monster, no dragon face, wings, scales, lightning, drum, flames or extra limbs. Chinese carved woodblock, dark brown outlines, muted russet-brown coat, ivory hatching, slightly shaggy shoulder; exact coat, horn form, hump, proportions and pose are artistic. Large-cattle form is the only evidence; not a modern breed identification or literal weight measurement. Quiet planted stance with strong compact silhouette. TRUE TRANSPARENT empty background, no halo, glow, shadow, ground, border, text or size ruler. Entire figure fits center 70 percent of canvas, 12 percent empty transparent margins, whole horns/tail/hooves visible.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-3deb79b6-83df-4a5e-94d2-72633e82ab62.png",
+          "source_file": "cattle-kui-min-v1.png",
+          "status": "needs_revision",
+          "reference_images": [],
+          "review_note": "首稿背景有晕影，保留未用。",
+          "sha256": "c53e9551252a13d7cf8621f4a873090ecf2d171bb2f5a0d21b353dff63186241"
+        },
+        {
+          "name": "cattle-kui-min",
+          "entry_id": "beast-zhongshan-kui-cattle-min9",
+          "prompt": "Use case: background-extraction. Keep the entire large cattle animal exactly as illustrated, preserving all four hooves, its two horns, tail, face, brown engraved hair and proportions. Remove ALL brown atmospheric glow, haze and shadows outside its silhouette, including between legs. Background must be completely transparent alpha right up to animal edge. Do not paint replacement black or colored background. Isolated clean cutout, no text.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-526c5a11-7eac-4432-8af5-e1bfa44d41a2.png",
+          "source_file": "cattle-kui-min-v2.png",
+          "status": "needs_revision",
+          "reference_images": [
+            "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-3deb79b6-83df-4a5e-94d2-72633e82ab62.png"
+          ],
+          "review_note": "背景抽离修订仍有晕影，保留未用。",
+          "sha256": "f6b80555811b3b5c362bd85de527944ee11c3e10c8375c15b6814e8527cee1e6"
+        }
+      ]
+    },
+    {
+      "name": "beast-mo-lai",
+      "entry_id": "beast-zhongshan-mo-lai9",
+      "prompt": "Use this image ONLY for its carved woodblock technique and perfectly clear transparent space outside its silhouette. Do not copy its bird/human anatomy. Flat colored ink cutout sprite, precise dark outlines and ivory incised texture INSIDE the body, NO color, halo, shadow, light, texture, gradient or haze outside the creature. No ground, labels or border. Genuine transparent alpha. Whole creature inside middle 70 percent of image with generous transparent margins all around. NEW SUBJECT: Mo from Mount Lai commentary, one large BEAR-LIKE animal with IRREGULAR BLACK AND WHITE MOTTLED FUR. Ordinary bear head with a long muzzle and small rounded ears, robust quadruped bear torso, exactly FOUR separately visible bear feet. No classic panda eye masks or panda shoulder bands: irregular scattered mottling. Calm walking pose facing right. No metal objects, no feeding scene. Bear-like form and black-white mottling follow commentary; mottled layout, body size, paws and pose are artistic. No bird parts, human face or horns.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-c06e9815-c0cf-4d95-954d-27ed261da3d3.png",
+      "source_file": "beast-mo-lai-v3.png",
+      "status": "reviewed",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "review_note": "㹮按郭注熊状黑白驳，四足可数、非现代熊猫定种。斑块、比例及姿态为解释，选无晕影v3。",
+      "sha256": "a618efe251b6f282143ae3276f4b2daa3e2cb6b90aac6d9fa4639faa47db8331",
+      "initial_prompt": "Use case illustration-story. One isolated MO animal from Mount Lai commentary in Shanhaijing, which says BEAR-LIKE and MOTTLED BLACK AND WHITE. Make an unusual bear-shaped quadruped with a long bear muzzle, small ordinary rounded bear ears, exactly FOUR sturdy bear feet visible and irregular BLACK/IVORY-WHITE mottled patches over a compact large body. Specifically NOT a modern giant panda: NO black panda eye masks or symmetrical panda shoulder/limb pattern; keep face mostly charcoal with irregular ivory cheek/forehead patches and scattered irregular patches on body. Broad head facing RIGHT in a low moving three-quarter pose. Ancient Chinese woodblock with dark umber carved contours and warm ivory cut marks. Bear-like and black-white mottled form are commentary evidence; muzzle/ear/tail proportions, four paws, patch map and pose artistic. No copper, iron, prey, people, horns, wings, flames or modern natural-history labels. TRUE TRANSPARENT backdrop, no halo/glow/shadow/ground/scene. Whole creature, all four paws and short tail fully inside center 70 percent canvas with generous transparent margins.",
+      "revision_history": [
+        {
+          "name": "beast-mo-lai",
+          "entry_id": "beast-zhongshan-mo-lai9",
+          "prompt": "Use case illustration-story. One isolated MO animal from Mount Lai commentary in Shanhaijing, which says BEAR-LIKE and MOTTLED BLACK AND WHITE. Make an unusual bear-shaped quadruped with a long bear muzzle, small ordinary rounded bear ears, exactly FOUR sturdy bear feet visible and irregular BLACK/IVORY-WHITE mottled patches over a compact large body. Specifically NOT a modern giant panda: NO black panda eye masks or symmetrical panda shoulder/limb pattern; keep face mostly charcoal with irregular ivory cheek/forehead patches and scattered irregular patches on body. Broad head facing RIGHT in a low moving three-quarter pose. Ancient Chinese woodblock with dark umber carved contours and warm ivory cut marks. Bear-like and black-white mottled form are commentary evidence; muzzle/ear/tail proportions, four paws, patch map and pose artistic. No copper, iron, prey, people, horns, wings, flames or modern natural-history labels. TRUE TRANSPARENT backdrop, no halo/glow/shadow/ground/scene. Whole creature, all four paws and short tail fully inside center 70 percent canvas with generous transparent margins.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-c098c9df-2035-4f08-be2f-372064c28150.png",
+          "source_file": "beast-mo-lai-v1.png",
+          "status": "needs_revision",
+          "reference_images": [],
+          "review_note": "首稿背景有晕影，保留未用。",
+          "sha256": "067ae38dcdac6556177185bb2675755e5faa9507a48dd25a306ceaef5ba4a08b"
+        },
+        {
+          "name": "beast-mo-lai",
+          "entry_id": "beast-zhongshan-mo-lai9",
+          "prompt": "Use case: background-extraction. Keep this black-and-white mottled bear creature exactly as illustrated: ordinary bear body, irregular mottling, four feet, rounded ears, no panda eye-patches. Remove ALL brown atmospheric glow, haze and shadow outside its silhouette, including between legs. Background must be completely transparent alpha right up to animal edge. Do not paint replacement black or colored background. Isolated clean cutout, no text.",
+          "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-42fa823b-3182-4791-8199-f5e9cf727d9a.png",
+          "source_file": "beast-mo-lai-v2.png",
+          "status": "needs_revision",
+          "reference_images": [
+            "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-c098c9df-2035-4f08-be2f-372064c28150.png"
+          ],
+          "review_note": "背景抽离修订仍有晕影，保留未用。",
+          "sha256": "a395b98f9adaf9ad0e967b8c817653ff4e29699131039e3b6b447da11b645a6f"
+        }
+      ]
+    },
+    {
+      "name": "snake-hooked-ju",
+      "entry_id": "beast-zhongshan-hooked-snake-ju9",
+      "prompt": "Use this image ONLY for its carved woodblock technique and perfectly clear transparent space outside its silhouette. Do not copy its bird/human anatomy. Flat colored ink cutout sprite, precise dark outlines and ivory incised texture INSIDE the body, NO color, halo, shadow, light, texture, gradient or haze outside the creature. No ground, labels or border. Genuine transparent alpha. Whole creature inside middle 70 percent of image with generous transparent margins all around. NEW SUBJECT: one ancient long SNAKE from the Yongchang commentary comparison. One ordinary snake head and one continuous long snake body loosely coiled in a clear S curve. Its SINGLE TAIL END divides into TWO soft tapering branches forming a clearly readable Y fork; show both tail tips separated at right. No metal hooks, no legs, wings, horns, extra heads or human parts. Restrained slate green scales, warm ivory belly, head raised to left. Long snake and forked tail follow commentary; precise fork layout, scale design, body color and pose are artistic. No predation or water scene.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-d98c660c-9767-4f9b-9d43-bcbb03e24a1e.png",
+      "source_file": "snake-hooked-ju-v1.png",
+      "status": "reviewed",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "review_note": "外地永昌比拟，长蛇尾末二叉，不作崌山本地产。鳞色、尾叉布局及盘曲为解释，未画金属钩或捕食。",
+      "sha256": "d49edec9391b42ba77a9b5114243b484f70c4936ca834de3ff2a04d6bebb1ac3"
+    },
+    {
+      "name": "bird-qiezhi-ju",
+      "entry_id": "beast-zhongshan-qiezhi-ju9",
+      "prompt": "Use this image ONLY for its carved woodblock technique and perfectly clear transparent space outside its silhouette. Do not copy its bird/human anatomy. Flat colored ink cutout sprite, precise dark outlines and ivory incised texture INSIDE the body, NO color, halo, shadow, light, texture, gradient or haze outside the creature. No ground, labels or border. Genuine transparent alpha. Whole creature inside middle 70 percent of image with generous transparent margins all around. NEW SUBJECT: Qiezhi, an OWL-LIKE bird with a RED BODY and WHITE HEAD. One entire owl-shaped bird, rounded WHITE FEATHERED HEAD, two large ordinary bird eyes, small normal bill, RED torso and folded red wings, short red tail, two normal bird legs and two separately visible feet. Compact upright three-quarter stance looking right. Do not turn it into a small green bird, do not add fire or red halo. Owl-like form, red body and white head follow main text. Exact owl species, facial disk, eye/bill color, feather marks and pose are artistic. No human face, horn, extra eyes or scenery.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-b9d72191-bea9-4632-a9dc-f23c0baffdeb.png",
+      "source_file": "bird-qiezhi-ju-v1.png",
+      "status": "reviewed",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "review_note": "鴞状赤身白首按正文；双足可数，眼喙色、羽纹及姿态为解释，不按存疑小青鸟改形。",
+      "sha256": "f31c2f9648f6080f01e664676cdbd5d90fb2f39956602bc5ed9a56c0dc0ef81f"
+    },
+    {
+      "name": "fox-balang-she",
+      "entry_id": "beast-zhongshan-balang-she9",
+      "prompt": "Use this image ONLY for its carved woodblock technique and clear transparent space outside silhouette. Do not copy bird or human anatomy. Flat colored ink cutout sprite, dark outlines and ivory incisions INSIDE creature. NO halo, glow, shadow, scene, ground, paper, labels or border. Genuine transparent alpha background. Whole creature small, inside middle 70 percent of image, with ample fully transparent margin around ears, tail and feet. NEW SUBJECT: Balang from Mount She. One FOX-LIKE animal with a WHITE TAIL and unusually LONG EARS, both long fox ears visible. Ordinary slim quadruped fox body, pointed fox muzzle, FOUR distinct ordinary fox feet. One entirely WHITE fluffy fox tail from base to tip, no snake tail. Muted russet/gray-brown body fur; alert still three-quarter pose facing left, tail curling to right so it remains visible. Fox-like form, white tail and long ears follow text; ear proportions, four feet, coat colors, face and pose are artistic. No weapons, war scene, wings, horns, extra tails or human face.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-2e5b0b77-47fc-4191-ae2c-40b217d279ee.png",
+      "source_file": "fox-balang-she-v1.png",
+      "status": "reviewed",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "review_note": "狐状白尾长耳按正文，四足及单白尾完整可辨，身色、耳长比例及姿态为解释。",
+      "sha256": "c84141601f915e067156b067e52dd58c3b263f6fedf1dac1833105c7a2485da9"
+    },
+    {
+      "name": "monkey-wei-ge",
+      "entry_id": "beast-zhongshan-wei-ge9",
+      "prompt": "Use this image ONLY for its carved woodblock technique and clear transparent space outside silhouette. Do not copy bird or human anatomy. Flat colored ink cutout sprite, dark outlines and ivory incisions INSIDE creature. NO halo, glow, shadow, scene, ground, paper, labels or border. Genuine transparent alpha background. Whole creature small, inside middle 70 percent of image, with ample fully transparent margin around ears, tail and feet. NEW SUBJECT: Wei from Mount Ge commentary. One MACAQUE-LIKE animal with GRAY-YELLOW fur, ordinary monkey body, one monkey head whose nostrils are visibly EXPOSED AND TURN UPWARD. Exactly FOUR ordinary monkey limbs visible, two arms with hands and two hindlegs with feet. One very LONG TAIL sweeping behind and to right, its far END clearly split into TWO tapering branches like a Y fork. The fork belongs at TAIL END, no horns on head. Tail four-to-five-chi wording rendered by long tail, not a length scale. Upright seated three-quarter pose, all hands and feet visible; no tree and no nose-stuffing behavior. Macaque-like form, upward nostrils, gray-yellow and forked long tail follow commentary; precise anatomy, shade, proportions and pose artistic. No human face, clothes, weapons, wings, horns or extra tails.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-c1530609-d011-4f26-b5fd-2a8406a5625f.png",
+      "source_file": "monkey-wei-ge-v1.png",
+      "status": "reviewed",
+      "reference_images": [
+        "C:\\Users\\48427\\.codex\\generated_images\\01a1772c-1faf-7571-8042-a97426b837d2\\exec-bb0e5211-d627-4176-bc13-19b21323757a.png"
+      ],
+      "review_note": "猕猴状、鼻露上向、苍黄色、四五尺长尾头岐按郭注；岐解释为尾末分叉。四肢、毛纹、长尾比例及坐姿为解释，未添头角。",
+      "sha256": "75459d28bf9330a6b1467f0638e6f8bafb0be93377485b4c3912b614b3f269a4"
     }
   ]
 }

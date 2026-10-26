@@ -4691,5 +4691,109 @@
       1280,
       1170
     ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1.webp",
+    "original_bytes": 1633234,
+    "optimized_bytes": 319786,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1.webp",
+    "original_bytes": 1168692,
+    "optimized_bytes": 146154,
+    "original_dimensions": [
+      1774,
+      887
+    ],
+    "dimensions": [
+      1280,
+      640
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1.webp",
+    "original_bytes": 2339387,
+    "optimized_bytes": 477856,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1.webp",
+    "original_bytes": 2354792,
+    "optimized_bytes": 446670,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1.webp",
+    "original_bytes": 1545262,
+    "optimized_bytes": 288728,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1.webp",
+    "original_bytes": 1621600,
+    "optimized_bytes": 328722,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/fox-balang-she-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/fox-balang-she-v1.webp",
+    "original_bytes": 1688862,
+    "optimized_bytes": 331998,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1.webp",
+    "original_bytes": 1709957,
+    "optimized_bytes": 348326,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
   }
 }
