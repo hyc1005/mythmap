@@ -91,10 +91,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         }
         else {
           await drawer.locator('.drawer-art').scrollIntoViewIfNeeded();
-          await drawer.locator('.drawer-art').evaluate(img => img.complete && img.naturalWidth > 0 || new Promise((resolve, reject) => {
-            img.addEventListener('load', resolve, { once: true });
-            img.addEventListener('error', reject, { once: true });
-          }));
+          await page.waitForFunction(() => {
+            const img = document.querySelector('.detail-drawer .drawer-art');
+            return img?.complete && img.naturalWidth > 0;
+          });
           await drawer.locator('.drawer-art').evaluate(img => img.decode());
           assert.ok(await drawer.locator('.drawer-art').evaluate(img => img.complete && img.naturalWidth > 0), `${id}: image loaded`);
         }
