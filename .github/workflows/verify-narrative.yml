@@ -101,10 +101,8 @@ jobs:
       matrix:
         browser: [chromium, webkit]
         suite:
-          - name: atlas
           - name: central-current
-            scripts: verify-zhongshan.mjs
-            scripts: verify-geography.mjs verify-locale.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-ux.mjs
+            scripts: verify-zhongshan.mjs verify-geography.mjs verify-locale.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-ux.mjs
           - name: southern-cards
             scripts: verify-nanshan.mjs
           - name: southern-reader
