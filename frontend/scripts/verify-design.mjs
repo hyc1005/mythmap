@@ -111,8 +111,11 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.explore-playback .kuafu-journey').waitFor();
     await page.waitForFunction(() => {
       const canvas = document.querySelector('.myth-map-canvas');
+      const frame = canvas.closest('.myth-map-wrap');
       const view = JSON.parse(canvas.dataset.view), box = canvas.getBoundingClientRect();
-      return Math.abs(view.size[0] - box.width) < 1 && Math.abs(view.size[1] - box.height) < 1;
+      return !document.fullscreenElement && !frame.classList.contains('is-map-fullscreen')
+        && parseFloat(getComputedStyle(frame).borderLeftWidth) > 0
+        && Math.abs(view.size[0] - box.width) < 1 && Math.abs(view.size[1] - box.height) < 1;
     });
     const elapsed = await page.locator('.kuafu-journey').getAttribute('data-elapsed');
     const view = await page.locator('.myth-map-canvas').getAttribute('data-view');

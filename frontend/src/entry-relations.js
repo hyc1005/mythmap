@@ -5,7 +5,7 @@ import xishanRelations from './xishan-relations.json' with { type: 'json' };
 export const entryRelations = [
   { ids: ['03-04', 'beast-jingwei'], source: '《北山经》', quote: '女娃游于东海，溺而不返，故为精卫' },
   { ids: ['03-04', 'place-fajiu'], source: '《北山经》', quote: '发鸠之山，其上多柘木。有鸟焉' },
-  { ids: ['beast-jingwei', 'place-fajiu'], source: '《北山经》', quote: '发鸠之山，有鸟焉，其状如乌，文首、白喙、赤足，名曰精卫。' },
+  { ids: ['beast-jingwei', 'place-fajiu'], source: '《北山经》', quote: '發鳩之山其上多柘木有鳥焉其状如烏文首白喙赤足名曰精衛' },
   ...nanshanRelations,
   ...entityRelations,
   ...xishanRelations,

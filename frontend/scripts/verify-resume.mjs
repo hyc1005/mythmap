@@ -94,6 +94,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       node.scrollTop += original.getBoundingClientRect().top - node.getBoundingClientRect().top - 170;
     });
     await page.waitForTimeout(250);
+    await page.waitForFunction(key => JSON.parse(localStorage.getItem(key))?.position?.originalOpen === true, key);
     assert.equal((await stored(page)).position.originalOpen, true);
     await page.reload();
     await ready(page, true);

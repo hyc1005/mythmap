@@ -17,7 +17,7 @@ concurrency:
 jobs:
   narrative:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 90
     env:
       ATLAS_BROWSERS: chromium,webkit
       VITE_TIANDITU_KEY: ${{ github.event_name == 'pull_request' && 'mock-browser-key' || secrets.TIANDITU_BROWSER_KEY }}

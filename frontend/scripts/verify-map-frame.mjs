@@ -42,6 +42,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.goto(`${base}?chapter=03&lang=zh`);
     await page.getByLabel('选择地图故事动画').selectOption('03-05');
     await page.locator('.kuafu-journey[data-status=playing]').waitFor();
+    const clockStart = new Date();
+    await page.clock.install({ time: clockStart });
+    await page.clock.pauseAt(new Date(clockStart.getTime() + 1000));
     await page.evaluate(() => {
       window.noticeCheck = { started: null, duration: null, pausedSamples: [] };
       const sample = () => {
@@ -59,11 +62,14 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.timeline-steps button').nth(4).click();
     await page.locator('.map-surface .chapter-transition-veil.is-visible').waitFor();
     await page.getByLabel('选择地图故事动画').evaluate(select => { select.value = '04-02'; select.dispatchEvent(new Event('change', { bubbles: true })); });
+    await page.locator('.story-animation[data-status=paused]').waitFor();
+    await page.clock.runFor(CHAPTER_TRANSITION_MS + 100);
     await page.waitForFunction(() => window.noticeCheck.duration !== null);
     const check = await page.evaluate(() => window.noticeCheck);
     assert.ok(check.duration >= 1100, `${name}: chapter notice lasted ${check.duration}ms`);
     assert.ok(check.pausedSamples.length > 0, 'The covered story is paused');
     assert.ok(check.pausedSamples.every(time => time === 0), 'A covered story does not play behind the chapter notice');
+    await page.clock.resume();
     await page.waitForFunction(() => Number(document.querySelector('.story-animation')?.dataset.elapsed) > 200);
     await page.locator('.map-mode-switch').getByRole('button', { name: '真实地理', exact: true }).click();
     await page.getByLabel('地理事件').selectOption('03-05');

@@ -16,7 +16,14 @@ assert.equal(searchEntries(index, '<script>')[0], undefined);
 assert.equal(searchEntries(index, '山海经', 'beast').length, world.beasts.length);
 for (const record of index) for (const id of record.entryIds || [record.id]) assert.ok(itemChapter(id, world, catalog), `${record.key}: result links to a supported entry`);
 const markerAssets = Object.values(refined).flatMap(variants => variants.map ? [variants.map] : []);
-assert.equal(markerAssets.length, 4);
+const creatureMarkers = Object.entries(refined).filter(([source, variants]) => variants.map
+  && world.beasts.some(item => `/data/atlas/myth-icons/${item.artwork}` === source));
+for (const source of [
+  '/data/atlas/myth-icons/jingwei.webp',
+  '/data/atlas/myth-icons/beasts/beast-jiuweihu.webp',
+  '/data/atlas/myth-icons/beasts/beast-xuangui.webp',
+  '/data/atlas/myth-icons/nanshan/guanguan-v1.webp',
+]) assert.ok(refined[source]?.map, `${source}: existing map marker retained`);
 for (const asset of markerAssets) {
   assert.ok(asset.bytes < 16000, `${asset.path}: tiny marker byte budget`);
   assert.equal((await stat(new URL('../public' + asset.path, import.meta.url))).size, asset.bytes);
@@ -138,8 +145,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.waitForFunction(paths => {
       const resources = performance.getEntriesByType('resource').map(item => item.name);
       return paths.every(path => resources.some(url => url.endsWith(path)));
-    }, markerAssets.map(asset => asset.path));
-    for (const asset of markerAssets) assert.ok([...requested].some(path => path.endsWith(asset.path)), 'Map uses the dedicated marker variant');
+    }, creatureMarkers.map(([, variants]) => variants.map.path));
+    for (const [, variants] of creatureMarkers) assert.ok([...requested].some(path => path.endsWith(variants.map.path)), 'Map uses the dedicated marker variant');
     if (name === 'chromium') {
       await page.evaluate(async pairs => {
         const section = document.createElement('section'); section.id = 'artwork-review';
@@ -153,7 +160,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           section.append(row);
         }
         document.body.append(section);
-      }, Object.entries(refined).filter(([, variants]) => variants.map).map(([path, variants]) => ({ name: world.beasts.find(item => `/data/atlas/myth-icons/${item.artwork}` === path).name, old: previews[path].card.path, next: variants.map.path })));
+      }, creatureMarkers.map(([path, variants]) => ({ name: world.beasts.find(item => `/data/atlas/myth-icons/${item.artwork}` === path).name, old: previews[path].card.path, next: variants.map.path })));
       await page.locator('#artwork-review').screenshot({ path: filename('map-icons-before-after.png') });
     }
     await page.goto(`${base}?chapter=00&lang=zh`);
