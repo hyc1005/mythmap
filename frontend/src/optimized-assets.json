@@ -4912,5 +4912,70 @@
       1280,
       1170
     ]
+  },
+  "/data/atlas/myth-icons/zhongshan/turtle-threeleg-cong-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/turtle-threeleg-cong-v1.webp",
+    "original_bytes": 1641544,
+    "optimized_bytes": 307998,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-jie-zhen-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/creature-jie-zhen-v1.webp",
+    "original_bytes": 2203056,
+    "optimized_bytes": 420330,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-liangqu-lishi-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/creature-liangqu-lishi-v1.webp",
+    "original_bytes": 2152560,
+    "optimized_bytes": 439872,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-juyu-chouyang-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/bird-juyu-chouyang-v1.webp",
+    "original_bytes": 1432972,
+    "optimized_bytes": 263536,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-wenlin-ji-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/creature-wenlin-ji-v1.webp",
+    "original_bytes": 2380734,
+    "optimized_bytes": 487720,
+    "original_dimensions": [
+      1312,
+      1199
+    ],
+    "dimensions": [
+      1280,
+      1170
+    ]
   }
 }

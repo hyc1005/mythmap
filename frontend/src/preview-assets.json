@@ -6640,5 +6640,95 @@
         439
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/turtle-threeleg-cong-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-threeleg-cong-v1-card.webp",
+      "bytes": 27186,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-threeleg-cong-v1-preview.webp",
+      "bytes": 53808,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-jie-zhen-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-jie-zhen-v1-card.webp",
+      "bytes": 37792,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-jie-zhen-v1-preview.webp",
+      "bytes": 75034,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-liangqu-lishi-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-liangqu-lishi-v1-card.webp",
+      "bytes": 37242,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-liangqu-lishi-v1-preview.webp",
+      "bytes": 77506,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/bird-juyu-chouyang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-juyu-chouyang-v1-card.webp",
+      "bytes": 23824,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/bird-juyu-chouyang-v1-preview.webp",
+      "bytes": 45452,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/creature-wenlin-ji-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-wenlin-ji-v1-card.webp",
+      "bytes": 37834,
+      "dimensions": [
+        320,
+        292
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/creature-wenlin-ji-v1-preview.webp",
+      "bytes": 79680,
+      "dimensions": [
+        480,
+        439
+      ]
+    }
   }
 }

@@ -2,7 +2,7 @@
   "chapter": 5,
   "edition": "《山海經（四部叢刊本）》卷第五，郭氏傳",
   "status": "partially_implemented",
-  "scope": "前157段正文、郭注、双语及实体接入；后55阶段仍待逐批核定。",
+  "scope": "前192段正文、郭注、双语及实体接入；后20阶段仍待逐批核定。",
   "revision_url": "https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856",
   "snapshot_sha256": "0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce",
   "scan_pages": [
@@ -134,7 +134,15 @@
     "source-05-0441": 50,
     "source-05-0450": 51,
     "source-05-0459": 52,
-    "source-05-0468": 53
+    "source-05-0468": 53,
+    "source-05-0477": 54,
+    "source-05-0486": 55,
+    "source-05-0495": 56,
+    "source-05-0504": 57,
+    "source-05-0513": 58,
+    "source-05-0522": 59,
+    "source-05-0531": 60,
+    "source-05-0540": 61
   },
   "source_blocks": 614,
   "planned_content_blocks": 613,
@@ -170,8 +178,8 @@
     "source-05-0573"
   ],
   "planned_stages": 212,
-  "implemented_stages": 157,
-  "remaining_stages": 55,
+  "implemented_stages": 192,
+  "remaining_stages": 20,
   "stage_counts": [
     16,
     10,
@@ -384,13 +392,14 @@
     "r01-wo"
   ],
   "next": {
-    "name": "即谷之山",
+    "name": "次11总括与祭礼",
     "source_units": [
-      471,
-      472
+      540,
+      544
     ],
     "facsimile_pages": [
-      54
+      61,
+      62
     ],
     "status": "pending_bilingual_entity_review"
   },
@@ -5506,10 +5515,12 @@
       "captured_pages": [
         54
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印54页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-jigu",
+      "new_cards": 9
     },
     {
       "stage": 159,
@@ -5534,10 +5545,12 @@
       "captured_pages": [
         54
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印54页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-ji",
+      "new_cards": 4
     },
     {
       "stage": 160,
@@ -5564,10 +5577,12 @@
       "captured_pages": [
         54
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印54页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-gaoqian",
+      "new_cards": 6
     },
     {
       "stage": 161,
@@ -5587,15 +5602,17 @@
         6748
       ],
       "facsimile_pages": [
-        55
+        54
       ],
       "captured_pages": [
         55
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印54页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-youxi",
+      "new_cards": 6
     },
     {
       "stage": 162,
@@ -5622,10 +5639,12 @@
       "captured_pages": [
         55
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "三足鳖枝尾与他篇旋龟、三足龟分开；三足和分枝尾分别核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印55页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-cong",
+      "new_cards": 6
     },
     {
       "stage": 163,
@@ -5651,10 +5670,12 @@
       "captured_pages": [
         55
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印55页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-yingzhen",
+      "new_cards": 5
     },
     {
       "stage": 164,
@@ -5680,10 +5701,12 @@
       "captured_pages": [
         55
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印55页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-bi",
+      "new_cards": 6
     },
     {
       "stage": 165,
@@ -5704,17 +5727,18 @@
         6878
       ],
       "facsimile_pages": [
-        55,
-        56
+        55
       ],
       "captured_pages": [
         55,
         56
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印55页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-lema",
+      "new_cards": 2
     },
     {
       "stage": 166,
@@ -5740,10 +5764,12 @@
       "captured_pages": [
         56
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印56页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-zhen",
+      "new_cards": 6
     },
     {
       "stage": 167,
@@ -5768,10 +5794,12 @@
       "captured_pages": [
         56
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印56页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-ying",
+      "new_cards": 4
     },
     {
       "stage": 168,
@@ -5796,10 +5824,12 @@
       "captured_pages": [
         56
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印56页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-hushou",
+      "new_cards": 4
     },
     {
       "stage": 169,
@@ -5824,10 +5854,12 @@
       "captured_pages": [
         56
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印56页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-yinghou",
+      "new_cards": 3
     },
     {
       "stage": 170,
@@ -5853,10 +5885,12 @@
       "captured_pages": [
         56
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印56页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-dashu",
+      "new_cards": 3
     },
     {
       "stage": 171,
@@ -5877,17 +5911,18 @@
         7003
       ],
       "facsimile_pages": [
-        56,
-        57
+        56
       ],
       "captured_pages": [
         56,
         57
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印56页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-bei",
+      "new_cards": 6
     },
     {
       "stage": 172,
@@ -5914,10 +5949,12 @@
       "captured_pages": [
         57
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "狙如如鼣鼠白耳白喙，郭注鼠形未详，不强定现代种或借南山白耳鼠图。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印57页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-yidi",
+      "new_cards": 4
     },
     {
       "stage": 173,
@@ -5943,10 +5980,12 @@
       "captured_pages": [
         57
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印57页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-ni",
+      "new_cards": 5
     },
     {
       "stage": 174,
@@ -5972,10 +6011,12 @@
       "captured_pages": [
         57
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印57页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-ya",
+      "new_cards": 6
     },
     {
       "stage": 175,
@@ -6005,10 +6046,12 @@
         57,
         58
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "帝女之桑是木名与蚕事解释，不自动新造帝女形貌。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印57、58页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-xuan",
+      "new_cards": 4
     },
     {
       "stage": 176,
@@ -6034,10 +6077,12 @@
       "captured_pages": [
         58
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印58页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-heng",
+      "new_cards": 4
     },
     {
       "stage": 177,
@@ -6063,10 +6108,12 @@
       "captured_pages": [
         58
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印58页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-feng-second",
+      "new_cards": 4
     },
     {
       "stage": 178,
@@ -6092,10 +6139,12 @@
       "captured_pages": [
         58
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印58页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-yu-mountain",
+      "new_cards": 4
     },
     {
       "stage": 179,
@@ -6117,15 +6166,18 @@
         7289
       ],
       "facsimile_pages": [
+        58,
         59
       ],
       "captured_pages": [
         59
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印58、59页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-xian",
+      "new_cards": 8
     },
     {
       "stage": 180,
@@ -6151,10 +6203,12 @@
       "captured_pages": [
         59
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印59页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-zhang",
+      "new_cards": 6
     },
     {
       "stage": 181,
@@ -6180,10 +6234,12 @@
       "captured_pages": [
         59
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "大支多榖柞后又无草木，矛盾如实保留，不删改其一。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印59页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-dazhi",
+      "new_cards": 4
     },
     {
       "stage": 182,
@@ -6208,10 +6264,12 @@
       "captured_pages": [
         59
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印59页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-quwu",
+      "new_cards": 2
     },
     {
       "stage": 183,
@@ -6236,10 +6294,12 @@
       "captured_pages": [
         59
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印59页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-shengxiong",
+      "new_cards": 4
     },
     {
       "stage": 184,
@@ -6260,15 +6320,18 @@
         7398
       ],
       "facsimile_pages": [
+        59,
         60
       ],
       "captured_pages": [
         60
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印59、60页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-dagui",
+      "new_cards": 3
     },
     {
       "stage": 185,
@@ -6293,10 +6356,12 @@
       "captured_pages": [
         60
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印60页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-zhongjiu",
+      "new_cards": 1
     },
     {
       "stage": 186,
@@ -6323,10 +6388,12 @@
       "captured_pages": [
         60
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "梁渠狸状白首虎爪，与北山梁渠山、囂鸟分开，逐一注明出处。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印60页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-lishi",
+      "new_cards": 6
     },
     {
       "stage": 187,
@@ -6352,10 +6419,12 @@
       "captured_pages": [
         60
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印60页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-qiu",
+      "new_cards": 7
     },
     {
       "stage": 188,
@@ -6376,17 +6445,18 @@
         7529
       ],
       "facsimile_pages": [
-        60,
-        61
+        60
       ],
       "captured_pages": [
         60,
         61
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印60页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-chouyang",
+      "new_cards": 4
     },
     {
       "stage": 189,
@@ -6412,10 +6482,12 @@
       "captured_pages": [
         61
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印61页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-ao",
+      "new_cards": 6
     },
     {
       "stage": 190,
@@ -6441,10 +6513,12 @@
       "captured_pages": [
         61
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印61页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-fu",
+      "new_cards": 4
     },
     {
       "stage": 191,
@@ -6469,10 +6543,12 @@
       "captured_pages": [
         61
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "按本列独立整理正文、跨行郭注、水文方向与同名异篇；实体、形貌和关系仍待逐阶段影印复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印61页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-yao",
+      "new_cards": 4
     },
     {
       "stage": 192,
@@ -6499,10 +6575,12 @@
       "captured_pages": [
         61
       ],
-      "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
-      "content_status": "pending_bilingual_entity_review",
-      "browser_status": "not_implemented",
-      "note": "聞𧲂彘状黄身白头白尾，539异体替换符留待字形复核。"
+      "boundary_status": "facsimile_reviewed",
+      "content_status": "facsimile_reviewed",
+      "browser_status": "see local handoff acceptance",
+      "note": "已核影印61页正文、郭注及段界；形貌不足、同名异段、经注异字与缺字未定分别说明，原捕获保留。",
+      "passage_id": "passage-zhongshan-r11-ji-mountain",
+      "new_cards": 6
     },
     {
       "stage": 193,
@@ -6526,6 +6604,7 @@
         7739
       ],
       "facsimile_pages": [
+        61,
         62
       ],
       "captured_pages": [
@@ -6534,7 +6613,7 @@
       "boundary_status": "captured_text_boundary_reviewed_facsimile_recheck_required",
       "content_status": "pending_bilingual_entity_review",
       "browser_status": "not_implemented",
-      "note": "次十一48列名与总括48相合；禾山、堵山、玉山是总括祭礼引用，不擅补路线。"
+      "note": "540起于已核61页末；续62页正文、郭注和实体仍待下一批逐阶段核定。"
     },
     {
       "stage": 194,
@@ -8071,7 +8150,173 @@
     "plant-zhongshan-niu-yiku11",
     "plant-zhongshan-jiang-yiku11",
     "plant-zhongshan-ju-yiku11",
-    "beast-zhongshan-lin-yiku11"
+    "beast-zhongshan-lin-yiku11",
+    "place-zhongshan-r11-jigu",
+    "material-zhongshan-fine-jade-jigu11",
+    "material-zhongshan-min-jigu11",
+    "material-zhongshan-qinghu-jigu11",
+    "animal-zhongshan-black-leopard-jigu11",
+    "animal-zhongshan-lvchen-jigu11",
+    "animal-zhongshan-ling-jigu11",
+    "animal-zhongshan-chuo-jigu11",
+    "animal-zhongshan-black-tiger-comparison-jigu11",
+    "place-zhongshan-r11-ji",
+    "plant-zhongshan-fine-zi-ji11",
+    "plant-zhongshan-mulberry-ji11",
+    "plant-zhongshan-jiu-ji11",
+    "place-zhongshan-r11-gaoqian",
+    "water-zhongshan-ditai-drink-gaoqian11",
+    "deity-zhongshan-ditai-gaoqian11",
+    "place-zhongshan-tanshou-comparison-gaoqian11",
+    "material-zhongshan-gold-gaoqian11",
+    "material-zhongshan-ochre-gaoqian11",
+    "place-zhongshan-r11-youxi",
+    "plant-zhongshan-niu-youxi11",
+    "plant-zhongshan-jiang-youxi11",
+    "plant-zhongshan-gu-youxi11",
+    "material-zhongshan-jade-youxi11",
+    "material-zhongshan-feng-stone-youxi11",
+    "place-zhongshan-r11-cong",
+    "plant-zhongshan-song-cong11",
+    "plant-zhongshan-bai-cong11",
+    "plant-zhongshan-bamboo-cong11",
+    "water-zhongshan-cong-cong11",
+    "beast-zhongshan-threeleg-cong11",
+    "place-zhongshan-r11-yingzhen",
+    "plant-zhongshan-song-yingzhen11",
+    "plant-zhongshan-bai-yingzhen11",
+    "plant-zhongshan-zi-yingzhen11",
+    "plant-zhongshan-chun-yingzhen11",
+    "place-zhongshan-r11-bi",
+    "water-zhongshan-diyuan-bi11",
+    "water-zhongshan-shi-recipient-bi11",
+    "material-zhongshan-water-jade-bi11",
+    "animal-zhongshan-jiao-bi11",
+    "material-zhongshan-tufu-bi11",
+    "place-zhongshan-r11-lema",
+    "beast-zhongshan-li-lema11",
+    "place-zhongshan-r11-zhen",
+    "water-zhongshan-shi-source-zhen11",
+    "water-zhongshan-ru-recipient-zhen11",
+    "animal-zhongshan-renyu-zhen11",
+    "animal-zhongshan-jiao-zhen11",
+    "beast-zhongshan-jie-zhen11",
+    "place-zhongshan-r11-ying",
+    "material-zhongshan-qinghu-ying11",
+    "material-zhongshan-gold-ying11",
+    "material-zhongshan-jade-ying11",
+    "place-zhongshan-r11-hushou",
+    "plant-zhongshan-ju-growth-hushou11",
+    "plant-zhongshan-ju-wood-hushou11",
+    "plant-zhongshan-chou-hushou11",
+    "place-zhongshan-r11-yinghou",
+    "material-zhongshan-feng-stone-yinghou11",
+    "material-zhongshan-red-tin-yinghou11",
+    "place-zhongshan-r11-dashu",
+    "water-zhongshan-sha-dashu11",
+    "material-zhongshan-white-e-dashu11",
+    "place-zhongshan-r11-bei",
+    "plant-zhongshan-tao-bei11",
+    "plant-zhongshan-li-bei11",
+    "plant-zhongshan-ju-bei11",
+    "plant-zhongshan-zi-bei11",
+    "plant-zhongshan-lei-bei11",
+    "place-zhongshan-r11-yidi",
+    "material-zhongshan-jade-yidi11",
+    "material-zhongshan-gold-yidi11",
+    "beast-zhongshan-juru-yidi11",
+    "place-zhongshan-r11-ni",
+    "water-zhongshan-ni-ni11",
+    "material-zhongshan-fine-e-ni11",
+    "material-zhongshan-gold-ni11",
+    "material-zhongshan-qinghu-ni11",
+    "place-zhongshan-r11-ya",
+    "water-zhongshan-feng-ya11",
+    "animal-zhongshan-large-fish-ya11",
+    "plant-zhongshan-fine-mulberry-ya11",
+    "plant-zhongshan-ju-ya11",
+    "material-zhongshan-red-metal-ya11",
+    "place-zhongshan-r11-xuan",
+    "water-zhongshan-lun-xuan11",
+    "animal-zhongshan-jiao-xuan11",
+    "plant-zhongshan-dinu-mulberry-xuan11",
+    "place-zhongshan-r11-heng",
+    "material-zhongshan-qinghu-heng11",
+    "plant-zhongshan-mulberry-heng11",
+    "animal-zhongshan-quyu-heng11",
+    "place-zhongshan-r11-feng-second",
+    "material-zhongshan-feng-stone-feng-second11",
+    "plant-zhongshan-mulberry-feng-second11",
+    "plant-zhongshan-yangtao-feng-second11",
+    "place-zhongshan-r11-yu-mountain",
+    "material-zhongshan-fine-jade-yu-mountain11",
+    "material-zhongshan-gold-yu-mountain11",
+    "plant-zhongshan-jigu-yu-mountain11",
+    "place-zhongshan-r11-xian",
+    "plant-zhongshan-you-xian11",
+    "plant-zhongshan-niu-xian11",
+    "plant-zhongshan-ju-xian11",
+    "plant-zhongshan-rendong-xian11",
+    "material-zhongshan-gold-xian11",
+    "material-zhongshan-iron-xian11",
+    "beast-zhongshan-yiji-xian11",
+    "place-zhongshan-r11-zhang",
+    "material-zhongshan-gold-zhang11",
+    "material-zhongshan-fine-stone-zhang11",
+    "water-zhongshan-gao-zhang11",
+    "water-zhongshan-li-recipient-zhang11",
+    "material-zhongshan-cui-stone-zhang11",
+    "place-zhongshan-r11-dazhi",
+    "material-zhongshan-gold-dazhi11",
+    "plant-zhongshan-gu-dazhi11",
+    "plant-zhongshan-zuo-dazhi11",
+    "place-zhongshan-r11-quwu",
+    "plant-zhongshan-ju-quwu11",
+    "place-zhongshan-r11-shengxiong",
+    "plant-zhongshan-gu-shengxiong11",
+    "material-zhongshan-jade-shengxiong11",
+    "material-zhongshan-feng-stone-shengxiong11",
+    "place-zhongshan-r11-dagui",
+    "material-zhongshan-red-metal-dagui11",
+    "material-zhongshan-di-dagui11",
+    "place-zhongshan-r11-zhongjiu",
+    "place-zhongshan-r11-lishi",
+    "plant-zhongshan-jing-lishi11",
+    "plant-zhongshan-qi-lishi11",
+    "material-zhongshan-gold-lishi11",
+    "material-zhongshan-di-lishi11",
+    "beast-zhongshan-liangqu-lishi11",
+    "place-zhongshan-r11-qiu",
+    "water-zhongshan-qiu-qiu11",
+    "material-zhongshan-fine-ochre-qiu11",
+    "plant-zhongshan-ju-qiu11",
+    "plant-zhongshan-mei-qiu11",
+    "material-zhongshan-gold-qiu11",
+    "material-zhongshan-iron-qiu11",
+    "place-zhongshan-r11-chouyang",
+    "plant-zhongshan-chou-chouyang11",
+    "plant-zhongshan-ju-chouyang11",
+    "beast-zhongshan-juyu-chouyang11",
+    "place-zhongshan-r11-ao",
+    "plant-zhongshan-bai-ao11",
+    "plant-zhongshan-niu-ao11",
+    "plant-zhongshan-jiang-ao11",
+    "material-zhongshan-tufu-ao11",
+    "water-zhongshan-ao-ao11",
+    "place-zhongshan-r11-fu",
+    "plant-zhongshan-ju-fu11",
+    "material-zhongshan-feng-stone-fu11",
+    "material-zhongshan-red-tin-fu11",
+    "place-zhongshan-r11-yao",
+    "plant-zhongshan-jiarong-yao11",
+    "material-zhongshan-gold-yao11",
+    "material-zhongshan-jade-yao11",
+    "place-zhongshan-r11-ji-mountain",
+    "plant-zhongshan-you-ji-mountain11",
+    "plant-zhongshan-tan-ji-mountain11",
+    "plant-zhongshan-niu-ji-mountain11",
+    "plant-zhongshan-fragrant-herbs-ji-mountain11",
+    "beast-zhongshan-wenlin-ji-mountain11"
   ],
   "passages": [
     {
@@ -10112,39 +10357,458 @@
         6636
       ],
       "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-jigu",
+      "source_unit_ids": [
+        "source-05-0471",
+        "source-05-0472"
+      ],
+      "source_span": [
+        6636,
+        6669
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-ji",
+      "source_unit_ids": [
+        "source-05-0473"
+      ],
+      "source_span": [
+        6669,
+        6689
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-gaoqian",
+      "source_unit_ids": [
+        "source-05-0474",
+        "source-05-0475",
+        "source-05-0476"
+      ],
+      "source_span": [
+        6689,
+        6728
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-youxi",
+      "source_unit_ids": [
+        "source-05-0477"
+      ],
+      "source_span": [
+        6728,
+        6748
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-cong",
+      "source_unit_ids": [
+        "source-05-0478",
+        "source-05-0479",
+        "source-05-0480"
+      ],
+      "source_span": [
+        6748,
+        6790
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-yingzhen",
+      "source_unit_ids": [
+        "source-05-0481",
+        "source-05-0482"
+      ],
+      "source_span": [
+        6790,
+        6811
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-bi",
+      "source_unit_ids": [
+        "source-05-0483",
+        "source-05-0484"
+      ],
+      "source_span": [
+        6811,
+        6846
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-lema",
+      "source_unit_ids": [
+        "source-05-0485",
+        "source-05-0486"
+      ],
+      "source_span": [
+        6846,
+        6878
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-zhen",
+      "source_unit_ids": [
+        "source-05-0487",
+        "source-05-0488"
+      ],
+      "source_span": [
+        6878,
+        6908
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-ying",
+      "source_unit_ids": [
+        "source-05-0489"
+      ],
+      "source_span": [
+        6908,
+        6926
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-hushou",
+      "source_unit_ids": [
+        "source-05-0490"
+      ],
+      "source_span": [
+        6926,
+        6940
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-yinghou",
+      "source_unit_ids": [
+        "source-05-0491"
+      ],
+      "source_span": [
+        6940,
+        6960
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-dashu",
+      "source_unit_ids": [
+        "source-05-0492",
+        "source-05-0493"
+      ],
+      "source_span": [
+        6960,
+        6986
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-bei",
+      "source_unit_ids": [
+        "source-05-0494",
+        "source-05-0495"
+      ],
+      "source_span": [
+        6986,
+        7003
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-yidi",
+      "source_unit_ids": [
+        "source-05-0496",
+        "source-05-0497",
+        "source-05-0498"
+      ],
+      "source_span": [
+        7003,
+        7044
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-ni",
+      "source_unit_ids": [
+        "source-05-0499",
+        "source-05-0500"
+      ],
+      "source_span": [
+        7044,
+        7076
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-ya",
+      "source_unit_ids": [
+        "source-05-0501",
+        "source-05-0502"
+      ],
+      "source_span": [
+        7076,
+        7111
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-xuan",
+      "source_unit_ids": [
+        "source-05-0503",
+        "source-05-0504",
+        "source-05-0505",
+        "source-05-0506"
+      ],
+      "source_span": [
+        7111,
+        7164
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-heng",
+      "source_unit_ids": [
+        "source-05-0507",
+        "source-05-0508"
+      ],
+      "source_span": [
+        7164,
+        7185
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-feng-second",
+      "source_unit_ids": [
+        "source-05-0509",
+        "source-05-0510"
+      ],
+      "source_span": [
+        7185,
+        7216
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-yu-mountain",
+      "source_unit_ids": [
+        "source-05-0511",
+        "source-05-0512"
+      ],
+      "source_span": [
+        7216,
+        7238
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-xian",
+      "source_unit_ids": [
+        "source-05-0513",
+        "source-05-0514",
+        "source-05-0515"
+      ],
+      "source_span": [
+        7238,
+        7289
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-zhang",
+      "source_unit_ids": [
+        "source-05-0516",
+        "source-05-0517"
+      ],
+      "source_span": [
+        7289,
+        7321
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-dazhi",
+      "source_unit_ids": [
+        "source-05-0518",
+        "source-05-0519"
+      ],
+      "source_span": [
+        7321,
+        7344
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-quwu",
+      "source_unit_ids": [
+        "source-05-0520"
+      ],
+      "source_span": [
+        7344,
+        7358
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-shengxiong",
+      "source_unit_ids": [
+        "source-05-0521"
+      ],
+      "source_span": [
+        7358,
+        7378
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-dagui",
+      "source_unit_ids": [
+        "source-05-0522",
+        "source-05-0523"
+      ],
+      "source_span": [
+        7378,
+        7398
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-zhongjiu",
+      "source_unit_ids": [
+        "source-05-0524"
+      ],
+      "source_span": [
+        7398,
+        7410
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-lishi",
+      "source_unit_ids": [
+        "source-05-0525",
+        "source-05-0526",
+        "source-05-0527"
+      ],
+      "source_span": [
+        7410,
+        7459
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-qiu",
+      "source_unit_ids": [
+        "source-05-0528",
+        "source-05-0529"
+      ],
+      "source_span": [
+        7459,
+        7496
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-chouyang",
+      "source_unit_ids": [
+        "source-05-0530",
+        "source-05-0531"
+      ],
+      "source_span": [
+        7496,
+        7529
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-ao",
+      "source_unit_ids": [
+        "source-05-0532",
+        "source-05-0533"
+      ],
+      "source_span": [
+        7529,
+        7560
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-fu",
+      "source_unit_ids": [
+        "source-05-0534",
+        "source-05-0535"
+      ],
+      "source_span": [
+        7560,
+        7583
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-yao",
+      "source_unit_ids": [
+        "source-05-0536"
+      ],
+      "source_span": [
+        7583,
+        7600
+      ],
+      "status": "facsimile_reviewed"
+    },
+    {
+      "id": "passage-zhongshan-r11-ji-mountain",
+      "source_unit_ids": [
+        "source-05-0537",
+        "source-05-0538",
+        "source-05-0539"
+      ],
+      "source_span": [
+        7600,
+        7643
+      ],
+      "status": "facsimile_reviewed"
     }
   ],
   "artwork_summary": {
-    "selected": 58,
-    "appearance_unknown": 100
+    "selected": 63,
+    "appearance_unknown": 115
   },
   "font_preflight": {
     "status": "current_batch_covered_future_pending",
-    "missing_stage_title_characters": "丑伯倚匈卑奧嫗杳柴臧臼葴鯢𭧂",
-    "missing_stage_title_count": 14,
-    "limits": "已接入前157阶段标题、实体、正文与郭注所需字已补；后续55阶段完整内容仍需逐批预检。",
+    "missing_stage_title_characters": "伯柴臧𭧂",
+    "missing_stage_title_count": 4,
+    "limits": "已接入前192阶段标题、实体、正文与郭注所需字已补；后续20阶段完整内容仍需逐批预检。",
     "initial_missing_stage_title_characters": "䣀丑丙仁休伯倚兎冝几凡勇匈半卑堇堯堵夫奧威婁媱嫗宣室密岷崌崍廆役復戯敏敖斸朝杳柄柴棗檷歌洞涹煇皮瞻祑綸縞繁繢羝脱臧臼苦茍葌葴蘇虛蠱視講豐豬賈超軲釐鐙陘雲霍驕鯢𥮐𩇵𫝊𭧂",
     "implemented_batch_missing_characters": ""
   },
-  "limits": "212阶段中前157阶段已接入，余55；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。",
-  "batch_size": 30,
+  "limits": "212阶段中前192阶段已接入，余20；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。",
+  "batch_size": 35,
   "font_supplements": [
     {
       "family": "Shanhai Title",
       "source_family": "Noto Serif SC",
-      "characters": "㔮㖶㚟㴬㹮䔄䔭䕫䞇䣀䰠䲀䳩䴦丈且丙丛丝乐乳亂井亚亢交仁仙份企休佩來侜侵俞倒倩倭偉偎備储僕儛儲兎兩兰养册冕冝冠冦况冶冷凑几凡凭凰刀刉刲刺剂剑剥副割劌劒劲劳効勁勇勑動勸勿半卧却卿厥去叠叢叱号君吝吞咡品哥哭唯啓啖喚嘴噎嚴圈圍圗圭块坚坟垂垢垩城執堅堇堙堯堵塞塩境墊墓墠墦夀夔夫夭奉套奠奥奪奮好妥妬威婁媚媱季宛宣室寄密寧寸寿將尊對尺岳岷崌崍嵩嶺巍巔巨巫巳巴幅座庸廆廬廷弘弞弩強彫役徃律徒得徤復徼忘忧恒恭悃悬悲惑惟惠惡愊愚愛慈憂憑應懸戯户扩折披挪捏捜授措揀撞撲擇擊擳敏敖斤斸昌晋智暗暴曷書朏朝杂杏杼枭柄柎染柤柱栁栉栗株栯根梅梟梨棃棋棗棘棟森棷椽楄楢楯楸榆樓樟樹樿橘橚檐檷櫄櫔櫧櫨櫾歌歳殊殺毒永汭汲汶沐沬泠洈洗洞洲浣涉涧涸涹淺渊湍溃溝滎滔满滽滿漏潏潐潕潤潰澗濇濟濠灵然煇牝牧牷特牺犛犧狄狩猎猕猜猫猴猶獐獜獻玄珉珚班琁瑊璆瓀瓌瓜瓤甕男畏畛略疽痔痤瘻瘿癙癣癬癭皁皂皮盡盲直盾眯睡睢瞢瞻矣破砺磔磨礝礰祑祓祥福禦禮禰禱禳禾秀種穀穗穿窈窕竊笑笴简簡簳粉粘純紫細紵絆絡絲絶綠綵綸緑緘練縞繁繒繞繢纍纓红约绊缄缨罗罵美羝羞羡羨義翅耀老耎耐耕耵耶聹肉肖肠肢胥脂脫脱腐腰腸腿臂臆臞致興舌舎艾芃芒芫芺苃苏苞苦茅茍荀荅荚荣荥荷荻莖莞莢莽菊菑菟菽萍萑萧萯葌著葪葬葶蒐蒙蒨蒿蓄蓍蔾蕭薁薊薝薦藁藉藤蘀蘇蘖蘡蘭處虚虛虻虽蚳蛉蜜蜥蜴蜼蝯蝸螟蠚蠦蠱衕衢衣袍覆視规觞觴計許詈詐詭説請諧講謝譎變讲谯豆豐豔豕豬豺貉貞負貺賈负账贶超越跃跪蹼躍車軍軫軲輴輶车辕辛辟辨農边追逆途逕逰進逵遊運遥邺郁郊郡郷鄉鄴酈酒酢酹酿醴釀釐鈞鈴鉗鉛鋭錄錯鐘鐙鐵鐻鑞钟钩锐错锡閉間闕闘闻阿陂降陘隨險难雌雎雒雞難雲零雷霆霍霜霧靖靡鞅鞏鞭須頡頸類颉飄飘飲飾養館饋饗香馮駕駚騰騶騷驕驾骨鬃鬛鬣魏鮫鯀鯩鰧鱖鲜鲨鳄鳜鴐鴒鴝鴢鵒鵞鵰鵲鶡鷮鸜鸮鸱鹅鹆鹊鹌鹑麂麈麒麖麟麻黒默黨鼉齒龄龞",
+      "characters": "㔮㖶㚟㴬㹮䔄䔭䕫䞇䣀䰠䲀䳩䴦丈丑且丙丛丝乐乳亂井亚亢交仁仙份企休佩來侜侵俞倒倚倩倪倭偉偎備储僕儛儲兎兩兰养册冕冝冠冦况冶冷凑几凡凭凰刀刉删刲刺剂剑剥副割劌劒劲劳効勁勇勑動勸勿匈半卑卧却卿厥去叠叢叱号君吝吞吠咡品哥哭唯啓啖喚嘴噎嚴圈圍圗圭块坚坟垂垢垩城執堅堇堙堯堵塞塩境墊墓墠墦夀夔夫夭奉套奠奥奧奪奮好妥妬威婁婦媚媱嫗季宛宜宣室寄密寧寸寿將尊對尺岣岳岷崌崍嵝嵩嶁嶺巍巔巨巫巳巴幅座庸廆廬廷弘弞弩強彚彫役徃律徒得徤復徼忘忧恒恭悃悬悲惑惟惠惡愊愚愛慈憂憑應懸戏戯户扩折披挪捏捜授措揀撞撲擇擊擳敏敖斤斸昌晋智暗暴曷書朏朝杂杏杳杼枭柄柎柑染柤柱栁栉栗株栯根梅梟梨棃棋棗棘棟森棷椆椽楄楢楯楸榆樓樟樹樿橘橚檐檷櫄櫔櫧櫨櫾歌歳殊殺毒永汝汭汲汶沐沦沬泠洈洗洞洲浆浣涉涧涸涹淪淺渊湍溃溝滎滔满滽滿漏漿潏潐潕潤潰澗濇濟濠瀙灃灵烏然煇牝牧牷特牺犛犧狄狩猎猕猜猫猴猶獐獜獻玄珉珚班琁瑊璆瓀瓌瓜瓤瓶甕男畏畛略疽痔痛痤瘻瘿癙癣癬癭皁皂皋皮盎盡盲直盾眯睡睢瞢瞻矛矣破砺碎磔磨礝礰祑祓祥福禦禮禰禱禳禾秀種穀穗穿窈窕竊笑笴简篠簡簳粉粘純紫細紵絆絡絲絶綠綵綸緑緘練縞縢繁繒繞繢纍纓红约绊缄缨罗罵美羝羞羡羨義翅耀老耎耐耕耵耶聹肉肖肠肢肿胥脂脫脱腐腰腸腿臂臆臞臯致臼興舌舎艾芃芑芒芫芺苃苏苑苞苦茅茍荀荅荚荣荥荷荻莖莞莢莽菊菑菟菽萍萑萧萯葌著葪葬葴葶蒐蒙蒨蒿蓄蓍蔾蕭薁薊薝薦藁藉藤蘀蘇蘖蘡蘭處虚虛虻虽蚕蚳蛆蛉蜜蜥蜴蜼蝯蝸螟蠚蠱衍衕衢衣袍覆視规觞觧觴計許詈詐詭誄說説請諧講謝譎變讲诔谯豆豐豔豕豬豺貉貘貞負貺賈负账贶超越跃跪蹼躍車軍軫軲輴輶车辕辛辟辨農边追逆途逕逰進逵遊運遥邺郁郊郡郷鄉鄴酈酒酢酹酿醴釀釐鈞鈴鉗鉛鋭錄錯鐘鐙鐵鐻鑞钟钩锐错锡閉間闕闘闻阿陂降陘隣隨險难雌雎雒雞難雲零雷霆霍霜霧靖静靡革鞅鞏鞭須頡頸類颉飄飘飲飾養館饋饗香馮駕駚騰騶騷驕驾骨鬃鬛鬣魏鮫鯀鯢鯩鰧鱖鲜鲨鳄鳜鴐鴒鴝鴢鵒鵞鵰鵲鶡鷮鸜鸮鸱鹅鹆鹊鹌鹑麂麈麒麖麟麻黒默黨鼉鼣齒龄龞",
       "weights": [
         400,
         700
       ],
       "path": "frontend/public/fonts/shanhai-title-zhongshan.woff2",
       "license": "frontend/public/fonts/noto-serif-sc-LICENSE.txt",
-      "source_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E3%94%AE%E3%96%B6%E3%9A%9F%E3%B4%AC%E3%B9%AE%E4%94%84%E4%94%AD%E4%95%AB%E4%9E%87%E4%A3%80%E4%B0%A0%E4%B2%80%E4%B3%A9%E4%B4%A6%E4%B8%88%E4%B8%94%E4%B8%99%E4%B8%9B%E4%B8%9D%E4%B9%90%E4%B9%B3%E4%BA%82%E4%BA%95%E4%BA%9A%E4%BA%A2%E4%BA%A4%E4%BB%81%E4%BB%99%E4%BB%BD%E4%BC%81%E4%BC%91%E4%BD%A9%E4%BE%86%E4%BE%9C%E4%BE%B5%E4%BF%9E%E5%80%92%E5%80%A9%E5%80%AD%E5%81%89%E5%81%8E%E5%82%99%E5%82%A8%E5%83%95%E5%84%9B%E5%84%B2%E5%85%8E%E5%85%A9%E5%85%B0%E5%85%BB%E5%86%8C%E5%86%95%E5%86%9D%E5%86%A0%E5%86%A6%E5%86%B5%E5%86%B6%E5%86%B7%E5%87%91%E5%87%A0%E5%87%A1%E5%87%AD%E5%87%B0%E5%88%80%E5%88%89%E5%88%B2%E5%88%BA%E5%89%82%E5%89%91%E5%89%A5%E5%89%AF%E5%89%B2%E5%8A%8C%E5%8A%92%E5%8A%B2%E5%8A%B3%E5%8A%B9%E5%8B%81%E5%8B%87%E5%8B%91%E5%8B%95%E5%8B%B8%E5%8B%BF%E5%8D%8A%E5%8D%A7%E5%8D%B4%E5%8D%BF%E5%8E%A5%E5%8E%BB%E5%8F%A0%E5%8F%A2%E5%8F%B1%E5%8F%B7%E5%90%9B%E5%90%9D%E5%90%9E%E5%92%A1%E5%93%81%E5%93%A5%E5%93%AD%E5%94%AF%E5%95%93%E5%95%96%E5%96%9A%E5%98%B4%E5%99%8E%E5%9A%B4%E5%9C%88%E5%9C%8D%E5%9C%97%E5%9C%AD%E5%9D%97%E5%9D%9A%E5%9D%9F%E5%9E%82%E5%9E%A2%E5%9E%A9%E5%9F%8E%E5%9F%B7%E5%A0%85%E5%A0%87%E5%A0%99%E5%A0%AF%E5%A0%B5%E5%A1%9E%E5%A1%A9%E5%A2%83%E5%A2%8A%E5%A2%93%E5%A2%A0%E5%A2%A6%E5%A4%80%E5%A4%94%E5%A4%AB%E5%A4%AD%E5%A5%89%E5%A5%97%E5%A5%A0%E5%A5%A5%E5%A5%AA%E5%A5%AE%E5%A5%BD%E5%A6%A5%E5%A6%AC%E5%A8%81%E5%A9%81%E5%AA%9A%E5%AA%B1%E5%AD%A3%E5%AE%9B%E5%AE%A3%E5%AE%A4%E5%AF%84%E5%AF%86%E5%AF%A7%E5%AF%B8%E5%AF%BF%E5%B0%87%E5%B0%8A%E5%B0%8D%E5%B0%BA%E5%B2%B3%E5%B2%B7%E5%B4%8C%E5%B4%8D%E5%B5%A9%E5%B6%BA%E5%B7%8D%E5%B7%94%E5%B7%A8%E5%B7%AB%E5%B7%B3%E5%B7%B4%E5%B9%85%E5%BA%A7%E5%BA%B8%E5%BB%86%E5%BB%AC%E5%BB%B7%E5%BC%98%E5%BC%9E%E5%BC%A9%E5%BC%B7%E5%BD%AB%E5%BD%B9%E5%BE%83%E5%BE%8B%E5%BE%92%E5%BE%97%E5%BE%A4%E5%BE%A9%E5%BE%BC%E5%BF%98%E5%BF%A7%E6%81%92%E6%81%AD%E6%82%83%E6%82%AC%E6%82%B2%E6%83%91%E6%83%9F%E6%83%A0%E6%83%A1%E6%84%8A%E6%84%9A%E6%84%9B%E6%85%88%E6%86%82%E6%86%91%E6%87%89%E6%87%B8%E6%88%AF%E6%88%B7%E6%89%A9%E6%8A%98%E6%8A%AB%E6%8C%AA%E6%8D%8F%E6%8D%9C%E6%8E%88%E6%8E%AA%E6%8F%80%E6%92%9E%E6%92%B2%E6%93%87%E6%93%8A%E6%93%B3%E6%95%8F%E6%95%96%E6%96%A4%E6%96%B8%E6%98%8C%E6%99%8B%E6%99%BA%E6%9A%97%E6%9A%B4%E6%9B%B7%E6%9B%B8%E6%9C%8F%E6%9C%9D%E6%9D%82%E6%9D%8F%E6%9D%BC%E6%9E%AD%E6%9F%84%E6%9F%8E%E6%9F%93%E6%9F%A4%E6%9F%B1%E6%A0%81%E6%A0%89%E6%A0%97%E6%A0%AA%E6%A0%AF%E6%A0%B9%E6%A2%85%E6%A2%9F%E6%A2%A8%E6%A3%83%E6%A3%8B%E6%A3%97%E6%A3%98%E6%A3%9F%E6%A3%AE%E6%A3%B7%E6%A4%BD%E6%A5%84%E6%A5%A2%E6%A5%AF%E6%A5%B8%E6%A6%86%E6%A8%93%E6%A8%9F%E6%A8%B9%E6%A8%BF%E6%A9%98%E6%A9%9A%E6%AA%90%E6%AA%B7%E6%AB%84%E6%AB%94%E6%AB%A7%E6%AB%A8%E6%AB%BE%E6%AD%8C%E6%AD%B3%E6%AE%8A%E6%AE%BA%E6%AF%92%E6%B0%B8%E6%B1%AD%E6%B1%B2%E6%B1%B6%E6%B2%90%E6%B2%AC%E6%B3%A0%E6%B4%88%E6%B4%97%E6%B4%9E%E6%B4%B2%E6%B5%A3%E6%B6%89%E6%B6%A7%E6%B6%B8%E6%B6%B9%E6%B7%BA%E6%B8%8A%E6%B9%8D%E6%BA%83%E6%BA%9D%E6%BB%8E%E6%BB%94%E6%BB%A1%E6%BB%BD%E6%BB%BF%E6%BC%8F%E6%BD%8F%E6%BD%90%E6%BD%95%E6%BD%A4%E6%BD%B0%E6%BE%97%E6%BF%87%E6%BF%9F%E6%BF%A0%E7%81%B5%E7%84%B6%E7%85%87%E7%89%9D%E7%89%A7%E7%89%B7%E7%89%B9%E7%89%BA%E7%8A%9B%E7%8A%A7%E7%8B%84%E7%8B%A9%E7%8C%8E%E7%8C%95%E7%8C%9C%E7%8C%AB%E7%8C%B4%E7%8C%B6%E7%8D%90%E7%8D%9C%E7%8D%BB%E7%8E%84%E7%8F%89%E7%8F%9A%E7%8F%AD%E7%90%81%E7%91%8A%E7%92%86%E7%93%80%E7%93%8C%E7%93%9C%E7%93%A4%E7%94%95%E7%94%B7%E7%95%8F%E7%95%9B%E7%95%A5%E7%96%BD%E7%97%94%E7%97%A4%E7%98%BB%E7%98%BF%E7%99%99%E7%99%A3%E7%99%AC%E7%99%AD%E7%9A%81%E7%9A%82%E7%9A%AE%E7%9B%A1%E7%9B%B2%E7%9B%B4%E7%9B%BE%E7%9C%AF%E7%9D%A1%E7%9D%A2%E7%9E%A2%E7%9E%BB%E7%9F%A3%E7%A0%B4%E7%A0%BA%E7%A3%94%E7%A3%A8%E7%A4%9D%E7%A4%B0%E7%A5%91%E7%A5%93%E7%A5%A5%E7%A6%8F%E7%A6%A6%E7%A6%AE%E7%A6%B0%E7%A6%B1%E7%A6%B3%E7%A6%BE%E7%A7%80%E7%A8%AE%E7%A9%80%E7%A9%97%E7%A9%BF%E7%AA%88%E7%AA%95%E7%AB%8A%E7%AC%91%E7%AC%B4%E7%AE%80%E7%B0%A1%E7%B0%B3%E7%B2%89%E7%B2%98%E7%B4%94%E7%B4%AB%E7%B4%B0%E7%B4%B5%E7%B5%86%E7%B5%A1%E7%B5%B2%E7%B5%B6%E7%B6%A0%E7%B6%B5%E7%B6%B8%E7%B7%91%E7%B7%98%E7%B7%B4%E7%B8%9E%E7%B9%81%E7%B9%92%E7%B9%9E%E7%B9%A2%E7%BA%8D%E7%BA%93%E7%BA%A2%E7%BA%A6%E7%BB%8A%E7%BC%84%E7%BC%A8%E7%BD%97%E7%BD%B5%E7%BE%8E%E7%BE%9D%E7%BE%9E%E7%BE%A1%E7%BE%A8%E7%BE%A9%E7%BF%85%E8%80%80%E8%80%81%E8%80%8E%E8%80%90%E8%80%95%E8%80%B5%E8%80%B6%E8%81%B9%E8%82%89%E8%82%96%E8%82%A0%E8%82%A2%E8%83%A5%E8%84%82%E8%84%AB%E8%84%B1%E8%85%90%E8%85%B0%E8%85%B8%E8%85%BF%E8%87%82%E8%87%86%E8%87%9E%E8%87%B4%E8%88%88%E8%88%8C%E8%88%8E%E8%89%BE%E8%8A%83%E8%8A%92%E8%8A%AB%E8%8A%BA%E8%8B%83%E8%8B%8F%E8%8B%9E%E8%8B%A6%E8%8C%85%E8%8C%8D%E8%8D%80%E8%8D%85%E8%8D%9A%E8%8D%A3%E8%8D%A5%E8%8D%B7%E8%8D%BB%E8%8E%96%E8%8E%9E%E8%8E%A2%E8%8E%BD%E8%8F%8A%E8%8F%91%E8%8F%9F%E8%8F%BD%E8%90%8D%E8%90%91%E8%90%A7%E8%90%AF%E8%91%8C%E8%91%97%E8%91%AA%E8%91%AC%E8%91%B6%E8%92%90%E8%92%99%E8%92%A8%E8%92%BF%E8%93%84%E8%93%8D%E8%94%BE%E8%95%AD%E8%96%81%E8%96%8A%E8%96%9D%E8%96%A6%E8%97%81%E8%97%89%E8%97%A4%E8%98%80%E8%98%87%E8%98%96%E8%98%A1%E8%98%AD%E8%99%95%E8%99%9A%E8%99%9B%E8%99%BB%E8%99%BD%E8%9A%B3%E8%9B%89%E8%9C%9C%E8%9C%A5%E8%9C%B4%E8%9C%BC%E8%9D%AF%E8%9D%B8%E8%9E%9F%E8%A0%9A%E8%A0%A6%E8%A0%B1%E8%A1%95%E8%A1%A2%E8%A1%A3%E8%A2%8D%E8%A6%86%E8%A6%96%E8%A7%84%E8%A7%9E%E8%A7%B4%E8%A8%88%E8%A8%B1%E8%A9%88%E8%A9%90%E8%A9%AD%E8%AA%AC%E8%AB%8B%E8%AB%A7%E8%AC%9B%E8%AC%9D%E8%AD%8E%E8%AE%8A%E8%AE%B2%E8%B0%AF%E8%B1%86%E8%B1%90%E8%B1%94%E8%B1%95%E8%B1%AC%E8%B1%BA%E8%B2%89%E8%B2%9E%E8%B2%A0%E8%B2%BA%E8%B3%88%E8%B4%9F%E8%B4%A6%E8%B4%B6%E8%B6%85%E8%B6%8A%E8%B7%83%E8%B7%AA%E8%B9%BC%E8%BA%8D%E8%BB%8A%E8%BB%8D%E8%BB%AB%E8%BB%B2%E8%BC%B4%E8%BC%B6%E8%BD%A6%E8%BE%95%E8%BE%9B%E8%BE%9F%E8%BE%A8%E8%BE%B2%E8%BE%B9%E8%BF%BD%E9%80%86%E9%80%94%E9%80%95%E9%80%B0%E9%80%B2%E9%80%B5%E9%81%8A%E9%81%8B%E9%81%A5%E9%82%BA%E9%83%81%E9%83%8A%E9%83%A1%E9%83%B7%E9%84%89%E9%84%B4%E9%85%88%E9%85%92%E9%85%A2%E9%85%B9%E9%85%BF%E9%86%B4%E9%87%80%E9%87%90%E9%88%9E%E9%88%B4%E9%89%97%E9%89%9B%E9%8B%AD%E9%8C%84%E9%8C%AF%E9%90%98%E9%90%99%E9%90%B5%E9%90%BB%E9%91%9E%E9%92%9F%E9%92%A9%E9%94%90%E9%94%99%E9%94%A1%E9%96%89%E9%96%93%E9%97%95%E9%97%98%E9%97%BB%E9%98%BF%E9%99%82%E9%99%8D%E9%99%98%E9%9A%A8%E9%9A%AA%E9%9A%BE%E9%9B%8C%E9%9B%8E%E9%9B%92%E9%9B%9E%E9%9B%A3%E9%9B%B2%E9%9B%B6%E9%9B%B7%E9%9C%86%E9%9C%8D%E9%9C%9C%E9%9C%A7%E9%9D%96%E9%9D%A1%E9%9E%85%E9%9E%8F%E9%9E%AD%E9%A0%88%E9%A0%A1%E9%A0%B8%E9%A1%9E%E9%A2%89%E9%A3%84%E9%A3%98%E9%A3%B2%E9%A3%BE%E9%A4%8A%E9%A4%A8%E9%A5%8B%E9%A5%97%E9%A6%99%E9%A6%AE%E9%A7%95%E9%A7%9A%E9%A8%B0%E9%A8%B6%E9%A8%B7%E9%A9%95%E9%A9%BE%E9%AA%A8%E9%AC%83%E9%AC%9B%E9%AC%A3%E9%AD%8F%E9%AE%AB%E9%AF%80%E9%AF%A9%E9%B0%A7%E9%B1%96%E9%B2%9C%E9%B2%A8%E9%B3%84%E9%B3%9C%E9%B4%90%E9%B4%92%E9%B4%9D%E9%B4%A2%E9%B5%92%E9%B5%9E%E9%B5%B0%E9%B5%B2%E9%B6%A1%E9%B7%AE%E9%B8%9C%E9%B8%AE%E9%B8%B1%E9%B9%85%E9%B9%86%E9%B9%8A%E9%B9%8C%E9%B9%91%E9%BA%82%E9%BA%88%E9%BA%92%E9%BA%96%E9%BA%9F%E9%BA%BB%E9%BB%92%E9%BB%98%E9%BB%A8%E9%BC%89%E9%BD%92%E9%BE%84%E9%BE%9E&display=swap",
-      "sha256": "24103badc87cc0938329e176579e68c5c9156b5b1b9864f4642d600b7f2129ca"
+      "source_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40400..700&text=%E3%94%AE%E3%96%B6%E3%9A%9F%E3%B4%AC%E3%B9%AE%E4%94%84%E4%94%AD%E4%95%AB%E4%9E%87%E4%A3%80%E4%B0%A0%E4%B2%80%E4%B3%A9%E4%B4%A6%E4%B8%88%E4%B8%91%E4%B8%94%E4%B8%99%E4%B8%9B%E4%B8%9D%E4%B9%90%E4%B9%B3%E4%BA%82%E4%BA%95%E4%BA%9A%E4%BA%A2%E4%BA%A4%E4%BB%81%E4%BB%99%E4%BB%BD%E4%BC%81%E4%BC%91%E4%BD%A9%E4%BE%86%E4%BE%9C%E4%BE%B5%E4%BF%9E%E5%80%92%E5%80%9A%E5%80%A9%E5%80%AA%E5%80%AD%E5%81%89%E5%81%8E%E5%82%99%E5%82%A8%E5%83%95%E5%84%9B%E5%84%B2%E5%85%8E%E5%85%A9%E5%85%B0%E5%85%BB%E5%86%8C%E5%86%95%E5%86%9D%E5%86%A0%E5%86%A6%E5%86%B5%E5%86%B6%E5%86%B7%E5%87%91%E5%87%A0%E5%87%A1%E5%87%AD%E5%87%B0%E5%88%80%E5%88%89%E5%88%A0%E5%88%B2%E5%88%BA%E5%89%82%E5%89%91%E5%89%A5%E5%89%AF%E5%89%B2%E5%8A%8C%E5%8A%92%E5%8A%B2%E5%8A%B3%E5%8A%B9%E5%8B%81%E5%8B%87%E5%8B%91%E5%8B%95%E5%8B%B8%E5%8B%BF%E5%8C%88%E5%8D%8A%E5%8D%91%E5%8D%A7%E5%8D%B4%E5%8D%BF%E5%8E%A5%E5%8E%BB%E5%8F%A0%E5%8F%A2%E5%8F%B1%E5%8F%B7%E5%90%9B%E5%90%9D%E5%90%9E%E5%90%A0%E5%92%A1%E5%93%81%E5%93%A5%E5%93%AD%E5%94%AF%E5%95%93%E5%95%96%E5%96%9A%E5%98%B4%E5%99%8E%E5%9A%B4%E5%9C%88%E5%9C%8D%E5%9C%97%E5%9C%AD%E5%9D%97%E5%9D%9A%E5%9D%9F%E5%9E%82%E5%9E%A2%E5%9E%A9%E5%9F%8E%E5%9F%B7%E5%A0%85%E5%A0%87%E5%A0%99%E5%A0%AF%E5%A0%B5%E5%A1%9E%E5%A1%A9%E5%A2%83%E5%A2%8A%E5%A2%93%E5%A2%A0%E5%A2%A6%E5%A4%80%E5%A4%94%E5%A4%AB%E5%A4%AD%E5%A5%89%E5%A5%97%E5%A5%A0%E5%A5%A5%E5%A5%A7%E5%A5%AA%E5%A5%AE%E5%A5%BD%E5%A6%A5%E5%A6%AC%E5%A8%81%E5%A9%81%E5%A9%A6%E5%AA%9A%E5%AA%B1%E5%AB%97%E5%AD%A3%E5%AE%9B%E5%AE%9C%E5%AE%A3%E5%AE%A4%E5%AF%84%E5%AF%86%E5%AF%A7%E5%AF%B8%E5%AF%BF%E5%B0%87%E5%B0%8A%E5%B0%8D%E5%B0%BA%E5%B2%A3%E5%B2%B3%E5%B2%B7%E5%B4%8C%E5%B4%8D%E5%B5%9D%E5%B5%A9%E5%B6%81%E5%B6%BA%E5%B7%8D%E5%B7%94%E5%B7%A8%E5%B7%AB%E5%B7%B3%E5%B7%B4%E5%B9%85%E5%BA%A7%E5%BA%B8%E5%BB%86%E5%BB%AC%E5%BB%B7%E5%BC%98%E5%BC%9E%E5%BC%A9%E5%BC%B7%E5%BD%9A%E5%BD%AB%E5%BD%B9%E5%BE%83%E5%BE%8B%E5%BE%92%E5%BE%97%E5%BE%A4%E5%BE%A9%E5%BE%BC%E5%BF%98%E5%BF%A7%E6%81%92%E6%81%AD%E6%82%83%E6%82%AC%E6%82%B2%E6%83%91%E6%83%9F%E6%83%A0%E6%83%A1%E6%84%8A%E6%84%9A%E6%84%9B%E6%85%88%E6%86%82%E6%86%91%E6%87%89%E6%87%B8%E6%88%8F%E6%88%AF%E6%88%B7%E6%89%A9%E6%8A%98%E6%8A%AB%E6%8C%AA%E6%8D%8F%E6%8D%9C%E6%8E%88%E6%8E%AA%E6%8F%80%E6%92%9E%E6%92%B2%E6%93%87%E6%93%8A%E6%93%B3%E6%95%8F%E6%95%96%E6%96%A4%E6%96%B8%E6%98%8C%E6%99%8B%E6%99%BA%E6%9A%97%E6%9A%B4%E6%9B%B7%E6%9B%B8%E6%9C%8F%E6%9C%9D%E6%9D%82%E6%9D%8F%E6%9D%B3%E6%9D%BC%E6%9E%AD%E6%9F%84%E6%9F%8E%E6%9F%91%E6%9F%93%E6%9F%A4%E6%9F%B1%E6%A0%81%E6%A0%89%E6%A0%97%E6%A0%AA%E6%A0%AF%E6%A0%B9%E6%A2%85%E6%A2%9F%E6%A2%A8%E6%A3%83%E6%A3%8B%E6%A3%97%E6%A3%98%E6%A3%9F%E6%A3%AE%E6%A3%B7%E6%A4%86%E6%A4%BD%E6%A5%84%E6%A5%A2%E6%A5%AF%E6%A5%B8%E6%A6%86%E6%A8%93%E6%A8%9F%E6%A8%B9%E6%A8%BF%E6%A9%98%E6%A9%9A%E6%AA%90%E6%AA%B7%E6%AB%84%E6%AB%94%E6%AB%A7%E6%AB%A8%E6%AB%BE%E6%AD%8C%E6%AD%B3%E6%AE%8A%E6%AE%BA%E6%AF%92%E6%B0%B8%E6%B1%9D%E6%B1%AD%E6%B1%B2%E6%B1%B6%E6%B2%90%E6%B2%A6%E6%B2%AC%E6%B3%A0%E6%B4%88%E6%B4%97%E6%B4%9E%E6%B4%B2%E6%B5%86%E6%B5%A3%E6%B6%89%E6%B6%A7%E6%B6%B8%E6%B6%B9%E6%B7%AA%E6%B7%BA%E6%B8%8A%E6%B9%8D%E6%BA%83%E6%BA%9D%E6%BB%8E%E6%BB%94%E6%BB%A1%E6%BB%BD%E6%BB%BF%E6%BC%8F%E6%BC%BF%E6%BD%8F%E6%BD%90%E6%BD%95%E6%BD%A4%E6%BD%B0%E6%BE%97%E6%BF%87%E6%BF%9F%E6%BF%A0%E7%80%99%E7%81%83%E7%81%B5%E7%83%8F%E7%84%B6%E7%85%87%E7%89%9D%E7%89%A7%E7%89%B7%E7%89%B9%E7%89%BA%E7%8A%9B%E7%8A%A7%E7%8B%84%E7%8B%A9%E7%8C%8E%E7%8C%95%E7%8C%9C%E7%8C%AB%E7%8C%B4%E7%8C%B6%E7%8D%90%E7%8D%9C%E7%8D%BB%E7%8E%84%E7%8F%89%E7%8F%9A%E7%8F%AD%E7%90%81%E7%91%8A%E7%92%86%E7%93%80%E7%93%8C%E7%93%9C%E7%93%A4%E7%93%B6%E7%94%95%E7%94%B7%E7%95%8F%E7%95%9B%E7%95%A5%E7%96%BD%E7%97%94%E7%97%9B%E7%97%A4%E7%98%BB%E7%98%BF%E7%99%99%E7%99%A3%E7%99%AC%E7%99%AD%E7%9A%81%E7%9A%82%E7%9A%8B%E7%9A%AE%E7%9B%8E%E7%9B%A1%E7%9B%B2%E7%9B%B4%E7%9B%BE%E7%9C%AF%E7%9D%A1%E7%9D%A2%E7%9E%A2%E7%9E%BB%E7%9F%9B%E7%9F%A3%E7%A0%B4%E7%A0%BA%E7%A2%8E%E7%A3%94%E7%A3%A8%E7%A4%9D%E7%A4%B0%E7%A5%91%E7%A5%93%E7%A5%A5%E7%A6%8F%E7%A6%A6%E7%A6%AE%E7%A6%B0%E7%A6%B1%E7%A6%B3%E7%A6%BE%E7%A7%80%E7%A8%AE%E7%A9%80%E7%A9%97%E7%A9%BF%E7%AA%88%E7%AA%95%E7%AB%8A%E7%AC%91%E7%AC%B4%E7%AE%80%E7%AF%A0%E7%B0%A1%E7%B0%B3%E7%B2%89%E7%B2%98%E7%B4%94%E7%B4%AB%E7%B4%B0%E7%B4%B5%E7%B5%86%E7%B5%A1%E7%B5%B2%E7%B5%B6%E7%B6%A0%E7%B6%B5%E7%B6%B8%E7%B7%91%E7%B7%98%E7%B7%B4%E7%B8%9E%E7%B8%A2%E7%B9%81%E7%B9%92%E7%B9%9E%E7%B9%A2%E7%BA%8D%E7%BA%93%E7%BA%A2%E7%BA%A6%E7%BB%8A%E7%BC%84%E7%BC%A8%E7%BD%97%E7%BD%B5%E7%BE%8E%E7%BE%9D%E7%BE%9E%E7%BE%A1%E7%BE%A8%E7%BE%A9%E7%BF%85%E8%80%80%E8%80%81%E8%80%8E%E8%80%90%E8%80%95%E8%80%B5%E8%80%B6%E8%81%B9%E8%82%89%E8%82%96%E8%82%A0%E8%82%A2%E8%82%BF%E8%83%A5%E8%84%82%E8%84%AB%E8%84%B1%E8%85%90%E8%85%B0%E8%85%B8%E8%85%BF%E8%87%82%E8%87%86%E8%87%9E%E8%87%AF%E8%87%B4%E8%87%BC%E8%88%88%E8%88%8C%E8%88%8E%E8%89%BE%E8%8A%83%E8%8A%91%E8%8A%92%E8%8A%AB%E8%8A%BA%E8%8B%83%E8%8B%8F%E8%8B%91%E8%8B%9E%E8%8B%A6%E8%8C%85%E8%8C%8D%E8%8D%80%E8%8D%85%E8%8D%9A%E8%8D%A3%E8%8D%A5%E8%8D%B7%E8%8D%BB%E8%8E%96%E8%8E%9E%E8%8E%A2%E8%8E%BD%E8%8F%8A%E8%8F%91%E8%8F%9F%E8%8F%BD%E8%90%8D%E8%90%91%E8%90%A7%E8%90%AF%E8%91%8C%E8%91%97%E8%91%AA%E8%91%AC%E8%91%B4%E8%91%B6%E8%92%90%E8%92%99%E8%92%A8%E8%92%BF%E8%93%84%E8%93%8D%E8%94%BE%E8%95%AD%E8%96%81%E8%96%8A%E8%96%9D%E8%96%A6%E8%97%81%E8%97%89%E8%97%A4%E8%98%80%E8%98%87%E8%98%96%E8%98%A1%E8%98%AD%E8%99%95%E8%99%9A%E8%99%9B%E8%99%BB%E8%99%BD%E8%9A%95%E8%9A%B3%E8%9B%86%E8%9B%89%E8%9C%9C%E8%9C%A5%E8%9C%B4%E8%9C%BC%E8%9D%AF%E8%9D%B8%E8%9E%9F%E8%A0%9A%E8%A0%B1%E8%A1%8D%E8%A1%95%E8%A1%A2%E8%A1%A3%E8%A2%8D%E8%A6%86%E8%A6%96%E8%A7%84%E8%A7%9E%E8%A7%A7%E8%A7%B4%E8%A8%88%E8%A8%B1%E8%A9%88%E8%A9%90%E8%A9%AD%E8%AA%84%E8%AA%AA%E8%AA%AC%E8%AB%8B%E8%AB%A7%E8%AC%9B%E8%AC%9D%E8%AD%8E%E8%AE%8A%E8%AE%B2%E8%AF%94%E8%B0%AF%E8%B1%86%E8%B1%90%E8%B1%94%E8%B1%95%E8%B1%AC%E8%B1%BA%E8%B2%89%E8%B2%98%E8%B2%9E%E8%B2%A0%E8%B2%BA%E8%B3%88%E8%B4%9F%E8%B4%A6%E8%B4%B6%E8%B6%85%E8%B6%8A%E8%B7%83%E8%B7%AA%E8%B9%BC%E8%BA%8D%E8%BB%8A%E8%BB%8D%E8%BB%AB%E8%BB%B2%E8%BC%B4%E8%BC%B6%E8%BD%A6%E8%BE%95%E8%BE%9B%E8%BE%9F%E8%BE%A8%E8%BE%B2%E8%BE%B9%E8%BF%BD%E9%80%86%E9%80%94%E9%80%95%E9%80%B0%E9%80%B2%E9%80%B5%E9%81%8A%E9%81%8B%E9%81%A5%E9%82%BA%E9%83%81%E9%83%8A%E9%83%A1%E9%83%B7%E9%84%89%E9%84%B4%E9%85%88%E9%85%92%E9%85%A2%E9%85%B9%E9%85%BF%E9%86%B4%E9%87%80%E9%87%90%E9%88%9E%E9%88%B4%E9%89%97%E9%89%9B%E9%8B%AD%E9%8C%84%E9%8C%AF%E9%90%98%E9%90%99%E9%90%B5%E9%90%BB%E9%91%9E%E9%92%9F%E9%92%A9%E9%94%90%E9%94%99%E9%94%A1%E9%96%89%E9%96%93%E9%97%95%E9%97%98%E9%97%BB%E9%98%BF%E9%99%82%E9%99%8D%E9%99%98%E9%9A%A3%E9%9A%A8%E9%9A%AA%E9%9A%BE%E9%9B%8C%E9%9B%8E%E9%9B%92%E9%9B%9E%E9%9B%A3%E9%9B%B2%E9%9B%B6%E9%9B%B7%E9%9C%86%E9%9C%8D%E9%9C%9C%E9%9C%A7%E9%9D%96%E9%9D%99%E9%9D%A1%E9%9D%A9%E9%9E%85%E9%9E%8F%E9%9E%AD%E9%A0%88%E9%A0%A1%E9%A0%B8%E9%A1%9E%E9%A2%89%E9%A3%84%E9%A3%98%E9%A3%B2%E9%A3%BE%E9%A4%8A%E9%A4%A8%E9%A5%8B%E9%A5%97%E9%A6%99%E9%A6%AE%E9%A7%95%E9%A7%9A%E9%A8%B0%E9%A8%B6%E9%A8%B7%E9%A9%95%E9%A9%BE%E9%AA%A8%E9%AC%83%E9%AC%9B%E9%AC%A3%E9%AD%8F%E9%AE%AB%E9%AF%80%E9%AF%A2%E9%AF%A9%E9%B0%A7%E9%B1%96%E9%B2%9C%E9%B2%A8%E9%B3%84%E9%B3%9C%E9%B4%90%E9%B4%92%E9%B4%9D%E9%B4%A2%E9%B5%92%E9%B5%9E%E9%B5%B0%E9%B5%B2%E9%B6%A1%E9%B7%AE%E9%B8%9C%E9%B8%AE%E9%B8%B1%E9%B9%85%E9%B9%86%E9%B9%8A%E9%B9%8C%E9%B9%91%E9%BA%82%E9%BA%88%E9%BA%92%E9%BA%96%E9%BA%9F%E9%BA%BB%E9%BB%92%E9%BB%98%E9%BB%A8%E9%BC%89%E9%BC%A3%E9%BD%92%E9%BE%84%E9%BE%9E&display=swap",
+      "sha256": "37801adc51635d50c14276a99993c0d8c0a636aa480ea93a0d2f0e85547064d3"
     },
     {
       "family": "Atlas Central Rare",
-      "characters": "𢈦𢘆𣖾𣵀𣵠𤄊𤅬𤓰𤘝𤜣𤠢𤢺𥂕𥮐𦁎𦎟𦘺𦬊𦬸𦱌𦵔𦵧𧄸𧔳𧕛𧕦𧰼𧴘𨹧𩇵𩔖𩿁𪈘𫝊𭼠𮡧",
+      "characters": "𢈦𢘆𣖾𣵀𣵠𤄊𤅬𤓰𤘝𤜣𤝻𤟑𤠢𤢺𥂕𥮐𦁎𦎟𦘺𦬊𦬸𦱌𦵔𦵧𧄸𧔳𧕛𧕦𧰼𧲂𧴘𨹧𩇵𩔖𩢢𩿁𪈘𫝊𭼠𮡧",
       "weights": [
         400
       ],
@@ -10153,7 +10817,7 @@
       "source_url": "https://raw.githubusercontent.com/googlefonts/chinese/gh-pages/fonts/HanaMin/HanaMinB.ttf",
       "upstream_sha256": "829543436cdf7b4c6730e2af5806fa406f8ddf0d4b656e0cd49c58d4db1c8d3c",
       "upstream_git_blob": "81c4df21cdbd2570fa92ac55c04b02198c4bf692",
-      "sha256": "d4639762f1536ddc66dc3b01cbbc530c98ad004aa652e1f4b08e711a21b159b5",
+      "sha256": "573fabcda7c3a6b29f4e37e523c47b825e9a53466b8f96431b861f8e551753a7",
       "limits": "独立字体族优先回退，静态400字形；600沿用400且禁用伪粗，不复制系统字体。"
     },
     {
@@ -10166,7 +10830,7 @@
       "license": "frontend/public/fonts/atlas-central-exth-LICENSE.txt",
       "source_url": "https://www.babelstone.co.uk/Fonts/Download/BabelStoneHan-16.0.3.zip",
       "upstream_sha256": "6a928e436ee52d1857c32b5e4d5e71f4f0a9d13ccf660fc4f1ff08df930e12dc",
-      "sha256": "dd307405c68653df263661e6762414c0fb41b93cddbff2d58dfc134cbd892eb2",
+      "sha256": "0b32aae6bdcedd73d946674a9f93224b541534dd4c2b9088e40c95a9d7c807de",
       "limits": "独立授权与字体族；静态400字形，600沿用400，禁用伪粗。"
     }
   ],
@@ -10175,6 +10839,11 @@
       "captured": "⟦缺字图:兎⟧",
       "reading": "兎",
       "basis": "影印52页山名兎牀；只恢复阅读层，不改快照。"
+    },
+    "source-05-0539": {
+      "captured": "𧲂一作�音瓶",
+      "reading": "𧲂一作〔捕获缺字未定〕音瓶",
+      "basis": "61页异体注文；缺字未强定，只将捕获替代符转为明确未定标记。"
     }
   }
 }

@@ -929,6 +929,71 @@
       "status": "reviewed",
       "review_note": "逐图核对：犬形单头单尾、四条腿及虎爪，鳞甲清楚；无麒麟角蹄。未定细节、配色与姿态为艺术解释。",
       "sha256": "2146a6d3d9af158a17dca39a14b992ba12d72d69ee6a9ca1f4dfdcd4f8d08d93"
+    },
+    {
+      "name": "turtle-threeleg-cong",
+      "entry_id": "beast-zhongshan-threeleg-cong11",
+      "prompt": "STYLE ONLY reference Chinese carved woodblock: dark brown contours, opaque flat mineral pigments, ivory incisions and fine print grain. One complete isolated subject, truly TRANSPARENT background with clear margins; no haze, glow, shadow, ground, scene, text, seals or border. Unspecified details artistic. CONG WATER TURTLE: ONE SOFTSHELL-TURTLE-LIKE animal with EXACTLY THREE LEGS and ONE FORKED TAIL. Smooth flattened oval leathery shell, small turtle head, elongated soft turtle neck, THREE clearly separated webbed turtle feet: two front legs and ONE centered rear leg, no fourth leg, no hidden stump. ONE tail splitting into two tips near the end, not two separate tails from body. Muted olive shell and ivory underside, dark red-brown edge marks optional. Elevated three-quarter top view so three feet and split tail are countable. No six eyes, wings, horns, hard geometric tortoise scute grid or extra heads. Three feet and forked tail required; exact limb arrangement, shell texture, colors and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-cb0ef8b2-42f1-45b7-bae6-e939280fab88.png",
+      "source_file": "turtle-threeleg-cong-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "核一鳖首、扁软甲、清晰三足、一条尾末分叉；无第四足或六目。未定细节、体比、配色和姿态为艺术解释，原图与透明通道保留。",
+      "sha256": "07cf998a3dfb8e1ff7754827e82b59728952756f0a2e98f870e3f7b23decd763"
+    },
+    {
+      "name": "creature-jie-zhen",
+      "entry_id": "beast-zhongshan-jie-zhen11",
+      "prompt": "STYLE ONLY reference Chinese carved woodblock: dark brown contours, opaque flat mineral pigments, ivory incisions and fine print grain. One complete isolated subject, truly TRANSPARENT background with clear margins; no haze, glow, shadow, ground, scene, text, seals or border. Unspecified details artistic. JIE from Zhen mountain water commentary: ONE BLUE-GREEN DOG-LIKE quadruped. One ordinary canine head with dog ears, dog muzzle and nose, a lean dog trunk, exactly FOUR dog legs and paws, one curved furry dog tail. Matte muted jade blue-green fur, cream fine incisions. Side three-quarter view looking left, one forepaw gently raised and all four feet clearly distinct. NO scales, armor, horns, antlers, tiger paws, wings, fish fins or bird beak. Commentary only says like a qing dog; dog shape and blue-green color are textual. Exact breed, limb count, fur pattern, proportions and pose artistic, not a modern species claim.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-2a9cbbb4-dcc5-442f-b5b9-92b6b9b1ee40.png",
+      "source_file": "creature-jie-zhen-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "核犬形青色、四犬足单尾，无鳞甲角翼鱼鳍。未定细节、体比、配色和姿态为艺术解释，原图与透明通道保留。",
+      "sha256": "9764923483708ff118a6e3e8e82496f999263dedbb8d2a849038240a94bb6312"
+    },
+    {
+      "name": "creature-liangqu-lishi",
+      "entry_id": "beast-zhongshan-liangqu-lishi11",
+      "prompt": "STYLE ONLY reference Chinese carved woodblock: dark brown contours, opaque flat mineral pigments, ivory incisions and fine print grain. One complete isolated subject, truly TRANSPARENT background with clear margins; no haze, glow, shadow, ground, scene, text, seals or border. Unspecified details artistic. LIANGQU from Central Lishi mountain: ONE LI/CAT-LIKE quadruped with a WHITE HEAD and TIGER CLAWS. Full small wild-cat-like body, distinctly feline face with triangular cat ears, fully ivory-white head including forehead, ONE long feline tail, exactly FOUR legs with rounded TIGER PAWS and curved claws. Warm muted russet-brown body, dark fine woodcut fur marks; pale belly. Low alert stalking posture facing right, all feet visible. No dog muzzle, horns, wings, scales, human face or extra legs. Li-like form, white head and tiger claws required; coat pattern, four legs, tail proportions and pose artistic. No war scene or omen symbols.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-3a545f98-bbd4-4d4b-9ede-4a28046ad972.png",
+      "source_file": "creature-liangqu-lishi-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "核狸状白头、四条腿与虎爪、单猫尾；无犬脸角翼。未定细节、体比、配色和姿态为艺术解释，原图与透明通道保留。",
+      "sha256": "8ca7b0652132c4e869718cf4111ca1afc39cc0d4f5b6229bc83330f7d50862b2"
+    },
+    {
+      "name": "bird-juyu-chouyang",
+      "entry_id": "beast-zhongshan-juyu-chouyang11",
+      "prompt": "STYLE ONLY reference Chinese woodblock carving: fine dark brown contours, opaque mineral colors, warm ivory incisions, subtle print texture. ONE complete isolated subject, transparent alpha background, ample margins. No glow, haze, shadow, ground, scene, text, seal or border. JUYU of Chouyang: ONE CROW-LIKE BIRD with conspicuously RED FEET and RED LOWER LEGS. One narrow ordinary crow head with long slightly curved dark beak, deep charcoal-blue plumage, two folded wings and ONE natural crow tail. Exactly TWO bird feet with curved toes, both red and clearly visible, not hooves. Side view facing left, long low bird silhouette, slight head tilt; elegant distinct character, no owl disks or ear tufts. No horse head, horse trunk, flames, prey or fire symbols. Crow form and red feet textual; dark color, feather pattern, two legs and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-27172676-c6e2-4b40-9f76-be641b985262.png",
+      "source_file": "bird-juyu-chouyang-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "核乌状单首单尾、两红足；无马形或蹄。未定细节、体比、配色和姿态为艺术解释，原图与透明通道保留。显示英文名依郭注枳音采用Zhiyu，稳定资源名juyu与实际原提示词不改。",
+      "sha256": "22e955b242e17fd6142edd380580de0bea361875216011a0a7f03ab18d0f92b4"
+    },
+    {
+      "name": "creature-wenlin-ji",
+      "entry_id": "beast-zhongshan-wenlin-ji-mountain11",
+      "prompt": "STYLE ONLY reference Chinese woodblock carving: fine dark brown contours, opaque mineral colors, warm ivory incisions, subtle print texture. ONE complete isolated subject, transparent alpha background, ample margins. No glow, haze, shadow, ground, scene, text, seal or border. WENLIN from Ji mountain: ONE PIG-LIKE quadruped with a YELLOW BODY, WHITE HEAD and WHITE TAIL. Full round pig/boar trunk, ordinary elongated pig snout, two pig ears, exactly FOUR short pig legs with cloven HOOVES. Entire head ivory-white including ears and muzzle; entire short curled pig tail WHITE, not yellow. Muted golden ochre-yellow bristly body, no large tusks. Side three-quarter view facing right, relaxed grounded-standing pose without ground, all hooves distinct. No dog muzzle, cat paws, tiger claws, antlers, horns, wings, scales or armor; this is different from dog-like Lin. Pig form, yellow torso, white head and white tail mandatory; four hooves, proportions and pose artistic. No wind scene or omen symbols.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\exec-45eeecb5-0adf-419f-8290-da9d7b68fa39.png",
+      "source_file": "creature-wenlin-ji-v1.png",
+      "reference_images": [
+        "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png"
+      ],
+      "status": "reviewed",
+      "review_note": "核猪形黄身白头白尾、四蹄；无犬躯虎爪鳞甲角翼。未定细节、体比、配色和姿态为艺术解释，原图与透明通道保留。",
+      "sha256": "97c1d2a4b240ac445893c2bfb574e9f3e44853830d71ff31e8f856432da7edf9"
     }
   ]
 }
