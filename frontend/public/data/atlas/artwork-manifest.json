@@ -12775,6 +12775,222 @@
           ]
         }
       }
+    },
+    {
+      "id": "zhongshan-deity-humanhead-pig-summary11-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/deity-humanhead-pig-summary11-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1.webp",
+      "initial_prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; Pig body, human head, four cloven hooves; hair, beard, colors and pose artistic.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "Pig body, human head, four cloven hooves; hair, beard, colors and pose artistic.",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1.webp",
+          "bytes": 319774,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1-card.webp",
+          "bytes": 24330,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1-preview.webp",
+          "bytes": 49798,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-deity-yuer-fufu-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/deity-yuer-fufu-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1.webp",
+      "initial_prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; Human body, two separately held snakes; hand placement, clothing, face and pose artistic.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "Human body, two separately held snakes; hand placement, clothing, face and pose artistic.",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1.webp",
+          "bytes": 256646,
+          "dimensions": [
+            853,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1-card.webp",
+          "bytes": 27032,
+          "dimensions": [
+            213,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1-preview.webp",
+          "bytes": 49026,
+          "dimensions": [
+            320,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-deity-snakecarrier-dongting-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/deity-snakecarrier-dongting-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1.webp",
+      "initial_prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; Human-like deity carrying one shoulder snake and holding one snake in each hand. Carried count, shoulder placement, face and clothes artistic.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "Human-like deity carrying one shoulder snake and holding one snake in each hand. Carried count, shoulder placement, face and clothes artistic.",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1.webp",
+          "bytes": 299492,
+          "dimensions": [
+            853,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1-card.webp",
+          "bytes": 27320,
+          "dimensions": [
+            213,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1-preview.webp",
+          "bytes": 52136,
+          "dimensions": [
+            320,
+            480
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-turtle-gui-jigong-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/turtle-gui-jigong-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1.webp",
+      "initial_prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; White turtle body and shell, red head, four legs, one tail; shell plates, proportions and pose artistic.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "White turtle body and shell, red head, four legs, one tail; shell plates, proportions and pose artistic.",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1.webp",
+          "bytes": 251818,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1-card.webp",
+          "bytes": 22774,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1-preview.webp",
+          "bytes": 44194,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-snake-flying-chaisang-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/snake-flying-chaisang-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1.webp",
+      "initial_prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; One continuous snake with one head and tail, no wings or legs. Scale colors and suspended curve artistic.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "One continuous snake with one head and tail, no wings or legs. Scale colors and suspended curve artistic.",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1.webp",
+          "bytes": 137972,
+          "dimensions": [
+            1280,
+            853
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1-card.webp",
+          "bytes": 15222,
+          "dimensions": [
+            320,
+            213
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1-preview.webp",
+          "bytes": 27428,
+          "dimensions": [
+            480,
+            320
+          ]
+        }
+      }
+    },
+    {
+      "id": "zhongshan-deity-dragonhead-bird-summary12-v1",
+      "tool": "built-in image_gen",
+      "source_copy": "frontend/artwork-source/zhongshan/deity-dragonhead-bird-summary12-v1.png",
+      "destination": "frontend/public/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1.webp",
+      "initial_prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; Complete bird body, one dragon head, two bird feet, folded wings and feather tail. Horns, whiskers, palette and pose artistic.",
+      "reference_images": [],
+      "status": "reviewed_for_zhongshan_batch",
+      "visual_review_note": "Complete bird body, one dragon head, two bird feet, folded wings and feather tail. Horns, whiskers, palette and pose artistic.",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1.webp",
+          "bytes": 428084,
+          "dimensions": [
+            1215,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1-card.webp",
+          "bytes": 37894,
+          "dimensions": [
+            304,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1-preview.webp",
+          "bytes": 74578,
+          "dimensions": [
+            456,
+            480
+          ]
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",

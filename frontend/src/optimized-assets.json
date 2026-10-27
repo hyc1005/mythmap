@@ -4977,5 +4977,83 @@
       1280,
       1170
     ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1.webp",
+    "original_bytes": 2701888,
+    "optimized_bytes": 319774,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1.webp",
+    "original_bytes": 2523721,
+    "optimized_bytes": 256646,
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "dimensions": [
+      853,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1.webp",
+    "original_bytes": 2532181,
+    "optimized_bytes": 299492,
+    "original_dimensions": [
+      1024,
+      1536
+    ],
+    "dimensions": [
+      853,
+      1280
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1.webp",
+    "original_bytes": 2492085,
+    "optimized_bytes": 251818,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1.webp",
+    "original_bytes": 1795124,
+    "optimized_bytes": 137972,
+    "original_dimensions": [
+      1536,
+      1024
+    ],
+    "dimensions": [
+      1280,
+      853
+    ]
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1.webp": {
+    "path": "/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1.webp",
+    "original_bytes": 2099931,
+    "optimized_bytes": 428084,
+    "original_dimensions": [
+      1222,
+      1287
+    ],
+    "dimensions": [
+      1215,
+      1280
+    ]
   }
 }

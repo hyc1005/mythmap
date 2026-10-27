@@ -994,6 +994,78 @@
       "status": "reviewed",
       "review_note": "核猪形黄身白头白尾、四蹄；无犬躯虎爪鳞甲角翼。未定细节、体比、配色和姿态为艺术解释，原图与透明通道保留。",
       "sha256": "97c1d2a4b240ac445893c2bfb574e9f3e44853830d71ff31e8f856432da7edf9"
+    },
+    {
+      "name": "deity-humanhead-pig-summary11",
+      "entry_id": "deity-zhongshan-humanhead-pig-summary11",
+      "prompt_summary": "Traditional Chinese woodblock engraving, isolated transparent background; Pig body, human head, four cloven hooves; hair, beard, colors and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\call_EySHyAzCQowptOpXMfWupzsr.png",
+      "source_file": "deity-humanhead-pig-summary11-v1.png",
+      "reference_images": [],
+      "status": "reviewed",
+      "review_note": "Pig body, human head, four cloven hooves; hair, beard, colors and pose artistic.",
+      "sha256": "9d54a0c857492aa857be89efe9dde791ba677f0c0242775b47f4c2d13940f27e",
+      "prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; Pig body, human head, four cloven hooves; hair, beard, colors and pose artistic."
+    },
+    {
+      "name": "deity-yuer-fufu",
+      "entry_id": "deity-zhongshan-yuer-fufu12",
+      "prompt_summary": "Traditional Chinese woodblock engraving, isolated transparent background; Human body, two separately held snakes; hand placement, clothing, face and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\call_j8wSjHPH6ZozvclZ54A4AUcA.png",
+      "source_file": "deity-yuer-fufu-v1.png",
+      "reference_images": [],
+      "status": "reviewed",
+      "review_note": "Human body, two separately held snakes; hand placement, clothing, face and pose artistic.",
+      "sha256": "5e231968436f921091d659a7d47bf3b09416fa7406796e13383a7331c162f4d8",
+      "prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; Human body, two separately held snakes; hand placement, clothing, face and pose artistic."
+    },
+    {
+      "name": "deity-snakecarrier-dongting",
+      "entry_id": "deity-zhongshan-snakecarrier-dongting12",
+      "prompt_summary": "Traditional Chinese woodblock engraving, isolated transparent background; Human-like deity carrying one shoulder snake and holding one snake in each hand. Carried count, shoulder placement, face and clothes artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\call_A7K79QrwF2xPDUsaK8gxTQVX.png",
+      "source_file": "deity-snakecarrier-dongting-v1.png",
+      "reference_images": [],
+      "status": "reviewed",
+      "review_note": "Human-like deity carrying one shoulder snake and holding one snake in each hand. Carried count, shoulder placement, face and clothes artistic.",
+      "sha256": "52297f244ff77fb493dbff9ccbd8ac35397c17ecdd63b2480f38f8ab15b7f828",
+      "prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; Human-like deity carrying one shoulder snake and holding one snake in each hand. Carried count, shoulder placement, face and clothes artistic."
+    },
+    {
+      "name": "turtle-gui-jigong",
+      "entry_id": "beast-zhongshan-gui-jigong12",
+      "prompt_summary": "Traditional Chinese woodblock engraving, isolated transparent background; White turtle body and shell, red head, four legs, one tail; shell plates, proportions and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\call_NLtcXSAyUkc1FqgsoNPPSNep.png",
+      "source_file": "turtle-gui-jigong-v1.png",
+      "reference_images": [],
+      "status": "reviewed",
+      "review_note": "White turtle body and shell, red head, four legs, one tail; shell plates, proportions and pose artistic.",
+      "sha256": "738b7f7967976cdf2754eff89c513a582ce496530e25b64890ee336edbb4f8c5",
+      "prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; White turtle body and shell, red head, four legs, one tail; shell plates, proportions and pose artistic."
+    },
+    {
+      "name": "snake-flying-chaisang",
+      "entry_id": "beast-zhongshan-flying-snake-chaisang12",
+      "prompt_summary": "Traditional Chinese woodblock engraving, isolated transparent background; One continuous snake with one head and tail, no wings or legs. Scale colors and suspended curve artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\call_DNVvBJ3k2iXOvEC4D8Tw5Iy7.png",
+      "source_file": "snake-flying-chaisang-v1.png",
+      "reference_images": [],
+      "status": "reviewed",
+      "review_note": "One continuous snake with one head and tail, no wings or legs. Scale colors and suspended curve artistic.",
+      "sha256": "4c85377914549f58cd5856b17bc510bd7bfe108d383c11231a052e112804e582",
+      "prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; One continuous snake with one head and tail, no wings or legs. Scale colors and suspended curve artistic."
+    },
+    {
+      "name": "deity-dragonhead-bird-summary12",
+      "entry_id": "deity-zhongshan-dragonhead-bird-summary12",
+      "prompt_summary": "Traditional Chinese woodblock engraving, isolated transparent background; Complete bird body, one dragon head, two bird feet, folded wings and feather tail. Horns, whiskers, palette and pose artistic.",
+      "original_path": "C:\\Users\\48427\\.codex\\generated_images\\01a178e3-6250-7ba3-83da-d85dff1cb362\\call_LFdLcBauOStr89nr5ieEAJeD.png",
+      "source_file": "deity-dragonhead-bird-summary12-v1.png",
+      "reference_images": [],
+      "status": "reviewed",
+      "review_note": "Complete bird body, one dragon head, two bird feet, folded wings and feather tail. Horns, whiskers, palette and pose artistic.",
+      "sha256": "fd6c033562aad2f9a8cd78c9b18aa8ab87d0f1e27191d15651cf406dba5acd61",
+      "prompt": "Generation prompt summary: Traditional Chinese woodblock engraving, isolated transparent background; Complete bird body, one dragon head, two bird feet, folded wings and feather tail. Horns, whiskers, palette and pose artistic."
     }
   ]
 }

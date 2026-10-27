@@ -18,7 +18,7 @@ args = parser.parse_args()
 
 
 def fetch(url, timeout=60):
-    cmd = ['rtk', 'proxy', 'curl.exe', '--ssl-revoke-best-effort', '--fail', '--location', '--connect-timeout', '25', '--max-time', str(timeout), '--silent', '--show-error', '--user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36']
+    cmd = ['curl.exe', '--ssl-revoke-best-effort', '--fail', '--location', '--connect-timeout', '25', '--max-time', str(timeout), '--silent', '--show-error', '--user-agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36']
     if args.proxy:
         cmd += ['--proxy', args.proxy]
     for attempt in range(4):
@@ -44,7 +44,14 @@ url = 'https://fonts.googleapis.com/css2?' + urlencode({'family': 'Noto Serif SC
 css = fetch(url).decode()
 font_url = re.search(r'src: url\((https://fonts.gstatic.com/[^)]+)\)', css)[1]
 data = fetch(font_url); font = TTFont(io.BytesIO(data))
-assert set(map(ord, TITLE)) <= set(font.getBestCmap())
+if not set(map(ord, TITLE)) <= set(font.getBestCmap()):
+    font_url = 'https://raw.githubusercontent.com/notofonts/noto-cjk/main/Serif/Variable/TTF/Subset/NotoSerifSC-VF.ttf'
+    font = TTFont(io.BytesIO(fetch(font_url, timeout=300)))
+    assert set(map(ord, TITLE)) <= set(font.getBestCmap()), ''.join(c for c in TITLE if ord(c) not in font.getBestCmap())
+    title_options = subset.Options()
+    title_worker = subset.Subsetter(options=title_options)
+    title_worker.populate(unicodes=list(map(ord, TITLE))); title_worker.subset(font)
+    font.flavor = 'woff2'; title_buffer = io.BytesIO(); font.save(title_buffer); data = title_buffer.getvalue()
 assert any(a.axisTag == 'wght' and a.minValue <= 400 and a.maxValue >= 700 for a in font['fvar'].axes)
 target = ROOT / 'frontend/public/fonts/shanhai-title-zhongshan.woff2'
 target.write_bytes(data)
@@ -104,7 +111,7 @@ for name in ['exploration', 'myth-world']:
     path.write_text(header + style, encoding='utf-8')
 review_path = ROOT / 'data/zhongshan-edition-review.json'; review = json.loads(review_path.read_text(encoding='utf-8'))
 review['font_supplements'] = [
-    dict(family='Shanhai Title', source_family='Noto Serif SC', characters=TITLE, weights=[400, 700], path=target.relative_to(ROOT).as_posix(), license='frontend/public/fonts/noto-serif-sc-LICENSE.txt', source_url=url, sha256=hashlib.sha256(data).hexdigest()),
+    dict(family='Shanhai Title', source_family='Noto Serif SC', characters=TITLE, weights=[400, 700], path=target.relative_to(ROOT).as_posix(), license='frontend/public/fonts/noto-serif-sc-LICENSE.txt', source_url=font_url, sha256=hashlib.sha256(data).hexdigest()),
     dict(family='Atlas Central Rare', characters=RARE, weights=[400], path=rare_target.relative_to(ROOT).as_posix(), license='frontend/public/fonts/atlas-central-rare-LICENSE.txt', source_url=source_url, upstream_sha256=source_sha, upstream_git_blob='81c4df21cdbd2570fa92ac55c04b02198c4bf692', sha256=hashlib.sha256(rare_target.read_bytes()).hexdigest(), limits='独立字体族优先回退，静态400字形；600沿用400且禁用伪粗，不复制系统字体。')]
 if extended_record:
     review['font_supplements'].append(extended_record)
@@ -114,6 +121,6 @@ preflight['missing_stage_title_characters'] = ''.join(sorted({c for s in review[
 preflight['missing_stage_title_count'] = len(preflight['missing_stage_title_characters'])
 preflight['implemented_batch_missing_characters'] = ''.join(c for c in missing if ord(c) not in bundled)
 assert not preflight['implemented_batch_missing_characters']
-preflight.update(status='current_batch_covered_future_pending', limits=f'已接入前{review["implemented_stages"]}阶段标题、实体、正文与郭注所需字已补；后续{review["remaining_stages"]}阶段完整内容仍需逐批预检。')
+preflight.update(status='fully_covered' if not review['remaining_stages'] else 'current_batch_covered_future_pending', limits=f'已接入前{review["implemented_stages"]}阶段标题、实体、正文与郭注所需字已补；后续{review["remaining_stages"]}阶段完整内容仍需逐批预检。')
 review_path.write_text(json.dumps(review, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-print('Central rare subset', RARE, rare_target.stat().st_size, 'future title gaps', preflight['missing_stage_title_count'], flush=True)
+print('Central rare subset', len(RARE), 'characters', rare_target.stat().st_size, 'future title gaps', preflight['missing_stage_title_count'], flush=True)

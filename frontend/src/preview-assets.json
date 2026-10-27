@@ -6730,5 +6730,113 @@
         439
       ]
     }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1-card.webp",
+      "bytes": 24330,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1-preview.webp",
+      "bytes": 49798,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1-card.webp",
+      "bytes": 27032,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1-preview.webp",
+      "bytes": 49026,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1-card.webp",
+      "bytes": 27320,
+      "dimensions": [
+        213,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1-preview.webp",
+      "bytes": 52136,
+      "dimensions": [
+        320,
+        480
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1-card.webp",
+      "bytes": 22774,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1-preview.webp",
+      "bytes": 44194,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1-card.webp",
+      "bytes": 15222,
+      "dimensions": [
+        320,
+        213
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1-preview.webp",
+      "bytes": 27428,
+      "dimensions": [
+        480,
+        320
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1.webp": {
+    "card": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1-card.webp",
+      "bytes": 37894,
+      "dimensions": [
+        304,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1-preview.webp",
+      "bytes": 74578,
+      "dimensions": [
+        456,
+        480
+      ]
+    }
   }
 }

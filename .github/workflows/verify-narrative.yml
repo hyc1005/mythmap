@@ -17,7 +17,9 @@ concurrency:
 jobs:
   narrative:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 30
+    outputs:
+      base: ${{ steps.path.outputs.base }}
     env:
       ATLAS_BROWSERS: chromium,webkit
       VITE_TIANDITU_KEY: ${{ github.event_name == 'pull_request' && 'mock-browser-key' || secrets.TIANDITU_BROWSER_KEY }}
@@ -78,49 +80,69 @@ jobs:
           fi
       - run: npm run build -- --base "${{ steps.path.outputs.base }}"
       - run: npm run verify:publish
-      - name: Verify geographic atlas
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-geography.mjs
-      - name: Verify bilingual content
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-locale.mjs
-      - name: Verify exploration and sharing
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-exploration.mjs
-      - name: Verify first-visit guidance
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-onboarding.mjs
-      - name: Verify failure recovery
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-repairs.mjs
-      - name: Verify layout and artwork
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-design.mjs
-      - name: Verify guided tours
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-guided-tour.mjs
-      - name: Verify reading and focus restoration
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-reading.mjs
-      - name: Verify continue reading
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-resume.mjs
-      - name: Verify global search
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-search.mjs
-      - name: Verify exploration continuity and geographic links
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-ux.mjs
-      - name: Verify Nanshan content and navigation
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-nanshan.mjs
-      - name: Verify full Southern passage reader
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-reader.mjs
-      - name: Verify first Western Mountain passages
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-xishan.mjs
-      - name: Verify reviewed Northern Mountain passages
-        run: npm run verify:beishan
-        env:
-          ATLAS_STATIC_DIR: dist
-      - name: Verify story discovery and reading round trips
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-discovery.mjs
-      - name: Verify modern place search and empty states
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-place-search.mjs
-      - name: Verify shared map frame and notices
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-map-frame.mjs
-      - name: Verify animation speed
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-playback-speed.mjs
-      - name: Verify complete story playback
-        run: node scripts/with-preview.mjs --base "${{ steps.path.outputs.base }}" -- node scripts/verify-narrative.mjs
+      - name: Upload browser verification build
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: browser-verification-site
+          path: frontend/dist
+          retention-days: 1
       - name: Upload verified site
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
         with:
           path: frontend/dist
+
+  browser:
+    name: Browser ${{ matrix.browser }} / ${{ matrix.suite.name }}
+    needs: narrative
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+        suite:
+          - name: atlas
+          - name: central-current
+            scripts: verify-zhongshan.mjs
+            scripts: verify-geography.mjs verify-locale.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-ux.mjs
+          - name: southern-cards
+            scripts: verify-nanshan.mjs
+          - name: southern-reader
+            scripts: verify-reader.mjs
+          - name: western
+            scripts: verify-xishan.mjs
+          - name: northern
+            scripts: verify-beishan.mjs
+          - name: stories
+            scripts: verify-discovery.mjs verify-place-search.mjs verify-map-frame.mjs verify-playback-speed.mjs verify-narrative.mjs
+    env:
+      ATLAS_BROWSERS: ${{ matrix.browser }}
+      ATLAS_BASE: ${{ needs.narrative.outputs.base }}
+      ATLAS_SCRIPTS: ${{ matrix.suite.scripts }}
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps "${{ matrix.browser }}"
+      - name: Download the shared publishing build
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: browser-verification-site
+          path: frontend/dist
+      - name: Verify browser suite
+        run: |
+          for script in $ATLAS_SCRIPTS; do
+            echo "Verifying $script with $ATLAS_BROWSERS"
+            if [[ "$script" == "verify-beishan.mjs" ]]; then
+              node "scripts/$script"
+            else
+              node scripts/with-preview.mjs --base "$ATLAS_BASE" -- node "scripts/$script"
+            fi
+          done
