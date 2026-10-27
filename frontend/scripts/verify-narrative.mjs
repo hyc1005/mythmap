@@ -18,6 +18,7 @@ async function enterAtlas(page, url) {
   if (await page.locator('.onboarding-skip').count()) await page.locator('.onboarding-skip').click();
 }
 const catalog = JSON.parse(await readFile(new URL('../public/data/atlas/catalog.json', import.meta.url), 'utf8'));
+const { beasts } = JSON.parse(await readFile(new URL('../public/data/myth-world.json', import.meta.url), 'utf8'));
 const artworkManifest = JSON.parse(await readFile(new URL('../public/data/atlas/artwork-manifest.json', import.meta.url), 'utf8'));
 const optimizedAssets = JSON.parse(await readFile(new URL('../src/optimized-assets.json', import.meta.url), 'utf8'));
 const previews = JSON.parse(await readFile(new URL('../src/preview-assets.json', import.meta.url), 'utf8'));
@@ -446,8 +447,8 @@ try {
 
   const preview = await page.locator('.beast-card').count();
   assert.equal(preview, await page.locator('.beast-grid').evaluate(grid => getComputedStyle(grid).gridTemplateColumns.split(' ').length));
-  await page.getByRole('button', { name: '展开全部 33 项 ↓', exact: true }).click();
-  assert.equal(await page.locator('.beast-card').count(), 33);
+  await page.getByRole('button', { name: `展开全部 ${beasts.length} 项 ↓`, exact: true }).click();
+  assert.equal(await page.locator('.beast-card').count(), beasts.length);
   await page.getByRole('button', { name: '收起异兽谱 ↑', exact: true }).click();
   assert.equal(await page.locator('.beast-card').count(), preview);
   await page.getByRole('textbox', { name: '搜索异兽', exact: true }).fill('穷奇');
@@ -566,7 +567,7 @@ try {
   const mobile = await browser.newPage({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 1 });
   mobile.on('pageerror', error => failures.push(error.message));
   await enterAtlas(mobile, atlasUrl);
-  await mobile.locator('.prologue-scene img').evaluate(img => img.decode());
+  await mobile.locator('.prologue-scene img').evaluateAll(images => Promise.all(images.map(img => img.decode())));
   assert.equal(await mobile.locator('.beast-card').count(), 2);
   await mobile.locator('.myth-map-wrap').screenshot({ path: new URL('00-pangu-mobile.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
   await selectChapter(mobile, '01 造人与补天');

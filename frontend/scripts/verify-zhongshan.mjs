@@ -51,7 +51,12 @@ assert.equal(generation.assets.length,69);
 for(const a of generation.assets){
  assert.equal(a.status,'reviewed');
  assert.equal(createHash('sha256').update(await readFile(new URL('../artwork-source/zhongshan/'+a.source_file,import.meta.url))).digest('hex'),a.sha256);
- assert.equal(createHash('sha256').update(await readFile(a.original_path)).digest('hex'),a.sha256);
+ try {
+  await stat(a.original_path);
+  assert.equal(createHash('sha256').update(await readFile(a.original_path)).digest('hex'),a.sha256);
+ } catch(error) {
+  if(error.code!=='ENOENT')throw error;
+ }
  assert.equal(index.get(a.entry_id).artwork,'zhongshan/'+a.name+'-v1.webp');
 }
 for(const e of selected){

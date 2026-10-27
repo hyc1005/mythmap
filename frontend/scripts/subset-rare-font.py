@@ -14,11 +14,16 @@ with urlopen(url, timeout=120) as response:
 font = TTFont(io.BytesIO(archive.read('BabelStoneHan.ttf')))
 license_text = '\n\n'.join(dict.fromkeys(n.toUnicode() for n in font['name'].names if n.nameID in (0, 13, 14)))
 assert 'Arphic' in license_text
+license_text = '\n'.join(line.rstrip() for line in license_text.splitlines()) + '\n'
 options = subset.Options()
 options.name_IDs = ['*']
 subsetter = subset.Subsetter(options=options)
 world_text = json.dumps(json.loads((root.parents[1] / 'public/data/myth-world.json').read_text(encoding='utf-8')), ensure_ascii=False)
 characters = {ord(c) for c in world_text if 0x3400 <= ord(c) <= 0x4DBF or ord(c) >= 0x20000}
+for path in root.glob('*.woff2'):
+    if path.name != 'shanhai-rare.woff2':
+        characters.difference_update(TTFont(path).getBestCmap())
+characters.update(TTFont(root / 'shanhai-rare.woff2').getBestCmap())
 missing = characters - set(font.getBestCmap())
 assert not missing, f'Unsupported rare characters: {[hex(c) for c in missing]}'
 subsetter.populate(unicodes=characters)

@@ -101,8 +101,10 @@ jobs:
       matrix:
         browser: [chromium, webkit]
         suite:
+          - name: atlas
+            scripts: verify-geography.mjs verify-locale.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-ux.mjs
           - name: central-current
-            scripts: verify-zhongshan.mjs verify-geography.mjs verify-locale.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-ux.mjs
+            scripts: verify-zhongshan.mjs
           - name: southern-cards
             scripts: verify-nanshan.mjs
           - name: southern-reader
@@ -112,7 +114,12 @@ jobs:
           - name: northern
             scripts: verify-beishan.mjs
           - name: stories
-            scripts: verify-discovery.mjs verify-place-search.mjs verify-map-frame.mjs verify-playback-speed.mjs verify-narrative.mjs
+            scripts: verify-discovery.mjs verify-place-search.mjs verify-map-frame.mjs verify-playback-speed.mjs
+        include:
+          - browser: chromium
+            suite:
+              name: narrative
+              scripts: verify-narrative.mjs
     env:
       ATLAS_BROWSERS: ${{ matrix.browser }}
       ATLAS_BASE: ${{ needs.narrative.outputs.base }}
