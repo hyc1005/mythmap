@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile, mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
-import { mockTianditu } from './mock-tianditu.mjs';
+import { mockTianditu, isTileAccessControlNoise } from './mock-tianditu.mjs';
 import { geographyMapConfig } from '../src/geography-map-config.js';
 import { fromLonLat } from 'ol/proj.js';
 import { referenceCollection, validReference, groupReferences, unlocatedStories, geographicReferences, geographicEvents, defaultGeographicEvent } from '../src/geography.js';
@@ -72,7 +72,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
     const network = await mockTianditu(context);
     const page = await context.newPage();
-    const errors = []; page.on('pageerror', error => { errors.push(error.message.replace(/tk=[^&\s]+/g, 'tk=[redacted]')); });
+    const errors = []; page.on('pageerror', error => {
+      const message = error.message.replace(/tk=[^&\s]+/g, 'tk=[redacted]');
+      if (!isTileAccessControlNoise(message)) errors.push(message);
+    });
     if (process.env.ATLAS_MISSING_KEY) {
       await page.goto(`${base}?chapter=03&lang=zh`);
       await mode(page, 'zh', true);

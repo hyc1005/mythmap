@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
-import { mockTianditu } from './mock-tianditu.mjs';
+import { mockTianditu, isTileAccessControlNoise } from './mock-tianditu.mjs';
 import { CHAPTER_TRANSITION_MS } from '../src/map-timing.js';
 
 const base = process.env.ATLAS_URL;
@@ -15,7 +15,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     const context = await browser.newContext({ viewport: { width: 1920, height: 1080 } });
     await mockTianditu(context);
     const page = await context.newPage();
-    const errors = []; page.on('pageerror', error => errors.push(error.message));
+    const errors = []; page.on('pageerror', error => { if (!isTileAccessControlNoise(error.message)) errors.push(error.message); });
     await page.goto(`${base}?chapter=01&lang=zh`);
     await page.locator('canvas[data-paper-ready=true]').waitFor();
     await page.locator('.map-fullscreen').click();

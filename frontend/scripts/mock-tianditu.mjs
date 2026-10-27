@@ -1,3 +1,7 @@
+// WebKit 偶尔会把被导航打断的瓦片 fetch 落到真实网络（天地图 key 有白名单，runner IP 会拿到无 ACAO 响应），
+// 这类失败由 tianditu-basemap.js 的 onError 降级为「底图加载较慢」，属于浏览器侧子资源噪音，不算未捕获异常。
+export const isTileAccessControlNoise = message => /tianditu\.gov\.cn\/\S+ due to access control checks/.test(message);
+
 export async function mockTianditu(context) {
   const state = { fail: false, auth: false, terrainFail: false, labelsFail: false, requests: 0, osmRequests: 0, layers: { ter: 0, cta: 0 }, hold: null };
   await context.route('https://tile.openstreetmap.org/**', route => { state.osmRequests++; return route.abort(); });
