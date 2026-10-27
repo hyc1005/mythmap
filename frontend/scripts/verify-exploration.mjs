@@ -26,6 +26,20 @@ async function fits(page) {
   assert.ok(await page.locator('.map-reading-hint').evaluateAll(nodes => nodes.every(node => node.getBoundingClientRect().right <= innerWidth)), 'Visible seal hints remain readable on narrow screens');
 }
 const settle = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+const stableCamera = page => page.evaluate(() => new Promise((resolve, reject) => {
+  let previous = null, stable = 0, frames = 0;
+  const tick = () => {
+    const canvas = document.querySelector('.myth-map-canvas');
+    const view = JSON.parse(canvas.dataset.view), box = canvas.getBoundingClientRect();
+    const aligned = Math.abs(view.size[0] - box.width) < 1 && Math.abs(view.size[1] - box.height) < 1;
+    stable = aligned && canvas.dataset.view === previous ? stable + 1 : 0;
+    previous = canvas.dataset.view;
+    if (stable >= 3) return resolve(previous);
+    if (++frames > 600) return reject(new Error(`Map camera never settled: ${previous}`));
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}));
 async function sealPoint(page, name, active) {
   return page.locator('.myth-map-canvas').evaluate((node, { name, active }) => {
     const view = JSON.parse(node.dataset.view), box = node.getBoundingClientRect();
@@ -67,7 +81,7 @@ try {
     await page.locator('.ink-hover-card').waitFor({ state: 'hidden' }); await settle(page);
     const idlePoint = await sealPoint(page, name, false), idleInk = await sealInk(page, idlePoint);
     assert.ok(idleInk > 4, 'A red seal is actually painted beside the name');
-    const view = await page.locator('.myth-map-canvas').getAttribute('data-view');
+    const view = await stableCamera(page);
     if (width === 390) await page.touchscreen.tap(idlePoint.x, idlePoint.y);
     else await page.mouse.move(idlePoint.x, idlePoint.y);
     await page.locator('.ink-hover-card').waitFor(); await settle(page);
@@ -82,7 +96,7 @@ try {
       return r.top >= c.top && r.bottom <= c.bottom && r.left >= c.left && r.right <= c.right && (node.tagName !== 'BUTTON' || r.height >= 44 && r.width >= 44);
     })), 'Artwork stays inside the card and actions retain 44px targets');
     assert.equal(await page.locator('.ink-hover-card b').textContent(), name, 'The seal selects its own entry');
-    assert.equal(await page.locator('.myth-map-canvas').getAttribute('data-view'), view, 'Reading feedback does not move the map');
+    assert.equal(await stableCamera(page), view, 'Reading feedback does not move the map');
     assert.ok(await sealInk(page, await sealPoint(page, name, true)) > idleInk, 'Hover and touch gently strengthen the seal');
     await page.locator('.map-reading-hint').waitFor();
     assert.ok(await page.locator('.map-reading-hint').evaluate(node => node.getBoundingClientRect().right <= innerWidth), 'The idle map shows its complete reading hint');
@@ -90,7 +104,7 @@ try {
     await page.locator('.preview-close').click();
     await page.locator('.ink-hover-card').waitFor({ state: 'hidden' });
     assert.ok(await page.locator('.myth-map-wrap').evaluate(node => node === document.activeElement), 'Closing a preview returns focus to the map');
-    assert.equal(await page.locator('.myth-map-canvas').getAttribute('data-view'), view, 'Closing the preview preserves the camera');
+    assert.equal(await stableCamera(page), view, 'Closing the preview preserves the camera');
     await page.locator('.myth-map-canvas').scrollIntoViewIfNeeded();
     const reopenPoint = await sealPoint(page, name, false);
     await page.mouse.click(reopenPoint.x, reopenPoint.y);
@@ -104,11 +118,11 @@ try {
       const r = node.getBoundingClientRect(), slot = node.closest('.fullscreen-preview-slot').getBoundingClientRect();
       return r.height >= 44 && r.top >= slot.top && r.bottom <= slot.bottom + 1 && r.right <= slot.right && document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2) === node;
     })), 'Fullscreen preview actions are fully visible and directly clickable');
-    const fullscreenView = await page.locator('.myth-map-canvas').getAttribute('data-view');
+    const fullscreenView = await stableCamera(page);
     await page.locator('.myth-map-wrap').screenshot({ path: filename(`preview-fullscreen-${locale}-${width}.png`) });
     await page.locator('.preview-close').click();
     await settle(page);
-    assert.equal(await page.locator('.myth-map-canvas').getAttribute('data-view'), fullscreenView, 'Dismissing the fullscreen preview keeps the canvas stable');
+    assert.equal(await stableCamera(page), fullscreenView, 'Dismissing the fullscreen preview keeps the canvas stable');
     if (width === 390) {
       await page.getByLabel(locale === 'zh' ? '选择地图故事动画' : 'Choose a story animation').selectOption('03-05');
       await page.locator('.kuafu-journey[data-status="reduced"]').waitFor();

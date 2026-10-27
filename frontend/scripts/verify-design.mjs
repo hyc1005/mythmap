@@ -8,6 +8,23 @@ const output = new URL('../../output/qa/', import.meta.url);
 await mkdir(output, { recursive: true });
 const catalog = JSON.parse(await readFile(new URL('../public/data/atlas/catalog.json', import.meta.url), 'utf8'));
 const chapterMarkers = catalog.events.filter(item => item.properties.stage_id === '03' && item.properties.map_visible).map(item => item.properties.layout_hint);
+const settledCamera = page => page.evaluate(() => new Promise((resolve, reject) => {
+  let previous = null, stable = 0, frames = 0;
+  const tick = () => {
+    const canvas = document.querySelector('.myth-map-canvas');
+    const frame = canvas.closest('.myth-map-wrap');
+    const view = JSON.parse(canvas.dataset.view), box = canvas.getBoundingClientRect();
+    const aligned = !document.fullscreenElement && !frame.classList.contains('is-map-fullscreen')
+      && parseFloat(getComputedStyle(frame).borderLeftWidth) > 0
+      && Math.abs(view.size[0] - box.width) < 1 && Math.abs(view.size[1] - box.height) < 1;
+    stable = aligned && canvas.dataset.view === previous ? stable + 1 : 0;
+    previous = canvas.dataset.view;
+    if (stable >= 3) return resolve(previous);
+    if (++frames > 600) return reject(new Error(`Map camera never settled: ${previous}`));
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+}));
 for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
   try {
@@ -109,20 +126,14 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.map-entry-list > summary').click();
     await page.getByRole('button', { name: '退出地图全屏', exact: true }).click();
     await page.locator('.explore-playback .kuafu-journey').waitFor();
-    await page.waitForFunction(() => {
-      const canvas = document.querySelector('.myth-map-canvas');
-      const frame = canvas.closest('.myth-map-wrap');
-      const view = JSON.parse(canvas.dataset.view), box = canvas.getBoundingClientRect();
-      return !document.fullscreenElement && !frame.classList.contains('is-map-fullscreen')
-        && parseFloat(getComputedStyle(frame).borderLeftWidth) > 0
-        && Math.abs(view.size[0] - box.width) < 1 && Math.abs(view.size[1] - box.height) < 1;
-    });
     const elapsed = await page.locator('.kuafu-journey').getAttribute('data-elapsed');
-    const view = await page.locator('.myth-map-canvas').getAttribute('data-view');
+    const view = await settledCamera(page);
     await page.locator('.mobile-explore-nav button').nth(1).click();
+    await page.locator('.explore-sheet').waitFor();
     await page.keyboard.press('Escape');
+    await page.locator('.explore-sheet').waitFor({ state: 'detached' });
     assert.equal(await page.locator('.kuafu-journey').getAttribute('data-elapsed'), elapsed, 'Panel preserves manual progress');
-    assert.equal(await page.locator('.myth-map-canvas').getAttribute('data-view'), view, 'Panel preserves camera');
+    assert.equal(await settledCamera(page), view, 'Panel preserves camera');
     await page.setViewportSize({ width: 1440, height: 1000 });
     await page.goto(`${base}?chapter=03&lang=zh#world`);
     await page.locator('.timeline-steps [aria-current="step"]').press('Home');
