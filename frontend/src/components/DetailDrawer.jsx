@@ -104,7 +104,11 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, pl
     window.addEventListener('pagehide', save);
     document.addEventListener('visibilitychange', visibility);
     const ready = async () => {
-      await Promise.allSettled([document.fonts.ready, ...[...node.querySelectorAll('img')].map(img => img.decode())]);
+      // WebKit can leave FontFaceSet.ready pending after a font fails.
+      await Promise.allSettled([
+        ...[...document.fonts].filter(font => font.status === 'loading').map(font => font.loaded),
+        ...[...node.querySelectorAll('img')].map(img => img.decode()),
+      ]);
       await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
       if (cancelled) return;
       if (requested) applyPosition(node, requested);

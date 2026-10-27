@@ -7,7 +7,6 @@
 @font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-rare.woff2) format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; unicode-range: U+3400-4DBF, U+20000-323AF; }
 @font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-title-beishan.woff2) format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+35F8, U+3D8C, U+40E4, U+4376, U+4406, U+444F, U+4455, U+47FD, U+49D1, U+4B05, U+4B9D, U+4C3D, U+4C47, U+4C83, U+4CD1, U+4D05, U+4D78; }
 @font-face { font-family: ShanhaiRare; src: url(/fonts/shanhai-title.woff2) format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+3917, U+3BF6, U+3C55, U+3C84, U+3CD9, U+41FF, U+4343, U+44DE, U+4580, U+45E1, U+45F1, U+4CB9, U+4CC7, U+4CDC, U+246CE, U+248CE; }
-@font-face { font-family: ShanhaiRare; src: local('SimSun-ExtB'), local('MingLiU-ExtB'), url(/fonts/shanhai-rare.woff2) format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; unicode-range: U+20542, U+21A1A, U+21EAF, U+221E8, U+224E8, U+2255F, U+23206, U+23FB0, U+2624D, U+264BF, U+26CD3, U+28D7F, U+28F06, U+29CB6, U+29CC1, U+29DAF, U+2A1F1, U+2ADDF, U+2B387, U+2B7CD, U+2D8E3, U+2D97B, U+2E5DA, U+2EA8D; }
 @font-face {
   font-family: 'Lora Variable';
   font-style: normal;

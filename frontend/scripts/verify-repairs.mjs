@@ -106,6 +106,30 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await motion.locator('.pangu-player-wrap[data-status="playing"]').waitFor();
     await motion.close();
 
+    const fontFailure = await browser.newPage({ viewport: { width: 390, height: 844 } });
+    const fontErrors = [];
+    fontFailure.on('pageerror', error => fontErrors.push(error.message));
+    await fontFailure.addInitScript(() => {
+      localStorage.setItem('shanhai-onboarding-v1', '1');
+      const font = new FontFace('ReaderFontFailure', 'url(data:font/woff2;base64,AA==)');
+      document.fonts.add(font); font.load().catch(() => {});
+      Object.defineProperty(FontFaceSet.prototype, 'ready', { configurable: true, get: () => new Promise(() => {}) });
+    });
+    await fontFailure.goto(`${base}?chapter=03&lang=zh&item=beast-jingwei`);
+    const fontDrawer = fontFailure.locator('.detail-drawer');
+    await fontDrawer.locator('.drawer-art').evaluate(img => img.decode());
+    await fontDrawer.locator('[data-reading-anchor="source"]').scrollIntoViewIfNeeded();
+    await fontFailure.waitForFunction(() => {
+      const record = JSON.parse(localStorage.getItem('shanhai-last-reading-v1'));
+      return record?.id === 'beast-jingwei' && (record.position?.anchor !== 'start' || record.position?.fraction > 0);
+    });
+    await fontFailure.reload();
+    await fontFailure.waitForFunction(() => document.querySelector('.detail-drawer')?.dataset.readingRestoring === 'false');
+    assert.equal(await fontFailure.evaluate(() => [...document.fonts].find(font => font.family === 'ReaderFontFailure')?.status), 'error');
+    assert.ok(await fontDrawer.evaluate(node => node.scrollTop > 0), 'A failed font does not block restoring the saved reading position');
+    assert.deepEqual(fontErrors, []);
+    await fontFailure.close();
+
     if (name === 'chromium') {
       for (const [module, chapter, next] of [['PanguOpening', '00', '01'], ['StoryAnimation', '02', '03'], ['KuafuJourney', '03', '04']]) {
         const failure = await browser.newPage();
