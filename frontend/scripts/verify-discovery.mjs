@@ -52,7 +52,14 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     const entry = id => page.locator(`.detail-drawer[data-entry-id="${id}"]`);
     const restored = async id => {
       await entry(id).waitFor();
-      await page.waitForFunction(id => document.querySelector('.detail-drawer')?.dataset.entryId === id && document.querySelector('.detail-drawer').dataset.readingRestoring === 'false', id);
+      await page.waitForFunction(id => document.querySelector('.detail-drawer')?.dataset.entryId === id && document.querySelector('.detail-drawer').dataset.readingRestoring === 'false', id).catch(async error => {
+        console.error('Reading restoration diagnostics', id, errors, await page.evaluate(() => ({
+          url: location.href, hidden: document.hidden, drawer: { ...document.querySelector('.detail-drawer')?.dataset },
+          fonts: document.fonts.status, pendingFonts: [...document.fonts].filter(font => ['loading', 'error'].includes(font.status)).map(font => ({ family: font.family, status: font.status })),
+          images: [...document.querySelectorAll('.detail-drawer img')].map(img => ({ src: img.getAttribute('src'), complete: img.complete, width: img.naturalWidth })),
+        })));
+        throw error;
+      });
     };
     for (const lang of ['zh', 'en']) {
       await page.goto(`${base}?chapter=03&lang=${lang}`);

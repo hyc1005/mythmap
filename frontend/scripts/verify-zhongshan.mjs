@@ -274,6 +274,8 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
     page.on('pageerror', e => errors.push(e.message));
     page.on('response', r => { if (r.status() >= 400 && r.url().startsWith(base)) missing.push(r.url()); });
     async function ready(id) {
+      // Each transition writes several snapshots; respect WebKit's 100 history writes per 10s.
+      if(engine==='webkit')await page.waitForTimeout(400);
       await page.waitForFunction(id => {
         const d = document.querySelector('.detail-drawer');
         return d?.dataset.entryId === id && d.dataset.readingRestoring === 'false';
