@@ -98,8 +98,16 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           await drawer.locator('.drawer-art').evaluate(img => img.decode());
           assert.ok(await drawer.locator('.drawer-art').evaluate(img => img.complete && img.naturalWidth > 0), `${id}: image loaded`);
         }
-        await drawer.locator('.detail-reading-actions button').nth(0).click();
-        await drawer.locator('.detail-reading-actions button').nth(1).click();
+        for (const action of [0, 1]) {
+          const button = drawer.locator('.detail-reading-actions button').nth(action);
+          await button.scrollIntoViewIfNeeded();
+          await button.waitFor({ state: 'visible' });
+          assert.ok(await button.isEnabled(), `${id} ${lang}: reading action enabled`);
+          await button.focus();
+          await page.keyboard.press('Space');
+          await page.waitForFunction(({ action, expected }) => document.querySelectorAll('.detail-drawer .detail-reading-actions button')[action]?.getAttribute('aria-pressed') === expected,
+            { action, expected: lang === 'zh' ? 'true' : 'false' });
+        }
         await page.reload(); await ready(id);
         assert.ok(await drawer.locator('.detail-reading-actions button').evaluateAll(nodes => nodes.every(n => n.getAttribute('aria-pressed') === (document.documentElement.lang === 'en' ? 'false' : 'true'))), 'New marks persist and can be toggled in both languages');
       }
