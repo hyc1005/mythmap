@@ -309,9 +309,11 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
     await context.addInitScript(() => {
       if (location.origin === 'https://atlas.test') localStorage.setItem('shanhai-onboarding-v1', '1');
     });
-    const page = await context.newPage(), errors = [], missing = [];
+    const page = await context.newPage(), errors = [], missing = [], pending = new Set();
     page.on('pageerror', e => errors.push(e.message));
     page.on('response', r => { if (r.status() >= 400 && r.url().startsWith(base)) missing.push(r.url()); });
+    page.on('request', request => { if (request.url().startsWith(base)) pending.add(request); });
+    for (const event of ['requestfinished', 'requestfailed']) page.on(event, request => pending.delete(request));
     async function ready(id) {
       await page.waitForFunction(id => {
         const d = document.querySelector('.detail-drawer');
@@ -321,8 +323,16 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
       return page.locator('.detail-drawer');
     }
     async function open(id, lang = 'zh') {
-      await page.goto(`${base}?chapter=03&item=${id}&lang=${lang}`);
-      return ready(id);
+      try {
+        await page.goto(`${base}?chapter=03&item=${id}&lang=${lang}`, { waitUntil: 'domcontentloaded' });
+        return await ready(id);
+      } catch (error) {
+        const state = await page.evaluate(() => ({ document: document.readyState,
+          entry: document.querySelector('.detail-drawer')?.dataset,
+          fonts: [...document.fonts].filter(font => font.status === 'loading').map(font => font.family) })).catch(() => null);
+        console.error('Northern navigation failed', JSON.stringify({ id, lang, pending: [...pending].map(request => request.url()), state }));
+        throw error;
+      }
     }
     for (const lang of ['zh', 'en']) {
       for (const e of browserEntries) {
