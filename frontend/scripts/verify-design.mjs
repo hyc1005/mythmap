@@ -151,6 +151,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.bestiary-toggle').click();
     for (const id of ['beast-wenyaoyu', 'beast-bifang', 'beast-xiangliu', 'beast-jiuweihu', 'beast-shengsheng', 'beast-bo']) {
       const card = page.locator(`[data-beast-id="${id}"]`);
+      while (!await card.count()) {
+        assert.ok(await page.locator('.bestiary-toggle').count(), `${id}: remains reachable in paged bestiary`);
+        await page.locator('.bestiary-toggle').click();
+      }
       await card.scrollIntoViewIfNeeded();
       await page.waitForFunction(id => {
         const image = document.querySelector(`[data-beast-id="${id}"] img`);

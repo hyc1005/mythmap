@@ -1,0 +1,8287 @@
+{
+  "beast-shengsheng": {
+    "display_name": {
+      "zh": "狌狌",
+      "en": "Shengsheng"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "狌狌",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其状如禺而白耳，伏行人走，其名曰狌狌，食之善走。",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-lushu": {
+    "display_name": {
+      "zh": "鹿蜀",
+      "en": "Lushu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鹿蜀",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其状如马而白首，其文如虎而赤尾，其音如谣，其名曰鹿蜀，佩之宜子孙。",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-jiuweihu": {
+    "display_name": {
+      "zh": "九尾狐",
+      "en": "Nine-tailed Fox"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "九尾狐",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "many_tails"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有兽焉，其状如狐而九尾，其音如婴儿，能食人，食者不蛊。",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-chiru": {
+    "display_name": {
+      "zh": "赤鱬",
+      "en": "Chiru"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "赤鱬",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多赤鱬，其状如鱼而人面，其音如鸳鸯，食之不疥。",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-boyi": {
+    "display_name": {
+      "zh": "猼訑",
+      "en": "Boyi"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "猼訑",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "many_tails"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其状如羊而九尾四耳，其目在背，其名曰猼訑，佩之不畏。",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-xuangui": {
+    "display_name": {
+      "zh": "旋龟",
+      "en": "Xuangui"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "旋龟",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多玄龟，其状如龟而鸟首虺尾，其名曰旋龟，其音如判木，佩之不聋，可以为底。",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-gudiao": {
+    "display_name": {
+      "zh": "蛊雕",
+      "en": "Gudiao"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "蛊雕",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其状如雕而有角，其音如婴儿之音，是食人。",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-qiongqi-hainei": {
+    "display_name": {
+      "zh": "穷奇",
+      "en": "Qiongqi"
+    },
+    "qualifier": {
+      "zh": "海内北经",
+      "en": "Within the Seas: North"
+    },
+    "group_key": "穷奇",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "穷奇状如虎，有翼，食人从首始，所食被发。",
+      "review_status": "reviewed"
+    },
+    "book_key": "海内北经"
+  },
+  "beast-zhuyan": {
+    "display_name": {
+      "zh": "朱厌",
+      "en": "Zhuyan"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "朱厌",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其状如禺而白首赤足，名曰朱厌，见则大兵。",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-yingzhao": {
+    "display_name": {
+      "zh": "英招",
+      "en": "Yingzhao"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "英招",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face",
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神状马身而人面，虎文而鸟翼，徇于四海，其音如榴。",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-wenyaoyu": {
+    "display_name": {
+      "zh": "文鳐鱼",
+      "en": "Wenyaoyu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "文鳐鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多文鳐鱼，状如鲤鱼，鱼身而鸟翼，苍文而白首，赤喙，常行西海，游于东海，以夜飞。其音如鸾鸡，见则天下大穰。",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-qiangliang": {
+    "display_name": {
+      "zh": "强良",
+      "en": "Qiangliang"
+    },
+    "qualifier": {
+      "zh": "强良",
+      "en": ""
+    },
+    "group_key": "强良",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有神衔蛇操蛇，其状虎首人身，四蹄长肘，名曰彊良。",
+      "review_status": "reviewed"
+    },
+    "book_key": "大荒北经"
+  },
+  "beast-zhulong": {
+    "display_name": {
+      "zh": "烛龙",
+      "en": "Zhulong"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "烛龙",
+    "role": "deity",
+    "form_group": "serpent",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。是烛九阴，是谓烛龙。",
+      "review_status": "reviewed"
+    },
+    "book_key": "大荒北经"
+  },
+  "beast-xiangliu": {
+    "display_name": {
+      "zh": "相柳",
+      "en": "Xiangliu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "相柳",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [
+      "many_heads"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "共工之臣曰相柳氏，九首，以食于九山。",
+      "review_status": "unresolved"
+    },
+    "book_key": "大荒北经"
+  },
+  "beast-kaiming": {
+    "display_name": {
+      "zh": "开明兽",
+      "en": "Kaiming Beast"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "开明兽",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face",
+      "many_heads"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "昆仑开明兽身大类虎而九首，皆人面，东向立昆仑上。",
+      "review_status": "reviewed"
+    },
+    "book_key": "海内西经"
+  },
+  "beast-phoenix": {
+    "display_name": {
+      "zh": "凤皇",
+      "en": "Fenghuang"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "凤皇",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鸟焉，其状如鸡，五采而文，名曰凤皇，首文曰德，翼文曰义，背文曰礼，膺文曰仁，腹文曰信。",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-guanguan": {
+    "display_name": {
+      "zh": "灌灌",
+      "en": "Guanguan"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "灌灌",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鸟焉，其状如鸠，其音若呵，名曰灌灌，佩之不惑。",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-lu": {
+    "display_name": {
+      "zh": "鯥",
+      "en": "Lu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鯥",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有魚焉其狀如牛陵居蛇尾有翼其羽在魼下其音如⟦缺字图:留⟧牛其名曰鯥冬死而夏生食之無腫疾",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-lei": {
+    "display_name": {
+      "zh": "𩔗",
+      "en": "Mane-bearing creature"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "𩔗",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如狸而有髦其名曰𩔗自為牝牡食者不妬",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-changfu": {
+    "display_name": {
+      "zh": "𪁺𩿧",
+      "en": "Three-headed bird"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "𪁺𩿧",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "many_heads",
+      "winged",
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其狀如雞而三首六目六足三翼其名曰𪁺𩿧食之無卧",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-lili": {
+    "display_name": {
+      "zh": "狸力",
+      "en": "Lili"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "狸力",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如豚有距其音如狗吠其名曰狸力見則其縣多土功",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-zhu": {
+    "display_name": {
+      "zh": "鴸",
+      "en": "Zhu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鴸",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其狀如䲭而人手其音如痺其名曰鴸其鳴自號也見則其縣多放士",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-changyou": {
+    "display_name": {
+      "zh": "长右",
+      "en": "Changyou"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "长右",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如禺而四耳其名長右其音如吟見則郡縣大水",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-huahuai": {
+    "display_name": {
+      "zh": "猾褢",
+      "en": "Huahuai"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "猾褢",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如人而彘鬛穴居而冬蟄其名曰猾褢其音如斵木見則縣有大繇",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-zhi": {
+    "display_name": {
+      "zh": "彘",
+      "en": "Zhi"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "彘",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如虎而牛尾其音如吠犬其名曰彘是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-huan-xun": {
+    "display_name": {
+      "zh": "䍺",
+      "en": "Mouthless Huan"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "䍺",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如羊而無口不可殺也其名曰䍺",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-quru": {
+    "display_name": {
+      "zh": "瞿如",
+      "en": "Quru"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "瞿如",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鵁而白首三足人面其名曰瞿如其鳴自號也",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-hujiao": {
+    "display_name": {
+      "zh": "虎蛟",
+      "en": "Hujiao"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "虎蛟",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中有虎蛟其状魚身而蛇尾其音如鴛鴦食者不腫可以已痔",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-zhuan": {
+    "display_name": {
+      "zh": "鱄鱼",
+      "en": "Zhuan fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鱄鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中有鱄魚其状如鮒而彘毛其音如豚見則天下大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-yulingqiu": {
+    "display_name": {
+      "zh": "𪃍",
+      "en": "Four-eyed owl-like bird"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "𪃍",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如梟人面四目而有耳其名曰𪃍其鳴自號也見則天下大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-nanshan-yuanchu": {
+    "display_name": {
+      "zh": "鵷鶵",
+      "en": "Yuanchu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鵷鶵",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳯皇鵷鶵",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "beast-xishan-qianyang": {
+    "display_name": {
+      "zh": "羬羊",
+      "en": "Qianyang"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "羬羊",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如羊而馬尾名曰羬羊其脂可以已腊",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-tongqu": {
+    "display_name": {
+      "zh": "䳋渠",
+      "en": "Tongqu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "䳋渠",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其名曰䳋渠其狀如山雞黑身赤足可以已𦢊",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-feiyi-taihua": {
+    "display_name": {
+      "zh": "肥𧔥",
+      "en": "Feiyi"
+    },
+    "qualifier": {
+      "zh": "太华山",
+      "en": "Taihua"
+    },
+    "group_key": "肥𧔥",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [
+      "winged",
+      "four_wings",
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有蛇焉名曰肥𧔥六足四翼見則天下大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-chibie": {
+    "display_name": {
+      "zh": "赤鷩",
+      "en": "Chibie"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "赤鷩",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "鳥多赤鷩可以禦火",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-conglong": {
+    "display_name": {
+      "zh": "葱聋",
+      "en": "Conglong"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "葱聋",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多葱聾其狀如羊而赤鬛",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-min": {
+    "display_name": {
+      "zh": "鴖",
+      "en": "Min"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鴖",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多鴖其状如翠而赤喙可以禦火",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-bangyu-ying": {
+    "display_name": {
+      "zh": "䰷鱼",
+      "en": "Bangyu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "䰷鱼",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多䰷魚其狀如鼈其音如羊",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-qianyang-ying": {
+    "display_name": {
+      "zh": "羬羊",
+      "en": "Qianyang"
+    },
+    "qualifier": {
+      "zh": "英山段",
+      "en": "Ying passage"
+    },
+    "group_key": "羬羊",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多㸲牛羬羊",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-feiyi-ying": {
+    "display_name": {
+      "zh": "肥遗",
+      "en": "Feiyi"
+    },
+    "qualifier": {
+      "zh": "英山鸟",
+      "en": "Ying bird"
+    },
+    "group_key": "肥遗",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鶉黄身而赤喙其名曰肥遺食之已癘可以殺蟲",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-renyu-zhushan": {
+    "display_name": {
+      "zh": "人鱼",
+      "en": "Renyu"
+    },
+    "qualifier": {
+      "zh": "竹山段",
+      "en": "Zhu passage"
+    },
+    "group_key": "人鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多水玉多人魚",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-haozhi-zhushan": {
+    "display_name": {
+      "zh": "毫彘",
+      "en": "Haozhi"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "毫彘",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如豚而白毛大如笄而黑端名曰毫彘",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-xiao-yuci": {
+    "display_name": {
+      "zh": "嚣",
+      "en": "Xiao"
+    },
+    "qualifier": {
+      "zh": "羭次兽",
+      "en": "Yuci beast"
+    },
+    "group_key": "嚣",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如禺而長臂善投其名曰囂",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-tuofei-yuci": {
+    "display_name": {
+      "zh": "槖𩇯",
+      "en": "Tuofei"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "槖𩇯",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "human_face",
+      "one_leg"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其狀如梟人面而一足曰槖𩇯冬見夏蟄服之不畏雷",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-mengbao-nanshan": {
+    "display_name": {
+      "zh": "猛豹",
+      "en": "Mengbao"
+    },
+    "qualifier": {
+      "zh": "西山经南山段",
+      "en": "Western Mount Nan passage"
+    },
+    "group_key": "猛豹",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "獸多猛豹",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-shijiu-nanshan": {
+    "display_name": {
+      "zh": "尸鸠",
+      "en": "Shijiu"
+    },
+    "qualifier": {
+      "zh": "西山经南山段",
+      "en": "Western Mount Nan passage"
+    },
+    "group_key": "尸鸠",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "鳥多尸鳩",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-xi-bozhong": {
+    "display_name": {
+      "zh": "犀",
+      "en": "Xi"
+    },
+    "qualifier": {
+      "zh": "嶓冡段",
+      "en": "Bozhong passage"
+    },
+    "group_key": "犀",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "獸多犀兕熊羆",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-si-bozhong": {
+    "display_name": {
+      "zh": "兕",
+      "en": "Si"
+    },
+    "qualifier": {
+      "zh": "嶓冡段",
+      "en": "Bozhong passage"
+    },
+    "group_key": "兕",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "獸多犀兕熊羆",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-bear-bozhong": {
+    "display_name": {
+      "zh": "熊",
+      "en": "Bear"
+    },
+    "qualifier": {
+      "zh": "嶓冡段",
+      "en": "Bozhong passage"
+    },
+    "group_key": "熊",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "獸多犀兕熊羆",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-pi-bozhong": {
+    "display_name": {
+      "zh": "罴",
+      "en": "Pi"
+    },
+    "qualifier": {
+      "zh": "嶓冡段",
+      "en": "Bozhong passage"
+    },
+    "group_key": "罴",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "獸多犀兕熊羆",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-baihan-bozhong": {
+    "display_name": {
+      "zh": "白翰",
+      "en": "Baihan"
+    },
+    "qualifier": {
+      "zh": "嶓冡段",
+      "en": "Bozhong passage"
+    },
+    "group_key": "白翰",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "鳥多白翰赤鷩",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-chibie-bozhong": {
+    "display_name": {
+      "zh": "赤鷩",
+      "en": "Chibie"
+    },
+    "qualifier": {
+      "zh": "嶓冡段",
+      "en": "Bozhong passage"
+    },
+    "group_key": "赤鷩",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "鳥多白翰赤鷩",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-xibian-tiandi": {
+    "display_name": {
+      "zh": "谿边",
+      "en": "Xibian"
+    },
+    "qualifier": {
+      "zh": "天帝山",
+      "en": "Tiandi"
+    },
+    "group_key": "谿边",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如狗名曰谿邊席其皮者不蠱",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-li-tiandi": {
+    "display_name": {
+      "zh": "栎",
+      "en": "Li"
+    },
+    "qualifier": {
+      "zh": "天帝山鸟",
+      "en": "Tiandi bird"
+    },
+    "group_key": "栎",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鶉黑文而赤翁名曰櫟食之已痔",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-yingru-gaotu": {
+    "display_name": {
+      "zh": "𤣎如",
+      "en": "Yingru"
+    },
+    "qualifier": {
+      "zh": "皐涂段",
+      "en": "Gaotu passage"
+    },
+    "group_key": "𤣎如",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如鹿而白尾馬足人手而四角名曰𤣎如",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-shusi-gaotu": {
+    "display_name": {
+      "zh": "数斯",
+      "en": "Shusi"
+    },
+    "qualifier": {
+      "zh": "皐涂段",
+      "en": "Gaotu passage"
+    },
+    "group_key": "数斯",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鴟而人足名曰數斯食之已癭",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-min-huangshan": {
+    "display_name": {
+      "zh": "𤛎",
+      "en": "Min"
+    },
+    "qualifier": {
+      "zh": "黄山段",
+      "en": "Huang passage"
+    },
+    "group_key": "𤛎",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而蒼黑大目其名曰𤛎",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-yingmu-huangshan": {
+    "display_name": {
+      "zh": "鹦䳇",
+      "en": "Yingmu"
+    },
+    "qualifier": {
+      "zh": "黄山段",
+      "en": "Huang passage"
+    },
+    "group_key": "鹦䳇",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鴞青羽赤喙人舌能言名曰鸚䳇",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-maoniu-cuishan": {
+    "display_name": {
+      "zh": "旄牛",
+      "en": "Maoniu"
+    },
+    "qualifier": {
+      "zh": "翠山段",
+      "en": "Cui passage"
+    },
+    "group_key": "旄牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其隂多旄牛麢麝",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-ling-cuishan": {
+    "display_name": {
+      "zh": "麢",
+      "en": "Ling"
+    },
+    "qualifier": {
+      "zh": "翠山段",
+      "en": "Cui passage"
+    },
+    "group_key": "麢",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其隂多旄牛麢麝",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-she-cuishan": {
+    "display_name": {
+      "zh": "麝",
+      "en": "She / musk deer"
+    },
+    "qualifier": {
+      "zh": "翠山段",
+      "en": "Cui passage"
+    },
+    "group_key": "麝",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其隂多旄牛麢麝",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-lei-cuishan": {
+    "display_name": {
+      "zh": "鸓",
+      "en": "Lei"
+    },
+    "qualifier": {
+      "zh": "翠山段",
+      "en": "Cui passage"
+    },
+    "group_key": "鸓",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多鸓其状如鵲赤黑而西首四足可以禦火",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-white-snake-taimao": {
+    "display_name": {
+      "zh": "白蛇",
+      "en": "White snakes"
+    },
+    "qualifier": {
+      "zh": "㤗冐段",
+      "en": "Taimao passage"
+    },
+    "group_key": "白蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "浴水出焉東流注于河其中多藻玉多白蛇",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-yingmu-shuli": {
+    "display_name": {
+      "zh": "鹦䳇",
+      "en": "Yingmu"
+    },
+    "qualifier": {
+      "zh": "数歴段",
+      "en": "Shuli passage"
+    },
+    "group_key": "鹦䳇",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多鸚䳇",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-tiger-nvchuang": {
+    "display_name": {
+      "zh": "虎",
+      "en": "Tigers"
+    },
+    "qualifier": {
+      "zh": "女牀段",
+      "en": "Nvchuang passage"
+    },
+    "group_key": "虎",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多虎豹犀兕",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-leopard-nvchuang": {
+    "display_name": {
+      "zh": "豹",
+      "en": "Leopards"
+    },
+    "qualifier": {
+      "zh": "女牀段",
+      "en": "Nvchuang passage"
+    },
+    "group_key": "豹",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多虎豹犀兕",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-xi-nvchuang": {
+    "display_name": {
+      "zh": "犀",
+      "en": "Xi"
+    },
+    "qualifier": {
+      "zh": "女牀段",
+      "en": "Nvchuang passage"
+    },
+    "group_key": "犀",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多虎豹犀兕",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-si-nvchuang": {
+    "display_name": {
+      "zh": "兕",
+      "en": "Si"
+    },
+    "qualifier": {
+      "zh": "女牀段",
+      "en": "Nvchuang passage"
+    },
+    "group_key": "兕",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多虎豹犀兕",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-luan-nvchuang": {
+    "display_name": {
+      "zh": "鸾鸟",
+      "en": "Luan bird"
+    },
+    "qualifier": {
+      "zh": "女牀段",
+      "en": "Nvchuang passage"
+    },
+    "group_key": "鸾鸟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如翟而五彩文名曰鸞鳥見則天下安寧",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-zuoniu-lutai": {
+    "display_name": {
+      "zh": "㸲牛",
+      "en": "Zuoniu"
+    },
+    "qualifier": {
+      "zh": "鹿台段",
+      "en": "Lutai passage"
+    },
+    "group_key": "㸲牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多㸲牛羬羊白豪",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-qianyang-lutai": {
+    "display_name": {
+      "zh": "羬羊",
+      "en": "Qianyang"
+    },
+    "qualifier": {
+      "zh": "鹿台段",
+      "en": "Lutai passage"
+    },
+    "group_key": "羬羊",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多㸲牛羬羊白豪",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-baihao-lutai": {
+    "display_name": {
+      "zh": "白豪",
+      "en": "Baihao"
+    },
+    "qualifier": {
+      "zh": "鹿台段",
+      "en": "Lutai passage"
+    },
+    "group_key": "白豪",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多㸲牛羬羊白豪",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-fuxi-lutai": {
+    "display_name": {
+      "zh": "鳬徯",
+      "en": "Fuxi bird"
+    },
+    "qualifier": {
+      "zh": "鹿台段",
+      "en": "Lutai passage"
+    },
+    "group_key": "鳬徯",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如雄雞而人面名曰鳬徯其名自呌也見則有兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-zhuyan-xiaoci": {
+    "display_name": {
+      "zh": "朱厌",
+      "en": "Zhuyan"
+    },
+    "qualifier": {
+      "zh": "小次段",
+      "en": "Xiaoci passage"
+    },
+    "group_key": "朱厌",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如猨而白首赤足名曰朱厭見則大兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-zuoniu-daci": {
+    "display_name": {
+      "zh": "㸲牛",
+      "en": "Zuoniu"
+    },
+    "qualifier": {
+      "zh": "大次段",
+      "en": "Daci passage"
+    },
+    "group_key": "㸲牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多㸲牛麢羊",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-lingyang-daci": {
+    "display_name": {
+      "zh": "麢羊",
+      "en": "Lingyang"
+    },
+    "qualifier": {
+      "zh": "大次段",
+      "en": "Daci passage"
+    },
+    "group_key": "麢羊",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多㸲牛麢羊",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-xi-quyang": {
+    "display_name": {
+      "zh": "犀",
+      "en": "Xi"
+    },
+    "qualifier": {
+      "zh": "𢇨阳段",
+      "en": "𢇨yang passage"
+    },
+    "group_key": "犀",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多犀兕虎犳㸲牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-si-quyang": {
+    "display_name": {
+      "zh": "兕",
+      "en": "Si"
+    },
+    "qualifier": {
+      "zh": "𢇨阳段",
+      "en": "𢇨yang passage"
+    },
+    "group_key": "兕",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多犀兕虎犳㸲牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-tiger-quyang": {
+    "display_name": {
+      "zh": "虎",
+      "en": "Tigers"
+    },
+    "qualifier": {
+      "zh": "𢇨阳段",
+      "en": "𢇨yang passage"
+    },
+    "group_key": "虎",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多犀兕虎犳㸲牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-zhuo-quyang": {
+    "display_name": {
+      "zh": "犳",
+      "en": "Zhuo"
+    },
+    "qualifier": {
+      "zh": "𢇨阳段",
+      "en": "𢇨yang passage"
+    },
+    "group_key": "犳",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多犀兕虎犳㸲牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-zuoniu-quyang": {
+    "display_name": {
+      "zh": "㸲牛",
+      "en": "Zuoniu"
+    },
+    "qualifier": {
+      "zh": "𢇨阳段",
+      "en": "𢇨yang passage"
+    },
+    "group_key": "㸲牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多犀兕虎犳㸲牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-xi-zhongshou": {
+    "display_name": {
+      "zh": "犀",
+      "en": "Xi"
+    },
+    "qualifier": {
+      "zh": "衆兽段",
+      "en": "Zhongshou passage"
+    },
+    "group_key": "犀",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多犀兕",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-si-zhongshou": {
+    "display_name": {
+      "zh": "兕",
+      "en": "Si"
+    },
+    "qualifier": {
+      "zh": "衆兽段",
+      "en": "Zhongshou passage"
+    },
+    "group_key": "兕",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多犀兕",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-mi-xihuang": {
+    "display_name": {
+      "zh": "麋",
+      "en": "Mi"
+    },
+    "qualifier": {
+      "zh": "西皇段",
+      "en": "Xihuang passage"
+    },
+    "group_key": "麋",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多麋鹿㸲牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-deer-xihuang": {
+    "display_name": {
+      "zh": "鹿",
+      "en": "Deer"
+    },
+    "qualifier": {
+      "zh": "西皇段",
+      "en": "Xihuang passage"
+    },
+    "group_key": "鹿",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多麋鹿㸲牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "animal-xishan-zuoniu-xihuang": {
+    "display_name": {
+      "zh": "㸲牛",
+      "en": "Zuoniu"
+    },
+    "qualifier": {
+      "zh": "西皇段",
+      "en": "Xihuang passage"
+    },
+    "group_key": "㸲牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多麋鹿㸲牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-luoluo-laishan": {
+    "display_name": {
+      "zh": "罗罗",
+      "en": "Luoluo"
+    },
+    "qualifier": {
+      "zh": "莱山段",
+      "en": "Lai passage"
+    },
+    "group_key": "罗罗",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多羅羅是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-jufu-chongwu": {
+    "display_name": {
+      "zh": "举父",
+      "en": "Jufu"
+    },
+    "qualifier": {
+      "zh": "崇吾段",
+      "en": "Chongwu passage"
+    },
+    "group_key": "举父",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如禺而文臂豹虎而善投名曰舉父",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-manman-chongwu": {
+    "display_name": {
+      "zh": "蛮蛮",
+      "en": "Manman"
+    },
+    "qualifier": {
+      "zh": "崇吾段",
+      "en": "Chongwu passage"
+    },
+    "group_key": "蛮蛮",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "winged",
+      "one_eye"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鳬而一翼一目相得乃飛名曰蠻蠻見則天下大水",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-birds-mi-zhong": {
+    "display_name": {
+      "zh": "竒鸟",
+      "en": "Wondrous birds"
+    },
+    "qualifier": {
+      "zh": "峚锺泽间",
+      "en": "Mi–Zhong wetlands"
+    },
+    "group_key": "竒鸟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-beasts-mi-zhong": {
+    "display_name": {
+      "zh": "怪兽",
+      "en": "Strange beasts"
+    },
+    "qualifier": {
+      "zh": "峚锺泽间",
+      "en": "Mi–Zhong wetlands"
+    },
+    "group_key": "怪兽",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-fish-mi-zhong": {
+    "display_name": {
+      "zh": "竒鱼",
+      "en": "Wondrous fish"
+    },
+    "qualifier": {
+      "zh": "峚锺泽间",
+      "en": "Mi–Zhong wetlands"
+    },
+    "group_key": "竒鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其間盡澤也是多竒鳥怪獸竒魚皆異物焉",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-qinpi-e-zhongshan": {
+    "display_name": {
+      "zh": "大鹗",
+      "en": "Great e bird, transformed Qinpi"
+    },
+    "qualifier": {
+      "zh": "钦䲹所化",
+      "en": ""
+    },
+    "group_key": "大鹗",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "欽䲹化為大鶚其状如鵰而黑文白首赤喙而虎𤓰其音如晨鵠見則有大兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-gu-jun-zhongshan": {
+    "display_name": {
+      "zh": "鵕鸟",
+      "en": "Jun bird, transformed Gu"
+    },
+    "qualifier": {
+      "zh": "皷所化",
+      "en": ""
+    },
+    "group_key": "鵕鸟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "皷亦化為鵕鳥其状如鴟赤足而直喙黄文而白首其音如鵠見即其邑大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-wenyao-taiqi": {
+    "display_name": {
+      "zh": "文鳐鱼",
+      "en": "Wenyao fish"
+    },
+    "qualifier": {
+      "zh": "㤗噐段",
+      "en": "Taiqi passage"
+    },
+    "group_key": "文鳐鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是多文鰩魚状如鯉魚魚身而鳥翼蒼文而白首赤喙常行西海遊於東海以夜飛其音如鸞雞其味酸甘食之已狂見則天下大穰",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-luomu-huaijiang": {
+    "display_name": {
+      "zh": "蠃母",
+      "en": "Luomu"
+    },
+    "qualifier": {
+      "zh": "槐江水中",
+      "en": "Huaijiang waters"
+    },
+    "group_key": "蠃母",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多蠃母",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-ying-huaijiang": {
+    "display_name": {
+      "zh": "鹰",
+      "en": "Ying birds"
+    },
+    "qualifier": {
+      "zh": "槐江北望",
+      "en": "Huaijiang northern view"
+    },
+    "group_key": "鹰",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "鷹鸇之所宅也",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-zhan-huaijiang": {
+    "display_name": {
+      "zh": "鸇",
+      "en": "Zhan birds"
+    },
+    "qualifier": {
+      "zh": "槐江北望",
+      "en": "Huaijiang northern view"
+    },
+    "group_key": "鸇",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "鷹鸇之所宅也",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-luwu": {
+    "display_name": {
+      "zh": "陆吾",
+      "en": "Luwu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "陆吾",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face",
+      "many_tails"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神陸吾司之其神状虎身而九尾人面而虎𤓰是神也司天之九部及帝之囿時",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-tulou": {
+    "display_name": {
+      "zh": "土蝼",
+      "en": "Tulou"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "土蝼",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如羊而四角名曰土螻是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-qinyuan": {
+    "display_name": {
+      "zh": "钦原",
+      "en": "Qinyuan"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "钦原",
+    "role": "beast",
+    "form_group": "insect",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如蜂大如鴛鴦名曰欽原蠚鳥獸則死蠚木則枯",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-chun-kunlun": {
+    "display_name": {
+      "zh": "鹑鸟",
+      "en": "Chun bird"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鹑鸟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其名曰鶉鳥是司帝之百服",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-strange-kunlun": {
+    "display_name": {
+      "zh": "怪鸟兽",
+      "en": "Strange birds and beasts"
+    },
+    "qualifier": {
+      "zh": "崑仑段",
+      "en": "Kunlun"
+    },
+    "group_key": "怪鸟兽",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是多怪鳥獸",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-huayu-leyou": {
+    "display_name": {
+      "zh": "滑鱼",
+      "en": "Huayu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "滑鱼",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多滑魚其状如蛇而四足是食魚",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-jiao-yushan": {
+    "display_name": {
+      "zh": "狡",
+      "en": "Jiao"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "狡",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如犬而豹文其角如牛其名曰狡其音如吠犬見則其國大穰",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-shengyu-yushan": {
+    "display_name": {
+      "zh": "胜遇",
+      "en": "Shengyu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "胜遇",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如翟而赤名曰胜遇是食魚其音如録見則其國大水",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-beasts-changliu": {
+    "display_name": {
+      "zh": "文尾兽",
+      "en": "Pattern-tailed beasts"
+    },
+    "qualifier": {
+      "zh": "长留段",
+      "en": ""
+    },
+    "group_key": "文尾兽",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸皆文尾",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-birds-changliu": {
+    "display_name": {
+      "zh": "文首鸟",
+      "en": "Pattern-headed birds"
+    },
+    "qualifier": {
+      "zh": "长留段",
+      "en": ""
+    },
+    "group_key": "文首鸟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥皆文首",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-zheng": {
+    "display_name": {
+      "zh": "狰",
+      "en": "Zheng"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "狰",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "many_tails",
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如赤豹五尾一角其音如擊石其名如狰",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-bifang": {
+    "display_name": {
+      "zh": "毕方",
+      "en": "Bifang"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "毕方",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "one_leg"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鶴一足赤文青質而白喙名曰畢方其鳴自呌也見則其邑有譌火",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-tian-gou": {
+    "display_name": {
+      "zh": "天狗",
+      "en": "Tiangou"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "天狗",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如狸而白首名曰天狗其音如榴榴可以禦凶",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-bluebirds-sanwei": {
+    "display_name": {
+      "zh": "三青鸟",
+      "en": "Three blue-green birds"
+    },
+    "qualifier": {
+      "zh": "三危段",
+      "en": ""
+    },
+    "group_key": "三青鸟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "三青鳥居之",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-aoyu-sanwei": {
+    "display_name": {
+      "zh": "𢕟𢓨",
+      "en": "Aoye"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "𢕟𢓨",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其上有獸焉其状如牛白身四角其毫如披蓑其名曰𢕟𢓨是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-chi-sanwei": {
+    "display_name": {
+      "zh": "鸱",
+      "en": "Chi"
+    },
+    "qualifier": {
+      "zh": "三危段",
+      "en": "Sanwei"
+    },
+    "group_key": "鸱",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉一首而三身其状如𪇱其名曰鴟",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-jishes-guishan3": {
+    "display_name": {
+      "zh": "积蛇",
+      "en": "Jishes"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "积蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其下多積蛇",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-dijiang": {
+    "display_name": {
+      "zh": "帝江",
+      "en": "Dijiang"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "帝江",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [
+      "winged",
+      "four_wings",
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有神焉其状如黄囊赤如丹火六足四翼渾敦無靣目是識歌舞實惟帝江也",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "beast-guan": {
+    "display_name": {
+      "zh": "讙",
+      "en": "Huan"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "讙",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "many_tails",
+      "one_eye"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如狸一目而三尾名曰讙其音如奪百聲是可以禦凶服之已癉",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-qiyu-yiwang": {
+    "display_name": {
+      "zh": "鵸䳜",
+      "en": "Qiyu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鵸䳜",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "many_heads",
+      "many_tails"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如烏三首六尾而善𥬇名曰鵸䳜服之使人不厭又可以禦凶",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-deer-shangshen": {
+    "display_name": {
+      "zh": "白鹿",
+      "en": "White deer"
+    },
+    "qualifier": {
+      "zh": "上申段",
+      "en": "Shangshen"
+    },
+    "group_key": "白鹿",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "獸多白鹿",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-danghu-shangshen": {
+    "display_name": {
+      "zh": "当扈",
+      "en": "Danghu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "当扈",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多當扈其状如雉以其髯飛食之不眴目",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-snakes-zhuci": {
+    "display_name": {
+      "zh": "衆蛇",
+      "en": "Snakes"
+    },
+    "qualifier": {
+      "zh": "诸次段",
+      "en": "Zhuci"
+    },
+    "group_key": "衆蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "鳥獸莫居是多衆蛇",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-wolf-yushan4": {
+    "display_name": {
+      "zh": "白狼",
+      "en": "White wolves"
+    },
+    "qualifier": {
+      "zh": "盂山",
+      "en": "Yu"
+    },
+    "group_key": "白狼",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多白狼白虎",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-tiger-yushan4": {
+    "display_name": {
+      "zh": "白虎",
+      "en": "White tigers"
+    },
+    "qualifier": {
+      "zh": "盂山",
+      "en": "Yu"
+    },
+    "group_key": "白虎",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多白狼白虎",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-pheasant-yushan4": {
+    "display_name": {
+      "zh": "白雉",
+      "en": "White pheasants"
+    },
+    "qualifier": {
+      "zh": "盂山",
+      "en": "Yu"
+    },
+    "group_key": "白雉",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多白雉白翟",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-zhai-yushan4": {
+    "display_name": {
+      "zh": "白翟",
+      "en": "White zhai"
+    },
+    "qualifier": {
+      "zh": "盂山",
+      "en": "Yu"
+    },
+    "group_key": "白翟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多白雉白翟",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-zuoniu-baiyu": {
+    "display_name": {
+      "zh": "㸲牛",
+      "en": "Zuoniu"
+    },
+    "qualifier": {
+      "zh": "白於段",
+      "en": "Baiyu"
+    },
+    "group_key": "㸲牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多㸲牛羬羊",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-qianyang-baiyu": {
+    "display_name": {
+      "zh": "羬羊",
+      "en": "Qianyang"
+    },
+    "qualifier": {
+      "zh": "白於段",
+      "en": "Baiyu"
+    },
+    "group_key": "羬羊",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多㸲牛羬羊",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-xiao-baiyu": {
+    "display_name": {
+      "zh": "鴞",
+      "en": "Xiao"
+    },
+    "qualifier": {
+      "zh": "白於段",
+      "en": "Baiyu"
+    },
+    "group_key": "鴞",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多鴞",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-manman-gangwei": {
+    "display_name": {
+      "zh": "蛮蛮",
+      "en": "Manman"
+    },
+    "qualifier": {
+      "zh": "鼠身鳖首",
+      "en": "mouse body"
+    },
+    "group_key": "蛮蛮",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多蠻蠻其状鼠身而鼈首其音如吠犬",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-white-yingdi": {
+    "display_name": {
+      "zh": "白鸟兽",
+      "en": "White birds and beasts"
+    },
+    "qualifier": {
+      "zh": "英鞮段",
+      "en": "Yingdi"
+    },
+    "group_key": "白鸟兽",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "鳥獸盡白",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-ranyi-yingdi": {
+    "display_name": {
+      "zh": "冉遗之鱼",
+      "en": "Ranyi fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "冉遗之鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是多冉遺之魚魚身蛇首六足其目如馬耳食之使人不眯可以禦凶",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-bo": {
+    "display_name": {
+      "zh": "駮",
+      "en": "Bo"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "駮",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如馬而白身黒尾一角虎牙爪音如皷音其名曰駮是食虎豹可以禦兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-qiongqi-xishan": {
+    "display_name": {
+      "zh": "穷奇",
+      "en": "Qiongqi"
+    },
+    "qualifier": {
+      "zh": "西山经",
+      "en": "Western Mountains"
+    },
+    "group_key": "穷奇",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其上有獸焉其状如牛蝟毛名曰窮竒音如獋狗是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-luoyu": {
+    "display_name": {
+      "zh": "蠃鱼",
+      "en": "Luoyu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "蠃鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "蠃魚魚身而鳥翼音如鴛鴦見則其邑大水",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-tiger-niaoshu": {
+    "display_name": {
+      "zh": "白虎",
+      "en": "White tigers"
+    },
+    "qualifier": {
+      "zh": "鸟鼠段",
+      "en": "Niaoshu"
+    },
+    "group_key": "白虎",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其上多白虎白玉",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-saoyu-niaoshu": {
+    "display_name": {
+      "zh": "鰠鱼",
+      "en": "Saoyu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鰠鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鰠魚其状如鱣魚動則其邑有大兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-rupi-niaoshu": {
+    "display_name": {
+      "zh": "𩶯魮之鱼",
+      "en": "Rupi fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "𩶯魮之鱼",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多𩶯魮之魚其状如覆銚鳥首而魚翼魚尾音如磬石之聲是生珠玉",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-turtle-yanzi": {
+    "display_name": {
+      "zh": "龟",
+      "en": "Turtles"
+    },
+    "qualifier": {
+      "zh": "崦嵫阳",
+      "en": "sunny Yanzi"
+    },
+    "group_key": "龟",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其陽多龜",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-xishan-shuhu-yanzi": {
+    "display_name": {
+      "zh": "孰湖",
+      "en": "Shuhu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "孰湖",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face",
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状馬身而鳥翼人靣蛇尾是好舉人名曰孰湖",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "bird-xishan-unnamed-yanzi": {
+    "display_name": {
+      "zh": "未名鸟",
+      "en": "Unnamed bird"
+    },
+    "qualifier": {
+      "zh": "崦嵫末段",
+      "en": "Yanzi"
+    },
+    "group_key": "未名鸟",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鴞而人面蜼身犬尾其名自號也見則其邑大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "beast-beishan-huayu-qiuru": {
+    "display_name": {
+      "zh": "滑鱼",
+      "en": "Huayu"
+    },
+    "qualifier": {
+      "zh": "求如",
+      "en": "Qiuru"
+    },
+    "group_key": "滑鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多滑魚其状如鱓赤背其音如梧食之已疣",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-shuima-qiuru": {
+    "display_name": {
+      "zh": "水马",
+      "en": "Shuima"
+    },
+    "qualifier": {
+      "zh": "求如",
+      "en": "Qiuru"
+    },
+    "group_key": "水马",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多水馬其状如馬文臂牛尾其音如呼",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-huanshu-daishan": {
+    "display_name": {
+      "zh": "䑏䟽",
+      "en": "Huanshu"
+    },
+    "qualifier": {
+      "zh": "带山",
+      "en": "Dai"
+    },
+    "group_key": "䑏䟽",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其状如馬一角有錯其名曰䑏䟽可以辟火",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-qitu-daishan": {
+    "display_name": {
+      "zh": "鵸䳜",
+      "en": "Qiyu"
+    },
+    "qualifier": {
+      "zh": "带山",
+      "en": "Dai"
+    },
+    "group_key": "鵸䳜",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如烏五彩而赤文名曰鵸䳜是自為牝牡食之不疽",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-youyu-daishan": {
+    "display_name": {
+      "zh": "儵鱼",
+      "en": "Youyu"
+    },
+    "qualifier": {
+      "zh": "带山",
+      "en": "Dai"
+    },
+    "group_key": "儵鱼",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "many_heads",
+      "many_tails",
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多儵魚其状如鷄而赤毛三尾六足四首其音如鵲食之可以己憂",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-heluo-qiaoming": {
+    "display_name": {
+      "zh": "何罗鱼",
+      "en": "Heluo fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "何罗鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多何羅之魚一首而十身其音如吠犬食之已癰",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-menghuai-qiaoming": {
+    "display_name": {
+      "zh": "孟槐",
+      "en": "Menghuai"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "孟槐",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如貆而赤豪其音如榴榴名曰孟槐可以禦凶",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-xixi-zhuoguang": {
+    "display_name": {
+      "zh": "鰼鰼之鱼",
+      "en": "Xixi fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鰼鰼之鱼",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鰼鰼之魚其状如鵲而十翼鱗皆在羽端其音如鵲可以禦火食之不癉",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-lingyang-zhuoguang": {
+    "display_name": {
+      "zh": "麢羊",
+      "en": "Lingyang"
+    },
+    "qualifier": {
+      "zh": "涿光",
+      "en": "Zhuoguang"
+    },
+    "group_key": "麢羊",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多麢羊",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-fan-zhuoguang": {
+    "display_name": {
+      "zh": "蕃",
+      "en": "Fan"
+    },
+    "qualifier": {
+      "zh": "涿光",
+      "en": "Zhuoguang"
+    },
+    "group_key": "蕃",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多蕃",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-tuotuo-guoshan": {
+    "display_name": {
+      "zh": "橐驼",
+      "en": "Tuotuo"
+    },
+    "qualifier": {
+      "zh": "虢山",
+      "en": "Guo"
+    },
+    "group_key": "橐驼",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多橐駝",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-yu-guoshan": {
+    "display_name": {
+      "zh": "寓",
+      "en": "Yu"
+    },
+    "qualifier": {
+      "zh": "虢山",
+      "en": "Guo"
+    },
+    "group_key": "寓",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多寓状如䑕而鳥翼其音如羊可以禦兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-ershu-danxun": {
+    "display_name": {
+      "zh": "耳䑕",
+      "en": "Ershu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "耳䑕",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如䑕而莬首麋身其音如獋犬以其尾飛名曰耳䑕食之不䐆又可以禦百毒",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-mengji-shizhe": {
+    "display_name": {
+      "zh": "孟极",
+      "en": "Mengji"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "孟极",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如豹而文題白身名曰孟極是善伏其鳴自呼",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-youan-bianchun": {
+    "display_name": {
+      "zh": "幽鴳",
+      "en": "Youan"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "幽鴳",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如禺而文身善𥬇見人則卧名曰幽鴳其鳴自呼",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-zuzi-manlian": {
+    "display_name": {
+      "zh": "足訾",
+      "en": "Zuzi"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "足訾",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如禺而有鬛牛尾文臂馬蹄見人則呼名曰足訾其鳴自呼",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-jiao-manlian": {
+    "display_name": {
+      "zh": "鵁",
+      "en": "Jiao"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鵁",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉群居而朋飛其毛如雌雉名曰鵁其名自呼食之已風",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-zhu-jian": {
+    "display_name": {
+      "zh": "诸犍",
+      "en": "Zhujian"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "诸犍",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face",
+      "one_eye"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如豹而長尾人首而牛耳一目名曰諸犍善吒行則㗸其尾居則蟠其尾",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-baiye-danzhang": {
+    "display_name": {
+      "zh": "白鵺",
+      "en": "Baiye"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "白鵺",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如雉而文首白翼黄足名曰白鵺食之已嗌痛可以已痸",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-nafu-guanti": {
+    "display_name": {
+      "zh": "那父",
+      "en": "Nafu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "那父",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而白尾其音如訆名曰那父",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-songsi-guanti": {
+    "display_name": {
+      "zh": "竦斯",
+      "en": "Songsi"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "竦斯",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如雌雉而人靣見人則躍名曰竦斯其鳴自呼也",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-maoniu-panhou": {
+    "display_name": {
+      "zh": "旄牛",
+      "en": "Maoniu"
+    },
+    "qualifier": {
+      "zh": "潘侯",
+      "en": "Panhou"
+    },
+    "group_key": "旄牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而四節生毛名曰旄牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-changshe-daxian": {
+    "display_name": {
+      "zh": "长蛇",
+      "en": "Changshe"
+    },
+    "qualifier": {
+      "zh": "大咸",
+      "en": "Daxian"
+    },
+    "group_key": "长蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有蛇名曰長蛇其毛如彘豪其音如皷柝",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-chigui-dunhong": {
+    "display_name": {
+      "zh": "赤鲑",
+      "en": "Red Gui"
+    },
+    "qualifier": {
+      "zh": "敦薨",
+      "en": "Dunhong"
+    },
+    "group_key": "赤鲑",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多赤鮭",
+      "review_status": "unresolved"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-si-dunhong": {
+    "display_name": {
+      "zh": "兕",
+      "en": "Si"
+    },
+    "qualifier": {
+      "zh": "敦薨",
+      "en": "Dunhong"
+    },
+    "group_key": "兕",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多兕旄牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-maoniu-dunhong": {
+    "display_name": {
+      "zh": "旄牛",
+      "en": "Maoniu"
+    },
+    "qualifier": {
+      "zh": "敦薨",
+      "en": "Dunhong"
+    },
+    "group_key": "旄牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多兕旄牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-shijiu-dunhong": {
+    "display_name": {
+      "zh": "鳲鸠",
+      "en": "Shijiu"
+    },
+    "qualifier": {
+      "zh": "敦薨",
+      "en": "Dunhong"
+    },
+    "group_key": "鳲鸠",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多鳲鳩",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-yayu-shaoxian": {
+    "display_name": {
+      "zh": "窫窳",
+      "en": "Yayu"
+    },
+    "qualifier": {
+      "zh": "少咸",
+      "en": "Shaoxian"
+    },
+    "group_key": "窫窳",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而赤身人靣馬足名曰窫窳其音如嬰兒是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-peipei-shaoxian": {
+    "display_name": {
+      "zh": "䰽䰽之鱼",
+      "en": "Peipei fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "䰽䰽之鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多䰽䰽之魚食之殺人",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-zao-yufa": {
+    "display_name": {
+      "zh": "䲃鱼",
+      "en": "Zao fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "䲃鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多䲃魚其状如鯉而雞足食之已疣",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-shanhui-yufa": {
+    "display_name": {
+      "zh": "山𤟤",
+      "en": "Shanhui"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "山𤟤",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如犬而人靣善投見人則𥬇其名山𤟤其行如風見則天下大風",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-zhuhuai-beiyue": {
+    "display_name": {
+      "zh": "诸懐",
+      "en": "Zhuhuai"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "诸懐",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而四角人目彘耳其名曰諸懐其音如鳴鴈是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-yi-beiyue": {
+    "display_name": {
+      "zh": "鮨鱼",
+      "en": "Yi fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鮨鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鮨魚魚身而犬首其音如嬰兒食之已狂",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-feiyi-hunxi": {
+    "display_name": {
+      "zh": "肥遗",
+      "en": "Feiyi"
+    },
+    "qualifier": {
+      "zh": "浑夕蛇",
+      "en": "Hunxi snake"
+    },
+    "group_key": "肥遗",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有蛇一首兩身名曰肥遺見則其國大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-yema-bicha": {
+    "display_name": {
+      "zh": "野马",
+      "en": "Wild horse"
+    },
+    "qualifier": {
+      "zh": "罴差郭注",
+      "en": "Bicha commentary"
+    },
+    "group_key": "野马",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多馬",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-ma-beixian": {
+    "display_name": {
+      "zh": "马",
+      "en": "Horses"
+    },
+    "qualifier": {
+      "zh": "北鲜",
+      "en": "Beixian"
+    },
+    "group_key": "马",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是多馬",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-ma-dishan": {
+    "display_name": {
+      "zh": "马",
+      "en": "Horses"
+    },
+    "qualifier": {
+      "zh": "堤山",
+      "en": "Di"
+    },
+    "group_key": "马",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多馬",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-yao-dishan": {
+    "display_name": {
+      "zh": "狕",
+      "en": "Yao"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "狕",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如豹而文首名曰狕",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-longgui-dishan": {
+    "display_name": {
+      "zh": "龙龟",
+      "en": "Longgui"
+    },
+    "qualifier": {
+      "zh": "堤山",
+      "en": "Di"
+    },
+    "group_key": "龙龟",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多龍龜",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-lv-xianyong": {
+    "display_name": {
+      "zh": "闾",
+      "en": "Lv"
+    },
+    "qualifier": {
+      "zh": "县雍",
+      "en": "Xianyong"
+    },
+    "group_key": "闾",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多閭麋",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-mi-xianyong": {
+    "display_name": {
+      "zh": "麋",
+      "en": "Mi"
+    },
+    "qualifier": {
+      "zh": "县雍",
+      "en": "Xianyong"
+    },
+    "group_key": "麋",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多閭麋",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-white-di-xianyong": {
+    "display_name": {
+      "zh": "白翟",
+      "en": "White Di"
+    },
+    "qualifier": {
+      "zh": "县雍",
+      "en": "Xianyong"
+    },
+    "group_key": "白翟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多白翟白䳑",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-white-you-xianyong": {
+    "display_name": {
+      "zh": "白䳑",
+      "en": "White You"
+    },
+    "qualifier": {
+      "zh": "县雍",
+      "en": "Xianyong"
+    },
+    "group_key": "白䳑",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多白翟白䳑",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-ci-xianyong": {
+    "display_name": {
+      "zh": "鮆鱼",
+      "en": "Ci fish"
+    },
+    "qualifier": {
+      "zh": "县雍",
+      "en": "Xianyong"
+    },
+    "group_key": "鮆鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鮆魚其状如儵而赤麟其音如叱食之不驕",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-boma-duntou": {
+    "display_name": {
+      "zh": "𩣡马",
+      "en": "Boma"
+    },
+    "qualifier": {
+      "zh": "敦头",
+      "en": "Duntou"
+    },
+    "group_key": "𩣡马",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多𩣡馬牛尾而白身一角其音如呼",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-paoxiao-gouwu": {
+    "display_name": {
+      "zh": "狍鴞",
+      "en": "Paoxiao"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "狍鴞",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如羊身人靣其目在腋下虎齒人𤓰其音如嬰兒名曰狍鴞是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-dugu-beixiao": {
+    "display_name": {
+      "zh": "独𤞞",
+      "en": "Dugu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "独𤞞",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如虎而白身犬首馬尾彘鬛名曰獨𤞞",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-banmao-beixiao": {
+    "display_name": {
+      "zh": "𪄀𪃑",
+      "en": "Banmao"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "𪄀𪃑",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其狀如烏人靣名曰𪄀𪃑宵飛而晝㐲食之已暍",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-juji-liangqu": {
+    "display_name": {
+      "zh": "居暨",
+      "en": "Juji"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "居暨",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多居暨其状如彚而赤毛其音如豚",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-xiao-liangqu": {
+    "display_name": {
+      "zh": "嚣",
+      "en": "Xiao"
+    },
+    "qualifier": {
+      "zh": "梁渠鸟",
+      "en": "Liangqu bird"
+    },
+    "group_key": "嚣",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [
+      "winged",
+      "four_wings",
+      "one_eye"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如夸父四翼一目犬尾名曰囂其音如鵲食之已腹痛可以止衕",
+      "review_status": "unresolved"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-ma-huguan": {
+    "display_name": {
+      "zh": "马",
+      "en": "Horses"
+    },
+    "qualifier": {
+      "zh": "湖灌",
+      "en": "Huguan"
+    },
+    "group_key": "马",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多馬",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-shan-huguan": {
+    "display_name": {
+      "zh": "䱇",
+      "en": "Shan"
+    },
+    "qualifier": {
+      "zh": "湖灌",
+      "en": "Huguan"
+    },
+    "group_key": "䱇",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多䱇",
+      "review_status": "unresolved"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-strange-snakes-huan": {
+    "display_name": {
+      "zh": "怪蛇",
+      "en": "Strange snakes"
+    },
+    "qualifier": {
+      "zh": "洹山",
+      "en": "Huan"
+    },
+    "group_key": "怪蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其下多怪蛇",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-hui-guishan": {
+    "display_name": {
+      "zh": "䮝",
+      "en": "Hui"
+    },
+    "qualifier": {
+      "zh": "归山",
+      "en": "Gui"
+    },
+    "group_key": "䮝",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如麢羊而四角馬尾而有距其名曰䮝善還其鳴自䚯",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-fen-guishan": {
+    "display_name": {
+      "zh": "䴅",
+      "en": "Fen"
+    },
+    "qualifier": {
+      "zh": "归山",
+      "en": "Gui"
+    },
+    "group_key": "䴅",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鵲白身赤尾六足其名曰䴅是善驚其鳴自詨",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-renyu-longhou": {
+    "display_name": {
+      "zh": "人鱼",
+      "en": "Renyu"
+    },
+    "qualifier": {
+      "zh": "龙侯",
+      "en": "Longhou"
+    },
+    "group_key": "人鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多人魚其状如䱱魚四足其音如嬰兒食之無癡疾",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-tianma-macheng": {
+    "display_name": {
+      "zh": "天马",
+      "en": "Tianma"
+    },
+    "qualifier": {
+      "zh": "马成",
+      "en": "Macheng"
+    },
+    "group_key": "天马",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如白犬而黑頭見人則飛其名曰天馬其鳴自䚯",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-quju-macheng": {
+    "display_name": {
+      "zh": "鶌鶋",
+      "en": "Quju"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鶌鶋",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如烏首白而身青足黄是名曰鶌鶋其鳴自詨食之不飢可以已寓",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-feishu-tianchi": {
+    "display_name": {
+      "zh": "飞䑕",
+      "en": "Feishu"
+    },
+    "qualifier": {
+      "zh": "天池",
+      "en": "Tianchi"
+    },
+    "group_key": "飞䑕",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如兎而䑕首以其背飛其名曰飛䑕",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-linghu-yangshan": {
+    "display_name": {
+      "zh": "领胡",
+      "en": "Linghu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "领胡",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而赤尾其頸腎其状如勾瞿其名曰領胡其鳴自詨食之已狂",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-xiangshe-yangshan": {
+    "display_name": {
+      "zh": "𧰼蛇",
+      "en": "Xiangshe"
+    },
+    "qualifier": {
+      "zh": "阳山鸟",
+      "en": "Yang bird"
+    },
+    "group_key": "𧰼蛇",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如雌雉而五彩以文是自為牝牡名曰𧰼蛇其鳴自詨",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-xianfu-yangshan": {
+    "display_name": {
+      "zh": "𩹴父之鱼",
+      "en": "Xianfu fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "𩹴父之鱼",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中有𩹴父之魚其状如鮒魚魚首而彘身食之已嘔",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-suanyu-jingshan": {
+    "display_name": {
+      "zh": "酸与",
+      "en": "Suanyu"
+    },
+    "qualifier": {
+      "zh": "景山",
+      "en": "Jing"
+    },
+    "group_key": "酸与",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [
+      "winged",
+      "four_wings"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如蛇而四翼六目三足名曰酸與其鳴自詨見則其邑有恐",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-feiyi-pengpi": {
+    "display_name": {
+      "zh": "肥遗之蛇",
+      "en": "Feiyi snakes"
+    },
+    "qualifier": {
+      "zh": "彭毗",
+      "en": "Pengpi"
+    },
+    "group_key": "肥遗之蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多肥遺之蛇",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-guxi-xiaohou": {
+    "display_name": {
+      "zh": "鸪𪄶",
+      "en": "Guxi"
+    },
+    "qualifier": {
+      "zh": "小侯",
+      "en": "Xiaohou"
+    },
+    "group_key": "鸪𪄶",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥其状如烏而白文名曰鴣𪄶食之不灂",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-huangniao-xuanyuan": {
+    "display_name": {
+      "zh": "黄鸟",
+      "en": "Huangniao"
+    },
+    "qualifier": {
+      "zh": "轩辕",
+      "en": "Xuanyuan"
+    },
+    "group_key": "黄鸟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如梟而白首其名曰黄鳥其鳴自詨食之不妬",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-white-snakes-shenqun": {
+    "display_name": {
+      "zh": "白蛇",
+      "en": "White snakes"
+    },
+    "qualifier": {
+      "zh": "神囷",
+      "en": "Shenqun"
+    },
+    "group_key": "白蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其下有白蛇",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-flying-insects-shenqun": {
+    "display_name": {
+      "zh": "飞虫",
+      "en": "Flying insects"
+    },
+    "qualifier": {
+      "zh": "神囷",
+      "en": "Shenqun"
+    },
+    "group_key": "飞虫",
+    "role": "beast",
+    "form_group": "insect",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有飛蟲",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-jingwei": {
+    "display_name": {
+      "zh": "精卫",
+      "en": "Jingwei"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "精卫",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如烏文首白喙赤足名曰精衛其鳴自詨是炎帝之少女名曰女娃女娃遊于東海溺而不返故為精衛常銜西山之木石以堙于東海",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-huomin-xiushan": {
+    "display_name": {
+      "zh": "鱯黾",
+      "en": "Huomin"
+    },
+    "qualifier": {
+      "zh": "绣山物名异说",
+      "en": "Xiu name variants"
+    },
+    "group_key": "鱯黾",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中有鱯黽",
+      "review_status": "unresolved"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-dongdong-taixi": {
+    "display_name": {
+      "zh": "䍶䍶",
+      "en": "Dongdong"
+    },
+    "qualifier": {
+      "zh": "泰戱",
+      "en": "Taixi"
+    },
+    "group_key": "䍶䍶",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "one_eye",
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如羊一角一目目在耳後其名曰䍶䍶其鳴自䚯",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-tuotuo-raoshan": {
+    "display_name": {
+      "zh": "槖驼",
+      "en": "Tuotuo"
+    },
+    "qualifier": {
+      "zh": "饶山",
+      "en": "Rao"
+    },
+    "group_key": "槖驼",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多槖駝",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-liuli-raoshan": {
+    "display_name": {
+      "zh": "鶹历",
+      "en": "Liuli"
+    },
+    "qualifier": {
+      "zh": "饶山",
+      "en": "Rao"
+    },
+    "group_key": "鶹历",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多鶹歷",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-shiyu-raoshan": {
+    "display_name": {
+      "zh": "师鱼",
+      "en": "Shi fish"
+    },
+    "qualifier": {
+      "zh": "饶山",
+      "en": "Rao"
+    },
+    "group_key": "师鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中有師魚食之殺人",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-yuan-ganshan": {
+    "display_name": {
+      "zh": "獂",
+      "en": "Yuan"
+    },
+    "qualifier": {
+      "zh": "乾山",
+      "en": "Gan"
+    },
+    "group_key": "獂",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而三足其名曰獂其鳴自詨",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-pi-lunshan": {
+    "display_name": {
+      "zh": "罴",
+      "en": "Pi"
+    },
+    "qualifier": {
+      "zh": "伦山麋状兽",
+      "en": "Lun deer-shaped creature"
+    },
+    "group_key": "罴",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如麋其川在尾上其名曰羆",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-puyi-jieshi": {
+    "display_name": {
+      "zh": "蒲夷之鱼",
+      "en": "Puyi fish"
+    },
+    "qualifier": {
+      "zh": "碣石",
+      "en": "Jieshi"
+    },
+    "group_key": "蒲夷之鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多蒲夷之魚",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-beishan-redhead-snake-mufeng": {
+    "display_name": {
+      "zh": "赤首白身大蛇",
+      "en": "Red-headed white-bodied great snake"
+    },
+    "qualifier": {
+      "zh": "末段",
+      "en": ""
+    },
+    "group_key": "赤首白身大蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是有大蛇赤首白身其音如牛見則其邑大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "beast-dongshan-yongyong-suzhu": {
+    "display_name": {
+      "zh": "鱅鱅之鱼",
+      "en": "Yongyong fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鱅鱅之鱼",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鱅鱅之魚其状如犂牛其音如彘鳴",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-huoshi-leishan": {
+    "display_name": {
+      "zh": "活师",
+      "en": "Huoshi"
+    },
+    "qualifier": {
+      "zh": "藟山",
+      "en": "Lei"
+    },
+    "group_key": "活师",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多活師",
+      "review_status": "unresolved"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-congcong-xunzhuang": {
+    "display_name": {
+      "zh": "从从",
+      "en": "Congcong"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "从从",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如犬六足其名曰從從其鳴自詨",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-zishu-xunzhuang": {
+    "display_name": {
+      "zh": "䖪䑕",
+      "en": "Zishu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "䖪䑕",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鷄而䑕毛其名曰䖪䑕見則其邑大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-zhen-xunzhuang": {
+    "display_name": {
+      "zh": "箴鱼",
+      "en": "Zhen fish"
+    },
+    "qualifier": {
+      "zh": "栒状",
+      "en": "Xunzhuang"
+    },
+    "group_key": "箴鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多箴魚其状如儵其喙如箴食之無疫疾",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-gan-fantiao": {
+    "display_name": {
+      "zh": "鱤鱼",
+      "en": "Gan fish"
+    },
+    "qualifier": {
+      "zh": "番条",
+      "en": "Fantiao"
+    },
+    "group_key": "鱤鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鱤魚；其中多鱤魚",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-kanyu-chai": {
+    "display_name": {
+      "zh": "堪㐨之鱼",
+      "en": "Kanxu fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "堪㐨之鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多堪㐨之魚",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-kuafu-like-chai": {
+    "display_name": {
+      "zh": "夸父状兽",
+      "en": "Kuafu-like beast"
+    },
+    "qualifier": {
+      "zh": "犲山未名",
+      "en": "Chai"
+    },
+    "group_key": "夸父状兽",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如夸父而彘毛其音如呼見則天下大水",
+      "review_status": "unresolved"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-tiaoyong-dushan": {
+    "display_name": {
+      "zh": "䖺䗤",
+      "en": "Tiaoyong"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "䖺䗤",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多䖺䗤其状如黄蛇魚翼出入有光見則其邑大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-tongtong-taishan": {
+    "display_name": {
+      "zh": "狪狪",
+      "en": "Tongtong"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "狪狪",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如豚而有珠名曰狪狪其名自䚯",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-zilei-zhu": {
+    "display_name": {
+      "zh": "茈羸",
+      "en": "Zilei"
+    },
+    "qualifier": {
+      "zh": "竹山",
+      "en": "Zhu"
+    },
+    "group_key": "茈羸",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多茈羸",
+      "review_status": "unresolved"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-lingling-kongsang-east": {
+    "display_name": {
+      "zh": "軨軨",
+      "en": "Lingling"
+    },
+    "qualifier": {
+      "zh": "东次二",
+      "en": "Eastern second range"
+    },
+    "group_key": "軨軨",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而虎文其音如欽其名曰軨軨其鳴自叫見則天下大水",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-shen-yigao": {
+    "display_name": {
+      "zh": "蜃",
+      "en": "Shen"
+    },
+    "qualifier": {
+      "zh": "峄皐",
+      "en": "Yigao"
+    },
+    "group_key": "蜃",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多蜃珧",
+      "review_status": "unresolved"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-yao-yigao": {
+    "display_name": {
+      "zh": "珧",
+      "en": "Yao"
+    },
+    "qualifier": {
+      "zh": "峄皐",
+      "en": "Yigao"
+    },
+    "group_key": "珧",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多蜃珧",
+      "review_status": "unresolved"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-zhubie-geshan-head": {
+    "display_name": {
+      "zh": "珠蟞鱼",
+      "en": "Zhubie fish"
+    },
+    "qualifier": {
+      "zh": "葛山之首",
+      "en": "head of Ge"
+    },
+    "group_key": "珠蟞鱼",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多珠蟞魚其状如肺而有目六足有珠其味酸甘食之無癘",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-qiuyu-yue": {
+    "display_name": {
+      "zh": "犰狳",
+      "en": "Qiuyu"
+    },
+    "qualifier": {
+      "zh": "余峩",
+      "en": "Yu-e"
+    },
+    "group_key": "犰狳",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如莬而鳥喙䲭目蛇尾見人則眠名曰犰狳其鳴自䚯見則螽蝗為敗",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-large-snake": {
+    "display_name": {
+      "zh": "大蛇",
+      "en": "Large snakes"
+    },
+    "qualifier": {
+      "zh": "东山文本索引",
+      "en": "Eastern textual index"
+    },
+    "group_key": "大蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多大蛇；多大蛇；有大蛇",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-zhunou-gengshan": {
+    "display_name": {
+      "zh": "朱獳",
+      "en": "Zhunou"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "朱獳",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如狐而魚翼其名曰朱獳其鳴自叫見則其國有恐",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-lihu-luqi": {
+    "display_name": {
+      "zh": "𪁐鹕",
+      "en": "Lihu"
+    },
+    "qualifier": {
+      "zh": "卢其",
+      "en": "Luqi"
+    },
+    "group_key": "𪁐鹕",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多𪁐鶘其状如鴛鴦而人足其鳴自䚯見則其國多土功",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-bibi-gufeng": {
+    "display_name": {
+      "zh": "獙獙",
+      "en": "Bibi"
+    },
+    "qualifier": {
+      "zh": "姑逢",
+      "en": "Gufeng"
+    },
+    "group_key": "獙獙",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如狐而有翼其音如鴻鴈其名曰獙獙見則天下大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-longzhi-fuli": {
+    "display_name": {
+      "zh": "蠪侄",
+      "en": "Longzhi"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "蠪侄",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "many_heads",
+      "many_tails"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如狐而九尾九首虎爪名曰蠪姪其音如嬰兒是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-youyou-zhenshan": {
+    "display_name": {
+      "zh": "峳峳",
+      "en": "Youyou"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "峳峳",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如馬而羊目四角牛尾其音如獋狗其名曰峳峳見則其國多狡客",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-jiegou-zhenshan": {
+    "display_name": {
+      "zh": "絜鈎",
+      "en": "Jiegou"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "絜鈎",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鳬而䑕尾善登木其名曰絜鈎見則其國多疫",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-yuanhu-shihu": {
+    "display_name": {
+      "zh": "妴胡",
+      "en": "Yuanhu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "妴胡",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如麋而魚目名曰妴胡其鳴自䚯",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-qin-zhugou": {
+    "display_name": {
+      "zh": "𥧌鱼",
+      "en": "Qin fish"
+    },
+    "qualifier": {
+      "zh": "诸鈎",
+      "en": "Zhugou"
+    },
+    "group_key": "𥧌鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多𥧌魚",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-zhan-mengzi": {
+    "display_name": {
+      "zh": "鱣",
+      "en": "Zhan fish"
+    },
+    "qualifier": {
+      "zh": "孟子",
+      "en": "Mengzi"
+    },
+    "group_key": "鱣",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鱣鮪",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-wei-mengzi": {
+    "display_name": {
+      "zh": "鲔",
+      "en": "Wei fish"
+    },
+    "qualifier": {
+      "zh": "孟子",
+      "en": "Mengzi"
+    },
+    "group_key": "鲔",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鱣鮪",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-xigui-qizhong": {
+    "display_name": {
+      "zh": "蠵龟",
+      "en": "Xigui turtles"
+    },
+    "qualifier": {
+      "zh": "深泽",
+      "en": "Shen marsh"
+    },
+    "group_key": "蠵龟",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多蠵龜",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-gege-qizhong": {
+    "display_name": {
+      "zh": "鮯鮯之鱼",
+      "en": "Gege fish"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鮯鮯之鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有魚焉其状如鯉而六足鳥尾名曰鮯鮯之魚其鳴自叫",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-jingjing-muyu": {
+    "display_name": {
+      "zh": "精精",
+      "en": "Jingjing"
+    },
+    "qualifier": {
+      "zh": "踇隅",
+      "en": "Muyu"
+    },
+    "group_key": "精精",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而馬尾名曰精精其鳴自呌",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-xieju-beihao": {
+    "display_name": {
+      "zh": "猲狙",
+      "en": "Xieju"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "猲狙",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如狼赤首䑕目其音如豚名曰猲狙是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-qique-beihao": {
+    "display_name": {
+      "zh": "鬿雀",
+      "en": "Qique"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "鬿雀",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其状如鷄而白首䑕足而虎爪其名曰鬿雀亦食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-qiu-maoshan": {
+    "display_name": {
+      "zh": "鱃鱼",
+      "en": "Qiu fish"
+    },
+    "qualifier": {
+      "zh": "东山文本索引",
+      "en": "Eastern textual index"
+    },
+    "group_key": "鱃鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鱃魚其状如鯉而大首食者不疣；其中多鱃魚；其中多鱃魚",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-zi-dongshi": {
+    "display_name": {
+      "zh": "茈鱼",
+      "en": "Zi fish"
+    },
+    "qualifier": {
+      "zh": "东始",
+      "en": "Dongshi"
+    },
+    "group_key": "茈鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多茈魚其状如鮒一首而十身其臭如蘪蕪食之不䊧",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-bo-nvzheng": {
+    "display_name": {
+      "zh": "薄鱼",
+      "en": "Bo fish"
+    },
+    "qualifier": {
+      "zh": "女烝",
+      "en": "Nvzheng"
+    },
+    "group_key": "薄鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [
+      "one_eye"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多薄魚其状如鱣魚而一目其音如歐見則天下大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dangkang": {
+    "display_name": {
+      "zh": "当康",
+      "en": "Dangkang"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": "Qin"
+    },
+    "group_key": "当康",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如豚而有牙其名曰當康其鳴自叫見則天下大穰",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-dongshan-hua-zitong": {
+    "display_name": {
+      "zh": "䱻鱼",
+      "en": "Hua fish"
+    },
+    "qualifier": {
+      "zh": "子桐",
+      "en": "Zitong"
+    },
+    "group_key": "䱻鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多䱻魚其状如魚而鳥翼出入有光其音如鴛鴦見則天下大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-heyu": {
+    "display_name": {
+      "zh": "合窳",
+      "en": "Heyu"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": "Yan"
+    },
+    "group_key": "合窳",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如彘而人面黄身而赤尾其名曰合窳其音如嬰兒是獸也食人亦食蟲蛇見則天下大水",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-fei": {
+    "display_name": {
+      "zh": "蜚",
+      "en": "Fei"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": "fourth-range Tai"
+    },
+    "group_key": "蜚",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "one_eye"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其状如牛而白首一目而蛇尾其名曰蜚行水則竭行草則死見則天下大疫",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "beast-zhongshan-nuo-gancao": {
+    "display_name": {
+      "zh": "㔮",
+      "en": "Nuo"
+    },
+    "qualifier": {
+      "zh": "甘枣",
+      "en": "Ganzao"
+    },
+    "group_key": "㔮",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如𤠢鼠而文題其名曰㔮食之已癭",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-hao-quzhu": {
+    "display_name": {
+      "zh": "豪鱼",
+      "en": "Hao fish"
+    },
+    "qualifier": {
+      "zh": "渠猪",
+      "en": "Quzhu"
+    },
+    "group_key": "豪鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中是多豪魚狀如鮪赤喙尾赤羽可以已白癬",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-feiyu-niushou": {
+    "display_name": {
+      "zh": "飞鱼",
+      "en": "Feiyu"
+    },
+    "qualifier": {
+      "zh": "牛首",
+      "en": "Niushou"
+    },
+    "group_key": "飞鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是多飛魚其狀如鮒魚食之已痔衕",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-feifei-huo": {
+    "display_name": {
+      "zh": "朏朏",
+      "en": "Feifei"
+    },
+    "qualifier": {
+      "zh": "霍山",
+      "en": "Huo"
+    },
+    "group_key": "朏朏",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如狸而白尾有鬛名曰朏朏養之可以已憂",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-he-huizhu": {
+    "display_name": {
+      "zh": "鶡",
+      "en": "He birds"
+    },
+    "qualifier": {
+      "zh": "煇诸",
+      "en": "Huizhu"
+    },
+    "group_key": "鶡",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多鶡",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-mingshe-xian": {
+    "display_name": {
+      "zh": "鸣蛇",
+      "en": "Ming snakes"
+    },
+    "qualifier": {
+      "zh": "鲜水",
+      "en": "Xian water"
+    },
+    "group_key": "鸣蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [
+      "winged",
+      "four_wings"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鳴蛇其狀如蛇而四翼其音如磬見則其邑大旱",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-huashe-yang": {
+    "display_name": {
+      "zh": "化蛇",
+      "en": "Huashe"
+    },
+    "qualifier": {
+      "zh": "阳水",
+      "en": "Yang water"
+    },
+    "group_key": "化蛇",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face",
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多化蛇其狀如人靣而豺身鳥翼而蛇行其音如叱呼見則其邑大水",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-longchi-kunwu": {
+    "display_name": {
+      "zh": "蠪蚳",
+      "en": "Longchi"
+    },
+    "qualifier": {
+      "zh": "昆吾",
+      "en": "Kunwu"
+    },
+    "group_key": "蠪蚳",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如彘而有角其音如號名曰蠪蚳食之不眯",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-mafu-manqu": {
+    "display_name": {
+      "zh": "马腹",
+      "en": "Mafu"
+    },
+    "qualifier": {
+      "zh": "蔓渠",
+      "en": "Manqu"
+    },
+    "group_key": "马腹",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其名曰馬腹其狀如人靣虎身其音如嬰兒是食人",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-fuzhu-aoan": {
+    "display_name": {
+      "zh": "夫诸",
+      "en": "Fuzhu"
+    },
+    "qualifier": {
+      "zh": "敖岸",
+      "en": "Ao-an"
+    },
+    "group_key": "夫诸",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如白鹿而四角名曰夫諸見則其邑大水",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-jia-qingyao": {
+    "display_name": {
+      "zh": "驾鸟",
+      "en": "Jia birds"
+    },
+    "qualifier": {
+      "zh": "青要",
+      "en": "Qingyao"
+    },
+    "group_key": "驾鸟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是多駕鳥",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-yao-qingyao": {
+    "display_name": {
+      "zh": "鴢",
+      "en": "Yao birds"
+    },
+    "qualifier": {
+      "zh": "畛水",
+      "en": "Zhen water"
+    },
+    "group_key": "鴢",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉名曰鴢其狀如鳬青身而朱目赤尾食之冝子",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-feiyu-gui": {
+    "display_name": {
+      "zh": "飞鱼",
+      "en": "Feiyu"
+    },
+    "qualifier": {
+      "zh": "騩山",
+      "en": "Wei"
+    },
+    "group_key": "飞鱼",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多飛魚其狀如豚而赤文服之不畏雷可以禦兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-yin-fuzhu": {
+    "display_name": {
+      "zh": "䴦",
+      "en": "Yin"
+    },
+    "qualifier": {
+      "zh": "扶猪",
+      "en": "Fuzhu"
+    },
+    "group_key": "䴦",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如貉而人目其名曰䴦",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-xiqu-li": {
+    "display_name": {
+      "zh": "犀渠",
+      "en": "Xiqu"
+    },
+    "qualifier": {
+      "zh": "厘山",
+      "en": "Li"
+    },
+    "group_key": "犀渠",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如牛蒼身其音如嬰兒是食人其名曰犀渠",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-jie-li": {
+    "display_name": {
+      "zh": "𤢺",
+      "en": "Jie"
+    },
+    "qualifier": {
+      "zh": "厘山",
+      "en": "Li"
+    },
+    "group_key": "𤢺",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "scales"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉名曰𤢺其狀如獳犬而有鱗其毛如彘鬛",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-red-bi-mu": {
+    "display_name": {
+      "zh": "赤鷩",
+      "en": "Red Bi birds"
+    },
+    "qualifier": {
+      "zh": "牡山",
+      "en": "Mu"
+    },
+    "group_key": "赤鷩",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "鳥多赤鷩",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-jue-shou": {
+    "display_name": {
+      "zh": "𩿁鸟",
+      "en": "Three-eyed owl-like bird"
+    },
+    "qualifier": {
+      "zh": "首山",
+      "en": "Shou"
+    },
+    "group_key": "𩿁鸟",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多𩿁鳥其狀如梟而三目有耳其音如錄食之已墊",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-jing-shi": {
+    "display_name": {
+      "zh": "麖",
+      "en": "Jing"
+    },
+    "qualifier": {
+      "zh": "尸山",
+      "en": "Shi"
+    },
+    "group_key": "麖",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多麖",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-linggui-yangxu": {
+    "display_name": {
+      "zh": "灵龟",
+      "en": "Spirit turtle"
+    },
+    "qualifier": {
+      "zh": "阳虚郭注",
+      "en": "Yangxu commentary"
+    },
+    "group_key": "灵龟",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "commentary",
+      "source_field": "quote",
+      "evidence": "靈龜負書丹甲青文以授之出此水中也",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-lingyao-hui": {
+    "display_name": {
+      "zh": "鴒䳩",
+      "en": "Lingyao"
+    },
+    "qualifier": {
+      "zh": "廆山",
+      "en": "Gui"
+    },
+    "group_key": "鴒䳩",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉狀如山鷄而長尾赤如丹火而青喙名曰鴒䳩其鳴自呼服之不眯",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-xuangui-mi": {
+    "display_name": {
+      "zh": "旋龟",
+      "en": "Xuangui"
+    },
+    "qualifier": {
+      "zh": "密山",
+      "en": "Mi"
+    },
+    "group_key": "旋龟",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多旋龜其狀鳥首而鼈尾其音如判木",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-xiubi-tuo": {
+    "display_name": {
+      "zh": "修辟之鱼",
+      "en": "Xiubi"
+    },
+    "qualifier": {
+      "zh": "橐水",
+      "en": "Tuo water"
+    },
+    "group_key": "修辟之鱼",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多脩辟之魚狀如黽而白喙其音如䲭食之已白癬",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-shangao-ku": {
+    "display_name": {
+      "zh": "山膏",
+      "en": "Shangao"
+    },
+    "qualifier": {
+      "zh": "苦山",
+      "en": "Ku"
+    },
+    "group_key": "山膏",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉名曰山膏其狀如逐赤若丹火善詈",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-wenwen-fanggao": {
+    "display_name": {
+      "zh": "文文",
+      "en": "Wenwen"
+    },
+    "qualifier": {
+      "zh": "放皐",
+      "en": "Fanggao"
+    },
+    "group_key": "文文",
+    "role": "beast",
+    "form_group": "insect",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如蜂枝尾而反舌善呼其名曰文文",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-threeleg-da241": {
+    "display_name": {
+      "zh": "三足龟",
+      "en": "Three-legged turtle"
+    },
+    "qualifier": {
+      "zh": "狂水正文",
+      "en": "Kuang main text"
+    },
+    "group_key": "三足龟",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多三足龜食者無大疾可以已腫",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-sixeye-comment-da241": {
+    "display_name": {
+      "zh": "三足六眼龟龞",
+      "en": "Three-legged six-eyed turtle"
+    },
+    "qualifier": {
+      "zh": "郭注外地引例",
+      "en": "outside-locality commentary"
+    },
+    "group_key": "三足六眼龟龞",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "comparison",
+      "source_field": "quote",
+      "evidence": "中有三足六眼龜龞",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-lun-banshi": {
+    "display_name": {
+      "zh": "鯩鱼",
+      "en": "Lun fish"
+    },
+    "qualifier": {
+      "zh": "来需",
+      "en": "Laixu"
+    },
+    "group_key": "鯩鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多鯩魚黑文其狀如鮒食者不睡",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-teng-banshi": {
+    "display_name": {
+      "zh": "鰧鱼",
+      "en": "Teng fish"
+    },
+    "qualifier": {
+      "zh": "合水",
+      "en": "He water"
+    },
+    "group_key": "鰧鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多鰧魚狀如鱖居逵蒼文赤尾食者不癰可以為瘻",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-ti-shaoshi": {
+    "display_name": {
+      "zh": "䱱鱼",
+      "en": "Ti fish"
+    },
+    "qualifier": {
+      "zh": "少室",
+      "en": "Shaoshi"
+    },
+    "group_key": "䱱鱼",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多䱱魚狀如𥂕蜼而長距足白而對食者無蠱疾可以禦兵",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-wenfish-jing8": {
+    "display_name": {
+      "zh": "文鱼",
+      "en": "Patterned fish"
+    },
+    "qualifier": {
+      "zh": "景山雎水",
+      "en": "Jing, Ju water"
+    },
+    "group_key": "文鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多文魚",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-li-cattle-jingshan8": {
+    "display_name": {
+      "zh": "犁牛",
+      "en": "Li cattle"
+    },
+    "qualifier": {
+      "zh": "荆山",
+      "en": "Jingshan"
+    },
+    "group_key": "犁牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多犛牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-jiao-zhang8": {
+    "display_name": {
+      "zh": "鲛鱼",
+      "en": "Jiao fish"
+    },
+    "qualifier": {
+      "zh": "漳水",
+      "en": "Zhang water"
+    },
+    "group_key": "鲛鱼",
+    "role": "beast",
+    "form_group": "fish",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多鮫魚",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-whitejiao-nvji": {
+    "display_name": {
+      "zh": "白鷮",
+      "en": "White Jiao birds"
+    },
+    "qualifier": {
+      "zh": "女几",
+      "en": "Nüji"
+    },
+    "group_key": "白鷮",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其鳥多白鷮",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-zhen-nvji": {
+    "display_name": {
+      "zh": "鸩",
+      "en": "Zhen birds"
+    },
+    "qualifier": {
+      "zh": "女几",
+      "en": "Nüji"
+    },
+    "group_key": "鸩",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多鴆",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-chuo-lun8": {
+    "display_name": {
+      "zh": "㚟",
+      "en": "Chuo"
+    },
+    "qualifier": {
+      "zh": "纶山",
+      "en": "Lun"
+    },
+    "group_key": "㚟",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其獸多閭麈麢㚟",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-tuo-min9": {
+    "display_name": {
+      "zh": "鼍",
+      "en": "Tuo"
+    },
+    "qualifier": {
+      "zh": "岷山江水",
+      "en": "Min Jiang"
+    },
+    "group_key": "鼍",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多鼉",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-kui-cattle-min9": {
+    "display_name": {
+      "zh": "夔牛",
+      "en": "Kui cattle"
+    },
+    "qualifier": {
+      "zh": "岷山",
+      "en": "Min"
+    },
+    "group_key": "夔牛",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多夔牛",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-mo-lai9": {
+    "display_name": {
+      "zh": "㹮",
+      "en": "Mo"
+    },
+    "qualifier": {
+      "zh": "崃山郭注",
+      "en": "Lai commentary"
+    },
+    "group_key": "㹮",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "commentary",
+      "source_field": "quote",
+      "evidence": "山有九折坂出㹮㹮似熊而黒白駮亦食銅鐵也",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-hooked-snake-ju9": {
+    "display_name": {
+      "zh": "鈎蛇",
+      "en": "Hooked snake"
+    },
+    "qualifier": {
+      "zh": "永昌郭注比拟",
+      "en": "Yongchang commentary comparison"
+    },
+    "group_key": "鈎蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "comparison",
+      "source_field": "quote",
+      "evidence": "今永昌郡有鈎蛇長數丈尾岐在水中鈎取岸上人牛馬啖之又呼",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-qiezhi-ju9": {
+    "display_name": {
+      "zh": "窃脂",
+      "en": "Qiezhi"
+    },
+    "qualifier": {
+      "zh": "崌山",
+      "en": "Ju"
+    },
+    "group_key": "窃脂",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉狀如鴞而赤身白首其名曰竊脂可以禦火",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-balang-she9": {
+    "display_name": {
+      "zh": "𤜣狼",
+      "en": "Balang"
+    },
+    "qualifier": {
+      "zh": "蛇山",
+      "en": "She"
+    },
+    "group_key": "𤜣狼",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如狐而白尾長耳名𤜣狼見則國内有兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-wei-ge9": {
+    "display_name": {
+      "zh": "蜼",
+      "en": "Wei"
+    },
+    "qualifier": {
+      "zh": "鬲山",
+      "en": "Ge"
+    },
+    "group_key": "蜼",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多猨蜼",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-qizhong-fuzhou10": {
+    "display_name": {
+      "zh": "跂踵",
+      "en": "Qizhong"
+    },
+    "qualifier": {
+      "zh": "复州",
+      "en": "Fuzhou"
+    },
+    "group_key": "跂踵",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [
+      "one_leg"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其狀如鴞而一足彘尾其名曰跂踵見則其國大疫",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-jiao-yiwang11": {
+    "display_name": {
+      "zh": "蛟",
+      "en": "Jiao"
+    },
+    "qualifier": {
+      "zh": "贶水",
+      "en": "Kuang water"
+    },
+    "group_key": "蛟",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多蛟",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-yonghe-feng-first11": {
+    "display_name": {
+      "zh": "雍和",
+      "en": "Yonghe"
+    },
+    "qualifier": {
+      "zh": "丰山",
+      "en": "Feng"
+    },
+    "group_key": "雍和",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如蝯赤目赤喙黄身名曰雍和見則國有大恐",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-zhen-yaobi11": {
+    "display_name": {
+      "zh": "鸩",
+      "en": "Zhen"
+    },
+    "qualifier": {
+      "zh": "瑶碧雉状鸟",
+      "en": "Yaobi pheasant-like bird"
+    },
+    "group_key": "鸩",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其狀如雉𢘆食蜚名曰鴆",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-yingshao-zhili11": {
+    "display_name": {
+      "zh": "婴勺",
+      "en": "Yingshao"
+    },
+    "qualifier": {
+      "zh": "支离",
+      "en": "Zhili"
+    },
+    "group_key": "婴勺",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其名曰嬰勺其狀如鵲赤目赤喙白身其尾若勺其鳴自呼",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-qinggeng-jinli11": {
+    "display_name": {
+      "zh": "青耕",
+      "en": "Qinggeng"
+    },
+    "qualifier": {
+      "zh": "堇理",
+      "en": "Jinli"
+    },
+    "group_key": "青耕",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其狀如鵲青身白喙白目白尾名曰青耕可以禦疫其鳴自呌",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-lin-yiku11": {
+    "display_name": {
+      "zh": "獜",
+      "en": "Lin"
+    },
+    "qualifier": {
+      "zh": "依軲",
+      "en": "Yiku"
+    },
+    "group_key": "獜",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [
+      "scales"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如犬虎爪有甲其名曰獜善駚𤘝食者不風",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-threeleg-cong11": {
+    "display_name": {
+      "zh": "三足鼈",
+      "en": "Three-footed softshell turtle"
+    },
+    "qualifier": {
+      "zh": "从水",
+      "en": "Cong water"
+    },
+    "group_key": "三足鼈",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其中多三足鼈枝尾食之無蠱疫",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-li-lema11": {
+    "display_name": {
+      "zh": "𤟑",
+      "en": "Li"
+    },
+    "qualifier": {
+      "zh": "乐马",
+      "en": "Lema"
+    },
+    "group_key": "𤟑",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如彚赤如丹火其名曰𤟑見則其國大疫",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-jie-zhen11": {
+    "display_name": {
+      "zh": "颉",
+      "en": "Jie"
+    },
+    "qualifier": {
+      "zh": "葴山视水",
+      "en": "Zhen Shi water"
+    },
+    "group_key": "颉",
+    "role": "beast",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多頡",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-juru-yidi11": {
+    "display_name": {
+      "zh": "狙如",
+      "en": "Juru"
+    },
+    "qualifier": {
+      "zh": "倚帝",
+      "en": "Yidi"
+    },
+    "group_key": "狙如",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如鼣鼠白耳白喙名曰狙如見則其國有大兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-yiji-xian11": {
+    "display_name": {
+      "zh": "𤝻即",
+      "en": "Yiji"
+    },
+    "qualifier": {
+      "zh": "鲜山",
+      "en": "Xian"
+    },
+    "group_key": "𤝻即",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如膜大赤喙赤目白尾見則其邑有火名曰𤝻即",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-liangqu-lishi11": {
+    "display_name": {
+      "zh": "梁渠",
+      "en": "Liangqu"
+    },
+    "qualifier": {
+      "zh": "歴石",
+      "en": "Lishi"
+    },
+    "group_key": "梁渠",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如狸而白首虎爪名曰梁渠見則其國有大兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-juyu-chouyang11": {
+    "display_name": {
+      "zh": "𩢢余",
+      "en": "Zhiyu"
+    },
+    "qualifier": {
+      "zh": "丑阳",
+      "en": "Chouyang"
+    },
+    "group_key": "𩢢余",
+    "role": "beast",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有鳥焉其狀如烏而赤足名曰𩢢餘可以禦火",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-wenlin-ji-mountain11": {
+    "display_name": {
+      "zh": "闻𧲂",
+      "en": "Wenlin"
+    },
+    "qualifier": {
+      "zh": "几山",
+      "en": "Ji"
+    },
+    "group_key": "闻𧲂",
+    "role": "beast",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如彘黃身白頭白尾名曰聞𧲂見則天下大風",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-gui-jigong12": {
+    "display_name": {
+      "zh": "蛫",
+      "en": "Gui"
+    },
+    "qualifier": {
+      "zh": "即公",
+      "en": "Jigong"
+    },
+    "group_key": "蛫",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有獸焉其狀如龜而白身赤首名曰蛫是可以禦火",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "beast-zhongshan-flying-snake-chaisang12": {
+    "display_name": {
+      "zh": "飞蛇",
+      "en": "Flying snake"
+    },
+    "qualifier": {
+      "zh": "柴桑",
+      "en": "Chaisang"
+    },
+    "group_key": "飞蛇",
+    "role": "beast",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "多白蛇飛蛇",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-nanshan-1": {
+    "display_name": {
+      "zh": "鸟身龙首神",
+      "en": "Bird-bodied dragon-headed gods"
+    },
+    "qualifier": {
+      "zh": "䧿山诸神",
+      "en": "Range 1 deities"
+    },
+    "group_key": "鸟身龙首神",
+    "role": "deity",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "凡䧿山之首自招揺之山以至箕尾之山凡十山二千九百五十里其神狀皆鳥身而龍首其祠之禮毛用一璋玉瘞糈用稌米一壁稻米白菅為席",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "deity-nanshan-2": {
+    "display_name": {
+      "zh": "龙身鸟首神",
+      "en": "Dragon-bodied bird-headed gods"
+    },
+    "qualifier": {
+      "zh": "南次二经诸神",
+      "en": "Range 2 deities"
+    },
+    "group_key": "龙身鸟首神",
+    "role": "deity",
+    "form_group": "serpent",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "凡南次二經之首自柜山至于漆吳之山凡十七山七千二百里其神状皆龍身而鳥首其祠毛用一璧瘞糈用稌",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "deity-nanshan-3": {
+    "display_name": {
+      "zh": "龙身人面神",
+      "en": "Dragon-bodied human-faced gods"
+    },
+    "qualifier": {
+      "zh": "南次三经诸神",
+      "en": "Range 3 deities"
+    },
+    "group_key": "龙身人面神",
+    "role": "deity",
+    "form_group": "serpent",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "凡南次三經之首自天虞之山以至南禺之山凡一十四山六千五百三十里其神皆龍身而人面其祠皆一白狗祈糈用稌",
+      "review_status": "reviewed"
+    },
+    "book_key": "南山经"
+  },
+  "deity-xishan-horse-range2": {
+    "display_name": {
+      "zh": "人面马身神",
+      "en": "Human-faced horse-bodied gods"
+    },
+    "qualifier": {
+      "zh": "十神·人靣马身（西次二经）",
+      "en": "Ten horse-bodied deities (second range)"
+    },
+    "group_key": "人面马身神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其十神者皆人靣而馬身",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-ox-range2": {
+    "display_name": {
+      "zh": "人面牛身神",
+      "en": "Human-faced ox-bodied gods"
+    },
+    "qualifier": {
+      "zh": "七神·人靣牛身（西次二经）",
+      "en": "Seven ox-bodied deities (second range)"
+    },
+    "group_key": "人面牛身神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其七神皆人靣牛身四足而一臂操杖以行是為飛獸之神",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-huangdi-mishan": {
+    "display_name": {
+      "zh": "黄帝",
+      "en": "Huangdi"
+    },
+    "qualifier": {
+      "zh": "峚山段",
+      "en": "Mi passage"
+    },
+    "group_key": "黄帝",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "黄帝是食是饗是生𤣥玉玉膏所出以灌丹木丹木五歲五色乃清五味乃馨黃帝乃取峚山之玉榮而投之鍾山之陽",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-heaven-earth-mishan": {
+    "display_name": {
+      "zh": "天地鬼神",
+      "en": "Heaven, earth, ghosts and spirits"
+    },
+    "qualifier": {
+      "zh": "峚山段",
+      "en": "Mi passage"
+    },
+    "group_key": "天地鬼神",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "天地鬼神是食是饗",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-gu-zhongshan": {
+    "display_name": {
+      "zh": "皷",
+      "en": "Gu, dragon form"
+    },
+    "qualifier": {
+      "zh": "锺山龙身",
+      "en": "Zhong passage"
+    },
+    "group_key": "皷",
+    "role": "deity",
+    "form_group": "serpent",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其子曰皷其状如人靣而龍身",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-qinpi-zhongshan": {
+    "display_name": {
+      "zh": "钦䲹",
+      "en": "Qinpi, original form"
+    },
+    "qualifier": {
+      "zh": "锺山原身",
+      "en": "Zhong passage"
+    },
+    "group_key": "钦䲹",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是與欽䲹殺葆江于崑崙之陽",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-baojiang-zhongshan": {
+    "display_name": {
+      "zh": "葆江",
+      "en": "Baojiang"
+    },
+    "qualifier": {
+      "zh": "锺山段",
+      "en": "Zhong passage"
+    },
+    "group_key": "葆江",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "殺葆江于崑崙之陽",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-di-zhongshan": {
+    "display_name": {
+      "zh": "帝",
+      "en": "Unnamed emperor"
+    },
+    "qualifier": {
+      "zh": "锺山段·未具名",
+      "en": "Zhong passage"
+    },
+    "group_key": "帝",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "帝乃戮之鍾山之東曰𡺯崖",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-yingzhao-huaijiang": {
+    "display_name": {
+      "zh": "英招",
+      "en": "Yingzhao"
+    },
+    "qualifier": {
+      "zh": "槐江段",
+      "en": "Huaijiang passage"
+    },
+    "group_key": "英招",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face",
+      "winged"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神英招司之其状馬身而人靣虎文而鳥翼徇于四海其音如榴",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-houji-huaijiang": {
+    "display_name": {
+      "zh": "后稷",
+      "en": "Houji"
+    },
+    "qualifier": {
+      "zh": "槐江西望",
+      "en": "Huaijiang western view"
+    },
+    "group_key": "后稷",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "西望大澤后稷所潜也",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-lilun-huaijiang": {
+    "display_name": {
+      "zh": "槐鬼离仑",
+      "en": "Huai-gui Lilun"
+    },
+    "qualifier": {
+      "zh": "槐江北望",
+      "en": "Huaijiang northern view"
+    },
+    "group_key": "槐鬼离仑",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "北望諸毗槐鬼離侖居之",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-youqiong-huaijiang": {
+    "display_name": {
+      "zh": "有穷鬼",
+      "en": "Youqiong spirits"
+    },
+    "qualifier": {
+      "zh": "槐江东望",
+      "en": "Huaijiang eastern view"
+    },
+    "group_key": "有穷鬼",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有窮鬼居之各在一摶",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-ox-eight-huaijiang": {
+    "display_name": {
+      "zh": "未名天神",
+      "en": "Unnamed heavenly deity"
+    },
+    "qualifier": {
+      "zh": "槐江末段",
+      "en": "Huaijiang closing account"
+    },
+    "group_key": "未名天神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "many_heads",
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有天神焉其状如牛而八足二首馬尾其音如勃皇見則其邑有兵",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-changcheng-luomushan": {
+    "display_name": {
+      "zh": "长乗",
+      "en": "Changcheng"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "长乗",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神長乗司之是天之九徳也其神状如人而犳尾",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-xiwangmu-yushan": {
+    "display_name": {
+      "zh": "西王母",
+      "en": "Xiwangmu"
+    },
+    "qualifier": {
+      "zh": "玉山段",
+      "en": "Mount Yu"
+    },
+    "group_key": "西王母",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "西王母其状如人豹尾虎齒而善嘯蓬髮戴勝是司天之厲及五殘",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-shaohao-changliu": {
+    "display_name": {
+      "zh": "白帝少昊",
+      "en": "White Emperor Shaohao"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "白帝少昊",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神白帝少昊居之",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-weishi-changliu": {
+    "display_name": {
+      "zh": "员神磈氏",
+      "en": "Yuan deity Weishi"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "员神磈氏",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "實惟員神磈氏之宫是神也主司反景",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-jiangyi-futang": {
+    "display_name": {
+      "zh": "江疑",
+      "en": "Jiangyi"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "江疑",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神江疑居之",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-qitong-guishan3": {
+    "display_name": {
+      "zh": "𦒿童",
+      "en": "Qitong"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "𦒿童",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神𦒿童居之其音常如鍾磬",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-rushou-youshan": {
+    "display_name": {
+      "zh": "蓐𭣣",
+      "en": "Rushou"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "蓐𭣣",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神蓐𭣣居之",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-hongguang-youshan": {
+    "display_name": {
+      "zh": "红光",
+      "en": "Hongguang"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "红光",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是山也西望日之所入其氣員神紅光之所司也",
+      "review_status": "unresolved"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-sheep-range3-summary": {
+    "display_name": {
+      "zh": "羊身人面神",
+      "en": "Sheep-bodied human-faced gods"
+    },
+    "qualifier": {
+      "zh": "羊身人面神（西次三经）",
+      "en": "Sheep-bodied deities (third range)"
+    },
+    "group_key": "羊身人面神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神状皆羊身人靣",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "deity-xishan-chi-gangshan": {
+    "display_name": {
+      "zh": "神𩳁",
+      "en": "One-footed divine being"
+    },
+    "qualifier": {
+      "zh": "",
+      "en": ""
+    },
+    "group_key": "神𩳁",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face",
+      "one_leg"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是多神𩳁其状人靣獸身一足一手其音如欽",
+      "review_status": "reviewed"
+    },
+    "book_key": "西山经"
+  },
+  "deity-beishan-human-serpent-range1-summary": {
+    "display_name": {
+      "zh": "人面蛇身神",
+      "en": "Human-faced serpent-bodied gods"
+    },
+    "qualifier": {
+      "zh": "首列山神（人面蛇身）",
+      "en": "First-range deities (human face, serpent body)"
+    },
+    "group_key": "人面蛇身神",
+    "role": "deity",
+    "form_group": "serpent",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神皆人靣蛇身",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "deity-beishan-human-serpent-range2-summary": {
+    "display_name": {
+      "zh": "人面蛇身神",
+      "en": "Human-faced serpent-bodied gods"
+    },
+    "qualifier": {
+      "zh": "次二山神（蛇身人面）",
+      "en": "Second-range deities (serpent body, human face)"
+    },
+    "group_key": "人面蛇身神",
+    "role": "deity",
+    "form_group": "serpent",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神皆蛇身人靣",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "deity-beishan-horse-human-range3": {
+    "display_name": {
+      "zh": "马身人面神",
+      "en": "Horse-bodied human-faced gods"
+    },
+    "qualifier": {
+      "zh": "次三二十神（马身人面）",
+      "en": "Twenty third-range deities (horse body, human face)"
+    },
+    "group_key": "马身人面神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神状皆馬身而人靣者廿神",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "deity-beishan-pig-jade-range3": {
+    "display_name": {
+      "zh": "彘身载玉神",
+      "en": "Pig-bodied jade-bearing gods"
+    },
+    "qualifier": {
+      "zh": "次三十四神（彘身载玉）",
+      "en": "Fourteen third-range deities (pig body, carrying jade)"
+    },
+    "group_key": "彘身载玉神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其十四神状皆彘身而載玉",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "deity-beishan-pig-eight-snake-range3": {
+    "display_name": {
+      "zh": "彘身八足神",
+      "en": "Pig-bodied eight-legged gods"
+    },
+    "qualifier": {
+      "zh": "次三十神（彘身八足蛇尾）",
+      "en": "Ten third-range deities (pig body, eight feet, snake tail)"
+    },
+    "group_key": "彘身八足神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "many_legs"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其十神状皆彘身而八足蛇尾",
+      "review_status": "reviewed"
+    },
+    "book_key": "北山经"
+  },
+  "deity-dongshan-human-dragon-range1": {
+    "display_name": {
+      "zh": "人身龙首神",
+      "en": "Human-bodied dragon-headed gods"
+    },
+    "qualifier": {
+      "zh": "人身龙首神（东山首列）",
+      "en": "Human-bodied dragon-headed gods (Eastern first range)"
+    },
+    "group_key": "人身龙首神",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神状皆人身龍首",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "deity-dongshan-humanface-antlers-range2": {
+    "display_name": {
+      "zh": "兽身人面神",
+      "en": "Beast-bodied human-faced gods"
+    },
+    "qualifier": {
+      "zh": "兽身人面载觡神（东次二）",
+      "en": "Beast-bodied human-faced antlered gods (second range)"
+    },
+    "group_key": "兽身人面神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face",
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神状皆獸身人靣載觡",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "deity-dongshan-human-ramhorn-range3": {
+    "display_name": {
+      "zh": "人身羊角神",
+      "en": "Human-bodied ram-horned gods"
+    },
+    "qualifier": {
+      "zh": "人身羊角神（东次三）",
+      "en": "Human-bodied sheep-horned gods (third range)"
+    },
+    "group_key": "人身羊角神",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神状皆人身而羊角",
+      "review_status": "reviewed"
+    },
+    "book_key": "东山经"
+  },
+  "deity-zhongshan-humanbird-range2": {
+    "display_name": {
+      "zh": "人面鸟身神",
+      "en": "Human-faced bird-bodied gods"
+    },
+    "qualifier": {
+      "zh": "人面鸟身神（中次二）",
+      "en": "Human-faced bird-bodied gods (second range)"
+    },
+    "group_key": "人面鸟身神",
+    "role": "deity",
+    "form_group": "bird",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神皆人面而鳥身",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-xunchi-aoan": {
+    "display_name": {
+      "zh": "熏池",
+      "en": "Xunchi"
+    },
+    "qualifier": {
+      "zh": "敖岸",
+      "en": "Ao-an"
+    },
+    "group_key": "熏池",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神熏池居之是常出羙玉；其祠太逢熏池武羅皆一牡羊副",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-yufu-qingyao": {
+    "display_name": {
+      "zh": "禹父",
+      "en": "Yu’s father"
+    },
+    "qualifier": {
+      "zh": "墠渚变化述",
+      "en": "Shanzhu transformation account"
+    },
+    "group_key": "禹父",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "禹父之所化",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-wuluo-qingyao": {
+    "display_name": {
+      "zh": "武罗",
+      "en": "Wuluo"
+    },
+    "qualifier": {
+      "zh": "青要",
+      "en": "Qingyao"
+    },
+    "group_key": "武罗",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "武羅司之其狀人面而豹文小腰而白齒而穿耳以鐻其鳴如鳴玉；其祠太逢熏池武羅皆一牡羊副",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-taifeng-he": {
+    "display_name": {
+      "zh": "泰逢",
+      "en": "Taifeng"
+    },
+    "qualifier": {
+      "zh": "和山",
+      "en": "He"
+    },
+    "group_key": "泰逢",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "吉神泰逢司之其狀如人而虎尾是好居于萯山之陽出入有光太逢神動天地氣也；其祠太逢熏池武羅皆一牡羊副",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-humanbeast-range4": {
+    "display_name": {
+      "zh": "人面兽身神",
+      "en": "Human-faced beast-bodied gods"
+    },
+    "qualifier": {
+      "zh": "人面兽身神（中次四）",
+      "en": "Human-faced beast-bodied gods (fourth range)"
+    },
+    "group_key": "人面兽身神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神狀皆人面獸身",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-shou-god-range5": {
+    "display_name": {
+      "zh": "首山神",
+      "en": "Shou deity"
+    },
+    "qualifier": {
+      "zh": "中次五礼",
+      "en": "fifth-range rite"
+    },
+    "group_key": "首山神",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "首山䰠也",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-tian-shi-range5": {
+    "display_name": {
+      "zh": "天神",
+      "en": "Heavenly deity"
+    },
+    "qualifier": {
+      "zh": "尸水郭注",
+      "en": "Shi-water commentary"
+    },
+    "group_key": "天神",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "尸水合天也",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-jiaochong-pingfeng": {
+    "display_name": {
+      "zh": "骄虫",
+      "en": "Jiaochong"
+    },
+    "qualifier": {
+      "zh": "平逢",
+      "en": "Pingfeng"
+    },
+    "group_key": "骄虫",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [
+      "many_heads"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "有神焉其狀如人而二首名曰驕蟲是為螫蟲",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-ditai": {
+    "display_name": {
+      "zh": "帝台",
+      "en": "Ditai"
+    },
+    "qualifier": {
+      "zh": "中次七文本索引",
+      "en": "seventh-range textual index"
+    },
+    "group_key": "帝台",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "帝臺之棋；帝臺之所以觴百神也",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-allgods-range7": {
+    "display_name": {
+      "zh": "百神",
+      "en": "Many gods"
+    },
+    "qualifier": {
+      "zh": "帝台祭祀泛称",
+      "en": "Ditai ritual collective"
+    },
+    "group_key": "百神",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "禱百神；帝臺之所以觴百神也",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-nvshi-guyao": {
+    "display_name": {
+      "zh": "女尸",
+      "en": "Nüshi"
+    },
+    "qualifier": {
+      "zh": "姑媱",
+      "en": "Guyao"
+    },
+    "group_key": "女尸",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "帝女死焉其名曰女尸化為䔄草",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-tianyu-du": {
+    "display_name": {
+      "zh": "天愚",
+      "en": "Tianyu"
+    },
+    "qualifier": {
+      "zh": "堵山",
+      "en": "Du"
+    },
+    "group_key": "天愚",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神天愚居之是多怪風雨",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-qimu-taishi": {
+    "display_name": {
+      "zh": "啓母",
+      "en": "Qimu"
+    },
+    "qualifier": {
+      "zh": "泰室郭注",
+      "en": "Taishi commentary"
+    },
+    "group_key": "啓母",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "commentary",
+      "source_field": "quote",
+      "evidence": "啓母化為石而生啓在此山見淮南子",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-humanpig-range7": {
+    "display_name": {
+      "zh": "豕身人面神",
+      "en": "Pig-bodied human-faced gods"
+    },
+    "qualifier": {
+      "zh": "豕身人面神（中次七）",
+      "en": "Pig-bodied human-faced gods (seventh range)"
+    },
+    "group_key": "豕身人面神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其十六神者皆豕身而人面",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-threeheads-range7": {
+    "display_name": {
+      "zh": "三首人面神",
+      "en": "Three-headed human-faced gods"
+    },
+    "qualifier": {
+      "zh": "三首人面神（三冢总括）",
+      "en": "Three-headed human-faced gods (three-peak summary)"
+    },
+    "group_key": "三首人面神",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [
+      "human_face",
+      "many_heads"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神狀皆人面而三首",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-tuowei-jiao": {
+    "display_name": {
+      "zh": "𧕛围",
+      "en": "Tuowei"
+    },
+    "qualifier": {
+      "zh": "骄山",
+      "en": "Jiao"
+    },
+    "group_key": "𧕛围",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [
+      "human_face",
+      "horned"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神𧕛圍處之其狀如人面羊角虎爪恒遊于睢漳之淵出入有光",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-jimeng-guang8": {
+    "display_name": {
+      "zh": "计蒙",
+      "en": "Jimeng"
+    },
+    "qualifier": {
+      "zh": "光山",
+      "en": "Guang"
+    },
+    "group_key": "计蒙",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神計蒙處之其狀人身而龍首恒遊于漳淵出入必有飄風暴雨",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-shetuo-qi8": {
+    "display_name": {
+      "zh": "涉𧕦",
+      "en": "Shetuo"
+    },
+    "qualifier": {
+      "zh": "岐山",
+      "en": "Qi"
+    },
+    "group_key": "涉𧕦",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神涉𧕦處之其狀人身而方面三足",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-humanbird-summary8": {
+    "display_name": {
+      "zh": "人面鸟身神",
+      "en": "Human-faced bird-bodied gods"
+    },
+    "qualifier": {
+      "zh": "次八山神（鸟身人面）",
+      "en": "Eighth-range gods (bird body, human face)"
+    },
+    "group_key": "人面鸟身神",
+    "role": "deity",
+    "form_group": "bird",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神狀皆鳥身而人面",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-divine-beings-xiong09": {
+    "display_name": {
+      "zh": "神人",
+      "en": "Divine beings"
+    },
+    "qualifier": {
+      "zh": "熊穴",
+      "en": "Xiong cave"
+    },
+    "group_key": "神人",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "熊之穴恒出神人",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-horsedragon-summary09": {
+    "display_name": {
+      "zh": "马身龙首神",
+      "en": "Horse-bodied dragon-headed gods"
+    },
+    "qualifier": {
+      "zh": "次九山神（马身龙首）",
+      "en": "Ninth-range gods (horse body, dragon head)"
+    },
+    "group_key": "马身龙首神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神狀皆馬身而龍首",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-human-dragon-summary10": {
+    "display_name": {
+      "zh": "龙身人面神",
+      "en": "Dragon-bodied human-faced gods"
+    },
+    "qualifier": {
+      "zh": "次十山神（龙身人面）",
+      "en": "Tenth-range gods (dragon body, human face)"
+    },
+    "group_key": "龙身人面神",
+    "role": "deity",
+    "form_group": "serpent",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神狀皆龍身而人面",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-gengfu-feng-first11": {
+    "display_name": {
+      "zh": "耕父",
+      "en": "Gengfu"
+    },
+    "qualifier": {
+      "zh": "丰山",
+      "en": "Feng"
+    },
+    "group_key": "耕父",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神耕父處之常逰清泠之淵出入有光見則其國為敗",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-ditai-gaoqian11": {
+    "display_name": {
+      "zh": "帝台",
+      "en": "Ditai"
+    },
+    "qualifier": {
+      "zh": "髙前水名关联",
+      "en": "Gaoqian water association"
+    },
+    "group_key": "帝台",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "帝臺之漿也",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-humanhead-pig-summary11": {
+    "display_name": {
+      "zh": "彘身人首神",
+      "en": "Pig-bodied human-headed gods"
+    },
+    "qualifier": {
+      "zh": "次十一山神（彘身人首）",
+      "en": "Eleventh-range gods (pig body, human head)"
+    },
+    "group_key": "彘身人首神",
+    "role": "deity",
+    "form_group": "beast",
+    "feature_tags": [
+      "human_face"
+    ],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神狀皆彘身人首",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-yuer-fufu12": {
+    "display_name": {
+      "zh": "于儿",
+      "en": "Yu-er"
+    },
+    "qualifier": {
+      "zh": "夫夫",
+      "en": "Fufu"
+    },
+    "group_key": "于儿",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "神于兒居之其狀人身而身操兩蛇常逰于江淵出入有光",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-two-daughters-dongting12": {
+    "display_name": {
+      "zh": "帝之二女",
+      "en": "Two daughters of the Di"
+    },
+    "qualifier": {
+      "zh": "洞庭正文",
+      "en": "Dongting main text"
+    },
+    "group_key": "帝之二女",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "帝之二女居之是常逰于江淵澧沅之風交瀟湘之淵是在九江之間出入必以飄風暴雨",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-yao-daughters-comparison-dongting12": {
+    "display_name": {
+      "zh": "尧女说",
+      "en": "Yao-daughter claim"
+    },
+    "qualifier": {
+      "zh": "河图引文",
+      "en": "quoted Hetu tradition"
+    },
+    "group_key": "尧女说",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "comparison",
+      "source_field": "quote",
+      "evidence": "而河圗玉版曰湘夫人者帝堯女也",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-shun-consorts-comparison-dongting12": {
+    "display_name": {
+      "zh": "舜妃说",
+      "en": "Shun-consort claim"
+    },
+    "qualifier": {
+      "zh": "博士引文",
+      "en": "quoted scholar"
+    },
+    "group_key": "舜妃说",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "comparison",
+      "source_field": "quote",
+      "evidence": "博士曰聞之堯二女舜妃也死而葬此",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-guo-two-gods-comparison-dongting12": {
+    "display_name": {
+      "zh": "湘君湘夫人",
+      "en": "Xiang Jun and Xiang Furen"
+    },
+    "qualifier": {
+      "zh": "郭璞辨说",
+      "en": "Guo Pu’s distinction"
+    },
+    "group_key": "湘君湘夫人",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "comparison",
+      "source_field": "quote",
+      "evidence": "按九歌湘君湘夫人自是二神",
+      "review_status": "unresolved"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-snakecarrier-dongting12": {
+    "display_name": {
+      "zh": "载蛇怪神",
+      "en": "Snake-carrying strange deity"
+    },
+    "qualifier": {
+      "zh": "洞庭",
+      "en": "Dongting"
+    },
+    "group_key": "载蛇怪神",
+    "role": "deity",
+    "form_group": "other",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "是多怪神狀如人而載蛇左右手操蛇",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  },
+  "deity-zhongshan-dragonhead-bird-summary12": {
+    "display_name": {
+      "zh": "鸟身龙首神",
+      "en": "Bird-bodied dragon-headed gods"
+    },
+    "qualifier": {
+      "zh": "次十二山神（鸟身龙首）",
+      "en": "Twelfth-range gods (bird body, dragon head)"
+    },
+    "group_key": "鸟身龙首神",
+    "role": "deity",
+    "form_group": "bird",
+    "feature_tags": [],
+    "classification": {
+      "basis": "text",
+      "source_field": "quote",
+      "evidence": "其神狀皆鳥身而龍首",
+      "review_status": "reviewed"
+    },
+    "book_key": "中山经"
+  }
+}

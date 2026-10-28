@@ -108,7 +108,7 @@ jobs:
         browser: [chromium, webkit]
         suite:
           - name: atlas
-            scripts: verify-geography.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-ux.mjs
+            scripts: verify-geography.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-bestiary.mjs verify-ux.mjs
           - name: central-current
             scripts: verify-zhongshan.mjs
           - name: southern-cards

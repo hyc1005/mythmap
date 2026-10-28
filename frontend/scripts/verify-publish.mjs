@@ -29,6 +29,7 @@ async function check(directory, prefix = '') {
 await check(new URL('public/', frontend));
 await access(new URL('dist/index.html', frontend));
 await access(new URL('dist/fonts/shanhai-title.woff2', frontend));
+await access(new URL('dist/fonts/shanhai-bestiary.woff2', frontend));
 await access(new URL('dist/fonts/atlas-northern-tan.woff2', frontend));
 await access(new URL('dist/fonts/shanhai-title-dongshan.woff2', frontend));
 await access(new URL('dist/fonts/atlas-eastern-rare.woff2', frontend));

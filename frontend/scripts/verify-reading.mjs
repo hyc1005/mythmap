@@ -123,7 +123,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.getByLabel('按阅读状态筛选').selectOption('favorites');
     assert.equal(await page.locator('.beast-card').count(), 1);
     assert.equal(await page.locator('.beast-card').getAttribute('data-beast-id'), ids[1]);
-    await page.getByRole('button', { name: '清除筛选并收起', exact: true }).click();
+    await page.getByRole('button', { name: '清除筛选', exact: true }).click();
     assert.equal(await page.getByLabel('按阅读状态筛选').inputValue(), '');
     await page.goto(sharedUrl);
     for (const [width, height] of [[320, 700], [390, 844], [844, 390], [1440, 1000]]) {

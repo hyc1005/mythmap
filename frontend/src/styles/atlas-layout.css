@@ -273,3 +273,20 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .search-result :is(small, span) { color: var(--soft-ink); font-size: 14px; line-height: 1.6; }
 .search-more { display: block; margin: 14px auto; }
 @media (max-height: 480px) { .global-search-dialog { max-height: 96svh; } .global-search-tools { margin: 4px 0; } }
+
+.beast-group { min-width: 0; align-self: start; }
+.beast-group .beast-card { width: 100%; }
+.beast-card>.beast-provenance { margin: 0 0 10px; font-size: 13px; overflow-wrap: anywhere; }
+.beast-tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 0 12px; }
+.beast-tags>span { padding: 3px 6px; border: 1px solid var(--edge); font-size: 12px; color: var(--soft-ink); line-height: 1.5; }
+.bestiary-roles { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.bestiary-roles button, .bestiary-reset, .beast-variants-toggle { min-height: 44px; padding: 9px 12px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); cursor: pointer; font: inherit; font-size: 14px; }
+.bestiary-roles [aria-pressed='true'] { color: var(--paper); background: var(--verm); border-color: var(--verm); }
+.beast-variants-toggle { width: 100%; margin: 8px 0 16px; }
+.beast-variants { border-left: 2px solid var(--edge); padding-left: 12px; }
+.beast-variants .beast-card { margin-bottom: 16px; }
+.bestiary-count { color: var(--soft-ink); font-size: 14px; margin: 0 0 20px; }
+.bestiary-tools :is(input, select) { max-width: 100%; min-width: 0; }
+.bestiary-roles button:focus-visible, .beast-variants-toggle:focus-visible, .bestiary-reset:focus-visible { outline: 2px solid var(--verm); outline-offset: 3px; }
+
+.beast-grid:has(>.beast-group:only-child) { grid-template-columns: minmax(0, 1fr); max-width: 480px; }

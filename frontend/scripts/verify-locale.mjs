@@ -1,3 +1,4 @@
+import { bestiaryEntries } from '../src/bestiary.js';
 import assert from 'node:assert/strict';
 import { mkdir, readFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
@@ -124,21 +125,26 @@ try {
       }
     }
 
-    await page.locator('.bestiary-toggle').click();
-    assert.equal(await page.locator('.beast-card').count(), JSON.parse(world).beasts.length);
-    await assertEnglish(page);
-    if (width === 1440) {
-      for (const card of await page.locator('.beast-card').all()) {
-        await card.click();
-        await assertEnglish(page);
-        await page.getByRole('button', { name: 'Close', exact: true }).click();
+    for (const role of ['deity', 'beast']) {
+      await page.locator(`[data-bestiary-role="${role}"]`).click();
+      while (await page.locator('.bestiary-toggle').count()) await page.locator('.bestiary-toggle').click();
+      while (await page.locator('.beast-variants-toggle[aria-expanded="false"]').count()) await page.locator('.beast-variants-toggle[aria-expanded="false"]').first().click();
+      assert.equal(await page.locator('.beast-card').count(), bestiaryEntries(JSON.parse(world)).filter(item => item.role === role).length);
+      console.log(`Checking English ${role} accounts at ${width}x${height}`);
+      await assertEnglish(page);
+      if (width === 1440) {
+        for (const card of await page.locator('.beast-card').all()) {
+          await card.click();
+          await assertEnglish(page);
+          await page.getByRole('button', { name: 'Close', exact: true }).click();
+        }
       }
     }
     await page.getByLabel('Search creatures', { exact: true }).fill('JINGWEI');
     assert.equal(await page.locator('.beast-card').count(), 1);
     await page.getByLabel('Search creatures', { exact: true }).fill('精卫');
     assert.equal(await page.locator('.beast-card').count(), 1);
-    await page.locator('.bestiary-toggle').click();
+    await page.getByRole('button', { name: 'Clear filters', exact: true }).click();
     await selectChapter(page, 3);
     await page.getByLabel('Choose a story animation').selectOption('');
     await page.locator('.language-switch button').first().click();

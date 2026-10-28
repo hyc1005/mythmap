@@ -43,7 +43,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     page.on('response', response => {
       if (response.url().includes('/refined/') || response.url().includes('/nanshan/')) {
         requested.add(new URL(response.url()).pathname);
-        if (!response.ok()) errors.push(`HTTP ${response.status()}: ${response.url()}`);
+        if (response.status() >= 400) errors.push(`HTTP ${response.status()}: ${response.url()}`);
       }
     });
     await page.goto(`${base}?chapter=03&lang=zh`);

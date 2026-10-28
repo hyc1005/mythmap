@@ -17,6 +17,7 @@ export async function publishingFiles(publicDir, manifestPath) {
     }
   };
   files.add('fonts/shanhai-title-zhongshan.woff2');
+  files.add('fonts/shanhai-bestiary.woff2');
   files.add('fonts/atlas-central-rare.woff2');
   files.add('fonts/atlas-central-exth.woff2');
   for (const file of ['data/myth-world.json', 'data/atlas/catalog.json', 'data/atlas/story-animations.json', 'data/atlas/kuafu-journey.json']) {

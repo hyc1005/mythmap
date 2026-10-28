@@ -1,3 +1,4 @@
+import { bestiaryEntry, bestiarySearchFields } from './bestiary.js';
 import { storySummary } from './story-summaries.js';
 import { associationLabel, geographicReferences } from './geography.js';
 import { contentOrigin } from './content-provenance.js';
@@ -8,11 +9,12 @@ const strings = values => values.flat(Infinity).filter(value => typeof value ===
 export function searchIndex(world, catalog, originalWorld, originalCatalog, locale = 'zh', translate = value => value) {
   const records = [];
   const events = catalog.events.filter(item => world.stages.some(stage => stage.id === item.properties.stage_id));
-  const add = (record, fields) => records.push({ ...record, origin: record.origin || contentOrigin(record), fields: strings(fields), text: normalize(strings([record.name, record.alias, fields]).join(' ')), order: records.length });
+  const add = (record, fields) => records.push({ ...record, origin: record.origin || contentOrigin(record), fields: strings(fields), text: normalize(strings([record.name, record.alias, record.nameAliases, record.shortNames, fields]).join(' ')), order: records.length });
   for (const [group, kind] of [['beasts', 'beast'], ['places', 'place'], ['domains', 'place']]) {
     for (const item of world[group]) {
       const original = originalWorld[group].find(entry => entry.id === item.id) || item;
-      add({ key: item.id, id: item.id, kind, name: item.name, alias: original.name, source: item.source, chapter: item.reveal_chapter }, [item.aliases, original.aliases, item.description, item.quote, item.source, item.region, original.description, original.quote, original.source, kind === 'beast' ? '山海经 Shanhaijing Classic of Mountains and Seas' : '']);
+      const presentation = kind === 'beast' ? bestiaryEntry(item, locale) : null;
+      add({ key: item.id, id: item.id, kind, name: presentation?.displayName || item.name, alias: original.name, nameAliases: presentation?.nameAliases, shortNames: presentation?.shortNames, source: item.source, chapter: item.reveal_chapter }, [item.name, presentation ? bestiarySearchFields(presentation) : [], item.aliases, original.aliases, item.description, item.quote, item.source, item.region, original.description, original.quote, original.source, kind === 'beast' ? '山海经 Shanhaijing Classic of Mountains and Seas' : '']);
     }
   }
   for (const item of events) {
@@ -32,8 +34,9 @@ export function searchIndex(world, catalog, originalWorld, originalCatalog, loca
   }
   for (const item of world.text_entities || []) {
     const original = originalWorld.text_entities?.find(entry => entry.id === item.id) || item;
-    add({ key: item.id, id: item.id, kind: item.kind, name: item.name, alias: original.name, source: item.source, chapter: item.reveal_chapter },
-      [item.description, item.quote, item.source, original.name, original.description, original.quote]);
+    const presentation = bestiaryEntry(item, locale);
+    add({ key: item.id, id: item.id, kind: item.kind, name: presentation?.displayName || item.name, alias: original.name, nameAliases: presentation?.nameAliases, shortNames: presentation?.shortNames, source: item.source, chapter: item.reveal_chapter },
+      [item.name, presentation ? bestiarySearchFields(presentation) : [], item.description, item.quote, item.source, original.name, original.description, original.quote]);
   }
   const originalReferences = new Map(geographicReferences(originalCatalog).map(record => [record.id, record.properties]));
   for (const record of geographicReferences(catalog)) {
@@ -72,8 +75,9 @@ export function searchEntries(index, query, kind = 'all') {
   if (!value && kind === 'all') return [];
   return index.filter(item => (kind === 'all' || item.kind === kind) && terms.every(term => item.text.includes(term)))
     .map(item => {
-      const title = normalize(item.name), alias = normalize(item.alias);
-      const rank = title === value || alias === value ? 0 : title.startsWith(value) || alias.startsWith(value) ? 1 : title.includes(value) || alias.includes(value) ? 2 : 3;
+      const titles = [item.name, ...(item.shortNames || [])].map(normalize);
+      const aliases = [item.alias, ...(item.nameAliases || [])].filter(Boolean).map(normalize);
+      const rank = titles.includes(value) ? 0 : aliases.includes(value) ? 1 : [...titles, ...aliases].some(name => name.startsWith(value)) ? 2 : [...titles, ...aliases].some(name => name.includes(value)) ? 3 : 4;
       const field = item.fields.find(text => terms.some(term => normalize(text).includes(term))) || item.fields[0] || '';
       const match = terms.map(term => normalize(field).indexOf(term)).find(position => position >= 0) || 0;
       const start = Math.max(0, match - 35);
