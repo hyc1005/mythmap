@@ -7,7 +7,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageChops
 
-root = Path(__file__).resolve().parents[2]
+root = Path(__file__).resolve().parents[3]
 archive = root / 'output/geography-source/SR_50M.zip'
 url = 'https://naturalearth.s3.amazonaws.com/50m_raster/SR_50M.zip'
 archive.parent.mkdir(parents=True, exist_ok=True)
@@ -51,5 +51,5 @@ manifest = {
     'license_url': 'https://www.naturalearthdata.com/about/terms-of-use/',
     'note': 'Modern regional relief reference; not ancient terrain reconstruction or a measurable elevation model.',
 }
-(root / 'frontend/src/geography-basemap.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
+(root / 'data/archive/geography-basemap.json').write_text(json.dumps(manifest, indent=2) + '\n', encoding='utf-8')
 print('Prepared georeferenced relief:', image.size, target.stat().st_size, 'bytes')

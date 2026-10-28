@@ -4,7 +4,7 @@ from pathlib import Path
 
 from PIL import Image
 
-frontend = Path(__file__).resolve().parents[1]
+frontend = Path(__file__).resolve().parents[2]
 public = frontend / 'public'
 destination = public / 'data/atlas/optimized'
 destination.mkdir(parents=True, exist_ok=True)

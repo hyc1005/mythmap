@@ -1,144 +1,73 @@
-# 山海寻踪
+# 山海寻踪 MythMap
 
-**[English](./README.md)** | **中文版**
+以木刻地图、故事动画、插画和双语阅读呈现《山海经》及其他古籍中的中国神话；七个故事章节与真实地理资料分别组织，并保留出处关联。
 
-一卷山海，七章神话。以纸本版画风格选编《山海经》山川异兽与其他古籍中的中国神话，通过地图、动画和插画自由探索。
+**[打开在线地图](https://hyc1005.github.io/mythmap/)** · [English](README.md) | **中文版**
 
-**[在线体验 →](https://hyc1005.github.io/mythmap/)** · [GitHub 仓库](https://github.com/hyc1005/mythmap)
+## 当前内容
 
-## 可以看什么
+- 五山经阅读已接入：南山43段、西山82段、北山92段、东山51段、中山212段，共 **480段**。其余海经十三篇不在本轮已完成范围内，完整范围及待核状态见自动生成的[内容盘点](docs/content-coverage.md)。
+- 异兽谱索引 **312条异兽、72条神灵**：短名显示、同名独立记载、六类形貌，以及篇目／特征／已读收藏组合筛选；每批显示24组名称，47条保留形貌待核标记。
+- 中英文故事播放、连续游历、全站搜索、已读收藏和续读恢复；真实地理资料单列传承关联、考证候选与核验状态。
 
-- **神话地图**：从盘古开天序章出发，浏览七章故事、地点与神域。
-- **故事动画**：支持播放、暂停、重播和全屏展示。
-- **南山经全篇阅读**：43个山段与总述，含中英文说明、底本经文、注文与影印页入口；可独立搜索、收藏和续读。十八篇待核清单见 `data/shanhaijing-inventory.json`，完整范围见[内容盘点](docs/content-coverage.md)。
-- **西山经全篇阅读**：82段覆盖77个列名山段、4列总括和篇末总计，另有508张独立卡；保留底本山数、里程及其差异，其他16篇仍待系统补全。
-- **异兽谱**：浏览145条鸟兽记录，按名称、形貌或篇目查找；同名不同山段分别保留出处。
-- **原文出处**：点击地图地点或异兽卡片，查看描述和所引篇章。
+保留原名、经文、稳定ID和出处链接。英文说明与译文为项目整理，插画为艺术解释；叙事图坐标和现代地点关联均不证明古代事件发生位置。
 
-打开网页即可体验，支持电脑和手机。图面表达篇目方位与叙事关系，不表示真实距离或精确年代；插画是依据原文的艺术解释。
+## 仓库导航
 
-本项目尚未完整收录《山海经》。地图预览、章节目录、搜索和详情区分《山海经》与其他古籍所载内容；地方传说和地望考证在现代地点资料中分别标记。[十八篇内容盘点与第一批补充范围](./docs/content-coverage.md)记录现有条目、未开放资料和待补内容。盘点采用《四部丛刊》影印明成化本电子录文作为参照，不代表全书逐字校勘完成。
-
----
-
-## 开发与维护
-
-以下内容供本地运行、部署和数据维护使用。
-
-### 技术与目录
-
-前端使用 React 19、Vite 6、OpenLayers 10，动画使用 Remotion 4。在线版由 GitHub Actions 构建、GitHub Pages 托管，使用内置数据，无需后端或数据库。
-
-| 目录 | 用途 |
+| 路径 | 职责 |
 | --- | --- |
-| `frontend/src/` | 应用入口、共享状态与工具 |
-| `frontend/src/components/` | 地图、图鉴、搜索及阅读面板 |
-| `frontend/src/animations/`、`frontend/src/styles/` | 故事渲染与页面样式 |
-| `frontend/public/data/` | 网站数据与发布素材 |
-| `frontend/artwork-source/` | 插画原图与备用素材 |
-| `frontend/scripts/` | 布局与叙事验证 |
-| `backend-java/` | 可选 Java API |
-| `backend/`、`database/` | 旧版 FastAPI/PostGIS 原型与数据库工具 |
-| `data/`、`docs/` | 数据维护工具与项目资料 |
+| [frontend/](frontend/) | React/Vite网站，Pages只部署其构建产物 |
+| [frontend/src/](frontend/src/) | 界面、共享状态、双语与异兽展示元数据 |
+| [frontend/public/data/](frontend/public/data/) | 已审网站数据、影印页和发布插画版本 |
+| [frontend/artwork-source/](frontend/artwork-source/) | 原图、提示词及复现记录 |
+| [frontend/scripts/](frontend/scripts/README.md) | 浏览器验收和预览；`assets/`存素材工具，`fonts/`存字体工具 |
+| [data/](data/README.md) | 各篇构建器、核查记录、原文清单；`archive/`存已停用的准备计划和底图配置 |
+| [docs/](docs/README.md) | 文档索引、API约定、内容盘点与历史课程材料 |
+| [backend-java/](backend-java/run.ps1) | 开发代理使用的可选本地`/api/world`服务 |
+| [backend/](backend/README.md)、[database/](database/README.md) | 独立FastAPI/PostGIS原型、测试与导入工具 |
+| `.github/workflows/` | 自动验收和Pages部署 |
+| `output/` | Git忽略的本地QA、诊断与过程文件 |
 
-### 本地运行
+在线静态页面无需后端或数据库；两个可选服务与网页发布分开维护。
 
-需要 Node.js 22 或更新的兼容版本。在 `frontend/` 目录执行：
+## 本地开发
+
+需要Node.js 22或更新的兼容版本。
 
 ```bash
+cd frontend
 npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
-打开 [本地开发页面](http://127.0.0.1:5173/#world)。开发模式会尝试访问可选 API，未启动时自动使用内置数据。
+打开[127.0.0.1:5173](http://127.0.0.1:5173/)。开发模式尝试8081端口的Java API，未启动时使用内置数据。可选API需JDK 17以上，运行`backend-java/run.ps1`；生产默认使用内置数据，只有显式配置`VITE_API_BASE_URL`才请求外部API，该配置会公开在构建产物中。
 
-可选 Java API 需要 JDK 17 或以上，在 `backend-java/` 运行 `run.ps1`，默认端口为 8081。生产版默认不请求 API；外部 API 配置见 `frontend/.env.example`，`VITE_API_BASE_URL` 会公开到构建产物中。
+真实地理底图使用天地图**浏览器端应用**Key，在被忽略的`frontend/.env.local`配置`VITE_TIANDITU_KEY`。服务商域名白名单填写`hyc1005.github.io,127.0.0.1`。底图不可用时仍可阅读和查询本地资料。
 
-### 构建与验证
+## 构建与验证
 
-在 `frontend/` 目录构建，并通过统一入口启动验证。测试使用动态端口，正常结束、失败或中断时关闭本次创建的预览进程，并复查端口释放：
+在`frontend/`目录执行：
 
 ```bash
+npx playwright install chromium webkit
 npm run build -- --base /mythmap/
+npm run verify:data
+npm run verify:cache
+npm run verify:publish
+node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-bestiary.mjs
 node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
-node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-guided-tour.mjs
-node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-reading.mjs
-node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-resume.mjs
-node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-search.mjs
-node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-onboarding.mjs
-node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-ux.mjs
-node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-discovery.mjs
-node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-narrative.mjs
 ```
 
-人工预览使用 `npm run preview:managed -- --base /mythmap/`，固定监听 127.0.0.1:4183；端口被占用时直接报错，不终止已有进程。浏览结束按 Ctrl+C 关闭。不要在验证期间重新构建同一个 `dist/`。
+阅读、搜索、叙事和各山经的验收入口见[脚本索引](frontend/scripts/README.md)。统一预览工具使用空闲端口，完成或失败后关闭自己创建的进程；人工预览运行`npm run preview:managed -- --base /mythmap/`，结束按Ctrl+C。验证期间不要重新构建同一份`dist/`。截图保存在`output/qa/`；日常验证使用Chromium、WebKit，Firefox不在已支持验收范围内。
 
-`verify:design` 覆盖双语六种视口、手机面板焦点和滚动锁定、正文对比度、六类插画样本、播放状态和 PNG 纸色。`verify:layout` 检查五种视口的动画、全屏和详情，`verify:narrative` 另检查完整叙事、素材和时间轴。截图保存在 `output/qa/`。本地默认验证与 CI 使用 Chromium、WebKit，暂不验证 Firefox，暂不保证 Firefox 可正常运行。所需浏览器可通过 `npx playwright install chromium webkit` 安装。
+## 自动部署
 
-发布前复查电脑与手机上的动画、地图全屏、异兽搜索、详情关闭和出处链接，并确认刷新正常、图片无 404。
+仓库Settings → Pages选择**GitHub Actions**，并配置Actions secret **TIANDITU_BROWSER_KEY**。推送到`main`的前端、数据、后端／数据库或工作流修改会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；纯文档修改不触发发布，也可手动运行。
 
-### GitHub Pages 部署
+所有必要检查通过后，部署同一份已验收产物。不要提交`dist/`、依赖、本地环境配置或QA输出；回退使用`git revert`后推送。
 
-工作流位于 `.github/workflows/deploy-pages.yml`。在仓库 **Settings → Pages** 中选择 **GitHub Actions**；推送到 `main` 的前端或工作流修改会自动构建并发布。文档修改不会触发网页部署。
+## 数据与素材维护
 
-工作流自动处理 Pages 子路径，完成数据、缓存、后端、双语、探索、失败恢复、阅读、搜索与完整叙事检查后，发布同一份已验证的 `frontend/dist/`，无需手动提交构建产物。部署结果可在仓库 Actions 页面查看；回退使用 `git revert` 后推送。
+各篇构建器与核查依据见[data/README.md](data/README.md)，插画和字体工具见[脚本索引](frontend/scripts/README.md)，数据边界见[API约定](docs/API_CONTRACT.md)。短名与分类集中在`frontend/src/bestiary-metadata.json`，独立于生成的经文数据。
 
-### 数据与插画维护
-
-- 主要数据位于 `frontend/public/data/`：`myth-world.json` 及 `atlas/` 下的 `catalog.json`、`story-animations.json`、`kuafu-journey.json`。
-- 出处与素材核对使用 `atlas/review.json`、`atlas/artwork-manifest.json`；原图保存在 `frontend/artwork-source/`。
-- `data/build_myth_atlas.py` 仅输出旧版数据到 `output/legacy-atlas/`，禁止覆盖网站审核数据。
-- 可选静态地图由 `data/render_myth_atlas.py` 生成，需要 Pillow、pyproj 和指定的 Windows 字体，输出到 `output/atlas/`。
-- 旧版 API、数据库与导入工具的说明见各目录 README。
-
-`node_modules/`、`frontend/dist/`、`output/` 和本地环境配置均由 Git 忽略。
-
-维护验证：`npm run verify:repairs` 默认覆盖 Chromium、WebKit 的失败恢复、详情焦点、定位和语言状态保留；首次需安装这两种 Playwright 浏览器。减少动态效果模式统一逐幕手动推进。发布等待全部必要检查通过，并直接部署已验证产物。
-
-手动切换章节保持静态；选择故事动画后才播放。连续游历按本章目录顺序播放可用动画，文字章节等待点击继续。手机提供“故事近景／本章全图”，切换视野保留播放进度。
-
-条目详情支持手动标记已读、收藏及前后切换；长文末尾可选择“读完，下一条”。异兽谱可按阅读状态筛选，“本章条目”中的“我的收藏”汇总跨章节收藏。标记仅保存在当前浏览器，分享链接不包含这些私人状态；浏览器存储不可用时仅保留本页会话。
-
-“继续上次阅读”恢复最近条目和段落位置；刷新正在阅读的同一条目也会恢复。插画和字体加载后再定位，支持展开的英文页中文原文。普通条目／分享链接从头打开，标记与续读信息保存在不同的浏览器本地记录中。
-
-顶部“搜索”统一检索故事、异兽、出处、地点与神域；支持中文原名及当前语言文本，出处结果关联可阅读的条目。搜索面板会暂停背景动画，关闭后继续。相柳九首补绘与三张地图专用小图标通过 `src/refined-artwork.json` 接入，原图与完整生图提示词保留于 `artwork-source/woodcut-refinement/`；运行 `python scripts/prepare-refined-artwork.py` 可重新输出发布版本。
-
-现代地点的32条关联记录加入全站搜索，可按“现代地点资料”筛选；结果先在木刻模式打开故事，用户点击“查看真实地理资料”才进入对应地点。返回搜索保留查询和焦点。导航栏只保留“地图”，两种模式在地图区域切换；地点资料与原文卡片均不提供复制链接按钮。地点介绍先简短叙述传说，再说明证据边界、资料侧重与不足；考证候选的故事不冒充当地独立版本。叙述结尾停在故事自身的动作或景象，不额外追加总结、提问或感言。真实地理没有地点资料时提供“阅读本故事”和“浏览有地点资料的事件”。中英文同步，英文界面可搜索中文地名。`verify:place-search` 覆盖这些流程及8组双语布局。
-
-木刻地图中可点阅的名称旁显示小朱印，随名称一起避让；非交互的山水和区域题字不加印。悬停或点按只略微加重印记，保留镜头；不会持续闪动。预览先显示白话梗概，人物插画收进卡片，提供明确收起入口和至少44px的阅读/播放按钮；全屏预留固定区域，收起预览不挤动地图。阅读面板先呈现梗概与原文，收藏、已读及前后条操作放在末尾。搜索无结果时可保留关键词切换全部类型，并显示其他类型的匹配数量。`verify:exploration`、`verify:reading`、`verify:search` 覆盖这些双语操作及布局。
-
-首次访问首页且没有续读记录时显示操作引导；故事链接、指定章节和续读不弹出打断。四步依次介绍原文入口、章节、搜索与两种地图，64%黑色遮罩保留真实目标按钮的亮度和操作。点击目标打开内容时提示暂时隐藏，关闭后继续；也可只点下一步，随时跳过或按Escape退出。完成/跳过保存在本地，地图下方“操作引导”可重开，欢迎页可切换语言。引导暂停背景播放并保留进度，结束恢复焦点；窄屏与横屏提示卡避让目标。`verify:onboarding` 覆盖双语八组布局、真实操作、键盘、跳过/重开/记忆、弹窗接续、直接链接、减少动态效果与存储不可用。
-
-本地交接文档不进入 Git。验收产物、构建目录和浏览器缓存不作为发布源文件；插画原图继续版本管理以便复现，生图记录仅保留仓库相对路径。
-
-### 真实地理基础视图
-
-故事详情增加中英文白话梗概，标注为依据引文整理。搜索进入详情后可返回原结果，保留关键词、分类、分页、滚动位置和焦点；浏览器前进／后退支持搜索、详情、章节及地图模式。手机章节与条目入口位于地图上方并保持可访问。“开始游历”旁的首次引导解释单故事播放、连续游历和两种地图模式。
-
-全站搜索包含当前语言及中文梗概，结果标注梗概并高亮命中词。有可用动画的故事详情提供“播放这个故事”，播放区可返回原阅读位置。精卫填海、精卫与发鸠之山通过显式原文关系双向直达，返回恢复段落与焦点，不移动背景地图；相关条目保留各自原文与出处。当前只接入这一组已核对关系，不依据名称自动关联。
-
-从故事详情定位地图后，切换真实地理沿用该故事。地理链接使用 `mode=geography`、`event`、`reference` 保存模式、事件和选中资料，刷新或打开链接可恢复；无效或跨事件记录会被忽略。私人阅读标记不包含在地址中。镜头、查询与资料对照选择仍只在页面会话中保留。
-
-“初始视野”一键恢复陕豫中心与约500km比例尺，不清除事件、查询和选中记录。相近地点按36屏幕像素聚合，数字标记可展开记录选择，选择时不移动镜头；缩放后自动重新聚合，聚合标记仅是显示锚点。定位与GeoJSON继续使用原始坐标；测距按用户明确选取的位置计算，不把聚合中心推断为事件位置。地点资料与版本对照均摘要优先，原文摘录、出处核验、坐标精度分别折叠；核验提醒和解释边界保持可见。
-
-真实地理首次进入改为陕豫交界附近（110.5°E、34.5°N）居中，默认缩放5级，比例尺约500km；窗口与全屏变化保留区域尺度。“全国总览”仍为独立操作，点击后才适配完整全国范围。
-
-探索主区域默认“木刻叙事”，通过“真实地理”切换，沿用同一章节导航和全屏容器。真实地理使用天地图官方 HTTPS WMTS 地形晕渲（`ter_w`）及中文注记（`cta_w`），保持官方边界、地名和可见署名。“全国总览”固定在西安附近（108.94°E、34.34°N）居中，按画布大小完整容纳范围 `[73,3,136,54]`，四边预留24px；调整窗口或全屏时重新计算比例，不改变中心。“查看本事件地点”明确定位筛选结果。切换事件只更换关联标记，不自动移动镜头；手动定位后，语言与模式切换保留该视野。
-
-28项既有考证候选和盘古、精卫的4条地方传说关联继续保留；地点表示传承或考证关联，不证明神话事件发生，无定位依据时不补造坐标。保留事件内查询、分类符号、出处与版本对照、经纬度、比例尺、两点球面测距和筛选结果 GeoJSON 导出。两种模式分别保留镜头；本次页面会话中保留地理查询与对照选择。进入地理暂停故事，返回保留进度。章节提示持续1200毫秒，暂停被遮住的故事；无地点事件显示2500毫秒“暂无记录”，资料区保留说明。
-
-继续支持 GitHub Pages，无需后端。将**浏览器端应用**的 Key 写入被 Git 忽略的 `frontend/.env.local`：`VITE_TIANDITU_KEY=你的Key`；服务器端 Key 不能用于本页面。域名白名单填写 `hyc1005.github.io,127.0.0.1`，不加协议、端口或路径；本机通过 `127.0.0.1` 访问。未来部署前，在仓库 Actions secrets 中配置 **TIANDITU_BROWSER_KEY**，工作流会注入生产构建，缺少时明确阻止发布。PR 检查使用模拟 Key 且不部署。浏览器 Key 会出现在客户端请求中，应在天地图控制台限制访问域名，实际值不写入源码或交接文档。
-
-在线底图需要网络，不需要下载全国瓦片包。缺少 Key、鉴权失败、地形失败、中文注记失败分别提示，关联资料仍可查询；重试时取消旧请求并重建两个图层。不会自动回退到 OSM 或旧区域裁剪图。两层使用1–14级（地形服务的最大层级），保留原始注记效果；使用浏览器缓存，不批量下载或预取。原资料的 OSM 坐标来源链接继续保留，不改称天地图提供坐标。旧 Natural Earth 资产和 `scripts/prepare-geography.py` 保留供复现。
-
-构建后通过 `node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-geography.mjs` 验证，`verify-map-frame.mjs` 同样通过包装入口运行。地理自动化测试模拟天地图两层瓦片，并拦截检查不再请求 OSM 底图；生成的相关截图仅用于布局验收，不代表真实地理影像。CI使用 Chromium、WebKit 检查，并单独验证无 Key 的根路径构建。
-
-续读与连续游历共用一套受控组件，放在木刻地图下方，普通页面与全屏保持一致；真实地理只在坐标读数下方显示续读。文字章节也从同一区域继续下一章。章节栏仅保留标题、导语和目录，短横屏将续读文案缩短为“续读”，可访问名称仍包含完整条目名。
-
-故事动画基础速度统一为旧版的1.3倍，按钮1×/2×相对于新基础速度。`src/playback.js` 管理基础倍率；`npm run verify:playback-speed` 验证三类时钟。地方传说增量和试点证据保存在 `src/geography-associations.json`，与旧候选合并时保留原ID和坐标，待核验资料不冒充已核对出处。
-
-手机默认折叠地点搜索与测距/导出工具；收起搜索仍显示当前筛选，收起工具退出测距取点并保留已量测距离标注。选中地点联动地图、列表和资料，提供明确的查看资料/返回地图操作；重合记录可就地切换，不移动坐标或镜头。底图初次加载较慢时单独提示，不混同于资料缺失。
-
-地理视图提供“对照本事件资料”：选择两条同事件记录，对照关联说明、类别、核验状态、原文摘录、出处和坐标精度；桌面双栏、手机纵排。对照使用本事件全部资料，不受地点搜索影响，切换模式后保留选择，切换事件时重置；不对地点排名，也不编造故事异文。
-
-地理视图现有32条关联记录（28条旧候选、4条地方传说）。资料对照提供可追溯摘要及解释边界，标明来源机构、发布时间（已知时）、核对日期、段落定位和核对范围；搜索索引片段与网页正文分别标注，共享引文不作为独立故事版本证据。没有完整异文时只说明传承关联。
+历史课程材料保存在[docs/coursework/](docs/coursework/)。原图和影印页继续版本管理，用于出处核验和复现；发布清单已排除重复原图。本地交接文档与过程文件由Git忽略。

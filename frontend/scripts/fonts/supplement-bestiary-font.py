@@ -9,7 +9,7 @@ from urllib.request import ProxyHandler, Request, build_opener
 
 from fontTools.ttLib import TTFont
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 parser = argparse.ArgumentParser()
 parser.add_argument('--proxy')
 args = parser.parse_args()

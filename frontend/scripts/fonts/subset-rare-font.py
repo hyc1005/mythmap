@@ -7,7 +7,7 @@ from urllib.request import urlopen
 from fontTools import subset
 from fontTools.ttLib import TTFont
 
-root = Path(__file__).resolve().parents[1] / 'public' / 'fonts'
+root = Path(__file__).resolve().parents[2] / 'public' / 'fonts'
 url = 'https://www.babelstone.co.uk/Fonts/Download/BabelStoneHan-16.0.3.zip'
 with urlopen(url, timeout=120) as response:
     archive = zipfile.ZipFile(io.BytesIO(response.read()))

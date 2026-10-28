@@ -7,7 +7,7 @@ from urllib.request import urlopen
 from fontTools import subset
 from fontTools.ttLib import TTFont
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 BASE = 'https://github.com/babelstone/babelstonehan-ufo/releases/download/v18.0.1/'
 CHARACTERS = '𤟤𤠾𥬇𬋩𭥍𤓰𤞞𩣡𪄀𪃑𣵀𩹴𬐱𪄶𤍠𣸦𨹧'
 license_text = urlopen(BASE + 'LICENSE', timeout=60).read().decode('utf-8')

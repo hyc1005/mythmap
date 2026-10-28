@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from PIL import Image
 
-FRONTEND = Path(__file__).resolve().parents[1]
+FRONTEND = Path(__file__).resolve().parents[2]
 PUBLIC = FRONTEND / 'public'
 parser = argparse.ArgumentParser()
 parser.add_argument('--chapter', choices=['nanshan', 'xishan', 'beishan', 'dongshan', 'zhongshan'], default='nanshan')

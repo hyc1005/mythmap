@@ -11,7 +11,7 @@ from urllib.request import Request, urlopen
 from fontTools import subset
 from fontTools.ttLib import TTFont
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 TITLE='㐨䃌䊧䎶䖪䖺䗤䚯䱎䱻䲛万亝亦仇伤似但低佯俠借傳傷儒充兒兔冒冬凋凫則剡功勃医占卡卵厚厲叉叩叫叶吐吟否含吻呉呌呕呼咨善嘔圆國培堪壳妴妺姪姿婉孚学客害實尔尖屬峩峳嶧幼庾廓廣弯彩從思性恐惧懼扇手拆拟捕損擅攸改敗斃斑斗斜旧旱旻昧普曹杨枣枪枯枽格栽梓植楊楨榑樕气氣汁沸活浅涌涯深添渚減湣漠澧激濆濼瀵災炭為烝牡犂犬犰犲狀狙狪狭狳猩猪猲獋獙獠獳环珍珧琴瑁瑇瑟環甚甲电番疗疟疠疣疫疾病瘞瘧癘癰盧眠睪知矿社祈禽科稳穰等算箴素終絜經纠纯细绎绿羸翡耿聲肺胫脚腫膜臨臭花苗苴荆药莬菌葉葛蓋蕪藟蘪蚌蚪蛙蛤蛭蜃蝌蝗蝠蝦螽蟞蠪蠵血裂裸褐見觉觜觡詨調謂警误调贝趾跂跨踇踵蹲躯軨轮逝遐針銘针铠铭限隅雀雁雅雜雨靈頗頰颈颗额風餌體鬲鬿鮇鮒鮯鯉鰌鱃鱅鱏鱑鱗鱣鱤鲋鲟鲤鳃鳍鳞鳴鴆鴛鴦鴻鵜鶘鸣鸭鸿鹈鹕麗黍鼈鼻'
 RARE='𣲵𥠖𥧌𦍙𦬊𧑤𪁐𮮐'
 url='https://fonts.googleapis.com/css2?'+urlencode({'family':'Noto Serif SC:wght@400..700','text':TITLE,'display':'swap'})

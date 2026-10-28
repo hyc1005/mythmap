@@ -11,7 +11,7 @@ from urllib.parse import urlencode
 from fontTools import subset
 from fontTools.ttLib import TTFont
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 parser = argparse.ArgumentParser()
 parser.add_argument('--proxy')
 args = parser.parse_args()

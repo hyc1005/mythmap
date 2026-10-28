@@ -6,7 +6,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 TARGET = ROOT / 'data/zhongshan-edition-review.json'
 SNAPSHOT_SHA = '0df08619414c2ea7e068d5c91fb9a9bb155c56bfb766fa9b9985d084986097ce'
 SLUGS = [

@@ -12,7 +12,7 @@ from fontTools.pens.boundsPen import BoundsPen
 from fontTools.pens.transformPen import TransformPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 
-frontend = Path(__file__).resolve().parents[1]
+frontend = Path(__file__).resolve().parents[2]
 parser = argparse.ArgumentParser()
 parser.add_argument('--source-font', type=Path)
 args = parser.parse_args()

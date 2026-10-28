@@ -3,7 +3,7 @@ from pathlib import Path
 
 from PIL import Image
 
-frontend = Path(__file__).resolve().parents[1]
+frontend = Path(__file__).resolve().parents[2]
 sources = frontend / 'artwork-source/woodcut-refinement'
 public = frontend / 'public'
 destination = public / 'data/atlas/refined'

@@ -1,19 +1,43 @@
-# Curated seed data
+# 数据维护入口
 
-This file documents the retained FastAPI/PostGIS prototype and its seed data. The current diagram-based web demo uses frontend/public/data/myth-world.json and atlas/catalog.json; its startup and deployment steps are in the root README. The former modern-coordinate ornament is retained for the prototype and is not the current page background.
+当前网页数据位于`frontend/public/data/`，此目录保存构建器、影印依据与审核清单，不是网页发布目录。原始经文、稳定ID、来源关联和图片审核记录需要一并保留。
 
-`seed.json` is the deterministic demonstration dataset. It contains 24 story records, 38 distinct place records, and 16 people across all five API themes. Place confidence counts are 2 `clear`, 2 `disputed`, and 34 `unlocated`. Twenty-one records focus on the *Classic of Mountains and Seas*; three additional, clearly attributed records add the Pangu creation story and two Nüwa stories to support the narrative sequence. They come from later textual witnesses, not from the *Classic of Mountains and Seas* itself. The website orders these myths as a relative reading sequence, without assigning historical dates.
+## 当前山经构建器
 
-Location candidates are separate from places. They carry their own source links, reason, confidence, and display mode. Records whose source gives no defensible modern geometry link both the relevant chapter and `project-method`, which documents why no coordinate was created. The dataset includes:
+所有命令从仓库根目录运行；只在需要更新相应内容时运行构建器。
 
-- Two clear modern mountain correspondences (太华之山／华山 and 东山经泰山／现代泰山) with point coordinates from identified OpenStreetMap natural=peak nodes. The point marks each present-day summit and does not claim to define an ancient mountain boundary. The named ancient/modern correspondence and coordinate source are linked separately.
-- Multiple coordinate-free Kunlun interpretations, each presented as a disputed scholarly proposal and linked to its supporting reference.
-- Unlocated entries retained for search and story navigation without geometry.
+| 篇目 | 主入口 | 核查记录 |
+| --- | --- | --- |
+| 南山经43段 | `build_nanshan.py`、`build_nanshan_reader.py`、`build_nanshan_entities.py` | `nanshan-edition-review.json`、`nanshan-entity-coverage.json` |
+| 西山经82段 | `build_xishan.py` | `xishan-edition-review.json` |
+| 北山经92段 | `build_beishan.py` | `beishan-edition-review.json` |
+| 东山经51段 | `build_dongshan.py` | `dongshan-edition-review.json` |
+| 中山经212段 | `build_zhongshan.py` | `zhongshan-edition-review.json` |
 
-There are five candidate records: 2 primary clear peak points and 3 coordinate-free interpretations (`display_mode=none`). The two eligible points do not meet the API's `min_points=3` clustering threshold, so an empty DBSCAN cluster list is the expected and reproducible result for the seed dataset.
+南山reader或首批构建器运行后，需要用`build_nanshan_entities.py`恢复最终实体与关系。其他篇的`*_completion.py`、`*_range*.py`、`*_batch.py`、`zhongshan_stages*.py`及`zhongshan_next30.py`仍被主构建器导入，是内容模块，不是可以删除的旧脚本。
 
-Text source: [Chinese Text Project, 山海经](https://ctext.org/shan-hai-jing), which identifies its digital base text as following the 《四部丛刊初编》 edition where noted. The Huashan point uses [OpenStreetMap node 2260053296](https://www.openstreetmap.org/node/2260053296); the Taishan point uses [OpenStreetMap node 2338427466](https://www.openstreetmap.org/node/2338427466). The coordinates are WGS84 map features identified as modern mountain peaks. The Huashan correspondence is separately supported by [渭南市纪委华山简介](https://weinan.qinfeng.gov.cn/info/1095/36343.htm), and the Taishan correspondence by [泰安市人民政府泰山玉资料](https://www.taian.gov.cn/art/2013/10/21/art_55408_4070192.html). Kunlun interpretations are linked to the referenced historical-geography publications in the seed source catalog. Each absent/uncertain geometry also links `project-method`, the project's own documented admission rule; this identifies a data-method decision, not an external scholarly finding. These records demonstrate source separation; they are not a comprehensive critical edition.
+## 来源与生成清单
 
-The offline map backdrop is a locally drawn parchment-and-landscape ornament at `frontend/public/data/shanhai-ornament.svg`. Its mountains, contour flourishes, frame, and decorative labels have no geographic coordinates and do not represent ancient borders, routes, or proven locations. The graticule and any plotted candidate geometries remain in modern WGS84 coordinates; a marker appears only when the evidence record supplies defensible geometry. The map caption states this distinction in the interface.
+- `shanhaijing-reference.json`：保留的十八篇录文快照。
+- `reference-scans/`：影印页、页码和来源哈希。
+- `build_source_inventory.py`：构建`shanhaijing-inventory.json`，保留未接入和待核状态。
+- `audit_shanhaijing.py`：生成[内容盘点](../docs/content-coverage.md)及前端来源分类。内容盘点是生成文件，不手工编辑。
+- 短名、同名组和形貌位于`frontend/src/bestiary-metadata.json`；生成经文不会覆盖它们。
 
-Run `python data/validate_seed.py` to check counts, chapter/source links, referential integrity, geometry ranges, and candidate evidence requirements.
+仅检查、不重建：
+
+```bash
+python data/build_source_inventory.py --check
+python data/audit_shanhaijing.py --check
+```
+
+素材和字体生成已分到[frontend/scripts/assets/与fonts/](../frontend/scripts/README.md)。
+
+## 归档与可选原型
+
+- `archive/geography-basemap.json`是已退出线上底图流程的Natural Earth配置快照，仅由旧地形素材工具重建；当前地图使用天地图。
+- `archive/prepare_zhongshan.py`是中山经未接入时的初始计划工具。212阶段已完成；它不属于当前维护入口，原有防覆盖检查保留。
+- `seed.json`、`validate_seed.py`供FastAPI/PostGIS原型使用；数据规模与来源见[数据库说明](../database/README.md#prototype-seed-and-source-notes)。
+- `build_myth_atlas.py`只输出`output/legacy-atlas/`，拒绝覆盖已审网页数据；`render_myth_atlas.py`和`generate_myth_stage_boundaries.py`保留用于旧版静态图复现，不是当前网站构建步骤。
+
+五山经共480段阅读已接入；海经十三篇仍有缺口，当前实现不等于十八篇逐字校勘完成。每次内容更新后运行上述清单检查和对应浏览器验收。
