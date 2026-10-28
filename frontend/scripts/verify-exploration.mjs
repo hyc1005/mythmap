@@ -79,9 +79,15 @@ try {
     if (width === 390) await page.touchscreen.tap(box.x + box.width - 20, box.y + 20);
     else await page.mouse.click(box.x + box.width - 20, box.y + 20);
     await page.locator('.ink-hover-card').waitFor({ state: 'hidden' }); await settle(page);
-    const idlePoint = await sealPoint(page, name, false), idleInk = await sealInk(page, idlePoint);
-    assert.ok(idleInk > 4, 'A red seal is actually painted beside the name');
     const view = await stableCamera(page);
+    let idlePoint, idleInk;
+    const paintDeadline = Date.now() + 5000;
+    do {
+      await settle(page);
+      idlePoint = await sealPoint(page, name, false);
+      idleInk = await sealInk(page, idlePoint);
+    } while (idleInk <= 4 && Date.now() < paintDeadline);
+    assert.ok(idleInk > 4, 'A red seal is actually painted beside the name');
     if (width === 390) await page.touchscreen.tap(idlePoint.x, idlePoint.y);
     else await page.mouse.move(idlePoint.x, idlePoint.y);
     await page.locator('.ink-hover-card').waitFor(); await settle(page);
