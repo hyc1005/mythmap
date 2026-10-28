@@ -21,7 +21,7 @@ Original names, quotations, IDs and source links are retained. English explanati
 | [frontend/public/data/](frontend/public/data/) | Reviewed runtime data, scans and published illustration variants |
 | [frontend/artwork-source/](frontend/artwork-source/) | Original artwork, prompts and reproducibility records |
 | [frontend/scripts/](frontend/scripts/README.md) | Browser checks and preview tools; `assets/` and `fonts/` contain generators |
-| [data/](data/README.md) | Current book builders, review records and source inventories; `archive/` holds retired preparation and basemap records |
+| [data/](data/README.md) | Current book builders, review records and source inventories |
 | [docs/](docs/README.md) | Documentation index, API contract, generated coverage and historical coursework |
 | [backend-java/](backend-java/run.ps1) | Optional local `/api/world` service used by the development proxy |
 | [backend/](backend/README.md), [database/](database/README.md) | Optional FastAPI/PostGIS prototype and its tests/import tools |
@@ -71,3 +71,5 @@ Deployment waits for all required checks and publishes the same verified artifac
 Use [data/README.md](data/README.md) for book builders and review sources, [frontend/scripts/README.md](frontend/scripts/README.md) for image/font generators, and [docs/API_CONTRACT.md](docs/API_CONTRACT.md) for data contracts. Bestiary short names and classifications live in `frontend/src/bestiary-metadata.json`, separate from generated source data.
 
 Course reports are retained under [docs/coursework/](docs/coursework/). Original artwork and facsimiles remain versioned for evidence and reproducibility; duplicate originals are excluded from the published build by the asset manifest. Local handoff notes and intermediate files are Git-ignored.
+
+Cleanup retains current builders, complete verification, source snapshots and original artwork. The retired Central initialization script and Natural Earth basemap generation chain have been removed after reference checks; older versions remain available in Git history. Historical coursework is reference material, not a runtime entry point.

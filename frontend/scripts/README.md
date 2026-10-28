@@ -14,7 +14,7 @@
 | `verify-design.mjs`、`verify-narrative.mjs` | 布局、全屏、插画、完整故事时钟与叙事 |
 | `verify-geography.mjs`、`verify-map-frame.mjs` | 地理证据、底图恢复与画布结构 |
 | `verify-guided-tour.mjs`、`verify-onboarding.mjs`、`verify-exploration.mjs` | 游历、首次引导和探索流程 |
-| `verify-nanshan.mjs`、`verify-xishan*.mjs`、`verify-beishan.mjs`、`verify-dongshan.mjs`、`verify-zhongshan.mjs` | 各山经的内容与交互回归 |
+| `verify-nanshan.mjs`、`verify-xishan.mjs`／`verify-xishan-complete.mjs`、`verify-beishan.mjs`、`verify-dongshan.mjs`、`verify-zhongshan.mjs` | 各山经的内容与交互回归 |
 | `verify-repairs.mjs`、`verify-discovery.mjs`、`verify-ux.mjs`、`verify-playback-speed.mjs` | 修复项、发现入口、操作与播放倍率 |
 | `mock-tianditu.mjs` | 浏览器测试的模拟瓦片助手；不是线上底图 |
 | `publish-files.mjs` | Vite发布资源清单助手；不是独立验收命令 |
@@ -31,7 +31,6 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-bestiary.m
 - `prepare-nanshan-artwork.py`：导出各山经已审核插画；使用`--chapter`选择篇目。
 - `prepare-refined-artwork.py`：从保留原图生成精修插画与地图小图标。
 - `optimize-assets.py`：生成优化图像及对应清单。
-- `prepare-geography.py`：保留的Natural Earth离线地形资产工具，配置快照归档在`data/archive/geography-basemap.json`，当前线上底图使用天地图。
 
 例如：`python frontend/scripts/assets/prepare-nanshan-artwork.py --chapter zhongshan`。原图和提示词位于`frontend/artwork-source/`，不作为临时缓存删除。
 
@@ -47,3 +46,5 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-bestiary.m
 ## 本地诊断
 
 临时探针与中间结果放`output/diagnostics/`；不进入Git，也不参与网站构建。2026-10-28的结构整理仅移动保留原文件，没有删除诊断记录。
+
+西山入口会按当前内容状态导入`verify-xishan-complete.mjs`，两个文件均需保留。旧Natural Earth生成链已退役，当前地理验收检查天地图图层。

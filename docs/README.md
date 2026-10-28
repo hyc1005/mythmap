@@ -14,8 +14,10 @@
 ## 2026-10-28结构整理
 
 - 素材工具集中到`frontend/scripts/assets/`，字体工具集中到`frontend/scripts/fonts/`，浏览器验收和预览入口保持稳定。
-- 已停用的中山初始计划和Natural Earth底图配置归档到`data/archive/`；课程材料归入`docs/coursework/`。
+- 历史课程材料保存在`docs/coursework/`；已停用的中山初始计划和Natural Earth生成链经引用复核后删除。
 - 分批数据模块仍被主构建器导入；Java服务仍被开发代理使用；原图、影印页和来源哈希承担复现职责，均保留。
 - 本地临时探针移入被忽略的`output/diagnostics/`，未删除任何过程文件。发布资源清单继续排除重复原图。
 
 本地交接文档、`output/`、依赖、构建产物及环境配置不上传GitHub。
+
+本轮删除清单：中山初始计划脚本、Natural Earth生成脚本与配置、仅由其生成且不再使用的`relief.webp`。相关说明与发布白名单同步清理。可选API、数据库工具及被主构建器导入的批次模块均保留；本地临时文件未清理。

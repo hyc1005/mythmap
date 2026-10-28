@@ -28,6 +28,7 @@ async function check(directory, prefix = '') {
 }
 await check(new URL('public/', frontend));
 await access(new URL('dist/index.html', frontend));
+await assert.rejects(access(new URL('dist/data/geography/relief.webp', frontend)), { code: 'ENOENT' }, 'Retired Natural Earth backdrop is not published');
 await access(new URL('dist/fonts/shanhai-title.woff2', frontend));
 await access(new URL('dist/fonts/shanhai-bestiary.woff2', frontend));
 await access(new URL('dist/fonts/atlas-northern-tan.woff2', frontend));

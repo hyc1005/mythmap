@@ -21,7 +21,7 @@
 | [frontend/public/data/](frontend/public/data/) | 已审网站数据、影印页和发布插画版本 |
 | [frontend/artwork-source/](frontend/artwork-source/) | 原图、提示词及复现记录 |
 | [frontend/scripts/](frontend/scripts/README.md) | 浏览器验收和预览；`assets/`存素材工具，`fonts/`存字体工具 |
-| [data/](data/README.md) | 各篇构建器、核查记录、原文清单；`archive/`存已停用的准备计划和底图配置 |
+| [data/](data/README.md) | 各篇构建器、核查记录、原文清单 |
 | [docs/](docs/README.md) | 文档索引、API约定、内容盘点与历史课程材料 |
 | [backend-java/](backend-java/run.ps1) | 开发代理使用的可选本地`/api/world`服务 |
 | [backend/](backend/README.md)、[database/](database/README.md) | 独立FastAPI/PostGIS原型、测试与导入工具 |
@@ -71,3 +71,5 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 各篇构建器与核查依据见[data/README.md](data/README.md)，插画和字体工具见[脚本索引](frontend/scripts/README.md)，数据边界见[API约定](docs/API_CONTRACT.md)。短名与分类集中在`frontend/src/bestiary-metadata.json`，独立于生成的经文数据。
 
 历史课程材料保存在[docs/coursework/](docs/coursework/)。原图和影印页继续版本管理，用于出处核验和复现；发布清单已排除重复原图。本地交接文档与过程文件由Git忽略。
+
+清理原则：仅删除确认不再被运行代码、构建、测试或资料复现调用的文件。已移除旧中山初始化与Natural Earth底图生成链；当前构建器、完整验收、来源快照和原图保留。历史课程材料供查阅，不作为运行入口。

@@ -253,7 +253,6 @@ def generate(check=False):
             '- `python data/build_nanshan_reader.py`：重建43段双语正文、出处和校核差异，保留既有独立条目。',
             '- `python data/build_nanshan_entities.py`：在旧批次/阅读器构建之后运行，恢复最新实体、关系、图像状态和覆盖清单；不可将reader或首批构建器作为最后一步。',
             '- `python data/build_source_inventory.py`（可加`--check`）：生成/检查十八篇原文块清单及明确的待核状态。',
-            '- `data/archive/prepare_zhongshan.py`：已归档的中山经初始准备脚本，仅供追溯；212阶段已经完成，维护时使用`data/build_zhongshan.py`，不再重建初始计划。',
             '- `python data/build_zhongshan.py`：合并中山全篇212段/1271双语卡并保留其他篇；已接入后不要再运行准备构建器覆盖进度。插画通过frontend/scripts/assets/prepare-nanshan-artwork.py --chapter zhongshan导出，之后重建inventory/audit。',
             '- `python data/build_nanshan.py`：合并本批中英文条目、图像指向与有引文依据的关系，保留其他记录。',
             '- `python frontend/scripts/assets/prepare-nanshan-artwork.py`：从保留的生成原图重建发布素材与素材清单。',
