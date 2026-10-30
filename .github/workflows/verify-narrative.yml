@@ -164,3 +164,12 @@ jobs:
               node scripts/with-preview.mjs --base "$ATLAS_BASE" -- node "scripts/$script"
             fi
           done
+
+      - name: Upload failed browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: browser-failure-${{ matrix.browser }}-${{ matrix.suite.name }}
+          path: output/qa/browser-failures/
+          if-no-files-found: ignore
+          retention-days: 7

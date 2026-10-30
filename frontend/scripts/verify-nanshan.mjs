@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { mkdir, readFile, stat } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
 import { worldEntries } from '../src/entries.js';
@@ -61,8 +62,10 @@ for (const path of artworkPaths) for (const variant of ['full', 'preview', 'card
 await mkdir(new URL('../../output/qa/', import.meta.url), { recursive: true });
 for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
+  let captureFailure;
   try {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
+    captureFailure = browserDiagnostics(context, `southern-cards-${name}`);
     await mockTianditu(context);
     const page = await context.newPage(), errors = [], requests = [], failed = [];
     page.on('pageerror', e => errors.push(e.message));
@@ -184,5 +187,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.deepEqual(failed, [], 'No missing artwork or same-origin resources');
     await context.close();
     console.log(`PASS ${name}: 11 original + 97 new entries, 39 mountains, bilingual search, reviewed artwork, persistent marks, water/multi-place relations, history/refresh/resume and 8 layouts`);
+  } catch (error) {
+    try { await captureFailure?.(error); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
+    throw error;
   } finally { await browser.close(); }
 }

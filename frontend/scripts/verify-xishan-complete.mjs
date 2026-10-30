@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, sep } from 'node:path';
 import { chromium, webkit } from 'playwright';
@@ -84,8 +85,10 @@ const engines=(process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',');
 const viewportSizes=[{width:320,height:740},{width:390,height:844},{width:844,height:390},{width:1440,height:1000}];
 for(const engine of engines){
  const browser=await ({chromium,webkit}[engine]).launch();
+ let captureFailure;
  try{
   const context=await browser.newContext({viewport:viewportSizes[1],reducedMotion:'reduce'});
+  captureFailure = browserDiagnostics(context, `western-${engine}`);
   await mockTianditu(context);
   await context.route('https://atlas.test/**',async route=>{
    const u=new URL(route.request().url());
@@ -179,5 +182,8 @@ for(const engine of engines){
   assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);
   await context.close();
   console.log(`PASS ${engine}: ${selected.length} records in both languages, ${imageOnly?'7 representative stages in 8 layouts':'all 37 stages at 320px plus 7 representative stages in 8 layouts'}, 5 catalog groups, artwork decoding, rare font load and zero page/resource errors`);
- }finally{await browser.close();}
+ } catch (error) {
+    try { await captureFailure?.(error); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
+    throw error;
+  } finally { await browser.close(); }
 }
