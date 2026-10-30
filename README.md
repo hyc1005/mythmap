@@ -28,7 +28,7 @@ A bilingual atlas for exploring Chinese myths, discovering creatures and reading
 ## Current scope
 
 - **480 reading passages**: Southern 43, Western 82, Northern 92, Eastern 51 and Central 212. Completing the remaining thirteen books is deferred; see the [content inventory](docs/content-coverage.md) for scope and review status.
-- **312 creature accounts and 72 deity accounts**: namesake groups, six body-form categories and combined book, feature and reading filters, with 24 name groups per batch.
+- **312 creature accounts and 72 deity accounts**: namesake groups, six body-form categories and combined book, feature and reading filters, with 12 cards initially and up to 24 more per click; same-name accounts are selected in the detail view.
 - **Chinese and English**: story playback, source reading, search, favorites and reading-position recovery. The prologue and seven chapters are the project's narrative arrangement.
 
 ## Sources and licensing
