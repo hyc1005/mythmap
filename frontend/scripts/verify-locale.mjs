@@ -138,15 +138,18 @@ try {
           await card.click();
           const drawer = page.locator('.detail-drawer');
           await drawer.waitFor();
-          visited.add(await drawer.getAttribute('data-entry-id'));
+          const originalId = await drawer.getAttribute('data-entry-id');
+          visited.add(originalId);
           await assertEnglish(page);
           const variants = drawer.locator('.detail-namesakes select');
           const ids = await variants.count() ? await variants.locator('option').evaluateAll(nodes => nodes.map(node => node.value)) : [];
-          for (const id of ids) {
+          for (const id of ids.filter(id => id !== originalId)) {
             await variants.selectOption(id);
             await page.waitForFunction(id => document.querySelector('.detail-drawer')?.dataset.entryId === id, id);
             visited.add(id);
             await assertEnglish(page);
+            await drawer.locator('.return-related').click();
+            await page.waitForFunction(id => document.querySelector('.detail-drawer')?.dataset.entryId === id, originalId);
           }
           await page.getByRole('button', { name: 'Close', exact: true }).click();
         }
