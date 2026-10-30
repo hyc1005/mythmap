@@ -201,7 +201,7 @@ try {
     if(width<=768) assert.equal(await layoutPage.locator(".mobile-explore-nav button").count(),2);
     await layoutPage.screenshot({path:new URL("page-structure-"+width+"x"+height+".png",output).pathname.replace(/^\/([A-Za-z]:)/,"$1")});
     await layoutPage.locator('.bestiary-toggle').click();
-    assert.equal(await layoutPage.locator('.beast-group').count(), 48, 'Another batch exposes 24 more name groups');
+    assert.equal(await layoutPage.locator('.beast-group').count(), 36, 'Another batch exposes 24 more name groups');
     const lushu = layoutPage.locator('.beast-card').filter({ has: layoutPage.locator('b', { hasText: /^鹿蜀$/ }) });
     await lushu.scrollIntoViewIfNeeded();
     const bestiaryScroll = await layoutPage.evaluate(() => window.scrollY);
@@ -446,11 +446,15 @@ try {
   await page.locator('.myth-map-wrap').screenshot({ path: new URL('01-nuwa-hover-desktop.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
 
   const preview = await page.locator('.beast-card').count();
-  assert.equal(preview, 24, 'Initial bestiary renders one batch');
+  assert.equal(preview, 12, 'Initial bestiary renders twelve main cards');
   await page.locator('.bestiary-toggle').click();
-  assert.equal(await page.locator('.beast-group').count(), 48);
+  assert.equal(await page.locator('.beast-group').count(), 36);
   await page.getByRole('searchbox', { name: '搜索异兽', exact: true }).fill('穷奇');
-  assert.equal(await page.locator('.beast-card').count(), 2);
+  assert.equal(await page.locator('.beast-card').count(), 1);
+  await page.locator('.beast-variants-toggle').click();
+  assert.equal(await page.locator('.detail-namesakes option').count(), 2, 'Both Qiongqi accounts remain available in details');
+  await page.locator('.drawer-close').click();
+  await page.locator('.detail-drawer').waitFor({ state: 'hidden' });
   await page.getByRole('searchbox', { name: '搜索异兽', exact: true }).fill('');
   assert.equal(await page.locator('.beast-card').count(), preview);
 
