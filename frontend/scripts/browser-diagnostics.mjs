@@ -4,7 +4,13 @@ import { resolve } from 'node:path';
 const safeUrl = value => String(value).replace(/([?&](?:tk|key|token|access_token|api_key)=)[^&\s"']+/gi, '$1[redacted]');
 
 export function browserDiagnostics(context, name) {
-  const pending = new Map(), failures = [], pages = new Set();
+  const pending = new Map(), failures = [], pages = new Set(), events = [];
+  const record = event => {
+    events.push({ time: Date.now(), ...event });
+    if (events.length > 100) events.shift();
+  };
+  context.on('close', () => record({ type: 'context-close' }));
+  context.browser()?.on('disconnected', () => record({ type: 'browser-disconnected' }));
   const request = item => pending.set(item, { url: safeUrl(item.url()), type: item.resourceType(), started: Date.now() });
   const finished = item => pending.delete(item);
   const failed = item => {
@@ -17,6 +23,11 @@ export function browserDiagnostics(context, name) {
   const page = item => {
     pages.add(item);
     item.on('pageerror', error => failures.push({ pageError: safeUrl(error.message) }));
+    item.on('close', () => record({ type: 'page-close', url: safeUrl(item.url()) }));
+    item.on('crash', () => record({ type: 'page-crash', url: safeUrl(item.url()) }));
+    item.on('framenavigated', frame => {
+      if (frame === item.mainFrame()) record({ type: 'navigation', url: safeUrl(frame.url()) });
+    });
   };
   context.on('request', request);
   context.on('requestfinished', finished);
@@ -31,7 +42,7 @@ export function browserDiagnostics(context, name) {
     for (const [index, item] of [...pages].filter(item => !item.isClosed()).entries()) {
       try {
         const snapshot = await item.locator('html').evaluate(() => ({
-          url: location.href, readyState: document.readyState,
+          url: location.href, readyState: document.readyState, historyItem: history.state?.shanhai?.item,
           drawer: [...document.querySelectorAll('.detail-drawer')].map(node => ({ id: node.dataset.entryId, restoring: node.dataset.readingRestoring })),
           images: [...document.images].map(image => ({ src: image.currentSrc || image.src, complete: image.complete, width: image.naturalWidth, height: image.naturalHeight })),
           fonts: [...document.fonts].map(font => ({ family: font.family, status: font.status })),
@@ -42,7 +53,7 @@ export function browserDiagnostics(context, name) {
       try { await item.screenshot({ path: resolve(directory, `page-${index}.png`), timeout: 5000 }); }
       catch (captureError) { snapshots.push({ screenshotError: safeUrl(captureError.message) }); }
     }
-    const report = { node: process.version, platform: process.platform, error: safeUrl(error.stack || error.message), pending: [...pending.values()], failures, pages: snapshots };
+    const report = { node: process.version, platform: process.platform, error: safeUrl(error.stack || error.message), pending: [...pending.values()], failures, events, pages: snapshots };
     await writeFile(resolve(directory, 'failure.json'), safeUrl(JSON.stringify(report, null, 2)) + '\n');
   };
 }

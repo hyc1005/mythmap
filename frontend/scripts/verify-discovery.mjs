@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { mkdir, readFile } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
 import { searchEntries, searchIndex, highlightTerms } from '../src/search.js';
@@ -43,8 +44,10 @@ const settle = async page => {
 
 for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
+  let captureFailure;
   try {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    captureFailure = browserDiagnostics(context, `discovery-${name}`);
     await mockTianditu(context);
     const page = await context.newPage(), errors = [];
     page.on('pageerror', error => errors.push((error.stack || error.message).replace(/tk=[^&\s]+/g, 'tk=[redacted]')));
@@ -126,6 +129,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.equal(await drawer.locator('.detail-play-story').count(), 0, 'Reading-only chapters offer no unavailable animation');
 
     for (const [width, height] of [[320, 700], [390, 844], [844, 390], [1440, 1000]]) for (const lang of ['zh', 'en']) {
+      console.log(`Checking discovery layout ${name} ${width}x${height} ${lang}`);
       await page.setViewportSize({ width, height });
       await page.goto(`${base}?chapter=03&item=03-04&lang=${lang}`);
       await restored('03-04');
@@ -186,5 +190,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.deepEqual(errors, []);
     await context.close();
     console.log(`PASS ${name}: bilingual overview search/highlights, explicit related-entry round trips/history/position/focus, direct playback/return for 3 animation clocks, geographic context and 8 layouts`);
+  } catch (error) {
+    try { await captureFailure?.(error); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
+    throw error;
   } finally { await browser.close(); }
 }

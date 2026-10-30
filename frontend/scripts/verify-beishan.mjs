@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { createHash } from 'node:crypto';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, sep } from 'node:path';
@@ -296,8 +297,10 @@ const base = 'https://atlas.test/mythmap/';
 const sizes = [{ width: 320, height: 700 }, { width: 390, height: 844 }, { width: 844, height: 390 }, { width: 1440, height: 1000 }];
 for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, webkit }[engine]).launch();
+  let captureFailure;
   try {
     const context = await browser.newContext({ viewport: sizes[1], reducedMotion: 'reduce' });
+    captureFailure = browserDiagnostics(context, `northern-${engine}`);
     await mockTianditu(context);
     await context.route('https://atlas.test/**', async route => {
       const url = new URL(route.request().url());
@@ -351,6 +354,7 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
         if (lang === 'en') assert.deepEqual(await d.evaluate(n => [...n.querySelectorAll('*')].filter(e => !e.children.length && e.getClientRects().length && !e.closest('.original-text,[lang="zh-CN"]') && /[\u3400-\u9fff]/u.test(e.textContent)).map(e => e.textContent)), []);
       }
       for (const size of sizes.filter(s=>s.width!==390)) {
+        console.log(`Checking Northern layout ${engine} ${size.width}x${size.height} ${lang}`);
         await page.setViewportSize(size);
         for (const e of size.width === 320 ? browserEntries : layoutEntries) {
           const d = await open(e.id, lang);
@@ -437,6 +441,9 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
     assert.deepEqual(missing, []);
     await context.close();
     console.log(`PASS ${engine}: read/favorite refresh, resume, title face loading; zero page/resource errors`);
+  } catch (error) {
+    try { await captureFailure?.(error); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
+    throw error;
   } finally {
     await browser.close();
   }
