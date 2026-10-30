@@ -1,14 +1,10 @@
 import { assetUrl } from './asset-url';
-import optimizedAssets from './optimized-assets.json';
-import previews from './preview-assets.json';
-import refined from './refined-artwork.json';
 
 const decodedImages = new Map();
 const spriteSheets = new Map();
 const SPRITE_CACHE_BUDGET = 24 * 1024 * 1024;
 const IMAGE_CACHE_BUDGET = 32 * 1024 * 1024;
 export const IMAGE_TIMEOUT_MS = 15000;
-export const PREFETCH_BUDGET = 1500000;
 
 function trimImages() {
   let bytes = [...decodedImages.values()].reduce((sum, entry) => sum + entry.bytes, 0);
@@ -87,41 +83,4 @@ export function cachedSprites(key, load) {
   });
   spriteSheets.set(key, entry);
   return entry.promise;
-}
-
-export function chapterPrefetchPaths(chapter, world, catalog) {
-  const index = world.stages.findIndex(stage => stage.id === chapter);
-  const next = world.stages[index + 1];
-  if (!next) return [];
-  const paths = new Set(catalog.events.filter(event => event.properties.stage_id === next.id)
-    .flatMap(event => event.properties.artworks || [event.properties.artwork])
-    .filter(Boolean).map(path => path.startsWith('/') ? path : `/data/atlas/myth-icons/${path}`));
-  let bytes = 0;
-  return [...paths].map(path => refined[path]?.preview || previews[path]?.preview || optimizedAssets[path]).filter(Boolean)
-    .filter(asset => {
-      const size = asset.bytes ?? asset.optimized_bytes;
-      if (!Number.isFinite(size) || bytes + size > PREFETCH_BUDGET) return false;
-      bytes += size;
-      return true;
-    }).map(asset => asset.path);
-}
-
-export function prefetchNextChapter(chapter, world, catalog) {
-  const paths = chapterPrefetchPaths(chapter, world, catalog);
-  let cancelled = false;
-  const timer = window.setTimeout(() => {
-    if (navigator.connection?.saveData || ['slow-2g', '2g', '3g'].includes(navigator.connection?.effectiveType)) return;
-    const queue = [...paths];
-    const work = async () => {
-      while (queue.length && !cancelled) {
-        const path = queue.shift();
-        try {
-          const response = await fetch(assetUrl(path), { cache: 'force-cache', keepalive: true });
-          if (response.ok) await response.arrayBuffer();
-        } catch { /* Prefetch failure leaves on-demand loading available. */ }
-      }
-    };
-    void work(); void work();
-  }, 1200);
-  return () => { window.clearTimeout(timer); cancelled = true; };
 }

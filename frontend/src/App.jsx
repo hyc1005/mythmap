@@ -9,6 +9,7 @@ import kuafu from '../public/data/atlas/kuafu-journey.json';
 import { defaultGeographicEvent, geographicReferences } from './geography';
 import { animationForEvent, chapterStoryIds } from './chapter-stories';
 import { relatedEntries } from './entry-relations';
+import { bestiaryNamesakes } from './bestiary';
 import { worldEntries } from './entries';
 import MapPanel from './components/MapPanel';
 import Timeline from './components/Timeline';
@@ -147,6 +148,7 @@ export default function App() {
     if (raw) return { id: raw.id, kind: 'story', name: raw.properties.name, source: raw.properties.source_text, description: raw.properties.source_quote, region: raw.properties.location_label || raw.properties.basis_note, direction: raw.properties.basis_note, url: raw.properties.source_url, artwork: raw.properties.artwork, artworks: raw.properties.artworks, raw };
     return null;
   }, [selectedId, world, catalog, beasts, places]);
+  const namesakeEntries = useMemo(() => bestiaryNamesakes(world, selectedId, locale), [world, selectedId, locale]);
   const open = (id, trigger, sequence) => {
     setRestoreReading(null);
     setDetailReturnFocusKey(null);
@@ -220,8 +222,8 @@ export default function App() {
     window.history.replaceState({ ...window.history.state, shanhai: saved }, '', window.location.href);
     historySnapshot.current = saved;
   };
-  const openRelated = (id, record) => {
-    rememberDetail(record, id); historyIntent.current = 'push';
+  const openRelated = (id, record, focusKey = id) => {
+    rememberDetail(record, focusKey); historyIntent.current = 'push';
     setDetailParentId(selectedId); setDetailReturnFocusKey(null); setRestoreReading(null); setDetailSequence(null); setSelectedId(id);
   };
   const playDetail = record => {
@@ -414,6 +416,6 @@ export default function App() {
         setDetailFromSearch(true); open(id, searchTrigger.current, [id]);
       } else { setDetailFromSearch(true); open(id, searchTrigger.current, ids); }
     }} />
-    {selected && createPortal(<DetailDrawer placeReference={detailPlace} onOpenPlace={openPlace} reading={reading} navigation={detailNavigation} selected={selected} placeContents={worldEntries(world).filter(item => item.context_place_id === selectedId || item.context_place_ids?.includes(selectedId))} contextPlace={entryIndex.get(selected.context_place_id)} fromSearch={detailFromSearch} onClose={() => closeDetail()} onOpen={open} restoreReading={restoreReading} returnFocusKey={detailReturnFocusKey} onSaveReading={lastReading.save} readingChapter={chapterForLink()} resumeSaveFailed={lastReading.saveFailed} relatedChapter={relatedChapter} canLocate={canLocate} onNavigate={navigateDetail} animationId={selectedAnimationId} onPlay={playDetail} relatedItems={relatedEntries(selectedId, entryIndex)} onRelated={openRelated} parentEntry={entryIndex.get(detailParentId)} />, fullscreenTarget || document.body)}
+    {selected && createPortal(<DetailDrawer namesakeEntries={namesakeEntries} placeReference={detailPlace} onOpenPlace={openPlace} reading={reading} navigation={detailNavigation} selected={selected} placeContents={worldEntries(world).filter(item => item.context_place_id === selectedId || item.context_place_ids?.includes(selectedId))} contextPlace={entryIndex.get(selected.context_place_id)} fromSearch={detailFromSearch} onClose={() => closeDetail()} onOpen={open} restoreReading={restoreReading} returnFocusKey={detailReturnFocusKey} onSaveReading={lastReading.save} readingChapter={chapterForLink()} resumeSaveFailed={lastReading.saveFailed} relatedChapter={relatedChapter} canLocate={canLocate} onNavigate={navigateDetail} animationId={selectedAnimationId} onPlay={playDetail} relatedItems={relatedEntries(selectedId, entryIndex)} onRelated={openRelated} parentEntry={entryIndex.get(detailParentId)} />, fullscreenTarget || document.body)}
   </main>;
 }

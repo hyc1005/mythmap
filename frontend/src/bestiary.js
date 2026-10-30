@@ -1,5 +1,6 @@
 import metadata from './bestiary-metadata.json' with { type: 'json' };
 
+export const BESTIARY_INITIAL = 12;
 export const BESTIARY_BATCH = 24;
 export const FORM_LABELS = {
   beast: { zh: '兽形', en: 'Beast form' }, bird: { zh: '鸟形', en: 'Bird form' },
@@ -58,4 +59,10 @@ export function groupBestiary(entries) {
     groups.get(key).entries.push(entry);
   }
   return [...groups.values()];
+}
+
+export function bestiaryNamesakes(world, id, locale = 'zh') {
+  const selected = metadata[id];
+  if (!selected) return [];
+  return bestiaryEntries(world, locale).filter(entry => entry.role === selected.role && entry.groupKey === selected.group_key);
 }

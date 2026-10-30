@@ -93,6 +93,7 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .detail-place-contents section { margin: 14px 0; }
 .detail-place-contents h4 { margin: 8px 0; font-size: 14px; color: var(--soft-ink); }
 .source-pages a { min-height: 44px; display: inline-flex; align-items: center; color: var(--verm); }
+.detail-namesakes select { box-sizing: border-box; width: 100%; min-width: 0; min-height: 44px; padding: 10px; border: 1px solid var(--edge); background: transparent; color: var(--ink); font: inherit; }
 .relation-quote { font-size: 12px; }
 .story-summary small { display: block; color: var(--soft-ink); font-size: 14px; line-height: 1.6; }
 .content-origin { display: inline-block; width: fit-content; max-width: 100%; margin: 4px 0; padding: 2px 6px; border: 1px solid var(--edge); color: var(--soft-ink); font-size: 12px; line-height: 1.5; font-weight: 400; overflow-wrap: anywhere; }

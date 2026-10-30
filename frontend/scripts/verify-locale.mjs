@@ -1,4 +1,4 @@
-import { bestiaryEntries } from '../src/bestiary.js';
+import { bestiaryEntries, groupBestiary } from '../src/bestiary.js';
 import assert from 'node:assert/strict';
 import { mkdir, readFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
@@ -128,16 +128,29 @@ try {
     for (const role of ['deity', 'beast']) {
       await page.locator(`[data-bestiary-role="${role}"]`).click();
       while (await page.locator('.bestiary-toggle').count()) await page.locator('.bestiary-toggle').click();
-      while (await page.locator('.beast-variants-toggle[aria-expanded="false"]').count()) await page.locator('.beast-variants-toggle[aria-expanded="false"]').first().click();
-      assert.equal(await page.locator('.beast-card').count(), bestiaryEntries(JSON.parse(world)).filter(item => item.role === role).length);
+      const accounts = bestiaryEntries(JSON.parse(world)).filter(item => item.role === role);
+      assert.equal(await page.locator('.beast-card').count(), groupBestiary(accounts).length);
       console.log(`Checking English ${role} accounts at ${width}x${height}`);
       await assertEnglish(page);
       if (width === 1440) {
+        const visited = new Set();
         for (const card of await page.locator('.beast-card').all()) {
           await card.click();
+          const drawer = page.locator('.detail-drawer');
+          await drawer.waitFor();
+          visited.add(await drawer.getAttribute('data-entry-id'));
           await assertEnglish(page);
+          const variants = drawer.locator('.detail-namesakes select');
+          const ids = await variants.count() ? await variants.locator('option').evaluateAll(nodes => nodes.map(node => node.value)) : [];
+          for (const id of ids) {
+            await variants.selectOption(id);
+            await page.waitForFunction(id => document.querySelector('.detail-drawer')?.dataset.entryId === id, id);
+            visited.add(id);
+            await assertEnglish(page);
+          }
           await page.getByRole('button', { name: 'Close', exact: true }).click();
         }
+        assert.deepEqual(visited, new Set(accounts.map(item => item.id)), 'All independent accounts retain English UI coverage');
       }
     }
     await page.getByLabel('Search creatures', { exact: true }).fill('JINGWEI');

@@ -21,7 +21,6 @@ import { assetUrl, assetDimensions } from '../asset-url';
 
 import { iconFor } from '../artwork';
 import { ChapterNotice, InkText, useReducedMotion } from '../motion';
-import { prefetchNextChapter } from '../asset-cache';
 import ArtworkImage from './ArtworkImage';
 import ContentOrigin from './ContentOrigin';
 import MapToolbar from './MapToolbar';
@@ -121,7 +120,6 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   }, [locale]);
   const stages = world.stages;
   const chapterId = stages[stageIndex].id;
-  useEffect(() => prefetchNextChapter(chapterId, world, rawCatalog, rawAnimationCatalog, kuafuJourney), [chapterId, world]);
   useEffect(() => {
     exportJob.current?.cancel();
     setExportStatus('');

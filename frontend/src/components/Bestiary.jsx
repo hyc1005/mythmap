@@ -3,20 +3,33 @@ import { useLocale } from '../i18n';
 import { iconFor } from '../artwork';
 import ArtworkImage from './ArtworkImage';
 import { ReadingMarks } from '../reading';
-import { BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, bestiaryEntries, filterBestiary, groupBestiary } from '../bestiary';
+import { BESTIARY_INITIAL, BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, bestiaryEntries, filterBestiary, groupBestiary } from '../bestiary';
 
 const emptyFilters = { role: 'beast', query: '', book: '', form: '', feature: '', reading: '' };
+
+
+function BeastArtwork({ src }) {
+  const slot = useRef(null);
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    if (!src) return undefined;
+    if (typeof IntersectionObserver !== 'function') { setVisible(true); return undefined; }
+    const observer = new IntersectionObserver(records => setVisible(records.some(record => record.isIntersecting)), { rootMargin: '600px 0px' });
+    observer.observe(slot.current);
+    return () => observer.disconnect();
+  }, [src]);
+  return <div className="beast-art" ref={slot} data-artwork-src={src}>{visible && src && <ArtworkImage src={src} alt="" loading="lazy" interactive={false} />}</div>;
+}
 
 export default function Bestiary({ world, onOpen, reading }) {
   const { t, locale } = useLocale();
   const entries = useMemo(() => bestiaryEntries(world, locale), [world, locale]);
   const grid = useRef(null), seenCards = useRef(new Set());
   const [filters, setFilters] = useState(emptyFilters);
-  const [limit, setLimit] = useState(BESTIARY_BATCH);
-  const [expandedGroups, setExpandedGroups] = useState({});
+  const [limit, setLimit] = useState(BESTIARY_INITIAL);
   const hasFilter = Object.entries(filters).some(([key, value]) => key !== 'role' && value.trim());
-  const change = patch => { setFilters(value => ({ ...value, ...patch })); setLimit(BESTIARY_BATCH); setExpandedGroups({}); };
-  const reset = () => { setFilters({ ...emptyFilters, role: filters.role }); setLimit(BESTIARY_BATCH); setExpandedGroups({}); };
+  const change = patch => { setFilters(value => ({ ...value, ...patch })); setLimit(BESTIARY_INITIAL); };
+  const reset = () => { setFilters({ ...emptyFilters, role: filters.role }); setLimit(BESTIARY_INITIAL); };
   const list = useMemo(() => filterBestiary(entries, filters, reading), [entries, filters, reading.read, reading.favorites]);
   const groups = useMemo(() => groupBestiary(list), [list]);
   const visible = groups.slice(0, limit);
@@ -25,6 +38,7 @@ export default function Bestiary({ world, onOpen, reading }) {
   const count = (field, value) => filterBestiary(entries, { ...filters, [field]: value }, reading).length;
   const books = [...new Map(entries.filter(item => item.role === filters.role).map(item => [item.bookKey, item.region])).entries()];
   useEffect(() => {
+    if (typeof IntersectionObserver !== 'function') return undefined;
     const observer = new IntersectionObserver(records => {
       records.forEach(({ target, isIntersecting }) => {
         if (!isIntersecting) return;
@@ -35,9 +49,9 @@ export default function Bestiary({ world, onOpen, reading }) {
     }, { threshold: .1 });
     grid.current.querySelectorAll('.beast-card').forEach(card => observer.observe(card));
     return () => observer.disconnect();
-  }, [list, limit, expandedGroups, hasFilter]);
+  }, [list, limit, hasFilter]);
   const card = entry => <button type="button" className="beast-card" data-beast-id={entry.id} data-form-group={entry.formGroup} key={entry.id} onClick={event => onOpen(entry.id, event.currentTarget, ids)}>
-    <div className="beast-art">{iconFor(entry) && <ArtworkImage src={iconFor(entry, 'card')} alt="" loading="lazy" interactive={false} />}</div>
+    <BeastArtwork key={entry.id} src={iconFor(entry, 'card')} />
     <b>{entry.displayName}</b><small className="beast-provenance">{entry.provenance}</small>
     <span className="beast-tags"><span>{FORM_LABELS[entry.formGroup][locale]}</span>{entry.featureTags.map(tag => <span key={tag}>{FEATURE_LABELS[tag][locale]}</span>)}{entry.classification.basis !== 'text' && <span>{t(entry.classification.basis === 'comparison' ? '比较记述' : '郭注记述')}</span>}{entry.classification.review_status === 'unresolved' && <span>{t('形貌待核')}</span>}</span>
     <ReadingMarks reading={reading} id={entry.id} /><p>{entry.description}</p><small>{entry.source}</small>
@@ -45,7 +59,7 @@ export default function Bestiary({ world, onOpen, reading }) {
   return <section className="best-page" id="creatures">
     <div className="best-page-heading"><h2>{t('山海经异兽谱')}</h2><p>{t('按原文形貌整理；同名组仅作索引，各条出处独立。')}</p></div>
     <div className="bestiary-roles" role="group" aria-label={t('异兽谱类型')}>
-      {['beast', 'deity'].map(role => <button type="button" key={role} aria-pressed={filters.role === role} data-bestiary-role={role} onClick={() => { setFilters({ ...emptyFilters, role }); setLimit(BESTIARY_BATCH); setExpandedGroups({}); }}>{t(role === 'beast' ? '异兽' : '神灵')} · {entries.filter(item => item.role === role).length}</button>)}
+      {['beast', 'deity'].map(role => <button type="button" key={role} aria-pressed={filters.role === role} data-bestiary-role={role} onClick={() => { setFilters({ ...emptyFilters, role }); setLimit(BESTIARY_INITIAL); }}>{t(role === 'beast' ? '异兽' : '神灵')} · {entries.filter(item => item.role === role).length}</button>)}
     </div>
     <div className="bestiary-tools">
       <input type="search" maxLength={120} value={filters.query} onChange={event => change({ query: event.target.value })} placeholder={t('搜索异兽或形貌')} aria-label={t('搜索异兽')} />
@@ -56,17 +70,10 @@ export default function Bestiary({ world, onOpen, reading }) {
       {hasFilter && <button type="button" className="bestiary-reset" onClick={reset}>{t('清除筛选')}</button>}
     </div>
     <p className="bestiary-count" role="status">{counted(list.length, '条记载', 'account')} · {counted(groups.length, '组名称', 'name group')} · {t('已显示')} {counted(visible.length, '组', 'group')}</p>
-    <div className="beast-grid" id="beast-cards" ref={grid}>{visible.map(group => {
-      const expanded = expandedGroups[group.key] ?? Boolean(filters.query.trim());
-      const region = `beast-variants-${group.entries[0].id}`;
-      return <article className="beast-group" data-group-key={group.key} key={group.key}>
-        {card(group.entries[0])}
-        {group.entries.length > 1 && <>
-          <button type="button" className="beast-variants-toggle" aria-controls={region} aria-expanded={expanded} onClick={() => setExpandedGroups(value => ({ ...value, [group.key]: !expanded }))}>{t(expanded ? '收起同名记载' : '展开同名记载')} · {group.entries.length}</button>
-          {expanded && <div className="beast-variants" id={region}>{group.entries.slice(1).map(card)}</div>}
-        </>}
-      </article>;
-    })}</div>
+    <div className="beast-grid" id="beast-cards" ref={grid}>{visible.map(group => <article className="beast-group" data-group-key={group.key} key={group.key}>
+      {card(group.entries[0])}
+      {group.entries.length > 1 && <button type="button" className="beast-variants-toggle" aria-haspopup="dialog" onClick={event => onOpen(group.entries[0].id, event.currentTarget, ids)}>{t('查看同名记载')} · {group.entries.length}</button>}
+    </article>)}</div>
     {!list.length && <p className="bestiary-empty">{t('没有找到匹配的异兽，请换一个名称或篇目。')}</p>}
     {groups.length > limit && <button type="button" className="bestiary-toggle" aria-controls="beast-cards" onClick={() => setLimit(value => value + BESTIARY_BATCH)}>{t('再显示')} {Math.min(BESTIARY_BATCH, groups.length - limit)} {t('组名称')} ↓</button>}
   </section>;

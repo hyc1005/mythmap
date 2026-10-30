@@ -27,7 +27,7 @@ function applyPosition(node, position) {
   node.scrollTo({ top: current.top + position.fraction * Math.max(1, end - current.top), behavior: 'instant' });
 }
 
-export default function DetailDrawer({ placeReference, onOpenPlace, selected, placeContents = [], contextPlace, fromSearch, onClose, onOpen, restoreReading, returnFocusKey, onSaveReading, readingChapter, resumeSaveFailed, relatedChapter, canLocate, onNavigate, reading, navigation, animationId, onPlay, relatedItems, onRelated, parentEntry }) {
+export default function DetailDrawer({ placeReference, onOpenPlace, selected, namesakeEntries = [], placeContents = [], contextPlace, fromSearch, onClose, onOpen, restoreReading, returnFocusKey, onSaveReading, readingChapter, resumeSaveFailed, relatedChapter, canLocate, onNavigate, reading, navigation, animationId, onPlay, relatedItems, onRelated, parentEntry }) {
   const { t, locale } = useLocale();
   const catalog = useMemo(() => localize(rawCatalog, locale), [locale]);
   const closeButton = useRef(null);
@@ -71,7 +71,7 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, pl
     let restoring = Boolean(requested), cancelled = false, timer;
     node.dataset.readingRestoring = String(restoring);
     node.scrollTo({ top: 0, behavior: 'instant' });
-    const button = pendingFocus.current === 'previous' ? previousButton.current : pendingFocus.current === 'next' ? nextButton.current : closeButton.current;
+    const button = pendingFocus.current === 'previous' ? previousButton.current : pendingFocus.current === 'next' ? nextButton.current : pendingFocus.current === 'namesakes' ? node.querySelector('.detail-namesakes select') : closeButton.current;
     (button && !button.disabled ? button : heading.current)?.focus({ preventScroll: true });
     pendingFocus.current = null;
     const snapshot = () => {
@@ -113,6 +113,7 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, pl
       if (cancelled) return;
       if (requested) applyPosition(node, requested);
       const returnControl = returnFocusKey === 'play' ? node.querySelector('.detail-play-story')
+        : returnFocusKey === 'namesakes' ? node.querySelector('.detail-namesakes select')
         : [...node.querySelectorAll('[data-related-id]')].find(button => button.dataset.relatedId === returnFocusKey);
       returnControl?.focus({ preventScroll: true });
       restoring = false; node.dataset.readingRestoring = 'false'; save();
@@ -154,6 +155,10 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, pl
       <span className="intro-overline">{selected.region || selected.source}</span>
       <h2 ref={heading} tabIndex={-1} data-reading-anchor="title">{selected.name}</h2>
       <ContentOrigin record={selected} />
+      {namesakeEntries.length > 1 && <nav className="detail-related detail-namesakes" aria-label={t('同名记载')}>
+        <h3>{t('同名记载')} · {namesakeEntries.length}</h3><p>{t('同名仅作索引，各条出处独立。')}</p>
+        <select aria-label={t('同名记载')} value={selected.id} onChange={event => { pendingFocus.current = 'namesakes'; onRelated(event.target.value, readingPosition(), 'namesakes'); }}>{namesakeEntries.map(item => <option key={item.id} value={item.id}>{item.displayName} · {item.provenance}</option>)}</select>
+      </nav>}
       {selected.kind === 'story' && storySummary(selected.id, locale) && <section className="story-summary" data-reading-anchor="summary" aria-label={t('故事梗概')}><h3>{t('故事梗概')}</h3><p>{storySummary(selected.id, locale)}</p><small>{t('项目整理 · 依据下列引文转述，非古籍原文。')}</small></section>}
       {selected.kind !== 'story' && selected.description && <><h3 data-reading-anchor="description">{t(descriptionTitle)}</h3><p className="detail-description">{selected.description}</p></>}
       {contextPlace && parentEntry?.id !== contextPlace.id && <button type="button" className="detail-context-place" data-related-id={contextPlace.id} onClick={() => onRelated(contextPlace.id, readingPosition())}>{t('查看关联地点')} · {contextPlace.name}</button>}

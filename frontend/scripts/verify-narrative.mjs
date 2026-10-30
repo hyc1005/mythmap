@@ -566,7 +566,7 @@ try {
   mobile.on('pageerror', error => failures.push(error.message));
   await enterAtlas(mobile, atlasUrl);
   await mobile.locator('.prologue-scene img').evaluateAll(images => Promise.all(images.map(img => img.decode())));
-  assert.equal(await mobile.locator('.beast-card').count(), 24);
+  assert.equal(await mobile.locator('.beast-card').count(), 12);
   await mobile.locator('.myth-map-wrap').screenshot({ path: new URL('00-pangu-mobile.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
   await selectChapter(mobile, '01 造人与补天');
   assert.equal(await storyCount(mobile), 5);
@@ -591,7 +591,7 @@ try {
   await mobile.locator('.myth-map-wrap').screenshot({ path: new URL('01-nuwa-touch-mobile.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
   await mobile.setViewportSize({ width: 320, height: 740 });
   await mobile.waitForTimeout(500);
-  assert.equal(await mobile.locator('.beast-card').count(), 24);
+  assert.equal(await mobile.locator('.beast-card').count(), 12);
   assert.equal(await mobile.locator('.chapter-rail h2').textContent(), '造人与补天');
   for (const [width, height] of [[1920, 1080], [1366, 768], [1280, 720], [390, 844], [844, 390]]) {
     console.log(`Checking chapter 05 at ${width}x${height}`);
