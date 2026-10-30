@@ -1,4 +1,6 @@
-# Backend service
+# Optional FastAPI/PostGIS prototype
+
+This optional prototype is not required by the published static site. Its existing tests remain in CI; current website setup is documented in the root README.
 
 FastAPI serves the story/place APIs and PostGIS map/cluster queries. The database schema and seed data are owned by `database/` and `data/`.
 

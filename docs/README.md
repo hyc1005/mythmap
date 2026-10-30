@@ -9,7 +9,6 @@
 | [数据维护](../data/README.md) | 各山经构建入口、批次内容模块和来源清单 |
 | [前端脚本](../frontend/scripts/README.md) | 验收、预览、素材及字体工具分类 |
 | [后端说明](../backend/README.md)、[数据库说明](../database/README.md) | 可选原型、测试与导入；静态网页不依赖它们 |
-| [课程报告](coursework/课程报告.md)、[答辩流程](coursework/答辩演示流程.md) | 历史课程材料，保留当时记录；不作为当前操作说明 |
 
 ## 2026-10-28结构整理
 
@@ -21,3 +20,12 @@
 本地交接文档、`output/`、依赖、构建产物及环境配置不上传GitHub。
 
 本轮删除清单：中山初始计划脚本、Natural Earth生成脚本与配置、仅由其生成且不再使用的`relief.webp`。相关说明与发布白名单同步清理。可选API、数据库工具及被主构建器导入的批次模块均保留；本地临时文件未清理。
+
+<details>
+<summary>历史课程材料</summary>
+
+[课程报告](coursework/课程报告.md) · [答辩流程](coursework/答辩演示流程.md)
+
+保留历史记录，不作为当前操作说明。
+
+</details>

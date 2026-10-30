@@ -67,9 +67,12 @@ try {
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(`${base}?chapter=03&lang=${locale}&item=03-04`);
     await page.locator('.detail-drawer').waitFor();
+    const selectedName = await page.locator('.detail-drawer h2').textContent();
     assert.equal(await page.getByRole('button', { name: /复制探索链接|Copy exploration link/ }).count(), 0, 'Expanded original has no copy-link action');
     assert.equal(await page.locator('.detail-drawer input[readonly]').count(), 0, 'Removed sharing has no fallback link field');
     await page.getByRole('button', { name: locale === 'zh' ? '在地图中查看' : 'View on the map', exact: true }).click();
+    await page.mouse.move(0, 0);
+    await page.waitForFunction(name => document.querySelector('.ink-hover-card b')?.textContent === name, selectedName);
     await page.locator('.ink-hover-card').waitFor();
     await page.evaluate(() => document.fonts.ready);
     await page.waitForLoadState('networkidle');
@@ -233,6 +236,7 @@ try {
   await page.locator('.exploration-guide').waitFor();
   await page.getByRole('button', { name: '关闭引导', exact: true }).click();
   await page.reload();
+  await page.locator('.timeline-steps button').nth(4).waitFor();
   assert.equal(await page.locator('.exploration-guide').count(), 0, 'Guide dismissal persists');
   await page.evaluate(() => {
     document.querySelectorAll('.timeline-steps button')[1].click();

@@ -1,0 +1,93 @@
+{
+  "captured_on": "2026-10-29",
+  "source_commit": "73b8157bf1172e2934af8a094c238d0a2f25689a",
+  "source_state": "clean tracked working tree; captures before proposed README/footer changes",
+  "base_path": "/mythmap/",
+  "mock_tiles": false,
+  "capture_viewport": [
+    1440,
+    960
+  ],
+  "gif_viewport": [
+    960,
+    640
+  ],
+  "artwork_models": "Inherited assets; specific historical models unrecorded; capture and encoding do not use a generative model",
+  "assets": [
+    {
+      "path": "docs/media/home.webp",
+      "sha256": "058e0965e56140dd6c67f67c4689d73205944fb074fb0c8cd4315c80f5d3112a",
+      "bytes": 186458,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "tool": "Playwright Chromium + Pillow WebP encoder",
+      "model": "not applicable",
+      "source": "actual local application screenshot",
+      "source_png_sha256": "e2b9a20950b41d6f09ec905fe5d73b366a99b3fb79c5b6017d113302aca4a01a",
+      "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
+      "attribution": "See ASSETS.md for embedded artwork and font provenance"
+    },
+    {
+      "path": "docs/media/story-playback.webp",
+      "sha256": "0b104c5683bff7a51b652a9cdc09a2b9ced8d5587275c63b26a6c5dae6e6669d",
+      "bytes": 140138,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "tool": "Playwright Chromium + Pillow WebP encoder",
+      "model": "not applicable",
+      "source": "actual local application screenshot",
+      "source_png_sha256": "0bcb9f5ea9429970380bc87f6ae3727e4546af1915102d294f3b3a87584fd4e7",
+      "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
+      "attribution": "See ASSETS.md for embedded artwork and font provenance"
+    },
+    {
+      "path": "docs/media/bestiary.webp",
+      "sha256": "43d1357130812a3343460c0b271ff65d6cea7116b9083d4298dc96f058334f2f",
+      "bytes": 122432,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "tool": "Playwright Chromium + Pillow WebP encoder",
+      "model": "not applicable",
+      "source": "actual local application screenshot",
+      "source_png_sha256": "47960310c270bba52fe290b9f2ef50d9eb1c9516bdd448850152eec9db2e1fe7",
+      "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
+      "attribution": "See ASSETS.md for embedded artwork and font provenance"
+    },
+    {
+      "path": "docs/media/geographic-evidence.webp",
+      "sha256": "e0e6a4bd75ce8a3ade56eaaa928fa0c2d3f7f5e21fa78dd590929cb930954978",
+      "bytes": 164650,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "tool": "Playwright Chromium + Pillow WebP encoder",
+      "model": "not applicable",
+      "source": "actual local application screenshot",
+      "source_png_sha256": "6c4bb7d8ad10a663b218396abaf6d83b2619c6b6c5254ee9fb8dea1eab4b27ed",
+      "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
+      "attribution": "Tianditu attribution remains visible; screenshot reuse conditions unresolved"
+    },
+    {
+      "path": "docs/media/tour.gif",
+      "sha256": "e2cb9554356961ff1b6c547bf3f6c494d3fb5c6c4575d92f5bdb8fb5a063516f",
+      "bytes": 1866594,
+      "dimensions": [
+        480,
+        320
+      ],
+      "frames": 41,
+      "duration_ms": 12000,
+      "tool": "Playwright Chromium controlled-clock screenshots + Pillow GIF encoder",
+      "model": "not applicable",
+      "source": "actual local application: six seconds Suiren playback, six seconds bestiary and search; no mock tiles",
+      "license_status": "Composite UI recording; code MIT, embedded artwork and fonts retain their own conditions; no additional asset reuse permission"
+    }
+  ]
+}

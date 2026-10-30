@@ -90,12 +90,13 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           assert.equal(await drawer.locator('.artwork-pending').count(), 0);
         }
         else {
-          await drawer.locator('.drawer-art').scrollIntoViewIfNeeded();
+          console.log(`Checking Southern artwork ${id} ${lang}`);
           await page.waitForFunction(() => {
             const img = document.querySelector('.detail-drawer .drawer-art');
             return img?.complete && img.naturalWidth > 0;
           });
           await drawer.locator('.drawer-art').evaluate(img => img.decode());
+          await drawer.locator('.drawer-art').scrollIntoViewIfNeeded();
           assert.ok(await drawer.locator('.drawer-art').evaluate(img => img.complete && img.naturalWidth > 0), `${id}: image loaded`);
         }
         for (const action of [0, 1]) {

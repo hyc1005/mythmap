@@ -1,4 +1,6 @@
-# Database setup
+# Optional PostGIS prototype database
+
+This database belongs to the optional backend prototype. The published static site uses bundled frontend data and does not require PostgreSQL or PostGIS.
 
 PostgreSQL with PostGIS is required. Create the database first, then from the repository root run:
 

@@ -3,7 +3,7 @@ import { readFile, mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
 import { searchEntries, searchIndex } from '../src/search.js';
 import { geographicReferences, geographicEvents, referenceNarrative } from '../src/geography.js';
-import { mockTianditu } from './mock-tianditu.mjs';
+import { mockTianditu, isTileAccessControlNoise } from './mock-tianditu.mjs';
 
 const base = process.env.ATLAS_URL;
 if (!base) throw new Error('Run through with-preview.mjs');
@@ -39,7 +39,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     let page = await context.newPage();
     const errors = [];
     let phase = 'initial';
-    const monitor = target => target.on('pageerror', error => errors.push(`${phase}: ${error.message}`.replace(/tk=[^&\s]+/g, 'tk=[redacted]')));
+    const monitor = target => target.on('pageerror', error => { if (!isTileAccessControlNoise(error.message)) errors.push(`${phase}: ${error.message}`.replace(/tk=[^&\s]+/g, 'tk=[redacted]')); });
     monitor(page);
     const visit = async url => { await settle(page); await page.goto(url); };
     const search = page.locator('.global-search-dialog');

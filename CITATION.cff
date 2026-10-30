@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite MythMap using this metadata. For individual texts, images, fonts and geographic data, also cite their sources in ASSETS.md."
+type: software
+title: "MythMap — 山海寻踪"
+authors:
+  - name: "hyc1005"
+repository-code: "https://github.com/hyc1005/mythmap"
+url: "https://hyc1005.github.io/mythmap/"
+abstract: "A bilingual interactive atlas connecting Chinese mythological narratives, source-linked reading, artistic illustrations and a separate geographic evidence view."
+keywords:
+  - "Chinese mythology"
+  - "Shanhaijing"
+  - "WebGIS"
+  - "digital humanities"
+license: MIT
+license-url: "https://github.com/hyc1005/mythmap/blob/main/LICENSE"

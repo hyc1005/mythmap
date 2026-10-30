@@ -1,36 +1,69 @@
 # MythMap — Where the Mountains and Seas Begin
 
-A bilingual, woodcut-style atlas of the *Classic of Mountains and Seas* and Chinese myths from other ancient texts. Explore seven story chapters, source-linked reading, illustrations and a separate geographic evidence view.
+A bilingual atlas for exploring Chinese myths, discovering creatures and reading their sources.
 
-**[Open the atlas](https://hyc1005.github.io/mythmap/)** · **English** | [中文版](README.zh-CN.md)
+[![Explore the demo](https://img.shields.io/badge/Demo-Explore_the_atlas-974932?style=for-the-badge)](https://hyc1005.github.io/mythmap/)
+[![Build & verify](https://img.shields.io/github/actions/workflow/status/hyc1005/mythmap/deploy-pages.yml?branch=main&label=Build&style=for-the-badge)](https://github.com/hyc1005/mythmap/actions/workflows/deploy-pages.yml)
+
+**English** · [简体中文](README.zh-CN.md)
+
+## Understand it in 30 seconds
+
+- **What it is**: Woodcut illustrations and interactive maps connecting myths from the *Classic of Mountains and Seas* and other ancient texts.
+- **What you can do**: Watch stories, read source passages, filter creatures and deities, and inspect separate geographic evidence.
+- **What it cannot prove**: Illustrations, narrative coordinates and modern place associations cannot establish where mythical events occurred.
+
+![Home: the Pangu opening scene and chapter navigation](docs/media/home.webp)
+
+## See what you can do
+
+| Story playback | Bestiary |
+| --- | --- |
+| ![Story playback: Suiren making fire with playback controls](docs/media/story-playback.webp) | ![Bestiary: illustrated cards with book and body-form filters](docs/media/bestiary.webp) |
+| Follow a story, pause or replay, and open its textual sources. | Filter by name, book or body form; namesakes retain separate accounts. |
+| **Geographic evidence** | **12-second walkthrough** |
+| ![Geographic evidence: real basemap and documented associations](docs/media/geographic-evidence.webp) | ![Walkthrough: story playback, bestiary and search](docs/media/tour.gif) |
+| Inspect modern place references separately from narrative diagrams. | Recorded from the actual interface, showing playback and creature search. |
 
 ## Current scope
 
-- All five mountain books have reading entries: Southern 43, Western 82, Northern 92, Eastern 51 and Central 212 — **480 passages** in total. The remaining thirteen books are outside this completed reading scope; see the generated [content inventory](docs/content-coverage.md).
-- The bestiary indexes **312 creature accounts and 72 deity accounts** with short names, independent namesake records, six body-form groups and combined book, feature and reading filters. It loads 24 name groups per batch; 47 accounts retain an unresolved morphology label.
-- Story playback, guided tours, search, saved/read marks and reading-position recovery work in Chinese and English. Geographic evidence keeps documented associations separate from narrative diagram positions.
+- **480 reading passages**: Southern 43, Western 82, Northern 92, Eastern 51 and Central 212. Completing the remaining thirteen books is deferred; see the [content inventory](docs/content-coverage.md) for scope and review status.
+- **312 creature accounts and 72 deity accounts**: namesake groups, six body-form categories and combined book, feature and reading filters, with 24 name groups per batch.
+- **Chinese and English**: story playback, source reading, search, favorites and reading-position recovery. The prologue and seven chapters are the project's narrative arrangement.
 
-Original names, quotations, IDs and source links are retained. English explanations and translations are project writing; illustrations are artistic interpretations. Neither a diagram position nor a geographic association proves an ancient event location.
+## Sources and licensing
 
-## Repository map
+The maintainer developed the code with generative models and releases it under [MIT](LICENSE). No additional reuse permission is granted for project paraphrases, model-generated translations or AI artwork. Source transcriptions, scans, fonts and geographic data retain their own conditions; see [asset provenance and licensing](ASSETS.md).
+
+Translations are model-generated. Illustrations use OpenAI image generation, sometimes with existing project artwork as an internal style reference. Unverified models and third-party rights remain explicitly unresolved; neither professional translation review nor freedom from infringement is guaranteed.
+
+Use [CITATION.cff](CITATION.cff) to cite the project and credit the relevant sources when citing individual texts, scans or map data. Geographic screenshots retain Tianditu attribution; their usage conditions remain an open licensing item.
+
+## Development and maintenance
+
+<details>
+<summary>Repository map and data maintenance</summary>
 
 | Path | Responsibility |
 | --- | --- |
-| [frontend/](frontend/) | React/Vite website; the only directory deployed to Pages |
-| [frontend/src/](frontend/src/) | UI, state, localization and bestiary presentation metadata |
-| [frontend/public/data/](frontend/public/data/) | Reviewed runtime data, scans and published illustration variants |
-| [frontend/artwork-source/](frontend/artwork-source/) | Original artwork, prompts and reproducibility records |
-| [frontend/scripts/](frontend/scripts/README.md) | Browser checks and preview tools; `assets/` and `fonts/` contain generators |
-| [data/](data/README.md) | Current book builders, review records and source inventories |
-| [docs/](docs/README.md) | Documentation index, API contract, generated coverage and historical coursework |
-| [backend-java/](backend-java/run.ps1) | Optional local `/api/world` service used by the development proxy |
-| [backend/](backend/README.md), [database/](database/README.md) | Optional FastAPI/PostGIS prototype and its tests/import tools |
-| `.github/workflows/` | Verification and Pages deployment |
-| `output/` | Ignored local QA, diagnostics and intermediate files |
+| [frontend/](frontend/) | React/Vite website; Pages publishes its build output |
+| [frontend/src/](frontend/src/) | UI, state, localization and bestiary metadata |
+| [frontend/public/data/](frontend/public/data/) | Runtime data and published artwork variants |
+| [frontend/artwork-source/](frontend/artwork-source/) | Originals, prompts and reproducibility records |
+| [data/](data/README.md) | Book builders, source snapshots and review records |
+| [frontend/scripts/](frontend/scripts/README.md) | Verification, preview, image and font tools |
+| [docs/](docs/README.md) | Data contracts, source inventories and documentation |
 
-The static site needs no backend or database. The optional services remain separate from the published frontend.
+Short names, body forms and namesake groups live in `frontend/src/bestiary-metadata.json`, independently of generated source text. See the [API contract](docs/API_CONTRACT.md). Originals and scans stay in place; the [large-file inventory](docs/large-files.tsv) is an assessment, not a deletion or relocation list.
 
-## Local development
+### Optional prototypes
+
+`backend/`, `backend-java/` and `database/` are retained optional prototypes. The static site requires no backend or database. The development proxy still references Java, and CI still tests FastAPI; this change does not move them into legacy or another branch. See the [backend guide](backend/README.md), [Java launcher](backend-java/run.ps1) and [database guide](database/README.md).
+
+</details>
+
+<details>
+<summary>Local development</summary>
 
 Requires Node.js 22 or a newer compatible version.
 
@@ -44,7 +77,10 @@ Open [127.0.0.1:5173](http://127.0.0.1:5173/). Development tries the optional Ja
 
 The geographic basemap uses a Tianditu **browser application** key in ignored `frontend/.env.local` as `VITE_TIANDITU_KEY`. Configure the provider's domain allowlist for `hyc1005.github.io,127.0.0.1`. Reading and local evidence remain available when the basemap is unavailable.
 
-## Build and verify
+</details>
+
+<details>
+<summary>Build and complete verification</summary>
 
 From `frontend/`:
 
@@ -60,16 +96,22 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 
 The [script index](frontend/scripts/README.md) lists the remaining reading, search, narrative and book checks. The preview wrapper assigns a free port and stops its own process after completion or failure. For manual preview, run `npm run preview:managed -- --base /mythmap/` and stop it with Ctrl+C; do not rebuild the same `dist/` while tests are using it. QA output stays in `output/qa/`. Routine verification uses Chromium and WebKit; Firefox is not part of the supported verification matrix.
 
-## Deploy
+</details>
+
+<details>
+<summary>Deployment and rollback</summary>
 
 Select **GitHub Actions** in repository Settings → Pages, and set the Actions secret **TIANDITU_BROWSER_KEY**. Pushes to `main` that affect the frontend, data, backend/database or workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml). Documentation-only pushes do not deploy; manual dispatch is also available.
 
 Deployment waits for all required checks and publishes the same verified artifact. Do not commit `dist/`, dependencies, environment files or QA output. Roll back by reverting the relevant commit and pushing.
 
-## Maintain data and assets
+</details>
 
-Use [data/README.md](data/README.md) for book builders and review sources, [frontend/scripts/README.md](frontend/scripts/README.md) for image/font generators, and [docs/API_CONTRACT.md](docs/API_CONTRACT.md) for data contracts. Bestiary short names and classifications live in `frontend/src/bestiary-metadata.json`, separate from generated source data.
+<details>
+<summary>Historical coursework</summary>
 
-Course reports are retained under [docs/coursework/](docs/coursework/). Original artwork and facsimiles remain versioned for evidence and reproducibility; duplicate originals are excluded from the published build by the asset manifest. Local handoff notes and intermediate files are Git-ignored.
+[Course report](docs/coursework/课程报告.md) · [Presentation walkthrough](docs/coursework/答辩演示流程.md)
 
-Cleanup retains current builders, complete verification, source snapshots and original artwork. The retired Central initialization script and Natural Earth basemap generation chain have been removed after reference checks; older versions remain available in Git history. Historical coursework is reference material, not a runtime entry point.
+Retained historical material, separate from current development, deployment and primary navigation.
+
+</details>

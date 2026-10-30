@@ -1,1 +1,9 @@
 data/shanhaijing-reference.json -text
+/LICENSE text eol=lf
+/ASSETS.md text eol=lf
+/CITATION.cff text eol=lf
+/docs/*inventory.tsv text eol=lf
+/docs/large-files.tsv text eol=lf
+/docs/media/manifest.json text eol=lf
+/frontend/src/locale-en.json text eol=lf
+/frontend/public/fonts/source-sans-3-LICENSE.txt text eol=lf
