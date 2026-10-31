@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { mkdir, readFile } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
 import { worldEntries } from '../src/entries.js';
@@ -35,8 +36,10 @@ for (const passage of world.passages) {
 await mkdir(new URL('../../output/qa/',import.meta.url),{recursive:true});
 for (const name of (process.env.ATLAS_BROWSERS||'chromium,webkit').split(',')) {
   const browser=await ({chromium,firefox,webkit}[name]).launch();
+  let captureFailure;
   try {
     const context=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
+    captureFailure = browserDiagnostics(context, `southern-reader-${name}`);
     await mockTianditu(context);
     const page=await context.newPage(),errors=[],failed=[],requested=[];
     page.on('pageerror',e=>errors.push(e.message));
@@ -112,5 +115,8 @@ for (const name of (process.env.ATLAS_BROWSERS||'chromium,webkit').split(',')) {
     assert.deepEqual(errors,[],'Interrupted map images must not throw during reading');
     await context.close();
     console.log(`PASS ${name}: 43 passages, restored page, directory/search, old/new marks, resume/history/context and 8 layouts`);
+  } catch (error) {
+    try { await captureFailure?.(error); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
+    throw error;
   } finally {await browser.close();}
 }
