@@ -381,7 +381,7 @@ export default function App() {
   const chapterEntries = <ChapterEntries stories={storyItems} records={mapRecords} passageEntries={world.passages.filter(item => Number(item.reveal_chapter) <= Number(chapterId))} naturalEntries={worldEntries(world).filter(item => (world.natural_features.some(entry => entry.id === item.id) || world.text_entities.some(entry => entry.id === item.id) || item.kind === 'beast' && !item.place_id) && Number(item.reveal_chapter) <= Number(chapterId))} onOpen={open} reading={reading} collectionItems={collectionItems} />;
   const chapterNavigation = <Timeline stages={stages} index={stageIndex} onSelect={index => {
     selectStage(index);
-    requestAnimationFrame(() => worldLayout.current?.querySelector(mobile ? '.mobile-explore-nav' : '.myth-timeline')?.scrollIntoView({ block: 'start', behavior: reducedMotion ? 'instant' : 'smooth' }));
+    if (!onboardingOpen) requestAnimationFrame(() => worldLayout.current?.querySelector(mobile ? '.mobile-explore-nav' : '.myth-timeline')?.scrollIntoView({ block: 'start', behavior: reducedMotion ? 'instant' : 'smooth' }));
   }} />;
   const tourLabel = readingChapter ? stageIndex === stages.length - 1 ? '结束游历' : '阅读完毕，下一章' : tourActive ? playing ? '暂停游历' : '继续游历' : '开始游历';
   const readingControls = { resumeEntry, onResume: continueReading, returnEntry: entryIndex.get(playbackReturnId), onReturnToReading: () => window.history.back(), tourLabel, tourActive, playing, readingChapter, progress: `${Math.max(1, storyNumber + 1)} / ${storyIds.length}`, onTour: toggleTour, guideVisible, onDismissGuide: dismissGuide, onGuide: startGuide };
