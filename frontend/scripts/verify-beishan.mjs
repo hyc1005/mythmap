@@ -294,26 +294,37 @@ if (process.env.ATLAS_DATA_ONLY === '1') process.exit(0);
 
 const root = resolve(process.env.ATLAS_STATIC_DIR || 'dist');
 for(const d of [review.title_font_supplement,review.extb_font_supplement,review.edition_tan_font])assert.equal(createHash('sha256').update(await readFile(resolve(root,'fonts',d.path.split('/').at(-1)))).digest('hex'),d.sha256,'Published font bytes: '+d.family);
+async function bounded(promise, label, ms = 30000) {
+  let timer;
+  try { return await Promise.race([promise, new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(label + ' exceeded ' + ms + 'ms')), ms); })]); }
+  finally { clearTimeout(timer); }
+}
+async function fontFacesSettled() {
+  do {
+    await Promise.allSettled([...document.fonts].filter(font => font.status === 'loading').map(font => font.loaded));
+    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  } while ([...document.fonts].some(font => font.status === 'loading'));
+}
 const base = 'https://atlas.test/mythmap/';
 const sizes = [{ width: 320, height: 700 }, { width: 390, height: 844 }, { width: 844, height: 390 }, { width: 1440, height: 1000 }];
 for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
-  const browser = await ({ chromium, webkit }[engine]).launch();
+  const browser = await bounded(({ chromium, webkit }[engine]).launch(), 'Northern browser launch');
   let captureFailure;
   try {
-    const context = await browser.newContext({ viewport: sizes[1], reducedMotion: 'reduce' });
+    const context = await bounded(browser.newContext({ viewport: sizes[1], reducedMotion: 'reduce' }), 'Northern context setup');
     captureFailure = browserDiagnostics(context, `northern-${engine}`);
-    await mockTianditu(context);
-    await context.route('https://atlas.test/**', async route => {
+    await bounded(mockTianditu(context), 'Northern basemap mock setup');
+    await bounded(context.route('https://atlas.test/**', async route => {
       const url = new URL(route.request().url());
       if (!url.pathname.startsWith('/mythmap/')) return route.fulfill({ status: 404, body: 'Wrong base' });
       const file = resolve(root, decodeURIComponent(url.pathname.slice('/mythmap/'.length)) || 'index.html');
       if (!file.startsWith(root + sep) || !(await stat(file).catch(() => null))?.isFile()) return route.fulfill({ status: 404, body: 'Missing file' });
       return route.fulfill({ path: file });
-    });
-    await context.addInitScript(() => {
+    }), 'Northern static route setup');
+    await bounded(context.addInitScript(() => {
       if (location.origin === 'https://atlas.test') localStorage.setItem('shanhai-onboarding-v1', '1');
-    });
-    const page = await context.newPage(), errors = [], missing = [], pending = new Set();
+    }), 'Northern init script');
+    const page = await bounded(context.newPage(), 'Northern page setup'), errors = [], missing = [], pending = new Set();
     page.on('pageerror', e => errors.push(e.message));
     page.on('response', r => { if (r.status() >= 400 && r.url().startsWith(base)) missing.push(r.url()); });
     page.on('request', request => { if (request.url().startsWith(base)) pending.add(request); });
@@ -323,17 +334,18 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
         const d = document.querySelector('.detail-drawer');
         return d?.dataset.entryId === id && d.dataset.readingRestoring === 'false';
       }, id);
-      await page.evaluate(() => document.fonts.ready);
+      await bounded(page.evaluate(fontFacesSettled), 'Northern font faces');
       return page.locator('.detail-drawer');
     }
     async function open(id, lang = 'zh') {
       try {
+        console.log('Northern open', id, lang, JSON.stringify(page.viewportSize()));
         await page.goto(`${base}?chapter=03&item=${id}&lang=${lang}`, { waitUntil: 'domcontentloaded' });
-        return await ready(id);
+        const node = await ready(id); console.log('Northern ready', id, lang); return node;
       } catch (error) {
-        const state = await page.evaluate(() => ({ document: document.readyState,
+        const state = await bounded(page.evaluate(() => ({ document: document.readyState,
           entry: document.querySelector('.detail-drawer')?.dataset,
-          fonts: [...document.fonts].filter(font => font.status === 'loading').map(font => font.family) })).catch(() => null);
+          fonts: [...document.fonts].filter(font => font.status === 'loading').map(font => font.family) })), 'Northern failure snapshot', 5000).catch(() => null);
         console.error('Northern navigation failed', JSON.stringify({ id, lang, pending: [...pending].map(request => request.url()), state }));
         throw error;
       }
@@ -344,33 +356,33 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
         assert.equal(await d.locator('h2').innerText(), lang === 'en' ? english[e.id].name : e.name);
         assert.equal(await d.locator('.detail-description').innerText(), lang === 'en' ? english[e.id].description : e.description);
         assert.equal(await d.locator(':scope > blockquote').innerText(), lang === 'en' ? english[e.id].quote : e.quote);
-        assert.ok(!await d.evaluate(n=>n.scrollWidth>n.clientWidth),e.id+' 390px overflow');
-        assert.ok(!await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
-        assert.equal(await d.locator('.drawer-art').count(), e.artwork || e.appearance_unknown ? 1 : 0);
+        assert.ok(!await bounded(d.evaluate(n=>n.scrollWidth>n.clientWidth), 'Northern drawer width'),e.id+' 390px overflow');
+        assert.ok(!await bounded(page.evaluate(()=>document.documentElement.scrollWidth>innerWidth), 'Northern page width'));
+        assert.equal(await bounded(d.locator('.drawer-art').count(), 'Northern element count'), e.artwork || e.appearance_unknown ? 1 : 0);
         if (e.artwork) {
-          await d.locator('.drawer-art').evaluate(i => i.decode());
+          await bounded(d.locator('.drawer-art').evaluate(i => i.decode()), 'Northern artwork decode');
           assert.ok((await d.locator('.drawer-art').getAttribute('src')).includes(e.artwork));
         }
-        if(e.appearance_unknown){await d.locator('.drawer-art').evaluate(i=>i.decode());assert.ok((await d.locator('.drawer-art').getAttribute('src')).includes('unknown-creature-v4'));}
-        if (lang === 'en') assert.deepEqual(await d.evaluate(n => [...n.querySelectorAll('*')].filter(e => !e.children.length && e.getClientRects().length && !e.closest('.original-text,[lang="zh-CN"]') && /[\u3400-\u9fff]/u.test(e.textContent)).map(e => e.textContent)), []);
+        if(e.appearance_unknown){await bounded(d.locator('.drawer-art').evaluate(i=>i.decode()), 'Northern unknown artwork decode');assert.ok((await d.locator('.drawer-art').getAttribute('src')).includes('unknown-creature-v4'));}
+        if (lang === 'en') assert.deepEqual(await bounded(d.evaluate(n => [...n.querySelectorAll('*')].filter(e => !e.children.length && e.getClientRects().length && !e.closest('.original-text,[lang="zh-CN"]') && /[\u3400-\u9fff]/u.test(e.textContent)).map(e => e.textContent)), 'Northern English text audit'), []);
       }
       for (const size of sizes.filter(s=>s.width!==390)) {
         console.log(`Checking Northern layout ${engine} ${size.width}x${size.height} ${lang}`);
-        await page.setViewportSize(size);
+        await bounded(page.setViewportSize(size), 'Northern viewport change');
         for (const e of size.width === 320 ? browserEntries : layoutEntries) {
           const d = await open(e.id, lang);
-          assert.ok(!await d.evaluate(n => n.scrollWidth > n.clientWidth), `${e.id} ${lang} ${size.width}`);
-          assert.ok(!await page.evaluate(() => document.documentElement.scrollWidth > innerWidth));
+          assert.ok(!await bounded(d.evaluate(n => n.scrollWidth > n.clientWidth), 'Northern drawer width'), `${e.id} ${lang} ${size.width}`);
+          assert.ok(!await bounded(page.evaluate(() => document.documentElement.scrollWidth > innerWidth), 'Northern page width'));
         }
       }
-      await page.setViewportSize(sizes[1]);
+      await bounded(page.setViewportSize(sizes[1]), 'Northern viewport change');
       const currentPlace = index.get(activePassages[0].related_entry_ids[0]);
       let d, roundTrips=0;
       const contextPlaces=selected.filter(e=>activeBatches.includes(e.content_batch)&&(e.kind==='place'||e.id===currentPlace.id));
       for(const contextPlace of contextPlaces){
         d=await open(contextPlace.id,lang);
         const contents=selected.filter(e=>e.context_place_id===contextPlace.id||e.context_place_ids?.includes(contextPlace.id)||contextPlace.kind==='rite'&&contextPlace.related_entry_ids.includes(e.id)&&e.kind!=='passage');
-        assert.equal(await d.locator('.detail-place-contents [data-related-id]').count(),contextPlace.kind==='rite'?0:contents.length);
+        assert.equal(await bounded(d.locator('.detail-place-contents [data-related-id]').count(), 'Northern element count'),contextPlace.kind==='rite'?0:contents.length);
         for(const card of contents){
           await d.locator(`[data-related-id="${card.id}"]`).click();await ready(card.id);
           await page.locator('.return-related').click();d=await ready(contextPlace.id);roundTrips++;
@@ -395,13 +407,13 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
       await openSourceLibrary(page);
       const northern = page.locator('[data-source-book="3"]');
       await northern.locator(':scope > summary').click();
-      for (const summary of await northern.locator('.passage-range > summary').all()) await summary.click();
-      assert.equal(await northern.locator('.passage-range').count(),4);
-      assert.equal(await northern.locator('.passage-range').nth(0).locator('[data-entry-id]').count(),26);
-      assert.equal(await northern.locator('.passage-range').nth(1).locator('[data-entry-id]').count(),17);
-      assert.equal(await northern.locator('.passage-range').nth(2).locator('[data-entry-id]').count(),48);
-      assert.equal(await northern.locator('.passage-range').nth(3).locator('[data-entry-id]').count(),1);
-      assert.equal(await northern.locator('[data-entry-id^="passage-beishan-"]').count(), 92);
+      for (const summary of await bounded(northern.locator('.passage-range > summary').all(), 'Northern directory summaries')) await summary.click();
+      assert.equal(await bounded(northern.locator('.passage-range').count(), 'Northern element count'),4);
+      assert.equal(await bounded(northern.locator('.passage-range').nth(0).locator('[data-entry-id]').count(), 'Northern element count'),26);
+      assert.equal(await bounded(northern.locator('.passage-range').nth(1).locator('[data-entry-id]').count(), 'Northern element count'),17);
+      assert.equal(await bounded(northern.locator('.passage-range').nth(2).locator('[data-entry-id]').count(), 'Northern element count'),48);
+      assert.equal(await bounded(northern.locator('.passage-range').nth(3).locator('[data-entry-id]').count(), 'Northern element count'),1);
+      assert.equal(await bounded(northern.locator('[data-entry-id^="passage-beishan-"]').count(), 'Northern element count'), 92);
       await northern.locator(`[data-entry-id="${activePassages[0].id}"]`).click();
       await ready(activePassages[0].id);
       }
@@ -419,34 +431,34 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
     await page.reload(); d = await ready(readingPassage.id);
     assert.equal(await d.getByRole('button', { name: '已收藏 · 取消', exact: true }).getAttribute('aria-pressed'), 'true');
     assert.equal(await d.getByRole('button', { name: '已读 · 撤销', exact: true }).getAttribute('aria-pressed'), 'true');
-    const scrollable = await d.evaluate(n => n.scrollHeight > n.clientHeight);
-    await d.locator('[data-reading-anchor="source"]').evaluate(n => n.scrollIntoView({ block: 'start' }));
-    if (scrollable) await d.evaluate(n => { n.scrollTop = Math.max(n.scrollTop, Math.min(100, n.scrollHeight - n.clientHeight)); });
+    const scrollable = await bounded(d.evaluate(n => n.scrollHeight > n.clientHeight), 'Northern scrollability');
+    await bounded(d.locator('[data-reading-anchor="source"]').evaluate(n => n.scrollIntoView({ block: 'start' })), 'Northern source anchor');
+    if (scrollable) await bounded(d.evaluate(n => { n.scrollTop = Math.max(n.scrollTop, Math.min(100, n.scrollHeight - n.clientHeight)); }), 'Northern reading scroll');
     await page.waitForFunction(({id,scrollable}) => {
       const s = JSON.parse(localStorage.getItem('shanhai-last-reading-v1'));
       return s?.id === id && (!scrollable || s.position?.anchor !== 'start' || s.position?.fraction > 0);
     }, {id:readingPassage.id,scrollable});
     await page.goto(base + '?lang=zh');
     await page.waitForFunction(()=>window.history.state?.shanhai?.stageIndex===0&&document.querySelector('.world-layout')?.dataset.chapter==='00');
-    await page.evaluate(async()=>{
-      await document.fonts.ready;
+    await bounded(page.evaluate(fontFacesSettled), 'Northern resume fonts');
+    await bounded(page.evaluate(async()=>{
       await Promise.all([...document.images].filter(i=>i.loading!=='lazy'&&i.getClientRects().length).map(i=>i.decode().catch(()=>{})));
-    });
+    }), 'Northern resume assets');
     await page.locator('.resume-reading[aria-label]').click();
     d = await ready(readingPassage.id);
-    assert.equal(await d.evaluate(n => n.scrollTop > 0), scrollable);
-    await page.evaluate(async characters => {
+    assert.equal(await bounded(d.evaluate(n => n.scrollTop > 0), 'Northern restored scroll'), scrollable);
+    await bounded(page.evaluate(async characters => {
       for(const family of ['Atlas Northern Tan','Atlas Northern ExtB'])for(const w of [400,600])await document.fonts.load(w+' 20px "'+family+'"',characters);
       for (const w of [400, 600]) await document.fonts.load(`${w} 20px "Shanhai Title"`, characters);
-    }, review.title_font_supplement.characters + review.extb_font_supplement.characters + review.edition_tan_font.characters);
+    }, review.title_font_supplement.characters + review.extb_font_supplement.characters + review.edition_tan_font.characters), 'Northern explicit title font loading');
     assert.deepEqual(errors, []);
     assert.deepEqual(missing, []);
-    await context.close();
+    await bounded(context.close(), 'Northern context close');
     console.log(`PASS ${engine}: read/favorite refresh, resume, title face loading; zero page/resource errors`);
   } catch (error) {
-    try { await captureFailure?.(error); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
+    try { await bounded(captureFailure?.(error), 'Northern failure capture', 15000); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
     throw error;
   } finally {
-    await browser.close();
+    await bounded(browser.close(), 'Northern browser close');
   }
 }
