@@ -24,3 +24,14 @@ export async function clickPlaybackControl(scope, name) {
   await button.click();
   if (opened && await menu.count()) await setDetails(menu, false);
 }
+
+export async function waitForPrologueControls(page) {
+  await page.locator('.pangu-player-controls').waitFor();
+  await page.locator('html').evaluate(async () => {
+    await Promise.allSettled([
+      ...[...document.fonts].filter(font => font.status === 'loading').map(font => font.loaded),
+      ...[...document.images].filter(image => image.loading !== 'lazy' && image.getClientRects().length).map(image => image.decode()),
+    ]);
+    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  }, undefined, { timeout: 30000 });
+}

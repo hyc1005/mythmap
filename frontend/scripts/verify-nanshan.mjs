@@ -1,3 +1,4 @@
+import { waitForPrologueControls } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { mkdir, readFile, stat } from 'node:fs/promises';
@@ -131,6 +132,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await drawer.locator('[data-reading-anchor="source"]').scrollIntoViewIfNeeded();
       await page.waitForTimeout(250);
       await page.goto(`${base}?lang=${lang}`);
+      await waitForPrologueControls(page);
       await page.locator('.resume-reading').click(); await ready('material-yupei');
       assert.ok(await drawer.evaluate(node => node.scrollTop > 0), 'Natural entries support resume');
       await page.goto(`${base}?chapter=02&lang=${lang}`);
@@ -159,6 +161,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await drawer.locator('[data-reading-anchor="source"]').scrollIntoViewIfNeeded();
       await page.waitForTimeout(250);
       await page.goto(`${base}?lang=${lang}`);
+      await waitForPrologueControls(page);
       await page.locator('.resume-reading').click(); await ready('deity-nanshan-3');
       assert.ok(await drawer.evaluate(node => node.scrollTop > 0), 'New entity supports resume');
       const directoryIds = new Set();

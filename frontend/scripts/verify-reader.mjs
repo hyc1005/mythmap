@@ -1,4 +1,4 @@
-import { openSourceLibrary } from './ui-controls.mjs';
+import { openSourceLibrary, waitForPrologueControls } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { mkdir, readFile } from 'node:fs/promises';
@@ -72,6 +72,7 @@ for (const name of (process.env.ATLAS_BROWSERS||'chromium,webkit').split(',')) {
     await drawer.locator('[data-reading-anchor="source"]').scrollIntoViewIfNeeded();
     await page.waitForTimeout(250);
     await page.goto(`${base}?lang=zh`);
+    await waitForPrologueControls(page);
     await page.locator('.resume-reading').click();await ready('passage-nanshan-xun');
     assert.ok(await drawer.evaluate(node=>node.scrollTop>0));
     await page.goto(`${base}?chapter=02&lang=en`);
