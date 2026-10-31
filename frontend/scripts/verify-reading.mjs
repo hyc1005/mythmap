@@ -100,9 +100,12 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.drawer-close').click();
     await page.getByRole('button', { name: '中文', exact: true }).click();
     await page.getByLabel('搜索异兽', { exact: true }).fill('穷奇');
-    const ids = await page.locator('.beast-card').evaluateAll(nodes => nodes.map(node => node.dataset.beastId));
-    assert.equal(ids.length, 2);
+    assert.equal(await page.locator('.beast-card').count(), 1, 'Same-name accounts share one primary card');
+    const primaryId = await page.locator('.beast-card').first().getAttribute('data-beast-id');
     await page.locator('.beast-card').first().click();
+    const ids = await detail(page).locator('.detail-namesakes option').evaluateAll(nodes => nodes.map(node => node.value));
+    assert.equal(ids.length, 2, 'Both independent accounts remain available');
+    assert.equal(ids[0], primaryId);
     await entry(page, ids[0]);
     assert.equal(await page.locator('.detail-entry-position').textContent(), '1 / 2');
     await detail(page).getByRole('button', { name: '标为已读', exact: true }).click();
@@ -117,7 +120,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       return card === document.activeElement && !card.closest('[inert]');
     }, ids[0]);
     await page.getByLabel('按阅读状态筛选').selectOption('read');
-    assert.equal(await page.locator('.beast-card').count(), 2);
+    assert.equal(await page.locator('.beast-card').count(), 1);
+    assert.match(await page.locator('.bestiary-count').innerText(), /2 条记载/);
     await page.getByLabel('按阅读状态筛选').selectOption('unread');
     assert.equal(await page.locator('.beast-card').count(), 0);
     await page.getByLabel('按阅读状态筛选').selectOption('favorites');
