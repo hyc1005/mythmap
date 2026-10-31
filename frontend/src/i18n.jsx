@@ -4,6 +4,7 @@ import content from './locale-content-en.json';
 
 const LocaleContext = createContext(null);
 const replacements = Object.entries(english).sort((a, b) => b[0].length - a[0].length);
+const asciiKeys = replacements.map(([from]) => from).filter(from => /^[\x00-\x7f]*$/.test(from));
 const textFields = new Set(['name', 'title', 'subtitle', 'label', 'quote', 'source_quote', 'source_locator', 'editorial_note', 'content_note', 'artwork_caption',
   'description', 'direction', 'place_basis', 'source', 'source_text', 'source_chapter',
   'region', 'location_label', 'basis_note', 'note', 'location_note']);
@@ -11,6 +12,7 @@ const textFields = new Set(['name', 'title', 'subtitle', 'label', 'quote', 'sour
 export function translate(text, locale) {
   if (locale !== 'en' || typeof text !== 'string') return text;
   if (english[text]) return english[text];
+  if (/^[\x00-\x7f]*$/.test(text) && !asciiKeys.some(from => text.includes(from))) return text;
   return replacements.reduce((value, [from, to]) => value.split(from).join(to), text);
 }
 
@@ -19,14 +21,10 @@ export function localize(data, locale) {
   if (typeof data === 'string') return translate(data, locale);
   if (Array.isArray(data)) return data.map(value => localize(value, locale));
   if (!data || typeof data !== 'object') return data;
+  const fields = content[data.id];
   const result = Object.fromEntries(Object.entries(data).map(([key, value]) => [key,
-    key === 'aliases' || typeof value === 'string' && !textFields.has(key) ? value : localize(value, locale)]));
-  if (content[data.id]) {
-    const fields = content[data.id];
-    for (const key of Object.keys(fields)) {
-      if (key in data) result[key] = fields[key];
-    }
-  }
+    fields && Object.hasOwn(fields, key) ? fields[key]
+      : key === 'aliases' || typeof value === 'string' && !textFields.has(key) ? value : localize(value, locale)]));
   if (data.quote || data.source_quote) result.originalQuote = data.quote || data.source_quote;
   if (data.name) result.originalName = data.name;
   return result;
