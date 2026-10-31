@@ -1,3 +1,4 @@
+import { openMapTools } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { mkdir, readFile } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
@@ -51,10 +52,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         assert.ok(dimensions.playback.top >= dimensions.map.bottom - 1, 'Playback outside map');
         if (width <= 768 && height > 480) assert.ok(dimensions.map.height >= height / 2, `Mobile map height ${dimensions.map.height}`);
         assert.equal(dimensions.columns, width <= 768 ? 2 : width <= 1100 ? 3 : 4);
-        const mapView = JSON.parse(await page.locator('.myth-map-canvas').getAttribute('data-view'));
+        const mapView = JSON.parse(await settledCamera(page));
         for (const [x, y] of chapterMarkers) {
           const pixel = [mapView.size[0] / 2 + (x - mapView.center[0]) / mapView.resolution, mapView.size[1] / 2 - (y - mapView.center[1]) / mapView.resolution];
-          assert.ok(pixel[0] >= 28 && pixel[0] <= mapView.size[0] - 28 && pixel[1] >= 28 && pixel[1] <= mapView.size[1] - 28, `${width}: chapter marker has edge space`);
+          assert.ok(pixel[0] >= 28 && pixel[0] <= mapView.size[0] - 28 && pixel[1] >= 28 && pixel[1] <= mapView.size[1] - 28, `${name} ${width} ${lang}: chapter marker has edge space ${JSON.stringify({ pixel, mapView })}`);
         }
         const contrast = await page.evaluate(() => {
           const luminance = color => {
@@ -65,7 +66,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
             return channels[0] * .2126 + channels[1] * .7152 + channels[2] * .0722;
           };
           const background = luminance(getComputedStyle(document.querySelector('.myth-app')).backgroundColor);
-          return ['.chapter-rail>p', '.beast-card>p', '.beast-card>small', '.reading-notes p', '.mobile-explore-nav button'].map(selector => {
+          return ['.chapter-rail>p', '.beast-card-more', '.beast-card>small', '.reading-notes p', '.mobile-explore-nav button'].map(selector => {
             const node = document.querySelector(selector);
             const foreground = luminance(getComputedStyle(node).color);
             return { selector, ratio: (Math.max(background, foreground) + .05) / (Math.min(background, foreground) + .05) };
@@ -167,6 +168,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       }), `${id}: illustration has safe margins`);
       if (name === 'chromium') await card.screenshot({ path: new URL(`design-card-${id}.png`, output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
     }
+    await openMapTools(page);
     await page.locator('.map-fit').filter({ hasText: '存为本章 PNG' }).scrollIntoViewIfNeeded();
     await page.evaluate(() => {
       const original = HTMLCanvasElement.prototype.toDataURL;

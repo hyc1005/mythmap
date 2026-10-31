@@ -1,3 +1,4 @@
+import { openBestiaryFilters } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { readFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -122,6 +123,7 @@ if (!process.env.ATLAS_URL) {
     await input.fill('飞鱼');
     await page.getByLabel('按篇目筛选').selectOption('中山经');
     assert.equal(await grid.locator('.beast-card').count(), 1);
+    await openBestiaryFilters(page);
     await page.getByLabel('按形貌筛选').selectOption('fish');
     assert.equal(await grid.locator('.beast-card').count(), 1);
     assert.equal(await grid.locator('b').textContent(), '飞鱼');
@@ -147,7 +149,7 @@ if (!process.env.ATLAS_URL) {
         assert.equal(await grid.locator('b').textContent(), lang === 'zh' ? '鸣蛇' : 'Ming snakes');
         if (name === 'chromium' && width === 320 && lang === 'en') await page.locator('#creatures').screenshot({ path: fileURLToPath(new URL('../../output/qa/bestiary-filter-mobile-en.png', import.meta.url)) });
         assert.ok(await page.locator('#creatures').evaluate(node => node.scrollWidth <= node.clientWidth + 1), `${name} ${lang} ${width}: bestiary overflow`);
-        assert.ok(await page.locator('.bestiary-tools :is(input,select,button), .bestiary-roles button').evaluateAll(nodes => nodes.every(node => node.getBoundingClientRect().height >= 44)));
+        assert.ok(await page.locator('.bestiary-tools :is(input,select,button), .bestiary-roles button').evaluateAll(nodes => nodes.filter(node => node.checkVisibility()).every(node => node.getBoundingClientRect().height >= 44)));
       }
     }
     await page.locator('[data-bestiary-role="deity"]').click();

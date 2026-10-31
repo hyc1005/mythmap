@@ -63,8 +63,6 @@ html[lang='en'] .ink-animate .ink-word { animation-name: ink-phase; }
 .artwork-fallback>span:first-child { font-size: 36px; }
 .artwork-fallback button { min-height: 44px; border: 1px solid #b7a27b; background: #f0e5cd; color: inherit; cursor: pointer; }
 .beast-card:is(:hover, :focus-visible) { border-color: #a44431; }
-.beast-enter { animation: beast-arrive 300ms ease-out both; }
-@keyframes beast-arrive { from { opacity: .25; } to { opacity: 1; } }
 
 
 @media (max-width: 640px) {
@@ -92,6 +90,6 @@ html[lang='en'] .ink-animate .ink-word { animation-name: ink-phase; }
   .exploration-guide { align-items: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .ink-word, .beast-enter { animation: none !important; opacity: 1; transform: none; clip-path: none; }
+  .ink-word, .artwork-reveal { animation: none !important; opacity: 1; transform: none; clip-path: none; }
   .chapter-transition-veil.is-visible { display: grid; animation: none; opacity: 1; }
 }

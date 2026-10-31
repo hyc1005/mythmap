@@ -1,3 +1,4 @@
+import { openSourceLibrary } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { mkdir, readFile, stat } from 'node:fs/promises';
 import { chromium, webkit } from 'playwright';
@@ -659,6 +660,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     for (const lang of ['zh', 'en']) {
       await page.goto(`${base}?chapter=03&lang=${lang}`);
       await page.locator('.mobile-explore-nav button').nth(1).click();
+      await openSourceLibrary(page);
       const directory = page.locator('.chapter-text-entries[data-source-book="2"]:visible');
       await directory.locator('>summary').click();
       for (const summary of await directory.locator('.passage-range>summary').all()) await summary.click();

@@ -16,6 +16,7 @@ export default function Timeline({ stages, index, onSelect }) {
     if (next === undefined) return;
     event.preventDefault();
     onSelect(Math.max(0, Math.min(stages.length - 1, next)));
+    requestAnimationFrame(() => steps.current?.querySelector('[aria-current=step]')?.focus({ preventScroll: true }));
   };
   return <nav className="myth-timeline" aria-label={t('章节导航')} onKeyDown={keys}>
     <div className="timeline-current">

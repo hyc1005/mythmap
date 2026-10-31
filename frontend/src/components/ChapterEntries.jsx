@@ -17,11 +17,13 @@ export default function ChapterEntries({ stories, records, naturalEntries = [], 
   ];
   const list = items => <ul>{items.map(record => <li key={record.id}><button type="button" className="map-entry-button" data-entry-id={record.id} onClick={event => onOpen(record.id, event.currentTarget, sequence)}><b>{record.name}</b><ContentOrigin record={record} /><small>{t(entryTypes[record.kind])}{record.source && ` · ${record.source}`}</small><ReadingMarks reading={reading} id={record.id} /></button></li>)}</ul>;
   return <div className="chapter-entries">
+    <div className="chapter-story-list">{stories.map(item => <button type="button" className="story-entry" data-entry-id={item.id} key={item.id} onClick={event => onOpen(item.id, event.currentTarget, sequence)}><i aria-hidden="true">✦</i><span><b>{item.properties.name}</b><ContentOrigin record={item} /><small>{item.properties.source_text || item.properties.basis_note}</small><ReadingMarks reading={reading} id={item.id} /></span></button>)}</div>
+    {!!passageEntries.length && <details className="chapter-library"><summary>{t('按卷阅读')} · {passageEntries.length}</summary>
     {books.map(book => {
       const passages = passageEntries.filter(item => (item.source_book || 1) === book.number);
       return passages.length ? <details key={book.number} data-source-book={book.number} className="chapter-text-entries chapter-map-entries"><summary>{t(book.title)} · {passages.length}</summary><p className="entry-reading-hint">{t('按底本山段与总述排列，可任选一段阅读；独立对象仍在逐步建档。')}</p>{book.ranges.map((label, i) => passages.some(item => item.range === i + 1) ? <details key={i} className="passage-range"><summary>{t(label)}</summary><ul>{passages.filter(item => item.range === i + 1).map(item => <li key={item.id}><button type="button" className="map-entry-button" data-entry-id={item.id} onClick={event => onOpen(item.id, event.currentTarget, passages.map(entry => entry.id))}><b>{item.name}</b><small>{item.source_locator}</small><ReadingMarks reading={reading} id={item.id} /></button></li>)}</ul></details> : null)}</details> : null;
     })}
-    <div className="chapter-story-list">{stories.map(item => <button type="button" className="story-entry" data-entry-id={item.id} key={item.id} onClick={event => onOpen(item.id, event.currentTarget, sequence)}><i aria-hidden="true">✦</i><span><b>{item.properties.name}</b><ContentOrigin record={item} /><small>{item.properties.source_text || item.properties.basis_note}</small><ReadingMarks reading={reading} id={item.id} /></span></button>)}</div>
+    </details>}
     {!!others.length && <details className="chapter-map-entries"><summary>{t('本章其他条目')} · {others.length}</summary>{others.length <= 30 ? list(others) : Object.entries(entryTypes).map(([kind,label]) => {
       const items=others.filter(item=>item.kind===kind);
       return items.length ? <details className="entry-kind-group" key={kind}><summary>{t(label)} · {items.length}</summary>{list(items)}</details> : null;

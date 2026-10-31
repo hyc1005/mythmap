@@ -1,3 +1,4 @@
+import { openMapTools, closeMapTools } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { mkdir, readFile, stat } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
@@ -141,7 +142,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       }
     }
     await page.goto(`${base}?chapter=03&lang=zh`);
+    await openMapTools(page);
     await page.getByRole('checkbox', { name: '异兽谱', exact: true }).check();
+    await closeMapTools(page);
     await page.waitForFunction(paths => {
       const resources = performance.getEntriesByType('resource').map(item => item.name);
       return paths.every(path => resources.some(url => url.endsWith(path)));

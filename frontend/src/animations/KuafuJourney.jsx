@@ -63,7 +63,7 @@ async function decodeSprites(sheet, poses) {
   });
 }
 
-export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange, onSkip, controlContainer, externalPaused = false, tourPlaying = null, onUserPlaybackChange, compactControls = false, storyView = true, closeup = false, cameraRequest = 0 }) {
+export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange, onSkip, controlContainer, externalPaused = false, tourPlaying = null, onUserPlaybackChange, storyView = true, closeup = false, cameraRequest = 0 }) {
   const { t, locale } = useLocale();
   const mapFont = locale === 'en' ? '"Source Sans 3 Variable", Arial, sans-serif' : '"Noto Serif SC", SimSun, serif';
   const [sprites, setSprites] = useState(null);
@@ -259,18 +259,15 @@ export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange
   const status = playback === 'manual' ? 'reduced' : playback;
   const replayControl = !reduced && !error && !completed && <button onClick={replay} disabled={!sprites}>{t('重播')}</button>;
   const followControl = !reduced && !error && <button aria-label={following ? t('跟随镜头') : t('恢复跟随')} title={following ? t('停止镜头跟随') : t('恢复镜头跟随')} aria-pressed={following} onClick={() => setFollowing(value => !value)}>{t('跟随')}</button>;
+  const speedButton = !reduced && !error && <button aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>;
   const controls = <div className="kuafu-journey" ref={panel} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} role="group" aria-label={t("夸父逐日动态")} data-closeup={closeup} data-status={status} data-phase={ui.phase.id} data-frame={ui.frame} data-elapsed={Math.round(ui.elapsed)} data-playback-rate={playbackRate} data-x={ui.position[0].toFixed(2)} data-y={ui.position[1].toFixed(2)} data-follow={following}>
     <progress value={ui.elapsed} max={journey.duration_ms} aria-label={t("夸父故事进度")} />
     <div className="journey-heading"><b>{t("夸父逐日")}</b><span aria-live="polite"><InkText key={ui.phase.id} variant="phase" text={error ? t("动作图加载失败") : !sprites ? t("正在载入动作图…") : `${t(ui.phase.title)}${status === 'paused' ? t(" · 已暂停") : status === 'completed' ? t(" · 完") : ''}`} /></span></div>
-    <p>{t(ui.phase.quote)}</p>
     <div className="journey-actions">
       {error ? <button onClick={() => setReload(value => value + 1)}>{t("重新载入")}</button> : reduced && !completed ? <button onClick={nextScene} disabled={!sprites}>{ui.phase === phases.at(-1) ? t("完成故事") : t("下一幕")}</button> : <button onClick={completed ? replay : () => { const next = !(paused || externalPaused); setPaused(next); onUserPlaybackChange?.(!next); }} disabled={!sprites || Boolean(selectedId) || hidden} aria-label={completed ? t("重播夸父逐日") : (paused || externalPaused) ? t("继续夸父逐日") : t("暂停夸父逐日")}>{completed ? t("重播") : (paused || externalPaused) ? t("继续") : t("暂停")}</button>}
       {!completed && <button onClick={onSkip}>{t('跳过')}</button>}
-      {!compactControls && replayControl}
-      {!reduced && !error && <button aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>}
-      {!compactControls && followControl}
       <button aria-label={t("原文 ↗")} onClick={event => onSelect(journey.event_id, event.currentTarget)}>{t("原文")}</button>
-      {compactControls && (replayControl || followControl) && <details className="journey-more"><summary>{t('更多')}</summary><div>{replayControl}{followControl}</div></details>}
+      {(replayControl || followControl || speedButton) && <details className="journey-more"><summary>{t('更多')}</summary><div>{replayControl}{speedButton}{followControl}</div></details>}
       <small title={t(journey.location_note)}>{t("叙事示意 · 大泽未至")}</small>
     </div>
   </div>;

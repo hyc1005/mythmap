@@ -1,3 +1,4 @@
+import { openSourceLibrary } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { createHash } from 'node:crypto';
@@ -391,6 +392,7 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
       }
       await page.goto(`${base}?chapter=03&lang=${lang}`);
       await page.locator('.mobile-explore-nav button').nth(1).click();
+      await openSourceLibrary(page);
       const northern = page.locator('[data-source-book="3"]');
       await northern.locator(':scope > summary').click();
       for (const summary of await northern.locator('.passage-range > summary').all()) await summary.click();

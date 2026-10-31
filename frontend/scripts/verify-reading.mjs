@@ -1,3 +1,4 @@
+import { openBestiaryFilters } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
@@ -119,6 +120,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       const card = document.querySelector(`.beast-card[data-beast-id="${id}"]`);
       return card === document.activeElement && !card.closest('[inert]');
     }, ids[0]);
+    await openBestiaryFilters(page);
     await page.getByLabel('按阅读状态筛选').selectOption('read');
     assert.equal(await page.locator('.beast-card').count(), 1);
     assert.match(await page.locator('.bestiary-count').innerText(), /2 条记载/);

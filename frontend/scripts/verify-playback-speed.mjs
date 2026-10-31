@@ -1,3 +1,4 @@
+import { clickPlaybackControl } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { chromium, firefox, webkit } from 'playwright';
 import { BASE_PLAYBACK_RATE } from '../src/playback.js';
@@ -19,12 +20,12 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       const panel = page.locator(selector);
       await page.locator(selector + '[data-status=playing]').waitFor();
       await page.clock.pauseAt(await page.evaluate(() => Date.now() + 1000));
-      await page.getByRole('button', { name: story ? '重播' : '重播盘古序章', exact: true }).click();
+      await clickPlaybackControl(page, story ? '重播' : '重播盘古序章');
       await page.clock.runFor(200);
       const time = () => story ? panel.getAttribute('data-elapsed').then(Number)
         : page.locator('.pangu-player-controls progress').getAttribute('value').then(value => Number(value) / 30 * 1000);
       for (const multiplier of [1, 2]) {
-        if (multiplier === 2) await page.getByRole('button', { name: '播放速度 1倍', exact: true }).click();
+        if (multiplier === 2) await clickPlaybackControl(page, "播放速度 1倍");
         await page.clock.runFor(200);
         const before = await time();
         await page.clock.runFor(1000);
@@ -34,10 +35,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await page.getByRole('button', { name: /^暂停/ }).click();
       await page.clock.runFor(100);
       const frozen = await time();
-      await page.getByRole('button', { name: '播放速度 2倍', exact: true }).click();
+      await clickPlaybackControl(page, "播放速度 2倍");
       await page.clock.runFor(500);
       assert.equal(await time(), frozen, 'Changing speed while paused does not advance the story');
-      await page.getByRole('button', { name: story ? '重播' : '重播盘古序章', exact: true }).click();
+      await clickPlaybackControl(page, story ? '重播' : '重播盘古序章');
       await page.clock.runFor(100);
       assert.ok(await time() < 180, 'Replay starts at the beginning with the default rate');
       const duration = story ? Number(await panel.locator('progress').getAttribute('max')) : 13000;

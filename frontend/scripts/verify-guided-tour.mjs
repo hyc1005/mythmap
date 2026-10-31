@@ -62,15 +62,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.waitForFunction(() => Number(document.querySelector('.story-animation')?.dataset.elapsed) > 0);
     await actorFits(page);
     const elapsed = await page.locator('.story-animation').getAttribute('data-elapsed');
-    const closeSize = Number(await page.locator('.story-animation').getAttribute('data-size'));
-    await page.getByRole('button', { name: '本章全图', exact: true }).click();
-    await page.waitForFunction(() => document.querySelector('.story-animation')?.dataset.closeup === 'false');
-    assert.equal(await page.locator('.story-animation').getAttribute('data-elapsed'), elapsed);
-    await page.waitForFunction(size => Number(document.querySelector('.story-animation')?.dataset.size) < size, closeSize, { timeout: 3000 });
-    const overviewSize = Number(await page.locator('.story-animation').getAttribute('data-size'));
-    assert.ok(closeSize > overviewSize, 'Mobile close-up enlarges the actor');
-    await page.getByRole('button', { name: '故事近景', exact: true }).click();
-    await page.waitForFunction(() => document.querySelector('.story-animation')?.dataset.closeup === 'true');
+    assert.equal(await page.locator('.story-view-controls').count(), 0);
+    await page.locator('.restore-view').click();
     await actorFits(page);
     assert.equal(await page.locator('.story-animation').getAttribute('data-elapsed'), elapsed);
     const bounds = await page.locator('.myth-map-canvas').boundingBox();
@@ -83,7 +76,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     const draggedView = await page.locator('.myth-map-canvas').getAttribute('data-view');
     await page.waitForTimeout(200);
     assert.equal(await page.locator('.myth-map-canvas').getAttribute('data-view'), draggedView, 'Manual pan keeps the reader camera');
-    await page.getByRole('button', { name: '故事近景', exact: true }).click();
+    await page.locator('.restore-view').click();
     await page.waitForFunction(() => document.querySelector('.story-animation')?.dataset.follow === 'true');
     assert.equal(await page.locator('.story-animation').getAttribute('data-elapsed'), elapsed);
     await page.getByRole('button', { name: '开始游历', exact: true }).click();
@@ -135,13 +128,19 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         await page.locator('.kuafu-journey[data-status="reduced"]').waitFor();
         await page.getByRole('button', { name: '下一幕', exact: true }).click();
         await actorFits(page);
-        assert.ok(await page.locator('.story-view-controls button').evaluateAll(nodes => nodes.every(node => node.getBoundingClientRect().height >= 44)));
+        assert.equal(await page.locator('.story-view-controls').count(), 0);
+        assert.ok(await page.locator('.restore-view').evaluate(node => node.getBoundingClientRect().height >= 44));
         if (name === 'chromium' && width === 390) await page.locator('.myth-map-wrap').screenshot({ path: filename(`closeup-${id}.png`) });
-        await page.getByRole('button', { name: '本章全图', exact: true }).click();
-        await page.waitForFunction(() => document.querySelector('.myth-map-wrap').dataset.cameraMode === 'overview');
+        const elapsed = await page.locator('.kuafu-journey').getAttribute('data-elapsed');
+        await page.locator('.myth-map-canvas').hover();
+        await page.mouse.wheel(0, 2200);
+        await page.waitForTimeout(350);
+        await page.locator('.restore-view').click();
+        await page.waitForFunction(() => document.querySelector('.myth-map-wrap').dataset.cameraMode === 'story');
         await actorFits(page);
+        assert.equal(await page.locator('.kuafu-journey').getAttribute('data-elapsed'), elapsed);
       }
-      console.log(`PASS ${name} ${width}x${height}: six story close-ups and overview`);
+      console.log(`PASS ${name} ${width}x${height}: six story frames, manual zoom and restored view`);
     }
     assert.deepEqual(errors, []);
     await page.close();

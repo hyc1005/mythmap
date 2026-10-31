@@ -170,8 +170,10 @@ export default function PanguOpening({ active, autoStart = true, selected, onSta
   const controls = <div className="pangu-player-controls" aria-label={t("盘古序章动画控制")}><progress value={progressFrame} max={DURATION} aria-label={t("盘古序章进度")} />
       {failed ? <button type="button" aria-label={t("重试盘古动态场景")} onClick={retry}>{t("重试动态场景")}</button> : reducedMotion ? <><span>{t("系统已减少动态效果")}</span><span>{t(['混沌初开', '天地分离', '盘古撑天', '天地成形'][manualScene])}</span><button onClick={() => { const next = Math.min(3, manualScene + 1); ended.current = next === 3; setManualScene(next); setProgressFrame(next * 130); }}>{t(manualScene >= 2 ? '完成故事' : '下一幕')}</button></> : !assetsReady ? <span>{t("场景载入中…")}</span> : !playerMounted ? <span>{autoStart ? t("进入画面后自动播放") : t("场景待播放")}</span> : <>
         <button type="button" aria-label={playing ? t("暂停盘古序章") : ended.current ? t("重播盘古序章") : hasStarted.current ? t("继续播放盘古序章") : t("播放盘古序章")} onClick={() => { if (playing) { manualPaused.current = true; stopClock(); onUserPlaybackChange?.(false); } else if (ended.current) replay(); else { manualPaused.current = false; startClock(); onUserPlaybackChange?.(true); } }}>{playing ? t("暂停") : ended.current ? t("播放完成 · 重播") : hasStarted.current ? t("继续播放") : t("播放")}</button>
+        <details className="journey-more"><summary>{t('更多')}</summary><div>
         <button type="button" aria-label={t("重播盘古序章")} onClick={replay}>{t("重播")}</button>
         <button type="button" aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>
+        </div></details>
       </>}
       {!ended.current && <button onClick={onSkip}>{t('跳过')}</button>}
     </div>;

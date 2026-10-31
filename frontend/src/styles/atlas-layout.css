@@ -114,8 +114,8 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .explore-sheet h2 { margin: 0; font-size: 22px; }
 .explore-sheet>header button { width: 44px; height: 44px; border: 1px solid var(--edge); background: none; font-size: 24px; }
 @media (min-width: 769px) {
-  .explore-toolbar .map-tools summary { display: none; }
-  .myth-map-wrap:not(.is-map-fullscreen) .explore-toolbar .map-tools>div { position: static; display: flex; width: auto; margin: 0; padding: 0; border: 0; }
+  .explore-toolbar .map-tools summary { display: list-item; }
+  .myth-map-wrap:not(.is-map-fullscreen) .explore-toolbar .map-tools>div { position: absolute; right: 0; top: 100%; z-index: 40; width: 270px; padding: 10px; border: 1px solid var(--edge); background: var(--paper); }
 }
 @media (min-width: 769px) and (max-width: 1100px) {
   .world-layout { grid-template-columns: 240px minmax(0, 1fr); gap: 20px; }
@@ -185,22 +185,12 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .is-map-fullscreen .map-entry-list .chapter-map-entries ul { position: static; width: auto; max-height: none; padding: 0; border: 0; }
 
 .tour-progress { margin: 0; max-width: 34ch; font-size: 14px; line-height: 1.6; color: var(--soft-ink); }
-.story-view-controls { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-.story-view-controls button, .tour-reading button { min-width: 44px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); font-size: 14px; cursor: pointer; }
-.story-view-controls [aria-pressed='true'] { border-color: var(--verm); color: var(--verm); }
+.tour-reading button { min-width: 44px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); font-size: 14px; cursor: pointer; }
 .tour-reading { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .tour-reading p { margin: 0; max-width: 55ch; color: var(--soft-ink); font-size: 14px; line-height: 1.5; }
-.is-map-fullscreen .story-view-controls { grid-area: 2 / 1; justify-self: end; margin: 0; z-index: 2; }
-.is-map-fullscreen .story-view-controls button { min-height: 32px; padding: 4px 8px; font-size: 12px; }
-.is-map-fullscreen:has(.story-view-controls) .fullscreen-preview-slot { padding-right: 205px; }
-.is-map-fullscreen:has(.story-view-controls) .fullscreen-preview-slot:has(.ink-hover-card) { padding-right: 0; }
-.fullscreen-dock:has(.ink-hover-card) .story-view-controls { visibility: hidden; }
 @media (max-width: 768px) {
   .rail-exploration .tour-progress { margin-top: 6px; font-size: 13px; }
-  .is-map-fullscreen .story-view-controls button { min-height: 44px; }
-  .is-map-fullscreen:has(.story-view-controls) .fullscreen-preview-slot { padding-right: 190px; }
 }
-@media (max-width: 768px) { .fullscreen-dock:has(.story-view-controls) { grid-template-rows: minmax(0, 1fr) 56px; } }
 
 .reading-marks { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 6px; color: var(--verm); font-size: 14px; line-height: 1.5; }
 .reading-marks span { border-bottom: 1px solid var(--edge); }
@@ -239,7 +229,6 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .fullscreen-dock:has(.map-reading-actions) { grid-template-rows: minmax(0, 1fr) 56px auto; height: 176px; }
 .fullscreen-dock .map-reading-actions { grid-area: 3 / 1; margin: 0; padding: 0; border: 0; }
 .fullscreen-dock .map-reading-actions .exploration-guide { display: none; }
-.fullscreen-dock:has(.map-reading-actions) .story-view-controls { grid-area: 2 / 1; }
 @media (max-width: 768px) {
   .chapter-rail { gap: 4px 10px; padding-bottom: 8px; }
   .chapter-rail .rail-exploration { margin: 0; }
@@ -291,3 +280,44 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .bestiary-roles button:focus-visible, .beast-variants-toggle:focus-visible, .bestiary-reset:focus-visible { outline: 2px solid var(--verm); outline-offset: 3px; }
 
 .beast-grid:has(>.beast-group:only-child) { grid-template-columns: minmax(0, 1fr); max-width: 480px; }
+
+.bestiary-extra-filters { display: contents; }
+.bestiary-extra-toggle { display: none; }
+.beast-card-more { margin-top: 10px; color: var(--verm); font-size: 14px; line-height: 1.6; }
+.artwork-reveal { animation: illustration-arrive 200ms ease-out both; }
+@keyframes illustration-arrive { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.chapter-library { margin: 12px 0; }
+.chapter-library>summary { min-height: 44px; padding: 10px 0; border-bottom: 1px solid var(--edge); cursor: pointer; }
+.chapter-library .chapter-text-entries { margin-left: 8px; }
+@media (max-width: 768px) {
+  .bestiary-extra-toggle { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 10px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); font: inherit; }
+  .bestiary-extra-filters[data-expanded='false'] { display: none; }
+  .bestiary-extra-filters[data-expanded='true'] { display: flex; flex: 1 1 100%; flex-wrap: wrap; gap: 10px; }
+  .bestiary-extra-filters select { flex: 1 1 140px; }
+}
+@media (prefers-reduced-motion: reduce) { .artwork-reveal { animation: none; opacity: 1; transform: none; } }
+
+.journey-more summary { min-width: 44px; min-height: 44px; padding: 8px 10px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); font-size: 14px; }
+.journey-more>div { z-index: 50; flex-wrap: wrap; width: max-content; max-width: min(300px, calc(100vw - 32px)); padding: 8px; border-color: var(--edge); background: var(--paper); }
+.journey-more button { min-width: 44px; min-height: 44px; padding: 8px 10px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); font-size: 14px; }
+.fullscreen-dock:has(.journey-more[open]), .fullscreen-control-slot:has(.journey-more[open]) { overflow: visible; }
+.is-map-fullscreen .fullscreen-dock .journey-more summary { min-height: 44px; }
+
+.is-map-fullscreen .fullscreen-dock .journey-more :is(button, summary) { min-width: 44px; min-height: 44px; padding: 8px 10px; font-size: 14px; }
+
+.world-main>.myth-timeline { margin: 0 0 12px; }
+
+@media (max-height: 480px) {
+  .world-main>.myth-timeline { flex-wrap: nowrap; }
+  .world-main>.myth-timeline .timeline-steps { flex: 1 1 0; min-width: 0; }
+}
+
+.restore-view, .is-map-fullscreen .fullscreen-toolbar .restore-view { min-width: 44px; min-height: 44px; padding: 8px 10px; border-color: var(--edge); background: var(--paper); color: var(--ink); font-size: 14px; }
+
+.has-journey.is-short-map .map-tools .myth-layer-switches { display: flex; }
+.has-journey.is-short-map .map-tools .map-fit { display: block; }
+
+@media (min-width: 769px) and (max-height: 480px) {
+  .is-map-fullscreen .fullscreen-toolbar { padding-top: 6px; padding-bottom: 6px; row-gap: 4px; }
+  .is-map-fullscreen .fullscreen-dock:has(.map-reading-actions) { height: 168px; padding-top: 6px; padding-bottom: 6px; gap: 4px; }
+}

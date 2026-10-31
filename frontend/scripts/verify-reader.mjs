@@ -1,3 +1,4 @@
+import { openSourceLibrary } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { mkdir, readFile } from 'node:fs/promises';
@@ -50,6 +51,7 @@ for (const name of (process.env.ATLAS_BROWSERS||'chromium,webkit').split(',')) {
     await page.evaluate(()=>localStorage.setItem('shanhai-reading-v1',JSON.stringify({version:1,read:['beast-guan'],favorites:['beast-guan']})));
     await page.reload();
     await page.locator('.mobile-explore-nav button').nth(1).click();
+    await openSourceLibrary(page);
     const directory=page.locator('.chapter-text-entries:visible');
     await directory.locator('>summary').click();
     await directory.locator('.passage-range>summary').nth(1).click();

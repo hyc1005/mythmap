@@ -172,6 +172,7 @@
   "关闭动画": "No animation",
   "地图工具": "Map tools",
   "看本章山海": "Fit chapter",
+  "恢复视野": "Restore view",
   "存为本章 PNG": "Save PNG",
   "展开原文与出处 ↗": "Text & source ↗",
   "播放故事动画": "Play story animation",
@@ -959,5 +960,8 @@
   "来源与许可 ↗": "Sources and licensing ↗",
   "查看同名记载": "View same-name accounts",
   "同名记载": "Same-name accounts",
-  "同名仅作索引，各条出处独立。": "Names are grouped for navigation only; each account retains its own source."
+  "同名仅作索引，各条出处独立。": "Names are grouped for navigation only; each account retains its own source.",
+  "查看形貌与出处 ↗": "Appearance and sources ↗",
+  "更多筛选": "More filters",
+  "按卷阅读": "Browse source books"
 }

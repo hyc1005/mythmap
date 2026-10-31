@@ -1,3 +1,4 @@
+import { clickPlaybackControl } from './ui-controls.mjs';
 import { BASE_PLAYBACK_RATE } from '../src/playback.js';
 import assert from 'node:assert/strict';
 import { access, mkdir, readFile } from 'node:fs/promises';
@@ -141,7 +142,7 @@ async function assertFullscreenLayout(page, label) {
   const layout = await page.evaluate(() => {
     const rect = element => { const r = element.getBoundingClientRect(); return { x:r.x, y:r.y, width:r.width, height:r.height }; };
     const collect = selector => Array.from(document.querySelectorAll(selector)).filter(e => e.checkVisibility() && e.getBoundingClientRect().width && getComputedStyle(e).visibility !== "hidden").map(rect);
-    return { top:rect(document.querySelector(".fullscreen-toolbar")), map:rect(document.querySelector(".map-surface")), bottom:rect(document.querySelector(".fullscreen-dock")), width:innerWidth, height:innerHeight, controls:collect(".fullscreen-chapter-nav > button, .fullscreen-chapter-nav > span, .fullscreen-toolbar .myth-layer-switches label, .fullscreen-toolbar .map-animation-choice, .fullscreen-toolbar .map-tools summary, .fullscreen-toolbar .map-tools .map-fit, .fullscreen-toolbar .map-entry-list summary, .fullscreen-toolbar .map-fullscreen, .fullscreen-dock .journey-actions > button, .fullscreen-dock .pangu-player-controls > button") };
+    return { top:rect(document.querySelector(".fullscreen-toolbar")), map:rect(document.querySelector(".map-surface")), bottom:rect(document.querySelector(".fullscreen-dock")), width:innerWidth, height:innerHeight, controls:collect(".fullscreen-chapter-nav > button, .fullscreen-chapter-nav > span, .fullscreen-toolbar .myth-layer-switches label, .fullscreen-toolbar .map-animation-choice, .fullscreen-toolbar .map-tools summary, .fullscreen-toolbar .restore-view, .fullscreen-dock .journey-more summary, .fullscreen-toolbar .map-tools .map-fit, .fullscreen-toolbar .map-entry-list summary, .fullscreen-toolbar .map-fullscreen, .fullscreen-dock .journey-actions > button, .fullscreen-dock .pangu-player-controls > button") };
   });
   assert.ok(layout.top.y + layout.top.height <= layout.map.y + 1 && layout.map.y + layout.map.height <= layout.bottom.y + 1, label + ": control bands stay outside the canvas");
   assert.ok(layout.map.height >= 100 && layout.bottom.y + layout.bottom.height <= layout.height + 1, label + ": canvas and bands fit the viewport");
@@ -256,7 +257,7 @@ try {
     await layoutPage.getByLabel("选择地图故事动画").selectOption("");
     assert.equal(await layoutPage.locator(".fullscreen-idle-info .map-layer-summary").count(),1);
     await layoutPage.locator(".map-tools summary").click();
-    await layoutPage.getByRole("button",{name:"看本章山海",exact:true}).click();
+    await layoutPage.getByRole("button",{name:"恢复视野",exact:true}).click();
     await layoutPage.clock.runFor(500);
     await layoutPage.locator(".map-tools summary").click();
     await layoutPage.clock.runFor(500);
@@ -335,17 +336,17 @@ try {
   await panguRatePage.getByRole('button', { name: '播放盘古序章', exact: true }).click();
     await panguRatePage.getByRole('button', { name: '暂停盘古序章', exact: true }).waitFor();
   await panguRatePage.clock.runFor(500);
-  await panguRatePage.getByRole('button', { name: '播放速度 1倍', exact: true }).click();
+  await clickPlaybackControl(panguRatePage, "播放速度 1倍");
   const panguBeforeFast = Number(await panguScene.getAttribute('data-frame'));
   await panguRatePage.clock.runFor(500);
   const panguAfterFast = Number(await panguScene.getAttribute('data-frame'));
   assert.ok(panguAfterFast - panguBeforeFast >= 24, 'Pangu Remotion clock advances near 2x rate');
   await panguRatePage.getByRole('button', { name: '暂停盘古序章', exact: true }).click();
   const panguFrozen = await panguScene.getAttribute('data-frame');
-  await panguRatePage.getByRole('button', { name: '播放速度 2倍', exact: true }).click();
+  await clickPlaybackControl(panguRatePage, "播放速度 2倍");
   await panguRatePage.clock.runFor(500);
   assert.equal(await panguScene.getAttribute('data-frame'), panguFrozen, 'changing rate while Pangu is paused does not resume it');
-  await panguRatePage.getByRole('button', { name: '重播盘古序章', exact: true }).click();
+  await clickPlaybackControl(panguRatePage, "重播盘古序章");
   assert.equal(await panguRatePage.locator('.pangu-player-wrap').getAttribute('data-playback-rate'), '1', 'Pangu replay keeps its selected rate');
   await panguRatePage.close();
 
@@ -428,7 +429,7 @@ try {
     }
   }
   await selectChapter(page, '01 造人与补天');
-  await page.getByRole('button', { name: '看本章山海', exact: true }).click();
+  await page.getByRole('button', { name: '恢复视野', exact: true }).click();
   await page.waitForTimeout(450);
   const mapBox = await page.locator('.map-surface').boundingBox();
   const { center, resolution } = JSON.parse(await page.locator('.myth-map-canvas').getAttribute('data-view'));
@@ -575,7 +576,7 @@ try {
   await selectChapter(mobile, '01 造人与补天');
   assert.equal(await storyCount(mobile), 5);
   await mobile.locator('.map-tools summary').tap();
-  await mobile.getByRole('button', { name: '看本章山海', exact: true }).tap();
+  await mobile.getByRole('button', { name: '恢复视野', exact: true }).tap();
   await mobile.locator('.map-tools summary').tap();
   await mobile.getByLabel('选择地图故事动画').selectOption('01-02');
   await mobile.locator('.story-animation[data-story="01-02"]').waitFor();
@@ -607,7 +608,7 @@ try {
     assert.equal(await storyCount(chapterPage), 4);
     const compactTools = width <= 768 || height <= 480;
     if (compactTools) await chapterPage.locator('.map-tools summary').click();
-    await chapterPage.getByRole('button', { name: '看本章山海', exact: true }).click();
+    await chapterPage.getByRole('button', { name: '恢复视野', exact: true }).click();
     if (compactTools) await chapterPage.locator('.map-tools summary').click();
     await chapterPage.waitForTimeout(500);
     await chapterPage.locator('.map-animation-choice select').selectOption('');
@@ -666,14 +667,14 @@ try {
   const secondPose = await journeyPanel.evaluate(element => ({ ...element.dataset }));
   assert.ok(Number(secondPose.x) > Number(firstPose.x));
   assert.notEqual(secondPose.frame, firstPose.frame);
-  await animationPage.getByRole('button', { name: '播放速度 1倍', exact: true }).click();
+  await clickPlaybackControl(animationPage, "播放速度 1倍");
   const kuafuBeforeFast = Number(await journeyPanel.getAttribute('data-elapsed'));
   await animationPage.waitForTimeout(350);
   assert.ok(Number(await journeyPanel.getAttribute('data-elapsed')) - kuafuBeforeFast > 500, 'Kuafu clock advances faster at 2x');
   await animationPage.getByRole('button', { name: '暂停夸父逐日', exact: true }).click();
   await animationPage.locator('.kuafu-journey[data-status="paused"]').waitFor();
   const frozen = await journeyPanel.getAttribute('data-elapsed');
-  await animationPage.getByRole('button', { name: '播放速度 2倍', exact: true }).click();
+  await clickPlaybackControl(animationPage, "播放速度 2倍");
   await animationPage.waitForTimeout(500);
   assert.equal(await journeyPanel.getAttribute('data-elapsed'), frozen);
   assert.equal(await journeyPanel.getAttribute('data-status'), 'paused', 'changing Kuafu rate does not resume the animation');
@@ -693,7 +694,7 @@ try {
   await animationPage.mouse.up();
   await animationPage.locator('.kuafu-journey[data-follow="false"]').waitFor();
   assert.equal(await journeyPanel.getAttribute('data-status'), 'playing');
-  await journeyPanel.getByRole('button', { name: '恢复跟随', exact: true }).click();
+  await clickPlaybackControl(journeyPanel, "恢复跟随");
   await animationPage.locator('.kuafu-journey[data-follow="true"]').waitFor();
   await animationPage.locator('.map-fullscreen').click();
   await animationPage.waitForFunction(() => Boolean(document.fullscreenElement) || document.querySelector('.is-fallback-fullscreen'));
@@ -795,7 +796,7 @@ try {
   await storyPage.mouse.move(storyMapBounds.x + 170, storyMapBounds.y + 165, { steps: 8 });
   await storyPage.mouse.up();
   await storyPage.locator('.story-animation[data-follow="false"]').waitFor();
-  await local.getByRole('button', { name: '恢复跟随', exact: true }).click();
+  await clickPlaybackControl(local, "恢复跟随");
   await storyPage.locator('.story-animation[data-follow="true"]').waitFor();
   await local.getByRole('button', { name: '原文 ↗', exact: true }).click();
   await storyPage.locator('.story-animation[data-status="paused"]').waitFor();
@@ -803,7 +804,7 @@ try {
   await storyPage.locator('.story-animation[data-status="playing"]').waitFor();
   await storyPage.clock.runFor(Math.round((19000) / BASE_PLAYBACK_RATE));
   await storyPage.locator('.story-animation[data-status="completed"]').waitFor();
-  await storyPage.getByRole('button', { name: '重播精卫填海', exact: true }).click();
+  await clickPlaybackControl(storyPage, "重播精卫填海");
   await storyPage.locator('.story-animation[data-status="playing"]').waitFor();
   assert.equal(await local.getAttribute('data-status'), 'playing');
   await selectChapter(storyPage, '04 五帝后期');
@@ -830,7 +831,7 @@ try {
   const impactStory = impactPage.locator('.story-animation');
   await impactPage.locator('.story-animation[data-status="playing"]').waitFor();
   await impactPage.clock.pauseAt(await impactPage.evaluate(() => Date.now() + 1000));
-  await impactStory.getByRole('button', { name: '重播', exact: true }).click();
+  await clickPlaybackControl(impactStory, "重播");
   await impactPage.clock.runFor(Math.round((7100) / BASE_PLAYBACK_RATE));
   assert.equal(await impactStory.getAttribute('data-shot-state'), 'flight');
   await impactPage.locator('.myth-map-wrap').screenshot({ path: new URL('04-02-arrow-flight-1366x768.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
@@ -855,7 +856,7 @@ try {
   await impactPage.clock.runFor(Math.round((500) / BASE_PLAYBACK_RATE));
   assert.equal(await impactStory.getAttribute('data-elapsed'), frozenDayi, 'Dayi impact animation pauses on the shared clock');
   await impactPage.getByRole('button', { name: '继续大羿射日', exact: true }).click();
-  await impactPage.getByRole('button', { name: '重播', exact: true }).click();
+  await clickPlaybackControl(impactPage, "重播");
   await impactPage.clock.runFor(Math.round((100) / BASE_PLAYBACK_RATE));
   assert.equal(await impactStory.getAttribute('data-shot-state'), 'aim', 'Dayi replay clears the previous shot and impact state');
   await impactPage.close();
@@ -938,7 +939,7 @@ try {
   await selectChapter(boundaries, '02 三皇五氏');
   await boundaries.getByLabel('选择地图故事动画').selectOption('02-04');
   await boundaries.locator('.story-animation[data-status="playing"]').waitFor();
-  await boundaries.getByRole('button', { name: '播放速度 1倍', exact: true }).click();
+  await clickPlaybackControl(boundaries, "播放速度 1倍");
   await boundaries.clock.runFor(Math.round((500) / BASE_PLAYBACK_RATE));
   const suirenFastElapsed = Number(await scene.getAttribute('data-elapsed'));
   await boundaries.clock.runFor(Math.round((500) / BASE_PLAYBACK_RATE));
@@ -946,18 +947,18 @@ try {
   await boundaries.getByRole('button', { name: '暂停燧人取火', exact: true }).click();
   await boundaries.clock.runFor(Math.round((100) / BASE_PLAYBACK_RATE));
   const suirenFrozen = await scene.getAttribute('data-elapsed');
-  await boundaries.getByRole('button', { name: '播放速度 2倍', exact: true }).click();
+  await clickPlaybackControl(boundaries, "播放速度 2倍");
   await boundaries.clock.runFor(Math.round((500) / BASE_PLAYBACK_RATE));
   assert.equal(await scene.getAttribute('data-elapsed'), suirenFrozen, 'changing map story rate while paused does not resume it');
-  await boundaries.getByRole('button', { name: '播放速度 1倍', exact: true }).click();
+  await clickPlaybackControl(boundaries, "播放速度 1倍");
   await boundaries.clock.runFor(Math.round((500) / BASE_PLAYBACK_RATE));
   assert.equal(await scene.getAttribute('data-elapsed'), suirenFrozen);
-  await boundaries.getByRole('button', { name: '重播', exact: true }).click();
+  await clickPlaybackControl(boundaries, "重播");
   assert.equal(await scene.getAttribute('data-playback-rate'), '2', 'replay keeps the selected map story rate');
-  await boundaries.getByRole('button', { name: '播放速度 2倍', exact: true }).click();
+  await clickPlaybackControl(boundaries, "播放速度 2倍");
   await boundaries.clock.runFor(Math.round((1000) / BASE_PLAYBACK_RATE));
   assert.ok(['0', '1'].includes(await scene.getAttribute('data-frame')), 'Suiren firewood/fire are shown in the actor atlas poses');
-  await boundaries.getByRole('button', { name: '重播', exact: true }).click();
+  await clickPlaybackControl(boundaries, "重播");
   await boundaries.clock.runFor(Math.round((100) / BASE_PLAYBACK_RATE));
   assert.ok(Number(await scene.getAttribute('data-elapsed')) < 300, 'replay returns to the integrated Suiren animation');
   await selectChapter(boundaries, '04 五帝后期');
@@ -965,7 +966,7 @@ try {
   await boundaries.locator('.story-animation[data-status="playing"]').waitFor();
   assert.equal(await scene.getAttribute('data-playback-rate'), '1', 'switching stories restores 1x');
   await boundaries.clock.pauseAt(await boundaries.evaluate(() => Date.now() + 1000));
-  await boundaries.getByRole('button', { name: '重播', exact: true }).click();
+  await clickPlaybackControl(boundaries, "重播");
   await boundaries.clock.runFor(Math.round((100) / BASE_PLAYBACK_RATE));
   assert.ok(Number(await scene.getAttribute('data-elapsed')) < 150, 'Frozen replay commits before boundary checks');
   await boundaries.clock.runFor(Math.round((6300) / BASE_PLAYBACK_RATE));

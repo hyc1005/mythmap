@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { mkdir, readFile } from 'node:fs/promises';
 import { chromium, webkit } from 'playwright';
 import { storySummary } from '../src/story-summaries.js';
@@ -10,9 +11,25 @@ const browserName = process.env.ATLAS_BROWSER || 'chromium';
 const browser = await ({ chromium, webkit }[browserName]).launch();
 const errors = [];
 const filename = name => new URL(name, output).pathname.replace(/^\/([A-Za-z]:)/, '$1');
+const toolDiagnostics = new WeakMap();
 async function tools(page) {
   const panel = page.locator('.map-tools');
-  if (await panel.getAttribute('open') === null) await panel.locator('summary').click();
+  if (await panel.getAttribute('open') !== null) return;
+  const context = page.context();
+  if (!toolDiagnostics.has(context)) toolDiagnostics.set(context, browserDiagnostics(context, `candidate-tools-${browserName}-${page.viewportSize().width}`));
+  await page.evaluate(() => {
+    window.qaToolRects = [];
+    const sample = () => { const n = document.querySelector('.map-tools summary'); if (!n) return; window.qaToolRects.push({ rect: n.getBoundingClientRect().toJSON(), scrollY, inert: Boolean(n.closest('[inert]')) }); if (window.qaToolRects.length < 60) requestAnimationFrame(sample); };
+    requestAnimationFrame(sample);
+  });
+  try { await panel.locator('summary').click(); }
+  catch (error) {
+    try {
+      console.error('TOOLS_STATE '+JSON.stringify(await page.evaluate(() => ({ url: location.pathname+location.search.replace(/tk=[^&]+/g,'tk=[redacted]'), open: document.querySelector('.map-tools')?.open, samples: window.qaToolRects, focusTag: document.activeElement?.tagName }))));
+      await toolDiagnostics.get(context)(error);
+    } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
+    throw error;
+  }
 }
 async function fits(page) {
   const bad = await page.evaluate(() => [...document.querySelectorAll('.map-overlay-controls button, .map-overlay-controls select, .map-fullscreen, .journey-actions button')]
@@ -135,7 +152,9 @@ try {
     if (width === 390) {
       await page.getByLabel(locale === 'zh' ? '选择地图故事动画' : 'Choose a story animation').selectOption('03-05');
       await page.locator('.kuafu-journey[data-status="reduced"]').waitFor();
-      await page.locator('.story-view-controls button').last().click();
+      await page.locator('.myth-map-canvas').hover();
+      await page.mouse.wheel(0, 2200);
+      await stableCamera(page);
       await settle(page);
       const storyPoint = await sealPoint(page, name, false);
       await page.mouse.click(storyPoint.x, storyPoint.y);
@@ -145,11 +164,12 @@ try {
         const r = node.getBoundingClientRect(), slot = node.closest('.fullscreen-preview-slot').getBoundingClientRect();
         return r.height >= 44 && r.top >= slot.top && r.bottom <= slot.bottom + 1 && r.right <= slot.right && document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2) === node;
       })), 'Preview actions remain available alongside a paused story');
-      assert.ok(await page.locator('.story-view-controls').evaluate(node => getComputedStyle(node).visibility === 'hidden'));
+      assert.equal(await page.locator('.story-view-controls').count(), 0);
+      assert.ok(await page.locator('.restore-view').isVisible(), 'Preview does not hide the toolbar restore entry');
       await page.locator('.preview-close').click();
       await page.locator('.ink-hover-card').waitFor({ state: 'hidden' });
-      await page.locator('.story-view-controls').waitFor({ state: 'visible' });
-      assert.ok(await page.locator('.story-view-controls').evaluate(node => getComputedStyle(node).visibility === 'visible'), 'Closing the preview restores view controls');
+      await page.locator('.restore-view').waitFor({ state: 'visible' });
+      assert.ok(await page.locator('.restore-view').isVisible(), 'Closing the preview keeps restore available');
     }
     await page.locator('.map-fullscreen').click();
     await context.close();
@@ -190,10 +210,8 @@ try {
     assert.ok(await page.locator('.chapter-entries .map-entry-button').count() > 5, 'Enabled beasts remain in unified entries');
     if (mobile) await page.keyboard.press('Escape');
     await fits(page);
-    if (width <= 768 || height <= 480) {
-      assert.ok(await page.locator('.map-tools summary').evaluate(element => element.getBoundingClientRect().height >= 44));
-      await page.locator('.map-tools summary').click();
-    }
+    assert.ok(await page.locator('.map-tools summary').evaluate(element => element.getBoundingClientRect().height >= 44));
+    if (await page.locator('.map-tools').evaluate(node => node.open)) await page.locator('.map-tools summary').click();
     await page.getByLabel(locale === 'zh' ? '选择地图故事动画' : 'Choose a story animation').selectOption('03-05');
     await page.locator('.kuafu-journey[data-status="reduced"]').waitFor();
     await page.getByRole('button', { name: locale === 'zh' ? '下一幕' : 'Next scene', exact: true }).click();
@@ -246,7 +264,7 @@ try {
   assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '04');
   await page.waitForTimeout(600);
   assert.equal(await page.locator('.chapter-transition-veil.is-visible').count(), 1, 'Chapter title has a readable dwell');
-  await page.waitForTimeout(700);
+  await page.locator('.chapter-transition-veil.is-visible').waitFor({ state: 'detached' });
   assert.equal(await page.locator('.chapter-transition-veil.is-visible').count(), 0);
   assert.equal(await page.locator('.chapter-rail h2 .ink-word').first().evaluate(element => getComputedStyle(element).animationName), 'none', 'Title motion finishes once');
   await page.getByRole('button', { name: 'EN', exact: true }).click();
@@ -272,6 +290,7 @@ try {
   await page.locator('.ink-hover-card').waitFor();
   assert.ok(await page.getByLabel('异兽谱', { exact: true }).isChecked());
 
+  await tools(page);
   await page.evaluate(() => {
     window.originalToDataURL = HTMLCanvasElement.prototype.toDataURL;
     HTMLCanvasElement.prototype.toDataURL = () => { throw new Error('Injected export failure'); };

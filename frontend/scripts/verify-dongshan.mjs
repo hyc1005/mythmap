@@ -1,3 +1,4 @@
+import { openSourceLibrary } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFile,stat} from 'node:fs/promises';
@@ -217,6 +218,7 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
         await page.goto(base+'?chapter=04&lang='+lang);
         await page.locator('.mobile-explore-nav button').nth(1).click();
         for(const [book,count] of [[1,43],[2,82],[3,92],[4,51]])assert.equal(await page.locator('[data-source-book="'+book+'"] [data-entry-id]').count(),count);
+        await openSourceLibrary(page);
         const eastern=page.locator('[data-source-book="4"]');
         await eastern.locator(':scope > summary').click();
         assert.equal(await eastern.locator('.passage-range').count(),5,'All ranges and closing total visible');

@@ -1,3 +1,4 @@
+import { openSourceLibrary } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { readFile, stat } from 'node:fs/promises';
@@ -151,6 +152,7 @@ for(const engine of engines){
   await page.evaluate(async text=>{for(const w of [400,600])await document.fonts.load(`${w} 18px ShanhaiRare`,text)},rare);
   // Verify catalog reachability across all five Western groups, including the closing total.
   await page.goto(base+'?chapter=03&lang=zh');
+  await openSourceLibrary(page);
   const western=page.locator('[data-source-book="2"]');await western.locator(':scope > summary').click();
   assert.equal(await western.locator('.passage-range').count(),5);
   assert.equal(await western.locator('[data-entry-id^="passage-xishan-"]').count(),82);
