@@ -187,3 +187,5 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     console.log(`PASS ${name}: shared playback, fullscreen, camera, six art samples and PNG paper`);
   } finally { await browser.close(); }
 }
+
+await import('./verify-blur-reveal.mjs');
