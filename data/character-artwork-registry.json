@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "status": "active_pilot_scene_revision_pending",
+  "scope": "西王母试点；附加登记，不合并实体ID，不新增运行时下载；其余角色语义关联尚待逐一审计。",
+  "character_id": "character-xiwangmu",
+  "identity_note": "项目用于视觉连续性管理的角色组；篇目与记载保留独立，不声称各古籍形象或神话年代完全相同。",
+  "forms": [
+    {
+      "form_id": "xishan-yushan",
+      "entry_ids": [
+        "domain-yushan",
+        "deity-xishan-xiwangmu-yushan",
+        "08-07"
+      ],
+      "text_evidence": [
+        {
+          "file": "frontend/public/data/myth-world.json",
+          "entry_id": "deity-xishan-xiwangmu-yushan",
+          "field": "quote",
+          "text": "西王母其状如人豹尾虎齒而善嘯蓬髮戴勝是司天之厲及五殘"
+        }
+      ],
+      "required_features": [
+        "人状",
+        "豹尾",
+        "虎齿",
+        "蓬发",
+        "戴胜"
+      ],
+      "artistic_choices": [
+        "脸型",
+        "胜饰具体造型",
+        "衣服与颜色",
+        "姿势"
+      ],
+      "preferred_version": "yushan-v1"
+    },
+    {
+      "form_id": "mutianzizhuan-juan3",
+      "entry_ids": [
+        "07-01",
+        "07-02"
+      ],
+      "text_evidence": [
+        {
+          "file": "frontend/public/data/atlas/catalog.json",
+          "entry_id": "07-01",
+          "field": "source_quote",
+          "role": "正文",
+          "text": "吉日甲子，天子宾于西王母。乃执白圭玄璧，以见西王母。"
+        },
+        {
+          "file": "frontend/public/data/atlas/catalog.json",
+          "entry_id": "07-01",
+          "field": "commentary",
+          "role": "条目所引注文；不能当作正文，后续逐字复核",
+          "text": "郭璞注文描述西王母「如人，虎齿，蓬发戴胜，善啸」；本画依《穆天子传》叙事与注文作艺术解释，不等同《山海经》异篇形态。"
+        }
+      ],
+      "continuity_constraints_proposal": [
+        "与玉山原型共享可辨认的脸型、发色、胜饰及木刻语言",
+        "注文已有虎齿、蓬发、戴胜，不以出处不同省略这些特征",
+        "礼仪场景可改变表情与姿态；衣服纹样及配色明确为艺术设计",
+        "正文未指定豹尾不能推断必须无尾；是否露尾按画面与经确认的角色设定决定"
+      ]
+    }
+  ],
+  "works": [
+    {
+      "version_id": "legacy-yushan-v1",
+      "entry_id": "domain-yushan",
+      "form_id": "xishan-yushan",
+      "master_file": "frontend/artwork-source/optimized-originals/myth-icons/xi-wang-mu.png",
+      "master_sha256": "94a580d19317324b07c32035b5212915cb5787cdf5ad7d6765d5362a2003734c",
+      "master_relation_status": "candidate association; exact generation/conversion chain 未记录",
+      "logical_artwork": "/data/atlas/myth-icons/xi-wang-mu.webp",
+      "generation": {
+        "tool": "OpenAI image_gen（维护者整体说明，逐图未记录）",
+        "model": "未记录",
+        "date": "未记录",
+        "references": [
+          "未记录"
+        ],
+        "reference_status": "未记录",
+        "evidence": "未定位逐图记录；用户说明"
+      },
+      "review": {
+        "existing_status": "未记录",
+        "current_review": "superseded_for_yushan_binding",
+        "note": "玉山入口改用已确认的 yushan-v1；旧原图及所有派生图保留原路径。"
+      },
+      "rights": "沿用 ASSETS.md；本登记不调整授权",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/optimized/myth-icons/xi-wang-mu.webp",
+          "evidence": "frontend/src/optimized-assets.json",
+          "sha256": "59ed67112cbe784b2145af2539a21544a8ce023f6b98f33c509df1c7dfdcb5d8",
+          "bytes": 494506
+        },
+        "card": {
+          "path": "/data/atlas/previews/card/xi-wang-mu.webp",
+          "bytes": 47908,
+          "dimensions": [
+            300,
+            320
+          ],
+          "evidence": "frontend/src/preview-assets.json",
+          "sha256": "72bcb073949419ead1cd83de78a09733fdb3acb15a248a99c83d962fec56ae89"
+        },
+        "preview": {
+          "path": "/data/atlas/previews/preview/xi-wang-mu.webp",
+          "bytes": 95496,
+          "dimensions": [
+            450,
+            480
+          ],
+          "evidence": "frontend/src/preview-assets.json",
+          "sha256": "d223de7a21ff1dbc7db3e5e03036322dea26e792d947d44459dd4cb89984ff91"
+        }
+      },
+      "reviewed_usages_before_change": [
+        {
+          "file": "frontend/public/data/myth-world.json",
+          "pointer": "/domains/1/icon",
+          "current_value": "xi-wang-mu.webp"
+        },
+        {
+          "file": "frontend/public/data/myth-world.json",
+          "pointer": "/domains/1/artwork",
+          "current_value": "xi-wang-mu.webp"
+        }
+      ]
+    },
+    {
+      "version_id": "yushan-v1",
+      "entry_id": "deity-xishan-xiwangmu-yushan",
+      "form_id": "xishan-yushan",
+      "master_file": "frontend/artwork-source/xishan/deity-xiwangmu-yushan-v1.png",
+      "master_sha256": "bc0f730ce03d12c28ee793e3fbd5c34b39ccd942765a9dd660105a03ac7f572c",
+      "master_relation_status": "explicit source_copy in current manifest",
+      "logical_artwork": "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1.webp",
+      "generation": {
+        "tool": "built-in image_gen",
+        "model": "未记录",
+        "date": "未记录",
+        "references": [
+          "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png"
+        ],
+        "reference_status": "recorded internal style reference, not character continuity approval",
+        "evidence": "frontend/artwork-source/xishan/generation.json#/assets/69; frontend/public/data/atlas/artwork-manifest.json#/assets/233"
+      },
+      "review": {
+        "existing_status": "reviewed_for_xishan_batch",
+        "current_review": "approved_yushan_character_baseline",
+        "note": "维护者于2026-11-01确认作为玉山角色基准；现有形貌复核与生成记录保留。"
+      },
+      "rights": "沿用 ASSETS.md；本登记不调整授权",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1.webp",
+          "evidence": "frontend/src/optimized-assets.json",
+          "sha256": "97e003a9f8c57d51aef0209e1db772ca8284ac46c007400d1ea60e3f215c79d2",
+          "bytes": 439116
+        },
+        "card": {
+          "path": "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1-card.webp",
+          "bytes": 42456,
+          "dimensions": [
+            320,
+            292
+          ],
+          "evidence": "frontend/src/preview-assets.json",
+          "sha256": "23d5d7dd75e05b23db008bd70cf1a49775cbab691b099df29b54255cf2d3cd10"
+        },
+        "preview": {
+          "path": "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1-preview.webp",
+          "bytes": 81678,
+          "dimensions": [
+            480,
+            439
+          ],
+          "evidence": "frontend/src/preview-assets.json",
+          "sha256": "1c9d714c7465e23f3671a872941156b3b76cd3f0cfbe94ef4417c1e8ca52ba48"
+        }
+      },
+      "reviewed_usages_before_change": [
+        {
+          "file": "frontend/public/data/myth-world.json",
+          "pointer": "/text_entities/135/artwork",
+          "current_value": "xishan/deity-xiwangmu-yushan-v1.webp"
+        }
+      ]
+    },
+    {
+      "version_id": "mu-meeting-v1",
+      "entry_id": "07-01",
+      "form_id": "mutianzizhuan-juan3",
+      "master_file": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch07-mu-meets-xiwangmu.png",
+      "master_sha256": "059c5a629505c7ff03338aa292708a0047e269621165809eaa50803ad7132af0",
+      "master_relation_status": "candidate association; historical exact-blob provenance exists for scenes, conversion chain not independently established",
+      "logical_artwork": "/data/atlas/myth-icons/stories/ch07-mu-meets-xiwangmu.webp",
+      "generation": {
+        "tool": "built-in image_gen",
+        "model": "未记录",
+        "date": "未记录",
+        "references": [
+          "frontend/public/data/atlas/myth-icons/terrain/peak.webp"
+        ],
+        "reference_status": "recorded internal style reference, not character continuity approval",
+        "evidence": "git:447d82309e97e9eff085b9ed0bcb44deb82250f0:frontend/public/data/atlas/artwork-manifest.json#/assets/76; exact Git blob f3094e2bc34981c2c412597191a3fda9e19347b4 from frontend/public/data/atlas/myth-icons/stories/ch07-mu-meets-xiwangmu.png"
+      },
+      "review": {
+        "existing_status": "symbolic_content_reviewed",
+        "current_review": "awaiting_user_character_approval",
+        "note": "与宴饮场景内部较一致；未明显表现所引注文的虎齿，须按共享角色设定修正。"
+      },
+      "rights": "沿用 ASSETS.md；本登记不调整授权",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/optimized/myth-icons/stories/ch07-mu-meets-xiwangmu.webp",
+          "evidence": "frontend/src/optimized-assets.json",
+          "sha256": "423f3bdff8adad11108c5a06d80810f28afc565f48fdf577da8862c4d694070b",
+          "bytes": 378788
+        },
+        "card": {
+          "path": "/data/atlas/previews/card/stories/ch07-mu-meets-xiwangmu.webp",
+          "bytes": 36652,
+          "dimensions": [
+            213,
+            320
+          ],
+          "evidence": "frontend/src/preview-assets.json",
+          "sha256": "184bbaf35d1f75995efdd96ce5da766de222a3130f7df9e05bf9a2e0615a546f"
+        },
+        "preview": {
+          "path": "/data/atlas/previews/preview/stories/ch07-mu-meets-xiwangmu.webp",
+          "bytes": 70684,
+          "dimensions": [
+            320,
+            480
+          ],
+          "evidence": "frontend/src/preview-assets.json",
+          "sha256": "d2e0dddbcba855145d54ddbebd5c0eb594641a3fbf7f9aed649878020f07ead6"
+        }
+      },
+      "reviewed_usages_before_change": [
+        {
+          "file": "frontend/public/data/atlas/catalog.json",
+          "pointer": "/events/29/properties/artwork",
+          "current_value": "stories/ch07-mu-meets-xiwangmu.webp"
+        },
+        {
+          "file": "frontend/public/data/atlas/story-animations.json",
+          "pointer": "/stories/6/scene_artworks/1",
+          "current_value": "stories/ch07-mu-meets-xiwangmu.webp"
+        }
+      ]
+    },
+    {
+      "version_id": "mu-banquet-v1",
+      "entry_id": "07-02",
+      "form_id": "mutianzizhuan-juan3",
+      "master_file": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch07-yaochi-banquet.png",
+      "master_sha256": "463460c7b3e43a07ceb1ce0003291b2f84f58b3a90d044fd50bd3c7fffb7be0d",
+      "master_relation_status": "candidate association; historical exact-blob provenance exists for scenes, conversion chain not independently established",
+      "logical_artwork": "/data/atlas/myth-icons/stories/ch07-yaochi-banquet.webp",
+      "generation": {
+        "tool": "built-in image_gen",
+        "model": "未记录",
+        "date": "未记录",
+        "references": [
+          "local-source-redacted"
+        ],
+        "reference_status": "contains redacted reference; original reference identity 未记录",
+        "evidence": "git:447d82309e97e9eff085b9ed0bcb44deb82250f0:frontend/public/data/atlas/artwork-manifest.json#/assets/77; exact Git blob 2dd1511bbd2d78c00f81943403200c1d8b6b3893 from frontend/public/data/atlas/myth-icons/stories/ch07-yaochi-banquet.png"
+      },
+      "review": {
+        "existing_status": "symbolic_content_reviewed",
+        "current_review": "awaiting_user_character_approval",
+        "note": "与会见图脸型、发饰、服装接近；待共享角色样张确认后决定修改，不把派生尺寸计作重绘。"
+      },
+      "rights": "沿用 ASSETS.md；本登记不调整授权",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/optimized/myth-icons/stories/ch07-yaochi-banquet.webp",
+          "evidence": "frontend/src/optimized-assets.json",
+          "sha256": "6ea12bb921b50d406ba1d5cbe01e346ac49b29436fe889e68b7fa36522e94e25",
+          "bytes": 392892
+        },
+        "card": {
+          "path": "/data/atlas/previews/card/stories/ch07-yaochi-banquet.webp",
+          "bytes": 37742,
+          "dimensions": [
+            213,
+            320
+          ],
+          "evidence": "frontend/src/preview-assets.json",
+          "sha256": "8e181c120f7f36877b23e08e3702553ec00bf64038cbb853896b5a22977bcf91"
+        },
+        "preview": {
+          "path": "/data/atlas/previews/preview/stories/ch07-yaochi-banquet.webp",
+          "bytes": 74626,
+          "dimensions": [
+            320,
+            480
+          ],
+          "evidence": "frontend/src/preview-assets.json",
+          "sha256": "1e36541b9e336c160a4abf5d6cfa308b5884c4b31a033e1ee1da1453c4e15a97"
+        }
+      },
+      "reviewed_usages_before_change": [
+        {
+          "file": "frontend/public/data/atlas/catalog.json",
+          "pointer": "/events/30/properties/artwork",
+          "current_value": "stories/ch07-yaochi-banquet.webp"
+        },
+        {
+          "file": "frontend/public/data/atlas/story-animations.json",
+          "pointer": "/stories/6/scene_artworks/2",
+          "current_value": "stories/ch07-yaochi-banquet.webp"
+        }
+      ]
+    }
+  ],
+  "approval_gates": [
+    "玉山角色基准及玉山绑定已确认",
+    "再制作共享角色特征的会见小样并视觉复核；未生成或覆盖场景插画",
+    "确认小样后再决定宴饮修正与场景绑定；逐阶段verify/CI/Pages"
+  ],
+  "deferred": [
+    "具体生成模型和生成日期无法从文件名或Git提交日期推断",
+    "原图物理去重不等于语义去重或全部角色登记完成",
+    "其他角色修正数量在逐一审计后估算"
+  ],
+  "approval": {
+    "date": "2026-11-01",
+    "decision": "维护者确认统一绑定，并以第二张玉山段神祇插画作为玉山角色基准。",
+    "approved_version": "yushan-v1",
+    "scene_revision": "not_applied; artwork sample still required"
+  },
+  "approved_bindings": [
+    {
+      "entry_id": "domain-yushan",
+      "version_id": "yushan-v1",
+      "fields": [
+        "icon",
+        "artwork"
+      ]
+    },
+    {
+      "entry_id": "deity-xishan-xiwangmu-yushan",
+      "version_id": "yushan-v1",
+      "fields": [
+        "artwork"
+      ]
+    }
+  ]
+}

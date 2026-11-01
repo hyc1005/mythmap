@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { access, readFile } from 'node:fs/promises';
 import { readExploration, explorationUrl } from '../src/exploration.js';
 import { validateWorld } from '../src/world-validation.js';
@@ -8,6 +9,26 @@ import { geographicReferences } from '../src/geography.js';
 
 const read = async path => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const world = await read('../public/data/myth-world.json');
+const characterArt = await read('../../data/character-artwork-registry.json');
+const artVersions = new Map(characterArt.works.map(work => [work.version_id, work]));
+assert.equal(artVersions.size, characterArt.works.length, 'Unique character artwork versions');
+for (const binding of characterArt.approved_bindings) {
+  const entry = [...world.domains, ...world.text_entities].find(record => record.id === binding.entry_id);
+  const version = artVersions.get(binding.version_id);
+  assert.ok(entry && version, 'Approved binding resolves to an existing entry and version');
+  for (const field of binding.fields) assert.equal(entry[field], version.logical_artwork.replace('/data/atlas/myth-icons/', ''), `${entry.id}: approved ${field}`);
+}
+for (const version of characterArt.works) {
+  const original = await readFile(new URL('../../' + version.master_file, import.meta.url));
+  assert.equal(createHash('sha256').update(original).digest('hex'), version.master_sha256, version.version_id + ': original artwork');
+  for (const variant of Object.values(version.variants)) {
+    const bytes = await readFile(new URL('../public' + variant.path, import.meta.url));
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), variant.sha256, version.version_id + ': derived artwork');
+    assert.equal(bytes.length, variant.bytes);
+  }
+}
+assert.equal(world.domains.find(entry => entry.id === 'domain-yushan').artwork,
+  world.text_entities.find(entry => entry.id === 'deity-xishan-xiwangmu-yushan').artwork, 'Mount Yu uses one confirmed Xiwangmu baseline');
 const english = await read('../src/locale-content-en.json');
 for (const [id, translation] of Object.entries(english)) {
   for (const field of ['name', 'label', 'source', 'quote', 'description', 'direction', 'place_basis', 'content_note', 'editorial_note', 'artwork_caption']) {

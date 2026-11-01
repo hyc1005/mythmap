@@ -3782,6 +3782,16 @@ from xishan_completion import extend, finish, REUSE
 extend(ROWS, ENTITIES, PAGE_CORRECTIONS)
 
 
+def apply_character_artwork(world):
+    registry = read('data/character-artwork-registry.json')
+    versions = {work['version_id']: work for work in registry['works']}
+    for binding in registry['approved_bindings']:
+        entry = next(r for r in [*world['domains'], *world['text_entities']] if r['id'] == binding['entry_id'])
+        artwork = versions[binding['version_id']]['logical_artwork'].removeprefix('/data/atlas/myth-icons/')
+        for field in binding['fields']:
+            entry[field] = artwork
+
+
 def build():
     snapshot = read('data/shanhaijing-reference.json')
     chapter = snapshot['chapters'][1]
@@ -4316,6 +4326,7 @@ def build():
         addition_ids = {r['id'] for r in additions}
         batches = {r['content_batch'] for r in additions}
         world[group] = [r for r in world[group] if r['id'] not in addition_ids and r.get('content_batch') not in batches] + additions
+    apply_character_artwork(world)
     world['revision'] = 'myth-world-2026-10-24-xishan-complete-v1'
     write('frontend/public/data/myth-world.json', world)
     write('frontend/src/locale-content-en.json', en)
