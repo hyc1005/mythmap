@@ -427,5 +427,560 @@
       "approved_version": "yushan-v1",
       "scene_revision": "not_applied; artwork sample still required"
     }
-  ]
+  ],
+  "related_character_audit": {
+    "reviewed_commit": "efa2e0ba4d7f351ecfcaaf64f84954234e724bdc",
+    "review_date": "2026-11-01",
+    "scope": "本轮七个候选角色的当前目录运行图初审；不代表全部原画或全站角色均完成审计。",
+    "limits": [
+      "person_ids仅说明文本关联；presence单独按图像与事件语境记录。",
+      "20个逻辑图像入口不是独立原画或重绘数量；SVG人物底图依赖另列。",
+      "未修改任何图像、实体、故事来源、许可或approved_bindings；未合并不同文献形态。",
+      "未发现需立即批量重绘的身份冲突；伏羲旧卦画单独待修正，不等于本轮通过了图中全部道具或文献审校。"
+    ],
+    "assets": [
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-create.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/nuwa-create.webp",
+        "sha256": "b0467990c90c155f53ef81f32edd42536cb319fd326fe0f908493f3a2e535905",
+        "bytes": 499972,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/48; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1nuwa-create.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/nuwa-create.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/48",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": [
+              "nuwa.webp"
+            ]
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-repair.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/nuwa-repair.webp",
+        "sha256": "a7a1141f5dabd65b39c3cf475169abcf1bdd2702b32af4d8e363bbac63dd2e64",
+        "bytes": 504036,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/49; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1nuwa-repair.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/nuwa-repair.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/49",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": [
+              "nuwa.webp"
+            ]
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/characters/fuxi.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/characters/fuxi.webp",
+        "sha256": "ac9b2b1a91752dfac75d79d20fcd42320f79c613902edf9c1b61f215c8fdd26f",
+        "bytes": 118858,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/43; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1characters~1fuxi.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/characters/fuxi.webp",
+        "generation_records": [],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/nuwa.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/nuwa.webp",
+        "sha256": "b221ff81c6723a3eb1183eab3395e52e44a6f17e8f7144ac6704f409a37289cf",
+        "bytes": 515006,
+        "inventory_evidence": "frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1nuwa.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/nuwa.webp",
+        "generation_records": [],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-pillars.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/nuwa-pillars.webp",
+        "sha256": "e11ba748008a490bd15eb578a1a400c03e91d910a1e538cff4a0ba4fe116f5d8",
+        "bytes": 624988,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/50; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1nuwa-pillars.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/nuwa-pillars.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/50",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": [
+              "nuwa.webp"
+            ]
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-dragon.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/nuwa-dragon.webp",
+        "sha256": "d01ec3358b880b5a8d5b2e020a9736093d230c606deca7c4d635e072abeb21b3",
+        "bytes": 627226,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/51; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1nuwa-dragon.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/nuwa-dragon.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/51",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": [
+              "nuwa.webp"
+            ]
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-water.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/nuwa-water.webp",
+        "sha256": "2ad8303544c2a72e065e360fe379204cc2218e082ab9756cbc5fd1dd1ab5dfd4",
+        "bytes": 565210,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/52; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1nuwa-water.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/nuwa-water.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/52",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": [
+              "nuwa.webp"
+            ]
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch07-mu-kunlun-palace.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch07-mu-kunlun-palace.webp",
+        "sha256": "f1aefbc8711f1d91e94a756186b47622e27c9c5d116ca0342cb0c4ae4830b7ab",
+        "bytes": 395612,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/75; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch07-mu-kunlun-palace.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch07-mu-kunlun-palace.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/75",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch07-mu-meets-xiwangmu.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch07-mu-meets-xiwangmu.webp",
+        "sha256": "423f3bdff8adad11108c5a06d80810f28afc565f48fdf577da8862c4d694070b",
+        "bytes": 378788,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/76; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch07-mu-meets-xiwangmu.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch07-mu-meets-xiwangmu.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/76",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch07-yaochi-banquet.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch07-yaochi-banquet.webp",
+        "sha256": "6ea12bb921b50d406ba1d5cbe01e346ac49b29436fe889e68b7fa36522e94e25",
+        "bytes": 392892,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/77; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch07-yaochi-banquet.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch07-yaochi-banquet.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/77",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch07-yan-mountain-inscription.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch07-yan-mountain-inscription.webp",
+        "sha256": "db5e28718a27d2ba1d99157737b44878af22aa986cac41fb393700118424c9cd",
+        "bytes": 454460,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/78; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch07-yan-mountain-inscription.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch07-yan-mountain-inscription.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/78",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch03-banquan.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch03-banquan.webp",
+        "sha256": "2dc0bd15be1d2f1f4d75c87872b5503c06f34aa82e8a116a62f997124e190fe0",
+        "bytes": 731116,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/55; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch03-banquan.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch03-banquan.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/55",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch03-zhuolu.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch03-zhuolu.webp",
+        "sha256": "8de737d26577791e5b9541f4adaf73ad1b25918897687e145486e3108119cbab",
+        "bytes": 688526,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/56; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch03-zhuolu.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch03-zhuolu.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/56",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch05-yu-controls-flood.webp",
+        "sha256": "1e24aa244aae55ee07c7fbc96a7f8b553ed6f0ab10da43b0abd0da66e4a4a721",
+        "bytes": 415432,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/65; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch05-yu-controls-flood.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/65",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch05-yu-xiangliu.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch05-yu-xiangliu.webp",
+        "sha256": "ad5615b84f7a45c3c64db1e15305f46ba5e67bc1e5fbf8406fb8994042425b62",
+        "bytes": 368618,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/66; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch05-yu-xiangliu.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch05-yu-xiangliu.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/66",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch05-yu-tushan-marriage.webp",
+        "sha256": "660e7ba7e77c3af75faa621d43ac4937a11f7523fd1029d4530dbe6c6602d42f",
+        "bytes": 331606,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/67; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch05-yu-tushan-marriage.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/67",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/characters/fuxi-corrected.svg",
+        "display_file": "frontend/public/data/atlas/myth-icons/characters/fuxi-corrected.svg",
+        "sha256": "388c640786e8c56f632f8def7d7966223ab3ca58afa90d896e5b6e9f28045785",
+        "bytes": 1959,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/87",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/characters/fuxi-clean.webp",
+        "generation_records": [],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。",
+        "image_dependency": {
+          "path": "frontend/public/data/atlas/myth-icons/characters/fuxi-clean.webp",
+          "sha256": "8ce7ff8e1bdcc2c0a1c6806818a948b66b687aead93fa1a1dbfca5b2eb793e82"
+        }
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/gonggong.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/gonggong.webp",
+        "sha256": "c592f9edbaffaac135b892d7e282b0a8e0f9608715329b81d8709fd2b78443c1",
+        "bytes": 509822,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/53; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1gonggong.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/gonggong.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/53",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": [
+              "nuwa.webp",
+              "frontend/artwork-source/archived/pangu.png"
+            ]
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch04-gonggong-zhuanxu.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch04-gonggong-zhuanxu.webp",
+        "sha256": "025aa1afa1d31a52dbaceeb69bee4c768f0e4cc42e01227bbdd055c5f8cd5368",
+        "bytes": 663132,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/60; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch04-gonggong-zhuanxu.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch04-gonggong-zhuanxu.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/60",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      },
+      {
+        "logical_artwork": "/data/atlas/myth-icons/stories/ch05-qimu-turns-to-stone.webp",
+        "display_file": "frontend/public/data/atlas/optimized/myth-icons/stories/ch05-qimu-turns-to-stone.webp",
+        "sha256": "66d7c8f2f2530b40fca6f2fbd5db396934c8228d020e7c67c2d8ffc67a7ff4d7",
+        "bytes": 282522,
+        "inventory_evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/68; frontend/src/optimized-assets.json#/~1data~1atlas~1myth-icons~1stories~1ch05-qimu-turns-to-stone.webp",
+        "recorded_derived_from": "frontend/public/data/atlas/myth-icons/stories/ch05-qimu-turns-to-stone.webp",
+        "generation_records": [
+          {
+            "pointer": "frontend/public/data/atlas/artwork-manifest.json#/assets/68",
+            "tool": "built-in image_gen",
+            "model": "未记录",
+            "references": "未记录"
+          }
+        ],
+        "model_note": "仅转录已定位记录；未知模型和日期不从文件名或提交日期推断。"
+      }
+    ],
+    "characters": [
+      {
+        "person_id": "person-6668ac78c29c",
+        "name": "女娲",
+        "review_status": "no_identity_redraw_proposed",
+        "visual_observations": "高髻、红金发饰、圆耳饰、额部红点、米色红边衣与黑金鳞蛇尾基本连续；动作与石块、泥人等道具随故事变化。",
+        "proposed_baseline": "/data/atlas/myth-icons/nuwa.webp",
+        "baseline_approval": "未请求；仅提议，不新增自动绑定",
+        "usages": [
+          {
+            "event_id": "01-02",
+            "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-create.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "01-03",
+            "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-repair.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "02-02",
+            "logical_artwork": "/data/atlas/myth-icons/characters/fuxi.webp",
+            "presence": "not_depicted_in_this_asset"
+          },
+          {
+            "event_id": "02-02",
+            "logical_artwork": "/data/atlas/myth-icons/nuwa.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "01-03-a",
+            "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-repair.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "01-03-b",
+            "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-pillars.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "01-03-c",
+            "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-dragon.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "01-03-d",
+            "logical_artwork": "/data/atlas/myth-icons/stories/nuwa-water.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          }
+        ]
+      },
+      {
+        "person_id": "person-3b6cc525942e",
+        "name": "周穆王",
+        "review_status": "no_identity_redraw_proposed",
+        "visual_observations": "四图均见黑髻长须、黑金冠与红带、红黑金边长袍及玉佩，身份特征基本连续。昆仑图只见周穆王与宫山，不据黄帝文本关联认定黄帝出镜。",
+        "proposed_baseline": "/data/atlas/myth-icons/stories/ch07-mu-meets-xiwangmu.webp",
+        "baseline_approval": "未请求；仅提议，不新增自动绑定",
+        "usages": [
+          {
+            "event_id": "07-03",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch07-mu-kunlun-palace.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "07-01",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch07-mu-meets-xiwangmu.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "07-02",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch07-yaochi-banquet.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "07-04",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch07-yan-mountain-inscription.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          }
+        ]
+      },
+      {
+        "person_id": "person-ea2e022d685f",
+        "name": "黄帝",
+        "review_status": "no_identity_redraw_proposed",
+        "visual_observations": "两幅战斗图左侧人物均为黑髻金饰、黑须、赭黄米色长衣与红腰带，特征基本连续；人物身份依据事件语境与构图判断，不是古代肖像考证。",
+        "proposed_baseline": "/data/atlas/myth-icons/stories/ch03-banquan.webp",
+        "baseline_approval": "未请求；仅提议，不新增自动绑定",
+        "usages": [
+          {
+            "event_id": "03-01",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch03-banquan.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "03-02",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch03-zhuolu.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "07-03",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch07-mu-kunlun-palace.webp",
+            "presence": "not_depicted_in_this_asset"
+          }
+        ]
+      },
+      {
+        "person_id": "person-15f8840a66b7",
+        "name": "禹",
+        "review_status": "no_identity_redraw_proposed",
+        "visual_observations": "三图均为红带束髻、短黑须、米色黑领衣、黑腰带与绑腿；劳动和婚姻姿态不同，不构成身份冲突。",
+        "proposed_baseline": "/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp",
+        "baseline_approval": "未请求；仅提议，不新增自动绑定",
+        "usages": [
+          {
+            "event_id": "05-01",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "05-02",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch05-yu-xiangliu.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "05-03",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          }
+        ]
+      },
+      {
+        "person_id": "person-1d04ccb80940",
+        "name": "伏羲",
+        "review_status": "identity_consistent_symbol_version_pending",
+        "visual_observations": "两版本的人物均为黑髻长须、米色黑领长衣、红带及手持筹状物，角色外形基本连续。兄妹婚档案仍引用带旧卦画的 fuxi.webp，主线使用 corrected.svg；manifest 已记旧卦画有误，属于符号版本问题，后续单独预览修正。",
+        "proposed_baseline": "/data/atlas/myth-icons/characters/fuxi-corrected.svg",
+        "baseline_approval": "未请求；仅提议，不新增自动绑定",
+        "usages": [
+          {
+            "event_id": "02-01",
+            "logical_artwork": "/data/atlas/myth-icons/characters/fuxi-corrected.svg",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "02-02",
+            "logical_artwork": "/data/atlas/myth-icons/characters/fuxi.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "02-02",
+            "logical_artwork": "/data/atlas/myth-icons/nuwa.webp",
+            "presence": "not_depicted_in_this_asset"
+          }
+        ]
+      },
+      {
+        "person_id": "person-84c8b3931b3c",
+        "name": "共工",
+        "review_status": "no_identity_redraw_proposed",
+        "visual_observations": "两图均见红色长发与红须、粗壮体格、兽皮纹衣和红腰带；撞山与持斧的动作及衣物覆盖不同，未发现必须重绘的身份变化。",
+        "proposed_baseline": "/data/atlas/myth-icons/stories/gonggong.webp",
+        "baseline_approval": "未请求；仅提议，不新增自动绑定",
+        "usages": [
+          {
+            "event_id": "01-04",
+            "logical_artwork": "/data/atlas/myth-icons/stories/gonggong.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "04-01",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch04-gonggong-zhuanxu.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          }
+        ]
+      },
+      {
+        "person_id": "person-72ccefbb6b75",
+        "name": "涂山女",
+        "review_status": "no_identity_redraw_proposed",
+        "visual_observations": "婚姻图与启母石图的黑髻红带、米色黑领红边衣基本连续；石化与婴儿为另一故事情境，保留文献差异，不因此建立确定生平。",
+        "proposed_baseline": "/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.webp",
+        "baseline_approval": "未请求；仅提议，不新增自动绑定",
+        "usages": [
+          {
+            "event_id": "05-03",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch05-yu-tushan-marriage.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          },
+          {
+            "event_id": "05-04",
+            "logical_artwork": "/data/atlas/myth-icons/stories/ch05-qimu-turns-to-stone.webp",
+            "presence": "depicted_by_visual_and_event_context"
+          }
+        ]
+      }
+    ],
+    "followup": {
+      "id": "fuxi-archive-symbol-version",
+      "event_id": "02-02",
+      "current": "characters/fuxi.webp",
+      "existing_corrected": "characters/fuxi-corrected.svg",
+      "status": "单独预览后确认；本批不切换",
+      "evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/87",
+      "implementation_note": "需同时验证SVG底图在img、卡片及地图贴图中的实际显示；不能只替换路径。"
+    }
+  }
 }
