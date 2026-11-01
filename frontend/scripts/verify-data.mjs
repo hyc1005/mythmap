@@ -35,6 +35,20 @@ assert.ok(activePortrait, 'Confirmed character artwork version exists');
 for (const [variant, expected] of Object.entries(activePortrait.variants)) {
   assert.equal(refinedPortraits[activePortrait.logical_artwork]?.[variant]?.path, expected.path, 'Published refinement uses approved ' + variant);
 }
+for (const repair of characterArt.display_repairs || []) {
+  for (const alias of repair.logical_artworks) {
+    for (const [variant, expected] of Object.entries(repair.variants)) {
+      assert.equal(refinedPortraits[alias]?.[variant]?.path, expected.path, repair.repair_id + ': shared display variant');
+      const bytes = await readFile(new URL('../public' + expected.path, import.meta.url));
+      assert.equal(createHash('sha256').update(bytes).digest('hex'), expected.sha256, repair.repair_id + ': derived bytes');
+    }
+  }
+  for (const source of repair.sources) {
+    const bytes = await readFile(new URL('../../' + source.path, import.meta.url));
+    const normalized = source.sha256_lf ? Buffer.from(bytes.toString('utf8').replace(/\r\n/g, '\n')) : bytes;
+    assert.equal(createHash('sha256').update(normalized).digest('hex'), source.sha256_lf || source.sha256, repair.repair_id + ': preserved source');
+  }
+}
 const english = await read('../src/locale-content-en.json');
 for (const [id, translation] of Object.entries(english)) {
   for (const field of ['name', 'label', 'source', 'quote', 'description', 'direction', 'place_basis', 'content_note', 'editorial_note', 'artwork_caption']) {

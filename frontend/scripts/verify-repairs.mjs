@@ -71,6 +71,23 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.getByRole('button', { name: '开始游历', exact: true }).click();
     await page.waitForFunction(() => document.querySelector('.world-layout').dataset.chapter === '00');
     await page.getByRole('button', { name: '暂停游历', exact: true }).waitFor();
+    for (const lang of ['zh', 'en']) {
+      for (const id of ['02-01', '02-02']) {
+        await page.goto(base + '?' + new URLSearchParams({ chapter: '02', item: id, lang }));
+        const image = page.locator(`.detail-drawer[data-entry-id="${id}"] .drawer-art`);
+        await image.evaluate(img => img.decode());
+        assert.match(await image.getAttribute('src'), /fuxi-corrected-v1-full\.webp$/);
+        const figurePixels = await image.evaluate(img => {
+          const canvas = document.createElement('canvas'); canvas.width = canvas.height = 160;
+          const context = canvas.getContext('2d'); context.drawImage(img, 0, 0, 160, 160);
+          const { data } = context.getImageData(0, 16, 96, 128);
+          let opaque = 0; for (let i = 3; i < data.length; i += 4) if (data[i] > 200) opaque++;
+          return opaque;
+        });
+        assert.ok(figurePixels > 500, 'Fuxi figure is visible, not only SVG trigram marks');
+      }
+    }
+    assert.deepEqual(errors, []);
     await page.close();
 
     const motion = await browser.newPage({ viewport: { width: 1440, height: 1000 } });

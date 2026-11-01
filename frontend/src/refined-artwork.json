@@ -124,5 +124,73 @@
         480
       ]
     }
+  },
+  "/data/atlas/myth-icons/characters/fuxi-corrected.svg": {
+    "full": {
+      "path": "/data/atlas/refined/fuxi-corrected-v1-full.webp",
+      "bytes": 221958,
+      "dimensions": [
+        1280,
+        1280
+      ]
+    },
+    "card": {
+      "path": "/data/atlas/refined/fuxi-corrected-v1-card.webp",
+      "bytes": 24128,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/refined/fuxi-corrected-v1-preview.webp",
+      "bytes": 44874,
+      "dimensions": [
+        480,
+        480
+      ]
+    },
+    "map": {
+      "path": "/data/atlas/refined/fuxi-corrected-v1-map.webp",
+      "bytes": 6436,
+      "dimensions": [
+        128,
+        128
+      ]
+    }
+  },
+  "/data/atlas/myth-icons/characters/fuxi.webp": {
+    "full": {
+      "path": "/data/atlas/refined/fuxi-corrected-v1-full.webp",
+      "bytes": 221958,
+      "dimensions": [
+        1280,
+        1280
+      ]
+    },
+    "card": {
+      "path": "/data/atlas/refined/fuxi-corrected-v1-card.webp",
+      "bytes": 24128,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/refined/fuxi-corrected-v1-preview.webp",
+      "bytes": 44874,
+      "dimensions": [
+        480,
+        480
+      ]
+    },
+    "map": {
+      "path": "/data/atlas/refined/fuxi-corrected-v1-map.webp",
+      "bytes": 6436,
+      "dimensions": [
+        128,
+        128
+      ]
+    }
   }
 }

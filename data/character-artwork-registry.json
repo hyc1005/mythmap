@@ -978,9 +978,80 @@
       "event_id": "02-02",
       "current": "characters/fuxi.webp",
       "existing_corrected": "characters/fuxi-corrected.svg",
-      "status": "单独预览后确认；本批不切换",
+      "status": "由display_repairs/fuxi-corrected-v1记录程序派生与统一映射；旧原图保留",
       "evidence": "frontend/public/data/atlas/artwork-manifest.json#/assets/87",
       "implementation_note": "需同时验证SVG底图在img、卡片及地图贴图中的实际显示；不能只替换路径。"
     }
-  }
+  },
+  "display_repairs": [
+    {
+      "repair_id": "fuxi-corrected-v1",
+      "entry_ids": [
+        "02-01",
+        "02-02"
+      ],
+      "scope": "复用现有修正SVG卦画与现有人物底图，程序合成为自足WebP；不是AI重绘，不改变人物ID、文献或许可。",
+      "reason": "原SVG作为img时不加载外部人物底图；档案仍引用旧卦画。",
+      "logical_artworks": [
+        "/data/atlas/myth-icons/characters/fuxi-corrected.svg",
+        "/data/atlas/myth-icons/characters/fuxi.webp"
+      ],
+      "sources": [
+        {
+          "path": "frontend/public/data/atlas/myth-icons/characters/fuxi-corrected.svg",
+          "sha256_lf": "00e21f95800201a023458a5a0913630a0bb913af4cda7c78ce33807714d320ab"
+        },
+        {
+          "path": "frontend/public/data/atlas/myth-icons/characters/fuxi-clean.webp",
+          "sha256": "8ce7ff8e1bdcc2c0a1c6806818a948b66b687aead93fa1a1dbfca5b2eb793e82"
+        }
+      ],
+      "variants": {
+        "full": {
+          "path": "/data/atlas/refined/fuxi-corrected-v1-full.webp",
+          "bytes": 221958,
+          "dimensions": [
+            1280,
+            1280
+          ],
+          "sha256": "bd19713de427abb002344ad1d4acc1a1909e3ce4f4d4bbba5b0c0db6ff2abf20"
+        },
+        "card": {
+          "path": "/data/atlas/refined/fuxi-corrected-v1-card.webp",
+          "bytes": 24128,
+          "dimensions": [
+            320,
+            320
+          ],
+          "sha256": "f69d2223d684e8488206ab0ad588a223a6d442d1cf4c53b33faef73a1bac4cb6"
+        },
+        "preview": {
+          "path": "/data/atlas/refined/fuxi-corrected-v1-preview.webp",
+          "bytes": 44874,
+          "dimensions": [
+            480,
+            480
+          ],
+          "sha256": "dd67f5e03205aca9199448bb0cf533a43fa070f55395eeddea18d366d355da8a"
+        },
+        "map": {
+          "path": "/data/atlas/refined/fuxi-corrected-v1-map.webp",
+          "bytes": 6436,
+          "dimensions": [
+            128,
+            128
+          ],
+          "sha256": "2ec6f624aa72d44c5eb15d7b723ee7e6834ca6c334d68127f7c7e0ca8508253b"
+        }
+      },
+      "tool": "Chromium SVG rasterization + Pillow WebP export",
+      "model": "not_applicable_no_AI_generation",
+      "renderer": "153.0.8010.12",
+      "platform": "win32",
+      "status": "reviewed_for_display_repair",
+      "source_files_retained": true,
+      "rebuild": "node frontend/scripts/assets/prepare-fuxi-artwork.mjs",
+      "approval_scope": "具体补丁与视觉预览经维护者确认后应用；不作为其他角色的自动替换授权。"
+    }
+  ]
 }

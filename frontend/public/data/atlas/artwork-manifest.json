@@ -13034,6 +13034,68 @@
           ]
         }
       }
+    },
+    {
+      "id": "fuxi-corrected-v1",
+      "tool": "Chromium SVG rasterization + Pillow WebP export",
+      "model": "not_applicable_no_AI_generation",
+      "destination": "frontend/public/data/atlas/refined/fuxi-corrected-v1-full.webp",
+      "logical_artworks": [
+        "/data/atlas/myth-icons/characters/fuxi-corrected.svg",
+        "/data/atlas/myth-icons/characters/fuxi.webp"
+      ],
+      "sources": [
+        {
+          "path": "frontend/public/data/atlas/myth-icons/characters/fuxi-corrected.svg",
+          "sha256_lf": "00e21f95800201a023458a5a0913630a0bb913af4cda7c78ce33807714d320ab"
+        },
+        {
+          "path": "frontend/public/data/atlas/myth-icons/characters/fuxi-clean.webp",
+          "sha256": "8ce7ff8e1bdcc2c0a1c6806818a948b66b687aead93fa1a1dbfca5b2eb793e82"
+        }
+      ],
+      "renderer": "153.0.8010.12",
+      "platform": "win32",
+      "derivation": "现有SVG卦画与现有人物WebP合成；Chromium透明栅格化，再按现有Pillow参数导出；不增加AI原画。",
+      "status": "reviewed_for_display_repair",
+      "derived_variants": {
+        "full": {
+          "path": "/data/atlas/refined/fuxi-corrected-v1-full.webp",
+          "bytes": 221958,
+          "dimensions": [
+            1280,
+            1280
+          ],
+          "sha256": "bd19713de427abb002344ad1d4acc1a1909e3ce4f4d4bbba5b0c0db6ff2abf20"
+        },
+        "card": {
+          "path": "/data/atlas/refined/fuxi-corrected-v1-card.webp",
+          "bytes": 24128,
+          "dimensions": [
+            320,
+            320
+          ],
+          "sha256": "f69d2223d684e8488206ab0ad588a223a6d442d1cf4c53b33faef73a1bac4cb6"
+        },
+        "preview": {
+          "path": "/data/atlas/refined/fuxi-corrected-v1-preview.webp",
+          "bytes": 44874,
+          "dimensions": [
+            480,
+            480
+          ],
+          "sha256": "dd67f5e03205aca9199448bb0cf533a43fa070f55395eeddea18d366d355da8a"
+        },
+        "map": {
+          "path": "/data/atlas/refined/fuxi-corrected-v1-map.webp",
+          "bytes": 6436,
+          "dimensions": [
+            128,
+            128
+          ],
+          "sha256": "2ec6f624aa72d44c5eb15d7b723ee7e6834ca6c334d68127f7c7e0ca8508253b"
+        }
+      }
     }
   ],
   "note": "内容核对限于人物、主题、关键意象与条目对应；服饰、建筑、姿势和图像方位均为艺术表现，非考古复原。",
