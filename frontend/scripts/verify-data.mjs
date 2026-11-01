@@ -29,6 +29,12 @@ for (const version of characterArt.works) {
 }
 assert.equal(world.domains.find(entry => entry.id === 'domain-yushan').artwork,
   world.text_entities.find(entry => entry.id === 'deity-xishan-xiwangmu-yushan').artwork, 'Mount Yu uses one confirmed Xiwangmu baseline');
+const activePortrait = artVersions.get(characterArt.approval.approved_version);
+const refinedPortraits = await read('../src/refined-artwork.json');
+assert.ok(activePortrait, 'Confirmed character artwork version exists');
+for (const [variant, expected] of Object.entries(activePortrait.variants)) {
+  assert.equal(refinedPortraits[activePortrait.logical_artwork]?.[variant]?.path, expected.path, 'Published refinement uses approved ' + variant);
+}
 const english = await read('../src/locale-content-en.json');
 for (const [id, translation] of Object.entries(english)) {
   for (const field of ['name', 'label', 'source', 'quote', 'description', 'direction', 'place_basis', 'content_note', 'editorial_note', 'artwork_caption']) {

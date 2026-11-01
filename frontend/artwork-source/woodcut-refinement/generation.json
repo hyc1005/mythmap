@@ -201,6 +201,56 @@
           ]
         }
       }
+    },
+    {
+      "name": "xiwangmu-scene-baseline-v2",
+      "original": "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1.webp",
+      "prompts": [
+        "Use case: identity-preserve / illustration-story. ONE full-body SINGLE-CHARACTER Xiwangmu portrait, genuine transparent RGBA background, for a Chinese mythology woodcut atlas.\nCHANGED USER DIRECTION: the ORIGINAL meeting-scene woman is now the authoritative character identity. Do NOT redesign the meeting scene to resemble the fierce portrait. Instead redesign the standalone portrait to resemble the original meeting-scene woman.\nImage 1: authoritative identity/style reference is ONLY THE WOMAN ON THE RIGHT in the original two-person meeting. Copy her recognizable human face: elegant elongated oval face, straight fine nose, almond eyes, fine dark eyebrows, gentle dignified expression, fair warm-ivory skin, long flowing wavy black hair partly tied up. Copy her narrow upright gold hair ornament held by a pale jade band, red hair ribbons, round pale-jade drop earrings, ochre-and-ivory robe with broad irregular black woodblock stripes, ivory inner gown, vermilion sash, restrained jade pendants. These distinctive features must make the standalone woman unmistakably the SAME person as the original scene.\nImage 2: edit target / standalone subject reference. Replace the face, hair arrangement, head ornament, wildly patterned green/red robe, and aggressive pose with Image 1 woman's original identity, clothing design and composed posture. Do NOT preserve the target's angry mask-like face, flame-shaped hair, big horizontal double-lobed ornament, clawing hands or screaming mouth. No need to reproduce the man from Image 1.\nTEXTUAL TRAITS TO KEEP IN THE PORTRAIT: human-shaped adult woman, two human arms and legs; a single spotted LEOPARD TAIL visible curving naturally beside or behind the robe, and two small TIGER CANINE teeth subtly visible at the corners of gently parted lips. Keep a few loose untamed hair strands, while preserving the original scene's hair silhouette and hair ornament. Human face, not a tiger head. Textual traits should be readable without turning her into an attacking monster. Calm standing three-quarter view with both human hands naturally together near the waist, full headgear, robe and feet visible. One human figure only, centered with generous transparent margins.\nSTYLE: match Image 1 exactly in archaic Chinese hand-carved woodcut contours, irregular warm-black ink grain, ochre, ivory, small cinnabar accents and restrained jade details. Do not introduce a new modern-fantasy costume, photorealism, 3D, glossy shading, green flame patterns or a different face. No peaches, halo, throne, weapons, extra limbs, scenery, text, watermark, frame or paper/background rectangle. True transparency with clean woodcut silhouette edges; no opaque black gradient or simulated checkerboard. Preserve the original scene as a reference only; output ONLY the redesigned solo portrait. Clothing, hair-ornament shape and pose are artistic continuity choices, not archaeological reconstruction."
+      ],
+      "tool": "built-in image_gen",
+      "model": "未返回／未记录",
+      "generated_date": "2026-11-01",
+      "status": "reviewed",
+      "approval_basis": "维护者要求以原会见图中的西王母为基准修改单人图，查看生成小样后回复继续。",
+      "reference_images": [
+        "frontend/artwork-source/optimized-originals/myth-icons/stories/ch07-mu-meets-xiwangmu.png",
+        "frontend/artwork-source/xishan/deity-xiwangmu-yushan-v1.png"
+      ],
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/xiwangmu-scene-baseline-v2.png",
+      "source_sha256": "ae20c8d3e98ce87b887f8a1ab50a8a44e164f741691edf8654cae6683e9b0d14",
+      "variants": [
+        "full",
+        "card",
+        "preview"
+      ],
+      "review": "原会见图的脸型、发饰、衣服为统一视觉基准；豹尾保留，虎齿及松散发丝表现克制；衣服、发饰具体形状与站姿为艺术设计。未修改会见、宴饮场景。",
+      "publishedVariants": {
+        "full": {
+          "path": "/data/atlas/refined/xiwangmu-scene-baseline-v2-full.webp",
+          "bytes": 282764,
+          "dimensions": [
+            1280,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/refined/xiwangmu-scene-baseline-v2-card.webp",
+          "bytes": 26256,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/refined/xiwangmu-scene-baseline-v2-preview.webp",
+          "bytes": 50440,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      }
     }
   ]
 }

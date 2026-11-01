@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "status": "active_pilot_scene_revision_pending",
-  "scope": "西王母试点；附加登记，不合并实体ID，不新增运行时下载；其余角色语义关联尚待逐一审计。",
+  "status": "active_pilot_original_scene_baseline",
+  "scope": "西王母试点；附加登记不在浏览器下载，不合并实体ID。新单人原画通过既有精修尺寸映射按需加载；其余角色语义关联待逐一审计。",
   "character_id": "character-xiwangmu",
   "identity_note": "项目用于视觉连续性管理的角色组；篇目与记载保留独立，不声称各古籍形象或神话年代完全相同。",
   "forms": [
@@ -33,7 +33,7 @@
         "衣服与颜色",
         "姿势"
       ],
-      "preferred_version": "yushan-v1"
+      "preferred_version": "yushan-scene-baseline-v2"
     },
     {
       "form_id": "mutianzizhuan-juan3",
@@ -58,10 +58,13 @@
         }
       ],
       "continuity_constraints_proposal": [
-        "与玉山原型共享可辨认的脸型、发色、胜饰及木刻语言",
-        "注文已有虎齿、蓬发、戴胜，不以出处不同省略这些特征",
-        "礼仪场景可改变表情与姿态；衣服纹样及配色明确为艺术设计",
-        "正文未指定豹尾不能推断必须无尾；是否露尾按画面与经确认的角色设定决定"
+        "保留原会见与宴饮插画，作为脸型、发饰和衣服的视觉基准；玉山单人图向原场景角色靠拢。",
+        "玉山单人图保留人状、豹尾、虎齿等原文特征，具体纹样、配色、发饰形状与姿态为艺术设计。",
+        "篇目正文与注文保持独立，不因统一画法合并不同来源条目。"
+      ],
+      "visual_reference_versions": [
+        "mu-meeting-v1",
+        "mu-banquet-v1"
       ]
     }
   ],
@@ -151,8 +154,8 @@
       },
       "review": {
         "existing_status": "reviewed_for_xishan_batch",
-        "current_review": "approved_yushan_character_baseline",
-        "note": "维护者于2026-11-01确认作为玉山角色基准；现有形貌复核与生成记录保留。"
+        "current_review": "superseded_by_scene_based_solo_v2",
+        "note": "维护者于2026-11-01确认作为玉山角色基准；现有形貌复核与生成记录保留。 维护者随后改以原会见图为视觉基准；本版本原图及派生图继续保留。"
       },
       "rights": "沿用 ASSETS.md；本登记不调整授权",
       "variants": {
@@ -211,8 +214,8 @@
       },
       "review": {
         "existing_status": "symbolic_content_reviewed",
-        "current_review": "awaiting_user_character_approval",
-        "note": "与宴饮场景内部较一致；未明显表现所引注文的虎齿，须按共享角色设定修正。"
+        "current_review": "retained_visual_identity_reference",
+        "note": "维护者改以原场景角色为基准；本场景不重绘、不替换，保持原有来源说明。"
       },
       "rights": "沿用 ASSETS.md；本登记不调整授权",
       "variants": {
@@ -276,8 +279,8 @@
       },
       "review": {
         "existing_status": "symbolic_content_reviewed",
-        "current_review": "awaiting_user_character_approval",
-        "note": "与会见图脸型、发饰、服装接近；待共享角色样张确认后决定修改，不把派生尺寸计作重绘。"
+        "current_review": "retained_visual_identity_reference",
+        "note": "维护者改以原场景角色为基准；本场景不重绘、不替换，保持原有来源说明。"
       },
       "rights": "沿用 ASSETS.md；本登记不调整授权",
       "variants": {
@@ -320,12 +323,74 @@
           "current_value": "stories/ch07-yaochi-banquet.webp"
         }
       ]
+    },
+    {
+      "version_id": "yushan-scene-baseline-v2",
+      "entry_id": "deity-xishan-xiwangmu-yushan",
+      "form_id": "xishan-yushan",
+      "master_file": "frontend/artwork-source/woodcut-refinement/xiwangmu-scene-baseline-v2.png",
+      "master_sha256": "ae20c8d3e98ce87b887f8a1ab50a8a44e164f741691edf8654cae6683e9b0d14",
+      "master_relation_status": "exact generated output copied unchanged; derived variants exported using existing prepare-refined-artwork.py",
+      "logical_artwork": "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1.webp",
+      "logical_key_note": "沿用稳定逻辑路径；frontend/src/refined-artwork.json选择新版实际尺寸文件，旧版文件仍保留。",
+      "generation": {
+        "tool": "built-in image_gen",
+        "model": "未返回／未记录",
+        "date": "2026-11-01",
+        "references": [
+          "frontend/artwork-source/optimized-originals/myth-icons/stories/ch07-mu-meets-xiwangmu.png",
+          "frontend/artwork-source/xishan/deity-xiwangmu-yushan-v1.png"
+        ],
+        "reference_status": "原会见图为用户指定的角色身份/服装基准；旧单人图为编辑目标及原文形貌参考。",
+        "evidence": "frontend/artwork-source/woodcut-refinement/generation.json#/assets/8"
+      },
+      "review": {
+        "current_review": "user_approved_visual_sample",
+        "note": "原会见图的脸型、发饰、衣服为统一视觉基准；豹尾保留，虎齿及松散发丝表现克制；衣服、发饰具体形状与站姿为艺术设计。未修改会见、宴饮场景。"
+      },
+      "rights": "沿用 ASSETS.md；不调整授权",
+      "variants": {
+        "full": {
+          "path": "/data/atlas/refined/xiwangmu-scene-baseline-v2-full.webp",
+          "bytes": 282764,
+          "dimensions": [
+            1280,
+            1280
+          ],
+          "sha256": "44f50de177706fc22d304468e628744ee3a81bae3d9294cdac408098064aa615",
+          "evidence": "frontend/src/refined-artwork.json"
+        },
+        "card": {
+          "path": "/data/atlas/refined/xiwangmu-scene-baseline-v2-card.webp",
+          "bytes": 26256,
+          "dimensions": [
+            320,
+            320
+          ],
+          "sha256": "b2f97d57bd0cc34e73f55a0d9a4c103cb62af2be0fac2942965486c4cdd01af9",
+          "evidence": "frontend/src/refined-artwork.json"
+        },
+        "preview": {
+          "path": "/data/atlas/refined/xiwangmu-scene-baseline-v2-preview.webp",
+          "bytes": 50440,
+          "dimensions": [
+            480,
+            480
+          ],
+          "sha256": "25b2af7c91485ef4cadaae61cd07638a63993b8b13ec8a1c946fdae33e7cd13f",
+          "evidence": "frontend/src/refined-artwork.json"
+        }
+      },
+      "current_entry_ids": [
+        "domain-yushan",
+        "deity-xishan-xiwangmu-yushan"
+      ]
     }
   ],
   "approval_gates": [
-    "玉山角色基准及玉山绑定已确认",
-    "再制作共享角色特征的会见小样并视觉复核；未生成或覆盖场景插画",
-    "确认小样后再决定宴饮修正与场景绑定；逐阶段verify/CI/Pages"
+    "原场景角色为视觉基准、新单人图及玉山统一绑定已确认",
+    "原会见、宴饮图保持不变；不应用此前反向重绘的会见小样",
+    "其他角色继续逐一审计与看样，不按试点自动批量重绘"
   ],
   "deferred": [
     "具体生成模型和生成日期无法从文件名或Git提交日期推断",
@@ -334,14 +399,14 @@
   ],
   "approval": {
     "date": "2026-11-01",
-    "decision": "维护者确认统一绑定，并以第二张玉山段神祇插画作为玉山角色基准。",
-    "approved_version": "yushan-v1",
-    "scene_revision": "not_applied; artwork sample still required"
+    "decision": "维护者改以原第七章会见图中的西王母为基准调整单人图；查看新小样后回复继续，应用该确认稿。",
+    "approved_version": "yushan-scene-baseline-v2",
+    "scene_revision": "original meeting and banquet scenes retained unchanged"
   },
   "approved_bindings": [
     {
       "entry_id": "domain-yushan",
-      "version_id": "yushan-v1",
+      "version_id": "yushan-scene-baseline-v2",
       "fields": [
         "icon",
         "artwork"
@@ -349,10 +414,18 @@
     },
     {
       "entry_id": "deity-xishan-xiwangmu-yushan",
-      "version_id": "yushan-v1",
+      "version_id": "yushan-scene-baseline-v2",
       "fields": [
         "artwork"
       ]
+    }
+  ],
+  "approval_history": [
+    {
+      "date": "2026-11-01",
+      "decision": "维护者确认统一绑定，并以第二张玉山段神祇插画作为玉山角色基准。",
+      "approved_version": "yushan-v1",
+      "scene_revision": "not_applied; artwork sample still required"
     }
   ]
 }

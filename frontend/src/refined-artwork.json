@@ -98,5 +98,31 @@
         128
       ]
     }
+  },
+  "/data/atlas/myth-icons/xishan/deity-xiwangmu-yushan-v1.webp": {
+    "full": {
+      "path": "/data/atlas/refined/xiwangmu-scene-baseline-v2-full.webp",
+      "bytes": 282764,
+      "dimensions": [
+        1280,
+        1280
+      ]
+    },
+    "card": {
+      "path": "/data/atlas/refined/xiwangmu-scene-baseline-v2-card.webp",
+      "bytes": 26256,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/refined/xiwangmu-scene-baseline-v2-preview.webp",
+      "bytes": 50440,
+      "dimensions": [
+        480,
+        480
+      ]
+    }
   }
 }
