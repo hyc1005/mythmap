@@ -2,8 +2,8 @@ import { openSourceLibrary } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { createHash } from 'node:crypto';
-import { readFile, stat } from 'node:fs/promises';
-import { resolve, sep } from 'node:path';
+import { readFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
 import { chromium, webkit } from 'playwright';
 import { worldEntries } from '../src/entries.js';
 import { readExploration } from '../src/exploration.js';
@@ -305,7 +305,8 @@ async function fontFacesSettled() {
     await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
   } while ([...document.fonts].some(font => font.status === 'loading'));
 }
-const base = 'https://atlas.test/mythmap/';
+if (!process.env.ATLAS_URL) throw new Error('Run through scripts/with-preview.mjs');
+const base = process.env.ATLAS_URL.replace(/\/+$/, '') + '/';
 const sizes = [{ width: 320, height: 700 }, { width: 390, height: 844 }, { width: 844, height: 390 }, { width: 1440, height: 1000 }];
 for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await bounded(({ chromium, webkit }[engine]).launch(), 'Northern browser launch');
@@ -314,16 +315,9 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
     const context = await bounded(browser.newContext({ viewport: sizes[1], reducedMotion: 'reduce' }), 'Northern context setup');
     captureFailure = browserDiagnostics(context, `northern-${engine}`);
     await bounded(mockTianditu(context), 'Northern basemap mock setup');
-    await bounded(context.route('https://atlas.test/**', async route => {
-      const url = new URL(route.request().url());
-      if (!url.pathname.startsWith('/mythmap/')) return route.fulfill({ status: 404, body: 'Wrong base' });
-      const file = resolve(root, decodeURIComponent(url.pathname.slice('/mythmap/'.length)) || 'index.html');
-      if (!file.startsWith(root + sep) || !(await stat(file).catch(() => null))?.isFile()) return route.fulfill({ status: 404, body: 'Missing file' });
-      return route.fulfill({ path: file });
-    }), 'Northern static route setup');
-    await bounded(context.addInitScript(() => {
-      if (location.origin === 'https://atlas.test') localStorage.setItem('shanhai-onboarding-v1', '1');
-    }), 'Northern init script');
+    await bounded(context.addInitScript(origin => {
+      if (location.origin === origin) localStorage.setItem('shanhai-onboarding-v1', '1');
+    }, new URL(base).origin), 'Northern init script');
     const page = await bounded(context.newPage(), 'Northern page setup'), errors = [], missing = [], pending = new Set();
     page.on('pageerror', e => errors.push(e.message));
     page.on('response', r => { if (r.status() >= 400 && r.url().startsWith(base)) missing.push(r.url()); });

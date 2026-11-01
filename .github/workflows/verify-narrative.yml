@@ -158,11 +158,7 @@ jobs:
         run: |
           for script in $ATLAS_SCRIPTS; do
             echo "Verifying $script with $ATLAS_BROWSERS"
-            if [[ "$script" == "verify-beishan.mjs" ]]; then
-              node "scripts/$script"
-            else
-              node scripts/with-preview.mjs --base "$ATLAS_BASE" -- node "scripts/$script"
-            fi
+            node scripts/with-preview.mjs --base "$ATLAS_BASE" -- node "scripts/$script"
           done
 
       - name: Upload failed browser diagnostics
