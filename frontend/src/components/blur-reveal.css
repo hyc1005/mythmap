@@ -1,4 +1,5 @@
-.blur-reveal-text { display: block; filter: blur(var(--reveal-blur, 0px)); transition: filter var(--reveal-duration, 0s) cubic-bezier(.16, 1, .3, 1); }
+.blur-reveal-text { display: block; filter: blur(var(--reveal-blur, 0px)); transition: none; }
+.blur-reveal-text[data-reveal-state="revealing"] { transition: filter var(--reveal-duration, 0s) cubic-bezier(.16, 1, .3, 1); }
 .blur-reveal-text[data-reveal-state="waiting"] { filter: blur(4px); }
 @media (max-width: 768px) {
   .blur-reveal-text[data-reveal-state="waiting"] { filter: blur(2px); }

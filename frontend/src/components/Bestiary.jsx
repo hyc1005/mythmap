@@ -3,6 +3,7 @@ import { useLocale } from '../i18n';
 import { useReducedMotion } from '../motion';
 import { iconFor } from '../artwork';
 import ArtworkImage from './ArtworkImage';
+import BlurRevealText from './BlurRevealText';
 import { ReadingMarks } from '../reading';
 import { BESTIARY_INITIAL, BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, bestiaryEntries, filterBestiary, groupBestiary } from '../bestiary';
 
@@ -59,7 +60,7 @@ export default function Bestiary({ world, onOpen, reading }) {
     <ReadingMarks reading={reading} id={entry.id} /><span className="beast-card-more">{t('查看形貌与出处 ↗')}</span>
   </button>;
   return <section className="best-page" id="creatures">
-    <div className="best-page-heading"><h2>{t('山海经异兽谱')}</h2><p>{t('按原文形貌整理；同名组仅作索引，各条出处独立。')}</p></div>
+    <div className="best-page-heading"><h2><BlurRevealText text={t('山海经异兽谱')} revealKey={`bestiary:title:${locale}`} /></h2><p><BlurRevealText text={t('按原文形貌整理；同名组仅作索引，各条出处独立。')} revealKey={`bestiary:intro:${locale}`} variant="intro" /></p></div>
     <div className="bestiary-roles" role="group" aria-label={t('异兽谱类型')}>
       {['beast', 'deity'].map(role => <button type="button" key={role} aria-pressed={filters.role === role} data-bestiary-role={role} onClick={() => { setFilters({ ...emptyFilters, role }); setLimit(BESTIARY_INITIAL); }}>{t(role === 'beast' ? '异兽' : '神灵')} · {entries.filter(item => item.role === role).length}</button>)}
     </div>

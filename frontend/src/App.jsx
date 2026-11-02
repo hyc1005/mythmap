@@ -21,7 +21,7 @@ import DetailDrawer from './components/DetailDrawer';
 import GlobalSearch from './components/GlobalSearch';
 import OnboardingGuide from './components/OnboardingGuide';
 import { assetUrl } from './asset-url';
-import { CHAPTER_TRANSITION_MS, InkText, useReducedMotion } from './motion';
+import { CHAPTER_TRANSITION_MS, useReducedMotion } from './motion';
 import { itemChapter, readExploration, readGeography, explorationUrl } from './exploration';
 import { validateWorld } from './world-validation';
 import { useReading, useLastReading } from './reading';
@@ -42,7 +42,6 @@ export default function App() {
   const [playbackStatus, setPlaybackStatus] = useState('loading');
   const [tourActive, setTourActive] = useState(false);
   const [chapterTransition, setChapterTransition] = useState(0);
-  const [titleAnimating, setTitleAnimating] = useState(false);
   const [activeLayers, setActiveLayers] = useState({ beasts: false, divine: false });
   const [selectedId, setSelectedId] = useState(initial.item);
   const [detailSequence, setDetailSequence] = useState(null);
@@ -95,13 +94,13 @@ export default function App() {
   const guideTrigger = useRef(null);
   const [locateId, setLocateId] = useState(null);
   const worldLayout = useRef(null);
+  const chapterRail = useRef(null);
   const panelTrigger = useRef(null);
   const openPanel = (name, event) => { panelTrigger.current = event.currentTarget; setPanel(name); };
   const detailTrigger = useRef(null);
   const pendingDetailFocus = useRef(false);
   const detailPageScroll = useRef([0, 0]);
   const transitionTimer = useRef(null);
-  const titleTimer = useRef(null);
   const previousAnimatedChapter = useRef(initial.stageIndex);
   const transitionCount = useRef(0);
   const stages = world.stages;
@@ -249,17 +248,10 @@ export default function App() {
     if (previousAnimatedChapter.current === stageIndex) return;
     previousAnimatedChapter.current = stageIndex;
     window.clearTimeout(transitionTimer.current);
-    window.clearTimeout(titleTimer.current);
-    setTitleAnimating(true);
     setChapterTransition(++transitionCount.current);
     transitionTimer.current = window.setTimeout(() => setChapterTransition(0), CHAPTER_TRANSITION_MS);
-    titleTimer.current = window.setTimeout(() => setTitleAnimating(false), 700);
   }, [stageIndex]);
-  useEffect(() => {
-    window.clearTimeout(titleTimer.current);
-    setTitleAnimating(false);
-  }, [locale]);
-  useEffect(() => () => { window.clearTimeout(transitionTimer.current); window.clearTimeout(titleTimer.current); }, []);
+  useEffect(() => () => { window.clearTimeout(transitionTimer.current); }, []);
   const currentGeographyEvent = defaultGeographicEvent(catalog, chapterId, geographyEventId);
   const detailPlace = detailFromSearch && geographicReferences(catalog).find(record => `geography:${record.id}` === searchState.focusKey && record.properties.entity_id === selectedId);
   const openPlace = () => {
@@ -389,8 +381,8 @@ export default function App() {
   return <main className="myth-app" lang={locale === "en" ? "en" : "zh-CN"}>
     <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true" dangerouslySetInnerHTML={{ __html: brandMark }} /><h1>{t("山海寻踪")}</h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><button ref={searchTrigger} className="global-search-trigger" type="button" aria-label={t("搜索故事、异兽与现代地点")} onClick={() => setSearchOpen(true)}>{t("搜索")}</button><div className="language-switch" role="group" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></div></nav></header>
      <section ref={worldLayout} className="world-layout" id="world" data-chapter={stages[stageIndex].id} data-timeline-playing={playing} data-animation-busy={journeyBusy} data-tour-active={tourActive} data-tour-reading={readingChapter}>
-      <aside className="chapter-rail">
-        <span className="chapter-number">{stageIndex === 0 ? t("序章") : t("第 ") + stages[stageIndex].id + t(" 章")}</span><h2><InkText key={stages[stageIndex].id} text={stages[stageIndex].title} animate={previousAnimatedChapter.current !== stageIndex || titleAnimating} /></h2><p><InkText key={stages[stageIndex].id} text={stages[stageIndex].subtitle} variant="subtitle" animate={previousAnimatedChapter.current !== stageIndex || titleAnimating} /></p>
+      <aside ref={chapterRail} className="chapter-rail">
+        <span className="chapter-number">{stageIndex === 0 ? t("序章") : t("第 ") + stages[stageIndex].id + t(" 章")}</span><h2><BlurRevealText text={stages[stageIndex].title} revealKey={`chapter:${stages[stageIndex].id}:title:${locale}`} rootRef={chapterRail} /></h2><p><BlurRevealText text={stages[stageIndex].subtitle} revealKey={`chapter:${stages[stageIndex].id}:subtitle:${locale}`} variant="subtitle" rootRef={chapterRail} /></p>
         <div className="chapter-rail-details">{!mobile && <><h3>{t('本章条目')}</h3>{chapterEntries}</>}</div>
       </aside>
       <div className="world-main">

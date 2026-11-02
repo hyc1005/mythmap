@@ -11,7 +11,8 @@ function controller(root) {
   const scrollTarget = root || window;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   let frame = 0;
-  let previous = root ? root.scrollTop : window.scrollY;
+  const scrollPosition = () => window.scrollY + (root?.scrollTop || 0);
+  let previous = scrollPosition();
   let bypass = false;
   const clear = (item, ease = false) => {
     clearTimeout(item.release);
@@ -23,12 +24,18 @@ function controller(root) {
     item.state = 'clear';
   };
   const show = item => clear(item);
-  const visible = (box, bounds) => box.bottom > bounds.top && box.top < bounds.bottom;
-  const bounds = () => root ? root.getBoundingClientRect() : { top: 0, bottom: innerHeight, height: innerHeight };
+  const visible = (box, bounds) => bounds.height > 0 && box.bottom > bounds.top && box.top < bounds.bottom;
+  const bounds = () => {
+    if (!root) return { top: 0, bottom: innerHeight, height: innerHeight };
+    const box = root.getBoundingClientRect();
+    const top = Math.max(0, box.top + root.clientTop);
+    const bottom = Math.min(innerHeight, box.top + root.clientTop + root.clientHeight);
+    return { top, bottom, height: Math.max(0, bottom - top) };
+  };
   const tick = () => {
     frame = 0;
     const viewport = bounds();
-    const position = root ? root.scrollTop : window.scrollY;
+    const position = scrollPosition();
     const delta = position - previous;
     previous = position;
     const measurements = [...items].map(item => [item, item.node.getBoundingClientRect()]);
@@ -51,12 +58,13 @@ function controller(root) {
       if (item.state === 'waiting') {
         if (!delta) continue;
         // Large jumps and navigation land directly in the reading position.
-        if (Math.abs(delta) > viewport.height / 2 || active.size >= 3
+        if (Math.abs(delta) > innerHeight / 2 || active.size >= 3
           || (box.top >= viewport.top + viewport.height / 4 && box.bottom <= viewport.bottom - viewport.height / 4)) {
           clear(item); continue;
         }
-        if (delta > 0 && box.top > viewport.bottom - 50) continue;
-        if (delta < 0 && box.bottom < viewport.top + 50) continue;
+        const inset = Math.min(50, viewport.height / 4);
+        if (delta > 0 && box.top > viewport.bottom - inset) continue;
+        if (delta < 0 && box.bottom < viewport.top + inset) continue;
         active.add(item);
         item.node.style.setProperty('--reveal-duration', `${REVEAL_EASING_MS}ms`);
         clear(item, true);
@@ -76,7 +84,8 @@ function controller(root) {
   const observer = new IntersectionObserver(schedule, { root, rootMargin: '24px' });
   const resize = new ResizeObserver(schedule);
   scrollTarget.addEventListener('scroll', schedule, { passive: true });
-  window.addEventListener('resize', schedule);
+  if (root) window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', navigation);
   window.addEventListener('hashchange', navigation);
   window.addEventListener('popstate', navigation);
   window.addEventListener('beforeprint', showAll);
@@ -97,7 +106,8 @@ function controller(root) {
         if (items.size) return;
         cancelAnimationFrame(frame); observer.disconnect(); resize.disconnect();
         scrollTarget.removeEventListener('scroll', schedule);
-        window.removeEventListener('resize', schedule);
+        if (root) window.removeEventListener('scroll', schedule);
+        window.removeEventListener('resize', navigation);
         window.removeEventListener('hashchange', navigation);
         window.removeEventListener('popstate', navigation);
         window.removeEventListener('beforeprint', showAll);

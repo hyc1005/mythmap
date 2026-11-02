@@ -98,6 +98,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           await page.locator('.detail-drawer').waitFor();
           assert.equal(await page.locator('#root').evaluate(node => node.inert), true, 'Source modal remains isolated after sheet');
           await page.locator('.drawer-close').click();
+          await page.locator('.detail-drawer').waitFor({ state: 'detached' });
           assert.equal(await page.locator('#root').evaluate(node => node.inert), false);
         }
         if (name === 'chromium' && lang === 'zh') {
@@ -189,3 +190,5 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
 }
 
 await import('./verify-blur-reveal.mjs');
+
+await import('./verify-blur-main.mjs');
