@@ -3,6 +3,7 @@ import { useLocale, localize } from '../i18n';
 import rawCatalog from '../../public/data/atlas/catalog.json';
 import { iconFor } from '../artwork';
 import ArtworkImage from './ArtworkImage';
+import BlurRevealText from './BlurRevealText';
 import { storySummary } from '../story-summaries';
 import ContentOrigin from './ContentOrigin';
 import { entryTypes } from '../entries';
@@ -153,14 +154,14 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
         {fromSearch && !parentEntry && <button type="button" className="return-search" onClick={onClose}>{t('← 返回搜索结果')}</button>}
         <button ref={closeButton} className="drawer-close" onClick={onClose} aria-label={t("关闭")}>×</button></div>
       <span className="intro-overline">{selected.region || selected.source}</span>
-      <h2 ref={heading} tabIndex={-1} data-reading-anchor="title">{selected.name}</h2>
+      <h2 ref={heading} tabIndex={-1} data-reading-anchor="title"><BlurRevealText text={selected.name} revealKey={`detail:${selected.id}:title:${locale}`} rootRef={drawer} /></h2>
       <ContentOrigin record={selected} />
       {namesakeEntries.length > 1 && <nav className="detail-related detail-namesakes" aria-label={t('同名记载')}>
         <h3>{t('同名记载')} · {namesakeEntries.length}</h3><p>{t('同名仅作索引，各条出处独立。')}</p>
         <select aria-label={t('同名记载')} value={selected.id} onChange={event => { pendingFocus.current = 'namesakes'; onRelated(event.target.value, readingPosition(), 'namesakes'); }}>{namesakeEntries.map(item => <option key={item.id} value={item.id}>{item.displayName} · {item.provenance}</option>)}</select>
       </nav>}
-      {selected.kind === 'story' && storySummary(selected.id, locale) && <section className="story-summary" data-reading-anchor="summary" aria-label={t('故事梗概')}><h3>{t('故事梗概')}</h3><p>{storySummary(selected.id, locale)}</p><small>{t('项目整理 · 依据下列引文转述，非古籍原文。')}</small></section>}
-      {selected.kind !== 'story' && selected.description && <><h3 data-reading-anchor="description">{t(descriptionTitle)}</h3><p className="detail-description">{selected.description}</p></>}
+      {selected.kind === 'story' && storySummary(selected.id, locale) && <section className="story-summary" data-reading-anchor="summary" aria-label={t('故事梗概')}><h3><BlurRevealText text={t('故事梗概')} revealKey={`detail:${selected.id}:summary:${locale}`} variant="section" rootRef={drawer} /></h3><p>{storySummary(selected.id, locale)}</p><small>{t('项目整理 · 依据下列引文转述，非古籍原文。')}</small></section>}
+      {selected.kind !== 'story' && selected.description && <><h3 data-reading-anchor="description"><BlurRevealText text={t(descriptionTitle)} revealKey={`detail:${selected.id}:description:${locale}`} variant="section" rootRef={drawer} /></h3><p className="detail-description">{selected.description}</p></>}
       {contextPlace && parentEntry?.id !== contextPlace.id && <button type="button" className="detail-context-place" data-related-id={contextPlace.id} onClick={() => onRelated(contextPlace.id, readingPosition())}>{t('查看关联地点')} · {contextPlace.name}</button>}
       {(selected.quote || selected.kind === 'story') && <><h3 data-reading-anchor="quote">{t('原文')}</h3><blockquote>{selected.quote || selected.raw?.properties.source_quote || selected.description}</blockquote></>}
       {selected.reveal_chapter && <p className="detail-chapter">{t('第')}{selected.reveal_chapter}{t('章起可见（非诞生年代）')}</p>}

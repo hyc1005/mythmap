@@ -415,13 +415,14 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
       for(const supplement of review.font_supplements.filter(f=>f.family.startsWith('Atlas Central'))){
       const {characters,family}=supplement;
       for(const weight of [400,600]){
-        await page.evaluate(({characters,weight})=>{const h=document.querySelector('.detail-drawer h2');h.innerHTML='';const probe=document.createElement('span');probe.id='central-rare-probe';probe.textContent=characters;probe.style.fontWeight=weight;h.append(probe);return document.fonts.ready;},{characters,weight});
+        await page.evaluate(({characters,weight})=>{const h=document.querySelector('.detail-drawer h2');h.querySelector('#central-rare-probe')?.remove();const probe=document.createElement('span');probe.id='central-rare-probe';probe.textContent=characters;probe.style.fontWeight=weight;h.append(probe);return document.fonts.ready;},{characters,weight});
         const doc=await cdp.send('DOM.getDocument');const node=await cdp.send('DOM.querySelector',{nodeId:doc.root.nodeId,selector:'#central-rare-probe'});
         const {fonts}=await cdp.send('CSS.getPlatformFontsForNode',{nodeId:node.nodeId});
         assert.ok(fonts.length&&fonts.every(f=>f.isCustomFont&&f.familyName===family),JSON.stringify(fonts));
         assert.equal(fonts.reduce((n,f)=>n+f.glyphCount,0),Array.from(characters).length);
       }
       }
+      await page.locator('#central-rare-probe').evaluate(node=>node.remove());
       await cdp.detach();
     }
     assert.deepEqual(errors, []);

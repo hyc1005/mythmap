@@ -192,3 +192,5 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
 await import('./verify-blur-reveal.mjs');
 
 await import('./verify-blur-main.mjs');
+
+await import('./verify-blur-detail.mjs');
