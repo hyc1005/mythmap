@@ -70,10 +70,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.ok(check.duration >= 1100, `${name}: chapter notice lasted ${check.duration}ms`);
     assert.ok(check.pausedSamples.length > 0, 'The covered story is paused');
     assert.ok(check.pausedSamples.every(time => time === 0), 'A covered story does not play behind the chapter notice');
-    await page.clock.resume();
-    await page.waitForFunction(() => Number(document.querySelector('.story-animation')?.dataset.elapsed) > 200);
+    await page.clock.runFor(300);
+    assert.ok(await page.locator('.story-animation').evaluate(node => Number(node.dataset.elapsed) > 200), 'The story resumes after the chapter notice');
     await page.locator('.map-mode-switch').getByRole('button', { name: '真实地理', exact: true }).click();
-    await page.clock.pauseAt(new Date(await page.evaluate(() => Date.now()) + 100));
     await page.getByLabel('地理事件').selectOption('03-05');
     await page.locator('.geo-map-stage .chapter-transition-veil.is-visible').waitFor();
     await page.clock.runFor(CHAPTER_TRANSITION_MS);
