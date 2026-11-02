@@ -1,5 +1,5 @@
 {
-  "revision": "myth-world-2026-10-27-zhongshan-212-v1",
+  "revision": "myth-world-2026-11-02-xiangliu-source-v1",
   "coordinate_system": "diagram-units",
   "coordinate_note": "x/y are layout hints only. They encode cardinal orientation when supported by text; no distance or scale is implied.",
   "stages": [
@@ -912,16 +912,16 @@
     {
       "id": "beast-xiangliu",
       "name": "相柳",
-      "region": "大荒北经",
+      "region": "海外北经",
       "reveal_stage": 6,
       "kind": "神异",
-      "description": "共工之臣，九首，以食于九山。",
-      "source": "《大荒北经》",
-      "url": "https://ctext.org/shan-hai-jing/da-huang-bei-jing/zh",
+      "description": "共工之臣，九首人面，蛇身而青，以食于九山。",
+      "source": "《海外北经》",
+      "url": "https://zh.wikisource.org/wiki/山海經/海外北經",
       "artwork": "xiangliu.webp",
-      "source_chapter": "《大荒北经》",
-      "illustration_review": "原文摘录已核对；图像按原文形态核验",
-      "quote": "共工之臣曰相柳氏，九首，以食于九山。",
+      "source_chapter": "《海外北经》",
+      "illustration_review": "已核对九个独立人面、盘曲蛇身；青色按克制的深灰青绘制，具体五官与构图属艺术解释。",
+      "quote": "共工之臣曰相柳氏，九首，以食于九山。……相柳者，九首人面，蛇身而青。",
       "reveal_chapter": "06"
     },
     {

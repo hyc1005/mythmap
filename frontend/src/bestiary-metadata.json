@@ -300,17 +300,18 @@
     },
     "group_key": "相柳",
     "role": "beast",
-    "form_group": "other",
+    "form_group": "serpent",
     "feature_tags": [
-      "many_heads"
+      "many_heads",
+      "human_face"
     ],
     "classification": {
       "basis": "text",
       "source_field": "quote",
-      "evidence": "共工之臣曰相柳氏，九首，以食于九山。",
-      "review_status": "unresolved"
+      "evidence": "相柳者，九首人面，蛇身而青。",
+      "review_status": "reviewed"
     },
-    "book_key": "大荒北经"
+    "book_key": "海外北经"
   },
   "beast-kaiming": {
     "display_name": {

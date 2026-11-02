@@ -24,7 +24,7 @@
 | [中山经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%BA%94&oldid=2652856) | 1483 | 0 | 0 | 全篇212阅读段接入；疑字、异说和数字差异分别保留 |
 | [海外南经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AD&oldid=2652857) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
 | [海外西经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B8%83&oldid=2652858) | 1 | 0 | 1 | 选编，篇内仍有遗漏 |
-| [海外北经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AB&oldid=2652859) | 2 | 0 | 2 | 选编，篇内仍有遗漏 |
+| [海外北经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AB&oldid=2652859) | 3 | 0 | 2 | 选编，篇内仍有遗漏 |
 | [海外东经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E4%B9%9D&oldid=2652860) | 2 | 0 | 2 | 选编，篇内仍有遗漏 |
 | [海内南经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%8D%81&oldid=2652861) | 0 | 0 | 0 | 尚无明确篇目对应 |
 | [海内西经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%8D%81%E4%B8%80&oldid=2652862) | 3 | 0 | 0 | 选编，篇内仍有遗漏 |
@@ -33,7 +33,7 @@
 | [大荒东经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%8D%81%E5%9B%9B&oldid=2652865) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
 | [大荒南经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%8D%81%E4%BA%94&oldid=2652866) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
 | [大荒西经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%8D%81%E5%85%AD&oldid=2652867) | 0 | 0 | 1 | 仅数据存留，未形成网页收录 |
-| [大荒北经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%8D%81%E4%B8%83&oldid=2652868) | 8 | 0 | 2 | 选编，篇内仍有遗漏 |
+| [大荒北经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%8D%81%E4%B8%83&oldid=2652868) | 7 | 0 | 2 | 选编，篇内仍有遗漏 |
 | [海内经](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%8D%81%E5%85%AB&oldid=2652869) | 1 | 0 | 0 | 选编，篇内仍有遗漏 |
 
 ## 逐篇已收录与待补方向
@@ -144,7 +144,7 @@
 
 ### 08 海外北经
 
-- 常规入口：夸父逐日（`03-05`）；禹杀相柳（`05-02`）。
+- 常规入口：相柳（`beast-xiangliu`）；夸父逐日（`03-05`）；禹杀相柳（`05-02`）。
 - 数据未开放：海外诸国（`08-01`）；烛龙（`08-06`）。
 - 待补方向：夸父、相柳之外的国家、神祇与方位关系仍有大量缺口。
 - 校核入口：[该篇固定修订](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%85%AB&oldid=2652859)；录文尚需与影印页对校，不把自动导入视为已核对。
@@ -198,7 +198,7 @@
 
 ### 17 大荒北经
 
-- 常规入口：彊良（强良）（`beast-qiangliang`）；烛龙（`beast-zhulong`）；相柳（`beast-xiangliu`）；赤水（`place-chishui`）；章尾山（`place-zhangwei`）；章尾山 · 烛龙所居（`domain-zhangwei`）；夸父逐日（`03-05`）；禹杀相柳（`05-02`）。
+- 常规入口：彊良（强良）（`beast-qiangliang`）；烛龙（`beast-zhulong`）；赤水（`place-chishui`）；章尾山（`place-zhangwei`）；章尾山 · 烛龙所居（`domain-zhangwei`）；夸父逐日（`03-05`）；禹杀相柳（`05-02`）。
 - 数据未开放：大荒异兽（`08-02`）；烛龙（`08-06`）。
 - 待补方向：烛龙等片段之外，人物、山川及谱系待补；相繇与相柳分篇保存。
 - 校核入口：[该篇固定修订](https://zh.wikisource.org/w/index.php?title=%E5%B1%B1%E6%B5%B7%E7%B6%93_%28%E5%9B%9B%E9%83%A8%E5%8F%A2%E5%88%8A%E6%9C%AC%29/%E5%8D%B7%E7%AC%AC%E5%8D%81%E4%B8%83&oldid=2652868)；录文尚需与影印页对校，不把自动导入视为已核对。
@@ -247,7 +247,7 @@
 | `beast-wenyaoyu` | 文鳐鱼 | 《山海经》 | 常规入口 | 《西山经》 |
 | `beast-qiangliang` | 彊良（强良） | 《山海经》 | 常规入口 | 《大荒北经》 |
 | `beast-zhulong` | 烛龙 | 《山海经》 | 常规入口 | 《大荒北经》 |
-| `beast-xiangliu` | 相柳 | 《山海经》 | 常规入口 | 《大荒北经》 |
+| `beast-xiangliu` | 相柳 | 《山海经》 | 常规入口 | 《海外北经》 |
 | `beast-kaiming` | 开明兽 | 《山海经》 | 常规入口 | 《海内西经》 |
 | `beast-phoenix` | 凤皇 | 《山海经》 | 常规入口 | 《南山经》 |
 | `beast-guanguan` | 灌灌 | 《山海经》 | 常规入口 | 《山海经·南山经》（《四部丛刊》景明成化本，郭璞传） |

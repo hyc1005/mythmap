@@ -251,6 +251,48 @@
           ]
         }
       }
+    },
+    {
+      "name": "xiangliu-human-faces-v1",
+      "original": "/data/atlas/myth-icons/xiangliu.webp",
+      "prompts": [
+        "Use case: precise-object-edit. Preview candidate for an existing Chinese mythology atlas, Xiangliu from Shanhaijing Haiwai Bei Jing. Image 1 is the EDIT TARGET: the existing coiled nine-headed snake cutout. Image 2 is a STYLE AND IDENTITY REFERENCE only: Xiangliu in a story alongside Yu. Edit image 1 into the same entity depicted in image 2. Preserve image 1's compact standalone coiled serpent silhouette, exactly NINE independently readable heads and nine traceable necks connected to one serpent body, clean transparent margins and strong woodblock linework. Replace all nine reptilian snouts with clearly HUMAN faces, human noses, mouths, brows, cheekbones and ears, with loosely flowing dark hair and restrained beard treatment coherent with Xiangliu in image 2. Each face must read clearly human even small, no snake muzzle, no reptile jaws or forked tongues. Retain nine distinct human heads with varied existing directions; no duplicated face-like markings elsewhere. Body remains scaled and coiled, with a muted dark blue-green/grey-green tint consistent with the story reference to interpret 'serpent body and qing coloration'; warm parchment-colored faces and belly, black-brown engraved contours, subtle vermilion accents only if already appropriate. Antique Chinese book woodcut, flat carved color blocks, restrained aged ink texture. No Yu, human torso, limbs, weapons, props, scene, paper rectangle, lettering, label, watermark, glow, gradients or 3D. True transparent alpha outside the creature; no cropped hair, heads or tail. This is a reversible preview, not a production replacement."
+      ],
+      "review": "九个独立人面、蛇身盘曲；人面与蛇身依据《海外北经》，脸型/发须/排列与深灰青配色属艺术解释。",
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/xiangliu-human-faces-v1.png",
+      "publishedVariants": {
+        "full": {
+          "path": "/data/atlas/refined/xiangliu-human-faces-v1-full.webp",
+          "bytes": 496262,
+          "dimensions": [
+            1254,
+            1254
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/refined/xiangliu-human-faces-v1-card.webp",
+          "bytes": 49050,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/refined/xiangliu-human-faces-v1-preview.webp",
+          "bytes": 97948,
+          "dimensions": [
+            480,
+            480
+          ]
+        }
+      },
+      "tool": "built-in image_gen",
+      "model": "not returned / unrecorded",
+      "generated_on": "2026-11-02",
+      "edit_target": "frontend/public/data/atlas/refined/xiangliu-nine-heads-v2-full.webp",
+      "identity_reference": "frontend/public/data/atlas/optimized/myth-icons/stories/ch05-yu-xiangliu.webp",
+      "source_url": "https://zh.wikisource.org/wiki/山海經/海外北經",
+      "separate_record_note": "《大荒北经》相繇条另存，不合并名称、引文或ID。"
     }
   ]
 }

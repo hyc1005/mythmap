@@ -1,24 +1,24 @@
 {
   "/data/atlas/myth-icons/xiangliu.webp": {
     "full": {
-      "path": "/data/atlas/refined/xiangliu-nine-heads-v2-full.webp",
-      "bytes": 395570,
+      "path": "/data/atlas/refined/xiangliu-human-faces-v1-full.webp",
+      "bytes": 496262,
       "dimensions": [
-        1280,
-        1280
+        1254,
+        1254
       ]
     },
     "card": {
-      "path": "/data/atlas/refined/xiangliu-nine-heads-v2-card.webp",
-      "bytes": 43336,
+      "path": "/data/atlas/refined/xiangliu-human-faces-v1-card.webp",
+      "bytes": 49050,
       "dimensions": [
         320,
         320
       ]
     },
     "preview": {
-      "path": "/data/atlas/refined/xiangliu-nine-heads-v2-preview.webp",
-      "bytes": 81046,
+      "path": "/data/atlas/refined/xiangliu-human-faces-v1-preview.webp",
+      "bytes": 97948,
       "dimensions": [
         480,
         480

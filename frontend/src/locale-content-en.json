@@ -239,7 +239,11 @@
     "quote": "Beyond the northwestern sea, north of the Red River, stands Mount Zhangwei. Its deity has a human face and red serpent's body, with straight eyes. Darkness falls when its eyes close; light returns when they open. It neither eats, sleeps nor breathes, and calls forth wind and rain. It is Zhu Jiuyin, also called Zhulong."
   },
   "beast-xiangliu": {
-    "quote": "Gonggong's retainer is named Xiangliu. He has nine heads and feeds upon nine mountains."
+    "quote": "Gonggong's retainer is named Xiangliu. He has nine heads and feeds upon nine mountains. … Xiangliu has nine human faces and a qing (blue-green) serpent body.",
+    "description": "Gonggong's retainer, with nine human faces and a qing (blue-green) serpent body, feeds upon nine mountains.",
+    "region": "Haiwai Bei Jing",
+    "source": "Shanhaijing · Haiwai Bei Jing",
+    "source_chapter": "Haiwai Bei Jing"
   },
   "beast-kaiming": {
     "quote": "Kunlun's Kaiming beast has a large tiger-like body and nine heads, all with human faces. It stands facing east upon Kunlun."

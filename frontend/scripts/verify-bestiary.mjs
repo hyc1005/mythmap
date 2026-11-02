@@ -41,6 +41,10 @@ assert.equal(byId.get('beast-beishan-huomin-xiushan').classification.review_stat
 assert.equal(byId.get('beast-luwu').role, 'deity');
 assert.equal(byId.get('beast-dijiang').role, 'deity');
 assert.equal(byId.get('beast-beishan-heluo-qiaoming').displayName, '何罗鱼');
+assert.equal(byId.get('beast-xiangliu').formGroup, 'serpent');
+assert.ok(byId.get('beast-xiangliu').featureTags.includes('human_face'));
+assert.equal(metadata['beast-xiangliu'].book_key, '海外北经');
+assert.ok(world.beasts.find(item => item.id === 'beast-xiangliu').quote.includes('九首人面，蛇身而青'));
 const qiongqi = filterBestiary(entries, { query: '穷奇' });
 assert.equal(qiongqi.length, 2);
 assert.equal(groupBestiary(qiongqi).length, 1);
