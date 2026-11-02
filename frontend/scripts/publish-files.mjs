@@ -16,6 +16,8 @@ export async function publishingFiles(publicDir, manifestPath) {
       }
     }
   };
+  files.add('data/geography/natural-earth-50m-v5.1.2.geojson');
+  files.add('data/geography/natural-earth-50m-v5.1.2.sources.json');
   files.add('fonts/shanhai-title-zhongshan.woff2');
   files.add('fonts/shanhai-bestiary.woff2');
   files.add('fonts/atlas-central-rare.woff2');

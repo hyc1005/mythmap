@@ -22,7 +22,6 @@ jobs:
       base: ${{ steps.path.outputs.base }}
     env:
       ATLAS_BROWSERS: chromium,webkit
-      VITE_TIANDITU_KEY: ${{ github.event_name == 'pull_request' && 'mock-browser-key' || secrets.TIANDITU_BROWSER_KEY }}
     defaults:
       run:
         working-directory: frontend
@@ -44,6 +43,7 @@ jobs:
         run: |
           python ../data/audit_shanhaijing.py --check
           python ../data/build_source_inventory.py --check
+          python ../data/build_geography_basemap.py --check
       - run: npm run verify:cache
       - name: Use the public Ubuntu package mirror
         run: |
@@ -53,9 +53,7 @@ jobs:
       - run: npx playwright install --with-deps chromium webkit
         timeout-minutes: 15
       - run: npm run build -- --base /
-        env:
-          VITE_TIANDITU_KEY: ''
-      - name: Verify missing basemap credentials
+      - name: Verify local basemap without external credentials
         env:
           ATLAS_MISSING_KEY: '1'
         run: node scripts/with-preview.mjs -- node scripts/verify-geography.mjs
@@ -77,13 +75,6 @@ jobs:
           if [[ "$PAGES_CONFIGURED" == true ]]; then base="${PAGES_BASE_PATH}/";
           elif [[ "$repository" == *.github.io ]]; then base=/; else base="/$repository/"; fi
           echo "base=$base" >> "$GITHUB_OUTPUT"
-      - name: Require a browser key for publication
-        if: github.event_name != 'pull_request'
-        run: |
-          if [[ -z "$VITE_TIANDITU_KEY" ]]; then
-            echo "::error::Configure the repository Actions secret TIANDITU_BROWSER_KEY with a Tianditu browser application key."
-            exit 1
-          fi
       - run: npm run build -- --base "${{ steps.path.outputs.base }}"
       - run: npm run verify:publish
       - name: Upload browser verification build

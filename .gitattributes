@@ -7,3 +7,6 @@ data/shanhaijing-reference.json -text
 /docs/media/manifest.json text eol=lf
 /frontend/src/locale-en.json text eol=lf
 /frontend/public/fonts/source-sans-3-LICENSE.txt text eol=lf
+/data/reference-maps/natural-earth-v5.1.2/*.geojson -text
+/frontend/public/data/geography/natural-earth-50m-v5.1.2.geojson text eol=lf
+/frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json text eol=lf

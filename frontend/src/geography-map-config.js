@@ -1,7 +1,7 @@
 import { fromLonLat, transformExtent } from 'ol/proj.js';
 
 export const geographyMapConfig = {
-  provider: 'tianditu',
+  provider: 'natural-earth',
   initialCenter: [110.5, 34.5],
   initialZoom: 5,
   nationalCenter: [108.94, 34.34],

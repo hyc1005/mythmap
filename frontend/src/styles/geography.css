@@ -10,7 +10,7 @@
 .geo-tools select { width: 180px; }
 .geo-tools>input { flex: 1 1 140px; width: 140px; }
 .geo-tools input[type=checkbox] { width: 20px; height: 20px; min-height: 20px; min-width: 20px; }
-.geo-map { position: relative; height: clamp(340px, 53svh, 580px); overflow: hidden; background: #dce3da; border: 1px solid var(--edge); }
+.geo-map { position: relative; height: clamp(340px, 53svh, 580px); overflow: hidden; background: linear-gradient(#d2dbcde6, #d2dbcde6), var(--geo-paper); background-size: auto, 600px; background-color: #d2dbcd; border: 1px solid var(--edge); }
 .geo-map:focus-visible { outline: 2px solid var(--verm); outline-offset: 2px; }
 .geo-map .ol-scale-line { position: absolute; bottom: 10px; left: 10px; background: #f5efdfeb; padding: 6px; pointer-events: none; }
 .geo-map .ol-scale-line-inner { border: 1px solid var(--ink); border-top: 0; text-align: center; font: 12px sans-serif; color: var(--ink); }

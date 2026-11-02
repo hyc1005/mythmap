@@ -37,7 +37,7 @@
 
 翻译由模型生成；插画使用OpenAI图像生成工具，部分以项目既有插画统一风格。具体模型和第三方权利未能核实的项目保留“未记录／需确认”，不作专业审校或无侵权保证。
 
-引用项目可使用[CITATION.cff](CITATION.cff)；引用具体原文、扫描或地图数据时，请同时标明对应来源。地理截图保留天地图署名，其使用条件仍列入许可待核事项。
+引用项目可使用[CITATION.cff](CITATION.cff)；引用具体原文、扫描或地图数据时，请同时标明对应来源。地理截图保留Natural Earth署名，界面内嵌素材仍按各自来源条件适用。
 
 ## 开发与维护
 
@@ -75,7 +75,7 @@ npm run dev -- --host 127.0.0.1
 
 打开[127.0.0.1:5173](http://127.0.0.1:5173/)。开发模式尝试8081端口的Java API，未启动时使用内置数据。可选API需JDK 17以上，运行`backend-java/run.ps1`；生产默认使用内置数据，只有显式配置`VITE_API_BASE_URL`才请求外部API，该配置会公开在构建产物中。
 
-真实地理底图使用天地图**浏览器端应用**Key，在被忽略的`frontend/.env.local`配置`VITE_TIANDITU_KEY`。服务商域名白名单填写`hyc1005.github.io,127.0.0.1`。底图不可用时仍可阅读和查询本地资料。
+真实地理视图使用随站发布的Natural Earth v5.1.2陆地、湖泊与主要河流，标明“现代地理参照，古风绘制”，无需外部地图Key。版本、原始哈希和处理见`frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json`，可用`python data/build_geography_basemap.py --check`核验；底图加载失败时仍可查询本地依据。
 
 </details>
 
@@ -101,7 +101,7 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 <details>
 <summary>部署与回退</summary>
 
-仓库Settings → Pages选择**GitHub Actions**，并配置Actions secret **TIANDITU_BROWSER_KEY**。推送到`main`的前端、数据、后端／数据库或工作流修改会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；纯文档修改不触发发布，也可手动运行。
+仓库Settings → Pages选择**GitHub Actions**，本地底图无需地图服务Secret。推送到`main`的前端、数据、后端／数据库或工作流修改会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；纯文档修改不触发发布，也可手动运行。
 
 所有必要检查通过后，部署同一份已验收产物。不要提交`dist/`、依赖、本地环境配置或QA输出；回退使用`git revert`后推送。
 

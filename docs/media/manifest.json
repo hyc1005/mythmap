@@ -61,8 +61,8 @@
     },
     {
       "path": "docs/media/geographic-evidence.webp",
-      "sha256": "e0e6a4bd75ce8a3ade56eaaa928fa0c2d3f7f5e21fa78dd590929cb930954978",
-      "bytes": 164650,
+      "sha256": "1f44f4a4e47adc74df551bca6c9d40dad23315c62b7452c4aff53a65107fc4fa",
+      "bytes": 86746,
       "dimensions": [
         1440,
         960
@@ -70,9 +70,20 @@
       "tool": "Playwright Chromium + Pillow WebP encoder",
       "model": "not applicable",
       "source": "actual local application screenshot",
-      "source_png_sha256": "6c4bb7d8ad10a663b218396abaf6d83b2619c6b6c5254ee9fb8dea1eab4b27ed",
+      "source_png_sha256": "7800f94003a749d0c81f0ffe06b631a761f8ef436785c6e6ac52840e04318d26",
       "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
-      "attribution": "Tianditu attribution remains visible; screenshot reuse conditions unresolved"
+      "attribution": "Natural Earth attribution and modern-reference / antique-rendering note remain visible; composite UI assets retain their own conditions",
+      "captured_on": "2026-11-02",
+      "source_commit": null,
+      "source_base_commit": "772350f8049806a507b1428b099780ebe5dd0a7b",
+      "source_state": "Isolated phase4 candidate before application; exact runtime source LF hashes below",
+      "runtime_sha256_lf": {
+        "frontend/src/components/GeographyMap.jsx": "663da328083d2cc50a0606624c3d6a5ea629d444083ede9e705863f096b3e202",
+        "frontend/src/natural-earth-basemap.js": "3348cf23e953fc6fe6c14691d15d656d63b2e4906b91a2715198cf2abdfab49b",
+        "frontend/src/geography-map-config.js": "0ca1412ddbb003fe54613faa97d4bdfa360f13b14f451f7217cc5230b6387b34",
+        "frontend/src/styles/geography.css": "6296518cab3c46d9e79b34064817b0c6e77c8eaa361e9ba7d49c0196c387e31e",
+        "frontend/src/locale-en.json": "c7e32718c5541808cf1e6c3c003f06ac2d9ad86ac670a60aa7432a6cd733d2e0"
+      }
     },
     {
       "path": "docs/media/tour.gif",

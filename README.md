@@ -37,7 +37,7 @@ The maintainer developed the code with generative models and releases it under [
 
 Translations are model-generated. Illustrations use OpenAI image generation, sometimes with existing project artwork as an internal style reference. Unverified models and third-party rights remain explicitly unresolved; neither professional translation review nor freedom from infringement is guaranteed.
 
-Use [CITATION.cff](CITATION.cff) to cite the project and credit the relevant sources when citing individual texts, scans or map data. Geographic screenshots retain Tianditu attribution; their usage conditions remain an open licensing item.
+Use [CITATION.cff](CITATION.cff) to cite the project and credit the relevant sources when citing individual texts, scans or map data. The geographic screenshot credits Natural Earth; embedded UI assets retain their source-specific conditions.
 
 ## Development and maintenance
 
@@ -75,7 +75,7 @@ npm run dev -- --host 127.0.0.1
 
 Open [127.0.0.1:5173](http://127.0.0.1:5173/). Development tries the optional Java API on port 8081, then falls back to bundled data. To use that API, run `backend-java/run.ps1` with JDK 17 or newer. Production uses bundled data unless `VITE_API_BASE_URL` is configured; that setting is public in the build output.
 
-The geographic basemap uses a Tianditu **browser application** key in ignored `frontend/.env.local` as `VITE_TIANDITU_KEY`. Configure the provider's domain allowlist for `hyc1005.github.io,127.0.0.1`. Reading and local evidence remain available when the basemap is unavailable.
+The geographic view uses bundled Natural Earth v5.1.2 land, lakes and major rivers, with antique styling and modern reference coordinates. No external map key is required. Data versions, original hashes and processing are recorded in `frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json`; run `python data/build_geography_basemap.py --check` to verify them. Local evidence remains available if the basemap cannot load.
 
 </details>
 
@@ -101,7 +101,7 @@ The [script index](frontend/scripts/README.md) lists the remaining reading, sear
 <details>
 <summary>Deployment and rollback</summary>
 
-Select **GitHub Actions** in repository Settings → Pages, and set the Actions secret **TIANDITU_BROWSER_KEY**. Pushes to `main` that affect the frontend, data, backend/database or workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml). Documentation-only pushes do not deploy; manual dispatch is also available.
+Select **GitHub Actions** in repository Settings → Pages. The bundled basemap does not require a map-service secret. Pushes to `main` that affect the frontend, data, backend/database or workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml). Documentation-only pushes do not deploy; manual dispatch is also available.
 
 Deployment waits for all required checks and publishes the same verified artifact. Do not commit `dist/`, dependencies, environment files or QA output. Roll back by reverting the relevant commit and pushing.
 

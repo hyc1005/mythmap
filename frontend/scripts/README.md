@@ -47,4 +47,4 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-bestiary.m
 
 临时探针与中间结果放`output/diagnostics/`；不进入Git，也不参与网站构建。2026-10-28的结构整理仅移动保留原文件，没有删除诊断记录。
 
-西山入口会按当前内容状态导入`verify-xishan-complete.mjs`，两个文件均需保留。旧Natural Earth生成链已退役，当前地理验收检查天地图图层。
+西山入口会按当前内容状态导入`verify-xishan-complete.mjs`，两个文件均需保留。旧Natural Earth生成链仍为历史记录；新的`data/build_geography_basemap.py`独立固定v5.1.2来源。当前地理验收读取真实本地矢量，并注入失败、错误数据及慢加载，检查无外部地图请求。

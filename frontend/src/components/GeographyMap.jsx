@@ -6,17 +6,16 @@ import Point from 'ol/geom/Point';
 import LineString from 'ol/geom/LineString';
 import { greatCircleArc } from 'ol/geom/flat/geodesic';
 import VectorLayer from 'ol/layer/Vector';
+import VectorImageLayer from 'ol/layer/VectorImage';
 import VectorSource from 'ol/source/Vector';
 import Cluster from 'ol/source/Cluster';
 import ScaleLine from 'ol/control/ScaleLine';
 import Attribution from 'ol/control/Attribution';
-import TileLayer from 'ol/layer/Tile';
-import { createTiandituSource } from '../tianditu-basemap';
+import { createNaturalEarthSource, naturalEarthStyle, naturalEarthLabelStyle } from '../natural-earth-basemap';
 import { geographyMapConfig, nationalView } from '../geography-map-config';
 import { defaults as interactions } from 'ol/interaction';
 import { fromLonLat, toLonLat, transformExtent } from 'ol/proj';
 import { getDistance } from 'ol/sphere';
-import { unByKey } from 'ol/Observable';
 import { Circle, RegularShape, Fill, Stroke, Style, Text } from 'ol/style';
 import { useLocale, translate } from '../i18n';
 import { ChapterNotice } from '../motion';
@@ -24,10 +23,11 @@ import { EMPTY_RECORD_NOTICE_MS } from '../map-timing';
 import { groupReferences, referenceCollection, geographicEvents, geographicReferences, defaultGeographicEvent, associationLabel, unlocatedStories } from '../geography';
 import GeographicEvidence from './GeographicEvidence';
 import GeographyComparison from './GeographyComparison';
+import { assetUrl } from '../asset-url';
 import '../styles/geography.css';
 
+const paperTexture = assetUrl('/data/atlas/myth-paper.webp');
 const worldExtent = [-Infinity, -20037508.342789244, Infinity, 20037508.342789244];
-const serviceKey = (import.meta.env?.VITE_TIANDITU_KEY || '').trim();
 const coordinates = value => value.map(number => number.toFixed(3)).join(', ');
 
 export default function GeographyMap({ catalog, chapterId, currentEventId, currentReferenceId, onReferenceChange, locateRequest, fromSearch, onReturnToSearch, visible, transitioning, snapshot, onSnapshot, onEventChange, onOpen, readingActions }) {
@@ -47,8 +47,8 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
   const [position, setPosition] = useState(geographyMapConfig.initialCenter);
   const [measuring, setMeasuring] = useState(false), measureMode = useRef(false), measurePoints = useRef([]);
   const [distance, setDistance] = useState(null), [layerStates, setLayerStates] = useState({ ter: 'loading', cta: 'loading' }), [emptyNotice, setEmptyNotice] = useState(false);
-  const tilesReady = serviceKey && Object.values(layerStates).every(value => value === 'ready');
-  const loadError = !serviceKey ? 'missing-key' : Object.values(layerStates).includes('auth') ? 'auth' : layerStates.ter === 'error' ? 'ter' : layerStates.cta === 'error' ? 'cta' : null;
+  const tilesReady = Object.values(layerStates).every(value => value === 'ready');
+  const loadError = Object.values(layerStates).includes('error');
   const applyNational = instance => {
     const view = nationalView(instance.getSize());
     instance.getView().setCenter(view.center); instance.getView().setResolution(view.resolution);
@@ -60,7 +60,6 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
   const [searchExpanded, setSearchExpanded] = useState(() => window.matchMedia('(min-width: 769px)').matches);
   const [toolsExpanded, setToolsExpanded] = useState(() => window.matchMedia('(min-width: 769px)').matches);
   const [slowLoading, setSlowLoading] = useState(false);
-  const [authCode, setAuthCode] = useState(null);
   const [compareOpen, setCompareOpen] = useState(restore && Boolean(snapshot.compareOpen));
   const [compareIds, setCompareIds] = useState(restore ? snapshot.compareIds || [] : []);
   const [browseEvents, setBrowseEvents] = useState(false), [fitRequest, setFitRequest] = useState(null);
@@ -75,7 +74,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
   const nearby = records.filter(item => clusterIds.includes(item.id));
   const choices = nearby.length > 1 ? nearby : coincident;
   const sameCoordinate = choices.length > 1 && choices.every(item => item.geometry.coordinates.every((number, index) => number === choices[0].geometry.coordinates[index]));
-  current.current = { selectedId, records, label: selected ? t(selected.properties.label) : '', clusterLabel: t('附近地点记录') };
+  current.current = { locale, selectedId, records, label: selected ? t(selected.properties.label) : '', clusterLabel: t('附近地点记录') };
   latestSnapshot.current = { ...latestSnapshot.current, originEventId, eventId, query, selectedId, viewMode: viewMode.current, compareOpen, compareIds: comparisonIds };
 
   const takeMeasurement = coordinate => {
@@ -94,30 +93,32 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
 
   useEffect(() => {
     let live = true;
-    const listeners = [];
     let generation = 0, controller;
-    const background = new TileLayer({ preload: 0 }), labels = new TileLayer({ preload: 0 });
+    const background = new VectorImageLayer({ imageRatio: 1.5, declutter: true, style: (feature, resolution) => {
+      const physical = naturalEarthStyle(feature, resolution);
+      if (!physical) return null;
+      const label = naturalEarthLabelStyle(feature, resolution, current.current.locale);
+      return label ? [physical, label] : physical;
+    } });
+    layerRefs.current.basemap = background;
     const newBasemap = () => {
       controller?.abort(); controller = new AbortController();
       const currentGeneration = ++generation;
-      setAuthCode(null);
-      const states = { ter: 'loading', cta: 'loading' }, loaded = { ter: false, cta: false };
+      const states = { ter: 'loading', cta: 'loading' };
+      let loaded = false;
       setLayerStates(states);
-      if (!serviceKey) return;
-      const fail = (layer, reason, code) => {
+      const physical = createNaturalEarthSource(controller.signal, count => {
         if (!live || currentGeneration !== generation) return;
-        if (reason === 'auth') setAuthCode(code);
-        states[layer] = reason === 'auth' ? 'auth' : 'error'; setLayerStates({ ...states });
-      };
-      for (const [layer, targetLayer] of [['ter', background], ['cta', labels]]) {
-        const tileSource = createTiandituSource(layer, serviceKey, (reason, code) => fail(layer, reason, code), controller.signal);
-        listeners.push(tileSource.on('tileloadend', () => { loaded[layer] = true; }));
-        targetLayer.setSource(tileSource);
-      }
+        loaded = true;
+        if (target.current) target.current.dataset.basemapFeatures = String(count);
+      }, () => {
+        if (!live || currentGeneration !== generation) return;
+        setLayerStates({ ter: 'error', cta: 'error' });
+      });
+      background.setSource(physical);
       layerRefs.current.finish = () => {
         if (!live || currentGeneration !== generation) return;
-        for (const layer of ['ter', 'cta']) if (loaded[layer] && states[layer] === 'loading') states[layer] = 'ready';
-        setLayerStates({ ...states });
+        if (loaded && states.ter === 'loading') { states.ter = 'ready'; states.cta = 'ready'; setLayerStates({ ...states }); }
       };
     };
     newBasemap();
@@ -140,7 +141,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
     } });
     const ruler = new VectorLayer({ source: measurement.current, style: new Style({ stroke: new Stroke({ color: '#496d75', width: 2, lineDash: [6, 4] }), image: new Circle({ radius: 5, fill: new Fill({ color: '#496d75' }) }) }) });
     const linkedRecord = references.find(record => record.id === currentReferenceId && record.properties.entity_id === originEventId);
-    const instance = new Map({ target: target.current, layers: [background, labels, points, ruler], controls: [new ScaleLine({ units: 'metric' }), new Attribution({ collapsible: false })],
+    const instance = new Map({ target: target.current, layers: [background, points, ruler], controls: [new ScaleLine({ units: 'metric' }), new Attribution({ collapsible: false })],
       interactions: interactions({ doubleClickZoom: false }), view: new View({ projection: 'EPSG:3857', center: restore && snapshot.center || fromLonLat(linkedRecord?.geometry.coordinates || geographyMapConfig.initialCenter), zoom: restore ? snapshot.zoom ?? geographyMapConfig.initialZoom : linkedRecord ? 7 : geographyMapConfig.initialZoom, minZoom: 1, maxZoom: geographyMapConfig.maxZoom, extent: worldExtent, constrainOnlyCenter: false, smoothExtentConstraint: false, smoothResolutionConstraint: false, enableRotation: false }) });
     map.current = instance; layerRefs.current.newBasemap = newBasemap;
     instance.on('rendercomplete', () => layerRefs.current.finish?.());
@@ -169,7 +170,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
       if (viewMode.current === 'national') applyNational(instance);
     }); observer.observe(target.current);
     setReady(true);
-    return () => { live = false; controller?.abort(); unByKey(listeners); onSnapshot({ ...latestSnapshot.current, center: instance.getView().getCenter(), zoom: instance.getView().getZoom() }); observer.disconnect(); instance.setTarget(undefined); instance.dispose(); clusters.setSource(null); map.current = null; };
+    return () => { live = false; controller?.abort(); onSnapshot({ ...latestSnapshot.current, center: instance.getView().getCenter(), zoom: instance.getView().getZoom() }); observer.disconnect(); instance.setTarget(undefined); instance.dispose(); clusters.setSource(null); map.current = null; };
   }, []);
 
   useEffect(() => {
@@ -256,6 +257,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
     fit(); setFitRequest(null);
     target.current?.scrollIntoView({ block: 'start', behavior: 'instant' }); target.current?.focus({ preventScroll: true });
   }, [ready, visible, fitRequest, eventId, records]);
+  useEffect(() => { layerRefs.current.basemap?.changed(); }, [locale]);
   const retryBasemap = () => {
     layerRefs.current.newBasemap();
   };
@@ -267,17 +269,18 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
   const unlocated = unlocatedStories(catalog);
   const availableEvents = events.map(event => ({ ...event, count: references.filter(record => record.properties.entity_id === event.id).length })).filter(event => event.count);
   const activeEvent = events.find(event => event.id === eventId);
-  return <div className="geography-atlas" data-ready={ready} data-event-id={eventId} data-basemap-state={loadError || (tilesReady ? 'ready' : 'loading')} data-terrain-state={layerStates.ter} data-labels-state={layerStates.cta}>
+  return <div className="geography-atlas" data-ready={ready} data-event-id={eventId} data-basemap-state={loadError ? 'error' : tilesReady ? 'ready' : 'loading'} data-basemap-provider="natural-earth" data-terrain-state={layerStates.ter} data-labels-state={layerStates.cta}>
     {fromSearch && !selected && <button className="geo-return-search" type="button" onClick={onReturnToSearch}>{t('返回搜索结果')}</button>}
     <div className="geo-tools geo-primary"><label>{t('事件')}<select aria-label={t('地理事件')} value={eventId} onChange={event => { changeEvent(event.target.value); onEventChange(event.target.value); }}>{catalog.stages.map(stage => <optgroup key={stage.id} label={`${stage.id} ${t(stage.title)}`}>{events.filter(event => event.properties.stage_id === stage.id).map(event => <option key={event.id} value={event.id}>{t(event.properties.name)}</option>)}</optgroup>)}</select></label>
       <div className="geo-view-actions"><button onClick={initialView}>{t('初始视野')}</button><button onClick={nationwide}>{t('全国总览')}</button><button onClick={fit} disabled={!records.length} aria-label={t('查看本事件地点')}>{t('事件地点')}</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() + 1); }} aria-label={t('地理地图放大')}>＋</button><button onClick={() => { viewMode.current = 'local'; map.current?.getView().setZoom(map.current.getView().getZoom() - 1); }} aria-label={t('地理地图缩小')}>−</button></div>
     </div>
     <p className="geo-legend"><span>◆ {t('地方传说')}</span><span>● {t('地理考证')}</span><span>③ {t('聚合记录')}</span></p>
     {!eventRecords.length && <section className="geo-empty-state" aria-label={t('暂无可定位的关联地点')}><h3>{activeEvent?.properties.name} · {t('暂无可定位的关联地点')}</h3><p>{t('目前没有可展示的可靠坐标。你仍可阅读故事，或选择其他事件查看地点资料。')}</p><div className="geo-empty-actions"><button type="button" onClick={event => onOpen(eventId, event.currentTarget)}>{t('阅读本故事')}</button><button type="button" aria-expanded={browseEvents} aria-controls="geo-available-events" onClick={() => setBrowseEvents(value => !value)}>{t('浏览有地点资料的事件')}</button></div>{browseEvents && <div id="geo-available-events" className="geo-available-events">{availableEvents.map(event => <button type="button" key={event.id} data-available-event={event.id} onClick={() => { changeEvent(event.id); onEventChange(event.id); setFitRequest(event.id); }}>{event.properties.name}<small>{event.count} {t('条地点资料')}</small></button>)}</div>}</section>}
-    <div className="geo-map-stage"><div className="geo-map" ref={target} tabIndex={0} onKeyDown={event => { if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', '+', '-'].includes(event.key)) viewMode.current = 'local'; }} role="region" aria-label={t('真实地理参考地图')} /><span className="geo-north" aria-label={t('地图北向')}>{t('北 ↑')}</span><ChapterNotice change={transitioning} title={catalog.stages.find(stage => stage.id === chapterId)?.title} />{emptyNotice && <div className="geo-empty-notice" role="status"><b>{t('暂无记录')}</b><span>{t('当前资料尚未提供可靠关联地点')}</span></div>}</div>
+    <p className="geo-note geo-basemap-note">{t('现代地理参照，古风绘制')}</p>
+    <div className="geo-map-stage"><div className="geo-map" ref={target} style={{ '--geo-paper': `url("${paperTexture}")` }} tabIndex={0} onKeyDown={event => { if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', '+', '-'].includes(event.key)) viewMode.current = 'local'; }} role="region" aria-label={t('真实地理参考地图')} /><span className="geo-north" aria-label={t('地图北向')}>{t('北 ↑')}</span><ChapterNotice change={transitioning} title={catalog.stages.find(stage => stage.id === chapterId)?.title} />{emptyNotice && <div className="geo-empty-notice" role="status"><b>{t('暂无记录')}</b><span>{t('当前资料尚未提供可靠关联地点')}</span></div>}</div>
     <div className="geo-readout"><span>{t('经度、纬度')} · {coordinates(position)}°</span><span>WGS84 · EPSG:4326 / 3857</span></div>
     {readingActions}
-    {!tilesReady && !loadError && <p className="geo-load-status" role="status">{t(slowLoading ? '底图加载较慢，地点资料仍可查看。' : '正在加载在线底图…')}</p>}
+    {!tilesReady && !loadError && <p className="geo-load-status" role="status">{t(slowLoading ? '底图加载较慢，地点资料仍可查看。' : '正在加载本地底图…')}</p>}
     {selected && <div className="geo-selection"><p role="status"><strong>{t(selected.properties.label)}</strong><span>{t(associationLabel(selected))} · {t('参考坐标，非事件发生点')}</span></p><button onClick={() => { detailHeading.current?.scrollIntoView({ block: 'start', behavior: 'instant' }); detailHeading.current?.focus({ preventScroll: true }); }}>{t('查看地点资料')}</button>
       {choices.length > 1 && <div className={sameCoordinate ? 'geo-coincident' : 'geo-cluster-choices'} role="group" aria-label={t(sameCoordinate ? '同坐标关联记录' : '附近地点记录')}><span>{t(sameCoordinate ? '同坐标关联记录' : '附近地点记录')} · {choices.length}</span>{!sameCoordinate && <p>{t('仅为屏幕聚合，各记录仍使用原始坐标。')}</p>}{choices.map(record => <button key={record.id} data-coincident-id={sameCoordinate ? record.id : undefined} data-cluster-id={record.id} aria-pressed={record.id === selectedId} onClick={() => setSelectedId(record.id)}>{t(record.properties.label)} · {t(associationLabel(record))}</button>)}{!sameCoordinate && <button className="geo-cluster-close" onClick={() => { setClusterIds([]); target.current?.focus({ preventScroll: true }); }}>{t('收起附近记录')}</button>}</div>}
     </div>}
@@ -291,7 +294,7 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
     {measuring && <p className="geo-note">{t('在地图点选两个位置，或移动地图后用视图中心取点。量测为现代参考点之间的球面距离，不是古代行程。')}</p>}
     {distance !== null && <p className="geo-distance" role="status">{t('球面距离')} · {(distance / 1000).toFixed(2)} km</p>}
     <p className="geo-note">{t('每次探索一个事件：地点表示地方传说或地理考证关联，不证明事件发生。')}</p><p className="geo-note">{t('重合点显示数量，详情按条目区分类型。')}</p></details>
-    {loadError && <p role="alert">{t({ 'missing-key': '天地图尚未配置浏览器端 Key；地点资料仍可查询。', auth: authCode === '301013' ? '当前 Key 为服务器端类型，浏览器页面需要浏览器端 Key。' : '天地图鉴权失败，请检查 Key、应用类型和访问域名。', ter: '天地图地形加载失败；地点资料仍可查询。', cta: '天地图中文注记加载失败；地形和地点资料仍可查看。' }[loadError])}{loadError !== 'missing-key' && <> <button onClick={retryBasemap}>{t('重试地理底图')}</button></>}</p>}
+    {loadError && <p role="alert">{t('本地自然地理底图加载失败；地点资料仍可查询。')} <button onClick={retryBasemap}>{t('重试地理底图')}</button></p>}
     <div className="geo-result-actions"><p role="status">{t('参考点')} · {records.length}/{eventRecords.length}</p><button ref={compareTrigger} aria-expanded={compareOpen && comparisonIds.length === 2} aria-controls="geo-comparison" disabled={eventRecords.length < 2} onClick={() => setCompareOpen(value => !value)}>{t('对照本事件资料')}</button></div>
     <div className="geo-results"><section aria-label={t('地理查询结果')}>
       <div className="geo-result-list" ref={resultList}>{records.map(record => <button key={record.id} data-candidate-id={record.id} aria-pressed={selected?.id === record.id} aria-controls="geo-place-detail" onClick={() => locate(record)}><b>{t(record.properties.label)}</b><small>{t(associationLabel(record))}</small></button>)}</div>
@@ -303,6 +306,6 @@ export default function GeographyMap({ catalog, chapterId, currentEventId, curre
     </section></div>
     {compareOpen && comparisonIds.length === 2 && <GeographyComparison records={eventRecords} ids={comparisonIds} onChange={(index, id) => setCompareIds(comparisonIds.map((value, position) => position === index ? id : value))} onClose={() => { setCompareOpen(false); compareTrigger.current?.focus({ preventScroll: true }); }} />}
     <details className="geo-unlocated"><summary>{t('尚无地理参考点的条目')} · {unlocated.length}</summary>{unlocated.map(event => <button key={event.id} onClick={() => onOpen(event.id)}>{t(event.properties.name)}</button>)}</details>
-    <p className="geo-attribution">{t('底图：天地图；地点为传说或考证关联，不是历史事件定位证明。')} <a href="https://www.tianditu.gov.cn/" target="_blank" rel="noreferrer">{t('天地图 · 国家基础地理信息中心')}</a></p>
+    <p className="geo-attribution">{t('底图：Natural Earth；地点为传说或考证关联，不是历史事件定位证明。')} <a href="https://www.naturalearthdata.com/" target="_blank" rel="noreferrer">{t('Natural Earth · 自然地理资料')}</a></p>
   </div>;
 }

@@ -963,5 +963,10 @@
   "同名仅作索引，各条出处独立。": "Names are grouped for navigation only; each account retains its own source.",
   "查看形貌与出处 ↗": "Appearance and sources ↗",
   "更多筛选": "More filters",
-  "按卷阅读": "Browse source books"
+  "按卷阅读": "Browse source books",
+  "现代地理参照，古风绘制": "Modern geographic reference, antique rendering",
+  "正在加载本地底图…": "Loading the local basemap…",
+  "本地自然地理底图加载失败；地点资料仍可查询。": "The local physical basemap could not be loaded; geographic references remain available.",
+  "底图：Natural Earth；地点为传说或考证关联，不是历史事件定位证明。": "Basemap: Natural Earth; locations are traditional or scholarly associations, not proof of historical event locations.",
+  "Natural Earth · 自然地理资料": "Natural Earth · Physical geography"
 }

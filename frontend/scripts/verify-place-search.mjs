@@ -3,7 +3,7 @@ import { readFile, mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
 import { searchEntries, searchIndex } from '../src/search.js';
 import { geographicReferences, geographicEvents, referenceNarrative } from '../src/geography.js';
-import { mockTianditu, isTileAccessControlNoise } from './mock-tianditu.mjs';
+import { mockNaturalEarth } from './mock-natural-earth.mjs';
 
 const base = process.env.ATLAS_URL;
 if (!base) throw new Error('Run through with-preview.mjs');
@@ -35,11 +35,11 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
   try {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
-    const network = await mockTianditu(context);
+    const network = await mockNaturalEarth(context);
     let page = await context.newPage();
     const errors = [];
     let phase = 'initial';
-    const monitor = target => target.on('pageerror', error => { if (!isTileAccessControlNoise(error.message)) errors.push(`${phase}: ${error.message}`.replace(/tk=[^&\s]+/g, 'tk=[redacted]')); });
+    const monitor = target => target.on('pageerror', error => { errors.push(`${phase}: ${error.message}`.replace(/tk=[^&\s]+/g, 'tk=[redacted]')); });
     monitor(page);
     const visit = async url => { await settle(page); await page.goto(url); };
     const search = page.locator('.global-search-dialog');
@@ -131,11 +131,11 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       assert.equal(await page.locator('.geo-search input').inputValue(), '');
       assert.ok(await page.locator('.geo-result-list button').count() > 0);
     }
-    phase = 'tile-failure';
+    phase = 'basemap-failure';
     network.fail = true;
     await visit(`${base}?chapter=03&mode=geography&event=03-01&lang=zh`);
     await page.locator('.geography-atlas [role="alert"]').waitFor();
-    assert.equal(await page.locator('.geo-empty-state').count(), 0, 'Tile failure is not mistaken for absent geographic evidence');
+    assert.equal(await page.locator('.geo-empty-state').count(), 0, 'Local basemap failure is not mistaken for absent geographic evidence');
     assert.ok(await page.locator('.geo-result-list button').count());
     await settle(page);
     assert.deepEqual(errors, []);

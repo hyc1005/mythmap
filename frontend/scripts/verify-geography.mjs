@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile, mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
-import { mockTianditu, isTileAccessControlNoise } from './mock-tianditu.mjs';
+import { mockNaturalEarth } from './mock-natural-earth.mjs';
 import { geographyMapConfig } from '../src/geography-map-config.js';
 import { fromLonLat } from 'ol/proj.js';
 import { referenceCollection, validReference, groupReferences, unlocatedStories, geographicReferences, geographicEvents, defaultGeographicEvent } from '../src/geography.js';
@@ -61,7 +61,11 @@ const extent = async page => {
 };
 const fillSearch = async (page, label, value) => {
   if (!await geo(page).locator('.geo-search').evaluate(node => node.open)) await geo(page).locator('.geo-search summary').click();
-  await geo(page).getByLabel(label).fill(value);
+  await geo(page).getByLabel(label).fill(value).catch(async error => {
+    console.error('Geographic search visibility', await geo(page).locator('.geo-search').evaluate(node => ({ open: node.open, html: node.outerHTML, bounds: node.getBoundingClientRect().toJSON(), input: getComputedStyle(node.querySelector('input')).display, viewport: [innerWidth, innerHeight] })));
+    await page.screenshot({ path: new URL('natural-earth-search-failure.png', output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
+    throw error;
+  });
 };
 const stable = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
 const inside = (point, bounds) => point[0] > bounds[0] && point[0] < bounds[2] && point[1] > bounds[1] && point[1] < bounds[3];
@@ -70,24 +74,26 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
   try {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
-    const network = await mockTianditu(context);
+    const network = await mockNaturalEarth(context);
     const page = await context.newPage();
     const errors = []; page.on('pageerror', error => {
       const message = error.message.replace(/tk=[^&\s]+/g, 'tk=[redacted]');
-      if (!isTileAccessControlNoise(message)) errors.push(message);
+      errors.push(message);
     });
     if (process.env.ATLAS_MISSING_KEY) {
       await page.goto(`${base}?chapter=03&lang=zh`);
       await mode(page, 'zh', true);
-      await geo(page).getByRole('alert').filter({ hasText: '尚未配置浏览器端 Key' }).waitFor();
+      await geo(page).locator('[data-basemap-state=ready]').waitFor();
+      assert.equal(await geo(page).getByRole('alert').count(), 0);
+      assert.equal(await geo(page).locator('.geo-map').getAttribute('data-basemap-features'), '2293');
       assert.equal(await rows(page).count(), 3);
       await fillSearch(page, '搜索地理参考点', '涿鹿');
       assert.equal(await rows(page).count(), 1);
-      assert.equal(network.requests, 0);
-      assert.equal(network.osmRequests, 0);
+      assert.equal(network.requests, 1);
+      assert.deepEqual(network.externalRequests, []);
       assert.equal(await geo(page).locator('.begin-journey').count(), 0);
       assert.deepEqual(errors, []);
-      console.log(`PASS ${name}: missing browser key is explicit, with local search retained and zero basemap requests`);
+      console.log(`PASS ${name}: local physical basemap renders without an external key; local search and zero external map requests`);
       continue;
     }
     await page.goto(`${base}?chapter=03&lang=zh`);
@@ -214,27 +220,21 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.equal(await geo(page).locator('.geography-atlas').getAttribute('data-event-id'), eventBeforeReload, 'Reload preserves the explored event');
     assert.equal(await rows(page).count(), recordsBeforeReload, 'Tile failure does not hide local association records');
     assert.equal(await geo(page).locator('.geo-empty-notice').count(), 0, 'Network failure is not reported as missing evidence');
+    const failedRequests = network.requests;
+    await page.waitForTimeout(500);
+    assert.equal(network.requests, failedRequests, 'Failed local data waits for an explicit retry');
     network.fail = false;
     await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
     await geo(page).locator('[data-basemap-state=ready]').waitFor();
     assert.equal(await geo(page).getByRole('alert').count(), 0);
-    network.labelsFail = true;
+    network.malformed = true;
     await page.reload(); await mode(page, 'zh', true);
-    await geo(page).getByRole('alert').filter({ hasText: '中文注记加载失败' }).waitFor();
-    await geo(page).locator('[data-terrain-state=ready]').waitFor();
+    await geo(page).getByRole('alert').filter({ hasText: '本地自然地理底图加载失败' }).waitFor();
     assert.equal(await rows(page).count(), recordsBeforeReload);
-    network.labelsFail = false; network.terrainFail = true;
-    await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
-    await geo(page).getByRole('alert').filter({ hasText: '地形加载失败' }).waitFor();
-    network.terrainFail = false; network.auth = true;
-    await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
-    await geo(page).getByRole('alert').filter({ hasText: '鉴权失败' }).waitFor();
-    network.auth = '301013';
-    await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
-    await geo(page).getByRole('alert').filter({ hasText: '服务器端类型' }).waitFor();
-    network.auth = false;
+    network.malformed = false;
     await geo(page).getByRole('button', { name: '重试地理底图', exact: true }).click();
     await geo(page).locator('[data-basemap-state=ready]').waitFor();
+    assert.equal(await geo(page).locator('.geo-map').getAttribute('data-basemap-features'), '2293');
 
     await geo(page).getByLabel('地理事件').selectOption('03-01');
     await page.waitForFunction(() => document.querySelector('.geography-atlas').dataset.eventId === '03-01');
@@ -331,7 +331,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       assert.ok(JSON.parse(await geo(page).locator('.geo-map').getAttribute('data-center')).every((value, index) => Math.abs(value - geographyMapConfig.nationalCenter[index]) < .001));
       if (name === 'chromium' && lang === 'zh') {
         await geo(page).locator('.geo-map').scrollIntoViewIfNeeded();
-        await page.screenshot({ path: new URL(`tianditu-exploration-${width}x${height}.png`, output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
+        await page.screenshot({ path: new URL(`natural-earth-exploration-${width}x${height}.png`, output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
       }
     }
     await page.setViewportSize({ width: 390, height: 844 });
@@ -418,10 +418,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.locator('.map-fullscreen').click(); await page.locator('.is-fallback-fullscreen').waitFor();
     await mode(page, 'zh', true); await geo(page).locator('.ol-attribution').waitFor();
     await page.keyboard.press('Escape'); await page.locator('.is-fallback-fullscreen').waitFor({ state: 'detached' });
-    assert.equal(network.osmRequests, 0, 'OSM is never a basemap fallback');
-    assert.ok(network.layers.ter > 0 && network.layers.cta > 0);
+    assert.deepEqual(network.externalRequests, [], 'Local basemap never requests external map tiles');
+    assert.ok(network.requests > 0);
     assert.deepEqual(errors, []);
     await context.close();
-    console.log(`PASS ${name}: shared modes/fullscreen, nationwide Tianditu coverage (mock tiles), independent cameras, bilingual layouts, initial-view reset, nearby clusters with unchanged exports, collapsible evidence/keyboard/state, compact tools, linked place selection/focus, coincident accounts, measurement and tile recovery/slow loading`);
+    console.log(`PASS ${name}: shared modes/fullscreen, nationwide local Natural Earth coverage (real vector data), independent cameras, bilingual layouts, initial-view reset, nearby clusters with unchanged exports, collapsible evidence/keyboard/state, compact tools, linked place selection/focus, coincident accounts, measurement and local-data failure/malformed-data recovery/slow loading`);
   } finally { await browser.close(); }
 }
