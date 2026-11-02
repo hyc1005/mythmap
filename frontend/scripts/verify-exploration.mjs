@@ -266,11 +266,13 @@ try {
   assert.equal(await page.locator('.chapter-transition-veil.is-visible').count(), 1, 'Chapter title has a readable dwell');
   await page.locator('.chapter-transition-veil.is-visible').waitFor({ state: 'detached' });
   assert.equal(await page.locator('.chapter-transition-veil.is-visible').count(), 0);
-  assert.equal(await page.locator('.chapter-rail h2 .ink-word').first().evaluate(element => getComputedStyle(element).animationName), 'none', 'Title motion finishes once');
+  assert.equal(await page.locator('.chapter-rail h2 .ink-word').count(), 0, 'Chapter title no longer splits into animated words');
+  assert.equal(await page.locator('.chapter-rail h2 .blur-reveal-text').first().evaluate(element => getComputedStyle(element).animationName), 'none', 'Chapter title uses whole-block motion');
+  assert.equal(await page.locator('.chapter-rail h2 .blur-reveal-text').first().evaluate(element => getComputedStyle(element).opacity), '1', 'Whole-block title keeps full ink opacity');
   await page.getByRole('button', { name: 'EN', exact: true }).click();
-  assert.equal(await page.locator('.chapter-rail h2 .ink-word').first().evaluate(element => getComputedStyle(element).animationName), 'none', 'Language changes do not replay chapter motion');
+  assert.equal(await page.locator('.chapter-rail h2 .blur-reveal-text').first().evaluate(element => getComputedStyle(element).animationName), 'none', 'Language changes preserve whole-block title');
   await page.getByRole('button', { name: '中文', exact: true }).click();
-  assert.equal(await page.locator('.chapter-rail h2 .ink-word').first().evaluate(element => getComputedStyle(element).animationName), 'none');
+  assert.equal(await page.locator('.chapter-rail h2 .blur-reveal-text').first().evaluate(element => getComputedStyle(element).animationName), 'none');
 
   await page.goto(`${base}?chapter=invalid&item=03-05&lang=en`);
   assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '00');
