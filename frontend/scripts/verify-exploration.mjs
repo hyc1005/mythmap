@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { browserDiagnostics } from './browser-diagnostics.mjs';
+import { browserDiagnostics, captureBrowserFailure } from './browser-diagnostics.mjs';
 import { mkdir, readFile } from 'node:fs/promises';
 import { chromium, webkit } from 'playwright';
 import { storySummary } from '../src/story-summaries.js';
@@ -222,7 +222,7 @@ try {
     await context.close();
   }
 
-  const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+  let page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
   const exportSource = await readFile(new URL('../src/map-export.js', import.meta.url), 'utf8');
   const requested = [];
   page.on('response', response => requested.push(new URL(response.url()).pathname));
@@ -277,13 +277,19 @@ try {
   await page.goto(`${base}?chapter=invalid&item=03-05&lang=en`);
   assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '00');
   assert.equal(await page.locator('.detail-drawer').count(), 0);
+  await page.close();
+  page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+  page.on('response', response => requested.push(new URL(response.url()).pathname));
+  page.on('pageerror', error => errors.push(error.message));
+  let blockedArtworkRequests = 0;
+  await page.route('**/beast-shengsheng.webp', route => { blockedArtworkRequests += 1; return route.abort(); });
   await page.goto(`${base}?chapter=03&lang=zh`);
   assert.equal(await page.getByRole('button', { name: '复制探索链接', exact: true }).count(), 0, 'Map sharing control is removed; URL restoration remains supported');
 
   await page.locator('.bestiary-toggle').click();
-  await page.route('**/beast-shengsheng.webp', route => route.abort());
   await page.locator('.beast-card[data-beast-id="beast-shengsheng"]').click();
   await page.locator('.detail-drawer .artwork-fallback').waitFor();
+  assert.ok(blockedArtworkRequests > 0, 'Image failure scenario blocks an actual uncached request');
   assert.ok(await page.locator('.detail-description').textContent(), 'Image failure keeps original text readable');
   await page.unroute('**/beast-shengsheng.webp');
   await page.getByRole('button', { name: '重试插画', exact: true }).click();
@@ -349,6 +355,9 @@ try {
   await historyPage.close();
   assert.deepEqual(errors, []);
   console.log(`PASS ${browserName}: painted reading seals, mouse/touch feedback, no copy action, 8 bilingual viewports, history/focus, reduced motion, image retry and PNG export.`);
+} catch (error) {
+  await captureBrowserFailure(browser, `exploration-${browserName}`, error);
+  throw error;
 } finally {
   await browser.close();
 }

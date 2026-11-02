@@ -45,6 +45,9 @@ export function browserDiagnostics(context, name) {
           url: location.href, readyState: document.readyState, historyItem: history.state?.shanhai?.item,
           drawer: [...document.querySelectorAll('.detail-drawer')].map(node => ({ id: node.dataset.entryId, restoring: node.dataset.readingRestoring })),
           images: [...document.images].map(image => ({ src: image.currentSrc || image.src, complete: image.complete, width: image.naturalWidth, height: image.naturalHeight })),
+          viewport: { width: innerWidth, height: innerHeight, scrollY, hidden: document.hidden },
+          controls: [...document.querySelectorAll('button')].filter(node => node.checkVisibility()).map(node => ({ text: node.textContent, label: node.getAttribute('aria-label') })),
+          surfaces: [...document.querySelectorAll('.myth-map-canvas, .myth-map-canvas canvas, .pangu-player-wrap, .story-animation, .artwork-fallback')].map(node => ({ className: node.className, status: node.dataset.status, box: node.getBoundingClientRect().toJSON(), display: getComputedStyle(node).display, visibility: getComputedStyle(node).visibility })),
           fonts: [...document.fonts].map(font => ({ family: font.family, status: font.status })),
           resources: performance.getEntriesByType('resource').map(resource => ({ url: resource.name, duration: resource.duration, transferSize: resource.transferSize })),
         }), undefined, { timeout: 5000 });
@@ -56,4 +59,11 @@ export function browserDiagnostics(context, name) {
     const report = { node: process.version, platform: process.platform, error: safeUrl(error.stack || error.message), pending: [...pending.values()], failures, events, pages: snapshots };
     await writeFile(resolve(directory, 'failure.json'), safeUrl(JSON.stringify(report, null, 2)) + '\n');
   };
+}
+
+export async function captureBrowserFailure(browser, name, error) {
+  for (const [index, context] of browser.contexts().entries()) {
+    try { await browserDiagnostics(context, `${name}-${index}`)(error); }
+    catch (captureError) { console.error('Failure diagnostics unavailable:', safeUrl(captureError.message)); }
+  }
 }

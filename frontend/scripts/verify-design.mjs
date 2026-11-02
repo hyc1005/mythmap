@@ -1,3 +1,4 @@
+import { captureBrowserFailure } from './browser-diagnostics.mjs';
 import { openMapTools } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { mkdir, readFile } from 'node:fs/promises';
@@ -186,6 +187,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     }), 'Reduced paper opacity retains opaque paper in PNG');
     assert.deepEqual(errors, []);
     console.log(`PASS ${name}: shared playback, fullscreen, camera, six art samples and PNG paper`);
+  } catch (error) {
+    await captureBrowserFailure(browser, `design-${name}`, error);
+    throw error;
   } finally { await browser.close(); }
 }
 

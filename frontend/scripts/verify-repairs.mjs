@@ -1,3 +1,4 @@
+import { captureBrowserFailure } from './browser-diagnostics.mjs';
 import assert from 'node:assert/strict';
 import { chromium, firefox, webkit } from 'playwright';
 
@@ -174,5 +175,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await retry.close();
     }
     console.log(`PASS: ${name} source links, modal scroll/focus, story location, language preservation, manual completion and tour pause.`);
+  } catch (error) {
+    await captureBrowserFailure(browser, `repairs-${name}`, error);
+    throw error;
   } finally { await browser.close(); }
 }
