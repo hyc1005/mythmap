@@ -88,7 +88,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await input(page).fill('九首');
     await dialog(page).locator('[data-result-id="beast-xiangliu"]').click();
     await page.locator('.drawer-art').evaluate(image => image.decode());
-    assert.ok((await page.locator('.drawer-art').getAttribute('src')).endsWith('/refined/xiangliu-nine-heads-v2-full.webp'));
+    assert.ok((await page.locator('.drawer-art').getAttribute('src')).endsWith('/refined/xiangliu-human-faces-v1-full.webp'));
     await page.locator('.drawer-close').click();
     await dialog(page).waitFor(); await page.keyboard.press('Escape');
     await page.getByRole('button', { name: 'EN', exact: true }).click();
