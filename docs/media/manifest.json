@@ -1,8 +1,8 @@
 {
   "captured_on": "2026-11-03",
   "source_commit": null,
-  "source_base_commit": "c1e2492f281834e5b01e0ccc80c0dff1ffd2aa6f",
-  "source_state": "User-approved phase5 content applied; before release commit; exact runtime LF hashes recorded",
+  "source_base_commit": "f10c67ab015c6596ceee30e362bb8b3ba99a7cd9",
+  "source_state": "Actual applied phase5/phase6 UI with prologue loading-layout correction; before final release commit; exact runtime LF hashes recorded",
   "base_path": "/mythmap/",
   "mock_tiles": false,
   "capture_viewport": [
@@ -17,8 +17,8 @@
   "assets": [
     {
       "path": "docs/media/home.webp",
-      "sha256": "915f976aa3d505ab9fd804b0074757ce4d191bc95f167263d09806c19a135d9d",
-      "bytes": 191714,
+      "sha256": "cf3f8c11ab5a645db2792dda1a1971f84485d61070f5f6622bd85a03ae8b942d",
+      "bytes": 191742,
       "dimensions": [
         1440,
         960
@@ -26,14 +26,14 @@
       "tool": "Playwright Chromium + Pillow WebP encoder",
       "model": "not applicable",
       "source": "actual local application screenshot",
-      "source_png_sha256": "6f7548f604b59082769635de9eb171d600e8196d04de0aec56815b515bf09c84",
+      "source_png_sha256": "933b23facccaed92b6db3d1c7ebeaab20883d2b28ee5b3afef68d21087853c8f",
       "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
       "attribution": "See ASSETS.md for embedded artwork and font provenance"
     },
     {
       "path": "docs/media/story-playback.webp",
-      "sha256": "4ef586effb1b57867f88130ea04060777f7c0bc56a4c41e02a7700efc329faf6",
-      "bytes": 145646,
+      "sha256": "1e6fe981d947db8650ca32fd2fc4fcf058fd40db688fd9c3885ff1bbf5953ab2",
+      "bytes": 144666,
       "dimensions": [
         1440,
         960
@@ -41,14 +41,14 @@
       "tool": "Playwright Chromium + Pillow WebP encoder",
       "model": "not applicable",
       "source": "actual local application screenshot",
-      "source_png_sha256": "6058cf8c0e885b27676636cc4d468e889dc7954871a5e89781b5efd5d4c75829",
+      "source_png_sha256": "dfe98a85c70b674902874c75cb41090dcaecc5f695cac21d0b1877efbc6483de",
       "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
       "attribution": "See ASSETS.md for embedded artwork and font provenance"
     },
     {
       "path": "docs/media/bestiary.webp",
-      "sha256": "6fef307ec7485330378db7b41fcd790b3c04bdd4df75e394f1548a37c6711d97",
-      "bytes": 147594,
+      "sha256": "584b793b56670c22c6337a6ed37d86c5da11fe3a4a7b9d72b26a40dfa3a08cca",
+      "bytes": 147092,
       "dimensions": [
         1440,
         960
@@ -56,7 +56,7 @@
       "tool": "Playwright Chromium + Pillow WebP encoder",
       "model": "not applicable",
       "source": "actual local application screenshot",
-      "source_png_sha256": "ecd888e8b86ac64d8f8acaddea5e0c966dc4a4cb6f9566c18e4649ba38c28621",
+      "source_png_sha256": "b3f2179b037c639cb8b07776c2048bcddca88af12bbd9da1926bd36e96fb61c1",
       "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
       "attribution": "See ASSETS.md for embedded artwork and font provenance"
     },
@@ -99,7 +99,7 @@
     "frontend/src/bestiary.js": "e3bd184b60ca5613b179763737e8ccd659825693fca212cef94df778aa6a08fe",
     "frontend/src/components/Bestiary.jsx": "b940183c342d4430f952b044c75d4846e0b51f30ae594310bcf2a9387361c3be",
     "frontend/src/components/DetailDrawer.jsx": "0b0b5ceb1545d1a773d06b15dad5c0164334c266b47ea8cc949acd290e0cfde7",
-    "frontend/src/styles/atlas-layout.css": "35bf98bedc34053f3ceea0199a33c1efae81041129acf253101f645955c5c131",
+    "frontend/src/styles/atlas-layout.css": "459c1922c7a490e9fa9fd69cd868652a81bef9aa93e4e26d5492fe3ac58bd371",
     "frontend/src/locale-en.json": "61307d1d1cc3923c8751dcaa5aef7394c6adf648999988d0deae2899ffd585b4",
     "frontend/src/components/GeographyMap.jsx": "663da328083d2cc50a0606624c3d6a5ea629d444083ede9e705863f096b3e202",
     "frontend/src/natural-earth-basemap.js": "3348cf23e953fc6fe6c14691d15d656d63b2e4906b91a2715198cf2abdfab49b"

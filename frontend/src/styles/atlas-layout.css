@@ -39,6 +39,7 @@ body { background: var(--paper); }
 .toolbar-share-status input { width: 100%; min-height: 44px; }
 .explore-playback { padding: 14px 16px; border-top: 1px solid var(--edge); background: var(--paper); }
 .explore-playback .playback-control-slot { display: block; overflow: visible; }
+.is-prologue .explore-playback .playback-control-slot { min-height: 58px; }
 .explore-playback .kuafu-journey { position: static; inset: auto; width: auto; max-width: none; margin: 0; padding: 0; border: 0; background: transparent; box-shadow: none; transform: none; color: var(--ink); }
 .explore-playback .journey-heading { display: flex; flex-wrap: wrap; gap: 8px 16px; }
 .explore-playback .journey-heading>span { white-space: normal; overflow: visible; font-size: 14px; color: var(--soft-ink); }

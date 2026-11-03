@@ -111,9 +111,25 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await motion.locator('.story-animation').getByRole('button', { name: '继续燧人取火', exact: true }).click();
     await motion.getByRole('button', { name: '暂停游历', exact: true }).waitFor();
     await motion.locator('.story-animation[data-status="playing"]').waitFor();
-    await motion.goto(`${base}?chapter=00&lang=zh`);
-    await motion.getByRole('button', { name: '开始游历', exact: true }).click();
+    let releasePrologue;
+    const prologueModule = new Promise(resolve => { releasePrologue = resolve; });
+    await motion.route('**/PanguOpening-*.js', async route => { await prologueModule; await route.continue(); });
+    await motion.goto(`${base}?chapter=00&lang=zh`, { waitUntil: 'domcontentloaded' });
+    await motion.locator('.pangu-loading-poster').waitFor();
+    await motion.evaluate(() => document.fonts.ready);
+    const begin = motion.getByRole('button', { name: '开始游历', exact: true });
+    const beforeLoad = await begin.boundingBox();
+    await motion.mouse.move(beforeLoad.x + beforeLoad.width / 2, beforeLoad.y + beforeLoad.height / 2);
+    await motion.mouse.down();
+    try {
+      releasePrologue();
+      await motion.getByRole('button', { name: '播放盘古序章', exact: true }).waitFor();
+      const afterLoad = await begin.boundingBox();
+      assert.ok(Math.abs(afterLoad.y - beforeLoad.y) <= 1, 'Loading the prologue controls must not move the pressed journey button');
+    } finally { releasePrologue(); await motion.mouse.up(); await motion.unroute('**/PanguOpening-*.js'); }
+    await motion.getByRole('button', { name: '暂停游历', exact: true }).waitFor();
     await motion.locator('.pangu-player-wrap[data-status="playing"]').waitFor();
+    await motion.waitForFunction(() => Number(document.querySelector('.pangu-composition')?.dataset.frame) > 0);
     await motion.getByRole('button', { name: '暂停盘古序章', exact: true }).click();
     await motion.getByRole('button', { name: '继续游历', exact: true }).waitFor();
     await motion.locator('.begin-journey').click();
