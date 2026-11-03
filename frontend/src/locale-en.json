@@ -968,5 +968,9 @@
   "正在加载本地底图…": "Loading the local basemap…",
   "本地自然地理底图加载失败；地点资料仍可查询。": "The local physical basemap could not be loaded; geographic references remain available.",
   "底图：Natural Earth；地点为传说或考证关联，不是历史事件定位证明。": "Basemap: Natural Earth; locations are traditional or scholarly associations, not proof of historical event locations.",
-  "Natural Earth · 自然地理资料": "Natural Earth · Physical geography"
+  "Natural Earth · 自然地理资料": "Natural Earth · Physical geography",
+  "阅读线索与来源": "Reading path and sources",
+  "主题与游历线索为项目编排，不表示精确年代。": "Themes and travel connections are editorial choices, not precise dates.",
+  "形貌依据": "Morphology evidence",
+  "查看影印来源 ↗": "View source facsimile ↗"
 }

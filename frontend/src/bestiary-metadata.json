@@ -2496,7 +2496,7 @@
       "basis": "text",
       "source_field": "quote",
       "evidence": "有神焉其状如黄囊赤如丹火六足四翼渾敦無靣目是識歌舞實惟帝江也",
-      "review_status": "unresolved"
+      "review_status": "reviewed"
     },
     "book_key": "西山经"
   },
@@ -4090,7 +4090,7 @@
     },
     "group_key": "嚣",
     "role": "beast",
-    "form_group": "other",
+    "form_group": "bird",
     "feature_tags": [
       "winged",
       "four_wings",
@@ -4862,7 +4862,7 @@
     },
     "group_key": "夸父状兽",
     "role": "beast",
-    "form_group": "other",
+    "form_group": "beast",
     "feature_tags": [],
     "classification": {
       "basis": "text",
@@ -7737,9 +7737,9 @@
     "form_group": "other",
     "feature_tags": [],
     "classification": {
-      "basis": "text",
-      "source_field": "quote",
-      "evidence": "尸水合天也",
+      "basis": "commentary",
+      "source_field": "commentary_quote",
+      "evidence": "天神",
       "review_status": "unresolved"
     },
     "book_key": "中山经"

@@ -1,0 +1,166 @@
+{
+  "00": {
+    "intro": {
+      "zh": "先从天地初分的想象进入山海；这里是故事的开端，也是一次由混沌走向可读世界的观看。",
+      "en": "Begin with the imagined separation of heaven and earth: an opening scene that turns chaos into a world to explore."
+    },
+    "source_note": {
+      "zh": "盘古开天据《三五历纪》佚文；本章为场景示意，原文未给可定位的发生点。",
+      "en": "Pangu follows surviving quotations of Sanwu Liji. This is a symbolic scene; the text gives no mappable event site."
+    },
+    "transition": {
+      "zh": "天地初分之后，下一章转向造人与补天。",
+      "en": "After the opening of heaven and earth, the next chapter turns to human creation and the repair of the sky."
+    },
+    "event_ids": [
+      "01-01"
+    ]
+  },
+  "01": {
+    "intro": {
+      "zh": "造人与补天并置，串起生民的出现与灾难中的修复；四幕补天可以逐段读，也可以随画面展开。",
+      "en": "Human creation and the repair of the sky bring life and recovery into one chapter. Read the four repair scenes separately or follow their animation."
+    },
+    "source_note": {
+      "zh": "造人据《风俗通义》相关记述；补天四幕据《淮南子·览冥训》。两者按主题并置。",
+      "en": "Human creation follows Fengsu Tongyi; the four repair scenes follow Huainanzi, Lanming Xun. Their grouping is thematic."
+    },
+    "transition": {
+      "zh": "由天地的修复，转向日常生计中的观象、火种与居处。",
+      "en": "From repairing the world, move to observing patterns, using fire and finding shelter."
+    },
+    "event_ids": [
+      "01-02",
+      "01-03",
+      "01-04",
+      "01-03-a",
+      "01-03-b",
+      "01-03-c",
+      "01-03-d"
+    ]
+  },
+  "02": {
+    "intro": {
+      "zh": "观象、尝草、取火与构木，呈现不同典籍对生活技艺的讲述；沿故事入口阅读，不把并置当作发明年表。",
+      "en": "Patterns, plants, fire and shelter bring together accounts of everyday skills. Follow their entries without treating the grouping as a dated history of inventions."
+    },
+    "source_note": {
+      "zh": "主线分别据《周易》《淮南子》《韩非子》；档案条目另列出处，不与主线合成同一文献。",
+      "en": "The main stories draw on Zhouyi, Huainanzi and Han Feizi. Archive entries retain their own sources."
+    },
+    "transition": {
+      "zh": "从生计技艺，转向部族叙事与四方山海。",
+      "en": "From everyday skills, turn to tribal narratives and the landscapes of the four directions."
+    },
+    "event_ids": [
+      "02-01",
+      "02-02",
+      "02-03",
+      "02-04",
+      "02-05"
+    ]
+  },
+  "03": {
+    "intro": {
+      "zh": "阪泉、涿鹿与刑天、精卫、夸父并读，视线从部族传说走向山川中的行动；各条依自己的出处展开。",
+      "en": "Read Banquan and Zhuolu alongside Xingtian, Jingwei and Kuafu, moving from tribal narratives to action in the landscape. Each entry keeps its own source."
+    },
+    "source_note": {
+      "zh": "战事条目据《史记》；刑天、精卫、夸父各据所列《山海经》篇目。并置不等于可核定的同时代事件。",
+      "en": "The battle entries follow Shiji; Xingtian, Jingwei and Kuafu follow their cited Shanhaijing chapters. Grouping them does not establish contemporaneity."
+    },
+    "transition": {
+      "zh": "由山海中的追逐与抗争，转向日月、洪水和传位。",
+      "en": "From pursuit and struggle in the landscape, turn to the sun, moon, floods and succession."
+    },
+    "event_ids": [
+      "03-01",
+      "03-02",
+      "03-03",
+      "03-04",
+      "03-05"
+    ]
+  },
+  "04": {
+    "intro": {
+      "zh": "日月运行、洪水灾变与帝位传承在此相遇；先分辨每条故事的讲法，再沿主题进入治水篇章。",
+      "en": "Celestial movement, floods and succession meet here. Read each account on its own terms before following the theme into flood control."
+    },
+    "source_note": {
+      "zh": "共工、羿与嫦娥据《淮南子》；鲧条据《山海经》，尧舜条据《论语》。不合成单一年代链。",
+      "en": "Gonggong, Yi and Change follow Huainanzi; Gun follows Shanhaijing, and Yao and Shun follow Lunyu. These sources do not form one dated sequence."
+    },
+    "transition": {
+      "zh": "洪水的主题延续到下一章的水道与治水。",
+      "en": "The flood theme continues into the next chapter on waterways and flood control."
+    },
+    "event_ids": [
+      "04-01",
+      "04-02",
+      "04-03",
+      "04-04",
+      "04-05"
+    ]
+  },
+  "05": {
+    "intro": {
+      "zh": "治水、水道与禹夏家族故事交织；在山川记述与人物经历之间来回阅读，辨认不同文献的连接处。",
+      "en": "Flood control, waterways and Yu-Xia family stories intertwine. Move between landscapes and lives while keeping their different textual sources visible."
+    },
+    "source_note": {
+      "zh": "治水与婚姻条分别据《尚书》篇目；相柳据《海外北经》；启母条为《汉书》注所引佚文。",
+      "en": "Flood control and marriage follow cited Shangshu chapters; Xiangliu follows Haiwai Bei Jing. Qimu follows a surviving quotation in Hanshu commentary."
+    },
+    "transition": {
+      "zh": "由禹夏故事，转向夏商之际的继承与兴替。",
+      "en": "From Yu-Xia stories, turn to succession and changing rule around the Xia-Shang transition."
+    },
+    "event_ids": [
+      "05-01",
+      "05-02",
+      "05-03",
+      "05-04"
+    ]
+  },
+  "06": {
+    "intro": {
+      "zh": "后羿、寒浞、少康与伊尹、成汤分见不同记述；本章围绕继承与兴替串读，保留条目之间的文献距离。",
+      "en": "Houyi, Hanzhuo, Shaokang, Yiyin and Chengtang appear in different accounts. Read around succession and changing rule while preserving the distance between sources."
+    },
+    "source_note": {
+      "zh": "有穷与少康相关条据《左传》；伊尹据《吕氏春秋》，成汤据《史记》。图中连贯不替代出处。",
+      "en": "Youqiong and Shaokang entries follow Zuozhuan; Yiyin follows Lushi Chunqiu, and Chengtang follows Shiji. Visual continuity does not replace their sources."
+    },
+    "transition": {
+      "zh": "最后一章把视线转向西行旅途与沿途相遇。",
+      "en": "The final chapter turns westward, following a journey and its encounters."
+    },
+    "event_ids": [
+      "06-01",
+      "06-02",
+      "06-03",
+      "06-04",
+      "06-05"
+    ]
+  },
+  "07": {
+    "intro": {
+      "zh": "随西行次序，读昆仑之宫、西王母相见与瑶池宴；旅程在山海之间展开，也以各段记述为边界。",
+      "en": "Follow the westward sequence through the Kunlun palace, the meeting with Xiwangmu and the Yaochi feast. The journey remains bounded by its individual accounts."
+    },
+    "source_note": {
+      "zh": "主线据《穆天子传》卷二、卷三；与《山海经》的对应仅在条目已有依据处呈现。",
+      "en": "The main journey follows volumes two and three of Mu Tianzi Zhuan. Links to Shanhaijing follow only the evidence already recorded in the entries."
+    },
+    "transition": {
+      "zh": "行至此处，可回看任一章，或沿条目出处继续读山海。",
+      "en": "Return to any chapter, or follow the entry sources to continue reading the landscapes."
+    },
+    "event_ids": [
+      "07-03",
+      "07-01",
+      "07-02",
+      "07-04"
+    ]
+  }
+}

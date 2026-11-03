@@ -5,7 +5,7 @@ import { iconFor } from '../artwork';
 import ArtworkImage from './ArtworkImage';
 import BlurRevealText from './BlurRevealText';
 import { ReadingMarks } from '../reading';
-import { BESTIARY_INITIAL, BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, bestiaryEntries, filterBestiary, groupBestiary } from '../bestiary';
+import { BESTIARY_INITIAL, BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, bestiaryEntries, filterBestiary, groupBestiary, morphologyReview } from '../bestiary';
 
 const emptyFilters = { role: 'beast', query: '', book: '', form: '', feature: '', reading: '' };
 
@@ -53,12 +53,14 @@ export default function Bestiary({ world, onOpen, reading }) {
   const counted = (count, zh, en) => `${count} ${locale === 'en' ? `${en}${count === 1 ? '' : 's'}` : zh}`;
   const count = (field, value) => filterBestiary(entries, { ...filters, [field]: value }, reading).length;
   const books = [...new Map(entries.filter(item => item.role === filters.role).map(item => [item.bookKey, item.region])).entries()];
-  const card = entry => <button type="button" className="beast-card" data-beast-id={entry.id} data-form-group={entry.formGroup} key={entry.id} onClick={event => onOpen(entry.id, event.currentTarget, ids)}>
+  const card = entry => {
+    const review = morphologyReview(entry.id, locale);
+    return <button type="button" className="beast-card" data-beast-id={entry.id} data-form-group={entry.formGroup} key={entry.id} onClick={event => onOpen(entry.id, event.currentTarget, ids)}>
     <BeastArtwork key={entry.id} src={iconFor(entry, 'card')} seen={seenIllustrations.current} reduced={reduced} />
     <b>{entry.displayName}</b><small className="beast-provenance">{entry.provenance}</small>
-    <span className="beast-tags"><span>{FORM_LABELS[entry.formGroup][locale]}</span>{entry.featureTags.map(tag => <span key={tag}>{FEATURE_LABELS[tag][locale]}</span>)}{entry.classification.basis !== 'text' && <span>{t(entry.classification.basis === 'comparison' ? '比较记述' : '郭注记述')}</span>}{entry.classification.review_status === 'unresolved' && <span>{t('形貌待核')}</span>}</span>
+    <span className="beast-tags"><span>{FORM_LABELS[entry.formGroup][locale]}</span>{entry.featureTags.map(tag => <span key={tag}>{FEATURE_LABELS[tag][locale]}</span>)}{entry.classification.basis !== 'text' && <span>{t(entry.classification.basis === 'comparison' ? '比较记述' : '郭注记述')}</span>}{review ? <span data-morphology-status={review.status}>{review.label}</span> : entry.classification.review_status === 'unresolved' && <span>{t('形貌待核')}</span>}</span>
     <ReadingMarks reading={reading} id={entry.id} /><span className="beast-card-more">{t('查看形貌与出处 ↗')}</span>
-  </button>;
+  </button>; };
   return <section className="best-page" id="creatures">
     <div className="best-page-heading"><h2><BlurRevealText text={t('山海经异兽谱')} revealKey={`bestiary:title:${locale}`} /></h2><p><BlurRevealText text={t('按原文形貌整理；同名组仅作索引，各条出处独立。')} revealKey={`bestiary:intro:${locale}`} variant="intro" /></p></div>
     <div className="bestiary-roles" role="group" aria-label={t('异兽谱类型')}>

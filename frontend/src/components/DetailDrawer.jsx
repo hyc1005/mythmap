@@ -1,3 +1,4 @@
+import { morphologyReview } from '../bestiary';
 import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { useLocale, localize } from '../i18n';
 import rawCatalog from '../../public/data/atlas/catalog.json';
@@ -136,6 +137,7 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
   };
   const readingPosition = () => ({ id: selected.id, chapter: readingChapter, position: capturePosition(drawer.current) });
   const visibleRelated = relatedItems.filter(item => item.id !== contextPlace?.id && !placeContents.some(entry => entry.id === item.id));
+  const morphology = morphologyReview(selected.id, locale);
   const descriptionTitle = { place: '此地记述', plant: '草木记述', water: '水域记述', material: '物产记述', passage: '白话整理', animal: '动物记载', valley: '谷地记述', wind: '风的记述', deity: '山神记述', rite: '祭礼记述' }[selected.kind] || '形态介绍';
   const keepFocusInDrawer = event => {
     if (event.key !== 'Tab') return;
@@ -162,6 +164,10 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
       </nav>}
       {selected.kind === 'story' && storySummary(selected.id, locale) && <section className="story-summary" data-reading-anchor="summary" aria-label={t('故事梗概')}><h3><BlurRevealText text={t('故事梗概')} revealKey={`detail:${selected.id}:summary:${locale}`} variant="section" rootRef={drawer} /></h3><p>{storySummary(selected.id, locale)}</p><small>{t('项目整理 · 依据下列引文转述，非古籍原文。')}</small></section>}
       {selected.kind !== 'story' && selected.description && <><h3 data-reading-anchor="description"><BlurRevealText text={t(descriptionTitle)} revealKey={`detail:${selected.id}:description:${locale}`} variant="section" rootRef={drawer} /></h3><p className="detail-description">{selected.description}</p></>}
+      {morphology && <details className="morphology-review" key={`morphology:${selected.id}`} data-morphology-status={morphology.status}>
+        <summary>{t('形貌依据')} · {morphology.label}</summary><p>{morphology.note}</p><blockquote lang="zh-CN">{morphology.evidence}</blockquote>
+        <div className="morphology-sources">{morphology.source_urls.map((url, index) => <a key={url} href={url} target="_blank" rel="noopener noreferrer">{t('查看影印来源 ↗')} {index + 1}</a>)}</div>
+      </details>}
       {contextPlace && parentEntry?.id !== contextPlace.id && <button type="button" className="detail-context-place" data-related-id={contextPlace.id} onClick={() => onRelated(contextPlace.id, readingPosition())}>{t('查看关联地点')} · {contextPlace.name}</button>}
       {(selected.quote || selected.kind === 'story') && <><h3 data-reading-anchor="quote">{t('原文')}</h3><blockquote>{selected.quote || selected.raw?.properties.source_quote || selected.description}</blockquote></>}
       {selected.reveal_chapter && <p className="detail-chapter">{t('第')}{selected.reveal_chapter}{t('章起可见（非诞生年代）')}</p>}

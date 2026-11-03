@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { chromium, webkit } from 'playwright';
-import { BESTIARY_INITIAL, BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, bestiaryEntries, filterBestiary, groupBestiary, bestiaryNamesakes } from '../src/bestiary.js';
+import { BESTIARY_INITIAL, BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, bestiaryEntries, filterBestiary, groupBestiary, bestiaryNamesakes, morphologyReview } from '../src/bestiary.js';
 import { searchIndex, searchEntries } from '../src/search.js';
 
 const read = async path => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
@@ -30,6 +30,35 @@ for (const item of entries) {
 }
 assert.deepEqual(world, original, 'Presentation and classification never rewrite source data');
 const byId = new Map(entries.map(item => [item.id, item]));
+const reviews = await read('../src/bestiary-morphology-review.json');
+const chapterReading = await read('../src/chapter-reading.json');
+assert.equal(Object.keys(reviews).length, 46);
+const passageById = new Map(world.passages.map(item => [item.id, item]));
+const continuous = text => text.replace(/〔影印页[^〕]*〕/g, '').replace(/\s/g, '');
+for (const [id, review] of Object.entries(reviews)) {
+  assert.ok(byId.has(id));
+  assert.deepEqual(review.source_passage_ids, byId.get(id).source_passage_ids);
+  const passages = review.source_passage_ids.map(id => passageById.get(id));
+  const field = review.basis === 'text' ? 'quote' : 'commentary_quote';
+  const text = continuous(passages.map(p => p[field] || '').join(''));
+  for (const excerpt of review.evidence.split(/[；;]/)) assert.ok(text.includes(continuous(excerpt)), `${id}: evidence occurs in its own text layer`);
+  assert.ok(review.source_urls.length && review.source_urls.every(url => passages.some(p => p.source_pages.includes(url))));
+  for (const lang of ['zh', 'en']) assert.ok(morphologyReview(id, lang).label && morphologyReview(id, lang).note);
+}
+assert.equal(byId.get('beast-beishan-xiao-liangqu').formGroup, 'bird');
+assert.equal(byId.get('beast-dongshan-kuafu-like-chai').formGroup, 'beast');
+assert.equal(byId.get('beast-dijiang').classification.review_status, 'reviewed');
+assert.equal(byId.get('deity-zhongshan-tian-shi-range5').classification.basis, 'commentary');
+assert.equal(Object.values(metadata).filter(item => item.classification.review_status === 'unresolved').length, 45);
+assert.deepEqual(Object.keys(chapterReading), world.stages.map(stage => stage.id));
+for (const [id, guide] of Object.entries(chapterReading)) {
+  assert.deepEqual(guide.event_ids, catalog.events.filter(event => event.properties.stage_id === id).map(event => event.id));
+  for (const field of ['intro', 'source_note', 'transition']) {
+    assert.ok(guide[field].zh && guide[field].en);
+    assert.ok(!/[\u3400-\u9fff]/u.test(guide[field].en));
+  }
+}
+
 for (const [id, form] of [
   ['beast-zhongshan-mingshe-xian', 'serpent'], ['beast-wenyaoyu', 'fish'], ['beast-qinyuan', 'insect'],
   ['beast-zhongshan-wenwen-fanggao', 'insect'], ['beast-zhongshan-huashe-yang', 'beast'],

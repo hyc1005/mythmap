@@ -1,3 +1,4 @@
+import morphologyReviews from './bestiary-morphology-review.json' with { type: 'json' };
 import metadata from './bestiary-metadata.json' with { type: 'json' };
 
 export const BESTIARY_INITIAL = 12;
@@ -65,4 +66,15 @@ export function bestiaryNamesakes(world, id, locale = 'zh') {
   const selected = metadata[id];
   if (!selected) return [];
   return bestiaryEntries(world, locale).filter(entry => entry.role === selected.role && entry.groupKey === selected.group_key);
+}
+
+const reviewLabels = {
+  described: ['形貌有据', 'Form described'], partial: ['比拟未详', 'Comparison unclear'], ambiguous: ['物名有异说', 'Name disputed'],
+  commentary: ['郭注另述', 'Commentary account'], collective: ['集体称谓', 'Collective designation'],
+  name_only: ['仅列名称', 'Name only'], not_recorded: ['本段未记形貌', 'Form unstated here'],
+  transformation: ['仅记变化', 'Transformation only'], comparison: ['比较引文未记形貌', 'Form unstated in comparison'],
+};
+export function morphologyReview(id, locale = 'zh') {
+  const review = morphologyReviews[id];
+  return review ? { ...review, label: reviewLabels[review.status][locale === 'en' ? 1 : 0], note: review.note[locale] } : null;
 }

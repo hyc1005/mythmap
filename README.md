@@ -22,13 +22,14 @@ A bilingual atlas for exploring Chinese myths, discovering creatures and reading
 | ![Story playback: Suiren making fire with playback controls](docs/media/story-playback.webp) | ![Bestiary: illustrated cards with book and body-form filters](docs/media/bestiary.webp) |
 | Follow a story, pause or replay, and open its textual sources. | Filter by name, book or body form; namesakes retain separate accounts. |
 | **Geographic evidence** | **12-second walkthrough** |
-| ![Geographic evidence: real basemap and documented associations](docs/media/geographic-evidence.webp) | ![Walkthrough: story playback, bestiary and search](docs/media/tour.gif) |
-| Inspect modern place references separately from narrative diagrams. | Recorded from the actual interface, showing playback and creature search. |
+| ![Geographic evidence: real basemap and documented associations](docs/media/geographic-evidence.webp) | ![Walkthrough: story playback, chapter guidance and morphology evidence](docs/media/tour.gif) |
+| Inspect modern place references separately from narrative diagrams. | Recorded from the actual interface, showing playback, chapter source notes and morphology evidence. |
 
 ## Current scope
 
 - **480 reading passages**: Southern 43, Western 82, Northern 92, Eastern 51 and Central 212. Completing the remaining thirteen books is deferred; see the [content inventory](docs/content-coverage.md) for scope and review status.
 - **312 creature accounts and 72 deity accounts**: namesake groups, six body-form categories and combined book, feature and reading filters, with 12 cards initially and up to 24 more per click; same-name accounts are selected in the detail view.
+- **Reading guidance and morphology evidence**: chapter introductions, source notes and connections; main text, commentary and comparison accounts remain distinct, with missing or uncertain forms stated explicitly.
 - **Chinese and English**: story playback, source reading, search, favorites and reading-position recovery. The prologue and seven chapters are the project's narrative arrangement.
 
 ## Sources and licensing

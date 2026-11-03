@@ -321,3 +321,15 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
   .is-map-fullscreen .fullscreen-toolbar { padding-top: 6px; padding-bottom: 6px; row-gap: 4px; }
   .is-map-fullscreen .fullscreen-dock:has(.map-reading-actions) { height: 168px; padding-top: 6px; padding-bottom: 6px; gap: 4px; }
 }
+
+.chapter-reading { width: 100%; margin: 12px 0; color: var(--soft-ink); font-size: 14px; line-height: 1.7; }
+.chapter-reading p { margin: 8px 0; }
+.chapter-reading summary, .morphology-review summary { cursor: pointer; padding: 10px 0; min-height: 44px; box-sizing: border-box; }
+.chapter-reading small { display: block; margin-top: 8px; }
+.chapter-transition { color: var(--ink); }
+.morphology-review { border-block: 1px solid var(--edge); margin: 16px 0; font-size: 14px; line-height: 1.7; }
+.morphology-sources { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; }
+@media (max-width: 768px) { .chapter-reading { margin: 12px 0 0; } }
+
+
+.morphology-sources a { color: var(--water); text-underline-offset: 3px; }

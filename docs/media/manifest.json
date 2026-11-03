@@ -1,7 +1,8 @@
 {
-  "captured_on": "2026-10-29",
-  "source_commit": "73b8157bf1172e2934af8a094c238d0a2f25689a",
-  "source_state": "clean tracked working tree; captures before proposed README/footer changes",
+  "captured_on": "2026-11-03",
+  "source_commit": null,
+  "source_base_commit": "c1e2492f281834e5b01e0ccc80c0dff1ffd2aa6f",
+  "source_state": "User-approved phase5 content applied; before release commit; exact runtime LF hashes recorded",
   "base_path": "/mythmap/",
   "mock_tiles": false,
   "capture_viewport": [
@@ -16,8 +17,8 @@
   "assets": [
     {
       "path": "docs/media/home.webp",
-      "sha256": "058e0965e56140dd6c67f67c4689d73205944fb074fb0c8cd4315c80f5d3112a",
-      "bytes": 186458,
+      "sha256": "915f976aa3d505ab9fd804b0074757ce4d191bc95f167263d09806c19a135d9d",
+      "bytes": 191714,
       "dimensions": [
         1440,
         960
@@ -25,14 +26,14 @@
       "tool": "Playwright Chromium + Pillow WebP encoder",
       "model": "not applicable",
       "source": "actual local application screenshot",
-      "source_png_sha256": "e2b9a20950b41d6f09ec905fe5d73b366a99b3fb79c5b6017d113302aca4a01a",
+      "source_png_sha256": "6f7548f604b59082769635de9eb171d600e8196d04de0aec56815b515bf09c84",
       "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
       "attribution": "See ASSETS.md for embedded artwork and font provenance"
     },
     {
       "path": "docs/media/story-playback.webp",
-      "sha256": "0b104c5683bff7a51b652a9cdc09a2b9ced8d5587275c63b26a6c5dae6e6669d",
-      "bytes": 140138,
+      "sha256": "4ef586effb1b57867f88130ea04060777f7c0bc56a4c41e02a7700efc329faf6",
+      "bytes": 145646,
       "dimensions": [
         1440,
         960
@@ -40,14 +41,14 @@
       "tool": "Playwright Chromium + Pillow WebP encoder",
       "model": "not applicable",
       "source": "actual local application screenshot",
-      "source_png_sha256": "0bcb9f5ea9429970380bc87f6ae3727e4546af1915102d294f3b3a87584fd4e7",
+      "source_png_sha256": "6058cf8c0e885b27676636cc4d468e889dc7954871a5e89781b5efd5d4c75829",
       "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
       "attribution": "See ASSETS.md for embedded artwork and font provenance"
     },
     {
       "path": "docs/media/bestiary.webp",
-      "sha256": "43d1357130812a3343460c0b271ff65d6cea7116b9083d4298dc96f058334f2f",
-      "bytes": 122432,
+      "sha256": "6fef307ec7485330378db7b41fcd790b3c04bdd4df75e394f1548a37c6711d97",
+      "bytes": 147594,
       "dimensions": [
         1440,
         960
@@ -55,14 +56,14 @@
       "tool": "Playwright Chromium + Pillow WebP encoder",
       "model": "not applicable",
       "source": "actual local application screenshot",
-      "source_png_sha256": "47960310c270bba52fe290b9f2ef50d9eb1c9516bdd448850152eec9db2e1fe7",
+      "source_png_sha256": "ecd888e8b86ac64d8f8acaddea5e0c966dc4a4cb6f9566c18e4649ba38c28621",
       "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
       "attribution": "See ASSETS.md for embedded artwork and font provenance"
     },
     {
       "path": "docs/media/geographic-evidence.webp",
-      "sha256": "1f44f4a4e47adc74df551bca6c9d40dad23315c62b7452c4aff53a65107fc4fa",
-      "bytes": 86746,
+      "sha256": "166d95569b2122dd720255afa3c06392e8828a31d1c98cef877b42d241888921",
+      "bytes": 78918,
       "dimensions": [
         1440,
         960
@@ -70,35 +71,37 @@
       "tool": "Playwright Chromium + Pillow WebP encoder",
       "model": "not applicable",
       "source": "actual local application screenshot",
-      "source_png_sha256": "7800f94003a749d0c81f0ffe06b631a761f8ef436785c6e6ac52840e04318d26",
+      "source_png_sha256": "a5321a6306226760ea2a56cd4b2d5c23cb2012fdc53b33b93029bd156f16ec1c",
       "license_status": "Composite UI screenshot; code MIT, embedded artwork and third-party content retain their own conditions; no additional asset reuse permission",
-      "attribution": "Natural Earth attribution and modern-reference / antique-rendering note remain visible; composite UI assets retain their own conditions",
-      "captured_on": "2026-11-02",
-      "source_commit": null,
-      "source_base_commit": "772350f8049806a507b1428b099780ebe5dd0a7b",
-      "source_state": "Isolated phase4 candidate before application; exact runtime source LF hashes below",
-      "runtime_sha256_lf": {
-        "frontend/src/components/GeographyMap.jsx": "663da328083d2cc50a0606624c3d6a5ea629d444083ede9e705863f096b3e202",
-        "frontend/src/natural-earth-basemap.js": "3348cf23e953fc6fe6c14691d15d656d63b2e4906b91a2715198cf2abdfab49b",
-        "frontend/src/geography-map-config.js": "0ca1412ddbb003fe54613faa97d4bdfa360f13b14f451f7217cc5230b6387b34",
-        "frontend/src/styles/geography.css": "6296518cab3c46d9e79b34064817b0c6e77c8eaa361e9ba7d49c0196c387e31e",
-        "frontend/src/locale-en.json": "c7e32718c5541808cf1e6c3c003f06ac2d9ad86ac670a60aa7432a6cd733d2e0"
-      }
+      "attribution": "Natural Earth attribution and modern-reference / antique-rendering note remain visible; embedded assets retain their own conditions"
     },
     {
       "path": "docs/media/tour.gif",
-      "sha256": "e2cb9554356961ff1b6c547bf3f6c494d3fb5c6c4575d92f5bdb8fb5a063516f",
-      "bytes": 1866594,
+      "sha256": "88da09b60c15625564f2c1497a6a6d7becf7abce35ae6d816ec8860a435c06e6",
+      "bytes": 1409884,
       "dimensions": [
         480,
         320
       ],
-      "frames": 41,
+      "frames": 26,
       "duration_ms": 12000,
       "tool": "Playwright Chromium controlled-clock screenshots + Pillow GIF encoder",
       "model": "not applicable",
-      "source": "actual local application: six seconds Suiren playback, six seconds bestiary and search; no mock tiles",
+      "source": "actual local application: four seconds Suiren playback, four seconds chapter sources, four seconds morphology evidence; no mocked content",
       "license_status": "Composite UI recording; code MIT, embedded artwork and fonts retain their own conditions; no additional asset reuse permission"
     }
-  ]
+  ],
+  "runtime_sha256_lf": {
+    "frontend/src/App.jsx": "ec9d76580ad364c4d0b3c5df80f9089cfcd74630890d1eaa705219743ceb1210",
+    "frontend/src/chapter-reading.json": "e496c5cbe771c866a665d399d6ab06c483e2a5a17469dde743eb605a64fccc98",
+    "frontend/src/bestiary-morphology-review.json": "fc5a3a436227ec663ff82d45404b9e4c723361f9f7521eefd4d90f76ce736bab",
+    "frontend/src/bestiary-metadata.json": "58026fdfce669c3381cb98353625124611dc35eb8257407d7646c278c159ab0c",
+    "frontend/src/bestiary.js": "e3bd184b60ca5613b179763737e8ccd659825693fca212cef94df778aa6a08fe",
+    "frontend/src/components/Bestiary.jsx": "b940183c342d4430f952b044c75d4846e0b51f30ae594310bcf2a9387361c3be",
+    "frontend/src/components/DetailDrawer.jsx": "0b0b5ceb1545d1a773d06b15dad5c0164334c266b47ea8cc949acd290e0cfde7",
+    "frontend/src/styles/atlas-layout.css": "35bf98bedc34053f3ceea0199a33c1efae81041129acf253101f645955c5c131",
+    "frontend/src/locale-en.json": "61307d1d1cc3923c8751dcaa5aef7394c6adf648999988d0deae2899ffd585b4",
+    "frontend/src/components/GeographyMap.jsx": "663da328083d2cc50a0606624c3d6a5ea629d444083ede9e705863f096b3e202",
+    "frontend/src/natural-earth-basemap.js": "3348cf23e953fc6fe6c14691d15d656d63b2e4906b91a2715198cf2abdfab49b"
+  }
 }
