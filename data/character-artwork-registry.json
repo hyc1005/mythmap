@@ -2986,14 +2986,12 @@
       {
         "published_asset": "/data/atlas/myth-icons/xishan/creature-renyu-zhushan-v1.webp",
         "sha256": "c18c3af7b4db386bf491545252dcf7b8bcce894530ca9dd2969a7e6406e0c691",
-        "entry_ids": [
-          "beast-xishan-renyu-zhushan"
-        ],
-        "occurrences": 1,
+        "entry_ids": [],
+        "occurrences": 0,
         "frames": [],
-        "review": "binding_and_identity",
+        "review": "superseded_binding_retained_for_history",
         "verdict": "证据不足",
-        "conclusion": "相同文件的重复入口或动作帧不另算原画；未发现可确认的角色错绑。单一出场不能证明跨场连续性。",
+        "conclusion": "竹山入口已采用共用人鱼图式，此旧图保留用于版本追溯。",
         "source_forms": "各条目与典籍独立；同名索引、变形及正文/注文不合并",
         "unidentified_figures": "背景与群像未具名人物不补造身份"
       },
@@ -4214,13 +4212,14 @@
         "published_asset": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp",
         "sha256": "fbc9df1fda770c14104c21d961eaf138a48b3a730b32c69b295a9382ebf2f808",
         "entry_ids": [
-          "beast-beishan-renyu-longhou"
+          "beast-beishan-renyu-longhou",
+          "beast-xishan-renyu-zhushan"
         ],
-        "occurrences": 1,
+        "occurrences": 2,
         "frames": [],
         "review": "binding_and_identity",
-        "verdict": "证据不足",
-        "conclusion": "相同文件的重复入口或动作帧不另算原画；未发现可确认的角色错绑。单一出场不能证明跨场连续性。",
+        "verdict": "一致",
+        "conclusion": "竹山郭注与龍侯正文均以䱱鱼、四足作比拟；共用图式，条目和文本层分列。",
         "source_forms": "各条目与典籍独立；同名索引、变形及正文/注文不合并",
         "unidentified_figures": "背景与群像未具名人物不补造身份"
       },
@@ -7727,7 +7726,15 @@
         "presence": "depicted_in_story_context",
         "evidence": "女娲杀黑龙插画右侧的龙形角色，按该故事登记。"
       }
-    ]
+    ],
+    "binding_recheck": {
+      "date": "2026-11-05",
+      "scope": "两处人鱼共用现有龍侯图式；旧竹山文件留档，当前入口数为0。其余审计范围及历史审核日期不变。",
+      "entry_ids": [
+        "beast-xishan-renyu-zhushan",
+        "beast-beishan-renyu-longhou"
+      ]
+    }
   },
   "world_character_artwork": {
     "reviewed_on": "2026-11-05",
@@ -8026,7 +8033,7 @@
         "name": "人鱼（竹山段）",
         "group": "bestiary",
         "status": "configured_illustration",
-        "published_asset": "/data/atlas/myth-icons/xishan/creature-renyu-zhushan-v1.webp"
+        "published_asset": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp"
       },
       {
         "entry_id": "beast-xishan-haozhi-zhushan",
@@ -10376,6 +10383,18 @@
         "person_id": "person-72ccefbb6b75",
         "type": "commentary_story_parallel",
         "evidence": "泰室郭注与 05-04 同叙化石生启，分存原注和故事入口。"
+      },
+      {
+        "entry_ids": [
+          "beast-xishan-renyu-zhushan",
+          "beast-beishan-renyu-longhou"
+        ],
+        "type": "shared_portrait",
+        "evidence": "竹山郭注「如䱱魚四脚」；龍侯正文「其状如䱱魚四足」。共享视觉方案，不作同一个体的判断。",
+        "source_urls": [
+          "https://zh.wikisource.org/w/index.php?title=Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/39&oldid=1117434",
+          "https://zh.wikisource.org/w/index.php?title=Page:Sibu_Congkan0465-郭璞-山海經-2-1.djvu/93&oldid=1117491"
+        ]
       }
     ],
     "summary": {
@@ -10484,8 +10503,9 @@
           "beast-xishan-renyu-zhushan",
           "beast-beishan-renyu-longhou"
         ],
-        "status": "art_direction_difference",
-        "difference": "竹山图偏青绿圆头，龙侯山图偏深蓝带长须，两图都采用四足水生结构。竹山四足来自郭注，龙侯山四足见正文；未确认是同一角色。"
+        "status": "shared_visual_form_text_layers_preserved",
+        "difference": "竹山郭注与龍侯正文均记䱱鱼、四足比拟，两入口复用龍侯图式。配色和须为艺术细节，各自出处与注释层仍独立。",
+        "reviewed_on": "2026-11-05"
       },
       {
         "name": "燧人",

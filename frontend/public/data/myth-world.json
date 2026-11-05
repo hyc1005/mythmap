@@ -1901,7 +1901,7 @@
       "id": "beast-xishan-renyu-zhushan",
       "kind": "鱼",
       "name": "人鱼（竹山段）",
-      "description": "竹山经文在水文中列人鱼，没有写人面、人身或鱼尾人形。郭注另说“如䱱鱼四脚”，配图据此采用四足水生形体；不把郭注混为正文，也不合并其他篇段的同名人鱼。",
+      "description": "竹山正文在水文中列人鱼，郭注另说“如䱱鱼四脚”。龍侯段正文同样以䱱鱼和四足比拟人鱼，两处采用同一四足水生图式；颜色、须和姿态属于艺术解释。正文与郭注、两处条目及其出处分别保留。",
       "quote": "其中多水玉多人魚",
       "commentary_quote": "如䱱魚四脚",
       "source_passage_ids": [
@@ -1913,7 +1913,7 @@
       "context_place_id": "place-xishan-zhushan",
       "relation_scope": "water",
       "artwork": "xishan/creature-renyu-zhushan-v1.webp",
-      "artwork_caption": "原文形貌与木刻演绎 · 刻纹、配色和姿态为艺术解释。"
+      "artwork_caption": "共用四足水生图式 · 竹山形貌据郭注，龍侯形貌见正文；配色、须与姿态为艺术解释。"
     },
     {
       "source": "《山海经·西山经》（《四部丛刊》景明成化本，郭璞传）",

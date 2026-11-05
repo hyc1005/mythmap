@@ -202,6 +202,48 @@ def build():
     review['limits'] = '212阶段全部接入，剩余0；形貌不足、异说与数字差异明确保留。页面验收以本地逐阶段交接为准。快照及原始捕获不改。'
     for stage in review['stage_plan'][:212]:
         stage.update(content_status='facsimile_reviewed', browser_status='see local handoff acceptance', passage_id='passage-zhongshan-' + stage['slug'], new_cards=sum(c['content_batch'] == 'zhongshan-' + stage['slug'] for c in cards))
+    reviewed_english = {
+        "deity-zhongshan-xunchi-aoan": {
+            "description": "Xunchi is named as the deity dwelling at Aoan, where fine jade is regularly produced. A separate ritual passage names Xunchi with Taifeng and Wuluo. Neither passage describes Xunchi’s appearance.",
+            "quote": "The deity Xunchi dwells here, and fine jade is regularly produced here. In a separate ritual passage, Taifeng, Xunchi and Wuluo each receive an offering of one ram with a fu rite."
+        },
+        "deity-zhongshan-yufu-qingyao": {
+            "description": "The passage identifies Shanzhu as the place where Yu’s father transformed, while leaving the resulting form unspecified. Guo Pu’s separate comparison with Gun’s transformation at Yuyuan remains in the commentary."
+        },
+        "deity-zhongshan-shou-god-range5": {
+            "description": "The ritual passage invokes the spirit of Mount Shou but gives no description of its appearance."
+        },
+        "deity-zhongshan-tian-shi-range5": {
+            "description": "This is a ritual phrase, shi shui he tian ye. Guo Pu’s gloss supplies the designation “heavenly spirits” but gives no bodily description."
+        },
+        "deity-zhongshan-ditai": {
+            "description": "The passage associates Ditai with gaming pieces and a feast for the gods. Guo Pu identifies Ditai as a divine figure. These activities supply no description of Ditai’s appearance.",
+            "quote": "Ditai’s gaming pieces; the place where Ditai gave drink to the many gods."
+        },
+        "deity-zhongshan-allgods-range7": {
+            "quote": "Prayers are offered to the many gods; this is the place where Ditai gave them drink."
+        },
+        "deity-zhongshan-nvshi-guyao": {
+            "description": "The Di’s daughter, named Nüshi, dies and becomes yaocao. The text records this transformation but leaves her earlier bodily appearance unspecified."
+        },
+        "deity-zhongshan-tianyu-du": {
+            "description": "The passage names Tianyu as the resident deity and mentions unusual winds and rain. It gives no description of the deity’s body."
+        },
+        "beast-zhongshan-ti-shaoshi": {
+            "description": "The passage compares ti fish with an uncertain creature and mentions long spurs and paired white feet. Guo Pu leaves parts of this wording unexplained. The illustration uses a placeholder, and the food and protection claims remain attributed to the ancient text."
+        },
+        "deity-zhongshan-qimu-taishi": {
+            "description": "Guo Pu cites the story of Qimu turning to stone and giving birth to Qi at this mountain. This commentary account leaves her earlier bodily appearance unspecified."
+        },
+        "deity-zhongshan-two-daughters-dongting12": {
+            "description": "The main text places the Di’s two daughters here and associates their movements with river pools, whirling winds and heavy rain. It gives no description of their bodies. Guo Pu’s cited identity traditions are recorded separately."
+        },
+        "deity-zhongshan-yao-daughters-comparison-dongting12": {
+            "description": "The Hetu Yuban, as quoted by Guo Pu, identifies Xiang Furen as a daughter of Emperor Yao. This is a cited identity tradition. Guo Pu’s subsequent distinction between Xiang Jun and Xiang Furen remains separate."
+        }
+    }
+    for id, fields in reviewed_english.items():
+        english[id].update(fields)
     write('frontend/public/data/myth-world.json', world); write('frontend/src/locale-content-en.json', english); write('data/zhongshan-edition-review.json', review)
     print(f'Built Central: {len(passages)} passages, {len(cards)} cards; 0 stages remain')
 

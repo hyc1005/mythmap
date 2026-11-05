@@ -147,7 +147,7 @@ xuanyuan|material|dansu|丹粟（洵水段）|Dansu (Xun)|其中多丹粟|丹粟
 xuanyuan|material|xionghuang|青雄黄（洵水段）|Qing xionghuang (Xun)|多靑雄黄|本段青雄黄与丹粟并记，不拆青字造新物。|Qing xionghuang is recorded alongside dansu, without splitting qing into another substance.
 jishi|place|gate|石門（積石段）|Stone gate (Jishi)|其下有石門河水冐以西流|石门在山下，河水冐以西流；冐猶覆为注。|The stone gate lies below Jishi; the He passes beneath a covering and flows west.
 jishi|water|he|河水（積石段）|He (Jishi)|河水冐以西流|河水在本段记西流，不与崑崙南流东注统一改向。|The He flows west here, without overwriting Kunlun’s separately stated directions.
-changliu|deity?|shaohao|白帝少昊|White Emperor Shaohao|其神白帝少昊居之|少昊居長留，正文无形貌，不与員神磈氏强合身份。|Shaohao dwells at Changliu; no form is given and identity with Weishi is not asserted.
+changliu|deity?|shaohao|白帝少昊|White Emperor Shaohao|其神白帝少昊居之|少昊居長留，正文无形貌，不与員神磈氏强合身份。|The passage names Baidi Shaohao as the deity dwelling at Mount Changliu and gives no bodily description. Weishi is recorded separately in the same passage.
 changliu|beast?|beasts|文尾兽（長留段）|Pattern-tailed beasts|其獸皆文尾|只记兽皆文尾，未具名，不穷举物种或补肢角。|An unnamed collective whose tails are patterned, without individually specified species or limbs.
 changliu|bird?|birds|文首鸟（長留段）|Pattern-headed birds|其鳥皆文首|只记鸟皆文首，未具名，不借他山鸟形。|An unnamed collective with patterned heads, without borrowing forms from other mountains.
 changliu|material|jade|文玉石|Patterned jade and stone|是多文玉石|文玉石照录，文或作长仅郭注。|Patterned jade and stone are abundant; long is a commentary variant of patterned.
@@ -324,6 +324,8 @@ def entity_translation(slug, key, name, text):
         ('kunlun','wuda'): 'The He flows south and then east into Wuda.',
         ('kunlun','fantian'): 'The Chi flows southeast into Fantian’s water.',
         ('kunlun','dayu'): 'The Hei flows west to Dayu.',
+        ('changliu','shaohao'): 'The deity Baidi Shaohao dwells there.',
+        ('changliu','weishi'): 'This is the palace of the deity Weishi, who oversees the returning light.',
         ('changliu','beasts'): 'Its beasts all have patterned tails.',
         ('changliu','birds'): 'Its birds all have patterned heads.',
         ('sanwei','chi'): 'A bird has one head and three bodies, resembles luo and is named Chi.',

@@ -2837,9 +2837,9 @@
     "direction": "Read the textual sequence and directions; these are not modern coordinates or measured distances.",
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "Renyu (Zhu passage)",
-    "description": "The main text names Renyu in its water account without a human face or torso. Four feet and a comparison with ti fish come from Guo Pu’s separate commentary, guiding a four-limbed aquatic illustration rather than a mermaid or a merger with namesakes elsewhere.",
+    "description": "The Zhu passage names Renyu in its account of the waters. Guo Pu describes it as resembling a ti fish with four feet. The Longhou passage uses the same comparison in its main text, so the two entries share a four-limbed aquatic illustration. Colors, barbels and pose are artistic choices. Each entry retains its own text and commentary.",
     "quote": "Water jade and Renyu are abundant in this water account.",
-    "artwork_caption": "Textual form, woodcut interpretation · Carved patterns, colors and pose are artistic choices."
+    "artwork_caption": "Shared four-limbed aquatic design · Zhu follows Guo Pu’s commentary; Longhou states the form in its main text. Colors, barbels and pose are artistic choices."
   },
   "beast-xishan-haozhi-zhushan": {
     "source": "Shanhaijing · Xishan Jing (Sibu Congkan facsimile; Guo Pu commentary)",
@@ -6817,8 +6817,8 @@
     "direction": "Read the textual sequence and directions; these are not modern coordinates or measured distances.",
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "White Emperor Shaohao",
-    "description": "Shaohao dwells at Changliu; no form is given and identity with Weishi is not asserted.",
-    "quote": "Shaohao dwells at Changliu.",
+    "description": "The passage names Baidi Shaohao as the deity dwelling at Mount Changliu and gives no bodily description. Weishi is recorded separately in the same passage.",
+    "quote": "The deity Baidi Shaohao dwells there.",
     "artwork_caption": "Appearance unspecified · The gray question-mark silhouette is a shared placeholder, not a depiction of this creature."
   },
   "beast-xishan-beasts-changliu": {
@@ -6865,7 +6865,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "Yuan deity Weishi",
     "description": "Weishi oversees returning light; no bodily form or round body is inferred from the wording.",
-    "quote": "Weishi oversees returning light.",
+    "quote": "This is the palace of the deity Weishi, who oversees the returning light.",
     "artwork_caption": "Appearance unspecified · The gray question-mark silhouette is a shared placeholder, not a depiction of this creature."
   },
   "passage-xishan-zhange": {
@@ -9813,7 +9813,7 @@
     "editorial_note": "Text, captured transcription and commentary are separate; explanations and English are editorial. Eating, healing and omen claims are ancient accounts.",
     "name": "He (Northern Mountains)",
     "description": "The He separately receives the west-flowing Qiao, Xiao, Yi, Yu and Ci in five passages. Dunhong separately records an ancient source claim at Kunlun’s northeastern corner. These accounts remain separate, without a merger with the Western He or modern confluences. Range two separately adds the west-flowing Fen. Three third-range passages separately add the east-flowing Juejue, south-flowing Liu and west-flowing Jiao, followed by south-flowing Gao and Dan. This passage adds a separately sourced confluence. This passage adds a separately sourced confluence. This passage adds a separately sourced confluence. This passage adds a separately sourced confluence. Xiu separately adds the east-flowing Wei. Song separately adds the northeast-flowing Yang. This passage separately records its eastward confluence into the He. This passage separately records its eastward confluence into the He. This passage separately records its eastward confluence into the He. This passage separately records its eastward confluence into the He. This passage separately records its eastward confluence into the He. This passage separately records its eastward confluence into the He. This passage separately records its eastward confluence into the He.",
-    "quote": "The Qiao flows west into the He; separately, the Xiao flows west into the He; the Yi flows west into the He; the Yu flows west into the He; and the Ci flows west into the He; separately, the Dunhong passage describes Kunlun’s northeastern corner as a source of the He; separately, the Fen rises at Guancen and flows west into the He. Separately, the Juejue flows east into the He; the Liu flows south into the He; the Jiao flows west into the He; the Gao and Dan separately flow south into the He. Separately, the Zaolin flows southeast into the He. Separately, the Qin flows south into the He. Separately, the Qi flows south into the He. Separately, the Zhang flows east into the He. Separately, the Danlin flows south into the He. Separately, the Wei rises at Xiu and flows east into the He. Separately, the Yang rises at Song and flows northeast into the He. Separately, The Kou rises here and flows east into the He. Separately, The Tan rises here and flows east into the He. Separately, The Ban rises here and flows east into the He. Separately, The Yan rises here and flows east into the He. Separately, The Liguo rises here and flows east into the He. Separately, The Lun rises here and flows east into the He. Separately, The Sheng rises here and flows east into the He.",
+    "quote": "The Qiao flows west into the He; separately, the Xiao flows west into the He; the Yi flows west into the He; the Yu flows west into the He; and the Ci flows west into the He; separately, the Dunhong passage describes Kunlun’s northeastern corner as a source of the He; separately, the Fen rises at Guancen and flows west into the He. Separately, the Juejue flows east into the He; the Liu flows south into the He; the Jiao flows west into the He; the Gao and Dan separately flow south into the He. Separately, the Zaolin flows southeast into the He. Separately, the Qin flows south into the He. Separately, the Qi flows south into the He. Separately, the Zhang flows east into the He. Separately, the Danlin flows south into the He. Separately, the Wei rises at Xiu and flows east into the He. Separately, the Yang rises at Song and flows northeast into the He. Separately, the Kou rises here and flows east into the He. Separately, the Tan rises here and flows east into the He. Separately, the Ban rises here and flows east into the He. Separately, the Yan rises here and flows east into the He. Separately, the Liguo rises here and flows east into the He. Separately, the Lun rises here and flows east into the He. Separately, the Sheng rises here and flows east into the He.",
     "commentary_quote": "",
     "content_note": "Semicolons separate source and confluence excerpts. Qin and Danlin are separately recorded in the same Yeli passage, not a continuous quotation or modern course."
   },
@@ -12208,7 +12208,7 @@
     "direction": "Read the Northern textual sequence and directions; these are not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary are separate; explanations and English are editorial. Eating, healing and omen claims are ancient accounts.",
     "name": "Xiao (Liangqu bird)",
-    "description": "Xiao has four wings, one eye and a dog tail, but the Kuafu/Jufu comparison is unresolved, so no borrowed ape or bird torso is illustrated. Eating claims remain ancient.",
+    "description": "The text identifies Xiao as a bird with four wings, one eye and a dog-like tail. Its comparison with Kuafu, for which the commentary records the variant Jufu, remains uncertain. The illustration therefore retains a placeholder. The stated effects of eating it belong to the ancient account.",
     "quote": "Xiao resembles Kuafu with four wings, one eye and a dog tail, sounds like a magpie and is said to relieve abdominal pain and dong.",
     "commentary_quote": "Guo Pu gives a Jufu variant for the comparison and glosses dong as bowel discharge.",
     "artwork_caption": "Appearance unspecified or evidence insufficient; the shared question-mark placeholder is not a depiction."
@@ -12757,9 +12757,9 @@
     "direction": "Read the Northern textual sequence and directions; these are not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary are separate; explanations and English are editorial. Eating, healing and omen claims are ancient accounts.",
     "name": "Renyu (Longhou)",
-    "description": "Renyu is ti-shaped with four feet; Guo Pu compares catfish. No human torso or external gills are added. Color, short barbels and pose are artistic; chi is not a modern diagnosis.",
-    "quote": "Renyu resembles ti fish with four feet and an infant-like cry; eating it is said to prevent chi illness.",
-    "commentary_quote": "Guo Pu compares ni to catfish with four feet and an infant-like cry; the note continues across two units.",
+    "description": "The main text describes Renyu as resembling a ti fish with four feet and an infant-like cry. Guo Pu records an identification with ni and compares its form with a four-footed catfish. Colors, barbels and pose are artistic choices. The illness term chi is retained without assigning a modern diagnosis.",
+    "quote": "There are many Renyu, resembling ti fish with four feet and a cry like an infant. Eating them is said to prevent chi illness.",
+    "commentary_quote": "Guo Pu refers to the ti fish in the Central Mountains and records the view that Renyu is ni, resembling a catfish with four feet and an infant-like cry. He adds that catfish were also called ti in his time.",
     "artwork_caption": "Textual form in woodcut interpretation; carving, colors and pose are artistic, with commentary-based form identified separately."
   },
   "passage-beishan-macheng": {
@@ -14004,7 +14004,7 @@
     "editorial_note": "Text, captured transcription and commentary are separate; explanations and English are editorial. Eating, healing and omen claims are ancient accounts.",
     "name": "Huchi / Hutuo (Northern textual index)",
     "description": "Taitou writes Huchi, while Baima, Kongsang and Taixi write Hutuo. Guo Pu gives hu-tuo pronunciation and says it also applies below. Four separately sourced flow accounts share one textual name index, without a modern course. This passage separately records a Hutuo confluence. This passage separately records a Hutuo confluence. Shi separately records east-flowing Huohuo and south-flowing Xianyu; Gaoshi adds the south-flowing Zi.",
-    "quote": "The Gong flows south into Huchi. Separately, the Muma rises at Baima and flows northeast into Hutuo. Separately, Kongsang water rises here and flows east into Hutuo. Separately, Hutuo rises at Taixi and flows east into Lou water. Separately, The Huohuo rises here and flows east into Hutuo. Separately, The Zi rises here and flows south into Hutuo. Separately, the Xianyu rises at Shi and flows south into Hutuo.",
+    "quote": "The Gong flows south into Huchi. Separately, the Muma rises at Baima and flows northeast into Hutuo. Separately, Kongsang water rises here and flows east into Hutuo. Separately, Hutuo rises at Taixi and flows east into Lou water. Separately, the Huohuo rises here and flows east into Hutuo. Separately, the Zi rises here and flows south into Hutuo. Separately, the Xianyu rises at Shi and flows south into Hutuo.",
     "commentary_quote": "Guo Pu gives the shared hu-tuo pronunciation at Taitou and an ancient Hutuo source account at Taixi.",
     "content_note": "Both textual spellings and all passage contexts remain separate. The pronunciation gloss supports a textual index, not replacement spelling or a modern river identification."
   },
@@ -16421,7 +16421,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. Explanations and English are editorial; eating, healing and omen claims are ancient accounts.",
     "name": "Shi water (Eastern textual index)",
     "description": "This Shi textual index preserves Suzhu and Beihao source accounts, the Hu confluence at Lei and the northward reference at Kongsang, without settling modern geographic identity.",
-    "quote": "The Shi rises here and flows northeast into the sea. Separately, the Hu flows east into the Shi. Separately, Kongsang faces Shi water to the north. Separately, The Shi rises at Beihao and flows northeast into the sea.",
+    "quote": "The Shi rises here and flows northeast into the sea. Separately, the Hu flows east into the Shi. Separately, Kongsang faces Shi water to the north. Separately, the Shi rises at Beihao and flows northeast into the sea.",
     "commentary_quote": "",
     "content_note": "Semicolons separate excerpts from different passages; the shared textual index does not settle modern geographic identity."
   },
@@ -16434,7 +16434,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. Explanations and English are editorial; eating, healing and omen claims are ancient accounts.",
     "name": "Sea (Eastern water textual index)",
     "description": "This shared recipient index preserves separate accounts at Suzhu, Fantiao, Guer, Beihao and Dongshi, without merging the Northern Sea or specifying a modern coastline.",
-    "quote": "It flows northeast into the sea. Separately, the Jian flows north into the sea. Separately, the Guer flows north into the sea. Separately, The Shi at Beihao flows northeast into the sea. Separately, The Ci flows northeast into the sea.",
+    "quote": "It flows northeast into the sea. Separately, the Jian flows north into the sea. Separately, the Guer flows north into the sea. Separately, the Shi at Beihao flows northeast into the sea. Separately, the Ci flows northeast into the sea.",
     "commentary_quote": "",
     "content_note": "Semicolons separate excerpts from different passages; the shared textual index does not settle modern geographic identity."
   },
@@ -19894,7 +19894,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "He (Central textual index)",
     "description": "Separate recipient accounts retain their directions, source sides and textual provenance, without settling modern river identity.",
-    "quote": "Gong water flows west into the He. Separately, Quzhu water flows south into the He. Separately, Zhen water flows north into the He. Separately, Zhenghui water flows north into the He. Separately, Yongyong water flows north into the He. Separately, The nine waters unite and flow north into the He. Separately, Yu water rises on the shaded side and flows north into the He. Separately, Huangsuan water rises here and flows north into the He. Separately, Tuo water rises here and flows north into the He. Separately, Jiao water rises here and flows northeast into the He. Separately, Zai water rises here and flows north into the He. Separately, Hu water rises here and flows north into the He. Separately, Men water rises here and flows northeast into the He. Separately, Si water rises here and flows north into the He. Separately, Service-character Yi water flows north into the He.",
+    "quote": "Gong water flows west into the He. Separately, Quzhu water flows south into the He. Separately, Zhen water flows north into the He. Separately, Zhenghui water flows north into the He. Separately, Yongyong water flows north into the He. Separately, the nine waters unite and flow north into the He. Separately, Yu water rises on the shaded side and flows north into the He. Separately, Huangsuan water rises here and flows north into the He. Separately, Tuo water rises here and flows north into the He. Separately, Jiao water rises here and flows northeast into the He. Separately, Zai water rises here and flows north into the He. Separately, Hu water rises here and flows north into the He. Separately, Men water rises here and flows northeast into the He. Separately, Si water rises here and flows north into the He. Separately, Service-character Yi water flows north into the He.",
     "commentary_quote": ""
   },
   "plant-zhongshan-niu-gancao": {
@@ -20885,7 +20885,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Yi (Central textual index)",
     "description": "The Yi contexts remain separate from service-character Yi water and the Yongyong namesakes, without modern river identification.",
-    "quote": "Jiyu water flows west into the Yi. Separately, Xian water flows north into the Yi. Separately, Yang water flows north into the Yi. Separately, Jian water flows north into the Yi. Separately, The Yi rises at Manqu and flows east into the Luo. Separately, Yongyong water rises here and flows south into the Yi. Separately, Ming water rises here and flows south into the Yi. Separately, Kuang water rises on the sunny side and flows southwest into the Yi. Separately, Laixu water rises on the sunny side and flows west into the Yi.",
+    "quote": "Jiyu water flows west into the Yi. Separately, Xian water flows north into the Yi. Separately, Yang water flows north into the Yi. Separately, Jian water flows north into the Yi. Separately, the Yi rises at Manqu and flows east into the Luo. Separately, Yongyong water rises here and flows south into the Yi. Separately, Ming water rises here and flows south into the Yi. Separately, Kuang water rises on the sunny side and flows southwest into the Yi. Separately, Laixu water rises on the sunny side and flows west into the Yi.",
     "commentary_quote": ""
   },
   "passage-zhongshan-r02-hao": {
@@ -21441,8 +21441,8 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Xunchi (Ao-an)",
-    "description": "Xunchi dwells here and fine jade is regularly produced. The form is not independently established; the placeholder does not identify a modern species.",
-    "quote": "Xunchi dwells here and fine jade is regularly produced. Separately, The summary associates Taifeng, Xunchi and Wuluo with one ram and a fu rite.",
+    "description": "Xunchi is named as the deity dwelling at Aoan, where fine jade is regularly produced. A separate ritual passage names Xunchi with Taifeng and Wuluo. Neither passage describes Xunchi’s appearance.",
+    "quote": "The deity Xunchi dwells here, and fine jade is regularly produced here. In a separate ritual passage, Taifeng, Xunchi and Wuluo each receive an offering of one ram with a fu rite.",
     "commentary_quote": "",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
@@ -21551,7 +21551,7 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Yu’s father (Shanzhu transformation account)",
-    "description": "This is where Yu’s father transformed. The form is not independently established; the placeholder does not identify a modern species.",
+    "description": "The passage identifies Shanzhu as the place where Yu’s father transformed, while leaving the resulting form unspecified. Guo Pu’s separate comparison with Gun’s transformation at Yuyuan remains in the commentary.",
     "quote": "This is where Yu’s father transformed.",
     "commentary_quote": "Guo Pu compares Gun’s Yellow Bear transformation at Yuyuan with this account and discusses transformations; it is not an independent anatomy statement for Shanzhu.",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
@@ -21604,7 +21604,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Wuluo (Qingyao)",
     "description": "Wuluo has a human face, leopard markings, a slim waist, white teeth and pierced ears with ju ornaments and sounds like ringing jade. Human torso and limbs, sex styling, clothing and simple loop ornaments are artistic; no leopard head, tiger tail or halo is added.",
-    "quote": "Wuluo has a human face, leopard markings, a slim waist, white teeth and pierced ears with ju ornaments and sounds like ringing jade. Separately, The summary associates Taifeng, Xunchi and Wuluo with one ram and a fu rite.",
+    "quote": "Wuluo has a human face, leopard markings, a slim waist, white teeth and pierced ears with ju ornaments and sounds like ringing jade. Separately, the summary associates Taifeng, Xunchi and Wuluo with one ram and a fu rite.",
     "commentary_quote": "Guo Pu identifies the deity name, records a head variant, leaves the ju object uncertain and compares the sound to jade pendants; the sound gloss continues into unit 80.",
     "artwork_caption": "Textual or commentary-based form in woodcut interpretation; unspecified details, colors and pose are artistic."
   },
@@ -21871,7 +21871,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Taifeng (He)",
     "description": "Taifeng is human-shaped with a tiger tail, favors the sunny side of Fu mountain, shines and moves the airs of heaven and earth. Human age, clothing and pose are artistic; the commentary bird-tail alternative is not added to the tiger tail.",
-    "quote": "Taifeng is human-shaped with a tiger tail, favors the sunny side of Fu mountain, shines and moves the airs of heaven and earth. Separately, The summary associates Taifeng, Xunchi and Wuluo with one ram and a fu rite.",
+    "quote": "Taifeng is human-shaped with a tiger tail, favors the sunny side of Fu mountain, shines and moves the airs of heaven and earth. Separately, the summary associates Taifeng, Xunchi and Wuluo with one ram and a fu rite.",
     "commentary_quote": "Guo Pu glosses ji as good, records a bird-tail alternative and describes divine airs; the Kongjia narrative continues across 94–95.",
     "artwork_caption": "Textual or commentary-based form in woodcut interpretation; unspecified details, colors and pose are artistic."
   },
@@ -23647,8 +23647,8 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Shou deity (fifth-range rite)",
-    "description": "Shou is described as divine. The independent form is not established here; no anatomy is borrowed from other accounts.",
-    "quote": "Shou is described as divine.",
+    "description": "The ritual passage invokes the spirit of Mount Shou but gives no description of its appearance.",
+    "quote": "The spirit of Mount Shou.",
     "commentary_quote": "",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
@@ -23672,9 +23672,9 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Heavenly deity (Shi-water commentary)",
-    "description": "Shi water is associated with heaven. The independent form is not established here; no anatomy is borrowed from other accounts.",
-    "quote": "Shi water is associated with heaven.",
-    "commentary_quote": "The heavenly-deity gloss continues across 161–162; no independent anatomy is supplied.",
+    "description": "This is a ritual phrase, shi shui he tian ye. Guo Pu’s gloss supplies the designation “heavenly spirits” but gives no bodily description.",
+    "quote": "Shi shui he tian ye [ritual wording retained in transliteration].",
+    "commentary_quote": "Guo Pu glosses tian as “heavenly spirits”; the following words continue the explanation across the source lines.",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
   "rite-zhongshan-shi-rite-range5": {
@@ -25173,8 +25173,8 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Ditai (seventh-range textual index)",
-    "description": "Ditai is named in the stone account. Insufficient independent form evidence; the placeholder is not a depiction.",
-    "quote": "Ditai is named in the stone account. Separately, Ditai gives drink to many gods here.",
+    "description": "The passage associates Ditai with gaming pieces and a feast for the gods. Guo Pu identifies Ditai as a divine figure. These activities supply no description of Ditai’s appearance.",
+    "quote": "Ditai’s gaming pieces; the place where Ditai gave drink to the many gods.",
     "commentary_quote": "Guo Pu identifies Ditai as a divine person and explains qi; no independent anatomy is supplied.",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
@@ -25187,7 +25187,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Many gods (Ditai ritual collective)",
     "description": "Many gods are invoked. Insufficient independent form evidence; the placeholder is not a depiction.",
-    "quote": "Many gods are invoked. Separately, Many gods are guests in the banquet account.",
+    "quote": "Prayers are offered to the many gods; this is the place where Ditai gave them drink.",
     "commentary_quote": "",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
@@ -25319,8 +25319,8 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Nüshi (Guyao)",
-    "description": "The emperor’s daughter Nüshi dies and transforms into yaocao. Insufficient independent form evidence; the placeholder is not a depiction.",
-    "quote": "The emperor’s daughter Nüshi dies and transforms into yaocao.",
+    "description": "The Di’s daughter, named Nüshi, dies and becomes yaocao. The text records this transformation but leaves her earlier bodily appearance unspecified.",
+    "quote": "The Di’s daughter died there. Her name was Nüshi, and she became yaocao.",
     "commentary_quote": "",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
@@ -25429,7 +25429,7 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Tianyu (Du)",
-    "description": "Tianyu dwells here, with unusual winds and rain. Insufficient independent form evidence; the placeholder is not a depiction.",
+    "description": "The passage names Tianyu as the resident deity and mentions unusual winds and rain. It gives no description of the deity’s body.",
     "quote": "Tianyu dwells here, with unusual winds and rain.",
     "commentary_quote": "",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
@@ -25783,8 +25783,8 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Ti fish (Shaoshi)",
-    "description": "Ti fish are compared with an uncertain form, have long spurs and paired white feet, and have ancient claims. Insufficient independent form evidence; the placeholder is not a depiction.",
-    "quote": "Ti fish are compared with an uncertain form, have long spurs and paired white feet, and have ancient claims.",
+    "description": "The passage compares ti fish with an uncertain creature and mentions long spurs and paired white feet. Guo Pu leaves parts of this wording unexplained. The illustration uses a placeholder, and the food and protection claims remain attributed to the ancient text.",
+    "quote": "There are many ti fish. They resemble an uncertain creature, have long spurs and paired white feet. Eating them is said to prevent gu afflictions and ward off weapons.",
     "commentary_quote": "Guo Pu leaves the comparison and paired-foot wording uncertain, with a pronunciation gloss.",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
@@ -25856,7 +25856,7 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Qimu (Taishi commentary)",
-    "description": "The commentary cites Qimu becoming stone and giving birth to Qi here. Insufficient independent form evidence; the placeholder is not a depiction.",
+    "description": "Guo Pu cites the story of Qimu turning to stone and giving birth to Qi at this mountain. This commentary account leaves her earlier bodily appearance unspecified.",
     "quote": "The commentary cites Qimu becoming stone and giving birth to Qi here.",
     "commentary_quote": "",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
@@ -28290,7 +28290,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Yumu (Mount Shi (eighth range))",
     "description": "Yumu is abundant; its name continues across two units.",
-    "quote": "Yumu is abundant; its name continues across two units.",
+    "quote": "Yumu is abundant.",
     "commentary_quote": ""
   },
   "passage-zhongshan-r08-ruo": {
@@ -36479,8 +36479,8 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Two daughters of the Di (Dongting main text)",
-    "description": "Two daughters of the Di dwell here and frequent the Jiang pool, with Li-Yuan winds connecting the Xiaoxiang pool among the Nine Jiang and whirling wind and torrential rain. Insufficient independent complete form evidence; the placeholder supplies no invented portrait.",
-    "quote": "Two daughters of the Di dwell here and frequent the Jiang pool, with Li-Yuan winds connecting the Xiaoxiang pool among the Nine Jiang and whirling wind and torrential rain.",
+    "description": "The main text places the Di’s two daughters here and associates their movements with river pools, whirling winds and heavy rain. It gives no description of their bodies. Guo Pu’s cited identity traditions are recorded separately.",
+    "quote": "The Di’s two daughters dwell here and often roam in the river pools. The text links the winds of the Li and Yuan with the pools of the Xiao and Xiang, among the Nine Jiang. Whirling winds and heavy rain accompany their comings and goings.",
     "commentary_quote": "Guo Pu first describes two daughters of the Heavenly Di as Jiang deities, referring to the Jiangfei account. His subsequent quoted traditions and criticism are kept separate.",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
@@ -36540,8 +36540,8 @@
     "direction": "Read the Central textual sequence and ancient directions, not modern coordinates or measured distances.",
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Yao-daughter claim (quoted Hetu tradition)",
-    "description": "A cited Hetu Yuban account identifies Xiang Furen as daughters of Emperor Yao. Insufficient independent complete form evidence; the placeholder supplies no invented portrait.",
-    "quote": "A cited Hetu Yuban account identifies Xiang Furen as daughters of Emperor Yao.",
+    "description": "The Hetu Yuban, as quoted by Guo Pu, identifies Xiang Furen as a daughter of Emperor Yao. This is a cited identity tradition. Guo Pu’s subsequent distinction between Xiang Jun and Xiang Furen remains separate.",
+    "quote": "The Hetu Yuban says, “Xiang Furen is a daughter of Emperor Yao.”",
     "commentary_quote": "Guo Pu subsequently distinguishes Xiang Jun and Xiang Furen as two deities. The cited claim is not silently adopted as his conclusion.",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },

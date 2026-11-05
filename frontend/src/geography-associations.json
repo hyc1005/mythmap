@@ -152,7 +152,7 @@
         "historical_verification": "not_established",
         "analysis_eligible": false,
         "basis_note": "长治市政府的发鸠山介绍记述当地与精卫神话的联系。沿用长子县代表坐标，不把县域点当作发鸠山山顶或填海位置。",
-        "basis_note_en": "Changzhi government describes Mount Fajiu in Changzi in connection with Jingwei. The county reference coordinate is retained; it is neither the mountain summit nor a sea-filling location.",
+        "basis_note_en": "Changzhi government describes Mount Fajiu in Zhangzi in connection with Jingwei. The county reference coordinate is retained; it is neither the mountain summit nor a sea-filling location.",
         "coordinate_source": "https://nominatim.openstreetmap.org/search?q=%E9%95%BF%E5%AD%90%E5%8E%BF&format=jsonv2&limit=1&countrycodes=cn",
         "evidence_status": "source_checked",
         "evidence": [
@@ -226,7 +226,7 @@
           "summary": "寺庄镇政府将镇西北部的发鸠山列为承载精卫传说的地方文化资源。",
           "summary_en": "Sizhuang government identifies Mount Fajiu northwest of the township as a local cultural resource associated with the Jingwei tradition.",
           "limits": "该资料说明当地存在传承关联，没有讲述完整异文；不能仅因山名相同就断定与长子所指为同一山体或故事版本。",
-          "limits_en": "This documents an association, not a full variant. A shared mountain name alone does not establish the same physical mountain or narrative as Changzi’s account.",
+          "limits_en": "This documents an association, not a full variant. A shared mountain name alone does not establish the same physical mountain or narrative as Zhangzi’s account.",
           "source_urls": [
             "https://xxgk.sxgp.gov.cn/xzjd/gpszz/fdzdgknr/gzdt/202501/t20250116_2088297.shtml"
           ]

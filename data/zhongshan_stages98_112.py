@@ -192,7 +192,7 @@ def entities(E):
     s='r08-shi'
     products(s,[('gold','金','Gold','其上多金','Gold is abundant above.'),
                 ('qinghu','青䨼','Qinghu','其下多青䨼','Qinghu is abundant below.')])
-    product(s,'yumu','寓木','Yumu','多寓木','Yumu is abundant; its name continues across two units.','plant')
+    product(s,'yumu','寓木','Yumu','多寓木','Yumu is abundant.','plant')
     s='r08-ruo'
     product(s,'tufu-jade','㻬琈之玉','Tufu jade','其上多㻬琈之玉','Tufu jade is abundant above.')
     product(s,'ochre','赭','Ochre','多赭','Ochre is abundant.',commentary='赤土',en_commentary='Guo Pu glosses red earth.')

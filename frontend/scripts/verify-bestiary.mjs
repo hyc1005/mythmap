@@ -50,6 +50,23 @@ assert.equal(byId.get('beast-dongshan-kuafu-like-chai').formGroup, 'beast');
 assert.equal(byId.get('beast-dijiang').classification.review_status, 'reviewed');
 assert.equal(byId.get('deity-zhongshan-tian-shi-range5').classification.basis, 'commentary');
 assert.equal(Object.values(metadata).filter(item => item.classification.review_status === 'unresolved').length, 45);
+const rechecked = Object.entries(reviews).filter(([, review]) => review.recheck);
+assert.equal(rechecked.length, 45);
+for (const [id, review] of rechecked) {
+  assert.equal(metadata[id].classification.review_status, 'unresolved');
+  assert.equal(review.recheck.certainty, review.status);
+  assert.equal(review.recheck.evidence_layer, review.basis);
+}
+const artwork = await read('../src/refined-artwork.json');
+const renyuZhu = byId.get('beast-xishan-renyu-zhushan');
+const renyuLonghou = byId.get('beast-beishan-renyu-longhou');
+assert.notEqual(renyuZhu.id, renyuLonghou.id);
+assert.notDeepEqual(renyuZhu.source_passage_ids, renyuLonghou.source_passage_ids);
+const previews = await read('../src/preview-assets.json');
+const zhuArt = `/data/atlas/myth-icons/${renyuZhu.artwork}`;
+const longhouArt = `/data/atlas/myth-icons/${renyuLonghou.artwork}`;
+assert.equal(artwork[zhuArt].full.path, longhouArt);
+for (const variant of ['card', 'preview']) assert.equal(artwork[zhuArt][variant].path, previews[longhouArt][variant].path);
 assert.deepEqual(Object.keys(chapterReading), world.stages.map(stage => stage.id));
 for (const [id, guide] of Object.entries(chapterReading)) {
   assert.deepEqual(guide.event_ids, catalog.events.filter(event => event.properties.stage_id === id).map(event => event.id));
@@ -195,6 +212,18 @@ if (!process.env.ATLAS_URL) {
     await page.getByRole('button', { name: '清除筛选', exact: true }).click();
     while (await page.locator('.bestiary-toggle').count()) await page.locator('.bestiary-toggle').click();
     assert.equal(await grid.locator('.beast-card').count(), groupBestiary(entries.filter(item => item.role === 'deity')).length);
+    for (const lang of ['zh', 'en']) {
+      await page.setViewportSize({ width: lang === 'zh' ? 1440 : 390, height: lang === 'zh' ? 1000 : 844 });
+      for (const entry of [renyuZhu, renyuLonghou]) {
+        await page.goto(process.env.ATLAS_URL + `?chapter=05&lang=${lang}&item=${entry.id}`);
+        const fish = page.locator(`.detail-drawer[data-entry-id="${entry.id}"]`);
+        await fish.waitFor();
+        const image = fish.locator('.drawer-art');
+        await image.evaluate(image => image.decode());
+        assert.equal(new URL(await image.getAttribute('src'), page.url()).pathname, new URL(process.env.ATLAS_URL).pathname + 'data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp');
+        assert.equal(new URL(page.url()).searchParams.get('item'), entry.id);
+      }
+    }
     const noObserver = await browser.newPage({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
     noObserver.on('pageerror', error => errors.push(error.message));
     await noObserver.addInitScript(() => Object.defineProperty(window, 'IntersectionObserver', { value: undefined, configurable: true }));

@@ -53,7 +53,7 @@ export const associationLabel = record => record.properties.association_type ===
 const narratives = {
   '01-01-tradition-tongbai': ['天地初分，盘古的身体化入山川。桐柏的讲述把他的血液与淮水相连，开天旧说，便与一条河的来处相接。', 'Heaven and earth part, and Pangu’s body becomes the landscape. Tongbai’s account links his blood with the Huai: the beginning of the world meets the beginning of a river.'],
   '01-01-tradition-biyang': ['混沌分开，天地初定。盘古的名字，留在泌阳一座山的名字里；当地传说，把开天与居住的往事寄于此山。', 'Chaos opens; heaven and earth settle. Pangu’s name remains in a mountain in Biyang, where local tradition places his creation and dwelling.'],
-  '03-04-tradition-changzi': ['精卫衔着西山的木石，往返山海。长子的讲述将西山认作发鸠山，又以灵湫庙寄托炎帝对女娃的思念。', 'Jingwei carries wood and stones between mountain and sea. Changzi’s account names the mountain Fajiu and links Lingqiu Temple with the Flame Emperor’s remembrance of his daughter.'],
+  '03-04-tradition-changzi': ['精卫衔着西山的木石，往返山海。长子的讲述将西山认作发鸠山，又以灵湫庙寄托炎帝对女娃的思念。', 'Jingwei carries wood and stones between mountain and sea. Zhangzi’s account names the mountain Fajiu and links Lingqiu Temple with the Flame Emperor’s remembrance of his daughter.'],
   '03-04-tradition-gaoping': ['小鸟衔来木石，仍向东海飞去。高平寺庄的发鸠山，也承载着精卫的传说。', 'A small bird carries wood and stones toward the Eastern Sea. Mount Fajiu in Sizhuang, Gaoping, also carries Jingwei’s story.'],
   '03-01': ['阪泉的故事里，轩辕与炎帝相遇于兵戈之间。三次交战之后，胜负才定。', 'At Banquan, Xuanyuan and the Flame Emperor meet in battle. Only after three encounters is the outcome decided.'],
   '03-02': ['蚩尤不服帝命，黄帝于是会合诸侯，在涿鹿与他交战。古书所记，这一战以蚩尤被擒杀而终。', 'Chiyou defies imperial authority. The Yellow Emperor gathers the lords and meets him at Zhuolu. In the old account, the battle ends with Chiyou’s capture and death.'],

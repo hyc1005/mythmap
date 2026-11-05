@@ -226,5 +226,31 @@
         128
       ]
     }
+  },
+  "/data/atlas/myth-icons/xishan/creature-renyu-zhushan-v1.webp": {
+    "full": {
+      "path": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp",
+      "bytes": 199058,
+      "dimensions": [
+        1280,
+        750
+      ]
+    },
+    "card": {
+      "path": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1-card.webp",
+      "bytes": 18930,
+      "dimensions": [
+        320,
+        188
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1-preview.webp",
+      "bytes": 34764,
+      "dimensions": [
+        480,
+        281
+      ]
+    }
   }
 }
