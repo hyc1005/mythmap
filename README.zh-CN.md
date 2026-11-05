@@ -54,12 +54,13 @@
 | [data/](data/README.md) | 分卷构建器、原文快照与审核记录 |
 | [frontend/scripts/](frontend/scripts/README.md) | 验收、预览、素材与字体工具 |
 | [docs/](docs/README.md) | 数据约定、来源清单与项目文档 |
+| [backend-java/](backend-java/run.ps1) | 开发环境可选的只读世界数据服务 |
 
 短名、形貌与同名组维护在`frontend/src/bestiary-metadata.json`，独立于生成的经文数据。数据约定见[API说明](docs/API_CONTRACT.md)。原图与扫描保留原位；[大文件清单](docs/large-files.tsv)只用于评估，不代表删除或外移安排。
 
-### 可选原型
+### 可选开发服务
 
-`backend/`、`backend-java/`与`database/`保留为可选原型，静态网站无需后端或数据库。Java服务仍被开发代理引用，FastAPI测试仍在CI中；本轮不迁移至legacy或独立分支。原型用法见[后端说明](backend/README.md)、[Java启动入口](backend-java/run.ps1)及[数据库说明](database/README.md)。
+Java 服务为开发模式提供 `/api/world`，运行方式见 [Java 启动入口](backend-java/run.ps1)。网页也可直接使用内置数据。早期 FastAPI/PostGIS 原型已从主分支移除，其代码与来源说明保存在 Git 历史。
 
 </details>
 
@@ -102,7 +103,7 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 <details>
 <summary>部署与回退</summary>
 
-仓库Settings → Pages选择**GitHub Actions**，本地底图无需地图服务Secret。推送到`main`的前端、数据、后端／数据库或工作流修改会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；纯文档修改不触发发布，也可手动运行。
+仓库Settings → Pages选择**GitHub Actions**，本地底图无需地图服务Secret。推送到`main`的前端、数据、Java开发服务或工作流修改会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；纯文档修改不触发发布，也可手动运行。
 
 所有必要检查通过后，部署同一份已验收产物。不要提交`dist/`、依赖、本地环境配置或QA输出；回退使用`git revert`后推送。
 

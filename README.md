@@ -54,12 +54,13 @@ Use [CITATION.cff](CITATION.cff) to cite the project and credit the relevant sou
 | [data/](data/README.md) | Book builders, source snapshots and review records |
 | [frontend/scripts/](frontend/scripts/README.md) | Verification, preview, image and font tools |
 | [docs/](docs/README.md) | Data contracts, source inventories and documentation |
+| [backend-java/](backend-java/run.ps1) | Optional read-only world-data service for development |
 
 Short names, body forms and namesake groups live in `frontend/src/bestiary-metadata.json`, independently of generated source text. See the [API contract](docs/API_CONTRACT.md). Originals and scans stay in place; the [large-file inventory](docs/large-files.tsv) is an assessment, not a deletion or relocation list.
 
-### Optional prototypes
+### Optional development service
 
-`backend/`, `backend-java/` and `database/` are retained optional prototypes. The static site requires no backend or database. The development proxy still references Java, and CI still tests FastAPI; this change does not move them into legacy or another branch. See the [backend guide](backend/README.md), [Java launcher](backend-java/run.ps1) and [database guide](database/README.md).
+The Java service supplies `/api/world` during development. See the [Java launcher](backend-java/run.ps1). The website can also use its bundled data directly. The early FastAPI/PostGIS prototype has been removed from the main branch. Its code and source notes remain in Git history.
 
 </details>
 
@@ -102,7 +103,7 @@ The [script index](frontend/scripts/README.md) lists the remaining reading, sear
 <details>
 <summary>Deployment and rollback</summary>
 
-Select **GitHub Actions** in repository Settings → Pages. The bundled basemap does not require a map-service secret. Pushes to `main` that affect the frontend, data, backend/database or workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml). Documentation-only pushes do not deploy; manual dispatch is also available.
+Select **GitHub Actions** in repository Settings → Pages. The bundled basemap does not require a map-service secret. Pushes to `main` that affect the frontend, data, Java development service or workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml). Documentation-only pushes do not deploy; manual dispatch is also available.
 
 Deployment waits for all required checks and publishes the same verified artifact. Do not commit `dist/`, dependencies, environment files or QA output. Roll back by reverting the relevant commit and pushing.
 
