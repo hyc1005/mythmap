@@ -5,6 +5,7 @@ import { storySummary } from '../src/story-summaries.js';
 import { readGeography, explorationUrl } from '../src/exploration.js';
 import { geographicReferences } from '../src/geography.js';
 import { mockTianditu } from './mock-tianditu.mjs';
+import { browserDiagnostics } from './browser-diagnostics.mjs';
 
 const base = process.env.ATLAS_URL;
 if (!base) throw new Error('Run through with-preview.mjs');
@@ -26,8 +27,10 @@ const filename = name => new URL(name, output).pathname.replace(/^\/([A-Za-z]:)/
 
 for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
+  let captureFailure;
   try {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce' });
+    captureFailure = browserDiagnostics(context, `ux-${name}`);
     await mockTianditu(context);
     const page = await context.newPage(), errors = [];
     let phase = 'search';
@@ -36,7 +39,13 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await target.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
       await target.waitForLoadState('networkidle');
     };
-    const visit = async url => { await settle(page); await page.goto(url); };
+    const visit = async url => {
+      await settle(page);
+      await page.goto(url);
+      await page.locator('.global-search-trigger').waitFor();
+      await page.evaluate(() => document.fonts.ready);
+      await settle(page);
+    };
     const search = page.locator('.global-search-dialog');
     await visit(`${base}?chapter=03&lang=zh`);
     await page.locator('.global-search-trigger').click();
@@ -151,5 +160,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.deepEqual(errors, []);
     await context.close();
     console.log(`PASS ${name}: event continuity, search return/history/scroll/focus, bilingual overviews, geographic deep links/reload, sticky mobile navigation and 8 layouts`);
+  } catch (error) {
+    try { await captureFailure?.(error); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
+    throw error;
   } finally { await browser.close(); }
 }

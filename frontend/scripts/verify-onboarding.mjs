@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
+import { browserDiagnostics } from './browser-diagnostics.mjs';
 
 const base = process.env.ATLAS_URL;
 if (!base) throw new Error('Run through with-preview.mjs');
@@ -8,6 +9,12 @@ const output = new URL('../../output/qa/', import.meta.url);
 await mkdir(output, { recursive: true });
 const filename = name => new URL(name, output).pathname.replace(/^\/([A-Za-z]:)/, '$1');
 const settle = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+const visit = async (page, url) => {
+  await page.goto(url);
+  await page.locator('.global-search-trigger').waitFor();
+  await page.evaluate(() => document.fonts.ready);
+  await settle(page);
+};
 async function fits(page, expected) {
   await page.locator(`.onboarding-guide[data-step="${expected}"]`).waitFor();
   if (expected !== 'welcome') await page.locator(`[data-onboarding-target="${expected}"]`).waitFor();
@@ -36,13 +43,20 @@ async function fits(page, expected) {
 
 for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
+  let captureFailure;
+  const newContext = async options => {
+    const context = await browser.newContext(options);
+    captureFailure = browserDiagnostics(context, `onboarding-${name}`);
+    return context;
+  };
   const errors = [];
   const monitor = page => page.on('pageerror', error => errors.push(error.message.replace(/tk=[^&\s]+/g, 'tk=[redacted]')));
   try {
     for (const [width, height] of [[320, 700], [390, 844], [844, 390], [1440, 1000]]) for (const lang of ['zh', 'en']) {
-      const context = await browser.newContext({ viewport: { width, height }, reducedMotion: 'reduce', hasTouch: width < 768 });
+      const context = await newContext({ viewport: { width, height }, reducedMotion: 'reduce', hasTouch: width < 768 });
       const page = await context.newPage(); monitor(page);
-      await page.goto(`${base}?lang=${lang}`);
+      console.log(`Checking onboarding ${name} ${lang} ${width}x${height}`);
+      await visit(page, `${base}?lang=${lang}`);
       await fits(page, 'welcome');
       if (name === 'chromium' && width === 390) await page.screenshot({ path: filename(`onboarding-welcome-${lang}.png`) });
       await page.mouse.click(2, 2);
@@ -57,7 +71,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await page.locator('.onboarding-guide').waitFor({ state: 'hidden' });
       assert.equal(await page.locator('[data-onboarding-target]').count(), 0);
       assert.equal(await page.evaluate(() => localStorage.getItem('shanhai-onboarding-v1')), '1');
-      await page.goto(`${base}?lang=${lang}`); await page.locator('.guide-replay').waitFor();
+      await visit(page, `${base}?lang=${lang}`); await page.locator('.guide-replay').waitFor();
       assert.equal(await page.locator('.onboarding-guide').count(), 0, 'Completed guidance stays dismissed');
       await page.locator('.guide-replay').click(); await fits(page, 'welcome');
       await page.locator('.onboarding-next').click(); await fits(page, 'read');
@@ -69,9 +83,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     }
 
     for (const width of [390, 1440]) {
-      const context = await browser.newContext({ viewport: { width, height: 1000 }, reducedMotion: 'reduce' });
+      const context = await newContext({ viewport: { width, height: 1000 }, reducedMotion: 'reduce' });
       const page = await context.newPage(); monitor(page);
-      await page.goto(base);
+      await visit(page, base);
       if (width === 1440) {
         await page.locator('.onboarding-language button[lang=en]').click();
         await page.waitForFunction(() => document.documentElement.lang === 'en');
@@ -101,7 +115,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await context.close();
     }
 
-    const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+    const context = await newContext({ viewport: { width: 1440, height: 1000 } });
     const page = await context.newPage(); monitor(page);
     await page.goto(`${base}?chapter=03&item=03-04&lang=zh`); await page.locator('.detail-drawer').waitFor();
     assert.equal(await page.locator('.onboarding-guide').count(), 0, 'Direct reading links are not interrupted');
@@ -117,12 +131,15 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.waitForFunction(value => Number(document.querySelector('.kuafu-journey')?.dataset.elapsed) > Number(value), elapsed);
     await context.close();
 
-    const denied = await browser.newContext();
+    const denied = await newContext();
     await denied.addInitScript(() => { Storage.prototype.setItem = () => { throw new Error('Storage unavailable'); }; });
     const fallback = await denied.newPage(); monitor(fallback); await fallback.goto(base);
     await fallback.locator('.onboarding-skip').click(); await fallback.locator('.onboarding-guide').waitFor({ state: 'hidden' });
     await denied.close();
     assert.deepEqual(errors, []);
     console.log(`PASS ${name}: spotlight/real controls, 8 bilingual layouts, keyboard, skip/replay/persistence, modal continuation, deep links, reduced motion, storage failure and playback preservation`);
+  } catch (error) {
+    try { await captureFailure?.(error); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
+    throw error;
   } finally { await browser.close(); }
 }
