@@ -376,6 +376,24 @@ export default function App() {
     return () => window.removeEventListener('keydown', key);
   }, [selectedId, fullscreenTarget]);
 
+  useEffect(() => {
+    const shortcut = event => {
+      if (event.defaultPrevented || event.isComposing || event.keyCode === 229
+        || !(event.ctrlKey || event.metaKey) || event.altKey || event.shiftKey || event.key.toLowerCase() !== 'k') return;
+      if (selectedId || onboardingOpen || panel || geographyOpen || fullscreenTarget || document.fullscreenElement) return;
+      if (searchOpen) {
+        event.preventDefault();
+        document.querySelector('.global-search-input')?.focus({ preventScroll: true });
+        return;
+      }
+      if (document.querySelector('[aria-modal="true"]') || event.target.closest?.('input, textarea, select, [contenteditable]:not([contenteditable="false"])')) return;
+      event.preventDefault();
+      setSearchOpen(true);
+    };
+    window.addEventListener('keydown', shortcut);
+    return () => window.removeEventListener('keydown', shortcut);
+  }, [searchOpen, selectedId, onboardingOpen, panel, geographyOpen, fullscreenTarget]);
+
   const chapterEntries = <ChapterEntries stories={storyItems} records={mapRecords} passageEntries={world.passages.filter(item => Number(item.reveal_chapter) <= Number(chapterId))} naturalEntries={worldEntries(world).filter(item => (world.natural_features.some(entry => entry.id === item.id) || world.text_entities.some(entry => entry.id === item.id) || item.kind === 'beast' && !item.place_id) && Number(item.reveal_chapter) <= Number(chapterId))} onOpen={open} reading={reading} collectionItems={collectionItems} />;
   const chapterNavigation = <Timeline stages={stages} index={stageIndex} onSelect={index => {
     selectStage(index);
@@ -388,7 +406,7 @@ export default function App() {
     <RevealDetails><summary><BlurRevealText variant="inline" revealKey="App.jsx:summary" text={t('阅读线索与来源')} /></summary><p>{chapterReading[chapterId].source_note[locale]}</p><p className="chapter-transition">{chapterReading[chapterId].transition[locale]}</p><small>{t('主题与游历线索为项目编排，不表示精确年代。')}</small></RevealDetails>
   </div>;
   return <main className="myth-app" lang={locale === "en" ? "en" : "zh-CN"}>
-    <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true" dangerouslySetInnerHTML={{ __html: brandMark }} /><h1><BlurRevealText revealKey="App.jsx:1" variant="inline" text={<>{t("山海寻踪")}</>} /></h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><button ref={searchTrigger} className="global-search-trigger" type="button" aria-label={t("搜索故事、异兽与现代地点")} onClick={() => setSearchOpen(true)}>{t("搜索")}</button><div className="language-switch" role="group" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></div></nav></header>
+    <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true" dangerouslySetInnerHTML={{ __html: brandMark }} /><h1><BlurRevealText revealKey="App.jsx:1" variant="inline" text={<>{t("山海寻踪")}</>} /></h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><button ref={searchTrigger} className="global-search-trigger" type="button" aria-keyshortcuts="Control+k Meta+k" aria-label={t("搜索故事、异兽与现代地点")} onClick={() => setSearchOpen(true)}>{t("搜索")}<kbd aria-hidden="true">⌘ / Ctrl K</kbd></button><div className="language-switch" role="group" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></div></nav></header>
      <section ref={worldLayout} className="world-layout" id="world" data-chapter={stages[stageIndex].id} data-timeline-playing={playing} data-animation-busy={journeyBusy} data-tour-active={tourActive} data-tour-reading={readingChapter}>
       <aside ref={chapterRail} className="chapter-rail">
         <span className="chapter-number">{stageIndex === 0 ? t("序章") : t("第 ") + stages[stageIndex].id + t(" 章")}</span><h2><BlurRevealText text={stages[stageIndex].title} revealKey={`chapter:${stages[stageIndex].id}:title:${locale}`} rootRef={chapterRail} /></h2><p><BlurRevealText text={stages[stageIndex].subtitle} revealKey={`chapter:${stages[stageIndex].id}:subtitle:${locale}`} variant="subtitle" active={subtitleVisible} rootRef={chapterRail} /></p>

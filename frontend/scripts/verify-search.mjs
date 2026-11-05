@@ -51,7 +51,11 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.getByLabel('选择地图故事动画').selectOption('03-05');
     await page.locator('.kuafu-journey[data-status="playing"]').waitFor();
     await page.waitForFunction(() => +document.querySelector('.kuafu-journey').dataset.elapsed > 200);
-    await page.locator('.global-search-trigger').click();
+    await page.locator('.global-search-trigger').focus();
+    await page.locator('.global-search-trigger').dispatchEvent('keydown', { key: 'k', ctrlKey: true, isComposing: true, bubbles: true });
+    assert.equal(await dialog(page).count(), 0, 'Global shortcut respects composition');
+    await page.keyboard.press('Control+k');
+
     await page.locator('.kuafu-journey[data-status="paused"]').waitFor();
     assert.equal(await input(page).evaluate(node => node === document.activeElement), true);
     assert.equal(await page.locator('#root').evaluate(node => node.inert), true);
@@ -62,8 +66,22 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await input(page).fill('精卫');
     await dialog(page).locator('[data-result-id="beast-jingwei"][data-result-kind="beast"]').waitFor();
     await dialog(page).locator('[data-result-id="03-04"][data-result-kind="story"]').waitFor();
-    await dialog(page).locator('[data-result-id="beast-jingwei"][data-result-kind="beast"]').click();
+    await input(page).dispatchEvent('keydown', { key: 'ArrowDown', isComposing: true });
+    assert.equal(await input(page).evaluate(node => node === document.activeElement), true, 'Composition does not move result focus');
+    await input(page).press('ArrowDown');
+    assert.equal(await dialog(page).locator('.search-result').first().evaluate(node => node === document.activeElement), true);
+    await page.keyboard.press('ArrowDown');
+    assert.equal(await dialog(page).locator('.search-result').nth(1).evaluate(node => node === document.activeElement), true);
+    await page.keyboard.press('ArrowUp');
+    await page.keyboard.press('ArrowUp');
+    assert.equal(await input(page).evaluate(node => node === document.activeElement), true, 'First result returns to the query');
+    await page.keyboard.press('Control+k');
+    assert.equal(await input(page).evaluate(node => node === document.activeElement), true);
+
+    await dialog(page).locator('[data-result-id="beast-jingwei"][data-result-kind="beast"]').press('Enter');
     await page.locator('.detail-drawer[data-entry-id="beast-jingwei"]').waitFor();
+    await page.keyboard.press('Control+k');
+    assert.equal(await dialog(page).count(), 0, 'Shortcut does not interrupt a reading dialog');
     assert.equal(await page.locator('.world-layout').getAttribute('data-chapter'), '03');
     assert.equal(await page.locator('.kuafu-journey').getAttribute('data-elapsed'), elapsed);
     await page.locator('.drawer-close').click();
@@ -72,7 +90,12 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.keyboard.press('Escape');
     await page.waitForFunction(() => document.activeElement === document.querySelector('.global-search-trigger'));
     await page.locator('.kuafu-journey[data-status="playing"]').waitFor();
-    await page.locator('.global-search-trigger').click();
+    const beastQuery = page.getByLabel('搜索异兽', { exact: true });
+    await beastQuery.focus();
+    await beastQuery.dispatchEvent('keydown', { key: 'k', ctrlKey: true, bubbles: true });
+    assert.equal(await dialog(page).count(), 0, 'Shortcut preserves editing in another input');
+    await page.locator('.global-search-trigger').focus();
+    await page.keyboard.press('Meta+k');
     await dialog(page).getByLabel('搜索范围').selectOption('source');
     await input(page).fill('淮南子');
     assert.ok(await dialog(page).locator('.search-result').count() > 0);

@@ -11,9 +11,11 @@ const emptyFilters = { role: 'beast', query: '', book: '', form: '', feature: ''
 
 
 function BeastArtwork({ src, seen, reduced }) {
+  const { t } = useLocale();
   const slot = useRef(null);
   const [near, setNear] = useState(false), [inView, setInView] = useState(false);
   const [ready, setReady] = useState(false), [revealing, setRevealing] = useState(false);
+  const [failed, setFailed] = useState(false);
   useEffect(() => {
     if (!src) return undefined;
     if (typeof IntersectionObserver !== 'function') { setNear(true); setInView(true); return undefined; }
@@ -23,15 +25,18 @@ function BeastArtwork({ src, seen, reduced }) {
     return () => { nearby.disconnect(); viewport.disconnect(); };
   }, [src]);
   useEffect(() => {
-    if (!near) { setReady(false); setRevealing(false); return; }
+    if (!near) { setReady(false); setRevealing(false); setFailed(false); return; }
     if (reduced) setRevealing(false);
     if (!ready || !inView || seen.has(src)) return;
     seen.add(src);
     if (typeof IntersectionObserver === 'function' && !reduced) setRevealing(true);
   }, [near, ready, inView, src, seen, reduced]);
-  return <div className="beast-art" ref={slot} onAnimationEnd={() => setRevealing(false)} data-artwork-src={src}>{near && src && <ArtworkImage src={src} alt="" className={revealing ? 'artwork-reveal' : undefined} loading="lazy" interactive={false} onLoad={event => {
+  return <div className="beast-art" ref={slot} onAnimationEnd={() => setRevealing(false)} data-artwork-src={src} data-art-state={failed ? 'error' : ready ? 'ready' : near ? 'loading' : 'idle'} aria-busy={near && !ready && !failed}>
+    {near && !ready && !failed && <span className="beast-art-loading" aria-hidden="true">{t('加载插画')}</span>}
+    {near && src && <ArtworkImage src={src} alt="" className={revealing ? 'artwork-reveal' : undefined} loading="lazy" interactive={false} onError={() => { setFailed(true); setRevealing(false); }} onLoad={event => {
     const image = event.currentTarget;
-    void image.decode().then(() => { if (image.isConnected) setReady(true); }, () => {});
+    const ready = () => { if (image.isConnected && image.naturalWidth) setReady(true); };
+    void image.decode().then(ready, ready);
   }} />}</div>;
 }
 
@@ -53,6 +58,19 @@ export default function Bestiary({ world, onOpen, reading }) {
   const counted = (count, zh, en) => `${count} ${locale === 'en' ? `${en}${count === 1 ? '' : 's'}` : zh}`;
   const count = (field, value) => filterBestiary(entries, { ...filters, [field]: value }, reading).length;
   const books = [...new Map(entries.filter(item => item.role === filters.role).map(item => [item.bookKey, item.region])).entries()];
+  const activeFilters = [
+    ['query', t('关键词'), filters.query],
+    ['book', t('篇目'), books.find(([key]) => key === filters.book)?.[1]],
+    ['form', t('形貌'), FORM_LABELS[filters.form]?.[locale]],
+    ['feature', t('特征'), FEATURE_LABELS[filters.feature]?.[locale]],
+    ['reading', t('阅读状态'), { unread: t('未读'), read: t('已读'), favorites: t('已收藏') }[filters.reading]],
+  ].filter(([key]) => filters[key]);
+  const removeFilter = (event, key) => {
+    const section = event.currentTarget.closest('.best-page');
+    const control = section.querySelector(`[data-bestiary-filter="${key}"]`);
+    change({ [key]: '' });
+    (control?.checkVisibility() ? control : section.querySelector('.bestiary-extra-toggle'))?.focus({ preventScroll: true });
+  };
   const card = entry => {
     const review = morphologyReview(entry.id, locale);
     return <button type="button" className="beast-card" data-beast-id={entry.id} data-form-group={entry.formGroup} key={entry.id} onClick={event => onOpen(entry.id, event.currentTarget, ids)}>
@@ -67,16 +85,19 @@ export default function Bestiary({ world, onOpen, reading }) {
       {['beast', 'deity'].map(role => <button type="button" key={role} aria-pressed={filters.role === role} data-bestiary-role={role} onClick={() => { setFilters({ ...emptyFilters, role }); setLimit(BESTIARY_INITIAL); }}>{t(role === 'beast' ? '异兽' : '神灵')} · {entries.filter(item => item.role === role).length}</button>)}
     </div>
     <div className="bestiary-tools">
-      <input type="search" maxLength={120} value={filters.query} onChange={event => change({ query: event.target.value })} placeholder={t('搜索异兽或形貌')} aria-label={t('搜索异兽')} />
-      <select value={filters.book} onChange={event => change({ book: event.target.value })} aria-label={t('按篇目筛选')}><option value="">{t('全部篇目')} · {count('book', '')}</option>{books.map(([key, label]) => <option key={key} value={key}>{label} · {count('book', key)}</option>)}</select>
+      <input type="search" data-bestiary-filter="query" maxLength={120} value={filters.query} onChange={event => change({ query: event.target.value })} placeholder={t('搜索异兽或形貌')} aria-label={t('搜索异兽')} />
+      <select data-bestiary-filter="book" value={filters.book} onChange={event => change({ book: event.target.value })} aria-label={t('按篇目筛选')}><option value="">{t('全部篇目')} · {count('book', '')}</option>{books.map(([key, label]) => <option key={key} value={key}>{label} · {count('book', key)}</option>)}</select>
       <button className="bestiary-extra-toggle" type="button" aria-expanded={moreFilters} aria-controls="bestiary-extra-filters" onClick={() => setMoreFilters(value => !value)}>{t('更多筛选')}{[filters.form, filters.feature, filters.reading].filter(Boolean).length > 0 && ` · ${[filters.form, filters.feature, filters.reading].filter(Boolean).length}`}</button>
       <div className="bestiary-extra-filters" id="bestiary-extra-filters" data-expanded={moreFilters}>
-      <select value={filters.form} onChange={event => change({ form: event.target.value })} aria-label={t('按形貌筛选')}><option value="">{t('全部形貌')} · {count('form', '')}</option>{Object.entries(FORM_LABELS).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('form', key)}</option>)}</select>
-      <select value={filters.feature} onChange={event => change({ feature: event.target.value })} aria-label={t('按特征筛选')}><option value="">{t('全部特征')} · {count('feature', '')}</option>{Object.entries(FEATURE_LABELS).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('feature', key)}</option>)}</select>
-      <select value={filters.reading} onChange={event => change({ reading: event.target.value })} aria-label={t('按阅读状态筛选')}><option value="">{t('全部阅读状态')}</option><option value="unread">{t('未读')} · {count('reading', 'unread')}</option><option value="read">{t('已读')} · {count('reading', 'read')}</option><option value="favorites">{t('已收藏')} · {count('reading', 'favorites')}</option></select>
+      <select data-bestiary-filter="form" value={filters.form} onChange={event => change({ form: event.target.value })} aria-label={t('按形貌筛选')}><option value="">{t('全部形貌')} · {count('form', '')}</option>{Object.entries(FORM_LABELS).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('form', key)}</option>)}</select>
+      <select data-bestiary-filter="feature" value={filters.feature} onChange={event => change({ feature: event.target.value })} aria-label={t('按特征筛选')}><option value="">{t('全部特征')} · {count('feature', '')}</option>{Object.entries(FEATURE_LABELS).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('feature', key)}</option>)}</select>
+      <select data-bestiary-filter="reading" value={filters.reading} onChange={event => change({ reading: event.target.value })} aria-label={t('按阅读状态筛选')}><option value="">{t('全部阅读状态')}</option><option value="unread">{t('未读')} · {count('reading', 'unread')}</option><option value="read">{t('已读')} · {count('reading', 'read')}</option><option value="favorites">{t('已收藏')} · {count('reading', 'favorites')}</option></select>
       </div>
       {hasFilter && <button type="button" className="bestiary-reset" onClick={reset}>{t('清除筛选')}</button>}
     </div>
+    {hasFilter && <div className="bestiary-active-filters" role="group" aria-label={t('当前筛选')}>
+      {activeFilters.map(([key, label, value]) => <button type="button" className="bestiary-filter-chip" data-filter-key={key} key={key} aria-label={`${t('移除此筛选')} · ${label} · ${value}`} onClick={event => removeFilter(event, key)}><span>{label} · {value}</span><span aria-hidden="true">×</span></button>)}
+    </div>}
     <p className="bestiary-count" role="status">{counted(list.length, '条记载', 'account')} · {counted(groups.length, '组名称', 'name group')} · {t('已显示')} {counted(visible.length, '组', 'group')}</p>
     <div className="beast-grid" id="beast-cards">{visible.map(group => <article className="beast-group" data-group-key={group.key} key={group.key}>
       {card(group.entries[0])}

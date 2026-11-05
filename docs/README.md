@@ -61,3 +61,14 @@
 
 
 集成验收完成：`7b5d224`的[CI42053881600](https://github.com/hyc1005/mythmap/actions/runs/42053881600)首次17项全部成功，Pages部署7578234189同SHA成功。正式站入口、主JS、完整world JSON和人鱼共图与该次CI验证包逐字节一致；本地构建的入口指纹不同，因此线上对照使用实际CI发布包。
+
+
+## 界面精修约定（2026-11-06）
+
+保留现有纸色、木刻插画、主布局、字体及生僻字补字链。使用原有React/CSS，不新增UI库、Tailwind、Motion、字体或插画。主题变量共用到body portal弹层，组件状态按现有容器限定，不全局重置地图控件。
+
+实施顺序：控件/焦点/状态 → 章节/搜索键盘 → 筛选摘要/卡片/阅读 → 地图/手机/全站回归。按钮≥44px，装饰线与交互边界区分；新局部反馈150–220ms、位移≤8px，减少动态效果关闭；原有文字渐显不叠加效果。主图谱保持4/3/2列与12/24分页，搜索排序、阅读恢复、数据结构、URL和存储不变。
+
+参考公开设计：[BoardUI](https://www.boardui.com/)（状态/间距）、[HeroUI](https://heroui.com/en/docs/react/getting-started)（键盘/弹层）、[Bencho](https://bencho.dev/)（克制的目录/状态反馈）、[Watermelon](https://ui.watermelon.sh/animated-components)（折叠组织）、[beUI Pro](https://pro.beui.dev/components)（仅公开信息层次参考）、[Libraries.dev](https://libraries.dev/)（真实加载状态过渡思路，本轮不安装效果包）。不复制付费或授权未明确的源码。
+
+新增界面文案同步中英字典及规范化LF摘要；不修改古籍译文。新增JS/CSS gzip预算25KiB；按既有双语六尺寸、两浏览器设计与业务检查验收，发布同一已验证构建。

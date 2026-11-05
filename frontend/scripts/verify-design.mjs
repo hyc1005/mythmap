@@ -70,10 +70,18 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           return ['.chapter-rail>p', '.beast-card-more', '.beast-card>small', '.reading-notes p', '.mobile-explore-nav button'].map(selector => {
             const node = document.querySelector(selector);
             const foreground = luminance(getComputedStyle(node).color);
-            return { selector, ratio: (Math.max(background, foreground) + .05) / (Math.min(background, foreground) + .05) };
-          });
+            return { selector, minimum: 4.5, ratio: (Math.max(background, foreground) + .05) / (Math.min(background, foreground) + .05) };
+          }).concat(['.bestiary-tools input', '.bestiary-tools select'].map(selector => {
+            const foreground = luminance(getComputedStyle(document.querySelector(selector)).borderTopColor);
+            return { selector, minimum: 3, ratio: (Math.max(background, foreground) + .05) / (Math.min(background, foreground) + .05) };
+          }));
         });
-        for (const item of contrast) assert.ok(item.ratio >= 4.5, `${item.selector}: contrast ${item.ratio}`);
+        for (const item of contrast) assert.ok(item.ratio >= item.minimum, `${item.selector}: contrast ${item.ratio}`);
+        await page.locator('.global-search-trigger').focus();
+        await page.keyboard.press('Tab');
+        await page.locator('.global-search-trigger').focus();
+        assert.equal(await page.locator('.global-search-trigger').evaluate(node => getComputedStyle(node).outlineWidth), '2px', 'Visible keyboard focus');
+        assert.equal(await page.locator('.global-search-trigger').evaluate(node => getComputedStyle(node).transitionProperty), 'none', 'Reduced motion removes new control transitions');
         if (width <= 768) {
           assert.ok(await page.locator('.begin-journey, .mobile-explore-nav button, .explore-toolbar button, .explore-toolbar select').evaluateAll(nodes => nodes.filter(node => node.checkVisibility()).every(node => {
             const box = node.getBoundingClientRect(); return box.width >= 44 && box.height >= 44;

@@ -334,3 +334,83 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 
 
 .morphology-sources a { color: var(--water); text-underline-offset: 3px; }
+
+
+/* Shared paper controls, including body-portaled reading surfaces. */
+:root {
+  --control-edge: #8c7c60;
+  --paper-hover: #eee7d6;
+  --ui-fast: 150ms;
+  --ui-enter: 220ms;
+  --ui-ease: cubic-bezier(.2, .8, .2, 1);
+}
+:is(.myth-app, .explore-sheet, .detail-drawer, .onboarding-card) :is(button, a, input, select, summary):focus-visible {
+  outline: 2px solid var(--verm);
+  outline-offset: 3px;
+}
+:is(.myth-header, .chapter-rail, .myth-timeline, .best-page, .explore-sheet, .detail-drawer, .explore-toolbar, .explore-playback, .geography-atlas, .onboarding-card) :is(button, a, input, select, summary) {
+  transition: color var(--ui-fast) var(--ui-ease), background-color var(--ui-fast) var(--ui-ease), border-color var(--ui-fast) var(--ui-ease);
+}
+:is(.bestiary-tools, .global-search-tools, .geography-atlas, .detail-drawer, .explore-toolbar, .explore-playback) :is(input:not([type=checkbox]), select) {
+  min-height: 44px;
+  border-color: var(--control-edge);
+  border-radius: 2px;
+}
+:is(.global-search-trigger, .timeline-current>button, .bestiary-extra-toggle, .bestiary-reset, .bestiary-filter-chip, .search-suggestions button, .search-more, .search-empty button, .drawer-actions button) {
+  min-height: 44px;
+  border-color: var(--control-edge);
+  border-radius: 2px;
+}
+:is(.drawer-close, .explore-sheet>header>button) { min-width: 44px; min-height: 44px; }
+.global-search-trigger { display: inline-flex; align-items: center; gap: 8px; }
+.global-search-trigger kbd { padding: 2px 4px; border: 1px solid var(--edge); font: inherit; font-size: 11px; color: var(--soft-ink); }
+.search-keyboard-hint { margin: 0 0 8px; font-size: 13px; line-height: 1.6; color: var(--soft-ink); }
+.search-result { border-inline-start: 2px solid transparent; padding-inline: 10px; }
+.search-result:focus-visible { outline-offset: -3px; border-inline-start-color: var(--verm); }
+.search-result>b { color: var(--ink); font-weight: 600; }
+.search-result .search-snippet-kind { margin-top: 8px; }
+.story-entry { border-inline-start: 2px solid transparent; padding-inline-start: 10px; }
+.timeline-steps [aria-current=step] { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+.bestiary-active-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.bestiary-filter-chip { display: inline-flex; align-items: center; gap: 12px; max-width: 100%; padding: 8px 12px; border: 1px solid var(--control-edge); background: transparent; color: var(--ink); font: inherit; font-size: 14px; text-align: start; cursor: pointer; }
+.bestiary-filter-chip>span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.bestiary-filter-chip>span:last-child { flex: none; color: var(--verm); font-size: 18px; }
+.beast-art-loading { position: absolute; inset-inline: 12px; bottom: 8px; color: var(--soft-ink); font-size: 13px; text-align: center; }
+.beast-art[data-art-state=error] { background: var(--paper-hover); }
+.bestiary-empty, .search-empty { padding: 16px; border-inline-start: 2px solid var(--control-edge); background: var(--paper-hover); line-height: 1.7; }
+.explore-sheet, .detail-drawer { animation: paper-surface-in var(--ui-enter) var(--ui-ease) both; }
+.explore-sheet>header, .detail-drawer .drawer-actions { border-bottom: 1px solid var(--edge); gap: 12px; }
+.explore-sheet>header h2 { min-width: 0; overflow-wrap: anywhere; }
+.detail-drawer .drawer-actions { flex-wrap: wrap; }
+.detail-drawer :is(.return-search, .return-related) { overflow-wrap: anywhere; }
+.detail-drawer blockquote { border-inline-start-color: var(--control-edge); }
+:is(.chapter-reading, .morphology-review, .chapter-rail-details) summary { text-underline-offset: 4px; }
+:is(.chapter-reading, .morphology-review, .chapter-rail-details)[open]>summary { color: var(--verm); }
+.detail-reading-actions [aria-pressed=true] { text-decoration: underline; text-underline-offset: 4px; animation: reading-confirm 180ms var(--ui-ease); }
+.toolbar-share-status, .map-export-status { min-height: 1.6em; line-height: 1.6; }
+.map-mode-switch [aria-pressed=true] { font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.geo-result-list [aria-pressed=true] { font-weight: 600; }
+.explore-toolbar .map-overlay-controls :is(button, select, summary), .explore-playback .journey-actions :is(button, select), .map-mode-switch button, .geography-atlas :is(button, select, summary) { border-color: var(--control-edge); }
+.map-mode-switch button[aria-pressed=true], .geography-atlas button[aria-pressed=true] { border-color: var(--verm); }
+.language-switch button { min-width: 44px; min-height: 44px; }
+.onboarding-card button:not(.onboarding-next):not([aria-pressed=true]) { border-color: var(--control-edge); }
+
+@keyframes reading-confirm { from { background-color: var(--paper-hover); } to { background-color: var(--paper); } }
+@keyframes paper-surface-in { from { opacity: 0; translate: 0 8px; } to { opacity: 1; translate: 0 0; } }
+@media (hover: hover) and (pointer: fine) {
+  :is(.global-search-trigger, .timeline-current>button, .bestiary-extra-toggle, .bestiary-reset, .bestiary-filter-chip, .search-suggestions button, .search-more, .search-empty button, .drawer-actions button):not(:disabled):hover { background: var(--paper-hover); }
+  .story-entry:hover { border-inline-start-color: var(--verm); }
+  .beast-card:hover>b { color: var(--verm); }
+  .beast-card:hover { border-bottom-color: var(--verm); }
+}
+@media (max-width: 768px) {
+  .global-search-trigger kbd, .search-keyboard-hint { display: none; }
+  .explore-sheet { max-height: calc(100svh - 24px); padding-bottom: max(20px, env(safe-area-inset-bottom)); }
+  .detail-drawer { padding-bottom: max(52px, calc(env(safe-area-inset-bottom) + 20px)); }
+  .bestiary-active-filters { gap: 6px; }
+  .bestiary-filter-chip { padding-inline: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.myth-header, .chapter-rail, .myth-timeline, .best-page, .explore-sheet, .detail-drawer, .explore-toolbar, .explore-playback, .geography-atlas, .onboarding-card) :is(button, a, input, select, summary) { transition: none; }
+  .explore-sheet, .detail-drawer, .detail-reading-actions [aria-pressed=true] { animation: none; }
+}

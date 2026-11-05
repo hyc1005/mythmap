@@ -172,6 +172,13 @@ if (!process.env.ATLAS_URL) {
     assert.equal(await namesakes.locator('.beast-card').count(), 1);
     await input.fill('飞鱼');
     await page.getByLabel('按篇目筛选').selectOption('中山经');
+    assert.equal(await page.locator('.bestiary-filter-chip').count(), 2);
+    await page.locator('[data-filter-key="query"]').click();
+    assert.equal(await input.inputValue(), '');
+    assert.equal(await page.getByLabel('按篇目筛选').inputValue(), '中山经', 'Removing one filter preserves the other');
+    assert.equal(await input.evaluate(node => node === document.activeElement), true, 'Removed query chip restores input focus');
+    await input.fill('飞鱼');
+
     assert.equal(await grid.locator('.beast-card').count(), 1);
     await openBestiaryFilters(page);
     await page.getByLabel('按形貌筛选').selectOption('fish');
@@ -241,6 +248,8 @@ if (!process.env.ATLAS_URL) {
     const brokenCard = broken.locator('.beast-card').first();
     await brokenCard.scrollIntoViewIfNeeded();
     await brokenCard.locator('.artwork-fallback').waitFor();
+    assert.equal(await brokenCard.locator('.beast-art').getAttribute('aria-busy'), 'false', 'Failed image stops its loading state');
+    assert.equal(await brokenCard.locator('.beast-art-loading').count(), 0);
     await brokenCard.click();
     await broken.locator('.detail-drawer .artwork-fallback button').waitFor();
     await broken.unroute('**/data/atlas/**');
