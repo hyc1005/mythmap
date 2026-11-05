@@ -234,7 +234,96 @@ QUOTES = {'beast-xishan-zuoniu-baiyu': ('其獸多㸲牛羬羊', 'Its beasts inc
                                'Another thirty li east is Mount Dagui. Its shaded side has much iron, fine jade '
                                'and qing e. There is an herb resembling shi and covered in hair, with qing '
                                'flowers and white fruit, called Lang. Taking it is said to prevent an early death '
-                               'and treat abdominal illness.')}
+                               'and treat abdominal illness.'),
+ 'passage-zhongshan-r01-summary': ('凡薄山之首自甘棗之山至于皷鐙之山凡十五山六千六百七十里歴兒冡也其祠禮毛太牢之具縣以吉玉其餘十三山者毛用一羊縣嬰用桑封瘞而不糈桑封者桑主也方其下而鋭其上而中穿之加金',
+                                   'The Bo range, from Mount Ganzao to Mount Gudeng, is reported to comprise '
+                                   'fifteen mountains and 6,670 li. Li-er is a principal mountain. Its ritual '
+                                   'offerings comprise mao and the full tailao livestock offering, with '
+                                   'auspicious jade used in the xian rite. For the other thirteen mountains, the '
+                                   'mao offering uses one sheep; xian and ying use sangfeng. It is buried, and no '
+                                   'grain offering is made. Sangfeng is a mulberry-wood spirit tablet, square '
+                                   'below and pointed above, pierced through the middle and adorned with metal.'),
+ 'rite-zhongshan-r01-summary': ('凡薄山之首自甘棗之山至于皷鐙之山凡十五山六千六百七十里歴兒冡也其祠禮毛太牢之具縣以吉玉其餘十三山者毛用一羊縣嬰用桑封瘞而不糈桑封者桑主也方其下而鋭其上而中穿之加金',
+                                'The Bo range, from Mount Ganzao to Mount Gudeng, is reported to comprise fifteen '
+                                'mountains and 6,670 li. Li-er is a principal mountain. Its ritual offerings '
+                                'comprise mao and the full tailao livestock offering, with auspicious jade used '
+                                'in the xian rite. For the other thirteen mountains, the mao offering uses one '
+                                'sheep; xian and ying use sangfeng. It is buried, and no grain offering is made. '
+                                'Sangfeng is a mulberry-wood spirit tablet, square below and pointed above, '
+                                'pierced through the middle and adorned with metal.'),
+ 'passage-zhongshan-r03-summary': ('凡萯山之首自敖岸之山至于和山凡五山四百四十里其祠太逢熏池武羅皆一牡羊副嬰用吉玉其二神用一雄鷄瘞之糈用稌',
+                                   'The Fu range, from Mount Aoan to Mount He, comprises five mountains and 440 '
+                                   'li. The rites for Taifeng, Xunchi and Wuluo each use one ram and a fu rite; '
+                                   'auspicious jade is used for the ying offering. For the other two gods, one '
+                                   'rooster is used and buried, with tu grain as the grain offering.'),
+ 'rite-zhongshan-r03-summary': ('凡萯山之首自敖岸之山至于和山凡五山四百四十里其祠太逢熏池武羅皆一牡羊副嬰用吉玉其二神用一雄鷄瘞之糈用稌',
+                                'The Fu range, from Mount Aoan to Mount He, comprises five mountains and 440 li. '
+                                'The rites for Taifeng, Xunchi and Wuluo each use one ram and a fu rite; '
+                                'auspicious jade is used for the ying offering. For the other two gods, one '
+                                'rooster is used and buried, with tu grain as the grain offering.'),
+ 'passage-zhongshan-r06-summary': ('凡縞羝山之首自平逢之山至于陽華之山凡十四山七百九十里嶽在其中以六月祭之如諸嶽之祠法則天下安寧',
+                                   'The Gaodi range, from Mount Pingfeng to Mount Yanghua, is reported to '
+                                   'comprise fourteen mountains and 790 li. A sacred peak lies among them. '
+                                   'Sacrifice is offered to it in the sixth month according to the ritual rules '
+                                   'for the sacred peaks; the text associates observance of these rites with '
+                                   'peace throughout the realm.'),
+ 'rite-zhongshan-r06-summary': ('凡縞羝山之首自平逢之山至于陽華之山凡十四山七百九十里嶽在其中以六月祭之如諸嶽之祠法則天下安寧',
+                                'The Gaodi range, from Mount Pingfeng to Mount Yanghua, is reported to comprise '
+                                'fourteen mountains and 790 li. A sacred peak lies among them. Sacrifice is '
+                                'offered to it in the sixth month according to the ritual rules for the sacred '
+                                'peaks; the text associates observance of these rites with peace throughout the '
+                                'realm.'),
+ 'passage-zhongshan-r07-summary': ('凡苦山之首自休與之山至于大騩之山凡十有九山千一百八十四里其十六神者皆豕身而人面其祠毛牷用一羊羞嬰用一藻玉瘞苦山少室太室皆冢也其祠之太牢之具嬰以吉玉其神狀皆人面而三首其餘屬皆豕身人面也',
+                                   'The Ku range, from Mount Xiuyu to Mount Dagui, is reported to comprise '
+                                   'nineteen mountains and 1,184 li. Its sixteen gods all have pig bodies and '
+                                   'human faces. Their rite uses maoquan and one sheep as an offering. The ying '
+                                   'offering uses one zao jade, which is buried. Mount Ku, Mount Shaoshi and '
+                                   'Mount Taishi are all principal mountains. Their rites use the full tailao '
+                                   'livestock offering, with auspicious jade for the ying offering. Their gods '
+                                   'all have human faces and three heads. The remaining gods have pig bodies and '
+                                   'human faces.'),
+ 'rite-zhongshan-r07-summary': ('凡苦山之首自休與之山至于大騩之山凡十有九山千一百八十四里其十六神者皆豕身而人面其祠毛牷用一羊羞嬰用一藻玉瘞苦山少室太室皆冢也其祠之太牢之具嬰以吉玉其神狀皆人面而三首其餘屬皆豕身人面也',
+                                'The Ku range, from Mount Xiuyu to Mount Dagui, is reported to comprise nineteen '
+                                'mountains and 1,184 li. Its sixteen gods all have pig bodies and human faces. '
+                                'Their rite uses maoquan and one sheep as an offering. The ying offering uses one '
+                                'zao jade, which is buried. Mount Ku, Mount Shaoshi and Mount Taishi are all '
+                                'principal mountains. Their rites use the full tailao livestock offering, with '
+                                'auspicious jade for the ying offering. Their gods all have human faces and three '
+                                'heads. The remaining gods have pig bodies and human faces.'),
+ 'passage-zhongshan-r08-summary': ('凡荆山之首自景山至琴皷之山凡二十三山二千八百九十里其神狀皆鳥身而人面其祠用一雄雞祈瘞用一藻圭糈用稌驕山冡也其祠用羞酒少牢祈瘞嬰毛一璧',
+                                   'The Jing range, from Mount Jing to Mount Qingu, is reported to comprise '
+                                   'twenty-three mountains and 2,890 li. Its gods all have bird bodies and human '
+                                   'faces. Their rite uses one rooster for prayer and burial, one zao gui jade '
+                                   'tablet, and tu grain as the grain offering. Mount Jiao is a principal '
+                                   'mountain. Its rite includes an offering of wine and the lesser shaolao '
+                                   'livestock offering, prayer and burial, and ying mao [ritual wording] with one '
+                                   'bi disk.'),
+ 'rite-zhongshan-r08-summary': ('凡荆山之首自景山至琴皷之山凡二十三山二千八百九十里其神狀皆鳥身而人面其祠用一雄雞祈瘞用一藻圭糈用稌驕山冡也其祠用羞酒少牢祈瘞嬰毛一璧',
+                                'The Jing range, from Mount Jing to Mount Qingu, is reported to comprise '
+                                'twenty-three mountains and 2,890 li. Its gods all have bird bodies and human '
+                                'faces. Their rite uses one rooster for prayer and burial, one zao gui jade '
+                                'tablet, and tu grain as the grain offering. Mount Jiao is a principal mountain. '
+                                'Its rite includes an offering of wine and the lesser shaolao livestock offering, '
+                                'prayer and burial, and ying mao [ritual wording] with one bi disk.'),
+ 'passage-zhongshan-r10-summary': ('凡首陽山之首自首山至于丙山凡九山二百六十七里其神狀皆龍身而人面其祠之毛用一雄雞瘞糈用五種之糈堵山冢也其祠之少牢具羞酒祠嬰毛一璧瘞騩山帝也其祠羞酒太牢其合巫祝二人儛嬰一璧',
+                                   'The Shouyang range, from Mount Shou to Mount Bing, is reported to comprise '
+                                   'nine mountains and 267 li. Its gods all have dragon bodies and human faces. '
+                                   'Their rite uses one rooster as the mao offering, which is buried, and five '
+                                   'kinds of grain as the grain offering. Mount Du is a principal mountain. Its '
+                                   'rite uses the full shaolao livestock offering and wine; ying mao [ritual '
+                                   'wording] is associated with one bi disk, which is buried. Mount Gui is '
+                                   'designated di [term retained]. Its rite includes wine and the tailao '
+                                   'livestock offering. Two wu/zhu ritual officiants dance together, with one bi '
+                                   'disk for the ying offering.'),
+ 'rite-zhongshan-r10-summary': ('凡首陽山之首自首山至于丙山凡九山二百六十七里其神狀皆龍身而人面其祠之毛用一雄雞瘞糈用五種之糈堵山冢也其祠之少牢具羞酒祠嬰毛一璧瘞騩山帝也其祠羞酒太牢其合巫祝二人儛嬰一璧',
+                                'The Shouyang range, from Mount Shou to Mount Bing, is reported to comprise nine '
+                                'mountains and 267 li. Its gods all have dragon bodies and human faces. Their '
+                                'rite uses one rooster as the mao offering, which is buried, and five kinds of '
+                                'grain as the grain offering. Mount Du is a principal mountain. Its rite uses the '
+                                'full shaolao livestock offering and wine; ying mao [ritual wording] is '
+                                'associated with one bi disk, which is buried. Mount Gui is designated di [term '
+                                'retained]. Its rite includes wine and the tailao livestock offering. Two wu/zhu '
+                                'ritual officiants dance together, with one bi disk for the ying offering.')}
 
 def apply_quote_review(world, english):
     entries = {entry["id"]: entry for group in world.values() if isinstance(group, list)
