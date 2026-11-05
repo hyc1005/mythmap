@@ -1,4 +1,5 @@
 """Maintain the reviewed first Nanshan batch and its English content without replacing other entries."""
+from english_review import apply_quote_review
 import json
 from pathlib import Path
 from urllib.parse import quote
@@ -183,6 +184,7 @@ def build():
     link('water-ying-qingqiu', 'beast-chiru', '其中多赤鱬，其状如鱼而人面', '水段所见', '本段水域')
     (ROOT / 'frontend/src/nanshan-relations.json').write_text(json.dumps(relations, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     WORLD.write_text(json.dumps(world, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    apply_quote_review(world, english)
     ENGLISH.write_text(json.dumps(english, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print('Updated 2 new mountains, 8 natural features, Guanguan and 6 existing entries; unrelated records preserved.')
 

@@ -1,4 +1,5 @@
 """Merge reviewed Eastern passages without rebuilding other books."""
+from english_review import apply_quote_review
 import hashlib
 import json
 import re
@@ -162,6 +163,7 @@ def build():
             matches=[p for p in passages if issue['source_unit_id'] in p['source_unit_ids']]
             if matches:issue.update(status='restored_in_reading_layer',passage_id=matches[0]['id'])
     assert len(cards)==len(ENTITIES)+len(ROWS),len(cards)
+    apply_quote_review(world, english)
     write('frontend/public/data/myth-world.json',world);write('frontend/src/locale-content-en.json',english);write('data/dongshan-edition-review.json',review)
     print(f'Built Eastern: {len(passages)} passages, {len(cards)} cards; 0 stages remain')
 if __name__=='__main__':

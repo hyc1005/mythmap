@@ -1802,7 +1802,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans and retains unpunctuated text. The explanation and English rendering are editorial. Commentary is retained by transcription line; continuations can cross sentence boundaries. Uses, omens and rituals are ancient textual accounts.",
     "name": "Juqu",
     "description": "Fuyu looks north to Juqu, which also receives the northward Tiao River. The commentary offers a later identification; no modern coordinates are assigned.",
-    "quote": "Fuyu looks north to Juqu, which also receives the northward Tiao River. The commentary offers a later identification; no modern coordinates are assigned.",
+    "quote": "To the north it overlooks Juqu.",
     "direction": "Read through the cited passage; no modern coordinates, measured distances or unsupported habitat boundaries are assigned.",
     "artwork_caption": "Scene illustration · Landforms, vegetation and unspecified details are artistic interpretations of the cited passage."
   },
@@ -1814,7 +1814,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans and retains unpunctuated text. The explanation and English rendering are editorial. Commentary is retained by transcription line; continuations can cross sentence boundaries. Uses, omens and rituals are ancient textual accounts.",
     "name": "Zhupi · Fuyu water reference",
     "description": "Fuyu looks east to Zhupi, identified here as a water name in the commentary. The mountain reference in the Gui passage is kept separate.",
-    "quote": "Fuyu looks east to Zhupi, identified here as a water name in the commentary. The mountain reference in the Gui passage is kept separate.",
+    "quote": "To the east it overlooks Zhupi.",
     "direction": "Read through the cited passage; no modern coordinates, measured distances or unsupported habitat boundaries are assigned.",
     "artwork_caption": "Scene illustration · Landforms, vegetation and unspecified details are artistic interpretations of the cited passage."
   },
@@ -3408,7 +3408,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "Duheng (Tiandi)",
     "description": "Duheng resembles kui and smells like miwu; the ancient comparisons do not identify a modern species or imply a foul odor. Guo Pu offers two readings of its horse claim: carrying it helps a person handle horses, or horses obtaining it run well. Neither is illustrated as an event. Flower color, fruit and root form are unspecified here, so the image uses only a generalized kui-like leafy herb.",
-    "quote": "An herb shaped like kui and smelling like miwu is called Duheng. It is said to help with horses, and eating it to relieve neck swellings. The commentary offers carrying it to aid horsemanship or horses obtaining it to run well as alternative readings.",
+    "quote": "There is an herb resembling kui and smelling like miwu, called Duheng. It is said to aid horses, and eating it is said to relieve neck swellings.",
     "artwork_caption": "Textual form, woodcut interpretation · Carved patterns, colors and pose are artistic choices."
   },
   "passage-xishan-gaotu": {
@@ -7237,7 +7237,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "Tang Valley (Tian)",
     "description": "The receiving place for the Ying remains separate from Tang Valley and Fusang in the overseas book.",
-    "quote": "The receiving place for the Ying remains separate from Tang Valley and Fusang in the overseas book."
+    "quote": "It flows southwest into Tang Valley."
   },
   "passage-xishan-youshan": {
     "source": "Shanhaijing · Xishan Jing (Sibu Congkan facsimile; Guo Pu commentary)",
@@ -8160,7 +8160,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "White pheasants (Yu)",
     "description": "White pheasants and white zhai are separate entries, without borrowed forms.",
-    "quote": "White pheasants and white zhai are separate entries.",
+    "quote": "Its birds include many white pheasants and white zhai.",
     "artwork_caption": "Appearance unspecified · The gray question-mark silhouette is a shared placeholder, not a depiction of this creature."
   },
   "bird-xishan-zhai-yushan4": {
@@ -8274,7 +8274,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "Zuoniu (Baiyu)",
     "description": "Zuoniu is only named; Xiaohua’s form is not transferred.",
-    "quote": "Zuoniu is only named.",
+    "quote": "Its beasts include many zuoniu and qianyang.",
     "artwork_caption": "Appearance unspecified · The gray question-mark silhouette is a shared placeholder, not a depiction of this creature."
   },
   "beast-xishan-qianyang-baiyu": {
@@ -8286,7 +8286,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "Qianyang (Baiyu)",
     "description": "Qianyang is only named, without importing Qianlai’s horse tail.",
-    "quote": "Qianyang is only named.",
+    "quote": "Its beasts include many zuoniu and qianyang.",
     "artwork_caption": "Appearance unspecified · The gray question-mark silhouette is a shared placeholder, not a depiction of this creature."
   },
   "bird-xishan-xiao-baiyu": {
@@ -8573,7 +8573,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "Luo (Gangwei)",
     "description": "This Luo flows north into the He and remains separate from Baiyu’s namesake.",
-    "quote": "This Luo flows north into the He and remains separate from Baiyu’s namesake."
+    "quote": "The Luo rises here and flows north into the He."
   },
   "water-xishan-he-gangwei": {
     "source": "Shanhaijing · Xishan Jing (Sibu Congkan facsimile; Guo Pu commentary)",
@@ -8999,7 +8999,7 @@
     "editorial_note": "The Chinese transcription was compared with the scans; variant characters and unpunctuated form are retained. Explanations and English are editorial. Commentary is separate; uses, immortals and omens are ancient textual accounts.",
     "name": "Turtles (sunny Yanzi)",
     "description": "Turtles are only named; Xuangui’s bird head and snake tail are not transferred.",
-    "quote": "Turtles are only named.",
+    "quote": "There are many turtles on its sunny side.",
     "artwork_caption": "Appearance unspecified · The gray question-mark silhouette is a shared placeholder, not a depiction of this creature."
   },
   "material-xishan-jade-yanzi": {
@@ -23287,7 +23287,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Shi water (Shi)",
     "description": "Shi water rises here and flows south into the Luo.",
-    "quote": "Shi water rises here and flows south into the Luo. Separately, Shi water is associated with heaven in the ritual account.",
+    "quote": "The Shi rises here and flows south into the Luo. In a separate ritual passage: shi shui he tian ye [wording retained in transliteration].",
     "commentary_quote": ""
   },
   "material-zhongshan-fine-jade-shi": {
@@ -23599,7 +23599,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Spirit turtle (Yangxu commentary)",
     "description": "A spirit turtle bears writing, with a red shell and blue-green markings, in the quoted commentary account. This is commentary only. Ordinary turtle anatomy and a small book are artistic interpretations; no readable sacred script is invented.",
-    "quote": "A spirit turtle bears writing, with a red shell and blue-green markings, in the quoted commentary account.",
+    "quote": "A spirit turtle emerged from these waters bearing writing, with a red shell and blue-green markings, to present it to him.",
     "commentary_quote": "",
     "artwork_caption": "Textual or commentary-based form in woodcut interpretation; unspecified details, colors and pose are artistic."
   },
@@ -25613,7 +25613,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Three-legged six-eyed turtle (outside-locality commentary)",
     "description": "The commentary cites three-legged six-eyed turtles in a different locality. This is an outside-locality comparison only, not an assertion of native six-eyed turtles. Eye placement, shell styling and colors are artistic.",
-    "quote": "The commentary cites three-legged six-eyed turtles in a different locality.",
+    "quote": "There are three-legged, six-eyed turtles and soft-shelled turtles in it.",
     "commentary_quote": "",
     "artwork_caption": "Textual or commentary-based form in woodcut interpretation; unspecified details, colors and pose are artistic."
   },
@@ -25712,7 +25712,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Mount Shaoshi",
     "description": "Fifty li east is Mount Shaoshi. Dixiu has yang-like leaves, five-way branches, yellow flowers and black fruit. Xiu water flows north into the Luo and has Ti fish, compared with an uncertain form, with long spurs and paired white feet. The unknown comparison and uncertain paired-foot wording retain a placeholder. Five-way branching does not specify five trunks. Guo Pu’s white-jade-paste and immortality statement is a separate ancient commentary claim.",
-    "quote": "Fifty li east is Mount Shaoshi. Dixiu has yang-like leaves, five-way branches, yellow flowers and black fruit. Xiu water flows north into the Luo and has Ti fish, compared with an uncertain form, with long spurs and paired white feet.",
+    "quote": "Another fifty li east is Mount Shaoshi, where the plants and trees are described as cheng qun [wording uncertain]. Above is a tree called Dixiu, with yang-like leaves, branches spreading in five directions, yellow flowers and black fruit. Taking it is said to prevent anger. There is much jade above and much iron below. The Xiu rises here and flows north into the Luo. Its waters contain many ti fish, resembling an uncertain creature, with long spurs and paired white feet. Eating them is said to prevent gu afflictions and ward off weapons.",
     "content_note": "The unknown comparison and uncertain paired-foot wording retain a placeholder. Five-way branching does not specify five trunks. Guo Pu’s white-jade-paste and immortality statement is a separate ancient commentary claim."
   },
   "place-zhongshan-r07-shaoshi": {
@@ -25724,7 +25724,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Mount Shaoshi",
     "description": "Fifty li east is Mount Shaoshi. Dixiu has yang-like leaves, five-way branches, yellow flowers and black fruit. Xiu water flows north into the Luo and has Ti fish, compared with an uncertain form, with long spurs and paired white feet. The unknown comparison and uncertain paired-foot wording retain a placeholder. Five-way branching does not specify five trunks. Guo Pu’s white-jade-paste and immortality statement is a separate ancient commentary claim.",
-    "quote": "Fifty li east is Mount Shaoshi. Dixiu has yang-like leaves, five-way branches, yellow flowers and black fruit. Xiu water flows north into the Luo and has Ti fish, compared with an uncertain form, with long spurs and paired white feet.",
+    "quote": "Another fifty li east is Mount Shaoshi, where the plants and trees are described as cheng qun [wording uncertain]. Above is a tree called Dixiu, with yang-like leaves, branches spreading in five directions, yellow flowers and black fruit. Taking it is said to prevent anger. There is much jade above and much iron below. The Xiu rises here and flows north into the Luo. Its waters contain many ti fish, resembling an uncertain creature, with long spurs and paired white feet. Eating them is said to prevent gu afflictions and ward off weapons.",
     "content_note": "The unknown comparison and uncertain paired-foot wording retain a placeholder. Five-way branching does not specify five trunks. Guo Pu’s white-jade-paste and immortality statement is a separate ancient commentary claim."
   },
   "plant-zhongshan-dixiu-shaoshi": {
@@ -25857,7 +25857,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Qimu (Taishi commentary)",
     "description": "Guo Pu cites the story of Qimu turning to stone and giving birth to Qi at this mountain. This commentary account leaves her earlier bodily appearance unspecified.",
-    "quote": "The commentary cites Qimu becoming stone and giving birth to Qi here.",
+    "quote": "Qimu turned to stone and gave birth to Qi at this mountain; see the Huainanzi.",
     "commentary_quote": "",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
@@ -29517,7 +29517,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Mo (Lai commentary)",
     "description": "The commentary records Mo, bear-like and mottled black and white, with an ancient metal-eating claim. Local commentary evidence, not main text. Four feet, black-white patch arrangement, ear/tail proportions and pose are artistic; no modern panda eye-mask or species identification is imposed.",
-    "quote": "The commentary records Mo, bear-like and mottled black and white, with an ancient metal-eating claim.",
+    "quote": "The mountain has a slope with nine bends and produces mo. Mo resemble bears, are mottled black and white, and also eat copper and iron.",
     "commentary_quote": "",
     "artwork_caption": "Textual or commentary-based form in woodcut interpretation; unspecified details, colors and pose are artistic."
   },
@@ -30770,7 +30770,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Gu mountain stone drum (commentary comparison)",
     "description": "The commentary compares an external stone drum near Ye, with a similar warfare omen.",
-    "quote": "The commentary compares an external stone drum near Ye, with a similar warfare omen.",
+    "quote": "There is now a Mount Gu northwest of Ye. Below it is a stone drum that appears to hang against the mountainside. When it sounds, there is military activity. Its form differs from this cavern, but the response is the same.",
     "commentary_quote": ""
   },
   "material-zhongshan-white-jade-xiong09": {
@@ -33094,7 +33094,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Qinggeng (Jinli)",
     "description": "Qinggeng resembles a magpie with a blue-green body and white bill, eyes and tail, calling its own name; warding off epidemics is an ancient claim. Feather pattern, two feet and pose are artistic, without medical symbolism or an efficacy claim.",
-    "quote": "Qinggeng resembles a magpie with a blue-green body and white bill, eyes and tail, calling its own name; warding off epidemics is an ancient claim.",
+    "quote": "There is a bird resembling a magpie, with a blue-green body and white bill, eyes and tail. It is called Qinggeng and is said to ward off epidemics. Its cry calls its own name.",
     "commentary_quote": "",
     "artwork_caption": "Textual or commentary-based form in woodcut interpretation; unspecified details, colors and pose are artistic."
   },
@@ -33292,7 +33292,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Black tigers (Jingzhou commentary comparison)",
     "description": "The commentary records black tigers in the Jingzhou mountains. Incomplete independent form evidence; the placeholder supplies no invented anatomy.",
-    "quote": "The commentary records black tigers in the Jingzhou mountains.",
+    "quote": "Black tigers now occur in the mountains of Jingzhou.",
     "commentary_quote": "",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },
@@ -35793,7 +35793,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Gui bamboo (Shixing commentary comparison)",
     "description": "The commentary records external Gui bamboo at historical Guiyang, large examples two chi in girth and four zhang long.",
-    "quote": "The commentary records external Gui bamboo at historical Guiyang, large examples two chi in girth and four zhang long.",
+    "quote": "Gui bamboo now grows in Guiyang County, Shixing Commandery. Large specimens measure two chi in girth and four zhang in length.",
     "commentary_quote": ""
   },
   "plant-zhongshan-li-comparison-yun12": {
@@ -35805,7 +35805,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Li bamboo (Jiaozhi commentary comparison)",
     "description": "The commentary also records external Li bamboo at Jiaozhi, solid, strong and described as poisonous.",
-    "quote": "The commentary also records external Li bamboo at Jiaozhi, solid, strong and described as poisonous.",
+    "quote": "There is also li bamboo in Jiaozhi, solid within, hard and strong, and poisonous.",
     "commentary_quote": ""
   },
   "material-zhongshan-gold-yun12": {
@@ -36592,7 +36592,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Three-Jiang mouth (commentary geography)",
     "description": "The commentary says the Jiang, Xiang and Yuan meet at Baling, called the mouth of the Three Jiang.",
-    "quote": "The commentary says the Jiang, Xiang and Yuan meet at Baling, called the mouth of the Three Jiang.",
+    "quote": "The Jiang, Xiang and Yuan waters all meet at Balingtou; hence it is called the mouth of the Three Jiang.",
     "commentary_quote": ""
   },
   "place-zhongshan-nine-jiang-comparison-dongting12": {
@@ -36604,7 +36604,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Nine-Jiang branches (commentary geography)",
     "description": "The commentary describes the Jiang dividing into nine from Xunyang and meeting the Great Jiang eastward.",
-    "quote": "The commentary describes the Jiang dividing into nine from Xunyang and meeting the Great Jiang eastward.",
+    "quote": "From Xunyang, the Jiang divides into nine branches, all of which meet the Great Jiang to the east.",
     "commentary_quote": ""
   },
   "deity-zhongshan-snakecarrier-dongting12": {
@@ -36849,7 +36849,7 @@
     "editorial_note": "Text, captured transcription and commentary remain separate. English and explanations are editorial; healing and omen claims are ancient.",
     "name": "Jiu (Bao, main-text/commentary classification)",
     "description": "Jiu occurs in the main-text animal list and is glossed as diao in commentary. Insufficient independent complete form evidence; the placeholder supplies no invented portrait.",
-    "quote": "Jiu occurs in the main-text animal list and is glossed as diao in commentary.",
+    "quote": "Its beasts include many mi deer, lu deer, jun and jiu.",
     "commentary_quote": "Guo Pu identifies diao and cites Guangya; a detailed modern eagle portrait is not inferred.",
     "artwork_caption": "Insufficient independent form evidence; the question-mark placeholder is not a depiction."
   },

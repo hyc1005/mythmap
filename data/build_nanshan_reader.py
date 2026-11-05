@@ -1,4 +1,5 @@
 """Build a complete passage reader, preserving the captured transcription separately."""
+from english_review import apply_quote_review
 import hashlib
 import json
 import re
@@ -123,6 +124,7 @@ def build():
     world['passages'] = passages + [p for p in world.get('passages', []) if not p['id'].startswith('passage-nanshan-')]
     world['revision'] = 'myth-world-2026-10-19-nanshan-reader-v3'
     write('frontend/public/data/myth-world.json',world)
+    apply_quote_review(world, english)
     write('frontend/src/locale-content-en.json',english)
     write('data/nanshan-edition-review.json', {'snapshot_sha256': hashlib.sha256((ROOT/'data/shanhaijing-reference.json').read_bytes()).hexdigest(), 'supplement_page':26, 'supplement': SUPPLEMENT, 'corrections':edits,
         'scan_pages':list(range(16,33)), 'confirmed_image_glyphs':['能','狀','經'], 'unresolved_image_glyphs':[{'passage':p['id'],'markers':re.findall(r'⟦缺字图:[^⟧]+⟧',p['quote'])} for p in passages if '⟦缺字图:' in p['quote']], 'limits':'逐山及总述说明齐备；不是所有对象均有独立实体卡，也不是各版本校勘定本。',

@@ -1,4 +1,5 @@
 """Complete independent Southern cards without adding invented map coordinates."""
+from english_review import apply_quote_review
 import json
 from pathlib import Path
 
@@ -190,6 +191,7 @@ def build():
             r['planned_artwork']=art;r['artwork_pending']=True;r.pop('artwork',None)
         else:r.pop('planned_artwork',None);r.pop('artwork_pending',None)
     world['revision']='myth-world-2026-10-19-nanshan-entities-v4'
+    apply_quote_review(world, en)
     write('frontend/public/data/myth-world.json',world); write('frontend/src/locale-content-en.json',en)
     style='Use case: illustration-story. A single antique Chinese woodcut illustration for a Shanhaijing atlas, matching carved charcoal knife lines, warm ivory forms, restrained ochre and muted celadon. Genuine transparent background outside irregular carved edges; no opaque rectangle, checkerboard, text, lettering, labels, seals, arrows, watermarks or modern objects. '
     for job in jobs:

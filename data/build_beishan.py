@@ -1,4 +1,5 @@
 """Merge facsimile-reviewed Northern Mountain passages without replacing other books."""
+from english_review import apply_quote_review
 import hashlib
 import json
 from pathlib import Path
@@ -226,6 +227,7 @@ def build():
     extend_qiuru(world, english, chapter, review, scans)
     extend_first_range(world, english, chapter, review)
     write('frontend/public/data/myth-world.json', world)
+    apply_quote_review(world, english)
     write('frontend/src/locale-content-en.json', english)
     write('data/beishan-edition-review.json', review)
     print('Built the complete Northern reading: 92 passages, 507 cards; original numerical differences retained')

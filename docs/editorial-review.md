@@ -109,3 +109,38 @@
 - 英文检查遍历全部神灵/异兽详情，并覆盖1440×1000、390×844、320×700、844×390四种尺寸、语言保持、搜索、序章和六个故事动画。固定构建后的完整复跑通过。
 - 首次英文检查与重建`dist`重叠，出现5个图片HTTP错误；固定构建后复跑不再出现。后续浏览器检查期间不要重建其正在使用的输出目录。
 - 生产构建通过，保留既有大分块提示；本次不扩大到打包拆分。
+
+## 后续译文修订 · 2026-11-05
+
+对全站引文字段进行了编辑措辞模式筛查，随后对照中文逐条修正24个入口。此批是针对命中问题的语义复核，不代表所有3166条内容已逐句审定。
+
+修正：白於动物名单、盂山白雉白翟、崦嵫龟与汤谷方位；具区、诸毗及洛水短引文；灵龟、三足六眼龟鳖、㹮、青耕、启母及郭注地理/竹类引文；补回少室段物产、服食与护兵记述，并同步山段与地点入口。尸水合天保留含混音译。成囷未详，保留原词音译及不确定说明。
+
+精确的24组中文依据和修订英文见`data/english_review.py`的`QUOTES`。五山经主构建器和南山阅读/实体补全构建器均接入修订；中文依据发生变化时阻止直接套用旧译。运行`python data/english_review.py`核对。
+
+- `beast-xishan-zuoniu-baiyu`
+- `beast-xishan-qianyang-baiyu`
+- `beast-xishan-turtle-yanzi`
+- `bird-xishan-pheasant-yushan4`
+- `place-xishan-tang-tianshan`
+- `water-nanshan-juqu`
+- `water-nanshan-zhupi-fuyu`
+- `water-xishan-luo-gangwei`
+- `beast-zhongshan-linggui-yangxu`
+- `beast-zhongshan-sixeye-comment-da241`
+- `beast-zhongshan-mo-lai9`
+- `beast-zhongshan-qinggeng-jinli11`
+- `deity-zhongshan-qimu-taishi`
+- `place-zhongshan-drum-comparison-xiong09`
+- `animal-zhongshan-black-tiger-comparison-jigu11`
+- `plant-zhongshan-gui-comparison-yun12`
+- `plant-zhongshan-li-comparison-yun12`
+- `place-zhongshan-three-jiang-comparison-dongting12`
+- `place-zhongshan-nine-jiang-comparison-dongting12`
+- `animal-zhongshan-jiu-bao12`
+- `plant-xishan-duheng-tiandi`
+- `water-zhongshan-shi-shi`
+- `place-zhongshan-r07-shaoshi`
+- `passage-zhongshan-r07-shaoshi`
+
+验证：24条原文绑定、源文变更拒绝、七个构建入口的只读重建、内容/来源清单、素材清单及生产构建通过。Chromium桌面与WebKit手机逐一检查24个英文引文入口及保留的中文原文，均通过。𪊨沿用项目既有Jun读名。

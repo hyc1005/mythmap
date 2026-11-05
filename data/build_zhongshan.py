@@ -1,4 +1,5 @@
 """Merge the reviewed Central passages, preserving all other books."""
+from english_review import apply_quote_review
 import hashlib
 import json
 from pathlib import Path
@@ -244,6 +245,7 @@ def build():
     }
     for id, fields in reviewed_english.items():
         english[id].update(fields)
+    apply_quote_review(world, english)
     write('frontend/public/data/myth-world.json', world); write('frontend/src/locale-content-en.json', english); write('data/zhongshan-edition-review.json', review)
     print(f'Built Central: {len(passages)} passages, {len(cards)} cards; 0 stages remain')
 

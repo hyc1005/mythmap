@@ -1,4 +1,5 @@
 """Merge reviewed Western Mountain passages and their independent entities."""
+from english_review import apply_quote_review
 import hashlib
 import json
 from pathlib import Path
@@ -4330,6 +4331,7 @@ def build():
     apply_character_artwork(world)
     world['revision'] = 'myth-world-2026-10-24-xishan-complete-v1'
     write('frontend/public/data/myth-world.json', world)
+    apply_quote_review(world, en)
     write('frontend/src/locale-content-en.json', en)
     write('frontend/src/xishan-relations.json', relations)
     edition_review = {

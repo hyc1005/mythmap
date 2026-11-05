@@ -40,3 +40,5 @@ python data/audit_shanhaijing.py --check
 五山经共480段阅读已接入；海经十三篇仍有缺口，当前实现不等于十八篇逐字校勘完成。每次内容更新后运行上述清单检查和对应浏览器验收。
 
 已停用的中山初始计划工具和Natural Earth底图生成链已移除；当前中山维护入口是`build_zhongshan.py`，底图配置是`frontend/src/geography-map-config.js`。旧版本可从Git历史恢复。
+
+古籍英文引文的后续修订集中于`english_review.py`，绑定原文并由上述主构建器及南山阅读/实体补全构建器应用。运行`python data/english_review.py`核对现行24条译文和中文依据；更新原文时须同步复核译文。
