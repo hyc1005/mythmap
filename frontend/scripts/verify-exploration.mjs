@@ -216,7 +216,12 @@ try {
     await page.locator('.kuafu-journey[data-status="reduced"]').waitFor();
     await page.getByRole('button', { name: locale === 'zh' ? '下一幕' : 'Next scene', exact: true }).click();
     await page.waitForFunction(() => document.querySelector('.kuafu-journey')?.dataset.phase === 'drink');
-    assert.ok(await page.locator('.journey-heading .ink-word').first().evaluate(element => getComputedStyle(element).animationName === 'none'), 'Reduced motion shows complete text immediately');
+    const heading = page.locator('.kuafu-journey .journey-heading');
+    const title = heading.locator('.blur-reveal-text');
+    assert.equal(await title.evaluate(element => getComputedStyle(element).filter), 'none', 'Reduced motion shows the story title clearly');
+    const phase = heading.locator('[aria-live="polite"]');
+    assert.equal(await phase.textContent(), locale === 'zh' ? '饮于河、渭' : 'Drinking from the Yellow and Wei Rivers');
+    assert.equal(await phase.locator('.ink-word, .blur-reveal-text').count(), 0, 'The complete phase label is plain text');
     await fits(page);
     await page.screenshot({ path: filename(`exploration-${locale}-${width}x${height}.png`), fullPage: true });
     await context.close();
