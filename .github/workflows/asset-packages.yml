@@ -1,0 +1,133 @@
+name: Verify and distribute original assets
+on:
+  push:
+    branches: ['maintenance/assets-*']
+    paths: ['.github/workflows/asset-packages.yml']
+permissions:
+  contents: read
+jobs:
+  packages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    env:
+      SOURCE_COMMIT: c6ca994286f8b6377d21c4f7b3d2e31e833c6440
+      ASSET_TAG: assets-2026-11-05-v1
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+        working-directory: frontend
+      - name: Verify source provenance and build packages
+        run: |
+          python frontend/scripts/verify-assets.py
+          python data/asset_packages.py pack --output "$RUNNER_TEMP/mythmap-packages" --tag "$ASSET_TAG" --source-commit "$SOURCE_COMMIT"
+          python data/asset_packages.py verify --catalog "$RUNNER_TEMP/mythmap-packages/asset-bundles.json" --archives "$RUNNER_TEMP/mythmap-packages"
+      - name: Create an independent lightweight restore target
+        run: |
+          git clone --shared --no-checkout "$GITHUB_WORKSPACE" "$RUNNER_TEMP/mythmap-restore"
+          git -C "$RUNNER_TEMP/mythmap-restore" sparse-checkout set --no-cone '/*' '!/frontend/artwork-source/**/*.png' '!/frontend/artwork-source/**/*.webp' '!/data/reference-scans/**/*.jpg'
+          git -C "$RUNNER_TEMP/mythmap-restore" checkout --detach "$GITHUB_SHA"
+          python - <<'PY'
+          import copy,json,os,sys,zipfile
+          from pathlib import Path
+          from types import SimpleNamespace
+          sys.path.insert(0,'data')
+          from asset_packages import destination,restore,verify
+          packages=Path(os.environ['RUNNER_TEMP'])/'mythmap-packages'
+          root=Path(os.environ['RUNNER_TEMP'])/'mythmap-restore'
+          args=SimpleNamespace(root=root,archives=packages,catalog=packages/'asset-bundles.json',group=None)
+          catalog=json.loads(args.catalog.read_text())
+          binary=[item for item in catalog['files'] if not item['path'].endswith('.json')]
+          first,second=binary[:2]
+          target=destination(root,first['path']);other=destination(root,second['path'])
+          assert not target.exists() and not other.exists()
+          target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(b'collision-test')
+          try:restore(args)
+          except ValueError as error:
+              assert 'refusing overwrite' in str(error)
+          else:raise AssertionError('Restore overwrote a conflicting asset')
+          assert target.read_bytes()==b'collision-test' and not other.exists()
+          with zipfile.ZipFile(packages/first['bundle']) as archive:target.write_bytes(archive.read(first['path']))
+          for bad in ['../outside','/tmp/outside','frontend/artwork-source/../../outside']:
+              try:destination(root,bad)
+              except ValueError:pass
+              else:raise AssertionError('Unsafe destination accepted')
+          damaged=copy.deepcopy(catalog);damaged['bundles'][0]['sha256']='0'*64
+          bad_catalog=Path(os.environ['RUNNER_TEMP'])/'bad-catalog.json'
+          bad_catalog.write_text(json.dumps(damaged))
+          try:verify(SimpleNamespace(**{**vars(args),'catalog':bad_catalog}))
+          except ValueError as error:assert 'checksum mismatch' in str(error)
+          else:raise AssertionError('Bad checksum accepted')
+          print('PASS conflict protection, preflight-before-writes, unsafe paths and bad checksums')
+          PY
+          python data/asset_packages.py restore --catalog "$RUNNER_TEMP/mythmap-packages/asset-bundles.json" --archives "$RUNNER_TEMP/mythmap-packages" --root "$RUNNER_TEMP/mythmap-restore"
+          python data/asset_packages.py check --catalog "$RUNNER_TEMP/mythmap-packages/asset-bundles.json" --root "$RUNNER_TEMP/mythmap-restore"
+          cd "$RUNNER_TEMP/mythmap-restore/frontend"
+          npm ci
+          python scripts/verify-assets.py
+      - name: Upload verified packages and publish release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,time,urllib.request,urllib.error,urllib.parse
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'mythmap-packages'
+          repository=os.environ['GITHUB_REPOSITORY']
+          assert repository=='hyc1005/mythmap'
+          api=f'https://api.github.com/repos/{repository}'
+          headers={'Authorization':'Bearer '+os.environ['GITHUB_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self,*args):return None
+          opener=urllib.request.build_opener(NoRedirect())
+          def request(url,method='GET',body=None):
+              data=json.dumps(body).encode() if body is not None else None
+              req=urllib.request.Request(url,data=data,headers={**headers,'Content-Type':'application/json'},method=method)
+              with opener.open(req,timeout=90) as response:return json.load(response)
+          tag=os.environ['ASSET_TAG']
+          try:release=request(api+'/releases/tags/'+tag)
+          except urllib.error.HTTPError as error:
+              if error.code!=404:raise
+              release=request(api+'/releases','POST',{'tag_name':tag,'target_commitish':os.environ['SOURCE_COMMIT'],'name':'MythMap original assets · 2026-11-05 v1','body':'Verified original artwork and facsimile packages. Restore original paths with data/asset_packages.py. Package and per-file SHA-256 values are in asset-bundles.json. Existing provenance and reuse restrictions remain in ASSETS.md; distribution does not grant additional reuse rights.','draft':True,'prerelease':False,'make_latest':'false'})
+          files=sorted(path for path in root.iterdir() if path.is_file())
+          remote={item['name']:item for item in request(release['assets_url']+'?per_page=100')}
+          results=[]
+          for path in files:
+              digest=hashlib.sha256()
+              with path.open('rb') as stream:
+                  for block in iter(lambda:stream.read(4*1024*1024),b''):digest.update(block)
+              expected='sha256:'+digest.hexdigest()
+              if path.name in remote:
+                  asset=remote[path.name]
+                  if asset.get('digest')!=expected or asset['size']!=path.stat().st_size:raise ValueError('Existing release asset differs; refusing overwrite: '+path.name)
+              else:
+                  if not release['draft']:raise ValueError('Refusing to append to a published asset version')
+                  url=release['upload_url'].split('{')[0]+'?name='+urllib.parse.quote(path.name)
+                  assert url.startswith(f'https://uploads.github.com/repos/{repository}/releases/')
+                  with path.open('rb') as stream:
+                      req=urllib.request.Request(url,data=stream,headers={**headers,'Content-Type':'application/octet-stream','Content-Length':str(path.stat().st_size)},method='POST')
+                      with opener.open(req,timeout=180) as response:asset=json.load(response)
+              for attempt in range(30):
+                  if asset.get('digest'):break
+                  time.sleep(1);asset=request(asset['url'])
+              if asset.get('digest')!=expected or asset['size']!=path.stat().st_size:raise ValueError('Remote digest mismatch: '+path.name)
+              results.append({'name':path.name,'bytes':asset['size'],'sha256':digest.hexdigest(),'url':asset['browser_download_url']})
+              print('Verified upload:',path.name,asset['size'])
+          if release['draft']:release=request(release['url'],'PATCH',{'draft':False,'make_latest':'false'})
+          report={'source_commit':os.environ['SOURCE_COMMIT'],'release':release['html_url'],'files':results,'restore_and_full_inventory_check':'passed'}
+          Path('asset-release-report.json').write_text(json.dumps(report,indent=2)+'\n')
+          print('Published:',release['html_url'])
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: asset-release-report
+          path: asset-release-report.json
+          retention-days: 14
