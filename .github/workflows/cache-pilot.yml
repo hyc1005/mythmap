@@ -1,0 +1,196 @@
+name: Measure Playwright browser preparation
+on:
+  push:
+    branches: ['maintenance/cache-pilot-*']
+    paths: ['.github/workflows/cache-pilot.yml']
+permissions:
+  contents: read
+jobs:
+  cold:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        sample: [1, 2, 3]
+        profile:
+          - {name: chromium-full, browser: chromium, shell: false, cache: false}
+          - {name: chromium-shell, browser: chromium, shell: true, cache: true}
+          - {name: webkit, browser: webkit, shell: false, cache: true}
+    defaults:
+      run:
+        working-directory: frontend
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-pilot
+      PW_BROWSER: ${{ matrix.profile.browser }}
+      PW_PROFILE: ${{ matrix.profile.name }}
+      PW_SAMPLE: ${{ matrix.sample }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /frontend/package.json
+            /frontend/package-lock.json
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - name: Cache identity
+        id: identity
+        run: |
+          PW_VERSION=$(node -p "require('playwright/package.json').version")
+          echo "version=$PW_VERSION" >> "$GITHUB_OUTPUT"
+          echo "os=$(lsb_release -rs)" >> "$GITHUB_OUTPUT"
+      - name: Use public package mirror
+        run: |
+          if [[ -f /etc/apt/apt-mirrors.txt ]]; then
+            echo 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt > /dev/null
+          fi
+      - name: Measure cold install and launch
+        env:
+          PW_SHELL: ${{ matrix.profile.shell }}
+        run: |
+          node --input-type=module <<'JS'
+          import {execFileSync} from 'node:child_process';
+          import {mkdirSync,writeFileSync} from 'node:fs';
+          import {chromium,webkit} from 'playwright';
+          const start=Date.now();
+          const flags=['playwright','install','--with-deps',process.env.PW_BROWSER];
+          if(process.env.PW_SHELL==='true') flags.push('--only-shell');
+          execFileSync('npx',flags,{stdio:'inherit'});
+          const browser=await ({chromium,webkit}[process.env.PW_BROWSER]).launch();
+          const page=await browser.newPage(); await page.setContent('<h1>Browser ready</h1>');
+          if(await page.locator('h1').textContent()!=='Browser ready') throw new Error('Browser smoke failed');
+          await browser.close();
+          mkdirSync('../output/cache-pilot',{recursive:true});
+          writeFileSync(`../output/cache-pilot/cold-${process.env.PW_PROFILE}-${process.env.PW_SAMPLE}.json`,JSON.stringify({mode:'cold',profile:process.env.PW_PROFILE,browser:process.env.PW_BROWSER,sample:+process.env.PW_SAMPLE,preparation_ms:Date.now()-start,cache_save_ms:0}));
+          JS
+      - name: Start save timer
+        if: matrix.profile.cache
+        run: echo "PW_SAVE_START=$(date +%s%3N)" >> "$GITHUB_ENV"
+      - uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        if: matrix.profile.cache
+        with:
+          path: ${{ github.workspace }}/.pw-pilot
+          key: pw-pilot-v1-${{ runner.os }}-${{ runner.arch }}-${{ steps.identity.outputs.os }}-${{ steps.identity.outputs.version }}-${{ matrix.profile.browser }}-${{ github.run_id }}-${{ matrix.sample }}
+      - name: Record save cost
+        if: matrix.profile.cache
+        run: |
+          node --input-type=module <<'JS'
+          import {readFileSync,writeFileSync} from 'node:fs';
+          const path=`../output/cache-pilot/cold-${process.env.PW_PROFILE}-${process.env.PW_SAMPLE}.json`;
+          const data=JSON.parse(readFileSync(path)); data.cache_save_ms=Date.now()-Number(process.env.PW_SAVE_START);
+          writeFileSync(path,JSON.stringify(data));
+          JS
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: pw-cold-${{ matrix.profile.name }}-${{ matrix.sample }}
+          path: output/cache-pilot/*.json
+          retention-days: 7
+
+  warm:
+    needs: cold
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+        sample: [1, 2, 3]
+    defaults:
+      run:
+        working-directory: frontend
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-pilot
+      PW_BROWSER: ${{ matrix.browser }}
+      PW_SAMPLE: ${{ matrix.sample }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /frontend/package.json
+            /frontend/package-lock.json
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - name: Cache identity
+        id: identity
+        run: |
+          PW_VERSION=$(node -p "require('playwright/package.json').version")
+          echo "version=$PW_VERSION" >> "$GITHUB_OUTPUT"
+          echo "os=$(lsb_release -rs)" >> "$GITHUB_OUTPUT"
+      - name: Use public package mirror
+        run: |
+          if [[ -f /etc/apt/apt-mirrors.txt ]]; then
+            echo 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt > /dev/null
+          fi
+      - name: Start preparation timer
+        run: echo "PW_WARM_START=$(date +%s%3N)" >> "$GITHUB_ENV"
+      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        id: browsers
+        with:
+          path: ${{ github.workspace }}/.pw-pilot
+          key: pw-pilot-v1-${{ runner.os }}-${{ runner.arch }}-${{ steps.identity.outputs.os }}-${{ steps.identity.outputs.version }}-${{ matrix.browser }}-${{ github.run_id }}-${{ matrix.sample }}
+      - name: Require a real cache hit
+        if: steps.browsers.outputs.cache-hit != 'true'
+        run: exit 1
+      - name: Install system dependencies and measure launch
+        run: |
+          npx playwright install-deps "$PW_BROWSER"
+          node --input-type=module <<'JS'
+          import {mkdirSync,writeFileSync} from 'node:fs';
+          import {chromium,webkit} from 'playwright';
+          const browser=await ({chromium,webkit}[process.env.PW_BROWSER]).launch();
+          const page=await browser.newPage(); await page.setContent('<h1>Browser ready</h1>');
+          if(await page.locator('h1').textContent()!=='Browser ready') throw new Error('Browser smoke failed');
+          await browser.close(); mkdirSync('../output/cache-pilot',{recursive:true});
+          writeFileSync(`../output/cache-pilot/warm-${process.env.PW_BROWSER}-${process.env.PW_SAMPLE}.json`,JSON.stringify({mode:'warm',browser:process.env.PW_BROWSER,sample:+process.env.PW_SAMPLE,cache_hit:true,preparation_ms:Date.now()-Number(process.env.PW_WARM_START)}));
+          JS
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: pw-warm-${{ matrix.browser }}-${{ matrix.sample }}
+          path: output/cache-pilot/*.json
+          retention-days: 7
+
+  report:
+    needs: [cold, warm]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          pattern: pw-*
+          path: measurements
+          merge-multiple: true
+      - name: Compare real preparation times
+        run: |
+          python - <<'PY'
+          import json,statistics,os
+          from pathlib import Path
+          rows=[json.loads(p.read_text()) for p in Path('measurements').glob('*.json')]
+          assert len(rows)==15,len(rows)
+          report={'samples':rows,'decisions':{}}
+          for browser,profile in [('chromium','chromium-shell'),('webkit','webkit')]:
+              cold=[r['preparation_ms'] for r in rows if r['mode']=='cold' and r['profile']==profile]
+              warm=[r['preparation_ms'] for r in rows if r['mode']=='warm' and r['browser']==browser]
+              assert len(cold)==len(warm)==3
+              saving=statistics.median(cold)-statistics.median(warm)
+              report['decisions'][browser]={'cold_median_ms':statistics.median(cold),'warm_median_ms':statistics.median(warm),'saving_ms':saving,'retain_binary_cache':saving>=10000}
+          full=[r['preparation_ms'] for r in rows if r.get('profile')=='chromium-full']
+          shell=[r['preparation_ms'] for r in rows if r.get('profile')=='chromium-shell']
+          report['chromium_only_shell_saving_ms']=statistics.median(full)-statistics.median(shell)
+          Path('benchmark.json').write_text(json.dumps(report,indent=2)+'\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as summary:summary.write('```json\n'+json.dumps(report['decisions'],indent=2)+'\n```\n')
+          print(json.dumps(report['decisions'],indent=2))
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: cache-pilot-report
+          path: benchmark.json
+          retention-days: 14
