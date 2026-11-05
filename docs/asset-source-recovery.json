@@ -1,0 +1,508 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-06",
+  "scope": "Recovery of 16 previously unlocated creation/source records. Files, illustrations, translations and licensing terms are unchanged.",
+  "evidence_source": "Read-only local Codex thread-history projection, generated-image bytes and repository history. Raw sessions/databases, absolute user paths and image base64 are not published.",
+  "limitations": [
+    "Local history is a maintainer-held record, not an independent signed attestation. Projection item hashes allow local rechecking.",
+    "The exact image model, original attachment lists and historical service/rights conditions are not established by these recovered items.",
+    "Located records are recorded with limits; zero unlocated records does not mean zero provenance, semantic or rights uncertainty."
+  ],
+  "tool_records": {
+    "myth-paper": {
+      "thread_id": "01a0f1c3-4988-77f0-80b7-93af99c3fe60",
+      "item_id": "exec-19dd7bf8-b38d-4718-905e-7ed02a517ac0",
+      "item_type": "imageGeneration",
+      "projection_item_sha256": "af9e2a57088cb2709dada7ab60453e1efed6edca60ac9cfcde578820fdb9d35f",
+      "recorded_at_utc": "2026-10-01T02:49:05.346000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-01T02:49:34.938000+00:00",
+      "revised_prompt": "Use case: illustration-story asset texture. Asset type: seamless background texture for an interactive ancient myth map web app. Primary request: a restrained aged xuan paper surface with subtle hand-printed woodblock ink grain, very faint water stains and sparse pale ink wash clouds at the edges, ample quiet center for map labels and interactive art overlays. Style/medium: Chinese archaic woodblock map print with dry ink linework and faint mineral wash, tactile rough paper, understated and scholarly, consistent museum-quality graphic asset. Composition/framing: tileable visual texture, evenly distributed, no focal objects, no border. Palette: warm ivory old paper, muted ink-black fibers, trace of pale ochre and gray-green, tiny subdued vermilion flecks only at edges. Constraints: no writing, no symbols, no illustrations, no map, no mountains, no text, no frame, no gradients that band, no watermark. Avoid: glossy digital texture, modern infographic style, painterly realism, strong stains.",
+      "transparent_background": false,
+      "output_sha256": "60cb97f6b1874c73ecfe99104598f026e2f6165b931a2c89a7bb4f5d5a601b6f",
+      "output_bytes": 3276939,
+      "tool": "Codex built-in image generation",
+      "model": "not recorded in the recovered item",
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+    },
+    "pangu": {
+      "thread_id": "01a0f1c3-4988-77f0-80b7-93af99c3fe60",
+      "item_id": "exec-8aa079cb-260d-48b9-abcd-1cbb7f87683d",
+      "item_type": "imageGeneration",
+      "projection_item_sha256": "a2312a799b6f3a3d6b8e4c065a3a25457206469b8ddf08f22c4e7358ce0d351c",
+      "recorded_at_utc": "2026-10-01T02:50:30.084000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-01T02:51:33.293000+00:00",
+      "revised_prompt": "Use case: stylized-concept. Asset type: small transparent cutout illustration for a Chinese myth map hover marker. Primary request: depict Pangu opening heaven and earth as one iconic subject, a colossal archaic creator holding a rough stone axe between a small dark chaos egg splitting into two curling ink-cloud halves, with only a few broken rock strokes at the base. Style/medium: rough ancient Chinese woodblock print line art, dry brush ink, uneven hand-carved contour lines, flat muted mineral washes. Palette: soot black, warm paper ivory highlights, faint ochre, one restrained vermilion accent. Composition: centered compact vertical emblem with bold recognizable silhouette that remains readable at 96px; no decorative frame. Constraints: transparent background, single subject, keep all forms inside canvas, no lettering, no calligraphy, no runes, no watermark. Avoid: polished gongbi, modern fantasy game art, photorealism, gradients, glossy shading, ornate clouds, modern weapon design.",
+      "transparent_background": true,
+      "output_sha256": "e7a31368a7afdb1f8838124b1848e669b4401b1e0cafe588bb9855adabe3b544",
+      "output_bytes": 2636968,
+      "tool": "Codex built-in image generation",
+      "model": "not recorded in the recovered item",
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+    },
+    "kunlun": {
+      "thread_id": "01a0f1c3-4988-77f0-80b7-93af99c3fe60",
+      "item_id": "exec-8a8f57fa-1fc3-49ae-90e9-aa4963d0cece",
+      "item_type": "imageGeneration",
+      "projection_item_sha256": "f2f4c09f9cd3d59ffae0256f0967d9f1476f99966ec1fbfd609af55406f9b358",
+      "recorded_at_utc": "2026-10-01T03:11:50.741000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-01T03:12:55.181000+00:00",
+      "revised_prompt": "Use case: stylized-concept. Asset type: isolated transparent map-node illustration. Subject: An isolated iconic sacred Kunlun mountain massif for a Chinese myth map: tall layered rocky peak, faint jade gateway and tiny winding stream, no buildings as focal. Style/medium: rough ancient Chinese woodblock print, hand-carved dry ink contour and hatch texture, restrained flat colors in soot black, warm parchment ivory, muted mineral ochre and small vermilion accents. Keep consistent with the attached Jingwei reference's etched outline weight, palette and worn print grain. Composition: bold compact centered silhouette readable at 80px, no frame. Constraints: transparent background, accurate count and anatomy from source description, no text, no watermark. Avoid: glossy game concept art, smooth airbrush, polished gongbi, Western fantasy styling.",
+      "transparent_background": true,
+      "output_sha256": "bf8c4df9ed58af3ffe4f21644af00871798b3d1408318b460b8fd058e03fd8d5",
+      "output_bytes": 2607042,
+      "tool": "Codex built-in image generation",
+      "model": "not recorded in the recovered item",
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+    },
+    "nuwa": {
+      "thread_id": "01a0f1c3-4988-77f0-80b7-93af99c3fe60",
+      "item_id": "exec-ce943e1e-a583-484c-95cf-e5ac545d20d1",
+      "item_type": "imageGeneration",
+      "projection_item_sha256": "0885c55f874fabea3a78ca322b7538b7daf9149dbe020a5cdeb472e14e8dae3f",
+      "recorded_at_utc": "2026-10-01T03:12:55.335000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-01T03:14:00.556000+00:00",
+      "revised_prompt": "Use case: stylized-concept. Asset type: isolated transparent map-node illustration. Subject: Nuwa, archaic Chinese creator goddess: dignified human upper body with long coiled serpent lower body, holding five uneven colored stones. Single figure, no halo. Style/medium: rough ancient Chinese woodblock print, hand-carved dry ink contour and hatch texture, restrained flat colors in soot black, warm parchment ivory, muted mineral ochre and small vermilion accents. Keep consistent with the attached Jingwei reference's etched outline weight, palette and worn print grain. Composition: bold compact centered silhouette readable at 80px, no frame. Constraints: transparent background, accurate count and anatomy from source description, no text, no watermark. Avoid: glossy game concept art, smooth airbrush, polished gongbi, Western fantasy styling.",
+      "transparent_background": true,
+      "output_sha256": "791b6ba593e6b48b1f62d18c5173c3a9c35876514bc96b18d8c627d761fbb4c2",
+      "output_bytes": 2943275,
+      "tool": "Codex built-in image generation",
+      "model": "not recorded in the recovered item",
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+    },
+    "xi-wang-mu": {
+      "thread_id": "01a0f1c3-4988-77f0-80b7-93af99c3fe60",
+      "item_id": "exec-5dbe255b-0ca4-45c4-a73b-ad6b10ce219d",
+      "item_type": "imageGeneration",
+      "projection_item_sha256": "0759f7faa694daee637616639fd9e175282008983368a24debdf5a20e356b18b",
+      "recorded_at_utc": "2026-10-01T03:24:45.571000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-01T03:25:55.226000+00:00",
+      "revised_prompt": "Create one isolated transparent-background woodblock-print illustration for an interactive ancient Chinese myth atlas. Match the established style exactly: rough hand-carved black ink outlines and hatching, aged ivory and muted ochre fills, restrained cinnabar red accents, visible imperfect carved edges, graphic silhouette, no gradients, no modern fantasy gloss, no typography, no border, no background. Subject: 西王母 exactly as described in the West Mountain Classic of the Shan Hai Jing: an ancient formidable female divine being with leopard tail, tiger teeth, unbound hair, wearing a victory-shaped headdress (戴胜); dignified archaic presence, not a later benevolent immortal empress, no peaches, no jade palace, no crown. Show full figure with clear readable leopard tail and tiger teeth, suitable as a small map-point apparition. Transparent background.",
+      "transparent_background": true,
+      "output_sha256": "94a580d19317324b07c32035b5212915cb5787cdf5ad7d6765d5362a2003734c",
+      "output_bytes": 2813422,
+      "tool": "Codex built-in image generation",
+      "model": "not recorded in the recovered item",
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+    },
+    "brand": {
+      "thread_id": "01a1299f-2848-7521-a942-a5ff815da0ca",
+      "item_id": "exec-ae53ec95-53a7-4fca-bac0-c7404ca04ea0",
+      "item_type": "imageGeneration",
+      "projection_item_sha256": "16392816e70e5cedd774cd03e6ec4c36965ef3b3bfb34b480e7a0fe35413165d",
+      "recorded_at_utc": "2026-10-11T07:06:45.385000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-11T07:07:32.245000+00:00",
+      "revised_prompt": "为中国神话地图网站“山海寻踪”设计方形图标参考：朱砂单色，三座简练山峰、两道海浪、一轮小太阳，古籍木刻与篆刻印章风格，细方框，线条清晰，32像素仍可辨识，无文字、无渐变、无阴影，透明背景。",
+      "transparent_background": true,
+      "output_sha256": "94ce7e22732d51fc94674623d355dabe12fe9ff73849e2be8184b43cc203d075",
+      "output_bytes": 603255,
+      "tool": "Codex built-in image generation",
+      "model": "not recorded in the recovered item",
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+    },
+    "suiren": {
+      "thread_id": "01a0f719-9e32-7b01-863c-0f13acf5fba8",
+      "item_id": "exec-393d6e5e-0fca-416d-9bcf-3a604acebae1",
+      "item_type": "imageGeneration",
+      "projection_item_sha256": "b60a1a8b346b0e79dc792faca1469d06454e0d9f5c8f4a23e1b0bc88dfce58a0",
+      "recorded_at_utc": "2026-10-02T08:21:45.614000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-02T08:22:42.540000+00:00",
+      "revised_prompt": "Create a clean transparent sprite sheet exactly 3 columns × 2 rows, six sequential full-body animation poses of the SAME ancient Chinese fire-maker Suiren based on the supplied character reference. Preserve the identical face, hair, headband, rough ochre tunic, charcoal etched contours, proportions, and lower-body silhouette in every cell. Each pose completely separated and fully visible, same character scale, same ground baseline, facing slightly right, generous clear transparent gutters; no panel borders or labels. Sequence: (1) crouched drilling wood with hands at spindle, but absolutely no spark or flame; (2) stop drilling and lean down shielding a tiny ember between his palms, no flame; (3) turn and carry a single tiny glowing ember toward a small tinder pile off-frame to the right, no flame; (4) crouch beside the tinder and carefully transfer ember, no flame visible anywhere; (5) draw back, hands protecting the tinder as ignition begins, but do not draw fire or sparks; (6) step back and watch calmly, hands lowered, no fire in image. Absolutely no fire, flames, sparks, glowing areas, burning logs, scenery, ground texture, background, additional people, or props except simple hand drill in poses 1-2 and one small ember only in pose 2. Transparent background. Engraved ancient Chinese woodblock illustration matching Pangu scene and Suiren reference: deep charcoal carved ink strokes, fine hatchwork, warm parchment ochre, restrained cinnabar textile accents, detailed face and cloth. Uniform character identity and costume across all six poses, storyboard sprite production sheet.",
+      "transparent_background": true,
+      "output_sha256": "06c448866a9bbfe681c21e459dde61ed8e5e29f172c0d5b50e5c5f9431a83405",
+      "output_bytes": 2972549,
+      "tool": "Codex built-in image generation",
+      "model": "not recorded in the recovered item",
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+    },
+    "fuxi": {
+      "thread_id": "01a0f719-9e32-7b01-863c-0f13acf5fba8",
+      "item_id": "exec-218458e9-f14d-4ca6-83ae-4658d2ec0e2d",
+      "item_type": "imageGeneration",
+      "projection_item_sha256": "3ef40fd547cb3548a595fd4c5aaf35d91aa513ebf0dba07e9ed26b1fe33e1f7a",
+      "recorded_at_utc": "2026-10-01T16:01:25.861000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-01T16:02:11.765000+00:00",
+      "revised_prompt": "Precisely edit Image 1. Preserve Fuxi's figure, face, robes, pose, bamboo slips, original warm Chinese woodcut texture, canvas composition, and transparent background. Remove only all eight small trigram-like symbols in the upper-right quadrant beside his raised hand. Leave that area empty and transparent. Do not add or redraw any symbols, and do not alter, crop, repaint, or restyle any other part. The background must have real transparent alpha, not a checkerboard.",
+      "transparent_background": true,
+      "output_sha256": "4b88bb4db393938d7821b75c9b241e2434c293343cf1a3da9e6666fcc30bf3f9",
+      "output_bytes": 1934702,
+      "tool": "Codex built-in image generation",
+      "model": "not recorded in the recovered item",
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+    },
+    "lossless-webp-conversion": {
+      "thread_id": "01a1299f-2848-7521-a942-a5ff815da0ca",
+      "item_id": "exec-7837f558-2035-41c2-bbf3-74d911543942",
+      "item_type": "commandExecution",
+      "projection_item_sha256": "90cb87b50ccd24a4493620ab17216aee94635a12e0cf04dac0e675239e5c901b",
+      "recorded_at_utc": "2026-10-11T07:09:27.091000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-11T07:09:45.251000+00:00",
+      "exit_code": 0,
+      "recorded_method": "Pillow RGBA.save(WEBP, lossless=True, exact=True, method=4); source PNG moved to optimized-originals; decoded RGBA equality asserted before write"
+    },
+    "suiren-copy": {
+      "thread_id": "01a0f719-9e32-7b01-863c-0f13acf5fba8",
+      "item_id": "exec-4ae49955-d932-4894-a764-812f6d76c5e5",
+      "item_type": "commandExecution",
+      "projection_item_sha256": "0784179f4557042da01b2ed78f153feea086fe4f144fe2c705825af253c65717",
+      "recorded_at_utc": "2026-10-02T08:26:08.628000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-02T08:26:09.158000+00:00",
+      "exit_code": 0
+    },
+    "suiren-manifest": {
+      "thread_id": "01a0f719-9e32-7b01-863c-0f13acf5fba8",
+      "item_id": "exec-7b105648-6d1b-4262-b013-bdbbeb4d2e22",
+      "item_type": "commandExecution",
+      "projection_item_sha256": "213faa228584aab92b69ce411ecaa545ec81e23a17b3ddbdaae288f59f61a064",
+      "recorded_at_utc": "2026-10-02T09:00:26.060000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-02T09:00:26.464000+00:00",
+      "exit_code": 0
+    },
+    "ornament-create": {
+      "thread_id": "01a0f141-e1d1-7a51-b6e7-a9e3930ae4f3",
+      "item_id": "exec-82550f7e-aa40-4207-b989-44f32633b678",
+      "item_type": "fileChange",
+      "projection_item_sha256": "5279b4a7ae345210d6d45452b4919da47e0ded430cda6105f305357bc6394196",
+      "recorded_at_utc": "2026-09-30T07:44:35.932000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-09-30T07:44:35.933000+00:00",
+      "operation": "native SVG code addition",
+      "initial_content_sha256_lf": "c11806b3933ff67ac88745170ff82527f9ce6dbb864c864bb70c9d8bbb0f2609",
+      "initial_content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 700\" preserveAspectRatio=\"none\">\n  <g fill=\"none\" stroke=\"#766846\" stroke-width=\"2\" opacity=\".15\">\n    <path d=\"M18 80c70-42 122-45 184-13s104 42 169 5 116-42 176-7 112 39 175 6 105-36 167-8 113 37 180 0 82-25 113-11\"/>\n    <path d=\"M-20 111c75-39 126-42 190-11s103 40 165 4 119-40 179-5 110 38 172 5 109-34 169-7 111 36 178 0 88-23 127-10\"/>\n    <path d=\"M53 540c76-42 133-45 197-12s110 42 177 5 123-42 187-7 117 39 183 6 113-35 176-7 112 37 193 0\"/>\n    <path d=\"M20 573c82-40 139-43 203-10s108 40 173 3 124-40 188-5 115 38 180 5 116-33 177-6 112 36 193 0\"/>\n  </g>\n  <g fill=\"#786544\" opacity=\".15\">\n    <path d=\"m891 250 39-68 40 68h-20l-20-34-20 34zM951 250l45-78 45 78h-22l-23-40-23 40zM1017 250l34-59 34 59h-17l-17-30-17 30z\"/>\n    <path d=\"m74 426 37-64 38 64h-19l-19-33-19 33zM133 426l43-74 43 74h-21l-22-38-22 38zM198 426l33-57 34 57h-17l-17-29-17 29z\"/>\n  </g>\n  <g fill=\"none\" stroke=\"#8b7650\" stroke-width=\"1\" opacity=\".3\">\n    <path d=\"M27 26h1146v648H27z\"/>\n    <path d=\"M37 36h1126v628H37z\" stroke-dasharray=\"2 8\"/>\n  </g>\n  <g fill=\"#765f39\" opacity=\".34\" font-family=\"serif\" font-size=\"22\" letter-spacing=\"7\">\n    <text x=\"67\" y=\"75\">山 海 图 录</text>\n    <text x=\"1045\" y=\"625\" writing-mode=\"vertical-rl\">云山 · 古意</text>\n  </g>\n</svg>\n"
+    },
+    "fuxi-svg-create": {
+      "thread_id": "01a0f719-9e32-7b01-863c-0f13acf5fba8",
+      "item_id": "exec-17230d10-2d36-4c54-8105-11c5d9b84dc3",
+      "item_type": "fileChange",
+      "projection_item_sha256": "d43ee71d0c7ca2146f462c611c25ce41d5be0b6effaf19fac9ee38ed86a38f29",
+      "recorded_at_utc": "2026-10-01T16:03:59.868000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-01T16:03:59.871000+00:00",
+      "operation": "native SVG code addition",
+      "initial_content_sha256_lf": "5183673bb33843714a7a504a99affcbfc751a24ba43d15a84bcc0598e0daaeef",
+      "initial_content": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1021 1540\" width=\"1021\" height=\"1540\" role=\"img\" aria-labelledby=\"title desc\">\n  <title id=\"title\">伏羲与先天八卦</title>\n  <desc id=\"desc\">按传统先天图式绘制的八卦。图上为南、下为北、左为东、右为西。</desc>\n  <image href=\"fuxi-clean.png\" width=\"1021\" height=\"1540\" />\n  <g fill=\"none\" stroke=\"#735037\" stroke-opacity=\".65\" stroke-width=\"2\">\n    <circle cx=\"790\" cy=\"258\" r=\"116\" stroke-dasharray=\"2 8\" />\n  </g>\n  <g fill=\"#745139\" font-family=\"Noto Serif SC, SimSun, serif\" font-size=\"19\" text-anchor=\"middle\">\n    <text x=\"790\" y=\"83\">南</text><text x=\"790\" y=\"447\">北</text>\n    <text x=\"628\" y=\"265\">东</text><text x=\"952\" y=\"265\">西</text>\n  </g>\n  <g fill=\"#9b512b\" font-family=\"Noto Serif SC, SimSun, serif\" font-size=\"20\" text-anchor=\"middle\">\n    <text x=\"790\" y=\"117\">乾</text><text x=\"697\" y=\"154\">震</text>\n    <text x=\"662\" y=\"258\">离</text><text x=\"697\" y=\"363\">兑</text>\n    <text x=\"790\" y=\"401\">坤</text><text x=\"883\" y=\"363\">艮</text>\n    <text x=\"918\" y=\"258\">坎</text><text x=\"883\" y=\"154\">巽</text>\n  </g>\n  <g fill=\"#47372a\" stroke=\"#47372a\" stroke-width=\"5\" stroke-linecap=\"round\">\n    <g transform=\"translate(768 126)\"><path d=\"M0 0h44M0 9h44M0 18h44\" /></g>\n    <g transform=\"translate(675 163)\"><path d=\"M0 0h18m8 0h18M0 9h44M0 18h18m8 0h18\" /></g>\n    <g transform=\"translate(640 267)\"><path d=\"M0 0h44M0 9h18m8 0h18M0 18h44\" /></g>\n    <g transform=\"translate(675 372)\"><path d=\"M0 0h18m8 0h18M0 9h18m8 0h18M0 18h44\" /></g>\n    <g transform=\"translate(768 410)\"><path d=\"M0 0h18m8 0h18M0 9h18m8 0h18M0 18h18m8 0h18\" /></g>\n    <g transform=\"translate(861 372)\"><path d=\"M0 0h44M0 9h18m8 0h18M0 18h18m8 0h18\" /></g>\n    <g transform=\"translate(896 267)\"><path d=\"M0 0h18m8 0h18M0 9h44M0 18h18m8 0h18\" /></g>\n    <g transform=\"translate(861 163)\"><path d=\"M0 0h18m8 0h18M0 9h44M0 18h44\" /></g>\n  </g>\n</svg>\n"
+    },
+    "bestiary-create": {
+      "thread_id": "01a178e3-6250-7ba3-83da-d85dff1cb362",
+      "item_id": "call_lfTOX6wVFDVBYdW96OpT2Or9",
+      "item_type": "commandExecution",
+      "projection_item_sha256": "857db25ab366a74c3552388fb32ad63351e4e0627e16827222898ee62dc88f68",
+      "recorded_at_utc": "2026-10-28T00:31:58.108000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-28T00:31:58.711000+00:00",
+      "exit_code": 0,
+      "recorded_command_fragment": "import json,re,ctypes\nfrom pathlib import Path\nroot=Path('frontend/src');w=json.load(open('frontend/public/data/myth-world.json',encoding='utf-8'));en=json.load(open(root/'locale-content-en.json',encoding='utf-8'));dictionary=json.load(open(root/'locale-en.json',encoding='utf-8'))\ndef simple(s):\n if not s:return ''\n buf=ctypes.create_unicode_buffer(len(s)*3+8)\n if not ctypes.windll.kernel32.LCMapStringW(0x0804,0x02000000,s,-1,buf,len(buf)):raise ctypes.WinError()\n return buf.value\ndef english(b):\n if b['id'] in en and 'name' in en[b['id']]:return en[b['id']]['name']\n s=b['name']\n if s in dictionary:return dictionary[s]\n for a,z in sorted(dictionary.items(),key=lambda kv:len(kv[0]),reverse=True):s=s.replace(a,z)\n return s\nbird={6,15,16,19,21,26,29,30,32,34,36,39,43,45,50,51,53,55,57,61,63,68,72,86,88,89,92,93,96,97,101,105,107,109,111,113,117,119,123,124,127,143,144,147,149,156,158,160,166,181,182,187,194,197,200,204,205,208,212,221,236,240,249,261,267,268,273,274,277,290,291,297,300,303,304,305,313}\nfish={3,10,27,28,40,91,94,130,133,135,140,145,168,169,172,183,195,213,216,222,223,224,242,243,244,246,250,251,252,254,258,259,284,285,287,289}\nserpent={5,12,33,37,62,103,114,120,137,162,173,178,192,202,203,206,217,226,234,245,262,276,278,282,283,293,296,307,315,316}\ninsect={100,207,281}\nother={11,13,23,95,102,129,136,163,189,191,209,219,225,228,230,231,232,279,286,301,309,115}\nunresolved={13,95,102,129,163,191,209,219,228,230,231,286,301,309}\nforms={b['id']:('bird' if i in bird else 'fish' if i in fish else 'serpent' if i in serpent else 'insect' if i in insect else 'other' if i in other else 'beast') for i,b in enumerate(w['beasts'])}\nfor b in w['text_entities']:\n if b['kind']=='deity':\n  q=b['quote'];forms[b['id']]='bird' if re.search('鳥身',q) else 'serpent' if re.search('(龍|蛇)身',q) else 'beast' if re.search('(馬|牛|羊|獸|豕|彘)身|其状如牛',q) else 'other'\nrenames={\n'beast-beishan-heluo-qiaoming':('何罗鱼','Heluo fish'),'beast-qiangliang':('强良','Qiangliang'),'beast-qiongqi-xishan':('穷奇','Qiongqi'),'beast-dongshan-kuafu-like-chai':('夸父状兽','Kuafu-like beast'),\n'deity-nanshan-1':('鸟身龙首神','Bird-bodied dragon-headed gods'),'deity-nanshan-2':('龙身鸟首神','Dragon-bodied bird-headed gods'),'deity-nanshan-3':('龙身人面神','Dragon-bodied human-faced gods'),\n'deity-xishan-horse-range2':('人面马身神','Human-faced horse-bodied gods'),'deity-xishan-ox-range2':('人面牛身神','Human-faced ox-bodied gods'),'deity-xishan-sheep-range3-summary':('羊身人面神','Sheep-bodied human-faced gods'),\n'deity-beishan-human-serpent-range1-summary':('人面蛇身神','Human-faced serpent-bodied gods'),'deity-beishan-human-serpent-range2-summary':('人面蛇身神','Human-faced serpent-bodied gods'),'deity-beishan-horse-human-range3':('马身人面神','Horse-bodied human-faced gods'),'deity-beishan-pig-jade-range3':('彘身载玉神','Pig-bodied jade-bearing gods'),'deity-beishan-pig-eight-snake-range3':('彘身八足神','Pig-bodied eight-legged gods'),\n'deity-dongshan-human-dragon-range1':('人身龙首神','Human-bodied dragon-headed gods'),'deity-dongshan-humanface-antlers-range2':('兽身人面神','Beast-bodied human-faced gods'),'deity-dongshan-human-ramhorn-range3':('人身羊角神','Human-bodied ram-horned gods'),\n'deity-zhongshan-humanbird-range2':('人面鸟身神','Human-faced bird-bodied gods'),'deity-zhongshan-humanbeast-range4':('人面兽身神','Human-faced beast-bodied gods'),'deity-zhongshan-humanpig-range7':('豕身人面神','Pig-bodied human-faced gods'),'deity-zhongshan-threeheads-range7':('三首人面神','Three-headed human-faced gods'),'deity-zhongshan-humanbird-summary8':('人面鸟身神','Human-faced bird-bodied gods'),'deity-zhongshan-horsedragon-summary09':('马身龙首神','Horse-bodied dragon-headed gods'),'deity-zhongshan-human-dragon-summary10':('龙身人面神','Dragon-bodied human-faced gods'),'deity-zhongshan-humanhead-pig-summary11':('彘身人首神','Pig-bodied human-headed gods'),'deity-zhongshan-dragonhead-bird-summary12':('鸟身龙首神','Bird-bodied dragon-headed gods')}\npatterns={'human_face':'人[面靣首]','many_heads':'[二三四五六七八九十兩两]首','many_tails':'[二三四五六七八九十兩两]尾','winged':'有翼|[鳥鸟魚鱼]翼|[一二三四五六七八九十兩两]翼','four_wings':'四翼','one_eye':'一目','one_leg':'一[足脚]','many_legs':'[五六七八九十]足','horned':'有角|[一二三四五六七八九十羊]角|載觡','scales':'有鱗|有鳞|有甲'}\nresult={};missing=[]\nrecords=w['beasts']+[b for b in w['text_entities'] if b['kind']=='deity']\nfor i,b in enumerate(records):\n title=b['name'];eng=english(b)\n if re.search('[\\\\u3400-\\\\u9fff]',eng):missing.append((b['id'],eng))\n zh=re.split('[（(]',title)[0];short_en=re.split(r'\\\\s*\\\\(',eng)[0]\n if b['id'] in renames:zh,short_en=renames[b['id']]\n else:zh=simple(zh)\n qualifier=re.search('[（(](.*)[）)]\"'$'\"',title);qe=re.search(r'\\\\((.*)\\\\)\"'$'\"',eng)\n qual=qualifier.group(1) if qualifier else '';qual_en=qe.group(1) if qe else ''\n if b['id'] in renames and b['kind']=='deity':qual=title;qual_en=eng\n q=b.get('quote','');basis='comparison' if b.get('comparison_only') else 'commentary' if b.get('commentary_only') else 'text'\n status='unresolved' if i in unresolved or b['kind']=='deity' and forms[b['id']]=='other' and not re.search('人身|如人|人面|人靣',q) else 'reviewed'\n result[b['id']]={'display_name':{'zh':zh,'en':short_en},'qualifier':{'zh':simple(qual),'en':qual_en},'group_key':zh,'role':'deity' if b['kind']=='deity' or b['id'] in ['beast-yingzhao','beast-qiangliang','beast-zhulong'] else 'beast','form_group':forms[b['id']],'feature_tags':[k for k,p in patterns.items() if re.search(p,q)],'classification':{'basis':basis,'source_field':'quote','evidence':q,'review_status':status}}\n(root/'bestiary-metadata.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\\\\n',encoding='utf-8')\nfrom collections import Counter\nprint('Metadata:',len(result),'Untranslated:',missing)\nprint('Forms:',dict(Counter(x['form_group'] for x in result.values())),'Roles:',dict(Counter(x['role'] for x in result.values())),'Unresolved:',sum(x['classification']['review_status']=='unresolved' for x in result.values()))\n",
+      "fragment_note": "Verbatim public-path portion of a recorded shell command; shell quoting is retained. It is evidence, not a runnable maintenance script."
+    },
+    "geography-create": {
+      "thread_id": "01a13a9d-8ee5-75e2-bef0-ade350e0a03b",
+      "item_id": "exec-ac797a19-af10-4539-91b5-bb62a628369c",
+      "item_type": "commandExecution",
+      "projection_item_sha256": "a877d2be76835c813fed53efd462bbb435cef5f91861b9f019135250a92fbac3",
+      "recorded_at_utc": "2026-10-16T02:07:48.229000+00:00",
+      "status": "completed",
+      "completed_at_utc": "2026-10-16T02:07:48.897000+00:00",
+      "exit_code": 0,
+      "recorded_command_fragment": "from pathlib import Path\nimport json,urllib.parse\nheritage={'title':'盘古神话（国家级非遗代表性项目Ⅰ-57）','title_en':'Pangu myths: national intangible cultural heritage, I-57','url':'https://www.ihchina.cn/project_details/12290/','publisher':'中国非物质文化遗产网','checked_at':'2026-10-16'}\nfajiu={'title':'发鸠山','title_en':'Mount Fajiu','url':'https://www.changzhi.gov.cn/zjzz/rwzz/zrfg/201704/t20170428_353785.shtml','publisher':'长治市人民政府','checked_at':'2026-10-16'}\nbanquan={'title':'千古文明开涿鹿：黄帝、炎帝、蚩尤三祖融合','title_en':'Zhuolu traditions and interpretations of Banquan','url':'https://mw.hebei.gov.cn/system/2023/07/19/030237272.shtml','publisher':'河北省民族事务委员会','checked_at':'2026-10-16'}\nfeatures=[]\nfor id,label,xy,osm,note,en in [\n ('01-01-tradition-tongbai','桐柏县',[113.4009463,32.3716785],3206846,'国家非遗项目介绍将桐柏列为盘古神话的流传地区，内容涉及开天辟地与体化万物。此点仅代表县域传承关联，不定位开天现场。','The national heritage entry identifies Tongbai as a region transmitting Pangu creation myths. This county reference point represents a living tradition, not a creation site.'),\n ('01-01-tradition-biyang','泌阳县',[113.4231836,32.8790165],3259356,'泌阳为盘古神话国家非遗项目申报地区，项目介绍记述当地流传的创世故事。此点仅代表县域传承关联，不定位开天现场。','Biyang is a registering county for the national Pangu myth heritage project. This point represents county-level transmission, not a creation site.')]:\n features.append({'type':'Feature','id':id,'geometry':{'type':'Point','coordinates':xy},'properties':{'id':id,'entity_id':'01-01','stage_id':'00','label':label,'association_type':'local_tradition','location_precision':'county_representative','verification_status':'modern_reference_verified','historical_verification':'not_established','analysis_eligible':False,'basis_note':note,'basis_note_en':en,'coordinate_source':'https://nominatim.openstreetmap.org/search?'+urllib.parse.urlencode({'q':label,'format':'jsonv2','limit':1,'countrycodes':'cn'}),'osm_type':'relation','osm_id':osm,'coordinate_checked_at':'2026-10-16','evidence_status':'source_checked','evidence':[heritage]}})\ncatalog=json.loads(Path('frontend/public/data/atlas/catalog.json').read_text(encoding='utf-8'))\nold=next(x for x in catalog['candidates'] if x['properties']['entity_id']=='03-04' and x['properties']['label']=='长子县')\nfeatures.append({'type':'Feature','id':'03-04-tradition-changzi','geometry':old['geometry'],'properties':{'id':'03-04-tradition-changzi','entity_id':'03-04','stage_id':'03','label':'长子县','association_type':'local_tradition','location_precision':'county_representative','verification_status':'modern_reference_verified','historical_verification':'not_established','analysis_eligible':False,'basis_note':'长治市政府的发鸠山介绍记述当地与精卫神话的联系。沿用长子县代表坐标，不把县域点当作发鸠山山顶或填海位置。','basis_note_en':'Changzhi government describes Mount Fajiu in Changzi in connection with Jingwei. The county reference coordinate is retained; it is neither the mountain summit nor a sea-filling location.','coordinate_source':old['properties']['coordinate_source'],'evidence_status':'source_checked','evidence':[fajiu]}})\nupdates={}\nfor old in catalog['candidates']:\n if old['properties']['entity_id']=='03-01' and old['properties']['label'] in ['涿鹿县','延庆区']:\n  updates[old['id']]={'evidence_status':'source_checked','evidence':[banquan]}\nPath('frontend/src/geography-associations.json').write_text(json.dumps({'features':features,'evidence_updates':updates},ensure_ascii=False,indent=2)+'\\\\n',encoding='utf-8')\n",
+      "fragment_note": "Verbatim public-path portion of a recorded shell command; shell quoting is retained. It is evidence, not a runnable maintenance script."
+    }
+  },
+  "records": [
+    {
+      "path": "frontend/artwork-source/archived/pangu.png",
+      "sha256": "e7a31368a7afdb1f8838124b1848e669b4401b1e0cafe588bb9855adabe3b544",
+      "bytes": 2636968,
+      "status": "record_located_with_limits",
+      "kind": "exact generated output",
+      "evidence_keys": [
+        "pangu"
+      ],
+      "comparison": {
+        "exact_output_bytes": true
+      }
+    },
+    {
+      "path": "frontend/artwork-source/archived/suiren-after-fire-v2-original.webp",
+      "sha256": "dd0cef90debcedeb4a5beff82513f29db66af4c8def8c9719b54068be04d0f68",
+      "bytes": 1685924,
+      "status": "record_located_with_limits",
+      "kind": "generated-image derivative",
+      "evidence_keys": [
+        "suiren",
+        "suiren-copy",
+        "suiren-manifest"
+      ],
+      "source": "frontend/artwork-source/story-animations/suiren-after-fire-v2.png",
+      "source_sha256": "06c448866a9bbfe681c21e459dde61ed8e5e29f172c0d5b50e5c5f9431a83405",
+      "comparison": {
+        "size": [
+          1536,
+          1024
+        ],
+        "alpha_equal": true,
+        "composited_rgba_sha256": "dd5991546505f4855115074eef3ab54eab88ba0d4f05792e57bf9ee3281ca88e",
+        "composited_rgba_equal": true,
+        "all_rgba_equal": false
+      },
+      "limitations": [
+        "Invisible RGB under zero alpha differs; this is not an exact PNG/WebP byte match. Historical encoding environment is not recovered."
+      ]
+    },
+    {
+      "path": "frontend/artwork-source/brand/favicon-original.png",
+      "sha256": "94ce7e22732d51fc94674623d355dabe12fe9ff73849e2be8184b43cc203d075",
+      "bytes": 603255,
+      "status": "record_located_with_limits",
+      "kind": "exact generated output",
+      "evidence_keys": [
+        "brand"
+      ],
+      "comparison": {
+        "exact_output_bytes": true
+      }
+    },
+    {
+      "path": "frontend/artwork-source/brand/shanhai-mark-reference.png",
+      "sha256": "94ce7e22732d51fc94674623d355dabe12fe9ff73849e2be8184b43cc203d075",
+      "bytes": 603255,
+      "status": "record_located_with_limits",
+      "kind": "exact generated output",
+      "evidence_keys": [
+        "brand"
+      ],
+      "comparison": {
+        "exact_output_bytes": true
+      }
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/kunlun.png",
+      "sha256": "bf8c4df9ed58af3ffe4f21644af00871798b3d1408318b460b8fd058e03fd8d5",
+      "bytes": 2607042,
+      "status": "record_located_with_limits",
+      "kind": "exact generated output",
+      "evidence_keys": [
+        "kunlun"
+      ],
+      "comparison": {
+        "exact_output_bytes": true
+      }
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/nuwa.png",
+      "sha256": "791b6ba593e6b48b1f62d18c5173c3a9c35876514bc96b18d8c627d761fbb4c2",
+      "bytes": 2943275,
+      "status": "record_located_with_limits",
+      "kind": "exact generated output",
+      "evidence_keys": [
+        "nuwa"
+      ],
+      "comparison": {
+        "exact_output_bytes": true
+      }
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/xi-wang-mu.png",
+      "sha256": "94a580d19317324b07c32035b5212915cb5787cdf5ad7d6765d5362a2003734c",
+      "bytes": 2813422,
+      "status": "record_located_with_limits",
+      "kind": "exact generated output",
+      "evidence_keys": [
+        "xi-wang-mu"
+      ],
+      "comparison": {
+        "exact_output_bytes": true
+      }
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-paper.png",
+      "sha256": "60cb97f6b1874c73ecfe99104598f026e2f6165b931a2c89a7bb4f5d5a601b6f",
+      "bytes": 3276939,
+      "status": "record_located_with_limits",
+      "kind": "exact generated output",
+      "evidence_keys": [
+        "myth-paper"
+      ],
+      "comparison": {
+        "exact_output_bytes": true
+      }
+    },
+    {
+      "path": "frontend/public/data/atlas/myth-icons/characters/fuxi-corrected.svg",
+      "sha256": "388c640786e8c56f632f8def7d7966223ab3ca58afa90d896e5b6e9f28045785",
+      "bytes": 1959,
+      "status": "record_located_with_limits",
+      "kind": "native SVG and generated raster composite",
+      "evidence_keys": [
+        "fuxi",
+        "fuxi-svg-create"
+      ],
+      "source": "frontend/artwork-source/optimized-originals/myth-icons/characters/fuxi-clean.png",
+      "source_sha256": "4b88bb4db393938d7821b75c9b241e2434c293343cf1a3da9e6666fcc30bf3f9",
+      "existing_source_record": "git:447d82309e97e9eff085b9ed0bcb44deb82250f0:frontend/public/data/atlas/artwork-manifest.json#/assets/87",
+      "limitations": [
+        "Initial SVG code used fuxi-clean.png; later source-preserving changes switched to WebP and corrected trigram paths. Creation evidence does not independently validate the diagram interpretation."
+      ],
+      "comparison": {
+        "figure_png_matches_generation_bytes": true,
+        "current_href": "frontend/public/data/atlas/myth-icons/characters/fuxi-clean.webp",
+        "png_webp_rgba_equal": true,
+        "rgba_sha256": "1b1f46c987878a6edeff336f8881b42ca6daf8c962a6f7e1f26363f3e16d0da0"
+      }
+    },
+    {
+      "path": "frontend/public/data/atlas/myth-icons/kunlun.webp",
+      "sha256": "cc1c820aebf99d3bf7a89bc4ca20bd76d11e77f6163e3d47f88272a931164119",
+      "bytes": 1886070,
+      "status": "record_located_with_limits",
+      "kind": "lossless generated-image derivative",
+      "evidence_keys": [
+        "kunlun",
+        "lossless-webp-conversion"
+      ],
+      "source": "frontend/artwork-source/optimized-originals/myth-icons/kunlun.png",
+      "source_sha256": "bf8c4df9ed58af3ffe4f21644af00871798b3d1408318b460b8fd058e03fd8d5",
+      "comparison": {
+        "size": [
+          1312,
+          1199
+        ],
+        "rgba_equal": true,
+        "rgba_sha256": "1b8aac9639d1a9b536e2834d92e644d95a62aaeb3f6086436ca69c71dc70ee90"
+      },
+      "limitations": [
+        "Current encoder did not reproduce the historical WebP bytes. Equality is established by full decoded RGBA and the successful historical conversion record, not by an asserted current encoder version."
+      ]
+    },
+    {
+      "path": "frontend/public/data/atlas/myth-icons/nuwa.webp",
+      "sha256": "f1a7ddc8e9328e9b6c3f0a21207736e3edc2d4d173ce4a6505de3696445d7e04",
+      "bytes": 2100268,
+      "status": "record_located_with_limits",
+      "kind": "lossless generated-image derivative",
+      "evidence_keys": [
+        "nuwa",
+        "lossless-webp-conversion"
+      ],
+      "source": "frontend/artwork-source/optimized-originals/myth-icons/nuwa.png",
+      "source_sha256": "791b6ba593e6b48b1f62d18c5173c3a9c35876514bc96b18d8c627d761fbb4c2",
+      "comparison": {
+        "size": [
+          1215,
+          1295
+        ],
+        "rgba_equal": true,
+        "rgba_sha256": "cefd91dcda54a66f57f6f8a9d994b4058e11ccb1b484cfc7672bea7ae0e36ae9"
+      },
+      "limitations": [
+        "Current encoder did not reproduce the historical WebP bytes. Equality is established by full decoded RGBA and the successful historical conversion record, not by an asserted current encoder version."
+      ]
+    },
+    {
+      "path": "frontend/public/data/atlas/myth-icons/xi-wang-mu.webp",
+      "sha256": "7be026f313bf38d341aca1eaa15c3c7ac325dd4117c9d5a092a04635629ccd37",
+      "bytes": 2049904,
+      "status": "record_located_with_limits",
+      "kind": "lossless generated-image derivative",
+      "evidence_keys": [
+        "xi-wang-mu",
+        "lossless-webp-conversion"
+      ],
+      "source": "frontend/artwork-source/optimized-originals/myth-icons/xi-wang-mu.png",
+      "source_sha256": "94a580d19317324b07c32035b5212915cb5787cdf5ad7d6765d5362a2003734c",
+      "comparison": {
+        "size": [
+          1215,
+          1295
+        ],
+        "rgba_equal": true,
+        "rgba_sha256": "d43cb2cb6e9c755655477362cf6c333419a393695d7702dedc83a097ce8c7dcc"
+      },
+      "limitations": [
+        "Current encoder did not reproduce the historical WebP bytes. Equality is established by full decoded RGBA and the successful historical conversion record, not by an asserted current encoder version."
+      ]
+    },
+    {
+      "path": "frontend/public/data/atlas/myth-paper.webp",
+      "sha256": "1b388bf1bf263dfd67a315cb38055b6c3c38e8c868e10672e324b054c849fcc6",
+      "bytes": 2038136,
+      "status": "record_located_with_limits",
+      "kind": "lossless generated-image derivative",
+      "evidence_keys": [
+        "myth-paper",
+        "lossless-webp-conversion"
+      ],
+      "source": "frontend/artwork-source/optimized-originals/myth-paper.png",
+      "source_sha256": "60cb97f6b1874c73ecfe99104598f026e2f6165b931a2c89a7bb4f5d5a601b6f",
+      "comparison": {
+        "size": [
+          1536,
+          1024
+        ],
+        "rgba_equal": true,
+        "rgba_sha256": "4f19bf0bf5fdf3551dbc8850519218fd838a8a4eee0ef861adcc10e4c7de97d0"
+      },
+      "limitations": [
+        "Current encoder did not reproduce the historical WebP bytes. Equality is established by full decoded RGBA and the successful historical conversion record, not by an asserted current encoder version."
+      ]
+    },
+    {
+      "path": "frontend/public/data/shanhai-ornament.svg",
+      "sha256": "c11806b3933ff67ac88745170ff82527f9ce6dbb864c864bb70c9d8bbb0f2609",
+      "bytes": 1325,
+      "status": "record_located_with_limits",
+      "kind": "native SVG code",
+      "evidence_keys": [
+        "ornament-create"
+      ],
+      "comparison": {
+        "exact_initial_content_lf": true
+      }
+    },
+    {
+      "path": "frontend/src/bestiary-metadata.json",
+      "sha256": "62418f99e5532de228c4a64bbd28b7bd33ab87234092803a922da06ab142e456",
+      "bytes": 205914,
+      "status": "record_located_with_limits",
+      "kind": "metadata creation command",
+      "evidence_keys": [
+        "bestiary-create"
+      ],
+      "first_retained_commit": "a4794bf2173303d02dbd82940d999813d86d8550",
+      "first_retained_sha256_lf": "e7e948fbe8f1169ffd93caed5cb5d9ca51357f2bc519702f709e713cb790f73a",
+      "comparison": {
+        "current_file_hash_bound": true
+      },
+      "limitations": [
+        "Recovered creation command establishes the producer and inputs, not expert validation of every classification, source excerpt or geographic association. Later revisions remain in Git history."
+      ]
+    },
+    {
+      "path": "frontend/src/geography-associations.json",
+      "sha256": "825aee244319a9955280cbdcc815ff9b5b74258c5e88c1e2984594361de3b4b1",
+      "bytes": 15385,
+      "status": "record_located_with_limits",
+      "kind": "metadata creation command",
+      "evidence_keys": [
+        "geography-create"
+      ],
+      "first_retained_commit": "f457d8910e1ed7ed267f90f674e98dfec8036c12",
+      "first_retained_sha256_lf": "d374e7b04cd1aa124a9d42bb2a3eb27146ed9fa8e1e4f96231c3d7dd9047828f",
+      "comparison": {
+        "current_file_hash_bound": true
+      },
+      "limitations": [
+        "Recovered creation command establishes the producer and inputs, not expert validation of every classification, source excerpt or geographic association. Later revisions remain in Git history."
+      ]
+    }
+  ]
+}

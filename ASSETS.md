@@ -1,6 +1,6 @@
 # 资产来源与许可 / Asset provenance and licensing
 
-盘点日期：2026-11-05（当前文件复核；早期来源平台核对日期仍按原记录）。本清单逐文件记录磁盘现状；许可结论与生成事实分开。
+盘点日期：2026-11-06（当前文件复核；早期来源平台核对日期仍按原记录）。本清单逐文件记录磁盘现状；许可结论与生成事实分开。
 
 2026-11-01补登记西王母角色与插画关联表，并更新玉山绑定后的数据文件摘要；原图、派生图字节和许可政策均未改变。
 
@@ -26,13 +26,13 @@
 | 原始插画 | 484 |
 | 字体 | 13 |
 | 扫描图 | 178 |
-| 数据/来源/许可文件 | 90 |
+| 数据/来源/许可文件 | 91 |
 | README展示媒体 | 5 |
 | 运行/发布图像（不含SVG） | 1262 |
 | SVG | 2 |
 | 展示媒体来源记录 | 1 |
 
-当前清单共 2031 个文件。文本记录与字段组沿用独立清单。字体依赖来自本地安装包。
+当前清单共 2032 个文件。文本记录与字段组沿用独立清单。字体依赖来自本地安装包。
 
 ## 许可与来源配置档 / Profiles
 
@@ -97,33 +97,33 @@
 
 从仓库根目录运行`python frontend/scripts/verify-assets.py`，或在frontend运行`npm run verify:assets`。命令只读，检查文件/原始或LF文本摘要、完整性、JSON来源指针、发布派生映射/大小、循环关系和角色覆盖/哈希；不下载素材、不重编码、不补写登记。完整表不在浏览器入口导入。
 
-当前直接来源或创建链未知项如下；逐项已查范围及影响见TSV审计列。无法证明的生成时间、具体模型、参考链和历史条件继续未知。东山细节图不能以相邻原页替代直接裁切证据；SVG代码/嵌入图像分别登记。
+下表保留2026-11-03待补项及其最新结果；2026-11-06已补定位其余16项记录，逐项证据与限制见TSV及下方补录。缺失的具体模型、未保留的参考附件和未核定的历史条件继续保留为未知；已恢复的工具事件时间见补录。东山细节图不能以相邻原页替代直接裁切证据；SVG代码/嵌入图像分别登记。
 
 | 文件 | 本轮结论 |
 | --- | --- |
 | `data/reference-scans/dongshan/page-119-detail-1920.jpg` | 2026-11-05已定位本图专用URL与匹配的登记哈希；当前URL返回1920×2909，本地为1920×2910，字节不同，历史获取及渲染方式仍未记录 |
-| `frontend/artwork-source/archived/pangu.png` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/artwork-source/archived/suiren-after-fire-v2-original.webp` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/artwork-source/brand/favicon-original.png` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/artwork-source/brand/shanhai-mark-reference.png` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/artwork-source/optimized-originals/myth-icons/kunlun.png` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/artwork-source/optimized-originals/myth-icons/nuwa.png` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/artwork-source/optimized-originals/myth-icons/xi-wang-mu.png` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/artwork-source/optimized-originals/myth-paper.png` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/public/data/atlas/myth-icons/characters/fuxi-corrected.svg` | 具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/public/data/atlas/myth-icons/kunlun.webp` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/public/data/atlas/myth-icons/nuwa.webp` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/public/data/atlas/myth-icons/xi-wang-mu.webp` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/public/data/atlas/myth-paper.webp` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/public/data/shanhai-ornament.svg` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；具体历史模型未记录；不按当前工具默认值补填；来源事实不证明参考图及输出的全部权利；沿用既有许可边界 |
-| `frontend/src/bestiary-metadata.json` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；本轮仅核当前结构、使用方或派生映射；历史创建工具、日期及完整生成链未记录，不补造来源 |
-| `frontend/src/geography-associations.json` | 逐文件生成/获取记录未定位；不能确认生成时间、完整参考链及历史服务条件；本轮仅核当前结构、使用方或派生映射；历史创建工具、日期及完整生成链未记录，不补造来源 |
+| `frontend/artwork-source/archived/pangu.png` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/artwork-source/archived/suiren-after-fire-v2-original.webp` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/artwork-source/brand/favicon-original.png` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/artwork-source/brand/shanhai-mark-reference.png` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/artwork-source/optimized-originals/myth-icons/kunlun.png` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/artwork-source/optimized-originals/myth-icons/nuwa.png` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/artwork-source/optimized-originals/myth-icons/xi-wang-mu.png` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/artwork-source/optimized-originals/myth-paper.png` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/public/data/atlas/myth-icons/characters/fuxi-corrected.svg` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/public/data/atlas/myth-icons/kunlun.webp` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/public/data/atlas/myth-icons/nuwa.webp` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/public/data/atlas/myth-icons/xi-wang-mu.webp` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/public/data/atlas/myth-paper.webp` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/public/data/shanhai-ornament.svg` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/src/bestiary-metadata.json` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
+| `frontend/src/geography-associations.json` | 2026-11-06已补定位创建/派生记录；见[证据补录](docs/asset-source-recovery.json)。具体模型、未保留的输入附件和历史条件仍有限制 |
 
 ## 2026-11-05补充核查
 
 逐项重查此前17项的当前文件、已有清单与跟随重命名的Git历史。东山119页细节图已有专用URL及与本地文件一致的SHA-256，现改为“已定位记录但有限制”。本次未用相邻页替代证据，也未修改影印字节；本次下载只在内存比较，远端当前字节与历史本地字节不一致，具体值写入 `data/reference-scans/dongshan/sources.json#/10/detail_source_recheck`。
 
-当前2031项中，2015项为 `record_located_with_limits`、15项为 `source_unknown`、1项为 `composition_recorded_origin_unknown`。剩余16项仍需维护者的历史工具、参考及适用条件记录。所有17项均补记已查Git提交，但提交日期不能当作生成日期。地理关系元数据本轮仅修正Zhangzi拼写，不将新修改记作原始创建证据。
+2026-11-05维护批次共2031项，其中2015项为 `record_located_with_limits`、15项为 `source_unknown`、1项为 `composition_recorded_origin_unknown`。当时16项未定位创建记录；2026-11-06的补录结果见下节。所有17项均补记已查Git提交，但提交日期不能当作生成日期。地理关系元数据本轮仅修正Zhangzi拼写，不将新修改记作原始创建证据。
 
 本轮逐项结论见[内容与来源复核](docs/editorial-review.md)。定位记录及派生链不等于完整权利核定。
 
@@ -202,4 +202,17 @@
 
 [2026-11-05 v1分发版本](https://github.com/hyc1005/mythmap/releases/tag/assets-2026-11-05-v1)按目录提供18个ZIP，共678个源文件，来源提交`c6ca994`。原文件仍保留在主仓库。`data/asset-bundles.json`记录每包及每文件的SHA-256、原路径、字节数和下载地址；JSON统一LF，图像保持原字节。恢复步骤见[数据维护入口](data/README.md#轻量检出与原图分发)。
 
-发布前已在独立轻量检出中恢复，并完成全量素材审计；上传后逐文件核对GitHub返回的摘要和大小。分发包随附本声明及LICENSE，沿用各源文件的原许可与未知状态，不新增复用授权。16项历史来源缺口仍未解决。
+发布前已在独立轻量检出中恢复，并完成全量素材审计；上传后逐文件核对GitHub返回的摘要和大小。分发包随附本声明及LICENSE，沿用各源文件的原许可与未知状态，不新增复用授权。该分发版本保留2026-11-05的来源审计快照；2026-11-06补录在主仓库中另行提供，不覆盖固定分发包。
+
+
+## 2026-11-06历史记录补录
+
+从本机Codex会话数据库的历史投影中恢复了与16项缺口直接相关的15个工具条目，包含8个图像生成条目。原JSONL已缺失，数据库仍保留工具条目、提示词、时间和图像结果。仅导出本项目相关的脱敏证据，见[`asset-source-recovery.json`](docs/asset-source-recovery.json)；不上传完整会话、数据库、用户绝对路径或图像base64。
+
+- 七个PNG原图文件（其中两份品牌图为同一输出）与生成结果的原始字节SHA-256一致，恢复对应提示词、透明参数及工具记录时间。时间来自工具条目，不用Git提交日期代替。
+- 昆仑、女娲、西王母和纸纹WebP与对应PNG的完整RGBA像素一致，并定位成功执行的无损转换命令。当前编码器未重现旧WebP字节，不将像素等价写成字节重现。
+- 燧人旧WebP关联到保留的原始PNG和生成条目，透明度、可见合成RGBA一致；透明区域下隐藏RGB不同，单独记录，未修改文件。
+- 装饰SVG与原始新增补丁的LF文本完全一致。伏羲组合SVG定位到原生代码新增补丁，所用人物PNG与生成输出字节一致，后续修订仍由Git记录。
+- 两个元数据文件定位到成功执行的创建命令、输入路径和方法。异兽元数据创建使用硬编码条目序号及正则等方法；这解释创建来源，不构成分类正确性的独立证明。45条形貌限制继续保留。
+
+当前2032项均为`record_located_with_limits`，未定位创建记录的16项已补定位。**这不表示所有来源不确定性都已消除**：确切模型、原始附件全集、历史服务与权利条件仍未完全建立，古籍释读、形貌分类和地理关联也未因记录恢复而获得新的专业核定。原图、译文、网页和许可政策均未更改。11月5日固定Release不覆盖，新证据另见当前主仓库。

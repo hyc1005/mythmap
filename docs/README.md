@@ -7,6 +7,7 @@
 | [更新记录](../CHANGELOG.md) | 按发布批次记录站点和仓库的主要变化 |
 | [内容盘点](content-coverage.md) | 十八篇覆盖、出处与待核状态；由`data/audit_shanhaijing.py`生成 |
 | [内容与来源复核](editorial-review.md) | 人鱼共图、45条形貌复核、17项来源追溯及英文审校的实际范围 |
+| [历史资产证据补录](asset-source-recovery.json) | 16项创建/派生记录的脱敏工具证据、摘要和匹配限制 |
 | [API与数据约定](API_CONTRACT.md) | 当前world数据、本地Java服务及独立FastAPI/PostGIS原型的边界 |
 | [数据维护](../data/README.md) | 各山经构建入口、批次内容模块和来源清单 |
 | [前端脚本](../frontend/scripts/README.md) | 验收、预览、素材及字体工具分类 |
@@ -51,7 +52,7 @@
 
 缓存键包含OS、架构、Ubuntu版本、Playwright精确版本和格式版本，无宽泛回退。可信main准备任务保存WebKit及共享ffmpeg目录，矩阵只恢复；版本升级将切换精确键并冷安装。安装命令每次仍执行以校验二进制和安装系统库。此轮没有升级Playwright依赖。npm下载缓存保留，不缓存`node_modules`、测试输出或会话数据。Chromium使用默认无头模式，若未来指定Chrome channel或有头模式，须同步调整安装方式。
 
-[分发验证42052561847](https://github.com/hyc1005/mythmap/actions/runs/42052561847)完成678文件、18包的包级/文件级摘要检查、独立轻量副本恢复及全量资产审计，并核对21个Release文件的远端摘要及大小后发布。还验证了路径越界、错误摘要和本地冲突保护。可选下载不改变素材原许可；16项历史来源缺口继续保留。
+[分发验证42052561847](https://github.com/hyc1005/mythmap/actions/runs/42052561847)完成678文件、18包的包级/文件级摘要检查、独立轻量副本恢复及全量资产审计，并核对21个Release文件的远端摘要及大小后发布。还验证了路径越界、错误摘要和本地冲突保护。可选下载不改变素材原许可；当时的16项创建记录缺口已在2026-11-06另行[补定位](asset-source-recovery.json)，具体模型、部分参考附件和历史条件仍有限制。
 
 参考：[Playwright缓存说明](https://playwright.dev/docs/ci#caching-browsers)、[Chromium无头安装](https://playwright.dev/docs/browsers#chromium-headless-shell)。
 
