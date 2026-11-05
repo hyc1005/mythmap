@@ -54,3 +54,9 @@
 [分发验证42052561847](https://github.com/hyc1005/mythmap/actions/runs/42052561847)完成678文件、18包的包级/文件级摘要检查、独立轻量副本恢复及全量资产审计，并核对21个Release文件的远端摘要及大小后发布。还验证了路径越界、错误摘要和本地冲突保护。可选下载不改变素材原许可；16项历史来源缺口继续保留。
 
 参考：[Playwright缓存说明](https://playwright.dev/docs/ci#caching-browsers)、[Chromium无头安装](https://playwright.dev/docs/browsers#chromium-headless-shell)。
+
+
+主分支首次集成运行42053881600已观察到15个浏览器任务的检出＋补图耗时12–30秒、中位16秒；前一成功运行42034369001为42–374秒、中位46秒。不同runner和网络条件，属于运行观测。WebKit矩阵实际命中精确键，未重新下载WebKit；main缓存压缩大小101443727字节（约96.7MiB）。本机公开下载art-brand组并在当前main轻量副本恢复2个缺失源文件，摘要检查通过。
+
+
+集成验收完成：`7b5d224`的[CI42053881600](https://github.com/hyc1005/mythmap/actions/runs/42053881600)首次17项全部成功，Pages部署7578234189同SHA成功。正式站入口、主JS、完整world JSON和人鱼共图与该次CI验证包逐字节一致；本地构建的入口指纹不同，因此线上对照使用实际CI发布包。
