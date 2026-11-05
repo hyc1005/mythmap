@@ -44,6 +44,7 @@ export function browserDiagnostics(context, name) {
         const snapshot = await item.locator('html').evaluate(() => ({
           url: location.href, readyState: document.readyState, historyItem: history.state?.shanhai?.item,
           drawer: [...document.querySelectorAll('.detail-drawer')].map(node => ({ id: node.dataset.entryId, restoring: node.dataset.readingRestoring })),
+          geography: [...document.querySelectorAll('.geography-atlas')].map(node => ({ ...node.dataset, candidates: [...node.querySelectorAll('[data-candidate-id]')].map(row => ({ id: row.dataset.candidateId, pressed: row.getAttribute('aria-pressed') })) })),
           images: [...document.images].map(image => ({ src: image.currentSrc || image.src, complete: image.complete, width: image.naturalWidth, height: image.naturalHeight })),
           viewport: { width: innerWidth, height: innerHeight, scrollY, hidden: document.hidden },
           controls: [...document.querySelectorAll('button')].filter(node => node.checkVisibility()).map(node => ({ text: node.textContent, label: node.getAttribute('aria-label') })),

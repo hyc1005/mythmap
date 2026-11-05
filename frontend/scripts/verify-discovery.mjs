@@ -50,6 +50,11 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     captureFailure = browserDiagnostics(context, `discovery-${name}`);
     await mockTianditu(context);
     const page = await context.newPage(), errors = [];
+    const navigate = async url => {
+      await page.goto(url, { waitUntil: 'domcontentloaded' });
+      await page.locator('.global-search-trigger').waitFor();
+      await page.evaluate(() => document.fonts.ready);
+    };
     page.on('pageerror', error => errors.push((error.stack || error.message).replace(/tk=[^&\s]+/g, 'tk=[redacted]')));
     const drawer = page.locator('.detail-drawer');
     const entry = id => page.locator(`.detail-drawer[data-entry-id="${id}"]`);
@@ -153,7 +158,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     }
 
     await page.setViewportSize({ width: 1440, height: 1000 });
-    await page.goto(`${base}?chapter=03&lang=zh`);
+    await navigate(`${base}?chapter=03&lang=zh`);
     await page.locator('.map-fullscreen').click(); await page.locator('.is-map-fullscreen').waitFor();
     await page.locator('.map-entry-list > summary').click();
     await page.locator('.map-entry-list [data-entry-id="03-04"]').click(); await restored('03-04');
@@ -166,9 +171,13 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await drawer.locator('.drawer-close').click(); await drawer.waitFor({ state: 'hidden' });
     await page.locator('.map-fullscreen').click(); await page.locator('.is-map-fullscreen').waitFor({ state: 'hidden' });
 
-    await page.goto(`${base}?chapter=03&mode=geography&event=03-04&lang=zh`);
-    await page.locator('.geo-result-list button').first().click();
-    const candidate = await page.locator('[data-candidate-id][aria-pressed="true"]').getAttribute('data-candidate-id');
+    await navigate(`${base}?chapter=03&mode=geography&event=03-04&lang=zh`);
+    await page.locator('.geography-atlas[data-ready="true"][data-event-id="03-04"]').waitFor();
+    await settle(page);
+    const firstCandidate = page.locator('.geo-result-list button').first();
+    const candidate = await firstCandidate.getAttribute('data-candidate-id');
+    await firstCandidate.click();
+    await page.waitForFunction(id => document.querySelector(`[data-candidate-id="${id}"]`)?.getAttribute('aria-pressed') === 'true', candidate);
     await settle(page);
     const geographicView = await page.locator('.geo-map').getAttribute('data-extent');
     await page.locator('.global-search-trigger').click(); await page.locator('.global-search-input').fill('填平东海');
