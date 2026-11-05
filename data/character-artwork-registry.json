@@ -1240,7 +1240,7 @@
         "usages": [
           {
             "entry_id": "02-04",
-            "published_asset": "/data/atlas/optimized/myth-icons/characters/suiren.webp",
+            "published_asset": "/data/atlas/refined/suiren-unified-static-v1-full.webp",
             "presence": "depicted_in_story_context"
           },
           {
@@ -1251,10 +1251,10 @@
           }
         ],
         "verdict": "一致",
-        "observation": "已核对当前主线出场；单一独立形象保留，不从相似服饰推断其他未具名人物身份。",
-        "baseline_candidate": "/data/atlas/optimized/myth-icons/characters/suiren.webp",
-        "baseline_status": "existing_work_candidate_no_new_binding",
-        "action": "保留；未确认需改图的身份冲突"
+        "observation": "钻木静态图与现行六帧取火动画采用统一的束髻、胡须、赭黄发带、红绳、牙饰和斑纹兽皮。",
+        "baseline_candidate": "/data/atlas/myth-icons/animations/suiren-after-fire-v3.webp",
+        "baseline_status": "existing_animation_used_as_identity_reference",
+        "action": "静态图切至统一候选；原静态图与动画保留。"
       },
       {
         "person_id": "person-ab7b8d362c73",
@@ -1957,16 +1957,16 @@
         "unidentified_figures": "背景与群像未具名人物不补造身份"
       },
       {
-        "published_asset": "/data/atlas/optimized/myth-icons/characters/suiren.webp",
-        "sha256": "603e338712dff1e1ae10ce69c45ead09ae11dee2557e3ca06746c5b520243a37",
+        "published_asset": "/data/atlas/refined/suiren-unified-static-v1-full.webp",
+        "sha256": "824e5ce09ce846f958ecc3ba30ad7165f501d3087da739ffa7e9faf269e4a947",
         "entry_ids": [
           "02-04"
         ],
         "occurrences": 1,
         "frames": [],
         "review": "binding_and_identity",
-        "verdict": "证据不足",
-        "conclusion": "相同文件的重复入口或动作帧不另算原画；未发现可确认的角色错绑。单一出场不能证明跨场连续性。",
+        "verdict": "一致",
+        "conclusion": "现行静态插画以取火动画的发带、红绳、牙饰和兽皮为造型基准。",
         "source_forms": "各条目与典籍独立；同名索引、变形及正文/注文不合并",
         "unidentified_figures": "背景与群像未具名人物不补造身份"
       },
@@ -10492,8 +10492,10 @@
         "entry_ids": [
           "02-04"
         ],
-        "status": "minor_art_direction_difference",
-        "difference": "静态图与动作帧的发带、斑纹和项饰有变化，束髻、胡须及兽皮轮廓相近。"
+        "status": "unified_in_current_binding",
+        "difference": "静态图与动作帧的发带、斑纹和项饰有变化，束髻、胡须及兽皮轮廓相近。",
+        "published_asset": "/data/atlas/refined/suiren-unified-static-v1-full.webp",
+        "previous_published_asset": "/data/atlas/optimized/myth-icons/characters/suiren.webp"
       }
     ]
   }

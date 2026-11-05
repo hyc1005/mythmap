@@ -192,5 +192,39 @@
         128
       ]
     }
+  },
+  "/data/atlas/myth-icons/characters/suiren.webp": {
+    "full": {
+      "path": "/data/atlas/refined/suiren-unified-static-v1-full.webp",
+      "bytes": 296788,
+      "dimensions": [
+        1280,
+        1280
+      ]
+    },
+    "card": {
+      "path": "/data/atlas/refined/suiren-unified-static-v1-card.webp",
+      "bytes": 26544,
+      "dimensions": [
+        320,
+        320
+      ]
+    },
+    "preview": {
+      "path": "/data/atlas/refined/suiren-unified-static-v1-preview.webp",
+      "bytes": 50836,
+      "dimensions": [
+        480,
+        480
+      ]
+    },
+    "map": {
+      "path": "/data/atlas/refined/suiren-unified-static-v1-map.webp",
+      "bytes": 6556,
+      "dimensions": [
+        128,
+        128
+      ]
+    }
   }
 }

@@ -293,6 +293,66 @@
       "identity_reference": "frontend/public/data/atlas/optimized/myth-icons/stories/ch05-yu-xiangliu.webp",
       "source_url": "https://zh.wikisource.org/wiki/山海經/海外北經",
       "separate_record_note": "《大荒北经》相繇条另存，不合并名称、引文或ID。"
+    },
+    {
+      "name": "suiren-unified-static-v1",
+      "original": "/data/atlas/myth-icons/characters/suiren.webp",
+      "prompts": [
+        "Create one transparent PNG project candidate, a new static portrait of 燧人 drilling fire for the MythMap woodcut atlas. Reference 1 is the existing static portrait and supplies pose and composition: the same kneeling full body, one knee raised, both hands gripping the upright wooden drill, short horizontal fireboard and a few red embers. Reference 2 is an animation contact sheet: use ONLY the six 燧人 frames numbered 23–28 as the authority for character identity and outfit, especially frame 23 for the drilling pose. Match that mature man's black high topknot and loose dark hair, beard, golden ochre headband with red trailing accents, red upper-arm and ankle cords, visible small ivory tooth necklace and diagonal tan-and-ochre spotted hide with the animated pattern scale and trim. The face and body should look like the exact same person as the six frames, with the pose and downturned gaze of the first frame. Preserve the project's carved Chinese woodblock linework and warm paper-ink palette on the character. One single isolated full-body cutout, centered with breathing room, all feet and drill intact. Genuine transparent alpha background, no landscape, floor patch, lighting halo, label, lettering, frame, extra figures, grids or sprite-sheet artifacts. Do not copy characters or objects from the other cells."
+      ],
+      "tool": "built-in image_gen",
+      "model": "未返回／未记录",
+      "generated_date": "2026-11-05",
+      "status": "reviewed",
+      "approval_basis": "维护者要求执行今日阶段，接入已生成的燧人统一形象候选。",
+      "reference_images": [
+        "frontend/public/data/atlas/optimized/myth-icons/characters/suiren.webp",
+        "frontend/public/data/atlas/myth-icons/animations/suiren-after-fire-v3.webp"
+      ],
+      "reference_note": "动画参考通过既有联系表第23–28格提供；第23格为钻木动作。",
+      "sourcePath": "frontend/artwork-source/woodcut-refinement/suiren-unified-static-v1.png",
+      "source_sha256": "4e57457ea8c8f60e5432da523cfb3887f50b21fb207f2e920a57a343bea89dfd",
+      "variants": [
+        "full",
+        "card",
+        "preview",
+        "map"
+      ],
+      "review": "核对钻木动作、束髻与胡须、赭黄发带、红绳、牙饰与兽皮；保留既有动画。",
+      "publishedVariants": {
+        "full": {
+          "path": "/data/atlas/refined/suiren-unified-static-v1-full.webp",
+          "bytes": 296788,
+          "dimensions": [
+            1280,
+            1280
+          ]
+        },
+        "card": {
+          "path": "/data/atlas/refined/suiren-unified-static-v1-card.webp",
+          "bytes": 26544,
+          "dimensions": [
+            320,
+            320
+          ]
+        },
+        "preview": {
+          "path": "/data/atlas/refined/suiren-unified-static-v1-preview.webp",
+          "bytes": 50836,
+          "dimensions": [
+            480,
+            480
+          ]
+        },
+        "map": {
+          "path": "/data/atlas/refined/suiren-unified-static-v1-map.webp",
+          "bytes": 6556,
+          "dimensions": [
+            128,
+            128
+          ]
+        }
+      }
     }
   ]
 }

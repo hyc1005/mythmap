@@ -60,11 +60,10 @@ def test_distinct_yi_entities_and_west_queen_forms():
     assert '玉山' in events['08-07']['properties']['basis_note']
 
 
-def test_unsupported_activity_polygons_and_old_ellipses_are_empty():
+def test_unsupported_activity_polygons_are_empty_and_old_ellipses_are_removed():
     for i in range(1, 8):
         assert not client.get(f'/api/atlas/stages/{i:02d}/layers/activities').json()['features']
-        file = DATA.parent / 'stages' / f'{i:02d}.geojson'
-        assert not json.loads(file.read_text(encoding='utf-8'))['features']
+    assert not any((DATA.parent / 'stages').glob('*.geojson'))
     divine = client.get('/api/atlas/divine-space').json()
     assert divine['coordinate_system'] == 'diagram-units'
     assert len(divine['places']) == 7
