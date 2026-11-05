@@ -67,7 +67,7 @@ Java 服务为开发模式提供 `/api/world`，运行方式见 [Java 启动入�
 <details>
 <summary>本地开发</summary>
 
-需要Node.js 22或更新的兼容版本。
+需要Node.js 22或更新的兼容版本。普通界面开发可使用[轻量检出及可选原图分发包](data/README.md#轻量检出与原图分发)，另需Python 3.10+。
 
 ```bash
 cd frontend

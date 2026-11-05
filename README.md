@@ -67,7 +67,7 @@ The Java service supplies `/api/world` during development. See the [Java launche
 <details>
 <summary>Local development</summary>
 
-Requires Node.js 22 or a newer compatible version.
+Requires Node.js 22 or a newer compatible version. To avoid checking out most original artwork and scans, use the [lightweight checkout and optional asset packages](data/README.md#轻量检出与原图分发) (Python 3.10+ required).
 
 ```bash
 cd frontend

@@ -1,0 +1,4222 @@
+{
+  "schema_version": 1,
+  "source_commit": "c6ca994286f8b6377d21c4f7b3d2e31e833c6440",
+  "builder_commit": "f7a8dce8185e6f65fd9f5cda4b9c55ea024a3659",
+  "release_tag": "assets-2026-11-05-v1",
+  "bundles": [
+    {
+      "name": "mythmap-scan-beishan-01.zip",
+      "group": "scan-beishan",
+      "bytes": 20504160,
+      "sha256": "7f7ed0d0e79f2c4d79930b627377e9d5cd472f7f3643ee6287c302562728fddb",
+      "members": 34,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-scan-beishan-01.zip"
+    },
+    {
+      "name": "mythmap-scan-dongshan-01.zip",
+      "group": "scan-dongshan",
+      "bytes": 8440194,
+      "sha256": "ef36cde89791bafe269bbfb1887b2ac67cfb44faeb432a2e23b5b74c5375746e",
+      "members": 18,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "name": "mythmap-scan-nanshan-01.zip",
+      "group": "scan-nanshan",
+      "bytes": 7524915,
+      "sha256": "f81a9a035fa5b105adec37a0b6b77d69f16d885bb4a0797e5ffcd500336cec92",
+      "members": 18,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "name": "mythmap-scan-xishan-01.zip",
+      "group": "scan-xishan",
+      "bytes": 23109639,
+      "sha256": "17ac9997ed9f9b330caf130ff268b2ffcd3102a9dfb3f022c77ad94ebff65498",
+      "members": 43,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-scan-xishan-01.zip"
+    },
+    {
+      "name": "mythmap-scan-zhongshan-01.zip",
+      "group": "scan-zhongshan",
+      "bytes": 30734979,
+      "sha256": "fa762b964bc54ae0611ab6c5e56a17bf4f8896c6583d09590a92383d5e074a27",
+      "members": 70,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "name": "mythmap-art-archived-01.zip",
+      "group": "art-archived",
+      "bytes": 13366735,
+      "sha256": "2257e83a1b34eb6080664e10e7bb7cae070d42a9ecd132da60347dcea1474d47",
+      "members": 10,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-archived-01.zip"
+    },
+    {
+      "name": "mythmap-art-atlas-illustrations-01.zip",
+      "group": "art-atlas-illustrations",
+      "bytes": 26434830,
+      "sha256": "e57895c6d3a8aba2702c5dfdc9a4242b5d45dacb974937d06b1b0b38d69b8b59",
+      "members": 8,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-atlas-illustrations-01.zip"
+    },
+    {
+      "name": "mythmap-art-beishan-01.zip",
+      "group": "art-beishan",
+      "bytes": 126117477,
+      "sha256": "8edab8e9221d06420a7ea5a7e76a0b02d280b26bf9d03f0264a89cb1555e1d7c",
+      "members": 71,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-beishan-01.zip"
+    },
+    {
+      "name": "mythmap-art-brand-01.zip",
+      "group": "art-brand",
+      "bytes": 1103796,
+      "sha256": "aba93fd09c15af4dc0df066d082a8cd43068edaddecd6e57c01965589e667bab",
+      "members": 2,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-brand-01.zip"
+    },
+    {
+      "name": "mythmap-art-dongshan-01.zip",
+      "group": "art-dongshan",
+      "bytes": 93844817,
+      "sha256": "c5fa409a3a96f8564958bf6f1399ff24378c87d2ee320075a8190421c6ffb306",
+      "members": 49,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-dongshan-01.zip"
+    },
+    {
+      "name": "mythmap-art-nanshan-01.zip",
+      "group": "art-nanshan",
+      "bytes": 182422044,
+      "sha256": "09492d8669e70f0663ee74dd477c4d37d69aef2128eb38e16ebf602d65094bba",
+      "members": 65,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-nanshan-01.zip"
+    },
+    {
+      "name": "mythmap-art-nanshan-02.zip",
+      "group": "art-nanshan",
+      "bytes": 11586958,
+      "sha256": "b594100bcba55337a03ae10b040cf4186525ee26757fa6c7158c7794f84bf55c",
+      "members": 4,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-nanshan-02.zip"
+    },
+    {
+      "name": "mythmap-art-optimized-originals-01.zip",
+      "group": "art-optimized-originals",
+      "bytes": 160967418,
+      "sha256": "6e8e51d3f9804e2d0ff5d31735970fc3f4538743424ad38fc4d40c0beb9df5fe",
+      "members": 76,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "name": "mythmap-art-story-animations-01.zip",
+      "group": "art-story-animations",
+      "bytes": 13168514,
+      "sha256": "3c5b4e58d3aaf7a8dc9bb3d19ce24d4f27c3b2a24c384f38a7a36e59b8a028e0",
+      "members": 6,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-story-animations-01.zip"
+    },
+    {
+      "name": "mythmap-art-woodcut-refinement-01.zip",
+      "group": "art-woodcut-refinement",
+      "bytes": 17895609,
+      "sha256": "858157753891ffc6eec6a00b76a229dd2a6ef3ba6353bb7b0ee274f10235ead8",
+      "members": 11,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "name": "mythmap-art-xishan-01.zip",
+      "group": "art-xishan",
+      "bytes": 183388614,
+      "sha256": "6d25e0b3bcf9d40c9539d914ecfca9dc0db3105fa7f58daef80d31c67cc4dcdb",
+      "members": 84,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-xishan-01.zip"
+    },
+    {
+      "name": "mythmap-art-xishan-02.zip",
+      "group": "art-xishan",
+      "bytes": 68058265,
+      "sha256": "2d285ee2c0326e3b12a61da4921e88714505aaf6ff98699f1137e93475c1645c",
+      "members": 24,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-xishan-02.zip"
+    },
+    {
+      "name": "mythmap-art-zhongshan-01.zip",
+      "group": "art-zhongshan",
+      "bytes": 175730247,
+      "sha256": "fc8d87250f26591e9f9bc02dbb74f56ab79a8785373c9ae2e4f7c72bcb234c36",
+      "members": 85,
+      "url": "https://github.com/hyc1005/mythmap/releases/download/assets-2026-11-05-v1/mythmap-art-zhongshan-01.zip"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/reference-scans/beishan/page-100.jpg",
+      "bytes": 886596,
+      "sha256": "d243fcd3f8661518c12a181a48f514bf37dcc8699560dab744be2bb4ca65bfe6",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-101.jpg",
+      "bytes": 834211,
+      "sha256": "488caf7243055a68d07212d7d442d40178f537b6c6e3f7e40f79f5b4c1abcf01",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-102.jpg",
+      "bytes": 825018,
+      "sha256": "0bd9061aa3a0b08d11903378c366d721f845a922172a96ea0262323b7f6e3eb9",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-103.jpg",
+      "bytes": 814721,
+      "sha256": "65877fc252c6f593546177350f12fea7e52f10e2d4b709ec3bf8b3fca73ac526",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-104.jpg",
+      "bytes": 777116,
+      "sha256": "7c43eef74f20ac99cc7d7159ccfa7bc1e0fd55e71796437fd39d98a663863f0b",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-105.jpg",
+      "bytes": 428585,
+      "sha256": "f911794649a0d140daf1c1c52ac9b04f3abca81fefddac226e0ccedec0383e01",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-106.jpg",
+      "bytes": 450192,
+      "sha256": "c7a8220a40c7e6ae84339a3fa717a764d0f39d280b890490ff91e48c296282f2",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-107.jpg",
+      "bytes": 460117,
+      "sha256": "6b75fc84c301a797af8dfb5eb72177cc3993108329a0ea5acee06ff0febd9534",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-108.jpg",
+      "bytes": 456631,
+      "sha256": "9bea69aa6ad43a42944376ace4a74cbf9b9673465131cc8cb487178a7bdc8d42",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-76.jpg",
+      "bytes": 469082,
+      "sha256": "68c7c6614e5417c05c87451bb348b9445c8669d7469a0430b30919351479131f",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-77.jpg",
+      "bytes": 471978,
+      "sha256": "e5ab7057fdf94b2ab609fef2e96e607a439f93a9a811818df8da401b32d46507",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-78.jpg",
+      "bytes": 524958,
+      "sha256": "41ca627ab31e33d44e61a1496312ff75aaa727d7c0748b5225daaf088aa76208",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-79.jpg",
+      "bytes": 499175,
+      "sha256": "6c780ba88592f3e947f468e4f4d8da0fc5f341d9e200c5a035398d377d84b436",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-80.jpg",
+      "bytes": 468029,
+      "sha256": "a9f33af9e1d037c5a5ed1b07887192bba371d2f009f74a596c75059db9eb3397",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-81.jpg",
+      "bytes": 474228,
+      "sha256": "7b7039a93442a5d1d4fe0d31285a14cf8bd483dba1ad10ee159dbfdc4dba44fc",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-82.jpg",
+      "bytes": 492953,
+      "sha256": "e8050392777667ba3093d92afbc160a62b57d33e87a43ab8a89120fb677ed42c",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-83.jpg",
+      "bytes": 495801,
+      "sha256": "a05046c8d1c32b105b7b504fc3cd894b1d865a9b5b7842a89699f31948cc7eea",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-84.jpg",
+      "bytes": 521129,
+      "sha256": "981f2da3e29a062a8da8ea099bd215819860e63bf0e4f83400bed7e05dd9d596",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-85.jpg",
+      "bytes": 472954,
+      "sha256": "531e7ec99110707155bb40b2442755cf2815e420b1c773975ea4eb36d70b2cb2",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-86.jpg",
+      "bytes": 438414,
+      "sha256": "5a58a8c80f438443d2467ad65c288737834c32a32cd3eda7b2a735a4d5cf72ba",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-87.jpg",
+      "bytes": 487108,
+      "sha256": "945ce66b4730cdea962398590554efdd36a98e0aba2d952d4e04aa60b276c521",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-88.jpg",
+      "bytes": 438208,
+      "sha256": "97833c09d55a89cafb59fa7f631820592ffb240adbd7f6d3edb1dfe3626fcf08",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-89.jpg",
+      "bytes": 813344,
+      "sha256": "4a86a4e3515b2a54df6f288dc9fed541fdc25ef0f993cd00faa1baaa7ffb2b06",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-90.jpg",
+      "bytes": 868812,
+      "sha256": "bc78e80a591247a9b227987b513be29e3139fe2ff196a76e5ec27f576123e5aa",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-91.jpg",
+      "bytes": 777079,
+      "sha256": "1979602ca5b8c0e136961ade74c3ccd9ea6fca85cc47bda52997ba2f93a9bac8",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-92.jpg",
+      "bytes": 709572,
+      "sha256": "5264044d36d376f8bc7fce4039bd70a578d6eb6e8f1f2db69452cdf3a09bad4f",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-93.jpg",
+      "bytes": 803801,
+      "sha256": "8ea2d7fcb8393ae7439ae874723733f26b08a139b46e9547ea9ee2ec52cd33c8",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-94.jpg",
+      "bytes": 848604,
+      "sha256": "3e215d2a3a13d2c5c9b0440e3f564bde3cd94ffe8955fb017621ba5b6eb616c2",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-95.jpg",
+      "bytes": 843921,
+      "sha256": "f24bb84c484075964f9fd6002e2e7331553076b2c86d4b1b15299ce11e1888e0",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-96.jpg",
+      "bytes": 836787,
+      "sha256": "853f7e1d5ea7c907858e4e944c3bcd00a52735a8d408b0733e157e134c14beb5",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-97.jpg",
+      "bytes": 717326,
+      "sha256": "dc014cf3af4c3fed8b363cd4bc9d3e29976f2c3f6cd01c6c4d8d0aaa345e7178",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-98.jpg",
+      "bytes": 798274,
+      "sha256": "a4b649c95917028804f692fa948fc9707f83e844a9ce33eaa8240e5764f2701f",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/page-99.jpg",
+      "bytes": 800958,
+      "sha256": "0f658549b7d17e38df0c96df568324252658633cac25527264ebf1fff0cea667",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/beishan/sources.json",
+      "bytes": 15465,
+      "sha256": "d6269bdef84d2214575788a00276b96abadfed1cccbc4f1a0a9fabed0274475e",
+      "bundle": "mythmap-scan-beishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-109.jpg",
+      "bytes": 734867,
+      "sha256": "162ae692096fd6fb6ba549ecb34cc1840c42e1a27fb9c298193dea385df2bfcb",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-110.jpg",
+      "bytes": 436553,
+      "sha256": "2ac79c0bee8c48af8dcc3397f25cd15a1e5ae0b19a1342066803771639986a1c",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-111.jpg",
+      "bytes": 813593,
+      "sha256": "a1d50c5bc97b5927d23b5551c6bdcdd19b39d571797eaf4926f3a169f7df68de",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-112.jpg",
+      "bytes": 513917,
+      "sha256": "fd20258255f290dd32f0f08d63ddeb1e4874d977410b4543c192aa00f985e786",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-113.jpg",
+      "bytes": 478401,
+      "sha256": "cf664c01bdf697fdbb3f400859427d669a9845aed73ef4aed7cfe3fb503dc1ae",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-114.jpg",
+      "bytes": 487857,
+      "sha256": "717e28b193c40ba1e9220cfd8c7bb73aebcf0f970e089445427a6367640dd058",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-115.jpg",
+      "bytes": 473572,
+      "sha256": "63160bd862baf1f5afbda95951b4109d0480f53351cb66bd7372dbedb248b4aa",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-116.jpg",
+      "bytes": 389612,
+      "sha256": "4d2d379793b0e49c037dd36ad1a79b5cd8b188027c28d62d2988e82415e6b842",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-117.jpg",
+      "bytes": 490561,
+      "sha256": "51e4dc9c8a567975e6e9878ac5f464af8847fcf028ac73a8cc9fc5901bfa9276",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-118.jpg",
+      "bytes": 413656,
+      "sha256": "d54c7f326eebe49d4d07ca268d5b4cb021e59b4fe3c5690ca4f53043b648ac67",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-119-detail-1920.jpg",
+      "bytes": 788044,
+      "sha256": "c5814b5f10b6dc5697f760caf5edafe52326a18a52c5b3e7c6798ae533ce3d9f",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-119.jpg",
+      "bytes": 435966,
+      "sha256": "60f32939c7f49dca4423b0858a1a0ad2076723c3b82e4b2664da881849e70faa",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-120.jpg",
+      "bytes": 436921,
+      "sha256": "79ce67811749a5833ed5cb713461158a3cb2f92aba2af2050095c1f08dff2ef8",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-121.jpg",
+      "bytes": 464687,
+      "sha256": "d9bd2ed4edffb8292a6f8a79271f22310d23938bc70d4cd297008d50219c0f6b",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-122.jpg",
+      "bytes": 468976,
+      "sha256": "f7165559a4db649a213b9a50d6bfcc6fdf5b2b01d70d3e5b30c05bba33d2191c",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-123.jpg",
+      "bytes": 485986,
+      "sha256": "e6c822ee9d0b4103cba223371ea844b9897862c8cedec98f6726a9cef325403c",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/page-124.jpg",
+      "bytes": 305099,
+      "sha256": "142cb82ad51fed66a855bc7116c7e60ff65e57c8982a7208e43b47c5f883bc1a",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/dongshan/sources.json",
+      "bytes": 9220,
+      "sha256": "af6ba1f990eb9611283126bebdf5b0b1afdecd6ae09d61bf32ec75d63b2c250a",
+      "bundle": "mythmap-scan-dongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-16.jpg",
+      "bytes": 453676,
+      "sha256": "c9c149f1cfa95dd52505427a1eee73bd57f7c4e088f267d172b13a83b00d789e",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-17.jpg",
+      "bytes": 465070,
+      "sha256": "c267f01fc75eaa0154dd0c9cf5141a04ca6cf0b0f47d9fb9d3b91f7a9ab2066f",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-18.jpg",
+      "bytes": 481584,
+      "sha256": "3a0c4aa56b86d5d45a028dabe1b79d2657c5e06525b8384aefd25bf73b28725a",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-19.jpg",
+      "bytes": 506246,
+      "sha256": "688f789ce38de03bbf258ee25eb0f38bb556593dd90ac591dc36953ba01f9251",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-20.jpg",
+      "bytes": 438166,
+      "sha256": "5f625897d0ed366bb8007cc65fb749b600d521997aef20961c5995ac0de2f22b",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-21.jpg",
+      "bytes": 486436,
+      "sha256": "085c6bdd44e24220d82cc29809c7046072d85e3d1fb304c998c914ad706435c4",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-22.jpg",
+      "bytes": 512864,
+      "sha256": "616379219b5cfa16cb8bec79ba5addafe911cc361a9d72af50ea1317be72ec76",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-23.jpg",
+      "bytes": 458859,
+      "sha256": "6cb36f273f805d4457e23775ef639916f4b3d76d7099bf7813a1d9831f556551",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-24.jpg",
+      "bytes": 504289,
+      "sha256": "bb644ad374d65b24f22c29bf305560a4d6315920844e91db304635330e334baf",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-25.jpg",
+      "bytes": 400526,
+      "sha256": "f514dbac288465b22bd1de888bb2fdfe76ef245ed534bf5d27b92deed6fa1259",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-26.jpg",
+      "bytes": 437778,
+      "sha256": "6b5c0227bc332d86c9f69685cb1ac7374e0f41402621dcadb8c60fca7bd1b47c",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-27.jpg",
+      "bytes": 482777,
+      "sha256": "764777cf8a5e84faef1205328ffb1c76f4ab6b6b0d353c978d592fdaf0e70e9c",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-28.jpg",
+      "bytes": 468860,
+      "sha256": "7689c9ba4211e2e0ca4eeeabbd1c15e597e03f225819319afc7c9a7e187f2523",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-29.jpg",
+      "bytes": 423325,
+      "sha256": "05aa28cf10cbe836c04f3b9c4027075fd8c4299b64396dbaf99a2af3d0fc95eb",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-30.jpg",
+      "bytes": 366485,
+      "sha256": "56ccc7cac90108eed3d62e738341a2755b3257dd27acba8448c15481aa805fa7",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-31.jpg",
+      "bytes": 427373,
+      "sha256": "78da766e7e0bbd40ca0db18093618f569786c7f154801fafeadf1ebbb66ab750",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/page-32.jpg",
+      "bytes": 348112,
+      "sha256": "83970eb2e45f4bcd03a65566681d24adbe05f0859c52d7d46e459cb45f323f71",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/nanshan/sources.json",
+      "bytes": 9778,
+      "sha256": "3b4a3bf8dc54790caf28bffe89f0189922e09dfe3fef08fcfe71c75c380a87d6",
+      "bundle": "mythmap-scan-nanshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-34.jpg",
+      "bytes": 707376,
+      "sha256": "8dd850c06e5e0efcdbbbd017d9ca2d5bb2916a3db713241afa59a39911ba0802",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-35.jpg",
+      "bytes": 776863,
+      "sha256": "f38ff04edc713644152b894a235f215a07c72bdba17691a88531749c18374458",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-36.jpg",
+      "bytes": 770567,
+      "sha256": "734199761013e2c206a1e09ee4b81684e7503862743e8d311480ea8a46037270",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-37.jpg",
+      "bytes": 809722,
+      "sha256": "4b109eb7a9be6d69b2acd0c91175d19db0f4b6e0e0067451d350fb1118c6dc92",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-38.jpg",
+      "bytes": 857598,
+      "sha256": "74306481f19be7431eb5ad315bf4163bf716c03d5fe4f9dab1338b9db74debde",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-39.jpg",
+      "bytes": 775548,
+      "sha256": "901e1ecfb97546c5b1873ccdce118f2716f65abc08f4d535703f02788931e74a",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-40.jpg",
+      "bytes": 750344,
+      "sha256": "164e634e01199003e445db0b899f544b0d6ccfbca04365013f98bcf99502a73c",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-41.jpg",
+      "bytes": 811465,
+      "sha256": "2fc3f8f521d8618e296cc636e2ea8f862c0867254759e4580f7491933c8a38da",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-42.jpg",
+      "bytes": 892806,
+      "sha256": "eff1041bc6cf892a00f40e1a3019f37fc308aa8151b521a67229e9eec46cf02b",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-43.jpg",
+      "bytes": 859698,
+      "sha256": "3c903343f30f9c22ecf60f83df471917da39ce749afd2f784eead97a458bcddc",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-44.jpg",
+      "bytes": 495563,
+      "sha256": "b3a44a8810735a80af1985cf37cf1555676867508da18bf787fb9d857c76d8ae",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-45.jpg",
+      "bytes": 503360,
+      "sha256": "b2a462347c45721e9b5c5dffbd07c0231fd692f1a98ebd58006af104bda6597d",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-46.jpg",
+      "bytes": 421625,
+      "sha256": "85acd03246dcb2a19c79a9dba46bae837495d5e7d3ea780e08129a9b29d6876d",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-47.jpg",
+      "bytes": 499339,
+      "sha256": "5d6f17f42fb04074c9fadf9126fbe3db6b456821e63818e978cc62d357c67a94",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-48.jpg",
+      "bytes": 467809,
+      "sha256": "93c6fcf9102ffebee092c09a5d3fe100814a1eae1e2ac8ea7c10e397531d87bc",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-49.jpg",
+      "bytes": 423913,
+      "sha256": "35e207f4c49666d60a46ce2a4f6e3e25cbd64a3617f454ea77e20b4e3365d0d6",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-50.jpg",
+      "bytes": 416375,
+      "sha256": "6c251ab96d6e85c84098239f125efab5ddaabc369f56bf129b045123fb16abcb",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-51.jpg",
+      "bytes": 448172,
+      "sha256": "a0d6aab1447a7601e9e1cbe20eb359e54e19d1b2bf4f6ed9c372340f0cd5d7c0",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-52.jpg",
+      "bytes": 514977,
+      "sha256": "eed4608dafed23a27871bdd4a1f2c035f50507e6da111b4765a2dd17b62d30e0",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-53.jpg",
+      "bytes": 516643,
+      "sha256": "0041bebca259d5358b855bccd5b70bb7569697d9850cf4426d9283bf186cbb8d",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-54.jpg",
+      "bytes": 538493,
+      "sha256": "8c55bddeb92394f298bf4e901a134ad08450e8d0ba030e5c5fd07284d68fe007",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-55.jpg",
+      "bytes": 480846,
+      "sha256": "4648a3c9749033d3086062c0c69cb003afdfbcd0fc3cdfbffb1dbe1dc2ad3570",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-56.jpg",
+      "bytes": 464099,
+      "sha256": "48b5f8b2878b3f6433f7406e82427c34b017fcafcea0bcdf6f0d61658647c24a",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-57.jpg",
+      "bytes": 540201,
+      "sha256": "d11392b6feac3adbb17ace2dc1d10e83d9b98091f460e3b7ca158fcc0f0fecd2",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-58.jpg",
+      "bytes": 552961,
+      "sha256": "d6ee2f9e1dd6c4116db42acf3a688fe818de7422e192b83142ca0ba17646b7e0",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-59.jpg",
+      "bytes": 550360,
+      "sha256": "a08b3d16c6f0e2f38919cef654696260271e307ebc5eab746c15a0e5ef8c7699",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-60.jpg",
+      "bytes": 505458,
+      "sha256": "665206baf28b1de54b27eccd96dc0c7d435632e5e891822dd00f8f5860d9782a",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-61.jpg",
+      "bytes": 482804,
+      "sha256": "43efa71408d1fd9206f8c2ee72799f4ab3d7f925bf8709ee5a861f21d53a8e95",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-62.jpg",
+      "bytes": 579875,
+      "sha256": "8c30e57e3f9f127545f72acc27747be40f63625055ddaa57913a39909af49c34",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-63.jpg",
+      "bytes": 474269,
+      "sha256": "c38670e1283cda39cb2ce15c8586089c3d5434d3137d89c1d07e73cc78d04ed6",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-64.jpg",
+      "bytes": 484115,
+      "sha256": "82d17914210b2006d49c57b75289b0f180f404b4cff0d5ee8d0d5fe2b5477d74",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-65.jpg",
+      "bytes": 499786,
+      "sha256": "01b456c114e2122ff0384414fe48349ffe923c57fe6948a4362a36c25b614b6e",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-66.jpg",
+      "bytes": 496486,
+      "sha256": "d29d53f9e9efef9022550e62689499639460aed2b86429679649bdeb71edd031",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-67.jpg",
+      "bytes": 488017,
+      "sha256": "20f2047bef4892e8c835fef21af46b56557b360e76f788539770ee2303b0b4e9",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-68.jpg",
+      "bytes": 436845,
+      "sha256": "9971d4d4b2bef724bca6a42ff31ecf881a8f670214989bd5104f8c1a31f00fee",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-69.jpg",
+      "bytes": 476344,
+      "sha256": "bf6baa77fcced12bb91e156f3008fde9df2086a1f569a2fe3ab8d56aaebdb448",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-70.jpg",
+      "bytes": 473682,
+      "sha256": "df20cf825d89ffbd17ef60f64cf0ed29f34855a4808e06e29d652ea0b78bbdd2",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-71.jpg",
+      "bytes": 455837,
+      "sha256": "6e48a0dfe278dbe2dc182f015e57ba22baf2e97efef5eb4b61646f1bac11dc19",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-72.jpg",
+      "bytes": 506019,
+      "sha256": "59e00cce4bd03e22beb4168f518be508677284a829091171f054a4e8b15caa14",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-73.jpg",
+      "bytes": 481983,
+      "sha256": "78a53d87b5f70ac08fd1703db4bcd7ce250114fd3c4fa9aa94e0576266e0dec5",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-74.jpg",
+      "bytes": 502801,
+      "sha256": "b9aa1862a10d3bfc11c417f991132983436768ab1c79c2ee1db16ebd5fcaec83",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/page-75.jpg",
+      "bytes": 403686,
+      "sha256": "989a5901d305f6af8b60400e0363c10e640f53982d7d114575adea373f3f59eb",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/xishan/sources.json",
+      "bytes": 20558,
+      "sha256": "44a972e45897ffbc88388d654f64aabeea7cfa626d6ec32619236495f8e844c1",
+      "bundle": "mythmap-scan-xishan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-002.jpg",
+      "bytes": 498571,
+      "sha256": "79bc57a6781ec45ed48ab703b475e9ac1173fcfedcc5b4f5e6dbd0d7a63bfcf0",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-003.jpg",
+      "bytes": 438828,
+      "sha256": "758bc2765cf2a02f7d2927aae798aacfbff9849888d227e288f28eed9fe5f528",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-004.jpg",
+      "bytes": 441462,
+      "sha256": "d872bb97124a0e0918ddb824acfea8c8a179b45f771ee4c6b003c1692d31d54c",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-005.jpg",
+      "bytes": 453367,
+      "sha256": "ce000bb1a5c4298fbd4f0e39aae8fa2cb5de1c6a306e214fee1544feb20cccc7",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-006.jpg",
+      "bytes": 445514,
+      "sha256": "2e1b14e32f45b6bf027b663fe34472611f1a4d3a7e1fdef0cbe08822f5f3df55",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-007.jpg",
+      "bytes": 414492,
+      "sha256": "f584878f28c8ede3cd2d700386a294770a7c2ea12594197cebd02b1c63903047",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-008.jpg",
+      "bytes": 493224,
+      "sha256": "b60fdf100630d111cfbab7b153203b9df1da621d6e235c973b8969b9fde88ae9",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-009.jpg",
+      "bytes": 461726,
+      "sha256": "60d658e0c8763029951f3b5f2de4b9b2d23620f13b57c10e18c4c52bb1cd3367",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-010.jpg",
+      "bytes": 515484,
+      "sha256": "9a48a458c86cab13a9be508648a1300b54d64cb5c40da90729bc1d1e9ad17132",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-011.jpg",
+      "bytes": 468557,
+      "sha256": "2137e855d003de49c489500e8efd4baf958375d8cb6bd50df5075522eb4cb8e8",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-012.jpg",
+      "bytes": 447849,
+      "sha256": "ab3388249d40c445a4595598a21376cf3db28c022d3942c17ada8dec45f5ce22",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-013.jpg",
+      "bytes": 450565,
+      "sha256": "ff8a800870673f447e5782368c3cf582920c7172f70e775f198cf1476c550aae",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-014.jpg",
+      "bytes": 429819,
+      "sha256": "056557c434515b6ec829719f50b47ac47f3ce08a3bfcb0d8e855c79eb5530e88",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-015.jpg",
+      "bytes": 444450,
+      "sha256": "f5a54d8fd5aec7d81910fd5ef84249f44a5bbbd24560f30cf3113be6da5c0971",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-016.jpg",
+      "bytes": 430968,
+      "sha256": "5be1d02f5524083b32f58265bfa13a475009959364ff735d10a5c5e8e836b430",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-017.jpg",
+      "bytes": 405228,
+      "sha256": "7632304ea8a40d4894689808665020e2451594fe0adf119a2b3f9551a3f4d6e8",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-018.jpg",
+      "bytes": 443696,
+      "sha256": "62482e6fdf40f2453c8d64d4beea8206a54b89c04fa2a5172c78b1033ac74180",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-019.jpg",
+      "bytes": 465309,
+      "sha256": "46415de327236144b463cd34994f8f7720c9a7aaeb7ff69da371f32d3388f4de",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-020.jpg",
+      "bytes": 499468,
+      "sha256": "f65a68a4145fb876f55746558cc0bbe8e40739691ec5ff29fd10acf93de83e35",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-021.jpg",
+      "bytes": 468923,
+      "sha256": "0a53de093116e2886c7f6f36ebea416862a7341bfa0d383c87cc4ea074c0e82b",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-022.jpg",
+      "bytes": 432781,
+      "sha256": "264b723ca4f4cce373ded5af299a3c1b78728e062c365409c8c4ae6c5343df18",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-023.jpg",
+      "bytes": 459481,
+      "sha256": "c7c44f23c2535cf6451760c4b171067c42172ac5f2043083da9216df0d34556a",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-024.jpg",
+      "bytes": 493473,
+      "sha256": "16cefa1867e3027a61ef3714bfecdd1515dd341ded9d6f82f1be845f5db17b26",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-025.jpg",
+      "bytes": 469504,
+      "sha256": "9942dc4af0c5a92d0de66c5f5c5324486547864e416c62714ff302723c5df055",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-026.jpg",
+      "bytes": 494007,
+      "sha256": "9cbbb6941a896875c7b2a18e64ccf3aa19d15204bd22871e7ee656fa5f2e07d7",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-027.jpg",
+      "bytes": 474684,
+      "sha256": "3c6a440ca6d4001bf8744a8655755673f34c1af7792c7c9586e3dc386afb15da",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-028.jpg",
+      "bytes": 500187,
+      "sha256": "1ba728bd0e5d3b5a26761e5f4a69b08da8f31df025d9e82d5e06dfcb25e3b8d2",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-029.jpg",
+      "bytes": 513128,
+      "sha256": "59e9eecd4f034e5ef9a86d6fbbfe7642a966e964632ce09306845cdcaedbaa7a",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-030.jpg",
+      "bytes": 466324,
+      "sha256": "e2f147e5d0e3194ebedc25ba6bc70e3153a0598727d1bac2579ca747de44ea17",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-031.jpg",
+      "bytes": 428196,
+      "sha256": "01bfe481b6475cc1e3669c9af4abee511e80d5c6097bb367330f6355cffad495",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-032.jpg",
+      "bytes": 445106,
+      "sha256": "a3d0cebd7e822c9f117d9b0564e0156ef735e8a7bdb6ec93962ebc5e2f64e87d",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-033.jpg",
+      "bytes": 417721,
+      "sha256": "209f3e4ec45e2e8b2d4372f1521bb00ab09189fef47bbbcf7cc6b25cb626bc74",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-034.jpg",
+      "bytes": 419268,
+      "sha256": "7498346824945b571895f3c1be02df1690d27ea402e14a590f5c27f8569d099a",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-035.jpg",
+      "bytes": 465920,
+      "sha256": "91d01e0391f5c04aee39248ce3a348347fa2713cd223ad83d22166c339114613",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-036.jpg",
+      "bytes": 386455,
+      "sha256": "9929f3d11118a4bb3fa4f066a16e6648ded1cce22fdacb47855e6d7065007124",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-037.jpg",
+      "bytes": 407296,
+      "sha256": "65a8ed43cea749842d2ad9b93fe28777444f37143d6255131ffacb912d77b2f4",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-038.jpg",
+      "bytes": 436198,
+      "sha256": "0b56ded5f1ae971a15acf51224b17896de1b73c091b2658f46a50f7179b5c0b1",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-039.jpg",
+      "bytes": 427765,
+      "sha256": "7764a7504a37785f9d5b12064ea7dab6cef350beb63366adfff44b8fd0eb26c7",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-040.jpg",
+      "bytes": 449701,
+      "sha256": "64e51566b18984f6b906a5368659814b2518b4902768b4dc30fbef90393f7e11",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-041.jpg",
+      "bytes": 488371,
+      "sha256": "5729166cf2b457fadf9181dbd784883d074ac2484954fd4aa4b91846d914ed1b",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-042.jpg",
+      "bytes": 461383,
+      "sha256": "8c7a66dbd95cbc7010242665cf2ef6cd7e27161b39028c1268e879938039eb88",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-043.jpg",
+      "bytes": 457583,
+      "sha256": "1e52bb353bd3458eb3b1b9d1c9399c22775af9945bcfccbbe70e3536ec6424b2",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-044.jpg",
+      "bytes": 445296,
+      "sha256": "f7ed2b5bd72535cb2a69b3aeb37c35ef268af1b6947e8f19b633d47734863dab",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-045.jpg",
+      "bytes": 474793,
+      "sha256": "87bc7e8e58225646c66617bf2dcccda08fe5cf16a24cacd7e58436613ac558b4",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-046.jpg",
+      "bytes": 439459,
+      "sha256": "f2175f6e2268b4d86813ee446d25873e27d3d6ddd7090a5e6d910a9b5307762a",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-047.jpg",
+      "bytes": 485950,
+      "sha256": "4b2a769f546208fbd5354a6a1b07683ee617fc6e033913405de4e8f969d91ab8",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-048.jpg",
+      "bytes": 463046,
+      "sha256": "e0ba00441819cd42b256d09448f6d7ed925db762580d4e229e9ba835904ae058",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-049.jpg",
+      "bytes": 465885,
+      "sha256": "ab26564655265301b034ed8748ff3866e6057012d93413784f01f2ff99d3d6bd",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-050.jpg",
+      "bytes": 463584,
+      "sha256": "3cc44b2b5e6c0fb54032509859fea2668df2228f40a679676bd496147abc8a28",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-051.jpg",
+      "bytes": 498114,
+      "sha256": "e79e59fc846d96850caea218304eda551b79536246674fb05d049aa1222068e1",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-052.jpg",
+      "bytes": 471748,
+      "sha256": "71fb5fab07880fa028c2651f941744ff6b1438f0a2adf892647223342c19f59d",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-053.jpg",
+      "bytes": 476229,
+      "sha256": "e06600508f268a6d62c10cf6a588447e356b8a32f6f133ac98771746435c4be4",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-054.jpg",
+      "bytes": 499880,
+      "sha256": "bb11b8a444ce565e7c42fd3a58fcbded58913639cec54757bfc1170bd7c94098",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-055.jpg",
+      "bytes": 432257,
+      "sha256": "71b5e17b6c070156a436b4d6efd9802a512ad1c7b8d2dc8355db746cdbf36559",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-056.jpg",
+      "bytes": 401958,
+      "sha256": "2c6e97dec76179022486f267e922c9e3c882149960113b136d91c1e78a3c20dd",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-057.jpg",
+      "bytes": 444362,
+      "sha256": "797b36af2333e8187fb2c58be25557cdccd315417e8139829a7644206ad12a58",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-058.jpg",
+      "bytes": 435047,
+      "sha256": "d93e875284f0e5ebc5e4a34b28fc23a9a2b8a96d161f86631f8491ed8ffa9887",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-059.jpg",
+      "bytes": 464786,
+      "sha256": "cc01f5fbed21390026eec83323486aa0bc4c2846f2865d8f225b657f14013513",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-060.jpg",
+      "bytes": 416773,
+      "sha256": "d84d1fd37f090b35675c26e69aeb54ea7c87e904a1525007116ed2956a4f0529",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-061.jpg",
+      "bytes": 397001,
+      "sha256": "662ade99a667c91cdfe9098d1898e4b72b6d14d57ffc7f6851caf3c629da8141",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-062.jpg",
+      "bytes": 450344,
+      "sha256": "cf3cc8b5c6b86912f8db07b8552e400b913cf284f6ef1a4260fd49d546c46927",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-063.jpg",
+      "bytes": 460647,
+      "sha256": "b6fdc30fc0ebcb546f57bc082ec1c28299fe1a0c56e22a45b489a3abfd2bb044",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-064.jpg",
+      "bytes": 521316,
+      "sha256": "3029a5c82908b176e5b2a9fdbf14d5997b99b2fc3d8d68fe9a8e9aad72b0113c",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-065.jpg",
+      "bytes": 522759,
+      "sha256": "e0acf1a1232d9059ec07e0463bc51f1e5a0daa81808eca35451dc79239d56e45",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-066.jpg",
+      "bytes": 451772,
+      "sha256": "f54400184d6fa0caec1fd3133ee516160ce494e8f23ad604a26360c6fdc8b651",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-067.jpg",
+      "bytes": 440379,
+      "sha256": "ac7bbbf4749c207d9d59683db83a0e1bbcdff5b993450051879cb894d0d8bae4",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-068.jpg",
+      "bytes": 466030,
+      "sha256": "05dfdea97a5bfb9261d74c8cf79fae07324ecde02f4150071b9d9b0c65e4d418",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-069.jpg",
+      "bytes": 466266,
+      "sha256": "bf3eea6d7b2cfecb6cd9ef67eed3344be31e6f49ff4e3e1b7bdeda8e2187b53b",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/page-070.jpg",
+      "bytes": 241739,
+      "sha256": "e305f735786917339081321c454fd58c55cee1b5f1c92f5e5d9de02db96c4df0",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "data/reference-scans/zhongshan/sources.json",
+      "bytes": 62464,
+      "sha256": "5aad4714f042fc00ef7fef4b43d082ac34c748b485d4b95bdae94fb3f34319fc",
+      "bundle": "mythmap-scan-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/dayi-shoot.png",
+      "bytes": 1853857,
+      "sha256": "25e9494c9845351239b4012c259b872a4659bf22cb562ee0bdcc5a69f48ae076",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/dayu-water-waves.webp",
+      "bytes": 735088,
+      "sha256": "c5a8653b58705920c4454e3080e1b27a341f2952c9344629a3eff1bf250a7400",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/nuwa-create-poses.png",
+      "bytes": 2560678,
+      "sha256": "2e43462f5ca8c890c24574d62b1136458a7a1ac1bcd633221162ba2b2a67500a",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/pangu.png",
+      "bytes": 2636968,
+      "sha256": "e7a31368a7afdb1f8838124b1848e669b4401b1e0cafe588bb9855adabe3b544",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/suiren-after-fire-v2-original.webp",
+      "bytes": 1685924,
+      "sha256": "dd0cef90debcedeb4a5beff82513f29db66af4c8def8c9719b54068be04d0f68",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/suiren-drill.webp",
+      "bytes": 627006,
+      "sha256": "7e2a938c84ce976cbbadd10ea101849ea7444c0a469841c338947705e6f71ce0",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/suiren-fire-loop.webp",
+      "bytes": 419792,
+      "sha256": "3ef1e52a310bc63f9727136a497daefa17992bf9ace1923427ef40984b81ff7b",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/suiren-fire.webp",
+      "bytes": 537078,
+      "sha256": "fb98abcbc2c257e728d289ef86d6176b819f407f14450de4c6aaa2da16f33d97",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/suiren-firewood-v2.webp",
+      "bytes": 1117976,
+      "sha256": "e547c784c0350804605f5237a6df70b23bf072e123a900af8b01381f3a4fc64a",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/archived/suiren-flames-v2.webp",
+      "bytes": 1288604,
+      "sha256": "801efec646db8ad067e21e02fb975dc4e84c0ecd664fb16e692c8a6216c63b91",
+      "bundle": "mythmap-art-archived-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/atlas-illustrations/01.png",
+      "bytes": 3224106,
+      "sha256": "819331e21a4bba89f4a503adaa8196ed2e725e72b559bedbbff2b5388ebc7401",
+      "bundle": "mythmap-art-atlas-illustrations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/atlas-illustrations/02.png",
+      "bytes": 3641825,
+      "sha256": "43c457ca185b6dbbce55fea82622d2bbc80ff7202e80cf42f334017ea95b74db",
+      "bundle": "mythmap-art-atlas-illustrations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/atlas-illustrations/03.png",
+      "bytes": 3637097,
+      "sha256": "77ada42e00a29981b929aec26fd65f673ab0e3731758943360fc28c65777e0ad",
+      "bundle": "mythmap-art-atlas-illustrations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/atlas-illustrations/04.png",
+      "bytes": 3160402,
+      "sha256": "6ff644d0543d4cb62326e4d9f5b28f8766c83d45bd731293d463328274e27301",
+      "bundle": "mythmap-art-atlas-illustrations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/atlas-illustrations/05.png",
+      "bytes": 3425497,
+      "sha256": "39abfb8b74e222d140310c0e2ca6801c95d95db3d465f067ca5ee31df2ad3b3c",
+      "bundle": "mythmap-art-atlas-illustrations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/atlas-illustrations/06.png",
+      "bytes": 3272525,
+      "sha256": "3dcdd9921f1648b95e6ffabaf81fdabde0f9d45319baa4988b3370839163bddc",
+      "bundle": "mythmap-art-atlas-illustrations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/atlas-illustrations/07.png",
+      "bytes": 3476146,
+      "sha256": "ff3672caf5e88736980478954308b615b1a54a06d793a4198b5a48a976f6c54f",
+      "bundle": "mythmap-art-atlas-illustrations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/atlas-illustrations/divine.png",
+      "bytes": 3305350,
+      "sha256": "22328a2ad257ce6fde6543f3b759588dc083bb9101bd78a86b525e3ecff46bc7",
+      "bundle": "mythmap-art-atlas-illustrations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-baiye-danzhang-v1.png",
+      "bytes": 2235327,
+      "sha256": "8b832510abfed55a474fd431d1d298bae1964d6a7cfb6769cc9a6b02fdcf186d",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-banmao-beixiao-v1.png",
+      "bytes": 1928856,
+      "sha256": "09ff8c2c0a001bb3ee17143e666a94f46d8255a7c2dba0cffd2ae26298b52455",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-fen-guishan-v1.png",
+      "bytes": 1748806,
+      "sha256": "ccee0e2ae4a09f0cd954b20590ba04171c88f3aa5613cbdcfda5493c8c766201",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-fen-guishan-v2.png",
+      "bytes": 1614612,
+      "sha256": "d56a3317eff0b9b29a625a8f81214938ae1a6f2834f865c84c7732485acb1158",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-fen-guishan-v3.png",
+      "bytes": 1571119,
+      "sha256": "a01f0921e03d5e35b8cea3259857cdc812c0fc669ec90d38d07dcf88be189396",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-guxi-xiaohou-v1.png",
+      "bytes": 1255789,
+      "sha256": "c430c89a849996f519be0bfacf7713b30e8bbe7451fdd816139a44cfb971565f",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-huangniao-xuanyuan-v1.png",
+      "bytes": 1934176,
+      "sha256": "c6255cbe7242135d67b56b88a69b475db88d60de7e04088573b4a1c3307621e3",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-jiao-manlian-v1.png",
+      "bytes": 1794414,
+      "sha256": "2c38695758eed1c7bee3d3be36b0a437cdfe215031657dbafbcc1cd19841a332",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-qitu-daishan-v1.png",
+      "bytes": 2467895,
+      "sha256": "a83a8ee0789b513936e823184722b6b68e8a3333420e61a1c7d9d79cec685306",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-quju-macheng-v1.png",
+      "bytes": 1611106,
+      "sha256": "46b53be94728447fa5a6dabfd54191948c79b60cf2b3027d35544c363131c348",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-quju-macheng-v2.png",
+      "bytes": 1442561,
+      "sha256": "28d10df39284fd07168db46c1a0b6091942b4afe6a85056d57f46b0fd0123866",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-songsi-guanti-v1.png",
+      "bytes": 1410434,
+      "sha256": "fb8762dd99d55face271d171a6f20831b755cbb1f8807fdbaf06604602c248ba",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-suanyu-jingshan-v1.png",
+      "bytes": 2301087,
+      "sha256": "888e7953810bdc236a702d25b59b3904faa0b6e383e07e3e131813c28ae43cd6",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-xiangshe-yangshan-v1.png",
+      "bytes": 1814540,
+      "sha256": "3275d3336ddf22f04070b2eb8c61caeb4c76035173b4bcdf9c9bbf2add72a718",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-xiangshe-yangshan-v2.png",
+      "bytes": 1537109,
+      "sha256": "36ea1a3efb3a475022e42e7cb06d6ec4667dff6dd4e206c182f4b5b854e5e895",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/bird-yu-guoshan-v1.png",
+      "bytes": 1795414,
+      "sha256": "cb7be2360078700341b1bb1250db3bba5523fe213f951cfd277421b4dac564cc",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-boma-duntou-v1.png",
+      "bytes": 1542926,
+      "sha256": "6754b1d2c34b72f009e69caaf2621ed372cd6dab8f312fb4fe85c13c8e8c9a13",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-dongdong-taixi-v1.png",
+      "bytes": 1810525,
+      "sha256": "6ee1bcb36e24d46054c6d52019dfc7a0c35059036829113cc11c6ffd3c0e11e9",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-dugu-beixiao-v1.png",
+      "bytes": 2367778,
+      "sha256": "ff8100324cabf5912cfa9f1452c15e60ddb5275b81eb67c0f48ceb1ae52ac2f0",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-ershu-danxun-v1.png",
+      "bytes": 1933964,
+      "sha256": "356a1c9b08af03ce446086bc917ee3c6aa1d662dab12a4036222e35327b3dfb0",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-feishu-tianchi-v1.png",
+      "bytes": 2474874,
+      "sha256": "e8771791f87c9d3699ec8833374bf9a61eedd815ef8fc4f706049d0da05b0b28",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-heluo-qiaoming-v1.png",
+      "bytes": 1918772,
+      "sha256": "c4f32aef453ce9d17e74669d4c4894e0d5eb5019ada3b6d07d320edaa4bef454",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-heluo-qiaoming-v2.png",
+      "bytes": 1813377,
+      "sha256": "32581ef9427d73099629f19f4a87b88c9b9a8f5b1c67fc1facfeb25dc23ccb78",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-heluo-qiaoming-v3.png",
+      "bytes": 1851126,
+      "sha256": "635201ced625f7a27ebc41971fd9ec8221539dc3b12207ea95913395711012bb",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-huanshu-daishan-v1.png",
+      "bytes": 1768768,
+      "sha256": "c73253202e4888c2653028e651f0293ff3a05bd6947c0950775ad2036d0b4fbd",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-huayu-qiuru-v1.png",
+      "bytes": 1590015,
+      "sha256": "0240aa77b4f6234fb4833a58a5919d75ba9f4b0731d0b0709f797fd38558ca70",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-hui-guishan-v1.png",
+      "bytes": 1715503,
+      "sha256": "2264670278d6f4862ff95a6d5b73e39cc90e9538d395d06c131dda1cb07869ce",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-juji-liangqu-v1.png",
+      "bytes": 1995477,
+      "sha256": "7fff0d393b6f52154696c962b3bdbe125b73bdb40c680be49a47a91c68c155d5",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-linghu-yangshan-v1.png",
+      "bytes": 2160554,
+      "sha256": "5a7cc80e66515ddb5e2bc24f4a34e3191ec49ab42f43e3135fb9e63ee5750066",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-lv-xianyong-v1.png",
+      "bytes": 1582984,
+      "sha256": "d2c5935561de89f1cf25c855008f47758ca49df83c2129d0b765c497f6a599d6",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-maoniu-panhou-v1.png",
+      "bytes": 2140677,
+      "sha256": "638758f41378174277d887806d9ac4879584df333bd2af93edbaa3cfa9ac8d1e",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-menghuai-qiaoming-v1.png",
+      "bytes": 2270720,
+      "sha256": "91d927b4749939cfd0a45a7baff4e5f52dfbf50fe5497707274c75efd7f9f709",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-mengji-shizhe-v1.png",
+      "bytes": 1756801,
+      "sha256": "4a8cce991c639e6c288e5dcd28f8fb03144c3af4de6ad79f17cc6ecec5384efa",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-mengji-shizhe-v2.png",
+      "bytes": 1297740,
+      "sha256": "965243bac0df933269ac6e1bed85169a641ea5fc44fbbae16fbfcc2eb5599776",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-nafu-guanti-v1.png",
+      "bytes": 2290627,
+      "sha256": "29a8117f2db5d9d4a088a79700bca1418da244c18647d5913b1c6e01e9b66ad1",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-paoxiao-gouwu-v1.png",
+      "bytes": 2321304,
+      "sha256": "6cecc76a80793696d88424dd1a29938dd6fd7b08765c4a3651949d4f35b037e8",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-pi-lunshan-v1.png",
+      "bytes": 1417670,
+      "sha256": "80587ad92bdf6ee2ff95c465dafd923ddfdb876431e1fcefe067a3789202bd55",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-shanhui-yufa-v1.png",
+      "bytes": 2170814,
+      "sha256": "96614d793548aef9170ae29ccd7883d802c17c7ec0c969bfc2922cfd0883bb0d",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-shanhui-yufa-v2.png",
+      "bytes": 2007251,
+      "sha256": "0ebd404c7fa75f9e089de5f146af462e788200bd6140be4f8b63f977d9b20083",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-shuima-qiuru-v1.png",
+      "bytes": 1732301,
+      "sha256": "5d8a637eb7ce687fb5067690f7f7aaad72302c6000201f9cdb3d28bf8cc2be52",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-shuima-qiuru-v2.png",
+      "bytes": 1042255,
+      "sha256": "d77fb5831cd53de78bcdbca131be03dda2e0781de83dd848d92fdf78c6221b6c",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-tianma-macheng-v1.png",
+      "bytes": 2061056,
+      "sha256": "462f0d11e972519a3d91964140575011dd18afc1edb2fc68c7e01507163add5c",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-xianfu-yangshan-v1.png",
+      "bytes": 2167509,
+      "sha256": "ba67f66ec3a8812ea250798c2b9c7a3a7d2a1429654ff655b392bce12f1c9c5b",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-xixi-zhuoguang-v1.png",
+      "bytes": 2455511,
+      "sha256": "dfa5814d6c692502ccf441ad55d960e078a55ac0231a49ea971654051beb8264",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-xixi-zhuoguang-v2.png",
+      "bytes": 2043183,
+      "sha256": "c06ac6d7c027ec8de17323e6827238d8eae685aa19189ce8c637b93f023fb015",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-yao-dishan-v1.png",
+      "bytes": 2021035,
+      "sha256": "9a08116b48ba5cc55c580451f73f5675d64331bd39917a65e99fc93044c0321d",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-yayu-shaoxian-v1.png",
+      "bytes": 1909962,
+      "sha256": "8983982131ecea1fcf4ec9b2cbe56e890e08402f2bc2f34f6481706847f3a11e",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-youan-bianchun-v1.png",
+      "bytes": 1801262,
+      "sha256": "4f584ab2dedfc51f130030e47a7b36d53044ed695db9d1c30a25d274274998a2",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-youyu-daishan-v1.png",
+      "bytes": 2203963,
+      "sha256": "1d1aeaa686d6c39ea37303532fced3170987129886e819254dee3cfdaafa59a3",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-youyu-daishan-v2.png",
+      "bytes": 1948126,
+      "sha256": "69ccc129ba2881aca72838489705de854a9f4e5decb92f0a593e33a6870ff498",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-yuan-ganshan-v1.png",
+      "bytes": 1855919,
+      "sha256": "0b2ec95f08acb9946dc7c46a2f0f1c66a695568ac26553782b3ef66e65dd4cff",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-zhuhuai-beiyue-v1.png",
+      "bytes": 2231373,
+      "sha256": "ea4b9db2d0a33af897ddef8c1c3b0e5c41bd15e3a81241e929c096c4ef26a60d",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/creature-zuzi-manlian-v1.png",
+      "bytes": 1796163,
+      "sha256": "bcdb1977222938b97c604fc89066d41ec3b46bd7eab8b34881d5ef246d8b7d76",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/deity-horse-human-range3-v1.png",
+      "bytes": 1812001,
+      "sha256": "b6d8371af62dd9083725dcf965e1aa2f01f3b92f504b1903385535615a41f542",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/deity-human-serpent-range1-v1.png",
+      "bytes": 1483830,
+      "sha256": "8442cff9a040c64ce08dab83f27a63843094ce258ab401c1fd8c19b58905ce82",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/deity-human-serpent-range2-v1.png",
+      "bytes": 2198423,
+      "sha256": "ea69c9e3b4861a1d8ab4cbe5aa5186f608defaada12dca263cf2847c09f4b1fe",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/deity-pig-eight-snake-range3-v1.png",
+      "bytes": 1731047,
+      "sha256": "4509df89764672a1d6ea275de396dc527d22aace5ccfa53aa49f219fbd20f9aa",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/deity-pig-jade-range3-v1.png",
+      "bytes": 1998753,
+      "sha256": "a7b0a0fbbc3be5ddda3a2699663056386d19b72ea8e22172b81f734f02cddd61",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/entities-generation.json",
+      "bytes": 154785,
+      "sha256": "b567107483bc3870c11984e363acc846ee20472a399af8fb14d1838efd63ac54",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/fish-ci-xianyong-v1.png",
+      "bytes": 2009687,
+      "sha256": "4a1b29b608fecf6ba7e34be1357217a722b06d8e9465972eb96caaee61884bea",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/fish-ci-xianyong-v2.png",
+      "bytes": 1948557,
+      "sha256": "bb379562c97bafb0444aa6e24175818fbce009b3bcc64db7ff37d810f6bdbd22",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/fish-renyu-longhou-v1.png",
+      "bytes": 1694217,
+      "sha256": "cc5ea5b3968a5db81ef4a046a0c9c37ff0d5557a7bee8e1e67f029737cd040b9",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/fish-yi-beiyue-v1.png",
+      "bytes": 1617738,
+      "sha256": "bd54a54f24c56dfea8b8f172b4d3c5e918eb10206487ca757a204beb351df1a4",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/fish-zao-yufa-v1.png",
+      "bytes": 1937598,
+      "sha256": "2dc7db51d55b0116783f47fe8ab067b232764bf73456c2167137229e5fb952ba",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/generation.json",
+      "bytes": 8660,
+      "sha256": "c4d695175476b0587390779b17d44948fe523a1cbc39ec128d4fae3f35017ec2",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/horse-yema-bicha-v1.png",
+      "bytes": 2100993,
+      "sha256": "050d92a7b970c143a252b8dbf3ca7cf0452d8f74c0384cf1ed77582031902c23",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/snake-changshe-daxian-v1.png",
+      "bytes": 1885451,
+      "sha256": "086169f01efc087e72fe3249fbb1f13ef8a8358729f9446e7c5bc5333581bfc9",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/snake-feiyi-hunxi-v1.png",
+      "bytes": 1661777,
+      "sha256": "286e4b481680dbd1dd0d54013eb5bee0dbe9d81ab4306dd879cf251716da9cd7",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/snake-redhead-mufeng-v1.png",
+      "bytes": 1597487,
+      "sha256": "4ed0ac0d4c7e97746485bfd6b141a31d1762b53ff10778a85166011bdf46f8ee",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/tree-redgrain-huguan-v1.png",
+      "bytes": 2298516,
+      "sha256": "f64dc4c9c9c02205d6bcd3327f92fb306b4adb5417217e1a9f4563f4377de21c",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/beishan/tree-sansang-huan-v1.png",
+      "bytes": 1313736,
+      "sha256": "5490912e9eb972c859c332f233cb582e9f87fe3db4e1463569e88c929d5ee7c6",
+      "bundle": "mythmap-art-beishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/brand/favicon-original.png",
+      "bytes": 603255,
+      "sha256": "94ce7e22732d51fc94674623d355dabe12fe9ff73849e2be8184b43cc203d075",
+      "bundle": "mythmap-art-brand-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/brand/shanhai-mark-reference.png",
+      "bytes": 603255,
+      "sha256": "94ce7e22732d51fc94674623d355dabe12fe9ff73849e2be8184b43cc203d075",
+      "bundle": "mythmap-art-brand-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/bird-jiegou-zhenshan-v1.png",
+      "bytes": 1542887,
+      "sha256": "2a5526e4151777b4e1ab42dcf1e784490c5f73d996814bc0e91f4ab97882a8c1",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/bird-lihu-luqi-v1.png",
+      "bytes": 1911291,
+      "sha256": "196e2dfd262687eb85350899e8ac360d57197c1dd5d2fe1fc86467482c8bfa80",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/bird-qique-beihao-v1.png",
+      "bytes": 1756102,
+      "sha256": "3b6e24e77be5971ce51b118384d74017a07838a83ab8d53574ea15230fcade67",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/bird-zishu-xunzhuang-v1.png",
+      "bytes": 1824620,
+      "sha256": "bda1a9157d20cb4eed8d47944bda93c6318600f1c11a0ddc8e8e7ab43f7c3eb3",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/clam-shen-yigao-v1.png",
+      "bytes": 2161728,
+      "sha256": "cd2f69ac9539897665bd3fe76c97826189073e4fd9551e3968e085ecb2acc305",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/clam-yao-yigao-v1.png",
+      "bytes": 2041660,
+      "sha256": "15a46548e6f379b30c400a9d179b1f0a669c3c246239d7e30b3d8b55ed36894a",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-bibi-gufeng-v1.png",
+      "bytes": 2122520,
+      "sha256": "39efb0f0397f218976a2eab3c2d88e957b78df0f01976c7690b2840188207919",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-congcong-xunzhuang-v1.png",
+      "bytes": 1303513,
+      "sha256": "e5ad6e59ebf9f8049471102d3c555b51e2b3dacc471cd0006f915b5e6d9155ae",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-fei-taishan-v1.png",
+      "bytes": 2207479,
+      "sha256": "1369542038b3eeb1507a90d183d554ffdded99eb3debd8a7a28bb92d0376fa52",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-fei-taishan-v2.png",
+      "bytes": 2003198,
+      "sha256": "91169057c35ff8ab56ab7060336b34f3e94f11f8d7483830f183c9a71380b4e2",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-heyu-yanshan-v1.png",
+      "bytes": 2884665,
+      "sha256": "fc49c1c01be8388d3b7660a13be8056940a41abd2d45e3167fa6e13ffdbbfa89",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-heyu-yanshan-v2.png",
+      "bytes": 2737607,
+      "sha256": "bb3d469b7ba4916489c1694ec862a9bb8813dc5eccfd5fcd94a5b8d9d72394d7",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-huoshi-leishan-v1.png",
+      "bytes": 1139236,
+      "sha256": "b64f34a8b4351702092415ba358dd56e99338ba7f701a3b45168db53650d7867",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-jingjing-muyu-v1.png",
+      "bytes": 2499699,
+      "sha256": "44629199f37c0729415695fbdb9a3785a3acadfc8e76760a0ec13289a9a8168e",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-lingling-kongsang-v1.png",
+      "bytes": 2596133,
+      "sha256": "8be5edf36afa485da4d656ccd87416b755cad165aeb3ecdb32cce7f52f0ef998",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-longzhi-fuli-v1.png",
+      "bytes": 3106219,
+      "sha256": "3ae1d2202675c26e88376bb2a6a0083e4a99b4ff32f28d3b3e5eabbeb5ba19ed",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-longzhi-fuli-v2.png",
+      "bytes": 2992067,
+      "sha256": "e9cc3164d413ac7d0182a0097299ff0facf622162864794ac5b211f9dabd4853",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-longzhi-fuli-v3.png",
+      "bytes": 2852935,
+      "sha256": "d58bd296778262da054b678e4e7d41dea882423af3509d243ea04e67dc7d7c95",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-longzhi-fuli-v4.png",
+      "bytes": 2765072,
+      "sha256": "9c20074db2a34c4c7077054f5b626e5c89ba6e7156b3d77abb06081f43ed87d5",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-qiuyu-yue-v1.png",
+      "bytes": 2155274,
+      "sha256": "5daccbdb84e8b820578145f57c962a46bc9cc89fafc04a4695117ac3f0393e2d",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-tongtong-taishan-v1.png",
+      "bytes": 1728520,
+      "sha256": "07972fcbc19714843cf754d28df16ada60eebb848e247f77c78c4d17b02993d4",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-xieju-beihao-v1.png",
+      "bytes": 2409515,
+      "sha256": "5e12ac6e533259092780107ad523d9a6c6a5436c1a994c9de544d031bb827253",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-youyou-zhenshan-v1.png",
+      "bytes": 1684691,
+      "sha256": "9b7f427b5b48f3024ac4f695cfc0b17ff8d42384916fd10cc8aeb80fc0f959e0",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-youyou-zhenshan-v2.png",
+      "bytes": 1525714,
+      "sha256": "db3c45777ccd9ce47b3b93bbe1f2c25f1262327b57519da10b6a9a62a67c0101",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-yuanhu-shihu-v1.png",
+      "bytes": 1267974,
+      "sha256": "d57b5492768551100f47f6390896dc6a3b584aec69eda3ca86c414e787847505",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/creature-zhunou-gengshan-v1.png",
+      "bytes": 1729165,
+      "sha256": "4c340fae12c8607206d064a41a6ef32aeb2316659409918d238188251510e770",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/deity-dragonhead-human-range1-v1.png",
+      "bytes": 1271479,
+      "sha256": "b867a22a59b5ff0bed6163d5bbc4108789a8745b323c3c6560f4e54cd5dec4b8",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/deity-human-ramhorn-range3-v1.png",
+      "bytes": 1543757,
+      "sha256": "e3cc4a01bb787cfa77493368977b2cfc4ac7bcaeb0ac2d571f9f32c50e6b5de4",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/deity-humanface-antlers-range2-v1.png",
+      "bytes": 2099040,
+      "sha256": "5d63d93e5b0df9e9ca2cbc8684ee174c6ba2a4c99e8f0e15865faa8f4f97edf9",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/entities-generation.json",
+      "bytes": 97712,
+      "sha256": "8a92799962802e33bb83e4c3c25f1e259fb5816432c0945d2d9e03f9e2ae2fee",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-bo-nvzheng-v1.png",
+      "bytes": 1639918,
+      "sha256": "f037dc15e801834ccbaf4c81ef476d0576463569640bc8f0f3a4ca154150ead8",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-gege-qizhong-v1.png",
+      "bytes": 2182238,
+      "sha256": "bdbb8f8abe3bf3e5940a45aee2c93bb2290521737c43834e941e7e058f402bc4",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-hua-zitong-v1.png",
+      "bytes": 1875491,
+      "sha256": "f19dd37a5fe4e899d00f3b5e3db52f014a3d7b9fe865e9fbe39979621d08b397",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-qiu-maoshan-v1.png",
+      "bytes": 2657991,
+      "sha256": "30396d9747fadf90ff21116ff9cf3b123a96211bd5ea40d7b31ebe3af3c553cd",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-wei-mengzi-v1.png",
+      "bytes": 1163417,
+      "sha256": "8dcc25e9685f18ec93b7f2cd11d8f30c37836f4a697a08d3583b26604ecf6da4",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-yongyong-suzhu-v1.png",
+      "bytes": 1513670,
+      "sha256": "6cf03faf6d91de568c57bd27fb13a9e504d9a06fdc146f2639d7d4e79191bc5d",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zhen-xunzhuang-v1.png",
+      "bytes": 642230,
+      "sha256": "9979c2b0f8bdd19d33ea8764549c176079cdd9d1637251964c55783be3a9e177",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zhubie-geshan-head-v1.png",
+      "bytes": 2054732,
+      "sha256": "5033ed99ccdc3e20a3f82a7ef4a3cf771b63a7d1c8e061a75f4ecffb39c8cd6b",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zhubie-geshan-head-v2.png",
+      "bytes": 1866013,
+      "sha256": "fdb34c4cc2f9b1ea3ae595e2980c42897fab7f09ad482799388bc994a2d3950e",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zhubie-geshan-head-v3.png",
+      "bytes": 1623246,
+      "sha256": "1877fec0b9bc1d7a33566257640ffd568aa709661a217f84724e4ea1602e9abe",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zi-dongshi-v1.png",
+      "bytes": 2641539,
+      "sha256": "9947f895a6e38bec7913be74c31361a9e545559126f3a7fa4743c2805944f036",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zi-dongshi-v2.png",
+      "bytes": 2465808,
+      "sha256": "0cbf24e90d0a1eabd212584dddcbc8317f2220eef25422f142bb658959eda452",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zi-dongshi-v3.png",
+      "bytes": 2400197,
+      "sha256": "8b495ca7b57fd7bbd77d2297bdd1bce030027d85e955d10f1dcf7c585ade61c7",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zi-dongshi-v4.png",
+      "bytes": 2345916,
+      "sha256": "d79eb4d304aa4c8cd9c2c7f9cde2cd2ebf12428b64e6a36f7b868f14757e08ba",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zi-dongshi-v5.png",
+      "bytes": 2322201,
+      "sha256": "9c30adc83a48fe3c67dde5b286ec4f5f11f31c61445c1a8b6f10ea6da648dd21",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/fish-zi-dongshi-v6.png",
+      "bytes": 2403673,
+      "sha256": "1edc6082d6545eb42b4568cbc7eac18a153cfa9463c0bcf4231f86e70b770d21",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/generation.json",
+      "bytes": 51,
+      "sha256": "319c8332e6fda76c13c96871c1e9763c8c3622bd5f4ce823251444385b5c2b0a",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/snake-tiaoyong-dushan-v1.png",
+      "bytes": 1769926,
+      "sha256": "e9582ae56423adb14b3941bbca64f6c8b5378d6402a65dbe6552305c10a6100a",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/dongshan/turtle-xigui-qizhong-v1.png",
+      "bytes": 2086586,
+      "sha256": "aaf4b6ecb6a346ec1b3e13e80ebd28f836dc7eaa570a11f4c2a7ae9b287c5ea1",
+      "bundle": "mythmap-art-dongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-changfu-v1.png",
+      "bytes": 3073727,
+      "sha256": "460d3b56a5df499211f52cfef27a43ff00ee3e366bc57057e8089e616e9f62b6",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-changfu-v2.png",
+      "bytes": 2807935,
+      "sha256": "3a6ec349f84259756c0de4eb4ae459dcea5754006205264998312fb31d7449fc",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-changyou-v1.png",
+      "bytes": 2701773,
+      "sha256": "e7c35f4ad9848ab018d041b82301273cbd9258018301693364d6bd1708c5cae8",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-huahuai-v1.png",
+      "bytes": 2600595,
+      "sha256": "46c70b6ace6ac959c29bbc6cd0c02beb91a3591b90ee5343cd2d0721e4219166",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-huan-xun-v1.png",
+      "bytes": 2247195,
+      "sha256": "17b55e8e42071462f8799620db05797b9b29ee6da03cf64e1c3dd635c908508b",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-hujiao-v1.png",
+      "bytes": 2251710,
+      "sha256": "9afe08eedf0821328534bba353fa6a8736d6d583b95c1f117b875d9efd9d9075",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-lei-v1.png",
+      "bytes": 2557767,
+      "sha256": "592e2391d8e9cc146062d96bc88fbf82fb21565550d17f568828cd77bc6c3910",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-lili-v1.png",
+      "bytes": 2222228,
+      "sha256": "d47c171d841138741e98c908c68d91a8ba74f4710e48cdadf612e249ab7e92cf",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-lili-v2.png",
+      "bytes": 2171204,
+      "sha256": "63830edcc9b28fc836e75873377ce97e4c538042ae224df390dd4ba68933c0c1",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-lu-v1.png",
+      "bytes": 2099372,
+      "sha256": "04a53733be93227fae54603341ef216892159e99e67d7bbf9e8562968b3cea9d",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-quru-v1.png",
+      "bytes": 2602002,
+      "sha256": "06d720dd25e32d638d346653d82d6ffce82b424f44da189d41c435773b429956",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-yulingqiu-v1.png",
+      "bytes": 2487708,
+      "sha256": "56db97d743ec828d1a60f69b7b797201d17ed69ceecf44b3ec2bd6d7b0369b5f",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-zhi-v1.png",
+      "bytes": 2218004,
+      "sha256": "44cd3f3b6e6ac62862c84a27f30b7954211a4b9289575894cac9f4e5740c2590",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-zhi-v2.png",
+      "bytes": 1999582,
+      "sha256": "8eca1ca5e5572b0fd8e211d4b057d2554676da6f1a715d48efdf253881355944",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-zhu-v1.png",
+      "bytes": 2209753,
+      "sha256": "a8329317065df4d28024c9710975c85bff3ddd72f51a2c9161f6fbb3783f621f",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/creature-zhuan-v1.png",
+      "bytes": 1931342,
+      "sha256": "c897fd8635760e37451be4288a68e7c61290ce609904ec99e0c8a622955043d6",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/danxue-v1.png",
+      "bytes": 3317549,
+      "sha256": "a36a74320cd0e14204529c6c142d1324517c062ad57b94a79e7b1fa89ffcc990",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/deity-1-v1.png",
+      "bytes": 2920393,
+      "sha256": "f0bf89a6cea5cb08d8cc6e4726b83c9ebb45d02e90896704a6eb1cc7569eab1e",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/deity-2-v1.png",
+      "bytes": 2335437,
+      "sha256": "13aa2a2907ca28e0ba71e6f663b9aaf1adcc586378974a3a628e70502fa09ecf",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/deity-3-v1.png",
+      "bytes": 2386273,
+      "sha256": "d06f72d2947e79fa246f8934f4f687d8c0cad05ae48bce3a6775e23822155d46",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/entities-generation.json",
+      "bytes": 89448,
+      "sha256": "e1a234e31689d464719a81edae6e7caa7ae93f96277d2b32f47e8239573470d3",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/generation.json",
+      "bytes": 13888,
+      "sha256": "2dc1a0c3f9769d79f0c0e3537ae47ca7b497b258c1dfe8ac6f8767dc07c8f011",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/guanguan-v1.png",
+      "bytes": 2148187,
+      "sha256": "529564b2805a1b9ddb3c97339928597c8d1816f76faaeacf96aa9e73e2d88a2e",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/guanguan-v2.png",
+      "bytes": 2515409,
+      "sha256": "496d95d4b837b89df22e17e45ce680f4e9b7dcd4a7883f30748ab0f26effbb00",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/migu-v1.png",
+      "bytes": 3067177,
+      "sha256": "13cd69ab4460332617e5c38967fd80350b6a32386f9f46b19c968fcdefee7074",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/niuyang-v1.png",
+      "bytes": 2604415,
+      "sha256": "e37f64c49efe0e2b313c4582996efab27c55021ed4c16fd6572805895d231598",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/plant-baigao-v1.png",
+      "bytes": 3264370,
+      "sha256": "ea6a85bdac52613e7310de87270c21d33a498079854fccc33d860ea48fda7d0c",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/plant-baigao-v2.png",
+      "bytes": 3152246,
+      "sha256": "eeb063c66908bd64f7dd625974c5109b9c022000e89b8c1b899149fd5b359a87",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/plant-yan-v1.png",
+      "bytes": 3200676,
+      "sha256": "fe3c6e626d59a34ce2dba75e9a34ef975860b488abaf84ace9496c796894101f",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/qingqiu-v1.png",
+      "bytes": 3028375,
+      "sha256": "5ea2626307547693a13174e15efb04e949c7bfcfb16c858674faad2d03470ff4",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/reader-generation.json",
+      "bytes": 3903,
+      "sha256": "039c4fda26485ffd85d036c599672a24cb012a74f3e655f1900cefa44eaa0adc",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-changyou-v1.png",
+      "bytes": 3529102,
+      "sha256": "8e178caa647d74c923658dbde644b6fe36b60a75fde9840015469454c9dde440",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-cheng-v1.png",
+      "bytes": 3533844,
+      "sha256": "65c2d2f282e7836fd4d2de4277fc6f3a2de38f0c16468987137ef28a02bf5a10",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-danyuan-v1.png",
+      "bytes": 3193816,
+      "sha256": "db1b09eb2eff47655c772fbf670d8434e871d87edd9013fe4caf03e5bed64cf3",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-daoguo-v1.png",
+      "bytes": 3591991,
+      "sha256": "a6257f134208e0b196a8e514b7f94c5fc2ca4200226bb9b57807a190f4f80ad8",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-di-v1.png",
+      "bytes": 3492912,
+      "sha256": "dafb9ddcf48435a371154e0c097bbcb3de6ff1e34833f46df37939b3221c34db",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-fashuang-v1.png",
+      "bytes": 3247379,
+      "sha256": "ee51da7cb3d57c2835d38dcbcab929b3dece6010316c46f1a2ba14f2cb4632a8",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-feitou-v1.png",
+      "bytes": 3538063,
+      "sha256": "f6b3e88accf40033b9d52418526eaa5689fd10970d3bbaa5482ab13cdb661ca0",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-fuyu-v1.png",
+      "bytes": 3422771,
+      "sha256": "9b3bf24431fed30e03136f008d8e02bb579815ebe1cfa7e74764fbc090458085",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-gouyu-v1.png",
+      "bytes": 3126514,
+      "sha256": "9aede7323091e0ee95649dc66c3983198b9ab77c13fbbc3053fd3abcd4bb6a80",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-guanxiang-v1.png",
+      "bytes": 3470781,
+      "sha256": "6df6753320860f28e5d4054408ef358a277f78328efbfc2452fb2c90cf9a1d5f",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-gui-v1.png",
+      "bytes": 3394087,
+      "sha256": "6cc74600a5b835a25760705d1df5d32a2e89b5b53cb97cab70b20d0b050f6f2b",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-hushao-v1.png",
+      "bytes": 3224390,
+      "sha256": "684c179ad8a5e8129ba3c12fb5968407bf255ad6efda05f888774d8530ac03af",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-ji-v1.png",
+      "bytes": 3426330,
+      "sha256": "e240b2db2d1e56e45831d5c139451ccb8e1faaa16cfe3df3fff91aa5a76701c6",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-jishan-v1.png",
+      "bytes": 3306442,
+      "sha256": "232351ec99ffeb1a12a8a51249437786ee3225e1fadfcf2e8ef2700c74affb73",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-jiwei-v1.png",
+      "bytes": 3598942,
+      "sha256": "30d3cd6e7a8823e9d80b18a00204d5eb1fdd9b0f65436292d6e3f59f63e9dec7",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-kuaiji-v1.png",
+      "bytes": 3371060,
+      "sha256": "0aefddebb9e59a27eef3347121e34c62f13a28a539c0a9a50509d8e670bdc922",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-lingqiu-v1.png",
+      "bytes": 3577476,
+      "sha256": "f375b48517b11583f1a4a6877e019dbd1ec05c5b4a00f9cd47b0cf6055d09a34",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-lunzhe-v1.png",
+      "bytes": 3568446,
+      "sha256": "e290940d7c81343b112af7a52fb2f6c8ccb18bad91193725e0f56ef3a443e95b",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-lunzhe-v2.png",
+      "bytes": 3345890,
+      "sha256": "67afdcea15a0e0b0a09340f69f682febe8c999d069a7ccbdb9fcda622ad7aca0",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-luwu-v1.png",
+      "bytes": 3260697,
+      "sha256": "d66f2680eb7a85e7f0e8831ddf38cf5f8421f10f14edaab6fcca3e3dd06e9cbd",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-maowei-v1.png",
+      "bytes": 3252982,
+      "sha256": "1e17337c67e328169160d32bf201ae263e5113b9578311c37384e6ebedabc934",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-nanyu-v1.png",
+      "bytes": 3497902,
+      "sha256": "5eb578eba53751619359234e07991d94b3f743387266886120fa8f28a0b113d2",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-pugou-v1.png",
+      "bytes": 3228784,
+      "sha256": "e606955e1bba8c65e74e70231038d641c5815c03eb3facde4561691c71c90ef3",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-qiwu-v1.png",
+      "bytes": 3464515,
+      "sha256": "a11b104c8d4ca1eaac89215f3f79fae77afc3dbb35e722ac99ba485757c6b670",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-qufu-v1.png",
+      "bytes": 3193399,
+      "sha256": "e7b6599a187d45022207d05c3c8dccc244db86d2046a810c63a21eb1faf611a1",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-quwu-v1.png",
+      "bytes": 3296020,
+      "sha256": "4a9410b47f5cf620ccd5dda0f378f148c61eca61fb7a0da0500040a1ee6473a4",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-tianyu-v1.png",
+      "bytes": 3397039,
+      "sha256": "74ec2f1b6e8232e20d8d3600d7265784f5556d741e5b58067c67d813236d397a",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-xianyin-v1.png",
+      "bytes": 2961346,
+      "sha256": "7b229719812853e9c7e300b37398a6dafb58532d0be38e5be922fae9dbbb5ac2",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-yangjia-v1.png",
+      "bytes": 3005485,
+      "sha256": "14797caa9a3db11ce98517da7d5b0e0ecb0693ced31bfa141cf3897cc08b5ad7",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-yaoguang-v1.png",
+      "bytes": 3433284,
+      "sha256": "a0cda9cceeffd305ff8d0bea02812f6736dbacec4ec1d97f886e1769cde9a542",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-yi-v1.png",
+      "bytes": 3146452,
+      "sha256": "607fa83be11328ebc0b4953c04ae682aceaff2eb4cff29647fb0161f1a74d47c",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-yu-v1.png",
+      "bytes": 3566692,
+      "sha256": "1e7c615ca4598826ffd1ff124ef219cba5dbc67975579a259eed0f3177bfc15c",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-yuanyi-v1.png",
+      "bytes": 3471392,
+      "sha256": "ebd3ae4ba5f3ed94ffc217466f79917945a8b1e82a922d0c70aa8d7ad2b1097b",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/scene-yugao-v1.png",
+      "bytes": 3263150,
+      "sha256": "c23a2597adbd43f4ad5fcd9dd6e6795d7504aafcb09de45cb48b70f37554be75",
+      "bundle": "mythmap-art-nanshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/tangting-v1.png",
+      "bytes": 3665879,
+      "sha256": "f7c7d3c92fc6789b5b6d1cad738c36e493cb72fc3c2736f44bf19179517b00c9",
+      "bundle": "mythmap-art-nanshan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/xun-v1.png",
+      "bytes": 3538404,
+      "sha256": "9cbefe301a139330c8e336ad4530049df8c9c51c588007a1c38a9814c97c4ec2",
+      "bundle": "mythmap-art-nanshan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/zhaoyao-v1.png",
+      "bytes": 2891627,
+      "sha256": "dc64d215d46afaec1d8bf005a4e2fa5fbabaa8ee84b7372bea908ad319abfd5f",
+      "bundle": "mythmap-art-nanshan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/nanshan/zhuyu-v1.png",
+      "bytes": 1885374,
+      "sha256": "377ed7dce15a7737cee51ef745a0bcdd49056b0fe69a666d958513dacb3c41c7",
+      "bundle": "mythmap-art-nanshan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/animations/jingwei-flight.png",
+      "bytes": 2274985,
+      "sha256": "0b2f78ce7f31408a5e2149bd9c99bb2a9b150c3810b74fe1d4a4651a351b557e",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/animations/kuafu-actions.png",
+      "bytes": 2069838,
+      "sha256": "c5d2e4f7e124ee5e5b445d902e8cb31b2f583db77aed9f6989b0babf9aadff28",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/animations/kuafu-run.png",
+      "bytes": 2018307,
+      "sha256": "19d050141d6a51f32508434a349196c7b437c5c18be0744df938dbbc0f8bb2bd",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/animations/suiren-after-fire-v3.png",
+      "bytes": 2894756,
+      "sha256": "5d8f5def4a975317e66cfb1296ff88535da3f679fed942e743669f6ff1cf339e",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-boyi.png",
+      "bytes": 796452,
+      "sha256": "026d041400cba4ad0871f1d9ec41920a91e85434b5ff2843937dd4a40a136982",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-dangkang.png",
+      "bytes": 501646,
+      "sha256": "5ad853f0155f7b6f78ee9599311f735f20b6c2ff6e76f1ecadb80c5e5fc70ae0",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-dijiang.png",
+      "bytes": 2390749,
+      "sha256": "f69290c026ad465a0f9bc2b9c1eb91092a783f002d8fd14c77df698192eee862",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-fei.png",
+      "bytes": 509721,
+      "sha256": "93eae8e7d33745a41446bf1d39b9258084540ed3fe6b4475f56397add7830149",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-guan.png",
+      "bytes": 587714,
+      "sha256": "93ab98c22af923fa7e1f989155f1d3894f8ad1e68bd3896b6e5c976a73110132",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-gudiao.png",
+      "bytes": 594751,
+      "sha256": "c96b41b86946a6e3f280df754306d7efa88ab1a25b4fdbab8d723b236c0dcedd",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-heyu.png",
+      "bytes": 557365,
+      "sha256": "ecc9de9005841df07a2d0ee95b25a0a249f6f1f51bd30d04fdfe7e15a4b95946",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-jiuweihu.png",
+      "bytes": 2574814,
+      "sha256": "94b1f7ba66f7a08829502b04ca2841b2e93b7cc4e97714fc2670511dc608f752",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-kaiming.png",
+      "bytes": 633049,
+      "sha256": "cf31b1386e0c6ae3ceb55cf4630de02b21ab7d641a800bc60c9f56e19a1885b1",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-luoyu.png",
+      "bytes": 664956,
+      "sha256": "289f6fb1559c713677318ceb6916c8630e607eb7178c504649bdd674cbae6708",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-lushu.png",
+      "bytes": 511902,
+      "sha256": "74cd58598e8ec09102c373dc2c3ec18842dc738147d6df943106dabe07839a5b",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-phoenix.png",
+      "bytes": 748086,
+      "sha256": "8663f80f1391914279f801f9be38d905958ddd501f759206994ac9418743151f",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-qiangliang.png",
+      "bytes": 844384,
+      "sha256": "fe17ffbc108dca1170f37eeec67757c1e23cbc5d44eb397d51172b687dec70ff",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-qiongqi-hainei.png",
+      "bytes": 2553572,
+      "sha256": "22dec7a82715a6c347ee37e0cbb45d0a6c6a6a6942a40751d70281ee707fed35",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-qiongqi-xishan.png",
+      "bytes": 2504248,
+      "sha256": "36faef8af83f5124408aa51df350316521b7eeef8885729d350b3231ba9f4836",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-shengsheng.png",
+      "bytes": 780559,
+      "sha256": "6acff1931372fc51d8d0699558f8f0ad3c649b6e78575336846021383b22db53",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-tian-gou.png",
+      "bytes": 511155,
+      "sha256": "66f3f039043e0ad0d7a0aa3429cf6a9a798ff8baa832ebad94c20dd2eeb420fd",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-tulou.png",
+      "bytes": 501887,
+      "sha256": "09d52dfcdb9d0e0cb1351b89035036c207e42285385871f327ceea8bd5c34ff4",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-wenyaoyu.png",
+      "bytes": 2510536,
+      "sha256": "d0e944f1f0e50f8cdb72b6c15f428bf0841a644d4b4f3346552345f9b353e7bb",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-xuangui.png",
+      "bytes": 2065814,
+      "sha256": "d87c8cbc7c6204c4534c08e981295e30f9d63b18eabcdfe08d6d70ff11b4b9b0",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-zheng.png",
+      "bytes": 510811,
+      "sha256": "5d695c2358a2462cb1144803f5bb1d3b7071f9d225771d6364f4353cdbaab180",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/beasts/beast-zhu-jian.png",
+      "bytes": 535934,
+      "sha256": "2a9f3d742ce59553aa3b344c4240b8e330113622de36117ce0aa4a00001f7c21",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/characters/fuxi-clean.png",
+      "bytes": 1934702,
+      "sha256": "4b88bb4db393938d7821b75c9b241e2434c293343cf1a3da9e6666fcc30bf3f9",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/characters/fuxi.png",
+      "bytes": 533606,
+      "sha256": "df6955787c126e73c44b49faff0cdc30bc474cb317e84053c6d44125eb65a703",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/characters/suiren.png",
+      "bytes": 533398,
+      "sha256": "38a9147ef182b2ab8237d1d6def1571f49bdf7b0c750a349b2622210c40ffb4f",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/characters/youchao.png",
+      "bytes": 688863,
+      "sha256": "9dba094e02223bb36beaf22392d2d166b65708e3bc28eaefe7f827dc021e8683",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/jingwei.png",
+      "bytes": 2190749,
+      "sha256": "f4b230e5c9b19cc5700e62b754329614a9dda0afe288c49e93c3d3657f145d52",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/kunlun.png",
+      "bytes": 2607042,
+      "sha256": "bf8c4df9ed58af3ffe4f21644af00871798b3d1408318b460b8fd058e03fd8d5",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/luwu.png",
+      "bytes": 2730788,
+      "sha256": "867783b73dc4f8fd2ebffcfaf948c9416c7250ef16d4e4822eeb579d14d39ef9",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/nuwa.png",
+      "bytes": 2943275,
+      "sha256": "791b6ba593e6b48b1f62d18c5173c3a9c35876514bc96b18d8c627d761fbb4c2",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/qingqiu-mountain.png",
+      "bytes": 2514136,
+      "sha256": "02ff30409773a36677f69c2f821dfb3e4ec89e36b5bdba0b23514ec270811eb9",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/scenes/pangu-cloud-layer.png",
+      "bytes": 3022131,
+      "sha256": "006a4e874f587b0ca42531451a74e6c3ac5664a56bd6cbc3b9044c826cbb453b",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/scenes/pangu-earth-layer.png",
+      "bytes": 1656878,
+      "sha256": "275ce415820d76c0e1aa42650f59e8f658b83817dc9e91a177a3bc0168d999be",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/scenes/pangu-opening.png",
+      "bytes": 4115609,
+      "sha256": "b6e1b106ae6e79e84e540f5a32abd04781a05789fc4b0256ed69c5868f4d1818",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/scenes/pangu-supporting-figure.png",
+      "bytes": 1917700,
+      "sha256": "87a419c9faa822e71d012e8d007a0d34f15d184b7393dc147d2cc36a5b03b9e0",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch03-banquan.png",
+      "bytes": 3351731,
+      "sha256": "0420139dfb7979727815c6a0611169c9cc8d57412c7d01f13c300044fc92422d",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch03-jingwei.png",
+      "bytes": 3065380,
+      "sha256": "aab8afc46b07780543a62a24b4acf2cdc3d4e6bea82fd7a2f94093944ff813e2",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch03-kuafu.png",
+      "bytes": 2360883,
+      "sha256": "4122342fed878c69482cb5c2bc669a3cce5c9f3d537c6b8be0e2546b380c7871",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch03-xingtian.png",
+      "bytes": 2117007,
+      "sha256": "ec4f80c1c71fda8683ec0ba79602201be71c5a4521a23570814c0c1320affac9",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch03-zhuolu.png",
+      "bytes": 3673710,
+      "sha256": "52e844a1a3d52abed6668eea5100eb75fc3126b140e1b62b994c426c18795caf",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch04-change-flies-to-moon.png",
+      "bytes": 2541829,
+      "sha256": "d1e4ae8c2ed51590e6fbb585d09f82158ab13bacd454b42bef9b1c8241c4f1c6",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch04-dayi-shoots-suns.png",
+      "bytes": 2640873,
+      "sha256": "a55275c89f29e491af5afc54fbfcf4df23aa3fed1f2bedc38bde869ed32ccbc1",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch04-gonggong-zhuanxu.png",
+      "bytes": 3273486,
+      "sha256": "595de73b2e1b2b5cf0cf1769f22718cf7989a2ea6023afc3232780f6da5f633f",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch04-gun-xirang.png",
+      "bytes": 2737366,
+      "sha256": "9411669005b70cc199614554c69db85a8c802e6b4d7975712574fa284b11dbb5",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch04-yao-shun.png",
+      "bytes": 2625940,
+      "sha256": "d435b7fafb7977dad5f3a658c6b3cfb1876828a833ff586afadcfc5f093c63a5",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch05-qimu-turns-to-stone.png",
+      "bytes": 1754243,
+      "sha256": "64f9c0163ddf6e448e8895a40b2608138ea6c32e025064e2453cb9ea7ef6bba6",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch05-yu-controls-flood.png",
+      "bytes": 2521520,
+      "sha256": "0f7e4eb384f0fcee702fe718f35ba4be7a44c0b48d76913fe6276fcaedeb946c",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch05-yu-tushan-marriage.png",
+      "bytes": 2071434,
+      "sha256": "ac46b5a0c4be166f5ee0e55178c68d9706feba9dc76f0d81e7991ec39e7043a4",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch05-yu-xiangliu.png",
+      "bytes": 2561485,
+      "sha256": "4ca0e5c8eda8bc1491d2b03a371db510b4a9faf8322d1502201459f0b61fb01d",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch06-chengtang-xiatai.png",
+      "bytes": 2867774,
+      "sha256": "0bb7b69ca1c1cb0388bb11f360940d7394e36d8171338f757c7fd453a6b6db3a",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch06-hanzhuo.png",
+      "bytes": 2720016,
+      "sha256": "f542a09d4761a60b9860e8eae287c0fa46b3daf7d8222686e868a2b7ee7483e6",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch06-houyi-youqiong.png",
+      "bytes": 2732416,
+      "sha256": "9eb7440404be46cdddf630ae8c3828632c95f39c5eb7b05ec81b89e2e314c3d4",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch06-shaokang.png",
+      "bytes": 2751479,
+      "sha256": "e8f69f3114527b8746c550d084828b561c3420ca84a767655ecc1241e8446dcf",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch06-yiyin-kongsang.png",
+      "bytes": 3147274,
+      "sha256": "5233aa33de8c2746e6181464f889de6b6eccc07ec62bd766155f5044b2e4364b",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch07-mu-kunlun-palace.png",
+      "bytes": 3522886,
+      "sha256": "cc8b4a625eb38e1f6d612f2f681b6f96e1e1c9a431be97ec61f2d34a1aa0349a",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch07-mu-meets-xiwangmu.png",
+      "bytes": 3365184,
+      "sha256": "059c5a629505c7ff03338aa292708a0047e269621165809eaa50803ad7132af0",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch07-yan-mountain-inscription.png",
+      "bytes": 3627767,
+      "sha256": "bbc45a8920a2f73f4a3416fc07aef60f6d2ea291b8633aa46da5d8101a0b7ebf",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/ch07-yaochi-banquet.png",
+      "bytes": 3463709,
+      "sha256": "463460c7b3e43a07ceb1ce0003291b2f84f58b3a90d044fd50bd3c7fffb7be0d",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/gonggong.png",
+      "bytes": 2674556,
+      "sha256": "e3980cfc8b5f46380b94632f5a84cd1f8abc63393d5e5b627334b56e1c497707",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/nuwa-create.png",
+      "bytes": 2937326,
+      "sha256": "56115b51b0e38f5c5e7e7f8eeb415c58121ab8a622c1e3502c619e5d17221483",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/nuwa-dragon.png",
+      "bytes": 2914451,
+      "sha256": "dcaedf71f983ad671952ca518f118df3ad1d98e315c36932aa0cdcf9528bfe9e",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/nuwa-pillars.png",
+      "bytes": 3347692,
+      "sha256": "2aa56e6fff4ecba764ffe795a4dcb0de500c261c7a644bef6410cbd3b8d5aed5",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/nuwa-repair.png",
+      "bytes": 2774694,
+      "sha256": "59aa98ca96e4996520b34078a5df7d1ad1df7fe840ae7aa10a3daf9ce758c673",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/stories/nuwa-water.png",
+      "bytes": 2931139,
+      "sha256": "8de78c96785022a268824a1b3ff793f8d013b1dfcf183ccdd347f025a77ddeca",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/terrain/peak.png",
+      "bytes": 1541408,
+      "sha256": "1058cb4fe2368d070c8474d91b0fffc3761d57a8cb73e8d0060fa4d13281c659",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/terrain/ridge.png",
+      "bytes": 629710,
+      "sha256": "b3b13a7dce7a4bb717ee9445f92e0d8bd294cd932ef94596b256c47be9276dfb",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/terrain/sea-cloud.png",
+      "bytes": 1078433,
+      "sha256": "72d787c1fc19d0a35db0c7d07924c36ff846bd3be71dc2f5b381e1846a3bcc88",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/xi-wang-mu.png",
+      "bytes": 2813422,
+      "sha256": "94a580d19317324b07c32035b5212915cb5787cdf5ad7d6765d5362a2003734c",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/xiangliu.png",
+      "bytes": 2547837,
+      "sha256": "e250e7e8b0879dc543ff0009b18edf1ddd9d54189d1e18fad9161561d3f45b04",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/yingzhao.png",
+      "bytes": 2696460,
+      "sha256": "79b7929f23928584238f15c3dce0c18bcde7038c3dcc30b5c09bf60b283603a8",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-icons/zhulong.png",
+      "bytes": 3285945,
+      "sha256": "3d8ee7b8d472f0b218c04808c1b217289c3c11b86256b91a1f96b57b8e11fbb2",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/optimized-originals/myth-paper.png",
+      "bytes": 3276939,
+      "sha256": "60cb97f6b1874c73ecfe99104598f026e2f6165b931a2c89a7bb4f5d5a601b6f",
+      "bundle": "mythmap-art-optimized-originals-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/story-animations/dayi-arrow-v2.png",
+      "bytes": 300215,
+      "sha256": "e7cfed7a167616a8d74d37a67ed1327939f8e566a582b61b714febae833babdb",
+      "bundle": "mythmap-art-story-animations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/story-animations/dayi-sun-impact-v2.png",
+      "bytes": 3010043,
+      "sha256": "9726864ef877f4aed92aee785b4c9d9150c5060cf892cbd5da1a186588ec62f2",
+      "bundle": "mythmap-art-story-animations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/story-animations/nuwa-map-poses-v2.png",
+      "bytes": 3159405,
+      "sha256": "a1da3ef88af9c30558488dc7734b7ea227839115881334944a70b50b1becf959",
+      "bundle": "mythmap-art-story-animations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/story-animations/suiren-after-fire-v2.png",
+      "bytes": 2972549,
+      "sha256": "06c448866a9bbfe681c21e459dde61ed8e5e29f172c0d5b50e5c5f9431a83405",
+      "bundle": "mythmap-art-story-animations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/story-animations/suiren-firewood-v2.png",
+      "bytes": 2199888,
+      "sha256": "c098a1b44c0843644da6cba0b6daf93a85f95fca161aac4a82ac15fbe7cb51cd",
+      "bundle": "mythmap-art-story-animations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/story-animations/suiren-flames-v2.png",
+      "bytes": 1609566,
+      "sha256": "347074009e74dd42b1b0ffc7b7c1fe21e582a809576b8c2e6d06158150c8492f",
+      "bundle": "mythmap-art-story-animations-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/generation.json",
+      "bytes": 29976,
+      "sha256": "34f05c7c1b520d8907545e635396cc8822e55d1dbfafebdc5071927cebdec7d1",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/jingwei-map-v1.png",
+      "bytes": 1393947,
+      "sha256": "98717006b65d1249e9e5cc6bb138005c93527ffdc3b2751b3a971834381fa7cf",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/jiuweihu-map-v1.png",
+      "bytes": 1402252,
+      "sha256": "5885c8183a77b7034695eae637d15aa100a8135456f893cdff7f8241439e2144",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/suiren-unified-static-v1.png",
+      "bytes": 2782491,
+      "sha256": "4e57457ea8c8f60e5432da523cfb3887f50b21fb207f2e920a57a343bea89dfd",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/unknown-creature-v1.png",
+      "bytes": 1487523,
+      "sha256": "7f0a545205553298bb59a564a59f7426c875eca67588fbd21ed508c61beb2793",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/unknown-creature-v3.png",
+      "bytes": 1219121,
+      "sha256": "5952b844715409a132d3da3b0048899a95115ed6608a18cfe3eafe88c73d843c",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/unknown-creature-v4.png",
+      "bytes": 1244394,
+      "sha256": "10dbc3166fe3a7ac078ebbf50527848f7dacc87b7eb3366645c81fc4929dc114",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/xiangliu-human-faces-v1.png",
+      "bytes": 2427429,
+      "sha256": "1f5a281718bbcf424d4d025ebfe7abdaffb0b33a7cb978996142132ff21cfaf1",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/xiangliu-nine-heads-v2.png",
+      "bytes": 2630967,
+      "sha256": "31a432c6a614ef90ba9187089e8063e7651af2ac9f5e6064ddf07e6cfeda71e2",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/xiwangmu-scene-baseline-v2.png",
+      "bytes": 2775235,
+      "sha256": "ae20c8d3e98ce87b887f8a1ab50a8a44e164f741691edf8654cae6683e9b0d14",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/woodcut-refinement/xuangui-map-v1.png",
+      "bytes": 1437188,
+      "sha256": "26cdec69acc9837b638f9a8007cae0e3d43e3428758ee8d7d9d67a9e7e94829f",
+      "bundle": "mythmap-art-woodcut-refinement-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/animal-ling-cuishan-v1.png",
+      "bytes": 1800411,
+      "sha256": "4924e2edd7bcf03241d6ab3d7f32848a2eef380a0bcb898a61f5779b2cce0fc7",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/animal-ling-cuishan-v2.png",
+      "bytes": 1826582,
+      "sha256": "46d62b6adbdb2d36747fc5908ba15b4d3e0f346a6454796c16d4fbd96c656740",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/animal-maoniu-cuishan-v1.png",
+      "bytes": 2272725,
+      "sha256": "f22fee741be3175689b1f8d40df82f540348915b84ef5d9cfbdab960464bfe1f",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/animal-maoniu-cuishan-v2.png",
+      "bytes": 2400269,
+      "sha256": "42bb175d323b1dd083aa95470823332838cf8edf1503074f092bffd20874c7b8",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/animal-pi-bozhong-v1.png",
+      "bytes": 2744708,
+      "sha256": "d9b56f18eb58d261d4086923dc1f07d91c76d318d51113f23590f687e53e7f71",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/animal-she-cuishan-v1.png",
+      "bytes": 1536947,
+      "sha256": "7eed69f4176ddc6797900e2783bb5e646d61903632bab73e507180303cb4cff7",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/animal-she-cuishan-v2.png",
+      "bytes": 1569406,
+      "sha256": "2288b116256f8b9506019406e1757b4351b4321055b6abfa8990f56bfc168f08",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/animal-zuoniu-v1.png",
+      "bytes": 2843711,
+      "sha256": "a31d485de2e06ebab616c7de3784da16f6a5184d168932f32d000bf949479ba3",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-aoyu-sanwei-v1.png",
+      "bytes": 2588118,
+      "sha256": "6480203151f208f9766bf4dd2df1315530dc62c7db6cfa211bb3a716ba684912",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-bo-zhongqu-v1.png",
+      "bytes": 2172914,
+      "sha256": "a7160c0a172f69491d6be43817455fad81926ad2e7ec61c6e300e483685343da",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-fuxi-lutai-v1.png",
+      "bytes": 2185719,
+      "sha256": "972d54e7292ada150efb432eb8246222a4de69bb967d76d69e00caea7238076a",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-huayu-leyou-v1.png",
+      "bytes": 1983312,
+      "sha256": "f0e1706aaa03b6ee1e71bca3a0d937ece86b0cb6bd59bd0b5b5a84acfc97697c",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-jiao-yushan-v1.png",
+      "bytes": 2508196,
+      "sha256": "720fea2e9f9e2a0a5b051677dc293f217466c00b57ca07b7ecdbc9c8876c68d4",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-jufu-chongwu-v1.png",
+      "bytes": 2463273,
+      "sha256": "d3e7f920835e3844d2cad02aff4a0918f08eddacd0cd0fb9872b0f3d028a1120",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-luan-nvchuang-v1.png",
+      "bytes": 2373653,
+      "sha256": "e69792b3feffd6107ea20784bc5be589887a9cffd021d3c933924bb76cc1d0ff",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-manman-gangwei-v1.png",
+      "bytes": 1624157,
+      "sha256": "f76bbba382fda91a3dd84366c45a1a2a31940d1ba2fbf84b40d145c70368ec7d",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-ranyi-yingdi-v1.png",
+      "bytes": 2142580,
+      "sha256": "64abea9335b2789a29276ef15721043020409a3a42e6cbb5f78fd700e9aa4c20",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-ranyi-yingdi-v2.png",
+      "bytes": 1988960,
+      "sha256": "e2d3e551d4a617e1181114ea6736e5b24b33e280b26e29174b960b8b3cbb6039",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-rupi-niaoshu-v1.png",
+      "bytes": 1900786,
+      "sha256": "f4382396809dc5c51218d9a8d12f9212987f05fb4cc9b744b5504db84ecae4ae",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-saoyu-niaoshu-v1.png",
+      "bytes": 2359601,
+      "sha256": "37df1a81e400c1d96f370b7d97614f2bb259e707c81012d291ed11b31a95cc80",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/beast-shuhu-yanzi-v1.png",
+      "bytes": 2467474,
+      "sha256": "4713f08bc8f40b74df570ccb9a47c48f658f5d20b50a12bcd1aea3b0ed02b46e",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-baihan-bozhong-v1.png",
+      "bytes": 1926325,
+      "sha256": "c302ae12f8289bb436f2e5782aec4d582905fb3c37b7de5393186c80f126cc0e",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-chi-sanwei-v1.png",
+      "bytes": 2411116,
+      "sha256": "0ceb478442069103fdab8382aff48ea2961ec6f4077763e7bcce36812f0f9b7d",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-chi-sanwei-v2.png",
+      "bytes": 1997046,
+      "sha256": "cb3593f3047b8ff8d2ea1e8a710c44a883c147dea7301e537efe9dd8c814e6b9",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-chibie-v1.png",
+      "bytes": 1686583,
+      "sha256": "f97f8986eb617e72cb38bea002a621cab1ed0c4eb586d66129ee44d42c5cf07a",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-danghu-shangshen-v1.png",
+      "bytes": 2256735,
+      "sha256": "6d07b4f03700c9cc616531d0e8193ae4b1961f661a300a4a13070ab617c329dc",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-danghu-shangshen-v2.png",
+      "bytes": 2261080,
+      "sha256": "2c051e5076bdf301dfc7655e08bdd48c7cfafb5fcbdacf72165c0615d0abcebc",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-feiyi-ying-v1.png",
+      "bytes": 2010853,
+      "sha256": "a357f196bf5fc82f0aefee330016e27d620eb0fd73e31882f2436b190d2b571b",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-gu-jun-zhongshan-v1.png",
+      "bytes": 2254798,
+      "sha256": "eb7708ab484aa5c5f8e43c0415e2af562410ae39966566f462f31bfca9deeedc",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-lei-cuishan-v1.png",
+      "bytes": 2545248,
+      "sha256": "c05b0df2aa823e551db15d3b0490097704b2222121814af519684a0a7609d406",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-lei-cuishan-v2.png",
+      "bytes": 1617889,
+      "sha256": "3a3e2de27ba6424f14011b17a1acbdd8ab9ad6afb6ffc8a1b555d07ff0fe588f",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-li-tiandi-v1.png",
+      "bytes": 2070465,
+      "sha256": "e0b8810f026912e883c410276745da6e333a9289ad9870536431648d154028f3",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-manman-chongwu-v1.png",
+      "bytes": 2243648,
+      "sha256": "343a1ce9d1fb977e5298433f9472d7d9236b14acffb3de4f2710b4c154c851a2",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-min-v1.png",
+      "bytes": 1339241,
+      "sha256": "473cf6a1ae6c99e5b711bf4093ff9651979b1605ccd72960cbe10bef9442720e",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-qinpi-e-zhongshan-v1.png",
+      "bytes": 2607877,
+      "sha256": "2af972439668de0f354e26c4dfa2a11a2f6be0c5dc0675291e6b5c101f8b9d2e",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-qiyu-yiwang-v1.png",
+      "bytes": 2392057,
+      "sha256": "7b842b87607ccaaa7eb9bc2e31a371bfc7b5b96bfd5e8db53c8f93930e9a98aa",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-qiyu-yiwang-v2.png",
+      "bytes": 2006958,
+      "sha256": "f78c5b86908919cb7e807ff3eebe188f5cf7a528c3ed1218c8ff5e9d9ab9f571",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-shengyu-yushan-v1.png",
+      "bytes": 2270024,
+      "sha256": "90bb315b3d574f3feee67d4f26e3737eaf69114a6b069540bfdbb313c681dd7f",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-shijiu-nan-v1.png",
+      "bytes": 2069101,
+      "sha256": "e5933bbade345bfd407451e3403d456bdfe3e70017744ba01f31d5eba46e3c34",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-shusi-gaotu-v1.png",
+      "bytes": 1939129,
+      "sha256": "7c6198cb5cea9a0ce7222bbb38a0165523b59a198f09a7ba11983e6c5e0d09ef",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-tuofei-yuci-v1.png",
+      "bytes": 2089748,
+      "sha256": "59dc7b817787464b0dbd7ef15004bd0191168ad8a600c7f02ec122facd83f7dc",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-unnamed-yanzi-v1.png",
+      "bytes": 2581336,
+      "sha256": "e02d4294c84a3150709dda717196ab18d7da38f7e5f6bbc6e9f72c36ed1ca6b0",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-xiao-baiyu-v1.png",
+      "bytes": 1789237,
+      "sha256": "7af736bf4ddda5f656c1aad3403541e4d559725cb90326052fc7640382639fc0",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-yingmu-huangshan-v1.png",
+      "bytes": 2355550,
+      "sha256": "de8bff938d62fb42ac6e9f49104fba6fe1ab3f53378da73a967e9c219b184045",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-yingmu-huangshan-v2.png",
+      "bytes": 2189267,
+      "sha256": "c538b84001745c02c0c5ae4cab32cc0cc8050bc3b5da15ea004026842a6d7b5e",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-yingmu-huangshan-v3.png",
+      "bytes": 2594456,
+      "sha256": "b750eb16ff93d4ec05723c1324163c8df93a0a774412637833bb3e74605e02e0",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/bird-yingmu-huangshan-v4.png",
+      "bytes": 2368473,
+      "sha256": "d8da6111ab4e88363bc848496ee641994df3e88a407e77911466a56500ba07e3",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-bangyu-v1.png",
+      "bytes": 2562671,
+      "sha256": "54f17819f99ba23379ac5ef2bc7db7c0db3780305712a372844bb610120fe6a4",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-bangyu-v2.png",
+      "bytes": 2601899,
+      "sha256": "504576e318d4d022dd6d9249330c619c395cc5a60426de124e38200126bc7efd",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-conglong-v1.png",
+      "bytes": 2323695,
+      "sha256": "5ef4090ad1839847c3c9f419a6dcecbecc1f3c6269ff63bb875372903faa2da2",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-feiyi-v1.png",
+      "bytes": 2114605,
+      "sha256": "6eb9bed66fdcd1059d63af0cebb0420688a14d586c243c7d812417314bc69b4b",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-feiyi-v2.png",
+      "bytes": 2083670,
+      "sha256": "3d8c95f8c6834902f0a40e07027b3f220517823a7a19e1983108fba16fead431",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-haozhi-v1.png",
+      "bytes": 3030948,
+      "sha256": "746c21e30ab7998063e01be528bf08a33e7c47d044cdb55e098dd88f1a6f06c1",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-mengbao-nan-v1.png",
+      "bytes": 2647344,
+      "sha256": "ac2d24c1256337a73721ea1a8632ada8a1cdc28c087f8ba02477058f2fa9ac27",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-min-huangshan-v1.png",
+      "bytes": 2490933,
+      "sha256": "d960108f2976c4a4f5a9da4e9305e632a057e77e4bb840f450946bec3c661090",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-min-huangshan-v2.png",
+      "bytes": 2550647,
+      "sha256": "c4434aee208da09252c817ace4b0464b15386f664c4229392cec43bf4bf1cb7a",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-min-huangshan-v3.png",
+      "bytes": 2929256,
+      "sha256": "744548a16bef2bd346f98195d1531783714c342d729202326595c0edc0c3851c",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-qianyang-v1.png",
+      "bytes": 2802503,
+      "sha256": "d47d9a7a87b96bf6a8a83dfad914295f1bd0b97f748bf5f4eadcdd609faab299",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-renyu-zhushan-v1.png",
+      "bytes": 2108871,
+      "sha256": "54fb9612d0d60c0b9a872623584733e84d286acc8561d1f145a0cd6abd1bbc1d",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-tongqu-v1.png",
+      "bytes": 2210518,
+      "sha256": "ac2b9fa1f8bc8ac7bbb050c3b945a97fa1489ea426e9b7c4090de0153f8dce31",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-xiao-yuci-v1.png",
+      "bytes": 1777592,
+      "sha256": "5da8a13ba4439bbb5bb7518555a598b7642d30ab696be7e79414b6a485ece785",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-xibian-tiandi-v1.png",
+      "bytes": 2249167,
+      "sha256": "652411cbe48e993ebb9746995fea0479910f4311aec226f6ca51913ed4819883",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/creature-yingru-gaotu-v1.png",
+      "bytes": 1792639,
+      "sha256": "88a7e63a66cb3fa396ac40689811448dc638ed30c89067d9226a7d92b330a2fb",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/deity-changcheng-luomushan-v1.png",
+      "bytes": 1823985,
+      "sha256": "988935d1a40290838683eb55f26ffb3bad3b01871a0a12d43be4891c6188ca41",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/deity-chi-gangshan-v1.png",
+      "bytes": 2025036,
+      "sha256": "65465c99620172e6f199dbe2a9cd5a4a28746ab87425c4eddbb85290e98d0c06",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/deity-gu-zhongshan-v1.png",
+      "bytes": 2454995,
+      "sha256": "530a4df9731f56549a21741154262b9123391d957a17dd3ce04b1cd8156bd0e3",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/deity-horse-range2-v1.png",
+      "bytes": 2066210,
+      "sha256": "fdf744455f83303676f10b86189b400234bf414613286b1fa08c19b48c6cca2d",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/deity-ox-eight-huaijiang-v1.png",
+      "bytes": 2525496,
+      "sha256": "52d5cffe3c2180198fbe536ddc00ee0dbe78b4ae0dc357172f1695c71f6a17e0",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/deity-ox-range2-v1.png",
+      "bytes": 2518974,
+      "sha256": "8492f82b1761a792b029e7213610936bb352582f2fe2e7a68afe5297d165566c",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/deity-rushou-youshan-v1.png",
+      "bytes": 2393372,
+      "sha256": "96f6c33aed428139c94e1bb82cda847f4b1a30b6d451a7137ea7fbdb58464e31",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/deity-sheep-range3-v1.png",
+      "bytes": 2408569,
+      "sha256": "51365c1e98045f17f5f06bc6f140aa17b297c10476b55009541bdd5840c2616b",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/deity-xiwangmu-yushan-v1.png",
+      "bytes": 2381397,
+      "sha256": "bc0f730ce03d12c28ee793e3fbd5c34b39ccd942765a9dd660105a03ac7f572c",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/generation.json",
+      "bytes": 286278,
+      "sha256": "adc39f5a77f8e4042a661d3c39bdb8ff79e34d76097e8ad6b445647187f75baf",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-bili-v1.png",
+      "bytes": 1816307,
+      "sha256": "d2fe56590ce94c5c3a89a940334acc36729c5ee2ad1d872d8a6b069c9a90100b",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-bili-v2.png",
+      "bytes": 2257438,
+      "sha256": "af1232f0e74fde4274a3384fd99f6616751cf3a2ef2cd6efb8f15ada047bc1e5",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-dan-yanzi-v1.png",
+      "bytes": 2557766,
+      "sha256": "e250a351f0802bacf8abf04d964396ab618a1a7af27261c2fe6f054abefcfac4",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-danmu-mishan-v1.png",
+      "bytes": 2727779,
+      "sha256": "5579b82c1b5fffce9be00e3dc5efe376e66bb92aa52f3340527969e64d5f74fe",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-duheng-tiandi-v1.png",
+      "bytes": 2317208,
+      "sha256": "23c62ca39297f94b8d92b9d790246af28d805e6c3a144f480a0d39410fa7b49d",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-gurong-bozhong-v1.png",
+      "bytes": 1694137,
+      "sha256": "3710139a0fdff140175730fec8895da27ce538c034edcb964591f2d56920f0bd",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-huai-zhongqu-v1.png",
+      "bytes": 2695756,
+      "sha256": "f99ce28bb34cdfefc5137e51ff765a578b3049f5123d9be2c51d9cdc77f86704",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-huangguan-v1.png",
+      "bytes": 2708404,
+      "sha256": "21fed7526c726d6f44fb0ec39042766c0125942688669e002b67eb63e20ea300",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-panmu-v1.png",
+      "bytes": 2398063,
+      "sha256": "91e9af51d99f0d50346c080c4db6f9c67db137b64c9a090106beffbcde9062c7",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-shatang-kunlun-v1.png",
+      "bytes": 2432888,
+      "sha256": "877b92be81672118b62fc489f8bc76abd752aebef13fc3601f1b12c37acf8209",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-tiao-fuyu-v1.png",
+      "bytes": 2788680,
+      "sha256": "34db16c8c5fb0341a142d09a9c71d21de4e169a943465c9f10295e61d5addc76",
+      "bundle": "mythmap-art-xishan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-tiao-shicui-v1.png",
+      "bytes": 2051660,
+      "sha256": "be7e8c3cddcec7591cb6f04442c36c820fce56761ab7c8129bd24c2fd55d9c70",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-wenjing-v1.png",
+      "bytes": 2185695,
+      "sha256": "89baa4be9e265b0e8fce1276f7a48b64d1a1630241abd7155aa8253dce4c7c6f",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-wenjing-v2.png",
+      "bytes": 2299090,
+      "sha256": "fa77507d0163af6e46f479c493c9e9f6f10a153084b1c01a7f7c5b5d1a4fd94f",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-wutiao-gaotu-v1.png",
+      "bytes": 2400216,
+      "sha256": "84d6bc4f9712d9b3d25ebf50fb22543de57c78f254b5877ea85842941d75731c",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/plant-xuncao-v1.png",
+      "bytes": 2900948,
+      "sha256": "2f5ce24b1fe2abb10b73607fc38de33bad4c74a665a5c85a58ce110bae78a76e",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-bozhong-v1.png",
+      "bytes": 3073142,
+      "sha256": "0ecd74e36ae884bc5259537389bae6ed19748b54167eb1e27ddb0b4c006e289f",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-cuishan-v1.png",
+      "bytes": 2963860,
+      "sha256": "a3f96b55bd233fda315dd7b3c09877173002b4086edbcb33f94e8a12709d7555",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-dashi-v1.png",
+      "bytes": 3284014,
+      "sha256": "a6861b2994d550ff2f03eaddb2eac9a6aaf263780185ede34a4a1c315502929e",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-fushan-v1.png",
+      "bytes": 2987751,
+      "sha256": "fdf92bb99fa923d5b4fa253bc1558fa610143660a81d173fb5def1aa550b5874",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-fuyu-v1.png",
+      "bytes": 2920422,
+      "sha256": "624237dc5fb7033b942952fd7501ec7c5d13548c45d8d8f720697f88bcc2e5c5",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-gaotu-v1.png",
+      "bytes": 2987319,
+      "sha256": "b1800bdc6657c9df09825289c671baf5b4082c2c06939910d97ed3edeef76989",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-guishan-v1.png",
+      "bytes": 2910824,
+      "sha256": "61f96ec711a7bfd21e534e1ac162eb5f8bb9ac16203c55de1d545271c22fa1b6",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-huangshan-v1.png",
+      "bytes": 2729896,
+      "sha256": "e21f2c3217a77d76c6f817fa9f31100128326d33ea935f9261c6550912d344fa",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-nanshan-west-v1.png",
+      "bytes": 2879769,
+      "sha256": "a956185262ba295835f8a3724274a22ab5bc6d08b0341161e8b6a517b1a42931",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-qianlai-v1.png",
+      "bytes": 2861090,
+      "sha256": "071207625372234930e5164e2195cbea7b044ecec2b56165e99765a5d375d927",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-shicui-v1.png",
+      "bytes": 3433631,
+      "sha256": "f9903b27e19d84e5c7fe294bd7301ec4d596f6a444eb8a60ef6b988a5e6d3617",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-shishan-v1.png",
+      "bytes": 2974401,
+      "sha256": "78964b47ae2ae9c26e9eaa1bdaa3a98e6cf9255c9da6dfefeee2ab73af12a915",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-songguo-v1.png",
+      "bytes": 3210909,
+      "sha256": "374be72d47bc74a95d3ced3a126fb368807ed0ca8dcaeaf9b33f8db5f2ec29b2",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-taihua-v1.png",
+      "bytes": 3150123,
+      "sha256": "9511dc52d60fcbd3764834eb887d907ce322c1dc5b79d65a2bb0dc5f15538023",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-tiandi-v1.png",
+      "bytes": 3001769,
+      "sha256": "1fda61f9fa2004cd07d99a53dca7f40e7db57afa080088037036c2433130e4a8",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-xiaohua-v1.png",
+      "bytes": 3171736,
+      "sha256": "3448ee13d7dbb2b0b3f78b58f2f94c94ed3d136402e56e57e5405b810e411122",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-ying-v1.png",
+      "bytes": 2695996,
+      "sha256": "89d3cf4a720b716a67e42e25635764602d121243749ddd64307a935b4f19d0c3",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-yuci-v1.png",
+      "bytes": 3163963,
+      "sha256": "ee10e6d1074d1fe1c08be9ebfc28bc25a0bec9b1894dc6bde2332de8706534ae",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/xishan/scene-zhushan-v1.png",
+      "bytes": 2667311,
+      "sha256": "8c561b22645a28161e1cfd3ea755a1bceb0f13a0c8cede7ace199975c32edb6b",
+      "bundle": "mythmap-art-xishan-02.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/beast-chuo-lun-v1.png",
+      "bytes": 1209813,
+      "sha256": "ab60703a1549d5e95ebaa6086fe77185fad6ff18f5cded596ea93f0a5b37a97f",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/beast-mo-lai-v1.png",
+      "bytes": 2610492,
+      "sha256": "067ae38dcdac6556177185bb2675755e5faa9507a48dd25a306ceaef5ba4a08b",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/beast-mo-lai-v2.png",
+      "bytes": 3007195,
+      "sha256": "a395b98f9adaf9ad0e967b8c817653ff4e29699131039e3b6b447da11b645a6f",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/beast-mo-lai-v3.png",
+      "bytes": 2354792,
+      "sha256": "a618efe251b6f282143ae3276f4b2daa3e2cb6b90aac6d9fa4639faa47db8331",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-bi-mu-v1.png",
+      "bytes": 1882501,
+      "sha256": "478f14e9180608a30d6cc3b17c09ceaba5d092e01ef0916ebaecdd2571a9676f",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-he-huizhu-v1.png",
+      "bytes": 2498436,
+      "sha256": "f8f3603d467f4fc1aa91841d92fdc00c68529f14a5ccb8bddb58e286c881a481",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-jue-shou-v1.png",
+      "bytes": 2237642,
+      "sha256": "52896478cd7412bcd818643a0bda761931fd93bc8245575773cf8bcb2c8f6a22",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-juyu-chouyang-v1.png",
+      "bytes": 1432972,
+      "sha256": "22e955b242e17fd6142edd380580de0bea361875216011a0a7f03ab18d0f92b4",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-lingyao-hui-v1.png",
+      "bytes": 1521418,
+      "sha256": "ef9ee66fda066f293a2c28d30cfbf96e9fa30e86c15e8e0cb2b4f03817ca32dd",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-lingyao-hui-v2.png",
+      "bytes": 1100505,
+      "sha256": "85e1c631496ff4510ba0d6a6309bf6edc16ad1a2b14b68a7eababe7836c065ab",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-qiezhi-ju-v1.png",
+      "bytes": 1621600,
+      "sha256": "f31c2f9648f6080f01e664676cdbd5d90fb2f39956602bc5ed9a56c0dc0ef81f",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-qinggeng-jinli-v1.png",
+      "bytes": 1578983,
+      "sha256": "5c2571bb5cf92379f583a92dd3e8b7d9770debead47fd74d3474bc7a9f464ae0",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-qizhong-fuzhou-v1.png",
+      "bytes": 1634439,
+      "sha256": "28cf72d45a161faec818dfd45810177e329145bf5695813f9e49376b8def77f0",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-whitejiao-nvji-v1.png",
+      "bytes": 1857131,
+      "sha256": "c05c556e48e7b80d034911617c7135afe3658517c126b05e0e00d4712e440d5c",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-yao-qingyao-v1.png",
+      "bytes": 1739747,
+      "sha256": "0d740979d0ee5833f7436608368e30530400f3828ce127ce5fab86431e7c637d",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-yingshao-zhili-v1.png",
+      "bytes": 1255056,
+      "sha256": "781ad240e05744e7d5da70fb832a230c3ab8f5667f1ee1ac2d735c156f654d44",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-zhen-nvji-v1.png",
+      "bytes": 1821656,
+      "sha256": "2e57b86359bba6a8b30d24c592493d0bae498447d824bf445d3535e378f39057",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-zhen-nvji-v2.png",
+      "bytes": 1497859,
+      "sha256": "518f07b9fe008dcae039727bce30a1db52e8d724b1e1adb958ac9fd57b83b87a",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/bird-zhen-yaobi-v1.png",
+      "bytes": 2198990,
+      "sha256": "ffca8dc82ebb73975bd94da1f30465f09f32371849fc6156bba3c70d279a4975",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/cattle-kui-min-v1.png",
+      "bytes": 2640234,
+      "sha256": "c53e9551252a13d7cf8621f4a873090ecf2d171bb2f5a0d21b353dff63186241",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/cattle-kui-min-v2.png",
+      "bytes": 2828244,
+      "sha256": "f6b80555811b3b5c362bd85de527944ee11c3e10c8375c15b6814e8527cee1e6",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/cattle-kui-min-v3.png",
+      "bytes": 2339387,
+      "sha256": "88ec31f8247358d130829f9041796914076322d5b7b869f90e4d65ee6782cf67",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/cattle-li-jingshan8-v1.png",
+      "bytes": 2526816,
+      "sha256": "bb74f58f4d9b560670c63bf4035f88714aada2cc1ef1b99848076d74cfd68f7e",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/cattle-li-jingshan8-v2.png",
+      "bytes": 1798394,
+      "sha256": "5baabb5c8c9a81253b79a76e2ce5e4b9c557ddfb26f662b23fbe995a7a894e08",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-feifei-huo-v1.png",
+      "bytes": 2307864,
+      "sha256": "b59f2543d1b27f601166285b5ece756fb1f953eeb4e2a5753a3bccff5ea59d34",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-feiyu-gui-v1.png",
+      "bytes": 2357128,
+      "sha256": "8490b1f512d5b458ba093c10d7766eb2b298d9f03bf00b9dffbffd81938c9914",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-fuzhu-aoan-v1.png",
+      "bytes": 1404923,
+      "sha256": "0ad3e9bbea10af7dd3f09c47bf382789ade9204b7e3435901d9dfb401728fcc4",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-huashe-yang-v1.png",
+      "bytes": 2931198,
+      "sha256": "8a4e6645ab1daf4f237ded1fb933159daa165a5ca0317e9211ad7bde29631998",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-jiao-kuang-v1.png",
+      "bytes": 1982889,
+      "sha256": "f169951ebff6505360c1e51b5647e0a44a0df34534394075917de6beb797581d",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-jie-li-v1.png",
+      "bytes": 2517990,
+      "sha256": "2ac2f49fb6ead31d6263c086b8549b02307c292edf529b8e97f322f969a73a73",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-jie-zhen-v1.png",
+      "bytes": 2203056,
+      "sha256": "9764923483708ff118a6e3e8e82496f999263dedbb8d2a849038240a94bb6312",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-jing-shi-v1.png",
+      "bytes": 2392198,
+      "sha256": "eb84bde5c6839552bd5756f8283d59d5adfa80d18effe871a552a193d6bec096",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-liangqu-lishi-v1.png",
+      "bytes": 2152560,
+      "sha256": "8ca7b0652132c4e869718cf4111ca1afc39cc0d4f5b6229bc83330f7d50862b2",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-lin-yiku-v1.png",
+      "bytes": 2491442,
+      "sha256": "2146a6d3d9af158a17dca39a14b992ba12d72d69ee6a9ca1f4dfdcd4f8d08d93",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-longchi-kunwu-v1.png",
+      "bytes": 2929656,
+      "sha256": "475ffc5d6f97ef5eece2907077b660c626313a7fda876fba4d1f3a9073cdebcb",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-mafu-manqu-v1.png",
+      "bytes": 2869475,
+      "sha256": "d01b02b4912d32bed074ed1a397c75c1f5f7d1f2b399d2006b33d39caa858266",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-wenlin-ji-v1.png",
+      "bytes": 2380734,
+      "sha256": "97c1d2a4b240ac445893c2bfb574e9f3e44853830d71ff31e8f856432da7edf9",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-xiqu-li-v1.png",
+      "bytes": 2922169,
+      "sha256": "32bc4b816b62ed2ac05f22f8093a5ec22357d64874850d7820492d2d32c714cf",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-yin-fuzhu-v1.png",
+      "bytes": 2548342,
+      "sha256": "b6b73cfc82957fd215c63cb37febab820d7403d41a72a3dfca81c1337229e03d",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/creature-yonghe-feng-v1.png",
+      "bytes": 2223093,
+      "sha256": "658562e656b19fd26d36dcd103f46986ca23cf38976286d9e68811bdad3f0b27",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-dragonhead-bird-summary12-v1.png",
+      "bytes": 2099931,
+      "sha256": "fd6c033562aad2f9a8cd78c9b18aa8ab87d0f1e27191d15651cf406dba5acd61",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-horsedragon-summary9-v1.png",
+      "bytes": 2516305,
+      "sha256": "bf5b4fe94e90111c88bee1abb79672a81d21cf52321286cf94d8b92eac2eb4b4",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-horsedragon-summary9-v2.png",
+      "bytes": 2659583,
+      "sha256": "c07478a6e10d8df3309ac45c0df33c78f24429a4ab56b2a6d8285df50783c142",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-humanbeast-range4-v1.png",
+      "bytes": 2593431,
+      "sha256": "65eca7796d15377c607fcb6ee113764a26d3258fb9d7142c6426a36e98fadfa9",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-humanbird-range2-v1.png",
+      "bytes": 1678150,
+      "sha256": "25d3cef0ce118b228344e0e2aa79614e1234b2c4512bccfda0399bfa30fec5d0",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-humanbird-range8-v1.png",
+      "bytes": 1633234,
+      "sha256": "5c85d44178887089f997fe1cde4185cf9e905933b60483a3d68270c5c13297d6",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-humandragon-summary10-v1.png",
+      "bytes": 2238428,
+      "sha256": "b336d56cf6aaa344e8e199814e6927e3f5a903c24441cae03787a0ca7ebc4f1b",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-humanhead-pig-summary11-v1.png",
+      "bytes": 2701888,
+      "sha256": "9d54a0c857492aa857be89efe9dde791ba677f0c0242775b47f4c2d13940f27e",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-humanpig-range7-v1.png",
+      "bytes": 2549426,
+      "sha256": "99420a73a85e9d0386a882fd6c54e93b28164dc8189df5a3c2c928c7fb14e718",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-jiaochong-pingfeng-v1.png",
+      "bytes": 2253339,
+      "sha256": "d99d6cd612f0afc73ac95157edbb09b6741de8f7c95edcbffbbd7197435daaf7",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-jimeng-guang-v1.png",
+      "bytes": 1837066,
+      "sha256": "eceafa7f7b62088739440fbdb67a21474a3ddde9f87f6597f4c1de814c16e76b",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-jimeng-guang-v2.png",
+      "bytes": 1829813,
+      "sha256": "ff30bfe995b9fd2ae13c41c75c8e79af2ec83996f48e92c68384fa6cf7d54d2a",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-jimeng-guang-v3.png",
+      "bytes": 1736870,
+      "sha256": "1ec26399ce49f0be7d3928816f1dca4069e7f38ec5d452064bf3fa9f2cce6271",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-jimeng-guang-v4.png",
+      "bytes": 826625,
+      "sha256": "85485afb5d3c26082cc38eaf9b53aa07485d18edb021ee9ccaab5904e4c3e099",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-shetuo-qi-v1.png",
+      "bytes": 859202,
+      "sha256": "c5fede2330060653390e02eed5f2d6c724bd2fa7af0aae8e718c088c222b6812",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-snakecarrier-dongting-v1.png",
+      "bytes": 2532181,
+      "sha256": "52297f244ff77fb493dbff9ccbd8ac35397c17ecdd63b2480f38f8ab15b7f828",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-taifeng-heshan-v1.png",
+      "bytes": 1595037,
+      "sha256": "02c756cf230dd01c0c9a84447fc04ceed74d592ad8fd78b68b72d2002b0807a4",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-threeheads-range7-v1.png",
+      "bytes": 2746694,
+      "sha256": "fec06ba461823bb20e6a5584fd2614cc04db9ce5267a33e4d6cbba4d89a153e3",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-tuowei-jiao-v1.png",
+      "bytes": 2470676,
+      "sha256": "97924ed922f3d1126a3559f6c95003b7d3686bf74597a19e8e9e1d97d39cce93",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-tuowei-jiao-v2.png",
+      "bytes": 2425088,
+      "sha256": "f6d3d8a662da0b9559b93f733c11b4af4470b2891ebab61e6e907dc252462ba9",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-wuluo-qingyao-v1.png",
+      "bytes": 1988672,
+      "sha256": "a8f075133681be57adb1b3798777b618ab9fc5d975fe11775c22e20535aeacbb",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/deity-yuer-fufu-v1.png",
+      "bytes": 2523721,
+      "sha256": "5e231968436f921091d659a7d47bf3b09416fa7406796e13383a7331c162f4d8",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/entities-generation.json",
+      "bytes": 138290,
+      "sha256": "61cba12bd2d4bdc05c7012acafba48566ccb288a2483c8afd277f71d50722fbd",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/fish-feiyu-niushou-v1.png",
+      "bytes": 1940916,
+      "sha256": "b3c66d45d3c6ca61f8c555bfa06eaf4d9cfe727d74013f979267eedec1b8f370",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/fish-hao-quzhu-v1.png",
+      "bytes": 2169563,
+      "sha256": "c042d5ec0fbcd8be304938679851e88442867a0fef3f2ccf2bdf36b6c6554fc2",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/fish-lun-banshi-v1.png",
+      "bytes": 2438632,
+      "sha256": "187f5cb064defc3da57b45ed707e5aaa68a8d6daebb78646630cec5533c543b9",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/fish-teng-banshi-v1.png",
+      "bytes": 2091930,
+      "sha256": "b485e809807b6255f2107ee079cad7b29bd75c172e9159d683ff3595954b41c6",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/fox-balang-she-v1.png",
+      "bytes": 1688862,
+      "sha256": "c84141601f915e067156b067e52dd58c3b263f6fedf1dac1833105c7a2485da9",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/frog-xiubi-tuo-v1.png",
+      "bytes": 2464871,
+      "sha256": "98633c716c09277bc51827ec95215933b50128bbde71991c07ec2dcd9199d2ab",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/insect-wenwen-fanggao-v1.png",
+      "bytes": 2253727,
+      "sha256": "819e61dcc446e0766ca2673b84a0e389a0783f0f83e5d8835ebb6f8e17d28e7e",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/monkey-wei-ge-v1.png",
+      "bytes": 1709957,
+      "sha256": "75459d28bf9330a6b1467f0638e6f8bafb0be93377485b4c3912b614b3f269a4",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/pig-shangao-ku-v1.png",
+      "bytes": 2692692,
+      "sha256": "7bd73fba0bf404e1de867d61de7c15010503d8abe749b91cf5f14de1cddea448",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/reptile-tuo-min-v1.png",
+      "bytes": 1175136,
+      "sha256": "0fd9852e1426822ee7cc2bcdf108330fa5f5a2f4c054bf9195ff7b424b407633",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/reptile-tuo-min-v2.png",
+      "bytes": 1168692,
+      "sha256": "5b887a642ce884415f9b70ec8154248079612babaf5a3833015f8d9d69878b65",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/snake-flying-chaisang-v1.png",
+      "bytes": 1795124,
+      "sha256": "4c85377914549f58cd5856b17bc510bd7bfe108d383c11231a052e112804e582",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/snake-hooked-ju-v1.png",
+      "bytes": 1545262,
+      "sha256": "d49edec9391b42ba77a9b5114243b484f70c4936ca834de3ff2a04d6bebb1ac3",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/snake-ming-xian-v1.png",
+      "bytes": 1922576,
+      "sha256": "76a639f15ee18bdf600b3000c9fc20ee281e1c0828f110591552e7424ae323ae",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/snake-ming-xian-v2.png",
+      "bytes": 1960292,
+      "sha256": "520c1b2520e746a6a79da1a7639e35e16aa22ff9a5c7640f8336f7f7fdcf5e82",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/turtle-gui-jigong-v1.png",
+      "bytes": 2492085,
+      "sha256": "738b7f7967976cdf2754eff89c513a582ce496530e25b64890ee336edbb4f8c5",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/turtle-linggui-yangxu-v1.png",
+      "bytes": 2834401,
+      "sha256": "882a55519ecfcc4e44cedaf4c0ef849cabd8aacf6a37a40d7afae30533ca1500",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/turtle-sixeye-comment-da241-v1.png",
+      "bytes": 2438529,
+      "sha256": "dc2f333f9c0d51cf5da1b0c977a6c9362ccc3e55e1648f42a48cfe193d3f5dcf",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/turtle-threeleg-cong-v1.png",
+      "bytes": 1641544,
+      "sha256": "07cf998a3dfb8e1ff7754827e82b59728952756f0a2e98f870e3f7b23decd763",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/turtle-threeleg-da241-v1.png",
+      "bytes": 2632179,
+      "sha256": "b95374a24d89b44bbed1f901849cefe9d1110a8b375c465d6ae2b7613a9088e6",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/turtle-threeleg-da241-v2.png",
+      "bytes": 2754535,
+      "sha256": "ffd1b9af04f4fd76c1a2640f2156af232e28a93acd23417b82799eecb00bcb62",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    },
+    {
+      "path": "frontend/artwork-source/zhongshan/turtle-xuangui-mi-v1.png",
+      "bytes": 2609007,
+      "sha256": "7c292dc8c5afc4641765f2f5b263f82f0c9255fdc3c5cb350ce5e5f7855e6113",
+      "bundle": "mythmap-art-zhongshan-01.zip"
+    }
+  ]
+}

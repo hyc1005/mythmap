@@ -26,13 +26,13 @@
 | 原始插画 | 484 |
 | 字体 | 13 |
 | 扫描图 | 178 |
-| 数据/来源/许可文件 | 89 |
+| 数据/来源/许可文件 | 90 |
 | README展示媒体 | 5 |
 | 运行/发布图像（不含SVG） | 1262 |
 | SVG | 2 |
 | 展示媒体来源记录 | 1 |
 
-当前清单共 2030 个文件。文本记录与字段组沿用独立清单。字体依赖来自本地安装包。
+当前清单共 2031 个文件。文本记录与字段组沿用独立清单。字体依赖来自本地安装包。
 
 ## 许可与来源配置档 / Profiles
 
@@ -196,3 +196,10 @@
 ## 本地自然地理底图（Natural Earth v5.1.2）
 
 地理页面使用Natural Earth固定版本的1:50m陆地、湖泊及主要河流，原始文件保存在`data/reference-maps/natural-earth-v5.1.2/`，派生文件及来源记录为`frontend/public/data/geography/natural-earth-50m-v5.1.2.geojson`和同名`.sources.json`。原始下载URL、SHA、裁切/拓扑保持简化、坐标精度与工具版本均记录其中，重建脚本为`data/build_geography_basemap.py`。Natural Earth在其[使用条款](https://www.naturalearthdata.com/about/terms-of-use/)中声明这些数据属于公有领域。此记录只适用于该组地图数据，不改变项目插画、字体、古籍转写及历史天地图截图的使用条件。显示为现代地理参照的古风绘制，不是古代地理复原。
+
+
+## 可选原图与影印分发包
+
+[2026-11-05 v1分发版本](https://github.com/hyc1005/mythmap/releases/tag/assets-2026-11-05-v1)按目录提供18个ZIP，共678个源文件，来源提交`c6ca994`。原文件仍保留在主仓库。`data/asset-bundles.json`记录每包及每文件的SHA-256、原路径、字节数和下载地址；JSON统一LF，图像保持原字节。恢复步骤见[数据维护入口](data/README.md#轻量检出与原图分发)。
+
+发布前已在独立轻量检出中恢复，并完成全量素材审计；上传后逐文件核对GitHub返回的摘要和大小。分发包随附本声明及LICENSE，沿用各源文件的原许可与未知状态，不新增复用授权。16项历史来源缺口仍未解决。

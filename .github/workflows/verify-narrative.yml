@@ -22,6 +22,7 @@ jobs:
       base: ${{ steps.path.outputs.base }}
     env:
       ATLAS_BROWSERS: chromium,webkit
+      PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
     defaults:
       run:
         working-directory: frontend
@@ -43,14 +44,35 @@ jobs:
           python ../data/english_review.py
           python ../data/build_geography_basemap.py --check
       - run: npm run verify:assets
+      - run: python ../data/asset_packages.py check --catalog ../data/asset-bundles.json
       - run: npm run verify:cache
+      - name: Identify WebKit cache
+        id: webkit-identity
+        run: |
+          PW_VERSION=$(node -p "require('playwright/package.json').version")
+          echo "key=pw-webkit-v1-${RUNNER_OS}-${RUNNER_ARCH}-$(lsb_release -rs)-${PW_VERSION}" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        id: webkit-cache
+        with:
+          path: |
+            ${{ github.workspace }}/.pw-browsers/webkit-*
+            ${{ github.workspace }}/.pw-browsers/ffmpeg-*
+          key: ${{ steps.webkit-identity.outputs.key }}
       - name: Use the public Ubuntu package mirror
         run: |
           if [[ -f /etc/apt/apt-mirrors.txt ]]; then
             echo 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt > /dev/null
           fi
-      - run: npx playwright install --with-deps chromium webkit
+      - run: npx playwright install --with-deps --only-shell chromium webkit
         timeout-minutes: 15
+      - name: Save verified WebKit installation
+        if: github.ref == 'refs/heads/main' && steps.webkit-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: |
+            ${{ github.workspace }}/.pw-browsers/webkit-*
+            ${{ github.workspace }}/.pw-browsers/ffmpeg-*
+          key: ${{ steps.webkit-identity.outputs.key }}
       - run: npm run build -- --base /
       - name: Verify local basemap without external credentials
         env:
@@ -121,23 +143,54 @@ jobs:
       ATLAS_BROWSERS: ${{ matrix.browser }}
       ATLAS_BASE: ${{ needs.narrative.outputs.base }}
       ATLAS_SCRIPTS: ${{ matrix.suite.scripts }}
+      ATLAS_SUITE: ${{ matrix.suite.name }}
+      PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
     defaults:
       run:
         working-directory: frontend
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/frontend/artwork-source/**/*.png
+            !/frontend/artwork-source/**/*.webp
+            !/data/reference-scans/**/*.jpg
+      - name: Retain original assets required by this suite
+        run: python ../data/light_checkout.py --profile "$ATLAS_SUITE"
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
         with:
           node-version: '22'
           cache: npm
           cache-dependency-path: frontend/package-lock.json
       - run: npm ci
+      - name: Identify WebKit cache
+        if: matrix.browser == 'webkit'
+        id: webkit-identity
+        run: |
+          PW_VERSION=$(node -p "require('playwright/package.json').version")
+          echo "key=pw-webkit-v1-${RUNNER_OS}-${RUNNER_ARCH}-$(lsb_release -rs)-${PW_VERSION}" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        if: matrix.browser == 'webkit'
+        id: webkit-cache
+        with:
+          path: |
+            ${{ github.workspace }}/.pw-browsers/webkit-*
+            ${{ github.workspace }}/.pw-browsers/ffmpeg-*
+          key: ${{ steps.webkit-identity.outputs.key }}
       - name: Use the public Ubuntu package mirror
         run: |
           if [[ -f /etc/apt/apt-mirrors.txt ]]; then
             echo 'https://archive.ubuntu.com/ubuntu/' | sudo tee /etc/apt/apt-mirrors.txt > /dev/null
           fi
-      - run: npx playwright install --with-deps "${{ matrix.browser }}"
+      - name: Install browser and system dependencies
+        run: |
+          if [[ "$ATLAS_BROWSER" == chromium ]]; then
+            npx playwright install --with-deps --only-shell chromium
+          else
+            npx playwright install --with-deps webkit
+          fi
         timeout-minutes: 15
       - name: Download the shared publishing build
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
