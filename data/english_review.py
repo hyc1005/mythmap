@@ -66,7 +66,175 @@ QUOTES = {'beast-xishan-zuoniu-baiyu': ('其獸多㸲牛羬羊', 'Its beasts inc
                                    'and much iron below. The Xiu rises here and flows north into the Luo. Its '
                                    'waters contain many ti fish, resembling an uncertain creature, with long '
                                    'spurs and paired white feet. Eating them is said to prevent gu afflictions '
-                                   'and ward off weapons.')}
+                                   'and ward off weapons.'),
+ 'passage-zhongshan-r07-xiuyu': ('中次七經苦山之首曰休與之山其上有石焉名曰帝臺之棋五色而文其狀如鶉卵帝臺之石所以禱百神者也服之不蠱有草焉其狀如蓍赤葉而本叢生名曰風條可以為簳',
+                                 'The seventh Central range, the Ku range, begins at Mount Xiuyu. Above are '
+                                 'stones called Ditai’s gaming pieces, with five colors and markings, shaped like '
+                                 'quail eggs. These stones of Ditai are used in prayers to the many gods. Wearing '
+                                 'them is said to protect against gu. There is an herb resembling shi, with red '
+                                 'leaves and bases growing in clusters, called Fengtiao; it can be used for arrow '
+                                 'shafts.'),
+ 'place-zhongshan-r07-xiuyu': ('中次七經苦山之首曰休與之山其上有石焉名曰帝臺之棋五色而文其狀如鶉卵帝臺之石所以禱百神者也服之不蠱有草焉其狀如蓍赤葉而本叢生名曰風條可以為簳',
+                               'The seventh Central range, the Ku range, begins at Mount Xiuyu. Above are stones '
+                               'called Ditai’s gaming pieces, with five colors and markings, shaped like quail '
+                               'eggs. These stones of Ditai are used in prayers to the many gods. Wearing them is '
+                               'said to protect against gu. There is an herb resembling shi, with red leaves and '
+                               'bases growing in clusters, called Fengtiao; it can be used for arrow shafts.'),
+ 'passage-zhongshan-r07-guzhong': ('東三百里曰皷鍾之山帝臺之所以觴百神也有草焉方莖而黄華員葉而三成其名曰焉酸可以為毒其上多礪其下多砥',
+                                   'Three hundred li east is Mount Guzhong, where Ditai gives drink to the many '
+                                   'gods. There is an herb with square stems, yellow flowers and round leaves in '
+                                   'three layers, called Yansuan. It can be used as a poison. There is much li '
+                                   'whetstone above and much di whetstone below.'),
+ 'place-zhongshan-r07-guzhong': ('東三百里曰皷鍾之山帝臺之所以觴百神也有草焉方莖而黄華員葉而三成其名曰焉酸可以為毒其上多礪其下多砥',
+                                 'Three hundred li east is Mount Guzhong, where Ditai gives drink to the many '
+                                 'gods. There is an herb with square stems, yellow flowers and round leaves in '
+                                 'three layers, called Yansuan. It can be used as a poison. There is much li '
+                                 'whetstone above and much di whetstone below.'),
+ 'passage-zhongshan-r07-guyao': ('又東二百里曰姑媱之山帝女死焉其名曰女尸化為䔄草其葉胥成其華黄其實如菟丘服之媚於人',
+                                 'Another two hundred li east is Mount Guyao. The Di’s daughter died there; her '
+                                 'name was Nüshi, and she became yaocao. Its leaves grow in layers, its flowers '
+                                 'are yellow and its fruit resembles tuqiu. Taking it is said to make one '
+                                 'attractive to others.'),
+ 'place-zhongshan-r07-guyao': ('又東二百里曰姑媱之山帝女死焉其名曰女尸化為䔄草其葉胥成其華黄其實如菟丘服之媚於人',
+                               'Another two hundred li east is Mount Guyao. The Di’s daughter died there; her '
+                               'name was Nüshi, and she became yaocao. Its leaves grow in layers, its flowers are '
+                               'yellow and its fruit resembles tuqiu. Taking it is said to make one attractive to '
+                               'others.'),
+ 'passage-zhongshan-r07-ku': ('又東二十里曰苦山有獸焉名曰山膏其狀如逐赤若丹火善詈其上有木焉名曰黄棘黄華而員葉其實如蘭服之不字有草焉員葉而無莖赤華而不實名曰無條服之不癭',
+                              'Another twenty li east is Mount Ku. There is a beast called Shangao, pig-like in '
+                              'form, red as cinnabar fire and adept at cursing. Above is a tree called Huangji, '
+                              'with yellow flowers, round leaves and fruit resembling lan. Taking it is said to '
+                              'prevent childbearing. There is an herb with round leaves and no stem, red flowers '
+                              'and no fruit, called Wutiao. Taking it is said to prevent neck swellings.'),
+ 'place-zhongshan-r07-ku': ('又東二十里曰苦山有獸焉名曰山膏其狀如逐赤若丹火善詈其上有木焉名曰黄棘黄華而員葉其實如蘭服之不字有草焉員葉而無莖赤華而不實名曰無條服之不癭',
+                            'Another twenty li east is Mount Ku. There is a beast called Shangao, pig-like in '
+                            'form, red as cinnabar fire and adept at cursing. Above is a tree called Huangji, '
+                            'with yellow flowers, round leaves and fruit resembling lan. Taking it is said to '
+                            'prevent childbearing. There is an herb with round leaves and no stem, red flowers '
+                            'and no fruit, called Wutiao. Taking it is said to prevent neck swellings.'),
+ 'passage-zhongshan-r07-du': ('又東二十七里曰堵山神天愚居之是多怪風雨其上有木焉名曰天楄方莖而葵狀服者不㖶',
+                              'Another twenty-seven li east is Mount Du. The deity Tianyu dwells there, and '
+                              'unusual winds and rain are frequent. Above is a tree called Tianbian, with square '
+                              'stems and a kui-like form. Taking it is said to prevent yan.'),
+ 'place-zhongshan-r07-du': ('又東二十七里曰堵山神天愚居之是多怪風雨其上有木焉名曰天楄方莖而葵狀服者不㖶',
+                            'Another twenty-seven li east is Mount Du. The deity Tianyu dwells there, and unusual '
+                            'winds and rain are frequent. Above is a tree called Tianbian, with square stems and '
+                            'a kui-like form. Taking it is said to prevent yan.'),
+ 'passage-zhongshan-r07-fanggao': ('又東五十二里曰放皐之山明水出焉南流注于伊水其中多蒼玉有木焉其葉如槐黄華而不實其名曰蒙木服之不惑有獸焉其狀如蜂枝尾而反舌善呼其名曰文文',
+                                   'Another fifty-two li east is Mount Fanggao. The Ming rises here and flows '
+                                   'south into the Yi; its waters contain much cang jade. There is a tree with '
+                                   'huai-like leaves, yellow flowers and no fruit, called Mengmu. Taking it is '
+                                   'said to prevent confusion. There is a creature resembling a bee, with a '
+                                   'branched tail and a reversed tongue, adept at calling, called Wenwen.'),
+ 'place-zhongshan-r07-fanggao': ('又東五十二里曰放皐之山明水出焉南流注于伊水其中多蒼玉有木焉其葉如槐黄華而不實其名曰蒙木服之不惑有獸焉其狀如蜂枝尾而反舌善呼其名曰文文',
+                                 'Another fifty-two li east is Mount Fanggao. The Ming rises here and flows south '
+                                 'into the Yi; its waters contain much cang jade. There is a tree with huai-like '
+                                 'leaves, yellow flowers and no fruit, called Mengmu. Taking it is said to '
+                                 'prevent confusion. There is a creature resembling a bee, with a branched tail '
+                                 'and a reversed tongue, adept at calling, called Wenwen.'),
+ 'passage-zhongshan-r07-da-241': ('又東五十七里曰大𩇵之山多㻬琈之玉多麋玉有草焉其狀葉如榆方莖而蒼傷其名曰牛傷其根蒼文服者不厥可以禦兵其陽狂水出焉西南流注于伊水其中多三足龜食者無大疾可以已腫',
+                                  'Another fifty-seven li east is Mount Da [final name character not '
+                                  'transliterated]. There is much tufu jade and mi jade. There is an herb with '
+                                  'elm-like leaves, square stems and cang-colored spines, called Niushang. Its '
+                                  'roots have cang-colored markings. Taking it is said to prevent jue and ward '
+                                  'off weapons. The Kuang rises on the sunny side and flows southwest into the '
+                                  'Yi. Its waters contain many three-legged turtles. Eating them is said to '
+                                  'prevent serious illness and relieve swelling.'),
+ 'place-zhongshan-r07-da-241': ('又東五十七里曰大𩇵之山多㻬琈之玉多麋玉有草焉其狀葉如榆方莖而蒼傷其名曰牛傷其根蒼文服者不厥可以禦兵其陽狂水出焉西南流注于伊水其中多三足龜食者無大疾可以已腫',
+                                'Another fifty-seven li east is Mount Da [final name character not '
+                                'transliterated]. There is much tufu jade and mi jade. There is an herb with '
+                                'elm-like leaves, square stems and cang-colored spines, called Niushang. Its '
+                                'roots have cang-colored markings. Taking it is said to prevent jue and ward off '
+                                'weapons. The Kuang rises on the sunny side and flows southwest into the Yi. Its '
+                                'waters contain many three-legged turtles. Eating them is said to prevent serious '
+                                'illness and relieve swelling.'),
+ 'passage-zhongshan-r07-banshi': ('又東七十里曰半石之山其上有草焉生而秀其髙丈餘赤葉赤華華而不實其名曰嘉榮服之者不霆來需之水出于其陽而西流注于伊水其中多鯩魚黑文其狀如鮒食者不睡合水出于其隂而北流注于洛多鰧魚狀如鱖居逵蒼文赤尾食者不癰可以為瘻',
+                                  'Another seventy li east is Mount Banshi. Above is an herb that puts forth ears '
+                                  'as it sprouts, growing more than one zhang tall, with red leaves and red '
+                                  'flowers but no fruit, called Jiarong. Taking it is said to protect against '
+                                  'thunder. The Laixu rises on the sunny side and flows west into the Yi. Its '
+                                  'waters contain many lun fish, with black markings and a fu-like form; eating '
+                                  'them is said to prevent sleep. The He rises on the shaded side and flows north '
+                                  'into the Luo. There are many teng fish, resembling gui, dwelling in connected '
+                                  'waterways, with cang-colored markings and red tails. Eating them is said to '
+                                  'prevent yong and treat lou.'),
+ 'place-zhongshan-r07-banshi': ('又東七十里曰半石之山其上有草焉生而秀其髙丈餘赤葉赤華華而不實其名曰嘉榮服之者不霆來需之水出于其陽而西流注于伊水其中多鯩魚黑文其狀如鮒食者不睡合水出于其隂而北流注于洛多鰧魚狀如鱖居逵蒼文赤尾食者不癰可以為瘻',
+                                'Another seventy li east is Mount Banshi. Above is an herb that puts forth ears '
+                                'as it sprouts, growing more than one zhang tall, with red leaves and red flowers '
+                                'but no fruit, called Jiarong. Taking it is said to protect against thunder. The '
+                                'Laixu rises on the sunny side and flows west into the Yi. Its waters contain '
+                                'many lun fish, with black markings and a fu-like form; eating them is said to '
+                                'prevent sleep. The He rises on the shaded side and flows north into the Luo. '
+                                'There are many teng fish, resembling gui, dwelling in connected waterways, with '
+                                'cang-colored markings and red tails. Eating them is said to prevent yong and '
+                                'treat lou.'),
+ 'passage-zhongshan-r07-taishi': ('又東三十里曰泰室之山其上有木焉葉狀如蔾而赤理其名曰栯木服者不妬有草焉其狀如𦬸白華黑實澤如蘡薁其名曰䔄草服之不昧上多羙石',
+                                  'Another thirty li east is Mount Taishi. Above is a tree with li-like leaves '
+                                  'and red grain, called Youmu. Taking it is said to prevent jealousy. There is '
+                                  'an herb resembling zhu, with white flowers and glossy black fruit like yingyu, '
+                                  'called yaocao. Taking it is said to prevent dimness. Fine stones are abundant '
+                                  'above.'),
+ 'place-zhongshan-r07-taishi': ('又東三十里曰泰室之山其上有木焉葉狀如蔾而赤理其名曰栯木服者不妬有草焉其狀如𦬸白華黑實澤如蘡薁其名曰䔄草服之不昧上多羙石',
+                                'Another thirty li east is Mount Taishi. Above is a tree with li-like leaves and '
+                                'red grain, called Youmu. Taking it is said to prevent jealousy. There is an herb '
+                                'resembling zhu, with white flowers and glossy black fruit like yingyu, called '
+                                'yaocao. Taking it is said to prevent dimness. Fine stones are abundant above.'),
+ 'passage-zhongshan-r07-jiang': ('又北三十里曰講山其上多玉多柘多栢有木焉名曰帝屋葉狀如椒反傷赤實可以禦凶',
+                                 'Another thirty li north is Mount Jiang. Above are much jade and many zhe and '
+                                 'bai trees. There is a tree called Diwu, with jiao-like leaves, recurved spines '
+                                 'and red fruit. It is said to ward off misfortune.'),
+ 'place-zhongshan-r07-jiang': ('又北三十里曰講山其上多玉多柘多栢有木焉名曰帝屋葉狀如椒反傷赤實可以禦凶',
+                               'Another thirty li north is Mount Jiang. Above are much jade and many zhe and bai '
+                               'trees. There is a tree called Diwu, with jiao-like leaves, recurved spines and '
+                               'red fruit. It is said to ward off misfortune.'),
+ 'passage-zhongshan-r07-fuxi': ('又東三十里曰浮戯之山有木焉葉狀如樗而赤實名曰亢木食之不蠱汜水出焉而北流注于河其東有谷因名曰蛇谷上多少辛',
+                                'Another thirty li east is Mount Fuxi. There is a tree with chu-like leaves and '
+                                'red fruit, called Kangmu. Eating it is said to protect against gu. The Si rises '
+                                'here and flows north into the He. To the east is a valley consequently named '
+                                'Snake Valley; much shaoxin grows above.'),
+ 'place-zhongshan-r07-fuxi': ('又東三十里曰浮戯之山有木焉葉狀如樗而赤實名曰亢木食之不蠱汜水出焉而北流注于河其東有谷因名曰蛇谷上多少辛',
+                              'Another thirty li east is Mount Fuxi. There is a tree with chu-like leaves and red '
+                              'fruit, called Kangmu. Eating it is said to protect against gu. The Si rises here '
+                              'and flows north into the He. To the east is a valley consequently named Snake '
+                              'Valley; much shaoxin grows above.'),
+ 'passage-zhongshan-r07-shaoxing': ('又東四十里曰少陘之山有草焉名曰𦱌草葉狀如葵而赤莖白華實如蘡薁食之不愚噐難之水出焉而北流注于役水',
+                                    'Another forty li east is Mount Shaoxing. There is an herb called Gang grass, '
+                                    'with kui-like leaves, red stems, white flowers and yingyu-like fruit. Eating '
+                                    'it is said to prevent foolishness. The Qinan rises here and flows north into '
+                                    'Yi water.'),
+ 'place-zhongshan-r07-shaoxing': ('又東四十里曰少陘之山有草焉名曰𦱌草葉狀如葵而赤莖白華實如蘡薁食之不愚噐難之水出焉而北流注于役水',
+                                  'Another forty li east is Mount Shaoxing. There is an herb called Gang grass, '
+                                  'with kui-like leaves, red stems, white flowers and yingyu-like fruit. Eating '
+                                  'it is said to prevent foolishness. The Qinan rises here and flows north into '
+                                  'Yi water.'),
+ 'passage-zhongshan-r07-tai': ('又東南十里曰太山有草焉名曰梨其葉狀如荻而赤華可以已疽太水出于其陽而東南流注于没水承水出于其隂而東北流注于没',
+                               'Another ten li southeast is Mount Tai. There is an herb called Li, with di-like '
+                               'leaves and red flowers, said to relieve ju sores. The Tai rises on the sunny side '
+                               'and flows southeast into Mo water. The Cheng rises on the shaded side and flows '
+                               'northeast into Mo.'),
+ 'place-zhongshan-r07-tai': ('又東南十里曰太山有草焉名曰梨其葉狀如荻而赤華可以已疽太水出于其陽而東南流注于没水承水出于其隂而東北流注于没',
+                             'Another ten li southeast is Mount Tai. There is an herb called Li, with di-like '
+                             'leaves and red flowers, said to relieve ju sores. The Tai rises on the sunny side '
+                             'and flows southeast into Mo water. The Cheng rises on the shaded side and flows '
+                             'northeast into Mo.'),
+ 'passage-zhongshan-r07-min': ('又東三十五里曰敏山上有木焉其狀如荆白華而赤實名曰葪栢服者不寒其陽多㻬琈之玉',
+                               'Another thirty-five li east is Mount Min. Above is a tree resembling jing, with '
+                               'white flowers and red fruit, called Jibai. Taking it is said to prevent cold. '
+                               'There is much tufu jade on the sunny side.'),
+ 'place-zhongshan-r07-min': ('又東三十五里曰敏山上有木焉其狀如荆白華而赤實名曰葪栢服者不寒其陽多㻬琈之玉',
+                             'Another thirty-five li east is Mount Min. Above is a tree resembling jing, with '
+                             'white flowers and red fruit, called Jibai. Taking it is said to prevent cold. There '
+                             'is much tufu jade on the sunny side.'),
+ 'passage-zhongshan-r07-dagui': ('又東三十里曰大騩之山其隂多鐵羙玉青堊有草焉其狀如蓍而毛青華而白實其名曰𦵧服之不夭可以為腹病',
+                                 'Another thirty li east is Mount Dagui. Its shaded side has much iron, fine jade '
+                                 'and qing e. There is an herb resembling shi and covered in hair, with qing '
+                                 'flowers and white fruit, called Lang. Taking it is said to prevent an early '
+                                 'death and treat abdominal illness.'),
+ 'place-zhongshan-r07-dagui': ('又東三十里曰大騩之山其隂多鐵羙玉青堊有草焉其狀如蓍而毛青華而白實其名曰𦵧服之不夭可以為腹病',
+                               'Another thirty li east is Mount Dagui. Its shaded side has much iron, fine jade '
+                               'and qing e. There is an herb resembling shi and covered in hair, with qing '
+                               'flowers and white fruit, called Lang. Taking it is said to prevent an early death '
+                               'and treat abdominal illness.')}
 
 def apply_quote_review(world, english):
     entries = {entry["id"]: entry for group in world.values() if isinstance(group, list)
