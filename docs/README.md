@@ -72,3 +72,5 @@
 参考公开设计：[BoardUI](https://www.boardui.com/)（状态/间距）、[HeroUI](https://heroui.com/en/docs/react/getting-started)（键盘/弹层）、[Bencho](https://bencho.dev/)（克制的目录/状态反馈）、[Watermelon](https://ui.watermelon.sh/animated-components)（折叠组织）、[beUI Pro](https://pro.beui.dev/components)（仅公开信息层次参考）、[Libraries.dev](https://libraries.dev/)（真实加载状态过渡思路，本轮不安装效果包）。不复制付费或授权未明确的源码。
 
 新增界面文案同步中英字典及规范化LF摘要；不修改古籍译文。新增JS/CSS gzip预算25KiB；按既有双语六尺寸、两浏览器设计与业务检查验收，发布同一已验证构建。
+
+界面提交 `db7798b` 的 WebKit 检查先后在章节历史点击和引导重放超时，两次部署均跳过，超时根因尚未确认。随后为两套脚本补充页面与字体就绪同步及失败诊断，沿用原断言和超时。Chromium 与 WebKit 本地复验通过。后续提交 `f03519a` 的完整 CI 17 项全部通过，Pages 部署 `7581841679` 使用同一提交，线上抽查五个文件与 CI 构建包逐字节一致。[首轮及重试记录](https://github.com/hyc1005/mythmap/actions/runs/42072802957) · [发布验证](https://github.com/hyc1005/mythmap/actions/runs/42080800033)
