@@ -23,7 +23,16 @@
       "output_bytes": 3276939,
       "tool": "Codex built-in image generation",
       "model": "not recorded in the recovered item",
-      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list",
+      "embedded_c2pa_software_agent": {
+        "name": "ChatGPT",
+        "version": "gpt-image",
+        "png_chunk": "caBX",
+        "byte_offset": 2871,
+        "cbor_bytes_hex": "736f6674776172654167656e74a2646e616d6567436861744750546776657273696f6e696770742d696d616765",
+        "signature_verified": false,
+        "interpretation": "Literal embedded softwareAgent declaration, not independent proof of a specific numbered API model or backend revision."
+      }
     },
     "pangu": {
       "thread_id": "01a0f1c3-4988-77f0-80b7-93af99c3fe60",
@@ -39,7 +48,16 @@
       "output_bytes": 2636968,
       "tool": "Codex built-in image generation",
       "model": "not recorded in the recovered item",
-      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list",
+      "embedded_c2pa_software_agent": {
+        "name": "ChatGPT",
+        "version": "gpt-image",
+        "png_chunk": "caBX",
+        "byte_offset": 2871,
+        "cbor_bytes_hex": "736f6674776172654167656e74a2646e616d6567436861744750546776657273696f6e696770742d696d616765",
+        "signature_verified": false,
+        "interpretation": "Literal embedded softwareAgent declaration, not independent proof of a specific numbered API model or backend revision."
+      }
     },
     "kunlun": {
       "thread_id": "01a0f1c3-4988-77f0-80b7-93af99c3fe60",
@@ -55,7 +73,16 @@
       "output_bytes": 2607042,
       "tool": "Codex built-in image generation",
       "model": "not recorded in the recovered item",
-      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list",
+      "embedded_c2pa_software_agent": {
+        "name": "ChatGPT",
+        "version": "gpt-image",
+        "png_chunk": "caBX",
+        "byte_offset": 2871,
+        "cbor_bytes_hex": "736f6674776172654167656e74a2646e616d6567436861744750546776657273696f6e696770742d696d616765",
+        "signature_verified": false,
+        "interpretation": "Literal embedded softwareAgent declaration, not independent proof of a specific numbered API model or backend revision."
+      }
     },
     "nuwa": {
       "thread_id": "01a0f1c3-4988-77f0-80b7-93af99c3fe60",
@@ -71,7 +98,16 @@
       "output_bytes": 2943275,
       "tool": "Codex built-in image generation",
       "model": "not recorded in the recovered item",
-      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list",
+      "embedded_c2pa_software_agent": {
+        "name": "ChatGPT",
+        "version": "gpt-image",
+        "png_chunk": "caBX",
+        "byte_offset": 2871,
+        "cbor_bytes_hex": "736f6674776172654167656e74a2646e616d6567436861744750546776657273696f6e696770742d696d616765",
+        "signature_verified": false,
+        "interpretation": "Literal embedded softwareAgent declaration, not independent proof of a specific numbered API model or backend revision."
+      }
     },
     "xi-wang-mu": {
       "thread_id": "01a0f1c3-4988-77f0-80b7-93af99c3fe60",
@@ -87,7 +123,16 @@
       "output_bytes": 2813422,
       "tool": "Codex built-in image generation",
       "model": "not recorded in the recovered item",
-      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list",
+      "embedded_c2pa_software_agent": {
+        "name": "ChatGPT",
+        "version": "gpt-image",
+        "png_chunk": "caBX",
+        "byte_offset": 2871,
+        "cbor_bytes_hex": "736f6674776172654167656e74a2646e616d6567436861744750546776657273696f6e696770742d696d616765",
+        "signature_verified": false,
+        "interpretation": "Literal embedded softwareAgent declaration, not independent proof of a specific numbered API model or backend revision."
+      }
     },
     "brand": {
       "thread_id": "01a1299f-2848-7521-a942-a5ff815da0ca",
@@ -103,7 +148,16 @@
       "output_bytes": 603255,
       "tool": "Codex built-in image generation",
       "model": "not recorded in the recovered item",
-      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list",
+      "embedded_c2pa_software_agent": {
+        "name": "ChatGPT",
+        "version": "gpt-image",
+        "png_chunk": "caBX",
+        "byte_offset": 2871,
+        "cbor_bytes_hex": "736f6674776172654167656e74a2646e616d6567436861744750546776657273696f6e696770742d696d616765",
+        "signature_verified": false,
+        "interpretation": "Literal embedded softwareAgent declaration, not independent proof of a specific numbered API model or backend revision."
+      }
     },
     "suiren": {
       "thread_id": "01a0f719-9e32-7b01-863c-0f13acf5fba8",
@@ -119,7 +173,16 @@
       "output_bytes": 2972549,
       "tool": "Codex built-in image generation",
       "model": "not recorded in the recovered item",
-      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list",
+      "embedded_c2pa_software_agent": {
+        "name": "ChatGPT",
+        "version": "gpt-image",
+        "png_chunk": "caBX",
+        "byte_offset": 2871,
+        "cbor_bytes_hex": "736f6674776172654167656e74a2646e616d6567436861744750546776657273696f6e696770742d696d616765",
+        "signature_verified": false,
+        "interpretation": "Literal embedded softwareAgent declaration, not independent proof of a specific numbered API model or backend revision."
+      }
     },
     "fuxi": {
       "thread_id": "01a0f719-9e32-7b01-863c-0f13acf5fba8",
@@ -135,7 +198,16 @@
       "output_bytes": 1934702,
       "tool": "Codex built-in image generation",
       "model": "not recorded in the recovered item",
-      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list"
+      "input_attachments": "not retained in this projection; prompt mentions do not establish an attachment list",
+      "embedded_c2pa_software_agent": {
+        "name": "ChatGPT",
+        "version": "gpt-image",
+        "png_chunk": "caBX",
+        "byte_offset": 2871,
+        "cbor_bytes_hex": "736f6674776172654167656e74a2646e616d6567436861744750546776657273696f6e696770742d696d616765",
+        "signature_verified": false,
+        "interpretation": "Literal embedded softwareAgent declaration, not independent proof of a specific numbered API model or backend revision."
+      }
     },
     "lossless-webp-conversion": {
       "thread_id": "01a1299f-2848-7521-a942-a5ff815da0ca",
