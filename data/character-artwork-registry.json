@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "active_pilot_original_scene_baseline",
-  "scope": "西王母试点及批准历史保留；七角色历史初审保留；全站本轮角色审核见published_character_audit。登记不加入浏览器下载，不合并实体ID。",
+  "scope": "覆盖当前故事人物及世界数据中的神灵、异兽与角色神域图；详见 published_character_audit 与 world_character_artwork。西王母试点和七角色初审保留为历史。",
   "character_id": "character-xiwangmu",
   "identity_note": "项目用于视觉连续性管理的角色组；篇目与记载保留独立，不声称各古籍形象或神话年代完全相同。",
   "forms": [
@@ -1380,10 +1380,15 @@
             "published_asset": "/data/atlas/myth-icons/animations/jingwei-flight.webp",
             "presence": "depicted_animation_actor",
             "frame_review": "已查看配置动作帧或完整动作图；太阳、波浪、箭及云层另记道具，不登记为角色本人"
+          },
+          {
+            "entry_id": "beast-jingwei",
+            "published_asset": "/data/atlas/optimized/myth-icons/jingwei.webp",
+            "presence": "depicted_in_entity_context"
           }
         ],
         "verdict": "一致",
-        "observation": "单图、故事与六帧动作保持鸟形、白喙、赤足；不同帧所衔木石和飞行角度是动作变化。",
+        "observation": "单图、故事与六帧动作保持鸟形、白喙、赤足；不同帧所衔木石和飞行角度是动作变化。 发鸠山条目正文将女娃与精卫连为变形关系；当前登记的是鸟形，未将女娃人形认作另有肖像。",
         "baseline_candidate": "/data/atlas/optimized/myth-icons/stories/ch03-jingwei.webp",
         "baseline_status": "existing_work_candidate_no_new_binding",
         "action": "保留；未确认需改图的身份冲突"
@@ -1587,9 +1592,14 @@
             "entry_id": "05-02",
             "published_asset": "/data/atlas/optimized/myth-icons/stories/ch05-yu-xiangliu.webp",
             "presence": "depicted_in_story_context"
+          },
+          {
+            "entry_id": "beast-xiangliu",
+            "published_asset": "/data/atlas/refined/xiangliu-human-faces-v1-full.webp",
+            "presence": "depicted_in_entity_context"
           }
         ],
-        "verdict": "证据不足",
+        "verdict": "一致",
         "observation": "禹杀相柳场景与已批准单图均保留多首人面蛇身；姿态和比例随场景变化，不回退旧蛇首版。",
         "baseline_candidate": "/data/atlas/optimized/myth-icons/stories/ch05-yu-xiangliu.webp",
         "baseline_status": "existing_work_candidate_no_new_binding",
@@ -1805,13 +1815,18 @@
         "usages": [
           {
             "entry_id": "domain-zhangwei",
-            "published_asset": "/data/atlas/myth-icons/zhulong.webp",
+            "published_asset": "/data/atlas/optimized/myth-icons/zhulong.webp",
+            "presence": "depicted_in_entity_context"
+          },
+          {
+            "entry_id": "beast-zhulong",
+            "published_asset": "/data/atlas/optimized/myth-icons/zhulong.webp",
             "presence": "depicted_in_entity_context"
           }
         ],
         "verdict": "证据不足",
         "observation": "文本08-06与章尾域图的关联保留；人首赤蛇形为当前单一视觉形态。",
-        "baseline_candidate": "/data/atlas/myth-icons/zhulong.webp",
+        "baseline_candidate": "/data/atlas/optimized/myth-icons/zhulong.webp",
         "baseline_status": "existing_work_candidate_no_new_binding",
         "action": "保留；未确认需改图的身份冲突"
       },
@@ -1824,6 +1839,11 @@
         "usages": [
           {
             "entry_id": "domain-yushan",
+            "published_asset": "/data/atlas/refined/xiwangmu-scene-baseline-v2-full.webp",
+            "presence": "depicted_in_entity_context"
+          },
+          {
+            "entry_id": "deity-xishan-xiwangmu-yushan",
             "published_asset": "/data/atlas/refined/xiwangmu-scene-baseline-v2-full.webp",
             "presence": "depicted_in_entity_context"
           }
@@ -7687,10 +7707,2794 @@
       "configured_occurrences": 549,
       "unique_reviewed_assets": 397,
       "character_verdicts": {
-        "一致": 12,
-        "证据不足": 18,
+        "一致": 13,
+        "证据不足": 17,
         "合理异形": 2
       }
+    },
+    "supporting_figures": [
+      {
+        "name": "巨鳌",
+        "entry_id": "01-03-b",
+        "published_asset": "/data/atlas/optimized/myth-icons/stories/nuwa-pillars.webp",
+        "presence": "depicted_in_story_context",
+        "evidence": "断鳌立极插画下方的龟形角色，按该故事登记。"
+      },
+      {
+        "name": "黑龙",
+        "entry_id": "01-03-c",
+        "published_asset": "/data/atlas/optimized/myth-icons/stories/nuwa-dragon.webp",
+        "presence": "depicted_in_story_context",
+        "evidence": "女娲杀黑龙插画右侧的龙形角色，按该故事登记。"
+      }
+    ]
+  },
+  "world_character_artwork": {
+    "reviewed_on": "2026-11-05",
+    "reviewed_commit": "abaa8e405250675264e7d22b0f8e4b79672c423f",
+    "world_revision": "myth-world-2026-11-02-xiangliu-source-v1",
+    "scope": "当前 world 的全部 beasts、kind=deity 的 text_entities 和采用角色图的两个神域入口。昆仑神域使用山景，不列为肖像。地景、普通动物索引、道具和未具名背景人物不分配角色身份。",
+    "evidence": "条目 ID 对应 frontend/public/data/myth-world.json 内的篇目、经文和注文；当前全图绑定按 refined/optimized 优先级登记。路径对应 published_character_audit.assets 的哈希及 docs/assets-inventory.tsv 的来源记录。复核既有神灵联系表及跨入口角色图；异兽条目索引沿用既有素材审计。",
+    "status_meaning": {
+      "configured_illustration": "当前详情配置的插画入口；可为群体代表图，不等于批准新肖像或逐图重新考证形貌。",
+      "placeholder": "当前详情使用统一占位；即使另有配置图，也不认作该条目的角色图。"
+    },
+    "entries": [
+      {
+        "entry_id": "beast-shengsheng",
+        "name": "狌狌",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-shengsheng.webp"
+      },
+      {
+        "entry_id": "beast-lushu",
+        "name": "鹿蜀",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-lushu.webp"
+      },
+      {
+        "entry_id": "beast-jiuweihu",
+        "name": "九尾狐",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-jiuweihu.webp"
+      },
+      {
+        "entry_id": "beast-chiru",
+        "name": "赤鱬",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-chiru.webp"
+      },
+      {
+        "entry_id": "beast-boyi",
+        "name": "猼訑",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-boyi.webp"
+      },
+      {
+        "entry_id": "beast-xuangui",
+        "name": "旋龟",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-xuangui.webp"
+      },
+      {
+        "entry_id": "beast-gudiao",
+        "name": "蛊雕",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-gudiao.webp"
+      },
+      {
+        "entry_id": "beast-qiongqi-hainei",
+        "name": "穷奇（海内北经）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-qiongqi-hainei.webp"
+      },
+      {
+        "entry_id": "beast-zhuyan",
+        "name": "朱厌",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-zhuyan.webp"
+      },
+      {
+        "entry_id": "beast-yingzhao",
+        "name": "英招",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/yingzhao.webp"
+      },
+      {
+        "entry_id": "beast-wenyaoyu",
+        "name": "文鳐鱼",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-wenyaoyu.webp"
+      },
+      {
+        "entry_id": "beast-qiangliang",
+        "name": "彊良（强良）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-qiangliang.webp"
+      },
+      {
+        "entry_id": "beast-zhulong",
+        "name": "烛龙",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/zhulong.webp"
+      },
+      {
+        "entry_id": "beast-xiangliu",
+        "name": "相柳",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/refined/xiangliu-human-faces-v1-full.webp"
+      },
+      {
+        "entry_id": "beast-kaiming",
+        "name": "开明兽",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-kaiming.webp"
+      },
+      {
+        "entry_id": "beast-phoenix",
+        "name": "凤皇",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-phoenix.webp"
+      },
+      {
+        "entry_id": "beast-guanguan",
+        "name": "灌灌",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/guanguan-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-lu",
+        "name": "鯥",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-lu-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-lei",
+        "name": "𩔗",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-lei-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-changfu",
+        "name": "𪁺𩿧",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-changfu-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-lili",
+        "name": "狸力",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-lili-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-zhu",
+        "name": "鴸",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-zhu-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-changyou",
+        "name": "长右",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-changyou-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-huahuai",
+        "name": "猾褢",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-huahuai-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-zhi",
+        "name": "彘",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-zhi-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-huan-xun",
+        "name": "䍺",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-huan-xun-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-quru",
+        "name": "瞿如",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-quru-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-hujiao",
+        "name": "虎蛟",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-hujiao-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-zhuan",
+        "name": "鱄鱼",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-zhuan-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-yulingqiu",
+        "name": "𪃍",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/creature-yulingqiu-v1.webp"
+      },
+      {
+        "entry_id": "beast-nanshan-yuanchu",
+        "name": "鵷鶵",
+        "group": "bestiary",
+        "status": "placeholder",
+        "suppressed_asset": "/data/atlas/myth-icons/nanshan/scene-nanyu-v1.webp",
+        "note": "条目配置有场景图，当前详情按形貌未详显示占位，不登记场景为角色肖像。"
+      },
+      {
+        "entry_id": "beast-xishan-qianyang",
+        "name": "羬羊",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-qianyang-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-tongqu",
+        "name": "䳋渠",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-tongqu-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-feiyi-taihua",
+        "name": "肥𧔥（太华山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-feiyi-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-chibie",
+        "name": "赤鷩",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-chibie-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-conglong",
+        "name": "葱聾",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-conglong-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-min",
+        "name": "鴖",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-min-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-bangyu-ying",
+        "name": "䰷鱼",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-bangyu-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-qianyang-ying",
+        "name": "羬羊（英山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-qianyang-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-feiyi-ying",
+        "name": "肥遗（英山鸟）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-feiyi-ying-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-renyu-zhushan",
+        "name": "人鱼（竹山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-renyu-zhushan-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-haozhi-zhushan",
+        "name": "毫彘",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-haozhi-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-xiao-yuci",
+        "name": "囂（羭次兽）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-xiao-yuci-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-tuofei-yuci",
+        "name": "槖𩇯",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-tuofei-yuci-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-mengbao-nanshan",
+        "name": "猛豹（西山经南山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-mengbao-nan-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-shijiu-nanshan",
+        "name": "尸鳩（西山经南山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-shijiu-nan-v1.webp"
+      },
+      {
+        "entry_id": "animal-xishan-xi-bozhong",
+        "name": "犀（嶓冡段）",
+        "group": "bestiary",
+        "status": "placeholder",
+        "suppressed_asset": "/data/atlas/myth-icons/xishan/scene-bozhong-v1.webp",
+        "note": "条目配置有场景图，当前详情按形貌未详显示占位，不登记场景为角色肖像。"
+      },
+      {
+        "entry_id": "animal-xishan-si-bozhong",
+        "name": "兕（嶓冡段）",
+        "group": "bestiary",
+        "status": "placeholder",
+        "suppressed_asset": "/data/atlas/myth-icons/xishan/scene-bozhong-v1.webp",
+        "note": "条目配置有场景图，当前详情按形貌未详显示占位，不登记场景为角色肖像。"
+      },
+      {
+        "entry_id": "animal-xishan-bear-bozhong",
+        "name": "熊（嶓冡段）",
+        "group": "bestiary",
+        "status": "placeholder",
+        "suppressed_asset": "/data/atlas/myth-icons/xishan/scene-bozhong-v1.webp",
+        "note": "条目配置有场景图，当前详情按形貌未详显示占位，不登记场景为角色肖像。"
+      },
+      {
+        "entry_id": "animal-xishan-pi-bozhong",
+        "name": "羆（嶓冡段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/animal-pi-bozhong-v1.webp"
+      },
+      {
+        "entry_id": "bird-xishan-baihan-bozhong",
+        "name": "白翰（嶓冡段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-baihan-bozhong-v1.webp"
+      },
+      {
+        "entry_id": "bird-xishan-chibie-bozhong",
+        "name": "赤鷩（嶓冡段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-chibie-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-xibian-tiandi",
+        "name": "谿邊（天帝山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-xibian-tiandi-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-li-tiandi",
+        "name": "櫟（天帝山鸟）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-li-tiandi-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-yingru-gaotu",
+        "name": "𤣎如（皐塗段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-yingru-gaotu-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-shusi-gaotu",
+        "name": "數斯（皐塗段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-shusi-gaotu-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-min-huangshan",
+        "name": "𤛎（黄山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/creature-min-huangshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-yingmu-huangshan",
+        "name": "鸚䳇（黄山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-yingmu-huangshan-v1.webp"
+      },
+      {
+        "entry_id": "animal-xishan-maoniu-cuishan",
+        "name": "旄牛（翠山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/animal-maoniu-cuishan-v1.webp"
+      },
+      {
+        "entry_id": "animal-xishan-ling-cuishan",
+        "name": "麢（翠山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/animal-ling-cuishan-v1.webp"
+      },
+      {
+        "entry_id": "animal-xishan-she-cuishan",
+        "name": "麝（翠山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/animal-she-cuishan-v1.webp"
+      },
+      {
+        "entry_id": "bird-xishan-lei-cuishan",
+        "name": "鸓（翠山段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-lei-cuishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-white-snake-taimao",
+        "name": "白蛇（㤗冐段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-yingmu-shuli",
+        "name": "鸚䳇（數歴段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-tiger-nvchuang",
+        "name": "虎（女牀段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-leopard-nvchuang",
+        "name": "豹（女牀段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-xi-nvchuang",
+        "name": "犀（女牀段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-si-nvchuang",
+        "name": "兕（女牀段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-luan-nvchuang",
+        "name": "鸞鳥（女牀段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-luan-nvchuang-v1.webp"
+      },
+      {
+        "entry_id": "animal-xishan-zuoniu-lutai",
+        "name": "㸲牛（鹿臺段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-qianyang-lutai",
+        "name": "羬羊（鹿臺段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-baihao-lutai",
+        "name": "白豪（鹿臺段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-fuxi-lutai",
+        "name": "鳬徯（鹿臺段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-fuxi-lutai-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-zhuyan-xiaoci",
+        "name": "朱厭（小次段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-zhuyan.webp"
+      },
+      {
+        "entry_id": "animal-xishan-zuoniu-daci",
+        "name": "㸲牛（大次段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-lingyang-daci",
+        "name": "麢羊（大次段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-xi-quyang",
+        "name": "犀（𢇨陽段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-si-quyang",
+        "name": "兕（𢇨陽段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-tiger-quyang",
+        "name": "虎（𢇨陽段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-zhuo-quyang",
+        "name": "犳（𢇨陽段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-zuoniu-quyang",
+        "name": "㸲牛（𢇨陽段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-xi-zhongshou",
+        "name": "犀（衆獸段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-si-zhongshou",
+        "name": "兕（衆獸段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-mi-xihuang",
+        "name": "麋（西皇段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-deer-xihuang",
+        "name": "鹿（西皇段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "animal-xishan-zuoniu-xihuang",
+        "name": "㸲牛（西皇段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "bird-xishan-luoluo-laishan",
+        "name": "羅羅（萊山段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-jufu-chongwu",
+        "name": "舉父（崇吾段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-jufu-chongwu-v1.webp"
+      },
+      {
+        "entry_id": "bird-xishan-manman-chongwu",
+        "name": "蠻蠻（崇吾段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-manman-chongwu-v1.webp"
+      },
+      {
+        "entry_id": "bird-xishan-birds-mi-zhong",
+        "name": "竒鳥（峚鍾泽间）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-beasts-mi-zhong",
+        "name": "怪獸（峚鍾泽间）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-fish-mi-zhong",
+        "name": "竒魚（峚鍾泽间）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "bird-xishan-qinpi-e-zhongshan",
+        "name": "大鶚（欽䲹所化）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-qinpi-e-zhongshan-v1.webp"
+      },
+      {
+        "entry_id": "bird-xishan-gu-jun-zhongshan",
+        "name": "鵕鳥（皷所化）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-gu-jun-zhongshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-wenyao-taiqi",
+        "name": "文鰩魚（㤗噐段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-wenyaoyu.webp"
+      },
+      {
+        "entry_id": "beast-xishan-luomu-huaijiang",
+        "name": "蠃母（槐江水中）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "bird-xishan-ying-huaijiang",
+        "name": "鷹（槐江北望）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "bird-xishan-zhan-huaijiang",
+        "name": "鸇（槐江北望）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-luwu",
+        "name": "陸吾",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/luwu.webp"
+      },
+      {
+        "entry_id": "beast-tulou",
+        "name": "土螻",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-tulou.webp"
+      },
+      {
+        "entry_id": "beast-qinyuan",
+        "name": "欽原",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-qinyuan.webp"
+      },
+      {
+        "entry_id": "bird-xishan-chun-kunlun",
+        "name": "鶉鳥",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-strange-kunlun",
+        "name": "怪鳥獸（崑崙段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-huayu-leyou",
+        "name": "滑魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-huayu-leyou-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-jiao-yushan",
+        "name": "狡",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-jiao-yushan-v1.webp"
+      },
+      {
+        "entry_id": "bird-xishan-shengyu-yushan",
+        "name": "胜遇",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-shengyu-yushan-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-beasts-changliu",
+        "name": "文尾兽（長留段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "bird-xishan-birds-changliu",
+        "name": "文首鸟（長留段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-zheng",
+        "name": "狰",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-zheng.webp"
+      },
+      {
+        "entry_id": "beast-bifang",
+        "name": "畢方",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-bifang.webp"
+      },
+      {
+        "entry_id": "beast-tian-gou",
+        "name": "天狗",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-tian-gou.webp"
+      },
+      {
+        "entry_id": "bird-xishan-bluebirds-sanwei",
+        "name": "三青鳥（三危段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-aoyu-sanwei",
+        "name": "𢕟𢓨",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-aoyu-sanwei-v1.webp"
+      },
+      {
+        "entry_id": "bird-xishan-chi-sanwei",
+        "name": "鴟（三危段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-chi-sanwei-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-jishes-guishan3",
+        "name": "積蛇",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-dijiang",
+        "name": "帝江",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-dijiang.webp"
+      },
+      {
+        "entry_id": "beast-guan",
+        "name": "讙",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-guan.webp"
+      },
+      {
+        "entry_id": "bird-xishan-qiyu-yiwang",
+        "name": "鵸䳜",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-qiyu-yiwang-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-deer-shangshen",
+        "name": "白鹿（上申段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "bird-xishan-danghu-shangshen",
+        "name": "當扈",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-danghu-shangshen-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-snakes-zhuci",
+        "name": "衆蛇（諸次段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-wolf-yushan4",
+        "name": "白狼（盂山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-tiger-yushan4",
+        "name": "白虎（盂山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "bird-xishan-pheasant-yushan4",
+        "name": "白雉（盂山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "bird-xishan-zhai-yushan4",
+        "name": "白翟（盂山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-zuoniu-baiyu",
+        "name": "㸲牛（白於段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-qianyang-baiyu",
+        "name": "羬羊（白於段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "bird-xishan-xiao-baiyu",
+        "name": "鴞（白於段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-xiao-baiyu-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-manman-gangwei",
+        "name": "蠻蠻（鼠身鳖首）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-manman-gangwei-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-white-yingdi",
+        "name": "白鸟兽（英鞮段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-ranyi-yingdi",
+        "name": "冉遺之魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-ranyi-yingdi-v1.webp"
+      },
+      {
+        "entry_id": "beast-bo",
+        "name": "駮",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-bo-zhongqu-v1.webp"
+      },
+      {
+        "entry_id": "beast-qiongqi-xishan",
+        "name": "窮竒（西山经）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-qiongqi-xishan.webp"
+      },
+      {
+        "entry_id": "beast-luoyu",
+        "name": "蠃魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-luoyu.webp"
+      },
+      {
+        "entry_id": "beast-xishan-tiger-niaoshu",
+        "name": "白虎（鳥鼠段）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-saoyu-niaoshu",
+        "name": "鰠魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-saoyu-niaoshu-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-rupi-niaoshu",
+        "name": "𩶯魮之魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-rupi-niaoshu-v1.webp"
+      },
+      {
+        "entry_id": "beast-xishan-turtle-yanzi",
+        "name": "龜（崦嵫阳）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-xishan-shuhu-yanzi",
+        "name": "孰湖",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/beast-shuhu-yanzi-v1.webp"
+      },
+      {
+        "entry_id": "bird-xishan-unnamed-yanzi",
+        "name": "未名鸟（崦嵫末段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/bird-unnamed-yanzi-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-huayu-qiuru",
+        "name": "滑魚（求如）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-huayu-qiuru-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-shuima-qiuru",
+        "name": "水馬（求如）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-shuima-qiuru-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-huanshu-daishan",
+        "name": "䑏䟽（帶山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-huanshu-daishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-qitu-daishan",
+        "name": "鵸䳜（帶山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-qitu-daishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-youyu-daishan",
+        "name": "儵魚（帶山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-youyu-daishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-heluo-qiaoming",
+        "name": "何羅之魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-heluo-qiaoming-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-menghuai-qiaoming",
+        "name": "孟槐",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-menghuai-qiaoming-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-xixi-zhuoguang",
+        "name": "鰼鰼之魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-xixi-zhuoguang-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-lingyang-zhuoguang",
+        "name": "麢羊（涿光）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-fan-zhuoguang",
+        "name": "蕃（涿光）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-tuotuo-guoshan",
+        "name": "橐駝（虢山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-yu-guoshan",
+        "name": "寓（虢山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-yu-guoshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-ershu-danxun",
+        "name": "耳䑕",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-ershu-danxun-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-mengji-shizhe",
+        "name": "孟極",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-mengji-shizhe-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-youan-bianchun",
+        "name": "幽鴳",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-youan-bianchun-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-zuzi-manlian",
+        "name": "足訾",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-zuzi-manlian-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-jiao-manlian",
+        "name": "鵁",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-jiao-manlian-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhu-jian",
+        "name": "諸犍",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-zhu-jian.webp"
+      },
+      {
+        "entry_id": "beast-beishan-baiye-danzhang",
+        "name": "白鵺",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-baiye-danzhang-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-nafu-guanti",
+        "name": "那父",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-nafu-guanti-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-songsi-guanti",
+        "name": "竦斯",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-songsi-guanti-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-maoniu-panhou",
+        "name": "旄牛（潘侯）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-maoniu-panhou-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-changshe-daxian",
+        "name": "長蛇（大咸）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/snake-changshe-daxian-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-chigui-dunhong",
+        "name": "赤鮭（敦薨）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-si-dunhong",
+        "name": "兕（敦薨）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-maoniu-dunhong",
+        "name": "旄牛（敦薨）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-shijiu-dunhong",
+        "name": "鳲鳩（敦薨）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-yayu-shaoxian",
+        "name": "窫窳（少咸）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-yayu-shaoxian-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-peipei-shaoxian",
+        "name": "䰽䰽之魚",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-zao-yufa",
+        "name": "䲃魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/fish-zao-yufa-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-shanhui-yufa",
+        "name": "山𤟤",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-shanhui-yufa-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-zhuhuai-beiyue",
+        "name": "諸懐",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-zhuhuai-beiyue-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-yi-beiyue",
+        "name": "鮨魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/fish-yi-beiyue-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-feiyi-hunxi",
+        "name": "肥遺（渾夕蛇）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/snake-feiyi-hunxi-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-yema-bicha",
+        "name": "野马（羆差郭注）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/horse-yema-bicha-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-ma-beixian",
+        "name": "马（北鮮）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-ma-dishan",
+        "name": "马（隄山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-yao-dishan",
+        "name": "狕",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-yao-dishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-longgui-dishan",
+        "name": "龍龜（隄山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-lv-xianyong",
+        "name": "閭（縣雍）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-lv-xianyong-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-mi-xianyong",
+        "name": "麋（縣雍）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-white-di-xianyong",
+        "name": "白翟（縣雍）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-white-you-xianyong",
+        "name": "白䳑（縣雍）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-ci-xianyong",
+        "name": "鮆魚（縣雍）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/fish-ci-xianyong-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-boma-duntou",
+        "name": "𩣡馬（敦頭）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-boma-duntou-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-paoxiao-gouwu",
+        "name": "狍鴞",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-paoxiao-gouwu-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-dugu-beixiao",
+        "name": "獨𤞞",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-dugu-beixiao-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-banmao-beixiao",
+        "name": "𪄀𪃑",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-banmao-beixiao-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-juji-liangqu",
+        "name": "居暨",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-juji-liangqu-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-xiao-liangqu",
+        "name": "囂（梁渠鸟）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-ma-huguan",
+        "name": "马（湖灌）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-shan-huguan",
+        "name": "䱇（湖灌）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-strange-snakes-huan",
+        "name": "怪蛇（洹山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-hui-guishan",
+        "name": "䮝（歸山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-hui-guishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-fen-guishan",
+        "name": "䴅（歸山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-fen-guishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-renyu-longhou",
+        "name": "人魚（龍侯）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/fish-renyu-longhou-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-tianma-macheng",
+        "name": "天馬（馬成）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-tianma-macheng-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-quju-macheng",
+        "name": "鶌鶋",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-quju-macheng-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-feishu-tianchi",
+        "name": "飛䑕（天池）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-feishu-tianchi-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-linghu-yangshan",
+        "name": "領胡",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-linghu-yangshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-xiangshe-yangshan",
+        "name": "𧰼蛇（陽山鸟）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-xiangshe-yangshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-xianfu-yangshan",
+        "name": "𩹴父之魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-xianfu-yangshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-suanyu-jingshan",
+        "name": "酸與（景山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-suanyu-jingshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-feiyi-pengpi",
+        "name": "肥遺之蛇（彭毗）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-guxi-xiaohou",
+        "name": "鴣𪄶（小侯）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-guxi-xiaohou-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-huangniao-xuanyuan",
+        "name": "黄鳥（軒轅）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/bird-huangniao-xuanyuan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-white-snakes-shenqun",
+        "name": "白蛇（神囷）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-flying-insects-shenqun",
+        "name": "飛蟲（神囷）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-jingwei",
+        "name": "精衛",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/jingwei.webp"
+      },
+      {
+        "entry_id": "beast-beishan-huomin-xiushan",
+        "name": "鱯黽（繡山物名异说）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-dongdong-taixi",
+        "name": "䍶䍶（泰戱）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-dongdong-taixi-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-tuotuo-raoshan",
+        "name": "槖駝（饒山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-liuli-raoshan",
+        "name": "鶹歷（饒山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-shiyu-raoshan",
+        "name": "師魚（饒山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-yuan-ganshan",
+        "name": "獂（乾山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-yuan-ganshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-pi-lunshan",
+        "name": "羆（倫山麋状兽）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/creature-pi-lunshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-beishan-puyi-jieshi",
+        "name": "蒲夷之魚（碣石）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-beishan-redhead-snake-mufeng",
+        "name": "赤首白身大蛇（末段）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/snake-redhead-mufeng-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-yongyong-suzhu",
+        "name": "鱅鱅之魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/fish-yongyong-suzhu-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-huoshi-leishan",
+        "name": "活師（藟山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-huoshi-leishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-congcong-xunzhuang",
+        "name": "從從",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-congcong-xunzhuang-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-zishu-xunzhuang",
+        "name": "䖪䑕",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/bird-zishu-xunzhuang-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-zhen-xunzhuang",
+        "name": "箴魚（栒状）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/fish-zhen-xunzhuang-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-gan-fantiao",
+        "name": "鱤魚（番條）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-dongshan-kanyu-chai",
+        "name": "堪㐨之魚",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-dongshan-kuafu-like-chai",
+        "name": "夸父状彘毛兽（犲山未名）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-dongshan-tiaoyong-dushan",
+        "name": "䖺䗤",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/snake-tiaoyong-dushan-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-tongtong-taishan",
+        "name": "狪狪",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-tongtong-taishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-zilei-zhu",
+        "name": "茈羸（竹山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-dongshan-lingling-kongsang-east",
+        "name": "軨軨（东次二）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-lingling-kongsang-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-shen-yigao",
+        "name": "蜃（嶧皐）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/clam-shen-yigao-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-yao-yigao",
+        "name": "珧（嶧皐）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/clam-yao-yigao-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-zhubie-geshan-head",
+        "name": "珠蟞魚（葛山之首）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/fish-zhubie-geshan-head-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-qiuyu-yue",
+        "name": "犰狳（餘峩）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-qiuyu-yue-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-large-snake",
+        "name": "大蛇（东山文本索引）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-dongshan-zhunou-gengshan",
+        "name": "朱獳",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-zhunou-gengshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-lihu-luqi",
+        "name": "𪁐鶘（盧其）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/bird-lihu-luqi-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-bibi-gufeng",
+        "name": "獙獙（姑逢）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-bibi-gufeng-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-longzhi-fuli",
+        "name": "蠪姪",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-longzhi-fuli-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-youyou-zhenshan",
+        "name": "峳峳",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-youyou-zhenshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-jiegou-zhenshan",
+        "name": "絜鈎",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/bird-jiegou-zhenshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-yuanhu-shihu",
+        "name": "妴胡",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-yuanhu-shihu-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-qin-zhugou",
+        "name": "𥧌魚（諸鈎）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-dongshan-zhan-mengzi",
+        "name": "鱣（孟子）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-dongshan-wei-mengzi",
+        "name": "鮪（孟子）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/fish-wei-mengzi-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-xigui-qizhong",
+        "name": "蠵龜（深澤）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/turtle-xigui-qizhong-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-gege-qizhong",
+        "name": "鮯鮯之魚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/fish-gege-qizhong-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-jingjing-muyu",
+        "name": "精精（踇隅）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-jingjing-muyu-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-xieju-beihao",
+        "name": "猲狙",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-xieju-beihao-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-qique-beihao",
+        "name": "鬿雀",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/bird-qique-beihao-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-qiu-maoshan",
+        "name": "鱃魚（东山文本索引）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/fish-qiu-maoshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-zi-dongshi",
+        "name": "茈魚（東始）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/fish-zi-dongshi-v1.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-bo-nvzheng",
+        "name": "薄魚（女烝）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/fish-bo-nvzheng-v1.webp"
+      },
+      {
+        "entry_id": "beast-dangkang",
+        "name": "当康",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/beasts/beast-dangkang.webp"
+      },
+      {
+        "entry_id": "beast-dongshan-hua-zitong",
+        "name": "䱻魚（子桐）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/fish-hua-zitong-v1.webp"
+      },
+      {
+        "entry_id": "beast-heyu",
+        "name": "合窳",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-heyu-yanshan-v1.webp"
+      },
+      {
+        "entry_id": "beast-fei",
+        "name": "蜚",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/creature-fei-taishan-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-nuo-gancao",
+        "name": "㔮（甘棗）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-zhongshan-hao-quzhu",
+        "name": "豪魚（渠豬）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/fish-hao-quzhu-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-feiyu-niushou",
+        "name": "飛魚（牛首）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/fish-feiyu-niushou-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-feifei-huo",
+        "name": "朏朏（霍山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-feifei-huo-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-he-huizhu",
+        "name": "鶡（煇諸）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-he-huizhu-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-mingshe-xian",
+        "name": "鳴蛇（鮮水）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/snake-ming-xian-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-huashe-yang",
+        "name": "化蛇（陽水）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-huashe-yang-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-longchi-kunwu",
+        "name": "蠪蚳（昆吾）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-longchi-kunwu-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-mafu-manqu",
+        "name": "馬腹（蔓渠）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-mafu-manqu-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-fuzhu-aoan",
+        "name": "夫諸（敖岸）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-fuzhu-aoan-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-jia-qingyao",
+        "name": "駕鳥（青要）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-zhongshan-yao-qingyao",
+        "name": "鴢（畛水）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-yao-qingyao-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-feiyu-gui",
+        "name": "飛魚（騩山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-feiyu-gui-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-yin-fuzhu",
+        "name": "䴦（扶豬）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-yin-fuzhu-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-xiqu-li",
+        "name": "犀渠（釐山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-xiqu-li-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-jie-li",
+        "name": "𤢺（釐山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-jie-li-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-red-bi-mu",
+        "name": "赤鷩（牡山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-bi-mu-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-jue-shou",
+        "name": "𩿁鳥（首山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-jue-shou-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-jing-shi",
+        "name": "麖（尸山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-jing-shi-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-linggui-yangxu",
+        "name": "靈龜（陽虛郭注）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/turtle-linggui-yangxu-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-lingyao-hui",
+        "name": "鴒䳩（廆山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-lingyao-hui-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-xuangui-mi",
+        "name": "旋龜（密山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/turtle-xuangui-mi-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-xiubi-tuo",
+        "name": "脩辟之魚（橐水）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/frog-xiubi-tuo-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-shangao-ku",
+        "name": "山膏（苦山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/pig-shangao-ku-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-wenwen-fanggao",
+        "name": "文文（放皐）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/insect-wenwen-fanggao-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-threeleg-da241",
+        "name": "三足龜（狂水正文）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/turtle-threeleg-da241-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-sixeye-comment-da241",
+        "name": "三足六眼龜龞（郭注外地引例）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/turtle-sixeye-comment-da241-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-lun-banshi",
+        "name": "鯩魚（來需）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/fish-lun-banshi-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-teng-banshi",
+        "name": "鰧魚（合水）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/fish-teng-banshi-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-ti-shaoshi",
+        "name": "䱱魚（少室）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-zhongshan-wenfish-jing8",
+        "name": "文魚（景山雎水）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-zhongshan-li-cattle-jingshan8",
+        "name": "犛牛（荆山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/cattle-li-jingshan8-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-jiao-zhang8",
+        "name": "鮫魚（漳水）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-zhongshan-whitejiao-nvji",
+        "name": "白鷮（女几）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-whitejiao-nvji-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-zhen-nvji",
+        "name": "鴆（女几）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-zhen-nvji-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-chuo-lun8",
+        "name": "㚟（綸山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/beast-chuo-lun-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-tuo-min9",
+        "name": "鼉（岷山江水）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/reptile-tuo-min-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-kui-cattle-min9",
+        "name": "夔牛（岷山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/cattle-kui-min-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-mo-lai9",
+        "name": "㹮（崍山郭注）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/beast-mo-lai-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-hooked-snake-ju9",
+        "name": "鈎蛇（永昌郭注比拟）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/snake-hooked-ju-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-qiezhi-ju9",
+        "name": "竊脂（崌山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-qiezhi-ju-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-balang-she9",
+        "name": "𤜣狼（蛇山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/fox-balang-she-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-wei-ge9",
+        "name": "蜼（鬲山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/monkey-wei-ge-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-qizhong-fuzhou10",
+        "name": "跂踵（復州）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-qizhong-fuzhou-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-jiao-yiwang11",
+        "name": "蛟（貺水）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-jiao-kuang-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-yonghe-feng-first11",
+        "name": "雍和（豐山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-yonghe-feng-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-zhen-yaobi11",
+        "name": "鴆（瑶碧雉状鸟）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-zhen-yaobi-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-yingshao-zhili11",
+        "name": "嬰勺（支離）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-yingshao-zhili-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-qinggeng-jinli11",
+        "name": "青耕（堇理）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-qinggeng-jinli-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-lin-yiku11",
+        "name": "獜（依軲）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-lin-yiku-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-threeleg-cong11",
+        "name": "三足鼈（從水）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/turtle-threeleg-cong-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-li-lema11",
+        "name": "𤟑（樂馬）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-zhongshan-jie-zhen11",
+        "name": "頡（葴山视水）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-jie-zhen-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-juru-yidi11",
+        "name": "狙如（倚帝）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-zhongshan-yiji-xian11",
+        "name": "𤝻即（鮮山）",
+        "group": "bestiary",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "beast-zhongshan-liangqu-lishi11",
+        "name": "梁渠（歴石）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-liangqu-lishi-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-juyu-chouyang11",
+        "name": "𩢢餘（丑陽）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/bird-juyu-chouyang-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-wenlin-ji-mountain11",
+        "name": "聞𧲂（几山）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/creature-wenlin-ji-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-gui-jigong12",
+        "name": "蛫（即公）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/turtle-gui-jigong-v1.webp"
+      },
+      {
+        "entry_id": "beast-zhongshan-flying-snake-chaisang12",
+        "name": "飛蛇（柴桑）",
+        "group": "bestiary",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/snake-flying-chaisang-v1.webp"
+      },
+      {
+        "entry_id": "deity-nanshan-1",
+        "name": "䧿山诸神",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/deity-1-v1.webp"
+      },
+      {
+        "entry_id": "deity-nanshan-2",
+        "name": "南次二经诸神",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/deity-2-v1.webp"
+      },
+      {
+        "entry_id": "deity-nanshan-3",
+        "name": "南次三经诸神",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/nanshan/deity-3-v1.webp"
+      },
+      {
+        "entry_id": "deity-xishan-horse-range2",
+        "name": "十神·人靣馬身（西次二经）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/deity-horse-range2-v1.webp"
+      },
+      {
+        "entry_id": "deity-xishan-ox-range2",
+        "name": "七神·人靣牛身（西次二经）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/deity-ox-range2-v1.webp"
+      },
+      {
+        "entry_id": "deity-xishan-huangdi-mishan",
+        "name": "黃帝（峚山段）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-heaven-earth-mishan",
+        "name": "天地鬼神（峚山段）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-gu-zhongshan",
+        "name": "皷（鍾山龙身）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/deity-gu-zhongshan-v1.webp"
+      },
+      {
+        "entry_id": "deity-xishan-qinpi-zhongshan",
+        "name": "欽䲹（鍾山原身）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-baojiang-zhongshan",
+        "name": "葆江（鍾山段）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-di-zhongshan",
+        "name": "帝（鍾山段·未具名）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-yingzhao-huaijiang",
+        "name": "英招（槐江段）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/yingzhao.webp"
+      },
+      {
+        "entry_id": "deity-xishan-houji-huaijiang",
+        "name": "后稷（槐江西望）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-lilun-huaijiang",
+        "name": "槐鬼離侖（槐江北望）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-youqiong-huaijiang",
+        "name": "有窮鬼（槐江东望）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-ox-eight-huaijiang",
+        "name": "未名天神（槐江末段）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/deity-ox-eight-huaijiang-v1.webp"
+      },
+      {
+        "entry_id": "deity-xishan-changcheng-luomushan",
+        "name": "長乗",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/deity-changcheng-luomushan-v1.webp"
+      },
+      {
+        "entry_id": "deity-xishan-xiwangmu-yushan",
+        "name": "西王母（玉山段）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/refined/xiwangmu-scene-baseline-v2-full.webp"
+      },
+      {
+        "entry_id": "deity-xishan-shaohao-changliu",
+        "name": "白帝少昊",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-weishi-changliu",
+        "name": "員神磈氏",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-jiangyi-futang",
+        "name": "江疑",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-qitong-guishan3",
+        "name": "𦒿童",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-rushou-youshan",
+        "name": "蓐𭣣",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/deity-rushou-youshan-v1.webp",
+        "note": "正文只记居处，虎爪、白尾和钺采用郭注所引外传。"
+      },
+      {
+        "entry_id": "deity-xishan-hongguang-youshan",
+        "name": "紅光",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-xishan-sheep-range3-summary",
+        "name": "羊身人面神（西次三经）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/deity-sheep-range3-v1.webp"
+      },
+      {
+        "entry_id": "deity-xishan-chi-gangshan",
+        "name": "神𩳁",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/xishan/deity-chi-gangshan-v1.webp"
+      },
+      {
+        "entry_id": "deity-beishan-human-serpent-range1-summary",
+        "name": "首列山神（人面蛇身）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/deity-human-serpent-range1-v1.webp"
+      },
+      {
+        "entry_id": "deity-beishan-human-serpent-range2-summary",
+        "name": "次二山神（蛇身人面）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/deity-human-serpent-range2-v1.webp"
+      },
+      {
+        "entry_id": "deity-beishan-horse-human-range3",
+        "name": "次三二十神（馬身人面）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/deity-horse-human-range3-v1.webp"
+      },
+      {
+        "entry_id": "deity-beishan-pig-jade-range3",
+        "name": "次三十四神（彘身載玉）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/deity-pig-jade-range3-v1.webp"
+      },
+      {
+        "entry_id": "deity-beishan-pig-eight-snake-range3",
+        "name": "次三十神（彘身八足蛇尾）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/beishan/deity-pig-eight-snake-range3-v1.webp"
+      },
+      {
+        "entry_id": "deity-dongshan-human-dragon-range1",
+        "name": "人身龍首神（东山首列）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/deity-dragonhead-human-range1-v1.webp"
+      },
+      {
+        "entry_id": "deity-dongshan-humanface-antlers-range2",
+        "name": "兽身人面载觡神（东次二）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/deity-humanface-antlers-range2-v1.webp"
+      },
+      {
+        "entry_id": "deity-dongshan-human-ramhorn-range3",
+        "name": "人身羊角神（东次三）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/dongshan/deity-human-ramhorn-range3-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-humanbird-range2",
+        "name": "人面鳥身神（中次二）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range2-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-xunchi-aoan",
+        "name": "熏池（敖岸）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-yufu-qingyao",
+        "name": "禹父（墠渚变化述）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-wuluo-qingyao",
+        "name": "武羅（青要）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-wuluo-qingyao-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-taifeng-he",
+        "name": "泰逢（和山）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-taifeng-heshan-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-humanbeast-range4",
+        "name": "人面獸身神（中次四）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-humanbeast-range4-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-shou-god-range5",
+        "name": "首山神（中次五礼）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-tian-shi-range5",
+        "name": "天神（尸水郭注）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-jiaochong-pingfeng",
+        "name": "驕蟲（平逢）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-jiaochong-pingfeng-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-ditai",
+        "name": "帝臺（中次七文本索引）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-allgods-range7",
+        "name": "百神（帝臺祭祀泛称）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-nvshi-guyao",
+        "name": "女尸（姑媱）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-tianyu-du",
+        "name": "天愚（堵山）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-qimu-taishi",
+        "name": "啓母（泰室郭注）",
+        "group": "deities",
+        "status": "placeholder",
+        "note": "来源为郭注所引《淮南子》，保留注文入口和占位。"
+      },
+      {
+        "entry_id": "deity-zhongshan-humanpig-range7",
+        "name": "豕身人面神（中次七）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-humanpig-range7-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-threeheads-range7",
+        "name": "三首人面神（三冢总括）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-threeheads-range7-v1.webp",
+        "note": "三首图为头部示意，正文未定躯干。"
+      },
+      {
+        "entry_id": "deity-zhongshan-tuowei-jiao",
+        "name": "𧕛圍（驕山）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-tuowei-jiao-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-jimeng-guang8",
+        "name": "計蒙（光山）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-jimeng-guang-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-shetuo-qi8",
+        "name": "涉𧕦（岐山）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-shetuo-qi-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-humanbird-summary8",
+        "name": "次八山神（鸟身人面）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-humanbird-range8-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-divine-beings-xiong09",
+        "name": "神人（熊穴）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-horsedragon-summary09",
+        "name": "次九山神（马身龙首）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-horsedragon-summary9-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-human-dragon-summary10",
+        "name": "次十山神（龙身人面）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-humandragon-summary10-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-gengfu-feng-first11",
+        "name": "耕父（豐山）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-ditai-gaoqian11",
+        "name": "帝臺（髙前水名关联）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-humanhead-pig-summary11",
+        "name": "次十一山神（彘身人首）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-humanhead-pig-summary11-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-yuer-fufu12",
+        "name": "于兒（夫夫）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-yuer-fufu-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-two-daughters-dongting12",
+        "name": "帝之二女（洞庭正文）",
+        "group": "deities",
+        "status": "placeholder",
+        "note": "正文帝之二女保留独立；尧女说、舜妃说及郭璞辨说为独立对照。"
+      },
+      {
+        "entry_id": "deity-zhongshan-yao-daughters-comparison-dongting12",
+        "name": "尧女说（河图引文）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-shun-consorts-comparison-dongting12",
+        "name": "舜妃说（博士引文）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-guo-two-gods-comparison-dongting12",
+        "name": "湘君湘夫人（郭璞辨说）",
+        "group": "deities",
+        "status": "placeholder"
+      },
+      {
+        "entry_id": "deity-zhongshan-snakecarrier-dongting12",
+        "name": "载蛇怪神（洞庭）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-snakecarrier-dongting-v1.webp"
+      },
+      {
+        "entry_id": "deity-zhongshan-dragonhead-bird-summary12",
+        "name": "次十二山神（鸟身龙首）",
+        "group": "deities",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/myth-icons/zhongshan/deity-dragonhead-bird-summary12-v1.webp"
+      },
+      {
+        "entry_id": "domain-yushan",
+        "name": "玉山 · 西王母所居",
+        "group": "domain_portraits",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/refined/xiwangmu-scene-baseline-v2-full.webp"
+      },
+      {
+        "entry_id": "domain-zhangwei",
+        "name": "章尾山 · 烛龙所居",
+        "group": "domain_portraits",
+        "status": "configured_illustration",
+        "published_asset": "/data/atlas/optimized/myth-icons/zhulong.webp"
+      }
+    ],
+    "relationships": [
+      {
+        "entry_ids": [
+          "beast-yingzhao",
+          "deity-xishan-yingzhao-huaijiang"
+        ],
+        "type": "shared_portrait",
+        "evidence": "两条均指《西山经》槐江段英招，当前全图相同，保留两个入口。"
+      },
+      {
+        "entry_ids": [
+          "deity-xishan-gu-zhongshan",
+          "bird-xishan-gu-jun-zhongshan"
+        ],
+        "type": "textual_transformation",
+        "evidence": "《西山经》正文「皷亦化為鵕鳥」，原身与化鸟分列。"
+      },
+      {
+        "entry_ids": [
+          "deity-xishan-qinpi-zhongshan",
+          "bird-xishan-qinpi-e-zhongshan"
+        ],
+        "type": "textual_transformation",
+        "evidence": "《西山经》正文记欽䲹化为大鶚；原身为占位，化鸟有独立插画。"
+      },
+      {
+        "entry_ids": [
+          "deity-xishan-huangdi-mishan"
+        ],
+        "person_id": "person-ea2e022d685f",
+        "type": "text_reference_without_portrait",
+        "evidence": "峚山段正文具名黄帝，形貌未详。"
+      },
+      {
+        "entry_ids": [
+          "deity-zhongshan-qimu-taishi"
+        ],
+        "person_id": "person-72ccefbb6b75",
+        "type": "commentary_story_parallel",
+        "evidence": "泰室郭注与 05-04 同叙化石生启，分存原注和故事入口。"
+      }
+    ],
+    "summary": {
+      "configured_illustration": 267,
+      "placeholder": 119
     }
+  },
+  "visual_continuity_review": {
+    "reviewed_on": "2026-11-05",
+    "scope": "对照已登记的重复出场人物、跨入口角色、主要同名异兽候选和明确的叙事变形。以脸型、发饰、服装及头身结构判断明显差异，区分动作、比例、图标简化及原典异形。",
+    "shared_placeholder": {
+      "logical_artwork": "/data/atlas/myth-icons/unknown-creature.webp",
+      "entries": 119,
+      "runtime": "条目复用同一占位逻辑键，同尺寸共用同一 URL；full、card、preview、map 是同图的响应尺寸。此次未合并物理文件。",
+      "preference": "新增占位条目继续复用现有素材，避免为条目单独存图。"
+    },
+    "confirmed_same_role_conflicts": [],
+    "observations": [
+      {
+        "name": "西王母",
+        "entry_ids": [
+          "07-01",
+          "07-02",
+          "domain-yushan",
+          "deity-xishan-xiwangmu-yushan"
+        ],
+        "status": "approved_source_specific_form",
+        "difference": "玉山单图显露豹尾；会见和宴饮按《穆天子传》画为冠服人物。当前单图已按批准方向向会见场景的脸型、发饰和衣服靠拢。"
+      },
+      {
+        "name": "涂山女／启母",
+        "entry_ids": [
+          "05-03",
+          "05-04"
+        ],
+        "status": "story_transformation",
+        "difference": "婚姻图为完整人形，化石图身体与岩石连成一体；黑髻、红带与衣领仍可辨认。"
+      },
+      {
+        "name": "皷",
+        "entry_ids": [
+          "deity-xishan-gu-zhongshan",
+          "bird-xishan-gu-jun-zhongshan"
+        ],
+        "status": "textual_transformation",
+        "difference": "人面龙身变为鵕鸟，正文明确记载。欽䲹另有大鶚化形图，原身入口是占位，无原身肖像可对照。"
+      },
+      {
+        "name": "穷奇",
+        "entry_ids": [
+          "beast-qiongqi-hainei",
+          "beast-qiongqi-xishan"
+        ],
+        "status": "source_specific_homonym",
+        "difference": "《海内北经》是有翼虎形，《西山经》是牛形、蝟毛，两图保留各自结构。"
+      },
+      {
+        "name": "肥遗／肥𧔥",
+        "entry_ids": [
+          "beast-xishan-feiyi-ying",
+          "beast-xishan-feiyi-taihua",
+          "beast-beishan-feiyi-hunxi"
+        ],
+        "status": "source_specific_homonym",
+        "difference": "英山为黄身赤喙鹑形鸟；太华山为六足四翼蛇；北山浑夕为一首两身蛇。"
+      },
+      {
+        "name": "蛮蛮",
+        "entry_ids": [
+          "bird-xishan-manman-chongwu",
+          "beast-xishan-manman-gangwei"
+        ],
+        "status": "source_specific_homonym",
+        "difference": "崇吾山画成两只相合的单翼鸟，剛尾山画成鼠身鳖首。"
+      },
+      {
+        "name": "滑鱼",
+        "entry_ids": [
+          "beast-xishan-huayu-leyou",
+          "beast-beishan-huayu-qiuru"
+        ],
+        "status": "source_specific_homonym",
+        "difference": "乐游山为四足蛇形，求如山为赤背鳝形。"
+      },
+      {
+        "name": "鵸䳜",
+        "entry_ids": [
+          "bird-xishan-qiyu-yiwang",
+          "beast-beishan-qitu-daishan"
+        ],
+        "status": "source_specific_homonym",
+        "difference": "翼望山图为三首、多尾；带山图为单首、五彩赤文。带山正文未交代首数，不从另一段移植。"
+      },
+      {
+        "name": "飞鱼",
+        "entry_ids": [
+          "beast-zhongshan-feiyu-niushou",
+          "beast-zhongshan-feiyu-gui"
+        ],
+        "status": "source_specific_homonym",
+        "difference": "牛首山为鲋鱼形，騩山为豚状赤文。"
+      },
+      {
+        "name": "人鱼",
+        "entry_ids": [
+          "beast-xishan-renyu-zhushan",
+          "beast-beishan-renyu-longhou"
+        ],
+        "status": "art_direction_difference",
+        "difference": "竹山图偏青绿圆头，龙侯山图偏深蓝带长须，两图都采用四足水生结构。竹山四足来自郭注，龙侯山四足见正文；未确认是同一角色。"
+      },
+      {
+        "name": "燧人",
+        "entry_ids": [
+          "02-04"
+        ],
+        "status": "minor_art_direction_difference",
+        "difference": "静态图与动作帧的发带、斑纹和项饰有变化，束髻、胡须及兽皮轮廓相近。"
+      }
+    ]
   }
 }

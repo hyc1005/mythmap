@@ -36,7 +36,7 @@ python data/audit_shanhaijing.py --check
 ## 可选原型
 
 - `seed.json`、`validate_seed.py`供FastAPI/PostGIS原型使用；数据规模与来源见[数据库说明](../database/README.md#prototype-seed-and-source-notes)。
-- `build_myth_atlas.py`只输出`output/legacy-atlas/`，拒绝覆盖已审网页数据；`render_myth_atlas.py`和`generate_myth_stage_boundaries.py`保留用于旧版静态图复现，不是当前网站构建步骤。
+- `build_myth_atlas.py`只输出`output/legacy-atlas/`，拒绝覆盖已审网页数据；`render_myth_atlas.py`用于复现旧版静态图。
 
 五山经共480段阅读已接入；海经十三篇仍有缺口，当前实现不等于十八篇逐字校勘完成。每次内容更新后运行上述清单检查和对应浏览器验收。
 

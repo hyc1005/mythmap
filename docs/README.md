@@ -4,6 +4,7 @@
 
 | 文档 | 用途与维护方式 |
 | --- | --- |
+| [更新记录](../CHANGELOG.md) | 按发布批次记录站点和仓库的主要变化 |
 | [内容盘点](content-coverage.md) | 十八篇覆盖、出处与待核状态；由`data/audit_shanhaijing.py`生成 |
 | [API与数据约定](API_CONTRACT.md) | 当前world数据、本地Java服务及独立FastAPI/PostGIS原型的边界 |
 | [数据维护](../data/README.md) | 各山经构建入口、批次内容模块和来源清单 |
