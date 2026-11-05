@@ -1,3 +1,4 @@
+import { captureBrowserFailure } from './browser-diagnostics.mjs';
 import assert from 'node:assert/strict';
 import { readFile, mkdir } from 'node:fs/promises';
 import { chromium, firefox, webkit } from 'playwright';
@@ -423,5 +424,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.deepEqual(errors, []);
     await context.close();
     console.log(`PASS ${name}: shared modes/fullscreen, nationwide local Natural Earth coverage (real vector data), independent cameras, bilingual layouts, initial-view reset, nearby clusters with unchanged exports, collapsible evidence/keyboard/state, compact tools, linked place selection/focus, coincident accounts, measurement and local-data failure/malformed-data recovery/slow loading`);
+  } catch (error) {
+    await captureBrowserFailure(browser, `geography-${name}`, error);
+    throw error;
   } finally { await browser.close(); }
 }

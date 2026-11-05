@@ -1,3 +1,4 @@
+import BlurRevealText from './BlurRevealText';
 import { useId, useLayoutEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useLocale } from '../i18n';
@@ -126,8 +127,8 @@ export default function OnboardingGuide({ blocked, contextKey, onFinish, returnF
     {hole && <div className="onboarding-ring" aria-hidden="true" style={{ left: hole.left, top: hole.top, width: hole.right - hole.left, height: hole.bottom - hole.top }} />}
     <section ref={card} className="onboarding-card" role="dialog" aria-modal={step < 0 ? true : undefined} aria-label={t('操作引导')} aria-describedby="onboarding-description" style={geometry ? { left: geometry.left, top: geometry.top, maxHeight: geometry.maxHeight } : undefined}>
       <header><span>{t('操作引导')}{step >= 0 && ` · ${step + 1} / ${steps.length}`}</span><button type="button" className="onboarding-skip" onClick={() => onFinish()}>{t('跳过引导')}</button></header>
-      <h2 aria-live="polite">{t(step < 0 ? '从一段故事，走进山海' : steps[step].title)}</h2>
-      <p id="onboarding-description">{t(step < 0 ? '四个小步骤，认识原文、章节、搜索与地图。随时跳过，也能从“操作引导”重新打开。' : steps[step].body)}</p>
+      <h2 aria-live="polite"><BlurRevealText revealKey="components/OnboardingGuide.jsx:1" variant="inline" text={<>{t(step < 0 ? '从一段故事，走进山海' : steps[step].title)}</>} /></h2>
+      <p id="onboarding-description"><BlurRevealText variant="intro" revealKey={`onboarding:${step}:${locale}`} text={t(step < 0 ? '四个小步骤，认识原文、章节、搜索与地图。随时跳过，也能从“操作引导”重新打开。' : steps[step].body)} /></p>
       {step >= 0 && step < 3 && <p className="onboarding-note">{t('打开的内容关闭后，引导会接着进行。')}</p>}
       <footer>{step < 0 ? <div className="onboarding-language" role="group" aria-label={t('语言')}><button type="button" lang="zh-CN" aria-pressed={locale === 'zh'} onClick={() => setLocale('zh')}>中文</button><button type="button" lang="en" aria-pressed={locale === 'en'} onClick={() => setLocale('en')}>EN</button></div> : <button type="button" onClick={() => setStep(value => value - 1)}>{t('上一步')}</button>}<button type="button" className="onboarding-next" onClick={advance}>{t(step < 0 ? '开始引导' : step === steps.length - 1 ? '开始探索' : '下一步')}</button></footer>
     </section>

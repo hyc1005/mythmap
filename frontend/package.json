@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "verify:assets": "python scripts/verify-assets.py",
     "verify:reader": "node scripts/verify-reader.mjs",
     "verify:nanshan": "node scripts/verify-nanshan.mjs",
     "verify:xishan": "node scripts/verify-xishan.mjs",

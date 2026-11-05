@@ -57,7 +57,7 @@ export default function Bestiary({ world, onOpen, reading }) {
     const review = morphologyReview(entry.id, locale);
     return <button type="button" className="beast-card" data-beast-id={entry.id} data-form-group={entry.formGroup} key={entry.id} onClick={event => onOpen(entry.id, event.currentTarget, ids)}>
     <BeastArtwork key={entry.id} src={iconFor(entry, 'card')} seen={seenIllustrations.current} reduced={reduced} />
-    <b>{entry.displayName}</b><small className="beast-provenance">{entry.provenance}</small>
+    <b><BlurRevealText revealKey="components/Bestiary.jsx:1" variant="inline" text={<>{entry.displayName}</>} /></b><small className="beast-provenance">{entry.provenance}</small>
     <span className="beast-tags"><span>{FORM_LABELS[entry.formGroup][locale]}</span>{entry.featureTags.map(tag => <span key={tag}>{FEATURE_LABELS[tag][locale]}</span>)}{entry.classification.basis !== 'text' && <span>{t(entry.classification.basis === 'comparison' ? '比较记述' : '郭注记述')}</span>}{review ? <span data-morphology-status={review.status}>{review.label}</span> : entry.classification.review_status === 'unresolved' && <span>{t('形貌待核')}</span>}</span>
     <ReadingMarks reading={reading} id={entry.id} /><span className="beast-card-more">{t('查看形貌与出处 ↗')}</span>
   </button>; };

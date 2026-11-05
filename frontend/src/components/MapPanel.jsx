@@ -1,3 +1,4 @@
+import BlurRevealText, { RevealDetails } from './BlurRevealText';
 import { useLocale, localize } from '../i18n';
 import { Component, lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
@@ -20,7 +21,7 @@ import { worldEntries } from '../entries';
 import { assetUrl, assetDimensions } from '../asset-url';
 
 import { iconFor } from '../artwork';
-import { ChapterNotice, InkText, useReducedMotion } from '../motion';
+import { ChapterNotice, useReducedMotion } from '../motion';
 import ArtworkImage from './ArtworkImage';
 import ContentOrigin from './ContentOrigin';
 import MapToolbar from './MapToolbar';
@@ -553,11 +554,11 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
 
 
   const mapControls = <MapToolbar isFullscreen={isFullscreen} chapterStoryOptions={chapterStoryOptions} activeJourneyId={activeJourneyId} onStoryChange={id => { setHoverId(null); setPinnedId(null); onManualStoryChange(); setJourneyId(id); setCameraMode(id ? 'story' : 'overview'); setCameraRequest(value => value + 1); }} activeLayers={activeLayers} fitStage={() => { if (activeJourneyId) { setCameraMode('story'); setCameraRequest(value => value + 1); } else fitStage(); }} exportStage={exportStage} exportStatus={exportStatus} />;
-  const entries = <details className="map-entry-list" key={chapterId}><summary>{t('本章条目')}</summary><ChapterEntries stories={storyItems} records={visibleRecords} passageEntries={world.passages.filter(item => Number(item.reveal_chapter) <= Number(chapterId))} naturalEntries={worldEntries(world).filter(item => (world.natural_features.some(entry => entry.id === item.id) || world.text_entities.some(entry => entry.id === item.id) || item.kind === 'beast' && !item.place_id) && Number(item.reveal_chapter) <= Number(chapterId))} onOpen={onSelect} reading={reading} collectionItems={collectionItems} /></details>;
+  const entries = <RevealDetails className="map-entry-list" key={chapterId}><summary><BlurRevealText variant="inline" revealKey={`fullscreen-entries:${chapterId}`} text={t('本章条目')} /></summary><ChapterEntries stories={storyItems} records={visibleRecords} passageEntries={world.passages.filter(item => Number(item.reveal_chapter) <= Number(chapterId))} naturalEntries={worldEntries(world).filter(item => (world.natural_features.some(entry => entry.id === item.id) || world.text_entities.some(entry => entry.id === item.id) || item.kind === 'beast' && !item.place_id) && Number(item.reveal_chapter) <= Number(chapterId))} onOpen={onSelect} reading={reading} collectionItems={collectionItems} /></RevealDetails>;
   const closePreview = () => { keepHover(); hoverCardActive.current = false; setHoverId(null); setPinnedId(null); };
   const preview = hoverRecord && <div className="ink-hover-card" role="region" aria-label={t('地图地点预览')} onPointerEnter={() => { hoverCardActive.current = true; keepHover(); }} onPointerLeave={() => { hoverCardActive.current = false; leaveHover(); }} onFocusCapture={keepHover} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) leaveHover(); }}>
     <button type="button" className="preview-close" aria-label={t('收起地点预览')} onClick={() => { closePreview(); mapFrame.current?.focus({ preventScroll: true }); }}>×</button>
-    <span>{hoverRecord.region}</span><b>{hoverRecord.name}</b>
+    <span>{hoverRecord.region}</span><b><BlurRevealText active={!geographyMode} variant="inline" revealKey={`preview:${hoverRecord.id}:${locale}`} text={hoverRecord.name} /></b>
     <ContentOrigin record={hoverRecord} />
     <div className="preview-body">
       {hoverRecord.kind === 'story' && !activeJourneyId && !isFullscreen && iconFor(hoverRecord) && <ArtworkImage key={hoverRecord.id} className="preview-art" src={iconFor(hoverRecord, 'preview')} alt="" interactive={false} />}
@@ -578,7 +579,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   return <><section ref={mapFrame} tabIndex={-1} data-map-mode={geographyMode ? 'geography' : 'woodcut'} data-camera-mode={cameraMode} className={`myth-map-wrap ${isPrologue ? "is-prologue" : ""} ${geographyMode ? "is-geography" : ""} ${isFullscreen ? "is-map-fullscreen" : ""} ${fallbackFullscreen ? "is-fallback-fullscreen" : ""} ${shortMap ? "is-short-map" : ""} ${activeJourneyId ? "has-journey" : ""} ${activeJourneyId && activeJourneyId !== "03-05" ? "has-local-story" : ""}`} aria-label={geographyMode ? t("真实地理参考地图") : isPrologue ? t("盘古开天序章场景") : t("山海经方位关系地图")}>
     {isFullscreen && <header className="fullscreen-toolbar" aria-label={t("全屏地图工具栏")}><div className="fullscreen-chapter-nav" aria-label={t("全屏章节切换")}>
       <button type="button" onClick={() => { onFullscreenStageChange(stageIndex - 1); mapFrame.current?.focus({ preventScroll: true }); }} disabled={stageIndex === 0}>{t("← 上一章")}</button>
-      <span><small>{stages[stageIndex].id} / {String(stages.length - 1).padStart(2, '0')}</small><b><InkText key={chapterId} text={stages[stageIndex].title} animate={Boolean(chapterTransition)} /></b></span>
+      <span><small>{stages[stageIndex].id} / {String(stages.length - 1).padStart(2, '0')}</small><b><BlurRevealText revealKey={`fullscreen:${chapterId}`} variant="inline" text={stages[stageIndex].title} /></b></span>
       <button type="button" onClick={() => { onFullscreenStageChange(stageIndex + 1); mapFrame.current?.focus({ preventScroll: true }); }} disabled={stageIndex >= stages.length - 1}>{t("下一章 →")}</button>
     </div>{modeControls}{!geographyMode && !isPrologue && mapControls}{isFullscreen && !isPrologue && entries}{fullscreenButton}</header>}
     {!isFullscreen && <header className="explore-toolbar">{modeControls}{fullscreenButton}{!geographyMode && !isPrologue && mapControls}</header>}
@@ -596,8 +597,8 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
       {!isFullscreen && preview}
     <AnimationBoundary key={chapterId + '-' + activeJourneyId} fallback={<AnimationFailure onStatus={handlePlayback} onSkip={() => setJourneyId(null)} />}>
     <Suspense fallback={<AnimationLoading onStatus={handlePlayback} />}>
-      {activeJourneyId === '03-05' && mapInstance && <KuafuJourney key={storyRequest.serial} storyView={cameraMode === 'story'} closeup={cameraMode === 'story' && compactTools} cameraRequest={cameraRequest} map={mapInstance} selectedId={selectedId} onSelect={onSelect} onSkip={() => setJourneyId(null)} onStatusChange={handlePlayback} externalPaused={externalPaused} tourPlaying={tourPlaying} onUserPlaybackChange={onUserPlaybackChange} controlContainer={controlContainer} />}
-      {activeJourneyId && activeJourneyId !== '03-05' && mapInstance && <StoryAnimation key={activeJourneyId + '-' + storyRequest.serial} storyView={cameraMode === 'story'} closeup={cameraMode === 'story' && compactTools} cameraRequest={cameraRequest} id={activeJourneyId} map={mapInstance} selectedId={selectedId} onSelect={onSelect} onStatusChange={handlePlayback} externalPaused={externalPaused} tourPlaying={tourPlaying} onUserPlaybackChange={onUserPlaybackChange} onSceneBoundsChange={handleSceneBounds} controlContainer={controlContainer} onSkip={() => setJourneyId(null)} />}
+      {activeJourneyId === '03-05' && mapInstance && <KuafuJourney revealActive={!geographyMode} key={storyRequest.serial} storyView={cameraMode === 'story'} closeup={cameraMode === 'story' && compactTools} cameraRequest={cameraRequest} map={mapInstance} selectedId={selectedId} onSelect={onSelect} onSkip={() => setJourneyId(null)} onStatusChange={handlePlayback} externalPaused={externalPaused} tourPlaying={tourPlaying} onUserPlaybackChange={onUserPlaybackChange} controlContainer={controlContainer} />}
+      {activeJourneyId && activeJourneyId !== '03-05' && mapInstance && <StoryAnimation revealActive={!geographyMode} key={activeJourneyId + '-' + storyRequest.serial} storyView={cameraMode === 'story'} closeup={cameraMode === 'story' && compactTools} cameraRequest={cameraRequest} id={activeJourneyId} map={mapInstance} selectedId={selectedId} onSelect={onSelect} onStatusChange={handlePlayback} externalPaused={externalPaused} tourPlaying={tourPlaying} onUserPlaybackChange={onUserPlaybackChange} onSceneBoundsChange={handleSceneBounds} controlContainer={controlContainer} onSkip={() => setJourneyId(null)} />}
     </Suspense>
     </AnimationBoundary>
       {!isFullscreen && (activeLayers.beasts || activeLayers.divine) && layerStatus}

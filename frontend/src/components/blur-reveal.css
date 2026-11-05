@@ -7,3 +7,5 @@
 @media (prefers-reduced-motion: reduce), print {
   .blur-reveal-text { filter: none !important; transition: none !important; }
 }
+
+.blur-reveal-inline { display: inline-block; max-width: 100%; vertical-align: bottom; }

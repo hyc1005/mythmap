@@ -13,6 +13,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await page.goto(`${base}?lang=${lang}`);
       await page.locator('.onboarding-skip').click();
       await page.waitForTimeout(500);
+      await page.evaluate(() => document.fonts.ready);
       const title = page.locator('#reading-notes-title > span');
       const y = await title.evaluate(node => node.getBoundingClientRect().top + scrollY);
       const move = async top => {
@@ -23,6 +24,10 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await page.mouse.move(width / 2, 420);
       for (let cycle = 0; cycle < 3; cycle++) {
         await move(y - 900);
+        await page.waitForTimeout(1550);
+        // Let preceding card titles release the shared three-block budget before this heading enters.
+        await page.mouse.wheel(0, 20);
+        await page.waitForTimeout(1550);
         let entered = false;
         for (let step = 0; step < 12; step++) {
           await page.mouse.wheel(0, 20); await page.waitForTimeout(45);
@@ -33,7 +38,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
             assert.equal(current.opacity, 1);
           }
         }
-        assert.ok(entered, 'Real wheel entry observed');
+        assert.ok(entered, `Real wheel entry observed: ${name} ${width} ${lang} cycle ${cycle}; ${JSON.stringify(await title.evaluate(node => ({state: node.dataset.revealState, y:node.getBoundingClientRect().top, active:[...document.querySelectorAll('[data-reveal-state=revealing]')].map(n=>n.textContent)})))}`);
         await move(y - 440);
         await page.waitForTimeout(1550);
         assert.equal((await state()).state, 'clear');

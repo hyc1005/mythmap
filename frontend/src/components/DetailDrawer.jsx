@@ -4,7 +4,7 @@ import { useLocale, localize } from '../i18n';
 import rawCatalog from '../../public/data/atlas/catalog.json';
 import { iconFor } from '../artwork';
 import ArtworkImage from './ArtworkImage';
-import BlurRevealText from './BlurRevealText';
+import BlurRevealText, { RevealDetails } from './BlurRevealText';
 import { storySummary } from '../story-summaries';
 import ContentOrigin from './ContentOrigin';
 import { entryTypes } from '../entries';
@@ -159,28 +159,28 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
       <h2 ref={heading} tabIndex={-1} data-reading-anchor="title"><BlurRevealText text={selected.name} revealKey={`detail:${selected.id}:title:${locale}`} rootRef={drawer} /></h2>
       <ContentOrigin record={selected} />
       {namesakeEntries.length > 1 && <nav className="detail-related detail-namesakes" aria-label={t('同名记载')}>
-        <h3>{t('同名记载')} · {namesakeEntries.length}</h3><p>{t('同名仅作索引，各条出处独立。')}</p>
+        <h3><BlurRevealText revealKey="components/DetailDrawer.jsx:1" variant="inline" text={t('同名记载')} /> · {namesakeEntries.length}</h3><p>{t('同名仅作索引，各条出处独立。')}</p>
         <select aria-label={t('同名记载')} value={selected.id} onChange={event => { pendingFocus.current = 'namesakes'; onRelated(event.target.value, readingPosition(), 'namesakes'); }}>{namesakeEntries.map(item => <option key={item.id} value={item.id}>{item.displayName} · {item.provenance}</option>)}</select>
       </nav>}
       {selected.kind === 'story' && storySummary(selected.id, locale) && <section className="story-summary" data-reading-anchor="summary" aria-label={t('故事梗概')}><h3><BlurRevealText text={t('故事梗概')} revealKey={`detail:${selected.id}:summary:${locale}`} variant="section" rootRef={drawer} /></h3><p>{storySummary(selected.id, locale)}</p><small>{t('项目整理 · 依据下列引文转述，非古籍原文。')}</small></section>}
       {selected.kind !== 'story' && selected.description && <><h3 data-reading-anchor="description"><BlurRevealText text={t(descriptionTitle)} revealKey={`detail:${selected.id}:description:${locale}`} variant="section" rootRef={drawer} /></h3><p className="detail-description">{selected.description}</p></>}
-      {morphology && <details className="morphology-review" key={`morphology:${selected.id}`} data-morphology-status={morphology.status}>
-        <summary>{t('形貌依据')} · {morphology.label}</summary><p>{morphology.note}</p><blockquote lang="zh-CN">{morphology.evidence}</blockquote>
+      {morphology && <RevealDetails className="morphology-review" key={`morphology:${selected.id}`} data-morphology-status={morphology.status}>
+        <summary><BlurRevealText variant="inline" revealKey="components/DetailDrawer.jsx:summary" text={t('形貌依据')} /> · {morphology.label}</summary><p>{morphology.note}</p><blockquote lang="zh-CN">{morphology.evidence}</blockquote>
         <div className="morphology-sources">{morphology.source_urls.map((url, index) => <a key={url} href={url} target="_blank" rel="noopener noreferrer">{t('查看影印来源 ↗')} {index + 1}</a>)}</div>
-      </details>}
+      </RevealDetails>}
       {contextPlace && parentEntry?.id !== contextPlace.id && <button type="button" className="detail-context-place" data-related-id={contextPlace.id} onClick={() => onRelated(contextPlace.id, readingPosition())}>{t('查看关联地点')} · {contextPlace.name}</button>}
-      {(selected.quote || selected.kind === 'story') && <><h3 data-reading-anchor="quote">{t('原文')}</h3><blockquote>{selected.quote || selected.raw?.properties.source_quote || selected.description}</blockquote></>}
+      {(selected.quote || selected.kind === 'story') && <><h3 data-reading-anchor="quote"><BlurRevealText revealKey="components/DetailDrawer.jsx:2" variant="inline" text={<>{t('原文')}</>} /></h3><blockquote>{selected.quote || selected.raw?.properties.source_quote || selected.description}</blockquote></>}
       {selected.reveal_chapter && <p className="detail-chapter">{t('第')}{selected.reveal_chapter}{t('章起可见（非诞生年代）')}</p>}
-      {locale === 'en' && (selected.originalQuote || selected.raw?.properties.originalQuote) && <details className="original-text" data-reading-anchor="original"><summary>Chinese original</summary><blockquote lang="zh-CN">{selected.originalQuote || selected.raw.properties.originalQuote}</blockquote></details>}
-      {selected.commentary_quote && <details className="original-text commentary-section"><summary>{t(selected.kind === 'passage' ? '底本注文 · 按录文行保留' : '郭注摘录')}</summary><blockquote lang="zh-CN">{selected.commentary_quote}</blockquote></details>}
+      {locale === 'en' && (selected.originalQuote || selected.raw?.properties.originalQuote) && <RevealDetails className="original-text" data-reading-anchor="original"><summary>Chinese original</summary><blockquote lang="zh-CN">{selected.originalQuote || selected.raw.properties.originalQuote}</blockquote></RevealDetails>}
+      {selected.commentary_quote && <RevealDetails className="original-text commentary-section"><summary><BlurRevealText variant="inline" revealKey="components/DetailDrawer.jsx:summary" text={t(selected.kind === 'passage' ? '底本注文 · 按录文行保留' : '郭注摘录')} /></summary><blockquote lang="zh-CN">{selected.commentary_quote}</blockquote></RevealDetails>}
       {selected.raw?.properties.parent_event_id && <nav className="story-siblings" aria-label={t("补天四幕")}>{catalog.events.filter(item => item.properties.parent_event_id === selected.raw.properties.parent_event_id).map(item => <button key={item.id} aria-current={item.id === selected.id ? 'true' : undefined} onClick={event => onOpen(item.id, event.currentTarget)}>{item.properties.name}</button>)}</nav>}
       {iconFor(selected) && <ArtworkImage key={selected.id} className="drawer-art" src={iconFor(selected)} alt={t(`${selected.name}版画插画`)} />}
       {selected.artwork_caption && iconFor(selected) && <p className="artwork-caption">{selected.artwork_caption}</p>}
       {!!placeContents.length && <nav className="detail-place-contents detail-related" aria-label={t('此地所见')} data-reading-anchor="contents">
-        <h3>{t('此地所见')}</h3><p>{t('按本段经文组织阅读，山中记载与水域记述分别呈现。')}</p>
+        <h3><BlurRevealText revealKey="components/DetailDrawer.jsx:3" variant="inline" text={<>{t('此地所见')}</>} /></h3><p>{t('按本段经文组织阅读，山中记载与水域记述分别呈现。')}</p>
         {['plant', 'water', 'beast', 'animal', 'valley', 'wind', 'deity', 'rite', 'material', 'place'].map(kind => {
           const entries = placeContents.filter(item => item.kind === kind);
-          return entries.length ? <section key={kind}><h4>{t(entryTypes[kind])}</h4>{entries.map(item => <button type="button" key={item.id} data-related-id={item.id} onClick={() => onRelated(item.id, readingPosition())}><b>{item.name}</b><small>{t(item.kind === 'water' || item.relation_scope === 'water' || ['beast-xuangui', 'beast-chiru', 'material-yupei'].includes(item.id) ? '本段水域记述' : '本山段记载')}</small></button>)}</section> : null;
+          return entries.length ? <section key={kind}><h4><BlurRevealText revealKey="components/DetailDrawer.jsx:4" variant="inline" text={<>{t(entryTypes[kind])}</>} /></h4>{entries.map(item => <button type="button" key={item.id} data-related-id={item.id} onClick={() => onRelated(item.id, readingPosition())}><b><BlurRevealText revealKey="components/DetailDrawer.jsx:9" variant="inline" text={<>{item.name}</>} /></b><small>{t(item.kind === 'water' || item.relation_scope === 'water' || ['beast-xuangui', 'beast-chiru', 'material-yupei'].includes(item.id) ? '本段水域记述' : '本山段记载')}</small></button>)}</section> : null;
         })}
       </nav>}
       <div className="detail-exploration" data-reading-anchor="actions">
@@ -189,19 +189,19 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
       </div>
       {placeReference && <button className="detail-open-place" type="button" onClick={onOpenPlace}>{t("查看真实地理资料")} · {t(placeReference.properties.label)}</button>}
       {animationId && <button className="detail-play-story" type="button" onClick={() => onPlay(readingPosition())}>{t('播放这个故事')}</button>}
-      <h3 data-reading-anchor="source">{t("原文出处")}</h3><p>{selected.source || selected.raw?.properties.source_text}</p>
+      <h3 data-reading-anchor="source"><BlurRevealText revealKey="components/DetailDrawer.jsx:5" variant="inline" text={<>{t("原文出处")}</>} /></h3><p>{selected.source || selected.raw?.properties.source_text}</p>
       {selected.source_locator && <p className="source-review">{selected.source_locator}</p>}
       {selected.source_pages?.length > 1 && <p className="source-pages">{selected.source_pages.map((url, index) => <a key={url} href={url} target="_blank" rel="noreferrer">{t('影印页')} {Number(url.split('/').at(-1))}{index < selected.source_pages.length - 1 ? ' · ' : ''}</a>)}</p>}
       {links.map(source => <p key={source.url}><a className="source-link" href={source.url} target="_blank" rel="noreferrer">{t("打开所引篇章 ↗")}{links.length > 1 ? ` · ${source.title}` : ''}</a></p>)}
       {!links.length && <p>{t('暂无在线入口，请查阅所列书目。')}</p>}
       {selected.illustration_review && <p className="source-review">{t(selected.illustration_review)}</p>}
       {!!sources.length && <p className="source-review">{sources.some(source => source.verification_status === 'report_imported') ? t('来源状态：报告导入，待逐条复核') : t('来源状态：已进行文本摘录核对')}</p>}
-      <h3 data-reading-anchor="location">{selected.kind === 'story' ? t("位置说明") : t("方位表达")}</h3>
+      <h3 data-reading-anchor="location"><BlurRevealText revealKey="components/DetailDrawer.jsx:6" variant="inline" text={<>{selected.kind === 'story' ? t("位置说明") : t("方位表达")}</>} /></h3>
       <p>{selected.direction || selected.raw?.properties.basis_note}</p>
-      <h3 data-reading-anchor="notes">{t("项目说明")}</h3><p className="source-caution">{selected.kind === 'story' ? t("故事点为叙事锚点·示意，不表示真实地点、距离或未经原文支持的因果关系；插画中的器物与场景属于艺术解释。") : t("原文未明示的方位不以图面位置补出；淡墨山海纹样仅为装饰。")}</p>
+      <h3 data-reading-anchor="notes"><BlurRevealText revealKey="components/DetailDrawer.jsx:7" variant="inline" text={<>{t("项目说明")}</>} /></h3><p className="source-caution">{selected.kind === 'story' ? t("故事点为叙事锚点·示意，不表示真实地点、距离或未经原文支持的因果关系；插画中的器物与场景属于艺术解释。") : t("原文未明示的方位不以图面位置补出；淡墨山海纹样仅为装饰。")}</p>
       {selected.editorial_note && <p className="source-caution">{selected.editorial_note}</p>}
       {selected.content_note && <p className="source-caution">{selected.content_note}</p>}
-      {!!visibleRelated.length && <nav className="detail-related" data-reading-anchor="related" aria-label={t('相关条目')}><h3>{t('相关条目')}</h3><p>{t('按原文关联，故事、异兽和地点分别呈现。')}</p>{visibleRelated.map(item => <button type="button" key={item.id} data-related-id={item.id} onClick={() => onRelated(item.id, readingPosition())}><b>{item.name}</b><small>{t(item.relationLabel || item.entryType)} · {t(item.relationSource)}</small>{item.relationQuote && <small className="relation-quote" lang="zh-CN">{item.relationQuote}</small>}</button>)}</nav>}
+      {!!visibleRelated.length && <nav className="detail-related" data-reading-anchor="related" aria-label={t('相关条目')}><h3><BlurRevealText revealKey="components/DetailDrawer.jsx:8" variant="inline" text={<>{t('相关条目')}</>} /></h3><p>{t('按原文关联，故事、异兽和地点分别呈现。')}</p>{visibleRelated.map(item => <button type="button" key={item.id} data-related-id={item.id} onClick={() => onRelated(item.id, readingPosition())}><b><BlurRevealText revealKey="components/DetailDrawer.jsx:10" variant="inline" text={<>{item.name}</>} /></b><small>{t(item.relationLabel || item.entryType)} · {t(item.relationSource)}</small>{item.relationQuote && <small className="relation-quote" lang="zh-CN">{item.relationQuote}</small>}</button>)}</nav>}
       {navigation.total > 1 && <nav className="detail-entry-nav" aria-label={t('条目切换')}>
         <button ref={previousButton} type="button" disabled={!navigation.previous} onClick={() => step('previous')} aria-label={t('上一条')}><span>← {t('上一条')}</span><small>{navigation.previous?.name || t('已是第一条')}</small></button>
         <span className="detail-entry-position" aria-live="polite">{navigation.index + 1} / {navigation.total}</span>

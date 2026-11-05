@@ -1,3 +1,4 @@
+import BlurRevealText from '../components/BlurRevealText';
 import { useLocale } from '../i18n';
 import { createPortal } from 'react-dom';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
@@ -11,7 +12,7 @@ import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style
 import journey from '../../public/data/atlas/kuafu-journey.json';
 import catalog from '../../public/data/atlas/catalog.json';
 import { loadImage, cachedSprites } from '../asset-cache';
-import { InkText, useReducedMotion } from '../motion';
+import { useReducedMotion } from '../motion';
 import { BASE_PLAYBACK_RATE, playbackState } from '../playback';
 
 function curvedPath(points) {
@@ -63,7 +64,7 @@ async function decodeSprites(sheet, poses) {
   });
 }
 
-export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange, onSkip, controlContainer, externalPaused = false, tourPlaying = null, onUserPlaybackChange, storyView = true, closeup = false, cameraRequest = 0 }) {
+export default function KuafuJourney({ revealActive = true, map, selectedId, onSelect, onStatusChange, onSkip, controlContainer, externalPaused = false, tourPlaying = null, onUserPlaybackChange, storyView = true, closeup = false, cameraRequest = 0 }) {
   const { t, locale } = useLocale();
   const mapFont = locale === 'en' ? '"Source Sans 3 Variable", Arial, sans-serif' : '"Noto Serif SC", SimSun, serif';
   const [sprites, setSprites] = useState(null);
@@ -262,7 +263,7 @@ export default function KuafuJourney({ map, selectedId, onSelect, onStatusChange
   const speedButton = !reduced && !error && <button aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>;
   const controls = <div className="kuafu-journey" ref={panel} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} role="group" aria-label={t("夸父逐日动态")} data-closeup={closeup} data-status={status} data-phase={ui.phase.id} data-frame={ui.frame} data-elapsed={Math.round(ui.elapsed)} data-playback-rate={playbackRate} data-x={ui.position[0].toFixed(2)} data-y={ui.position[1].toFixed(2)} data-follow={following}>
     <progress value={ui.elapsed} max={journey.duration_ms} aria-label={t("夸父故事进度")} />
-    <div className="journey-heading"><b>{t("夸父逐日")}</b><span aria-live="polite"><InkText key={ui.phase.id} variant="phase" text={error ? t("动作图加载失败") : !sprites ? t("正在载入动作图…") : `${t(ui.phase.title)}${status === 'paused' ? t(" · 已暂停") : status === 'completed' ? t(" · 完") : ''}`} /></span></div>
+    <div className="journey-heading"><b><BlurRevealText active={revealActive} revealKey="story-title" variant="inline" text={<>{t("夸父逐日")}</>} /></b><span aria-live="polite">{error ? t("动作图加载失败") : !sprites ? t("正在载入动作图…") : `${t(ui.phase.title)}${status === 'paused' ? t(" · 已暂停") : status === 'completed' ? t(" · 完") : ''}`}</span></div>
     <div className="journey-actions">
       {error ? <button onClick={() => setReload(value => value + 1)}>{t("重新载入")}</button> : reduced && !completed ? <button onClick={nextScene} disabled={!sprites}>{ui.phase === phases.at(-1) ? t("完成故事") : t("下一幕")}</button> : <button onClick={completed ? replay : () => { const next = !(paused || externalPaused); setPaused(next); onUserPlaybackChange?.(!next); }} disabled={!sprites || Boolean(selectedId) || hidden} aria-label={completed ? t("重播夸父逐日") : (paused || externalPaused) ? t("继续夸父逐日") : t("暂停夸父逐日")}>{completed ? t("重播") : (paused || externalPaused) ? t("继续") : t("暂停")}</button>}
       {!completed && <button onClick={onSkip}>{t('跳过')}</button>}

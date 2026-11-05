@@ -12,7 +12,7 @@ const visibleHeadings = page => page.locator('.detail-drawer').evaluate(root => 
   const bounds = root.getBoundingClientRect();
   return [...root.querySelectorAll('.blur-reveal-text')].filter(node => {
     const box = node.getBoundingClientRect();
-    return box.bottom > Math.max(0, bounds.top + root.clientTop) && box.top < Math.min(innerHeight, bounds.top + root.clientTop + root.clientHeight);
+    return box.height > 0 && box.width > 0 && box.bottom > Math.max(0, bounds.top + root.clientTop) && box.top < Math.min(innerHeight, bounds.top + root.clientTop + root.clientHeight);
   }).map(node => ({ text: node.textContent, filter: getComputedStyle(node).filter, opacity: getComputedStyle(node).opacity }));
 });
 const clearVisible = async page => {
@@ -34,7 +34,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       const title = drawer.locator('[data-reading-anchor="title"] > span');
       assert.equal(await title.getAttribute('data-reveal-key'), `detail:03-01:title:${lang}`);
       await clearVisible(page);
-      assert.equal(await drawer.locator('p .blur-reveal-text, blockquote .blur-reveal-text, [data-reading-anchor="source"] .blur-reveal-text, [data-reading-anchor="quote"] .blur-reveal-text').count(), 0);
+      assert.equal(await drawer.locator('p .blur-reveal-text, blockquote .blur-reveal-text').count(), 0);
       assert.equal(await drawer.evaluate(node => getComputedStyle(node).filter), 'none', 'No whole-drawer filter');
       const pagePosition = await page.evaluate(() => scrollY);
       const bounds = await drawer.boundingBox();

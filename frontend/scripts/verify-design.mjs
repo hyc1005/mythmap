@@ -198,3 +198,5 @@ await import('./verify-blur-reveal.mjs');
 await import('./verify-blur-main.mjs');
 
 await import('./verify-blur-detail.mjs');
+
+await import('./verify-blur-global.mjs');

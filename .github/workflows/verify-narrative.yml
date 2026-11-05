@@ -44,6 +44,7 @@ jobs:
           python ../data/audit_shanhaijing.py --check
           python ../data/build_source_inventory.py --check
           python ../data/build_geography_basemap.py --check
+      - run: npm run verify:assets
       - run: npm run verify:cache
       - name: Use the public Ubuntu package mirror
         run: |

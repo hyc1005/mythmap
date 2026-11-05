@@ -43,8 +43,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           assert.equal(await page.locator('.chapter-rail h2 > span').evaluate(node => getComputedStyle(node).filter), 'blur(0px)');
         }
       }
-      assert.equal(await page.locator('.blur-reveal-text').count(), 6, 'Exactly three pairs of headings and intros');
-      assert.equal(await page.locator('.beast-card .blur-reveal-text, .bestiary-tools .blur-reveal-text').count(), 0);
+      for (const selector of ['.myth-header h1', '.chapter-rail h2', '.best-page-heading h2', '#reading-notes h2', '.beast-card b']) assert.ok(await page.locator(`${selector} .blur-reveal-text`).count(), `Covered title: ${selector}`);
+      assert.equal(await page.locator('.bestiary-tools .blur-reveal-text').count(), 0);
       assert.ok(await page.locator('.beast-card').count() <= 12, 'Initial main cards unchanged');
       const title = page.locator('.best-page-heading h2 > span');
       const y = await title.evaluate(node => node.getBoundingClientRect().top + scrollY);

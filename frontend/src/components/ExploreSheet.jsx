@@ -1,3 +1,4 @@
+import BlurRevealText from './BlurRevealText';
 import { useLayoutEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { useLocale } from '../i18n';
@@ -32,7 +33,7 @@ export default function ExploreSheet({ title, onClose, children, returnFocus, in
     <section ref={sheet} className={`explore-sheet ${className}`} role="dialog" aria-modal="true" aria-label={title} onClick={event => event.stopPropagation()} onKeyDown={keydown} onClickCapture={event => {
         event.target.closest('button, input, select, summary, a[href], [tabindex="0"]')?.focus({ preventScroll: true });
       }}>
-      <header><h2>{title}</h2><button onClick={onClose} aria-label={t('关闭')}>×</button></header>
+      <header><h2><BlurRevealText revealKey="components/ExploreSheet.jsx:1" variant="inline" text={<>{title}</>} /></h2><button onClick={onClose} aria-label={t('关闭')}>×</button></header>
       {children}
     </section>
   </div>, document.body);

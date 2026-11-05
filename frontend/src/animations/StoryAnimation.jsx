@@ -1,3 +1,4 @@
+import BlurRevealText from '../components/BlurRevealText';
 import { useLocale, localize } from '../i18n';
 import { createPortal } from 'react-dom';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -11,7 +12,7 @@ import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style
 import rawAnimations from '../../public/data/atlas/story-animations.json';
 import rawCatalog from '../../public/data/atlas/catalog.json';
 import { loadImage, cachedSprites } from '../asset-cache';
-import { InkText, useReducedMotion } from '../motion';
+import { useReducedMotion } from '../motion';
 import { BASE_PLAYBACK_RATE, playbackState } from '../playback';
 
 const smooth = value => value * value * (3 - 2 * value);
@@ -116,7 +117,7 @@ async function effectAssetsFor(assets = {}) {
   return Object.fromEntries(entries);
 }
 
-export default function StoryAnimation({ id, map, selectedId, onSelect, onStatusChange, onSkip, onSceneBoundsChange, controlContainer, externalPaused = false, tourPlaying = null, onUserPlaybackChange, storyView = true, closeup = false, cameraRequest = 0 }) {
+export default function StoryAnimation({ revealActive = true, id, map, selectedId, onSelect, onStatusChange, onSkip, onSceneBoundsChange, controlContainer, externalPaused = false, tourPlaying = null, onUserPlaybackChange, storyView = true, closeup = false, cameraRequest = 0 }) {
   const { t, locale } = useLocale();
   const mapFont = locale === 'en' ? '"Source Sans 3 Variable", Arial, sans-serif' : '"Noto Serif SC", SimSun, serif';
   const animations = useMemo(() => localize(rawAnimations, locale), [locale]);
@@ -226,7 +227,8 @@ export default function StoryAnimation({ id, map, selectedId, onSelect, onStatus
     if (blocked) map.getView().cancelAnimations();
     let frameId, previous, published = -Infinity;
     const paint = (time, delta = 0) => {
-      if (!map.getSize() || !features.current || !map.getTarget()) return;
+      if (!map.getSize()?.every(value => value > 0) || !features.current || !map.getTarget()) return;
+      if (!map.getPixelFromCoordinate(features.current.actor.getGeometry().getCoordinates())) return;
        const { actor, actorTransition, payload, decorations, arrow, projectile, streaks, waves, suns, clouds, impact, waypoints: sourceWaypoints } = features.current;
       let waypoints = sourceWaypoints;
       const phase = story.phases.findLast(item => item.from_ms <= time);
@@ -476,7 +478,7 @@ export default function StoryAnimation({ id, map, selectedId, onSelect, onStatus
   const speedButton = speedControl && !error && !reduced && <button aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>;
   const controls = <div ref={panel} className="kuafu-journey story-animation" role="group" aria-label={t(`${story.name}动态`)} data-story={id} data-closeup={closeup} data-status={status} data-frame={ui.frame} data-elapsed={Math.round(ui.time)} data-playback-rate={playbackRate} data-shot-state={ui.shotState || 'none'} data-hit-sun-position={JSON.stringify(ui.hitSunPosition)} data-hit-frame={ui.hitFrame} data-x={ui.position[0]} data-y={ui.position[1]} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} data-follow={following} data-arrow={JSON.stringify(ui.arrow)} data-scene-bounds={JSON.stringify(ui.bounds)}>
     <progress value={ui.time} max={story.duration_ms} aria-label={t(`${story.name}进度`)} />
-    <div className="journey-heading"><b>{story.name}</b><span aria-live="polite"><InkText key={ui.phase.from_ms} variant="phase" text={error ? t("动作图加载失败") : !sprites ? t("正在载入动作图…") : `${ui.phase.title}${status === 'paused' ? t(" · 已暂停") : complete ? t(" · 完") : ''}`} /></span></div>
+    <div className="journey-heading"><b><BlurRevealText active={revealActive} revealKey="story-title" variant="inline" text={<>{story.name}</>} /></b><span aria-live="polite">{error ? t("动作图加载失败") : !sprites ? t("正在载入动作图…") : `${ui.phase.title}${status === 'paused' ? t(" · 已暂停") : complete ? t(" · 完") : ''}`}</span></div>
     <div className="journey-actions">
       {error ? <button onClick={() => setReload(value => value + 1)}>{t("重新载入")}</button> : reduced && !complete ? <button onClick={next} disabled={!sprites}>{ui.phase === story.phases.at(-1) ? t("完成故事") : t("下一幕")}</button> : <button onClick={complete ? replay : () => { const next = !(paused || externalPaused); setPaused(next); onUserPlaybackChange?.(!next); }} disabled={!sprites || Boolean(selectedId) || hidden} aria-label={`${complete ? t("重播") : (paused || externalPaused) ? t("继续") : t("暂停")}${locale === 'en' ? ' ' : ''}${story.name}`}>{complete ? t("重播") : (paused || externalPaused) ? t("继续") : t("暂停")}</button>}
       {!complete && <button onClick={skip}>{t("跳过")}</button>}
