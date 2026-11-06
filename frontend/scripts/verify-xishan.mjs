@@ -609,6 +609,8 @@ for (const asset of generation.assets) {
 }
 const output = new URL('../../output/qa/', import.meta.url);
 await mkdir(output, { recursive: true });
+const cardSuite = process.env.ATLAS_CARD_SUITE || 'all';
+assert.ok(['all', 'records', 'navigation'].includes(cardSuite), 'Invalid ATLAS_CARD_SUITE');
 for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, webkit }[name]).launch();
   try {
@@ -671,7 +673,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await drawer.locator('.detail-entry-nav button').nth(1).click();
       await ready('passage-xishan-songguo');
       assert.equal(await drawer.locator('.detail-entry-position').innerText(), `2 / ${passages.length}`);
-      for (const entry of browserEntries) {
+      if (cardSuite !== 'navigation') for (const entry of browserEntries) {
         await page.goto(`${base}?chapter=03&item=${entry.id}&lang=${lang}`); await ready(entry.id);
         assert.equal(await drawer.locator('>.content-origin').getAttribute('data-origin'), 'shanhaijing');
         assert.equal(await drawer.locator('.detail-description').innerText(), lang === 'en' ? english[entry.id].description : entry.description);
@@ -685,6 +687,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         await page.reload(); await ready(entry.id);
         assert.ok(await drawer.locator('.detail-reading-actions button').evaluateAll(nodes => nodes.every(node => node.getAttribute('aria-pressed') === (document.documentElement.lang === 'en' ? 'false' : 'true'))));
       }
+      if (cardSuite === 'records') continue;
       await page.goto(`${base}?chapter=03&item=place-xishan-songguo&lang=${lang}`); await ready('place-xishan-songguo');
       await drawer.locator('[data-related-id="water-xishan-huo"]').click(); await ready('water-xishan-huo');
       await drawer.locator('[data-related-id="water-xishan-wei"]').click(); await ready('water-xishan-wei');
@@ -1066,7 +1069,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       assert.ok(await drawer.evaluate(node => node.scrollTop > 0));
       console.log(`PASS ${name} ${lang}: ${browserEntries.length} browser records, bird/snake Feiyi separation, 9 Wei sources, southeast glyph and reading state`);
     }
-    for (const [width, height] of [[320, 700], [390, 844], [844, 390], [1440, 1000]]) for (const lang of ['zh', 'en']) {
+    if (cardSuite !== 'records') for (const [width, height] of [[320, 700], [390, 844], [844, 390], [1440, 1000]]) for (const lang of ['zh', 'en']) {
       await page.setViewportSize({ width, height });
       await page.goto(`${base}?chapter=03&item=passage-xishan-huaijiang&lang=${lang}`); await ready('passage-xishan-huaijiang');
       if (width === 390 && lang === 'zh') {

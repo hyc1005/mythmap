@@ -61,6 +61,8 @@ for (const path of artworkPaths) for (const variant of ['full', 'preview', 'card
   assert.equal((await stat(new URL('../public' + asset.path, import.meta.url))).size, asset.bytes);
 }
 await mkdir(new URL('../../output/qa/', import.meta.url), { recursive: true });
+const cardSuite = process.env.ATLAS_CARD_SUITE || 'all';
+assert.ok(['all', 'records', 'navigation'].includes(cardSuite), 'Invalid ATLAS_CARD_SUITE');
 for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
   let captureFailure;
@@ -83,7 +85,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       }, id);
     };
     for (const lang of ['zh', 'en']) {
-      for (const id of ids) {
+      if (cardSuite !== 'navigation') for (const id of ids) {
         await page.goto(`${base}?chapter=03&item=${id}&lang=${lang}`);
         await ready(id);
         assert.equal(await drawer.locator('>.content-origin').getAttribute('data-origin'), 'shanhaijing');
@@ -116,6 +118,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         await page.reload(); await ready(id);
         assert.ok(await drawer.locator('.detail-reading-actions button').evaluateAll(nodes => nodes.every(n => n.getAttribute('aria-pressed') === (document.documentElement.lang === 'en' ? 'false' : 'true'))), 'New marks persist and can be toggled in both languages');
       }
+      if (cardSuite === 'records') continue;
       await page.goto(`${base}?chapter=02&item=place-qingqiu&lang=${lang}`); await ready('place-qingqiu');
       await drawer.locator('[data-related-id="beast-guanguan"]').click(); await ready('beast-guanguan');
       assert.equal(new URL(page.url()).searchParams.get('chapter'), '02', 'Related reading preserves chapter');
@@ -179,7 +182,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       }
       for (const entry of newEntries) assert.ok(directoryIds.has(entry.id), `${entry.id}: chapter directory entry`);
     }
-    for (const [width, height] of [[320, 700], [390, 844], [844, 390], [1440, 1000]]) for (const lang of ['zh', 'en']) {
+    if (cardSuite !== 'records') for (const [width, height] of [[320, 700], [390, 844], [844, 390], [1440, 1000]]) for (const lang of ['zh', 'en']) {
       await page.setViewportSize({ width, height });
       await page.goto(`${base}?chapter=02&item=place-nanshan-daoguo&lang=${lang}`); await ready('place-nanshan-daoguo');
       assert.equal(await drawer.evaluate(node => node.scrollWidth > node.clientWidth), false);

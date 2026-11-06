@@ -654,6 +654,9 @@ try {
     assert.equal(await chapterPage.locator('.ink-hover-card').count(), 0);
     await chapterPage.close();
   }
+  if (process.env.ATLAS_REGRESSION_ONLY) {
+    assert.deepEqual(failures, []);
+  } else {
   const animationPage = await browser.newPage({ viewport: { width: 1366, height: 768 } });
   animationPage.on('pageerror', error => failures.push(error.message));
   await enterAtlas(animationPage, `${atlasUrl}#world`);
@@ -1026,6 +1029,7 @@ try {
   await retryPage.close();
   assert.deepEqual(failures, []);
   console.log('PASS: river scene, Jingwei and Dayi playback/switching, pause/detail/replay, timeline handoff, ten viewport scenes, reduced motion and cleanup.');
+  }
   if (!process.env.ATLAS_STORY_ONLY) console.log('PASS: regression; timeline/source/asset/geometry checks for chapters 05–07; chapter 06/07 details; native and fallback fullscreen; chapter 05 portrait/detail fit at 5 viewport sizes.');
 } finally {
   await browser.close();

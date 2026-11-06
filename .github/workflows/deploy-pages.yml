@@ -8,8 +8,9 @@ on:
       - 'backend-java/**'
       - 'data/**'
       - '.github/workflows/**'
+      - '.gitattributes'
   pull_request:
-    paths: ['frontend/**', 'backend-java/**', 'data/**', '.github/workflows/**']
+    paths: ['frontend/**', 'backend-java/**', 'data/**', '.github/workflows/**', '.gitattributes']
   workflow_dispatch:
 
 permissions:
@@ -17,8 +18,8 @@ permissions:
   pages: read
 
 concurrency:
-  group: pages-${{ github.ref }}
-  cancel-in-progress: true
+  group: pages-${{ github.ref == 'refs/heads/main' && 'main' || github.run_id }}
+  queue: max
 
 jobs:
   verify:

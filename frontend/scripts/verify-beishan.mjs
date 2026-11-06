@@ -344,7 +344,7 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
         throw error;
       }
     }
-    for (const lang of ['zh', 'en']) {
+    for (const lang of (process.env.ATLAS_LANGUAGES || 'zh,en').split(',')) {
       for (const e of browserEntries) {
         const d = await open(e.id, lang);
         assert.equal(await d.locator('h2').innerText(), lang === 'en' ? english[e.id].name : e.name);

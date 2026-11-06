@@ -11,15 +11,13 @@ permissions:
   pages: read
 
 concurrency:
-  group: narrative-${{ github.ref }}
-  cancel-in-progress: true
+  group: narrative-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   narrative:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    outputs:
-      base: ${{ steps.path.outputs.base }}
     env:
       ATLAS_BROWSERS: chromium,webkit
       PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
@@ -28,8 +26,6 @@ jobs:
         working-directory: frontend
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
         with:
           node-version: '22'
@@ -82,6 +78,28 @@ jobs:
         env:
           ATLAS_BROWSERS: chromium
         run: node scripts/with-preview.mjs -- node --input-type=module -e "await import('./scripts/verify-publish.mjs'); await import('./scripts/verify-repairs.mjs');"
+
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      base: ${{ steps.path.outputs.base }}
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          sparse-checkout: |
+            frontend/public
+            frontend/scripts
+            frontend/src
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
       - name: Read Pages configuration
         if: github.event_name != 'pull_request'
         id: pages
@@ -105,13 +123,14 @@ jobs:
           path: frontend/dist
           retention-days: 1
       - name: Upload verified site
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9
         with:
           path: frontend/dist
 
   browser:
-    name: Browser ${{ matrix.browser }} / ${{ matrix.suite.name }}
-    needs: narrative
+    name: Browser ${{ matrix.browser }} / ${{ matrix.suite.name }}${{ matrix.suite.shard }}
+    needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
@@ -121,29 +140,86 @@ jobs:
         suite:
           - name: atlas
             scripts: verify-geography.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-bestiary.mjs verify-ux.mjs
-          - name: central-current
-            scripts: verify-zhongshan.mjs
           - name: southern-cards
             scripts: verify-nanshan.mjs
+            cards: records
+          - name: southern-cards
+            shard: ' / navigation'
+            scripts: verify-nanshan.mjs
+            cards: navigation
           - name: southern-reader
             scripts: verify-reader.mjs
           - name: western
             scripts: verify-xishan.mjs
-          - name: northern
-            scripts: verify-beishan.mjs
+            cards: records
+          - name: western
+            shard: ' / navigation'
+            scripts: verify-xishan.mjs
+            cards: navigation
           - name: stories
             scripts: verify-discovery.mjs verify-place-search.mjs verify-map-frame.mjs verify-playback-speed.mjs
         include:
           - browser: chromium
             suite:
+              name: central-current
+              scripts: verify-zhongshan.mjs
+          - browser: chromium
+            suite:
+              name: northern
+              scripts: verify-beishan.mjs
+          - browser: webkit
+            suite:
+              name: central-current
+              scripts: verify-zhongshan.mjs
+              languages: zh
+          - browser: webkit
+            suite:
+              name: central-current
+              shard: ' / en'
+              scripts: verify-zhongshan.mjs
+              languages: en
+          - browser: webkit
+            suite:
+              name: northern
+              scripts: verify-beishan.mjs
+              languages: zh
+          - browser: webkit
+            suite:
+              name: northern
+              shard: ' / en'
+              scripts: verify-beishan.mjs
+              languages: en
+          - browser: chromium
+            suite:
               name: narrative
               scripts: verify-locale.mjs verify-narrative.mjs
+              skip_layout: '1'
+              regression_only: '1'
+          - browser: chromium
+            suite:
+              name: narrative
+              shard: ' / layout'
+              scripts: verify-narrative.mjs
+              layout_only: '1'
+          - browser: chromium
+            suite:
+              name: narrative
+              shard: ' / stories'
+              scripts: verify-narrative.mjs
+              skip_layout: '1'
+              story_only: '1'
     env:
       ATLAS_BROWSER: ${{ matrix.browser }}
       ATLAS_BROWSERS: ${{ matrix.browser }}
-      ATLAS_BASE: ${{ needs.narrative.outputs.base }}
+      ATLAS_BASE: ${{ needs.build.outputs.base }}
       ATLAS_SCRIPTS: ${{ matrix.suite.scripts }}
       ATLAS_SUITE: ${{ matrix.suite.name }}
+      ATLAS_CARD_SUITE: ${{ matrix.suite.cards }}
+      ATLAS_LANGUAGES: ${{ matrix.suite.languages }}
+      ATLAS_LAYOUT_ONLY: ${{ matrix.suite.layout_only }}
+      ATLAS_SKIP_LAYOUT: ${{ matrix.suite.skip_layout }}
+      ATLAS_REGRESSION_ONLY: ${{ matrix.suite.regression_only }}
+      ATLAS_STORY_ONLY: ${{ matrix.suite.story_only }}
       PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.pw-browsers
     defaults:
       run:
@@ -199,16 +275,19 @@ jobs:
           path: frontend/dist
       - name: Verify browser suite
         run: |
-          for script in $ATLAS_SCRIPTS; do
-            echo "Verifying $script with $ATLAS_BROWSERS"
-            node scripts/with-preview.mjs --base "$ATLAS_BASE" -- node "scripts/$script"
-          done
+          node scripts/with-preview.mjs --base "$ATLAS_BASE" -- bash -ec '
+            for script in $ATLAS_SCRIPTS; do
+              echo "::group::Verifying $script with $ATLAS_BROWSERS"
+              node "scripts/$script"
+              echo "::endgroup::"
+            done
+          '
 
       - name: Upload failed browser diagnostics
         if: failure()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: browser-failure-${{ matrix.browser }}-${{ matrix.suite.name }}
+          name: browser-failure-${{ matrix.browser }}-${{ matrix.suite.name }}-${{ strategy.job-index }}
           path: output/qa/browser-failures/
           if-no-files-found: ignore
           retention-days: 7
