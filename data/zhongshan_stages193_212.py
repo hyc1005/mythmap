@@ -4,7 +4,7 @@ from zhongshan_next30 import R
 ROWS = [
 R('r11-summary','次11总括与祭礼','Eleventh-range summary and rites',
   '荆山首翼望至几，报四十八山三千七百三十二里，神彘身人首。一般雄鸡祈瘗、一珪、五种精与禾山帝、堵山玉山冢专礼分录；牛无常原词不强补数量，未列山段不凑数新增。540起61页末、541—544续62页。',
-  'The Jing range from Yiwang to Ji is reported as forty-eight mountains and 3,732 li. Its gods have pig bodies and human heads. General rites use a rooster, prayer and burial, a gui jade and five kinds of refined grain. He has imperial rites, and Du and Yu have separate principal-mountain rites.',
+  'The Jing range from Yiwang to Ji is reported as forty-eight mountains and 3,732 li. Its gods have pig bodies and human heads. General rites use a rooster, prayer and burial, a gui jade and five kinds of refined grain. Mount He is designated di, and Du and Yu have separate principal-mountain rites.',
   'The captured cattle wording is not assigned a fixed number. He, Du and Yu are not inserted as extra route mountains. Pig bodies and human heads inform the image; four hooves, hair, colors and pose are artistic. The passage spans scans 61–62.'),
 R('r12-pianyu','篇遇之山','Mount Pianyu',
   '中次十二洞庭山首篇遇，无草木、多黄金；篇或作肩为郭注山名异说，不另造肩遇山。',
@@ -72,15 +72,15 @@ R('r12-summary','次12总括与祭礼','Twelfth-range summary and rites',
   'The individually stated route distances total 1,849 li, distinct from the reported 2,800. Ritual groups remain separate; offerings are not deity anatomy. Full bird bodies and dragon heads inform the image; legs, wings, tails, colors and pose are artistic.'),
 R('book-world-total','中山及天下名山总计','Central and world mountain totals',
   '中经总报197山21371里；与十二列总报合198山28595里并存，不改数凑同。天下名山5370、居地64056里为古籍总计，里不改平方里，也不据此添5370个实体或现代坐标。603在68页末、604—605续69页。',
-  'The Central Mountains closing reports 197 mountains and 21,371 li. It then reports 5,370 renowned mountains under heaven occupying a stated extent of 64,056 li.',
+  'The foregoing record of the Central Mountains covers a total of 197 mountains and 21,371 li. Under heaven there are altogether 5,370 renowned mountains, occupying a stated extent of 64,056 li.',
   'The twelve range summaries instead total 198 mountains and 28,595 li; named route mountains total 197. These values remain distinct, without harmonization, square-li conversion, extra invented mountain entries or modern measurements. The passage spans scans 68–69.'),
 R('yu-cosmography','禹曰天地及国用','Yu’s cosmography and resources of the state',
   '禹曰复述名山5370、居地64056里与五臧、小山未记；天地东西28000南北26000里，出水受水各8000里、出铜山467出铁山3690原单位分别存。戈矛刀铩、能拙余不足与太山封梁父禅七十二家为古论国用；能字阅读恢复，不作现代测绘、资源普查或现实用兵建议。',
-  'Yu says the renowned mountains number 5,370 and occupy 64,056 li, describing the five repositories while omitting numerous smaller mountains. Heaven and earth extend 28,000 li east to west and 26,000 north to south; water-emitting mountains and water-receiving mountains are each reported in 8,000 li. Copper-producing mountains number 467 and iron-producing mountains 3,690. These lands sustain grain and supply spears, lances, knives and sha weapons. The capable have a surplus and the unskilled lack enough. Seventy-two houses performed feng rites at Tai and shan rites at Liangfu; gains and losses lie within this account, called the resources of the state.',
+  'Yu said: “The account of the renowned mountains under heaven covers 5,370 mountains. The extent of the land they occupy is 64,056 li. This account describes the Five Repositories (Wuzang). The other, smaller mountains are very numerous and do not warrant a record here. Heaven and earth extend 28,000 li from east to west and 26,000 li from north to south. The mountains that give rise to waters account for 8,000 li, and those that receive waters account for 8,000 li as well. There are 467 mountains that yield copper and 3,690 that yield iron. Here lies the land apportioned by heaven and earth, where grain is grown, where ge dagger-axes and mao spears come forth, and where knives and sha weapons originate. Those who are skilled have a surplus. Those who are unskilled have too little. Seventy-two houses performed the feng rite at Mount Tai and the shan rite at Liangfu. The reckoning of gains and losses is all contained here. This is what is called guoyong, the resources of the state.”',
   'These are textual cosmographic, resource and political claims, not modern survey data or weapon-making instructions. Counts and li remain separate; the five repositories refer to the text, not human organs. The scan neng character is restored only in the reading layer. The final Guanzi gloss spans scans 69–70.'),
 R('five-books-colophon','五臧五篇题计','Five-repository mountain-book colophon',
   '右五臧山经五篇，原报一万五千五百三字，为底本篇末题计。15503是古籍自报字数，不冒作本站经注、双语和实体记录的实际字符计数；末题独立，不并前句国用。',
-  'The colophon states that the five books of the Five-Repositories Mountain Classic contain 15,503 characters.',
+  'The foregoing five books of the Wuzang Mountain Classic total 15,503 characters.',
   'This is the edition’s reported count, not a computed character count for the website, its commentary, bilingual explanations or entity records. The colophon remains separate from the preceding state-resources passage.')
 ]
 LINKS = []
@@ -107,7 +107,7 @@ def entities(E):
 
     s='r11-summary'
     add(s,'deity','humanhead-pig','次十一山神（彘身人首）','Eleventh-range gods (pig body, human head)','其神狀皆彘身人首','The gods have pig bodies and human heads.','彘身人首据正文，图保留完整猪躯配人头；四蹄、耳发须、毛色与姿态为艺术解释，不画人躯猪头。','Four hooves, human hair/beard, coat colors and pose are artistic; no human torso or pig snout replaces the stated body plan.')
-    for k,n,en,q,eq in [('rooster','雄雞','Rooster offering','其祠毛用一雄雞祈瘞','The general rite uses one rooster, prayer and burial.'),('gui','珪','Gui jade','用一珪','One gui jade is used.'),('grain','五種之精','Five refined grains','糈用五種之精','Five kinds of refined grain are used.'),('he','禾山帝专祀','He imperial rite','禾山帝也其祠太牢之具羞瘞倒毛用一璧牛無常','He has an imperial rite with greater livestock, offerings, burial, inversion and a bi jade; the cattle wording does not fix a number.'),('du-yu','堵山玉山冢专祀','Du and Yu principal-mountain rites','堵山玉山冢也皆倒祠羞毛少牢嬰毛吉玉','Du and Yu have inverted-offering rites with lesser livestock and jade.')]:rite(s,k,n+'（次十一总括）',en+' (eleventh summary)',q,eq)
+    for k,n,en,q,eq in [('rooster','雄雞','Rooster offering','其祠毛用一雄雞祈瘞','The general rite uses one rooster, prayer and burial.'),('gui','珪','Gui jade','用一珪','One gui jade is used.'),('grain','五種之精','Five refined grains','糈用五種之精','Five kinds of refined grain are used.'),('he','禾山帝专祀','Mount He rite (di)','禾山帝也其祠太牢之具羞瘞倒毛用一璧牛無常','Mount He, designated di, has a rite with the full tailao livestock offering, presentation and upside-down burial of the animal offering, and one bi jade disk. The phrase niu wu chang refers to cattle and remains uncertain.'),('du-yu','堵山玉山冢专祀','Du and Yu principal-mountain rites','堵山玉山冢也皆倒祠羞毛少牢嬰毛吉玉','Du and Yu have inverted-offering rites with lesser livestock and jade.')]:rite(s,k,n+'（次十一总括）',en+' (eleventh summary)',q,eq)
     s='r12-pianyu';product(s,'gold','黃金','Gold','多黃金','Gold is abundant.')
     s='r12-yun'
     product(s,'gui-bamboo','桂竹','Gui bamboo','有桂竹甚毒傷人必死','Gui bamboo is recorded with an ancient severe-poison claim.','plant')
@@ -161,5 +161,5 @@ def entities(E):
     s='yu-cosmography'
     tai=add(s,'place','tai','太山（禹曰封礼）','Mount Tai (Yu feng rite)','封於太山','The text records feng rites at Mount Tai.')
     liangfu=add(s,'place','liangfu','梁父（禹曰禅礼）','Liangfu (Yu shan rite)','禪於梁父','The text records shan rites at Liangfu.')
-    a=rite(s,'feng-shan','封禅七十二家（禹曰）','Seventy-two houses and feng-shan rites','封於太山禪於梁父七十二家得失之數皆在此内是謂國用','Seventy-two houses are said to perform feng rites at Tai and shan rites at Liangfu; gains and losses belong to the account of state resources.',commentary='𬋩子地數云封禪之王七十二家也',en_commentary='The Guanzi Dishu gloss says seventy-two royal houses performed feng-shan rites; its captured rare Guanzi character remains.');LINKS.extend([(a,tai),(a,liangfu)])
+    a=rite(s,'feng-shan','封禅七十二家（禹曰）','Seventy-two houses and feng-shan rites','封於太山禪於梁父七十二家得失之數皆在此内是謂國用','Seventy-two houses performed the feng rite at Mount Tai and the shan rite at Liangfu. The reckoning of gains and losses is all contained here. This is what is called guoyong, the resources of the state.',commentary='𬋩子地數云封禪之王七十二家也',en_commentary='Guo Pu cites the Dishu chapter of the Guanzi, which speaks of kings from seventy-two houses who performed the feng and shan rites.');LINKS.extend([(a,tai),(a,liangfu)])
     return out

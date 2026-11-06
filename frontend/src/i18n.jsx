@@ -26,6 +26,7 @@ export function localize(data, locale) {
     fields && Object.hasOwn(fields, key) ? fields[key]
       : key === 'aliases' || typeof value === 'string' && !textFields.has(key) ? value : localize(value, locale)]));
   if (data.quote || data.source_quote) result.originalQuote = data.quote || data.source_quote;
+  if (data.commentary_quote) result.originalCommentary = data.commentary_quote;
   if (data.name) result.originalName = data.name;
   return result;
 }
