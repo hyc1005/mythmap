@@ -1,0 +1,79 @@
+# 开发交接：水墨开篇与阅读交互
+
+更新：2026-11-07。本文件随仓库提交，供其他 agent 接续；根目录被忽略的本地交接文档保留历史。
+
+## 当前状态与授权
+
+- 本轮 UI 的开发基线为 `773f678`，提交目标为 `origin/codex/actions-speedup`；代码、测试、素材登记和本交接随本次提交保存，具体提交号及推送结果以 Git 历史和远端分支为准。
+- 用户已于 2026-11-07 看过本地迭代后授权“提交并推送”。本次只推送当前开发分支，不合并 main、不主动触发部署；此前“尚未授权推送”的安排已由本次授权替代。
+- 本轮开始前已有 `CHANGELOG.md`、`docs/editorial-review.md`、`frontend/src/assets/shanhai-mark.svg` 修改。保留这些内容；不要覆盖或无差别提交与本轮无关的改动。
+- 古籍译注审校继续暂停。本机 `gh` 不在 PATH，常见安装位置也未找到；已用公开 GitHub REST API 读取最近 50 次运行及最新运行的 Jobs API，并用 `git ls-remote --heads origin` 核对远端分支。必需状态设置 API 返回 401，不能据此认定 main 没有分支保护。
+- 远端基线：`main` 为 `19f4ef9`，`codex/actions-speedup` 为 `773f678`，与本地 HEAD 相同。最新运行 [42248249644](https://github.com/hyc1005/mythmap/actions/runs/42248249644) 是 2026-11-07 00:00（北京时间）的既有手动运行，早于本批 UI 工作树改动；26 个 Jobs 中 23 成功、2 失败、deploy 跳过。失败为 `verify / narrative` 的 `Run npm run verify:assets` 步骤，以及 `verify / Browser webkit / southern-cards` 的 `Verify browser suite` 步骤。注释只有退出码，未取得足以确认根因的完整日志；不要认定本轮已修复这两项。
+- 临时输出、`output/`、`node_modules/`、`frontend/dist/` 和根目录本地交接不提交。过程文件删除前仍需先询问用户“可以删了吗？”。
+
+## 已实施与主要入口
+
+| 范围 | 文件与行为 |
+| --- | --- |
+| 启动与策略 | `frontend/index.html` 保留纸色 dialog 和进入按钮，初始不显示静态四字；`src/main.jsx` 是轻量入口；原 React 挂载位于 `src/app-entry.jsx` |
+| 开屏 | `src/splash/index.js`、`createInk.js`、`stage.html`、`stage.css` 从 v12 独立原型迁移；动态加载、Shadow DOM 隔离，默认 low，结束淡出。正式构建不依赖本地 `output/` 或绝对路径 |
+| 重播与衔接 | `App.jsx` 品牌发出 `splash:replay`；入口发出 `splash:start` / `splash:done`。同页重播，不重新挂载 App；保留焦点返回；新手引导在开屏关闭后挂载 |
+| 导航字体 | `src/assets/shanhai-nav.woff2` 是现有 `public/fonts/shanhai-title.woff2` 的导航文字子集，约 7.5KB；`styles/atlas-layout.css` 定义导航字体，现有 Noto Serif SC OFL 随站点发布 |
+| 文字显现 | `components/BlurRevealText.jsx` 的 `REVEAL_EASING_MS = 1200`；支持 `text` 或 `children`、`as`。读图全文使用一个 `as="div"` 文本块，五段不再各自独立显现；按钮/输入/状态提示保持清晰 |
+| 正文覆盖 | `App.jsx`、`DetailDrawer.jsx`、`ChapterEntries.jsx`、`GlobalSearch.jsx`、`GeographicEvidence.jsx`、`GeographyComparison.jsx` 补齐正文与引文。保留查找、选文、阅读位置恢复、打印、减少动态效果时清晰可读 |
+| 折叠 | `RevealDetails` 保留原生 details/summary；280ms 高度过渡和箭头旋转，支持键盘、快速反向、减少动态效果；不依赖第三方动画库 |
+| 标签切换 | `components/PaperTabs.jsx` + `paper-interactions.css`：240ms 朱砂滑动选中块；用于地图模式、异兽/神灵和语言，保留原按钮及 `aria-pressed`，不改变地图或筛选语义 |
+
+策略：`?splash=1` 强制演示；`?splash=0` / `?nosplash` 跳过；带其他查询或 hash 的深链跳过自动播放。标记键为 `localStorage['shanhai-splash:v12:seen']`。减少动态效果始终跳过自动播放；主动点击品牌时可看静态降级。跳过或播放结束写入标记。
+
+本轮借鉴 [Bencho Text blur](https://bencho.dev/blocks/text-blur)、[FAQ accordion](https://bencho.dev/blocks/faq-accordion)、[Tab bar](https://bencho.dev/blocks/tab-bar) 的交互方式，没有复制 Pro 源码，没有新增 `framer-motion` / `lucide-react` / Tailwind 依赖。原生实现沿用项目许可；流体源码保留 Pavel Dobryakov MIT 头，题字来自 Ma Shan Zheng（OFL）。
+
+## 本地预览与验证
+
+以下命令在 `frontend/` 执行。先完成 build，再运行浏览器验证；不要在验证尚未结束时重建同一个 dist。
+
+```powershell
+npm run build -- --base /mythmap/ --logLevel error
+node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 4187 --strictPort --base /mythmap/
+```
+
+首页：`http://127.0.0.1:4187/mythmap/?splash=0`；强制开屏：`http://127.0.0.1:4187/mythmap/?splash=1`。预览端口只在原本进程仍运行时可用。
+
+```powershell
+$env:ATLAS_URL='http://127.0.0.1:4187/mythmap/'
+$env:ATLAS_BROWSERS='chromium,webkit'
+node scripts/verify-blur-global.mjs
+node scripts/verify-blur-detail.mjs
+npm run verify:paper
+npm run verify:publish
+npm run verify:data
+```
+
+界面改动可先运行 `$env:ATLAS_LOCALE_SCOPE='ui'; node scripts/verify-locale.mjs`，仍检查四尺寸、八章节、双语切换/持久化、筛选及故事播放器；仅省去逐一打开全部独立条目的抽屉遍历。完整模式使用 `$env:ATLAS_LOCALE_SCOPE=''; node scripts/verify-locale.mjs`，默认行为与 CI 完整检查保持一致。
+
+验证状态：
+
+- 前一轮全局模糊验证：Chromium 双语六尺寸、详情双语手机/桌面、WebKit 手机/桌面全文显现、中文/英文地理资料与对照检查已通过；此前时长为 1.5 秒。
+- 2026-11-07 本批最终生产构建通过；`verify:paper` 的 Chromium/WebKit × 手机/桌面四例通过：滑动选中位置与字体/语言变化同步、异兽筛选、折叠开关、键盘操作、快速反向、减少动态效果，以及全文 1.2 秒显现。
+- `verify-blur-global.mjs` 的 Chromium 双语六尺寸 12 例通过；`verify-blur-detail.mjs` 的 Chromium 双语手机/桌面四例完整复跑通过。首次详情运行曾在“继续阅读保留位置”断言失败，随后完整复跑未复现，未修改位置恢复算法，也未将首次失败归因于并发或宣称根因已修复。
+- `verify-onboarding.mjs` 的 Chromium 双语四尺寸通过；最终开屏同页重播/Esc/App 不重挂载复查通过。
+- `verify:publish`、`verify:data`、`verify-assets.py` 通过；补登记导航字体后最终素材审计为 2033 文件、1850 来源指针、1177 派生关系，errors 为空。`git diff --check` 通过。
+- `verify:locale`：旧测试仍按太阳总位移超过 5 个 SVG 单位断言，而本轮开始前的 SVG 已调整为最多 3 单位；保留现有 SVG，测试改为核对当前幅度内确实运动。完整模式首次运行遍历完桌面故事、神灵及异兽后，发现语言持久化断言在新异步入口尚未挂载 App 时就检查 HTML 默认语言；已补 App/语言就绪等待，保留原持久化断言。最终 `ATLAS_LOCALE_SCOPE=ui` 已全部通过：1440×1000、390×844、320×700、844×390 的八章节、双语切换/持久化、搜索/筛选与布局，以及英文序章和六个故事的播放、暂停、来源详情。完整逐条模式未在同步修正后完整复跑，不将其写成全量通过。
+- 开屏前期检查通过：正常完成、提前进入/Esc、重复同页重播、首访/回访/深链/减少动态效果、WebGL 不可用、contextlost、主包下载失败重试；本轮已另行复查新交互下同页重播、Esc 和 App 实例保留。
+- 本地截图保留在被忽略的 `output/ink-splash-lab/integration-preview/`，不将单次模拟器结果称为真机帧率验证。
+
+新增字体的 OFL 沿用已发布的 `public/fonts/noto-serif-sc-LICENSE.txt`；开屏题字的 Ma Shan Zheng 原作者与完整 OFL 已嵌入 `stage.html` 的 SVG metadata，流体 MIT 头保留。`verify-paper-interactions.mjs` 输出的 `paper-header-*`、`paper-bestiary-*`、`paper-disclosure-*` 是本批新交互截图。
+
+导航字库目前裁入“山海寻踪地图异兽谱读图与依据搜索中文”；已验证所需字形均存在。以后新增导航中文时从表中母字库重新裁出子集，并更新素材清单的字节数和摘要；英文沿用现有 Lora/Source Sans 字库。
+
+上传准备另将 7,512 字节导航字体的 SHA-256、母字库来源与许可边界补入 `docs/assets-inventory.tsv`，同步更新 ASSETS 的当前字体数与文件数；不要用历史审计批次的 2032 条覆盖新增登记。补登记后的 2033 条素材审计已通过。
+
+## 上传前接续顺序
+
+1. 先看 `git status --short`、本文件和 CHANGELOG，核对本轮新增文件都被纳入候选范围，尤其 `app-entry.jsx`、`splash/`、字体、`PaperTabs.jsx` 和样式。
+2. 用户已授权将本批代码及文档提交并推送当前开发分支；后续先核对远端提交结果。保留既有文档与 SVG 修改，不重置工作树，不自动切到 main，不把构建产物和截图提交。
+3. 运行最终构建、相关浏览器回归、数据和发布资源检查；如素材审计发现品牌 SVG 摘要变化，核对来源与改动后登记，不跳过断言或把待核写成通过。`verify:paper` 是新增本地回归入口，当前工作流尚未加入该脚本，不将“本地通过”写成“CI 已覆盖”。
+4. 上传前重新读取最近运行与 Jobs API，并检查必需状态设置；既有失败 Jobs 的 URL 及失败步骤见上文。此次没有修改工作流，没有触发远端重跑。
+5. 本次推送目标已明确为当前开发分支。后续合并或发布前仍需核对 CI、必需状态和未完成的验收；本地预览通过不等于 CI/线上验收通过。
+
+尚未处理：约 8.94MB raw 的 App 主包及静态数据拆分、Safari/iOS 和低端 Android 真机性能、同页 GPU/滤镜开销的系统采样；首访约十多秒的动画等待仍需用户体验判断。不要恢复已暂停的译注工作，也不要将旧 CI 失败宣称为本轮已修复。

@@ -1,9 +1,9 @@
 import { Children, createContext, useContext, useLayoutEffect, useRef, useState } from 'react';
 import './blur-reveal.css';
+import './paper-interactions.css';
 
-const REVEAL_EASING_MS = 1500;
+const REVEAL_EASING_MS = 1200;
 const roots = new Map();
-const active = new Set();
 const RevealVisibility = createContext(true);
 
 export function BlurRevealScope({ active = true, children }) {
@@ -11,11 +11,49 @@ export function BlurRevealScope({ active = true, children }) {
   return <RevealVisibility.Provider value={parentVisible && active}>{children}</RevealVisibility.Provider>;
 }
 
-export function RevealDetails({ children, onToggle, ...props }) {
+export function RevealDetails({ children, onToggle, onClick, className = '', ...props }) {
   const parentVisible = useContext(RevealVisibility);
   const [open, setOpen] = useState(Boolean(props.open));
+  const ref = useRef(null), animation = useRef(null), targetOpen = useRef(open);
   const [summary, ...body] = Children.toArray(children);
-  return <details {...props} onToggle={event => { setOpen(event.currentTarget.open); onToggle?.(event); }}>
+  useLayoutEffect(() => () => animation.current?.cancel(), []);
+  const toggle = event => {
+    onClick?.(event);
+    const node = ref.current;
+    if (event.defaultPrevented || event.target.closest('summary') !== node.firstElementChild
+      || event.target.closest('a, button, input, select')
+      || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    event.preventDefault();
+    const from = node.getBoundingClientRect().height;
+    const expanding = animation.current ? !targetOpen.current : !node.open;
+    animation.current?.cancel();
+    node.open = true;
+    const expandedHeight = node.getBoundingClientRect().height;
+    node.open = false;
+    const collapsedHeight = node.getBoundingClientRect().height;
+    node.open = true;
+    targetOpen.current = expanding;
+    setOpen(true);
+    node.dataset.expanded = String(expanding);
+    node.style.overflow = 'hidden';
+    const next = node.animate([{ height: `${from}px` }, { height: `${expanding ? expandedHeight : collapsedHeight}px` }], {
+      duration: 280, easing: 'cubic-bezier(.2,.8,.2,1)',
+    });
+    animation.current = next;
+    next.onfinish = () => {
+      node.open = expanding;
+      node.style.removeProperty('overflow');
+      animation.current = null;
+      setOpen(expanding);
+    };
+  };
+  return <details {...props} ref={ref} className={`paper-disclosure ${className}`.trim()} onClick={toggle} onToggle={event => {
+    if (!animation.current) {
+      setOpen(event.currentTarget.open);
+      event.currentTarget.dataset.expanded = String(event.currentTarget.open);
+    }
+    onToggle?.(event);
+  }}>
     {summary}<RevealVisibility.Provider value={parentVisible && open}>{body}</RevealVisibility.Provider>
   </details>;
 }
@@ -46,8 +84,7 @@ function controller(root) {
   let bypass = false;
   const clear = (item, ease = false) => {
     clearTimeout(item.release);
-    if (ease) item.release = setTimeout(() => { active.delete(item); item.node.dataset.revealState = 'clear'; }, REVEAL_EASING_MS);
-    else active.delete(item);
+    if (ease) item.release = setTimeout(() => { item.node.dataset.revealState = 'clear'; }, REVEAL_EASING_MS);
     item.node.style.removeProperty('--reveal-blur');
     if (!ease) item.node.style.removeProperty('--reveal-duration');
     item.node.dataset.revealState = ease ? 'revealing' : 'clear';
@@ -83,7 +120,6 @@ function controller(root) {
       const outside = box.bottom < viewport.top - 24 || box.top > viewport.bottom + 24;
       if (outside) {
         clearTimeout(item.release);
-        active.delete(item);
         item.state = 'waiting';
         item.node.dataset.revealState = 'waiting';
         item.node.style.removeProperty('--reveal-blur');
@@ -94,14 +130,12 @@ function controller(root) {
       if (item.state === 'waiting') {
         if (!delta) continue;
         // Large jumps and navigation land directly in the reading position.
-        if (Math.abs(delta) > innerHeight / 2 || active.size >= 3
-          || (box.top >= viewport.top + viewport.height / 4 && box.bottom <= viewport.bottom - viewport.height / 4)) {
+        if (Math.abs(delta) > innerHeight / 2) {
           clear(item); continue;
         }
         const inset = Math.min(50, viewport.height / 4);
         if (delta > 0 && box.top > viewport.bottom - inset) continue;
         if (delta < 0 && box.bottom < viewport.top + inset) continue;
-        active.add(item);
         item.node.style.setProperty('--reveal-duration', `${REVEAL_EASING_MS}ms`);
         clear(item, true);
       }
@@ -113,18 +147,13 @@ function controller(root) {
     items.forEach(item => { if (visible(item.node.getBoundingClientRect(), viewport)) show(item); else clear(item); });
   };
   const navigation = () => { showAll(); schedule(); };
-  let navigationFrame = 0;
-  const contentChange = () => {
-    if (navigationFrame) cancelAnimationFrame(navigationFrame);
-    navigationFrame = requestAnimationFrame(() => { navigationFrame = 0; navigation(); });
-  };
   const findKey = event => { if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'f') { bypass = true; showAll(); } };
   const selection = () => { if (!getSelection()?.isCollapsed) { bypass = true; showAll(); } };
   const visibility = () => { if (document.hidden) { cancelAnimationFrame(frame); frame = 0; showAll(); } else navigation(); };
   const reduce = () => { if (motion.matches) showAll(); schedule(); };
   const observer = new IntersectionObserver(schedule, { root, rootMargin: '24px' });
-  const resize = new ResizeObserver(contentChange);
-  for (const type of ['click', 'input', 'change', 'toggle']) document.addEventListener(type, contentChange, true);
+  const resize = new ResizeObserver(schedule);
+  for (const type of ['click', 'input', 'change', 'toggle']) document.addEventListener(type, schedule, true);
   scrollTargets.forEach(target => target.addEventListener('scroll', schedule, { passive: true }));
   window.addEventListener('resize', navigation);
   window.addEventListener('hashchange', navigation);
@@ -135,7 +164,7 @@ function controller(root) {
   document.addEventListener('selectionchange', selection);
   document.addEventListener('focusin', showAll);
   motion.addEventListener('change', reduce);
-  document.fonts?.addEventListener('loadingdone', navigation);
+  document.fonts?.addEventListener('loadingdone', schedule);
   const value = {
     add(node) {
       const item = { node, state: 'waiting' };
@@ -145,8 +174,8 @@ function controller(root) {
       return () => {
         clear(item); items.delete(item); observer.unobserve(node); resize.unobserve(node);
         if (items.size) return;
-        cancelAnimationFrame(frame); cancelAnimationFrame(navigationFrame); observer.disconnect(); resize.disconnect();
-        for (const type of ['click', 'input', 'change', 'toggle']) document.removeEventListener(type, contentChange, true);
+        cancelAnimationFrame(frame); observer.disconnect(); resize.disconnect();
+        for (const type of ['click', 'input', 'change', 'toggle']) document.removeEventListener(type, schedule, true);
         scrollTargets.forEach(target => target.removeEventListener('scroll', schedule));
         window.removeEventListener('resize', navigation);
         window.removeEventListener('hashchange', navigation);
@@ -157,7 +186,7 @@ function controller(root) {
         document.removeEventListener('selectionchange', selection);
         document.removeEventListener('focusin', showAll);
         motion.removeEventListener('change', reduce);
-        document.fonts?.removeEventListener('loadingdone', navigation);
+        document.fonts?.removeEventListener('loadingdone', schedule);
         roots.delete(root);
       };
     },
@@ -166,10 +195,11 @@ function controller(root) {
   return value;
 }
 
-export default function BlurRevealText({ text, revealKey, variant = 'title', rootRef, active: enabledProp = true, ...props }) {
+export default function BlurRevealText({ text, children, as: Element = 'span', revealKey, variant = 'title', rootRef, active: enabledProp = true, ...props }) {
   const ref = useRef(null);
   const enabled = useContext(RevealVisibility) && enabledProp;
-  const content = contentKey(text);
+  const value = text ?? children;
+  const content = contentKey(value);
   useLayoutEffect(() => {
     const node = ref.current;
     if (!enabled) { node.dataset.revealState = 'clear'; return; }
@@ -187,5 +217,5 @@ export default function BlurRevealText({ text, revealKey, variant = 'title', roo
     else initialize();
     return () => { if (frame) cancelAnimationFrame(frame); cleanup?.(); };
   }, [revealKey, content, rootRef, enabled]);
-  return <span {...props} ref={ref} className={`blur-reveal-text blur-reveal-${variant}${props.className ? ` ${props.className}` : ''}`} data-reveal-key={revealKey}>{text}</span>;
+  return <Element {...props} ref={ref} className={`blur-reveal-text blur-reveal-${variant}${props.className ? ` ${props.className}` : ''}`} data-reveal-key={revealKey}>{value}</Element>;
 }

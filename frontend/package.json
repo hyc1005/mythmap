@@ -11,6 +11,7 @@
     "verify:beishan": "node scripts/verify-beishan.mjs",
     "verify:dongshan": "node scripts/verify-dongshan.mjs",
     "verify:onboarding": "node scripts/verify-onboarding.mjs",
+    "verify:paper": "node scripts/verify-paper-interactions.mjs",
     "verify:place-search": "node scripts/verify-place-search.mjs",
     "verify:discovery": "node scripts/verify-discovery.mjs",
     "verify:ux": "node scripts/verify-ux.mjs",

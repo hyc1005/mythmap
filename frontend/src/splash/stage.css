@@ -1,0 +1,88 @@
+
+  :host { --paper:#f5efdf; --paper-deep:#e8dec6; --cinnabar:#b8341a; }
+  * { box-sizing:border-box; }
+  :host { display:block; font-family:"Songti SC","Noto Serif SC",serif; }
+
+  .viewport { position:relative; width:100vw; height:100vh; overflow:hidden; }
+
+  /* 恢复原版简洁主页占位（真实站点已有主页，不做额外编造） */
+
+
+  .opening {
+    position:absolute; inset:0; z-index:5;
+    background:radial-gradient(120% 90% at 50% 40%, #f8f2e5 0%, var(--paper) 55%, var(--paper-deep) 100%);
+    will-change:transform, opacity;
+  }
+  .opening.wipe { animation: ink-wipe 1.5s cubic-bezier(.4,0,.2,1) forwards; }
+  @keyframes ink-wipe {
+    0%   { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-1.5%) scale(1.012); }
+  }
+
+  .stage-inner { position:absolute; inset:0; will-change:transform; }
+  .stage-inner.drift { animation: drift 1.9s cubic-bezier(.32,.68,.3,1) forwards; }
+  @keyframes drift {
+    0% { transform: translateX(0) scale(1); }
+    100% { transform: translateX(5.5%) scale(1.06); }
+  }
+
+  #ink { position:absolute; inset:0; width:100%; height:100%; z-index:1; pointer-events:none; }
+  /* 字稿在写字阶段作为“墨边”叠在流体之上；不是打印体，边缘走 inkEdge 的毛边滤镜 */
+  #titleSvg, #ghostSvg { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+  #titleSvg { z-index:2; }
+  #ghostSvg { z-index:6; opacity:0; }
+  #cream { position:absolute; inset:0; width:100%; height:100%; z-index:4; pointer-events:none; }
+  .glyph { opacity:0; transition:opacity .28s ease; filter:url(#inkEdge); }
+  #titleSvg .glyph[data-g="2"], #titleSvg .glyph[data-g="3"] { fill:#8e2210; }
+  .ghost-path { filter:url(#inkEdge); }
+
+  #repSvg, #mtn { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; opacity:0; }
+  #repSvg { z-index:7; transform-origin:50% 50%; }
+  /* 远山与青海波：顶部采用多段柔滑羽化遮罩，自然融入淡彩背景 */
+  #mtn {
+    z-index:4; mix-blend-mode:multiply;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, transparent 32%, rgba(0,0,0,.16) 46%, rgba(0,0,0,.58) 62%, rgba(0,0,0,.90) 78%, #000 100%);
+    mask-image: linear-gradient(180deg, transparent 0%, transparent 32%, rgba(0,0,0,.16) 46%, rgba(0,0,0,.58) 62%, rgba(0,0,0,.90) 78%, #000 100%);
+  }
+
+  /* 朱砂印：复用 shanhai-mark 的山/日/水，实心朱底 + 米色线画；太阳与山脊留白 */
+  .seal { position:fixed; z-index:9; opacity:0; pointer-events:none; filter:url(#sealRough);
+    transform:scale(1.26) rotate(-5deg); }
+  .seal svg { display:block; width:100%; height:100%; }
+  .seal.small .w2 { display:none; }
+  .seal.on { opacity:.96; transform:scale(1) rotate(-2deg);
+    transition:transform .18s cubic-bezier(.2,.9,.3,1), opacity .12s; }
+  .seal.on.lift { opacity:0; transform:scale(1.08) translateY(-12px) rotate(-1deg);
+    transition:opacity 1.2s ease-in, transform 1.2s cubic-bezier(.25,.1,.25,1); }
+
+  /* 落印瞬间的金朱气浪涟漪 */
+  .seal-ring {
+    position:fixed; z-index:8; border-radius:6px; pointer-events:none; opacity:0;
+    border:1.2px solid rgba(164,68,49,.50); box-shadow:0 0 12px rgba(164,68,49,.16);
+    transform:translate(-50%, -50%) scale(.7) rotate(-3deg);
+  }
+  .seal-ring.boom {
+    animation:seal-ripple .85s cubic-bezier(.16,.84,.3,1) forwards;
+  }
+  @keyframes seal-ripple {
+    0%   { opacity:.88; transform:translate(-50%, -50%) scale(.85) rotate(-3deg); }
+    100% { opacity:0;   transform:translate(-50%, -50%) scale(1.95) rotate(-1deg); }
+  }
+
+  .edge { position:fixed; top:-5%; bottom:-5%; width:4.6%; z-index:7; pointer-events:none; opacity:0; transform:skewX(-12deg);
+    background:linear-gradient(90deg,transparent,rgba(32,22,14,.40) 42%,rgba(176,138,82,.30) 62%,rgba(246,236,214,.20) 76%,transparent); filter:url(#edgeRough); }
+
+  /* 洗墨留白：适配竖排交错字群的多阶径向宣纸色 + 噪声边缘置换 */
+  #clear { position:absolute; z-index:5; pointer-events:none; opacity:0; filter:url(#washRough);
+    background:radial-gradient(closest-side, rgba(246,240,224,.97) 0%, rgba(246,240,224,.92) 52%, rgba(246,240,224,.54) 78%, rgba(246,240,224,0) 100%); }
+
+  #sparks { position:fixed; inset:0; width:100%; height:100%; z-index:9; pointer-events:none; }
+
+
+  .opening::after { content:''; position:absolute; inset:0; pointer-events:none; mix-blend-mode:multiply; opacity:.12;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .36  0 0 0 0 .28  0 0 0 0 .18  0 0 0 .55 -.14'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size:260px 260px; }
+  .opening::after { z-index:3; }
+
+.viewport { width:100%; height:100%; }
+:host { position:absolute; inset:0; }

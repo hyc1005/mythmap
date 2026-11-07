@@ -11,6 +11,18 @@ body { background: var(--paper); }
 .myth-app { overflow: clip; }
 .myth-header, .best-page, .reading-notes { background: var(--paper); }
 .myth-header { padding: 12px clamp(16px, 3vw, 48px); }
+@font-face {
+  font-family: 'Shanhai Navigation';
+  src: url('../assets/shanhai-nav.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: swap;
+}
+.myth-header h1 { font-family: 'Shanhai Navigation', 'Lora Variable', 'Songti SC', serif; font-weight: 600; letter-spacing: .18em; }
+.myth-header nav { font-family: 'Shanhai Navigation', 'Source Sans 3 Variable', 'Songti SC', serif; letter-spacing: .07em; }
+.myth-header nav>a { font-weight: 500; }
+.myth-header .global-search-trigger, .myth-header .language-switch button { font-family: inherit; letter-spacing: .05em; }
+.myth-header .brand-replay { min-height: 44px; }
+.myth-header .brand-replay:focus-visible { outline: 1px solid var(--verm); outline-offset: 5px; }
 .world-layout { display: grid; align-items: start; grid-template-columns: 250px minmax(0, 1fr); gap: 28px; padding: 24px clamp(16px, 3vw, 48px); }
 .world-main { width: 100%; min-width: 0; }
 .chapter-rail { height: auto; max-height: min(850px, 95svh); padding-top: 8px; overflow-y: auto; scrollbar-width: thin; }

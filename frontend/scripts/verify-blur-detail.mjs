@@ -34,7 +34,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       const title = drawer.locator('[data-reading-anchor="title"] > span');
       assert.equal(await title.getAttribute('data-reveal-key'), `detail:03-01:title:${lang}`);
       await clearVisible(page);
-      assert.equal(await drawer.locator('p .blur-reveal-text, blockquote .blur-reveal-text').count(), 0);
+      assert.ok(await drawer.locator('p .blur-reveal-text, blockquote .blur-reveal-text').count() > 0, 'Reading prose shares the reveal behavior');
       assert.equal(await drawer.evaluate(node => getComputedStyle(node).filter), 'none', 'No whole-drawer filter');
       const pagePosition = await page.evaluate(() => scrollY);
       const bounds = await drawer.boundingBox();
@@ -55,9 +55,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           if (await target.getAttribute('data-reveal-state') === 'revealing') { entered = true; break; }
         }
         assert.ok(entered, 'Real drawer wheel reentry');
-        assert.equal(await target.evaluate(node => getComputedStyle(node).transitionDuration), '1.5s');
+        assert.equal(await target.evaluate(node => getComputedStyle(node).transitionDuration), '1.2s');
         assert.equal(await target.evaluate(node => getComputedStyle(node).opacity), '1');
-        await page.waitForTimeout(1550);
+        await page.waitForTimeout(1250);
         assert.equal(await target.evaluate(node => getComputedStyle(node).filter), 'blur(0px)');
         await page.mouse.wheel(0, 5); await settle(page);
         assert.equal(await target.getAttribute('data-reveal-state'), 'clear', 'Direction reversal keeps clear text');
@@ -90,7 +90,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await drawer.locator('.drawer-close').click();
       await drawer.waitFor({ state: 'detached' });
       await page.locator('.resume-reading').click(); await ready(page); await settle(page);
-      assert.ok(Math.abs(await drawer.evaluate(node => node.scrollTop) - savedTop) <= 3, 'Resume preserves reading position');
+      const resumedTop = await drawer.evaluate(node => node.scrollTop);
+      assert.ok(Math.abs(resumedTop - savedTop) <= 3, `Resume preserves reading position: saved=${savedTop}, resumed=${resumedTop}, ${name} ${width} ${lang}`);
       await clearVisible(page);
       await drawer.locator('.detail-entry-nav button').last().click();
       await page.waitForFunction(() => document.querySelector('.detail-drawer')?.dataset.entryId !== '03-01');
@@ -108,7 +109,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       assert.equal(await drawer.locator('[data-reading-anchor="title"] > span').getAttribute('data-reveal-key'), `detail:${other}:title:${lang}`);
       await clearVisible(page);
       assert.equal(await drawer.locator('[data-reading-anchor="description"] > .blur-reveal-text').count(), 1);
-      assert.equal(await drawer.locator('.detail-description').evaluate(node => getComputedStyle(node).filter), 'none');
+      assert.equal(await drawer.locator('.detail-description > .blur-reveal-prose').count(), 1);
       await page.keyboard.press('Control+f');
       await clearVisible(page);
       await page.emulateMedia({ reducedMotion: 'reduce' });

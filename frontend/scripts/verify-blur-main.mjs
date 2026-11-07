@@ -39,7 +39,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           for (let position = maximum; position >= 0; position -= 30) {
             await rail.evaluate((node, position) => { node.scrollTop = position; }, position); await settle();
           }
-          await rail.evaluate(node => { node.scrollTop = 0; }); await page.waitForTimeout(1550);
+          await rail.evaluate(node => { node.scrollTop = 0; }); await page.waitForTimeout(1250);
           assert.equal(await page.locator('.chapter-rail h2 > span').evaluate(node => getComputedStyle(node).filter), 'blur(0px)');
         }
       }
@@ -56,11 +56,11 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           await page.mouse.wheel(0, 20); await page.waitForTimeout(45);
           const current = await title.evaluate(node => ({ state: node.dataset.revealState, duration: getComputedStyle(node).transitionDuration, opacity: +getComputedStyle(node).opacity }));
           if (current.state === 'revealing') {
-            entered = true; assert.equal(current.duration, '1.5s'); assert.equal(current.opacity, 1);
+            entered = true; assert.equal(current.duration, '1.2s'); assert.equal(current.opacity, 1);
           }
         }
         assert.ok(entered, 'Bestiary real-wheel entry');
-        await page.waitForTimeout(1550);
+        await page.waitForTimeout(1250);
         assert.equal(await title.evaluate(node => getComputedStyle(node).filter), 'blur(0px)');
         await page.mouse.wheel(0, -20); await page.waitForTimeout(70);
         assert.equal(await title.getAttribute('data-reveal-state'), 'clear', 'Same viewport reversal stays clear');

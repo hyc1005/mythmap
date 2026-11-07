@@ -14,6 +14,8 @@
 | `verify-design.mjs`、`verify-narrative.mjs` | 布局、全屏、插画、完整故事时钟与叙事 |
 | `verify-geography.mjs`、`verify-map-frame.mjs` | 地理证据、底图恢复与画布结构 |
 | `verify-guided-tour.mjs`、`verify-onboarding.mjs`、`verify-exploration.mjs` | 游历、首次引导和探索流程 |
+| `verify-blur-global.mjs`、`verify-blur-detail.mjs`、`verify-blur-main.mjs`、`verify-blur-reveal.mjs` | 全站/详情/主区文字显现、重入、阅读恢复与减少动态效果 |
+| `verify-paper-interactions.mjs`（`npm run verify:paper`） | Chromium/WebKit 的纸色标签、语言宽度、折叠/键盘/快速反向及全文 1.2 秒显现；当前为本地入口，尚未加入 Actions 矩阵 |
 | `verify-nanshan.mjs`、`verify-xishan.mjs`／`verify-xishan-complete.mjs`、`verify-beishan.mjs`、`verify-dongshan.mjs`、`verify-zhongshan.mjs` | 各山经的内容与交互回归 |
 | `verify-repairs.mjs`、`verify-discovery.mjs`、`verify-ux.mjs`、`verify-playback-speed.mjs` | 修复项、发现入口、操作与播放倍率 |
 | `mock-tianditu.mjs` | 浏览器测试的模拟瓦片助手；不是线上底图 |
@@ -25,6 +27,8 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-bestiary.m
 ```
 
 一般浏览器脚本使用`ATLAS_BROWSERS=chromium,webkit`；少数历史脚本仅支持Chromium，具体以脚本和Actions矩阵为准。QA保存在被Git忽略的`output/qa/`。
+
+`verify-locale.mjs` 默认逐条检查全部独立记载；设置 `ATLAS_LOCALE_SCOPE=ui` 时仅省去逐条抽屉遍历，保留四尺寸、章节、语言持久化、筛选与故事播放器检查。该界面模式不替代上传前的完整内容验收。
 
 ## 素材工具：assets/
 

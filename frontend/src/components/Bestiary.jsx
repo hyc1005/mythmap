@@ -1,3 +1,4 @@
+import PaperTabs from './PaperTabs';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLocale } from '../i18n';
 import { useReducedMotion } from '../motion';
@@ -81,9 +82,9 @@ export default function Bestiary({ world, onOpen, reading }) {
   </button>; };
   return <section className="best-page" id="creatures">
     <div className="best-page-heading"><h2><BlurRevealText text={t('山海经异兽谱')} revealKey={`bestiary:title:${locale}`} /></h2><p><BlurRevealText text={t('按原文形貌整理；同名组仅作索引，各条出处独立。')} revealKey={`bestiary:intro:${locale}`} variant="intro" /></p></div>
-    <div className="bestiary-roles" role="group" aria-label={t('异兽谱类型')}>
+    <PaperTabs value={filters.role} className="bestiary-roles" aria-label={t('异兽谱类型')}>
       {['beast', 'deity'].map(role => <button type="button" key={role} aria-pressed={filters.role === role} data-bestiary-role={role} onClick={() => { setFilters({ ...emptyFilters, role }); setLimit(BESTIARY_INITIAL); }}>{t(role === 'beast' ? '异兽' : '神灵')} · {entries.filter(item => item.role === role).length}</button>)}
-    </div>
+    </PaperTabs>
     <div className="bestiary-tools">
       <input type="search" data-bestiary-filter="query" maxLength={120} value={filters.query} onChange={event => change({ query: event.target.value })} placeholder={t('搜索异兽或形貌')} aria-label={t('搜索异兽')} />
       <select data-bestiary-filter="book" value={filters.book} onChange={event => change({ book: event.target.value })} aria-label={t('按篇目筛选')}><option value="">{t('全部篇目')} · {count('book', '')}</option>{books.map(([key, label]) => <option key={key} value={key}>{label} · {count('book', key)}</option>)}</select>

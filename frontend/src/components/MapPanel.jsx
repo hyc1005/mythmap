@@ -1,3 +1,4 @@
+import PaperTabs from './PaperTabs';
 import BlurRevealText, { RevealDetails } from './BlurRevealText';
 import { useLocale, localize } from '../i18n';
 import { Component, lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -574,7 +575,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
   const fullscreenButton = <button className="map-fullscreen" onClick={toggleFullscreen} aria-pressed={isFullscreen} aria-label={isFullscreen ? t("退出地图全屏") : t("地图全屏")}>{isFullscreen ? t("退出全屏") : t("全屏展示")}</button>;
 
   const readingActions = <ReadingActions {...readingControls} showTour={!geographyMode} />;
-  const modeControls = <div className="map-mode-switch" role="group" aria-label={t('地图模式')}><button type="button" aria-pressed={!geographyMode} onClick={() => onGeographyModeChange(false)}>{t('木刻叙事')}</button><button type="button" aria-pressed={geographyMode} onClick={() => onGeographyModeChange(true)}>{t('真实地理')}</button></div>;
+  const modeControls = <PaperTabs value={geographyMode} className="map-mode-switch" aria-label={t('地图模式')}><button type="button" aria-pressed={!geographyMode} onClick={() => onGeographyModeChange(false)}>{t('木刻叙事')}</button><button type="button" aria-pressed={geographyMode} onClick={() => onGeographyModeChange(true)}>{t('真实地理')}</button></PaperTabs>;
 
   return <><section ref={mapFrame} tabIndex={-1} data-map-mode={geographyMode ? 'geography' : 'woodcut'} data-camera-mode={cameraMode} className={`myth-map-wrap ${isPrologue ? "is-prologue" : ""} ${geographyMode ? "is-geography" : ""} ${isFullscreen ? "is-map-fullscreen" : ""} ${fallbackFullscreen ? "is-fallback-fullscreen" : ""} ${shortMap ? "is-short-map" : ""} ${activeJourneyId ? "has-journey" : ""} ${activeJourneyId && activeJourneyId !== "03-05" ? "has-local-story" : ""}`} aria-label={geographyMode ? t("真实地理参考地图") : isPrologue ? t("盘古开天序章场景") : t("山海经方位关系地图")}>
     {isFullscreen && <header className="fullscreen-toolbar" aria-label={t("全屏地图工具栏")}><div className="fullscreen-chapter-nav" aria-label={t("全屏章节切换")}>

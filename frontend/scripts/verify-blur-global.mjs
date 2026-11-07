@@ -41,7 +41,11 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await page.locator('.world-layout').waitFor(); await settle(page);
       assert.equal(await page.locator('.ink-word').count(), 0);
       await clearVisible(page.locator('body'));
-      assert.equal(await page.locator('input .blur-reveal-text, select .blur-reveal-text, blockquote .blur-reveal-text, .bestiary-tools .blur-reveal-text').count(), 0);
+      assert.equal(await page.locator('input .blur-reveal-text, select .blur-reveal-text, .bestiary-tools .blur-reveal-text').count(), 0);
+      const readingCopy = page.locator('.reading-notes-copy.blur-reveal-prose');
+      assert.equal(await readingCopy.count(), 1, 'The complete reading note animates as one block');
+      assert.equal(await readingCopy.locator('p').count(), 5);
+      assert.equal(await readingCopy.locator('.blur-reveal-text').count(), 0, 'Paragraphs do not reveal independently inside the note');
       assert.ok(await page.locator('.beast-card').count() <= 12);
       assert.equal(await page.evaluate(() => __blurObserved().filter(node => !node.checkVisibility()).length), 0, `Closed branches do not observe hidden text: ${JSON.stringify(await page.evaluate(() => __blurObserved().filter(node => !node.checkVisibility()).map(node=>({text:node.textContent,key:node.dataset.revealKey,parent:node.parentElement.outerHTML.slice(0,500)}))))}`);
       if (width === 1440 && lang === 'zh') {

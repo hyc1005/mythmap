@@ -1,3 +1,4 @@
+import PaperTabs from './components/PaperTabs';
 import chapterReading from './chapter-reading.json';
 import { useLocale, localize } from './i18n';
 import brandMark from './assets/shanhai-mark.svg?raw';
@@ -31,6 +32,17 @@ import './styles/exploration.css';
 import './styles/atlas-layout.css';
 
 export default function App() {
+  const [splashDone, setSplashDone] = useState(() => document.documentElement.dataset.splash !== 'active');
+  useEffect(() => {
+    const start = () => setSplashDone(false);
+    const done = () => setSplashDone(true);
+    window.addEventListener('splash:start', start);
+    window.addEventListener('splash:done', done);
+    return () => {
+      window.removeEventListener('splash:start', start);
+      window.removeEventListener('splash:done', done);
+    };
+  }, []);
   const { t, locale, setLocale } = useLocale();
   const catalog = useMemo(() => localize(rawCatalog, locale), [locale]);
   const [rawWorld, setWorld] = useState(mythWorld);
@@ -403,10 +415,10 @@ export default function App() {
   const readingControls = { resumeEntry, onResume: continueReading, returnEntry: entryIndex.get(playbackReturnId), onReturnToReading: () => window.history.back(), tourLabel, tourActive, playing, readingChapter, progress: `${Math.max(1, storyNumber + 1)} / ${storyIds.length}`, onTour: toggleTour, guideVisible, onDismissGuide: dismissGuide, onGuide: startGuide };
   const chapterGuide = <div className="chapter-reading" key={chapterId} data-chapter-reading={chapterId}>
     <p className="chapter-intro"><BlurRevealText variant="intro" revealKey={`chapter-guide:${chapterId}:${locale}`} text={chapterReading[chapterId].intro[locale]} /></p>
-    <RevealDetails><summary><BlurRevealText variant="inline" revealKey="App.jsx:summary" text={t('阅读线索与来源')} /></summary><p>{chapterReading[chapterId].source_note[locale]}</p><p className="chapter-transition">{chapterReading[chapterId].transition[locale]}</p><small>{t('主题与游历线索为项目编排，不表示精确年代。')}</small></RevealDetails>
+    <RevealDetails><summary><BlurRevealText variant="inline" revealKey="App.jsx:summary" text={t('阅读线索与来源')} /></summary><p><BlurRevealText variant="prose" revealKey={`chapter-guide:body-1:${chapterId}:${locale}`}>{chapterReading[chapterId].source_note[locale]}</BlurRevealText></p><p className="chapter-transition"><BlurRevealText variant="prose" revealKey={`chapter-guide:body-2:${chapterId}:${locale}`}>{chapterReading[chapterId].transition[locale]}</BlurRevealText></p><small><BlurRevealText variant="prose" revealKey={`chapter-guide:body-3:${chapterId}:${locale}`}>{t('主题与游历线索为项目编排，不表示精确年代。')}</BlurRevealText></small></RevealDetails>
   </div>;
   return <main className="myth-app" lang={locale === "en" ? "en" : "zh-CN"}>
-    <header id="home" className="myth-header"><a href="#world"><span className="seal" aria-hidden="true" dangerouslySetInnerHTML={{ __html: brandMark }} /><h1><BlurRevealText revealKey="App.jsx:1" variant="inline" text={<>{t("山海寻踪")}</>} /></h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><button ref={searchTrigger} className="global-search-trigger" type="button" aria-keyshortcuts="Control+k Meta+k" aria-label={t("搜索故事、异兽与现代地点")} onClick={() => setSearchOpen(true)}>{t("搜索")}<kbd aria-hidden="true">⌘ / Ctrl K</kbd></button><div className="language-switch" role="group" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></div></nav></header>
+    <header id="home" className="myth-header"><a className="brand-replay" href="#home" title={locale === "en" ? "Replay the ink opening" : "重播水墨开篇"} onClick={event => { event.preventDefault(); window.dispatchEvent(new Event("splash:replay")); }}><span className="seal" aria-hidden="true" dangerouslySetInnerHTML={{ __html: brandMark }} /><h1><BlurRevealText revealKey="App.jsx:1" variant="inline" text={<>{t("山海寻踪")}</>} /></h1></a><nav aria-label={t("网站导航")}><a href="#world">{t("地图")}</a><a href="#creatures">{t("异兽谱")}</a><a href="#reading-notes">{t("读图与依据")}</a><button ref={searchTrigger} className="global-search-trigger" type="button" aria-keyshortcuts="Control+k Meta+k" aria-label={t("搜索故事、异兽与现代地点")} onClick={() => setSearchOpen(true)}>{t("搜索")}<kbd aria-hidden="true">⌘ / Ctrl K</kbd></button><PaperTabs value={locale} className="language-switch" aria-label={locale === "en" ? "Language" : "语言"}><button type="button" lang="zh-CN" aria-pressed={locale === "zh"} onClick={() => setLocale("zh")}>中文</button><button type="button" lang="en" aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button></PaperTabs></nav></header>
      <section ref={worldLayout} className="world-layout" id="world" data-chapter={stages[stageIndex].id} data-timeline-playing={playing} data-animation-busy={journeyBusy} data-tour-active={tourActive} data-tour-reading={readingChapter}>
       <aside ref={chapterRail} className="chapter-rail">
         <span className="chapter-number">{stageIndex === 0 ? t("序章") : t("第 ") + stages[stageIndex].id + t(" 章")}</span><h2><BlurRevealText text={stages[stageIndex].title} revealKey={`chapter:${stages[stageIndex].id}:title:${locale}`} rootRef={chapterRail} /></h2><p><BlurRevealText text={stages[stageIndex].subtitle} revealKey={`chapter:${stages[stageIndex].id}:subtitle:${locale}`} variant="subtitle" active={subtitleVisible} rootRef={chapterRail} /></p>
@@ -425,10 +437,10 @@ export default function App() {
     </section>
     {mobile && panel && <ExploreSheet returnFocus={panelTrigger.current} title={t({ chapters: '章节', entries: '本章条目' }[panel])} onClose={() => setPanel(null)}>{panel === 'chapters' ? <>{chapterNavigation}{chapterGuide}</> : chapterEntries}</ExploreSheet>}
     <Bestiary world={world} onOpen={open} reading={reading} />
-    <section className="reading-notes" id="reading-notes" aria-labelledby="reading-notes-title"><h2 id="reading-notes-title"><BlurRevealText text={t("读图与依据")} revealKey={`reading-notes:title:${locale}`} /></h2><div className="reading-notes-body"><div className="reading-notes-copy"><div className="reading-notes-text"><p><BlurRevealText text={t("本项目为选编，并未完整收录《山海经》。故事入口区分《山海经》、其他古籍与地方传说；地点考证另作标识。")} revealKey={`reading-notes:intro:${locale}`} variant="intro" /></p><p>{t("《山海经》依山川和方位展开，不是编年史。序章与七章次序是本项目的叙事编排；各章内部仅在原文或可靠叙事关系可核实处排列先后，不代表精确年代。")}</p><p>{t("经文距离不按比例绘制；淡墨山形为装饰。重要地点以名称和原文标识，故事示意点不表示真实位置。")}</p></div><p>{t("各篇神域记载不预设为同一空间体系。异兽图标仅关联有篇目依据的地点锚点；缺少可靠地点依据的条目收录在异兽谱中。")}</p><p>{t("山海空间与异兽描写以《山海经》正文条目为依据，神话故事沿用各条目所列典籍与出处。插画是本项目依据正文的图像解释，不作为古本插图或新增考据证据。英文译文由模型生成，未声明已完成专业审校。")}</p></div><figure className="reading-bookplate"><span className="bookplate-mark" aria-hidden="true" style={{ maskImage: `url(${assetUrl('/data/atlas/optimized/shanhai-bookplate.webp')})` }} /><figcaption>{t("山海寻踪")}<small>{t("藏书印")}</small></figcaption></figure></div></section>
+    <section className="reading-notes" id="reading-notes" aria-labelledby="reading-notes-title"><h2 id="reading-notes-title"><BlurRevealText text={t("读图与依据")} revealKey={`reading-notes:title:${locale}`} /></h2><div className="reading-notes-body"><BlurRevealText as="div" className="reading-notes-copy" revealKey={`reading-notes:body:${locale}`} variant="prose"><div className="reading-notes-text"><p>{t("本项目为选编，并未完整收录《山海经》。故事入口区分《山海经》、其他古籍与地方传说；地点考证另作标识。")}</p><p>{t("《山海经》依山川和方位展开，不是编年史。序章与七章次序是本项目的叙事编排；各章内部仅在原文或可靠叙事关系可核实处排列先后，不代表精确年代。")}</p><p>{t("经文距离不按比例绘制；淡墨山形为装饰。重要地点以名称和原文标识，故事示意点不表示真实位置。")}</p></div><p>{t("各篇神域记载不预设为同一空间体系。异兽图标仅关联有篇目依据的地点锚点；缺少可靠地点依据的条目收录在异兽谱中。")}</p><p>{t("山海空间与异兽描写以《山海经》正文条目为依据，神话故事沿用各条目所列典籍与出处。插画是本项目依据正文的图像解释，不作为古本插图或新增考据证据。英文译文由模型生成，未声明已完成专业审校。")}</p></BlurRevealText><figure className="reading-bookplate"><span className="bookplate-mark" aria-hidden="true" style={{ maskImage: `url(${assetUrl('/data/atlas/optimized/shanhai-bookplate.webp')})` }} /><figcaption>{t("山海寻踪")}<small>{t("藏书印")}</small></figcaption></figure></div></section>
     <footer className="myth-footer"><span>{t("版式：方位关系与叙述次序 · 不设距离比例")}</span><span>{t("山海空间与异兽描写：以《山海经》正文条目核对")}</span><a href="https://github.com/hyc1005/mythmap/blob/main/ASSETS.md" target="_blank" rel="noopener noreferrer" aria-label={t("查看来源与许可")}>{t("来源与许可 ↗")}</a></footer>
 
-    {onboardingOpen && <OnboardingGuide blocked={Boolean(selectedId || panel || searchOpen || fullscreenTarget)} contextKey={`${chapterId}-${mobile}-${geographyOpen}`} onFinish={finishGuide} returnFocus={guideTrigger.current} />}
+    {splashDone && onboardingOpen && <OnboardingGuide blocked={Boolean(selectedId || panel || searchOpen || fullscreenTarget)} contextKey={`${chapterId}-${mobile}-${geographyOpen}`} onFinish={finishGuide} returnFocus={guideTrigger.current} />}
     <GlobalSearch open={searchOpen} state={searchState} onStateChange={setSearchState} onClose={() => { if (window.history.state?.shanhai?.searchEntry) window.history.back(); else setSearchOpen(false); }} returnFocus={searchTrigger.current} world={world} catalog={catalog} onChoose={(id, ids, savedSearch, result) => {
       const saved = { ...window.history.state?.shanhai, searchState: savedSearch };
       window.history.replaceState({ ...window.history.state, shanhai: saved }, '', window.location.href);

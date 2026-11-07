@@ -1,0 +1,31 @@
+.paper-disclosure.paper-disclosure > summary { position: relative; list-style: none; padding-inline-start: 20px; }
+.paper-disclosure > summary::-webkit-details-marker { display: none; }
+.paper-disclosure > summary::marker { content: ''; }
+.paper-disclosure > summary::before {
+  content: ''; position: absolute; inset-inline-start: 2px; top: 50%;
+  width: 6px; height: 6px; border-inline-end: 1.5px solid currentColor; border-block-end: 1.5px solid currentColor;
+  transform: translateY(-50%) rotate(-45deg); transition: transform 280ms cubic-bezier(.2,.8,.2,1), color 150ms ease;
+}
+.paper-disclosure[open]:not([data-expanded='false']) > summary::before { transform: translateY(-70%) rotate(45deg); color: var(--verm); }
+.paper-disclosure[data-expanded='true'] > summary { color: var(--verm); }
+.paper-tabs:is(.map-mode-switch, .bestiary-roles, .language-switch) {
+  position: relative; isolation: isolate; width: fit-content; max-width: 100%;
+  padding: 3px; gap: 3px; border: 1px solid var(--edge); border-radius: 3px;
+}
+.paper-tabs::before {
+  content: ''; position: absolute; inset: 0 auto auto 0; z-index: 0; pointer-events: none;
+  width: var(--paper-tab-width, 0px); height: var(--paper-tab-height, 0px);
+  transform: translate(var(--paper-tab-x, 0px), var(--paper-tab-y, 0px));
+  border: 1px solid var(--verm); border-radius: 2px; background: var(--verm);
+  opacity: var(--paper-tab-visible, 0);
+  transition: transform 240ms cubic-bezier(.2,.8,.2,1), width 240ms cubic-bezier(.2,.8,.2,1), height 240ms cubic-bezier(.2,.8,.2,1);
+}
+.paper-tabs:is(.map-mode-switch, .bestiary-roles, .language-switch) > button {
+  position: relative; z-index: 1; border-color: transparent; background: transparent; box-shadow: none;
+  transition: color 180ms ease; text-decoration: none;
+}
+.paper-tabs:is(.map-mode-switch, .bestiary-roles, .language-switch) > button[aria-pressed='true'] { color: var(--paper); background: transparent; border-color: transparent; box-shadow: none; text-decoration: none; }
+@media (prefers-reduced-motion: reduce), print {
+  .paper-disclosure > summary::before, .paper-tabs::before,
+  .paper-tabs:is(.map-mode-switch, .bestiary-roles, .language-switch) > button { transition: none; }
+}
