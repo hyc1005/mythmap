@@ -4,8 +4,8 @@
 
 ## 当前状态与授权
 
-- 本轮 UI 的开发基线为 `773f678`，提交目标为 `origin/codex/actions-speedup`；代码、测试、素材登记和本交接随本次提交保存，具体提交号及推送结果以 Git 历史和远端分支为准。
-- 用户已于 2026-11-07 看过本地迭代后授权“提交并推送”。本次只推送当前开发分支，不合并 main、不主动触发部署；此前“尚未授权推送”的安排已由本次授权替代。
+- 本轮 UI 提交为 `c6bb559`，已推送 `codex/actions-speedup`。用户随后明确授权“合并且部署”，已快进合并并推送 main；之前“不合并 main、不部署”的安排已被本次授权替代。
+- 首轮 main 发布 [42348028931](https://github.com/hyc1005/mythmap/actions/runs/42348028931) 构建成功，但素材审计因浅检出缺少 `git:447d823...` 等历史证据而失败（git show 退出 128）。已恢复 narrative 审计任务的 `fetch-depth: 0`；构建与浏览器的轻量检出不变，所有校验及 deploy 的 needs 门槛保留。修复提交后继续完整 main 发布。
 - 本轮开始前已有 `CHANGELOG.md`、`docs/editorial-review.md`、`frontend/src/assets/shanhai-mark.svg` 修改。保留这些内容；不要覆盖或无差别提交与本轮无关的改动。
 - 古籍译注审校继续暂停。本机 `gh` 不在 PATH，常见安装位置也未找到；已用公开 GitHub REST API 读取最近 50 次运行及最新运行的 Jobs API，并用 `git ls-remote --heads origin` 核对远端分支。必需状态设置 API 返回 401，不能据此认定 main 没有分支保护。
 - 远端基线：`main` 为 `19f4ef9`，`codex/actions-speedup` 为 `773f678`，与本地 HEAD 相同。最新运行 [42248249644](https://github.com/hyc1005/mythmap/actions/runs/42248249644) 是 2026-11-07 00:00（北京时间）的既有手动运行，早于本批 UI 工作树改动；26 个 Jobs 中 23 成功、2 失败、deploy 跳过。失败为 `verify / narrative` 的 `Run npm run verify:assets` 步骤，以及 `verify / Browser webkit / southern-cards` 的 `Verify browser suite` 步骤。注释只有退出码，未取得足以确认根因的完整日志；不要认定本轮已修复这两项。
