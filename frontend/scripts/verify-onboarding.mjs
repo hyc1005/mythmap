@@ -133,7 +133,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
 
     const denied = await newContext();
     await denied.addInitScript(() => { Storage.prototype.setItem = () => { throw new Error('Storage unavailable'); }; });
-    const fallback = await denied.newPage(); monitor(fallback); await fallback.goto(base);
+    const fallback = await denied.newPage(); monitor(fallback); await fallback.goto(`${base}?splash=0`);
     await fallback.locator('.onboarding-skip').click(); await fallback.locator('.onboarding-guide').waitFor({ state: 'hidden' });
     await denied.close();
     assert.deepEqual(errors, []);

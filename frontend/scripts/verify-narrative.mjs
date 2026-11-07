@@ -14,7 +14,9 @@ const projection = new Projection({ code: 'mythic-plane', units: 'pixels', exten
 const failures = [];
 const atlasUrl = `${(process.env.ATLAS_URL || 'http://127.0.0.1:5173').replace(/[?#].*$/, '').replace(/\/+$/, '')}/`;
 async function enterAtlas(page, url) {
-  await page.goto(url);
+  const target = new URL(url);
+  target.searchParams.set('splash', '0');
+  await page.goto(target.href);
   await page.locator('.world-layout').waitFor();
   if (await page.locator('.onboarding-skip').count()) await page.locator('.onboarding-skip').click();
 }

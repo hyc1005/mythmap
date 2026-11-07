@@ -102,7 +102,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await rp.clock.install();
     await rp.goto(`${base}?chapter=01&lang=zh`);
     await rp.locator('.timeline-steps button').nth(2).waitFor();
-    await rp.clock.pauseAt(new Date(await rp.evaluate(() => Date.now()) + 100));
+    await rp.clock.pauseAt(new Date(await rp.evaluate(() => Date.now()) + 1000));
     await rp.locator('.timeline-steps button').nth(2).click();
     await rp.locator('.chapter-transition-veil.is-visible').waitFor();
     assert.equal(await rp.locator('.chapter-transition-veil.is-visible').evaluate(node => getComputedStyle(node).animationName), 'none');
