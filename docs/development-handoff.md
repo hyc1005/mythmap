@@ -6,10 +6,11 @@
 
 - 本轮 UI 提交为 `c6bb559`，已推送 `codex/actions-speedup`。用户随后明确授权“合并且部署”，已快进合并并推送 main；之前“不合并 main、不部署”的安排已被本次授权替代。
 - 首轮 main 发布 [42348028931](https://github.com/hyc1005/mythmap/actions/runs/42348028931) 构建成功，但素材审计因浅检出缺少 `git:447d823...` 等历史证据而失败（git show 退出 128）。已恢复 narrative 审计任务的 `fetch-depth: 0`；构建与浏览器的轻量检出不变，所有校验及 deploy 的 needs 门槛保留。修复提交后继续完整 main 发布。
-- `39a4d8e` 的重跑在 `pages-main` 并发组排队约 20 分钟仍未开始，已取消，该提交没有运行结果。`625f118` 让叙事与引导用例经 `?splash=0` 进入、放宽章节时钟余量后重新推送，当前发布运行 [42351743119](https://github.com/hyc1005/mythmap/actions/runs/42351743119)。
+- `39a4d8e` 的重跑在 `pages-main` 并发组排队约 20 分钟仍未开始，已取消，该提交没有运行结果。`625f118` 让叙事与引导用例经 `?splash=0` 进入、放宽章节时钟余量后重新推送。
+- [42351743119](https://github.com/hyc1005/mythmap/actions/runs/42351743119) 首轮 24 成功、1 失败：`fetch-depth: 0` 让素材审计通过，浏览器任务只剩 `webkit / atlas` 在 `verify-resume.mjs:138` 等待 `.detail-drawer` 超时。三次重跑分别失败于同一处、`verify-design.mjs` 的 `page.goto: WebKit encountered an internal error`、再次 `verify-resume.mjs:138`；第 4 次重跑通过，deploy 于 08:57:45Z 成功，Pages 部署 SHA 为 `625f118`。同脚本在本机 WebKit 连续 3 次、每次约 33 秒均通过，属于 CI 上的 WebKit 不稳定，不是本轮改动引入；旧交接记录的同类 WebKit 超时仍未定根因。
 - 本轮开始前已有 `CHANGELOG.md`、`docs/editorial-review.md`、`frontend/src/assets/shanhai-mark.svg` 修改。保留这些内容；不要覆盖或无差别提交与本轮无关的改动。
 - 古籍译注审校继续暂停。本机 `gh` 不在 PATH，常见安装位置也未找到；已用公开 GitHub REST API 读取最近 50 次运行及最新运行的 Jobs API，并用 `git ls-remote --heads origin` 核对远端分支。必需状态设置 API 返回 401，不能据此认定 main 没有分支保护。
-- 远端基线：`main` 为 `625f118`，与本地一致；`codex/actions-speedup` 为 `c6bb559`。最近一轮失败 [42348028931](https://github.com/hyc1005/mythmap/actions/runs/42348028931) 共 26 个 Jobs：20 成功、5 失败、deploy 跳过。失败项为 `verify / narrative` 的 `Run npm run verify:assets`（浅检出缺历史，已由 `39a4d8e` 补 `fetch-depth: 0`，该任务现需完整克隆约 1.9 GiB）、`chromium / atlas` 的引导跳过点击超时、`chromium / narrative` 与 `narrative / layout` 等不到盘古序章按钮、`webkit / stories` 的 `clock.pauseAt` 回拨报错。后三项已在本地复现并写进 `625f118`，素材审计修复仍待该轮验证。
+- 远端基线：`main` 为 `c750866`（交接文档提交），部署基线为 `625f118`，与本地一致；`codex/actions-speedup` 为 `c6bb559`。最近一轮失败 [42348028931](https://github.com/hyc1005/mythmap/actions/runs/42348028931) 共 26 个 Jobs：20 成功、5 失败、deploy 跳过。失败项为 `verify / narrative` 的 `Run npm run verify:assets`（浅检出缺历史，已由 `39a4d8e` 补 `fetch-depth: 0`，该任务现需完整克隆约 1.9 GiB）、`chromium / atlas` 的引导跳过点击超时、`chromium / narrative` 与 `narrative / layout` 等不到盘古序章按钮、`webkit / stories` 的 `clock.pauseAt` 回拨报错。后三项已在本地复现并写进 `625f118`；素材审计与三项浏览器修复均已在 42351743119 上验证通过。
 - 临时输出、`output/`、`node_modules/`、`frontend/dist/` 和根目录本地交接不提交。过程文件删除前仍需先询问用户“可以删了吗？”。
 
 ## 已实施与主要入口
