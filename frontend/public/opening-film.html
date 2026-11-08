@@ -181,6 +181,7 @@
   /*MYTH-CSS-END*/
   .back-home { position:fixed; left:16px; top:14px; z-index:999; padding:8px 12px; border:1px solid rgba(245,239,223,.32); border-radius:3px; color:#f5efdf; font:13px/1 "Songti SC","Noto Serif SC",serif; letter-spacing:.08em; text-decoration:none; background:rgba(18,16,13,.32); }
   .back-home:hover { border-color:rgba(245,239,223,.66); }
+  .hud #styleBtn, .hud #skipBtn, .hud .badge, .hud .phase, .hud .t { display: none; }
 </style>
 </head>
 <body>
@@ -2900,10 +2901,11 @@ function skipToEnd() {
   state.sealed = true;
   seal.classList.add('on');
 }
-document.getElementById('skipBtn').addEventListener('click', skipToEnd);
-document.getElementById('skipMin').addEventListener('click', skipToEnd);
+function backToSite() { if (history.length > 1) history.back(); else location.href = './'; }
+document.getElementById('skipBtn').addEventListener('click', backToSite);
+document.getElementById('skipMin').addEventListener('click', backToSite);
 window.addEventListener('keydown', e => {
-  if (e.key === 'Escape') skipToEnd();
+  if (e.key === 'Escape') backToSite();
   else if (e.key === 'r' || e.key === 'R') play();                       // R：重播
   else if (e.key === 'f' || e.key === 'F') {                             // F：全屏（录制用）
     if (document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen?.();

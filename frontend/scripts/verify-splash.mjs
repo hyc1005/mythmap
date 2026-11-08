@@ -88,6 +88,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await Promise.all([filmPage.waitForURL(/opening-film\.html$/, { timeout: 20000 }), bookplate.click()]);
     assert.equal(await filmPage.title(), '山海寻踪 · 开篇影像', 'The film keeps its own title');
     assert.equal(await filmPage.locator('a.back-home').getAttribute('href'), './', 'The film links back to the atlas');
+    await filmPage.locator('#skipMin').click();
+    await filmPage.locator('.bookplate-link').waitFor({ timeout: 20000 });
+    assert.equal(await filmPage.locator('a.back-home').count(), 0, 'Skip returns to the atlas');
     await filmPage.close();
 
     await context.close();

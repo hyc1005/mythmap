@@ -140,8 +140,6 @@ jobs:
       matrix:
         browser: [chromium, webkit]
         suite:
-          - name: atlas
-            scripts: verify-geography.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-bestiary.mjs verify-ux.mjs
           - name: southern-cards
             scripts: verify-nanshan.mjs
             cards: records
@@ -161,6 +159,19 @@ jobs:
           - name: stories
             scripts: verify-discovery.mjs verify-place-search.mjs verify-map-frame.mjs verify-playback-speed.mjs verify-splash.mjs
         include:
+          - browser: chromium
+            suite:
+              name: atlas
+              scripts: verify-geography.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-bestiary.mjs verify-ux.mjs
+          - browser: webkit
+            suite:
+              name: atlas
+              scripts: verify-geography.mjs verify-exploration.mjs verify-onboarding.mjs verify-repairs.mjs verify-design.mjs
+          - browser: webkit
+            suite:
+              name: atlas
+              shard: ' / reading'
+              scripts: verify-guided-tour.mjs verify-reading.mjs verify-resume.mjs verify-search.mjs verify-bestiary.mjs verify-ux.mjs
           - browser: chromium
             suite:
               name: central-current

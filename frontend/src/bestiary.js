@@ -1,5 +1,6 @@
 import morphologyReviews from './bestiary-morphology-review.json' with { type: 'json' };
 import metadata from './bestiary-metadata.json' with { type: 'json' };
+import notability from './bestiary-notability.json' with { type: 'json' };
 
 export const BESTIARY_INITIAL = 12;
 export const BESTIARY_BATCH = 24;
@@ -47,9 +48,9 @@ export function filterBestiary(entries, { role = 'beast', book = '', form = '', 
     && (!form || item.formGroup === form) && (!feature || item.featureTags.includes(feature))
     && (!reading || reading === 'read' && marks.read.includes(item.id) || reading === 'unread' && !marks.read.includes(item.id) || reading === 'favorites' && marks.favorites.includes(item.id))
     && terms.every(term => normalize(bestiarySearchFields(item).join(' ')).includes(term)))
-    .map((entry, order) => ({ entry, order, rank: !value ? 0 : entry.shortNames.some(name => normalize(name) === value) ? 0
+    .map((entry, order) => ({ entry, order, score: Number(notability[entry.id]) || 0, rank: !value ? 0 : entry.shortNames.some(name => normalize(name) === value) ? 0
       : entry.nameAliases.some(name => normalize(name) === value) ? 1 : entry.nameAliases.some(name => normalize(name).includes(value)) ? 2 : 3 }))
-    .sort((a, b) => a.rank - b.rank || a.order - b.order).map(item => item.entry);
+    .sort((a, b) => a.rank - b.rank || b.score - a.score || a.order - b.order).map(item => item.entry);
 }
 
 export function groupBestiary(entries) {

@@ -25,7 +25,9 @@
 | 正文覆盖 | `App.jsx`、`DetailDrawer.jsx`、`ChapterEntries.jsx`、`GlobalSearch.jsx`、`GeographicEvidence.jsx`、`GeographyComparison.jsx` 补齐正文与引文。保留查找、选文、阅读位置恢复、打印、减少动态效果时清晰可读 |
 | 折叠 | `RevealDetails` 保留原生 details/summary；280ms 高度过渡和箭头旋转，支持键盘、快速反向、减少动态效果；不依赖第三方动画库 |
 | 标签切换 | `components/PaperTabs.jsx` + `paper-interactions.css`：240ms 朱砂滑动选中块；用于地图模式、异兽/神灵和语言，保留原按钮及 `aria-pressed`，不改变地图或筛选语义 |
-| 开篇影像 | `public/opening-film.html` 为自包含宣传片（2.82 MB，内嵌 5 PNG/5 WebP 角色帧），不进入首屏；唯一入口是页脚藏书印 `.bookplate-link`，页面左上角返回站点。标题页写作「山海寻踪 · 开篇影像」 |
+| 开篇影像 | `public/opening-film.html` 为自包含宣传片（2.82 MB，内嵌 5 PNG/5 WebP 角色帧），不进入首屏；唯一入口是页脚藏书印 `.bookplate-link`。左上角返回链接与「跳过」/Esc 都回上一页，HUD 只留「重播」「声音」 |
+| 默认排序 | `src/bestiary-notability.json` 是人工维护的知名度权重，`bestiary.js` 的默认列表先按权重、再按原顺序；搜索仍先看匹配度。文件独立于生成数据，可直接编辑 |
+| 社交预览 | `index.html` 声明 Open Graph / Twitter Card；`public/og-image.webp` 为 1200×630 裁切图，经 `publish-files.mjs` 白名单发布 |
 | 浏览器标题 | 站点标题固定为 `山海寻踪`（英文 `Shanhai Atlas`），不再附带副标题；`verify-locale` 的 `startsWith('Shanhai Atlas')` 仍成立 |
 
 策略：`?splash=1` 强制演示；`?splash=0` / `?nosplash` 跳过；带其他查询或 hash 的深链跳过自动播放。标记键为 `localStorage['shanhai-splash:v12:seen']`。减少动态效果始终跳过自动播放；主动点击品牌时可看静态降级。跳过或播放结束写入标记。开屏对话框内任意点击等同于「进入网站」；按钮、Esc、重播、加载中与淡出中的重复触发由既有幂等保护挡住，`verify-splash.mjs` 覆盖这些路径。
@@ -36,7 +38,7 @@
 
 - 现象：`webkit / atlas` 在 2026-11-07 至 11-08 的 5 次运行里 5 次失败，但位置每次不同：`verify-resume.mjs:138` 等 `.detail-drawer`（2 次）、`verify-design.mjs` 的 `page.goto: WebKit encountered an internal error`（1 次）、`verify-exploration.mjs:296` 等 `.artwork-fallback`（1 次）。同一脚本在本机 WebKit 连续通过，重跑后也能通过，没有出现可复现的应用侧断言失败。
 - 判断：属于 CI 上 WebKit 进程的偶发崩溃或超时，不是某个断言稳定失败；11-05/11-06 的交接记录里已有同类未定根因的超时。
-- 处理：浏览器步骤对每个脚本先跑一次，失败后在新浏览器中原样重试一次；第二次仍失败则 Job 失败。重试不跳过断言、不降低发布门槛，`::warning::` 会在日志中标出被重试的脚本，失败诊断附件仍按原逻辑上传。
+- 处理：浏览器步骤对每个脚本先跑一次，失败后在新浏览器中原样重试一次；第二次仍失败则 Job 失败。重试不跳过断言、不降低发布门槛，`::warning::` 会在日志中标出被重试的脚本，失败诊断附件仍按原逻辑上传。2026-11-09 起 `webkit / atlas` 再拆成两个 Job（前 5 个脚本 / 后 6 个脚本），单 Job 约 10–13 分钟，减少长跑压力；两个 Job 都使用 `atlas` 的轻量检出 profile，名字与 shard 区分。
 - 边界：重试只处理瞬态问题。若同一脚本连续两次失败，应按真实回归排查，不要继续加大重试次数或跳过脚本。
 
 ## 本地预览与验证
