@@ -33,7 +33,7 @@ A bilingual atlas for exploring Chinese myths, discovering creatures and reading
 
 ## Scope
 
-- **480 reading passages**: Southern 43, Western 82, Northern 92, Eastern 51 and Central 212 — the five Mountain Classics. The 海经 and 大荒经 sections are outside this project's scope, not deferred work; see the [content inventory](docs/content-coverage.md) for review status.
+- **480 reading passages**: Southern 43, Western 82, Northern 92, Eastern 51 and Central 212 — the five Mountain Classics. 海经 and 大荒经 are not part of the reading corpus; a few bestiary entries quote them as cross-references. See the [content inventory](docs/content-coverage.md).
 - **312 creature accounts and 72 deity accounts**: namesake groups, six body-form categories and combined book, feature and reading filters, with 12 cards initially and up to 24 more per click; same-name accounts are selected in the detail view.
 - **Reading guidance and morphology evidence**: chapter introductions, source notes and connections; main text, commentary and comparison accounts remain distinct, with missing or uncertain forms stated explicitly.
 - **Chinese and English**: story playback, source reading, search, favorites and reading-position recovery. The prologue and seven chapters are the project's narrative arrangement.
