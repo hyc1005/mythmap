@@ -387,7 +387,8 @@ frontend/public/data/atlas/myth-icons/beasts/beast-dijiang.webp	1885342	6d8245a5
 frontend/artwork-source/zhongshan/bird-bi-mu-v1.png	1882501	478f14e9180608a30d6cc3b17c09ceaba5d092e01ef0916ebaecdd2571a9676f	插画原图	no	保留原位；只评估运行变体压缩，不外移、不删除	-	-
 frontend/artwork-source/dongshan/fish-hua-zitong-v1.png	1875491	f19dd37a5fe4e899d00f3b5e3db52f014a3d7b9fe865e9fbe39979621d08b397	插画原图	no	保留原位；只评估运行变体压缩，不外移、不删除	-	-
 frontend/public/data/atlas/myth-icons/stories/ch05-yu-controls-flood.webp	1871824	77c817bc05d9ddf2f5867164da4dc97d1e50132d2aeb7b2f3f3af0ceaf0dea05	非发布白名单资源	no	运行图像另批比较清晰度后压缩；本轮不改字节	-	-
-docs/media/tour.gif	1866594	e2cb9554356961ff1b6c547bf3f6c494d3fb5c6c4575d92f5bdb8fb5a063516f	README媒体	no	已压缩至2MB目标内；保留docs/media/，不外移Release	-	-
+docs/media/tour.gif	1409884	88da09b60c15625564f2c1497a6a6d7becf7abce35ae6d816ec8860a435c06e6	README媒体	no	已压缩至2MB目标内；保留docs/media/，不外移Release	-	-
+docs/media/ink-opening.gif	21550638	fd56c788aff314a70694297778845fa3afcd708fa05c633be8ee1849b53ea0cd	README媒体	no	README内联720p/10fps；原始画质存于Release media-2026-11-08，不重编码	-	-
 frontend/artwork-source/dongshan/fish-zhubie-geshan-head-v2.png	1866013	fdb34c4cc2f9b1ea3ae595e2980c42897fab7f09ad482799388bc994a2d3950e	插画原图	no	保留原位；只评估运行变体压缩，不外移、不删除	-	-
 frontend/artwork-source/zhongshan/bird-whitejiao-nvji-v1.png	1857131	c05c556e48e7b80d034911617c7135afe3658517c126b05e0e00d4712e440d5c	插画原图	no	保留原位；只评估运行变体压缩，不外移、不删除	-	-
 frontend/artwork-source/beishan/creature-yuan-ganshan-v1.png	1855919	0b2ec95f08acb9946dc7c46a2f0f1c66a695568ac26553782b3ef66e65dd4cff	插画原图	no	保留原位；只评估运行变体压缩，不外移、不删除	-	-

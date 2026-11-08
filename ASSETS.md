@@ -192,7 +192,7 @@
 
 ## README截图与演示
 
-四张WebP截图与一段12秒GIF由实际本地界面采集，无模拟底图。逐文件哈希、尺寸、工具与原构建commit见[媒体清单](docs/media/manifest.json)，同样逐项登记于[资产文件清单](docs/assets-inventory.tsv)。截图与录屏是复合内容，不因展示代码采用MIT而改变内嵌资产的原许可；当前地理截图保留Natural Earth署名；历史天地图截图的使用条件仍未核定，复合界面内嵌素材不因此获得额外授权。
+四张WebP截图、一段12秒GIF与一段46秒开屏录屏由实际本地界面采集，无模拟底图。开屏录屏为2026-11-08自`625f118`本地构建窗口的Screenity录制，README内联版本压为720×350、10fps的GIF（21,550,638字节），未重编码的1916×936原始MP4发布在[media-2026-11-08](https://github.com/hyc1005/mythmap/releases/tag/media-2026-11-08)。逐文件哈希、尺寸、工具、采集commit与转码参数见[媒体清单](docs/media/manifest.json)，同样逐项登记于[资产文件清单](docs/assets-inventory.tsv)；Screenity的编码参数与录制窗口尺寸未记录。截图与录屏是复合内容，不因展示代码采用MIT而改变内嵌资产的原许可；当前地理截图保留Natural Earth署名；历史天地图截图的使用条件仍未核定，复合界面内嵌素材不因此获得额外授权。
 
 
 ## 本地自然地理底图（Natural Earth v5.1.2）

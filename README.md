@@ -15,6 +15,12 @@ A bilingual atlas for exploring Chinese myths, discovering creatures and reading
 
 ![Home: the Pangu opening scene and chapter navigation](docs/media/home.webp)
 
+## The ink opening
+
+![The first-visit ink opening: bare paper, ink strokes and title cards, then the title](docs/media/ink-opening.gif)
+
+*46-second screen recording of the opening from a local build of `625f118` (2026-11-08); the [full-quality MP4](https://github.com/hyc1005/mythmap/releases/download/media-2026-11-08/ink-opening-2026-11-08.mp4) is the untouched recording.*
+
 ## See what you can do
 
 | Story playback | Bestiary |

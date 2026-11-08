@@ -89,6 +89,26 @@
       "model": "not applicable",
       "source": "actual local application: four seconds Suiren playback, four seconds chapter sources, four seconds morphology evidence; no mocked content",
       "license_status": "Composite UI recording; code MIT, embedded artwork and fonts retain their own conditions; no additional asset reuse permission"
+    },
+    {
+      "path": "docs/media/ink-opening.gif",
+      "sha256": "fd56c788aff314a70694297778845fa3afcd708fa05c633be8ee1849b53ea0cd",
+      "bytes": 21550638,
+      "dimensions": [
+        720,
+        350
+      ],
+      "frames": 462,
+      "duration_ms": 46200,
+      "fps": 10,
+      "tool": "Screenity browser-extension capture of a local build + ffmpeg palettegen/paletteuse GIF encoder",
+      "model": "not applicable",
+      "source": "local production build of main 625f118 (43b495a changes documentation only); window recorded with Screenity on 2026-11-08, cropped 6/4 px and scaled to 720 wide at 10 fps",
+      "source_video": "https://github.com/hyc1005/mythmap/releases/download/media-2026-11-08/ink-opening-2026-11-08.mp4",
+      "source_video_sha256": "ac8dd09207aeabb5259d9538ade5fb57c4cf71b952d9fd62008ec86f004de218",
+      "source_video_bytes": 20816395,
+      "license_status": "Composite UI recording; code MIT, embedded artwork and fonts retain their own conditions; no additional asset reuse permission",
+      "attribution": "See ASSETS.md for embedded artwork and font provenance"
     }
   ],
   "runtime_sha256_lf": {
@@ -103,5 +123,20 @@
     "frontend/src/locale-en.json": "61307d1d1cc3923c8751dcaa5aef7394c6adf648999988d0deae2899ffd585b4",
     "frontend/src/components/GeographyMap.jsx": "663da328083d2cc50a0606624c3d6a5ea629d444083ede9e705863f096b3e202",
     "frontend/src/natural-earth-basemap.js": "3348cf23e953fc6fe6c14691d15d656d63b2e4906b91a2715198cf2abdfab49b"
-  }
+  },
+  "captures": [
+    {
+      "captured_on": "2026-11-08",
+      "source_commit": "625f1189939d35466e79a61db76ad2a8ff86a6b2",
+      "source_commit_note": "43b495a changes documentation only",
+      "build": "npm run build -- --base /mythmap/ + local vite preview",
+      "recorder": "Screenity browser extension",
+      "recorder_settings": "not recorded",
+      "encoding": "ffmpeg crop=1904:928:6:4, fps=10, scale=720; palettegen max_colors=128 stats_mode=diff; paletteuse bayer 5",
+      "full_quality_release": "https://github.com/hyc1005/mythmap/releases/tag/media-2026-11-08",
+      "assets": [
+        "docs/media/ink-opening.gif"
+      ]
+    }
+  ]
 }

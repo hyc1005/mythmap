@@ -15,6 +15,12 @@
 
 ![首页：盘古开天木刻场景与章节入口](docs/media/home.webp)
 
+## 水墨开篇
+
+![首访水墨开屏：空白纸面、墨迹与题牌，最后落到题字](docs/media/ink-opening.gif)
+
+*46 秒开屏录屏，2026-11-08 自 `625f118` 的本地构建窗口录制；[原始画质 MP4](https://github.com/hyc1005/mythmap/releases/download/media-2026-11-08/ink-opening-2026-11-08.mp4) 为未重编码的录制文件。*
+
 ## 看看能做什么
 
 | 故事播放 | 异兽谱 |
