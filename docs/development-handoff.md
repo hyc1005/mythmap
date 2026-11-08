@@ -26,7 +26,7 @@
 | 折叠 | `RevealDetails` 保留原生 details/summary；280ms 高度过渡和箭头旋转，支持键盘、快速反向、减少动态效果；不依赖第三方动画库 |
 | 标签切换 | `components/PaperTabs.jsx` + `paper-interactions.css`：240ms 朱砂滑动选中块；用于地图模式、异兽/神灵和语言，保留原按钮及 `aria-pressed`，不改变地图或筛选语义 |
 
-策略：`?splash=1` 强制演示；`?splash=0` / `?nosplash` 跳过；带其他查询或 hash 的深链跳过自动播放。标记键为 `localStorage['shanhai-splash:v12:seen']`。减少动态效果始终跳过自动播放；主动点击品牌时可看静态降级。跳过或播放结束写入标记。
+策略：`?splash=1` 强制演示；`?splash=0` / `?nosplash` 跳过；带其他查询或 hash 的深链跳过自动播放。标记键为 `localStorage['shanhai-splash:v12:seen']`。减少动态效果始终跳过自动播放；主动点击品牌时可看静态降级。跳过或播放结束写入标记。开屏对话框内任意点击等同于「进入网站」；按钮、Esc、重播、加载中与淡出中的重复触发由既有幂等保护挡住，`verify-splash.mjs` 覆盖这些路径。
 
 本轮借鉴 [Bencho Text blur](https://bencho.dev/blocks/text-blur)、[FAQ accordion](https://bencho.dev/blocks/faq-accordion)、[Tab bar](https://bencho.dev/blocks/tab-bar) 的交互方式，没有复制 Pro 源码，没有新增 `framer-motion` / `lucide-react` / Tailwind 依赖。原生实现沿用项目许可；流体源码保留 Pavel Dobryakov MIT 头，题字来自 Ma Shan Zheng（OFL）。
 

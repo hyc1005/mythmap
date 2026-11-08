@@ -159,7 +159,7 @@ jobs:
             scripts: verify-xishan.mjs
             cards: navigation
           - name: stories
-            scripts: verify-discovery.mjs verify-place-search.mjs verify-map-frame.mjs verify-playback-speed.mjs
+            scripts: verify-discovery.mjs verify-place-search.mjs verify-map-frame.mjs verify-playback-speed.mjs verify-splash.mjs
         include:
           - browser: chromium
             suite:

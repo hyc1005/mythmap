@@ -113,6 +113,7 @@ async function boot() {
 }
 
 dialog.addEventListener('cancel', event => { event.preventDefault(); finish(); });
+dialog.addEventListener('click', () => { if (dialog.open) finish(); });
 window.addEventListener('splash:replay', () => {
   if (!appMounted || dialog.open) return;
   openSplash();
