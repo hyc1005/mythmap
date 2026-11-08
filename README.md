@@ -62,18 +62,18 @@ Use [CITATION.cff](CITATION.cff) to cite the project and credit the relevant sou
 | [docs/](docs/README.md) | Data contracts, source inventories and documentation |
 | [backend-java/](backend-java/run.ps1) | Optional read-only world-data service for development |
 
-Short names, body forms and namesake groups live in `frontend/src/bestiary-metadata.json`, independently of generated source text. See the [API contract](docs/API_CONTRACT.md). Originals and scans stay in place; the [large-file inventory](docs/large-files.tsv) is an assessment, not a deletion or relocation list.
+Short names, body forms and namesake groups are kept in `frontend/src/bestiary-metadata.json`, apart from the generated text. The [API contract](docs/API_CONTRACT.md) covers the endpoints. Originals and scans stay where they are; [docs/large-files.tsv](docs/large-files.tsv) just records how large they are.
 
 ### Optional development service
 
-The Java service supplies `/api/world` during development. See the [Java launcher](backend-java/run.ps1). The website can also use its bundled data directly. The early FastAPI/PostGIS prototype has been removed from the main branch. Its code and source notes remain in Git history.
+Run [run.ps1](backend-java/run.ps1) (JDK 17+) when you want `/api/world` during development; the site also reads bundled data directly. The early FastAPI/PostGIS prototype is gone from `main`, though its code and notes remain in the Git history.
 
 </details>
 
 <details>
 <summary>Local development</summary>
 
-Requires Node.js 22 or a newer compatible version. To avoid checking out most original artwork and scans, use the [lightweight checkout and optional asset packages](data/README.md#轻量检出与原图分发) (Python 3.10+ required).
+Node.js 22 or newer. Most original artwork and scans can stay out of your checkout — see the [lightweight checkout](data/README.md#轻量检出与原图分发) (Python 3.10+).
 
 ```bash
 cd frontend
@@ -81,9 +81,9 @@ npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
-Open [127.0.0.1:5173](http://127.0.0.1:5173/). Development tries the optional Java API on port 8081, then falls back to bundled data. To use that API, run `backend-java/run.ps1` with JDK 17 or newer. Production uses bundled data unless `VITE_API_BASE_URL` is configured; that setting is public in the build output.
+Open [127.0.0.1:5173](http://127.0.0.1:5173/). The dev server looks for the Java API on port 8081 and otherwise reads bundled data. Production does the same unless `VITE_API_BASE_URL` is set — that value ends up public in the build.
 
-The geographic view uses bundled Natural Earth v5.1.2 land, lakes and major rivers, with antique styling and modern reference coordinates. No external map key is required. Data versions, original hashes and processing are recorded in `frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json`; run `python data/build_geography_basemap.py --check` to verify them. Local evidence remains available if the basemap cannot load.
+The geographic view draws its land, lakes and rivers from a bundled Natural Earth v5.1.2 50m extract, styled to match the paper atlas and labelled as modern reference. It needs no map key. Versions, source hashes and processing steps are in `frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json`; `python data/build_geography_basemap.py --check` compares them. If the basemap fails to load, the local evidence stays available.
 
 </details>
 
@@ -102,16 +102,16 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-bestiary.m
 node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 ```
 
-The [script index](frontend/scripts/README.md) lists the remaining reading, search, narrative and book checks. The preview wrapper assigns a free port and stops its own process after completion or failure. For manual preview, run `npm run preview:managed -- --base /mythmap/` and stop it with Ctrl+C; do not rebuild the same `dist/` while tests are using it. QA output stays in `output/qa/`. Routine verification uses Chromium and WebKit; Firefox is not part of the supported verification matrix.
+More checks — reading, search, narrative, each book — are listed in the [script index](frontend/scripts/README.md). `with-preview.mjs` picks a free port and shuts the preview down when the run ends. For a manual preview, run `npm run preview:managed -- --base /mythmap/` and stop it with Ctrl+C; don't rebuild `dist/` while a test is reading it. Screenshots land in `output/qa/`. Chromium and WebKit are supported; Firefox isn't part of the matrix.
 
 </details>
 
 <details>
 <summary>Deployment and rollback</summary>
 
-Select **GitHub Actions** in repository Settings → Pages. The bundled basemap does not require a map-service secret. Pushes to `main` that affect the frontend, data, Java development service or workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml). Documentation-only pushes do not deploy; manual dispatch is also available.
+Under Settings → Pages, choose **GitHub Actions**. No map-service secret is needed for the bundled basemap. Pushes to `main` that touch `frontend/`, `data/`, `backend-java/` or the workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml); docs-only pushes don't deploy, and you can also start it by hand.
 
-Deployment waits for all required checks and publishes the same verified artifact. Do not commit `dist/`, dependencies, environment files or QA output. Roll back by reverting the relevant commit and pushing.
+The deploy job waits for the checks and publishes exactly the artifact they verified. Keep `dist/`, dependencies, environment files and QA output out of Git. To roll back, revert the commit and push.
 
 </details>
 
@@ -120,6 +120,6 @@ Deployment waits for all required checks and publishes the same verified artifac
 
 [Course report](docs/coursework/课程报告.md) · [Presentation walkthrough](docs/coursework/答辩演示流程.md)
 
-Retained historical material, separate from current development, deployment and primary navigation.
+Two course documents, kept for reference and outside the current build and navigation.
 
 </details>

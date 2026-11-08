@@ -62,18 +62,18 @@
 | [docs/](docs/README.md) | 数据约定、来源清单与项目文档 |
 | [backend-java/](backend-java/run.ps1) | 开发环境可选的只读世界数据服务 |
 
-短名、形貌与同名组维护在`frontend/src/bestiary-metadata.json`，独立于生成的经文数据。数据约定见[API说明](docs/API_CONTRACT.md)。原图与扫描保留原位；[大文件清单](docs/large-files.tsv)只用于评估，不代表删除或外移安排。
+短名、形貌与同名组放在`frontend/src/bestiary-metadata.json`，与生成的经文分开；接口见[API说明](docs/API_CONTRACT.md)。原图和扫描留在原位，[大文件清单](docs/large-files.tsv)只记录体积。
 
 ### 可选开发服务
 
-Java 服务为开发模式提供 `/api/world`，运行方式见 [Java 启动入口](backend-java/run.ps1)。网页也可直接使用内置数据。早期 FastAPI/PostGIS 原型已从主分支移除，其代码与来源说明保存在 Git 历史。
+开发时需要 `/api/world`，可以运行 [run.ps1](backend-java/run.ps1)（JDK 17+）；网页也可以直接读内置数据。早期的 FastAPI/PostGIS 原型已不在主分支，代码与说明仍留在 Git 历史里。
 
 </details>
 
 <details>
 <summary>本地开发</summary>
 
-需要Node.js 22或更新的兼容版本。普通界面开发可使用[轻量检出及可选原图分发包](data/README.md#轻量检出与原图分发)，另需Python 3.10+。
+需要 Node.js 22 或更新版本。不想拉全部原图和扫描，可以用[轻量检出](data/README.md#轻量检出与原图分发)（另需 Python 3.10+）。
 
 ```bash
 cd frontend
@@ -81,9 +81,9 @@ npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
-打开[127.0.0.1:5173](http://127.0.0.1:5173/)。开发模式尝试8081端口的Java API，未启动时使用内置数据。可选API需JDK 17以上，运行`backend-java/run.ps1`；生产默认使用内置数据，只有显式配置`VITE_API_BASE_URL`才请求外部API，该配置会公开在构建产物中。
+打开[127.0.0.1:5173](http://127.0.0.1:5173/)。开发服务会先找 8081 端口的 Java API，找不到就用内置数据；生产环境同理，只有显式设置`VITE_API_BASE_URL`才会请求外部接口，该值会出现在构建产物里。
 
-真实地理视图使用随站发布的Natural Earth v5.1.2陆地、湖泊与主要河流，标明“现代地理参照，古风绘制”，无需外部地图Key。版本、原始哈希和处理见`frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json`，可用`python data/build_geography_basemap.py --check`核验；底图加载失败时仍可查询本地依据。
+真实地理视图使用随站发布的 Natural Earth v5.1.2 的 50m 陆地、湖泊与主要河流，按纸本风格绘制，并标明是现代参照，不需要地图 Key。版本、原始哈希和处理步骤在`frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json`，可用`python data/build_geography_basemap.py --check`核对；底图加载失败时仍可查看本地依据。
 
 </details>
 
@@ -102,16 +102,16 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-bestiary.m
 node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 ```
 
-阅读、搜索、叙事和各山经的验收入口见[脚本索引](frontend/scripts/README.md)。统一预览工具使用空闲端口，完成或失败后关闭自己创建的进程；人工预览运行`npm run preview:managed -- --base /mythmap/`，结束按Ctrl+C。验证期间不要重新构建同一份`dist/`。截图保存在`output/qa/`；日常验证使用Chromium、WebKit，Firefox不在已支持验收范围内。
+阅读、搜索、叙事和各篇的检查见[脚本索引](frontend/scripts/README.md)。`with-preview.mjs` 会挑一个空闲端口，运行结束后关掉自己启动的预览；手动预览用`npm run preview:managed -- --base /mythmap/`，Ctrl+C 结束。测试读取同一份`dist/`时不要重新构建。截图在`output/qa/`。验收只覆盖 Chromium 与 WebKit，Firefox 不在矩阵内。
 
 </details>
 
 <details>
 <summary>部署与回退</summary>
 
-仓库Settings → Pages选择**GitHub Actions**，本地底图无需地图服务Secret。推送到`main`的前端、数据、Java开发服务或工作流修改会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；纯文档修改不触发发布，也可手动运行。
+仓库 Settings → Pages 选择 **GitHub Actions**。内置底图不需要地图服务 Secret。推送`main`且改动`frontend/`、`data/`、`backend-java/`或工作流时会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；只改文档不会触发，也可以手动运行。
 
-所有必要检查通过后，部署同一份已验收产物。不要提交`dist/`、依赖、本地环境配置或QA输出；回退使用`git revert`后推送。
+部署等所有检查通过后，发布的就是检查过的那份产物。`dist/`、依赖、本地环境配置和 QA 输出不要提交；回退直接 revert 对应提交再推送。
 
 </details>
 
@@ -120,6 +120,6 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 
 [课程报告](docs/coursework/课程报告.md) · [答辩流程](docs/coursework/答辩演示流程.md)
 
-保留历史记录，不作为当前开发、部署或主导航入口。
+两份课程文档，留作记录，不参与当前构建与导航。
 
 </details>
