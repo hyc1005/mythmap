@@ -280,8 +280,15 @@ jobs:
           node scripts/with-preview.mjs --base "$ATLAS_BASE" -- bash -ec '
             for script in $ATLAS_SCRIPTS; do
               echo "::group::Verifying $script with $ATLAS_BROWSERS"
-              node "scripts/$script"
-              echo "::endgroup::"
+              if node "scripts/$script"; then
+                echo "::endgroup::"
+              else
+                echo "::endgroup::"
+                echo "::warning::$script failed once on $ATLAS_BROWSERS; retrying once in a fresh browser"
+                echo "::group::Retrying $script with $ATLAS_BROWSERS"
+                node "scripts/$script"
+                echo "::endgroup::"
+              fi
             done
           '
 

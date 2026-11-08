@@ -7,7 +7,7 @@ A bilingual atlas for exploring Chinese myths, discovering creatures and reading
 
 **English** · [简体中文](README.zh-CN.md)
 
-## Understand it in 30 seconds
+## At a glance
 
 - **What it is**: Woodcut illustrations and interactive maps connecting myths from the *Classic of Mountains and Seas* and other ancient texts.
 - **What you can do**: Watch stories, read source passages, filter creatures and deities, and inspect separate geographic evidence.
@@ -21,7 +21,7 @@ A bilingual atlas for exploring Chinese myths, discovering creatures and reading
 
 *46-second screen recording of the opening from a local build of `625f118` (2026-11-08); the [full-quality MP4](https://github.com/hyc1005/mythmap/releases/download/media-2026-11-08/ink-opening-2026-11-08.mp4) is the untouched recording.*
 
-## See what you can do
+## What you can do
 
 | Story playback | Bestiary |
 | --- | --- |
@@ -31,7 +31,7 @@ A bilingual atlas for exploring Chinese myths, discovering creatures and reading
 | ![Geographic evidence: real basemap and documented associations](docs/media/geographic-evidence.webp) | ![Walkthrough: story playback, chapter guidance and morphology evidence](docs/media/tour.gif) |
 | Inspect modern place references separately from narrative diagrams. | Recorded from the actual interface, showing playback, chapter source notes and morphology evidence. |
 
-## Current scope
+## Scope
 
 - **480 reading passages**: Southern 43, Western 82, Northern 92, Eastern 51 and Central 212. Completing the remaining thirteen books is deferred; see the [content inventory](docs/content-coverage.md) for scope and review status.
 - **312 creature accounts and 72 deity accounts**: namesake groups, six body-form categories and combined book, feature and reading filters, with 12 cards initially and up to 24 more per click; same-name accounts are selected in the detail view.

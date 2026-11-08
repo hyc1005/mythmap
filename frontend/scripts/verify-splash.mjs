@@ -77,6 +77,19 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.equal(await splash(reducedPage).count(), 0, 'Reduced motion skips the splash');
     await reduced.close();
 
+    // 5. The bookplate is the only entry into the opening film.
+    const filmPage = await context.newPage();
+    monitor(filmPage);
+    await filmPage.goto(`${base}?splash=0`);
+    const bookplate = filmPage.locator('.bookplate-link');
+    await bookplate.scrollIntoViewIfNeeded();
+    const href = await bookplate.getAttribute('href');
+    assert.ok(href && href.endsWith('opening-film.html'), 'The bookplate links to the opening film');
+    await Promise.all([filmPage.waitForURL(/opening-film\.html$/, { timeout: 20000 }), bookplate.click()]);
+    assert.equal(await filmPage.title(), '山海寻踪 · 开篇影像', 'The film keeps its own title');
+    assert.equal(await filmPage.locator('a.back-home').getAttribute('href'), './', 'The film links back to the atlas');
+    await filmPage.close();
+
     await context.close();
     assert.deepEqual(errors, []);
     console.log(`PASS ${name}: click-anywhere skip, enter button, Escape, explicit skip, deep links, reduced motion and replay without remount`);

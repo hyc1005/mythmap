@@ -382,6 +382,11 @@ html[lang='en'] .journey-actions { flex-wrap: wrap; }
 }
 .reading-notes-body { display: grid; grid-template-columns: minmax(0, 1fr) 148px; align-items: center; gap: 36px; }
 .reading-bookplate { margin: 0; text-align: center; color: #964735; }
+.bookplate-link { display: block; color: inherit; text-decoration: none; border-radius: 2px; transition: opacity .18s ease; }
+.bookplate-link:hover { opacity: .82; }
+.bookplate-link:focus-visible { outline: 2px solid #983e2c; outline-offset: 4px; }
+.bookplate-link .bookplate-mark { transition: transform .18s ease; }
+.bookplate-link:hover .bookplate-mark { transform: scale(1.02); }
 .bookplate-mark { display: block; width: 148px; height: 148px; background: currentColor; opacity: .72; mask-size: 155%; mask-repeat: no-repeat; mask-position: center; }
 .reading-bookplate figcaption { margin-top: 10px; font-size: 13px; letter-spacing: .15em; }
 .reading-bookplate small { display: block; margin-top: 5px; font-size: 11px; letter-spacing: .25em; opacity: .7; }
