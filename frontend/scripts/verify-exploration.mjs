@@ -292,6 +292,7 @@ try {
   assert.equal(await page.getByRole('button', { name: '复制探索链接', exact: true }).count(), 0, 'Map sharing control is removed; URL restoration remains supported');
 
   await page.locator('.bestiary-toggle').click();
+  await page.getByLabel('搜索异兽', { exact: true }).fill('狌狌');
   await page.locator('.beast-card[data-beast-id="beast-shengsheng"]').click();
   await page.locator('.detail-drawer .artwork-fallback').waitFor();
   assert.ok(blockedArtworkRequests > 0, 'Image failure scenario blocks an actual uncached request');
@@ -317,6 +318,7 @@ try {
   await page.getByText('PNG 已生成', { exact: true }).waitFor();
 
   await page.goto(`${base}?chapter=00&lang=zh`);
+  await page.getByLabel('搜索异兽', { exact: true }).fill('狌狌');
   await page.locator('.beast-card[data-beast-id="beast-shengsheng"]').click();
   assert.equal(new URL(page.url()).searchParams.get('chapter'), '03', 'Sharing a future-chapter beast uses its related chapter');
   const saved = page.url();

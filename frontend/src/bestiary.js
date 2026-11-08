@@ -66,7 +66,9 @@ export function groupBestiary(entries) {
 export function bestiaryNamesakes(world, id, locale = 'zh') {
   const selected = metadata[id];
   if (!selected) return [];
-  return bestiaryEntries(world, locale).filter(entry => entry.role === selected.role && entry.groupKey === selected.group_key);
+  return bestiaryEntries(world, locale)
+    .filter(entry => entry.role === selected.role && entry.groupKey === selected.group_key)
+    .sort((a, b) => (Number(notability[b.id]) || 0) - (Number(notability[a.id]) || 0));
 }
 
 const reviewLabels = {

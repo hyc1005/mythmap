@@ -12,7 +12,7 @@ const original = structuredClone(world);
 const entries = bestiaryEntries(world);
 assert.equal(BESTIARY_INITIAL, 12);
 assert.equal(BESTIARY_BATCH, 24);
-for (const group of groupBestiary(entries)) assert.deepEqual(bestiaryNamesakes(world, group.entries[0].id).map(entry => entry.id), group.entries.map(entry => entry.id));
+for (const group of groupBestiary(entries)) assert.deepEqual(bestiaryNamesakes(world, group.entries[0].id).map(entry => entry.id).sort(), group.entries.map(entry => entry.id).sort());
 assert.deepEqual(bestiaryNamesakes(world, '03-04'), []);
 const source = [...world.beasts, ...world.text_entities.filter(item => item.kind === 'deity')];
 assert.equal(world.beasts.length, 317);
