@@ -132,7 +132,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await drawer.locator('.return-related').click(); await ready('place-zhaoyao');
       await drawer.locator('[data-related-id="water-liji"]').click(); await ready('water-liji');
       await drawer.locator('[data-related-id="material-yupei"]').click(); await ready('material-yupei');
-      await drawer.locator('[data-reading-anchor="source"]').scrollIntoViewIfNeeded();
+      await drawer.evaluate(node => { node.scrollTop = Math.min(400, Math.max(0, node.scrollHeight - node.clientHeight)); });
       await page.waitForTimeout(250);
       await page.goto(`${base}?lang=${lang}`);
       await waitForPrologueControls(page);

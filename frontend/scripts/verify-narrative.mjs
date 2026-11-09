@@ -200,7 +200,7 @@ try {
     await layoutPage.getByRole("button",{name:"暂停盘古序章",exact:true}).waitFor();
     assert.equal(await layoutPage.locator(".myth-intro, .source-note").count(),0);
     assert.equal(await layoutPage.locator("#reading-notes h2").textContent(),"读图与依据");
-    assert.deepEqual(await layoutPage.locator(".myth-header nav a").allTextContents(),["地图","异兽谱","读图与依据"]);
+    assert.deepEqual(await layoutPage.locator(".myth-header nav a").allTextContents(),["地图","异兽谱","专题巡山录","读图与依据"]);
     if(width<=768) assert.equal(await layoutPage.locator(".mobile-explore-nav button").count(),2);
     await layoutPage.screenshot({path:new URL("page-structure-"+width+"x"+height+".png",output).pathname.replace(/^\/([A-Za-z]:)/,"$1")});
     await layoutPage.locator('.bestiary-toggle').click();
