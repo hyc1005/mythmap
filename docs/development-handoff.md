@@ -1,6 +1,6 @@
 # 开发交接：水墨开篇与阅读交互
 
-更新：2026-11-07。本文件随仓库提交，供其他 agent 接续；根目录被忽略的本地交接文档保留历史。
+更新：2026-11-09。本文件随仓库提交，供其他 agent 接续；根目录被忽略的本地交接文档保留历史。
 
 ## 当前状态与授权
 
@@ -9,10 +9,23 @@
 - `39a4d8e` 的重跑在 `pages-main` 并发组排队约 20 分钟仍未开始，已取消，该提交没有运行结果。`625f118` 让叙事与引导用例经 `?splash=0` 进入、放宽章节时钟余量后重新推送。
 - [42351743119](https://github.com/hyc1005/mythmap/actions/runs/42351743119) 首轮 24 成功、1 失败：`fetch-depth: 0` 让素材审计通过，浏览器任务只剩 `webkit / atlas` 在 `verify-resume.mjs:138` 等待 `.detail-drawer` 超时。三次重跑分别失败于同一处、`verify-design.mjs` 的 `page.goto: WebKit encountered an internal error`、再次 `verify-resume.mjs:138`；第 4 次重跑通过，deploy 于 08:57:45Z 成功，Pages 部署 SHA 为 `625f118`。同脚本在本机 WebKit 连续 3 次、每次约 33 秒均通过，属于 CI 上的 WebKit 不稳定，不是本轮改动引入；旧交接记录的同类 WebKit 超时仍未定根因。
 - 2026-11-09 的 `9ca927a`（影片返回、默认排序、Open Graph、CI 拆分）与 `e075f38`（测试兼容修复）已发布：[42537656721](https://github.com/hyc1005/mythmap/actions/runs/42537656721)。首轮 `webkit / southern-cards` 单 Job 卡住约 60 分钟，取消整轮后只重跑该 Job，10 分钟通过；最终 26 个 Job 全绿，部署 `e075f38`（00:59Z）。排序改动曾让三个 atlas Job 同时失败，原因是测试假设首屏条目；已改为搜索定位与集合比对，不再依赖编辑顺序。
+- 2026-11-09 代号“深度路线”两批已发布：`6048144`（并列校读 + 语义标签数据）、`1718f51`（英文篇名修复）、`0b27b11`（标签筛选、关联排序、专题巡山录）。最后一个提交的发布运行 [42560972577](https://github.com/hyc1005/mythmap/actions/runs/42560972577) 27 个 Job 全绿，部署 `0b27b11`。此前 `42554212923` 因英文界面出现未翻译篇名失败，已修复；两处 WebKit 稳定性超时通过重跑通过。
+- 深度功能现状：4.1 同名异载/异说校读、4.2 标签数据与筛选、4.3 关联排序、4.4 专题巡山录均已完成首版；人工复审清单在 `docs/depth-roadmap.md` 第 8 节，确认前标签只能视为自动抽取。
 - 本轮开始前已有 `CHANGELOG.md`、`docs/editorial-review.md`、`frontend/src/assets/shanhai-mark.svg` 修改。保留这些内容；不要覆盖或无差别提交与本轮无关的改动。
 - 古籍译注审校继续暂停。本机 `gh` 不在 PATH，常见安装位置也未找到；已用公开 GitHub REST API 读取最近 50 次运行及最新运行的 Jobs API，并用 `git ls-remote --heads origin` 核对远端分支。必需状态设置 API 返回 401，不能据此认定 main 没有分支保护。
-- 远端基线：`main` 为 `e075f38`，部署同为 `e075f38`（00:59Z），与本地一致；`codex/actions-speedup` 为 `c6bb559`。2026-11-07/08 的失败运行 [42348028931](https://github.com/hyc1005/mythmap/actions/runs/42348028931) 与 [42351743119](https://github.com/hyc1005/mythmap/actions/runs/42351743119) 已处理完毕：前者暴露浅检出缺历史（后续以 `fetch-depth: 0` 修复）与四项浏览器用例，后者在第 4 次尝试通过并首次部署开屏版本；失败明细与修复见下方“CI 稳定性”。
+- 远端基线：`main` 为 `0b27b11`，部署同为 `0b27b11`，与本地一致；`codex/actions-speedup` 为 `c6bb559`。2026-11-07/08 的失败运行 [42348028931](https://github.com/hyc1005/mythmap/actions/runs/42348028931) 与 [42351743119](https://github.com/hyc1005/mythmap/actions/runs/42351743119) 已处理完毕：前者暴露浅检出缺历史（后续以 `fetch-depth: 0` 修复）与四项浏览器用例，后者在第 4 次尝试通过并首次部署开屏版本；失败明细与修复见下方“CI 稳定性”。
 - 临时输出、`output/`、`node_modules/`、`frontend/dist/` 和根目录本地交接不提交。过程文件删除前仍需先询问用户“可以删了吗？”。
+
+## 下次会话接续
+
+- 先读 `docs/depth-roadmap.md` 第 8 节（复审清单）与本文件“当前状态”。
+- 当前发布：`main = 0b27b11`，部署 `0b27b11`；4.1–4.4 首版完成，发布运行 27 个 Job 全绿。
+- 待用户复审：95 条 effect/omen 标签、泛称并列策略、5 条异说归属、两条专题路线点位、免责文案。
+- 复审通过后再做：数据字典与许可说明；可选扩展（4.3 共享 `feature_tags`、4.4 增补路线）。
+
+可直接复制的开场指令：
+
+> 接续 mythmap：先读 `docs/development-handoff.md` 和 `docs/depth-roadmap.md` 第 8 节。本轮按复审清单逐项确认 effect/omen 标签与专题路线点位；我逐条给结论，你按结论改数据、更新台账并重跑验证。
 
 ## 已实施与主要入口
 
@@ -29,7 +42,7 @@
 | 开篇影像 | `public/opening-film.html` 为自包含宣传片（2.82 MB，内嵌 5 PNG/5 WebP 角色帧），不进入首屏；唯一入口是页脚藏书印 `.bookplate-link`。左上角返回链接与「跳过」/Esc 都回上一页，HUD 只留「重播」「声音」 |
 | 默认排序 | `src/bestiary-notability.json` 是人工维护的知名度权重，`bestiary.js` 的默认列表先按权重、再按原顺序；搜索仍先看匹配度。文件独立于生成数据，可直接编辑 |
 | 社交预览 | `index.html` 声明 Open Graph / Twitter Card；`public/og-image.webp` 为 1200×630 裁切图，经 `publish-files.mjs` 白名单发布 |
-| 深度路线 | `docs/depth-roadmap.md` v6：4.1 并列校读、4.2 标签筛选与抽屉回筛、4.3 关联排序、4.4 专题巡山录（2 条路线、独立区块）均已落地；人工复核待办 |
+| 深度路线 | `docs/depth-roadmap.md` v7：4.1–4.4 首版全部落地，第 8 节为待用户复审清单（标签、泛称并列、异说归属、路线点位、免责文案） |
 | 浏览器标题 | 站点标题固定为 `山海寻踪`（英文 `Shanhai Atlas`），不再附带副标题；`verify-locale` 的 `startsWith('Shanhai Atlas')` 仍成立 |
 
 策略：`?splash=1` 强制演示；`?splash=0` / `?nosplash` 跳过；带其他查询或 hash 的深链跳过自动播放。标记键为 `localStorage['shanhai-splash:v12:seen']`。减少动态效果始终跳过自动播放；主动点击品牌时可看静态降级。跳过或播放结束写入标记。开屏对话框内任意点击等同于「进入网站」；按钮、Esc、重播、加载中与淡出中的重复触发由既有幂等保护挡住，`verify-splash.mjs` 覆盖这些路径。
@@ -70,6 +83,7 @@ npm run verify:data
 
 - 前一轮全局模糊验证：Chromium 双语六尺寸、详情双语手机/桌面、WebKit 手机/桌面全文显现、中文/英文地理资料与对照检查已通过；此前时长为 1.5 秒。
 - 2026-11-09 线上复核：标题为「山海寻踪」，`og:image` 指向 `/mythmap/og-image.webp`；异兽谱默认前六为九尾狐/相柳/开明兽/凤皇/毕方/穷奇；藏书印进入影片后，「跳过」回到站点原页；无页面错误。本地对应 `verify-splash`（Chromium/WebKit）、`verify-bestiary`、`verify-reading`（Chromium/WebKit）、`verify-exploration`（Chromium/WebKit）与 `verify-design`（Chromium）全部通过。
+- 2026-11-09 第二批（`0b27b11`）线上复核：异兽谱存在功效/征兆筛选；青耕抽屉显示 1 条标签；专题路线 2 条、首条 6 个点位，点开毕方后 `data-timeline-playing=false`；无页面错误。本地 `verify-bestiary`（Chromium）与构建通过，WebKit 由 CI 的 `atlas / reading` 覆盖。
 - 2026-11-07 本批最终生产构建通过；`verify:paper` 的 Chromium/WebKit × 手机/桌面四例通过：滑动选中位置与字体/语言变化同步、异兽筛选、折叠开关、键盘操作、快速反向、减少动态效果，以及全文 1.2 秒显现。
 - `verify-blur-global.mjs` 的 Chromium 双语六尺寸 12 例通过；`verify-blur-detail.mjs` 的 Chromium 双语手机/桌面四例完整复跑通过。首次详情运行曾在“继续阅读保留位置”断言失败，随后完整复跑未复现，未修改位置恢复算法，也未将首次失败归因于并发或宣称根因已修复。
 - `verify-onboarding.mjs` 的 Chromium 双语四尺寸通过；最终开屏同页重播/Esc/App 不重挂载复查通过。
