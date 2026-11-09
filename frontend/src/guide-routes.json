@@ -1,34 +1,226 @@
 {
-  "_note": "Curated thematic routes. Every stop must reference an existing bestiary entry id; the section is independent of the guided-tour playback state.",
+  "_note": "Curated thematic routes. Optional fields: route.thesis, stop.note, stop.withId and stop.withLabel. Every stop references an existing bestiary or deity entry id; routes never copy source text and never start the guided-tour playback. In English, 其邑 is settlement, 其国 is state, and 天下 is realm-wide in labels or throughout the realm in prose.",
   "routes": [
     {
       "id": "omens",
-      "title": { "zh": "见则志", "en": "Omens and signs" },
+      "title": { "zh": "同一灾异，不同范围", "en": "Same omen, different reach" },
       "intro": {
-        "zh": "按原文的“见则/动则”串联灾异与吉兆，不改变各篇顺序。",
-        "en": "Follows the text's own omen clauses across disasters and auspicious signs."
+        "zh": "按原文的「见则」读大旱、大水、大穰，只比较范围措辞。",
+        "en": "Reads drought, flood and bountiful-harvest omens by the reach named in the text; it does not rank severity."
+      },
+      "thesis": {
+        "zh": "原文用「其邑」「其国」「天下」标示征兆所及；同一种灾异可以出现在不同范围。这里只比较措辞，不比较严重程度。",
+        "en": "The text marks an omen's reach as within the settlement, within the state, or all under heaven; the same omen can appear at different reaches. This compares wording, not severity."
       },
       "stops": [
-        { "entryId": "beast-bifang", "label": { "zh": "毕方 · 讹火", "en": "Bifang · fire" } },
-        { "entryId": "beast-beishan-feiyi-hunxi", "label": { "zh": "浑夕肥遗 · 大旱", "en": "Feiyi of Hunxi · drought" } },
-        { "entryId": "beast-nanshan-changyou", "label": { "zh": "长右 · 大水", "en": "Changyou · flood" } },
-        { "entryId": "beast-zhuyan", "label": { "zh": "朱厌 · 大兵", "en": "Zhuyan · war" } },
-        { "entryId": "beast-fei", "label": { "zh": "蜚 · 大疫", "en": "Fei · plague" } },
-        { "entryId": "beast-dangkang", "label": { "zh": "当康 · 大穰", "en": "Dangkang · bountiful harvest" } }
+        {
+          "entryId": "beast-zhongshan-mingshe-xian",
+          "label": { "zh": "鸣蛇 · 其邑大旱", "en": "Ming snakes · settlement drought" },
+          "note": {
+            "zh": "中山经鸣蛇，蛇状四翼，原文记「见则其邑大旱」。",
+            "en": "The mingshe of the Central Mountains is a four-winged snake; the text records a drought within the settlement."
+          }
+        },
+        {
+          "entryId": "beast-beishan-feiyi-hunxi",
+          "label": { "zh": "浑夕肥遗 · 其国大旱", "en": "Feiyi of Hunxi · state drought" },
+          "note": {
+            "zh": "北山经浑夕一首两身的蛇，原文记「见则其国大旱」。",
+            "en": "The feiyi of Hunxi in the Northern Mountains is a one-headed, two-bodied snake; the text records a drought within the state."
+          }
+        },
+        {
+          "entryId": "beast-dongshan-bibi-gufeng",
+          "label": { "zh": "獙獙 · 天下大旱", "en": "Bibi · realm-wide drought" },
+          "note": {
+            "zh": "东山经獙獙，狐状有翼，原文记「见则天下大旱」。",
+            "en": "The bibi of the Eastern Mountains is a fox-like beast with wings; the text records drought throughout the realm."
+          }
+        },
+        {
+          "entryId": "beast-zhongshan-huashe-yang",
+          "label": { "zh": "化蛇 · 其邑大水", "en": "Huashe · settlement flood" },
+          "note": {
+            "zh": "中山经化蛇，人面豺身鸟翼，原文记「见则其邑大水」。",
+            "en": "The huashe of the Central Mountains has a human face, a jackal's body and bird wings; the text records a flood within the settlement."
+          }
+        },
+        {
+          "entryId": "bird-xishan-shengyu-yushan",
+          "label": { "zh": "胜遇 · 其国大水", "en": "Shengyu · state flood" },
+          "note": {
+            "zh": "西山经胜遇，翟状而赤，原文记「见则其国大水」。",
+            "en": "The shengyu of the Western Mountains is pheasant-like and red; the text records a flood within the state."
+          }
+        },
+        {
+          "entryId": "bird-xishan-manman-chongwu",
+          "label": { "zh": "蛮蛮 · 天下大水", "en": "Manman · realm-wide flood" },
+          "note": {
+            "zh": "西山经崇吾蛮蛮，鳬状一翼一目，原文记「见则天下大水」。",
+            "en": "The manman of Chongwu in the Western Mountains is duck-like with one wing and one eye; the text records a flood throughout the realm."
+          }
+        },
+        {
+          "entryId": "beast-xishan-jiao-yushan",
+          "label": { "zh": "狡 · 其国大穰", "en": "Jiao · state harvest" },
+          "note": {
+            "zh": "西山经狡，犬状豹文牛角，原文记「见则其国大穰」。",
+            "en": "The jiao of the Western Mountains is dog-like with leopard markings and ox horns; the text records a great harvest within the state."
+          }
+        },
+        {
+          "entryId": "beast-dangkang",
+          "label": { "zh": "当康 · 天下大穰", "en": "Dangkang · realm-wide harvest" },
+          "note": {
+            "zh": "东山经当康，豚状有牙，原文记「见则天下大穰」。",
+            "en": "The dangkang of the Eastern Mountains is pig-like with tusks; the text records a great harvest throughout the realm."
+          }
+        }
       ]
     },
     {
       "id": "wards",
       "title": { "zh": "服佩辟邪", "en": "Wards and remedies" },
       "intro": {
-        "zh": "只收原文写明“食之/佩之”功效的条目；䍺 等无功效记载者不入此路线。",
+        "zh": "只收原文写明「食之」「佩之」功效的条目；䍺 等无功效记载者不入此路线。",
         "en": "Only accounts whose text states an effect after eating or wearing; accounts without one stay out."
       },
+      "thesis": {
+        "zh": "只收原文写明食之或佩之功效的条目；功效是古籍记述，不作现代药效解释。",
+        "en": "Only accounts that state an effect after eating or wearing are included; these are ancient claims, not modern medical claims."
+      },
       "stops": [
-        { "entryId": "beast-jiuweihu", "label": { "zh": "九尾狐 · 食者不蛊", "en": "Nine-tailed fox · no poison" } },
-        { "entryId": "beast-boyi", "label": { "zh": "猼訑 · 佩之不畏", "en": "Boyi · worn, no fear" } },
-        { "entryId": "beast-zhongshan-qinggeng-jinli11", "label": { "zh": "青耕 · 御疫", "en": "Qinggeng · plague ward" } },
-        { "entryId": "beast-xishan-feiyi-ying", "label": { "zh": "英山肥遗 · 已疠、杀虫", "en": "Feiyi of Ying · illness, insects" } }
+        {
+          "entryId": "beast-jiuweihu",
+          "label": { "zh": "九尾狐 · 食者不蛊", "en": "Nine-tailed fox · no poison" },
+          "note": {
+            "zh": "青丘九尾狐，原文记「食者不蛊」。",
+            "en": "The nine-tailed fox of Qingqiu; the text says eating it prevents gu poison."
+          }
+        },
+        {
+          "entryId": "beast-boyi",
+          "label": { "zh": "猼訑 · 佩之不畏", "en": "Boyi · worn, no fear" },
+          "note": {
+            "zh": "基山猼訑，原文记「佩之不畏」。",
+            "en": "The boyi of Jishan; the text says wearing it removes fear."
+          }
+        },
+        {
+          "entryId": "beast-zhongshan-qinggeng-jinli11",
+          "label": { "zh": "青耕 · 御疫", "en": "Qinggeng · plague ward" },
+          "note": {
+            "zh": "堇理青耕，原文记「可以御疫」。",
+            "en": "The qinggeng of Jinli; the text says it can ward off plague."
+          }
+        },
+        {
+          "entryId": "beast-xishan-feiyi-ying",
+          "label": { "zh": "英山肥遗 · 已疠、杀虫", "en": "Feiyi of Ying · illness, insects" },
+          "note": {
+            "zh": "英山肥遗，原文记「食之已疠」「可以杀虫」。",
+            "en": "The feiyi of Ying; the text says eating it cures illness and kills insects."
+          }
+        }
+      ]
+    },
+    {
+      "id": "namesakes",
+      "title": { "zh": "同名异物", "en": "Same name, different things" },
+      "intro": {
+        "zh": "同名条目并读：名字相同，形貌与出处各自独立。",
+        "en": "Reads same-name accounts side by side: the name is shared, the forms and sources are not."
+      },
+      "thesis": {
+        "zh": "同一个名字在原文里可以指向形貌各异的对象；条目分别保留，不合并。读完可知：同名不等于同一物。",
+        "en": "A shared name can point to different forms in the text; the accounts stay separate. Same name does not mean the same creature."
+      },
+      "stops": [
+        {
+          "entryId": "beast-xishan-feiyi-ying",
+          "withId": "beast-beishan-feiyi-hunxi",
+          "label": { "zh": "英山肥遗 · 鸟", "en": "Feiyi of Ying · bird" },
+          "withLabel": { "zh": "浑夕肥遗 · 蛇", "en": "Feiyi of Hunxi · serpent" },
+          "note": {
+            "zh": "西山经英山一条是鹑状鸟，原文记「食之已疠」「可以杀虫」；北山经浑夕一条是一首两身的蛇，原文记「见则其国大旱」。名字相同，形貌与出处各自独立。",
+            "en": "The Ying account is a quail-like bird whose flesh is said to cure illness and kill insects; the Hunxi account is a one-headed, two-bodied snake whose appearance is linked to drought. The name is shared; the forms and sources are not."
+          }
+        },
+        {
+          "entryId": "bird-xishan-manman-chongwu",
+          "withId": "beast-xishan-manman-gangwei",
+          "label": { "zh": "蛮蛮 · 一翼一目", "en": "Manman · one wing, one eye" },
+          "withLabel": { "zh": "蛮蛮 · 鼠身鳖首", "en": "Manman · rat body, turtle head" },
+          "note": {
+            "zh": "同属西山经：崇吾一条是鳬状、一翼一目的鸟，原文记「见则天下大水」；另一条是鼠身鳖首、犬吠音的水中对象。同名而形貌不同。",
+            "en": "Both are in the Western Mountains: one is a duck-like bird with a single wing and eye, linked to great floods; the other is a water creature with a rat's body, a turtle's head and a dog-like call. Same name, different forms."
+          }
+        },
+        {
+          "entryId": "beast-xishan-huayu-leyou",
+          "withId": "beast-beishan-huayu-qiuru",
+          "label": { "zh": "滑鱼 · 蛇状四足", "en": "Huayu · snake-like, four legs" },
+          "withLabel": { "zh": "滑鱼 · 鱓状赤背", "en": "Huayu · eel-like, red back" },
+          "note": {
+            "zh": "西山经一条蛇状四足、食鱼；北山经一条鱓状赤背，原文记「食之已疣」。名字相同，形貌与功效分属两条记载。",
+            "en": "One account is snake-like with four legs and eats fish; the other is eel-like with a red back and is said to cure warts when eaten. Same name, separate forms and effects."
+          }
+        },
+        {
+          "entryId": "beast-zhongshan-feiyu-niushou",
+          "withId": "beast-zhongshan-feiyu-gui",
+          "label": { "zh": "飞鱼 · 鲋状", "en": "Feiyu · perch-like" },
+          "withLabel": { "zh": "飞鱼 · 豚状赤文", "en": "Feiyu · pig-like, red-marked" },
+          "note": {
+            "zh": "中山经一条是鲋状鱼，原文记「食之已痔衕」；另一条是豚状赤文，原文记「服之不畏雷」「可以御兵」。同名而一鱼一兽。",
+            "en": "One account is a perch-like fish, said to cure hemorrhoids when eaten; the other is a pig-like creature with red markings, said to make the wearer unafraid of thunder and able to ward off weapons. Same name, one fish and one beast."
+          }
+        },
+        {
+          "entryId": "beast-qiongqi-xishan",
+          "withId": "beast-qiongqi-hainei",
+          "label": { "zh": "穷奇 · 牛形", "en": "Qiongqi · bovine" },
+          "withLabel": { "zh": "穷奇 · 虎形有翼", "en": "Qiongqi · winged tiger" },
+          "note": {
+            "zh": "西山经正文作「状如牛蝟毛」、犬吼音、食人；海内北经作「食人从首始」的虎状有翼之兽。郭注已记「似虎蝟毛有翼」；海内北经不在五部山经阅读范围内。",
+            "en": "The Western Mountains text gives a bovine form with hedgehog-like hair, a dog-like roar and man-eating; the Northern Interior text gives a tiger-like winged beast that eats people starting from the head. The Guo commentary already records the tiger-like variant; the Northern Interior is outside the five mountain books."
+          }
+        }
+      ]
+    },
+    {
+      "id": "forms",
+      "title": { "zh": "山神形貌公式", "en": "Mountain-god formulas" },
+      "intro": {
+        "zh": "两套形貌公式在不同篇目重复出现，按篇对读。",
+        "en": "Two recurring mountain-god formulas, read across books."
+      },
+      "thesis": {
+        "zh": "同一形貌公式在不同篇目重复出现；它们不是同一座山的神，也不是同一条目。",
+        "en": "The same physical formula recurs in different books; these are not the same mountain god or the same entry."
+      },
+      "stops": [
+        {
+          "entryId": "deity-nanshan-1",
+          "withId": "deity-zhongshan-dragonhead-bird-summary12",
+          "label": { "zh": "鸟身龙首 · 南山", "en": "Bird body, dragon head · south" },
+          "withLabel": { "zh": "鸟身龙首 · 中山", "en": "Bird body, dragon head · central" },
+          "note": {
+            "zh": "南山䧿山列与中山次十二列都用「其神状皆鸟身而龙首」总述山神；分属两篇，各有祭礼。",
+            "en": "The southern and central books both summarize their mountain gods as bird-bodied with dragon heads; they are separate books with separate rites."
+          }
+        },
+        {
+          "entryId": "deity-nanshan-3",
+          "withId": "deity-zhongshan-human-dragon-summary10",
+          "label": { "zh": "龙身人面 · 南山", "en": "Dragon body, human face · south" },
+          "withLabel": { "zh": "龙身人面 · 中山", "en": "Dragon body, human face · central" },
+          "note": {
+            "zh": "南山次三记「其神皆龙身而人面」；中山次十记「其神状皆龙身而人面」。同形而分属两篇。",
+            "en": "The southern third range and the central tenth range both describe dragon-bodied gods with human faces; the formula recurs, the entries do not."
+          }
+        }
       ]
     }
   ]

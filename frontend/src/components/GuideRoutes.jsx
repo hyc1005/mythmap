@@ -17,10 +17,17 @@ export default function GuideRoutes({ routes, onOpen }) {
         {routes.map(item => <button type="button" key={item.id} aria-pressed={item.id === route.id} onClick={() => setActive(item.id)}>{item.title[locale] || item.title.zh}</button>)}
       </div>
       <p className="guide-route-intro">{route.intro?.[locale] || route.intro?.zh}</p>
-      <ol className="guide-route-stops">{route.stops.map(stop => <li key={stop.entryId}>
-        <button type="button" data-route-stop={stop.entryId} onClick={event => onOpen(stop.entryId, event)}>
-          <b>{stop.label?.[locale] || stop.label?.zh}</b><small>{t('查看条目')}</small>
-        </button>
+      {route.thesis && <p className="guide-route-thesis">{route.thesis[locale] || route.thesis.zh}</p>}
+      <ol className="guide-route-stops">{route.stops.map(stop => <li key={`${stop.entryId}:${stop.withId || ''}`}>
+        <div className="guide-route-pair">
+          <button type="button" data-route-stop={stop.entryId} onClick={event => onOpen(stop.entryId, event)}>
+            <b>{stop.label?.[locale] || stop.label?.zh}</b><small>{t('查看条目')}</small>
+          </button>
+          {stop.withId && <button type="button" data-route-stop={stop.withId} onClick={event => onOpen(stop.withId, event)}>
+            <b>{stop.withLabel?.[locale] || stop.withLabel?.zh}</b><small>{t('查看条目')}</small>
+          </button>}
+        </div>
+        {stop.note && <p className="guide-route-note">{stop.note[locale] || stop.note.zh}</p>}
       </li>)}</ol>
     </div>
   </section>;

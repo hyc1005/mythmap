@@ -32,13 +32,57 @@ for (const [id, record] of Object.entries(semanticTags.entries)) {
 }
 assert.ok(Object.keys(semanticTags.entries).length >= 90, 'Semantic tags cover the expected accounts');
 assert.equal(Object.values(semanticTags.entries).filter(record => record.status === 'reviewed').length, 95, 'Spot-checked tags stay reviewed unless their extracted output changes');
+const ROUTE_NORMALISE = new Map(Object.entries({
+  禦: '御', 見: '见', 動: '动', 訛: '讹', 靣: '面', 蟲: '虫', 殺: '杀', 癘: '疠', 國: '国',
+  縣: '县', 獸: '兽', 鳥: '鸟', 龍: '龙', 狀: '状', 則: '则', 寧: '宁', 饑: '饥', 風: '风', 蠱: '蛊'
+}));
+const normaliseRouteText = text => [...text].map(char => ROUTE_NORMALISE.get(char) || char).join('');
+const routeSource = new Map([...world.beasts, ...world.text_entities].map(item => [item.id, item]));
+const hasHan = text => /[\u3400-\u9fff\ud800-\udfff]/u.test(text);
+const routeTagSets = new Map();
+for (const [id, record] of Object.entries(semanticTags.entries)) {
+  for (const tag of record.effect) {
+    const key = `effect:${tag.tag}`;
+    if (!routeTagSets.has(key)) routeTagSets.set(key, new Set());
+    routeTagSets.get(key).add(id);
+  }
+  for (const tag of record.omen) {
+    const key = `omen:${tag.tag}`;
+    if (!routeTagSets.has(key)) routeTagSets.set(key, new Set());
+    routeTagSets.get(key).add(id);
+  }
+}
 for (const route of guideRoutes.routes) {
   assert.ok(route.id && route.title?.zh && route.title?.en && route.intro?.zh && route.intro?.en, `${route.id}: bilingual title and intro`);
-  assert.ok(!/[\u3400-\u9fff]/.test(route.title.en + route.intro.en), `${route.id}: English route copy`);
-  assert.equal(new Set(route.stops.map(stop => stop.entryId)).size, route.stops.length, `${route.id}: unique stops`);
+  assert.ok(route.thesis?.zh && route.thesis?.en, `${route.id}: bilingual thesis`);
+  assert.ok(!hasHan(route.title.en + route.intro.en + route.thesis.en), `${route.id}: English route copy`);
+  assert.ok(!/导致|造成/.test(`${route.thesis.zh}${route.thesis.en}`), `${route.id}: thesis does not claim causation`);
+  const routeIds = route.stops.flatMap(stop => [stop.entryId, stop.withId].filter(Boolean));
+  assert.equal(new Set(routeIds).size, routeIds.length, `${route.id}: unique entries`);
   for (const stop of route.stops) {
     assert.ok(metadata[stop.entryId], `${route.id}: route stop ${stop.entryId} exists`);
-    assert.ok(stop.label?.zh && stop.label?.en && !/[\u3400-\u9fff]/.test(stop.label.en), `${route.id}/${stop.entryId}: bilingual label`);
+    assert.ok(stop.label?.zh && stop.label?.en && !hasHan(stop.label.en), `${route.id}/${stop.entryId}: bilingual label`);
+    assert.ok(stop.note?.zh && stop.note?.en && !hasHan(stop.note.en), `${route.id}/${stop.entryId}: bilingual note`);
+    assert.ok(!/导致|造成/.test(`${stop.note.zh}${stop.note.en}`), `${route.id}/${stop.entryId}: note does not claim causation`);
+    assert.ok(!stop.entryId.startsWith('rite-'), `${route.id}: rites stay out of routes`);
+    if (stop.withId) {
+      assert.ok(metadata[stop.withId], `${route.id}: paired stop ${stop.withId} exists`);
+      assert.ok(stop.withLabel?.zh && stop.withLabel?.en && !hasHan(stop.withLabel.en), `${route.id}/${stop.entryId}: bilingual paired label`);
+      assert.equal(metadata[stop.entryId].group_key, metadata[stop.withId].group_key, `${route.id}/${stop.entryId}: pair shares a name group`);
+      assert.notEqual(routeSource.get(stop.entryId)?.quote, routeSource.get(stop.withId)?.quote, `${route.id}/${stop.entryId}: pair keeps distinct source text`);
+    }
+    for (const id of [stop.entryId, stop.withId].filter(Boolean)) {
+      assert.notEqual(metadata[id].classification.review_status, 'unresolved', `${route.id}/${id}: route entries are reviewed`);
+      assert.ok(!id.startsWith('rite-'), `${route.id}/${id}: rites stay out of routes`);
+    }
+    for (const match of stop.note.zh.matchAll(/「([^」]+)」/g)) {
+      const fragment = normaliseRouteText(match[1]);
+      const sources = [stop.entryId, stop.withId].filter(Boolean).map(id => routeSource.get(id)).flatMap(entry => [entry.quote, entry.commentary_quote, entry.description]).filter(Boolean).map(normaliseRouteText);
+      assert.ok(sources.some(text => text.includes(fragment)), `${route.id}/${stop.entryId}: quoted fragment not found: ${match[1]}`);
+    }
+  }
+  for (const [key, tagSet] of routeTagSets) {
+    assert.ok(!(tagSet.size === routeIds.length && routeIds.every(id => tagSet.has(id))), `${route.id}: route is a copy of ${key}`);
   }
 }
 const original = structuredClone(world);
@@ -268,6 +312,7 @@ if (!process.env.ATLAS_URL) {
         assert.equal(await grid.locator('b').textContent(), lang === 'zh' ? '鸣蛇' : 'Ming snakes');
         if (name === 'chromium' && width === 320 && lang === 'en') await page.locator('#creatures').screenshot({ path: fileURLToPath(new URL('../../output/qa/bestiary-filter-mobile-en.png', import.meta.url)) });
         assert.ok(await page.locator('#creatures').evaluate(node => node.scrollWidth <= node.clientWidth + 1), `${name} ${lang} ${width}: bestiary overflow`);
+        assert.ok(await page.locator('#routes').evaluate(node => node.scrollWidth <= node.clientWidth + 1), `${name} ${lang} ${width}: routes overflow`);
         assert.ok(await page.locator('.bestiary-tools :is(input,select,button), .bestiary-roles button').evaluateAll(nodes => nodes.filter(node => node.checkVisibility()).every(node => node.getBoundingClientRect().height >= 44)));
       }
     }
@@ -339,6 +384,18 @@ if (!process.env.ATLAS_URL) {
     await routesPage.locator(`[data-route-stop="${firstStop.entryId}"]`).click();
     await routesPage.locator(`.detail-drawer[data-entry-id="${firstStop.entryId}"]`).waitFor();
     assert.equal(await routesPage.locator('.world-layout').getAttribute('data-timeline-playing'), 'false', 'Routes do not start the guided tour');
+    await routesPage.locator('.drawer-close').click();
+    await routesPage.locator('.detail-drawer').waitFor({ state: 'hidden' });
+    const pairIndex = guideRoutes.routes.findIndex(route => route.stops.some(stop => stop.withId));
+    if (pairIndex >= 0) {
+      await routesPage.locator('.guide-route-tabs button').nth(pairIndex).click();
+      const pair = guideRoutes.routes[pairIndex].stops.find(stop => stop.withId);
+      assert.equal(await routesPage.locator(`[data-route-stop="${pair.entryId}"]`).count(), 1);
+      assert.equal(await routesPage.locator(`[data-route-stop="${pair.withId}"]`).count(), 1);
+      await routesPage.locator(`[data-route-stop="${pair.withId}"]`).click();
+      await routesPage.locator(`.detail-drawer[data-entry-id="${pair.withId}"]`).waitFor();
+      assert.equal(await routesPage.locator('.world-layout').getAttribute('data-timeline-playing'), 'false', 'Paired route stops do not start the guided tour');
+    }
     await routesPage.close();
     assert.deepEqual(errors, []);
     console.log(`PASS ${name}: 12 initial + 24 added cards, viewport image lifetime, no unopened image requests, independent namesake selection, morphology/features/books, bilingual layouts, original details and legacy deity links`);

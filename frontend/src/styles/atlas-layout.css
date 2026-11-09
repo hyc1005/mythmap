@@ -148,7 +148,11 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .guide-route-tabs button { min-height: 44px; padding: 8px 14px; border: 1px solid var(--edge); background: transparent; color: var(--ink); font: inherit; cursor: pointer; }
 .guide-route-tabs button[aria-pressed="true"] { border-color: var(--verm); color: var(--verm); }
 .guide-route-intro { margin: 0 0 14px; font-size: 14px; color: var(--soft-ink); }
+.guide-route-thesis { margin: 0 0 18px; padding: 2px 0 2px 14px; border-left: 2px solid var(--verm); font-size: 15px; line-height: 1.8; color: var(--ink); }
 .guide-route-stops { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.guide-route-stops li { min-width: 0; }
+.guide-route-pair { display: grid; gap: 8px; }
+.guide-route-note { margin: 8px 0 0; font-size: 13px; line-height: 1.7; color: var(--soft-ink); }
 .guide-route-stops button { display: block; width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid var(--edge); background: transparent; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
 .guide-route-stops button:hover { border-color: var(--verm); }
 .guide-route-stops b { display: block; font-weight: 600; }
