@@ -14,6 +14,11 @@ export default function GlobalSearch({ open, state, onStateChange, onClose, onCh
   remembered.current = state;
   const update = patch => onStateChange({ ...state, ...patch });
   const setQuery = query => update({ query, limit: 40, scrollTop: 0, focusKey: null });
+  const forwardWheel = event => {
+    const list = resultList.current;
+    if (!list || list.contains(event.target) || list.scrollHeight <= list.clientHeight) return;
+    list.scrollTop += event.deltaY;
+  };
   const moveResultFocus = event => {
     if (event.defaultPrevented || event.nativeEvent.isComposing || event.keyCode === 229
       || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || !['ArrowDown', 'ArrowUp'].includes(event.key)) return;
@@ -39,7 +44,7 @@ export default function GlobalSearch({ open, state, onStateChange, onClose, onCh
   if (!open) return null;
   const labels = { story: '故事', beast: '异兽', source: '出处', place: '地点与神域', plant: '草木', water: '水域', material: '物产', passage: '经文段落', animal: '动物记载', valley: '谷地', wind: '风的记述', deity: '山神', rite: '祭礼', geography: '现代地点资料' };
   const ids = [...new Set(results.filter(item => !['source', 'geography'].includes(item.kind)).map(item => item.id))];
-  return <ExploreSheet title={t('全站搜索')} onClose={onClose} returnFocus={returnFocus} initialFocus=".global-search-input" className="global-search-dialog">
+  return <ExploreSheet title={t('全站搜索')} onClose={onClose} returnFocus={returnFocus} initialFocus=".global-search-input" className="global-search-dialog" onWheel={forwardWheel}>
     <div className="global-search-tools">
       <label>{t('搜索故事、异兽与现代地点')}<input ref={keywordInput} className="global-search-input" type="search" maxLength={120} autoComplete="off" value={query} onChange={event => setQuery(event.target.value)} onKeyDown={moveResultFocus} aria-describedby="search-keyboard-help" placeholder={t('输入故事、地名、形貌或典籍')} /></label>
       <div><select aria-label={t('搜索范围')} value={kind} onChange={event => update({ kind: event.target.value, limit: 40, scrollTop: 0, focusKey: null })}><option value="all">{t('全部类型')}</option>{Object.entries(labels).map(([key, label]) => <option key={key} value={key}>{t(label)}</option>)}</select>{query && <button type="button" onClick={() => setQuery('')}>{t('清空搜索')}</button>}</div>

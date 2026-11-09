@@ -155,6 +155,18 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         assert.ok(await input(page).evaluate(node => node === document.activeElement), 'Trying again focuses the keyword field');
         await input(page).fill('山海经');
         await page.evaluate(() => document.fonts.ready);
+        const searchMetrics = await dialog(page).evaluate(node => {
+          const list = node.querySelector('.global-search-results');
+          const box = node.getBoundingClientRect();
+          return { center: box.top + box.height / 2, viewport: innerHeight / 2, scrollHeight: list.scrollHeight, clientHeight: list.clientHeight };
+        });
+        assert.ok(Math.abs(searchMetrics.center - searchMetrics.viewport) <= 2, `${name} ${lang} ${width}: search dialog is vertically centered`);
+        assert.ok(searchMetrics.scrollHeight > searchMetrics.clientHeight, `${name} ${lang} ${width}: search results overflow`);
+        const keywordBox = await input(page).boundingBox();
+        await page.mouse.move(keywordBox.x + keywordBox.width / 2, keywordBox.y + keywordBox.height / 2);
+        await page.mouse.wheel(0, 500);
+        await page.waitForTimeout(200);
+        assert.ok(await dialog(page).locator('.global-search-results').evaluate(node => node.scrollTop > 0), `${name} ${lang} ${width}: wheel over the keyword field scrolls results`);
         const more = dialog(page).getByRole('button', { name: lang === 'zh' ? '显示更多结果' : 'Show more results', exact: true });
         if (await more.count()) { const before = await dialog(page).locator('.search-result').count(); await more.click(); assert.ok(await dialog(page).locator('.search-result').count() > before); }
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${name} ${width} ${lang} body overflow`);
