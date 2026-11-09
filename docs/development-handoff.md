@@ -8,9 +8,10 @@
 - 首轮 main 发布 [42348028931](https://github.com/hyc1005/mythmap/actions/runs/42348028931) 构建成功，但素材审计因浅检出缺少 `git:447d823...` 等历史证据而失败（git show 退出 128）。已恢复 narrative 审计任务的 `fetch-depth: 0`；构建与浏览器的轻量检出不变，所有校验及 deploy 的 needs 门槛保留。修复提交后继续完整 main 发布。
 - `39a4d8e` 的重跑在 `pages-main` 并发组排队约 20 分钟仍未开始，已取消，该提交没有运行结果。`625f118` 让叙事与引导用例经 `?splash=0` 进入、放宽章节时钟余量后重新推送。
 - [42351743119](https://github.com/hyc1005/mythmap/actions/runs/42351743119) 首轮 24 成功、1 失败：`fetch-depth: 0` 让素材审计通过，浏览器任务只剩 `webkit / atlas` 在 `verify-resume.mjs:138` 等待 `.detail-drawer` 超时。三次重跑分别失败于同一处、`verify-design.mjs` 的 `page.goto: WebKit encountered an internal error`、再次 `verify-resume.mjs:138`；第 4 次重跑通过，deploy 于 08:57:45Z 成功，Pages 部署 SHA 为 `625f118`。同脚本在本机 WebKit 连续 3 次、每次约 33 秒均通过，属于 CI 上的 WebKit 不稳定，不是本轮改动引入；旧交接记录的同类 WebKit 超时仍未定根因。
+- 2026-11-09 的 `9ca927a`（影片返回、默认排序、Open Graph、CI 拆分）与 `e075f38`（测试兼容修复）已发布：[42537656721](https://github.com/hyc1005/mythmap/actions/runs/42537656721)。首轮 `webkit / southern-cards` 单 Job 卡住约 60 分钟，取消整轮后只重跑该 Job，10 分钟通过；最终 26 个 Job 全绿，部署 `e075f38`（00:59Z）。排序改动曾让三个 atlas Job 同时失败，原因是测试假设首屏条目；已改为搜索定位与集合比对，不再依赖编辑顺序。
 - 本轮开始前已有 `CHANGELOG.md`、`docs/editorial-review.md`、`frontend/src/assets/shanhai-mark.svg` 修改。保留这些内容；不要覆盖或无差别提交与本轮无关的改动。
 - 古籍译注审校继续暂停。本机 `gh` 不在 PATH，常见安装位置也未找到；已用公开 GitHub REST API 读取最近 50 次运行及最新运行的 Jobs API，并用 `git ls-remote --heads origin` 核对远端分支。必需状态设置 API 返回 401，不能据此认定 main 没有分支保护。
-- 远端基线：`main` 为 `c750866`（交接文档提交），部署基线为 `625f118`，与本地一致；`codex/actions-speedup` 为 `c6bb559`。最近一轮失败 [42348028931](https://github.com/hyc1005/mythmap/actions/runs/42348028931) 共 26 个 Jobs：20 成功、5 失败、deploy 跳过。失败项为 `verify / narrative` 的 `Run npm run verify:assets`（浅检出缺历史，已由 `39a4d8e` 补 `fetch-depth: 0`，该任务现需完整克隆约 1.9 GiB）、`chromium / atlas` 的引导跳过点击超时、`chromium / narrative` 与 `narrative / layout` 等不到盘古序章按钮、`webkit / stories` 的 `clock.pauseAt` 回拨报错。后三项已在本地复现并写进 `625f118`；素材审计与三项浏览器修复均已在 42351743119 上验证通过。
+- 远端基线：`main` 为 `e075f38`，部署同为 `e075f38`（00:59Z），与本地一致；`codex/actions-speedup` 为 `c6bb559`。2026-11-07/08 的失败运行 [42348028931](https://github.com/hyc1005/mythmap/actions/runs/42348028931) 与 [42351743119](https://github.com/hyc1005/mythmap/actions/runs/42351743119) 已处理完毕：前者暴露浅检出缺历史（后续以 `fetch-depth: 0` 修复）与四项浏览器用例，后者在第 4 次尝试通过并首次部署开屏版本；失败明细与修复见下方“CI 稳定性”。
 - 临时输出、`output/`、`node_modules/`、`frontend/dist/` 和根目录本地交接不提交。过程文件删除前仍需先询问用户“可以删了吗？”。
 
 ## 已实施与主要入口
@@ -38,7 +39,7 @@
 
 - 现象：`webkit / atlas` 在 2026-11-07 至 11-08 的 5 次运行里 5 次失败，但位置每次不同：`verify-resume.mjs:138` 等 `.detail-drawer`（2 次）、`verify-design.mjs` 的 `page.goto: WebKit encountered an internal error`（1 次）、`verify-exploration.mjs:296` 等 `.artwork-fallback`（1 次）。同一脚本在本机 WebKit 连续通过，重跑后也能通过，没有出现可复现的应用侧断言失败。
 - 判断：属于 CI 上 WebKit 进程的偶发崩溃或超时，不是某个断言稳定失败；11-05/11-06 的交接记录里已有同类未定根因的超时。
-- 处理：浏览器步骤对每个脚本先跑一次，失败后在新浏览器中原样重试一次；第二次仍失败则 Job 失败。重试不跳过断言、不降低发布门槛，`::warning::` 会在日志中标出被重试的脚本，失败诊断附件仍按原逻辑上传。2026-11-09 起 `webkit / atlas` 再拆成两个 Job（前 5 个脚本 / 后 6 个脚本），单 Job 约 10–13 分钟，减少长跑压力；两个 Job 都使用 `atlas` 的轻量检出 profile，名字与 shard 区分。
+- 处理：浏览器步骤对每个脚本先跑一次，失败后在新浏览器中原样重试一次；第二次仍失败则 Job 失败。重试不跳过断言、不降低发布门槛，`::warning::` 会在日志中标出被重试的脚本，失败诊断附件仍按原逻辑上传。2026-11-09 起 `webkit / atlas` 再拆成两个 Job（前 5 个脚本 / 后 6 个脚本），单 Job 约 10–13 分钟，减少长跑压力；两个 Job 都使用 `atlas` 的轻量检出 profile，名字与 shard 区分。另有一个独立长尾：`webkit / southern-cards` 偶发跑到 60 分钟以上（正常 15–25 分钟），处理方式是取消整轮后仅重跑该 Job，通常 10 分钟内通过。
 - 边界：重试只处理瞬态问题。若同一脚本连续两次失败，应按真实回归排查，不要继续加大重试次数或跳过脚本。
 
 ## 本地预览与验证
@@ -67,6 +68,7 @@ npm run verify:data
 验证状态：
 
 - 前一轮全局模糊验证：Chromium 双语六尺寸、详情双语手机/桌面、WebKit 手机/桌面全文显现、中文/英文地理资料与对照检查已通过；此前时长为 1.5 秒。
+- 2026-11-09 线上复核：标题为「山海寻踪」，`og:image` 指向 `/mythmap/og-image.webp`；异兽谱默认前六为九尾狐/相柳/开明兽/凤皇/毕方/穷奇；藏书印进入影片后，「跳过」回到站点原页；无页面错误。本地对应 `verify-splash`（Chromium/WebKit）、`verify-bestiary`、`verify-reading`（Chromium/WebKit）、`verify-exploration`（Chromium/WebKit）与 `verify-design`（Chromium）全部通过。
 - 2026-11-07 本批最终生产构建通过；`verify:paper` 的 Chromium/WebKit × 手机/桌面四例通过：滑动选中位置与字体/语言变化同步、异兽筛选、折叠开关、键盘操作、快速反向、减少动态效果，以及全文 1.2 秒显现。
 - `verify-blur-global.mjs` 的 Chromium 双语六尺寸 12 例通过；`verify-blur-detail.mjs` 的 Chromium 双语手机/桌面四例完整复跑通过。首次详情运行曾在“继续阅读保留位置”断言失败，随后完整复跑未复现，未修改位置恢复算法，也未将首次失败归因于并发或宣称根因已修复。
 - `verify-onboarding.mjs` 的 Chromium 双语四尺寸通过；最终开屏同页重播/Esc/App 不重挂载复查通过。

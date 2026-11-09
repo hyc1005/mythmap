@@ -6,9 +6,11 @@
 
 - 开篇影像的「跳过」与 Esc 改为返回上一页（无历史时回站点首页），HUD 只保留「重播」「声音」。
 - 异兽谱默认按人工维护的知名度权重排序（`frontend/src/bestiary-notability.json`），未列出的条目保持原有顺序；搜索仍以匹配度优先。
-- README 明确海经、大荒经不在项目范围内，也不再写成「待补的十三篇」。
+- README 说明阅读段只覆盖五部山经，海经与大荒经不在阅读范围内（异兽谱只有少量条目引及），不再写成“待补的十三篇”。
 - 站点加入 Open Graph 与 Twitter Card，预览图为 `public/og-image.webp`（1200×630，由首页截图裁切）。
 - `webkit / atlas` 拆成两个 Job（地理/探索/引导/修复/设计 与 导览/阅读/续读/搜索/异兽/UX），缩短单 Job 时长。
+- 排序上线后暴露测试对首屏顺序的依赖：`verify-exploration`、`verify-reading` 改为按搜索定位条目、同名列表按集合比对；`verify-bestiary` 的同名顺序与权重一致。
+- 发布 [42537656721](https://github.com/hyc1005/mythmap/actions/runs/42537656721)：首轮 `webkit / southern-cards` 单 Job 卡住 60 分钟，取消整轮后只重跑该 Job，10 分钟通过；最终 26 个 Job 全绿，部署 `e075f38`（00:59Z）。
 
 ## 2026-11-08 · 标题、开篇影像与 CI 重试
 
