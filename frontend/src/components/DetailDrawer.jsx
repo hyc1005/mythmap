@@ -187,7 +187,7 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
           const others = namesakeEntries.filter(item => item.id !== entry.id).map(item => item.quote || '');
           const form = FORM_LABELS[entry.formGroup] || FORM_LABELS.other;
           return <article key={entry.id} className="detail-parallel-card" data-parallel-id={entry.id}>
-            <h4>{entry.displayName}<small>{entry.bookKey || entry.provenance} · {t(form[locale] || form.zh)}</small></h4>
+            <h4>{entry.displayName}<small>{entry.bookKey ? t(entry.bookKey) : ''}{entry.bookKey ? ' · ' : ''}{t(form[locale] || form.zh)}</small></h4>
             <blockquote lang="zh-CN">{highlightDiff(entry.quote || entry.originalQuote || '', others)}</blockquote>
             {entry.classification?.review_status === 'unresolved' && <small className="detail-parallel-note">{t('形貌未记入正文，不作补写。')}</small>}
           </article>;
@@ -197,7 +197,7 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
         <h3>{t('异说校读')} · {comparisonEntries.length}</h3>
         <p>{t('同段另有比较记述，与正文分列，不作同名条目。')}</p>
         {comparisonEntries.map(item => <button type="button" key={item.id} data-related-id={item.id} onClick={() => onRelated(item.id, readingPosition())}>
-          <b>{item.displayName}</b><small>{item.bookKey} · {t('比较记述')}</small>
+          <b>{item.displayName}</b><small>{item.bookKey ? t(item.bookKey) : ''}{item.bookKey ? ' · ' : ''}{t('比较记述')}</small>
           {item.classification?.evidence && <small className="relation-quote" lang="zh-CN">{item.classification.evidence}</small>}
         </button>)}
       </nav>}
