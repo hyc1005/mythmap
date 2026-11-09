@@ -120,6 +120,16 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .detail-related button { display: block; width: 100%; min-height: 44px; padding: 10px; margin-top: 8px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
 .detail-related :is(b, small) { display: block; overflow-wrap: anywhere; }
 .detail-related small { margin-top: 4px; font-size: 14px; color: var(--soft-ink); }
+.detail-parallel-toggle { min-height: 44px; margin-top: 8px; padding: 8px 10px; border: 1px solid var(--edge); background: transparent; color: var(--ink); font: inherit; cursor: pointer; }
+.detail-parallel { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 12px; }
+.detail-parallel-card { margin: 0; padding: 10px 12px; border-left: 2px solid var(--verm); }
+.detail-parallel-card h4 { margin: 0 0 6px; font-size: 16px; line-height: 1.5; }
+.detail-parallel-card h4 small { display: block; margin-top: 2px; font-size: 12px; font-weight: 400; color: var(--soft-ink); }
+.detail-parallel-card blockquote { margin: 0; font-size: 14px; line-height: 1.9; overflow-wrap: anywhere; }
+.detail-parallel-card mark { background: transparent; color: var(--verm); border-bottom: 1px solid currentColor; }
+.detail-parallel-note { display: block; margin-top: 6px; font-size: 12px; color: var(--soft-ink); }
+.detail-parallel-generic { grid-column: 1 / -1; margin: 0; font-size: 13px; color: var(--soft-ink); }
+@media (max-width: 640px) { .detail-parallel { grid-template-columns: 1fr; } }
 .detail-drawer .source-caution, .detail-drawer .detail-chapter, .detail-drawer .intro-overline { font-size: 14px; color: var(--soft-ink); }
 .explore-sheet-scrim { position: fixed; inset: 0; z-index: 100; display: flex; align-items: flex-end; background: #241e1870; }
 .explore-sheet { width: 100%; max-height: 82svh; overflow-y: auto; overscroll-behavior: contain; padding: 16px; background: var(--paper); color: var(--ink); border-top: 2px solid var(--verm); }

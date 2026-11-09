@@ -1,0 +1,1308 @@
+{
+  "_note": "Auto-extracted effect/omen tags from the full text; pending editorial review. Derivatives only, never rewrites the source.",
+  "_normalisation": "禦→御 見→见 動→动 訛→讹 靣→面 蟲→虫 殺→杀 癘→疠 國→国 縣→县 獸→兽 鳥→鸟 則→则 寧→宁 饑→饥 風→风 蠱→蛊",
+  "_excluded": "可以為× (usage, e.g. 旋龜可以為底) is not tagged; 食之/佩之 without a stated effect is not tagged.",
+  "entries": {
+    "beast-beishan-baiye-danzhang": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已嗌痛",
+          "evidence": "白翼黄足名曰白鵺食之已嗌痛可以已痸",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-banmao-beixiao": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已暍",
+          "evidence": "曰𪄀𪃑宵飛而晝㐲食之已暍",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-feiyi-hunxi": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则其国大旱",
+          "evidence": "一首兩身名曰肥遺见则其国大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-beishan-heluo-qiaoming": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已癰",
+          "evidence": "而十身其音如吠犬食之已癰",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-huayu-qiuru": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已疣",
+          "evidence": "如鱓赤背其音如梧食之已疣",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-jiao-manlian": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已风",
+          "evidence": "雉名曰鵁其名自呼食之已风",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-linghu-yangshan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已狂",
+          "evidence": "名曰領胡其鳴自詨食之已狂",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-menghuai-qiaoming": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_evil",
+          "match": "可以御凶",
+          "evidence": "音如榴榴名曰孟槐可以御凶",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-redhead-snake-mufeng": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则其邑大旱",
+          "evidence": "赤首白身其音如牛见则其邑大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-beishan-shanhui-yufa": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "wind",
+          "match": "见则天下大风",
+          "evidence": "其名山𤟤其行如风见则天下大风",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-beishan-suanyu-jingshan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则其邑有恐",
+          "evidence": "名曰酸與其鳴自詨见则其邑有恐",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-beishan-xianfu-yangshan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已嘔",
+          "evidence": "如鮒魚魚首而彘身食之已嘔",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-xiao-liangqu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已腹痛",
+          "evidence": "尾名曰囂其音如鵲食之已腹痛可以止衕",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-xixi-zhuoguang": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_fire",
+          "match": "可以御火",
+          "evidence": "皆在羽端其音如鵲可以御火食之不癉",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-yi-beiyue": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已狂",
+          "evidence": "而犬首其音如嬰兒食之已狂",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-yu-guoshan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_war",
+          "match": "可以御兵",
+          "evidence": "䑕而鸟翼其音如羊可以御兵",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-beishan-zao-yufa": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已疣",
+          "evidence": "魚其状如鯉而雞足食之已疣",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-bifang": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "fire",
+          "match": "见则其邑有譌火",
+          "evidence": "曰畢方其鳴自呌也见则其邑有譌火",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-bo": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_war",
+          "match": "可以御兵",
+          "evidence": "其名曰駮是食虎豹可以御兵",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-boyi": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "calm",
+          "match": "佩之不畏",
+          "evidence": "背，其名曰猼訑，佩之不畏。",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-dangkang": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "bountiful",
+          "match": "见则天下大穰",
+          "evidence": "名曰當康其鳴自叫见则天下大穰",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-bibi-gufeng": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则天下大旱",
+          "evidence": "如鴻鴈其名曰獙獙见则天下大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-bo-nvzheng": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则天下大旱",
+          "evidence": "魚而一目其音如歐见则天下大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-hua-zitong": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则天下大旱",
+          "evidence": "入有光其音如鴛鴦见则天下大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-jiegou-zhenshan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则其国多疫",
+          "evidence": "善登木其名曰絜鈎见则其国多疫",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-kuafu-like-chai": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "flood",
+          "match": "见则天下大水",
+          "evidence": "父而彘毛其音如呼见则天下大水",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-lihu-luqi": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则其国多土功",
+          "evidence": "鴦而人足其鳴自䚯见则其国多土功",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-lingling-kongsang-east": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "flood",
+          "match": "见则天下大水",
+          "evidence": "名曰軨軨其鳴自叫见则天下大水",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-qiuyu-yue": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则螽蝗為敗",
+          "evidence": "名曰犰狳其鳴自䚯见则螽蝗為敗",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-tiaoyong-dushan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则其邑大旱",
+          "evidence": "黄蛇魚翼出入有光见则其邑大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-youyou-zhenshan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则其国多狡客",
+          "evidence": "如獋狗其名曰峳峳见则其国多狡客",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-zhunou-gengshan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则其国有恐",
+          "evidence": "名曰朱獳其鳴自叫见则其国有恐",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-dongshan-zishu-xunzhuang": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则其邑大旱",
+          "evidence": "而䑕毛其名曰䖪䑕见则其邑大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-fei": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "plague",
+          "match": "见则天下大疫",
+          "evidence": "行水则竭行草则死见则天下大疫",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-guan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_evil",
+          "match": "可以御凶",
+          "evidence": "讙其音如奪百聲是可以御凶服之已癉",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-guanguan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "calm",
+          "match": "不惑",
+          "evidence": "，名曰灌灌，佩之不惑。",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-heyu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "flood",
+          "match": "见则天下大水",
+          "evidence": "兽也食人亦食虫蛇见则天下大水",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-jiuweihu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_evil",
+          "match": "不蛊",
+          "evidence": "儿，能食人，食者不蛊。",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-luoyu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "flood",
+          "match": "见则其邑大水",
+          "evidence": "身而鸟翼音如鴛鴦见则其邑大水",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-nanshan-changyou": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "flood",
+          "match": "见则郡县大水",
+          "evidence": "其名長右其音如吟见则郡县大水",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-nanshan-huahuai": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则县有大繇",
+          "evidence": "曰猾褢其音如斵木见则县有大繇",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-nanshan-lili": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则其县多土功",
+          "evidence": "如狗吠其名曰狸力见则其县多土功",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-nanshan-yulingqiu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则天下大旱",
+          "evidence": "名曰𪃍其鳴自號也见则天下大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-nanshan-zhu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则其县多放士",
+          "evidence": "名曰鴸其鳴自號也见则其县多放士",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-nanshan-zhuan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则天下大旱",
+          "evidence": "鮒而彘毛其音如豚见则天下大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-shengsheng": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "travel",
+          "match": "善走",
+          "evidence": "其名曰狌狌，食之善走。",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-tian-gou": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_evil",
+          "match": "可以御凶",
+          "evidence": "曰天狗其音如榴榴可以御凶",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-wenyaoyu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "bountiful",
+          "match": "见则天下大穰",
+          "evidence": "飞。其音如鸾鸡，见则天下大穰。",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-xishan-chibie": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_fire",
+          "match": "可以御火",
+          "evidence": "鸟多赤鷩可以御火",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-xishan-feiyi-taihua": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则天下大旱",
+          "evidence": "名曰肥𧔥六足四翼见则天下大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-xishan-feiyi-ying": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已疠",
+          "evidence": "而赤喙其名曰肥遺食之已疠可以杀虫",
+          "source": "quote"
+        },
+        {
+          "tag": "ward_evil",
+          "match": "可以杀虫",
+          "evidence": "名曰肥遺食之已疠可以杀虫",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-xishan-fuxi-lutai": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "war",
+          "match": "见则有兵",
+          "evidence": "曰鳬徯其名自呌也见则有兵",
+          "source": "quote"
+        },
+        {
+          "tag": "war",
+          "match": "见则有兵是经文的兵事征兆记述",
+          "evidence": "字与其自呌相连。见则有兵是经文的兵事征兆记述；不新增手臂、兵",
+          "source": "description"
+        }
+      ]
+    },
+    "beast-xishan-jiao-yushan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "bountiful",
+          "match": "见则其国大穰",
+          "evidence": "名曰狡其音如吠犬见则其国大穰",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-xishan-li-tiandi": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已痔",
+          "evidence": "黑文而赤翁名曰櫟食之已痔",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-xishan-luan-nvchuang": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "peace",
+          "match": "见则天下安宁",
+          "evidence": "而五彩文名曰鸞鸟见则天下安宁",
+          "source": "quote"
+        },
+        {
+          "tag": "peace",
+          "match": "见则天下安宁作为瑞应原说保留",
+          "evidence": "文出自本段经文，见则天下安宁作为瑞应原说保留，不写成鸟主动施",
+          "source": "description"
+        }
+      ]
+    },
+    "beast-xishan-min": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_fire",
+          "match": "可以御火",
+          "evidence": "鴖其状如翠而赤喙可以御火",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-xishan-ranyi-yingdi": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "calm",
+          "match": "不眯",
+          "evidence": "目如馬耳食之使人不眯可以御凶",
+          "source": "quote"
+        },
+        {
+          "tag": "ward_evil",
+          "match": "可以御凶",
+          "evidence": "馬耳食之使人不眯可以御凶",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-xishan-saoyu-niaoshu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "动则以下語者",
+          "evidence": "作鮎鯉；或脫無從动则以下語者",
+          "source": "commentary_quote"
+        },
+        {
+          "tag": "other_omen",
+          "match": "动则邑兵为古籍灾异",
+          "evidence": "下体连甲为郭注；动则邑兵为古籍灾异。",
+          "source": "description"
+        },
+        {
+          "tag": "war",
+          "match": "动则其邑有大兵",
+          "evidence": "多鰠魚其状如鱣魚动则其邑有大兵",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-xishan-shusi-gaotu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已癭",
+          "evidence": "鴟而人足名曰數斯食之已癭",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-xishan-wenyao-taiqi": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "bountiful",
+          "match": "见则天下大穰",
+          "evidence": "其味酸甘食之已狂见则天下大穰",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-xishan-xibian-tiandi": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_evil",
+          "match": "不蛊",
+          "evidence": "名曰谿邊席其皮者不蛊",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-xishan-zhuyan-xiaoci": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "war",
+          "match": "见则大兵",
+          "evidence": "白首赤足名曰朱厭见则大兵",
+          "source": "quote"
+        },
+        {
+          "tag": "war",
+          "match": "见则大兵及郭注两种兵事异文分别保存为",
+          "evidence": "把全身写成红色。见则大兵及郭注两种兵事异文分别保存为古籍征兆，不加角",
+          "source": "description"
+        },
+        {
+          "tag": "war",
+          "match": "见则有兵起焉一作见则為兵",
+          "evidence": "一作见则有兵起焉一作见则為兵",
+          "source": "commentary_quote"
+        }
+      ]
+    },
+    "beast-zhongshan-balang-she9": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "war",
+          "match": "见则国内有兵",
+          "evidence": "而白尾長耳名𤜣狼见则国内有兵",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-feiyu-gui": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_war",
+          "match": "可以御兵",
+          "evidence": "而赤文服之不畏雷可以御兵",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-feiyu-niushou": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已痔衕",
+          "evidence": "多飛魚其狀如鮒魚食之已痔衕",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-fuzhu-aoan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "flood",
+          "match": "见则其邑大水",
+          "evidence": "鹿而四角名曰夫諸见则其邑大水",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-gui-jigong12": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_fire",
+          "match": "可以御火",
+          "evidence": "白身赤首名曰蛫是可以御火",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-huashe-yang": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "flood",
+          "match": "见则其邑大水",
+          "evidence": "而蛇行其音如叱呼见则其邑大水",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-jue-shou": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已墊",
+          "evidence": "三目有耳其音如錄食之已墊",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-juru-yidi11": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "war",
+          "match": "见则其国有大兵",
+          "evidence": "白耳白喙名曰狙如见则其国有大兵",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-juyu-chouyang11": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_fire",
+          "match": "可以御火",
+          "evidence": "烏而赤足名曰𩢢餘可以御火",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-li-lema11": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "plague",
+          "match": "见则其国大疫",
+          "evidence": "赤如丹火其名曰𤟑见则其国大疫",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-liangqu-lishi11": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "war",
+          "match": "见则其国有大兵",
+          "evidence": "白首虎爪名曰梁渠见则其国有大兵",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-lingyao-hui": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "calm",
+          "match": "不眯",
+          "evidence": "鴒䳩其鳴自呼服之不眯",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-longchi-kunwu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "calm",
+          "match": "不眯",
+          "evidence": "如號名曰蠪蚳食之不眯",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-mingshe-xian": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则其邑大旱",
+          "evidence": "蛇而四翼其音如磬见则其邑大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-nuo-gancao": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已癭",
+          "evidence": "鼠而文題其名曰㔮食之已癭",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-qiezhi-ju9": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_fire",
+          "match": "可以御火",
+          "evidence": "身白首其名曰竊脂可以御火",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-qinggeng-jinli11": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_plague",
+          "match": "可以御疫",
+          "evidence": "白目白尾名曰青耕可以御疫其鳴自呌",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-qizhong-fuzhou10": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "plague",
+          "match": "见则其国大疫",
+          "evidence": "足彘尾其名曰跂踵见则其国大疫",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-ti-shaoshi": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_war",
+          "match": "可以御兵",
+          "evidence": "白而對食者無蛊疾可以御兵",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-wenlin-ji-mountain11": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "wind",
+          "match": "见则天下大风",
+          "evidence": "白頭白尾名曰聞𧲂见则天下大风",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-xiubi-tuo": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "cure_disease",
+          "match": "食之已白癬",
+          "evidence": "黽而白喙其音如䲭食之已白癬",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "beast-zhongshan-yiji-xian11": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "fire",
+          "match": "见则其邑有火名曰𤝻即",
+          "evidence": "膜大赤喙赤目白尾见则其邑有火名曰𤝻即",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhongshan-yonghe-feng-first11": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则国有大恐",
+          "evidence": "赤喙黄身名曰雍和见则国有大恐",
+          "source": "quote"
+        }
+      ]
+    },
+    "beast-zhuyan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "war",
+          "match": "见则大兵",
+          "evidence": "赤足，名曰朱厌，见则大兵。",
+          "source": "quote"
+        },
+        {
+          "tag": "war",
+          "match": "见则有兵",
+          "evidence": "猿状白首赤足，见则有兵。",
+          "source": "description"
+        }
+      ]
+    },
+    "bird-xishan-gu-jun-zhongshan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则其邑大旱是本鸟灾异",
+          "evidence": "文白首，音如鵠；见则其邑大旱是本鸟灾异，范围与大鶚的大",
+          "source": "description"
+        }
+      ]
+    },
+    "bird-xishan-lei-cuishan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_fire",
+          "match": "可以御火",
+          "evidence": "鵲赤黑而西首四足可以御火",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "bird-xishan-manman-chongwu": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "flood",
+          "match": "见则天下大水",
+          "evidence": "相得乃飛名曰蠻蠻见则天下大水",
+          "source": "quote"
+        },
+        {
+          "tag": "flood",
+          "match": "见则天下大水为古籍灾异",
+          "evidence": "，须相得才能飞，见则天下大水为古籍灾异。青赤色、比翼鸟",
+          "source": "description"
+        }
+      ]
+    },
+    "bird-xishan-qinpi-e-zhongshan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "war",
+          "match": "见则大兵为古籍灾异",
+          "evidence": "虎爪，音如晨鵠；见则大兵为古籍灾异。𤓰底本字形保留",
+          "source": "description"
+        },
+        {
+          "tag": "war",
+          "match": "见则有大兵",
+          "evidence": "而虎𤓰其音如晨鵠见则有大兵",
+          "source": "quote"
+        }
+      ]
+    },
+    "bird-xishan-qiyu-yiwang": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [
+        {
+          "tag": "ward_evil",
+          "match": "可以御凶",
+          "evidence": "䳜服之使人不厭又可以御凶",
+          "source": "quote"
+        }
+      ],
+      "omen": []
+    },
+    "bird-xishan-shengyu-yushan": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "flood",
+          "match": "见则其国大水",
+          "evidence": "遇是食魚其音如録见则其国大水",
+          "source": "quote"
+        }
+      ]
+    },
+    "bird-xishan-unnamed-yanzi": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "drought",
+          "match": "见则其邑大旱",
+          "evidence": "身犬尾其名自號也见则其邑大旱",
+          "source": "quote"
+        }
+      ]
+    },
+    "deity-xishan-ox-eight-huaijiang": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "war",
+          "match": "见则其邑有兵",
+          "evidence": "首馬尾其音如勃皇见则其邑有兵",
+          "source": "quote"
+        }
+      ]
+    },
+    "deity-zhongshan-gengfu-feng-first11": {
+      "status": "auto",
+      "basis": "text",
+      "effect": [],
+      "omen": [
+        {
+          "tag": "other_omen",
+          "match": "见则其国為敗",
+          "evidence": "清泠之淵出入有光见则其国為敗",
+          "source": "quote"
+        }
+      ]
+    }
+  }
+}

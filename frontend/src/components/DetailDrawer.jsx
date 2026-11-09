@@ -1,5 +1,5 @@
-import { morphologyReview } from '../bestiary';
-import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
+import { morphologyReview, FORM_LABELS } from '../bestiary';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useLocale, localize } from '../i18n';
 import rawCatalog from '../../public/data/atlas/catalog.json';
 import { iconFor } from '../artwork';
@@ -29,17 +29,38 @@ function applyPosition(node, position) {
   node.scrollTo({ top: current.top + position.fraction * Math.max(1, end - current.top), behavior: 'instant' });
 }
 
-export default function DetailDrawer({ placeReference, onOpenPlace, selected, namesakeEntries = [], placeContents = [], contextPlace, fromSearch, onClose, onOpen, restoreReading, returnFocusKey, onSaveReading, readingChapter, resumeSaveFailed, relatedChapter, canLocate, onNavigate, reading, navigation, animationId, onPlay, relatedItems, onRelated, parentEntry }) {
+function highlightDiff(text, others) {
+  if (!text || !others.length) return text;
+  const shared = new Set();
+  for (const other of others) for (const char of other) shared.add(char);
+  const nodes = [];
+  let buffer = '', unique = false;
+  const flush = () => {
+    if (!buffer) return;
+    nodes.push(unique ? <mark key={nodes.length}>{buffer}</mark> : buffer);
+    buffer = '';
+  };
+  for (const char of text) {
+    const nextUnique = !shared.has(char) && char.trim() !== '';
+    if (nextUnique !== unique) { flush(); unique = nextUnique; }
+    buffer += char;
+  }
+  flush();
+  return nodes;
+}
+
+export default function DetailDrawer({ placeReference, onOpenPlace, selected, namesakeEntries = [], comparisonEntries = [], placeContents = [], contextPlace, fromSearch, onClose, onOpen, restoreReading, returnFocusKey, onSaveReading, readingChapter, resumeSaveFailed, relatedChapter, canLocate, onNavigate, reading, navigation, animationId, onPlay, relatedItems, onRelated, parentEntry }) {
   const { t, locale } = useLocale();
   const catalog = useMemo(() => localize(rawCatalog, locale), [locale]);
+  const [parallelOpen, setParallelOpen] = useState(false);
+  useEffect(() => { setParallelOpen(false); }, [selected.id]);
   const closeButton = useRef(null);
   const drawer = useRef(null);
   const heading = useRef(null);
   const previousButton = useRef(null);
   const nextButton = useRef(null);
   const pendingFocus = useRef(null);
-  const lastEntry = useRef(null);
-  const positionRecord = useRef(null);
+  const lastEntry = useRef(null);  const positionRecord = useRef(null);
   const sources = (selected.raw?.properties.source_ids || []).map(id => catalog.sources.find(source => source.id === id)).filter(Boolean);
   const links = [...new Map([
     ...(selected.url ? [{ url: selected.url, title: selected.source }] : []),
@@ -161,6 +182,24 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
       {namesakeEntries.length > 1 && <nav className="detail-related detail-namesakes" aria-label={t('同名记载')}>
         <h3><BlurRevealText revealKey="components/DetailDrawer.jsx:1" variant="inline" text={t('同名记载')} /> · {namesakeEntries.length}</h3><p><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-1:${locale}`} rootRef={drawer}>{t('同名仅作索引，各条出处独立。')}</BlurRevealText></p>
         <select aria-label={t('同名记载')} value={selected.id} onChange={event => { pendingFocus.current = 'namesakes'; onRelated(event.target.value, readingPosition(), 'namesakes'); }}>{namesakeEntries.map(item => <option key={item.id} value={item.id}>{item.displayName} · {item.provenance}</option>)}</select>
+        <button type="button" className="detail-parallel-toggle" aria-expanded={parallelOpen} aria-controls="detail-parallel" onClick={() => setParallelOpen(value => !value)}>{t(parallelOpen ? '收起并列校读' : '并列校读')}</button>
+        {parallelOpen && <div className="detail-parallel" id="detail-parallel" data-parallel-count={namesakeEntries.length}>{namesakeEntries.every(entry => /^(其)?[中陰隂陽阳獸兽]?多|^是多/.test((entry.quote || '').trim())) && <p className="detail-parallel-generic">{t('本组多为泛称罗列，并列仅作索引。')}</p>}{namesakeEntries.map(entry => {
+          const others = namesakeEntries.filter(item => item.id !== entry.id).map(item => item.quote || '');
+          const form = FORM_LABELS[entry.formGroup] || FORM_LABELS.other;
+          return <article key={entry.id} className="detail-parallel-card" data-parallel-id={entry.id}>
+            <h4>{entry.displayName}<small>{entry.bookKey || entry.provenance} · {t(form[locale] || form.zh)}</small></h4>
+            <blockquote lang="zh-CN">{highlightDiff(entry.quote || entry.originalQuote || '', others)}</blockquote>
+            {entry.classification?.review_status === 'unresolved' && <small className="detail-parallel-note">{t('形貌未记入正文，不作补写。')}</small>}
+          </article>;
+        })}</div>}
+      </nav>}
+      {!!comparisonEntries.length && <nav className="detail-related detail-comparisons" data-reading-anchor="comparisons" aria-label={t('异说校读')}>
+        <h3>{t('异说校读')} · {comparisonEntries.length}</h3>
+        <p>{t('同段另有比较记述，与正文分列，不作同名条目。')}</p>
+        {comparisonEntries.map(item => <button type="button" key={item.id} data-related-id={item.id} onClick={() => onRelated(item.id, readingPosition())}>
+          <b>{item.displayName}</b><small>{item.bookKey} · {t('比较记述')}</small>
+          {item.classification?.evidence && <small className="relation-quote" lang="zh-CN">{item.classification.evidence}</small>}
+        </button>)}
       </nav>}
       {selected.kind === 'story' && storySummary(selected.id, locale) && <section className="story-summary" data-reading-anchor="summary" aria-label={t('故事梗概')}><h3><BlurRevealText text={t('故事梗概')} revealKey={`detail:${selected.id}:summary:${locale}`} variant="section" rootRef={drawer} /></h3><p><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-2:${locale}`} rootRef={drawer}>{storySummary(selected.id, locale)}</BlurRevealText></p><small>{t('项目整理 · 依据下列引文转述，非古籍原文。')}</small></section>}
       {selected.kind !== 'story' && selected.description && <><h3 data-reading-anchor="description"><BlurRevealText text={t(descriptionTitle)} revealKey={`detail:${selected.id}:description:${locale}`} variant="section" rootRef={drawer} /></h3><p className="detail-description"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-3:${locale}`} rootRef={drawer}>{selected.description}</BlurRevealText></p></>}

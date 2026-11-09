@@ -71,6 +71,20 @@ export function bestiaryNamesakes(world, id, locale = 'zh') {
     .sort((a, b) => (Number(notability[b.id]) || 0) - (Number(notability[a.id]) || 0));
 }
 
+export function comparisonEntries(world, id, locale = 'zh') {
+  const selected = metadata[id];
+  if (!selected) return [];
+  const items = [...world.beasts, ...(world.text_entities || [])];
+  const source = items.find(item => item.id === id);
+  const passages = new Set(source?.source_passage_ids || []);
+  if (!passages.size) return [];
+  return items
+    .filter(item => item.id !== id && metadata[item.id]?.classification?.basis === 'comparison')
+    .filter(item => (item.source_passage_ids || []).some(passage => passages.has(passage)))
+    .map(item => bestiaryEntry(item, locale))
+    .filter(Boolean);
+}
+
 const reviewLabels = {
   described: ['形貌有据', 'Form described'], partial: ['比拟未详', 'Comparison unclear'], ambiguous: ['物名有异说', 'Name disputed'],
   commentary: ['郭注另述', 'Commentary account'], collective: ['集体称谓', 'Collective designation'],

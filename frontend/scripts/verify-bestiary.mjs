@@ -8,6 +8,18 @@ import { searchIndex, searchEntries } from '../src/search.js';
 
 const read = async path => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const [world, catalog, metadata] = await Promise.all(['../public/data/myth-world.json', '../public/data/atlas/catalog.json', '../src/bestiary-metadata.json'].map(read));
+const semanticTags = await read('../src/bestiary-semantic-tags.json');
+const EFFECT_TAGS = ['ward_fire', 'ward_war', 'ward_evil', 'ward_plague', 'cure_disease', 'travel', 'calm', 'nourish'];
+const OMEN_TAGS = ['flood', 'drought', 'war', 'famine', 'plague', 'fire', 'wind', 'bountiful', 'peace', 'other_omen'];
+for (const [id, record] of Object.entries(semanticTags.entries)) {
+  assert.ok(metadata[id], `${id}: semantic tag entry has metadata`);
+  assert.ok(['text', 'commentary', 'comparison'].includes(record.basis), `${id}: basis is known`);
+  assert.equal(record.basis, metadata[id].classification.basis, `${id}: basis matches metadata`);
+  for (const tag of record.effect) assert.ok(EFFECT_TAGS.includes(tag.tag), `${id}: effect tag ${tag.tag}`);
+  for (const tag of record.omen) assert.ok(OMEN_TAGS.includes(tag.tag), `${id}: omen tag ${tag.tag}`);
+  for (const tag of [...record.effect, ...record.omen]) assert.ok(tag.match && tag.evidence && ['quote', 'commentary_quote', 'description'].includes(tag.source), `${id}: tag keeps match, evidence and source`);
+}
+assert.ok(Object.keys(semanticTags.entries).length >= 90, 'Semantic tags cover the expected accounts');
 const original = structuredClone(world);
 const entries = bestiaryEntries(world);
 assert.equal(BESTIARY_INITIAL, 12);
@@ -170,6 +182,19 @@ if (!process.env.ATLAS_URL) {
     await variantsDrawer.locator('.drawer-close').click();
     await variantsDrawer.waitFor({ state: 'hidden' });
     assert.equal(await namesakes.locator('.beast-card').count(), 1);
+    await input.fill('穷奇');
+    await grid.locator('.beast-card').click();
+    const parallelDrawer = page.locator('.detail-drawer');
+    await parallelDrawer.waitFor();
+    await parallelDrawer.getByRole('button', { name: '并列校读', exact: true }).click();
+    assert.equal(await parallelDrawer.locator('.detail-parallel-card').count(), 2, 'Two same-name accounts are compared side by side');
+    const parallelText = await parallelDrawer.locator('.detail-parallel').innerText();
+    assert.ok(parallelText.includes('西山经') && parallelText.includes('海内北经'), 'Both source books are labelled');
+    assert.ok(await parallelDrawer.locator('.detail-parallel mark').count() > 0, 'Differing characters are marked without rewriting the text');
+    await parallelDrawer.getByRole('button', { name: '收起并列校读', exact: true }).click();
+    assert.equal(await parallelDrawer.locator('.detail-parallel').count(), 0);
+    await parallelDrawer.locator('.drawer-close').click();
+    await parallelDrawer.waitFor({ state: 'hidden' });
     await input.fill('飞鱼');
     await page.getByLabel('按篇目筛选').selectOption('中山经');
     assert.equal(await page.locator('.bestiary-filter-chip').count(), 2);
@@ -216,6 +241,15 @@ if (!process.env.ATLAS_URL) {
     await page.locator('.detail-drawer[data-entry-id="beast-luwu"]').waitFor();
     assert.equal(await detail.locator('h2').textContent(), '陸吾');
     await page.locator('.drawer-close').click();
+    await input.fill('帝之二女');
+    await grid.locator('.beast-card').click();
+    const comparisonDrawer = page.locator('.detail-drawer');
+    await comparisonDrawer.waitFor();
+    await comparisonDrawer.locator('.detail-comparisons').waitFor();
+    assert.equal(await comparisonDrawer.locator('.detail-comparisons button').count(), 3, 'Variant readings stay separate from same-name accounts');
+    assert.equal(await comparisonDrawer.locator('.detail-namesakes').count(), 0, 'Comparison accounts are not rendered as same-name entries');
+    await comparisonDrawer.locator('.drawer-close').click();
+    await comparisonDrawer.waitFor({ state: 'hidden' });
     await page.getByRole('button', { name: '清除筛选', exact: true }).click();
     while (await page.locator('.bestiary-toggle').count()) await page.locator('.bestiary-toggle').click();
     assert.equal(await grid.locator('.beast-card').count(), groupBestiary(entries.filter(item => item.role === 'deity')).length);

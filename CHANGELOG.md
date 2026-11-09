@@ -2,6 +2,13 @@
 
 按已发布批次记录站点变化。日期与提交用来定位部署基线。
 
+## 2026-11-09 · 深度路线首版：并列校读与语义标签
+
+- 详情抽屉新增「并列校读」：同名组可展开并排视图，列出篇目、形貌类别与原文，差异字以朱砂下划标出，不改写原文；泛称组（兕、㸲牛等）显示提示，不默认展开。
+- 新增「异说校读」区块：同段的 `basis: comparison` 条目单列，不再混入同名组；帝之二女可见尧女说、舜妃说、湘君湘夫人三条。
+- 新增 `data/build_semantic_tags.py` 与 `frontend/src/bestiary-semantic-tags.json`：从全文抽取 effect/omen 标签 95 条（effect 41、omen 54），逐条带 `match`、`evidence`、`source` 与 `basis`；`可以為×` 不计入，标签标记 `auto` 待复核，尚未接入筛选 UI。
+- 素材清单增至 2038 项；`verify-bestiary` 覆盖并列视图、异说区块与标签数据结构。
+
 ## 2026-11-09 · 探索深度路线（评审稿）
 
 - 新增 `docs/depth-roadmap.md`：先核对异兽谱数据事实（384 条 / 45 条 unresolved / feature_tags 95/384 / 見則 50 条 / 关联条目 367 条），再据此排出 effect·omen 标签、相关条目增强、同名异载与异说校读、专题巡山录四个顺位。
