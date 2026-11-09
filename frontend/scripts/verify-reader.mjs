@@ -62,7 +62,7 @@ for (const name of (process.env.ATLAS_BROWSERS||'chromium,webkit').split(',')) {
       return node?.dataset.entryId===id && node.dataset.readingRestoring==='false';
     },id);
     await ready('passage-nanshan-xun');
-    assert.ok((await drawer.locator('.detail-description').innerText()).includes('第26页'));
+    assert.ok((await drawer.locator('.detail-description').textContent()).includes('第26页'));
     await drawer.locator('.detail-reading-actions button').nth(0).click();
     await drawer.locator('.detail-reading-actions button').nth(1).click();
     await page.reload();await ready('passage-nanshan-xun');
@@ -80,7 +80,7 @@ for (const name of (process.env.ATLAS_BROWSERS||'chromium,webkit').split(',')) {
     await page.locator('.global-search-tools select').selectOption('passage');
     await page.locator('.global-search-input').fill('洵山');
     await page.locator('.search-result[data-result-id="passage-nanshan-xun"]').click();await ready('passage-nanshan-xun');
-    assert.equal(await drawer.locator('.detail-description').innerText(),en['passage-nanshan-xun'].description);
+    assert.equal(await drawer.locator('.detail-description').textContent(),en['passage-nanshan-xun'].description);
     await drawer.locator('.return-search').click();
     assert.equal(await page.locator('.global-search-input').inputValue(),'洵山');
     for (const passage of southern) {
@@ -114,7 +114,7 @@ for (const name of (process.env.ATLAS_BROWSERS||'chromium,webkit').split(',')) {
     await page.route('**/terrain/*.webp',route=>route.abort());
     await page.goto(`${base}?chapter=02&item=passage-nanshan-xun&lang=en`);await ready('passage-nanshan-xun');
     await page.waitForTimeout(500);
-    assert.equal(await drawer.locator('.detail-description').innerText(),en['passage-nanshan-xun'].description);
+    assert.equal(await drawer.locator('.detail-description').textContent(),en['passage-nanshan-xun'].description);
     assert.deepEqual(errors,[],'Interrupted map images must not throw during reading');
     await context.close();
     console.log(`PASS ${name}: 43 passages, restored page, directory/search, old/new marks, resume/history/context and 8 layouts`);

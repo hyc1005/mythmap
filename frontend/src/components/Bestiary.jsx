@@ -107,7 +107,7 @@ export default function Bestiary({ world, onOpen, reading }) {
       <select data-bestiary-filter="effect" value={filters.effect} onChange={event => change({ effect: event.target.value })} aria-label={t('按功效筛选')}><option value="">{t('全部功效')} · {count('effect', '')}</option>{Object.entries(EFFECT_LABELS).filter(([key]) => count('effect', key) > 0).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('effect', key)}</option>)}</select>
       <select data-bestiary-filter="omen" value={filters.omen} onChange={event => change({ omen: event.target.value })} aria-label={t('按征兆筛选')}><option value="">{t('全部征兆')} · {count('omen', '')}</option>{Object.entries(OMEN_LABELS).filter(([key]) => count('omen', key) > 0).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('omen', key)}</option>)}</select>
       <select data-bestiary-filter="reading" value={filters.reading} onChange={event => change({ reading: event.target.value })} aria-label={t('按阅读状态筛选')}><option value="">{t('全部阅读状态')}</option><option value="unread">{t('未读')} · {count('reading', 'unread')}</option><option value="read">{t('已读')} · {count('reading', 'read')}</option><option value="favorites">{t('已收藏')} · {count('reading', 'favorites')}</option></select>
-      <p className="bestiary-tag-note">{t('功效与征兆标签为自动抽取，待复核。')}</p>
+      <p className="bestiary-tag-note">{t('功效与征兆标签抽取自原文，已抽查复核；仍以原文为准。')}</p>
       </div>
       {hasFilter && <button type="button" className="bestiary-reset" onClick={reset}>{t('清除筛选')}</button>}
     </div>

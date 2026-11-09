@@ -676,7 +676,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       if (cardSuite !== 'navigation') for (const entry of browserEntries) {
         await page.goto(`${base}?chapter=03&item=${entry.id}&lang=${lang}`); await ready(entry.id);
         assert.equal(await drawer.locator('>.content-origin').getAttribute('data-origin'), 'shanhaijing');
-        assert.equal(await drawer.locator('.detail-description').innerText(), lang === 'en' ? english[entry.id].description : entry.description);
+        assert.equal(await drawer.locator('.detail-description').textContent(), lang === 'en' ? english[entry.id].description : entry.description);
         assert.equal(await drawer.evaluate(node => node.scrollWidth > node.clientWidth), false);
         if (hasArtwork(entry)) await decode();
         else {
@@ -957,7 +957,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       }
       await drawer.locator('[data-related-id="water-xishan-ci-changsha"]').click(); await ready('water-xishan-ci-changsha');
       await drawer.locator('[data-related-id="water-xishan-you-changsha"]').click(); await ready('water-xishan-you-changsha');
-      assert.ok((await drawer.locator('.detail-description').innerText()).includes(lang === 'zh' ? '水色黑' : 'dark-water'));
+      assert.ok((await drawer.locator('.detail-description').textContent()).includes(lang === 'zh' ? '水色黑' : 'dark-water'));
       await page.goto(`${base}?chapter=03&item=place-xishan-changsha&lang=${lang}`); await ready('place-xishan-changsha');
       await drawer.locator('[data-related-id="place-xishan-buzhou"]').click(); await ready('place-xishan-buzhou');
       for(const id of ['place-xishan-zhupi-buzhou','place-xishan-yuechong-buzhou','water-xishan-youze-buzhou','plant-xishan-jia-guo-buzhou']) {
@@ -1081,7 +1081,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       }
       await drawer.locator('.commentary-section>summary').click();
       assert.equal(await drawer.evaluate(node => node.scrollWidth > node.clientWidth), false);
-      assert.ok(await drawer.locator('.detail-related button').evaluateAll(nodes => nodes.every(node => node.getBoundingClientRect().height >= 44)));
+      assert.ok(await drawer.locator('.detail-related button').evaluateAll(nodes => nodes.filter(node => node.getClientRects().length).every(node => node.getBoundingClientRect().height >= 44)));
       if (name === 'chromium' && width === 390) await page.screenshot({ type: 'jpeg', quality: 70, path: new URL(`xishan-${lang}.jpg`, output).pathname.replace(/^\/([A-Za-z]:)/, '$1') });
     }
     assert.deepEqual(errors, []);

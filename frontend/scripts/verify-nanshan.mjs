@@ -90,7 +90,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         await ready(id);
         assert.equal(await drawer.locator('>.content-origin').getAttribute('data-origin'), 'shanhaijing');
         assert.equal(await drawer.evaluate(node => node.scrollWidth > node.clientWidth), false, `${id} ${lang}: drawer width`);
-        if (lang === 'en') assert.equal(await drawer.locator('.detail-description').innerText(), english[id].description);
+        if (lang === 'en') assert.equal(await drawer.locator('.detail-description').textContent(), english[id].description);
         if (!index.get(id).artwork) {
           assert.equal(await drawer.locator('img').count(), 0, `${id}: no invented illustration`);
           assert.equal(await drawer.locator('.artwork-pending').count(), 0);

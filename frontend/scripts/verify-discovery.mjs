@@ -140,7 +140,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await restored('03-04');
       assert.equal(await drawer.locator('>.content-origin').getAttribute('data-origin'), 'shanhaijing');
       assert.equal(await drawer.evaluate(node => node.scrollWidth > node.clientWidth), false);
-      assert.ok(await drawer.locator('.detail-play-story, .detail-related button').evaluateAll(nodes => nodes.every(node => node.getBoundingClientRect().height >= 44)));
+      assert.ok(await drawer.locator('.detail-play-story, .detail-related button').evaluateAll(nodes => nodes.filter(node => node.getClientRects().length).every(node => node.getBoundingClientRect().height >= 44)));
       await drawer.locator('[data-related-id="beast-jingwei"]').click(); await restored('beast-jingwei');
       assert.equal(await drawer.evaluate(node => node.scrollWidth > node.clientWidth), false);
       assert.ok(await drawer.locator('.return-related').evaluate(node => node.getBoundingClientRect().height >= 44));

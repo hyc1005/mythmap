@@ -1,7 +1,9 @@
 """Extract effect / omen tags from the full text of every bestiary account.
 
 Output: frontend/src/bestiary-semantic-tags.json  (derived, not hand-edited)
-Status: auto-extracted, pending editorial review; the UI must label it as such.
+Status: per entry. New or changed extraction output is `auto`; an entry whose
+tags are unchanged keeps its `reviewed` status and review record. The UI labels
+reviewed tags as spot-checked rather than fully collated.
 
 Rules follow docs/depth-roadmap.md 4.2:
 - read quote / commentary_quote / description, never only classification.evidence
@@ -98,9 +100,18 @@ def dedupe(items):
     return sorted(result, key=lambda item: (item['tag'], item['match']))
 
 
+def previous_entries():
+    try:
+        with io.open(OUT, encoding='utf-8') as handle:
+            return json.load(handle).get('entries', {})
+    except FileNotFoundError:
+        return {}
+
+
 def main():
     world = json.load(io.open(WORLD, encoding='utf-8'))
     meta = json.load(io.open(META, encoding='utf-8'))
+    previous = previous_entries()
     items = world['beasts'] + [item for item in world.get('text_entities', []) if item.get('kind') == 'deity']
 
     entries = {}
@@ -123,15 +134,22 @@ def main():
         effects, omens = dedupe(effects), dedupe(omens)
         if not effects and not omens:
             continue
-        entries[item['id']] = {
+        derived = {
             'status': 'auto',
             'basis': record.get('classification', {}).get('basis', 'text'),
             'effect': effects,
             'omen': omens,
         }
+        old = previous.get(item['id'])
+        if (old and old.get('status') == 'reviewed' and old.get('basis') == derived['basis']
+                and old.get('effect') == effects and old.get('omen') == omens):
+            derived['status'] = 'reviewed'
+            derived['reviewed_at'] = old.get('reviewed_at')
+            derived['review_method'] = old.get('review_method')
+        entries[item['id']] = derived
 
     output = {
-        '_note': 'Auto-extracted effect/omen tags from the full text; pending editorial review. Derivatives only, never rewrites the source.',
+        '_note': 'Derived effect/omen tags from the full text; entry status is auto (unreviewed) or reviewed (editorial spot-check). Derivatives only, never rewrites the source.',
         '_normalisation': '禦→御 見→见 動→动 訛→讹 靣→面 蟲→虫 殺→杀 癘→疠 國→国 縣→县 獸→兽 鳥→鸟 則→则 寧→宁 饑→饥 風→风 蠱→蛊',
         '_excluded': '可以為× (usage, e.g. 旋龜可以為底) is not tagged; 食之/佩之 without a stated effect is not tagged.',
         'entries': dict(sorted(entries.items())),

@@ -10,3 +10,4 @@ data/shanhaijing-reference.json -text
 /data/reference-maps/natural-earth-v5.1.2/*.geojson -text
 /frontend/public/data/geography/natural-earth-50m-v5.1.2.geojson text eol=lf
 /frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json text eol=lf
+/frontend/public/opening-film.html text eol=lf

@@ -116,7 +116,7 @@ for(const engine of engines){
    for(const e of selected){
     const d=await open(e,lang);
     assert.equal(await d.locator('h2').innerText(),lang==='en'?english[e.id].name:e.name,e.id);
-    assert.equal(await d.locator('.detail-description').innerText(),lang==='en'?english[e.id].description:e.description,e.id);
+    assert.equal(await d.locator('.detail-description').textContent(),lang==='en'?english[e.id].description:e.description,e.id);
     assert.ok(!await d.evaluate(n=>n.scrollWidth>n.clientWidth),e.id+' horizontal overflow');
     assert.equal(await d.locator(`.detail-place-contents [data-related-id="${e.id}"]`).count(),0,e.id+' should not list itself');
     const image=d.locator('.drawer-art');

@@ -51,6 +51,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
 
       await page.goto(`${base}?chapter=07&item=beast-beishan-xiao-liangqu&lang=zh`);
       await page.waitForFunction(() => document.querySelector('.detail-drawer')?.dataset.readingRestoring === 'false');
+      const evidence = page.locator('.detail-drawer .detail-evidence');
+      await evidence.locator(':scope > summary').click();
+      await page.waitForTimeout(360);
       const details = page.locator('.detail-drawer .morphology-review');
       const summary = details.locator(':scope > summary');
       await summary.click();

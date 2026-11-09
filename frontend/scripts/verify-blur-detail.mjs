@@ -11,6 +11,7 @@ const settle = page => page.evaluate(() => new Promise(resolve => requestAnimati
 const visibleHeadings = page => page.locator('.detail-drawer').evaluate(root => {
   const bounds = root.getBoundingClientRect();
   return [...root.querySelectorAll('.blur-reveal-text')].filter(node => {
+    if (typeof node.checkVisibility === 'function' && !node.checkVisibility()) return false;
     const box = node.getBoundingClientRect();
     return box.height > 0 && box.width > 0 && box.bottom > Math.max(0, bounds.top + root.clientTop) && box.top < Math.min(innerHeight, bounds.top + root.clientTop + root.clientHeight);
   }).map(node => ({ text: node.textContent, filter: getComputedStyle(node).filter, opacity: getComputedStyle(node).opacity }));
@@ -40,8 +41,6 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       const bounds = await drawer.boundingBox();
       await page.mouse.move(bounds.x + bounds.width - 8, bounds.y + bounds.height / 2);
       const targets = [title];
-      const sectionHeading = drawer.locator('.story-summary h3 > .blur-reveal-text');
-      if (await sectionHeading.count()) targets.push(sectionHeading);
       for (const target of targets) for (let cycle = 0; cycle < (target === title ? 3 : 1); cycle++) {
         await target.evaluate(node => {
           const root = node.closest('.detail-drawer');
@@ -102,13 +101,18 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       const options = await drawer.locator('.detail-namesakes option').evaluateAll(nodes => nodes.map(node => node.value));
       assert.ok(options.length > 1, 'Independent namesake accounts available');
       const other = options.find(id => id !== 'beast-beishan-huayu-qiuru');
+      const evidence = drawer.locator('.detail-evidence');
+      if (await evidence.count() && !await evidence.evaluate(node => node.open)) {
+        await evidence.locator(':scope > summary').click();
+        await page.waitForTimeout(360);
+      }
       await drawer.evaluate(node => { node.scrollTop = node.scrollHeight; });
       await drawer.locator('.detail-namesakes select').selectOption(other);
       await page.waitForFunction(id => document.querySelector('.detail-drawer')?.dataset.entryId === id, other);
       await ready(page); await settle(page);
       assert.equal(await drawer.locator('[data-reading-anchor="title"] > span').getAttribute('data-reveal-key'), `detail:${other}:title:${lang}`);
       await clearVisible(page);
-      assert.equal(await drawer.locator('[data-reading-anchor="description"] > .blur-reveal-text').count(), 1);
+      assert.ok(await drawer.locator('[data-reading-anchor="description"] .blur-reveal-text').count() >= 1);
       assert.equal(await drawer.locator('.detail-description > .blur-reveal-prose').count(), 1);
       await page.keyboard.press('Control+f');
       await clearVisible(page);
@@ -117,7 +121,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       assert.equal(await drawer.evaluate(node => node.scrollWidth > node.clientWidth), false);
       assert.deepEqual(errors, []);
       await page.close();
-      console.log(`PASS ${name} ${width} ${lang}: drawer title/section reentry, page isolation, reload/resume, next entry, namesakes, clear body, find and reduced motion`);
+      console.log(`PASS ${name} ${width} ${lang}: drawer title reentry, prose reveal, page isolation, reload/resume, next entry, namesakes, clear body, find and reduced motion`);
     }
   } finally { await browser.close(); }
 }

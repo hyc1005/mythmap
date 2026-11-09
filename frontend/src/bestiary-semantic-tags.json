@@ -1,10 +1,10 @@
 {
-  "_note": "Auto-extracted effect/omen tags from the full text; pending editorial review. Derivatives only, never rewrites the source.",
+  "_note": "Derived effect/omen tags from the full text; entry status is auto (unreviewed) or reviewed (editorial spot-check). Derivatives only, never rewrites the source.",
   "_normalisation": "禦→御 見→见 動→动 訛→讹 靣→面 蟲→虫 殺→杀 癘→疠 國→国 縣→县 獸→兽 鳥→鸟 則→则 寧→宁 饑→饥 風→风 蠱→蛊",
   "_excluded": "可以為× (usage, e.g. 旋龜可以為底) is not tagged; 食之/佩之 without a stated effect is not tagged.",
   "entries": {
     "beast-beishan-baiye-danzhang": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -14,10 +14,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-banmao-beixiao": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -27,10 +29,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-feiyi-hunxi": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -40,10 +44,12 @@
           "evidence": "一首兩身名曰肥遺见则其国大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-heluo-qiaoming": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -53,10 +59,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-huayu-qiuru": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -66,10 +74,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-jiao-manlian": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -79,10 +89,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-linghu-yangshan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -92,10 +104,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-menghuai-qiaoming": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -105,10 +119,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-redhead-snake-mufeng": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -118,10 +134,12 @@
           "evidence": "赤首白身其音如牛见则其邑大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-shanhui-yufa": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -131,10 +149,12 @@
           "evidence": "其名山𤟤其行如风见则天下大风",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-suanyu-jingshan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -144,10 +164,12 @@
           "evidence": "名曰酸與其鳴自詨见则其邑有恐",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-xianfu-yangshan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -157,10 +179,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-xiao-liangqu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -170,10 +194,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-xixi-zhuoguang": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -183,10 +209,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-yi-beiyue": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -196,10 +224,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-yu-guoshan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -209,10 +239,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-beishan-zao-yufa": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -222,10 +254,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-bifang": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -235,10 +269,12 @@
           "evidence": "曰畢方其鳴自呌也见则其邑有譌火",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-bo": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -248,10 +284,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-boyi": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -261,10 +299,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dangkang": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -274,10 +314,12 @@
           "evidence": "名曰當康其鳴自叫见则天下大穰",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-bibi-gufeng": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -287,10 +329,12 @@
           "evidence": "如鴻鴈其名曰獙獙见则天下大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-bo-nvzheng": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -300,10 +344,12 @@
           "evidence": "魚而一目其音如歐见则天下大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-hua-zitong": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -313,10 +359,12 @@
           "evidence": "入有光其音如鴛鴦见则天下大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-jiegou-zhenshan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -326,10 +374,12 @@
           "evidence": "善登木其名曰絜鈎见则其国多疫",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-kuafu-like-chai": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -339,10 +389,12 @@
           "evidence": "父而彘毛其音如呼见则天下大水",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-lihu-luqi": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -352,10 +404,12 @@
           "evidence": "鴦而人足其鳴自䚯见则其国多土功",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-lingling-kongsang-east": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -365,10 +419,12 @@
           "evidence": "名曰軨軨其鳴自叫见则天下大水",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-qiuyu-yue": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -378,10 +434,12 @@
           "evidence": "名曰犰狳其鳴自䚯见则螽蝗為敗",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-tiaoyong-dushan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -391,10 +449,12 @@
           "evidence": "黄蛇魚翼出入有光见则其邑大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-youyou-zhenshan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -404,10 +464,12 @@
           "evidence": "如獋狗其名曰峳峳见则其国多狡客",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-zhunou-gengshan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -417,10 +479,12 @@
           "evidence": "名曰朱獳其鳴自叫见则其国有恐",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-dongshan-zishu-xunzhuang": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -430,10 +494,12 @@
           "evidence": "而䑕毛其名曰䖪䑕见则其邑大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-fei": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -443,10 +509,12 @@
           "evidence": "行水则竭行草则死见则天下大疫",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-guan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -456,10 +524,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-guanguan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -469,10 +539,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-heyu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -482,10 +554,12 @@
           "evidence": "兽也食人亦食虫蛇见则天下大水",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-jiuweihu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -495,10 +569,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-luoyu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -508,10 +584,12 @@
           "evidence": "身而鸟翼音如鴛鴦见则其邑大水",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-nanshan-changyou": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -521,10 +599,12 @@
           "evidence": "其名長右其音如吟见则郡县大水",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-nanshan-huahuai": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -534,10 +614,12 @@
           "evidence": "曰猾褢其音如斵木见则县有大繇",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-nanshan-lili": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -547,10 +629,12 @@
           "evidence": "如狗吠其名曰狸力见则其县多土功",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-nanshan-yulingqiu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -560,10 +644,12 @@
           "evidence": "名曰𪃍其鳴自號也见则天下大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-nanshan-zhu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -573,10 +659,12 @@
           "evidence": "名曰鴸其鳴自號也见则其县多放士",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-nanshan-zhuan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -586,10 +674,12 @@
           "evidence": "鮒而彘毛其音如豚见则天下大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-shengsheng": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -599,10 +689,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-tian-gou": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -612,10 +704,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-wenyaoyu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -625,10 +719,12 @@
           "evidence": "飞。其音如鸾鸡，见则天下大穰。",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-chibie": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -638,10 +734,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-feiyi-taihua": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -651,10 +749,12 @@
           "evidence": "名曰肥𧔥六足四翼见则天下大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-feiyi-ying": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -670,10 +770,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-fuxi-lutai": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -689,10 +791,12 @@
           "evidence": "字与其自呌相连。见则有兵是经文的兵事征兆记述；不新增手臂、兵",
           "source": "description"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-jiao-yushan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -702,10 +806,12 @@
           "evidence": "名曰狡其音如吠犬见则其国大穰",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-li-tiandi": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -715,10 +821,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-luan-nvchuang": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -734,10 +842,12 @@
           "evidence": "文出自本段经文，见则天下安宁作为瑞应原说保留，不写成鸟主动施",
           "source": "description"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-min": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -747,10 +857,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-ranyi-yingdi": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -766,10 +878,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-saoyu-niaoshu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -791,10 +905,12 @@
           "evidence": "多鰠魚其状如鱣魚动则其邑有大兵",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-shusi-gaotu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -804,10 +920,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-wenyao-taiqi": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -817,10 +935,12 @@
           "evidence": "其味酸甘食之已狂见则天下大穰",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-xibian-tiandi": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -830,10 +950,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-xishan-zhuyan-xiaoci": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -855,10 +977,12 @@
           "evidence": "一作见则有兵起焉一作见则為兵",
           "source": "commentary_quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-balang-she9": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -868,10 +992,12 @@
           "evidence": "而白尾長耳名𤜣狼见则国内有兵",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-feiyu-gui": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -881,10 +1007,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-feiyu-niushou": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -894,10 +1022,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-fuzhu-aoan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -907,10 +1037,12 @@
           "evidence": "鹿而四角名曰夫諸见则其邑大水",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-gui-jigong12": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -920,10 +1052,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-huashe-yang": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -933,10 +1067,12 @@
           "evidence": "而蛇行其音如叱呼见则其邑大水",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-jue-shou": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -946,10 +1082,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-juru-yidi11": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -959,10 +1097,12 @@
           "evidence": "白耳白喙名曰狙如见则其国有大兵",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-juyu-chouyang11": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -972,10 +1112,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-li-lema11": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -985,10 +1127,12 @@
           "evidence": "赤如丹火其名曰𤟑见则其国大疫",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-liangqu-lishi11": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -998,10 +1142,12 @@
           "evidence": "白首虎爪名曰梁渠见则其国有大兵",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-lingyao-hui": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -1011,10 +1157,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-longchi-kunwu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -1024,10 +1172,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-mingshe-xian": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1037,10 +1187,12 @@
           "evidence": "蛇而四翼其音如磬见则其邑大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-nuo-gancao": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -1050,10 +1202,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-qiezhi-ju9": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -1063,10 +1217,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-qinggeng-jinli11": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -1076,10 +1232,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-qizhong-fuzhou10": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1089,10 +1247,12 @@
           "evidence": "足彘尾其名曰跂踵见则其国大疫",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-ti-shaoshi": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -1102,10 +1262,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-wenlin-ji-mountain11": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1115,10 +1277,12 @@
           "evidence": "白頭白尾名曰聞𧲂见则天下大风",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-xiubi-tuo": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -1128,10 +1292,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-yiji-xian11": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1141,10 +1307,12 @@
           "evidence": "膜大赤喙赤目白尾见则其邑有火名曰𤝻即",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhongshan-yonghe-feng-first11": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1154,10 +1322,12 @@
           "evidence": "赤喙黄身名曰雍和见则国有大恐",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "beast-zhuyan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1173,10 +1343,12 @@
           "evidence": "猿状白首赤足，见则有兵。",
           "source": "description"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "bird-xishan-gu-jun-zhongshan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1186,10 +1358,12 @@
           "evidence": "文白首，音如鵠；见则其邑大旱是本鸟灾异，范围与大鶚的大",
           "source": "description"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "bird-xishan-lei-cuishan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -1199,10 +1373,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "bird-xishan-manman-chongwu": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1218,10 +1394,12 @@
           "evidence": "，须相得才能飞，见则天下大水为古籍灾异。青赤色、比翼鸟",
           "source": "description"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "bird-xishan-qinpi-e-zhongshan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1237,10 +1415,12 @@
           "evidence": "而虎𤓰其音如晨鵠见则有大兵",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "bird-xishan-qiyu-yiwang": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [
         {
@@ -1250,10 +1430,12 @@
           "source": "quote"
         }
       ],
-      "omen": []
+      "omen": [],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "bird-xishan-shengyu-yushan": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1263,10 +1445,12 @@
           "evidence": "遇是食魚其音如録见则其国大水",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "bird-xishan-unnamed-yanzi": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1276,10 +1460,12 @@
           "evidence": "身犬尾其名自號也见则其邑大旱",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "deity-xishan-ox-eight-huaijiang": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1289,10 +1475,12 @@
           "evidence": "首馬尾其音如勃皇见则其邑有兵",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     },
     "deity-zhongshan-gengfu-feng-first11": {
-      "status": "auto",
+      "status": "reviewed",
       "basis": "text",
       "effect": [],
       "omen": [
@@ -1302,7 +1490,9 @@
           "evidence": "清泠之淵出入有光见则其国為敗",
           "source": "quote"
         }
-      ]
+      ],
+      "reviewed_at": "2026-11-09",
+      "review_method": "editorial spot-check"
     }
   }
 }

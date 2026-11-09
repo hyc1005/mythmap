@@ -42,11 +42,14 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await entry(page, '03-01');
     assert.ok(await detail(page).evaluate(node => {
       const quote = node.querySelector('[data-reading-anchor="quote"]');
-      return ['.detail-entry-nav', '.detail-reading-actions', '.reading-storage-note', '.drawer-art', '.detail-play-story'].every(selector => {
+      const art = node.querySelector('.drawer-art');
+      const artFirst = !art || Boolean(art.compareDocumentPosition(quote) & Node.DOCUMENT_POSITION_FOLLOWING);
+      const actionsAfter = ['.detail-entry-nav', '.detail-reading-actions', '.reading-storage-note', '.detail-play-story'].every(selector => {
         const secondary = node.querySelector(selector);
         return !secondary || Boolean(quote.compareDocumentPosition(secondary) & Node.DOCUMENT_POSITION_FOLLOWING);
       });
-    }), 'Original text precedes secondary actions and artwork');
+      return artFirst && actionsAfter;
+    }), 'Artwork introduces the account; original text precedes secondary actions');
     assert.equal(await detail(page).getByRole('button', { name: '标为已读', exact: true }).getAttribute('aria-pressed'), 'false', 'Opening is not reading');
     await detail(page).getByRole('button', { name: '标为已读', exact: true }).click();
     await detail(page).getByRole('button', { name: '收藏条目', exact: true }).click();

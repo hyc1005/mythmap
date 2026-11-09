@@ -10,18 +10,37 @@ import guideRoutes from '../src/guide-routes.json' with { type: 'json' };
 const read = async path => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const [world, catalog, metadata] = await Promise.all(['../public/data/myth-world.json', '../public/data/atlas/catalog.json', '../src/bestiary-metadata.json'].map(read));
 const semanticTags = await read('../src/bestiary-semantic-tags.json');
+async function openEvidence(page, drawer) {
+  const group = drawer.locator('.detail-evidence');
+  if (!await group.count()) return;
+  if (!await group.evaluate(node => node.open)) {
+    await group.locator(':scope > summary').click();
+    await page.waitForTimeout(360);
+  }
+}
 const EFFECT_TAGS = ['ward_fire', 'ward_war', 'ward_evil', 'ward_plague', 'cure_disease', 'travel', 'calm', 'nourish'];
 const OMEN_TAGS = ['flood', 'drought', 'war', 'famine', 'plague', 'fire', 'wind', 'bountiful', 'peace', 'other_omen'];
 for (const [id, record] of Object.entries(semanticTags.entries)) {
   assert.ok(metadata[id], `${id}: semantic tag entry has metadata`);
   assert.ok(['text', 'commentary', 'comparison'].includes(record.basis), `${id}: basis is known`);
   assert.equal(record.basis, metadata[id].classification.basis, `${id}: basis matches metadata`);
+  assert.ok(['auto', 'reviewed'].includes(record.status), `${id}: review status`);
+  if (record.status === 'reviewed') assert.ok(record.reviewed_at && record.review_method, `${id}: reviewed entries keep a review record`);
   for (const tag of record.effect) assert.ok(EFFECT_TAGS.includes(tag.tag), `${id}: effect tag ${tag.tag}`);
   for (const tag of record.omen) assert.ok(OMEN_TAGS.includes(tag.tag), `${id}: omen tag ${tag.tag}`);
   for (const tag of [...record.effect, ...record.omen]) assert.ok(tag.match && tag.evidence && ['quote', 'commentary_quote', 'description'].includes(tag.source), `${id}: tag keeps match, evidence and source`);
 }
 assert.ok(Object.keys(semanticTags.entries).length >= 90, 'Semantic tags cover the expected accounts');
-for (const route of guideRoutes.routes) for (const stop of route.stops) assert.ok(metadata[stop.entryId], `${route.id}: route stop ${stop.entryId} exists`);
+assert.equal(Object.values(semanticTags.entries).filter(record => record.status === 'reviewed').length, 95, 'Spot-checked tags stay reviewed unless their extracted output changes');
+for (const route of guideRoutes.routes) {
+  assert.ok(route.id && route.title?.zh && route.title?.en && route.intro?.zh && route.intro?.en, `${route.id}: bilingual title and intro`);
+  assert.ok(!/[\u3400-\u9fff]/.test(route.title.en + route.intro.en), `${route.id}: English route copy`);
+  assert.equal(new Set(route.stops.map(stop => stop.entryId)).size, route.stops.length, `${route.id}: unique stops`);
+  for (const stop of route.stops) {
+    assert.ok(metadata[stop.entryId], `${route.id}: route stop ${stop.entryId} exists`);
+    assert.ok(stop.label?.zh && stop.label?.en && !/[\u3400-\u9fff]/.test(stop.label.en), `${route.id}/${stop.entryId}: bilingual label`);
+  }
+}
 const original = structuredClone(world);
 const entries = bestiaryEntries(world);
 const droughtIds = entries.filter(item => item.role === 'beast' && semanticTags.entries[item.id]?.omen.some(tag => tag.tag === 'drought')).map(item => item.id).sort();
@@ -175,6 +194,8 @@ if (!process.env.ATLAS_URL) {
     const originalId = await namesakes.locator('.beast-card').getAttribute('data-beast-id');
     await namesakes.locator('.beast-variants-toggle').click();
     const variantsDrawer = page.locator('.detail-drawer');
+    await variantsDrawer.locator('.detail-evidence').waitFor();
+    await openEvidence(page, variantsDrawer);
     await variantsDrawer.locator('.detail-namesakes').waitFor();
     const variantIds = await variantsDrawer.locator('.detail-namesakes option').evaluateAll(nodes => nodes.map(node => node.value));
     assert.deepEqual(new Set(variantIds), new Set(['beast-xishan-huayu-leyou', 'beast-beishan-huayu-qiuru']));
@@ -192,6 +213,7 @@ if (!process.env.ATLAS_URL) {
     await grid.locator('.beast-card').click();
     const parallelDrawer = page.locator('.detail-drawer');
     await parallelDrawer.waitFor();
+    await openEvidence(page, parallelDrawer);
     await parallelDrawer.getByRole('button', { name: '并列校读', exact: true }).click();
     assert.equal(await parallelDrawer.locator('.detail-parallel-card').count(), 2, 'Two same-name accounts are compared side by side');
     const parallelText = await parallelDrawer.locator('.detail-parallel').innerText();
@@ -228,6 +250,7 @@ if (!process.env.ATLAS_URL) {
     await input.fill('青耕');
     await grid.locator('.beast-card').click();
     const tagDrawer = page.locator('.detail-drawer');
+    await openEvidence(page, tagDrawer);
     await tagDrawer.locator('.detail-semantic').waitFor();
     await tagDrawer.locator('.detail-semantic-tags button').first().click();
     await tagDrawer.waitFor({ state: 'hidden' });
@@ -259,6 +282,7 @@ if (!process.env.ATLAS_URL) {
     await grid.locator('.beast-card').click();
     const comparisonDrawer = page.locator('.detail-drawer');
     await comparisonDrawer.waitFor();
+    await openEvidence(page, comparisonDrawer);
     await comparisonDrawer.locator('.detail-comparisons').waitFor();
     assert.equal(await comparisonDrawer.locator('.detail-comparisons button').count(), 3, 'Variant readings stay separate from same-name accounts');
     assert.equal(await comparisonDrawer.locator('.detail-namesakes').count(), 0, 'Comparison accounts are not rendered as same-name entries');

@@ -23,7 +23,7 @@ const curModeBadge = root.getElementById('curModeBadge');
 const Q = new URLSearchParams(location.search);
 const num = (k, d) => (Q.has(k) ? Number(Q.get(k)) : d);
 
-const GHOST = num('ghost', 0.40);
+const GHOST = num('ghost', 0);
 const cl01 = v => Math.min(1, Math.max(0, v));
 const sstep = p => { const x = cl01(p); return x * x * (3 - 2 * x); };
 
@@ -90,6 +90,7 @@ const P = {
 };
 
 const SLOW = num('slow', 1);
+const RED_INK = '#c73a20';
 
 const T = {
   writeStart: 0.35,
@@ -108,7 +109,7 @@ const T = {
 
 const ink = createInk(canvas, {
   quality: 'low',
-  palette: { ink: '#140d08', red: '#b8341a', cream: '#e3bd82' },
+  palette: { ink: '#140d08', red: RED_INK, cream: '#e3bd82' },
   soft: P.soft, grain: P.grain, halo: P.halo,
 });
 ink && ink.set({ curl: P.curl, densityDissipation: P.dens, velocityDissipation: P.vel });
@@ -459,6 +460,7 @@ function reset() {
   canvas.style.zIndex = '1';
   phaseEl.textContent = '待开始';
   ink && ink.clear();
+  ink && ink.set({ palette: { red: RED_INK } });
   state = {
     idx: plan.map(p => p.strokes.map(() => 0)),
     idxC: new Array(COVER_STROKES.length).fill(0),

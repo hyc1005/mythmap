@@ -348,7 +348,7 @@ for (const engine of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','
       for (const e of browserEntries) {
         const d = await open(e.id, lang);
         assert.equal(await d.locator('h2').innerText(), lang === 'en' ? english[e.id].name : e.name);
-        assert.equal(await d.locator('.detail-description').innerText(), lang === 'en' ? english[e.id].description : e.description);
+        assert.equal(await d.locator('.detail-description').textContent(), lang === 'en' ? english[e.id].description : e.description);
         assert.equal(await d.locator(':scope > blockquote').innerText(), lang === 'en' ? english[e.id].quote : e.quote);
         assert.ok(!await bounded(d.evaluate(n=>n.scrollWidth>n.clientWidth), 'Northern drawer width'),e.id+' 390px overflow');
         assert.ok(!await bounded(page.evaluate(()=>document.documentElement.scrollWidth>innerWidth), 'Northern page width'));

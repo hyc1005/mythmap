@@ -7,6 +7,7 @@ if (!base) throw new Error('Run through with-preview.mjs');
 const settle = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
 const clearVisible = async (locator) => {
   const states = await locator.locator('.blur-reveal-text').evaluateAll(nodes => nodes.filter(node => {
+    if (typeof node.checkVisibility === 'function' && !node.checkVisibility()) return false;
     const box = node.getBoundingClientRect();
     if (!box.width || !box.height || box.bottom <= 0 || box.top >= innerHeight) return false;
     for (let parent = node.parentElement; parent; parent = parent.parentElement) {
@@ -84,7 +85,8 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await page.goto(`${base}?chapter=03&item=03-01&lang=${lang}`);
       await page.waitForFunction(() => document.querySelector('.detail-drawer')?.dataset.readingRestoring === 'false'); await settle(page);
       const drawer = page.locator('.detail-drawer');
-      for (const anchor of ['title', 'quote', 'source', 'location', 'notes']) assert.equal(await drawer.locator(`[data-reading-anchor="${anchor}"] > .blur-reveal-text`).count(), 1);
+      for (const anchor of ['title', 'quote', 'location', 'notes']) assert.equal(await drawer.locator(`[data-reading-anchor="${anchor}"] > .blur-reveal-text`).count(), 1);
+      assert.ok(await drawer.locator('[data-reading-anchor="source"] .blur-reveal-text').count() > 0, 'Source group keeps its revealed summary');
       await clearVisible(drawer);
       await page.keyboard.press('Control+f'); await settle(page); await clearVisible(drawer);
       await page.emulateMedia({ media: 'print' });

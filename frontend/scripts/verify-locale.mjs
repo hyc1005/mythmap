@@ -146,6 +146,8 @@ try {
           await assertEnglish(page);
           const variants = drawer.locator('.detail-namesakes select');
           const ids = await variants.count() ? await variants.locator('option').evaluateAll(nodes => nodes.map(node => node.value)) : [];
+          const evidence = drawer.locator('.detail-evidence');
+          if (ids.length && await evidence.count() && !await evidence.evaluate(node => node.open)) await evidence.locator(':scope > summary').click();
           for (const id of ids.filter(id => id !== originalId)) {
             await variants.selectOption(id);
             await page.waitForFunction(id => document.querySelector('.detail-drawer')?.dataset.entryId === id, id);

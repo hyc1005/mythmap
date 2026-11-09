@@ -42,6 +42,8 @@ A bilingual atlas for exploring Chinese myths, discovering creatures and reading
 
 The maintainer developed the code with generative models and releases it under [MIT](LICENSE). No additional reuse permission is granted for project paraphrases, model-generated translations or AI artwork. Source transcriptions, scans, fonts and geographic data retain their own conditions; see [asset provenance and licensing](ASSETS.md).
 
+The base text of the *Classic of Mountains and Seas* is the Sibu Congkan facsimile of the Ming Chenghua edition (Guo Pu's commentary). Transcriptions come from a fixed [Wikisource](<https://zh.wikisource.org/wiki/山海經_(四部叢刊本)>) revision; page scans come from [Wikimedia Commons](<https://commons.wikimedia.org/wiki/File:Sibu_Congkan0465-郭璞-山海經-2-1.djvu>) and are transcluded through Wikisource. Wikisource states that its text is offered under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); the scan files are labelled public domain (PD-old) on Commons. These are source statements, not independent legal conclusions; the project's paraphrases, model translations and editorial text fall outside those licences.
+
 Translations are model-generated. Illustrations use OpenAI image generation, sometimes with existing project artwork as an internal style reference. Unverified models and third-party rights remain explicitly unresolved; neither professional translation review nor freedom from infringement is guaranteed.
 
 Use [CITATION.cff](CITATION.cff) to cite the project and credit the relevant sources when citing individual texts, scans or map data. The geographic screenshot credits Natural Earth; embedded UI assets retain their source-specific conditions.

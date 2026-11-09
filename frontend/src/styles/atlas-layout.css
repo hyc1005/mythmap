@@ -129,13 +129,19 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .detail-parallel-card mark { background: transparent; color: var(--verm); border-bottom: 1px solid currentColor; }
 .detail-parallel-note { display: block; margin-top: 6px; font-size: 12px; color: var(--soft-ink); }
 .detail-parallel-generic { grid-column: 1 / -1; margin: 0; font-size: 13px; color: var(--soft-ink); }
+.detail-description-block { margin-top: 24px; }
+.detail-description-block > summary { min-height: 44px; padding: 4px 0 10px; cursor: pointer; font-size: 16px; font-weight: 600; color: var(--verm); }
+.detail-evidence, .detail-sources { margin-top: 24px; border-top: 1px solid var(--edge); }
+.detail-evidence > summary, .detail-sources > summary { min-height: 44px; padding: 12px 0; cursor: pointer; font-size: 16px; font-weight: 600; color: var(--verm); }
+.detail-evidence h3:first-of-type, .detail-sources h3:first-of-type { margin-top: 8px; }
 .detail-semantic { margin-top: 20px; border-top: 1px solid var(--edge); }
 .detail-semantic-note, .detail-semantic-source { margin: 4px 0; font-size: 12px; color: var(--soft-ink); overflow-wrap: anywhere; }
 .detail-semantic-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
 .detail-semantic-tags button { min-height: 44px; padding: 6px 10px; border: 1px solid var(--edge); background: transparent; color: var(--ink); font: inherit; font-size: 13px; cursor: pointer; }
 .detail-semantic-tags button:hover { border-color: var(--verm); color: var(--verm); }
 .bestiary-tag-note { grid-column: 1 / -1; margin: 4px 0 0; font-size: 12px; color: var(--soft-ink); }
-.guide-routes { max-width: 1100px; margin: 48px auto 0; padding: 0 24px; }
+.guide-routes { padding: 40px clamp(18px, 4vw, 68px) 52px; border-top: 1px solid #b9a47c; background: #e9dec5; }
+.guide-routes-inner { max-width: 1100px; margin: 0 auto; }
 .guide-routes-heading h2 { margin: 0; font-size: 24px; }
 .guide-routes-heading p { margin: 8px 0 0; color: var(--soft-ink); }
 .guide-route-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 10px; }
@@ -147,7 +153,7 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .guide-route-stops button:hover { border-color: var(--verm); }
 .guide-route-stops b { display: block; font-weight: 600; }
 .guide-route-stops small { display: block; margin-top: 4px; color: var(--soft-ink); }
-@media (max-width: 640px) { .guide-routes { padding: 0 16px; } }
+@media (max-width: 640px) { .guide-routes { padding: 28px 16px 40px; } }
 @media (max-width: 640px) { .detail-parallel { grid-template-columns: 1fr; } }
 .detail-drawer .source-caution, .detail-drawer .detail-chapter, .detail-drawer .intro-overline { font-size: 14px; color: var(--soft-ink); }
 .explore-sheet-scrim { position: fixed; inset: 0; z-index: 100; display: flex; align-items: flex-end; background: #241e1870; }
