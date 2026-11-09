@@ -294,7 +294,7 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 }
 
 .global-search-trigger { min-width: 44px; min-height: 44px; padding: 6px 10px; border: 1px solid var(--edge); background: transparent; color: var(--ink); cursor: pointer; }
-.global-search-dialog { display: flex; flex-direction: column; width: min(760px, 100%); max-height: 88svh; margin: auto; }
+.global-search-dialog { display: flex; flex-direction: column; width: min(760px, 100%); max-height: 88svh; align-self: flex-start; margin: 8svh auto 0; }
 .global-search-dialog>header { flex: none; }
 .global-search-tools { flex: none; margin: 12px 0; }
 .global-search-tools label { display: block; font-size: 14px; }
@@ -314,7 +314,7 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .search-result mark { background: #ead8b7; color: var(--ink); font-weight: 600; }
 .search-result :is(small, span) { color: var(--soft-ink); font-size: 14px; line-height: 1.6; }
 .search-more { display: block; margin: 14px auto; }
-@media (max-height: 480px) { .global-search-dialog { max-height: 96svh; } .global-search-tools { margin: 4px 0; } }
+@media (max-height: 480px) { .global-search-dialog { max-height: 92svh; margin-top: 4svh; } .global-search-tools { margin: 4px 0; } }
 
 .beast-group { min-width: 0; align-self: start; }
 .beast-group .beast-card { width: 100%; }

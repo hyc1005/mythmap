@@ -153,14 +153,17 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         await dialog(page).locator('.search-empty button').last().click();
         assert.equal(await input(page).inputValue(), '');
         assert.ok(await input(page).evaluate(node => node === document.activeElement), 'Trying again focuses the keyword field');
+        await page.waitForTimeout(300);
+        const emptySearchBox = await dialog(page).boundingBox();
         await input(page).fill('山海经');
         await page.evaluate(() => document.fonts.ready);
+        const filledSearchBox = await dialog(page).boundingBox();
+        assert.ok(emptySearchBox.y >= 0 && emptySearchBox.y <= height * 0.2, `${name} ${lang} ${width}: search dialog sits near the top`);
+        assert.ok(Math.abs(filledSearchBox.y - emptySearchBox.y) <= 2, `${name} ${lang} ${width}: search dialog stays anchored when results grow`);
         const searchMetrics = await dialog(page).evaluate(node => {
           const list = node.querySelector('.global-search-results');
-          const box = node.getBoundingClientRect();
-          return { center: box.top + box.height / 2, viewport: innerHeight / 2, scrollHeight: list.scrollHeight, clientHeight: list.clientHeight };
+          return { scrollHeight: list.scrollHeight, clientHeight: list.clientHeight };
         });
-        assert.ok(Math.abs(searchMetrics.center - searchMetrics.viewport) <= 2, `${name} ${lang} ${width}: search dialog is vertically centered`);
         assert.ok(searchMetrics.scrollHeight > searchMetrics.clientHeight, `${name} ${lang} ${width}: search results overflow`);
         const keywordBox = await input(page).boundingBox();
         await page.mouse.move(keywordBox.x + keywordBox.width / 2, keywordBox.y + keywordBox.height / 2);
