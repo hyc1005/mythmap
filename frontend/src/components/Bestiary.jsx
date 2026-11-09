@@ -6,9 +6,9 @@ import { iconFor } from '../artwork';
 import ArtworkImage from './ArtworkImage';
 import BlurRevealText from './BlurRevealText';
 import { ReadingMarks } from '../reading';
-import { BESTIARY_INITIAL, BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, bestiaryEntries, filterBestiary, groupBestiary, morphologyReview } from '../bestiary';
+import { BESTIARY_INITIAL, BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, EFFECT_LABELS, OMEN_LABELS, bestiaryEntries, filterBestiary, groupBestiary, morphologyReview } from '../bestiary';
 
-const emptyFilters = { role: 'beast', query: '', book: '', form: '', feature: '', reading: '' };
+const emptyFilters = { role: 'beast', query: '', book: '', form: '', feature: '', reading: '', effect: '', omen: '' };
 
 
 function BeastArtwork({ src, seen, reduced }) {
@@ -49,6 +49,16 @@ export default function Bestiary({ world, onOpen, reading }) {
   const [moreFilters, setMoreFilters] = useState(false);
   const [filters, setFilters] = useState(emptyFilters);
   const [limit, setLimit] = useState(BESTIARY_INITIAL);
+  useEffect(() => {
+    const handler = event => {
+      const detail = event.detail || {};
+      setFilters(value => ({ ...value, effect: detail.effect || '', omen: detail.omen || '' }));
+      setLimit(BESTIARY_INITIAL);
+      document.getElementById('creatures')?.scrollIntoView({ block: 'start', behavior: 'instant' });
+    };
+    window.addEventListener('bestiary:filter', handler);
+    return () => window.removeEventListener('bestiary:filter', handler);
+  }, []);
   const hasFilter = Object.entries(filters).some(([key, value]) => key !== 'role' && value.trim());
   const change = patch => { setFilters(value => ({ ...value, ...patch })); setLimit(BESTIARY_INITIAL); };
   const reset = () => { setFilters({ ...emptyFilters, role: filters.role }); setLimit(BESTIARY_INITIAL); };
@@ -64,6 +74,8 @@ export default function Bestiary({ world, onOpen, reading }) {
     ['book', t('篇目'), books.find(([key]) => key === filters.book)?.[1]],
     ['form', t('形貌'), FORM_LABELS[filters.form]?.[locale]],
     ['feature', t('特征'), FEATURE_LABELS[filters.feature]?.[locale]],
+    ['effect', t('功效'), EFFECT_LABELS[filters.effect]?.[locale]],
+    ['omen', t('征兆'), OMEN_LABELS[filters.omen]?.[locale]],
     ['reading', t('阅读状态'), { unread: t('未读'), read: t('已读'), favorites: t('已收藏') }[filters.reading]],
   ].filter(([key]) => filters[key]);
   const removeFilter = (event, key) => {
@@ -88,11 +100,14 @@ export default function Bestiary({ world, onOpen, reading }) {
     <div className="bestiary-tools">
       <input type="search" data-bestiary-filter="query" maxLength={120} value={filters.query} onChange={event => change({ query: event.target.value })} placeholder={t('搜索异兽或形貌')} aria-label={t('搜索异兽')} />
       <select data-bestiary-filter="book" value={filters.book} onChange={event => change({ book: event.target.value })} aria-label={t('按篇目筛选')}><option value="">{t('全部篇目')} · {count('book', '')}</option>{books.map(([key, label]) => <option key={key} value={key}>{label} · {count('book', key)}</option>)}</select>
-      <button className="bestiary-extra-toggle" type="button" aria-expanded={moreFilters} aria-controls="bestiary-extra-filters" onClick={() => setMoreFilters(value => !value)}>{t('更多筛选')}{[filters.form, filters.feature, filters.reading].filter(Boolean).length > 0 && ` · ${[filters.form, filters.feature, filters.reading].filter(Boolean).length}`}</button>
+      <button className="bestiary-extra-toggle" type="button" aria-expanded={moreFilters} aria-controls="bestiary-extra-filters" onClick={() => setMoreFilters(value => !value)}>{t('更多筛选')}{[filters.form, filters.feature, filters.reading, filters.effect, filters.omen].filter(Boolean).length > 0 && ` · ${[filters.form, filters.feature, filters.reading, filters.effect, filters.omen].filter(Boolean).length}`}</button>
       <div className="bestiary-extra-filters" id="bestiary-extra-filters" data-expanded={moreFilters}>
       <select data-bestiary-filter="form" value={filters.form} onChange={event => change({ form: event.target.value })} aria-label={t('按形貌筛选')}><option value="">{t('全部形貌')} · {count('form', '')}</option>{Object.entries(FORM_LABELS).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('form', key)}</option>)}</select>
       <select data-bestiary-filter="feature" value={filters.feature} onChange={event => change({ feature: event.target.value })} aria-label={t('按特征筛选')}><option value="">{t('全部特征')} · {count('feature', '')}</option>{Object.entries(FEATURE_LABELS).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('feature', key)}</option>)}</select>
+      <select data-bestiary-filter="effect" value={filters.effect} onChange={event => change({ effect: event.target.value })} aria-label={t('按功效筛选')}><option value="">{t('全部功效')} · {count('effect', '')}</option>{Object.entries(EFFECT_LABELS).filter(([key]) => count('effect', key) > 0).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('effect', key)}</option>)}</select>
+      <select data-bestiary-filter="omen" value={filters.omen} onChange={event => change({ omen: event.target.value })} aria-label={t('按征兆筛选')}><option value="">{t('全部征兆')} · {count('omen', '')}</option>{Object.entries(OMEN_LABELS).filter(([key]) => count('omen', key) > 0).map(([key, label]) => <option key={key} value={key}>{label[locale]} · {count('omen', key)}</option>)}</select>
       <select data-bestiary-filter="reading" value={filters.reading} onChange={event => change({ reading: event.target.value })} aria-label={t('按阅读状态筛选')}><option value="">{t('全部阅读状态')}</option><option value="unread">{t('未读')} · {count('reading', 'unread')}</option><option value="read">{t('已读')} · {count('reading', 'read')}</option><option value="favorites">{t('已收藏')} · {count('reading', 'favorites')}</option></select>
+      <p className="bestiary-tag-note">{t('功效与征兆标签为自动抽取，待复核。')}</p>
       </div>
       {hasFilter && <button type="button" className="bestiary-reset" onClick={reset}>{t('清除筛选')}</button>}
     </div>

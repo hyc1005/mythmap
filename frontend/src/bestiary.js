@@ -1,6 +1,7 @@
 import morphologyReviews from './bestiary-morphology-review.json' with { type: 'json' };
 import metadata from './bestiary-metadata.json' with { type: 'json' };
 import notability from './bestiary-notability.json' with { type: 'json' };
+import semanticTags from './bestiary-semantic-tags.json' with { type: 'json' };
 
 export const BESTIARY_INITIAL = 12;
 export const BESTIARY_BATCH = 24;
@@ -16,6 +17,33 @@ export const FEATURE_LABELS = {
   one_leg: { zh: '独足', en: 'One leg' }, many_legs: { zh: '多足', en: 'Many legs' },
   horned: { zh: '有角', en: 'Horned' }, scales: { zh: '鳞甲', en: 'Scales / armour' },
 };
+export const EFFECT_LABELS = {
+  ward_fire: { zh: '御火', en: 'Fire ward' }, ward_war: { zh: '御兵', en: 'War ward' },
+  ward_evil: { zh: '御凶', en: 'Evil ward' }, ward_plague: { zh: '御疫', en: 'Plague ward' },
+  cure_disease: { zh: '已疾', en: 'Cures illness' }, travel: { zh: '善走', en: 'Swift travel' },
+  calm: { zh: '不畏', en: 'Calms fear' }, nourish: { zh: '不饥', en: 'Prevents hunger' },
+};
+export const OMEN_LABELS = {
+  flood: { zh: '大水', en: 'Flood' }, drought: { zh: '大旱', en: 'Drought' }, war: { zh: '大兵', en: 'War' },
+  famine: { zh: '大饥', en: 'Famine' }, plague: { zh: '大疫', en: 'Plague' }, fire: { zh: '火灾', en: 'Fire' },
+  wind: { zh: '大风', en: 'Great wind' }, bountiful: { zh: '大穰', en: 'Bountiful harvest' },
+  peace: { zh: '安宁', en: 'Peace' }, other_omen: { zh: '其他征兆', en: 'Other omen' },
+};
+
+export function semanticTagsFor(id) {
+  return semanticTags.entries[id] || null;
+}
+
+export function notabilityFor(id) {
+  return Number(notability[id]) || 0;
+}
+
+export function sharedSemanticTags(a, b) {
+  const left = semanticTagsFor(a), right = semanticTagsFor(b);
+  if (!left || !right) return 0;
+  const tags = new Set([...left.effect, ...left.omen].map(tag => tag.tag));
+  return [...right.effect, ...right.omen].filter(tag => tags.has(tag.tag)).length;
+}
 const normalize = value => String(value || '').normalize('NFKC').toLocaleLowerCase().replace(/\s+/g, ' ').trim();
 
 export function bestiaryEntry(item, locale = 'zh') {
@@ -42,10 +70,12 @@ export function bestiarySearchFields(entry) {
     entry.featureTags.flatMap(tag => Object.values(FEATURE_LABELS[tag]))].flat(Infinity).filter(Boolean);
 }
 
-export function filterBestiary(entries, { role = 'beast', book = '', form = '', feature = '', reading = '', query = '' } = {}, marks = { read: [], favorites: [] }) {
+export function filterBestiary(entries, { role = 'beast', book = '', form = '', feature = '', reading = '', query = '', effect = '', omen = '' } = {}, marks = { read: [], favorites: [] }) {
   const value = normalize(query), terms = value.split(' ').filter(Boolean);
   return entries.filter(item => (!role || item.role === role) && (!book || item.bookKey === book)
     && (!form || item.formGroup === form) && (!feature || item.featureTags.includes(feature))
+    && (!effect || semanticTags.entries[item.id]?.effect.some(tag => tag.tag === effect))
+    && (!omen || semanticTags.entries[item.id]?.omen.some(tag => tag.tag === omen))
     && (!reading || reading === 'read' && marks.read.includes(item.id) || reading === 'unread' && !marks.read.includes(item.id) || reading === 'favorites' && marks.favorites.includes(item.id))
     && terms.every(term => normalize(bestiarySearchFields(item).join(' ')).includes(term)))
     .map((entry, order) => ({ entry, order, score: Number(notability[entry.id]) || 0, rank: !value ? 0 : entry.shortNames.some(name => normalize(name) === value) ? 0

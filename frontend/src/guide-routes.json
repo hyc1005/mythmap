@@ -1,0 +1,35 @@
+{
+  "_note": "Curated thematic routes. Every stop must reference an existing bestiary entry id; the section is independent of the guided-tour playback state.",
+  "routes": [
+    {
+      "id": "omens",
+      "title": { "zh": "见则志", "en": "Omens and signs" },
+      "intro": {
+        "zh": "按原文的“见则/动则”串联灾异与吉兆，不改变各篇顺序。",
+        "en": "Follows the text's own omen clauses across disasters and auspicious signs."
+      },
+      "stops": [
+        { "entryId": "beast-bifang", "label": { "zh": "毕方 · 讹火", "en": "Bifang · fire" } },
+        { "entryId": "beast-beishan-feiyi-hunxi", "label": { "zh": "浑夕肥遗 · 大旱", "en": "Feiyi of Hunxi · drought" } },
+        { "entryId": "beast-nanshan-changyou", "label": { "zh": "长右 · 大水", "en": "Changyou · flood" } },
+        { "entryId": "beast-zhuyan", "label": { "zh": "朱厌 · 大兵", "en": "Zhuyan · war" } },
+        { "entryId": "beast-fei", "label": { "zh": "蜚 · 大疫", "en": "Fei · plague" } },
+        { "entryId": "beast-dangkang", "label": { "zh": "当康 · 大穰", "en": "Dangkang · bountiful harvest" } }
+      ]
+    },
+    {
+      "id": "wards",
+      "title": { "zh": "服佩辟邪", "en": "Wards and remedies" },
+      "intro": {
+        "zh": "只收原文写明“食之/佩之”功效的条目；䍺 等无功效记载者不入此路线。",
+        "en": "Only accounts whose text states an effect after eating or wearing; accounts without one stay out."
+      },
+      "stops": [
+        { "entryId": "beast-jiuweihu", "label": { "zh": "九尾狐 · 食者不蛊", "en": "Nine-tailed fox · no poison" } },
+        { "entryId": "beast-boyi", "label": { "zh": "猼訑 · 佩之不畏", "en": "Boyi · worn, no fear" } },
+        { "entryId": "beast-zhongshan-qinggeng-jinli11", "label": { "zh": "青耕 · 御疫", "en": "Qinggeng · plague ward" } },
+        { "entryId": "beast-xishan-feiyi-ying", "label": { "zh": "英山肥遗 · 已疠、杀虫", "en": "Feiyi of Ying · illness, insects" } }
+      ]
+    }
+  ]
+}

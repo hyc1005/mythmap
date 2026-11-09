@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { chromium, webkit } from 'playwright';
 import { BESTIARY_INITIAL, BESTIARY_BATCH, FORM_LABELS, FEATURE_LABELS, bestiaryEntries, filterBestiary, groupBestiary, bestiaryNamesakes, morphologyReview } from '../src/bestiary.js';
 import { searchIndex, searchEntries } from '../src/search.js';
+import guideRoutes from '../src/guide-routes.json' with { type: 'json' };
 
 const read = async path => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const [world, catalog, metadata] = await Promise.all(['../public/data/myth-world.json', '../public/data/atlas/catalog.json', '../src/bestiary-metadata.json'].map(read));
@@ -20,8 +21,13 @@ for (const [id, record] of Object.entries(semanticTags.entries)) {
   for (const tag of [...record.effect, ...record.omen]) assert.ok(tag.match && tag.evidence && ['quote', 'commentary_quote', 'description'].includes(tag.source), `${id}: tag keeps match, evidence and source`);
 }
 assert.ok(Object.keys(semanticTags.entries).length >= 90, 'Semantic tags cover the expected accounts');
+for (const route of guideRoutes.routes) for (const stop of route.stops) assert.ok(metadata[stop.entryId], `${route.id}: route stop ${stop.entryId} exists`);
 const original = structuredClone(world);
 const entries = bestiaryEntries(world);
+const droughtIds = entries.filter(item => item.role === 'beast' && semanticTags.entries[item.id]?.omen.some(tag => tag.tag === 'drought')).map(item => item.id).sort();
+assert.deepEqual(filterBestiary(entries, { role: 'beast', omen: 'drought' }).map(item => item.id).sort(), droughtIds, 'Omen filter matches the extracted tags');
+const fireIds = entries.filter(item => item.role === 'beast' && semanticTags.entries[item.id]?.effect.some(tag => tag.tag === 'ward_fire')).map(item => item.id).sort();
+assert.deepEqual(filterBestiary(entries, { role: 'beast', effect: 'ward_fire' }).map(item => item.id).sort(), fireIds, 'Effect filter matches the extracted tags');
 assert.equal(BESTIARY_INITIAL, 12);
 assert.equal(BESTIARY_BATCH, 24);
 for (const group of groupBestiary(entries)) assert.deepEqual(bestiaryNamesakes(world, group.entries[0].id).map(entry => entry.id).sort(), group.entries.map(entry => entry.id).sort());
@@ -219,6 +225,14 @@ if (!process.env.ATLAS_URL) {
     await page.waitForFunction(() => document.activeElement?.dataset.beastId === 'beast-zhongshan-feiyu-niushou');
     await page.getByRole('button', { name: '清除筛选', exact: true }).click();
     assert.equal(await grid.locator('.beast-group').count(), 12);
+    await input.fill('青耕');
+    await grid.locator('.beast-card').click();
+    const tagDrawer = page.locator('.detail-drawer');
+    await tagDrawer.locator('.detail-semantic').waitFor();
+    await tagDrawer.locator('.detail-semantic-tags button').first().click();
+    await tagDrawer.waitFor({ state: 'hidden' });
+    assert.ok(await page.locator('.bestiary-filter-chip').evaluateAll(nodes => nodes.some(node => /功效|征兆|Effect|Omen/.test(node.textContent))), 'A tag click applies the matching filter');
+    await page.getByRole('button', { name: '清除筛选', exact: true }).click();
     await input.fill('鸣蛇');
     await page.getByLabel('按篇目筛选').selectOption('中山经');
     await page.getByLabel('按特征筛选').selectOption('four_wings');
@@ -290,6 +304,18 @@ if (!process.env.ATLAS_URL) {
     await broken.locator('.detail-drawer .artwork-fallback button').click();
     await broken.locator('.detail-drawer .drawer-art').evaluate(image => image.decode());
     await broken.close();
+    const routesPage = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+    routesPage.on('pageerror', error => errors.push(error.message));
+    await routesPage.goto(process.env.ATLAS_URL + '?splash=0&lang=zh');
+    await routesPage.waitForTimeout(1200);
+    if (await routesPage.locator('.onboarding-skip').count()) await routesPage.locator('.onboarding-skip').click();
+    await routesPage.locator('#routes').scrollIntoViewIfNeeded();
+    assert.equal(await routesPage.locator('.guide-route-tabs button').count(), guideRoutes.routes.length);
+    const firstStop = guideRoutes.routes[0].stops[0];
+    await routesPage.locator(`[data-route-stop="${firstStop.entryId}"]`).click();
+    await routesPage.locator(`.detail-drawer[data-entry-id="${firstStop.entryId}"]`).waitFor();
+    assert.equal(await routesPage.locator('.world-layout').getAttribute('data-timeline-playing'), 'false', 'Routes do not start the guided tour');
+    await routesPage.close();
     assert.deepEqual(errors, []);
     console.log(`PASS ${name}: 12 initial + 24 added cards, viewport image lifetime, no unopened image requests, independent namesake selection, morphology/features/books, bilingual layouts, original details and legacy deity links`);
   } finally { await browser.close(); }

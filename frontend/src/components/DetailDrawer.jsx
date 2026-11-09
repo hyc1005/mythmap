@@ -1,4 +1,4 @@
-import { morphologyReview, FORM_LABELS } from '../bestiary';
+import { morphologyReview, FORM_LABELS, EFFECT_LABELS, OMEN_LABELS, semanticTagsFor, notabilityFor, sharedSemanticTags } from '../bestiary';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useLocale, localize } from '../i18n';
 import rawCatalog from '../../public/data/atlas/catalog.json';
@@ -62,6 +62,7 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
   const pendingFocus = useRef(null);
   const lastEntry = useRef(null);  const positionRecord = useRef(null);
   const sources = (selected.raw?.properties.source_ids || []).map(id => catalog.sources.find(source => source.id === id)).filter(Boolean);
+  const semantic = semanticTagsFor(selected.id);
   const links = [...new Map([
     ...(selected.url ? [{ url: selected.url, title: selected.source }] : []),
     ...sources.filter(source => source.url),
@@ -158,6 +159,10 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
   };
   const readingPosition = () => ({ id: selected.id, chapter: readingChapter, position: capturePosition(drawer.current) });
   const visibleRelated = relatedItems.filter(item => item.id !== contextPlace?.id && !placeContents.some(entry => entry.id === item.id));
+  const relatedRanked = visibleRelated.map(item => ({ item, shared: sharedSemanticTags(selected.id, item.id) }))
+    .sort((a, b) => b.shared - a.shared
+      || Number(b.item.context_place_id === selected.context_place_id) - Number(a.item.context_place_id === selected.context_place_id)
+      || notabilityFor(b.item.id) - notabilityFor(a.item.id));
   const morphology = morphologyReview(selected.id, locale);
   const descriptionTitle = { place: '此地记述', plant: '草木记述', water: '水域记述', material: '物产记述', passage: '白话整理', animal: '动物记载', valley: '谷地记述', wind: '风的记述', deity: '山神记述', rite: '祭礼记述' }[selected.kind] || '形态介绍';
   const keepFocusInDrawer = event => {
@@ -209,8 +214,16 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
       </RevealDetails>}
       {contextPlace && parentEntry?.id !== contextPlace.id && <button type="button" className="detail-context-place" data-related-id={contextPlace.id} onClick={() => onRelated(contextPlace.id, readingPosition())}>{t('查看关联地点')} · {contextPlace.name}</button>}
       {(selected.quote || selected.kind === 'story') && <><h3 data-reading-anchor="quote"><BlurRevealText revealKey="components/DetailDrawer.jsx:2" variant="inline" text={<>{t('原文')}</>} /></h3><blockquote><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-6:${locale}`} rootRef={drawer}>{selected.quote || selected.raw?.properties.source_quote || selected.description}</BlurRevealText></blockquote></>}
-      {selected.reveal_chapter && <p className="detail-chapter"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-7:${locale}`} rootRef={drawer}>{t('第')}{selected.reveal_chapter}{t('章起可见（非诞生年代）')}</BlurRevealText></p>}
-      {locale === 'en' && (selected.originalQuote || selected.raw?.properties.originalQuote) && <RevealDetails className="original-text" data-reading-anchor="original"><summary>Chinese original</summary><blockquote lang="zh-CN"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-8:${locale}`} rootRef={drawer}>{selected.originalQuote || selected.raw.properties.originalQuote}</BlurRevealText></blockquote></RevealDetails>}
+      {semantic && <section className="detail-semantic" aria-label={t('功效与征兆')} data-reading-anchor="semantic">
+        <h3><BlurRevealText revealKey={`detail:${selected.id}:semantic`} variant="inline" text={t('功效与征兆')} /></h3>
+        <p className="detail-semantic-note">{t('自动抽取，待复核。')}</p>
+        <div className="detail-semantic-tags">
+          {semantic.effect.map(tag => <button type="button" key={`effect-${tag.tag}-${tag.match}`} onClick={() => { window.dispatchEvent(new CustomEvent('bestiary:filter', { detail: { effect: tag.tag } })); onClose(); }}>{t('按此功效筛选')} · {EFFECT_LABELS[tag.tag]?.[locale] || tag.tag}</button>)}
+          {semantic.omen.map(tag => <button type="button" key={`omen-${tag.tag}-${tag.match}`} onClick={() => { window.dispatchEvent(new CustomEvent('bestiary:filter', { detail: { omen: tag.tag } })); onClose(); }}>{t('按此征兆筛选')} · {OMEN_LABELS[tag.tag]?.[locale] || tag.tag}</button>)}
+        </div>
+        {(semantic.effect[0]?.match || semantic.omen[0]?.match) && <p className="detail-semantic-source" lang="zh-CN">{semantic.effect[0]?.match || semantic.omen[0]?.match}</p>}
+      </section>}
+      {selected.reveal_chapter && <p className="detail-chapter"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-7:${locale}`} rootRef={drawer}>{t('第')}{selected.reveal_chapter}{t('章起可见（非诞生年代）')}</BlurRevealText></p>}      {locale === 'en' && (selected.originalQuote || selected.raw?.properties.originalQuote) && <RevealDetails className="original-text" data-reading-anchor="original"><summary>Chinese original</summary><blockquote lang="zh-CN"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-8:${locale}`} rootRef={drawer}>{selected.originalQuote || selected.raw.properties.originalQuote}</BlurRevealText></blockquote></RevealDetails>}
       {(selected.originalCommentary || selected.commentary_quote) && <RevealDetails className="original-text commentary-section"><summary><BlurRevealText variant="inline" revealKey="components/DetailDrawer.jsx:summary" text={t(selected.kind === 'passage' ? '底本注文 · 按录文行保留' : '郭注摘录')} /></summary>{locale === 'en' && selected.originalCommentary && selected.commentary_quote && selected.commentary_quote !== selected.originalCommentary && <p lang="en"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-9:${locale}`} rootRef={drawer}>{selected.commentary_quote}</BlurRevealText></p>}<blockquote lang="zh-CN"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-10:${locale}`} rootRef={drawer}>{selected.originalCommentary || selected.commentary_quote}</BlurRevealText></blockquote></RevealDetails>}
       {selected.raw?.properties.parent_event_id && <nav className="story-siblings" aria-label={t("补天四幕")}>{catalog.events.filter(item => item.properties.parent_event_id === selected.raw.properties.parent_event_id).map(item => <button key={item.id} aria-current={item.id === selected.id ? 'true' : undefined} onClick={event => onOpen(item.id, event.currentTarget)}>{item.properties.name}</button>)}</nav>}
       {iconFor(selected) && <ArtworkImage key={selected.id} className="drawer-art" src={iconFor(selected)} alt={t(`${selected.name}版画插画`)} />}
@@ -240,7 +253,7 @@ export default function DetailDrawer({ placeReference, onOpenPlace, selected, na
       <h3 data-reading-anchor="notes"><BlurRevealText revealKey="components/DetailDrawer.jsx:7" variant="inline" text={<>{t("项目说明")}</>} /></h3><p className="source-caution"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-21:${locale}`} rootRef={drawer}>{selected.kind === 'story' ? t("故事点为叙事锚点·示意，不表示真实地点、距离或未经原文支持的因果关系；插画中的器物与场景属于艺术解释。") : t("原文未明示的方位不以图面位置补出；淡墨山海纹样仅为装饰。")}</BlurRevealText></p>
       {selected.editorial_note && <p className="source-caution"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-22:${locale}`} rootRef={drawer}>{selected.editorial_note}</BlurRevealText></p>}
       {selected.content_note && <p className="source-caution"><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-23:${locale}`} rootRef={drawer}>{selected.content_note}</BlurRevealText></p>}
-      {!!visibleRelated.length && <nav className="detail-related" data-reading-anchor="related" aria-label={t('相关条目')}><h3><BlurRevealText revealKey="components/DetailDrawer.jsx:8" variant="inline" text={<>{t('相关条目')}</>} /></h3><p><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-24:${locale}`} rootRef={drawer}>{t('按原文关联，故事、异兽和地点分别呈现。')}</BlurRevealText></p>{visibleRelated.map(item => <button type="button" key={item.id} data-related-id={item.id} onClick={() => onRelated(item.id, readingPosition())}><b><BlurRevealText revealKey="components/DetailDrawer.jsx:10" variant="inline" text={<>{item.name}</>} /></b><small>{t(item.relationLabel || item.entryType)} · {t(item.relationSource)}</small>{item.relationQuote && <small className="relation-quote" lang="zh-CN">{item.relationQuote}</small>}</button>)}</nav>}
+      {!!relatedRanked.length && <nav className="detail-related" data-reading-anchor="related" aria-label={t('相关条目')}><h3><BlurRevealText revealKey="components/DetailDrawer.jsx:8" variant="inline" text={<>{t('相关条目')}</>} /></h3><p><BlurRevealText variant="prose" revealKey={`detail:${selected.id}:prose-24:${locale}`} rootRef={drawer}>{t('按原文关联，故事、异兽和地点分别呈现。')}</BlurRevealText></p>{relatedRanked.map(({ item, shared }) => <button type="button" key={item.id} data-related-id={item.id} data-shared-tags={shared} onClick={() => onRelated(item.id, readingPosition())}><b><BlurRevealText revealKey="components/DetailDrawer.jsx:10" variant="inline" text={<>{item.name}</>} /></b><small>{t(item.relationLabel || item.entryType)} · {t(item.relationSource)}{shared > 0 ? ` · ${t('共享标签')} ${shared}` : ''}</small>{item.relationQuote && <small className="relation-quote" lang="zh-CN">{item.relationQuote}</small>}</button>)}</nav>}
       {navigation.total > 1 && <nav className="detail-entry-nav" aria-label={t('条目切换')}>
         <button ref={previousButton} type="button" disabled={!navigation.previous} onClick={() => step('previous')} aria-label={t('上一条')}><span>← {t('上一条')}</span><small>{navigation.previous?.name || t('已是第一条')}</small></button>
         <span className="detail-entry-position" aria-live="polite">{navigation.index + 1} / {navigation.total}</span>

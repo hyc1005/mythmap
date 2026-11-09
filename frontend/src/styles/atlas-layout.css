@@ -129,6 +129,25 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .detail-parallel-card mark { background: transparent; color: var(--verm); border-bottom: 1px solid currentColor; }
 .detail-parallel-note { display: block; margin-top: 6px; font-size: 12px; color: var(--soft-ink); }
 .detail-parallel-generic { grid-column: 1 / -1; margin: 0; font-size: 13px; color: var(--soft-ink); }
+.detail-semantic { margin-top: 20px; border-top: 1px solid var(--edge); }
+.detail-semantic-note, .detail-semantic-source { margin: 4px 0; font-size: 12px; color: var(--soft-ink); overflow-wrap: anywhere; }
+.detail-semantic-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+.detail-semantic-tags button { min-height: 44px; padding: 6px 10px; border: 1px solid var(--edge); background: transparent; color: var(--ink); font: inherit; font-size: 13px; cursor: pointer; }
+.detail-semantic-tags button:hover { border-color: var(--verm); color: var(--verm); }
+.bestiary-tag-note { grid-column: 1 / -1; margin: 4px 0 0; font-size: 12px; color: var(--soft-ink); }
+.guide-routes { max-width: 1100px; margin: 48px auto 0; padding: 0 24px; }
+.guide-routes-heading h2 { margin: 0; font-size: 24px; }
+.guide-routes-heading p { margin: 8px 0 0; color: var(--soft-ink); }
+.guide-route-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 10px; }
+.guide-route-tabs button { min-height: 44px; padding: 8px 14px; border: 1px solid var(--edge); background: transparent; color: var(--ink); font: inherit; cursor: pointer; }
+.guide-route-tabs button[aria-pressed="true"] { border-color: var(--verm); color: var(--verm); }
+.guide-route-intro { margin: 0 0 14px; font-size: 14px; color: var(--soft-ink); }
+.guide-route-stops { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.guide-route-stops button { display: block; width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid var(--edge); background: transparent; color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.guide-route-stops button:hover { border-color: var(--verm); }
+.guide-route-stops b { display: block; font-weight: 600; }
+.guide-route-stops small { display: block; margin-top: 4px; color: var(--soft-ink); }
+@media (max-width: 640px) { .guide-routes { padding: 0 16px; } }
 @media (max-width: 640px) { .detail-parallel { grid-template-columns: 1fr; } }
 .detail-drawer .source-caution, .detail-drawer .detail-chapter, .detail-drawer .intro-overline { font-size: 14px; color: var(--soft-ink); }
 .explore-sheet-scrim { position: fixed; inset: 0; z-index: 100; display: flex; align-items: flex-end; background: #241e1870; }
