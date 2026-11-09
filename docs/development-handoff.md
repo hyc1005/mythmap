@@ -29,6 +29,7 @@
 | 开篇影像 | `public/opening-film.html` 为自包含宣传片（2.82 MB，内嵌 5 PNG/5 WebP 角色帧），不进入首屏；唯一入口是页脚藏书印 `.bookplate-link`。左上角返回链接与「跳过」/Esc 都回上一页，HUD 只留「重播」「声音」 |
 | 默认排序 | `src/bestiary-notability.json` 是人工维护的知名度权重，`bestiary.js` 的默认列表先按权重、再按原顺序；搜索仍先看匹配度。文件独立于生成数据，可直接编辑 |
 | 社交预览 | `index.html` 声明 Open Graph / Twitter Card；`public/og-image.webp` 为 1200×630 裁切图，经 `publish-files.mjs` 白名单发布 |
+| 深度路线 | `docs/depth-roadmap.md` 是评审稿：记录数据基线、三处修正与四个顺位，明确不做项；仅文档，未实施 |
 | 浏览器标题 | 站点标题固定为 `山海寻踪`（英文 `Shanhai Atlas`），不再附带副标题；`verify-locale` 的 `startsWith('Shanhai Atlas')` 仍成立 |
 
 策略：`?splash=1` 强制演示；`?splash=0` / `?nosplash` 跳过；带其他查询或 hash 的深链跳过自动播放。标记键为 `localStorage['shanhai-splash:v12:seen']`。减少动态效果始终跳过自动播放；主动点击品牌时可看静态降级。跳过或播放结束写入标记。开屏对话框内任意点击等同于「进入网站」；按钮、Esc、重播、加载中与淡出中的重复触发由既有幂等保护挡住，`verify-splash.mjs` 覆盖这些路径。
