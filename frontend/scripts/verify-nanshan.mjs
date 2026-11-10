@@ -63,6 +63,8 @@ for (const path of artworkPaths) for (const variant of ['full', 'preview', 'card
 await mkdir(new URL('../../output/qa/', import.meta.url), { recursive: true });
 const cardSuite = process.env.ATLAS_CARD_SUITE || 'all';
 assert.ok(['all', 'records', 'navigation'].includes(cardSuite), 'Invalid ATLAS_CARD_SUITE');
+const languages = (process.env.ATLAS_LANGUAGES || 'zh,en').split(',');
+assert.ok(languages.every(lang => ['zh', 'en'].includes(lang)), 'Invalid ATLAS_LANGUAGES');
 for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, firefox, webkit }[name]).launch();
   let captureFailure;
@@ -84,7 +86,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
         return node?.dataset.entryId === id && node.dataset.readingRestoring === 'false';
       }, id);
     };
-    for (const lang of ['zh', 'en']) {
+    for (const lang of languages) {
       if (cardSuite !== 'navigation') for (const id of ids) {
         await page.goto(`${base}?chapter=03&item=${id}&lang=${lang}`);
         await ready(id);

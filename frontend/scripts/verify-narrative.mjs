@@ -1,4 +1,4 @@
-import { clickPlaybackControl } from './ui-controls.mjs';
+import { clickPlaybackControl, openChapterRail } from './ui-controls.mjs';
 import { BASE_PLAYBACK_RATE } from '../src/playback.js';
 import assert from 'node:assert/strict';
 import { access, mkdir, readFile } from 'node:fs/promises';
@@ -127,6 +127,7 @@ async function selectChapter(page, name) {
 async function storyCount(page) {
   const mobile = !await page.locator('.timeline-steps button').count();
   if (mobile) await page.locator('.mobile-explore-nav button').nth(1).click();
+  else await openChapterRail(page);
   const count = await page.locator('.story-entry').count();
   if (mobile) await page.keyboard.press('Escape');
   return count;
@@ -196,12 +197,42 @@ try {
     });
     await installClock(layoutPage);
     await enterAtlas(layoutPage, atlasUrl);
+    if(width<=768) assert.equal(await layoutPage.locator(".mobile-explore-nav button").count(),2);
+    else {
+      const rail = layoutPage.locator('.chapter-rail');
+      const toggle = layoutPage.locator('.chapter-rail-toggle');
+      const map = layoutPage.locator('.map-surface');
+      assert.equal(await rail.isVisible(), false, 'Chapter rail starts closed');
+      const closedWidth = (await map.boundingBox()).width;
+      if (await layoutPage.evaluate(() => matchMedia('(hover: hover)').matches)) {
+        await layoutPage.mouse.move(width - 2, 100);
+        assert.equal(await toggle.evaluate(node => getComputedStyle(node).opacity), '0');
+        const edge = await layoutPage.locator('.chapter-rail-edge').boundingBox();
+        await layoutPage.mouse.move(edge.x + 2, edge.y + edge.height / 2);
+        await layoutPage.waitForFunction(() => getComputedStyle(document.querySelector('.chapter-rail-toggle')).opacity === '1');
+      }
+      assert.equal(await rail.isVisible(), false, 'Pointer proximity only reveals the toggle');
+      await toggle.click();
+      await rail.waitFor();
+      assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
+      assert.ok((await map.boundingBox()).width < closedWidth - 200, 'Opening gives the rail its own column');
+      await toggle.click();
+      assert.equal(await rail.isVisible(), false);
+      assert.equal((await map.boundingBox()).width, closedWidth, 'Closing restores the full map width');
+    }
+    const notes = layoutPage.locator('.reading-notes-details');
+    const fullNotes = notes.locator('.reading-notes-copy');
+    assert.equal(await fullNotes.isVisible(), false, 'Reading notes start with the short overview');
+    await notes.locator('summary').press('Enter');
+    await fullNotes.waitFor();
+    assert.equal(await fullNotes.locator('p').count(), 5, 'Expanded reading notes keep all five explanations');
+    await notes.locator('summary').press('Enter');
+    await fullNotes.waitFor({ state: 'hidden' });
     await layoutPage.getByRole('button', { name: '播放盘古序章', exact: true }).click();
     await layoutPage.getByRole("button",{name:"暂停盘古序章",exact:true}).waitFor();
     assert.equal(await layoutPage.locator(".myth-intro, .source-note").count(),0);
     assert.equal(await layoutPage.locator("#reading-notes h2").textContent(),"读图与依据");
     assert.deepEqual(await layoutPage.locator(".myth-header nav a").allTextContents(),["地图","异兽谱","专题巡山录","读图与依据"]);
-    if(width<=768) assert.equal(await layoutPage.locator(".mobile-explore-nav button").count(),2);
     await layoutPage.screenshot({path:new URL("page-structure-"+width+"x"+height+".png",output).pathname.replace(/^\/([A-Za-z]:)/,"$1")});
     await layoutPage.locator('.bestiary-toggle').click();
     assert.equal(await layoutPage.locator('.beast-group').count(), 36, 'Another batch exposes 24 more name groups');
@@ -352,6 +383,7 @@ try {
   assert.equal(await panguRatePage.locator('.pangu-player-wrap').getAttribute('data-playback-rate'), '1', 'Pangu replay keeps its selected rate');
   await panguRatePage.close();
 
+  await openChapterRail(page);
   for (let i = 0; i < titles.length; i++) {
     await selectChapter(page, `${String(i).padStart(2, '0')} ${titles[i]}`);
     assert.equal(await page.locator('.chapter-rail h2').textContent(), titles[i]);

@@ -83,6 +83,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
 
       await page.emulateMedia({ reducedMotion: 'no-preference' });
       await page.goto(`${base}?splash=0`);
+      await page.locator('.reading-notes-details>summary').press('Enter');
       const prose = page.locator('.reading-notes-copy');
       await prose.waitFor();
       await page.evaluate(() => document.fonts.ready);

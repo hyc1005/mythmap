@@ -134,15 +134,12 @@ jobs:
     name: Browser ${{ matrix.browser }} / ${{ matrix.suite.name }}${{ matrix.suite.shard }}
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 40
     strategy:
       fail-fast: false
       matrix:
         browser: [chromium, webkit]
         suite:
-          - name: southern-cards
-            scripts: verify-nanshan.mjs
-            cards: records
           - name: southern-cards
             shard: ' / navigation'
             scripts: verify-nanshan.mjs
@@ -150,15 +147,50 @@ jobs:
           - name: southern-reader
             scripts: verify-reader.mjs
           - name: western
-            scripts: verify-xishan.mjs
-            cards: records
-          - name: western
             shard: ' / navigation'
             scripts: verify-xishan.mjs
             cards: navigation
           - name: stories
             scripts: verify-discovery.mjs verify-place-search.mjs verify-map-frame.mjs verify-playback-speed.mjs verify-splash.mjs
         include:
+          - browser: chromium
+            suite:
+              name: southern-cards
+              scripts: verify-nanshan.mjs
+              cards: records
+          - browser: webkit
+            suite:
+              name: southern-cards
+              shard: ' / zh'
+              scripts: verify-nanshan.mjs
+              cards: records
+              languages: zh
+          - browser: webkit
+            suite:
+              name: southern-cards
+              shard: ' / en'
+              scripts: verify-nanshan.mjs
+              cards: records
+              languages: en
+          - browser: chromium
+            suite:
+              name: western
+              scripts: verify-xishan.mjs
+              cards: records
+          - browser: webkit
+            suite:
+              name: western
+              shard: ' / zh'
+              scripts: verify-xishan.mjs
+              cards: records
+              languages: zh
+          - browser: webkit
+            suite:
+              name: western
+              shard: ' / en'
+              scripts: verify-xishan.mjs
+              cards: records
+              languages: en
           - browser: chromium
             suite:
               name: atlas
@@ -291,13 +323,18 @@ jobs:
           node scripts/with-preview.mjs --base "$ATLAS_BASE" -- bash -ec '
             for script in $ATLAS_SCRIPTS; do
               echo "::group::Verifying $script with $ATLAS_BROWSERS"
-              if node "scripts/$script"; then
+              if timeout --kill-after=30s 22m node "scripts/$script"; then
                 echo "::endgroup::"
               else
+                status=$?
                 echo "::endgroup::"
+                if [[ "$status" == 124 || "$status" == 137 ]]; then
+                  echo "::error::$script exceeded its 22-minute limit on $ATLAS_BROWSERS"
+                  exit "$status"
+                fi
                 echo "::warning::$script failed once on $ATLAS_BROWSERS; retrying once in a fresh browser"
                 echo "::group::Retrying $script with $ATLAS_BROWSERS"
-                node "scripts/$script"
+                timeout --kill-after=30s 22m node "scripts/$script"
                 echo "::endgroup::"
               fi
             done

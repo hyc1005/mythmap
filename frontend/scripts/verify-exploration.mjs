@@ -3,6 +3,7 @@ import { browserDiagnostics, captureBrowserFailure } from './browser-diagnostics
 import { mkdir, readFile } from 'node:fs/promises';
 import { chromium, webkit } from 'playwright';
 import { storySummary } from '../src/story-summaries.js';
+import { openChapterRail } from './ui-controls.mjs';
 
 const base = (process.env.ATLAS_URL || 'http://127.0.0.1:5173/').replace(/\/+$/, '') + '/';
 const output = new URL('../../output/qa/', import.meta.url);
@@ -194,6 +195,7 @@ try {
     assert.equal(new URL(page.url()).searchParams.has('item'), false);
     const mobile = width <= 768;
     if (mobile) await page.locator('.mobile-explore-nav button').last().click();
+    else await openChapterRail(page);
     const entry = page.locator('.chapter-entries [data-entry-id="03-05"]');
     await entry.focus(); await page.keyboard.press('Enter');
     await page.locator('.detail-drawer').waitFor();
@@ -271,6 +273,7 @@ try {
   assert.equal(await page.locator('.chapter-transition-veil.is-visible').count(), 1, 'Chapter title has a readable dwell');
   await page.locator('.chapter-transition-veil.is-visible').waitFor({ state: 'detached' });
   assert.equal(await page.locator('.chapter-transition-veil.is-visible').count(), 0);
+  await openChapterRail(page);
   assert.equal(await page.locator('.chapter-rail h2 .ink-word').count(), 0, 'Chapter title no longer splits into animated words');
   assert.equal(await page.locator('.chapter-rail h2 .blur-reveal-text').first().evaluate(element => getComputedStyle(element).animationName), 'none', 'Chapter title uses whole-block motion');
   assert.equal(await page.locator('.chapter-rail h2 .blur-reveal-text').first().evaluate(element => getComputedStyle(element).opacity), '1', 'Whole-block title keeps full ink opacity');

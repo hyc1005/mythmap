@@ -5,6 +5,10 @@ async function setDetails(details, open) {
 
 export async function openMapTools(page) { await setDetails(page.locator('.map-tools'), true); }
 export async function closeMapTools(page) { await setDetails(page.locator('.map-tools'), false); }
+export async function openChapterRail(page) {
+  const toggle = page.locator('.chapter-rail-toggle');
+  if (await toggle.getAttribute('aria-expanded') === 'false') await toggle.press('Enter');
+}
 export async function openBestiaryFilters(page) {
   const toggle = page.locator('.bestiary-extra-toggle:visible');
   if (await toggle.count() && await toggle.getAttribute('aria-expanded') === 'false') await toggle.click();

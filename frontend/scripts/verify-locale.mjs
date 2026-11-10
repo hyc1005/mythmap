@@ -1,4 +1,5 @@
 import { bestiaryEntries, groupBestiary } from '../src/bestiary.js';
+import { openChapterRail } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { mkdir, readFile } from 'node:fs/promises';
 import { chromium } from 'playwright';
@@ -112,6 +113,7 @@ try {
     for (let chapter = 0; chapter < 8; chapter++) {
       console.log(`Checking English chapter ${chapter} at ${width}x${height}`);
       await selectChapter(page, chapter);
+      if (width === 1440) await openChapterRail(page);
       if (chapter > 0 && await page.locator('.map-animation-choice').count()) {
         await page.getByLabel('Choose a story animation').selectOption('');
       }

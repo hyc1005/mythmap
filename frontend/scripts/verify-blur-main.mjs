@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { chromium, webkit } from 'playwright';
+import { openChapterRail } from './ui-controls.mjs';
 
 const base = process.env.ATLAS_URL;
 if (!base) throw new Error('Run through with-preview.mjs');
@@ -12,6 +13,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       page.on('pageerror', error => errors.push(error.message));
       await page.goto(`${base}?lang=${lang}`);
       await page.locator('.onboarding-skip').click();
+      if (width > 768) await openChapterRail(page);
       await page.waitForTimeout(500);
       const settle = () => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
       const top = async () => { await page.evaluate(() => scrollTo({ top: 0, behavior: 'instant' })); await settle(); };

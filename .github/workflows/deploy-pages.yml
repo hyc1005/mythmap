@@ -45,3 +45,15 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346
+      - name: Check the published home page and entry script
+        timeout-minutes: 3
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          fetch() { curl --fail --silent --show-error --location --retry 4 --retry-all-errors --retry-delay 4 --max-time 15 "$@"; }
+          html=$(fetch "${PAGE_URL%/}/")
+          grep -Fq '<title>山海寻踪</title>' <<< "$html"
+          entry=$(sed -n 's/.*<script type="module"[^>]* src="\([^"]*\)".*/\1/p' <<< "$html")
+          [[ "$entry" == /* ]]
+          origin=$(cut -d/ -f1-3 <<< "$PAGE_URL")
+          fetch --output /dev/null "$origin$entry"

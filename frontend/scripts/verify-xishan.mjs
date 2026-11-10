@@ -611,6 +611,8 @@ const output = new URL('../../output/qa/', import.meta.url);
 await mkdir(output, { recursive: true });
 const cardSuite = process.env.ATLAS_CARD_SUITE || 'all';
 assert.ok(['all', 'records', 'navigation'].includes(cardSuite), 'Invalid ATLAS_CARD_SUITE');
+const languages = (process.env.ATLAS_LANGUAGES || 'zh,en').split(',');
+assert.ok(languages.every(lang => ['zh', 'en'].includes(lang)), 'Invalid ATLAS_LANGUAGES');
 for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',')) {
   const browser = await ({ chromium, webkit }[name]).launch();
   try {
@@ -659,7 +661,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     };
     await page.goto(`${base}?chapter=00&lang=zh`);
     assert.equal(requested.some(url => /xishan\/.*-v1\.webp/.test(url)), false, 'No full batch download at startup');
-    for (const lang of ['zh', 'en']) {
+    for (const lang of languages) {
       await page.goto(`${base}?chapter=03&lang=${lang}`);
       await page.locator('.mobile-explore-nav button').nth(1).click();
       await openSourceLibrary(page);

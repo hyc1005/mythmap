@@ -1,6 +1,7 @@
 import { captureBrowserFailure } from './browser-diagnostics.mjs';
 import assert from 'node:assert/strict';
 import { chromium, webkit } from 'playwright';
+import { openChapterRail } from './ui-controls.mjs';
 
 const base = process.env.ATLAS_URL;
 if (!base) throw new Error('Run through with-preview.mjs');
@@ -72,6 +73,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
       await clearVisible(page.locator('.global-search-dialog'));
       await page.keyboard.press('Escape');
       if (width <= 768) await page.locator('.mobile-explore-nav button').nth(1).click();
+      else await openChapterRail(page);
       const entries = page.locator(width <= 768 ? '.explore-sheet .chapter-entries' : '.chapter-rail .chapter-entries');
       const library = entries.locator('.chapter-library');
       await library.locator(':scope > summary').click(); await settle(page);
