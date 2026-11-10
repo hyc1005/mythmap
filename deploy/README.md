@@ -74,6 +74,8 @@ location / {
 
 `site/` 内是构建产物；不要把它提交回源码仓库。
 
+在仓库根目录运行 `powershell -ExecutionPolicy Bypass -File deploy/make-package.ps1` 可用 Python 3 创建部署 ZIP。默认输出到 `output/deploy/static-日期-提交号/`。再次打包时可用 `-OutputDirectory` 指定新目录。
+
 ## 回滚
 
 保留上一版 `site/` 目录或压缩包，替换后重启静态服务即可。这是纯静态包，没有数据库迁移。

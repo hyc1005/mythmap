@@ -2,9 +2,6 @@ name: Verify complete story playback
 
 on:
   workflow_call:
-    secrets:
-      TIANDITU_BROWSER_KEY:
-        required: false
 
 permissions:
   contents: read

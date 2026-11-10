@@ -236,7 +236,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .myth-header { padding: 14px; }
   .myth-header nav { gap: 12px; font-size: 12px; }
   .seal { width: 33px; height: 33px; font-size: 22px; }
-  .chapter-rail-details[data-expanded='false'] { display: none; }
   .chapter-rule { margin: 5px 0 12px; }
   .story-entry { padding: 8px 2px; }
   .best-index-link { grid-column: 1 / -1; }
@@ -340,7 +339,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .map-overlay-controls>* { pointer-events: auto; }
 .language-switch button { min-height: 30px; padding: 4px 9px; border: 0; background: transparent; font-family: 'Atlas Central ExtH', 'Atlas Central Rare', 'Atlas Eastern Rare', 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'Source Sans 3 Variable', 'SimSun', sans-serif; font-size: 13px; cursor: pointer; }
 .language-switch button[aria-pressed='true'] { background: #964735; color: #fff5df; }
-.chapter-rail-details>small { display: block; margin: 7px 0 12px; color: #73624b; font-size: 12px; line-height: 1.6; }
 .original-text { margin-top: 14px; color: #64563f; font-size: 13px; }
 .original-text summary { cursor: pointer; }
 .original-text blockquote { font-family: 'Atlas Central ExtH', 'Atlas Central Rare', 'Atlas Eastern Rare', 'Atlas Northern Tan', 'Atlas Northern ExtB', ShanhaiRare, 'Noto Serif SC', 'Songti SC', 'SimSun', serif; }

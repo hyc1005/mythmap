@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 from pyproj import Transformer
 
 ROOT = Path(__file__).resolve().parents[1]
-ATLAS = ROOT / 'frontend/public/data/atlas'
+ATLAS = ROOT / 'output/legacy-atlas/atlas'
 ARTWORK = ROOT / 'frontend/artwork-source/atlas-illustrations'
 EXPORT = ROOT / 'output/atlas'
 SIZE = (2560, 1800)
