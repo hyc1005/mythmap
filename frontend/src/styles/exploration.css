@@ -28,10 +28,7 @@ html[lang='zh-CN'] :is(h1, h2, h3, .story-entry b, .beast-card>b, .timeline-curr
 .exploration-guide, .exploration-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .exploration-guide { justify-content: space-between; margin-bottom: 8px; }
 .exploration-guide p { margin: 0; line-height: 1.8; }
-.rail-exploration { display: grid; gap: 8px; margin: 12px 0; }
 .begin-journey { justify-self: start; min-height: 44px; padding: 8px 12px; border: 1px solid #a44431; background: #a44431; color: #f3e8ce; cursor: pointer; }
-.rail-exploration .exploration-guide { display: grid; grid-template-columns: minmax(0, 1fr) 44px; gap: 4px; margin: 0; font-size: 12px; color: #66543c; }
-.rail-exploration .exploration-guide button { width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: #934b36; font-size: 22px; cursor: pointer; }
 .exploration-panel button, .detail-exploration button { min-height: 44px; padding: 8px 12px; border: 1px solid #b7a27b; background: #f0e5cd; color: #934b36; cursor: pointer; }
 .exploration-actions>span { overflow-wrap: anywhere; min-width: 0; }
 .exploration-actions input { width: 100%; min-height: 44px; max-width: 340px; border: 1px solid #b7a27b; background: #f0e5cd; }
@@ -58,10 +55,6 @@ html[lang='zh-CN'] :is(h1, h2, h3, .story-entry b, .beast-card>b, .timeline-curr
 
 
 @media (max-width: 640px) {
-  .rail-exploration { grid-column: 1 / -1; display: flex; align-items: center; gap: 6px; margin: 4px 0; }
-  .rail-exploration .begin-journey { flex: none; padding: 6px 8px; font-size: 11px; }
-  .rail-exploration .exploration-guide { flex: 1; min-width: 0; font-size: 11px; }
-  .rail-exploration .exploration-guide p { line-height: 1.4; }
   .is-map-fullscreen .map-overlay-controls { display: flex; flex-wrap: nowrap; max-width: calc(100% - 76px); gap: 5px; }
   .is-map-fullscreen .map-animation-choice { min-height: 44px; min-width: 0; padding: 2px 4px; font-size: 0; }
   .is-map-fullscreen .map-animation-choice select { min-width: 0; width: min(125px, 30vw); min-height: 40px; font-size: 11px; }
@@ -69,7 +62,7 @@ html[lang='zh-CN'] :is(h1, h2, h3, .story-entry b, .beast-card>b, .timeline-curr
   .is-map-fullscreen .map-tools>div { position: absolute; z-index: 35; top: 100%; right: 0; width: min(235px, 70vw); padding: 6px; border: 1px solid #b7a27b; margin: 5px 0 0; box-shadow: 0 4px 12px #47392020; }
   .is-map-fullscreen .map-tools .myth-layer-switches { display: flex; width: 100%; }
   .is-map-fullscreen .map-tools :is(.map-fit, label) { min-height: 44px; padding: 8px; }
-  .is-map-fullscreen :is(.map-fullscreen, .prologue-source), .timeline-current>button, .rail-expand, .drawer-close { min-width: 44px; min-height: 44px; }
+  .is-map-fullscreen :is(.map-fullscreen, .prologue-source), .timeline-current>button, .drawer-close { min-width: 44px; min-height: 44px; }
   .is-map-fullscreen .journey-actions { flex-wrap: wrap; gap: 3px; }
   .is-map-fullscreen .journey-actions>button, .is-map-fullscreen .pangu-player-controls>button { min-height: 44px; min-width: 44px; padding: 6px; font-size: 10px; }
   .is-map-fullscreen .kuafu-journey { right: 94px; }

@@ -37,11 +37,9 @@ body { background: var(--paper); }
   .chapter-rail-edge:not(:hover) .chapter-rail-toggle[aria-expanded='false']:not(:focus-visible) { opacity: 0; pointer-events: none; }
 }
 .chapter-rail h2 { font-size: 30px; }
-.chapter-rail>p, .story-entry small, .chapter-rail-details>small { color: var(--soft-ink); font-size: 14px; line-height: 1.65; }
-.chapter-rail-details>small { display: block; margin: 8px 0 16px; }
+.chapter-rail>p, .story-entry small { color: var(--soft-ink); font-size: 14px; line-height: 1.65; }
 .story-entry { padding: 16px 0; }
 .story-entry b { font-size: 17px; }
-.rail-expand { display: none; }
 .myth-map-wrap:not(.is-map-fullscreen), .myth-map-wrap.is-prologue:not(.is-map-fullscreen) { display: flex; flex-direction: column; height: auto; aspect-ratio: auto; overflow: visible; border-color: var(--edge); background: var(--paper); box-shadow: none; }
 .myth-map-wrap:not(.is-map-fullscreen) .map-surface { position: relative; inset: auto; flex: none; height: clamp(400px, 57svh, 700px); overflow: hidden; background: #eee2c5; }
 .map-surface { background: #eee2c5; }
@@ -194,7 +192,6 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
   .chapter-rail { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; height: auto; max-height: none; padding: 0 0 12px; overflow: visible; }
   .chapter-rail h2 { margin: 0; font-size: 23px; }
   .chapter-rail>p, .chapter-rail .exploration-guide { display: none; }
-  .chapter-rail .rail-exploration { display: block; margin: 0 0 0 auto; }
   .chapter-rail .begin-journey { min-height: 44px; font-size: 14px; }
   .myth-map-wrap:not(.is-map-fullscreen) .map-surface { height: 50svh; min-height: 350px; }
   .explore-toolbar { gap: 6px; padding: 6px; }
@@ -211,7 +208,6 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
   .mobile-explore-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
   .mobile-explore-nav { position: sticky; top: 0; z-index: 30; padding: 6px 0; background: var(--paper); }
   .mobile-explore-nav button { min-height: 44px; padding: 8px 4px; border: 1px solid var(--edge); background: var(--paper); color: var(--ink); font-size: 14px; }
-  .explore-sheet .chapter-rail-details { display: block; }
   .explore-sheet .myth-timeline { margin: 0; }
   .explore-sheet .timeline-steps, html[lang='en'] .explore-sheet .timeline-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); flex-basis: 100%; overflow: visible; }
   .explore-sheet .timeline-steps button { white-space: normal; text-align: left; }
@@ -252,7 +248,6 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .tour-reading { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .tour-reading p { margin: 0; max-width: 55ch; color: var(--soft-ink); font-size: 14px; line-height: 1.5; }
 @media (max-width: 768px) {
-  .rail-exploration .tour-progress { margin-top: 6px; font-size: 13px; }
 }
 
 .reading-marks { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 6px; color: var(--verm); font-size: 14px; line-height: 1.5; }
@@ -294,7 +289,6 @@ input::placeholder { color: var(--soft-ink); opacity: 1; }
 .fullscreen-dock .map-reading-actions .exploration-guide { display: none; }
 @media (max-width: 768px) {
   .chapter-rail { gap: 4px 10px; padding-bottom: 8px; }
-  .chapter-rail .rail-exploration { margin: 0; }
   .fullscreen-dock:has(.map-reading-actions) { grid-template-rows: minmax(0, 1fr) 84px auto; height: 216px; }
 }
 @media (max-height: 480px) {
