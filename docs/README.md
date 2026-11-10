@@ -5,12 +5,6 @@
 | 文档 | 用途与维护方式 |
 | --- | --- |
 | [更新记录](../CHANGELOG.md) | 按发布批次记录站点和仓库的主要变化 |
-| [开发交接](development-handoff.md) | 2026-11-10 当前上线状态、仓库整理、未解决项与下次接续顺序 |
-| [深度路线图](depth-roadmap.md) | 4.1–4.4 目标、实现状态与第 8 节复审清单 |
-| [复审操作指南](review-guide.md) | 逐项说明 effect/omen 标签、泛称组、异说与路线点位怎么复核 |
-| [专题路线评估简报](route-feasibility-brief.md) | 供独立评估：现有路线事实、可用数据、候选形态、约束与评估问题 |
-| [路线评估数据包](route-evaluation-packet.md) | 按 A–H 汇总的摘录，供外部模型评估路线实现 |
-| [开屏落墨评估](interactive-ink-assessment.md) | 四字动画期间允许用户落笔的可行性、阶段门控、风险与成本 |
 | [内容盘点](content-coverage.md) | 十八篇覆盖、出处与待核状态；由`data/audit_shanhaijing.py`生成 |
 | [内容与来源复核](editorial-review.md) | 人鱼共图、45条形貌复核、17项来源追溯及英文审校的实际范围 |
 | [历史资产证据补录](asset-source-recovery.json) | 16项创建/派生记录的脱敏工具证据、摘要和匹配限制 |
@@ -24,10 +18,10 @@
 
 - 素材工具集中到`frontend/scripts/assets/`，字体工具集中到`frontend/scripts/fonts/`，浏览器验收和预览入口保持稳定。
 - 历史课程材料保存在`docs/coursework/`；已停用的中山初始计划和Natural Earth生成链经引用复核后删除。
-- 分批数据模块仍被主构建器导入；Java服务仍被开发代理使用；原图、影印页和来源哈希承担复现职责，均保留。独立 FastAPI/PostGIS 原型已在 2026-11-05 从主分支移除，历史课程资料引用清理前版本。
+- 分批数据模块仍被主构建器导入；原图、影印页和来源哈希承担复现职责，均保留。可选 Java 服务已在 2026-11-10 移除，站点只读内置 JSON。
 - 本地临时探针移入被忽略的`output/diagnostics/`，未删除任何过程文件。发布资源清单继续排除重复原图。
 
-根目录的本地历史交接、`output/`、依赖、构建产物及环境配置不上传GitHub；`docs/development-handoff.md` 是可提交的精简开发交接。
+开发交接、路线图、复审指南与一次性评估记录不再上传 GitHub；本地副本保留在 `output/local-docs/`。仓库内保留面向复现、许可和素材审计的文档与清单。
 
 2026-10-28 的删除清单为中山初始计划脚本、旧 Natural Earth 生成脚本与配置，以及当时停用的 `relief.webp`。当前各山经的批次模块与新 Natural Earth v5.1.2 构建链继续保留。
 

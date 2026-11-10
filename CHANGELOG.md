@@ -9,6 +9,7 @@
 - 新增 `docs/artwork-prompt-template.md`：说明仓库没有单一提示词文件，公共风格前缀位于 `frontend/artwork-source/<篇目>/generation.json`、`entities-generation.json` 与 `artwork-manifest.json` 的 `initial_prompt`，并抽出孤立主体/山景两套模板与落盘流程。
 - 新增 `deploy/`：`Deploy.ps1`、`deploy.sh` 支持 serve/copy，检查 PowerShell/bash、Python 3、必需文件、SHA256SUMS、端口/目标目录，并显示大小后要求确认；`make-package.ps1` 以 `base=/` 构建并生成 `output/deploy/mythmap-static-20261110.zip`（188.7 MB，1237 个文件）。
 - 本地清理：删除根目录与 `output/` 旧交接、下载的线上 bundle、CI 日志和早期开屏迭代截图；保留当前 QA 截图、开屏实验目录（验证脚本写入）和部署包。
+- 从公开仓库移除开发交接、路线图、复审指南、路线评估简报/数据包、开屏落墨评估与 `AGENTS.md`；本地副本保留在 `output/local-docs/`，仓库只保留复现、许可、素材审计和生图模板。
 - `docs/API_CONTRACT.md` 改为静态数据契约；README 中英文删除可选 Java 服务说明；课程报告把 Java 标为历史方案。
 - 验证：构建、`verify-data`、素材审计、部署包 `serve` 与 `copy` 实测通过。部署包与 `output/` 不提交。
 
@@ -168,7 +169,7 @@
 - 增加可随仓库提交的开发交接，明确文件入口、验证命令、未发布状态和下一步上传范围；既有译注审校与发布暂停记录保留。
 - 补记新增导航字体的素材摘要与来源，迁移题字时保留完整 OFL、流体 MIT；更新模糊时长和图标动幅断言，为异步入口的语言持久化检查补就绪同步，并提供不替代默认完整模式的双语界面检查入口。
 
-验证进度与待办见 [开发交接](docs/development-handoff.md)。`c6bb559` 已按用户授权合并并推送 main，正在跟进完整 CI 与部署；首轮素材审计暴露浅检出遗漏历史证据，已恢复审计任务完整 Git 历史，不删减校验或发布门槛。
+验证进度与待办见本地开发交接（已从公开仓库移除）。`c6bb559` 已按用户授权合并并推送 main，正在跟进完整 CI 与部署；首轮素材审计暴露浅检出遗漏历史证据，已恢复审计任务完整 Git 历史，不删减校验或发布门槛。
 
 本地构建、2033 项素材审计、数据及发布资源检查通过；纸色交互的 Chromium/WebKit 手机/桌面检查、全局模糊与详情回归、新手引导、四尺寸双语界面模式及英文序章/六个故事检查通过。完整逐条内容模式、既有远端失败和真机性能不计为本轮已通过。
 
