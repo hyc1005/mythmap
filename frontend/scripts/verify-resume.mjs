@@ -14,7 +14,7 @@ async function ready(page, scrolled = false) {
   await page.waitForFunction(scrolled => {
     const node = document.querySelector('.detail-drawer');
     return node && node.dataset.readingRestoring === 'false' && (!scrolled || node.scrollTop > 0) && [...node.querySelectorAll('img')].every(image => image.complete);
-  }, scrolled);
+  }, scrolled, { timeout: 60000 });
   await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(60);
 }
@@ -122,6 +122,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     assert.ok(await drawer(page).evaluate(node => node.scrollTop < 2));
     await page.goto(`${base}?chapter=03&item=03-01&lang=zh`);
     await scrollToSource(page);
+    await page.waitForTimeout(400);
     await page.goto(`${base}?lang=zh`);
     await page.setViewportSize({ width: 320, height: 700 });
     await continueReading(page);

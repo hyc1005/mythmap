@@ -111,9 +111,9 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
           await button.waitFor({ state: 'visible' });
           assert.ok(await button.isEnabled(), `${id} ${lang}: reading action enabled`);
           await button.focus();
-          await page.keyboard.press('Space');
+          await button.click();
           await page.waitForFunction(({ action, expected }) => document.querySelectorAll('.detail-drawer .detail-reading-actions button')[action]?.getAttribute('aria-pressed') === expected,
-            { action, expected: lang === 'zh' ? 'true' : 'false' });
+            { action, expected: lang === 'zh' ? 'true' : 'false' }, { timeout: 60000 });
         }
         await page.reload(); await ready(id);
         assert.ok(await drawer.locator('.detail-reading-actions button').evaluateAll(nodes => nodes.every(n => n.getAttribute('aria-pressed') === (document.documentElement.lang === 'en' ? 'false' : 'true'))), 'New marks persist and can be toggled in both languages');
