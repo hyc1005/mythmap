@@ -1,4 +1,4 @@
-import { openSourceLibrary } from './ui-controls.mjs';
+import { openSourceLibrary, seedReadingMarks } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { mkdir, readFile, stat } from 'node:fs/promises';
 import { chromium, webkit } from 'playwright';
@@ -661,6 +661,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     };
     await page.goto(`${base}?chapter=00&lang=zh`);
     assert.equal(requested.some(url => /xishan\/.*-v1\.webp/.test(url)), false, 'No full batch download at startup');
+    if (cardSuite !== 'navigation' && languages[0] === 'en') await seedReadingMarks(page, browserEntries.map(entry => entry.id));
     for (const lang of languages) {
       await page.goto(`${base}?chapter=03&lang=${lang}`);
       await page.locator('.mobile-explore-nav button').nth(1).click();

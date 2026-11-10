@@ -1,4 +1,4 @@
-import { waitForPrologueControls } from './ui-controls.mjs';
+import { seedReadingMarks, waitForPrologueControls } from './ui-controls.mjs';
 import assert from 'node:assert/strict';
 import { browserDiagnostics } from './browser-diagnostics.mjs';
 import { mkdir, readFile, stat } from 'node:fs/promises';
@@ -79,6 +79,7 @@ for (const name of (process.env.ATLAS_BROWSERS || 'chromium,webkit').split(','))
     await page.goto(`${base}?lang=zh`);
     await page.locator('.onboarding-skip').click();
     assert.equal(requests.filter(url => /nanshan\/.*-v1\.webp/.test(url)).length, 0, 'First screen does not fetch full batch artwork');
+    if (cardSuite !== 'navigation' && languages[0] === 'en') await seedReadingMarks(page, ids);
     const drawer = page.locator('.detail-drawer');
     const ready = async id => {
       await page.waitForFunction(id => {

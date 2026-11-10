@@ -83,6 +83,10 @@ if(process.env.ATLAS_DATA_ONLY==='1') process.exit(0);
 const base=process.env.ATLAS_URL || 'https://atlas.test/mythmap/';
 const root=resolve(process.env.ATLAS_STATIC_DIR || 'dist');
 const engines=(process.env.ATLAS_BROWSERS || 'chromium,webkit').split(',');
+const cardSuite=process.env.ATLAS_CARD_SUITE || 'all';
+const languages=(process.env.ATLAS_LANGUAGES || 'zh,en').split(',');
+assert.ok(['all','records','navigation'].includes(cardSuite),'Invalid ATLAS_CARD_SUITE');
+assert.ok(languages.every(lang=>['zh','en'].includes(lang)),'Invalid ATLAS_LANGUAGES');
 const viewportSizes=[{width:320,height:740},{width:390,height:844},{width:844,height:390},{width:1440,height:1000}];
 for(const engine of engines){
  const browser=await ({chromium,webkit}[engine]).launch();
@@ -111,7 +115,7 @@ for(const engine of engines){
    await page.evaluate(()=>document.fonts.ready);
    return page.locator('.detail-drawer');
   }
-  for(const lang of ['zh','en']){
+  if(cardSuite!=='navigation')for(const lang of languages){
    let count=0;
    for(const e of selected){
     const d=await open(e,lang);
@@ -143,47 +147,49 @@ for(const engine of engines){
    console.log(`PASS ${engine} ${lang}: ${count} completion and image records`);
   }
   // Every stage is checked at each small and large viewport in both languages.
-  const layoutPassages = ['kunlun','yushan','range3-summary','yingdi','yanzi','range4-summary','western-total'].map(slug=>index.get('passage-xishan-'+slug));
-  for(const lang of ['zh','en'])for(const viewport of viewportSizes){
-   await page.setViewportSize(viewport);
-   for(const e of !imageOnly&&viewport.width===320?newPassages:layoutPassages){const d=await open(e,lang);assert.ok(!await d.evaluate(n=>n.scrollWidth>n.clientWidth),e.id);}
-  }
-  const rare=[...new Set([...passages,...cards].flatMap(e=>[e.name,e.quote,e.commentary_quote,e.description,e.content_note].filter(Boolean)).join(''))].filter(c=>{const n=c.codePointAt(0);return n>=0x3400&&n<=0x4DBF||n>=0x20000&&n<=0x323AF}).join('');
-  await page.evaluate(async text=>{for(const w of [400,600])await document.fonts.load(`${w} 18px ShanhaiRare`,text)},rare);
-  // Verify catalog reachability across all five Western groups, including the closing total.
-  await page.goto(base+'?chapter=03&lang=zh');
-  await openSourceLibrary(page);
-  const western=page.locator('[data-source-book="2"]');await western.locator(':scope > summary').click();
-  assert.equal(await western.locator('.passage-range').count(),5);
-  assert.equal(await western.locator('[data-entry-id^="passage-xishan-"]').count(),82);
-  for(const e of newPassages){assert.equal(await western.locator(`[data-entry-id="${e.id}"]`).count(),1);}
-  const catalog=await json('../public/data/atlas/catalog.json');
-  const search=searchIndex(world,catalog,world,catalog,'zh');
-  for(const query of ['陸吾','欽原','𢕟𢓨','鵸䳜','冉遺','孰湖'])assert.ok(searchEntries(search,query).length,query);
-  assert.ok(searchEntries(search,'陆吾').some(item=>item.id==='beast-luwu'),'Retained simplified name');
-  if(!imageOnly){
-   for(const lang of ['zh','en'])for(const id of ['beast-luwu','beast-xishan-manman-gangwei','beast-xishan-ranyi-yingdi']){
-    await page.goto(base+'?chapter=03&lang='+lang);await page.locator('.global-search-trigger').click();
-    await page.locator('.global-search-input').fill(lang==='zh'?index.get(id).name:english[id].name);
-    await page.locator(`.search-result[data-result-id="${id}"]`).click();
-    await page.waitForFunction(id=>document.querySelector('.detail-drawer')?.dataset.entryId===id,id);
-    await page.locator('.return-search').click();
+  if(cardSuite!=='records'){
+   const layoutPassages = ['kunlun','yushan','range3-summary','yingdi','yanzi','range4-summary','western-total'].map(slug=>index.get('passage-xishan-'+slug));
+   for(const lang of ['zh','en'])for(const viewport of viewportSizes){
+    await page.setViewportSize(viewport);
+    for(const e of !imageOnly&&viewport.width===320?newPassages:layoutPassages){const d=await open(e,lang);assert.ok(!await d.evaluate(n=>n.scrollWidth>n.clientWidth),e.id);}
    }
-   const id='passage-xishan-yanzi';let d=await open(index.get(id),'zh');
-   await d.getByRole('button',{name:'收藏条目',exact:true}).click();await d.getByRole('button',{name:'标为已读',exact:true}).click();
-   await page.reload();await page.waitForFunction(id=>document.querySelector('.detail-drawer')?.dataset.entryId===id,id);
-   d=page.locator('.detail-drawer');assert.equal(await d.getByRole('button',{name:'已收藏 · 取消',exact:true}).getAttribute('aria-pressed'),'true');
-   assert.equal(await d.getByRole('button',{name:'已读 · 撤销',exact:true}).getAttribute('aria-pressed'),'true');
-   await d.locator('[data-reading-anchor="source"]').scrollIntoViewIfNeeded();
-   await page.waitForFunction(id=>{const s=JSON.parse(localStorage.getItem('shanhai-last-reading-v1'));return s?.id===id&&s.position?.anchor!=='start'},id);
-   await page.goto(base+'?lang=zh');await page.waitForFunction(()=>window.history.state?.shanhai?.stageIndex===0);
-   await page.locator('.resume-reading[aria-label]').click();
-   await page.waitForFunction(id=>{const d=document.querySelector('.detail-drawer');return d?.dataset.entryId===id&&d.dataset.readingRestoring==='false'},id);
-   assert.ok(await page.locator('.detail-drawer').evaluate(n=>n.scrollTop>0));
+   const rare=[...new Set([...passages,...cards].flatMap(e=>[e.name,e.quote,e.commentary_quote,e.description,e.content_note].filter(Boolean)).join(''))].filter(c=>{const n=c.codePointAt(0);return n>=0x3400&&n<=0x4DBF||n>=0x20000&&n<=0x323AF}).join('');
+   await page.evaluate(async text=>{for(const w of [400,600])await document.fonts.load(`${w} 18px ShanhaiRare`,text)},rare);
+   // Verify catalog reachability across all five Western groups, including the closing total.
+   await page.goto(base+'?chapter=03&lang=zh');
+   await openSourceLibrary(page);
+   const western=page.locator('[data-source-book="2"]');await western.locator(':scope > summary').click();
+   assert.equal(await western.locator('.passage-range').count(),5);
+   assert.equal(await western.locator('[data-entry-id^="passage-xishan-"]').count(),82);
+   for(const e of newPassages){assert.equal(await western.locator(`[data-entry-id="${e.id}"]`).count(),1);}
+   const catalog=await json('../public/data/atlas/catalog.json');
+   const search=searchIndex(world,catalog,world,catalog,'zh');
+   for(const query of ['陸吾','欽原','𢕟𢓨','鵸䳜','冉遺','孰湖'])assert.ok(searchEntries(search,query).length,query);
+   assert.ok(searchEntries(search,'陆吾').some(item=>item.id==='beast-luwu'),'Retained simplified name');
+   if(!imageOnly){
+    for(const lang of ['zh','en'])for(const id of ['beast-luwu','beast-xishan-manman-gangwei','beast-xishan-ranyi-yingdi']){
+     await page.goto(base+'?chapter=03&lang='+lang);await page.locator('.global-search-trigger').click();
+     await page.locator('.global-search-input').fill(lang==='zh'?index.get(id).name:english[id].name);
+     await page.locator(`.search-result[data-result-id="${id}"]`).click();
+     await page.waitForFunction(id=>document.querySelector('.detail-drawer')?.dataset.entryId===id,id);
+     await page.locator('.return-search').click();
+    }
+    const id='passage-xishan-yanzi';let d=await open(index.get(id),'zh');
+    await d.getByRole('button',{name:'收藏条目',exact:true}).click();await d.getByRole('button',{name:'标为已读',exact:true}).click();
+    await page.reload();await page.waitForFunction(id=>document.querySelector('.detail-drawer')?.dataset.entryId===id,id);
+    d=page.locator('.detail-drawer');assert.equal(await d.getByRole('button',{name:'已收藏 · 取消',exact:true}).getAttribute('aria-pressed'),'true');
+    assert.equal(await d.getByRole('button',{name:'已读 · 撤销',exact:true}).getAttribute('aria-pressed'),'true');
+    await d.locator('[data-reading-anchor="source"]').scrollIntoViewIfNeeded();
+    await page.waitForFunction(id=>{const s=JSON.parse(localStorage.getItem('shanhai-last-reading-v1'));return s?.id===id&&s.position?.anchor!=='start'},id);
+    await page.goto(base+'?lang=zh');await page.waitForFunction(()=>window.history.state?.shanhai?.stageIndex===0);
+    await page.locator('.resume-reading[aria-label]').click();
+    await page.waitForFunction(id=>{const d=document.querySelector('.detail-drawer');return d?.dataset.entryId===id&&d.dataset.readingRestoring==='false'},id);
+    assert.ok(await page.locator('.detail-drawer').evaluate(n=>n.scrollTop>0));
+   }
+   assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);
+   await context.close();
   }
-  assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);
-  await context.close();
-  console.log(`PASS ${engine}: ${selected.length} records in both languages, ${imageOnly?'7 representative stages in 8 layouts':'all 37 stages at 320px plus 7 representative stages in 8 layouts'}, 5 catalog groups, artwork decoding, rare font load and zero page/resource errors`);
+  console.log(`PASS ${engine} Western ${cardSuite}: no page or resource errors`);
  } catch (error) {
     try { await captureFailure?.(error); } catch (captureError) { console.error('Failure capture failed:', captureError.message); }
     throw error;

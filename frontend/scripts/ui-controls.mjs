@@ -9,6 +9,11 @@ export async function openChapterRail(page) {
   const toggle = page.locator('.chapter-rail-toggle');
   if (await toggle.getAttribute('aria-expanded') === 'false') await toggle.press('Enter');
 }
+export async function seedReadingMarks(page, ids) {
+  await page.evaluate(ids => {
+    localStorage.setItem('shanhai-reading-v1', JSON.stringify({ version: 1, read: ids, favorites: ids }));
+  }, ids);
+}
 export async function openBestiaryFilters(page) {
   const toggle = page.locator('.bestiary-extra-toggle:visible');
   if (await toggle.count() && await toggle.getAttribute('aria-expanded') === 'false') await toggle.click();
