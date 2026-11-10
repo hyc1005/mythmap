@@ -107,6 +107,8 @@ More checks — reading, search, narrative, each book — are listed in the [scr
 <details>
 <summary>Deployment and rollback</summary>
 
+[Download the one-click deployment ZIP](https://github.com/hyc1005/mythmap/releases/download/static-2026-11-10-3a54515/mythmap-static-20261110-3a54515.zip) (about 198 MB). The extracted package takes about 215 MB. Starting it with the included launcher serves those files in place, so the package still takes about 215 MB, or 413 MB if you keep the ZIP as well.
+
 Under Settings → Pages, choose **GitHub Actions**. No map-service secret is needed for the bundled basemap. Pushes to `main` that touch `frontend/`, `data/` or the workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml); docs-only pushes don't deploy, and you can also start it by hand.
 
 The deploy job waits for the checks and publishes exactly the artifact they verified. Keep `dist/`, dependencies, environment files and QA output out of Git. To roll back, revert the commit and push.

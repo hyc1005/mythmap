@@ -107,6 +107,8 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 <details>
 <summary>部署与回退</summary>
 
+[下载一键部署 ZIP](https://github.com/hyc1005/mythmap/releases/download/static-2026-11-10-3a54515/mythmap-static-20261110-3a54515.zip)（约 198 MB）。解压后约 215 MB，一键启动直接使用解压目录，部署包仍约占 215 MB。若同时保留 ZIP，合计约 413 MB。
+
 仓库 Settings → Pages 选择 **GitHub Actions**。内置底图不需要地图服务 Secret。推送`main`且改动`frontend/`、`data/`或工作流时会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；只改文档不会触发，也可以手动运行。
 
 部署等所有检查通过后，发布的就是检查过的那份产物。`dist/`、依赖、本地环境配置和 QA 输出不要提交；回退直接 revert 对应提交再推送。
