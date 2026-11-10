@@ -19,6 +19,6 @@ function publishAssets() {
 
 export default defineConfig({
   plugins: [react(), publishAssets()],
-  server: { host: '0.0.0.0', proxy: { '/api': 'http://127.0.0.1:8081', '/health': 'http://127.0.0.1:8081' } },
+  server: { host: '0.0.0.0' },
   build: { copyPublicDir: false, rollupOptions: { output: { manualChunks: { openlayers: ['ol'], react: ['react', 'react-dom', 'react-dom/client'] } } } },
 });

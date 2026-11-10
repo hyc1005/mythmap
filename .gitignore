@@ -16,8 +16,6 @@ frontend/.env.local
 .mypy_cache/
 .ruff_cache/
 output/
-backend-java/build/
-backend-java/out/
 .vercel/
 .DS_Store
 Thumbs.db

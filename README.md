@@ -62,13 +62,9 @@ Use [CITATION.cff](CITATION.cff) to cite the project and credit the relevant sou
 | [data/](data/README.md) | Book builders, source snapshots and review records |
 | [frontend/scripts/](frontend/scripts/README.md) | Verification, preview, image and font tools |
 | [docs/](docs/README.md) | Data contracts, source inventories and documentation |
-| [backend-java/](backend-java/run.ps1) | Optional read-only world-data service for development |
+| [deploy/](deploy/README.md) | Static bundle, one-click deploy scripts and package builder |
 
-Short names, body forms and namesake groups are kept in `frontend/src/bestiary-metadata.json`, apart from the generated text. The [API contract](docs/API_CONTRACT.md) covers the endpoints. Originals and scans stay where they are; [docs/large-files.tsv](docs/large-files.tsv) just records how large they are.
-
-### Optional development service
-
-Run [run.ps1](backend-java/run.ps1) (JDK 17+) when you want `/api/world` during development; the site also reads bundled data directly. The early FastAPI/PostGIS prototype is gone from `main`, though its code and notes remain in the Git history.
+Short names, body forms and namesake groups are kept in `frontend/src/bestiary-metadata.json`, apart from the generated text. The [data contract](docs/API_CONTRACT.md) describes the bundled static data. Originals and scans stay where they are; [docs/large-files.tsv](docs/large-files.tsv) just records how large they are. The former optional Java development service has been removed; the site and its verification read bundled JSON only.
 
 </details>
 
@@ -83,7 +79,7 @@ npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
-Open [127.0.0.1:5173](http://127.0.0.1:5173/). The dev server looks for the Java API on port 8081 and otherwise reads bundled data. Production does the same unless `VITE_API_BASE_URL` is set — that value ends up public in the build.
+Open [127.0.0.1:5173](http://127.0.0.1:5173/). Development and production both read the bundled `frontend/public/data/myth-world.json`; there is no runtime world API.
 
 The geographic view draws its land, lakes and rivers from a bundled Natural Earth v5.1.2 50m extract, styled to match the paper atlas and labelled as modern reference. It needs no map key. Versions, source hashes and processing steps are in `frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json`; `python data/build_geography_basemap.py --check` compares them. If the basemap fails to load, the local evidence stays available.
 
@@ -111,7 +107,7 @@ More checks — reading, search, narrative, each book — are listed in the [scr
 <details>
 <summary>Deployment and rollback</summary>
 
-Under Settings → Pages, choose **GitHub Actions**. No map-service secret is needed for the bundled basemap. Pushes to `main` that touch `frontend/`, `data/`, `backend-java/` or the workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml); docs-only pushes don't deploy, and you can also start it by hand.
+Under Settings → Pages, choose **GitHub Actions**. No map-service secret is needed for the bundled basemap. Pushes to `main` that touch `frontend/`, `data/` or the workflows run [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml); docs-only pushes don't deploy, and you can also start it by hand.
 
 The deploy job waits for the checks and publishes exactly the artifact they verified. Keep `dist/`, dependencies, environment files and QA output out of Git. To roll back, revert the commit and push.
 

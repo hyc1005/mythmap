@@ -377,7 +377,9 @@ if (!process.env.ATLAS_URL) {
     routesPage.on('pageerror', error => errors.push(error.message));
     await routesPage.goto(process.env.ATLAS_URL + '?splash=0&lang=zh');
     await routesPage.waitForTimeout(1200);
+    await routesPage.locator('.onboarding-guide').waitFor({ state: 'visible', timeout: 3000 }).catch(() => {});
     if (await routesPage.locator('.onboarding-skip').count()) await routesPage.locator('.onboarding-skip').click();
+    await routesPage.locator('.onboarding-guide').waitFor({ state: 'detached', timeout: 3000 }).catch(() => {});
     await routesPage.locator('#routes').scrollIntoViewIfNeeded();
     assert.equal(await routesPage.locator('.guide-route-tabs button').count(), guideRoutes.routes.length);
     const firstStop = guideRoutes.routes[0].stops[0];

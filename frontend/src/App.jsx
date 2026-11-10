@@ -27,7 +27,6 @@ import OnboardingGuide from './components/OnboardingGuide';
 import { assetUrl } from './asset-url';
 import { CHAPTER_TRANSITION_MS, useReducedMotion } from './motion';
 import { itemChapter, readExploration, readGeography, explorationUrl } from './exploration';
-import { validateWorld } from './world-validation';
 import { useReading, useLastReading } from './reading';
 import './styles/myth-world.css';
 import './styles/exploration.css';
@@ -47,7 +46,7 @@ export default function App() {
   }, []);
   const { t, locale, setLocale } = useLocale();
   const catalog = useMemo(() => localize(rawCatalog, locale), [locale]);
-  const [rawWorld, setWorld] = useState(mythWorld);
+  const rawWorld = mythWorld;
   const world = useMemo(() => localize(rawWorld, locale), [rawWorld, locale]);
   const [initial] = useState(() => readExploration(window.location.search, mythWorld, rawCatalog));
   const [initialGeography] = useState(() => readGeography(window.location.search, mythWorld.stages[initial.stageIndex].id, rawCatalog, geographicReferences(rawCatalog)));
@@ -358,19 +357,6 @@ export default function App() {
     enterTourChapter(stageIndex === stages.length - 1 ? 0 : stageIndex);
   };
   const manualStory = () => { setTourActive(false); setPlaying(false); setPlaybackReturnId(null); };
-  useEffect(() => {
-    const apiBase = import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, '') || '';
-    if (!import.meta.env.DEV && !apiBase) return undefined;
-    const controller = new AbortController();
-    fetch(`${apiBase}/api/world`, { signal: controller.signal })
-      .then(response => response.ok ? response.json() : Promise.reject(new Error('world api unavailable')))
-      .then(data => {
-        validateWorld(data, mythWorld);
-        setWorld(data);
-      })
-      .catch(error => { if (error.name !== 'AbortError') console.info(t("使用随前端打包的神话地图数据"), error.message); });
-    return () => controller.abort();
-  }, []);
   useEffect(() => {
     if (!tourActive || !playing || selectedId || searchOpen || onboardingOpen || geographyOpen || chapterTransition || !storyIds.length || !['completed', 'idle'].includes(playbackStatus) || storyRequest.chapterId !== chapterId) return undefined;
     const timer = window.setTimeout(() => {

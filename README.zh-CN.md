@@ -62,13 +62,9 @@
 | [data/](data/README.md) | 分卷构建器、原文快照与审核记录 |
 | [frontend/scripts/](frontend/scripts/README.md) | 验收、预览、素材与字体工具 |
 | [docs/](docs/README.md) | 数据约定、来源清单与项目文档 |
-| [backend-java/](backend-java/run.ps1) | 开发环境可选的只读世界数据服务 |
+| [deploy/](deploy/README.md) | 静态部署包、一键 serve/copy 与打包入口 |
 
-短名、形貌与同名组放在`frontend/src/bestiary-metadata.json`，与生成的经文分开；接口见[API说明](docs/API_CONTRACT.md)。原图和扫描留在原位，[大文件清单](docs/large-files.tsv)只记录体积。
-
-### 可选开发服务
-
-开发时需要 `/api/world`，可以运行 [run.ps1](backend-java/run.ps1)（JDK 17+）；网页也可以直接读内置数据。早期的 FastAPI/PostGIS 原型已不在主分支，代码与说明仍留在 Git 历史里。
+短名、形貌与同名组放在`frontend/src/bestiary-metadata.json`，与生成的经文分开；[数据契约](docs/API_CONTRACT.md)说明内置静态数据。原图和扫描留在原位，[大文件清单](docs/large-files.tsv)只记录体积。原可选的 Java 开发服务已移除；站点与验证只读取内置 JSON。
 
 </details>
 
@@ -83,7 +79,7 @@ npm ci
 npm run dev -- --host 127.0.0.1
 ```
 
-打开[127.0.0.1:5173](http://127.0.0.1:5173/)。开发服务会先找 8081 端口的 Java API，找不到就用内置数据；生产环境同理，只有显式设置`VITE_API_BASE_URL`才会请求外部接口，该值会出现在构建产物里。
+打开[127.0.0.1:5173](http://127.0.0.1:5173/)。开发与生产都读取内置的 `frontend/public/data/myth-world.json`，没有运行时世界数据 API。
 
 真实地理视图使用随站发布的 Natural Earth v5.1.2 的 50m 陆地、湖泊与主要河流，按纸本风格绘制，并标明是现代参照，不需要地图 Key。版本、原始哈希和处理步骤在`frontend/public/data/geography/natural-earth-50m-v5.1.2.sources.json`，可用`python data/build_geography_basemap.py --check`核对；底图加载失败时仍可查看本地依据。
 
@@ -111,7 +107,7 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 <details>
 <summary>部署与回退</summary>
 
-仓库 Settings → Pages 选择 **GitHub Actions**。内置底图不需要地图服务 Secret。推送`main`且改动`frontend/`、`data/`、`backend-java/`或工作流时会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；只改文档不会触发，也可以手动运行。
+仓库 Settings → Pages 选择 **GitHub Actions**。内置底图不需要地图服务 Secret。推送`main`且改动`frontend/`、`data/`或工作流时会运行[deploy-pages.yml](.github/workflows/deploy-pages.yml)；只改文档不会触发，也可以手动运行。
 
 部署等所有检查通过后，发布的就是检查过的那份产物。`dist/`、依赖、本地环境配置和 QA 输出不要提交；回退直接 revert 对应提交再推送。
 

@@ -5,12 +5,11 @@ on:
     branches: [main]
     paths:
       - 'frontend/**'
-      - 'backend-java/**'
       - 'data/**'
       - '.github/workflows/**'
       - '.gitattributes'
   pull_request:
-    paths: ['frontend/**', 'backend-java/**', 'data/**', '.github/workflows/**', '.gitattributes']
+    paths: ['frontend/**', 'data/**', '.github/workflows/**', '.gitattributes']
   workflow_dispatch:
 
 permissions:

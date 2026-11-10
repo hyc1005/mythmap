@@ -5,14 +5,20 @@
 | 文档 | 用途与维护方式 |
 | --- | --- |
 | [更新记录](../CHANGELOG.md) | 按发布批次记录站点和仓库的主要变化 |
-| [开发交接](development-handoff.md) | 2026-11-07 水墨开屏、阅读显现和纸色交互的本地状态、验证入口与上传前待办 |
+| [开发交接](development-handoff.md) | 2026-11-10 当前上线状态、仓库整理、未解决项与下次接续顺序 |
+| [深度路线图](depth-roadmap.md) | 4.1–4.4 目标、实现状态与第 8 节复审清单 |
+| [复审操作指南](review-guide.md) | 逐项说明 effect/omen 标签、泛称组、异说与路线点位怎么复核 |
+| [专题路线评估简报](route-feasibility-brief.md) | 供独立评估：现有路线事实、可用数据、候选形态、约束与评估问题 |
+| [路线评估数据包](route-evaluation-packet.md) | 按 A–H 汇总的摘录，供外部模型评估路线实现 |
+| [开屏落墨评估](interactive-ink-assessment.md) | 四字动画期间允许用户落笔的可行性、阶段门控、风险与成本 |
 | [内容盘点](content-coverage.md) | 十八篇覆盖、出处与待核状态；由`data/audit_shanhaijing.py`生成 |
 | [内容与来源复核](editorial-review.md) | 人鱼共图、45条形貌复核、17项来源追溯及英文审校的实际范围 |
 | [历史资产证据补录](asset-source-recovery.json) | 16项创建/派生记录的脱敏工具证据、摘要和匹配限制 |
-| [API与数据约定](API_CONTRACT.md) | 当前world数据、本地Java服务及独立FastAPI/PostGIS原型的边界 |
+| [数据契约](API_CONTRACT.md) | 当前内置 world 数据、静态构建与本地化边界；无运行时 API |
+| [生图提示词模板](artwork-prompt-template.md) | 从生成记录抽出的统一风格模板、文件位置与落盘流程 |
 | [数据维护](../data/README.md) | 各山经构建入口、批次内容模块和来源清单 |
 | [前端脚本](../frontend/scripts/README.md) | 验收、预览、素材及字体工具分类 |
-| [Java开发服务](../backend-java/run.ps1) | 开发模式的可选只读 `/api/world` 服务 |
+| [部署脚本](../deploy/README.md) | 静态部署包、一键 serve/copy 与打包入口 |
 
 ## 2026-10-28结构整理
 
