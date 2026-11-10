@@ -654,6 +654,7 @@ try {
     chapterView.setViewportSize([canvasBounds.width, canvasBounds.height]);
     chapterView.fit([45, 45, 1160, 765], { size: [canvasBounds.width, canvasBounds.height], padding: [50, 50, 70, 50], maxZoom: 2.4 });
     for (const event of chapter05) {
+      await chapterPage.locator('.myth-map-canvas').evaluate(element => element.scrollIntoView({ block: 'center', behavior: 'instant' }));
       frame = await chapterPage.locator('.myth-map-wrap').boundingBox();
       canvasBounds = await chapterPage.locator('.myth-map-canvas').boundingBox();
       const record = event.properties;

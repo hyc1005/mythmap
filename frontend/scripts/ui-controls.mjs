@@ -19,10 +19,12 @@ export async function openBestiaryFilters(page) {
   if (await toggle.count() && await toggle.getAttribute('aria-expanded') === 'false') await toggle.click();
 }
 export async function openSourceLibrary(page) {
+  await page.locator('.world-layout').waitFor();
   const full = page.locator('.is-map-fullscreen');
   const scope = await full.count() ? full : page;
   const entries = scope.locator('.map-entry-list');
   if (await entries.count()) await setDetails(entries, true);
+  else if (scope === page && await page.locator('.chapter-rail-toggle').count()) await openChapterRail(page);
   await setDetails(scope.locator('.chapter-library:visible'), true);
 }
 export async function clickPlaybackControl(scope, name) {
