@@ -4,7 +4,7 @@
 
 ## 当前已上线
 
-- 远端 `main = c4aad1f`（代码与文档）；线上仍可能是 `2943be2`，以 Pages 实际部署为准。
+- 远端 `main = 499a866`（`c4aad1f` 代码整理 + 本文档提交）；线上仍可能是 `2943be2`，以 Pages 实际部署为准。
 - `2943be2` 已包含：专题路线第二版、阅读优先抽屉、搜索顶部锚定 / 滚轮转发、开屏红墨。
 - 搜索修复运行 [42629992694](https://github.com/hyc1005/mythmap/actions/runs/42629992694) 27 个 Job 全绿；线上 CSS 已确认 `margin:8svh auto 0`。
 - 站点是纯静态构建：没有运行时世界数据 API，没有后端服务，没有数据库。
@@ -15,7 +15,7 @@
 
 ## 本次推送状态（2026-11-10）
 
-- `c4aad1f` 已推送到 `main`，运行 [42729532502](https://github.com/hyc1005/mythmap/actions/runs/42729532502) 已触发。
+- `c4aad1f` 已推送到 `main`，运行 [42729532502](https://github.com/hyc1005/mythmap/actions/runs/42729532502) 已触发；随后 `499a866` 只改本文档，不触发部署。
 - 截至交接时 26 个 Job 中 25 个完成且无失败；`verify / Browser webkit / southern-cards` 仍在长跑（已知 WebKit 偶发长尾），deploy 尚未确认。不要把这轮写成已部署，等运行结束后以 Pages SHA 为准。
 - 若该 Job 最终失败，按既有规则只重跑该 Job，不取消其他已通过结果；若超时，记录时间与 Job URL。
 
