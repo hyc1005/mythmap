@@ -84,7 +84,6 @@ assert.deepEqual(catalog.stages.find(stage => stage.id === '07').event_ids, ['07
 assert.equal(catalog.events.find(event => event.id === '01-04').properties.presentation, 'archive');
 for (const chapterId of ['05', '06', '07']) {
 const chapterEvents = catalog.events.filter(event => event.properties.stage_id === chapterId && event.properties.map_visible);
-const chapterGeo = JSON.parse(await readFile(new URL(`../public/data/atlas/${chapterId}-events.geojson`, import.meta.url), 'utf8'));
 assert.equal(chapterEvents.length, { '05': 4, '06': 5, '07': 4 }[chapterId]);
 assert.equal(new Set(chapterEvents.map(event => event.properties.artwork)).size, chapterEvents.length);
 for (const event of chapterEvents) {
@@ -94,8 +93,6 @@ for (const event of chapterEvents) {
   assert.equal(record.analysis_eligible, false);
   assert.match(record.location_label, /示意/);
   assert.ok(record.layout_hint.every((value, index) => Number.isFinite(value) && value >= 0 && value <= [1200, 800][index]));
-  assert.deepEqual(chapterGeo.features.find(feature => feature.id === event.id).properties, record);
-  assert.equal(chapterGeo.features.find(feature => feature.id === event.id).geometry, null);
   const source = catalog.sources.find(source => source.id === record.source_ids[0]);
   assert.equal(source.quote, record.source_quote);
   assert.equal(source.url, record.source_url);

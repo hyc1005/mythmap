@@ -35,7 +35,7 @@ python data/audit_shanhaijing.py --check
 
 ## 历史图谱复现
 
-- `build_myth_atlas.py`只输出`output/legacy-atlas/`，拒绝覆盖已审网页数据；`render_myth_atlas.py`用于复现旧版静态图。
+- `build_myth_atlas.py`在`output/legacy-atlas/`生成旧图谱的目录和图层；`render_myth_atlas.py`从该目录读取数据，复现旧版静态图。
 
 五山经共480段阅读已接入；海经十三篇仍有缺口，当前实现不等于十八篇逐字校勘完成。每次内容更新后运行上述清单检查和对应浏览器验收。
 

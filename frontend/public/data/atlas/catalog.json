@@ -8,9 +8,6 @@
       "event_ids": [
         "01-01"
       ],
-      "layers": {
-        "events": "/data/atlas/00-events.geojson"
-      },
       "source_ids": [
         "report-01-01"
       ],
@@ -29,12 +26,6 @@
         "01-03-c",
         "01-03-d"
       ],
-      "layers": {
-        "events": "/data/atlas/01-events.geojson",
-        "candidates": "/data/atlas/01-candidates.geojson",
-        "routes": "/data/atlas/01-routes.geojson",
-        "activities": "/data/atlas/01-activities.geojson"
-      },
       "source_ids": [
         "report-01-01",
         "report-01-02",
@@ -55,12 +46,6 @@
         "02-01",
         "02-03"
       ],
-      "layers": {
-        "events": "/data/atlas/02-events.geojson",
-        "candidates": "/data/atlas/02-candidates.geojson",
-        "routes": "/data/atlas/02-routes.geojson",
-        "activities": "/data/atlas/02-activities.geojson"
-      },
       "source_ids": [
         "report-02-01",
         "report-02-02",
@@ -83,12 +68,6 @@
         "03-04",
         "03-05"
       ],
-      "layers": {
-        "events": "/data/atlas/03-events.geojson",
-        "candidates": "/data/atlas/03-candidates.geojson",
-        "routes": "/data/atlas/03-routes.geojson",
-        "activities": "/data/atlas/03-activities.geojson"
-      },
       "source_ids": [
         "report-03-01",
         "report-03-02",
@@ -111,12 +90,6 @@
         "04-04",
         "04-05"
       ],
-      "layers": {
-        "events": "/data/atlas/04-events.geojson",
-        "candidates": "/data/atlas/04-candidates.geojson",
-        "routes": "/data/atlas/04-routes.geojson",
-        "activities": "/data/atlas/04-activities.geojson"
-      },
       "source_ids": [
         "report-04-01",
         "report-04-02",
@@ -138,12 +111,6 @@
         "05-03",
         "05-04"
       ],
-      "layers": {
-        "events": "/data/atlas/05-events.geojson",
-        "candidates": "/data/atlas/05-candidates.geojson",
-        "routes": "/data/atlas/05-routes.geojson",
-        "activities": "/data/atlas/05-activities.geojson"
-      },
       "source_ids": [
         "report-05-01",
         "report-05-02",
@@ -165,12 +132,6 @@
         "06-05",
         "06-04"
       ],
-      "layers": {
-        "events": "/data/atlas/06-events.geojson",
-        "candidates": "/data/atlas/06-candidates.geojson",
-        "routes": "/data/atlas/06-routes.geojson",
-        "activities": "/data/atlas/06-activities.geojson"
-      },
       "source_ids": [
         "report-06-01",
         "report-06-02",
@@ -192,12 +153,6 @@
         "07-02",
         "07-04"
       ],
-      "layers": {
-        "events": "/data/atlas/07-events.geojson",
-        "candidates": "/data/atlas/07-candidates.geojson",
-        "routes": "/data/atlas/07-routes.geojson",
-        "activities": "/data/atlas/07-activities.geojson"
-      },
       "source_ids": [
         "report-07-03",
         "report-07-01",
