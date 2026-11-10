@@ -6,35 +6,49 @@
 
 ```text
 site/                 # 构建产物（index.html、assets/、data/、字体、宣传片）
-Deploy.ps1            # Windows 一键部署
-deploy.sh             # Linux / macOS 一键部署
+一键部署.cmd          # Windows 双击入口
+一键部署.command      # macOS 双击入口
+一键部署.sh           # Linux 双击入口
+Deploy.ps1            # Windows 检查与启动脚本
+deploy.sh             # Linux / macOS 检查与启动脚本
 SHA256SUMS            # site/ 全文件摘要
 README.md             # 本说明
 ```
 
 ## 一键部署
 
-### Windows
+### Windows：双击
 
-```powershell
-# 本地启动，浏览器打开 http://127.0.0.1:8080/
-powershell -ExecutionPolicy Bypass -File .\Deploy.ps1
+双击 **`一键部署.cmd`**。默认在 `http://127.0.0.1:8080/` 启动并打开浏览器；端口可选：
 
-# 复制到静态站点目录（Nginx/IIS/任意静态托管）
-powershell -ExecutionPolicy Bypass -File .\Deploy.ps1 -Mode copy -Target D:\www\mythmap
+```text
+一键部署.cmd 8090
 ```
 
-首次运行会检查 PowerShell、Python 3、必需文件、SHA256SUMS、端口/目标目录，然后要求确认。加 `-Force` 可跳过确认（自动化用）。
+首次运行会检查 PowerShell、Python 3、必需文件、SHA256SUMS、端口，然后要求确认。关闭窗口或按 `Ctrl+C` 停止。
 
-### Linux / macOS
+### macOS / Linux：双击或终端
+
+- macOS：双击 **`一键部署.command`**。
+- Linux：双击 **`一键部署.sh`**（文件管理器需允许运行），或：
 
 ```bash
 chmod +x deploy.sh
-./deploy.sh serve 8080
-./deploy.sh copy 8080 /var/www/mythmap
+./deploy.sh serve          # 默认 8080
+./deploy.sh serve 8090     # 可选端口
 ```
 
-首次运行会检查 Python 3、必需文件、SHA256SUMS、端口/目标目录，然后要求确认。`FORCE=1` 可跳过确认。
+### 复制到静态站点目录
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\Deploy.ps1 -Mode copy -Target D:\www\mythmap
+```
+
+```bash
+./deploy.sh copy /var/www/mythmap
+```
+
+首次运行会检查 Python 3、必需文件、SHA256SUMS、端口/目标目录，然后要求确认。`FORCE=1` / `-Force` 可跳过确认。
 
 ## 检查了什么
 

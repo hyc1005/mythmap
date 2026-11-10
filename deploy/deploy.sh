@@ -4,8 +4,19 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SITE="$ROOT/site"
 MODE="${1:-serve}"
-PORT="${2:-8080}"
-TARGET="${3:-}"
+PORT="${PORT:-8080}"
+TARGET=""
+if [ "$MODE" = "serve" ]; then
+  PORT="${2:-$PORT}"
+else
+  # Support both `copy /target` and the older `copy 8080 /target`.
+  if [ -n "${3:-}" ] && [[ "${2:-}" =~ ^[0-9]+$ ]]; then
+    PORT="$2"
+    TARGET="$3"
+  else
+    TARGET="${2:-}"
+  fi
+fi
 
 fail() { printf 'ERROR: %s\n' "$1" >&2; exit 1; }
 confirm() {

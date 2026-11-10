@@ -17,7 +17,7 @@
 ## 2026-10-28结构整理
 
 - 素材工具集中到`frontend/scripts/assets/`，字体工具集中到`frontend/scripts/fonts/`，浏览器验收和预览入口保持稳定。
-- 历史课程材料保存在`docs/coursework/`；已停用的中山初始计划和Natural Earth生成链经引用复核后删除。
+- 历史课程材料已从公开仓库删除；已停用的中山初始计划和Natural Earth生成链经引用复核后删除。
 - 分批数据模块仍被主构建器导入；原图、影印页和来源哈希承担复现职责，均保留。可选 Java 服务已在 2026-11-10 移除，站点只读内置 JSON。
 - 本地临时探针移入被忽略的`output/diagnostics/`，未删除任何过程文件。发布资源清单继续排除重复原图。
 
@@ -25,14 +25,7 @@
 
 2026-10-28 的删除清单为中山初始计划脚本、旧 Natural Earth 生成脚本与配置，以及当时停用的 `relief.webp`。当前各山经的批次模块与新 Natural Earth v5.1.2 构建链继续保留。
 
-<details>
-<summary>历史课程材料</summary>
 
-[课程报告](coursework/课程报告.md) · [答辩流程](coursework/答辩演示流程.md)
-
-保留历史记录，不作为当前操作说明。
-
-</details>
 
 
 ## 轻量检出、缓存与原图分发（2026-11-05）

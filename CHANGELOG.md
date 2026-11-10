@@ -5,12 +5,12 @@
 ## 2026-11-10 · 仓库整理、后端移除与静态部署包
 
 - 移除可选的 `backend-java/` 开发服务及其 Vite `/api` 代理、`VITE_API_BASE_URL` 运行时请求、部署路径过滤和 README/文档引用；站点与验证只读打包的 `myth-world.json`。`world-validation.js` 保留给 `verify-data` 做静态数据校验。
-- 整理仓库顶层：只保留 `frontend/`、`data/`、`docs/`、`deploy/`、`.github/` 与仓库元文件；根目录旧交接文档删除，历史课程材料仍在 `docs/coursework/`。
+- 整理仓库顶层：只保留 `frontend/`、`data/`、`docs/`、`deploy/`、`.github/` 与仓库元文件；根目录旧交接与历史课程材料删除。
 - 新增 `docs/artwork-prompt-template.md`：说明仓库没有单一提示词文件，公共风格前缀位于 `frontend/artwork-source/<篇目>/generation.json`、`entities-generation.json` 与 `artwork-manifest.json` 的 `initial_prompt`，并抽出孤立主体/山景两套模板与落盘流程。
 - 新增 `deploy/`：`Deploy.ps1`、`deploy.sh` 支持 serve/copy，检查 PowerShell/bash、Python 3、必需文件、SHA256SUMS、端口/目标目录，并显示大小后要求确认；`make-package.ps1` 以 `base=/` 构建并生成 `output/deploy/mythmap-static-20261110.zip`（188.7 MB，1237 个文件）。
 - 本地清理：删除根目录与 `output/` 旧交接、下载的线上 bundle、CI 日志和早期开屏迭代截图；保留当前 QA 截图、开屏实验目录（验证脚本写入）和部署包。
 - 从公开仓库移除开发交接、路线图、复审指南、路线评估简报/数据包、开屏落墨评估与 `AGENTS.md`；本地副本保留在 `output/local-docs/`，仓库只保留复现、许可、素材审计和生图模板。
-- `docs/API_CONTRACT.md` 改为静态数据契约；README 中英文删除可选 Java 服务说明；课程报告把 Java 标为历史方案。
+- `docs/API_CONTRACT.md` 改为静态数据契约；README 中英文删除可选 Java 服务说明；历史课程材料从公开仓库移除。
 - 验证：构建、`verify-data`、素材审计、部署包 `serve` 与 `copy` 实测通过。部署包与 `output/` 不提交。
 
 ## 2026-11-09 · 本会话：复审确认、阅读优先、路线第二版与开屏红墨

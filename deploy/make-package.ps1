@@ -34,9 +34,9 @@ foreach ($relative in @('index.html', 'opening-film.html', 'data/myth-world.json
   if (-not (Test-Path -LiteralPath (Join-Path $Site $relative))) { Fail "Build output is missing: $relative" }
 }
 
-Copy-Item -LiteralPath (Join-Path $DeployDir 'Deploy.ps1') -Destination $Stage
-Copy-Item -LiteralPath (Join-Path $DeployDir 'deploy.sh') -Destination $Stage
-Copy-Item -LiteralPath (Join-Path $DeployDir 'README.md') -Destination $Stage
+Get-ChildItem -LiteralPath $DeployDir -File | Where-Object { $_.Name -ne 'make-package.ps1' } | ForEach-Object {
+  Copy-Item -LiteralPath $_.FullName -Destination $Stage -Force
+}
 
 $files = Get-ChildItem -LiteralPath $Site -Recurse -File | Sort-Object FullName
 $lines = foreach ($file in $files) {

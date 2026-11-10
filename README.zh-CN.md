@@ -113,11 +113,3 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-design.mjs
 
 </details>
 
-<details>
-<summary>历史课程资料</summary>
-
-[课程报告](docs/coursework/课程报告.md) · [答辩流程](docs/coursework/答辩演示流程.md)
-
-两份课程文档，留作记录，不参与当前构建与导航。
-
-</details>

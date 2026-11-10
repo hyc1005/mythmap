@@ -113,11 +113,3 @@ The deploy job waits for the checks and publishes exactly the artifact they veri
 
 </details>
 
-<details>
-<summary>Historical coursework</summary>
-
-[Course report](docs/coursework/课程报告.md) · [Presentation walkthrough](docs/coursework/答辩演示流程.md)
-
-Two course documents, kept for reference and outside the current build and navigation.
-
-</details>

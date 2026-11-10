@@ -5,7 +5,9 @@ param(
   [string]$Mode = 'serve',
   [int]$Port = 8080,
   [string]$Target = '',
-  [switch]$Force
+  [switch]$Force,
+  [switch]$Foreground,
+  [switch]$Open
 )
 
 $ErrorActionPreference = 'Stop'
@@ -108,11 +110,20 @@ Confirm-Step "Deploy the verified static site now?"
 
 # 4. Serve or copy
 if ($Mode -eq 'serve') {
-  $arguments = "-m http.server $Port --bind 127.0.0.1 --directory `"$Site`""
-  $process = Start-Process -FilePath $Python -ArgumentList $arguments -WorkingDirectory $Root -PassThru
-  Start-Sleep -Seconds 1
-  Write-Host "Serving http://127.0.0.1:$Port/ (PID $($process.Id))" -ForegroundColor Green
-  Write-Host 'Press Ctrl+C in the serving terminal or stop the Python process to finish.'
+  $url = "http://127.0.0.1:$Port/"
+  if ($Foreground) {
+    if ($Open) {
+      Start-Process -FilePath 'powershell' -ArgumentList '-NoProfile', '-WindowStyle', 'Hidden', '-Command', "Start-Sleep -Milliseconds 900; Start-Process '$url'" | Out-Null
+    }
+    Write-Host "Serving $url  (Ctrl+C to stop)" -ForegroundColor Green
+    & $Python -m http.server $Port --bind 127.0.0.1 --directory $Site
+  } else {
+    $arguments = "-m http.server $Port --bind 127.0.0.1 --directory `"$Site`""
+    $process = Start-Process -FilePath $Python -ArgumentList $arguments -WorkingDirectory $Root -PassThru
+    Start-Sleep -Seconds 1
+    Write-Host "Serving $url (PID $($process.Id))" -ForegroundColor Green
+    Write-Host 'Press Ctrl+C in the serving terminal or stop the Python process to finish.'
+  }
 } else {
   Copy-Item -Path (Join-Path $Site '*') -Destination $Target -Recurse -Force
   if (-not (Test-Path -LiteralPath (Join-Path $Target 'index.html'))) { Fail 'Copy finished but index.html is missing.' }
