@@ -237,9 +237,12 @@ try {
     await layoutPage.locator('.bestiary-toggle').click();
     assert.equal(await layoutPage.locator('.beast-group').count(), 36, 'Another batch exposes 24 more name groups');
     const lushu = layoutPage.locator('.beast-card').filter({ has: layoutPage.locator('b', { hasText: /^鹿蜀$/ }) });
-    await lushu.scrollIntoViewIfNeeded();
-    const bestiaryScroll = await layoutPage.evaluate(() => window.scrollY);
+    await lushu.evaluate(card => {
+      card.addEventListener('click', () => { card.dataset.testScrollY = String(window.scrollY); }, { capture: true, once: true });
+    });
     await lushu.click();
+    const openingScroll = await lushu.getAttribute('data-test-scroll-y');
+    assert.notEqual(openingScroll, null);
     await assertDetailDrawer(layoutPage, '鹿蜀 ' + width + 'x' + height);
     await layoutPage.getByRole('dialog').evaluate(element => { element.scrollTop = 0; });
     await layoutPage.clock.runFor(100);
@@ -247,7 +250,7 @@ try {
     await layoutPage.getByRole('button', { name: '关闭', exact: true }).click();
     await layoutPage.clock.runFor(100);
     assert.equal(await lushu.evaluate(element => element === document.activeElement), true, 'closing detail restores card focus');
-    assert.ok(Math.abs(await layoutPage.evaluate(() => window.scrollY) - bestiaryScroll) <= 1, 'closing detail restores page scroll');
+    assert.ok(Math.abs(await layoutPage.evaluate(() => window.scrollY) - Number(openingScroll)) <= 1, 'closing detail restores the scroll at the moment the card opened');
     await layoutPage.locator('.myth-map-wrap').scrollIntoViewIfNeeded();
     for(const [chapter,id] of [["00 盘古开天",null],["01 造人与补天","01-02"],["02 三皇五氏","02-04"],["03 炎黄","03-05"],["03 炎黄","03-04"],["04 五帝后期","04-02"],["05 禹夏","05-01"]]){
       if(id) await startMapStory(layoutPage,chapter,id);
