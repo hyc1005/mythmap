@@ -40,6 +40,11 @@ assert.equal(catalog.events.find(event => event.id === journey.event_id).geometr
 assert.ok(journey.nodes.find(node => node.id === 'end').position[1] < journey.nodes.find(node => node.id === 'marsh').position[1]);
 assert.equal(journey.sprites.run.frames.length, 8);
 for (const sheet of Object.values(journey.sprites)) await access(new URL(`../public${sheet.url}`, import.meta.url));
+for (const landscape of journey.landscapes || []) await access(new URL(`../public${landscape.image}`, import.meta.url));
+assert.equal(journey.nodes.find(node => node.id === 'marsh').unreached, true, 'Great Marsh stays unreached');
+assert.deepEqual(journey.landscapes.map(landscape => landscape.id), ['rivers-scene', 'marsh-scene']);
+assert.deepEqual(animations.stories.find(story => story.id === '03-04').landmarks.map(landmark => landmark.id), ['west-mountain', 'east-sea']);
+assert.equal(animations.stories.find(story => story.id === '05-01').landmarks[0].mode, 'channel');
 const animatedChapters = new Set([...animations.stories.map(story => story.stage_id), journey.stage_id]);
 for (const chapterId of ['01', '02', '03', '04', '05', '06', '07']) assert.ok(animatedChapters.has(chapterId), `chapter ${chapterId} has a story animation`);
 const nuwaStory = animations.stories.find(story => story.id === '01-02');
@@ -73,6 +78,7 @@ assert.match(animations.stories.find(story => story.id === '07-journey').note, /
 for (const story of animations.stories) {
   if (story.actor_art) await access(new URL(`../public/data/atlas/myth-icons/${story.actor_art}`, import.meta.url));
   for (const artwork of story.scene_artworks || []) await access(new URL(`../public/data/atlas/myth-icons/${artwork}`, import.meta.url));
+  for (const landmark of story.landmarks || []) await access(new URL(`../public${landmark.image}`, import.meta.url));
 }
 const correctedFuxi = await readFile(new URL('../public/data/atlas/myth-icons/characters/fuxi-corrected.svg', import.meta.url), 'utf8');
 assert.equal((correctedFuxi.match(/transform="translate\(/g) || []).length, 8);

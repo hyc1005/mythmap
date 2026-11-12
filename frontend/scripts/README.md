@@ -12,6 +12,7 @@
 | `verify-reading.mjs`、`verify-resume.mjs`、`verify-reader.mjs` | 已读收藏、续读与原文阅读 |
 | `verify-search.mjs`、`verify-place-search.mjs` | 全站搜索、别名、地点资料及返回状态 |
 | `verify-design.mjs`、`verify-narrative.mjs` | 布局、全屏、插画、完整故事时钟与叙事 |
+| `verify-animation-landscapes.mjs` | 精卫、夸父、大禹三段动画的山水地标、层级、窄屏与图片缺失/慢加载降级 |
 | `verify-geography.mjs`、`verify-map-frame.mjs` | 地理证据、底图恢复与画布结构 |
 | `verify-guided-tour.mjs`、`verify-onboarding.mjs`、`verify-exploration.mjs` | 游历、首次引导和探索流程 |
 | `verify-blur-global.mjs`、`verify-blur-detail.mjs`、`verify-blur-main.mjs`、`verify-blur-reveal.mjs` | 全站/详情/主区文字显现、重入、阅读恢复与减少动态效果 |
@@ -34,6 +35,7 @@ node scripts/with-preview.mjs --base /mythmap/ -- node scripts/verify-bestiary.m
 
 - `prepare-nanshan-artwork.py`：导出各山经已审核插画；使用`--chapter`选择篇目。
 - `prepare-refined-artwork.py`：从保留原图生成精修插画与地图小图标。
+- `prepare-animation-landscapes.py`：从 `artwork-source/animation-landscapes/generation.json` 导出动画底景运行时 WebP；`--check` 只核对既有文件与记录，不重写。
 - `optimize-assets.py`：生成优化图像及对应清单。
 
 例如：`python frontend/scripts/assets/prepare-nanshan-artwork.py --chapter zhongshan`。原图和提示词位于`frontend/artwork-source/`，不作为临时缓存删除。

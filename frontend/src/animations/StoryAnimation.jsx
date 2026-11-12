@@ -5,13 +5,13 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Feature from 'ol/Feature';
 import Point from 'ol/geom/Point';
 import LineString from 'ol/geom/LineString';
-import Polygon from 'ol/geom/Polygon';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style';
 import rawAnimations from '../../public/data/atlas/story-animations.json';
 import rawCatalog from '../../public/data/atlas/catalog.json';
 import { loadImage, cachedSprites } from '../asset-cache';
+import { createLandscapeFeature, loadLandscapes, sizeLandscape } from './map-landscapes';
 import { useReducedMotion } from '../motion';
 import { BASE_PLAYBACK_RATE, playbackState } from '../playback';
 
@@ -74,6 +74,11 @@ async function decodeSprites(sheet) {
     if (mirrored) { context.translate(160, 0); context.scale(-1, 1); }
     const baseline = sheet.sheet.baselines?.[index] ?? height;
     context.drawImage(image, x, y, width, height, (160 - width * scale) / 2, (sheet.sheet.baselines ? 133 : 153) - baseline * scale, width * scale, height * scale);
+    if (sheet.kind === 'flood') {
+      const pixels = context.getImageData(0, 0, 160, 160);
+      for (let i = 3; i < pixels.data.length; i += 4) if (pixels.data[i] >= 240) pixels.data[i] = 255;
+      context.putImageData(pixels, 0, 0);
+    }
     return new Icon({ img: canvas, anchor: [.5, 1], declutterMode: 'none' });
   }));
 }
@@ -128,6 +133,7 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
   const archer = id === '04-02';
   const [sprites, setSprites] = useState(null);
   const [effects, setEffects] = useState({});
+  const [landscapes, setLandscapes] = useState([]);
   const [error, setError] = useState(false);
   const [reload, setReload] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -153,6 +159,13 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
     Promise.all([spritesFor(rawStory), effectAssetsFor(rawStory.effect_assets)])
       .then(([actors, assets]) => { if (!cancelled) { setEffects(assets); setSprites(actors); } })
       .catch(() => { if (!cancelled) setError(true); });
+    return () => { cancelled = true; };
+  }, [rawStory, reload]);
+
+  useEffect(() => {
+    let cancelled = false;
+    setLandscapes([]);
+    loadLandscapes(rawStory.landmarks).then(assets => { if (!cancelled) setLandscapes(assets); });
     return () => { cancelled = true; };
   }, [rawStory, reload]);
 
@@ -183,19 +196,19 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
     const clouds = archer ? Array.from({ length: 2 }, () => new Feature({ geometry: new Point(story.origin) })) : [];
     const impact = archer ? new Feature({ geometry: new Point(story.origin) }) : null;
      [actor, actorTransition, arrow, projectile, ...streaks, payload, impact, ...waves, ...suns, ...clouds, ...decorations].filter(Boolean).forEach(feature => feature.setStyle([]));
-    if (['migration', 'journey'].includes(story.kind) && waypoints.length > 1) arrow.setStyle(new Style({ stroke: new Stroke({ color: '#a4443180', width: 2, lineDash: [7, 6] }) }));
+    if (['migration', 'journey'].includes(story.kind) && waypoints.length > 1) arrow.setStyle(new Style({ stroke: new Stroke({ color: '#a4443180', width: 2, lineDash: [7, 6] }), zIndex: 5 }));
     const landmarks = [];
     if (bird) {
-      const sea = new Feature({ geometry: new Polygon([[[880, 195], [940, 210], [980, 245], [935, 275], [885, 265], [880, 195]]]) });
-      sea.setStyle(new Style({ fill: new Fill({ color: '#77979924' }), stroke: new Stroke({ color: '#69848885', width: 1.5 }), text: new Text({ text: t("东海 · 示意"), offsetY: 25, font: `11px ${mapFont}`, fill: new Fill({ color: '#526c72' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }) }));
-      const mountain = new Feature({ geometry: new LineString([[635, 215], [650, 249], [662, 230], [680, 258], [696, 215]]) });
-      mountain.setStyle(new Style({ stroke: new Stroke({ color: '#746748aa', width: 2 }), text: new Text({ text: t("西山木石 · 示意"), offsetY: 23, font: `11px ${mapFont}`, fill: new Fill({ color: '#66543c' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }) }));
-      landmarks.push(sea, mountain);
+      const seaLabel = new Feature({ geometry: new Point([920, 180]) });
+      seaLabel.setStyle(new Style({ text: new Text({ text: t("东海 · 示意"), font: `11px ${mapFont}`, fill: new Fill({ color: '#526c72' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }), padding: [3, 5, 3, 5], backgroundFill: new Fill({ color: '#f4ead2d9' }) }), zIndex: 7 }));
+      const mountainLabel = new Feature({ geometry: new Point([665, 238]) });
+      mountainLabel.setStyle(new Style({ text: new Text({ text: t("西山木石 · 示意"), offsetY: 64, font: `11px ${mapFont}`, fill: new Fill({ color: '#66543c' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }), padding: [3, 5, 3, 5], backgroundFill: new Fill({ color: '#f4ead2d9' }) }), zIndex: 6 }));
+      landmarks.push(seaLabel, mountainLabel);
     }
      const source = new VectorSource({ features: [...landmarks, clouds, suns, impact, waves, ...decorations, streaks, projectile, payload, arrow, actorTransition, actor].flat().filter(Boolean) });
-    const layer = new VectorLayer({ source, zIndex: 36 });
+    const layer = new VectorLayer({ source, zIndex: 36, recordHitLayer: true });
     map.addLayer(layer);
-     features.current = { actor, actorTransition, arrow, projectile, streaks, payload, waves, suns, clouds, impact, decorations, waypoints, shot: null };
+     features.current = { actor, actorTransition, arrow, projectile, streaks, payload, waves, suns, clouds, impact, decorations, waypoints, shot: null, source, landmarkItems: [] };
     const stop = () => { map.getView().cancelAnimations(); setFollowing(false); };
     map.on('pointerdrag', stop); map.on('journey:user-view', stop);
     map.getViewport().addEventListener('wheel', stop, { passive: true });
@@ -206,6 +219,18 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
       onSceneBoundsChange?.(null);
     };
   }, [id, map, story, bird]);
+
+  useEffect(() => {
+    const current = features.current;
+    if (!current?.source || !landscapes.length) return undefined;
+    const items = landscapes.map(asset => createLandscapeFeature(asset, { font: `11px ${mapFont}` }));
+    items.forEach(item => current.source.addFeature(item.feature));
+    current.landmarkItems = items;
+    return () => {
+      items.forEach(item => current.source.removeFeature(item.feature));
+      if (current.landmarkItems === items) current.landmarkItems = [];
+    };
+  }, [landscapes, mapFont, map, story]);
 
   const centerFor = (position, resolution) => {
     const size = map.getSize();
@@ -229,7 +254,7 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
     const paint = (time, delta = 0) => {
       if (!map.getSize()?.every(value => value > 0) || !features.current || !map.getTarget()) return;
       if (!map.getPixelFromCoordinate(features.current.actor.getGeometry().getCoordinates())) return;
-       const { actor, actorTransition, payload, decorations, arrow, projectile, streaks, waves, suns, clouds, impact, waypoints: sourceWaypoints } = features.current;
+       const { actor, actorTransition, payload, decorations, arrow, projectile, streaks, waves, suns, clouds, impact, waypoints: sourceWaypoints, landmarkItems } = features.current;
       let waypoints = sourceWaypoints;
       const phase = story.phases.findLast(item => item.from_ms <= time);
       const view = map.getView(), resolution = view.getResolution(), mapSize = map.getSize();
@@ -259,12 +284,13 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
         frame = [0, 1, 2, 1][Math.floor(time / 125) % 4] + (cycle >= 5000 ? 3 : 0);
         const drop = cycle >= 4800 && cycle < 5400 ? (cycle - 4800) / 600 : null;
         payload.getGeometry().setCoordinates([story.destination[0] + 12, story.destination[1] + (drop === null ? 0 : 22 * (1 - drop ** 2))]);
-        payload.setStyle(drop === null ? [] : new Style({ image: new CircleStyle({ radius: 3, fill: new Fill({ color: '#6c624b' }), declutterMode: 'none' }) }));
+        payload.setStyle(drop === null ? [] : new Style({ image: new CircleStyle({ radius: 3, fill: new Fill({ color: '#6c624b' }), declutterMode: 'none' }), zIndex: 8 }));
         decorations.forEach((feature, index) => {
           feature.getGeometry().setCoordinates([story.destination[0] + (index - 1.5) * resolution * 8, story.destination[1] - resolution * (6 + index % 2 * 3)]);
           const deposits = time >= 14400 ? 4 : time >= 5400 ? 2 : 0;
-          feature.setStyle(index < deposits ? new Style({ image: new CircleStyle({ radius: 2.5, fill: new Fill({ color: '#887254' }), declutterMode: 'none' }) }) : []);
+          feature.setStyle(index < deposits ? new Style({ image: new CircleStyle({ radius: 2.5, fill: new Fill({ color: '#887254' }), declutterMode: 'none' }), zIndex: 8 }) : []);
         });
+        landmarkItems.forEach(({ icon, asset }) => sizeLandscape(icon, Math.max(24, Math.min(size * (asset.width_factor || 2), mapSize[0] * (asset.max_width || .5)))));
       } else if (archer) {
         frame = time < 2200 ? 0 : time < 4400 ? 1 : time < 5200 ? 2 : time < 6500 ? 3 : time < 8500 ? 4 : 5;
         const solarCenter = [position[0] + size * resolution * 1.9, position[1] + size * resolution * 1.15];
@@ -379,6 +405,7 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
         if (story.kind === 'fire') {
           frame = time < 3500 ? [0, 1, 0, 1][Math.floor(time / 260) % 4] : time < 4700 ? 2 : time < 6200 ? 3 : time < 8500 ? 4 : 5;
         } else if (story.kind === 'flood') {
+          if ((time >= 2600 && time < 3000) || (time >= 6600 && time < 7000) || (time >= 10600 && time < 11000)) frame = 4;
           const channelProgress = clamp((time - 3000) / 4000);
           const routeCount = Math.min(waypoints.length - 1, Math.floor(channelProgress * (waypoints.length - 1)));
           const routeProgress = channelProgress * (waypoints.length - 1) - routeCount;
@@ -406,6 +433,14 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
               showImage(feature, frameIcon, 10 + index);
             }
           });
+          const startPixel = map.getPixelFromCoordinate(waypoints[0]);
+          const endPixel = map.getPixelFromCoordinate(waypoints[waypoints.length - 1]);
+          const span = Math.abs(endPixel[0] - startPixel[0]);
+          landmarkItems.forEach(({ feature, icon, asset }) => {
+            const width = Math.max(180, Math.min(span * (asset.width_factor || 1.05), mapSize[0] * (asset.max_width || .9)));
+            feature.getGeometry().setCoordinates(map.getCoordinateFromPixel([(startPixel[0] + endPixel[0]) / 2, (startPixel[1] + endPixel[1]) / 2 - width * .13]));
+            sizeLandscape(icon, width);
+          });
         }
       }
       frame = Math.min(frame, sprites.length - 1);
@@ -415,7 +450,7 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
       const previousFrame = Math.min(frameTransition.current.previous, sprites.length - 1);
       const previousIcon = sprites[previousFrame][mirrored ? 1 : 0];
       previousIcon.setScale(size / 160);
-      const transition = archer && frame === 4 ? 1 : smooth(clamp((time - frameTransition.current.changedAt) / (story.kind === 'fire' && time < 3500 ? 60 : 180)));
+      const transition = story.kind === 'flood' || (archer && frame === 4) ? 1 : smooth(clamp((time - frameTransition.current.changedAt) / (story.kind === 'fire' && time < 3500 ? 60 : 180)));
       if (frame === previousFrame) icon.setOpacity(1);
       else { icon.setOpacity(transition); previousIcon.setOpacity(1 - transition); }
       actor.getGeometry().setCoordinates(position);
@@ -462,7 +497,7 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
     };
     frameId = requestAnimationFrame(tick);
     return () => { cancelAnimationFrame(frameId); map.un('moveend', refresh); map.un('change:size', refresh); };
-  }, [sprites, effects, story, bird, map, error, blocked, reduced, following, restart, controlContainer, closeup, storyView]);
+  }, [sprites, effects, story, bird, map, error, blocked, reduced, following, restart, controlContainer, closeup, storyView, landscapes]);
 
   const replay = () => { onUserPlaybackChange?.(true); elapsed.current = 0; frameTransition.current = { frame: 0, previous: 0, changedAt: 0 }; sprites?.flat().forEach(icon => icon.setOpacity(1)); setPaused(false); setFollowing(story.follow_camera !== false); setRestart(value => value + 1); };
   const skip = () => onSkip?.();
@@ -476,7 +511,7 @@ export default function StoryAnimation({ revealActive = true, id, map, selectedI
   const replayControl = !error && !reduced && !complete && <button onClick={replay} disabled={!sprites}>{t('重播')}</button>;
   const followControl = !error && !reduced && story.follow_camera !== false && <button aria-label={following ? t('跟随镜头') : t('恢复跟随')} aria-pressed={following} onClick={() => setFollowing(value => !value)}>{t('跟随')}</button>;
   const speedButton = speedControl && !error && !reduced && <button aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>;
-  const controls = <div ref={panel} className="kuafu-journey story-animation" role="group" aria-label={t(`${story.name}动态`)} data-story={id} data-closeup={closeup} data-status={status} data-frame={ui.frame} data-elapsed={Math.round(ui.time)} data-playback-rate={playbackRate} data-shot-state={ui.shotState || 'none'} data-hit-sun-position={JSON.stringify(ui.hitSunPosition)} data-hit-frame={ui.hitFrame} data-x={ui.position[0]} data-y={ui.position[1]} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} data-follow={following} data-arrow={JSON.stringify(ui.arrow)} data-scene-bounds={JSON.stringify(ui.bounds)}>
+  const controls = <div ref={panel} className="kuafu-journey story-animation" role="group" aria-label={t(`${story.name}动态`)} data-story={id} data-closeup={closeup} data-status={status} data-frame={ui.frame} data-elapsed={Math.round(ui.time)} data-playback-rate={playbackRate} data-shot-state={ui.shotState || 'none'} data-hit-sun-position={JSON.stringify(ui.hitSunPosition)} data-hit-frame={ui.hitFrame} data-x={ui.position[0]} data-y={ui.position[1]} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} data-follow={following} data-arrow={JSON.stringify(ui.arrow)} data-scene-bounds={JSON.stringify(ui.bounds)} data-landmarks={landscapes.length}>
     <progress value={ui.time} max={story.duration_ms} aria-label={t(`${story.name}进度`)} />
     <div className="journey-heading"><b><BlurRevealText active={revealActive} revealKey="story-title" variant="inline" text={<>{story.name}</>} /></b><span aria-live="polite">{error ? t("动作图加载失败") : !sprites ? t("正在载入动作图…") : `${ui.phase.title}${status === 'paused' ? t(" · 已暂停") : complete ? t(" · 完") : ''}`}</span></div>
     <div className="journey-actions">

@@ -516,3 +516,4 @@ frontend/artwork-source/zhongshan/bird-lingyao-hui-v2.png	1100505	85e1c631496ff4
 frontend/artwork-source/optimized-originals/myth-icons/terrain/sea-cloud.png	1078433	72d787c1fc19d0a35db0c7d07924c36ff846bd3be71dc2f5b381e1846a3bcc88	插画原图	no	保留原位；只评估运行变体压缩，不外移、不删除	-	-
 frontend/artwork-source/beishan/creature-shuima-qiuru-v2.png	1042255	d77fb5831cd53de78bcdbca131be03dda2e0781de83dd848d92fdf78c6221b6c	插画原图	no	保留原位；只评估运行变体压缩，不外移、不删除	-	-
 frontend/public/opening-film.html	2824431	02d263a81980e042bc2d01361c01d4f03df0ea19cc3214e25def5f4dc974e671	运行页面	no	自包含宣传片页面；只有点击藏书印后才加载，不进入首屏	-	-
+frontend/artwork-source/animation-landscapes/generic-marsh-v1.png	1370489	c84816ed864249661d50ff5d17631a7d5137d2db786f2ab28c5da9024c0f360e	插画原图	no	保留原位；只评估运行变体压缩，不外移、不删除	-	-

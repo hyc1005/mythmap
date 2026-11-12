@@ -11,20 +11,78 @@
       "source_quote": "女娲抟黄土作人。剧务，力不暇供，乃引绳于泥中，举以为人。",
       "note": "地图内叙事锚点仅用于组织阅读，不表示真实地点；动作依据抟土、引绳与造人原文。",
       "kind": "creation",
-      "origin": [490, 545],
+      "origin": [
+        490,
+        545
+      ],
       "size_ratio": 0.28,
       "follow_camera": false,
       "phases": [
-        { "from_ms": 0, "title": "抟土成形" },
-        { "from_ms": 2000, "title": "塑造人形" },
-        { "from_ms": 4000, "title": "引绳入泥" },
-        { "from_ms": 6000, "title": "举绳造人" },
-        { "from_ms": 8500, "title": "泥人渐成" },
-        { "from_ms": 10500, "title": "造人完成" }
+        {
+          "from_ms": 0,
+          "title": "抟土成形"
+        },
+        {
+          "from_ms": 2000,
+          "title": "塑造人形"
+        },
+        {
+          "from_ms": 4000,
+          "title": "引绳入泥"
+        },
+        {
+          "from_ms": 6000,
+          "title": "举绳造人"
+        },
+        {
+          "from_ms": 8500,
+          "title": "泥人渐成"
+        },
+        {
+          "from_ms": 10500,
+          "title": "造人完成"
+        }
       ],
       "sheet": {
         "url": "/data/atlas/myth-icons/animations/nuwa-map-poses-v2.webp",
-        "frames": [[0,0,512,512],[512,0,512,512],[1024,0,512,512],[0,512,512,512],[512,512,512,512],[1024,512,512,512]]
+        "frames": [
+          [
+            0,
+            0,
+            512,
+            512
+          ],
+          [
+            512,
+            0,
+            512,
+            512
+          ],
+          [
+            1024,
+            0,
+            512,
+            512
+          ],
+          [
+            0,
+            512,
+            512,
+            512
+          ],
+          [
+            512,
+            512,
+            512,
+            512
+          ],
+          [
+            1024,
+            512,
+            512,
+            512
+          ]
+        ]
       }
     },
     {
@@ -91,6 +149,40 @@
       "destination": [
         900,
         245
+      ],
+      "landmarks": [
+        {
+          "id": "west-mountain",
+          "image": "/data/atlas/myth-icons/terrain/ridge.webp",
+          "position": [
+            665,
+            238
+          ],
+          "width_factor": 3.0,
+          "max_width": 0.42,
+          "anchor": [
+            0.5,
+            0.55
+          ],
+          "opacity": 0.27,
+          "zIndex": 2
+        },
+        {
+          "id": "east-sea",
+          "image": "/data/atlas/myth-icons/terrain/sea-cloud.webp",
+          "position": [
+            900,
+            252
+          ],
+          "width_factor": 4.2,
+          "max_width": 0.55,
+          "anchor": [
+            0.5,
+            0.5
+          ],
+          "opacity": 0.27,
+          "zIndex": 1
+        }
       ],
       "phases": [
         {
@@ -206,30 +298,30 @@
         "sun": {
           "url": "/data/atlas/myth-icons/animations/dayi-sun-disk.webp"
         },
-          "projectile": {
-            "url": "/data/atlas/myth-icons/animations/dayi-arrow-v2.webp",
-            "optional": true
-          },
-          "sunImpact": {
-            "url": "/data/atlas/myth-icons/animations/dayi-sun-impact-v2.webp",
-            "grid": [
-              2,
-              2
-            ],
-            "anchor": [
-              0.5,
-              0.5
-            ]
-          },
+        "projectile": {
+          "url": "/data/atlas/myth-icons/animations/dayi-arrow-v2.webp",
+          "optional": true
+        },
+        "sunImpact": {
+          "url": "/data/atlas/myth-icons/animations/dayi-sun-impact-v2.webp",
+          "grid": [
+            2,
+            2
+          ],
+          "anchor": [
+            0.5,
+            0.5
+          ]
+        },
         "cloud": {
           "url": "/data/atlas/myth-icons/animations/dayi-cloud-scroll.webp"
         }
       },
-        "shot_timing_ms": [
-          6500,
-          7600,
-          9200
-        ],
+      "shot_timing_ms": [
+        6500,
+        7600,
+        9200
+      ],
       "follow_camera": false,
       "bow_anchor": [
         0.394,
@@ -269,7 +361,44 @@
       ],
       "sheet": {
         "url": "/data/atlas/myth-icons/animations/suiren-after-fire-v3.webp",
-        "frames": [[0,0,512,512],[512,0,512,512],[1024,0,512,512],[0,512,512,512],[512,512,512,512],[1024,512,512,512]]
+        "frames": [
+          [
+            0,
+            0,
+            512,
+            512
+          ],
+          [
+            512,
+            0,
+            512,
+            512
+          ],
+          [
+            1024,
+            0,
+            512,
+            512
+          ],
+          [
+            0,
+            512,
+            512,
+            512
+          ],
+          [
+            512,
+            512,
+            512,
+            512
+          ],
+          [
+            1024,
+            512,
+            512,
+            512
+          ]
+        ]
       },
       "follow_camera": false
     },
@@ -322,6 +451,21 @@
           "title": "地面渐次显露"
         }
       ],
+      "landmarks": [
+        {
+          "id": "flood-basin",
+          "image": "/data/atlas/myth-icons/terrain/ridge.webp",
+          "mode": "channel",
+          "width_factor": 1.05,
+          "max_width": 0.85,
+          "anchor": [
+            0.5,
+            0.5
+          ],
+          "opacity": 0.22,
+          "zIndex": 1
+        }
+      ],
       "sheet": {
         "url": "/data/atlas/myth-icons/animations/dayu-flood-poses.webp",
         "frames": [
@@ -345,6 +489,12 @@
           ],
           [
             0,
+            512,
+            512,
+            512
+          ],
+          [
+            512,
             512,
             512,
             512

@@ -5,13 +5,13 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Feature from 'ol/Feature';
 import Point from 'ol/geom/Point';
 import LineString from 'ol/geom/LineString';
-import Polygon from 'ol/geom/Polygon';
 import VectorLayer from 'ol/layer/Vector';
 import VectorSource from 'ol/source/Vector';
 import { Circle as CircleStyle, Fill, Icon, Stroke, Style, Text } from 'ol/style';
 import journey from '../../public/data/atlas/kuafu-journey.json';
 import catalog from '../../public/data/atlas/catalog.json';
 import { loadImage, cachedSprites } from '../asset-cache';
+import { createLandscapeFeature, loadLandscapes, sizeLandscape } from './map-landscapes';
 import { useReducedMotion } from '../motion';
 import { BASE_PLAYBACK_RATE, playbackState } from '../playback';
 
@@ -68,6 +68,7 @@ export default function KuafuJourney({ revealActive = true, map, selectedId, onS
   const { t, locale } = useLocale();
   const mapFont = locale === 'en' ? '"Source Sans 3 Variable", Arial, sans-serif' : '"Noto Serif SC", SimSun, serif';
   const [sprites, setSprites] = useState(null);
+  const [landscapes, setLandscapes] = useState([]);
   const [error, setError] = useState(false);
   const [paused, setPaused] = useState(false);
   useEffect(() => { if (tourPlaying === true) setPaused(false); }, [tourPlaying]);
@@ -103,6 +104,13 @@ export default function KuafuJourney({ revealActive = true, map, selectedId, onS
   }, [reload]);
 
   useEffect(() => {
+    let cancelled = false;
+    setLandscapes([]);
+    loadLandscapes(journey.landscapes).then(assets => { if (!cancelled) setLandscapes(assets); });
+    return () => { cancelled = true; };
+  }, [reload]);
+
+  useEffect(() => {
     const visibility = () => setHidden(document.hidden);
     document.addEventListener('visibilitychange', visibility);
     return () => {
@@ -121,33 +129,32 @@ export default function KuafuJourney({ revealActive = true, map, selectedId, onS
     const ghost = new Feature({ geometry: new Point([1050, 580]) });
     const trail = new Feature({ geometry: new LineString([route[0], route[0]]) });
     const outline = new Feature({ geometry: new LineString(route) });
-    outline.setStyle(new Style({ stroke: new Stroke({ color: '#80694c88', width: 1.5, lineDash: [4, 6] }) }));
-    trail.setStyle(new Style({ stroke: new Stroke({ color: '#a44431a6', width: 2 }) }));
+    outline.setStyle(new Style({ stroke: new Stroke({ color: '#80694c88', width: 1.5, lineDash: [4, 6] }), zIndex: 3 }));
+    trail.setStyle(new Style({ stroke: new Stroke({ color: '#a44431a6', width: 2 }), zIndex: 5 }));
     const unreached = new Feature({ geometry: new LineString([[1050, 580], [1060, 690]]) });
-    unreached.setStyle(new Style({ stroke: new Stroke({ color: '#6c807377', width: 1, lineDash: [2, 7] }) }));
+    unreached.setStyle(new Style({ stroke: new Stroke({ color: '#6c807377', width: 1, lineDash: [2, 7] }), zIndex: 3 }));
     const nodes = journey.nodes.map(node => {
       const feature = new Feature({ geometry: new Point(node.position) });
       feature.setStyle(new Style({
         image: new CircleStyle({ radius: 4, fill: new Fill({ color: node.unreached ? '#eee2c5' : '#a44431' }), stroke: new Stroke({ color: node.unreached ? '#6c8073' : '#f4ead2', width: 1.5 }), declutterMode: 'none' }),
-        text: new Text({ text: t(node.label), offsetX: -12, offsetY: node.id === 'chase' ? 20 : -17, textAlign: 'right', font: `12px ${mapFont}`, fill: new Fill({ color: '#66543c' }), stroke: new Stroke({ color: '#f4ead2', width: 4 }), padding: [3, 3, 3, 3] }),
+        text: new Text({ text: t(node.label), offsetX: -12, offsetY: node.id === 'chase' ? 20 : node.id === 'marsh' ? -58 : node.id === 'end' ? 24 : -17, textAlign: 'right', font: `12px ${mapFont}`, fill: new Fill({ color: '#66543c' }), stroke: new Stroke({ color: '#f4ead2', width: 4 }), padding: [3, 5, 3, 5], backgroundFill: new Fill({ color: '#f4ead2d9' }) }),
+        zIndex: 8,
       }));
       return feature;
     });
     const waters = [t("河"), t("渭")].map((name, index) => {
       const points = Array.from({ length: 22 }, (_, i) => [1010 + i * 5, 341 - index * 19 + Math.sin(i * .55 + index) * 5]);
       const feature = new Feature({ geometry: new LineString(points) });
-      feature.setStyle(new Style({ stroke: new Stroke({ color: '#647f84a0', width: 4 - index }), text: new Text({ text: name, placement: 'line', font: `11px ${mapFont}`, fill: new Fill({ color: '#526c72' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }), zIndex: 2 }));
+      feature.setStyle(new Style({ stroke: new Stroke({ color: '#71898188', width: index ? 1.5 : 1.8, lineCap: 'round', lineJoin: 'round' }), text: new Text({ text: name, placement: 'line', font: `11px ${mapFont}`, fill: new Fill({ color: '#526c72' }), stroke: new Stroke({ color: '#f4ead2', width: 3 }) }), zIndex: 4 }));
       return feature;
     });
-    const marsh = new Feature({ geometry: new Polygon([Array.from({ length: 33 }, (_, i) => { const t = i / 32 * Math.PI * 2; return [1060 + Math.cos(t) * (40 + Math.sin(t * 5) * 3), 690 + Math.sin(t) * 18]; })]) });
-    marsh.setStyle(new Style({ stroke: new Stroke({ color: '#69848870', width: 1.5 }), fill: new Fill({ color: '#74959a26' }), zIndex: 1 }));
     const ripples = [0, 1, 2].map(() => new Feature({ geometry: new LineString([[0, 0], [0, 0]]) }));
     ripples.forEach(feature => feature.setStyle([]));
     actor.setStyle([]); sun.setStyle([]); ghost.setStyle([]);
-    source.addFeatures([marsh, ...waters, ...ripples, outline, unreached, trail, ...nodes, sun, ghost, actor]);
-    const layer = new VectorLayer({ source, declutter: 'map-labels', zIndex: 35 });
+    source.addFeatures([...waters, ...ripples, outline, unreached, trail, ...nodes, sun, ghost, actor]);
+    const layer = new VectorLayer({ source, declutter: 'map-labels', zIndex: 35, recordHitLayer: true });
     map.addLayer(layer);
-    features.current = { actor, sun, ghost, trail, ripples };
+    features.current = { actor, sun, ghost, trail, ripples, source, landmarkItems: [] };
     const stopFollow = () => { map.getView().cancelAnimations(); setFollowing(false); };
     map.on('pointerdrag', stopFollow);
     map.on('journey:user-view', stopFollow);
@@ -162,6 +169,18 @@ export default function KuafuJourney({ revealActive = true, map, selectedId, onS
       features.current = null;
     };
   }, [map, locale]);
+
+  useEffect(() => {
+    const current = features.current;
+    if (!current?.source || !landscapes.length) return undefined;
+    const items = landscapes.map(asset => createLandscapeFeature(asset, { font: `12px ${mapFont}` }));
+    items.forEach(item => current.source.addFeature(item.feature));
+    current.landmarkItems = items;
+    return () => {
+      items.forEach(item => current.source.removeFeature(item.feature));
+      if (current.landmarkItems === items) current.landmarkItems = [];
+    };
+  }, [landscapes, mapFont, map, locale]);
 
   useEffect(() => {
     if (!sprites || !storyView) return;
@@ -193,7 +212,10 @@ export default function KuafuJourney({ revealActive = true, map, selectedId, onS
       const size = Math.max(48, Math.min(closeup ? 104 : 78, mapSize[0] * .28, mapSize[1] * (closeup ? .25 : .18)));
       sprite.setScale(size / 160 * (phase.action === 'forest' ? .5 + .5 * ratio : 1));
       sprite.setOpacity(phase.action === 'forest' ? .4 + .6 * ratio : 1);
-      const { actor, sun, ghost, trail, ripples } = features.current;
+      const { actor, sun, ghost, trail, ripples, landmarkItems } = features.current;
+      landmarkItems.forEach(({ icon, asset }) => {
+        sizeLandscape(icon, Math.max(36, Math.min(size * (asset.width_factor || 2), mapSize[0] * (asset.max_width || .45))));
+      });
       ripples.forEach((feature, index) => {
         const pulse = (ratio * 2 + index / 3) % 1;
         const radius = (3 + pulse * 10) * resolution;
@@ -243,7 +265,7 @@ export default function KuafuJourney({ revealActive = true, map, selectedId, onS
     };
     frameId = requestAnimationFrame(tick);
     return cleanup;
-  }, [sprites, map, error, blocked, completed, reduced, following, restart, controlContainer, locale, closeup, storyView]);
+  }, [sprites, map, error, blocked, completed, reduced, following, restart, controlContainer, locale, closeup, storyView, landscapes]);
 
   const replay = () => {
     onUserPlaybackChange?.(true);
@@ -261,7 +283,7 @@ export default function KuafuJourney({ revealActive = true, map, selectedId, onS
   const replayControl = !reduced && !error && !completed && <button onClick={replay} disabled={!sprites}>{t('重播')}</button>;
   const followControl = !reduced && !error && <button aria-label={following ? t('跟随镜头') : t('恢复跟随')} title={following ? t('停止镜头跟随') : t('恢复镜头跟随')} aria-pressed={following} onClick={() => setFollowing(value => !value)}>{t('跟随')}</button>;
   const speedButton = !reduced && !error && <button aria-label={t(`播放速度 ${playbackRate}倍`)} aria-pressed={playbackRate === 2} onClick={() => setPlaybackRate(rate => { const next = rate === 1 ? 2 : 1; playbackRateRef.current = next; return next; })}>{playbackRate}×</button>;
-  const controls = <div className="kuafu-journey" ref={panel} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} role="group" aria-label={t("夸父逐日动态")} data-closeup={closeup} data-status={status} data-phase={ui.phase.id} data-frame={ui.frame} data-elapsed={Math.round(ui.elapsed)} data-playback-rate={playbackRate} data-x={ui.position[0].toFixed(2)} data-y={ui.position[1].toFixed(2)} data-follow={following}>
+  const controls = <div className="kuafu-journey" ref={panel} data-screen-x={ui.screen?.[0]} data-screen-y={ui.screen?.[1]} data-size={ui.size} role="group" aria-label={t("夸父逐日动态")} data-closeup={closeup} data-status={status} data-phase={ui.phase.id} data-frame={ui.frame} data-elapsed={Math.round(ui.elapsed)} data-playback-rate={playbackRate} data-x={ui.position[0].toFixed(2)} data-y={ui.position[1].toFixed(2)} data-follow={following} data-landscapes={landscapes.length}>
     <progress value={ui.elapsed} max={journey.duration_ms} aria-label={t("夸父故事进度")} />
     <div className="journey-heading"><b><BlurRevealText active={revealActive} revealKey="story-title" variant="inline" text={<>{t("夸父逐日")}</>} /></b><span aria-live="polite">{error ? t("动作图加载失败") : !sprites ? t("正在载入动作图…") : `${t(ui.phase.title)}${status === 'paused' ? t(" · 已暂停") : status === 'completed' ? t(" · 完") : ''}`}</span></div>
     <div className="journey-actions">

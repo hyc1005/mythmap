@@ -167,7 +167,9 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     const before = JSON.stringify(sceneBounds.current?.map(rect => rect.map(value => Math.round(value / 8))));
     const after = JSON.stringify(bounds?.map(rect => rect.map(value => Math.round(value / 8))));
     sceneBounds.current = bounds;
-    if (before !== after) map.current?.getLayers().forEach(layer => layer.changed());
+    if (before !== after) map.current?.getLayers().forEach(layer => {
+      if ([areaSource.current, relationSource.current, pointSource.current].includes(layer.getSource?.())) layer.changed();
+    });
   }, []);
   const obscuredLabel = (coordinate, label, offsetY = 0) => {
     if (!sceneBounds.current || !map.current) return false;
@@ -296,7 +298,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
     created.on('pointermove', event => {
       if (event.dragging) { setHoverId(null); setPinnedId(null); return; }
       if (event.originalEvent?.pointerType === 'touch') return;
-      const hit = created.forEachFeatureAtPixel(event.pixel, feature => feature.get('record')?.id, { hitTolerance: 8 });
+      const hit = created.forEachFeatureAtPixel(event.pixel, feature => feature.get('record')?.id, { hitTolerance: 8, layerFilter: layer => layer.getSource() === pointSource.current || layer.get('recordHitLayer') });
       if (hit) { keepHover(); setHoverId(hit); } else leaveHover();
       target.current.style.cursor = hit ? 'pointer' : 'grab';
     });
@@ -306,7 +308,7 @@ export default function MapPanel({ world, stageIndex, activeLayers, selectedId, 
       if (target.current && target.current.dataset.view !== value) target.current.dataset.view = value;
     });
     created.on('singleclick', event => {
-      const hit = created.forEachFeatureAtPixel(event.pixel, feature => feature.get('record')?.id, { hitTolerance: 8 });
+      const hit = created.forEachFeatureAtPixel(event.pixel, feature => feature.get('record')?.id, { hitTolerance: 8, layerFilter: layer => layer.getSource() === pointSource.current || layer.get('recordHitLayer') });
       setPinnedId(hit || null);
     });
     const mapTarget = target.current;

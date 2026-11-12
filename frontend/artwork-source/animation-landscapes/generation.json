@@ -1,0 +1,32 @@
+{
+  "tool": "built-in image_gen",
+  "batch": "animation-landscapes",
+  "scope": "三段地图动画（精卫、夸父、大禹）使用的通用山水底景。这里只登记已保留透明原图的运行时 WebP 派生；原图不重画、不按屏幕尺寸批量导出。",
+  "prompt_template": "docs/artwork-prompt-template.md",
+  "notes": [
+    "generic-marsh-v1 为通用象征水泽，不对应任何真实湖泊、海或地名；大泽条目始终为“未至”。",
+    "运行时文件只保留一份中等尺寸，供地图动画按屏幕像素缩放使用，不发布 artwork-source 原图。"
+  ],
+  "assets": [
+    {
+      "name": "generic-marsh-v1",
+      "source": "frontend/artwork-source/animation-landscapes/generic-marsh-v1.png",
+      "source_sha256": "c84816ed864249661d50ff5d17631a7d5137d2db786f2ab28c5da9024c0f360e",
+      "original": "C:/Users/48427/.codex/generated_images/01a1c917-bba1-7aa0-b612-052ac39a9ed3/exec-3c3c78cf-4056-49d6-b982-4db7b8d86834.png",
+      "prompt": "Use case: illustration-story. Project asset for an illustrated Shanhaijing atlas.\nONE complete compact isolated mountain-and-water vignette on a genuinely transparent background,\ngenerous clear margins.\nAncient Chinese hand-carved woodblock print: bold warm black-brown contours, flat warm ivory and\nochre, restrained muted mineral-green, visibly cut curved lines and sparse stipple.\nArchaic decorative silhouette readable at 320px.\nNo photorealism, 3D, glow, digital gradients, text, labels, seals, compass arrows, frame or watermark.\n\nSubject: ONE isolated broad calm freshwater marsh or pool icon for a mythic map animation, a naturally irregular oval body of still muted blue-green water, minimal ivory woodcut ripples and a few ochre stones at the outer bank, fully visible in elevated three-quarter view. Wide horizontal silhouette with transparent exterior and wide margins. Generic symbolic wetland, no claim to identify any real named lake or sea. No people, boats, houses, animals, tall mountains, trees, writing, labels, arrows, frame, paper background, glow, shadow or watermark.\n\nGenuinely transparent alpha outside the subject: NO glow, halo, brown backdrop, paper rectangle, cast shadow or vignette. Flat carved ink areas only. Make the whole subject occupy at most 70% of the canvas width and height, all extremities complete with empty margins. No nipples or areolas on any human-like torso. No added anatomy, weapons, regalia, scenery or magic effects unless explicitly requested above. Pose, unspecified costume and fine details are artistic interpretation. Dignified archaic presence, not cute cartoon. Single illustration, not a page of alternatives.",
+      "review": "宽阔静水泽地：椭圆水面、木刻水纹、岸边赭石与草叶均为象征性艺术解释；不对应任何真实湖泊、海或地名，也不表示夸父已经到达大泽。",
+      "variants": {
+        "runtime": {
+          "path": "/data/atlas/myth-icons/animations/landscape-marsh-v1.webp",
+          "width": 720,
+          "quality": 86,
+          "bytes": 49426,
+          "dimensions": [
+            720,
+            360
+          ]
+        }
+      }
+    }
+  ]
+}

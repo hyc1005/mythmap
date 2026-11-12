@@ -19,6 +19,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "verify:narrative": "node scripts/verify-narrative.mjs",
+    "verify:animation-landscapes": "node scripts/verify-animation-landscapes.mjs",
     "verify:locale": "node scripts/verify-locale.mjs",
     "verify:layout": "node -e \"process.env.ATLAS_LAYOUT_ONLY='1';import('./scripts/verify-narrative.mjs')\"",
     "verify:data": "node scripts/verify-data.mjs",
